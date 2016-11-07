@@ -453,7 +453,8 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(tf_rt1523g_rhs, 2);			
+		TRANSPORT_BACKPACK(tf_rt1523g_rhs, 2);
+		TRANSPORT_BACKPACK(SOCOMD_Backpack_Empty, 8);
 	};
 
 	class TransportWeapons 

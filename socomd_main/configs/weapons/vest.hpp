@@ -24,7 +24,7 @@ class SOCOMD_Vest_TL : V_PlateCarrier1_rgr
 	{
 		uniformModel = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
 		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply350";
+		containerClass = "Supply400";
 		mass = 20;
 
 		class HitpointsProtectionInfo
@@ -73,7 +73,7 @@ class SOCOMD_Vest_CM : SOCOMD_Vest_TL
 	{
 		uniformModel = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
 		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply350";
+		containerClass = "Supply400";
 		mass = 20;
 
 		class HitpointsProtectionInfo
@@ -128,7 +128,7 @@ class SOCOMD_Vest_AR : V_PlateCarrier2_rgr
 	{
 		uniformModel = "\socomd_data\uniform\mas_plate_carrier_AR";
 		hiddenSelections[] = {"Camo", "Camo1", "Camo2"};
-		containerClass = "Supply350";
+		containerClass = "Supply400";
 		mass = 20;
 		
 		class HitpointsProtectionInfo
@@ -182,7 +182,7 @@ class SOCOMD_Vest_OP : V_PlateCarrierGL_rgr
 	{
 		uniformModel = "\socomd_data\uniform\mas_plate_carrier_OP";
 		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply350";
+		containerClass = "Supply400";
 		mass = 20;
 		
 		class HitpointsProtectionInfo
@@ -234,7 +234,7 @@ class SOCOMD_Vest_Pilot : V_Chestrig_khk
 	{
 		uniformModel = "\A3\Characters_F\Common\equip_chestrig.p3d";
 		hiddenSelections[] = {"Camo1", "Camo2"};
-		containerClass = "Supply160";
+		containerClass = "Supply200";
 		mass = 20;
 
 		class HitpointsProtectionInfo
@@ -279,7 +279,7 @@ class SOCOMD_Vest_Rebreather : V_RebreatherB
 	
 	class ItemInfo : ItemInfo
 	{
-		containerClass = "Supply160";
+		containerClass = "Supply200";
 		mass = 20;
 	};
 };
