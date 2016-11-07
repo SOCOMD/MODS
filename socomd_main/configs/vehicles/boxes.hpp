@@ -430,6 +430,7 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 		TRANSPORT_MAGAZINE(SmokeShellGreen, 10);
 		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_guided, 2);
 		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_LG, 2);
+		TRANSPORT_MAGAZINE(CUP_Javelin_M, 2);
 	};
 
 	class TransportItems 
@@ -457,7 +458,7 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 	{
 		TRANSPORT_WEAPON(UK3CB_BAF_L7A2, 2);
 		TRANSPORT_WEAPON(CUP_launch_Javelin, 2); // UK3CB_BAF_Javelin_Slung_Tube
-		TRANSPORT_WEAPON(CUP_Javelin_M, 2); // UK3CB_BAF_Javelin_CLU
+		//TRANSPORT_WEAPON(UK3CB_BAF_Javelin_CLU, 2);
 		TRANSPORT_WEAPON(CUP_launch_FIM92Stinger, 2);
 		TRANSPORT_WEAPON(UK3CB_BAF_L16_Tripod, 2);
 		TRANSPORT_WEAPON(UK3CB_BAF_L16, 2);
@@ -505,9 +506,11 @@ class SOCOMD_Sniper_Crate: NATO_Box_Base
 
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd, 16);
-		TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd_AP, 16);
+		TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd, 12);
+		TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd_AP, 12);
 		TRANSPORT_MAGAZINE(SOCOMD_DEM_10Rnd_127x99mm, 12);
+		TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd, 20);
+		TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd_Tracer, 20);
 	};
 };
 
@@ -608,10 +611,15 @@ class SOCOMD_Javelin_Crate: NATO_Box_Base
 	transportMaxBackpacks = 100;
 	weight = 20;
 	
-	class TransportWeapons 
+	class TransportMagazines 
+	{
+		TRANSPORT_MAGAZINE(CUP_Javelin_M, 6);
+	};
+	
+	/*class TransportWeapons 
 	{
 		TRANSPORT_WEAPON(CUP_Javelin_M, 4);
-	};
+	};*/
 };
 	
 class SOCOMD_Stinger_Crate: NATO_Box_Base
