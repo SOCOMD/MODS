@@ -1,32 +1,22 @@
 //////////////////////////////////////////////////////////////////////
 //RIFLES
 
-class srifle_LRR_F;
-class UK3CB_BAF_L115A3 : srifle_LRR_F 
+class UK3CB_BAF_L115_Base;
+class UK3CB_BAF_L115A3 : UK3CB_BAF_L115_Base 
 {
-	displayname = "SR98 .338 (Woodland)";
-};
-
-class UK3CB_BAF_L115A3_Desert : UK3CB_BAF_L115A3
-{
-	displayname = "SR98 .338 (Desert)";
+	displayname = "SR98 .338";
 };
 
 class UK3CB_BAF_L115A3_Ghillie : UK3CB_BAF_L115A3 
 {
-	displayname = "SR98 .338 (Woodland/Ghillie)";
-};
-
-class UK3CB_BAF_L115A3_Desert_Ghillie : UK3CB_BAF_L115A3 
-{
-	displayname = "SR98 .338 (Desert/Ghillie)";
+	displayname = "SR98 .338 (Ghillie)";
 };
 
 class srifle_GM6_F;
-class UK3CB_BAF_L82A1 : srifle_GM6_F 
+class UK3CB_BAF_L135A1 : srifle_GM6_F 
 {
 	displayname = "M82A1 BARRETT .50 BMG";
-	magazines[] = {"5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag", "SOCOMD_DEM_10rnd_127x99mm"};
+	magazines[] = {"UK3CB_BAF_127_10Rnd", "UK3CB_BAF_127_10Rnd_AP", "SOCOMD_DEM_10rnd_127x99mm"};
 };
 
 class UGL_F;
@@ -51,8 +41,8 @@ class RH_SR25EC : RH_m110
 
 //////////////////////////////////////////////////////////////////////
 // LIGHT MACHINE GUNS
-class LMG_Zafir_F;
-class UK3CB_BAF_L7A2 : LMG_Zafir_F 
+class Rifle_Long_Base_F;
+class UK3CB_BAF_L7A2 : Rifle_Long_Base_F 
 {
 	displayname = "FN MAG 58";
 };
