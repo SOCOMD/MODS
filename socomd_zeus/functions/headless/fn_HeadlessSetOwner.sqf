@@ -39,7 +39,7 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 		} forEach (crew _item);
 	};
 	
-	sleep 0.25;
+	sleep 0.5;
 
 	deleteVehicle _item;
 	
@@ -47,14 +47,14 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 	
 	_new = _unit createVehicle _pos;
 	
-	sleep 0.25;
+	sleep 0.5;
 	
 	if (_crew) then 
 	{
 		createVehicleCrew _new;
 	};
 	
-	sleep 0.25;
+	sleep 0.5;
 	
 	[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
 	
