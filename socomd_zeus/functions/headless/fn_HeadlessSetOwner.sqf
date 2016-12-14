@@ -30,33 +30,25 @@ if (_item isKindOf "Man") then
 
 if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship") then 
 {
-	_crew = false;
 
 	if (count (crew _item) > 0) then 
 	{
-		_crew = true;
+		
 		{
 			_item deleteVehicleCrew _x;
 		} forEach (crew _item);
-	};
-	
-	sleep 0.5;
-
-	if(_crew) then
-	{
+		
+		sleep 0.5;
+		
 		deleteVehicle _item;
+		
 		sleep 0.5;
+		
 		_new = [_pos, 180, _unit, _itemside] call bis_fnc_spawnvehicle;
+		
 		sleep 0.5;
+		
 		[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
-	}
-	else
-	{
-		exitWith {};
 	};
-	
-	sleep 5;
-	
-	[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
 	
 };
