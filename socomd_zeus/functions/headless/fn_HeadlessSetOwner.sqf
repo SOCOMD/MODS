@@ -50,7 +50,7 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 	
 //	_new = _unit createVehicle _pos;
 	
-	_new = [_pos, 180, _unit, _side] call bis_fnc_spawnvehicle
+	_new = [_pos, 180, _unit, _side] call bis_fnc_spawnvehicle;
 	
 	sleep 0.5;
 	
