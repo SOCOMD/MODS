@@ -1,7 +1,7 @@
 _item = _this select 0;
 _unit = typeOf _item;
 _pos = getPos _item;
-_side = side _item;
+_itemside = side _item;
 
 if (_item isKindOf "Man") then 
 {
@@ -42,26 +42,18 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 	
 	sleep 0.5;
 
-	if(_crew == false) exitWith {};
-	
-	deleteVehicle _item;
-	
-//	sleep 0.5;
-	
-//	_new = _unit createVehicle _pos;
-	
-	_new = [_pos, 180, _unit, _side] call bis_fnc_spawnvehicle;
-	
-	sleep 0.5;
-	
-/*	if (_crew) then 
+	if(_crew) then
 	{
-		createVehicleCrew _new;
-	};
-	
-	sleep 0.5;*/
-	
-	[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
+		deleteVehicle _item;
+		sleep 0.5;
+		_new = [_pos, 180, _unit, _itemside] call bis_fnc_spawnvehicle;
+		sleep 0.5;
+		[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
+	}
+	else
+	{
+		exitWith {};
+	}
 	
 	sleep 5;
 	
