@@ -28,7 +28,7 @@ if(count _headlessClients <= 0) exitWith {};
 //Select Client With Least Units
 _first = _headlessClients select 0;
 _selectedId = _first select 0;
-_min = _first select 1;
+/*_min = _first select 1;
 
 {
 	_hcId = _x select 0;
@@ -48,7 +48,7 @@ _min = _first select 1;
 	{
 		_x set [1, _min + 1];
 	};
-} forEach _headlessClients;
+} forEach _headlessClients;*/
 
 //Update Cache
 missionNamespace setVariable ["SOCOMD_ZEUS_HeadlessClients", _headlessClients];
