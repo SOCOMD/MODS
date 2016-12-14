@@ -45,12 +45,14 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 	
 	_new = _unit createVehicle _pos;
 	
-	sleep 0.25
+	sleep 0.25;
 	
 	if (_crew) then 
 	{
 		createVehicleCrew _new;
 	};
+	
+	sleep 0.25;
 	
 	[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
 	
