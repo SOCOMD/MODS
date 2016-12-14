@@ -31,7 +31,7 @@ if (_item isKindOf "Man") then
 if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship") then 
 {
 
-	if (count (crew _item) > 0) then 
+	/*if (count (crew _item) > 0) then 
 	{
 		
 		{
@@ -49,6 +49,6 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 		sleep 0.5;
 		
 		[objNull, _new] call SOCOMD_fnc_ZeusAddObject;
-	};
+	};*/
 	
 };
