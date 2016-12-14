@@ -53,7 +53,7 @@ if (_item isKindOf "LandVehicle" || _item isKindOf "Air" || _item isKindOf "Ship
 	else
 	{
 		exitWith {};
-	}
+	};
 	
 	sleep 5;
 	
