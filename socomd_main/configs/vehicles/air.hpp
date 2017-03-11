@@ -134,6 +134,75 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	driverCanSee = CanSeeAll;
 	hiddenSelectionsTextures[] = {"socomd_data\blackhawk\uh60mev_fuselage_co.paa","socomd_data\blackhawk\uh60mev_engine_co.paa","socomd_data\blackhawk\default_co.paa"};
+	armor = 150;
+	armorstructural = 180;
+			class HitFuel: HitFuel
+			{
+				visual = "";
+				radius = 0.125;
+				minimalhit = 0.2;
+				explosionShielding = 0.5;
+				passThrough = 0;
+			};
+			class HitHull: HitHull
+			{
+				armor = 25;
+				visual = "zbytek";
+				radius = 0.05;
+			};
+			class HitEngine: HitEngine
+			{
+				armor = 15;
+				visual = "";
+				radius = 0.15;
+				explosionShielding = 0.5;
+				minimalhit = 0.05;
+				passThrough = 0.3;
+			};
+			class HitAvionics: HitAvionics
+			{
+				armor = 7;
+				visual = "";
+				radius = 0.05;
+				explosionShielding = 0.5;
+			};
+			class HitVRotor: HitVRotor
+			{
+				visual = "tail rotor static";
+				armor = 18;
+				radius = 0.05;
+				explosionShielding = 0.5;
+			};
+			class HitHRotor: HitHRotor
+			{
+				visual = "main rotor static";
+				armor = 18;
+				radius = 0.2;
+				explosionShielding = 0.5;
+			};
+			class HitGlass1: HitGlass1
+			{
+				armor = 5;
+				radius = 0.15;
+				explosionShielding = 2;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 5;
+				radius = 0.15;
+				explosionShielding = 2;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 5;
+				radius = 0.15;
+				explosionShielding = 2;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 5;
+				radius = 0.15;
+				explosionShielding = 2;
 
 	//INVENTORY
 	AirLoadout
