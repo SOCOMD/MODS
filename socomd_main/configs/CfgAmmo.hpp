@@ -1,4 +1,4 @@
-class CfgAmmo
+/*class CfgAmmo
 {
 	class Bulletbase;
 	class LWIRCM_Ammo_MELB : Bulletbase
@@ -20,4 +20,4 @@ class CfgAmmo
 		airFriction=-0.00057503;
 		typicalSpeed=900;
 	};
-};
+};*/

@@ -1,4 +1,4 @@
-class CfgMagazines
+/*class CfgMagazines
 {
 	class 30Rnd_556x45_Stanag;
 	class SOCOMD_DEM_10Rnd_127x99mm : 30Rnd_556x45_Stanag 
@@ -14,4 +14,4 @@ class CfgMagazines
 		count = 10;
         mass = 20;
     };
-};
+};*/

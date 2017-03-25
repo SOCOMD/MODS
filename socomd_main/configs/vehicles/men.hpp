@@ -23,61 +23,61 @@
  ////////////////////////////////////////////////////////////////////////////////
  //COMMON DEFINES
  
- #define UNIT_COMMON_AMMO 		ITEM04("RH_g19t"), \
- 								ITEM02("SmokeShell"), \
- 								ITEM02("SmokeShellGreen"), \
- 								ITEM02("HandGrenade"), \
- 								ITEM02("ACE_M84"), \
- 								ITEM01("B_IR_Grenade")
+ #define UNIT_COMMON_AMMO 			ITEM04("RH_g19t"), \
+									ITEM02("SmokeShell"), \
+									ITEM02("SmokeShellGreen"), \
+									ITEM02("HandGrenade"), \
+									ITEM02("ACE_M84"), \
+									ITEM01("B_IR_Grenade")
+	
+ #define UNIT_COMMON_WEAPONS 		ITEM01("SOCOMD_Pistol"), \
+									ITEM01("Throw"), \
+									ITEM01("Put")
  
- #define UNIT_COMMON_WEAPONS 	ITEM01("SOCOMD_Pistol"), \
- 								ITEM01("Throw"), \
- 								ITEM01("Put")
+ #define UNIT_COMMON_LINKEDITEMS	ITEM01("ItemMap"), \
+									ITEM01("ItemCompass"), \
+									ITEM01("ItemWatch"), \
+									ITEM01("tf_anprc152")
  
- #define UNIT_COMMON_LINKEDITEMS ITEM01("ItemMap"), \
- 								ITEM01("ItemCompass"), \
- 								ITEM01("ItemWatch"), \
- 								ITEM01("tf_anprc152")
- 
- #define UNIT_COMMON_ITEMS 		ITEM01("ItemcTabHCam"), \
- 								ITEM01("ACE_Flashlight_KSF1"), \
- 								ITEM01("murshun_cigs_lighter"), \
- 								ITEM01("ACE_NVG_Gen4"), \
-  							ITEM04("ACE_CableTie"), \
- 								ITEM01("ACE_Earplugs")
+ #define UNIT_COMMON_ITEMS 			ITEM01("ItemcTabHCam"), \
+									ITEM01("ACE_Flashlight_KSF1"), \
+									ITEM01("murshun_cigs_lighter"), \
+									ITEM01("ACE_NVG_Gen4"), \
+									ITEM04("ACE_CableTie"), \
+									ITEM01("ACE_Earplugs")
  								
- #define UNIT_COMMON_MEDS 		ITEM06("ACE_fieldDressing"), \
- 								ITEM06("ACE_quikclot"), \
- 								ITEM06("ACE_elasticBandage"), \
-  							ITEM06("ACE_packingBandage"), \
- 								ITEM02("ACE_morphine"), \
- 								ITEM02("ACE_epinephrine"), \
- 								ITEM01("ACE_tourniquet")
+ #define UNIT_COMMON_MEDS 			ITEM06("ACE_fieldDressing"), \
+									ITEM06("ACE_quikclot"), \
+									ITEM06("ACE_elasticBandage"), \
+									ITEM06("ACE_packingBandage"), \
+									ITEM02("ACE_morphine"), \
+									ITEM02("ACE_epinephrine"), \
+									ITEM01("ACE_tourniquet")
  								
- #define UNIT_MEDIC_MEDS 		ITEM18("ACE_fieldDressing"), \
- 								ITEM18("ACE_quikclot"), \
- 								ITEM18("ACE_elasticBandage"), \
- 								ITEM18("ACE_packingBandage"), \
- 								ITEM08("ACE_morphine"), \
- 								ITEM04("ACE_epinephrine"), \
- 								ITEM04("ACE_tourniquet"), \
- 								ITEM08("ACE_salineIV_500"), \
- 								ITEM04("ACE_personalAidKit"), \
- 								ITEM02("ACE_bodyBag")
+ #define UNIT_MEDIC_MEDS 			ITEM18("ACE_fieldDressing"), \
+									ITEM18("ACE_quikclot"), \
+									ITEM18("ACE_elasticBandage"), \
+									ITEM18("ACE_packingBandage"), \
+									ITEM08("ACE_morphine"), \
+									ITEM04("ACE_epinephrine"), \
+									ITEM04("ACE_tourniquet"), \
+									ITEM08("ACE_salineIV_500"), \
+									ITEM04("ACE_personalAidKit"), \
+									ITEM02("ACE_bodyBag")
  								
  ////////////////////////////////////////////////////////////////////////////////
  // AMMO DEFINES
  
  #define UNIT_AMMO_RIFLEMAN 		ITEM07("SMA_30Rnd_556x45_Mk318"), \
- 								ITEM02("SMA_30Rnd_556x45_Mk318_Tracer")
+									ITEM02("SMA_30Rnd_556x45_Mk318_Tracer")
  
- #define UNIT_AMMO_UNDERSLUNG 	ITEM05("1Rnd_HE_Grenade_shell"), \
- 								ITEM02("1Rnd_SmokeRed_Grenade_shell"), \
- 								ITEM02("ACE_HuntIR_M203")
+ #define UNIT_AMMO_UNDERSLUNG 		ITEM05("1Rnd_HE_Grenade_shell"), \
+									ITEM02("1Rnd_SmokeRed_Grenade_shell"), \
+									ITEM02("ACE_HuntIR_M203")
  
  #define UNIT_AMMO_MARKSMAN 		ITEM09("SMA_20Rnd_762x51mm_M80A1_EPR_IR")
  
- #define UNIT_AMMO_GUNNER		ITEM04("SMA_150Rnd_762_M80A1")
+ #define UNIT_AMMO_GUNNER			ITEM04("SMA_150Rnd_762_M80A1")
  
  ////////////////////////////////////////////////////////////////////////////////
  // BASE CLASSES
