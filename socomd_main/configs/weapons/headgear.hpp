@@ -1,62 +1,62 @@
-//////////////////////////////////////////////////////////////////////
-// HEADGEAR
+	//////////////////////////////////////////////////////////////////////
+	// HEADGEAR
 
 
-//////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////
 
-class AU_03_780000_v1;
-class SOCOMD_BERET : AU_03_780000_v1 
-{
-	author = "SOCOMD Mod";
-	displayName = "SOCOMD Beret";
-	ace_hearing_protection = 0.5;
-	ace_hearing_lowerVolume = 0.0;
-};
+	class AU_03_780000_v1;
+	class SOCOMD_BERET : AU_03_780000_v1 
+	{
+		author = "SOCOMD Mod";
+		displayName = "SOCOMD Beret";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0.0;
+	};
 
-/*class H_HelmetSpecB_paint1;
-class SOCOMD_Default_Helmet : H_HelmetSpecB_paint1
-{
-	scope = public;
-	displayName = "SOCOMD Camo Helmet";
-	ace_hearing_protection = 0.5;
-	ace_hearing_lowerVolume = 0;
-};
+	/*class H_HelmetSpecB_paint1;
+	class SOCOMD_Default_Helmet : H_HelmetSpecB_paint1
+	{
+		scope = public;
+		displayName = "SOCOMD Camo Helmet";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+	};
 
-class H_HelmetB_camo;
-class SOCOMD_Sniper_Helmet : H_HelmetB_camo
-{
-	scope = public;
-	displayName = "SOCOMD Sniper Helmet";
-	ace_hearing_protection = 0.5;
-	ace_hearing_lowerVolume = 0;
-};*/
+	class H_HelmetB_camo;
+	class SOCOMD_Sniper_Helmet : H_HelmetB_camo
+	{
+		scope = public;
+		displayName = "SOCOMD Sniper Helmet";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+	};*/
 
-class H_PilotHelmetHeli_O;
-class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O
-{
-	scope = public;
-	displayName = "SOCOMD Heli-Pilot Helmet";
-	ace_hearing_protection = 0.5;
-	ace_hearing_lowerVolume = 0;
-}
+	class H_PilotHelmetHeli_O;
+	class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O
+	{
+		scope = public;
+		displayName = "SOCOMD Heli-Pilot Helmet";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+	};
 
-class H_CrewHelmetHeli_O;
-class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
-{
-	scope = public;
-	displayName = "SOCOMD Heli-Crew Helmet";
-	ace_hearing_protection = 0.5;
-	ace_hearing_lowerVolume = 0;
-}
+	class H_CrewHelmetHeli_O;
+	class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
+	{
+		scope = public;
+		displayName = "SOCOMD Heli-Crew Helmet";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+	};
 
 	// CAPS
-	
+
 	class HelmetBase;
 	class H_Booniehat_khk : HelmetBase
 	{
 		class ItemInfo;
 	};
-	
+
 	class SOCOMD_Cap_HS_Rev: H_Booniehat_khk //LARGE HEADSET (CAP REVERSED)
 	{
 		author = "SOCOMD & massi";
@@ -78,12 +78,12 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 			hiddenSelections[] = {"camo","camo2","camo3"};
 		};
 	};
-	
+
 	class H_Cap_headphones : HelmetBase
 	{
 		class ItemInfo;
 	};
-	
+
 	class SOCOMD_Cap_HS: H_Cap_headphones //LARGE HEADSET
 	{
 		author = "SOCOMD & massi";
@@ -106,14 +106,14 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\ha\capb_co.paa","\socomd_data\uniform\a\vdo_peltor_co.paa","\socomd_data\uniform\a\vdo_opscore_grey_co.paa"};
 	};
-	
+
 	//BOONIES
-	
+
 	class H_Booniehat_khk_hs : HelmetBase
 	{
 		class ItemInfo;
 	};
-	
+
 	class SOCOMD_Boonie: H_Booniehat_khk_hs //SMALL HEADSET BUT NOT
 	{
 		author = "SOCOMD & massi";
@@ -137,14 +137,14 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 			passThrough = 1;
 		};
 	};
-	
+
 	//BANDANNAS
-	
+
 	class H_Bandanna_khk_hs : HelmetBase
 	{
 		class ItemInfo;
 	};
-	
+
 	class SOCOMD_Bandanna: H_Bandanna_khk_hs //SMALL HEADSET
 	{
 		author = "SOCOMD & massi";
@@ -159,14 +159,14 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 
 
 	//HELMETS
-	
+
 	//FAST GOGGLES
-	
+
 	class H_HelmetB : HelmetBase
 	{
 		class ItemInfo;
 	};
-	
+
 	class SOCOMD_FAST_Tan_Gog: H_HelmetB //TAN
 	{
 		author = "SOCOMD & massi";
@@ -199,7 +199,7 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\helmet_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\goggles_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	class SOCOMD_FAST_Multi_Gog: H_HelmetB //MULTI
 	{
 		author = "SOCOMD & massi";
@@ -232,9 +232,9 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\helmet_net_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\goggles_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	//FAST NO GOGGLES
-	
+
 	class SOCOMD_FAST_Tan: H_HelmetB //TAN
 	{
 		author = "SOCOMD & massi";
@@ -267,7 +267,7 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\helmet_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	class SOCOMD_FAST_Multi: H_HelmetB //MULTI
 	{
 		author = "SOCOMD & massi";
@@ -300,9 +300,9 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\helmet_net_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	//MITCH GOGGLES
-	
+
 	class SOCOMD_MICH_Tan_Gog: H_HelmetB //TAN
 	{
 		author = "SOCOMD & massi";
@@ -335,7 +335,7 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\cm_new_mich_nk_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\goggles_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	class SOCOMD_MICH_Multi_Gog: H_HelmetB //MULTI
 	{
 		author = "SOCOMD & massi";
@@ -368,9 +368,9 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\new_mich_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\goggles_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	//MITCH NO GOGGLES
-	
+
 	class SOCOMD_MICH_Tan: H_HelmetB //TAN
 	{
 		author = "SOCOMD & massi";
@@ -403,7 +403,7 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 		hiddenSelections[] = {"camo","camo1","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\cm_new_mich_nk_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
-	
+
 	class SOCOMD_MICH_Multi: H_HelmetB //MULTI
 	{
 		author = "SOCOMD & massi";

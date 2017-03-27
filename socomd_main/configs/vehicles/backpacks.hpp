@@ -21,7 +21,7 @@ class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
 	mass = 20;
 	class TransportItems
 	{
-		TRANSPORT_ITEM(ACE_personalAidKit, 1);
+		TRANSPORT_ITEM(ACE_personalAidKit, 1)
 	};
 };
 
@@ -141,7 +141,7 @@ class SOCOMD_Weapons_Backpack: B_Kitbag_mcamo
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(ACE_personalAidKit, 1);		
+		TRANSPORT_ITEM(ACE_personalAidKit, 1)	
 	};
 };
 

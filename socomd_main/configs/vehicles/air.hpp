@@ -17,11 +17,11 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	hiddenSelectionsTextures[] = {"socomd_data\blackhawk\uh60m_fuselage_co.paa","socomd_data\blackhawk\uh60m_engine_co.paa","socomd_data\blackhawk\default_co.paa"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 16);
+		TRANSPORT_BACKPACK(B_Parachute, 16)
 	}; 
 	
 };
@@ -46,12 +46,25 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 16);
+		TRANSPORT_BACKPACK(B_Parachute, 16)
 	}; 
 	
 };
 
-class CUP_B_UH60M_Unarmed_FFV_MEV_US;
+class CUP_B_UH60M_Unarmed_FFV_MEV_US
+{
+	class HitFuel;
+	class HitHull;
+	class HitEngine;
+	class HitAvionics;
+	class HitVRotor;
+	class HitHRotor;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+};
+
 class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 {
 	scope = public;
@@ -67,80 +80,91 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	hiddenSelectionsTextures[] = {"socomd_data\blackhawk\uh60mev_fuselage_co.paa","socomd_data\blackhawk\uh60mev_engine_co.paa","socomd_data\blackhawk\default_co.paa"};
 	armor = 150;
 	armorstructural = 180;
-			class HitFuel: HitFuel
-			{
-				visual = "";
-				radius = 0.125;
-				minimalhit = 0.2;
-				explosionShielding = 0.5;
-				passThrough = 0;
-			};
-			class HitHull: HitHull
-			{
-				armor = 25;
-				visual = "zbytek";
-				radius = 0.05;
-			};
-			class HitEngine: HitEngine
-			{
-				armor = 15;
-				visual = "";
-				radius = 0.15;
-				explosionShielding = 0.5;
-				minimalhit = 0.05;
-				passThrough = 0.3;
-			};
-			class HitAvionics: HitAvionics
-			{
-				armor = 7;
-				visual = "";
-				radius = 0.05;
-				explosionShielding = 0.5;
-			};
-			class HitVRotor: HitVRotor
-			{
-				visual = "tail rotor static";
-				armor = 18;
-				radius = 0.05;
-				explosionShielding = 0.5;
-			};
-			class HitHRotor: HitHRotor
-			{
-				visual = "main rotor static";
-				armor = 18;
-				radius = 0.2;
-				explosionShielding = 0.5;
-			};
-			class HitGlass1: HitGlass1
-			{
-				armor = 5;
-				radius = 0.15;
-				explosionShielding = 2;
-			};
-			class HitGlass2: HitGlass2
-			{
-				armor = 5;
-				radius = 0.15;
-				explosionShielding = 2;
-			};
-			class HitGlass3: HitGlass3
-			{
-				armor = 5;
-				radius = 0.15;
-				explosionShielding = 2;
-			};
-			class HitGlass4: HitGlass4
-			{
-				armor = 5;
-				radius = 0.15;
-				explosionShielding = 2;
+
+	class HitFuel: HitFuel
+	{
+		visual = "";
+		radius = 0.125;
+		minimalhit = 0.2;
+		explosionShielding = 0.5;
+		passThrough = 0;
+	};
+
+	class HitHull: HitHull
+	{
+		armor = 25;
+		visual = "zbytek";
+		radius = 0.05;
+	};
+
+	class HitEngine: HitEngine
+	{
+		armor = 15;
+		visual = "";
+		radius = 0.15;
+		explosionShielding = 0.5;
+		minimalhit = 0.05;
+		passThrough = 0.3;
+	};
+
+	class HitAvionics: HitAvionics
+	{
+		armor = 7;
+		visual = "";
+		radius = 0.05;
+		explosionShielding = 0.5;
+	};
+
+	class HitVRotor: HitVRotor
+	{
+		visual = "tail rotor static";
+		armor = 18;
+		radius = 0.05;
+		explosionShielding = 0.5;
+	};
+
+	class HitHRotor: HitHRotor
+	{
+		visual = "main rotor static";
+		armor = 18;
+		radius = 0.2;
+		explosionShielding = 0.5;
+	};
+
+	class HitGlass1: HitGlass1
+	{
+		armor = 5;
+		radius = 0.15;
+		explosionShielding = 2;
+	};
+
+	class HitGlass2: HitGlass2
+	{
+		armor = 5;
+		radius = 0.15;
+		explosionShielding = 2;
+	};
+
+	class HitGlass3: HitGlass3
+	{
+		armor = 5;
+		radius = 0.15;
+		explosionShielding = 2;
+	};
+
+	class HitGlass4: HitGlass4
+	{
+		armor = 5;
+		radius = 0.15;
+		explosionShielding = 2;
+	};
 
 	//INVENTORY
 	AirLoadout
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 16);
+		TRANSPORT_BACKPACK(B_Parachute, 16)
 	}; 
 	
 };
@@ -167,7 +191,7 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 30);
+		TRANSPORT_BACKPACK(B_Parachute, 30)
 	}; 
 	
 };
@@ -191,7 +215,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 30);
+		TRANSPORT_BACKPACK(B_Parachute, 30)
 	}; 
 	
 };
@@ -212,7 +236,7 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 };
 
 
@@ -229,7 +253,7 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 };
 
 class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
@@ -245,7 +269,7 @@ class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -264,11 +288,11 @@ class SOCOMD_FIREFLY : MELB_MH6M
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 8);
+		TRANSPORT_BACKPACK(B_Parachute, 8)
 	};
 };
 
@@ -288,11 +312,11 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 2);
+		TRANSPORT_BACKPACK(B_Parachute, 2)
 	};
 };
 
@@ -309,10 +333,10 @@ class SOCOMD_DRAGONFLY_762 : MELB_AH6M_L
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	
 	//INVENTORY
-	AirLoadout;
+	AirLoadout
 	
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(B_Parachute, 2);
+		TRANSPORT_BACKPACK(B_Parachute, 2)
 	};
 };

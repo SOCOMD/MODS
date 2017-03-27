@@ -22,6 +22,6 @@ class CfgFunctions
 		{
 			file="\socomd_main\functions\actionConditions";
 			class ActionCondition_HasPrimary556 {};			
-		}
+		};
 	};
 };

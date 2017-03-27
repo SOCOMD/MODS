@@ -259,7 +259,7 @@ class SOCOMD_CargoNet: B_CargoNet_01_ammo_F
 			selection = "";
 			distance = 5;
 			condition = 1;
-			class ACE_OpenBox {}
+			class ACE_OpenBox {};
 		};
 	};
 	
@@ -285,17 +285,17 @@ class SOCOMD_hkammo_box : Box_NATO_AmmoVeh_F
 
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 20);
-		TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 40);
-		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 40);
+		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 20)
+		TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 40)
+		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 40)
 	};
 
 	class TransportWeapons
 	{
-		//TRANSPORT_WEAPON(RH_m4a1_ris_des, 20);
-		//TRANSPORT_WEAPON(RH_m4a1_ris_m203s_des, 10);
-		//TRANSPORT_WEAPON(RH_Hk416, 20);
-		//TRANSPORT_WEAPON(RH_hk416_des, 20);
+		//TRANSPORT_WEAPON(RH_m4a1_ris_des, 20)
+		//TRANSPORT_WEAPON(RH_m4a1_ris_m203s_des, 10)
+		//TRANSPORT_WEAPON(RH_Hk416, 20)
+		//TRANSPORT_WEAPON(RH_hk416_des, 20
 	};
 };
 
@@ -312,34 +312,34 @@ class SOCOMD_training_box: Box_NATO_AmmoVeh_F
 
 	class TransportWeapons
 	{
-		//TRANSPORT_WEAPON(RH_M4A1_ris_M203s, 12);
-		TRANSPORT_WEAPON(CUP_lmg_minimi_railed, 12);
-		//TRANSPORT_WEAPON(RH_SR25EC, 12);
-		TRANSPORT_WEAPON(HAFM_LAW, 12);
+		//TRANSPORT_WEAPON(RH_M4A1_ris_M203s, 12)
+		TRANSPORT_WEAPON(CUP_lmg_minimi_railed, 12)
+		//TRANSPORT_WEAPON(RH_SR25EC, 12)
+		TRANSPORT_WEAPON(HAFM_LAW, 12)
 	};
 
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 40);
-		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 40);
-		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 20);
-		TRANSPORT_MAGAZINE(ACE_M84, 20);
-		TRANSPORT_MAGAZINE(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 20);
-		TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 40);
+		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 40)
+		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 40)
+		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 20)
+		TRANSPORT_MAGAZINE(ACE_M84, 20)
+		TRANSPORT_MAGAZINE(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 20)
+		TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 40)
 	};
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(ACE_HuntIR_monitor, 6);
-		TRANSPORT_ITEM(ItemAndroid, 6);
-		TRANSPORT_ITEM(ItemcTab, 6);
-		TRANSPORT_ITEM(ACE_SpareBarrel, 6);
+		TRANSPORT_ITEM(ACE_HuntIR_monitor, 6)
+		TRANSPORT_ITEM(ItemAndroid, 6)
+		TRANSPORT_ITEM(ItemcTab, 6)
+		TRANSPORT_ITEM(ACE_SpareBarrel, 6)
 	};
 
 	class TransportBackpacks
 	{
-		TRANSPORT_BACKPACK(SOCOMD_Sapper_Backpack, 12);
-		TRANSPORT_BACKPACK(SOCOMD_LongRange_Radio, 4);
+		TRANSPORT_BACKPACK(SOCOMD_Sapper_Backpack, 12)
+		TRANSPORT_BACKPACK(SOCOMD_LongRange_Radio, 4)
 	};
 };
 
@@ -392,17 +392,17 @@ class SOCOMD_uniform_crate: NATO_Box_Base
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(U_B_Wetsuit, 25);
-		TRANSPORT_ITEM(G_B_Diving, 25);
-		TRANSPORT_ITEM(V_RebreatherB, 25);
-		TRANSPORT_ITEM(SOCOMD_Uniform_LongSleeve, 3);
-		TRANSPORT_ITEM(SOCOMD_Vest_Operator, 3);
+		TRANSPORT_ITEM(U_B_Wetsuit, 25)
+		TRANSPORT_ITEM(G_B_Diving, 25)
+		TRANSPORT_ITEM(V_RebreatherB, 25)
+		TRANSPORT_ITEM(SOCOMD_Uniform_LongSleeve, 3)
+		TRANSPORT_ITEM(SOCOMD_Vest_Operator, 3)
 	};
 
 	class TransportBackpacks
 	{
-		TRANSPORT_BACKPACK(SOCOMD_Backpack, 3);
-		TRANSPORT_BACKPACK(SOCOMD_LongRange_Radio, 3);
+		TRANSPORT_BACKPACK(SOCOMD_Backpack, 3)
+		TRANSPORT_BACKPACK(SOCOMD_LongRange_Radio, 3)
 	};
 };
 
@@ -421,53 +421,53 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 	
 	class TransportMagazines 
 	{
-		TRANSPORT_MAGAZINE(UGL_FlareWhite_F, 10);
-		TRANSPORT_MAGAZINE(UGL_FlareGreen_F, 10);
-		TRANSPORT_MAGAZINE(UGL_FlareRed_F, 10);
-		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 10);
-		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag_Tracer_Red, 20);
-		TRANSPORT_MAGAZINE(SmokeShell, 10);
-		TRANSPORT_MAGAZINE(SmokeShellGreen, 10);
-		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_guided, 2);
-		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_LG, 2);
-		TRANSPORT_MAGAZINE(CUP_Javelin_M, 2);
-		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd, 2);
-		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd_T, 2);
+		TRANSPORT_MAGAZINE(UGL_FlareWhite_F, 10)
+		TRANSPORT_MAGAZINE(UGL_FlareGreen_F, 10)
+		TRANSPORT_MAGAZINE(UGL_FlareRed_F, 10)
+		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 10)
+		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag_Tracer_Red, 20)
+		TRANSPORT_MAGAZINE(SmokeShell, 10)
+		TRANSPORT_MAGAZINE(SmokeShellGreen, 10)
+		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_guided, 2)
+		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_LG, 2)
+		TRANSPORT_MAGAZINE(CUP_Javelin_M, 2)
+		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd, 2)
+		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd_T, 2)
 	};
 
 	class TransportItems 
 	{
-		TRANSPORT_ITEM(ACE_wirecutter, 1);
-		TRANSPORT_ITEM(ACE_quikclot, 20);
-		TRANSPORT_ITEM(ACE_morphine, 10);
-		TRANSPORT_ITEM(ACE_epinephrine, 6);
-		TRANSPORT_ITEM(ACE_bloodIV_500, 10);
-		TRANSPORT_ITEM(ACE_bodyBag, 4);
-		TRANSPORT_ITEM(ACE_CableTie, 20);
-		TRANSPORT_ITEM(ACE_DefusalKit, 1);
-		TRANSPORT_ITEM(ACE_EarPlugs, 8);
-		TRANSPORT_ITEM(optic_tws_mg, 3);
-		TRANSPORT_ITEM(optic_NVS, 3);
-		TRANSPORT_ITEM(Mask_M40, 14);
+		TRANSPORT_ITEM(ACE_wirecutter, 1)
+		TRANSPORT_ITEM(ACE_quikclot, 20)
+		TRANSPORT_ITEM(ACE_morphine, 10)
+		TRANSPORT_ITEM(ACE_epinephrine, 6)
+		TRANSPORT_ITEM(ACE_bloodIV_500, 10)
+		TRANSPORT_ITEM(ACE_bodyBag, 4)
+		TRANSPORT_ITEM(ACE_CableTie, 20)
+		TRANSPORT_ITEM(ACE_DefusalKit, 1)
+		TRANSPORT_ITEM(ACE_EarPlugs, 8)
+		TRANSPORT_ITEM(optic_tws_mg, 3)
+		TRANSPORT_ITEM(optic_NVS, 3)
+		TRANSPORT_ITEM(Mask_M40, 14)
 	};
 
 	class TransportBackpacks 
 	{
-		TRANSPORT_BACKPACK(tf_rt1523g_rhs, 2);
-		TRANSPORT_BACKPACK(SOCOMD_Backpack_Empty, 8);
+		TRANSPORT_BACKPACK(tf_rt1523g_rhs, 2)
+		TRANSPORT_BACKPACK(SOCOMD_Backpack_Empty, 8)
 	};
 
 	class TransportWeapons 
 	{
-		//TRANSPORT_WEAPON(UK3CB_BAF_L7A2, 2);
-		TRANSPORT_WEAPON(CUP_launch_Javelin, 2); // UK3CB_BAF_Javelin_Slung_Tube
-		//TRANSPORT_WEAPON(UK3CB_BAF_Javelin_CLU, 2);
-		TRANSPORT_WEAPON(CUP_launch_FIM92Stinger, 2);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L16_Tripod, 2);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L16, 2);
-		//TRANSPORT_WEAPON(UK3CB_BAF_Tripod, 4);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L134A1, 2);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L111A1, 2);
+		//TRANSPORT_WEAPON(UK3CB_BAF_L7A2, 2)
+		TRANSPORT_WEAPON(CUP_launch_Javelin, 2) // UK3CB_BAF_Javelin_Slung_Tube
+		//TRANSPORT_WEAPON(UK3CB_BAF_Javelin_CLU, 2)
+		TRANSPORT_WEAPON(CUP_launch_FIM92Stinger, 2)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L16_Tripod, 2)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L16, 2)
+		//TRANSPORT_WEAPON(UK3CB_BAF_Tripod, 4)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L134A1, 2)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L111A1, 2)
 	};
 };	
 
@@ -486,34 +486,34 @@ class SOCOMD_Sniper_Crate: NATO_Box_Base
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(U_B_FullGhillie_ard, 2);
-		TRANSPORT_ITEM(U_B_FullGhillie_lsh, 2);
-		TRANSPORT_ITEM(U_B_FullGhillie_sard, 2);
-		TRANSPORT_ITEM(commando_uniform1, 2);
-		TRANSPORT_ITEM(commando_uniform2, 2);
-		TRANSPORT_ITEM(commando_uniform3, 2);
-		TRANSPORT_ITEM(ACE_fieldDressing, 10);
-		TRANSPORT_ITEM(ACE_quikclot, 10);
-		TRANSPORT_ITEM(ACE_morphine, 4);
-		TRANSPORT_ITEM(ACE_epinephrine, 2);
-		TRANSPORT_ITEM(ACE_bloodIV_500, 2);
-		TRANSPORT_ITEM(ACE_personalAidKit, 1);
+		TRANSPORT_ITEM(U_B_FullGhillie_ard, 2)
+		TRANSPORT_ITEM(U_B_FullGhillie_lsh, 2)
+		TRANSPORT_ITEM(U_B_FullGhillie_sard, 2)
+		TRANSPORT_ITEM(commando_uniform1, 2)
+		TRANSPORT_ITEM(commando_uniform2, 2)
+		TRANSPORT_ITEM(commando_uniform3, 2)
+		TRANSPORT_ITEM(ACE_fieldDressing, 10)
+		TRANSPORT_ITEM(ACE_quikclot, 10)
+		TRANSPORT_ITEM(ACE_morphine, 4)
+		TRANSPORT_ITEM(ACE_epinephrine, 2)
+		TRANSPORT_ITEM(ACE_bloodIV_500, 2)
+		TRANSPORT_ITEM(ACE_personalAidKit, 1)
 	};
 
 	class TransportWeapons
 	{
-		//TRANSPORT_WEAPON(UK3CB_BAF_L115A3, 1);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L115A3_Ghillie, 1);
-		//TRANSPORT_WEAPON(UK3CB_BAF_L82A1, 1);
+		//TRANSPORT_WEAPON(UK3CB_BAF_L115A3, 1)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L115A3_Ghillie, 1)
+		//TRANSPORT_WEAPON(UK3CB_BAF_L82A1, 1)
 	};
 
 	class TransportMagazines
 	{
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd, 12);
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd_AP, 12);
-		//TRANSPORT_MAGAZINE(SOCOMD_DEM_10Rnd_127x99mm, 12);
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd, 20);
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd_Tracer, 20);
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd, 12)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_127_10Rnd_AP, 12)
+		//TRANSPORT_MAGAZINE(SOCOMD_DEM_10Rnd_127x99mm, 12)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd, 20)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_338_5Rnd_Tracer, 20)
 	};
 };
 
@@ -532,13 +532,13 @@ class SOCOMD_UAV_Crate: NATO_Box_Base
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(B_UavTerminal, 4);
-		TRANSPORT_ITEM(ACE_UAVBattery, 4);
+		TRANSPORT_ITEM(B_UavTerminal, 4)
+		TRANSPORT_ITEM(ACE_UAVBattery, 4)
 	};
 
 	class TransportBackpacks
 	{
-		TRANSPORT_BACKPACK(O_UAV_01_backpack_F, 1);
+		TRANSPORT_BACKPACK(O_UAV_01_backpack_F, 1)
 	};
 };
 	
@@ -598,7 +598,7 @@ class SOCOMD_Mk19_Crate: NATO_Box_Base
 	
 	class TransportMagazines 
 	{
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_32Rnd_40mm_G_Box, 8);
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_32Rnd_40mm_G_Box, 8)
 	};
 };
 	
@@ -617,12 +617,12 @@ class SOCOMD_Javelin_Crate: NATO_Box_Base
 	
 	class TransportMagazines 
 	{
-		TRANSPORT_MAGAZINE(CUP_Javelin_M, 6);
+		TRANSPORT_MAGAZINE(CUP_Javelin_M, 6)
 	};
 	
 	/*class TransportWeapons 
 	{
-		TRANSPORT_WEAPON(CUP_Javelin_M, 4);
+		TRANSPORT_WEAPON(CUP_Javelin_M, 4)
 	};*/
 };
 	
@@ -641,7 +641,7 @@ class SOCOMD_Stinger_Crate: NATO_Box_Base
 	
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(CUP_Stinger_M, 5);
+		TRANSPORT_MAGAZINE(CUP_Stinger_M, 5)
 	};
 };
 	
@@ -660,12 +660,12 @@ class SOCOMD_Fortification_Crate: NATO_Box_Base
 	
 	class TransportItems
 	{
-		TRANSPORT_ITEM(ACE_M26_Clacker, 2);
+		TRANSPORT_ITEM(ACE_M26_Clacker, 2)
 	};
 	
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(DemoCharge_Remote_Mag, 10);
+		TRANSPORT_MAGAZINE(DemoCharge_Remote_Mag, 10)
 	};
 };
 	
@@ -684,7 +684,7 @@ class SOCOMD_HE_Mortar_Crate: NATO_Box_Base
 	
 	class TransportMagazines 
 	{
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_shells, 12);
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_shells, 12)
 	};
 };
 	
@@ -703,7 +703,7 @@ class SOCOMD_WFlare_Mortar_Crate: NATO_Box_Base
 	
 	class TransportMagazines 
 	{
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_Flare_white, 12);
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_Flare_white, 12)
 	};
 };
 	
@@ -722,6 +722,6 @@ class SOCOMD_WSmoke_Mortar_Crate: NATO_Box_Base
 	
 	class TransportMagazines
 	{
-		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white, 12);
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white, 12)
 	};
 };
