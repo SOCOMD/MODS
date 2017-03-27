@@ -166,8 +166,8 @@ class CfgPatches
 	};
 };
 
-//#include "configs\CfgFunctions.hpp"
-//#include "configs\CfgDifficultyPresets.hpp"
+#include "configs\CfgFunctions.hpp"
+#include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
 #include "configs\CfgMarkers.hpp"
 #include "configs\CfgGlasses.hpp"
