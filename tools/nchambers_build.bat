@@ -1,2 +1,4 @@
 start /D "C:\Users\nchambers\projects\SOCOMD" makepbo.exe -P socomd_main "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd\addons"
 start /D "C:\Users\nchambers\projects\SOCOMD" makepbo.exe -P socomd_zeus "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd\addons"
+start /D "C:\Users\nchambers\projects\SOCOMD" makepbo.exe ar_advancedrappelling "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd\addons"
+start /D "C:\Users\nchambers\projects\SOCOMD" makepbo.exe sa_advancedslingloading "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd\addons"
