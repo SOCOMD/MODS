@@ -21,8 +21,8 @@ class CfgFunctions
 		class Zeus
 		{
 			file = "\socomd_zeus\functions\zeus";
-
-			class ZeusInit { postInit = 1; }
+			
+			class ZeusInit { postInit = 1; };
 			class ZeusInitLocal {};
 			class ZeusAddObject {};
 			class ZeusAddObjectLocal {};
@@ -37,7 +37,7 @@ class CfgFunctions
 		class Headless
 		{
 			file = "\socomd_zeus\functions\headless";
-			
+
 			class HeadlessAddDisplayHandles {};
 			class HeadlessHandleKeyPress {};
 			class HeadlessHandleKeyRelease {};
