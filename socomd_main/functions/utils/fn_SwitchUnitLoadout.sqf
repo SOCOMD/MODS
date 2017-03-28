@@ -107,4 +107,11 @@ _binocularLoadout = _unitLoadout select 8;
 _binocularLoadout set [0, _binocular];
 _unitLoadout set [8, _binocularLoadout];
 
+//Equipment
+_gps = getText (_unitConfig >> "gps");
+_equipmentLoadout = _unitLoadout select 9;
+_equipmentLoadout set [1, _gps];
+_equipmentLoadout set [5, ""];
+_unitLoadout set [9, _equipmentLoadout];
+
 _player setUnitLoadout _unitLoadout;

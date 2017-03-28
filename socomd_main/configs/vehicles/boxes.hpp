@@ -46,6 +46,86 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 			distance = 5;
 			condition = 1;
 
+			class ACE_SwitchRoleActions
+			{
+				displayName = "Change Role";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Loadout_Trooper
+				{
+					displayName = "Trooper";
+					condition = 1;
+					statement = "[_player, 'SASR_Trooper'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_PatrolLeader
+				{
+					displayName = "Patrol Leader";
+					condition = 1;
+					statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_Marksman
+				{
+					displayName = "Marksman";
+					condition = 1;
+					statement = "[_player, 'SASR_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_MachineGunner
+				{
+					displayName = "Machine Gunner";
+					condition = 1;
+					statement = "[_player, 'SASR_MachineGunner'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_Demolitions
+				{
+					displayName = "Demolitions";
+					condition = 1;
+					statement = "[_player, 'SASR_Demolitions'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_Saboteur
+				{
+					displayName = "Saboteur";
+					condition = 1;
+					statement = "[_player, 'SASR_Saboteur'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_LAT
+				{
+					displayName = "Light Anti-tank";
+					condition = 1;
+					statement = "[_player, 'SASR_LAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_HAT
+				{
+					displayName = "Heavy Anti-tank";
+					condition = 1;
+					statement = "[_player, 'SASR_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};
+
 			class SOCOMD_OpenGearSelector
 			{
 				displayName = "Personalise";
@@ -186,52 +266,6 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
-			};
-		};
-	};
-};
-
-class Land_ToiletBox_F;
-class SOCOMD_Interactive_DressingRoom : Land_PaperBox_closed_F
-{
-	displayName = "SOCOMD Dressing Room";
-	author = "SOCOMD Mod";
-
-	ace_cargo_hasCargo = 0;
-	ace_cargo_canLoad = 0;
-	ace_dragging_canDrag = 0;
-	ace_dragging_canCarry = 0;
-
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class TransportItems {};
-	class TransportBackpacks {};
-
-	class ACE_Actions 
-	{
-		class ACE_MainActions 
-		{
-			displayName = "Loadout";
-			selection = "";
-			distance = 5;
-			condition = 1;
-
-			class SOCOMD_Clothes_Regular
-			{
-				displayName = "Change Into Regular Gear";
-				condition = 1;
-				statement = "[_player, 'Regular'] call SOCOMD_fnc_Action_ChangeClothes";
-				showDisabled = 0;
-				exceptions[] = {"isNotInside", "isNotSitting"};
-			};
-
-			class SOCOMD_Clothes_Diving
-			{
-				displayName = "Change Into Diving Gear";
-				condition = 1;
-				statement = "[_player, 'Diving'] call SOCOMD_fnc_Action_ChangeClothes";
-				showDisabled = 0;
-				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 		};
 	};
