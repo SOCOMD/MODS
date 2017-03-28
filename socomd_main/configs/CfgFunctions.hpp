@@ -9,6 +9,12 @@ class CfgFunctions
 			class CommonInitLocal {};
 		};
 
+		class Utils
+		{
+			file="\socomd_main\functions\utils";
+			class SwitchUnitLoadout {};			
+		};
+
 		class Actions
 		{
 			file="\socomd_main\functions\action";
