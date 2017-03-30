@@ -140,61 +140,16 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				displayName = "Primary";
 				selection = "";
 				distance = 5;
-				condition = 1;
+				condition = 0;
 
-				class SOCOMD_Headgear_ReplaceWeapon_M4A1Black
-				{
-					displayName = "Switch to M4A1 (Black)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris')";
-					statement = "[_player , 'RH_m4a1_ris'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceWeapon_M4A1Des
-				{
-					displayName = "Switch to M4A1 (Desert)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris_des')";
-					statement = "[_player , 'RH_m4a1_ris_des'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceWeapon_M4A1M203Black
-				{
-					displayName = "Switch to M4A1 M203 (Black)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris_m203s')";
-					statement = "[_player , 'RH_m4a1_ris_m203s'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceWeapon_M4A1M203Des
-				{
-					displayName = "Switch to M4A1 M203 (Desert)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris_m203s_des')";
-					statement = "[_player , 'RH_m4a1_ris_m203s_des'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceWeapon_HK416Black
-				{
-					displayName = "Switch to HK416 (Black)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_Hk416')";
-					statement = "[_player , 'RH_Hk416'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceWeapon_HK416Des
-				{
-					displayName = "Switch to HK416 (Desert)";
-					condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_hk416_des')";
-					statement = "[_player , 'RH_hk416_des'] call SOCOMD_fnc_Action_ReplacePrimary";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
+				//class SOCOMD_Headgear_ReplaceWeapon_M4A1Black
+				//{
+				//	displayName = "Switch to M4A1 (Black)";
+				//	condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris')";
+				//	statement = "[_player , 'RH_m4a1_ris'] call SOCOMD_fnc_Action_ReplacePrimary";
+				//	showDisabled = 0;
+				//	exceptions[] = {"isNotInside", "isNotSitting"};
+				//};
 			};
 
 			class ACE_HeadgearActions 
@@ -462,11 +417,11 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag_Tracer_Red, 20)
 		TRANSPORT_MAGAZINE(SmokeShell, 10)
 		TRANSPORT_MAGAZINE(SmokeShellGreen, 10)
-		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_guided, 2)
-		TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_LG, 2)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_guided, 2)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_81mm_Mo_LG, 2)
 		TRANSPORT_MAGAZINE(CUP_Javelin_M, 2)
-		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd, 2)
-		TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd_T, 2)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd, 2)
+		//TRANSPORT_MAGAZINE(UK3CB_BAF_762_100Rnd_T, 2)
 	};
 
 	class TransportItems 

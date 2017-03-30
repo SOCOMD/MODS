@@ -21,7 +21,6 @@ class CfgFunctions
 			class Action_ReplaceUniform {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplacePrimary {};
-			class Action_ChangeClothes {};
 		};
 
 		class ActionConditions

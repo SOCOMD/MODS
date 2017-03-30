@@ -23,7 +23,7 @@
  ////////////////////////////////////////////////////////////////////////////////
  //COMMON DEFINES
  
- #define UNIT_COMMON_AMMO 			ITEM04("RH_g19t"), \
+ #define UNIT_COMMON_AMMO 			ITEM04("CUP_17Rnd_9x19_glock17"), \
 									ITEM02("SmokeShell"), \
 									ITEM02("SmokeShellGreen"), \
 									ITEM02("HandGrenade"), \
@@ -488,8 +488,8 @@
  	displayName 			= "Heli-Pilot";
  	icon 					= "iconMan";
  	
- 	weapons[] 				= {	UNIT_COMMON_WEAPONS, "RH_Hk416c", "Binocular" };
- 	respawnWeapons[] 		= { UNIT_COMMON_WEAPONS, "RH_Hk416c", "Binocular" };
+ 	weapons[] 				= {	UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
+ 	respawnWeapons[] 		= { UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
  	magazines[] 			= { UNIT_COMMON_AMMO, UNIT_AMMO_RIFLEMAN };
  	respawnMagazines[] 		= { UNIT_COMMON_AMMO, UNIT_AMMO_RIFLEMAN };
  	linkedItems[] 			= { UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };

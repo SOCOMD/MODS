@@ -79,7 +79,7 @@
 	}; \
 	class TransportWeapons \
 	{ \
-		TRANSPORT_WEAPON(RH_Hk416c, 2) \
+		TRANSPORT_WEAPON(SMA_M4CQBR, 2) \
 		TRANSPORT_WEAPON(SOCOMD_Carl_Gustav, 1) \
 	};
 

@@ -123,7 +123,7 @@ class CfgLoadouts
         class SASR_PatrolLeader
         {
             primary = "SMA_MK16_EGLM_Green";
-            handgun = "RH_g19t";
+            handgun = "CUP_hgun_Glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
             gps = "ItemAndroid";
@@ -159,7 +159,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 5)
                     LOADOUT_ITEM(ACE_tourniquet, 1)
                     LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(RH_17Rnd_9x19_g17, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                     LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 6)
                     LOADOUT_ITEM(UGL_FlareWhite_F, 2)
                     LOADOUT_ITEM(UGL_FlareRed_F, 2)
@@ -181,7 +181,7 @@ class CfgLoadouts
         class SASR_Marksman
         {
             primary = "SMA_Mk17_16";
-            handgun = "RH_g19t";
+            handgun = "CUP_hgun_Glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
             gps = "ItemMicroDAGR";
@@ -217,7 +217,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 5)
                     LOADOUT_ITEM(ACE_tourniquet, 1)
                     LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(RH_17Rnd_9x19_g17, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_Tracer, 2)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_IR, 1)
@@ -230,7 +230,7 @@ class CfgLoadouts
         class SASR_MachineGunner
         {
             primary = "sma_minimi_mk3_762tsb";
-            handgun = "RH_g19t";
+            handgun = "CUP_hgun_Glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -266,7 +266,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 5)
                     LOADOUT_ITEM(ACE_tourniquet, 1)
                     LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(RH_17Rnd_9x19_g17, 1)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(SmokeShell, 2)
                     LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 3)
@@ -277,7 +277,7 @@ class CfgLoadouts
         class SASR_Demolitions
         {
             primary = "SMA_M4CQBR";
-            handgun = "RH_g19t";
+            handgun = "CUP_hgun_Glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -314,7 +314,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 5)
                     LOADOUT_ITEM(ACE_tourniquet, 1)
                     LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(RH_17Rnd_9x19_g17, 1)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(SmokeShell, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
@@ -344,7 +344,7 @@ class CfgLoadouts
         class SASR_Saboteur
         {
             primary = "SMA_M4CQBR";
-            handgun = "RH_g19t";
+            handgun = "CUP_hgun_Glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -381,7 +381,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 5)
                     LOADOUT_ITEM(ACE_tourniquet, 1)
                     LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(RH_17Rnd_9x19_g17, 1)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(SmokeShell, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
