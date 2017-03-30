@@ -23,74 +23,100 @@ _unitLoadout set [2, _handgunLoadout];
 //Uniform
 _uniformConfig = (_unitConfig >> "Uniform");
 _uniformLoadout = _unitLoadout select 3;
+if(not isNull _uniformConfig) then
+{
+    _uniformType = getText (_uniformConfig >> "type");
+    _uniformLoadout set [0, _uniformType];
 
-_uniformType = getText (_uniformConfig >> "type");
-_uniformLoadout set [0, _uniformType];
+    _uniformInventoryConfig = (_uniformConfig >> "Inventory");
+    _uniformInventoryLoadout = [];
 
-_uniformInventoryConfig = (_uniformConfig >> "Inventory");
-_uniformInventoryLoadout = [];
-for "_i" from 0 to (count _uniformInventoryConfig) - 1 do 
-{ 
-    _loadoutItem = _uniformInventoryConfig select _i;
-    _type = getText (_loadoutItem >> "type");
-    _count = getNumber (_loadoutItem >> "count");
-    if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
-        _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
-        _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count, _magazineCapacity]];
-    } else {
-        _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count]];
+    if(not isNull _uniformInventoryConfig) then {
+        for "_i" from 0 to (count _uniformInventoryConfig) - 1 do 
+        { 
+            _loadoutItem = _uniformInventoryConfig select _i;
+            _type = getText (_loadoutItem >> "type");
+            _count = getNumber (_loadoutItem >> "count");
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+                _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
+                _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count, _magazineCapacity]];
+            } else {
+                _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count]];
+            };
+        };
     };
+    _uniformLoadout set [1, _uniformInventoryLoadout];
+
+} else {
+    _uniformLoadout set [0, ""];
 };
-_uniformLoadout set [1, _uniformInventoryLoadout];
 _unitLoadout set [3, _uniformLoadout];
 
 //Vest
 _vestConfig = (_unitConfig >> "Vest");
 _vestLoadout = _unitLoadout select 4;
 
-_vestType = getText (_vestConfig >> "type");
-_vestLoadout set [0, _vestType];
+if(not isNull _vestConfig) then 
+{
+    _vestType = getText (_vestConfig >> "type");
+    _vestLoadout set [0, _vestType];
 
-_vestInventoryConfig = (_vestConfig >> "Inventory");
-_vestInventoryLoadout = [];
-for "_i" from 0 to (count _vestInventoryConfig) - 1 do 
-{ 
-    _loadoutItem = _vestInventoryConfig select _i;
-    _type = getText (_loadoutItem >> "type");
-    _count = getNumber (_loadoutItem >> "count");
-    if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
-        _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
-        _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count, _magazineCapacity]];
-    } else {
-        _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count]];
+    _vestInventoryConfig = (_vestConfig >> "Inventory");
+    _vestInventoryLoadout = [];
+
+    if(not isNull _vestInventoryConfig) then 
+    {
+        for "_i" from 0 to (count _vestInventoryConfig) - 1 do 
+        { 
+            _loadoutItem = _vestInventoryConfig select _i;
+            _type = getText (_loadoutItem >> "type");
+            _count = getNumber (_loadoutItem >> "count");
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+                _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
+                _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count, _magazineCapacity]];
+            } else {
+                _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count]];
+            };
+        };
     };
+    _vestLoadout set [1, _vestInventoryLoadout];
+
+} else {
+    _vestLoadout set [0, ""];
 };
-_vestLoadout set [1, _vestInventoryLoadout];
 _unitLoadout set [4, _vestLoadout];
 
 //Backpack
 _backpackConfig = (_unitConfig >> "Backpack");
 _backpackLoadout = _unitLoadout select 5;
+if(not isNull _backpackConfig) then 
+{
+    _backpackType = getText (_backpackConfig >> "type");
+    _backpackLoadout set [0, _backpackType];
 
-_backpackType = getText (_backpackConfig >> "type");
-_backpackLoadout set [0, _backpackType];
+    _backpackInventoryConfig = (_backpackConfig >> "Inventory");
+    _backpackInventoryLoadout = [];
 
-_backpackInventoryConfig = (_backpackConfig >> "Inventory");
-_backpackInventoryLoadout = [];
-for "_i" from 0 to (count _backpackInventoryConfig) - 1 do 
-{ 
-    _loadoutItem = _backpackInventoryConfig select _i;
-    _type = getText (_loadoutItem >> "type");
-    _count = getNumber (_loadoutItem >> "count");
-    if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
-        _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
-        _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count, _magazineCapacity]];
-    } else {
-        _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count]];
+    if(not isNull _backpackInventoryConfig) then 
+    {
+        for "_i" from 0 to (count _backpackInventoryConfig) - 1 do 
+        { 
+            _loadoutItem = _backpackInventoryConfig select _i;
+            _type = getText (_loadoutItem >> "type");
+            _count = getNumber (_loadoutItem >> "count");
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+                _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
+                _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count, _magazineCapacity]];
+            } else {
+                _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count]];
+            };
+        };
     };
+    _backpackLoadout set [1, _backpackInventoryLoadout];
+    
+} else {
+    _backpackLoadout set [0, ""];
 };
-
-_backpackLoadout set [1, _backpackInventoryLoadout];
 _unitLoadout set [5, _backpackLoadout];
 
 //Headgear

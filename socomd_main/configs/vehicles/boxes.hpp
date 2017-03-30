@@ -55,7 +55,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 				class SOCOMD_Loadout_Trooper
 				{
-					displayName = "Trooper";
+					displayName = "Remove Gear";
 					condition = 1;
 					statement = "[_player, 'SASR_Trooper'] call SOCOMD_fnc_SwitchUnitLoadout";
 					showDisabled = 0;
