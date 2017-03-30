@@ -309,6 +309,24 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+
+			class SOCOMD_SASR_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'VSM_Multicam_Crye_Camo') and (alive _player)";
+				statement = "[_player, 'VSM_Multicam_Crye_SS_Camo'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_SASR_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'VSM_Multicam_Crye_SS_Camo') and (alive _player)";
+				statement = "[_player, 'VSM_Multicam_Crye_Camo'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			
 			//MICH SWITCH GOGGLES
 			class SOCOMD_MICH_Multi_PutGogglesOn
