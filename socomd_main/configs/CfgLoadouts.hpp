@@ -24,6 +24,7 @@ WEAPON FORMAT
     "",     //3 OPTIC
     ["", 0] //4 PRIMARY MAGAZINE (TYPE/COUNT)
     ["", 0] //5 SECONDARY MAGAZINE (TYPE/COUNT)
+    "",     //6 BIPOD
 ]
 
 CONTAINER FORMAT
@@ -124,6 +125,7 @@ class CfgLoadouts
         {
             primary = "SMA_MK16_EGLM_Green";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
             gps = "ItemAndroid";
@@ -182,6 +184,7 @@ class CfgLoadouts
         {
             primary = "SMA_Mk17_16";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
             gps = "ItemMicroDAGR";
@@ -231,6 +234,7 @@ class CfgLoadouts
         {
             primary = "sma_minimi_mk3_762tsb";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -278,6 +282,7 @@ class CfgLoadouts
         {
             primary = "SMA_M4CQBR";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -345,6 +350,7 @@ class CfgLoadouts
         {
             primary = "SMA_M4CQBR";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -416,6 +422,7 @@ class CfgLoadouts
             primary = "SMA_MK18MOEBLK";
             secondary = "HAFM_LAW";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
@@ -472,6 +479,7 @@ class CfgLoadouts
             primary = "SMA_MK18MOEBLK";
             secondary = "CUP_launch_Mk153Mod0";
             handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
             binocular = "Rangefinder";
             gps = "ItemMicroDAGR";

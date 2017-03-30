@@ -3,6 +3,10 @@ _player = _args select 0;
 _loadoutId = _args select 1;
 _unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
 
+removeUniform _player;
+removeVest _player;
+removeBackpack _player;
+
 _unitLoadout = getUnitLoadout _player;
 
 //Primary
@@ -18,6 +22,13 @@ _unitLoadout set [1, _secondaryLoadout];
 //Handgun
 _handgun = getText (_unitConfig >> "handgun");
 _handgunLoadout = [_handgun,"","","",[],[],""];
+
+_handgunMagazine = getText (_unitConfig >> "handgunMagazine");
+if(_handgunMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+    _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _handgunMagazine >> "count");
+    _handgunLoadout set [4, [_handgunMagazine, _magazineCapacity]];
+};
+
 _unitLoadout set [2, _handgunLoadout];
 
 //Uniform
@@ -46,9 +57,6 @@ if(not isNull _uniformConfig) then
         };
     };
     _uniformLoadout set [1, _uniformInventoryLoadout];
-
-} else {
-    _uniformLoadout set [0, ""];
 };
 _unitLoadout set [3, _uniformLoadout];
 
@@ -80,9 +88,6 @@ if(not isNull _vestConfig) then
         };
     };
     _vestLoadout set [1, _vestInventoryLoadout];
-
-} else {
-    _vestLoadout set [0, ""];
 };
 _unitLoadout set [4, _vestLoadout];
 
@@ -113,9 +118,6 @@ if(not isNull _backpackConfig) then
         };
     };
     _backpackLoadout set [1, _backpackInventoryLoadout];
-    
-} else {
-    _backpackLoadout set [0, ""];
 };
 _unitLoadout set [5, _backpackLoadout];
 
