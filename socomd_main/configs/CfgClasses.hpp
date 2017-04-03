@@ -1,19 +1,29 @@
 class CfgFactionClasses
 {
-
 	class SOCOMD
 	{
-		displayName = "SOCOMD";
-		flag = "socomd_data\icon\adfu_flag_co.paa";
-		icon = "socomd_data\icon\icon.paa";
 		priority = 1;
 		side = 1;
+		displayName = "SOCOMD COMMANDOS";
+		flag = "socomd_data\icon\adfu_flag_co.paa";
+		icon = "socomd_data\icon\icon.paa";
 		author = "Chain and Seth";
+	};
+
+	class SOCOMD_SASR
+	{
+		priority = 1;
+		side = 1;
+		displayName = "SOCOMD SASR";
+		flag = "socomd_data\icon\adfu_flag_co.paa";
+		icon = "socomd_data\icon\icon.paa";
+		author = "SOCOMD";
 	};
 };
 
 class CfgVehicleClasses
 {
+	//SOCOMD COMMANDOS
 	class SOCOMD_Core
 	{
 		displayName = "SOCOMD Core Units";
@@ -30,5 +40,19 @@ class CfgVehicleClasses
 	{
 		displayName = "SOCOMD Weapons Team";
 		priority = 3;
+	};
+
+	//SOCOMD SASR
+
+	class SOCOMD_SASR_Units
+	{
+		displayName = "SOCOMD SASR Units";
+		priority = 1;
+	};
+
+	class SOCOMD_SASR_Logistics
+	{
+		displayName = "SOCOMD SASR Logistics";
+		priority = 2;
 	};
 };

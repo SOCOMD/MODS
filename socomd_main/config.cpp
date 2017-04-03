@@ -85,7 +85,7 @@ class CfgPatches
 			"SOCOMD_LongRange_Radio",
 
 			// BOXES
-			"SOCOMD_Personal_Box",
+			"SOCOMD_Interactive_QStore",
 			"SOCOMD_hkammo_box",
 			"SOCOMD_archer_crate",
 			"SOCOMD_uniform_crate",
@@ -104,7 +104,7 @@ class CfgPatches
 			"SOCOMD_wflare_mortar_crate",
 			"SOCOMD_wsmoke_mortar_crate",
 
-			// MEN
+			// MEN COMMANDO
 			"SOCOMD_Light_Anti_Tank_Marksman",
 			"SOCOMD_PlatoonLeader",
 			"SOCOMD_PlatoonMedic",
@@ -122,7 +122,10 @@ class CfgPatches
 			"SOCOMD_Pilot",
 			"SOCOMD_PlatoonSergeant",
 			"SOCOMD_Recon_TeamLeader",
-			"SOCOMD_Homestead"
+			"SOCOMD_Homestead",
+
+			//MEN SASR
+			"SOCOMD_SASR_Trooper"
 		};
 
 		//SOCOMD Custom Weapons
