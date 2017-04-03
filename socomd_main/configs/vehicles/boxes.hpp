@@ -5,19 +5,19 @@ class Land_EngineCrane_01_F;
 class SOCOMD_Vehicle_Spawner : Land_EngineCrane_01_F
 {
 	displayName = "SOCOMD Vehicle Spawner";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 };
 
 class SOCOMD_Heli_Spawner : Land_EngineCrane_01_F
 {
 	displayName = "SOCOMD Helicopter Spawner";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 };
 
 class SOCOMD_Supply_Spawner : Land_EngineCrane_01_F
 {
 	displayName = "SOCOMD Supply Spawner";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 };
 
 
@@ -25,7 +25,7 @@ class Land_PaperBox_closed_F;
 class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 {
 	displayName = "SOCOMD Personal Box";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 
 	ace_cargo_hasCargo = 0;
 	ace_cargo_canLoad = 0;
@@ -233,7 +233,7 @@ class B_CargoNet_01_ammo_F;
 class SOCOMD_CargoNet: B_CargoNet_01_ammo_F
 {
 	displayName = "SOCOMD Cargo Net Box";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	
 	ace_cargo_space = 8;
 	ace_cargo_hasCargo = 1;
@@ -265,7 +265,7 @@ class SOCOMD_hkammo_box : Box_NATO_AmmoVeh_F
 {
 	scope = public;
 	displayName = "SOCOMD Painted Weapons Box";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -292,7 +292,7 @@ class SOCOMD_training_box: Box_NATO_AmmoVeh_F
 {
 	scope = public;
 	displayName = "SOCOMD Items Box";
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -338,7 +338,7 @@ class SOCOMD_Supply_Crate: B_supplyCrate_F
 	scope = public;
 	accuracy = 1000;
 	displayName = "SOCOMD Supply Crate";
-	author = "Chain";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -372,7 +372,7 @@ class SOCOMD_uniform_crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Uniform Crate";
-	author = "Chain";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -401,7 +401,7 @@ class SOCOMD_Archer_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Weapons Team Crate";
-	author = "Chain";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -466,7 +466,7 @@ class SOCOMD_Sniper_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Sniper Team Crate";
-	author = "Chain";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -512,7 +512,7 @@ class SOCOMD_UAV_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD UAV Crate";
-	author = "Chain";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -537,7 +537,7 @@ class SOCOMD_Mag58_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Mag58 Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -559,7 +559,7 @@ class SOCOMD_M2_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD M2 Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -578,7 +578,7 @@ class SOCOMD_Mk19_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD MK19 Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -597,7 +597,7 @@ class SOCOMD_Javelin_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Javelin Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -621,7 +621,7 @@ class SOCOMD_Stinger_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Stinger Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -640,7 +640,7 @@ class SOCOMD_Fortification_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD Fortification Crate";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -664,7 +664,7 @@ class SOCOMD_HE_Mortar_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD HE Mortar Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -683,7 +683,7 @@ class SOCOMD_WFlare_Mortar_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD White FLARE Mortar Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;
@@ -702,7 +702,7 @@ class SOCOMD_WSmoke_Mortar_Crate: NATO_Box_Base
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	accuracy = 1000;
 	displayName = "SOCOMD White SMOKE Mortar Ammo";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	maximumLoad = 99999;
 	transportMaxWeapons = 15000;
 	transportMaxMagazines = 20000;

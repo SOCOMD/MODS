@@ -275,7 +275,7 @@ class SOCOMD_Vest_Rebreather : V_RebreatherB
 {
 	scope = public;
 	_generalMacro = "SOCOMD_Vest_Rebreather";
-	author = "SOCOMD";
+	author = AUTHOR_STR;
 	
 	class ItemInfo : ItemInfo
 	{

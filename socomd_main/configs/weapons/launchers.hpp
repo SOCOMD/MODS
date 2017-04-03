@@ -4,6 +4,6 @@
 class tf47_m3maaws;
 class SOCOMD_Carl_Gustav : tf47_m3maaws 
 {
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayName = "Carl Gustav";
 };

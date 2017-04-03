@@ -6,7 +6,7 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Bushmaster HMG";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -39,7 +39,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Bushmaster Transport";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -76,7 +76,7 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal HMG (Desert)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -110,7 +110,7 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal GMG (Desert)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -144,7 +144,7 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal HMG (Woodland)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -178,7 +178,7 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal GMG (Woodland)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -214,7 +214,7 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Coyote Support HMG (Desert)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -251,7 +251,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Coyote Support HMG (Woodland)";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -290,7 +290,7 @@ class SOCOMD_ASLAV : CUP_B_LAV25_USMC
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD ASLAV";
 	faction = "SOCOMD";
 	vehicleclass = "Armored";
@@ -325,7 +325,7 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Quadbike";
 	faction = "SOCOMD";
 	vehicleclass = "Car";
@@ -850,7 +850,7 @@ class SOCOMD_BIKE : BIKE_BASE
 	scopeCurator = public;
 	forceInGarage = 1;
 	side = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD Tactical Bike";
 	faction = "SOCOMD";
 	vehicleclass = "Car";

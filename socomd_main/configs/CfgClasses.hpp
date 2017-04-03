@@ -7,7 +7,7 @@ class CfgFactionClasses
 		displayName = "SOCOMD COMMANDOS";
 		flag = "socomd_data\icon\adfu_flag_co.paa";
 		icon = "socomd_data\icon\icon.paa";
-		author = "Chain and Seth";
+		author = AUTHOR_STR;
 	};
 
 	class SOCOMD_SASR
@@ -17,7 +17,7 @@ class CfgFactionClasses
 		displayName = "SOCOMD SASR";
 		flag = "socomd_data\icon\adfu_flag_co.paa";
 		icon = "socomd_data\icon\icon.paa";
-		author = "SOCOMD";
+		author = AUTHOR_STR;
 	};
 };
 

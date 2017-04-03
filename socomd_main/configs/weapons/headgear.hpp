@@ -7,7 +7,7 @@
 	class AU_03_780000_v1;
 	class SOCOMD_BERET : AU_03_780000_v1 
 	{
-		author = "SOCOMD Mod";
+		author = AUTHOR_STR;
 		displayName = "SOCOMD Beret";
 		ace_hearing_protection = 0.5;
 		ace_hearing_lowerVolume = 0.0;

@@ -2,6 +2,8 @@
 #define protected 1
 #define public 2
 
+#define AUTHOR_STR "SOCOMD Mod"
+
 //#define true			1
 //#define false			0
 

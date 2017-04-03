@@ -7,7 +7,7 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Armed Warrior";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -32,7 +32,7 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Armed FFV Warrior";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -70,7 +70,7 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Unarmed MEV Warrior";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -178,7 +178,7 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD CH-47 Nomad";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -202,7 +202,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD CH-47 Nomad VIV";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -228,7 +228,7 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (AA)";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -245,7 +245,7 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (AT)";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -261,7 +261,7 @@ class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (CAS)";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -280,7 +280,7 @@ class SOCOMD_FIREFLY : MELB_MH6M
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD MH-6 Firefly";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -304,7 +304,7 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD AH-6 Dragonfly (12.7mm)";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
@@ -325,7 +325,7 @@ class SOCOMD_DRAGONFLY_762 : MELB_AH6M_L
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
-	author = "SOCOMD Mod";
+	author = AUTHOR_STR;
 	displayname = "SOCOMD AH-6 Dragonfly (7.62mm)";
 	faction = "SOCOMD";
 	vehicleclass = "Air";
