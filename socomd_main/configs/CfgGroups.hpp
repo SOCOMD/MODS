@@ -15,15 +15,15 @@ class CfgGroups
 		{
 			name = "SOCOMD";
 
-			class SOCOMD_Groups
+			class SOCOMD_CMD_Groups
 			{
-				name = "SOCOMD Groups";
+				name = "Commando Groups";
 				aliveCategory = "Infantry";
 
-				class SOCOMD_Plt
+				class SOCOMD_CMD_Plt
 				{
-					name = "SOCOMD Plt Squad";
-					faction = "SOCOMD";
+					name = "Commando Plt Squad";
+					faction = "SOCOMD_CMD";
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -33,10 +33,10 @@ class CfgGroups
 					DEFINE_UNIT(3, "SOCOMD_PlatoonMedic", "CORPORAL")
 				};
 
-				class SOCOMD_Section
+				class SOCOMD_CMD_Section
 				{
-					name = "SOCOMD Section";
-					faction = "SOCOMD";
+					name = "Commando Section";
+					faction = "SOCOMD_CMD";
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -48,10 +48,10 @@ class CfgGroups
 					DEFINE_UNIT(5, "SOCOMD_Sapper", "PRIVATE")
 				};
 
-				class SOCOMD_Sniper_Team
+				class SOCOMD_CMD_Sniper_Team
 				{
-					name = "SOCOMD Sniper Team";
-					faction = "SOCOMD";
+					name = "Commando Sniper Team";
+					faction = "SOCOMD_CMD";
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -59,16 +59,50 @@ class CfgGroups
 					DEFINE_UNIT(1, "SOCOMD_Sniper_Spotter", "CORPORAL")
 				};
 
-				class SOCOMD_Weapons_Team
+				class SOCOMD_CMD_Weapons_Team
 				{
-					name = "SOCOMD Weapons Team";
-					faction = "SOCOMD";
+					name = "Commando Weapons Team";
+					faction = "SOCOMD_CMD";
 					side = 1;
 					rarityGroup = 0.75;
 
 					DEFINE_UNIT(0, "SOCOMD_Weapons_TeamLeader", "CORPORAL")
 					DEFINE_UNIT(1, "SOCOMD_Weapons_Specialist", "PRIVATE")
 					DEFINE_UNIT(2, "SOCOMD_Weapons_Assistant", "PRIVATE")
+				};
+			};
+
+			class SOCOMD_SASR_Groups
+			{
+				name = "SASR Groups";
+				aliveCategory = "Infantry";
+
+				class SOCOMD_SASR_TROOP_HQ
+				{
+					name = "SASR Troop HQ";
+					faction = "SOCOMD_SASR";
+					side = 1;
+					rarityGroup = 0.75;
+
+					DEFINE_UNIT(0, "SOCOMD_SASR_Trooper", "CORPORAL")
+					DEFINE_UNIT(1, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(2, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(3, "SOCOMD_SASR_Trooper", "PRIVATE")
+				};
+
+				class SOCOMD_SASR_TROOP_PATROL
+				{
+					name = "SASR Troop Patrol";
+					faction = "SOCOMD_SASR";
+					side = 1;
+					rarityGroup = 0.75;
+
+					DEFINE_UNIT(0, "SOCOMD_SASR_Trooper", "CORPORAL")
+					DEFINE_UNIT(1, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(2, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(3, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(4, "SOCOMD_SASR_Trooper", "PRIVATE")
+					DEFINE_UNIT(5, "SOCOMD_SASR_Trooper", "PRIVATE")
 				};
 			};
 		};

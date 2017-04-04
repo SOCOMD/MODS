@@ -1,6 +1,6 @@
 class CfgFactionClasses
 {
-	class SOCOMD
+	class SOCOMD_CMD
 	{
 		priority = 1;
 		side = 1;

@@ -9,7 +9,7 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Armed Warrior";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -34,7 +34,7 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Armed FFV Warrior";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -72,7 +72,7 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD S-70 Unarmed MEV Warrior";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -180,7 +180,7 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD CH-47 Nomad";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -204,7 +204,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD CH-47 Nomad VIV";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -230,7 +230,7 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (AA)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -247,7 +247,7 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (AT)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -263,7 +263,7 @@ class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD ARH-Tiger Hurricane (CAS)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -282,7 +282,7 @@ class SOCOMD_FIREFLY : MELB_MH6M
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD MH-6 Firefly";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -306,7 +306,7 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD AH-6 Dragonfly (12.7mm)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
@@ -327,7 +327,7 @@ class SOCOMD_DRAGONFLY_762 : MELB_AH6M_L
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD AH-6 Dragonfly (7.62mm)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};

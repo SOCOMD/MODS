@@ -8,7 +8,7 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Bushmaster HMG";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -41,7 +41,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Bushmaster Transport";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -78,7 +78,7 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal HMG (Desert)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -112,7 +112,7 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal GMG (Desert)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -146,7 +146,7 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal HMG (Woodland)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -180,7 +180,7 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Jackal GMG (Woodland)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -216,7 +216,7 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Coyote Support HMG (Desert)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -253,7 +253,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Coyote Support HMG (Woodland)";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -292,7 +292,7 @@ class SOCOMD_ASLAV : CUP_B_LAV25_USMC
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD ASLAV";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Armored";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -327,7 +327,7 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Quadbike";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -852,7 +852,7 @@ class SOCOMD_BIKE : BIKE_BASE
 	side = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Tactical Bike";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};

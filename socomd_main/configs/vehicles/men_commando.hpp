@@ -64,7 +64,7 @@ class SOCOMD_Soldier_LongSleeve : B_Soldier_02_f
 {
 	scope 						= protected;
 	side 						= 1;
-	faction 					= "SOCOMD";
+	faction 					= "SOCOMD_CMD";
 	author						= "SOCOMD";
 	displayName 				= "SOCOMD Solider (Sleeve Down)";
 

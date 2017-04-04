@@ -6,7 +6,7 @@ class SOCOMD_ASSAULT_BOAT : I_C_Boat_Transport_02_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Unarmed RHIB";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -40,7 +40,7 @@ class SOCOMD_GUNBOAT : CUP_B_RHIB_USMC
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Armed RHIB";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -73,7 +73,7 @@ class SOCOMD_ASSAULT_BOAT_S : B_Boat_Transport_01_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Small Assault Boat";
-	faction = "SOCOMD";
+	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
