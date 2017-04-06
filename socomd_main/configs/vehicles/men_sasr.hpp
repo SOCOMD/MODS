@@ -59,3 +59,12 @@ class SOCOMD_SASR_Trooper : SOCOMD_SASR_Soldier
 	RespawnItems[] 			= { SASR_UNIT_COMMON_ITEMS };
 	backpack				= "";
 };
+
+class SOCOMD_SASR_Homestead : SOCOMD_SASR_Soldier
+{
+	scope 					= public;
+	_generalMacro 			= "SOCOMD_SASR_Homestead";
+	vehicleClass 			= "SOCOMD_SASR_Units";
+	icon 					= "iconMan";
+	displayName 			= "Homestead";
+};

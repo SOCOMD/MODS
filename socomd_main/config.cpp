@@ -13,7 +13,6 @@ class CfgPatches
 			"socomd_data",
 			"ffaa_et_tigre",
 			"ffaa_ar_supercat",
-			//"uk3cb_baf_weapons",
 			"MELB",
 			"A3_Characters_F_BLUFOR",
 			"A3_Weapons_F",
@@ -29,7 +28,6 @@ class CfgPatches
 			"hafm_weapons",
 			"ace_parachute",
 			"tf47_launchers",
-			//"RH_m4_cfg",
 			"ace_huntir",
 			"CUP_AirVehicles_CH47",
 			"CUP_AirVehicles_UH60"
@@ -125,7 +123,8 @@ class CfgPatches
 			"SOCOMD_Homestead",
 
 			//MEN SASR
-			"SOCOMD_SASR_Trooper"
+			"SOCOMD_SASR_Trooper",
+			"SOCOMD_SASR_Homestead"
 		};
 
 		//SOCOMD Custom Weapons
@@ -138,7 +137,6 @@ class CfgPatches
 			"SOCOMD_Uniform_Officer_ShortSleeve",
 
 			//VESTS
-			//"SOCOMD_Vest",
 			"SOCOMD_Vest_TL",
 			"SOCOMD_Vest_AR",
 			"SOCOMD_Vest_OP",
@@ -146,7 +144,6 @@ class CfgPatches
 			"SOCOMD_Vest_Rebreather",
 
 			//HEADGEAR
-			//"SOCOMD_Helmet",
 			"SOCOMD_Headgear_Helmet",
 			"SOCOMD_Headgear_Helmet_Goggles",
 

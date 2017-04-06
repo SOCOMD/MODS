@@ -135,23 +135,6 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 
-			class ACE_WeaponActions 
-			{
-				displayName = "Primary";
-				selection = "";
-				distance = 5;
-				condition = 0;
-
-				//class SOCOMD_Headgear_ReplaceWeapon_M4A1Black
-				//{
-				//	displayName = "Switch to M4A1 (Black)";
-				//	condition = "([_player] call SOCOMD_fnc_ActionCondition_HasPrimary556) AND !((primaryWeapon _player) == 'RH_m4a1_ris')";
-				//	statement = "[_player , 'RH_m4a1_ris'] call SOCOMD_fnc_Action_ReplacePrimary";
-				//	showDisabled = 0;
-				//	exceptions[] = {"isNotInside", "isNotSitting"};
-				//};
-			};
-
 			class ACE_HeadgearActions 
 			{
 				displayName = "Headgear";

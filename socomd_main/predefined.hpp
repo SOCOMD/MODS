@@ -21,36 +21,33 @@
 // LAND LOADOUT
 
 #define LandTransportMagazines \
-	TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 30) \
-	TRANSPORT_MAGAZINE(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 5) \
-	TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 10) \
-	TRANSPORT_MAGAZINE(tf47_m3maaws_hedp, 2) \
-	TRANSPORT_MAGAZINE(tf47_m3maaws_illum, 2) \
-	TRANSPORT_MAGAZINE(DemoCharge_Remote_Mag, 6) \
-	TRANSPORT_MAGAZINE(Laserbatteries, 6) \
-	TRANSPORT_MAGAZINE(HandGrenade, 5) \
-	TRANSPORT_MAGAZINE(SmokeShell, 10)
+	TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1, 12) \
+	TRANSPORT_MAGAZINE(SMA_20Rnd_762x51mm_M80A1_EPR, 3) \
+	TRANSPORT_MAGAZINE(SMA_150Rnd_762_M80A1, 2) \
+	TRANSPORT_MAGAZINE(Chemlight_blue, 2) \
+	TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
+	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
 #define LandTransportItems \
 	TRANSPORT_ITEM(ToolKit, 1) \
 	TRANSPORT_ITEM(ACE_wirecutter, 1) \
+	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
+	TRANSPORT_ITEM(ACE_bodyBag, 6) \
+	TRANSPORT_ITEM(ACE_CableTie, 6) \
+	TRANSPORT_ITEM(Mask_M40, 6) \
 	TRANSPORT_ITEM(ACE_fieldDressing, 20) \
 	TRANSPORT_ITEM(ACE_quikclot, 20) \
 	TRANSPORT_ITEM(ACE_elasticBandage, 20) \
 	TRANSPORT_ITEM(ACE_packingBandage, 20) \
 	TRANSPORT_ITEM(ACE_morphine, 10) \
 	TRANSPORT_ITEM(ACE_epinephrine, 10) \
-	TRANSPORT_ITEM(ACE_bloodIV_500, 5) \
-	TRANSPORT_ITEM(ACE_bodyBag, 5) \
-	TRANSPORT_ITEM(ACE_CableTie, 10) \
-	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
-	TRANSPORT_ITEM(Mask_M40, 20)
+	TRANSPORT_ITEM(ACE_bloodIV_500, 5)
 
 #define LandTransportBackpacks \
-	TRANSPORT_BACKPACK(tf_rt1523g_rhs, 2)
+	TRANSPORT_BACKPACK(tf_rt1523g_rhs, 1)
 
 #define LandTransportWeapons \
-	TRANSPORT_WEAPON(SOCOMD_Carl_Gustav, 1)
+	TRANSPORT_WEAPON(SMA_MK18MOEBLK, 1)
 
 ////////////////////////////////////////////////////////////////////////////////
 // AIR LOADOUT	
@@ -58,17 +55,15 @@
 #define AirLoadout \
 	class TransportMagazines \
 	{ \
-		TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 10) \
-		TRANSPORT_MAGAZINE(tf47_m3maaws_he, 2) \
-		TRANSPORT_MAGAZINE(tf47_m3maaws_hedp, 2) \
-		TRANSPORT_MAGAZINE(tf47_m3maaws_illum, 2) \
-		TRANSPORT_MAGAZINE(DemoCharge_Remote_Mag, 2) \
-		TRANSPORT_MAGAZINE(HandGrenade, 4) \
-		TRANSPORT_MAGAZINE(SmokeShell, 10) \
+		TRANSPORT_MAGAZINE(Chemlight_blue, 2) \
+		TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
+		TRANSPORT_MAGAZINE(B_IR_Grenade, 2) \
 	}; \
 	class TransportItems \
 	{ \
 		TRANSPORT_ITEM(ToolKit, 1) \
+		TRANSPORT_ITEM(ACE_bodyBag, 6) \
+		TRANSPORT_ITEM(ACE_CableTie, 6) \
 		TRANSPORT_ITEM(ACE_fieldDressing, 20) \
 		TRANSPORT_ITEM(ACE_quikclot, 20) \
 		TRANSPORT_ITEM(ACE_elasticBandage, 20) \
@@ -76,13 +71,10 @@
 		TRANSPORT_ITEM(ACE_morphine, 10) \
 		TRANSPORT_ITEM(ACE_epinephrine, 10) \
 		TRANSPORT_ITEM(ACE_bloodIV_500, 5) \
-		TRANSPORT_ITEM(ACE_bodyBag, 5) \
-		TRANSPORT_ITEM(ACE_CableTie, 10) \
 	}; \
 	class TransportWeapons \
 	{ \
-		TRANSPORT_WEAPON(SMA_M4CQBR, 2) \
-		TRANSPORT_WEAPON(SOCOMD_Carl_Gustav, 1) \
+		TRANSPORT_WEAPON(SMA_MK18MOEBLK, 1) \
 	};
 
 ////////////////////////////////////////////////////////////////////////////////
