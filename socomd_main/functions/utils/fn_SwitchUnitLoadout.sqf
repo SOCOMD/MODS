@@ -24,7 +24,8 @@ _handgun = getText (_unitConfig >> "handgun");
 _handgunLoadout = [_handgun,"","","",[],[],""];
 
 _handgunMagazine = getText (_unitConfig >> "handgunMagazine");
-if(_handgunMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+if(_handgunMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
+{
     _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _handgunMagazine >> "count");
     _handgunLoadout set [4, [_handgunMagazine, _magazineCapacity]];
 };
@@ -42,16 +43,20 @@ if(not isNull _uniformConfig) then
     _uniformInventoryConfig = (_uniformConfig >> "Inventory");
     _uniformInventoryLoadout = [];
 
-    if(not isNull _uniformInventoryConfig) then {
+    if(not isNull _uniformInventoryConfig) then 
+    {
         for "_i" from 0 to (count _uniformInventoryConfig) - 1 do 
         { 
             _loadoutItem = _uniformInventoryConfig select _i;
             _type = getText (_loadoutItem >> "type");
             _count = getNumber (_loadoutItem >> "count");
-            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
+            {
                 _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
                 _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count, _magazineCapacity]];
-            } else {
+            } 
+            else 
+            {
                 _uniformInventoryLoadout = _uniformInventoryLoadout + [[_type, _count]];
             };
         };
@@ -79,10 +84,13 @@ if(not isNull _vestConfig) then
             _loadoutItem = _vestInventoryConfig select _i;
             _type = getText (_loadoutItem >> "type");
             _count = getNumber (_loadoutItem >> "count");
-            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then
+            {
                 _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
                 _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count, _magazineCapacity]];
-            } else {
+            } 
+            else 
+            {
                 _vestInventoryLoadout = _vestInventoryLoadout + [[_type, _count]];
             };
         };
@@ -109,12 +117,27 @@ if(not isNull _backpackConfig) then
             _loadoutItem = _backpackInventoryConfig select _i;
             _type = getText (_loadoutItem >> "type");
             _count = getNumber (_loadoutItem >> "count");
-            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+
+            _added = 0;
+            if(_type isKindOf ["CA_Magazine", configFile >> "CfgMagazines"] && _added == 0) then 
+            {
                 _magazineCapacity = getNumber (configFile >> "CfgMagazines" >> _type >> "count");
                 _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count, _magazineCapacity]];
-            } else {
-                _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count]];
+                _added = 1;
+            }; 
+            
+            if(_type isKindOf ["Rifle", configFile >> "CfgWeapons"] && _added == 0) then 
+            {
+                _weapon = [_type, "", "", "", ["", 0], ["", 0], ""];
+                _backpackInventoryLoadout = _backpackInventoryLoadout + [[_weapon, _count]];
+                _added = 1;
             };
+
+            if(_added == 0) then
+            {
+                _backpackInventoryLoadout = _backpackInventoryLoadout + [[_type, _count]];
+                _added = 1;
+            };  
         };
     };
     _backpackLoadout set [1, _backpackInventoryLoadout];

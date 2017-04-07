@@ -230,6 +230,69 @@ class CfgLoadouts
             };
         };
 
+        class SASR_Sniper
+        {
+            primary = "SMA_MK18MOE";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
+            binocular = "Laserdesignator";
+            gps = "ItemAndroid";
+            
+            class Uniform
+            {
+                type = "VSM_Multicam_Crye_SS_Camo";
+            };
+
+            class Vest
+            {
+                type = "VSM_LBT6094_operator_Multicam";
+                class Inventory
+                {
+                    LOADOUT_ITEM(Laserbatteries, 1)
+                    LOADOUT_ITEM(ACE_elasticBandage, 5)
+                    LOADOUT_ITEM(ACE_quikclot, 5)
+                    LOADOUT_ITEM(ACE_CableTie, 2)
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(ACE_epinephrine, 2)
+                    LOADOUT_ITEM(ACE_morphine, 2)
+                    LOADOUT_ITEM(ACE_packingBandage, 5)
+                    LOADOUT_ITEM(ACE_tourniquet, 1)
+                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
+                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 4)
+                    LOADOUT_ITEM(KA_CS5_10rnd_Mk316_SPR_mag, 3)
+                    LOADOUT_ITEM(KA_CS5_10rnd_Subsonic_mag, 2)
+                    LOADOUT_ITEM(B_IR_Grenade, 3)
+                    LOADOUT_ITEM(Chemlight_blue, 4)
+                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    LOADOUT_ITEM(SmokeShellBlue, 1)
+                    LOADOUT_ITEM(SmokeShellGreen, 1)
+                    LOADOUT_ITEM(SmokeShellRed, 1)
+                    LOADOUT_ITEM(SmokeShellYellow, 1)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_IR, 2)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
+                };
+            };
+
+            class Backpack
+            {
+                type = "VSM_OCP_carryall";
+                class Inventory
+                {
+                    LOADOUT_ITEM(KA_CS5, 1)
+                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
+                    LOADOUT_ITEM(ACE_bodyBag, 1)
+                    LOADOUT_ITEM(KA_CS5_Silencer, 1)
+                    LOADOUT_ITEM(CUP_bipod_Harris_1A2_L, 1)
+                    LOADOUT_ITEM(U_B_FullGhillie_sard, 1)
+                    LOADOUT_ITEM(ACE_FlareTripMine_Mag, 1)
+                    LOADOUT_ITEM(KA_CS5_10rnd_M948_SLAP_mag, 2)
+                    LOADOUT_ITEM(KA_CS5_10rnd_M993_AP_mag, 2)
+                };
+            };
+        };
+
         class SASR_MachineGunner
         {
             primary = "sma_minimi_mk3_762tsb";

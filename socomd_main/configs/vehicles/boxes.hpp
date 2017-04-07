@@ -80,6 +80,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 
+				class SOCOMD_Loadout_Sniper
+				{
+					displayName = "Sniper";
+					condition = 1;
+					statement = "[_player, 'SASR_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
 				class SOCOMD_Loadout_MachineGunner
 				{
 					displayName = "Machine Gunner";

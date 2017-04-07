@@ -60,7 +60,7 @@ class SOCOMD_SASR_Trooper : SOCOMD_SASR_Soldier
 	backpack				= "";
 };
 
-class SOCOMD_SASR_Homestead : SOCOMD_SASR_Soldier
+class SOCOMD_SASR_Homestead : SOCOMD_SASR_Trooper
 {
 	scope 					= public;
 	_generalMacro 			= "SOCOMD_SASR_Homestead";
