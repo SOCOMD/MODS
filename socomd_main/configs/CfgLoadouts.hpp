@@ -592,5 +592,151 @@ class CfgLoadouts
                 };
             };
         };
+
+        class JAC_Aircrew
+        {
+            primary = "SMA_M4MOE_Tan";
+            headgear = "H_CrewHelmetHeli_B";
+            binocular = "Binocular";
+            gps = "ItemMicroDAGR";
+
+            class Uniform 
+            {
+                type = "VSM_M81_Crye_grey_shirt_Camo";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
+                    LOADOUT_ITEM(ACE_elasticBandage, 5)
+                    LOADOUT_ITEM(ACE_quikclot, 5)
+                    LOADOUT_ITEM(ACE_packingBandage, 5)
+                    LOADOUT_ITEM(ACE_morphine, 2)
+                    LOADOUT_ITEM(ACE_epinephrine, 2)
+                    LOADOUT_ITEM(B_IR_Grenade, 1)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 3)
+                };
+            };
+
+            class Vest
+            {
+                type = "V_Chestrig_blk";
+            };
+        };
+
+        class JAC_GroundCrew
+        {
+            headgear = "VSM_Peltor_M81";
+            gps = "ItemMicroDAGR";
+
+            class Uniform 
+            {
+                type = "VSM_M81_Crye_tan_shirt_Camo";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
+                    LOADOUT_ITEM(ACE_elasticBandage, 5)
+                    LOADOUT_ITEM(ACE_quikclot, 5)
+                    LOADOUT_ITEM(ACE_packingBandage, 5)
+                    LOADOUT_ITEM(ACE_morphine, 2)
+                    LOADOUT_ITEM(ACE_epinephrine, 2)
+                    LOADOUT_ITEM(B_IR_Grenade, 1)
+                };
+            };
+        };
+
+        class JAC_PJ
+        {
+            primary = "SMA_M4MOE_Tan";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_oga_OPS_2";
+            binocular = "Binocular";
+            gps = "ItemAndroid";
+
+            class Uniform 
+            {
+                type = "VSM_M81_Crye_tan_shirt_Camo";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
+                    LOADOUT_ITEM(ACE_elasticBandage, 3)
+                    LOADOUT_ITEM(ACE_quikclot, 3)
+                    LOADOUT_ITEM(ACE_packingBandage, 3)
+                    LOADOUT_ITEM(ACE_morphine, 1)
+                    LOADOUT_ITEM(ACE_epinephrine, 1)
+                    LOADOUT_ITEM(RH_15Rnd_9x19_M9, 2)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 4)
+                    LOADOUT_ITEM(SmokeShellRed, 2)
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_OGA_Vest_3";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_elasticBandage, 20)
+                    LOADOUT_ITEM(ACE_quikclot, 20)
+                    LOADOUT_ITEM(ACE_epinephrine, 7)
+                    LOADOUT_ITEM(ACE_morphine, 7)
+                    LOADOUT_ITEM(ACE_packingBandage, 20)
+                    LOADOUT_ITEM(ACE_tourniquet, 4)
+                    LOADOUT_ITEM(ACE_personalAidKit, 2)
+                };
+            };
+        };
+
+        class JAC_Pilot
+        {
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "H_PilotHelmetHeli_B";
+            binocular = "Binocular";
+            gps = "ItemcTab";
+
+            class Uniform 
+            {
+                type = "U_I_pilotCoveralls";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(H_Watchcap_camo, 1)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                };
+            };
+        };
+        
+        class JAC_Officer
+        {
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "H_MilCap_gry";
+            binocular = "Rangefinder";
+            gps = "ItemcTab";
+
+            class Uniform 
+            {
+                type = "VSM_OGA_Crye_SS_grey_Camo";
+                class Inventory 
+                {
+                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    LOADOUT_ITEM(H_Watchcap_camo, 1)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_FAPC_Operator_OGA_OD";
+            };
+
+            class Backpack
+            {
+                type = "tf_rt1523g_black";
+            };
+        };
+        
     };
 };

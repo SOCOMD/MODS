@@ -46,9 +46,9 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 			distance = 5;
 			condition = 1;
 
-			class ACE_SwitchRoleActions
+			class ACE_SwitchRoleActionsSASR
 			{
-				displayName = "Change Role";
+				displayName = "Change Role (SASR)";
 				selection = "";
 				distance = 5;
 				condition = 1;
@@ -130,6 +130,59 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					displayName = "Heavy Anti-tank";
 					condition = 1;
 					statement = "[_player, 'SASR_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};
+
+			class ACE_SwitchRoleActionsJAC
+			{
+				displayName = "Change Role (JAC)";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Loadout_Aircrew
+				{
+					displayName = "Aircrew";
+					condition = 1;
+					statement = "[_player, 'JAC_Aircrew'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_GroundCrew
+				{
+					displayName = "Ground Crew";
+					condition = 1;
+					statement = "[_player, 'JAC_GroundCrew'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_PJ
+				{
+					displayName = "PJ";
+					condition = 1;
+					statement = "[_player, 'JAC_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_Pilot
+				{
+					displayName = "Pilot";
+					condition = 1;
+					statement = "[_player, 'JAC_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_Officer
+				{
+					displayName = "Officer";
+					condition = 1;
+					statement = "[_player, 'JAC_Officer'] call SOCOMD_fnc_SwitchUnitLoadout";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
