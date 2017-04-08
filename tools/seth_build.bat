@@ -1,4 +1,7 @@
-start /D "C:\Users\seth\Documents\GitHub\SOCOMD" makepbo.exe socomd_main "C:\SOCOMD\@socomd_dev\addons"
-start /D "C:\Users\seth\Documents\GitHub\SOCOMD" makepbo.exe -P socomd_zeus "C:\SOCOMD\@socomd_dev\addons"
-start /D "C:\Users\seth\Documents\GitHub\SOCOMD" makepbo.exe -P ar_advancedrappelling "C:\SOCOMD\@socomd_dev\addons"
-start /D "C:\Users\seth\Documents\GitHub\SOCOMD" makepbo.exe -P sa_advancedslingloading "C:\SOCOMD\@socomd_dev\addons"
+set projectDir="C:\Users\seth\Documents\GitHub\SOCOMD"
+set output="C:\SOCOMD\@socomd_dev\addons"
+start /D %projectDir% makepbo.exe -P socomd_main %output%
+start /D %projectDir% makepbo.exe -P socomd_asorvs %output%
+start /D %projectDir% makepbo.exe -P socomd_zeus %output%
+start /D %projectDir% makepbo.exe -P ar_advancedrappelling %output%
+start /D %projectDir% makepbo.exe -P sa_advancedslingloading %output%
