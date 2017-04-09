@@ -5,6 +5,7 @@ set missionOutput="C:\Users\nchambers\Documents\Arma 3 - Other Profiles\Chambers
 echo ================================================================================
 echo Copy Editor Missions To Repo
 echo ================================================================================
-xcopy /S /Y  %missionOutput% %projectDir%\socomd_missions
+xcopy /S /Y  %missionOutput%\fobs %projectDir%\socomd_missions\fobs
+xcopy /S /Y  %missionOutput%\missions %projectDir%\socomd_missions\missions
 
 pause
