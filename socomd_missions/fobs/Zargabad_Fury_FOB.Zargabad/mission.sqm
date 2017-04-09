@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1213;
+		nextID=1282;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,42 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4964.7178,160.49779,47.341721};
-		dir[]={0.15859905,-0.63349211,0.75735235};
-		up[]={0.12986842,0.77364755,0.62016243};
-		aside[]={0.97879183,6.1678293e-008,-0.20497179};
+		pos[]={5003.0122,166.44853,69.344345};
+		dir[]={0.061761241,-0.72818655,0.68263322};
+		up[]={0.065623246,0.68526381,0.72533053};
+		aside[]={0.99595958,1.9506115e-007,-0.09010978};
 	};
 };
 binarizationWanted=0;
-addons[]={};
+addons[]=
+{
+	"A3_Ui_F",
+	"ace_map",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Structures_F_Mil_Fortification",
+	"socomd_main",
+	"A3_Structures_F_Civ_Lamps",
+	"A3_Structures_F_Heli_Ind_Machines",
+	"A3_Structures_F_System",
+	"A3_Structures_F_Walls",
+	"A3_Signs_F",
+	"CUP_CAMisc",
+	"CUP_Misc3_Config",
+	"CUP_Buildings_Config",
+	"A3_Structures_F_Mil_Cargo",
+	"CUP_Misc_e_Config",
+	"CUP_CAMisc_E_WF",
+	"A3_Characters_F",
+	"A3_Structures_F_EPB_Civ_Camping",
+	"A3_Structures_F_Heli_Ind_Airport",
+	"A3_Structures_F_Heli_Items_Airport",
+	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Supplies_F_Heli_Slingload",
+	"ace_refuel",
+	"A3_Structures_F_Ind_Cargo",
+	"ace_cargo",
+	"A3_Structures_F_Heli_Ind_Cargo"
+};
 class AddonsMetaData
 {
 	class List
@@ -34,7 +62,7 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -48,7 +76,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
@@ -60,21 +88,21 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
@@ -106,21 +134,21 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item14
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item15
 		{
@@ -134,7 +162,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item17
 		{
@@ -170,7 +198,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=137;
+		items=131;
 		class Item0
 		{
 			dataType="Marker";
@@ -2644,6 +2672,7 @@ class Mission
 			class Attributes
 			{
 				init="[this, AIRSPAWN, ""AIR"", ""LAND""] call SOCOMD_fnc_ASORVSSetup; ";
+				disableSimulation=1;
 			};
 			id=1103;
 			type="Land_InfoStand_V2_F";
@@ -2670,25 +2699,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2706,7 +2716,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item111
@@ -2722,6 +2732,7 @@ class Mission
 			class Attributes
 			{
 				init="[this, BOXSPAWN, ""SUPPLY"", ""LAND""] call SOCOMD_fnc_ASORVSSetup; ";
+				disableSimulation=1;
 			};
 			id=1104;
 			type="Land_InfoStand_V2_F";
@@ -2749,25 +2760,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2785,7 +2777,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item112
@@ -2800,6 +2792,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=1105;
 			type="B_Slingload_01_Fuel_F";
@@ -2827,25 +2820,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -2863,7 +2837,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute2
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -2882,7 +2856,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item113
@@ -2896,6 +2870,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=1106;
 			type="Land_Cargo20_sand_F";
@@ -2923,25 +2898,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2959,7 +2915,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item114
@@ -2974,6 +2930,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=1107;
 			type="Land_Cargo10_sand_F";
@@ -3000,25 +2957,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -3036,7 +2974,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item115
@@ -3082,7 +3020,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5055.4692,81.126938,144.528};
-			angle=3.7166433;
+			angle=3.7166431;
 			class Attributes
 			{
 				name="triggername_1";
@@ -3144,45 +3082,88 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5021.2158,81.734901,103.84083};
-						angles[]={0.024996169,5.5926242,0.014998405};
+						position[]={5002.397,81.056686,112.49532};
+						angles[]={0.037482351,5.6017637,0.01749678};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this setGroupId [""A COY HQ""];";
-						description="A COY OC";
-						isPlayer=1;
+						rank="CORPORAL";
+						init="this setGroupId [""1-1""];";
+						description="A-Troop Patrol 1 Leader";
 						isPlayable=1;
 					};
-					id=1112;
+					id=1214;
 					type="SOCOMD_SASR_Trooper";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5023.2139,81.708717,105.50504};
-						angles[]={0.034984674,5.6239476,0.014998405};
+						position[]={5003.9702,81.049759,113.61947};
+						angles[]={0.032487731,5.601768,0.022495884};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="A COY 2IC";
+						rank="CORPORAL";
+						description="A-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1113;
+					id=1215;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item2
@@ -3190,38 +3171,37 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5020.2197,81.741081,103.03391};
-						angles[]={0.024996169,5.6410584,0.015002378};
+						position[]={5004.833,81.04496,114.23656};
+						angles[]={0.032487731,5.601768,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="A COY CSM";
+						description="A-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1114;
+					id=1216;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00094604492;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5024.2432,81.696991,106.31586};
-						angles[]={0.034986377,5.6214423,0.019996032};
+						position[]={5001.5479,81.066238,111.79293};
+						angles[]={0.02999169,5.6216545,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="A COY Signaller";
+						description="A-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1115;
+					id=1217;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item4
@@ -3229,25 +3209,44 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5022.1836,81.723351,104.64563};
-						angles[]={0.034984674,5.5867901,0.014998405};
+						position[]={5005.7969,81.043716,114.89211};
+						angles[]={0.027494613,5.601768,0.022495884};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="A COY Medic";
+						description="A-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1116;
+					id=1218;
+					type="SOCOMD_SASR_Trooper";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5003.1846,81.049187,113.09315};
+						angles[]={0.032487731,5.601768,0.022495884};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="A-Troop Patrol 1 Trooper";
+						isPlayable=1;
+					};
+					id=1219;
 					type="SOCOMD_SASR_Trooper";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1111;
+			id=1213;
 		};
 		class Item119
 		{
@@ -3255,46 +3254,89 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5013.2407,80.321663,139.89745};
-						angles[]={0.039979152,4.1363521,0.027492445};
+						position[]={5002.5933,81.122345,110.5329};
+						angles[]={0.02999169,5.6247845,0.01749678};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this setGroupId [""1-0""];";
-						description="1-0 - Platoon Leader";
+						rank="CORPORAL";
+						init="this setGroupId [""1-2""];";
+						description="A-Troop Patrol 2 Leader";
 						isPlayable=1;
 					};
-					id=1118;
+					id=1221;
 					type="SOCOMD_SASR_Trooper";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5012.5752,80.274399,140.81201};
-						angles[]={0.029989703,4.1118255,0.027492445};
+						position[]={5005.0342,81.111069,112.31068};
+						angles[]={0.032487731,5.6247811,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="SERGEANT";
-						description="1-0 - Medic";
+						rank="CORPORAL";
+						description="A-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1119;
+					id=1222;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item2
@@ -3302,19 +3344,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5012.0073,80.236855,141.54288};
-						angles[]={0.029989703,4.0933499,0.027492445};
+						position[]={5004.2178,81.116173,111.74043};
+						angles[]={0.02999169,5.6247811,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="SERGEANT";
-						description="1-0 - Platoon Sergant";
+						description="A-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1120;
+					id=1223;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item3
@@ -3322,26 +3363,66 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5013.9189,80.377327,138.97223};
-						angles[]={0.039979152,4.0984082,0.027492445};
+						position[]={5005.9336,81.106201,112.96426};
+						angles[]={0.032487731,5.6719384,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="SERGEANT";
-						description="1-0 - Platoon Signaller";
+						description="A-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1121;
+					id=1224;
+					type="SOCOMD_SASR_Trooper";
+					atlOffset=0.00063323975;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5006.8003,81.103981,113.54442};
+						angles[]={0.027494613,5.6247811,0.022495884};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="A-Troop Patrol 2 Trooper";
+						isPlayable=1;
+					};
+					id=1225;
+					type="SOCOMD_SASR_Trooper";
+					atlOffset=0.00063323975;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5003.4634,81.119064,111.14948};
+						angles[]={0.02999169,5.6247811,0.01749678};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="A-Troop Patrol 2 Trooper";
+						isPlayable=1;
+					};
+					id=1226;
 					type="SOCOMD_SASR_Trooper";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1117;
+			id=1220;
+			atlOffset=7.6293945e-006;
 		};
 		class Item120
 		{
@@ -3355,8 +3436,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5014.7251,80.328804,140.96931};
-						angles[]={0.029989703,4.0235286,0.027492445};
+						position[]={5003.5806,81.18084,109.1588};
+						angles[]={0.02999169,5.6658001,0.01749678};
 					};
 					side="West";
 					flags=6;
@@ -3364,20 +3445,62 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this setGroupId [""1-1""];";
-						description="1-1 - Section Leader";
+						init="this setGroupId [""1-3""];";
+						description="A-Troop Patrol 3 Leader";
 						isPlayable=1;
 					};
-					id=1123;
+					id=1228;
 					type="SOCOMD_SASR_Trooper";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5013.5874,80.251129,142.53349};
-						angles[]={0.039977662,4.0235286,0.01749678};
+						position[]={5006.8735,81.170074,111.57744};
+						angles[]={0.037482351,5.6658001,0.01749678};
 					};
 					side="West";
 					flags=4;
@@ -3385,97 +3508,96 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="1-1 - Section 2IC";
+						description="A-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1124;
+					id=1229;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
+					atlOffset=0.00062561035;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5012.9644,80.205849,143.39285};
-						angles[]={0.039977662,4.0235286,0.01749678};
+						position[]={5005.248,81.181816,110.41097};
+						angles[]={0.02999169,5.6658001,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-1 - Section Sapper";
+						description="A-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1125;
+					id=1230;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5015.4321,80.37355,140.12589};
-						angles[]={0.029989703,4.0434146,0.027492445};
+						position[]={5007.8481,81.1633,112.24442};
+						angles[]={0.027494613,5.6759915,0.022495884};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-1 - Section Medic";
+						description="A-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1126;
+					id=1231;
 					type="SOCOMD_SASR_Trooper";
+					atlOffset=0.00062561035;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5012.3018,80.15593,144.35077};
-						angles[]={0.039979152,4.0235286,0.01749678};
+						position[]={5006.0186,81.17939,110.92757};
+						angles[]={0.037482351,5.6658001,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-1 - Section Marksman";
+						description="A-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1127;
+					id=1232;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012359619;
+					atlOffset=0.00053405762;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5014.1201,80.288826,141.75211};
-						angles[]={0.029989703,4.0235286,0.027492445};
+						position[]={5004.4336,81.179672,109.80368};
+						angles[]={0.02999169,5.6658001,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-1 - Section Gunner";
+						description="A-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1128;
+					id=1233;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0001449585;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1122;
+			id=1227;
 		};
 		class Item121
 		{
@@ -3489,8 +3611,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5016.6841,80.35994,141.17952};
-						angles[]={0.039979152,4.0465417,0.019999012};
+						position[]={5006.1597,81.236374,109.35217};
+						angles[]={0.02999169,5.6459203,0.024993783};
 					};
 					side="West";
 					flags=6;
@@ -3498,20 +3620,62 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this setGroupId [""1-2""];";
-						description="1-2 - Section Leader";
+						init="this setGroupId [""2-1""];";
+						description="B-Troop Patrol 1 Leader";
 						isPlayable=1;
 					};
-					id=1130;
+					id=1235;
 					type="SOCOMD_SASR_Trooper";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5014.8887,80.230927,143.60782};
-						angles[]={0.039977662,4.0465417,0.01749678};
+						position[]={5004.3423,81.228577,108.09767};
+						angles[]={0.02999169,5.6459155,0.024993783};
 					};
 					side="West";
 					flags=4;
@@ -3519,30 +3683,29 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="1-2 - Section 2IC";
+						description="B-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1131;
+					id=1236;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5015.4653,80.27359,142.79366};
-						angles[]={0.039977662,4.0465417,0.01749678};
+						position[]={5007.0303,81.234016,109.96194};
+						angles[]={0.037482351,5.6459155,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-2 - Section Sapper";
+						description="B-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1132;
+					id=1237;
 					type="SOCOMD_SASR_Trooper";
 					atlOffset=0.0012435913;
 				};
@@ -3551,66 +3714,65 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5014.2285,80.18364,144.50148};
-						angles[]={0.039979152,4.093699,0.01749678};
+						position[]={5005.3213,81.234085,108.72969};
+						angles[]={0.02999169,5.641685,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-2 - Section Medic";
+						description="B-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1133;
+					id=1238;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012512207;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5013.6421,80.138863,145.36378};
-						angles[]={0.039979152,4.0465417,0.01749678};
+						position[]={5007.7715,81.220947,110.64987};
+						angles[]={0.037482351,5.6459155,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-2 - Section Marksman";
+						description="B-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1134;
+					id=1239;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012283325;
+					atlOffset=0.00099945068;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5016.0625,80.314171,142.04417};
-						angles[]={0.039979152,4.0465417,0.019999012};
+						position[]={5008.4829,81.214485,111.07969};
+						angles[]={0.037482351,5.6459155,0.012501417};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-2 - Section Gunner";
+						description="B-Troop Patrol 1 Trooper";
 						isPlayable=1;
 					};
-					id=1135;
+					id=1240;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
+					atlOffset=0.00062561035;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1129;
+			id=1234;
 		};
 		class Item122
 		{
@@ -3624,8 +3786,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5018.0518,80.346535,142.17648};
-						angles[]={0.044969428,4.0875602,0.014998405};
+						position[]={5006.2896,81.302094,107.38084};
+						angles[]={0.034984674,5.6459203,0.024993783};
 					};
 					side="West";
 					flags=6;
@@ -3633,21 +3795,63 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this setGroupId [""1-3""];";
-						description="1-3 - Section Leader";
+						init="this setGroupId [""2-2""];";
+						description="B-Troop Patrol 2 Leader";
 						isPlayable=1;
 					};
-					id=1137;
+					id=1242;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=7.6293945e-006;
+					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5015.6084,80.164597,145.45262};
-						angles[]={0.044969428,4.0875602,0.012496647};
+						position[]={5005.2881,81.301262,106.70245};
+						angles[]={0.042473838,5.6459155,0.01749678};
 					};
 					side="West";
 					flags=4;
@@ -3655,99 +3859,97 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="1-3 - Section 2IC";
+						description="B-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1138;
+					id=1243;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0011672974;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5016.7866,80.254189,143.83434};
-						angles[]={0.044969428,4.0875602,0.014998405};
+						position[]={5007.9531,81.302361,108.53689};
+						angles[]={0.037482351,5.6459155,0.01749678};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-3 - Section Sapper";
+						description="B-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1139;
+					id=1244;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5014.9331,80.111435,146.42067};
-						angles[]={0.044969428,4.0977521,0.012496647};
+						position[]={5009.4766,81.280373,109.67074};
+						angles[]={0.037482351,5.6755428,0.012501417};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-3 - Section Medic";
+						description="B-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1140;
+					id=1245;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=7.6293945e-006;
+					atlOffset=0.0012512207;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5016.2656,80.211761,144.6037};
-						angles[]={0.044969428,4.0875602,0.014998405};
+						position[]={5008.7568,81.292091,109.11813};
+						angles[]={0.037482351,5.6459155,0.012501417};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-3 - Section Marksman";
+						description="B-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1141;
+					id=1246;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012512207;
+					atlOffset=0.0012435913;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5017.3999,80.298592,143.02458};
-						angles[]={0.044969428,4.0875602,0.014998405};
+						position[]={5007.1777,81.303986,107.96133};
+						angles[]={0.034984674,5.6459155,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="1-3 - Section Gunner";
+						description="B-Troop Patrol 2 Trooper";
 						isPlayable=1;
 					};
-					id=1142;
+					id=1247;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=7.6293945e-006;
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1136;
-			atlOffset=7.6293945e-006;
+			id=1241;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item123
 		{
@@ -3761,506 +3963,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4989.5713,80.460434,122.66453};
-						angles[]={0.039977662,0.58276379,0.015002378};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-						init="this setGroupId [""Archer-1""];";
-						description="Archer-1 Team Leader";
-						isPlayable=1;
-					};
-					id=1144;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4987.7998,80.358917,124.63885};
-						angles[]={0.032487731,0.58276379,0.019999012};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-1 Specialist";
-						isPlayable=1;
-					};
-					id=1145;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00061798096;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4991.373,80.565231,120.72};
-						angles[]={0.039977662,0.58276379,0.015002378};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-1 Specialist";
-						isPlayable=1;
-					};
-					id=1146;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4990.5435,80.513191,121.71005};
-						angles[]={0.039977662,0.58276379,0.015002378};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-1 Assistant";
-						isPlayable=1;
-					};
-					id=1147;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4992.2192,80.61734,119.71263};
-						angles[]={0.032489564,0.58276379,0.022495884};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-1 Assistant";
-						isPlayable=1;
-					};
-					id=1148;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4988.6846,80.405823,123.6972};
-						angles[]={0.039977662,0.58276379,0.015002378};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-1 Medic";
-						isPlayable=1;
-					};
-					id=1149;
-					type="SOCOMD_SASR_Trooper";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1143;
-		};
-		class Item124
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5015.9067,80.542625,136.22179};
-						angles[]={0.039979152,4.1356359,0.027492445};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this setGroupId [""2-0""];";
-						description="2-0 - Platoon Leader";
-						isPlayable=1;
-					};
-					id=1151;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00061798096;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5016.459,80.724594,135.44887};
-						angles[]={0.034986377,4.1284976,0.012496647};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="2-0 - Medic";
-						isPlayable=1;
-					};
-					id=1152;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.14636993;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5015.2593,80.494263,136.99857};
-						angles[]={0.039979152,4.1284976,0.027492445};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="2-0 - Platoon Sergant";
-						isPlayable=1;
-					};
-					id=1153;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0011291504;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5014.7754,80.44799,137.79434};
-						angles[]={0.039979152,4.1284976,0.027492445};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="2-0 - Platoon Signaller";
-						isPlayable=1;
-					};
-					id=1154;
-					type="SOCOMD_SASR_Trooper";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1150;
-			atlOffset=0.00061798096;
-		};
-		class Item125
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5018.0337,80.570396,136.76721};
-						angles[]={0.039979152,4.0278268,0.022495884};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this setGroupId [""2-1""];";
-						description="2-1 - Section Leader";
-						isPlayable=1;
-					};
-					id=1156;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0018844604;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5019.373,80.654175,135.00896};
-						angles[]={0.024993783,4.0278268,0.022493234};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="2-1 - Section 2IC";
-						isPlayable=1;
-					};
-					id=1157;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00081634521;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5017.3833,80.522125,137.60788};
-						angles[]={0.039979152,4.0278268,0.022495884};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-1 - Section Sapper";
-						isPlayable=1;
-					};
-					id=1158;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0018768311;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5018.6963,80.616425,135.9576};
-						angles[]={0.024993783,4.0235963,0.022493234};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-1 - Section Medic";
-						isPlayable=1;
-					};
-					id=1159;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0020065308;
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5016.6626,80.475761,138.31471};
-						angles[]={0.039979152,4.0278268,0.022495884};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-1 - Section Marksman";
-						isPlayable=1;
-					};
-					id=1160;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5016.1982,80.437691,139.00543};
-						angles[]={0.039979152,4.0278268,0.022495884};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-1 - Section Gunner";
-						isPlayable=1;
-					};
-					id=1161;
-					type="SOCOMD_SASR_Trooper";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1155;
-			atlOffset=0.0018844604;
-		};
-		class Item126
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5019.9966,80.603966,136.98891};
-						angles[]={0.042473838,4.0278268,0.019996032};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this setGroupId [""2-2""];";
-						description="2-2 - Section Leader";
-						isPlayable=1;
-					};
-					id=1163;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.002494812;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5020.7163,80.646957,136.0448};
-						angles[]={0.02999169,4.0278268,0.0075011365};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="2-2 - Section 2IC";
-						isPlayable=1;
-					};
-					id=1164;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=-7.6293945e-006;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5018.7642,80.510391,138.59612};
-						angles[]={0.042473838,4.0278268,0.019996032};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-2 - Section Sapper";
-						isPlayable=1;
-					};
-					id=1165;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0018768311;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5017.5596,80.42205,140.06445};
-						angles[]={0.039979152,4.0574536,0.019999012};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-2 - Section Medic";
-						isPlayable=1;
-					};
-					id=1166;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5018.1455,80.463142,139.3725};
-						angles[]={0.042473838,4.0278268,0.019996032};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-2 - Section Marksman";
-						isPlayable=1;
-					};
-					id=1167;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5019.375,80.554871,137.85112};
-						angles[]={0.042473838,4.0278268,0.019996032};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="2-2 - Section Gunner";
-						isPlayable=1;
-					};
-					id=1168;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0024719238;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1162;
-			atlOffset=0.002494812;
-		};
-		class Item127
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5020.8105,80.544472,138.53333};
-						angles[]={0.042473838,4.0278268,0.0075011365};
+						position[]={5007.7915,81.370651,106.49498};
+						angles[]={0.034984674,5.6459203,0.024993783};
 					};
 					side="West";
 					flags=6;
@@ -4269,20 +3973,62 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""2-3""];";
-						description="2-3 - Section Leader";
+						description="B-Troop Patrol 3 Leader";
 						isPlayable=1;
 					};
-					id=1170;
+					id=1249;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0024871826;
+					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5022.0713,80.616768,136.99612};
-						angles[]={0.042473838,4.0278268,0.0075011365};
+						position[]={5006.1987,81.376411,105.30897};
+						angles[]={0.042473838,5.6459155,0.01749678};
 					};
 					side="West";
 					flags=4;
@@ -4290,10 +4036,10 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="2-3 - Section 2IC";
+						description="B-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1171;
+					id=1250;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item2
@@ -4301,57 +4047,57 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5019.4741,80.454247,140.21698};
-						angles[]={0.039979152,4.0278268,0.019999012};
+						position[]={5009.5386,81.353134,107.75105};
+						angles[]={0.03748076,5.6459155,0.012501417};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="2-3 - Section Sapper";
+						description="B-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1172;
+					id=1251;
 					type="SOCOMD_SASR_Trooper";
+					atlOffset=0.0012512207;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5020.1084,80.498924,139.45181};
-						angles[]={0.042473838,4.0384717,0.0075011365};
+						position[]={5008.7456,81.36396,107.15481};
+						angles[]={0.034984674,5.6565609,0.014998405};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="2-3 - Section Medic";
+						description="B-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1173;
+					id=1252;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0012435913;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5018.834,80.406784,141.08334};
-						angles[]={0.039979152,4.0278268,0.019999012};
+						position[]={5010.4355,81.340652,108.34969};
+						angles[]={0.037482351,5.6459155,0.012501417};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="2-3 - Section Marksman";
+						description="B-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1174;
+					id=1253;
 					type="SOCOMD_SASR_Trooper";
 				};
 				class Item5
@@ -4359,216 +4105,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5021.4849,80.582321,137.76202};
-						angles[]={0.042473838,4.0278268,0.0075011365};
+						position[]={5006.9912,81.372925,105.85818};
+						angles[]={0.034984674,5.6459155,0.024993783};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						description="2-3 - Section Gunner";
+						description="B-Troop Patrol 3 Trooper";
 						isPlayable=1;
 					};
-					id=1175;
+					id=1254;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0025024414;
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1169;
-			atlOffset=0.0024871826;
+			id=1248;
+			atlOffset=-7.6293945e-006;
 		};
-		class Item128
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4989.3315,80.551826,120.5595};
-						angles[]={0.044969428,0.58276379,0.010000871};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-						init="this setGroupId [""Archer-2""];";
-						description="Archer-2 Team Leader";
-						isPlayable=1;
-					};
-					id=1177;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4988.4014,80.496689,121.578};
-						angles[]={0.044969428,0.58276379,0.010000871};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-2 Specialist";
-						isPlayable=1;
-					};
-					id=1178;
-					type="SOCOMD_SASR_Trooper";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4990.209,80.59803,119.60398};
-						angles[]={0.032489564,0.58276379,0.010000871};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-2 Specialist";
-						isPlayable=1;
-					};
-					id=1179;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=7.6293945e-006;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4986.6167,80.385368,123.45548};
-						angles[]={0.044970755,0.58276379,0.017500184};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-2 Assistant";
-						isPlayable=1;
-					};
-					id=1180;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0013809204;
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4991.1187,80.640144,118.58816};
-						angles[]={0.032489564,0.58276379,0.010000871};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-2 Assistant";
-						isPlayable=1;
-					};
-					id=1181;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=7.6293945e-006;
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4987.5225,80.43853,122.60727};
-						angles[]={0.044970755,0.58276379,0.017500184};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.40000001;
-						description="Archer-2 Medic";
-						isPlayable=1;
-					};
-					id=1182;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00051879883;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1176;
-		};
-		class Item129
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5015.0146,81.643921,102.17175};
-						angles[]={0.024996169,0.47768188,0.024998553};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="this setGroupId [""Hades""];";
-						isPlayable=1;
-					};
-					id=1184;
-					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00015258789;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5016.1924,81.688148,101.5548};
-						angles[]={0.024993783,0.47768188,0.022493234};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						isPlayable=1;
-					};
-					id=1185;
-					type="SOCOMD_SASR_Trooper";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1183;
-			atlOffset=0.00015258789;
-		};
-		class Item130
+		class Item124
 		{
 			dataType="Group";
 			side="West";
@@ -4580,8 +4139,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5026.7334,80.567894,140.961};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5010.376,81.087669,116.13684};
+						angles[]={0.039977662,5.5838833,0.012501417};
 					};
 					side="West";
 					flags=6;
@@ -4590,10 +4149,10 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""AIR""];";
-						description="Pilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1187;
+					id=1256;
 					type="SOCOMD_SASR_Trooper";
 					class CustomAttributes
 					{
@@ -4662,8 +4221,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5026.1479,80.524338,141.78719};
-						angles[]={0.034984674,0.82879943,0.024993783};
+						position[]={5009.5249,81.099022,115.58698};
+						angles[]={0.039977662,5.5838785,0.012501417};
 					};
 					side="West";
 					flags=4;
@@ -4671,10 +4230,10 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="Copilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1188;
+					id=1257;
 					type="SOCOMD_SASR_Trooper";
 					class CustomAttributes
 					{
@@ -4743,8 +4302,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5025.4438,80.477386,142.62308};
-						angles[]={0.039979152,0.82880419,0.019999012};
+						position[]={5008.6577,81.109016,114.91776};
+						angles[]={0.027492445,5.5838833,0.024993783};
 					};
 					side="West";
 					flags=4;
@@ -4752,12 +4311,11 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="FRAC";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1189;
+					id=1258;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4824,9 +4382,9 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1186;
+			id=1255;
 		};
-		class Item131
+		class Item125
 		{
 			dataType="Group";
 			side="West";
@@ -4838,8 +4396,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5025.7075,80.575928,139.99828};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5011.3345,81.149712,114.88522};
+						angles[]={0.039977662,5.5838833,0.012501417};
 					};
 					side="West";
 					flags=6;
@@ -4848,10 +4406,10 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""AIR""];";
-						description="Pilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1191;
+					id=1260;
 					type="SOCOMD_SASR_Trooper";
 					atlOffset=-7.6293945e-006;
 					class CustomAttributes
@@ -4921,8 +4479,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5025.0806,80.531219,140.82829};
-						angles[]={0.034984674,0.82879943,0.024993783};
+						position[]={5010.4785,81.162697,114.29298};
+						angles[]={0.039977662,5.5838785,0.012501417};
 					};
 					side="West";
 					flags=4;
@@ -4930,11 +4488,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="Copilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1192;
+					id=1261;
 					type="SOCOMD_SASR_Trooper";
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5002,8 +4561,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5024.3506,80.487816,141.67116};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5009.605,81.169571,113.59989};
+						angles[]={0.027492445,5.5838833,0.024993783};
 					};
 					side="West";
 					flags=4;
@@ -5011,12 +4570,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="FRAC";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1193;
+					id=1262;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0043487549;
+					atlOffset=0.00063323975;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5083,10 +4642,10 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1190;
+			id=1259;
 			atlOffset=-7.6293945e-006;
 		};
-		class Item132
+		class Item126
 		{
 			dataType="Group";
 			side="West";
@@ -5098,8 +4657,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5029.79,80.770485,137.22795};
-						angles[]={0.034986377,0.82880419,0.022498533};
+						position[]={5012.4097,81.211433,113.78061};
+						angles[]={0.039977662,5.5838833,0.022495884};
 					};
 					side="West";
 					flags=6;
@@ -5108,10 +4667,10 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""AIR""];";
-						description="Pilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1195;
+					id=1264;
 					type="SOCOMD_SASR_Trooper";
 					class CustomAttributes
 					{
@@ -5180,8 +4739,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5029.1113,80.725159,138.10558};
-						angles[]={0.034986377,0.82879943,0.022498533};
+						position[]={5011.5034,81.221573,113.1413};
+						angles[]={0.039977662,5.5838785,0.012501417};
 					};
 					side="West";
 					flags=4;
@@ -5189,12 +4748,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="Copilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1196;
+					id=1265;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00065612793;
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5262,8 +4821,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5028.4009,80.67057,139.18964};
-						angles[]={0.034986377,0.82880419,0.022498533};
+						position[]={5010.3916,81.219498,112.47672};
+						angles[]={0.027492445,5.5838833,0.024993783};
 					};
 					side="West";
 					flags=4;
@@ -5271,10 +4830,10 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="FRAC";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1197;
+					id=1266;
 					type="SOCOMD_SASR_Trooper";
 					class CustomAttributes
 					{
@@ -5342,9 +4901,9 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1194;
+			id=1263;
 		};
-		class Item133
+		class Item127
 		{
 			dataType="Group";
 			side="West";
@@ -5356,8 +4915,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5028.6304,80.789833,135.9633};
-						angles[]={0.02999169,0.82880419,0.022495884};
+						position[]={5013.3315,81.292587,112.2704};
+						angles[]={0.039977662,5.5838833,0.022495884};
 					};
 					side="West";
 					flags=6;
@@ -5366,12 +4925,11 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""AIR""];";
-						description="Pilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1199;
+					id=1268;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0016098022;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5439,8 +4997,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5027.8862,80.735779,137.03348};
-						angles[]={0.034984674,0.82879943,0.024993783};
+						position[]={5012.3701,81.288544,111.69916};
+						angles[]={0.024993783,5.5838785,0.022495884};
 					};
 					side="West";
 					flags=4;
@@ -5448,12 +5006,11 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="Copilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1200;
+					id=1269;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.0016098022;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5521,8 +5078,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5027.0122,80.6707,138.22249};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5011.4346,81.285217,110.93379};
+						angles[]={0.024998553,5.5838833,0.024996169};
 					};
 					side="West";
 					flags=4;
@@ -5530,12 +5087,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="FRAC";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1201;
+					id=1270;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=-7.6293945e-006;
+					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5602,10 +5159,9 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1198;
-			atlOffset=0.0016098022;
+			id=1267;
 		};
-		class Item134
+		class Item128
 		{
 			dataType="Group";
 			side="West";
@@ -5617,8 +5173,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5022.9453,80.390465,143.3709};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5009.459,81.029137,117.31371};
+						angles[]={0.039977662,5.5838833,0.012501417};
 					};
 					side="West";
 					flags=6;
@@ -5627,12 +5183,11 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init="this setGroupId [""AIR""];";
-						description="Pilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1203;
+					id=1272;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.001625061;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5700,8 +5255,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5022.3164,80.34169,144.28328};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5008.52,81.040894,116.72621};
+						angles[]={0.039977662,5.5838833,0.012501417};
 					};
 					side="West";
 					flags=4;
@@ -5709,12 +5264,11 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="Copilot";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1204;
+					id=1273;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00050354004;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5782,8 +5336,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5021.6929,80.292389,145.24249};
-						angles[]={0.034984674,0.82880419,0.024993783};
+						position[]={5007.5361,81.047485,116.1438};
+						angles[]={0.037482351,5.5838833,0.022495884};
 					};
 					side="West";
 					flags=4;
@@ -5791,12 +5345,11 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						description="FRAC";
+						description="JAC Member";
 						isPlayable=1;
 					};
-					id=1205;
+					id=1274;
 					type="SOCOMD_SASR_Trooper";
-					atlOffset=0.00036621094;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5863,10 +5416,9 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1202;
-			atlOffset=0.001625061;
+			id=1271;
 		};
-		class Item135
+		class Item129
 		{
 			dataType="Group";
 			side="West";
@@ -5878,8 +5430,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5019.4927,81.109161,120.58127};
-						angles[]={0.029989703,4.1325688,0.012501417};
+						position[]={5013.6895,81.340897,110.79238};
+						angles[]={0.024993783,5.7103515,0.022495884};
 					};
 					side="West";
 					flags=6;
@@ -5892,7 +5444,7 @@ class Mission
 						description="Journalist";
 						isPlayable=1;
 					};
-					id=1207;
+					id=1276;
 					type="SOCOMD_Journalist";
 				};
 				class Item1
@@ -5900,8 +5452,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5020.334,81.162575,119.56904};
-						angles[]={0.039979152,4.1325688,0.02999169};
+						position[]={5012.6699,81.338806,109.95831};
+						angles[]={0.024993783,5.7103515,0.022493234};
 					};
 					side="West";
 					flags=4;
@@ -5914,17 +5466,16 @@ class Mission
 						description="Journalist";
 						isPlayable=1;
 					};
-					id=1208;
+					id=1277;
 					type="SOCOMD_Journalist";
-					atlOffset=0.0018768311;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1206;
+			id=1275;
 		};
-		class Item136
+		class Item130
 		{
 			dataType="Group";
 			side="West";
@@ -5936,8 +5487,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5017.7676,81.138695,118.47336};
-						angles[]={0.039979152,4.02492,0.024993783};
+						position[]={5011.3667,81.401413,107.03963};
+						angles[]={0.03748076,5.6027026,0.012501417};
 					};
 					side="West";
 					flags=6;
@@ -5950,7 +5501,7 @@ class Mission
 						description="Homestead 1";
 						isPlayable=1;
 					};
-					id=1210;
+					id=1279;
 					type="SOCOMD_SASR_Homestead";
 					class CustomAttributes
 					{
@@ -6019,8 +5570,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5016.9624,81.083687,119.41254};
-						angles[]={0.039979152,4.0128703,0.024993783};
+						position[]={5012.312,81.386955,107.83788};
+						angles[]={0.039979152,5.5906529,0.022495884};
 					};
 					side="West";
 					flags=4;
@@ -6033,17 +5584,17 @@ class Mission
 						description="Homestead 2";
 						isPlayable=1;
 					};
-					id=1211;
+					id=1280;
 					type="SOCOMD_SASR_Homestead";
-					atlOffset=0.0026855469;
+					atlOffset=7.6293945e-006;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5018.6187,81.202385,117.44342};
-						angles[]={0.039979152,3.9858904,0.024993783};
+						position[]={5010.332,81.420631,106.19486};
+						angles[]={0.03748076,5.563673,0.012501417};
 					};
 					side="West";
 					flags=4;
@@ -6056,15 +5607,15 @@ class Mission
 						description="Homestead 3";
 						isPlayable=1;
 					};
-					id=1212;
+					id=1281;
 					type="SOCOMD_SASR_Homestead";
-					atlOffset=0.0012130737;
+					atlOffset=0.00047302246;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1209;
+			id=1278;
 		};
 	};
 };
