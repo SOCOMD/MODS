@@ -411,15 +411,78 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
-			class SOCOMD_Cap_HS_Straight
+
+			//GROUND CREW VESTS
+			class SOCOMD_GroundCrewVest_ChangeColour
 			{
-				displayName = "Straighten Cap";
-				condition = "((headgear _player) == 'SOCOMD_Cap_HS_Rev') and (alive _player)";
-				statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				displayName = "Switch Vest Colour";
+				condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
-			};
+
+				class SOCOMD_GroundCrewVest_White
+				{
+					displayName = "White";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_White'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Blue
+				{
+					displayName = "Blue";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Blue'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Brown
+				{
+					displayName = "Brown";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Brown'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Green
+				{
+					displayName = "Green";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Green'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Red
+				{
+					displayName = "Red";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Red'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Violet
+				{
+					displayName = "Violet";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Violet'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_GroundCrewVest_Yellow
+				{
+					displayName = "Yellow";
+					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
+					statement = "[_player , 'CUP_V_B_LHDVest_Yellow'] call SOCOMD_fnc_Action_ReplaceVest;";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};	
 		};
 	};
 };

@@ -94,6 +94,39 @@ class SASR_StandardTrooper
 
 #define LOADOUT_ITEM(id,qty) class _xx_##id { type = #id; count = qty; };
 
+//////////////////////////////////////////////////////////////////////
+// COMMON LOADOUT ITEMS
+
+#define SASR_STANDARD_MEDICAL   LOADOUT_ITEM(ACE_personalAidKit, 1) \
+                                LOADOUT_ITEM(ACE_elasticBandage, 5) \
+                                LOADOUT_ITEM(ACE_packingBandage, 5) \ 
+                                LOADOUT_ITEM(ACE_quikclot, 5) \
+                                LOADOUT_ITEM(ACE_epinephrine, 2) \
+                                LOADOUT_ITEM(ACE_morphine, 2) \
+                                LOADOUT_ITEM(ACE_tourniquet, 1) \
+                                LOADOUT_ITEM(ACE_bodyBag, 1)
+
+#define SASR_ESSENTIALS         LOADOUT_ITEM(ACE_EarPlugs, 1) \
+                                LOADOUT_ITEM(ACE_CableTie, 2) \
+                                LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
+                                LOADOUT_ITEM(ACE_Flashlight_MX991, 1) \ 
+                                LOADOUT_ITEM(ACE_Chemlight_HiRed, 4) \
+                                LOADOUT_ITEM(Chemlight_blue, 3) \
+                                LOADOUT_ITEM(B_IR_Grenade, 1)
+
+#define JAC_ESSENTIALS          LOADOUT_ITEM(ACE_EarPlugs, 1) \
+                                LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+                                LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
+                                LOADOUT_ITEM(B_IR_Grenade, 1)    
+
+#define JAC_STANDARD_MEDICAL    LOADOUT_ITEM(ACE_elasticBandage, 5) \
+                                LOADOUT_ITEM(ACE_quikclot, 5) \
+                                LOADOUT_ITEM(ACE_packingBandage, 5) \
+                                LOADOUT_ITEM(ACE_morphine, 2) \
+                                LOADOUT_ITEM(ACE_epinephrine, 2)
+
+//////////////////////////////////////////////////////////////////////
+
 class CfgLoadouts
 {
     class SOCOMD
@@ -109,14 +142,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_epinephrine, 3)
-                    LOADOUT_ITEM(ACE_morphine, 3)
-                    LOADOUT_ITEM(ACE_personalAidKit, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(Chemlight_blue, 3)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
+                    SASR_ESSENTIALS
                 };
             };
         };
@@ -135,14 +161,13 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(Chemlight_blue, 4)
+                    SASR_ESSENTIALS
+
                     LOADOUT_ITEM(SmokeShellBlue, 2)
                     LOADOUT_ITEM(SmokeShellRed, 2)
                     LOADOUT_ITEM(SmokeShellGreen, 2)
                     LOADOUT_ITEM(SmokeShellYellow, 2)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
                     LOADOUT_ITEM(Laserbatteries, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
                 };
             };
 
@@ -152,22 +177,15 @@ class CfgLoadouts
 
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+                    SASR_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 6)
                     LOADOUT_ITEM(UGL_FlareWhite_F, 2)
                     LOADOUT_ITEM(UGL_FlareRed_F, 2)
                     LOADOUT_ITEM(UGL_FlareGreen_F, 2)
                     LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
                     LOADOUT_ITEM(1Rnd_Smoke_Grenade_shell, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 3)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_IR, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 2)
@@ -194,15 +212,12 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(Chemlight_blue, 4)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    SASR_ESSENTIALS
+                    
                     LOADOUT_ITEM(SmokeShellBlue, 1)
                     LOADOUT_ITEM(SmokeShellGreen, 1)
                     LOADOUT_ITEM(SmokeShellRed, 1)
                     LOADOUT_ITEM(SmokeShellYellow, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
                 };
             };
 
@@ -211,21 +226,14 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
+                    SASR_STANDARD_MEDICAL
+                    
+                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_Tracer, 2)
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_IR, 1)
                     LOADOUT_ITEM(ACE_FlareTripMine_Mag, 1)
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                 };
             };
         };
@@ -249,29 +257,21 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(Laserbatteries, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 4)
-                    LOADOUT_ITEM(KA_CS5_10rnd_Mk316_SPR_mag, 3)
-                    LOADOUT_ITEM(KA_CS5_10rnd_Subsonic_mag, 2)
-                    LOADOUT_ITEM(B_IR_Grenade, 3)
-                    LOADOUT_ITEM(Chemlight_blue, 4)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    SASR_ESSENTIALS
+                    SASR_STANDARD_MEDICAL
+                    
                     LOADOUT_ITEM(SmokeShellBlue, 1)
                     LOADOUT_ITEM(SmokeShellGreen, 1)
                     LOADOUT_ITEM(SmokeShellRed, 1)
                     LOADOUT_ITEM(SmokeShellYellow, 1)
+
+                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 4)
+                    LOADOUT_ITEM(KA_CS5_10rnd_Mk316_SPR_mag, 3)
+                    LOADOUT_ITEM(KA_CS5_10rnd_Subsonic_mag, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_IR, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
+                    LOADOUT_ITEM(Laserbatteries, 1)
                 };
             };
 
@@ -281,8 +281,6 @@ class CfgLoadouts
                 class Inventory
                 {
                     LOADOUT_ITEM(KA_CS5, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
                     LOADOUT_ITEM(KA_CS5_Silencer, 1)
                     LOADOUT_ITEM(CUP_bipod_Harris_1A2_L, 1)
                     LOADOUT_ITEM(U_B_FullGhillie_sard, 1)
@@ -307,15 +305,12 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(Chemlight_blue, 4)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    SASR_ESSENTIALS
+                    
                     LOADOUT_ITEM(SmokeShellBlue, 1)
                     LOADOUT_ITEM(SmokeShellGreen, 1)
                     LOADOUT_ITEM(SmokeShellRed, 1)
                     LOADOUT_ITEM(SmokeShellYellow, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
                 };
             };
 
@@ -324,18 +319,11 @@ class CfgLoadouts
                 type = "VSM_LBT6094_MG_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
+                    SASR_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(SmokeShell, 2)
+                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 3)
                 };
             };
@@ -355,16 +343,12 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(Chemlight_blue, 4)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    SASR_ESSENTIALS
+                    
                     LOADOUT_ITEM(SmokeShellBlue, 1)
                     LOADOUT_ITEM(SmokeShellGreen, 1)
                     LOADOUT_ITEM(SmokeShellRed, 1)
                     LOADOUT_ITEM(SmokeShellYellow, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
                 };
             };
 
@@ -373,18 +357,11 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
+                    SASR_STANDARD_MEDICAL
+                    
                     LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(SmokeShell, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
                     LOADOUT_ITEM(ACE_M14, 2)
@@ -423,16 +400,12 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(Chemlight_blue, 4)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 4)
+                    SASR_ESSENTIALS
+                    
                     LOADOUT_ITEM(SmokeShellBlue, 1)
                     LOADOUT_ITEM(SmokeShellGreen, 1)
                     LOADOUT_ITEM(SmokeShellRed, 1)
                     LOADOUT_ITEM(SmokeShellYellow, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
                 };
             };
 
@@ -441,18 +414,11 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
+                    SASR_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
                     LOADOUT_ITEM(SmokeShell, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
                     LOADOUT_ITEM(ACE_M14, 2)
@@ -495,21 +461,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_personalAidKit, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 4)
-                    LOADOUT_ITEM(ACE_quikclot, 4)
-                    LOADOUT_ITEM(ACE_packingBandage, 4)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(Chemlight_blue, 3)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 3)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
+                    SASR_ESSENTIALS
                 };
             };      
 
@@ -518,8 +470,10 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                    SASR_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(SmokeShell, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_Tracer, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_IR, 2)
@@ -552,21 +506,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_personalAidKit, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_MX991, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 4)
-                    LOADOUT_ITEM(ACE_quikclot, 4)
-                    LOADOUT_ITEM(ACE_packingBandage, 4)
-                    LOADOUT_ITEM(ACE_tourniquet, 1)
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_bodyBag, 1)
-                    LOADOUT_ITEM(ACE_CableTie, 2)
-                    LOADOUT_ITEM(Chemlight_blue, 3)
-                    LOADOUT_ITEM(ACE_Chemlight_HiRed, 3)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
-                    LOADOUT_ITEM(CUP_NVG_HMNVS, 1)
+                    SASR_ESSENTIALS
                 };
             };      
 
@@ -575,8 +515,10 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                    SASR_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(SmokeShell, 2)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_Tracer, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_IR, 2)
@@ -605,14 +547,9 @@ class CfgLoadouts
                 type = "VSM_M81_Crye_grey_shirt_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
+                    JAC_ESSENTIALS
+                    JAC_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 3)
                 };
             };
@@ -633,15 +570,14 @@ class CfgLoadouts
                 type = "VSM_M81_Crye_tan_shirt_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 5)
-                    LOADOUT_ITEM(ACE_quikclot, 5)
-                    LOADOUT_ITEM(ACE_packingBandage, 5)
-                    LOADOUT_ITEM(ACE_morphine, 2)
-                    LOADOUT_ITEM(ACE_epinephrine, 2)
-                    LOADOUT_ITEM(B_IR_Grenade, 1)
+                    JAC_ESSENTIALS
+                    JAC_STANDARD_MEDICAL
                 };
+            };
+
+            class Vest 
+            {
+                type = "CUP_V_B_LHDVest_White";
             };
         };
 
@@ -659,13 +595,9 @@ class CfgLoadouts
                 type = "VSM_M81_Crye_tan_shirt_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
-                    LOADOUT_ITEM(ACE_Flashlight_KSF1, 1)
-                    LOADOUT_ITEM(ACE_elasticBandage, 3)
-                    LOADOUT_ITEM(ACE_quikclot, 3)
-                    LOADOUT_ITEM(ACE_packingBandage, 3)
-                    LOADOUT_ITEM(ACE_morphine, 1)
-                    LOADOUT_ITEM(ACE_epinephrine, 1)
+                    JAC_ESSENTIALS
+                    JAC_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(RH_15Rnd_9x19_M9, 2)
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 4)
                     LOADOUT_ITEM(SmokeShellRed, 2)
@@ -701,7 +633,9 @@ class CfgLoadouts
                 type = "U_I_pilotCoveralls";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    JAC_ESSENTIALS
+                    JAC_STANDARD_MEDICAL
+
                     LOADOUT_ITEM(H_Watchcap_camo, 1)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
                 };
@@ -721,7 +655,8 @@ class CfgLoadouts
                 type = "VSM_OGA_Crye_SS_grey_Camo";
                 class Inventory 
                 {
-                    LOADOUT_ITEM(ACE_EarPlugs, 1)
+                    JAC_ESSENTIALS
+
                     LOADOUT_ITEM(H_Watchcap_camo, 1)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
                 };
@@ -730,6 +665,10 @@ class CfgLoadouts
             class Vest
             {
                 type = "VSM_FAPC_Operator_OGA_OD";
+                class Inventory
+                {
+                    JAC_STANDARD_MEDICAL
+                };
             };
 
             class Backpack
