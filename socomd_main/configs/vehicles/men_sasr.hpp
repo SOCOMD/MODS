@@ -7,28 +7,12 @@
 										ITEM01("tf_anprc152"), \
 										ITEM01("ItemMicroDAGR")
  
-#define SASR_UNIT_COMMON_ITEMS 			ITEM01("ACE_personalAidKit"), \
+#define SASR_UNIT_COMMON_ITEMS 			ITEM01("ACE_EarPlugs") \
+										ITEM01("ACE_personalAidKit"), \
 										ITEM01("ACE_Flashlight_MX991"), \
 										ITEM01("CUP_NVG_HMNVS")
 
 #define SASR_UNIT_COMMON_AMMO 			ITEM03("Chemlight_blue"), \
-										ITEM04("ACE_Chemlight_HiRed"), \
-										ITEM01("B_IR_Grenade")
-
-////////////////////////////////////////////////////////////////////////////////
-//COMMON DEFINES
- 
-#define JAC_UNIT_COMMON_LINKEDITEMS		ITEM01("ItemMap"), \
-										ITEM01("ItemCompass"), \
-										ITEM01("ItemWatch"), \
-										ITEM01("tf_anprc152"), \
-										ITEM01("ItemMicroDAGR")
- 
-#define JAC_UNIT_COMMON_ITEMS 			ITEM01("ACE_personalAidKit"), \
-										ITEM01("ACE_Flashlight_MX991"), \
-										ITEM01("CUP_NVG_HMNVS")
-
-#define JAC_UNIT_COMMON_AMMO 			ITEM03("Chemlight_blue"), \
 										ITEM04("ACE_Chemlight_HiRed"), \
 										ITEM01("B_IR_Grenade")
  
@@ -83,4 +67,5 @@ class SOCOMD_SASR_Homestead : SOCOMD_SASR_Trooper
 	vehicleClass 			= "SOCOMD_SASR_Units";
 	icon 					= "iconMan";
 	displayName 			= "Homestead";
+	backpack 				= "SOCOMD_LongRange_Radio";
 };
