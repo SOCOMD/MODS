@@ -24,6 +24,7 @@ class CfgPatches
 			"cTab",
 			"ace_main",
 			"ace_medical",
+			"ace_zeus",
 			"A3_Weapons_F_beta",
 			"hafm_weapons",
 			"ace_parachute",
