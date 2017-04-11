@@ -62,20 +62,20 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 
-				class SOCOMD_Loadout_Rifleman
-				{
-					displayName = "Rifleman";
-					condition = 1;
-					statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
 				class SOCOMD_Loadout_PatrolLeader
 				{
 					displayName = "Patrol Leader";
 					condition = 1;
 					statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+				class SOCOMD_Loadout_Rifleman
+				{
+					displayName = "Rifleman";
+					condition = 1;
+					statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
