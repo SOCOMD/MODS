@@ -18,8 +18,8 @@ class CfgFunctions
 		class Actions
 		{
 			file="\socomd_main\functions\action";
+			class Action_ReplaceCrewColours {};
 			class Action_ReplaceUniform {};
-			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplacePrimary {};
 		};
