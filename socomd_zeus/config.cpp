@@ -5,7 +5,10 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = { };
+		requiredAddons[] = { 
+			"socomd_main",
+			"ace_zeus"
+		};
 		author[] = { };
 		authorUrl = "";
 		version = 0.0.1;
