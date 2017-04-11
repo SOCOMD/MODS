@@ -424,7 +424,7 @@ class CAManBase : Man
 				{
 					displayName = "White";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_White'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_White', 'CUP_H_Navy_CrewHelmet_White'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -433,7 +433,7 @@ class CAManBase : Man
 				{
 					displayName = "Blue";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Blue'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Blue', 'CUP_H_Navy_CrewHelmet_Blue'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -442,7 +442,7 @@ class CAManBase : Man
 				{
 					displayName = "Brown";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Brown'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Brown', 'CUP_H_Navy_CrewHelmet_Brown'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -451,7 +451,7 @@ class CAManBase : Man
 				{
 					displayName = "Green";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Green'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Green', 'CUP_H_Navy_CrewHelmet_Green'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -460,7 +460,7 @@ class CAManBase : Man
 				{
 					displayName = "Red";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Red'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Red', 'CUP_H_Navy_CrewHelmet_Red'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -469,7 +469,7 @@ class CAManBase : Man
 				{
 					displayName = "Violet";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Violet'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Violet', 'CUP_H_Navy_CrewHelmet_Violet'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -478,7 +478,7 @@ class CAManBase : Man
 				{
 					displayName = "Yellow";
 					condition = "([_player] call SOCOMD_fnc_ActionCondition_CanSwitchGroundCrewVest) and (alive _player)";
-					statement = "[_player , 'CUP_V_B_LHDVest_Yellow'] call SOCOMD_fnc_Action_ReplaceVest;";
+					statement = "[_player , 'CUP_V_B_LHDVest_Yellow', 'CUP_H_Navy_CrewHelmet_Yellow'] call SOCOMD_fnc_Action_ReplaceCrewColours;";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};

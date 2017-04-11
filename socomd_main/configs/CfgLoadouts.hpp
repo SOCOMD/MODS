@@ -593,7 +593,7 @@ class CfgLoadouts
 
         class JAC_GroundCrew
         {
-            headgear = "VSM_Peltor_M81";
+            headgear = "CUP_H_Navy_CrewHelmet_White";
             gps = "ItemMicroDAGR";
 
             class Uniform 

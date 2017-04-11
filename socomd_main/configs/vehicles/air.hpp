@@ -51,7 +51,8 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	
 };
 
-class CUP_B_UH60M_Unarmed_FFV_MEV_US
+class CUP_Uh60_Unarmed_FFV_Base;
+class CUP_B_UH60M_Unarmed_FFV_MEV_US : CUP_Uh60_Unarmed_FFV_Base
 {
 	class HitFuel;
 	class HitHull;
