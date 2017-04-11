@@ -147,6 +147,37 @@ class CfgLoadouts
             };
         };
 
+        class SASR_Rifleman
+        {
+            primary = "SMA_MK18MOEBLK";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
+            gps = "ItemMicroDAGR";
+
+            class Uniform 
+            {
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory 
+                {
+                    SASR_ESSENTIALS
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_LBT6094_operator_Multicam";
+                class Inventory 
+                {
+                    SASR_STANDARD_MEDICAL
+
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 6)
+                };
+            };
+        };
+
+
         class SASR_PatrolLeader
         {
             primary = "SMA_MK16_EGLM_Green";
