@@ -6,6 +6,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = { 
+			"cba_main",
 			"socomd_main",
 			"ace_zeus",
 			"achilles_modules_f_achilles"
