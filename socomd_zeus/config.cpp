@@ -7,7 +7,8 @@ class CfgPatches
 		requiredVersion = 1.0;
 		requiredAddons[] = { 
 			"socomd_main",
-			"ace_zeus"
+			"ace_zeus",
+			"achilles_modules_f_achilles"
 		};
 		author[] = { };
 		authorUrl = "";
