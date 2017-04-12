@@ -31,7 +31,8 @@ class CfgPatches
 			"tf47_launchers",
 			"ace_huntir",
 			"CUP_AirVehicles_CH47",
-			"CUP_AirVehicles_UH60"
+			"CUP_AirVehicles_UH60",
+			"CUP_BaseConfig_F"
 		};
 
 		//SOCOMD Custom Units

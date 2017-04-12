@@ -13,6 +13,10 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+
 	class TransportMagazines 
 	{
 		LandTransportMagazines
@@ -45,6 +49,10 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
 
 	class TransportMagazines
 	{
@@ -83,6 +91,10 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+
 	class TransportMagazines 
 	{
 		LandTransportMagazines
@@ -116,6 +128,10 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
 
 	class TransportMagazines 
 	{
@@ -151,6 +167,10 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+
 	class TransportMagazines 
 	{
 		LandTransportMagazines
@@ -184,6 +204,10 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
 
 	class TransportMagazines 
 	{
@@ -223,6 +247,10 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	transportMaxBackpacks = "30";
 	transportMaxWeapons = "60";
 	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
 	
 	class TransportMagazines 
 	{
@@ -260,6 +288,11 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	transportMaxBackpacks = "30";
 	transportMaxWeapons = "60";
 	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+	
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -296,6 +329,10 @@ class SOCOMD_ASLAV : CUP_B_LAV25_USMC
 	vehicleclass = "Armored";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
 
 	class TransportMagazines 
 	{
