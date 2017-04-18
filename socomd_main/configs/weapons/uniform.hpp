@@ -91,3 +91,12 @@ class SOCOMD_Uniform_Diver : U_B_Wetsuit
 		mass = 10;
 	};
 };
+
+class U_I_pilotCoveralls;
+class SOCOMD_Uniform_GSuit : U_I_pilotCoveralls
+{
+	scope = public;
+	author = "SOCOMD";
+	displayName = "SOCOMD Pilot G-Suit";
+	ACE_GForceCoef = 0.7;
+};

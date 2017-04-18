@@ -661,7 +661,7 @@ class CfgLoadouts
 
             class Uniform 
             {
-                type = "U_I_pilotCoveralls";
+                type = "SOCOMD_Uniform_GSuit";
                 class Inventory 
                 {
                     JAC_ESSENTIALS
