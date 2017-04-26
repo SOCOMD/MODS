@@ -106,7 +106,8 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(ACE_tourniquet, 1) \
                                 LOADOUT_ITEM(ACE_bodyBag, 1)
 
-#define SASR_ESSENTIALS         LOADOUT_ITEM(ACE_EarPlugs, 1) \
+#define SASR_ESSENTIALS         LOADOUT_ITEM(ItemcTabHCam, 1) \
+                                LOADOUT_ITEM(ACE_EarPlugs, 1) \
                                 LOADOUT_ITEM(ACE_CableTie, 2) \
                                 LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
                                 LOADOUT_ITEM(ACE_Flashlight_MX991, 1) \ 
@@ -114,7 +115,8 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(Chemlight_blue, 3) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1)
 
-#define JAC_ESSENTIALS          LOADOUT_ITEM(ACE_EarPlugs, 1) \
+#define JAC_ESSENTIALS          LOADOUT_ITEM(ItemcTabHCam, 1) \
+                                LOADOUT_ITEM(ACE_EarPlugs, 1) \
                                 LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
                                 LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1)    
@@ -655,7 +657,7 @@ class CfgLoadouts
         {
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
-            headgear = "H_PilotHelmetHeli_B";
+            headgear = "SOCOMD_Pilot_helmet";
             binocular = "Binocular";
             gps = "ItemcTab";
 
