@@ -156,7 +156,7 @@ class CfgLoadouts
 
         class SASR_TroopLeader
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
@@ -168,9 +168,10 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
 
-                    LOADOUT_ITEM(ACE_MapTools, 2)
+                    LOADOUT_ITEM(ACE_MapTools, 1)
                     LOADOUT_ITEM(Laserbatteries, 1)
                 };
             };
@@ -181,7 +182,6 @@ class CfgLoadouts
 
                 class Inventory 
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
@@ -209,9 +209,10 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
 
-                    LOADOUT_ITEM(ACE_MapTools, 2)
+                    LOADOUT_ITEM(ACE_MapTools, 1)
                     LOADOUT_ITEM(Laserbatteries, 1)
                 };
             };
@@ -222,7 +223,6 @@ class CfgLoadouts
 
                 class Inventory 
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
@@ -244,7 +244,7 @@ class CfgLoadouts
 
         class SASR_Rifleman
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
@@ -255,6 +255,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -264,7 +265,6 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory 
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
@@ -287,6 +287,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -297,7 +298,6 @@ class CfgLoadouts
 
                 class Inventory 
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
@@ -310,16 +310,11 @@ class CfgLoadouts
                     LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
                 };
             };
-
-            class Backpack
-            {
-                type = "SOCOMD_LongRange_Radio";                
-            };
         };
 
         class SASR_Sapper
         {
-            primary = "SMA_MK18BLK_GL_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
@@ -330,6 +325,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -339,7 +335,6 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
@@ -357,7 +352,6 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_wirecutter, 1)
                     LOADOUT_ITEM(ACE_EntrenchingTool, 1)
                     LOADOUT_ITEM(MineDetector, 1)
-                    LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
                     LOADOUT_ITEM(DemoCharge_Remote_Mag, 6)
                     LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
                 };
@@ -377,6 +371,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -386,7 +381,6 @@ class CfgLoadouts
                 type = "VSM_LBT6094_MG_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
                     
                     LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
@@ -397,7 +391,7 @@ class CfgLoadouts
 
         class SASR_Medic
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
@@ -408,6 +402,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -419,9 +414,16 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+                };
+            };
 
+            class Backpack
+            {
+                type = "VSM_Multicam_Backpack_Kitbag";
+                class Inventory 
+                {
                     LOADOUT_ITEM(ACE_personalAidKit, 6)
                     LOADOUT_ITEM(ACE_elasticBandage, 20)
                     LOADOUT_ITEM(ACE_packingBandage, 20) 
@@ -449,6 +451,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -458,7 +461,6 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
                     LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 6)
@@ -482,6 +484,7 @@ class CfgLoadouts
 
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };
@@ -501,7 +504,7 @@ class CfgLoadouts
 
         class SASR_LAT
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             secondary = "HAFM_LAW";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
@@ -513,6 +516,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };      
@@ -522,10 +526,9 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
@@ -533,7 +536,7 @@ class CfgLoadouts
 
         class SASR_MAT
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             secondary = "SOCOMD_Carl_Gustav";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
@@ -545,6 +548,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };      
@@ -554,10 +558,9 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
@@ -575,7 +578,7 @@ class CfgLoadouts
 
         class SASR_HAT
         {
-            primary = "SMA_MK18afgBLK_SM";
+            primary = "SMA_MK18MOEBLK_SM";
             secondary = "CUP_launch_Javelin";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
@@ -587,6 +590,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
+                    SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
             };      
@@ -596,10 +600,9 @@ class CfgLoadouts
                 type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    SASR_STANDARD_MEDICAL
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
