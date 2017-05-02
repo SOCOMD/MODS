@@ -98,22 +98,27 @@ class SASR_StandardTrooper
 // COMMON LOADOUT ITEMS
 
 #define SASR_STANDARD_MEDICAL   LOADOUT_ITEM(ACE_personalAidKit, 1) \
-                                LOADOUT_ITEM(ACE_elasticBandage, 5) \
-                                LOADOUT_ITEM(ACE_packingBandage, 5) \ 
-                                LOADOUT_ITEM(ACE_quikclot, 5) \
+                                LOADOUT_ITEM(ACE_elasticBandage, 6) \
+                                LOADOUT_ITEM(ACE_packingBandage, 6) \ 
+                                LOADOUT_ITEM(ACE_quikclot, 6) \
                                 LOADOUT_ITEM(ACE_epinephrine, 2) \
                                 LOADOUT_ITEM(ACE_morphine, 2) \
-                                LOADOUT_ITEM(ACE_tourniquet, 1) \
-                                LOADOUT_ITEM(ACE_bodyBag, 1)
+                                LOADOUT_ITEM(ACE_tourniquet, 2)
 
-#define SASR_ESSENTIALS         LOADOUT_ITEM(ItemcTabHCam, 1) \
+#define SASR_UNIFORM_ESSENTIALS LOADOUT_ITEM(ItemcTabHCam, 1) \
                                 LOADOUT_ITEM(ACE_EarPlugs, 1) \
-                                LOADOUT_ITEM(ACE_CableTie, 2) \
+                                LOADOUT_ITEM(ACE_CableTie, 1) \
                                 LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
-                                LOADOUT_ITEM(ACE_Flashlight_MX991, 1) \ 
-                                LOADOUT_ITEM(ACE_Chemlight_HiRed, 4) \
-                                LOADOUT_ITEM(Chemlight_blue, 3) \
+                                LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \ 
+                                LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
+                                LOADOUT_ITEM(Chemlight_blue, 2) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1)
+
+#define SASR_VEST_ESSENTIALS    LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
+                                LOADOUT_ITEM(ACE_M84, 2) \
+                                LOADOUT_ITEM(SmokeShell, 2) \
+                                LOADOUT_ITEM(SmokeShellRed, 2) \
+                                LOADOUT_ITEM(SmokeShellGreen, 2)
 
 #define JAC_ESSENTIALS          LOADOUT_ITEM(ItemcTabHCam, 1) \
                                 LOADOUT_ITEM(ACE_EarPlugs, 1) \
@@ -144,62 +149,28 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
-                    SASR_ESSENTIALS
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };
         };
 
-        class SASR_Rifleman
+        class SASR_TroopLeader
         {
-            primary = "SMA_MK18MOEBLK";
-            handgun = "CUP_hgun_Glock17";
-            handgunMagazine = "CUP_17Rnd_9x19_glock17";
-            headgear = "VSM_OPS_2_multicam";
-            gps = "ItemMicroDAGR";
-
-            class Uniform 
-            {
-                type = "VSM_Multicam_Crye_Camo";
-                class Inventory 
-                {
-                    SASR_ESSENTIALS
-                };
-            };
-
-            class Vest
-            {
-                type = "VSM_LBT6094_operator_Multicam";
-                class Inventory 
-                {
-                    SASR_STANDARD_MEDICAL
-
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 6)
-                };
-            };
-        };
-
-
-        class SASR_PatrolLeader
-        {
-            primary = "SMA_MK16_EGLM_Green";
+            primary = "SMA_MK18afgBLK_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
-            gps = "ItemAndroid";
+            gps = "ItemcTab";
 
             class Uniform 
             {
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory 
                 {
-                    SASR_ESSENTIALS
+                    SASR_UNIFORM_ESSENTIALS
 
-                    LOADOUT_ITEM(SmokeShellBlue, 2)
-                    LOADOUT_ITEM(SmokeShellRed, 2)
-                    LOADOUT_ITEM(SmokeShellGreen, 2)
-                    LOADOUT_ITEM(SmokeShellYellow, 2)
+                    LOADOUT_ITEM(ACE_MapTools, 2)
                     LOADOUT_ITEM(Laserbatteries, 1)
                 };
             };
@@ -211,17 +182,10 @@ class CfgLoadouts
                 class Inventory 
                 {
                     SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 6)
-                    LOADOUT_ITEM(UGL_FlareWhite_F, 2)
-                    LOADOUT_ITEM(UGL_FlareRed_F, 2)
-                    LOADOUT_ITEM(UGL_FlareGreen_F, 2)
-                    LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
-                    LOADOUT_ITEM(1Rnd_Smoke_Grenade_shell, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 3)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_IR, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 2)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2) 
                 };
             };
 
@@ -231,144 +195,134 @@ class CfgLoadouts
             };
         };
 
-        class SASR_Marksman
+        class SASR_PatrolLeader
         {
-            primary = "SMA_Mk17_16";
-            handgun = "CUP_hgun_Glock17";
-            handgunMagazine = "CUP_17Rnd_9x19_glock17";
-            headgear = "VSM_OPS_2_multicam";
-            binocular = "Laserdesignator";
-            gps = "ItemMicroDAGR";
-            
-            class Uniform
-            {
-                type = "VSM_Multicam_Crye_Camo";
-                class Inventory
-                {
-                    SASR_ESSENTIALS
-                    
-                    LOADOUT_ITEM(SmokeShellBlue, 1)
-                    LOADOUT_ITEM(SmokeShellGreen, 1)
-                    LOADOUT_ITEM(SmokeShellRed, 1)
-                    LOADOUT_ITEM(SmokeShellYellow, 1)
-                };
-            };
-
-            class Vest
-            {
-                type = "VSM_LBT6094_operator_Multicam";
-                class Inventory
-                {
-                    SASR_STANDARD_MEDICAL
-                    
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
-                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
-                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_Tracer, 2)
-                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR_IR, 1)
-                    LOADOUT_ITEM(ACE_FlareTripMine_Mag, 1)
-                };
-            };
-        };
-
-        class SASR_Sniper
-        {
-            primary = "SMA_MK18MOE";
+            primary = "SMA_MK18BLK_GL_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Laserdesignator";
             gps = "ItemAndroid";
-            
-            class Uniform
+
+            class Uniform 
             {
-                type = "VSM_Multicam_Crye_SS_Camo";
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory 
+                {
+                    SASR_UNIFORM_ESSENTIALS
+
+                    LOADOUT_ITEM(ACE_MapTools, 2)
+                    LOADOUT_ITEM(Laserbatteries, 1)
+                };
             };
 
             class Vest
             {
                 type = "VSM_LBT6094_operator_Multicam";
-                class Inventory
-                {
-                    SASR_ESSENTIALS
-                    SASR_STANDARD_MEDICAL
-                    
-                    LOADOUT_ITEM(SmokeShellBlue, 1)
-                    LOADOUT_ITEM(SmokeShellGreen, 1)
-                    LOADOUT_ITEM(SmokeShellRed, 1)
-                    LOADOUT_ITEM(SmokeShellYellow, 1)
 
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 4)
-                    LOADOUT_ITEM(KA_CS5_10rnd_Mk316_SPR_mag, 3)
-                    LOADOUT_ITEM(KA_CS5_10rnd_Subsonic_mag, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_IR, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
-                    LOADOUT_ITEM(Laserbatteries, 1)
+                class Inventory 
+                {
+                    SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+
+                    LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+                    LOADOUT_ITEM(UGL_FlareWhite_F, 2)
+                    LOADOUT_ITEM(UGL_FlareRed_F, 2)
+                    LOADOUT_ITEM(UGL_FlareGreen_F, 2)
+                    LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
                 };
             };
 
             class Backpack
             {
-                type = "VSM_OCP_carryall";
-                class Inventory
-                {
-                    LOADOUT_ITEM(KA_CS5, 1)
-                    LOADOUT_ITEM(KA_CS5_Silencer, 1)
-                    LOADOUT_ITEM(CUP_bipod_Harris_1A2_L, 1)
-                    LOADOUT_ITEM(U_B_FullGhillie_sard, 1)
-                    LOADOUT_ITEM(ACE_FlareTripMine_Mag, 1)
-                    LOADOUT_ITEM(KA_CS5_10rnd_M948_SLAP_mag, 2)
-                    LOADOUT_ITEM(KA_CS5_10rnd_M993_AP_mag, 2)
-                };
+                type = "SOCOMD_LongRange_Radio";                
             };
         };
 
-        class SASR_MachineGunner
+        class SASR_Rifleman
         {
-            primary = "sma_minimi_mk3_762tsb";
+            primary = "SMA_MK18afgBLK_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
 
-            class Uniform
+            class Uniform 
             {
                 type = "VSM_Multicam_Crye_Camo";
-                class Inventory
+                class Inventory 
                 {
-                    SASR_ESSENTIALS
-                    
-                    LOADOUT_ITEM(SmokeShellBlue, 1)
-                    LOADOUT_ITEM(SmokeShellGreen, 1)
-                    LOADOUT_ITEM(SmokeShellRed, 1)
-                    LOADOUT_ITEM(SmokeShellYellow, 1)
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };
 
             class Vest
             {
-                type = "VSM_LBT6094_MG_Multicam";
-                class Inventory
+                type = "VSM_LBT6094_operator_Multicam";
+                class Inventory 
                 {
                     SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SmokeShell, 2)
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
-                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 3)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
         };
 
-        class SASR_Demolitions
+        class SASR_Grenadier
         {
-            primary = "SMA_M4CQBR";
+            primary = "SMA_MK18BLK_GL_SM";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
+            gps = "ItemAndroid";
+
+            class Uniform 
+            {
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory 
+                {
+                    SASR_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_LBT6094_operator_Multicam";
+
+                class Inventory 
+                {
+                    SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+
+                    LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+                    LOADOUT_ITEM(UGL_FlareWhite_F, 2)
+                    LOADOUT_ITEM(UGL_FlareRed_F, 2)
+                    LOADOUT_ITEM(UGL_FlareGreen_F, 2)
+                    LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+                };
+            };
+
+            class Backpack
+            {
+                type = "SOCOMD_LongRange_Radio";                
+            };
+        };
+
+        class SASR_Sapper
+        {
+            primary = "SMA_MK18BLK_GL_SM";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
             gps = "ItemMicroDAGR";
 
             class Uniform
@@ -376,12 +330,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    SASR_ESSENTIALS
-                    
-                    LOADOUT_ITEM(SmokeShellBlue, 1)
-                    LOADOUT_ITEM(SmokeShellGreen, 1)
-                    LOADOUT_ITEM(SmokeShellRed, 1)
-                    LOADOUT_ITEM(SmokeShellYellow, 1)
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };
 
@@ -391,13 +340,10 @@ class CfgLoadouts
                 class Inventory
                 {
                     SASR_STANDARD_MEDICAL
-                    
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(SmokeShell, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
-                    LOADOUT_ITEM(ACE_M14, 2)
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
 
@@ -410,22 +356,20 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_Clacker, 1)
                     LOADOUT_ITEM(ACE_wirecutter, 1)
                     LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-                    LOADOUT_ITEM(ACE_SpraypaintBlue, 1)
-                    LOADOUT_ITEM(ACE_SpraypaintRed, 1)
                     LOADOUT_ITEM(MineDetector, 1)
-                    LOADOUT_ITEM(DemoCharge_Remote_Mag, 4)
+                    LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
+                    LOADOUT_ITEM(DemoCharge_Remote_Mag, 6)
                     LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
                 };
             };
         };
 
-        class SASR_Saboteur
+        class SASR_MachineGunner
         {
-            primary = "SMA_M4CQBR";
+            primary = "sma_minimi_mk3_762tsb";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
 
             class Uniform
@@ -433,12 +377,79 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    SASR_ESSENTIALS
+                    SASR_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_LBT6094_MG_Multicam";
+                class Inventory
+                {
+                    SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
                     
-                    LOADOUT_ITEM(SmokeShellBlue, 1)
-                    LOADOUT_ITEM(SmokeShellGreen, 1)
-                    LOADOUT_ITEM(SmokeShellRed, 1)
-                    LOADOUT_ITEM(SmokeShellYellow, 1)
+                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+                };
+            };
+        };
+
+        class SASR_Medic
+        {
+            primary = "SMA_MK18afgBLK_SM";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
+            gps = "ItemMicroDAGR";
+
+            class Uniform 
+            {
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory 
+                {
+                    SASR_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest
+            {
+                type = "VSM_LBT6094_operator_Multicam";
+                class Inventory 
+                {
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+
+                    LOADOUT_ITEM(ACE_personalAidKit, 6)
+                    LOADOUT_ITEM(ACE_elasticBandage, 20)
+                    LOADOUT_ITEM(ACE_packingBandage, 20) 
+                    LOADOUT_ITEM(ACE_quikclot, 20)
+                    LOADOUT_ITEM(ACE_epinephrine, 10)
+                    LOADOUT_ITEM(ACE_morphine, 10)
+                    LOADOUT_ITEM(ACE_tourniquet, 6)
+                    LOADOUT_ITEM(ACE_salineIV_500, 6)
+                    LOADOUT_ITEM(ACE_bodyBag, 6)
+                };
+            };
+        };
+
+        class SASR_Marksman
+        {
+            primary = "SMA_HK417_16in";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
+            binocular = "Rangefinder";
+            gps = "ItemMicroDAGR";
+            
+            class Uniform
+            {
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory
+                {
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };
 
@@ -448,45 +459,53 @@ class CfgLoadouts
                 class Inventory
                 {
                     SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
-                    LOADOUT_ITEM(SmokeShell, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 1)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318_Tracer, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk318, 3)
-                    LOADOUT_ITEM(ACE_M14, 2)
+                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 6)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+                };
+            };
+        };
+
+        class SASR_Sniper
+        {
+            primary = "KA_M98B";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_OPS_2_multicam";
+            binocular = "Rangefinder";
+            gps = "ItemMicroDAGR";
+            
+            class Uniform
+            {
+                type = "VSM_Multicam_Crye_Camo";
+
+                class Inventory
+                {
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };
 
-            class Backpack
+            class Vest
             {
-                type = "VSM_Multicam_Backpack_Kitbag";
+                type = "VSM_LBT6094_operator_Multicam";
                 class Inventory
                 {
-                    LOADOUT_ITEM(ACE_DefusalKit, 1)
-                    LOADOUT_ITEM(ACE_Clacker, 1)
-                    LOADOUT_ITEM(ACE_wirecutter, 1)
-                    LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-                    LOADOUT_ITEM(ACE_SpraypaintBlue, 1)
-                    LOADOUT_ITEM(ACE_SpraypaintRed, 1)
-                    LOADOUT_ITEM(MineDetector, 1)
-                    LOADOUT_ITEM(DemoCharge_Remote_Mag, 2)
-                    LOADOUT_ITEM(SLAMDirectionalMine_Wire_Mag, 2)
-                    LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 2)
-                    LOADOUT_ITEM(APERSBoundingMine_Range_Mag, 2)
-                    LOADOUT_ITEM(APERSMine_Range_Mag, 3)
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(KA_M98B_10Rnd_338_API526_Mag, 6)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
         };
 
         class SASR_LAT
         {
-            primary = "SMA_MK18MOEBLK";
+            primary = "SMA_MK18afgBLK_SM";
             secondary = "HAFM_LAW";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
-            binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
 
             class Uniform
@@ -494,7 +513,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    SASR_ESSENTIALS
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };      
 
@@ -504,12 +523,42 @@ class CfgLoadouts
                 class Inventory
                 {
                     SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SmokeShell, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_Tracer, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_IR, 2)
+                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
+                };
+            };
+        };
+
+        class SASR_MAT
+        {
+            primary = "SMA_MK18afgBLK_SM";
+            secondary = "SOCOMD_Carl_Gustav";
+            handgun = "CUP_hgun_Glock17";
+            handgunMagazine = "CUP_17Rnd_9x19_glock17";
+            headgear = "VSM_Mich2000_2_Multicam";
+            gps = "ItemMicroDAGR";
+
+            class Uniform
+            {
+                type = "VSM_Multicam_Crye_Camo";
+                class Inventory
+                {
+                    SASR_UNIFORM_ESSENTIALS
+                };
+            };      
+
+            class Vest
+            {
+                type = "VSM_LBT6094_operator_Multicam";
+                class Inventory
+                {
+                    SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
 
@@ -518,20 +567,19 @@ class CfgLoadouts
                 type = "VSM_Multicam_Backpack_Kitbag";
                 class Inventory
                 {
-                    LOADOUT_ITEM(CUP_SMAW_HEDP_M, 1)
-                    LOADOUT_ITEM(CUP_SMAW_HEAA_M, 1)
+                    LOADOUT_ITEM(tf47_m3maaws_HEAT, 2)
+                    LOADOUT_ITEM(tf47_m3maaws_HE, 1)
                 };
             };
         };
 
         class SASR_HAT
         {
-            primary = "SMA_MK18MOEBLK";
-            secondary = "CUP_launch_Mk153Mod0";
+            primary = "SMA_MK18afgBLK_SM";
+            secondary = "CUP_launch_Javelin";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
-            binocular = "Rangefinder";
             gps = "ItemMicroDAGR";
 
             class Uniform
@@ -539,7 +587,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Crye_Camo";
                 class Inventory
                 {
-                    SASR_ESSENTIALS
+                    SASR_UNIFORM_ESSENTIALS
                 };
             };      
 
@@ -549,12 +597,10 @@ class CfgLoadouts
                 class Inventory
                 {
                     SASR_STANDARD_MEDICAL
+                    SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SmokeShell, 2)
-                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_Tracer, 2)
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_Mk262_IR, 2)
+                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+                    LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
 
@@ -563,7 +609,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Backpack_Kitbag";
                 class Inventory
                 {
-                    LOADOUT_ITEM(CUP_SMAW_HEAA_M, 1)
+                    LOADOUT_ITEM(CUP_Javelin_M, 1)
                 };
             };
         };
@@ -649,6 +695,7 @@ class CfgLoadouts
                     LOADOUT_ITEM(ACE_packingBandage, 20)
                     LOADOUT_ITEM(ACE_tourniquet, 4)
                     LOADOUT_ITEM(ACE_personalAidKit, 2)
+                    LOADOUT_ITEM(ACE_salineIV_500, 6)
                 };
             };
         };
