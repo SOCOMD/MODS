@@ -528,7 +528,7 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
@@ -560,7 +560,7 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
@@ -570,7 +570,7 @@ class CfgLoadouts
                 type = "VSM_Multicam_Backpack_Kitbag";
                 class Inventory
                 {
-                    LOADOUT_ITEM(tf47_m3maaws_HEAT, 2)
+                    LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
                     LOADOUT_ITEM(tf47_m3maaws_HE, 1)
                 };
             };
@@ -602,7 +602,7 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 5)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };

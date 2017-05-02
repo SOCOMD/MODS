@@ -17,6 +17,11 @@ _unitLoadout set [0, _primaryLoadout];
 //Secondary
 _secondary = getText (_unitConfig >> "secondary");
 _secondaryLoadout = [_secondary,"","","",[],[],""];
+_secondaryMagazine = getText (_unitConfig >> "secondaryMagazine");
+if(_secondaryMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
+{
+  _secondaryLoadout set [4, [_secondaryMagazine, 1]];
+};
 _unitLoadout set [1, _secondaryLoadout];
 
 //Handgun
@@ -153,10 +158,9 @@ _facewear = getText (_unitConfig >> "facewear");
 _unitLoadout set [7, _facewear];
 
 //Binocular
-_binocular = getText (_unitConfig >> "binocular");
-_binocularLoadout = _unitLoadout select 8;
-_binocularLoadout set [0, _binocular];
-_unitLoadout set [8, _binocularLoadout];
+_binocularType = getText (_unitConfig >> "binocular");
+_binocular = [_binocularType, "", "", "", ["", 0], ["", 0], ""];
+_unitLoadout set [8, _binocular];
 
 //Equipment
 _gps = getText (_unitConfig >> "gps");
