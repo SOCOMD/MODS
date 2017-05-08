@@ -12,7 +12,8 @@ class CfgFunctions
 		class Utils
 		{
 			file="\socomd_main\functions\utils";
-			class SwitchUnitLoadout {};			
+			class SwitchUnitLoadout {};	
+			class SwitchUnitLoadoutWeapon {};
 		};
 
 		class Actions
@@ -28,6 +29,7 @@ class CfgFunctions
 		{
 			file="\socomd_main\functions\actionConditions";
 			class ActionCondition_CanSwitchGroundCrewVest {};
+			class ActionCondition_CanUseLoadoutWeapon {};
 			class ActionCondition_HasPrimary556 {};	
 		};
 	};

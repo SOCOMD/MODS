@@ -184,3 +184,4 @@ class CfgPatches
 #include "configs\CfgClasses.hpp"
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgLoadouts.hpp"
+#include "configs\CfgLoadoutWeapons.hpp"

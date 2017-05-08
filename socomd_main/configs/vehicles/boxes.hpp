@@ -41,188 +41,10 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 	{
 		class ACE_MainActions 
 		{
-			displayName = "Loadout";
+			displayName = "Q-Store";
 			selection = "";
 			distance = 5;
 			condition = 1;
-
-			class ACE_SwitchRoleActionsSASR
-			{
-				displayName = "Change Role (SASR)";
-				selection = "";
-				distance = 5;
-				condition = 1;
-
-				class SOCOMD_Loadout_Trooper
-				{
-					displayName = "Remove Gear";
-					condition = 1;
-					statement = "[_player, 'SASR_Trooper'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_TroopLeader
-				{
-					displayName = "Troop Leader";
-					condition = 1;
-					statement = "[_player, 'SASR_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_PatrolLeader
-				{
-					displayName = "Patrol Leader";
-					condition = 1;
-					statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-				
-				class SOCOMD_Loadout_Rifleman
-				{
-					displayName = "Rifleman";
-					condition = 1;
-					statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Grenadier
-				{
-					displayName = "Grenadier";
-					condition = 1;
-					statement = "[_player, 'SASR_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Sapper
-				{
-					displayName = "Sapper";
-					condition = 1;
-					statement = "[_player, 'SASR_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_MachineGunner
-				{
-					displayName = "Machine Gunner";
-					condition = 1;
-					statement = "[_player, 'SASR_MachineGunner'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Medic
-				{
-					displayName = "Medic";
-					condition = 1;
-					statement = "[_player, 'SASR_Medic'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Marksman
-				{
-					displayName = "Marksman";
-					condition = 1;
-					statement = "[_player, 'SASR_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Sniper
-				{
-					displayName = "Sniper";
-					condition = 1;
-					statement = "[_player, 'SASR_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_LAT
-				{
-					displayName = "Light Anti-tank";
-					condition = 1;
-					statement = "[_player, 'SASR_LAT'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_MAT
-				{
-					displayName = "Medium Anti-tank";
-					condition = 1;
-					statement = "[_player, 'SASR_MAT'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_HAT
-				{
-					displayName = "Heavy Anti-tank";
-					condition = 1;
-					statement = "[_player, 'SASR_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-			};
-
-			class ACE_SwitchRoleActionsJAC
-			{
-				displayName = "Change Role (JAC)";
-				selection = "";
-				distance = 5;
-				condition = 1;
-
-				class SOCOMD_Loadout_Aircrew
-				{
-					displayName = "Aircrew";
-					condition = 1;
-					statement = "[_player, 'JAC_Aircrew'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_GroundCrew
-				{
-					displayName = "Ground Crew";
-					condition = 1;
-					statement = "[_player, 'JAC_GroundCrew'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_PJ
-				{
-					displayName = "PJ";
-					condition = 1;
-					statement = "[_player, 'JAC_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Pilot
-				{
-					displayName = "Pilot";
-					condition = 1;
-					statement = "[_player, 'JAC_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Loadout_Officer
-				{
-					displayName = "Officer";
-					condition = 1;
-					statement = "[_player, 'JAC_Officer'] call SOCOMD_fnc_SwitchUnitLoadout";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-			};
 
 			class SOCOMD_OpenGearSelector
 			{
@@ -233,72 +55,302 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 
-			class ACE_HeadgearActions 
+			class SOCOMD_Loadouts
 			{
-				displayName = "Headgear";
+				displayName = "Loadouts";
 				selection = "";
 				distance = 5;
 				condition = 1;
 
-				class SOCOMD_Headgear_TakeCap
+				class ACE_SwitchRoleActionsSASR
 				{
-					displayName = "Take Cap";
+					displayName = "Change Role (SASR)";
+					selection = "";
+					distance = 5;
 					condition = 1;
-					statement = "_player addItem 'SOCOMD_Cap_HS';";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
+
+					class SOCOMD_Loadout_Trooper
+					{
+						displayName = "Remove Gear";
+						condition = 1;
+						statement = "[_player, 'SASR_Trooper'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_TroopLeader
+					{
+						displayName = "Troop Leader";
+						condition = 1;
+						statement = "[_player, 'SASR_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_PatrolLeader
+					{
+						displayName = "Patrol Leader";
+						condition = 1;
+						statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Loadout_Rifleman
+					{
+						displayName = "Rifleman";
+						condition = 1;
+						statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Grenadier
+					{
+						displayName = "Grenadier";
+						condition = 1;
+						statement = "[_player, 'SASR_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Sapper
+					{
+						displayName = "Sapper";
+						condition = 1;
+						statement = "[_player, 'SASR_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_MachineGunner
+					{
+						displayName = "Machine Gunner";
+						condition = 1;
+						statement = "[_player, 'SASR_MachineGunner'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Medic
+					{
+						displayName = "Medic";
+						condition = 1;
+						statement = "[_player, 'SASR_Medic'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Marksman
+					{
+						displayName = "Marksman";
+						condition = 1;
+						statement = "[_player, 'SASR_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Sniper
+					{
+						displayName = "Sniper";
+						condition = 1;
+						statement = "[_player, 'SASR_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_LAT
+					{
+						displayName = "Light Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_LAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_MAT
+					{
+						displayName = "Medium Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_MAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_HAT
+					{
+						displayName = "Heavy Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 				};
 
-				class SOCOMD_Headgear_TakeBoonie
+				class ACE_SwitchRoleActionsJAC
 				{
-					displayName = "Take Boonie";
+					displayName = "Change Role (JAC)";
+					selection = "";
+					distance = 5;
 					condition = 1;
-					statement = "_player addItem 'SOCOMD_Boonie';";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
+
+					class SOCOMD_Loadout_Aircrew
+					{
+						displayName = "Aircrew";
+						condition = 1;
+						statement = "[_player, 'JAC_Aircrew'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_GroundCrew
+					{
+						displayName = "Ground Crew";
+						condition = 1;
+						statement = "[_player, 'JAC_GroundCrew'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_PJ
+					{
+						displayName = "PJ";
+						condition = 1;
+						statement = "[_player, 'JAC_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Pilot
+					{
+						displayName = "Pilot";
+						condition = 1;
+						statement = "[_player, 'JAC_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Officer
+					{
+						displayName = "Officer";
+						condition = 1;
+						statement = "[_player, 'JAC_Officer'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 				};
 
-				class SOCOMD_Headgear_TakeBandanna
+				class SOCOMD_HeadgearActions 
 				{
-					displayName = "Take Bandanna";
+					displayName = "Headgear";
+					selection = "";
+					distance = 5;
 					condition = 1;
-					statement = "_player addItem 'SOCOMD_Bandanna';";
+
+					class SOCOMD_Headgear_TakeCap
+					{
+						displayName = "Take Cap";
+						condition = 1;
+						statement = "_player addItem 'SOCOMD_Cap_HS';";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_TakeBoonie
+					{
+						displayName = "Take Boonie";
+						condition = 1;
+						statement = "_player addItem 'SOCOMD_Boonie';";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_TakeBandanna
+					{
+						displayName = "Take Bandanna";
+						condition = 1;
+						statement = "_player addItem 'SOCOMD_Bandanna';";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
+					{
+						displayName = "Switch to a FAST Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Multi') OR ((headgear _player) == 'SOCOMD_FAST_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_FASTTan
+					{
+						displayName = "Switch to a FAST Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Tan') OR ((headgear _player) == 'SOCOMD_FAST_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
+					{
+						displayName = "Switch to a MICH Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_MICHTan
+					{
+						displayName = "Switch to a MICH Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+			};
+
+			class SOCOMD_Weapons
+			{
+				displayName = "Weapons";
+				selection = "";
+				distance = 5;
+				condition = 1;
+				
+				class SOCOMD_LoadoutWeapon_SMA_MK18MOEBLK
+				{
+					displayName = "MK18 MOE";
+					condition = "[_player, 'SMA_MK18MOEBLK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18MOEBLK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 
-				class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
+				class SOCOMD_LoadoutWeapon_SMA_MK18BLK_GL_SM
 				{
-					displayName = "Switch to a FAST Multicam Helmet";
-					condition = "!(((headgear _player) == 'SOCOMD_FAST_Multi') OR ((headgear _player) == 'SOCOMD_FAST_Multi_Gog'))";
-					statement = "[_player , 'SOCOMD_FAST_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+					displayName = "MK18 MOE UGL";
+					condition = "[_player, 'SMA_MK18BLK_GL_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18BLK_GL_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 
-				class SOCOMD_Headgear_ReplaceHelmet_FASTTan
+				class SOCOMD_LoadoutWeapon_SMA_AUG_A3_F
 				{
-					displayName = "Switch to a FAST Tan Helmet";
-					condition = "!(((headgear _player) == 'SOCOMD_FAST_Tan') OR ((headgear _player) == 'SOCOMD_FAST_Tan_Gog'))";
-					statement = "[_player , 'SOCOMD_FAST_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+					displayName = "AUG A3";
+					condition = "[_player, 'SMA_AUG_A3_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_AUG_A3_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 
-				class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
+				class SOCOMD_LoadoutWeapon_SMA_AUG_EGLM
 				{
-					displayName = "Switch to a MICH Multicam Helmet";
-					condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
-					statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Headgear_ReplaceHelmet_MICHTan
-				{
-					displayName = "Switch to a MICH Tan Helmet";
-					condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
-					statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+					displayName = "AUG A3 UGL";
+					condition = "[_player, 'SMA_AUG_EGLM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_AUG_EGLM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};

@@ -3,6 +3,10 @@ _player = _args select 0;
 _loadoutId = _args select 1;
 _unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
 
+if(isNull _unitConfig) exitWith { };
+
+_player setVariable ["SOCOMD_LOADOUTID", _loadoutId];
+
 removeUniform _player;
 removeVest _player;
 removeBackpack _player;
