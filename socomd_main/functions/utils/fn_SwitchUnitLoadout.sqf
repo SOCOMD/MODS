@@ -11,12 +11,33 @@ _unitLoadout = getUnitLoadout _player;
 
 //Primary
 _primary = getText (_unitConfig >> "primary");
-_primaryLoadout = [_primary,"","","",[],[],""];
+_primaryLoadout = _unitLoadout select 0;
+if(count _primaryLoadout <= 0) then
+{
+    _primaryLoadout = [_primary, "", "", "", [], [], ""];
+}
+else
+{
+    _primaryLoadout set [0, _primary];
+    _primaryLoadout set [4, []];
+    _primaryLoadout set [5, []];
+};
 _unitLoadout set [0, _primaryLoadout];
 
 //Secondary
 _secondary = getText (_unitConfig >> "secondary");
-_secondaryLoadout = [_secondary,"","","",[],[],""];
+_secondaryLoadout = _unitLoadout select 1;
+if(count _secondaryLoadout <= 0) then
+{
+    _secondaryLoadout = [_secondary, "", "", "", [], [], ""];
+}
+else
+{
+    _secondaryLoadout set [0, _secondary];
+    _secondaryLoadout set [4, []];
+    _secondaryLoadout set [5, []];
+};
+
 _secondaryMagazine = getText (_unitConfig >> "secondaryMagazine");
 if(_secondaryMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
 {
@@ -26,7 +47,17 @@ _unitLoadout set [1, _secondaryLoadout];
 
 //Handgun
 _handgun = getText (_unitConfig >> "handgun");
-_handgunLoadout = [_handgun,"","","",[],[],""];
+_handgunLoadout = _unitLoadout select 2;
+if(count _handgunLoadout <= 0) then
+{
+    _handgunLoadout = [_handgun, "", "", "", [], [], ""];
+}
+else
+{
+    _handgunLoadout set [0, _handgun];
+    _handgunLoadout set [4, []];
+    _handgunLoadout set [5, []];
+};
 
 _handgunMagazine = getText (_unitConfig >> "handgunMagazine");
 if(_handgunMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
@@ -133,7 +164,7 @@ if(not isNull _backpackConfig) then
             
             if(_type isKindOf ["Rifle", configFile >> "CfgWeapons"] && _added == 0) then 
             {
-                _weapon = [_type, "", "", "", ["", 0], ["", 0], ""];
+                _weapon = [_type, "", "", "", [], [], ""];
                 _backpackInventoryLoadout = _backpackInventoryLoadout + [[_weapon, _count]];
                 _added = 1;
             };
@@ -153,13 +184,9 @@ _unitLoadout set [5, _backpackLoadout];
 _headgear = getText (_unitConfig >> "headgear");
 _unitLoadout set [6, _headgear];
 
-//Facewear
-_facewear = getText (_unitConfig >> "facewear");
-_unitLoadout set [7, _facewear];
-
 //Binocular
 _binocularType = getText (_unitConfig >> "binocular");
-_binocular = [_binocularType, "", "", "", ["", 0], ["", 0], ""];
+_binocular = [_binocularType, "", "", "", [], [], ""];
 _unitLoadout set [8, _binocular];
 
 //Equipment
