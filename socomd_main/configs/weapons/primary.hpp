@@ -1,6 +1,39 @@
 //////////////////////////////////////////////////////////////////////
 //RIFLES
 
+class SMA_M4_BASE;
+
+class SMA_M4_GL_SM : SMA_M4_BASE
+{
+	displayName = "M4A5 UGL";
+};
+
+class SMA_M4afgSTOCK : SMA_M4_BASE
+{
+	displayName = "M4A5";
+	/*class asdg_Underbarrel
+		{
+			access = 0;
+			iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+			iconPinpoint = "Bottom";
+			iconPosition[] = {0,0};
+			iconScale = 0;
+			linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+			scope = 0;
+			class CompatibleItems
+			{
+				SMA_Gripod_01 = 1;
+			};
+		};*/
+};
+
+class sma_minimi_762_base_F;
+
+class sma_minimi_mk3_762tsb : sma_minimi_762_base_F
+{
+	displayName = "Mk 48 Maximi";
+};
+
 /*class UK3CB_BAF_L115_Base;
 class UK3CB_BAF_L115A3 : UK3CB_BAF_L115_Base 
 {

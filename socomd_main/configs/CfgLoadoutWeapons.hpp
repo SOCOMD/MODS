@@ -22,6 +22,7 @@ class CfgLoadoutWeapons
     
     class SMA_MK18MOEBLK : Rifle_556 { };
     class SMA_AUG_A3_F : Rifle_556 { };
+    class SMA_M4afgSTOCK : Rifle_556 { };
 
     class RifleGL_556
     {
@@ -43,4 +44,5 @@ class CfgLoadoutWeapons
 
     class SMA_MK18BLK_GL_SM : RifleGL_556 { };    
     class SMA_AUG_EGLM : RifleGL_556 { };
+    class SMA_M4_GL_SM : RifleGL_556 { };
 };
