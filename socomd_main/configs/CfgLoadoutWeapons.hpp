@@ -52,7 +52,7 @@ class CfgLoadoutWeapons
         };
 
         magazines[] = {
-            {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", 5}
+            {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", 4}
         };
     };
     
@@ -62,7 +62,7 @@ class CfgLoadoutWeapons
         };
 
         magazines[] = {
-            {"SMA_150Rnd_762_M80A1", 5}
+            {"SMA_150Rnd_762_M80A1", 4}
         };
     };
 };

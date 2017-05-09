@@ -1,10 +1,24 @@
 //////////////////////////////////////////////////////////////////////
 // VESTS
 
-class Vest_Camo_Base;
+class ItemCore;
+
+class Vest_camo_Base : ItemCore
+{
+	class ItemInfo;
+};
+
 class V_PlateCarrier1_rgr : Vest_Camo_Base
 {
 	class ItemInfo;
+};
+
+class VSM_LBT6094_MG_Multicam : Vest_Camo_Base
+{
+	class ItemInfo : ItemInfo
+	{
+		containerClass = "Supply400";
+	};
 };
 
 class SOCOMD_Vest_TL : V_PlateCarrier1_rgr
