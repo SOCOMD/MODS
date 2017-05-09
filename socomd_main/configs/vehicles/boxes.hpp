@@ -320,7 +320,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				distance = 5;
 				condition = 1;
 				
-				
+				class SOCOMD_LoadoutWeapon_SMA_M4afgSTOCK
+                {
+                    displayName = "M4A5";
+                    condition = "[_player, 'SMA_M4afgSTOCK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+                    statement = "[_player , 'SMA_M4afgSTOCK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+
 
 				class SOCOMD_LoadoutWeapon_SMA_M4_GL_SM
 				{
