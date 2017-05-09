@@ -34,6 +34,13 @@ class sma_minimi_mk3_762tsb : sma_minimi_762_base_F
 	displayName = "Mk 48 Maximi";
 };
 
+class CUP_lmg_minimi_railed;
+
+class CUP_lmg_m249_pip2 : CUP_lmg_minimi_railed
+{
+	displayName = "FN Minimi HS";
+};
+
 /*class UK3CB_BAF_L115_Base;
 class UK3CB_BAF_L115A3 : UK3CB_BAF_L115_Base 
 {
