@@ -45,4 +45,24 @@ class CfgLoadoutWeapons
     class SMA_MK18BLK_GL_SM : RifleGL_556 { };    
     class SMA_AUG_EGLM : RifleGL_556 { };
     class SMA_M4_GL_SM : RifleGL_556 { };
+
+    class CUP_lmg_m249_pip2 {
+        loadoutWhitelist[] = {
+            "SASR_MachineGunner"
+        };
+
+        magazines[] = {
+            {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", 5}
+        };
+    };
+    
+    class sma_minimi_mk3_762tsb {
+        loadoutWhitelist[] = {
+            "SASR_MachineGunner"
+        };
+
+        magazines[] = {
+            {"SMA_150Rnd_762_M80A1", 5}
+        };
+    };
 };

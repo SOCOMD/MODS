@@ -1,3 +1,4 @@
+
 ////////////////////////////////////////////////////////////////////////////////
 // INTERACTIVE BOX
 
@@ -319,14 +320,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				distance = 5;
 				condition = 1;
 				
-				class SOCOMD_LoadoutWeapon_SMA_M4afgSTOCK
-				{
-					displayName = "M4A5";
-					condition = "[_player, 'SMA_M4afgSTOCK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
-					statement = "[_player , 'SMA_M4afgSTOCK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
+				
 
 				class SOCOMD_LoadoutWeapon_SMA_M4_GL_SM
 				{
@@ -369,6 +363,24 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					displayName = "AUG A3 UGL";
 					condition = "[_player, 'SMA_AUG_EGLM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'SMA_AUG_EGLM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_CUP_lmg_m249_pip2
+				{
+					displayName = "Minimi";
+					condition = "[_player, 'CUP_lmg_m249_pip2'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'CUP_lmg_m249_pip2'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_sma_minimi_mk3_762tsb
+				{
+					displayName = "Maximi";
+					condition = "[_player, 'sma_minimi_mk3_762tsb'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'sma_minimi_mk3_762tsb'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
