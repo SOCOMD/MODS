@@ -10,7 +10,7 @@ class SOCOMD_LongRange_Radio: tf_rt1523g_big_bwmod
 	maximumLoad = 400;
 	mass = 20;
 
-	tf_range = 40000;
+	tf_range = 200000;
 };
 
 class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
@@ -22,7 +22,7 @@ class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
 	maximumLoad = 400;
 	mass = 20;
 
-	tf_range = 40000;
+	tf_range = 200000;
 
 	class TransportItems
 	{
@@ -39,7 +39,7 @@ class SOCOMD_SniperLR: tf_rt1523g_big_bwmod
 	maximumLoad = 400;
 	mass = 20;
 
-	tf_range = 40000;
+	tf_range = 200000;
 
 	class TransportMagazines
 	{

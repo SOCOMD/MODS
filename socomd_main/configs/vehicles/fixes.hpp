@@ -412,9 +412,9 @@ class CAManBase : Man
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 
-			class SOCOMD_Cap_HS_ReverseBack
+			class SOCOMD_Cap_HS_Straighten
 			{
-				displayName = "Reverse Cap";
+				displayName = "Straighten Cap";
 				condition = "((headgear _player) == 'SOCOMD_Cap_HS_Rev') and (alive _player)";
 				statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
 				showDisabled = 0;

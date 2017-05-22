@@ -250,36 +250,36 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Headgear_TakeCap
 					{
-						displayName = "Take Cap";
+						displayName = "Switch to a Cap";
 						condition = 1;
-						statement = "_player addItem 'SOCOMD_Cap_HS';";
+						statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
 					class SOCOMD_Headgear_TakeBoonie
 					{
-						displayName = "Take Boonie";
+						displayName = "Switch to a Boonie";
 						condition = 1;
-						statement = "_player addItem 'SOCOMD_Boonie';";
+						statement = "[_player , 'SOCOMD_Boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
 					class SOCOMD_Headgear_TakeBandanna
 					{
-						displayName = "Take Bandanna";
+						displayName = "Switch to a Bandanna";
 						condition = 1;
-						statement = "_player addItem 'SOCOMD_Bandanna';";
+						statement = "[_player , 'SOCOMD_Bandanna'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
 					class SOCOMD_Headgear_TakeBowman
 					{
-						displayName = "Take Bowman";
+						displayName = "Switch to a Bowman";
 						condition = 1;
-						statement = "_player addItem 'VSM_Bowman';";
+						statement = "[_player , 'VSM_Bowman'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
