@@ -99,7 +99,7 @@ class SASR_StandardTrooper
 
 #define SASR_STANDARD_MEDICAL   LOADOUT_ITEM(ACE_personalAidKit, 1) \
                                 LOADOUT_ITEM(ACE_elasticBandage, 6) \
-                                LOADOUT_ITEM(ACE_packingBandage, 6) \ 
+                                LOADOUT_ITEM(ACE_packingBandage, 6) \
                                 LOADOUT_ITEM(ACE_quikclot, 6) \
                                 LOADOUT_ITEM(ACE_epinephrine, 2) \
                                 LOADOUT_ITEM(ACE_morphine, 2) \
@@ -109,7 +109,7 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(ACE_EarPlugs, 1) \
                                 LOADOUT_ITEM(ACE_CableTie, 1) \
                                 LOADOUT_ITEM(CUP_NVG_HMNVS, 1) \
-                                LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \ 
+                                LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
                                 LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
                                 LOADOUT_ITEM(Chemlight_blue, 2) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1)
