@@ -723,6 +723,11 @@ class CfgLoadouts
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
                 };
             };
+
+            class Backpack
+            {
+                type = "SOCOMD_LongRange_Radio";                
+            };
         };
         
         class JAC_Officer

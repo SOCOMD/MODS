@@ -49,8 +49,8 @@ class SOCOMD_SASR_Trooper : SOCOMD_SASR_Soldier
 	icon 					= "iconMan";
 	displayName 			= "Trooper";
 
-	weapons[] 				= { "Rangefinder" };
-	respawnWeapons[] 		= { "Rangefinder" };
+	weapons[] 				= { };
+	respawnWeapons[] 		= { };
 	magazines[] 			= { SASR_UNIT_COMMON_AMMO };
 	respawnMagazines[] 		= { SASR_UNIT_COMMON_AMMO };
 	linkedItems[] 			= { SASR_UNIT_COMMON_LINKEDITEMS, "AU_02_780000_v1" };

@@ -26,6 +26,7 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 16)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
 	
 };
@@ -55,6 +56,7 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 16)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
 	
 };
@@ -178,6 +180,7 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 16)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
 	
 };
@@ -209,6 +212,7 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 30)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
 	
 };
@@ -237,6 +241,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 30)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
 	
 };
@@ -262,6 +267,11 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 	
 	//INVENTORY
 	AirLoadout
+
+	class TransportBackpacks 
+	{
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
+	}; 
 };
 
 
@@ -283,6 +293,11 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	
 	//INVENTORY
 	AirLoadout
+
+	class TransportBackpacks 
+	{
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
+	}; 
 };
 
 class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
@@ -303,6 +318,11 @@ class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
 	
 	//INVENTORY
 	AirLoadout
+
+	class TransportBackpacks 
+	{
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
+	}; 
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -330,6 +350,7 @@ class SOCOMD_FIREFLY : MELB_MH6M
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 8)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	};
 };
 
@@ -358,6 +379,7 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 2)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	};
 };
 
@@ -383,5 +405,6 @@ class SOCOMD_DRAGONFLY_762 : MELB_AH6M_L
 	class TransportBackpacks 
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 2)
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	};
 };

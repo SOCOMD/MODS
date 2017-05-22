@@ -412,6 +412,34 @@ class CAManBase : Man
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 
+			class SOCOMD_Cap_HS_ReverseBack
+			{
+				displayName = "Reverse Cap";
+				condition = "((headgear _player) == 'SOCOMD_Cap_HS_Rev') and (alive _player)";
+				statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			//SWAP PILOT HELMETS
+			class SOCOMD_Helmet_FixedWing
+			{
+				displayName = "Switch to Fixed Wing Helmet";
+				condition = "((headgear _player) == 'SOCOMD_Pilot_helmet') and (alive _player)";
+				statement = "[_player , 'SOCOMD_FixedWing_Pilot_helmet'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Helmet_Rotary
+			{
+				displayName = "Switch to Rotary Helmet";
+				condition = "((headgear _player) == 'SOCOMD_FixedWing_Pilot_helmet') and (alive _player)";
+				statement = "[_player , 'SOCOMD_Pilot_helmet'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
 			//GROUND CREW VESTS
 			class SOCOMD_GroundCrewVest_ChangeColour
 			{

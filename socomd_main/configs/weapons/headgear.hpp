@@ -40,6 +40,15 @@
 		ace_hearing_lowerVolume = 0;
 	};
 
+	class H_PilotHelmetFighter_B;
+	class SOCOMD_FixedWing_Pilot_helmet : H_PilotHelmetFighter_B
+	{
+		scope = public;
+		displayName = "SOCOMD Fixed Wing-Pilot Helmet";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+	};
+
 	class H_CrewHelmetHeli_O;
 	class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O
 	{

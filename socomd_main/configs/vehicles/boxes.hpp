@@ -275,6 +275,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Headgear_TakeBowman
+					{
+						displayName = "Take Bowman";
+						condition = 1;
+						statement = "_player addItem 'VSM_Bowman';";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
 					{
 						displayName = "Switch to a FAST Multicam Helmet";

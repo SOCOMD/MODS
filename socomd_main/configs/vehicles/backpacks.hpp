@@ -9,6 +9,8 @@ class SOCOMD_LongRange_Radio: tf_rt1523g_big_bwmod
 	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
 	maximumLoad = 400;
 	mass = 20;
+
+	tf_range = 40000;
 };
 
 class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
@@ -19,6 +21,9 @@ class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
 	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
 	maximumLoad = 400;
 	mass = 20;
+
+	tf_range = 40000;
+
 	class TransportItems
 	{
 		TRANSPORT_ITEM(ACE_personalAidKit, 1)
@@ -33,6 +38,9 @@ class SOCOMD_SniperLR: tf_rt1523g_big_bwmod
 	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
 	maximumLoad = 400;
 	mass = 20;
+
+	tf_range = 40000;
+
 	class TransportMagazines
 	{
 		TM_SniperAmmo
