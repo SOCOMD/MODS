@@ -421,6 +421,25 @@ class CAManBase : Man
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 
+			//SWAP BEANIES
+			class SOCOMD_Helmet_BeanieTan
+			{
+				displayName = "Switch to Tan Beanie";
+				condition = "((headgear _player) == 'VSM_Beanie_black') and (alive _player)";
+				statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Helmet_BeanieBlack
+			{
+				displayName = "Switch to Black Beanie";
+				condition = "((headgear _player) == 'VSM_Beanie_tan') and (alive _player)";
+				statement = "[_player , 'VSM_Beanie_black'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
 			//SWAP PILOT HELMETS
 			class SOCOMD_Helmet_FixedWing
 			{

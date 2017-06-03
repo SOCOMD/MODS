@@ -284,6 +284,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Headgear_Beanie
+					{
+						displayName = "Switch to a Beanie";
+						condition = 1;
+						statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
 					{
 						displayName = "Switch to a FAST Multicam Helmet";
