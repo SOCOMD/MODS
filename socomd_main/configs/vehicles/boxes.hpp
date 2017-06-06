@@ -412,7 +412,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				};
 				class SOCOMD_LoadoutWeapon_SPARTAN_EBR_black_F
 				{
-					displayName = "Maximi";
+					displayName = "Mk14 EBR";
 					condition = "[_player, 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
@@ -420,7 +420,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				};
 				class SOCOMD_LoadoutWeapon_SMA_HK417_16in
 				{
-					displayName = "Maximi";
+					displayName = "HK 417";
 					condition = "[_player, 'SMA_HK417_16in'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'SMA_HK417_16in'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
@@ -428,7 +428,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				};
 				class SOCOMD_LoadoutWeapon_hlc_rifle_awmagnum
 				{
-					displayName = "Maximi";
+					displayName = "SR98 .300";
 					condition = "[_player, 'hlc_rifle_awmagnum'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'hlc_rifle_awmagnum'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
@@ -436,7 +436,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				};
 				class SOCOMD_LoadoutWeapon_hlc_rifle_awMagnum_OD_ghillie
 				{
-					displayName = "Maximi";
+					displayName = "SR98 .300 Camo";
 					condition = "[_player, 'hlc_rifle_awMagnum_OD_ghillie'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'hlc_rifle_awMagnum_OD_ghillie'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
