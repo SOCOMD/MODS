@@ -22,7 +22,7 @@ if(captive _curatorEntity) then
 };
 
 //Set Captive State
-if(_curatorEntity in allPlayers) then {
+if(isPlayer _curatorEntity) then {
 	[_newCaptiveState] remoteExec ["SOCOMD_fnc_ModuleToggleUndercover_Local", _curatorEntity];
 } else {
 	_curatorEntity setCaptive _newCaptiveState;
