@@ -9,7 +9,6 @@ class CfgLoadoutWeapons
                 "SASR_Grenadier",
                 "SASR_Sapper",
                 "SASR_Medic",
-                "SASR_Marksman",
                 "SASR_LAT",
                 "SASR_MAT",
                 "SASR_HAT"
@@ -64,5 +63,45 @@ class CfgLoadoutWeapons
         magazines[] = {
             {"SMA_150Rnd_762_M80A1", 4}
         };
+    };
+
+    class SPARTAN_EBR_black_F {
+        loadoutWhitelist[] = {
+                "SASR_Marksman"
+            };
+
+        magazines[] = {
+                {"20Rnd_762x51_Mag", 8}
+            };
+    };
+
+    class SMA_HK417_16in {
+        loadoutWhitelist[] = {
+                "SASR_Marksman"
+            };
+
+        magazines[] = {
+                {"20Rnd_762x51_Mag", 8}
+            };
+    };
+
+    class hlc_rifle_awmagnum {
+        loadoutWhitelist[] = {
+                "SASR_Sniper"
+            };
+
+        magazines[] = {
+                {"hlc_5rnd_300WM_FMJ_AWM", 9}
+            };
+    };
+
+    class hlc_rifle_awMagnum_OD_ghillie {
+        loadoutWhitelist[] = {
+                "SASR_Sniper"
+            };
+
+        magazines[] = {
+                {"hlc_5rnd_300WM_FMJ_AWM", 9}
+            };
     };
 };

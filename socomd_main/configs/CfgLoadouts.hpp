@@ -463,7 +463,7 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 6)
+                    LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
@@ -471,7 +471,7 @@ class CfgLoadouts
 
         class SASR_Sniper
         {
-            primary = "KA_M98B";
+            primary = "hlc_rifle_awmagnum";
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
@@ -496,7 +496,7 @@ class CfgLoadouts
                 {
                     SASR_VEST_ESSENTIALS
 
-                    LOADOUT_ITEM(KA_M98B_10Rnd_338_API526_Mag, 6)
+                    LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 2)
                 };
             };
