@@ -1,33 +1,29 @@
 _args = _this;
 _logic = _args select 0;
 
-_radius = 2;
-_logicPosition = position _logic;
-
 //Destory Module
 deleteVehicle _logic;
 
-_nearestEntities = _logicPosition nearEntities _radius;
+sleep 0.02;
+
+_curatorEntity = objnull;
+if ((curatormouseover select 0) == "object") then 
 {
-	if(not (_x in allPlayers)) then {
-		_nearestEntities = _nearestEntities - [_x];
-	};
-}foreach(_nearestEntities);
+	 _curatorEntity = (curatormouseover select 1);
+};
 
-//Exit if nothing near by
-if(count _nearestEntities <= 0) exitWith { };
-
-_nearestEntity = _nearestEntities select 0;
-_curators = objectCurators _nearestEntity;
-
-//Exit if entity isn't controlled by a curator
-if(count _curators <= 0) exitWith { };
+//Exit there is no curator entity under cursor
+if(isNull _curatorEntity) exitWith { };
 
 _newCaptiveState = 1;
-if(captive _nearestEntity) then 
+if(captive _curatorEntity) then 
 {
 	_newCaptiveState = 0;
 };
 
 //Set Captive State
-[_newCaptiveState] remoteExec ["SOCOMD_fnc_ModuleToggleUndercover_Local", _nearestEntity];
+if(_curatorEntity in allPlayers) then {
+	[_newCaptiveState] remoteExec ["SOCOMD_fnc_ModuleToggleUndercover_Local", _curatorEntity];
+} else {
+	_curatorEntity setCaptive _newCaptiveState;
+};
