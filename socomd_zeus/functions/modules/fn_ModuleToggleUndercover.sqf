@@ -1,19 +1,19 @@
-_args = _this;
-_logic = _args select 0;
+params["_logic", "_units", "_activated"];
 
-//Destory Module
-deleteVehicle _logic;
+if!(_activated && local _logic) exitWith {};
 
-sleep 0.02;
+_mouseOver = missionNamespace getVariable [ "bis_fnc_curatorObjectPlaced_mouseOver", [""]];
 
 _curatorEntity = objnull;
-if ((curatormouseover select 0) == "object") then 
+if ((_mouseOver select 0) == "OBJECT") then 
 {
-	 _curatorEntity = (curatormouseover select 1);
+	 _curatorEntity = (_mouseOver select 1);
 };
 
 //Exit there is no curator entity under cursor
-if(isNull _curatorEntity) exitWith { };
+if(isNull _curatorEntity) exitWith {
+	deleteVehicle _logic;
+};
 
 _newCaptiveState = 1;
 if(captive _curatorEntity) then 
@@ -21,9 +21,5 @@ if(captive _curatorEntity) then
 	_newCaptiveState = 0;
 };
 
-//Set Captive State
-if(isPlayer _curatorEntity) then {
-	[_newCaptiveState] remoteExec ["SOCOMD_fnc_ModuleToggleUndercover_Local", _curatorEntity];
-} else {
-	_curatorEntity setCaptive _newCaptiveState;
-};
+_curatorEntity setCaptive _newCaptiveState;
+deleteVehicle _logic;

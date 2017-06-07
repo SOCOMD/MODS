@@ -48,7 +48,7 @@ class CfgVehicles
     class SOCOMD_Module_ToggleUndercover : SOCOMD_Module_Base
     {
         scopeCurator = 2;
-        isGlobal = 0;
+        isGlobal = 1;
 
         _generalMacro = "SOCOMD_Module_ToggleUndercover";
         displayName = "Toggle Undercover";
