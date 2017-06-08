@@ -442,6 +442,14 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
+				class SOCOMD_LoadoutWeapon_hlc_rifle_awcovert
+				{
+					displayName = "SR98 .300 Suppressed";
+					condition = "[_player, 'hlc_rifle_awcovert'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'hlc_rifle_awcovert'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
 			};
 		};
 	};

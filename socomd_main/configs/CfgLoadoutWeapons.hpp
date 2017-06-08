@@ -104,4 +104,14 @@ class CfgLoadoutWeapons
                 {"hlc_5rnd_300WM_FMJ_AWM", 9}
             };
     };
+
+    class hlc_rifle_awcovert {
+        loadoutWhitelist[] = {
+                "SASR_Sniper"
+            };
+
+        magazines[] = {
+                {"hlc_5rnd_300WM_FMJ_AWM", 9}
+            };
+    };
 };
