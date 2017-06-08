@@ -21,5 +21,5 @@ if(captive _curatorEntity) then
 	_newCaptiveState = 0;
 };
 
-_curatorEntity setCaptive _newCaptiveState;
+[_curatorEntity, _newCaptiveState] remoteExec ["setCaptive", owner _curatorEntity];
 deleteVehicle _logic;
