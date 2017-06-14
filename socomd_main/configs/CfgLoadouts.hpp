@@ -761,7 +761,7 @@ class CfgLoadouts
 
             class Backpack
             {
-                type = "tf_rt1523g_black";
+                type = "SOCOMD_LongRange_Radio";
             };
         };
         

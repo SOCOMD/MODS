@@ -44,7 +44,7 @@
 	TRANSPORT_ITEM(ACE_bloodIV_500, 5)
 
 #define LandTransportBackpacks \
-	TRANSPORT_BACKPACK(tf_rt1523g_rhs, 1)
+	TRANSPORT_BACKPACK(SOCOMD_LongRange_Radio, 1)
 
 #define LandTransportWeapons \
 	TRANSPORT_WEAPON(SMA_MK18MOEBLK, 1)

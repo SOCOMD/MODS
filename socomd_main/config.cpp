@@ -79,7 +79,6 @@ class CfgPatches
 			"SOCOMD_Backpack_Empty",
 			"SOCOMD_Sapper_Backpack",
 			"SOCOMD_Medic_Backpack",
-			"SOCOMD_SniperLR",
 			"SOCOMD_Sniper_Backpack",
 			"SOCOMD_Gunner_Backpack",
 			"SOCOMD_LongRange_Radio",

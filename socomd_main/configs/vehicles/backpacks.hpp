@@ -12,40 +12,6 @@ class SOCOMD_LongRange_Radio: tf_rt1523g_big_bwmod
 
 	tf_range = 200000;
 };
-
-class SOCOMD_Weapons_Radio: tf_rt1523g_big_bwmod
-{
-	scope = protected;
-	displayName = "SOCOMD Long Range Radio";
-	model = "\socomd_data\models\clf_nicecomm2";
-	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
-	maximumLoad = 400;
-	mass = 20;
-
-	tf_range = 200000;
-
-	class TransportItems
-	{
-		TRANSPORT_ITEM(ACE_personalAidKit, 1)
-	};
-};
-
-class SOCOMD_SniperLR: tf_rt1523g_big_bwmod
-{
-	scope = protected;
-	displayName = "SOCOMD Sniper Radio";
-	model = "\socomd_data\models\clf_nicecomm2";
-	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
-	maximumLoad = 400;
-	mass = 20;
-
-	tf_range = 200000;
-
-	class TransportMagazines
-	{
-		TM_SniperAmmo
-	};
-};
 	
 ////////////////////////////////////////////////////////////////////////////////
 // BASE BACKPACKS

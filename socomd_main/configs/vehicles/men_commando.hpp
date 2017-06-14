@@ -386,7 +386,7 @@ class SOCOMD_Sniper_Spotter : SOCOMD_Soldier_LongSleeve
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemAndroid" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", "ACE_M26_Clacker" };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", "ACE_M26_Clacker" };
-	backpack 				= "SOCOMD_SniperLR";
+	backpack 				= "SOCOMD_LongRange_Radio";
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -408,7 +408,7 @@ class SOCOMD_Weapons_TeamLeader : SOCOMD_Soldier_LongSleeve
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemAndroid" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_EntrenchingTool", "ACE_HuntIR_monitor", "ACE_MapTools" };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_EntrenchingTool", "ACE_HuntIR_monitor", "ACE_MapTools" };
-	backpack 				= "SOCOMD_Weapons_Radio";
+	backpack 				= "SOCOMD_LongRange_Radio";
 };
 
 class SOCOMD_Weapons_Specialist : SOCOMD_Soldier_LongSleeve
