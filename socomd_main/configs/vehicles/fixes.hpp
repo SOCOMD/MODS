@@ -4,6 +4,59 @@
 class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F 
 {
 	scope = private;
+
+	class HitPoints : HitPoints
+	{
+		//Left Wheels
+		class HitLFWheel : HitLFWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		class HitLF2Wheel : HitLF2Wheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		class HitLBWheel : HitLBWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		class HitLMWheel : HitLMWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		//Right Wheels
+		class HitRFWheel : HitRFWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+		
+		class HitRF2Wheel : HitRF2Wheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		class HitRBWheel : HitRBWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+
+		class HitRMWheel : HitRMWheel
+		{
+			armor = 0.2;
+			explosionShielding = 4;
+		};
+	};
 };
 
 class bma3_bushmaster_unarmed_ecm_F : bma3_bushmaster_unarmed_F 

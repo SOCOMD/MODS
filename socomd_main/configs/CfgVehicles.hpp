@@ -6,8 +6,30 @@ class CfgVehicles
 	class Man;
 	class SoldierWB;
 
+	class Car;
+	class Car_F : Car
+	{
+		class HitPoints;		
+	};
+
 	//LAND
-	class bma3_bushmaster_base_F;
+	class bma3_bushmaster_base_F : Car_F
+	{
+		class HitPoints : HitPoints
+		{
+			//Left Wheels
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitLBWheel;
+			class HitLMWheel;
+
+			//Right Wheels
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
 	class B_Quadbike_01_F;
 	class Bicycle;
 
