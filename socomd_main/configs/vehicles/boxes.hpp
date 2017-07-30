@@ -451,6 +451,23 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 			};
+
+			class SOCOMD_Uniforms
+			{
+				displayName = "Uniforms";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Uniforms_ToggleDiving
+                {
+                    displayName = "Toggle Diving Uniform";
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+			};
 		};
 	};
 };

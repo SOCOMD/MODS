@@ -19,8 +19,10 @@ class CfgFunctions
 		class Actions
 		{
 			file="\socomd_main\functions\action";
+			class Action_ToggleDiving {};
 			class Action_ReplaceCrewColours {};
 			class Action_ReplaceUniform {};
+			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplacePrimary {};
 		};
@@ -28,6 +30,7 @@ class CfgFunctions
 		class ActionConditions
 		{
 			file="\socomd_main\functions\actionConditions";
+			class ActionCondition_CanToggleDiving {};
 			class ActionCondition_CanSwitchGroundCrewVest {};
 			class ActionCondition_CanUseLoadoutWeapon {};
 			class ActionCondition_HasPrimary556 {};	
