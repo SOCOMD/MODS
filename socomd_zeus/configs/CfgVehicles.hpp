@@ -54,4 +54,24 @@ class CfgVehicles
         displayName = "Toggle Undercover";
         function = "SOCOMD_fnc_ModuleToggleUndercover";
     };
+
+    class SOCOMD_Module_CopyClipboardLoadout : SOCOMD_Module_Base
+    {
+        scopeCurator = 2;
+        isGlobal = 1;
+
+        _generalMacro = "SOCOMD_Module_CopyClipboardLoadout";
+        displayName = "Copy Loadout";
+        function = "SOCOMD_fnc_ModuleCopyClipboardLoadout";
+    };
+
+    class SOCOMD_Module_PasteClipboardLoadout : SOCOMD_Module_Base
+    {
+        scopeCurator = 2;
+        isGlobal = 1;
+
+        _generalMacro = "SOCOMD_Module_PasteClipboardLoadout";
+        displayName = "Paste Loadout";
+        function = "SOCOMD_fnc_ModulePasteClipboardLoadout";
+    };
 };

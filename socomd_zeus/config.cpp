@@ -5,7 +5,9 @@ class CfgPatches
 	class socomd_zeus
 	{
 		units[] = {
-			"SOCOMD_Module_ToggleUndercover"
+			"SOCOMD_Module_ToggleUndercover",
+			"SOCOMD_Module_CopyClipboardLoadout",
+			"SOCOMD_Module_PasteClipboardLoadout"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
