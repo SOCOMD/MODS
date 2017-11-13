@@ -16,21 +16,20 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
 		pos[]={9553.0967,138.03258,13289.476};
-		dir[]={0.64314753,-0.57844448,0.50197256};
-		up[]={0.45619363,0.81554168,0.35605583};
-		aside[]={0.61533624,2.6870403e-006,-0.78838396};
+		dir[]={0.64307904,-0.57838291,0.50191903};
+		up[]={0.45594743,0.8157655,0.35586333};
+		aside[]={0.61527348,-4.4703484e-007,-0.78831387};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Ui_F",
-	"ace_map",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_Mil_Flags",
@@ -41,6 +40,7 @@ addons[]=
 	"CUP_WarfareBuildings",
 	"CUP_StandaloneTerrains_Core_Faction",
 	"A3_Signs_F",
+	"A3_Structures_F_Argo",
 	"A3_Structures_F_Mil_BagBunker",
 	"CUP_Misc3_Config",
 	"socomd_main",
@@ -49,13 +49,14 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Supplies_F_Heli_Slingload",
+	"ace_cargo",
 	"ace_refuel"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -65,46 +66,46 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="ace_map";
-			name="ACE3 - Map";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item2
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item6
+		class Item5
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F_Argo";
+			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -140,6 +141,13 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item13
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item14
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
@@ -4310,7 +4318,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="Journalist1 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] call BIS_fnc_camera"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Journalist""];";
+						init="Journalist1 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] spawn SOCOMD_fnc_OpenGCam"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Journalist""];";
 						name="Journalist1";
 						description="Journalist";
 						isPlayable=1;
@@ -4332,7 +4340,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="Journalist2 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] call BIS_fnc_camera"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Journalist""];";
+						init="Journalist2 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] spawn SOCOMD_fnc_OpenGCam"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Journalist""];";
 						name="Journalist2";
 						description="Journalist";
 						isPlayable=1;
@@ -4368,7 +4376,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="COLONEL";
-						init="ZES1 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] call BIS_fnc_camera"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Homestead""];";
+						init="ZES1 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] spawn SOCOMD_fnc_OpenGCam"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Homestead""];";
 						name="ZES1";
 						description="Homestead 1";
 						isPlayable=1;
@@ -4451,7 +4459,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="COLONEL";
-						init="ZES2 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] call BIS_fnc_camera"", ""radio"", -1, false, true,"""", ""_this == _target""];";
+						init="ZES2 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] spawn SOCOMD_fnc_OpenGCam"", ""radio"", -1, false, true,"""", ""_this == _target""];";
 						name="ZES2";
 						description="Homestead 2";
 						isPlayable=1;
@@ -4474,7 +4482,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="COLONEL";
-						init="ZES3 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] call BIS_fnc_camera"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Homestead""];";
+						init="ZES3 addAction [(""<t color=""""#CC2900"""">"" + (""Camera"") + ""</t>""), ""[] spawn SOCOMD_fnc_OpenGCam"", ""radio"", -1, false, true,"""", ""_this == _target""]; this setGroupId [""Homestead""];";
 						name="ZES3";
 						description="Homestead 3";
 						isPlayable=1;
