@@ -12,6 +12,7 @@ class CfgFunctions
 		class Utils
 		{
 			file="\socomd_main\functions\utils";
+			class SetUnitLoadout {};
 			class SwitchUnitLoadout {};	
 			class SwitchUnitLoadoutWeapon {};
 		};

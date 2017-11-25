@@ -10,4 +10,4 @@ _vestLoadout set [0, _vest];
 _unitLoadout set [4, _vestLoadout];
 _unitLoadout set [6, _headgear];
 
-_player setUnitLoadout _unitLoadout;
+[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;

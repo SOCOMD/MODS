@@ -200,4 +200,4 @@ _equipmentLoadout set [1, _gps];
 _equipmentLoadout set [5, ""];
 _unitLoadout set [9, _equipmentLoadout];
 
-_player setUnitLoadout _unitLoadout;
+[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;

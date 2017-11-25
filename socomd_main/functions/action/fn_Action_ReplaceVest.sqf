@@ -6,4 +6,5 @@ _unitLoadout = getUnitLoadout _player;
 _vestLoadout = _unitLoadout select 4;
 _vestLoadout set [0, _vest]; 
 _unitLoadout set [4, _vestLoadout];
-_player setUnitLoadout _unitLoadout;
+
+[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;

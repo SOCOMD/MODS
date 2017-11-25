@@ -43,7 +43,8 @@ else
 };
 
 _unitLoadout set [0, _primaryLoadout];
-_player setUnitLoadout _unitLoadout;
+
+[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 
 //Give Magazines
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
@@ -55,6 +56,3 @@ if(count _loadoutMagazines > 0) then
         _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
 };
-
-
-HandGrenade
