@@ -1,14 +1,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 //COMMON DEFINES
  
-#define CMD_UNIT_COMMON_AMMO 		ITEM04("CUP_17Rnd_9x19_glock17"), \
+#define CMD_UNIT_COMMON_AMMO 		ITEM04("RH_12Rnd_45cal_usp"), \
 									ITEM02("SmokeShell"), \
 									ITEM02("SmokeShellGreen"), \
 									ITEM02("HandGrenade"), \
 									ITEM02("ACE_M84"), \
 									ITEM01("B_IR_Grenade")
 	
-#define CMD_UNIT_COMMON_WEAPONS 	ITEM01("SOCOMD_Pistol"), \
+#define CMD_UNIT_COMMON_WEAPONS 	ITEM01("RH_usp"), \
 									ITEM01("Throw"), \
 									ITEM01("Put")
  
@@ -280,8 +280,8 @@ class SOCOMD_Light_Anti_Tank_Marksman : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManAT";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "HAFM_LAW", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "HAFM_LAW", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "CUP_launch_M72A6", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "CUP_launch_M72A6", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
