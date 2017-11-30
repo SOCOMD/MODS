@@ -46,14 +46,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 // AMMO DEFINES
  
-#define CMD_UNIT_AMMO_RIFLEMAN 		ITEM07("SMA_30Rnd_556x45_Mk318"), \
-									ITEM02("SMA_30Rnd_556x45_Mk318_Tracer")
+#define CMD_UNIT_AMMO_RIFLEMAN 		ITEM07("SMA_30Rnd_556x45_M855A1"), \
+									ITEM02("SMA_30Rnd_556x45_M855A1_Tracer")
  
 #define CMD_UNIT_AMMO_UNDERSLUNG 	ITEM05("1Rnd_HE_Grenade_shell"), \
 									ITEM02("1Rnd_SmokeRed_Grenade_shell"), \
 									ITEM02("ACE_HuntIR_M203")
  
-#define CMD_UNIT_AMMO_MARKSMAN 		ITEM09("SMA_20Rnd_762x51mm_M80A1_EPR_IR")
+#define CMD_UNIT_AMMO_MARKSMAN 		ITEM09("SMA_20Rnd_762x51mm_M80A1_EPR")
 
 #define CMD_UNIT_AMMO_GUNNER		ITEM04("SMA_150Rnd_762_M80A1")
  
@@ -143,8 +143,8 @@ class SOCOMD_Rifleman : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
@@ -165,8 +165,8 @@ class SOCOMD_PlatoonLeader : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManLeader";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Laserdesignator" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Laserdesignator" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemcTab" };
@@ -184,8 +184,8 @@ class SOCOMD_PlatoonSergeant : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManExplosive";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, ITEM04("SmokeShell") };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, ITEM04("SmokeShell") };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemAndroid" };
@@ -203,8 +203,8 @@ class SOCOMD_PlatoonMedic : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManMedic";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, ITEM04("SmokeShell") };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, ITEM04("SmokeShell") };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
@@ -222,8 +222,8 @@ class SOCOMD_PlatoonSignaller : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Laserdesignator" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Laserdesignator" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Laserdesignator" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Laserdesignator" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemAndroid" };
@@ -244,8 +244,8 @@ class SOCOMD_SectionLeader : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManLeader";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_FAST_Tan", "ItemAndroid" };
@@ -262,8 +262,8 @@ class SOCOMD_2IC : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManExplosive";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemAndroid" };
@@ -280,8 +280,8 @@ class SOCOMD_Light_Anti_Tank_Marksman : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManAT";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK18MOEBLK", "HAFM_LAW", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK18MOEBLK", "HAFM_LAW", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "HAFM_LAW", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "HAFM_LAW", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
@@ -318,8 +318,8 @@ class SOCOMD_Sapper : SOCOMD_Soldier_LongSleeve
 	engineer 				= 1;
 	detectSkill 			= 100;
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
@@ -337,8 +337,8 @@ class SOCOMD_Medic : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManMedic";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
@@ -359,8 +359,8 @@ class SOCOMD_Recon_TeamLeader : SOCOMD_Soldier_LongSleeve
 	icon 					= "iconManLeader";
 	camouflage 				= 0.4;
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Laserdesignator" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Laserdesignator" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Laserdesignator" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Laserdesignator" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemAndroid" };
@@ -378,8 +378,8 @@ class SOCOMD_Sniper_Spotter : SOCOMD_Soldier_LongSleeve
 	icon 					= "iconManAT";
 	camouflage 				= 0.4;
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Rangefinder" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Rangefinder" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemAndroid" };
@@ -400,8 +400,8 @@ class SOCOMD_Weapons_TeamLeader : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Weapons";
 	icon 					= "iconManLeader";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Laserdesignator" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_MK16_EGLM_Green", "Laserdesignator" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemAndroid" };
@@ -419,8 +419,8 @@ class SOCOMD_Weapons_Specialist : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Weapons";
 	icon 					= "iconManEngineer";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemAndroid" };
@@ -438,8 +438,8 @@ class SOCOMD_Weapons_Assistant : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Weapons";
 	icon 					= "iconManEngineer";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemAndroid" };
@@ -460,8 +460,8 @@ class SOCOMD_Pilot : SOCOMD_Officer_LongSleeve
 	displayName 			= "Heli-Pilot";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_M4CQBR", "Binocular" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };
@@ -479,8 +479,8 @@ class SOCOMD_Crew : SOCOMD_Officer_LongSleeve
 	displayName 			= "Heli-Crew";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416", "Binocular" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Crew_helmet", "ItemcTab" };
