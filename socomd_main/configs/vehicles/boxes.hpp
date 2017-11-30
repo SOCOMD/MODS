@@ -472,7 +472,6 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 	};
 };
 
-class Land_PaperBox_closed_F;
 class SOCOMD_Personal_box : Land_PaperBox_closed_F
 {
 	displayName = "SOCOMD Personal Box";
