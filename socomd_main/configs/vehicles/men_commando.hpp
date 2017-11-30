@@ -209,8 +209,8 @@ class SOCOMD_PlatoonMedic : SOCOMD_Soldier_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, ITEM04("SmokeShell") };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, UNIT_MEDIC_MEDS, "ACE_MapTools" };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, UNIT_MEDIC_MEDS, "ACE_MapTools" };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_MEDIC_MEDS, "ACE_MapTools" };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_MEDIC_MEDS, "ACE_MapTools" };
 	//backpack 				= "SOCOMD_Medic_Backpack";
 };
  
@@ -343,8 +343,8 @@ class SOCOMD_Medic : SOCOMD_Soldier_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_CM", "SOCOMD_MICH_Tan", "ItemMicroDAGR" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, UNIT_MEDIC_MEDS };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, UNIT_MEDIC_MEDS };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_MEDIC_MEDS };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_MEDIC_MEDS };
 };
  
 ////////////////////////////////////////////////////////////////////////////////
