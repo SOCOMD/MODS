@@ -1,9 +1,12 @@
-_presetId = "SOCOMD_PRESET";
-
 #define PROGRAM_CHANNEL(RADIO, CHANNEL, LABEL, RX, TX) \
 [RADIO, _presetId, CHANNEL, "label", LABEL] call acre_api_fnc_setPresetChannelField; \
 [RADIO, _presetId, CHANNEL, "frequencyRX", RX] call acre_api_fnc_setPresetChannelField; \
 [RADIO, _presetId, CHANNEL, "frequencyTX", RX] call acre_api_fnc_setPresetChannelField;
+
+[true, true] call acre_api_fnc_setupMission;
+[false] call acre_api_fnc_setRevealToAI;
+
+_presetId = "SOCOMD_PRESET";
 
 ["ACRE_PRC152", "default", _presetId] call acre_api_fnc_copyPreset;
 PROGRAM_CHANNEL("ACRE_PRC152", 1, "PLTCOM NET 1", 31.9, 31.9)
