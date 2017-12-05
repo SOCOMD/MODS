@@ -55,6 +55,9 @@
 #define AirLoadout \
 	class TransportMagazines \
 	{ \
+		TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1, 12) \
+		TRANSPORT_MAGAZINE(SMA_20Rnd_762x51mm_M80A1_EPR, 3) \
+		TRANSPORT_MAGAZINE(SMA_150Rnd_762_M80A1, 2) \
 		TRANSPORT_MAGAZINE(Chemlight_blue, 2) \
 		TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
 		TRANSPORT_MAGAZINE(B_IR_Grenade, 2) \
