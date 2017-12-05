@@ -35,3 +35,5 @@ tf_no_auto_long_range_radio = true; // disables TFR default radio assignment
 //    };
 
 },true] call CBA_fnc_addPlayerEventHandler;
+
+[] execVM "acre2_preset.sqf";

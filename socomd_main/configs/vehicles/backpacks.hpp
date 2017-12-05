@@ -1,3 +1,5 @@
+class B_Kitbag_mcamo;
+
 ////////////////////////////////////////////////////////////////////////////////
 // RADIO BACKPACKS
 	
@@ -13,14 +15,21 @@
 // 	tf_range = 200000;
 // };
 
-class SOCOMD_LongRange_Radio : SOCOMD_Backpack_Empty
+class SOCOMD_LongRange_Radio : B_Kitbag_mcamo
 {
 	scope = public;
-}
+	displayName = "SOCOMD Kitbag";
+	maximumLoad = 400;
+	mass = 10;
+
+	class TransportItems 
+	{
+		TRANSPORT_ITEM(ACRE_PRC117F, 1)
+	};
+};
 	
 ////////////////////////////////////////////////////////////////////////////////
 // BASE BACKPACKS
-class B_Kitbag_mcamo;
 
 class SOCOMD_Backpack_Empty: B_Kitbag_mcamo
 {
