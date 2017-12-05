@@ -43,7 +43,7 @@ class CfgVehicles
 	class B_Boat_Transport_01_F;
 
 	//BACKPACKS
-	class tf_rt1523g_big_bwmod;
+	//class tf_rt1523g_big_bwmod;
 	class B_Kitbag_Base;
 
 	//AMMOBOX

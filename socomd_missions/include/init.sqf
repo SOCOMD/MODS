@@ -1,6 +1,7 @@
 enableSentences false;
 enableRadio false;
 
+[true, true] call acre_api_fnc_setupMission;
 tf_no_auto_long_range_radio = true; // disables TFR default radio assignment
 
 []spawn {

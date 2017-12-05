@@ -1,17 +1,22 @@
 ////////////////////////////////////////////////////////////////////////////////
 // RADIO BACKPACKS
 	
-class SOCOMD_LongRange_Radio: tf_rt1523g_big_bwmod
+// class SOCOMD_LongRange_Radio: tf_rt1523g_big_bwmod
+// {
+// 	scope = public;
+// 	displayName = "SOCOMD Long Range Radio";
+// 	model = "\socomd_data\models\clf_nicecomm2";
+// 	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
+// 	maximumLoad = 400;
+// 	mass = 20;
+
+// 	tf_range = 200000;
+// };
+
+class SOCOMD_LongRange_Radio : SOCOMD_Backpack_Empty
 {
 	scope = public;
-	displayName = "SOCOMD Long Range Radio";
-	model = "\socomd_data\models\clf_nicecomm2";
-	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
-	maximumLoad = 400;
-	mass = 20;
-
-	tf_range = 200000;
-};
+}
 	
 ////////////////////////////////////////////////////////////////////////////////
 // BASE BACKPACKS
