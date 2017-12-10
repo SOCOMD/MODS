@@ -271,41 +271,23 @@ class SOCOMD_2IC : SOCOMD_Soldier_LongSleeve
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACE_MapTools", "ACRE_PRC152" };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACE_MapTools", "ACRE_PRC152" };
 };
- 
-class SOCOMD_Light_Anti_Tank_Marksman : SOCOMD_Soldier_LongSleeve
-{
-	scope 					= public;
-	_generalMacro 			= "SOCOMD_Light_Anti_Tank_Marksman";
-	displayName 			= "Light Anti-Tank Marksman";
-	vehicleclass 			= "SOCOMD_Core";
-	icon 					= "iconManAT";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "CUP_launch_M72A6", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "CUP_launch_M72A6", "Rangefinder" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
+class SOCOMD_Grenadier : SOCOMD_Soldier_LongSleeve
+{
+	scope = public;
+	_generalMacro 			= "SOCOMD_Grenadier";
+	displayName				= "Section Grenadier";
+	vehicleclass 			= "SOCOMD_Core";
+	icon 					= "iconManExplosive";
+
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-};
-
-class SOCOMD_Gunner : SOCOMD_Soldier_LongSleeve
-{
-	scope 					= public;
-	_generalMacro 			= "SOCOMD_Gunner";
-	displayName 			= "Gunner";
-	vehicleclass 			= "SOCOMD_Core";
-	icon 					= "iconManMG";
-
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "sma_minimi_mk3_762tsb" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "sma_minimi_mk3_762tsb" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_GUNNER };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_GUNNER };
-	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_AR", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
-	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_AR", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };	
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACE_MapTools", "ACRE_PRC152" };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACE_MapTools", "ACRE_PRC152" };
 };
 
 class SOCOMD_Sapper : SOCOMD_Soldier_LongSleeve
@@ -327,6 +309,78 @@ class SOCOMD_Sapper : SOCOMD_Soldier_LongSleeve
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_EntrenchingTool", "MineDetector" };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_EntrenchingTool", "MineDetector" };
 	backpack 				= "SOCOMD_Sapper_Backpack";	
+};
+
+class SOCOMD_Gunner : SOCOMD_Soldier_LongSleeve
+{
+	scope 					= public;
+	_generalMacro 			= "SOCOMD_Gunner";
+	displayName 			= "Section Gunner";
+	vehicleclass 			= "SOCOMD_Core";
+	icon 					= "iconManMG";
+
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "sma_minimi_mk3_762tsb" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "sma_minimi_mk3_762tsb" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_GUNNER };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_GUNNER };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_AR", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_AR", "SOCOMD_MICH_Multi", "ItemMicroDAGR" };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };	
+};
+
+class SOCOMD_Specialist : SOCOMD_Soldier_LongSleeve
+{
+	scope 					= public;
+	_generalMacro 			= "SOCOMD_Specialist";
+	displayName 			= "Section Specialist";
+	vehicleclass 			= "SOCOMD_Core";
+	icon 					= "iconMan";
+
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+};
+
+class SOCOMD_Marksman : SOCOMD_Soldier_LongSleeve
+{
+	scope 					= public;
+	_generalMacro 			= "SOCOMD_Marksman";
+	displayName 			= "Section Marksman";
+	vehicleclass 			= "SOCOMD_Core";
+	icon 					= "iconMan";
+
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "Rangefinder" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK417_16in", "Rangefinder" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_MARKSMAN };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+};
+
+class SOCOMD_AT : SOCOMD_Soldier_LongSleeve
+{
+	scope 					= public;
+	_generalMacro 			= "SOCOMD_AT";
+	displayName 			= "Section AT";
+	vehicleclass 			= "SOCOMD_Core";
+	icon 					= "iconManAT";
+
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "CUP_launch_M72A6" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "CUP_launch_M72A6" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi", "ItemMicroDAGR" };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
 };
 
 class SOCOMD_Medic : SOCOMD_Soldier_LongSleeve
