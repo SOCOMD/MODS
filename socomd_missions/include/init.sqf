@@ -15,3 +15,5 @@ enableRadio false;
 	sleep 61;
 	};
 };
+
+missionNamespace setVariable ["SOCOMD_InitComplete", 1];

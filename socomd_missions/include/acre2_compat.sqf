@@ -3,8 +3,9 @@
 [RADIO, _presetId, CHANNEL, "frequencyRX", RX] call acre_api_fnc_setPresetChannelField; \
 [RADIO, _presetId, CHANNEL, "frequencyTX", RX] call acre_api_fnc_setPresetChannelField;
 
-[true, true] call acre_api_fnc_setupMission;
+[false, false] call acre_api_fnc_setupMission;
 [false] call acre_api_fnc_setRevealToAI;
+[true] call acre_api_fnc_ignoreAntennaDirection;
 
 _presetId = "SOCOMD_PRESET";
 
