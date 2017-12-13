@@ -42,13 +42,12 @@ class CfgGroups
 
 					DEFINE_UNIT(0, "SOCOMD_SectionLeader", "SERGEANT")
 					DEFINE_UNIT(1, "SOCOMD_2IC", "CORPORAL")
-					DEFINE_UNIT(2, "SOCOMD_Grenadier", "PRIVATE")
-					DEFINE_UNIT(3, "SOCOMD_Sapper", "PRIVATE")
-					DEFINE_UNIT(4, "SOCOMD_Gunner", "PRIVATE")
-					DEFINE_UNIT(5, "SOCOMD_Specialist", "PRIVATE")
-					DEFINE_UNIT(6, "SOCOMD_Marksman", "PRIVATE")
-					DEFINE_UNIT(7, "SOCOMD_AT", "PRIVATE")
-					DEFINE_UNIT(8, "SOCOMD_Medic", "PRIVATE")
+					DEFINE_UNIT(2, "SOCOMD_Sapper", "PRIVATE")
+					DEFINE_UNIT(3, "SOCOMD_Gunner", "PRIVATE")
+					DEFINE_UNIT(4, "SOCOMD_Rifleman", "PRIVATE")
+					DEFINE_UNIT(5, "SOCOMD_Marksman", "PRIVATE")
+					DEFINE_UNIT(6, "SOCOMD_AT", "PRIVATE")
+					DEFINE_UNIT(7, "SOCOMD_Medic", "PRIVATE")
 				};
 
 				class SOCOMD_CMD_Sniper_Team
