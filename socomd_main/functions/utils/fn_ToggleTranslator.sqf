@@ -1,4 +1,7 @@
 _args = _this;
+_target = _args select 0;
+
+if(!(_target == player) exitWith {};
 
 if(typeOf player == "SOCOMD_Homestead") exitWith {};
 

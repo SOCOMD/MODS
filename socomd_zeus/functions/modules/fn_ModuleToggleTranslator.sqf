@@ -19,6 +19,6 @@ if(!isPlayer _curatorEntity) exitWith {
 	deleteVehicle _logic;
 };
 
-[] remoteExec ["SOCOMD_fnc_ToggleTranslator", owner _curatorEntity];
+[_curatorEntity] remoteExec ["SOCOMD_fnc_ToggleTranslator", owner _curatorEntity];
 
 deleteVehicle _logic;
