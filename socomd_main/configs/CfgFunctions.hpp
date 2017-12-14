@@ -15,6 +15,7 @@ class CfgFunctions
 			class SetUnitLoadout {};
 			class SwitchUnitLoadout {};	
 			class SwitchUnitLoadoutWeapon {};
+			class ToggleTranslator {};
 		};
 
 		class Actions

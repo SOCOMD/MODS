@@ -19,27 +19,6 @@ if(!isPlayer _curatorEntity) exitWith {
 	deleteVehicle _logic;
 };
 
-if(typeOf _curatorEntity == "SOCOMD_Homestead") exitWith {
-	deleteVehicle _logic;
-};
-
-_ownerId = owner _curatorEntity;
-
-_translatorKey = format["SOCOMD_isTranslator_%1", _ownerId];
-_isTranslator = missionNamespace getVariable [_translatorKey, 0];
-
-_languages = ["e"];
-if(_isTranslator == 0) then {
-	_languages = _languages + ["f"];
-	_isTranslator = 1;
-	hint format["Translator Toggled On"];
-}else {
-	_isTranslator = 0;
-	hint format["Translator Toggled Off"];
-};
-
-missionNamespace setVariable [_translatorKey, _isTranslator];
-
-_languages remoteExec ["acre_api_fnc_babelSetSpokenLanguages", _ownerId];
+[] remoteExec ["SOCOMD_fnc_ToggleTranslator", owner _curatorEntity];
 
 deleteVehicle _logic;
