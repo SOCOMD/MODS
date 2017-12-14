@@ -1,5 +1,5 @@
 @echo off
-set projectDir="C:\Users\nchambers\projects\SOCOMD"
+set projectDir="C:\Users\nchambers\projects\SOCOMD\mods"
 set missionOutput="C:\Users\nchambers\Documents\Arma 3 - Other Profiles\ChambersAUS\missions"
 
 echo ================================================================================

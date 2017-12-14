@@ -39,6 +39,7 @@ class CfgFunctions
 			file = "\socomd_zeus\functions\modules";
 
 			class ModuleToggleUndercover {};
+			class ModuleToggleTranslator {};
 			class ModuleCopyClipboardLoadout {};
 			class ModulePasteClipboardLoadout {};
 		};

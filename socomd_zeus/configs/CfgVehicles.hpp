@@ -55,6 +55,16 @@ class CfgVehicles
         function = "SOCOMD_fnc_ModuleToggleUndercover";
     };
 
+    class SOCOMD_Module_ToggleTranslator : SOCOMD_Module_Base
+    {
+        scopeCurator = 2;
+        isGlobal = 1;
+
+        _generalMacro = "SOCOMD_Module_ToggleTranslator";
+        displayName = "Toggle Translator";
+        function = "SOCOMD_fnc_ModuleToggleTranslator";
+    };
+
     class SOCOMD_Module_CopyClipboardLoadout : SOCOMD_Module_Base
     {
         scopeCurator = 2;

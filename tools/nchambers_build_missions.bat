@@ -1,5 +1,5 @@
 @echo off
-set projectDir="C:\Users\nchambers\projects\SOCOMD"
+set projectDir="C:\Users\nchambers\projects\SOCOMD\mods"
 set toolsDir=%projectDir%\tools
 set modOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd_dev\addons"
 set mpMissionOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions"
