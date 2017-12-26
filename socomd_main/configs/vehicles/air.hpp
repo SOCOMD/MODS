@@ -249,7 +249,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 ////////////////////////////////////////////////////////////////////////////////
 // HURRICANE
 
-class CUP_B_AH64D_DL_USA
+class CUP_B_AH64D_DL_USA;
 class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 {
 	scope = public;
@@ -329,7 +329,7 @@ class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY
 
-class CUP_B_MH6M_USA
+class CUP_B_MH6M_USA;
 class SOCOMD_FIREFLY : CUP_B_MH6M_USA
 {
 	scope = public;
@@ -359,7 +359,7 @@ class SOCOMD_FIREFLY : CUP_B_MH6M_USA
 ////////////////////////////////////////////////////////////////////////////////
 // DRAGONFLY
 
-class CUP_B_AH6M_USA
+class CUP_B_AH6M_USA;
 class SOCOMD_DRAGONFLY_127 : CUP_B_AH6M_USA
 {
 	scope = public;
