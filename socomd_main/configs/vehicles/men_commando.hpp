@@ -276,7 +276,7 @@ class SOCOMD_Sapper : SOCOMD_Soldier_LongSleeve
 {
 	scope 					= public;
 	_generalMacro 			= "SOCOMD_Sapper";
-	displayName 			= "Sapper";
+	displayName 			= "Section Sapper";
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManEngineer";
 	engineer 				= 1;
@@ -370,7 +370,7 @@ class SOCOMD_Medic : SOCOMD_Soldier_LongSleeve
 {
 	scope 					= public;
 	_generalMacro 			= "SOCOMD_Medic";
-	displayName 			= "Medic";
+	displayName 			= "Section Medic";
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManMedic";
 
