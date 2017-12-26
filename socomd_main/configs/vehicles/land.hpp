@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // BUSHMASTER
 
-class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F
+/*class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F
 {
 	scope = public;
 	scopeCurator = public;
@@ -73,7 +73,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	{
 		LandTransportWeapons
 	};
-};
+};*/
 
 ////////////////////////////////////////////////////////////////////////////////
 // JACKAL

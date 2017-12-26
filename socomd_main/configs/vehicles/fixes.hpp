@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //BUSH MASTER
 
-class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F 
+/*class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F 
 {
 	scope = private;
 
@@ -77,12 +77,12 @@ class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F
 class bma3_bushmaster_pws127mm_ecm_F : bma3_bushmaster_pws127mm_F 
 {
 	scope = private;
-};
+};*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //FFAA TIGRE
 
-class Helicopter_Base_F: Helicopter
+/*class Helicopter_Base_F: Helicopter
 {
 	class Turrets;
 	class HitPoints;
@@ -120,7 +120,7 @@ class ffaa_famet_tigre_aa : ffaa_famet_tigre_base {
 	crew = ;
 	typicalCargo[] = {};
 	forceIngarage = 0;
-};
+};*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //ACE PARACHUTE
@@ -268,7 +268,7 @@ class I_pilot_F : I_Soldier_04_F
 ////////////////////////////////////////////////////////////////////////////////
 //MELB
 
-class Helicopter_Base_H : Helicopter_Base_F
+/*class Helicopter_Base_H : Helicopter_Base_F
 {
 	class EventHandlers;
 	class Turrets: Turrets
@@ -303,7 +303,7 @@ class MELB_base : Helicopter_Base_H
 	{
 		minFov = 0.1;
 	};
-};
+};*/
 
 ////////////////////////////////////////////////////////////////////////////////
 // CUSTOM ACE ACTIONS

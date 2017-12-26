@@ -16,9 +16,9 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	driverCanSee = CanSeeAll;
 	hiddenSelectionsTextures[] = {"socomd_data\blackhawk\uh60m_fuselage_co.paa","socomd_data\blackhawk\uh60m_engine_co.paa","socomd_data\blackhawk\default_co.paa"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout
@@ -46,9 +46,9 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	driverCanSee = CanSeeAll;
 	hiddenSelectionsTextures[] = {"socomd_data\blackhawk\uh60m_fuselage_co.paa","socomd_data\blackhawk\uh60m_engine_co.paa","socomd_data\blackhawk\default_co.paa"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	//INVENTORY
 	AirLoadout
@@ -92,9 +92,9 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	armor = 150;
 	armorstructural = 180;
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	class HitFuel: HitFuel
 	{
@@ -202,9 +202,9 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	hiddenSelectionsTextures[] = {"socomd_data\chinook\ch47_ext_1_co.paa","socomd_data\chinook\ch47_ext_2_co.paa","socomd_data\chinook\ch47f_nalepky_ca.paa"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	//INVENTORY		
 	AirLoadout
@@ -231,9 +231,9 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	typicalCargo[] = {"SOCOMD_Pilot"};
 	hiddenSelectionsTextures[] = {"socomd_data\chinook\ch47_ext_1_co.paa","socomd_data\chinook\ch47_ext_2_co.paa","socomd_data\chinook\ch47f_nalepky_ca.paa"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	//INVENTORY		
 	AirLoadout
@@ -249,7 +249,8 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 ////////////////////////////////////////////////////////////////////////////////
 // HURRICANE
 
-class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
+class CUP_B_AH64D_DL_USA
+class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 {
 	scope = public;
 	scopeCurator = public;
@@ -261,9 +262,9 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout
@@ -275,7 +276,7 @@ class SOCOMD_HURRICANE_AA : ffaa_famet_tigre_aa
 };
 
 
-class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
+class SOCOMD_HURRICANE_AT : CUP_B_AH64D_DL_USA //Ref from fixes.hpp
 {
 	scope = public;
 	scopeCurator = public;
@@ -287,9 +288,9 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout
@@ -300,21 +301,21 @@ class SOCOMD_HURRICANE_AT : ffaa_famet_tigre_at //Ref from fixes.hpp
 	}; 
 };
 
-class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
+class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD ARH-Tiger Hurricane (CAS)";
+	displayname = "AH64D Hurricane";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout
@@ -328,21 +329,22 @@ class SOCOMD_HURRICANE_CAS : ffaa_famet_tigre_cas //Ref from fixes.hpp
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY
 
-class SOCOMD_FIREFLY : MELB_MH6M
+class CUP_B_MH6M_USA
+class SOCOMD_FIREFLY : CUP_B_MH6M_USA
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD MH-6 Firefly";
+	displayname = "MH-6 Firefly";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout
@@ -357,7 +359,8 @@ class SOCOMD_FIREFLY : MELB_MH6M
 ////////////////////////////////////////////////////////////////////////////////
 // DRAGONFLY
 
-class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
+class CUP_B_AH6M_USA
+class SOCOMD_DRAGONFLY_127 : CUP_B_AH6M_USA
 {
 	scope = public;
 	scopeCurator = public;
@@ -369,9 +372,9 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	//INVENTORY
 	AirLoadout
@@ -383,21 +386,21 @@ class SOCOMD_DRAGONFLY_127 : MELB_AH6M_M
 	};
 };
 
-class SOCOMD_DRAGONFLY_762 : MELB_AH6M_L
+class SOCOMD_DRAGONFLY_762 : CUP_B_AH6M_USA
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD AH-6 Dragonfly (7.62mm)";
+	displayname = "AH-6 Dragonfly (7.62mm)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 	
 	//INVENTORY
 	AirLoadout

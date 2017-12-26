@@ -13,7 +13,7 @@ class CfgVehicles
 	};
 
 	//LAND
-	class bma3_bushmaster_base_F : Car_F
+	/*class bma3_bushmaster_base_F : Car_F
 	{
 		class HitPoints : HitPoints
 		{
@@ -29,15 +29,13 @@ class CfgVehicles
 			class HitRBWheel;
 			class HitRMWheel;
 		};
-	};
+	};*/
 	class B_Quadbike_01_F;
 	class Bicycle;
 
 	//AIR
 	class Helicopter;
-	class MELB_MH6M;
-	class MELB_AH6M_M;
-	class MELB_AH6M_L;
+
 
 	//SEA
 	class B_Boat_Transport_01_F;
