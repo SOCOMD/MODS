@@ -49,7 +49,6 @@ class CfgMissions {
 	ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\Bozcaada_LHD_HMAS_Canberra.Bozcaada)
 	ADD(KOLGUJEVFOB,SOCOMD Kolgujev FOB (Chase),fobs\Kolgujev_Chase_FOB.cain)
 	ADD(KOLGUJEVLHD,SOCOMD Kolgujev LHD (HMAS Canberra),fobs\Kolgujev_LHD_HMAS_Canberra.cain)
-	ADD(MALDENFOB,SOCOMD Malden FOB (Kraken),fobs\Malden_Kraken_FOB.abel)
 	ADD(NOGOVAFOB,SOCOMD Nogova FOB (Heathen),fobs\Nogova_Heathen_FOB.noe)
 	ADD(EVERONFOB,SOCOMD Everon FOB (Karachi),fobs\Everon_Karachi_FOB.eden)
 	ADD(TANOAFOB,SOCOMD Tanoa FOB (Tiki),fobs\Tanoa_Tiki_FOB.Tanoa)
@@ -61,24 +60,8 @@ class CfgMissions {
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
-	ADD(VRSHOWCASE,SOCOMD Showcase,missions\SOCOMD_Showcase.VR)
 
 //	Training
 	ADD(STRATISTRAIN,SOCOMD Training Stratis (Airfield),missions\SOCOMD_Training.Stratis)
-	ADD(ZARGABADTRAIN,SOCOMD Section Level Training Zargabad (Yarum),missions\SOCOMD_Section_Level_Training.Zargabad)
-	ADD(STRATISAUTO,SOCOMD Auto-Rotation Training Stratis,missions\SOCOMD_AutoRotation.Stratis)
-
-//	Freeo
-	ADD(EAGLEEYE,SOCOMD Operation Eagle Eye (Freeo),missions\Operation_Eagle_Eye.Altis)
-	ADD(IRONSCALES2,SOCOMD Operation Iron Scales 2 (Freeo),missions\Operation_Iron_Scales_2.Altis)
-	ADD(SCORPIONKING,SOCOMD Operation Scorpion King (Freeo),missions\Operation_Scorpion_King.Altis)
-	ADD(WINGLESSBEETLE2,SOCOMD Operation Wingless Beetle 2 (Freeo),missions\Operation_Wingless_Beetle_2.Altis)
-
-//	Sharkie
-	ADD(PMC2,PMC Operation Dark Hammer - Part 2 (Sharkie),missions\Operation_Dark_Hammer_PMC2.eden)
-	ADD(PMC3,PMC Operation Shadow Raider - Part 3 (Sharkie),missions\Operation_Shadow_Raider_PMC3.Panthera3)
-	ADD(SME,2016 Christmas Special (Sharkie),missions\Sleigh_me.ThirskW)
-
-
 	};
 };
