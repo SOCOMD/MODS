@@ -125,6 +125,8 @@ class CfgPatches
 			"SOCOMD_PlatoonSergeant",
 			"SOCOMD_Recon_TeamLeader",
 			"SOCOMD_Homestead",
+			"SOCOMD_Trainer",
+			"SOCOMD_Trainee",
 
 			//MEN SASR
 			"SOCOMD_SASR_Trooper",

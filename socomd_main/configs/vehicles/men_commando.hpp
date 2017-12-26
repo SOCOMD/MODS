@@ -560,3 +560,21 @@ class SOCOMD_Journalist : SOCOMD_Soldier_LongSleeve
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
 };
+
+class SOCOMD_Trainer : SOCOMD_Homestead
+{
+	scope = public;
+	vehicleclass = "SOCOMD_Core";
+	_generalMacro = "SOCOMD_Trainer";
+	displayName = "Trainer";
+	icon = "iconMan";
+};
+
+class SOCOMD_Trainee : SOCOMD_Rifleman
+{
+	scope = public;
+	vehicleclass = "SOCOMD_Core";
+	_generalMacro = "SOCOMD_Trainee";
+	displayName = "Trainee";
+	icon = "iconMan";
+};

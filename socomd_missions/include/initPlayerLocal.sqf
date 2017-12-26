@@ -10,11 +10,15 @@
 
 	_languagesPlayerSpeaks = ["e"];
 
+	_whitelist = [
+		"SOCOMD_Homestead",
+		"SOCOMD_SASR_Homestead",
+		"SOCOMD_Trainer"
+	];
+
 	_type = typeOf _player;
-	switch(_type) do {
-		case "SOCOMD_Homestead": {
-			_languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
-		};
+	if(_type in _whitelist) then {
+		_languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
 	};
 
 	_languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;

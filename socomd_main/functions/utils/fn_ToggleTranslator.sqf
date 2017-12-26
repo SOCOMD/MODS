@@ -3,7 +3,14 @@ _target = _args select 0;
 
 if(!(_target == player)) exitWith {};
 
-if(typeOf player == "SOCOMD_Homestead") exitWith {};
+_blacklist = [
+	"SOCOMD_Homestead",
+	"SOCOMD_SASR_Homestead",
+	"SOCOMD_Trainer"
+];
+
+_type = typeOf player;
+if(_type in _blacklist) exitWith {};
 
 _isTranslator = player getVariable ["SOCOMD_isTranslator", 0];
 
