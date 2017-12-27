@@ -2,26 +2,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // INTERACTIVE BOX
 
-class Land_EngineCrane_01_F;
-class SOCOMD_Vehicle_Spawner : Land_EngineCrane_01_F
-{
-	displayName = "SOCOMD Vehicle Spawner";
-	author = AUTHOR_STR;
-};
-
-class SOCOMD_Heli_Spawner : Land_EngineCrane_01_F
-{
-	displayName = "SOCOMD Helicopter Spawner";
-	author = AUTHOR_STR;
-};
-
-class SOCOMD_Supply_Spawner : Land_EngineCrane_01_F
-{
-	displayName = "SOCOMD Supply Spawner";
-	author = AUTHOR_STR;
-};
-
-
 class Land_PaperBox_closed_F;
 class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 {
