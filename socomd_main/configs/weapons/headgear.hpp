@@ -9,7 +9,7 @@
 	{
 		author = AUTHOR_STR;
 		displayName = "SOCOMD Beret";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.9;
 		ace_hearing_lowerVolume = 0.0;
 	};
 
@@ -36,7 +36,7 @@
 	{
 		scope = public;
 		displayName = "SOCOMD Heli-Pilot Helmet";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.9;
 		ace_hearing_lowerVolume = 0;
 	};
 
@@ -45,7 +45,7 @@
 	{
 		scope = public;
 		displayName = "SOCOMD Fixed Wing-Pilot Helmet";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.9;
 		ace_hearing_lowerVolume = 0;
 	};
 
@@ -54,7 +54,7 @@
 	{
 		scope = public;
 		displayName = "SOCOMD Heli-Crew Helmet";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.9;
 		ace_hearing_lowerVolume = 0;
 	};
 
@@ -184,7 +184,7 @@
 		displayName = "SOCOMD FAST Tan (Goggles)";
 		picture = "\socomd_data\uniform\icons\tan_sf_gog.paa";
 		model = "\socomd_data\uniform\mas_new_fast.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -217,7 +217,7 @@
 		displayName = "SOCOMD FAST Multicam (Goggles)";
 		picture = "\socomd_data\uniform\icons\multi_sf_gog.paa";
 		model = "\socomd_data\uniform\mas_new_fast_cov.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 		
 		class ItemInfo : ItemInfo
@@ -252,7 +252,7 @@
 		displayName = "SOCOMD FAST Tan";
 		picture = "\socomd_data\uniform\icons\tan_sf.paa";
 		model = "\socomd_data\uniform\mas_new_fast2.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -285,7 +285,7 @@
 		displayName = "SOCOMD FAST Multicam";
 		picture = "\socomd_data\uniform\icons\multi_sf.paa";
 		model = "\socomd_data\uniform\mas_new_fast2_cov.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -320,7 +320,7 @@
 		displayName = "SOCOMD MICH Tan CM (Goggles)";
 		picture = "\socomd_data\uniform\icons\tan_sf_gog.paa";
 		model = "\socomd_data\uniform\mas_nk_mich_sf_gog.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -353,7 +353,7 @@
 		displayName = "SOCOMD MICH Multicam (Goggles)";
 		picture = "\socomd_data\uniform\icons\multi_sf_gog.paa";
 		model = "\socomd_data\uniform\mas_nw_mich_sf_gog.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -388,7 +388,7 @@
 		displayName = "SOCOMD MICH Tan CM";
 		picture = "\socomd_data\uniform\icons\tan_sf.paa";
 		model = "\socomd_data\uniform\mas_nk_mich_sf.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
@@ -421,7 +421,7 @@
 		displayName = "SOCOMD MICH Multicam";
 		picture = "\socomd_data\uniform\icons\multi_sf.paa";
 		model = "\socomd_data\uniform\mas_nw_mich_sf.p3d";
-		ace_hearing_protection = 0.5;
+		ace_hearing_protection = 0.7;
 		ace_hearing_lowerVolume = 0;
 
 		class ItemInfo : ItemInfo
