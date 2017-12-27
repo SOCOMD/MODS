@@ -2,10 +2,10 @@ enableSentences false;
 enableRadio false;
 
 //Using TFR
-//[] execVM "tfr_compat.sqf";
+//[] execVM "include\tfr_compat.sqf";
 
 //Using ACRE2
-[] execVM "acre2_compat.sqf";
+[] execVM "include\acre2_compat.sqf";
 
 // Infinate Loop, Fix Zeus group bug (will remove deleted groups so more can be added)
 [] spawn {
