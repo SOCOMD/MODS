@@ -4,7 +4,12 @@ class CfgVehicles
 {
 	//MAN
 	class Man;
-	class SoldierWB;
+	class Civilian;
+	class O_helipilot_F;
+	class B_Soldier_02_f;
+	class B_Soldier_05_f;
+	class I_Soldier_04_F;
+	class B_Diver_F;
 
 	class Car;
 	class Car_F : Car
