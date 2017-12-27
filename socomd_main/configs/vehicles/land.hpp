@@ -85,15 +85,15 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Jackal HMG (Desert)";
+	displayname = "Jackal HMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
 
 	class TransportMagazines 
 	{
@@ -123,7 +123,7 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Jackal GMG (Desert)";
+	displayname = "Jackal GMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -161,7 +161,7 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Jackal HMG (Woodland)";
+	displayname = "Jackal HMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -199,7 +199,7 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Jackal GMG (Woodland)";
+	displayname = "Jackal GMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -239,7 +239,7 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Coyote Support HMG (Desert)";
+	displayname = "Coyote Support HMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -280,7 +280,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Coyote Support HMG (Woodland)";
+	displayname = "Coyote Support HMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -289,9 +289,149 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	transportMaxWeapons = "60";
 	transportMaxMagazines = "600";
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
+	
+	class TransportMagazines
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// LANDROVERS
+
+class CUP_B_LR_MG_GB_D;
+class CUP_B_LR_MG_GB_W;
+class CUP_B_LR_Transport_GB_D;
+class CUP_B_LR_Transport_GB_W;
+
+class SOCOMD_LANDROVER_HMG_D : CUP_B_LR_MG_GB_D
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Landrover HMG (Desert)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	
+	class TransportMagazines
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class SOCOMD_LANDROVER_HMG_W : CUP_B_LR_MG_GB_W
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Landrover HMG (Woodland)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	
+	class TransportMagazines
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class SOCOMD_LANDROVER_TRANS_D : CUP_B_LR_Transport_GB_D
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Landrover Transport (Desert)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	
+	class TransportMagazines
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class SOCOMD_LANDROVER_TRANS_W : CUP_B_LR_Transport_GB_W
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Landrover Transport (Woodland)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
 	
 	class TransportMagazines
 	{
@@ -324,7 +464,7 @@ class SOCOMD_ASLAV : CUP_B_LAV25_USMC
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD ASLAV";
+	displayname = "ASLAV";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Armored";
 	crew = "SOCOMD_Medic";
@@ -363,7 +503,7 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Quadbike";
+	displayname = "Quadbike";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -888,7 +1028,7 @@ class SOCOMD_BIKE : BIKE_BASE
 	forceInGarage = 1;
 	side = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Tactical Bike";
+	displayname = "Tactical Bike";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";

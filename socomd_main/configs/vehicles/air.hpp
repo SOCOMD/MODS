@@ -8,7 +8,7 @@ class SOCOMD_BLACKHAWK : CUP_B_UH60M_US
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD S-70 Armed Warrior";
+	displayname = "S-70 Armed Warrior";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
@@ -38,7 +38,7 @@ class SOCOMD_BLACKHAWK_FFV : CUP_B_UH60M_FFV_US
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD S-70 Armed FFV Warrior";
+	displayname = "S-70 Armed FFV Warrior";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
@@ -82,7 +82,7 @@ class SOCOMD_BLACKHAWK_MEV : CUP_B_UH60M_Unarmed_FFV_MEV_US
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD S-70 Unarmed MEV Warrior";
+	displayname = "S-70 Unarmed MEV Warrior";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
@@ -195,7 +195,7 @@ class SOCOMD_CHINOOK : CUP_B_CH47F_USA
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD CH-47 Nomad";
+	displayname = "CH-47 Nomad";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
@@ -224,7 +224,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD CH-47 Nomad VIV";
+	displayname = "CH-47 Nomad VIV";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
@@ -250,7 +250,7 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 // HURRICANE
 
 class CUP_B_AH64D_DL_USA;
-class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
+/*class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 {
 	scope = public;
 	scopeCurator = public;
@@ -262,9 +262,9 @@ class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	/*tf_hasLRradio = 1;
+	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
+	tf_range = 40000;
 	
 	//INVENTORY
 	AirLoadout
@@ -273,24 +273,24 @@ class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 	{
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
-};
+};*/
 
 
-class SOCOMD_HURRICANE_AT : CUP_B_AH64D_DL_USA //Ref from fixes.hpp
+/*class SOCOMD_HURRICANE_AT : CUP_B_AH64D_DL_USA //Ref from fixes.hpp
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD ARH-Tiger Hurricane (AT)";
+	displayname = "ARH-Tiger Hurricane (AT)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	/*tf_hasLRradio = 1;
+	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
+	tf_range = 40000;
 	
 	//INVENTORY
 	AirLoadout
@@ -299,7 +299,7 @@ class SOCOMD_HURRICANE_AT : CUP_B_AH64D_DL_USA //Ref from fixes.hpp
 	{
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	}; 
-};
+};*/
 
 class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 {
@@ -366,7 +366,7 @@ class SOCOMD_DRAGONFLY_127 : CUP_B_AH6M_USA
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD AH-6 Dragonfly (12.7mm)";
+	displayname = "AH-6 Dragonfly (12.7mm)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";

@@ -5,7 +5,7 @@ class SOCOMD_ASSAULT_BOAT : I_C_Boat_Transport_02_F
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Unarmed RHIB";
+	displayname = "Unarmed RHIB";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
@@ -39,7 +39,7 @@ class SOCOMD_GUNBOAT : CUP_B_RHIB_USMC
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Armed RHIB";
+	displayname = "Armed RHIB";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
@@ -72,7 +72,7 @@ class SOCOMD_ASSAULT_BOAT_S : B_Boat_Transport_01_F
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Small Assault Boat";
+	displayname = "Small Assault Boat";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
