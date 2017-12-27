@@ -22,10 +22,7 @@ PROGRAM_CHANNEL("ACRE_PRC117F", 1, "HQ NET", 55.5, 55.5)
 PROGRAM_CHANNEL("ACRE_PRC117F", 2, "171AVN LR NET", 60.0, 60.0)
 ["ACRE_PRC117F", _presetId] call acre_api_fnc_setPreset;
 
-[_this] spawn {
-	_args = _this select 0;
-	_player = _args select 0;
-
+[] spawn {
 	waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
 
 	["e", "English"] call acre_api_fnc_babelAddLanguageType;
@@ -40,7 +37,7 @@ PROGRAM_CHANNEL("ACRE_PRC117F", 2, "171AVN LR NET", 60.0, 60.0)
 		"SOCOMD_Trainer"
 	];
 
-	_type = typeOf _player;
+	_type = typeOf player;
 	if(_type in _whitelist) then {
 		_languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
 	};
