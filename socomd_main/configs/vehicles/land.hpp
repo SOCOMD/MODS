@@ -455,24 +455,218 @@ class SOCOMD_LANDROVER_TRANS_W : CUP_B_LR_Transport_GB_W
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-// ASLAV
-	
-class CUP_B_LAV25_USMC;
-class SOCOMD_ASLAV : CUP_B_LAV25_USMC
+// Trucks
+
+class CUP_B_MTVR_USA;
+class SOCOMD_MTVR_Trans : CUP_B_MTVR_USA
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "ASLAV";
+	displayname = "Troop Truck";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	/*tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;*/
+
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_MTVR_Ammo_USA;
+class SOCOMD_MTVR_Ammo : CUP_B_MTVR_Ammo_USA
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Ammo Truck";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	/*tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;*/
+
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_MTVR_Refuel_USA;
+class SOCOMD_MTVR_Refuel : CUP_B_MTVR_Refuel_USA
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Fuel Truck";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	/*tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;*/
+
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_MTVR_Repair_USA;
+class SOCOMD_MTVR_Repair : CUP_B_MTVR_Repair_USA
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Repair Truck";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	/*tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;*/
+
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// ASLAV
+	
+class CUP_B_LAV25M240_USMC;
+class SOCOMD_ASLAV_W : CUP_B_LAV25M240_USMC
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "ASLAV (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Armored";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
-	tf_hasLRradio = 1;
+	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
-	tf_range = 40000;
+	tf_range = 40000;*/
+
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_LAV25M240_desert_USMC;
+class SOCOMD_ASLAV_D : CUP_B_LAV25M240_desert_USMC
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "ASLAV (Desert)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Armored";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	/*tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;*/
 
 	class TransportMagazines 
 	{
