@@ -95,7 +95,7 @@ class SASR_StandardTrooper
 #define LOADOUT_ITEM(id,qty) class _xx_##id { type = #id; count = qty; };
 
 //////////////////////////////////////////////////////////////////////
-// COMMON LOADOUT ITEMS
+// COMMON SASR LOADOUT ITEMS
 
 #define SASR_STANDARD_MEDICAL   LOADOUT_ITEM(ACE_personalAidKit, 1) \
                                 LOADOUT_ITEM(ACE_elasticBandage, 6) \
@@ -131,6 +131,31 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(ACE_packingBandage, 5) \
                                 LOADOUT_ITEM(ACE_morphine, 2) \
                                 LOADOUT_ITEM(ACE_epinephrine, 2)
+
+//////////////////////////////////////////////////////////////////////
+// COMMON 2CDO LOADOUT ITEMS
+
+#define CDO_STANDARD_MEDICAL    LOADOUT_ITEM(ACE_fieldDressing, 6) \
+                                LOADOUT_ITEM(ACE_elasticBandage, 6) \
+                                LOADOUT_ITEM(ACE_packingBandage, 6) \
+                                LOADOUT_ITEM(ACE_quikclot, 6) \
+                                LOADOUT_ITEM(ACE_epinephrine, 2) \
+                                LOADOUT_ITEM(ACE_morphine, 2) \
+                                LOADOUT_ITEM(ACE_tourniquet, 1)
+
+#define CDO_UNIFORM_ESSENTIALS  LOADOUT_ITEM(ACRE_PRC343, 1) \
+                                LOADOUT_ITEM(ItemcTabHCam, 1) \
+                                LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+                                LOADOUT_ITEM(ACE_EarPlugs, 1) \
+                                LOADOUT_ITEM(ACE_CableTie, 4) \
+                                LOADOUT_ITEM(ACE_NVG_Gen4, 1) \
+                                LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+                                LOADOUT_ITEM(B_IR_Grenade, 1)
+
+#define CDO_VEST_ESSENTIALS     LOADOUT_ITEM(HandGrenade, 2) \
+                                LOADOUT_ITEM(ACE_M84, 2) \
+                                LOADOUT_ITEM(SmokeShell, 2) \
+                                LOADOUT_ITEM(SmokeShellGreen, 2)
 
 //////////////////////////////////////////////////////////////////////
 
@@ -617,6 +642,9 @@ class CfgLoadouts
             };
         };
 
+        ////////////////////////////////////////////////////////////////////////////////
+        //JAC LOADOUTS
+
         class JAC_Aircrew
         {
             primary = "SMA_M4MOE_Tan";
@@ -764,6 +792,258 @@ class CfgLoadouts
                 type = "SOCOMD_LongRange_Radio";
             };
         };
+
+        ////////////////////////////////////////////////////////////////////////////////
+        //2CDO LOADOUTS
+
+        class CDO_Leader {
+            primary = "SMA_HK416GLCQB";
+            binocular = "Laserdesignator";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+            gps = "ItemAndroid";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+
+                    LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_TL";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 5)
+                    LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+                    LOADOUT_ITEM(ACE_HuntIR_M203, 2)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+                    LOADOUT_ITEM(Laserbatteries, 1)
+                    LOADOUT_ITEM(ACRE_PRC152, 1)
+                };
+            };
+        };
+
+        class CDO_2IC {
+            primary = "SMA_HK416GLCQB";
+            binocular = "Rangefinder";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+            gps = "ItemAndroid";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+
+                    LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_TL";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 5)
+                    LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+                    LOADOUT_ITEM(ACE_HuntIR_M203, 2)
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+                    LOADOUT_ITEM(ACRE_PRC152, 1)
+                };
+            };
+        };
+
+        class CDO_Sapper {
+            primary = "SMA_HK416CUSTOMCQBvfg";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_OP";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+                    LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+                    LOADOUT_ITEM(MineDetector, 1)
+                };
+            };
+
+            class Backpack
+            {
+                type = "SOCOMD_Sapper_Backpack";
+                class Inventory {
+                    LOADOUT_ITEM(ACE_DefusalKit, 1)
+                    LOADOUT_ITEM(ACE_M26_Clacker, 1)
+                    LOADOUT_ITEM(ACE_wirecutter, 1)
+                    LOADOUT_ITEM(DemoCharge_Remote_Mag, 5)
+                    LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
+                };
+            };
+        };
         
+        class CDO_Gunner {
+            primary = "sma_minimi_mk3_762tsb";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_AR";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 4)
+                };
+            };
+        };
+
+        class CDO_Rifleman {
+            primary = "SMA_HK416GLCQB";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_OP";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+                };
+            };
+        };
+
+        class CDO_Marksman {
+            primary = "SMA_HK417_16in";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_OP";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 9)
+                };
+            };
+        };
+
+        class CDO_AT {
+            primary = "SMA_HK416CUSTOMCQBvfg";
+            secondary = "CUP_launch_M72A6"
+            secondaryMagazine = "CUP_M72A6_M";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_CM";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+                };
+            };
+        };
+        
+        class CDO_Medic {
+            primary = "SMA_HK416CUSTOMCQBvfg";
+            handgun = "RH_usp";
+            handgunMagazine = "RH_12Rnd_45cal_usp";
+
+            class Uniform 
+            {
+                type = "SOCOMD_Uniform_LongSleeve";
+                class Inventory 
+                {
+                    CDO_STANDARD_MEDICAL
+                    CDO_UNIFORM_ESSENTIALS
+                };
+            };
+
+            class Vest 
+            {
+                type = "SOCOMD_Vest_OP";
+                class Inventory {
+                    CDO_VEST_ESSENTIALS
+
+                    LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 18)
+                    LOADOUT_ITEM(ACE_fieldDressing, 18)
+                    LOADOUT_ITEM(ACE_quikclot, 18)
+                    LOADOUT_ITEM(ACE_elasticBandage, 18)
+                    LOADOUT_ITEM(ACE_packingBandage, 18)
+                    LOADOUT_ITEM(ACE_morphine, 8)
+                    LOADOUT_ITEM(ACE_epinephrine, 8)
+                    LOADOUT_ITEM(ACE_tourniquet, 4)
+                    LOADOUT_ITEM(ACE_salineIV_500, 8)
+                    LOADOUT_ITEM(ACE_bodyBag, 2)
+                };
+            };
+        };
     };
 };

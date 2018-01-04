@@ -585,6 +585,122 @@ class SOCOMD_Personal_box : Land_PaperBox_closed_F
 	};
 };
 
+class SOCOMD_Training_box : SOCOMD_Personal_box {
+
+	displayName = "SOCOMD Training Box";
+	author = AUTHOR_STR;
+
+	ace_cargo_hasCargo = 0;
+	ace_cargo_canLoad = 0;
+	ace_dragging_canDrag = 0;
+	ace_dragging_canCarry = 0;
+
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportItems {};
+	class TransportBackpacks {};
+
+	class ACE_Actions 
+	{
+		class ACE_MainActions 
+		{
+			displayName = "Q-Store";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_OpenGearSelector
+			{
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Loadouts
+			{
+				displayName = "Loadouts";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Loadout_2CDOLeader
+				{
+					displayName = "Section Leader";
+					condition = 1;
+					statement = "[_player, 'CDO_Leader'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDO2IC
+				{
+					displayName = "Section 2IC";
+					condition = 1;
+					statement = "[_player, 'CDO_2IC'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDOSapper
+				{
+					displayName = "Section Sapper";
+					condition = 1;
+					statement = "[_player, 'CDO_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDOGunner
+				{
+					displayName = "Section Gunner";
+					condition = 1;
+					statement = "[_player, 'CDO_Gunner'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDORifleman
+				{
+					displayName = "Section Rifleman";
+					condition = 1;
+					statement = "[_player, 'CDO_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDOMarksman
+				{
+					displayName = "Section Marksman";
+					condition = 1;
+					statement = "[_player, 'CDO_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDOAT
+				{
+					displayName = "Section AT";
+					condition = 1;
+					statement = "[_player, 'CDO_AT'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_Loadout_2CDOMedic
+				{
+					displayName = "Section Medic";
+					condition = 1;
+					statement = "[_player, 'CDO_Medic'] call SOCOMD_fnc_SwitchUnitLoadout";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};
+		};
+	};	
+};
+
 ////////////////////////////////////////////////////////////////////////////////
 // CARGO BOX
 
@@ -647,7 +763,7 @@ class SOCOMD_hkammo_box : Box_NATO_AmmoVeh_F
 	};
 };
 
-class SOCOMD_training_box: Box_NATO_AmmoVeh_F
+class SOCOMD_training_box_items: Box_NATO_AmmoVeh_F
 {
 	scope = public;
 	displayName = "SOCOMD Items Box";

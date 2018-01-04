@@ -91,13 +91,14 @@ class CfgPatches
 
 			// BOXES
 			"SOCOMD_Interactive_QStore",
+			"SOCOMD_Personal_box",
+			"SOCOMD_Training_box",
 			"SOCOMD_hkammo_box",
 			"SOCOMD_archer_crate",
 			"SOCOMD_uniform_crate",
 			"SOCOMD_UAV_crate",
 			"SOCOMD_sniper_crate",
 			"SOCOMD_supply_crate",
-			"SOCOMD_training_box",
 			"SOCOMD_mag58_crate",
 			"SOCOMD_m2_crate",
 			"SOCOMD_mk19_crate",

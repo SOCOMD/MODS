@@ -208,8 +208,8 @@ class SOCOMD_PlatoonSignaller : SOCOMD_Soldier_LongSleeve
 	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Laserdesignator" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
-	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemAndroid" };
-	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemAndroid" };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemcTab" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemcTab" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", "ACRE_PRC152" };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", "ACRE_PRC152" };
 	backpack 				= "SOCOMD_LongRange_Radio";
@@ -226,10 +226,10 @@ class SOCOMD_SectionLeader : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconManLeader";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Laserdesignator" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries"};
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries"};
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_FAST_Tan", "ItemAndroid" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_FAST_Tan", "ItemAndroid" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACE_MapTools", "ACRE_PRC152" };
@@ -358,8 +358,8 @@ class SOCOMD_AT : SOCOMD_Soldier_LongSleeve
 
 	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "CUP_launch_M72A6" };
 	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "CUP_launch_M72A6" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "CUP_M72A6_M"};
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "CUP_M72A6_M"};
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
