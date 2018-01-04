@@ -32,7 +32,8 @@ _aircraftRotaryClasses = [
  ];*/
 
 _vehicleClasses = [
-	"SOCOMD_ASLAV",
+	"SOCOMD_ASLAV_W",
+	"SOCOMD_ASLAV_D",
 	"SOCOMD_JACKAL_HMG_D",
 	"SOCOMD_JACKAL_AGL_D",
 	"SOCOMD_JACKAL_HMG_W",
@@ -47,6 +48,10 @@ _vehicleClasses = [
 	//"SOCOMD_LANDROVER_GMG_W",
 	"SOCOMD_SUPPORT_HMG_D",
 	"SOCOMD_SUPPORT_HMG_W",
+	"SOCOMD_MTVR_Trans",
+	"SOCOMD_MTVR_Ammo",
+	"SOCOMD_MTVR_Refuel",
+	"SOCOMD_MTVR_Repair",
 	"SOCOMD_QUADBIKE",
 	"SOCOMD_BIKE"
  ];
