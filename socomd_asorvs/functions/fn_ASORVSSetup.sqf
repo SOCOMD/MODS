@@ -65,18 +65,7 @@ _boatClasses = [
 _supplyClasses = [
 	"SOCOMD_CargoNet",
 	"SOCOMD_Supply_Crate",
-	"SOCOMD_Archer_Crate",
-	"SOCOMD_Sniper_Crate",
 	"SOCOMD_UAV_Crate",
-	"SOCOMD_Mag58_Crate",
-	"SOCOMD_M2_Crate",
-	"SOCOMD_Mk19_Crate",
-	"SOCOMD_Javelin_Crate",
-	"SOCOMD_Stinger_Crate",
-	"SOCOMD_Fortification_Crate",
-	"SOCOMD_HE_Mortar_Crate",
-	"SOCOMD_WFlare_Mortar_Crate",
-	"SOCOMD_WSmoke_Mortar_Crate",
 	"ACE_Wheel"
 ];
 
@@ -92,11 +81,11 @@ switch(_type) do
 		_setupClasses = _aircraftRotaryClasses;
 	};
 
-	case "AIR_FIXEDWING":
-	{
-		_setupTitle = "Fixed Wing Requisition";
-		_setupClasses = _aircraftFixedWingClasses;
-	};
+	// case "AIR_FIXEDWING":
+	// {
+	// 	_setupTitle = "Fixed Wing Requisition";
+	// 	_setupClasses = _aircraftFixedWingClasses;
+	// };
 	
 	case "LAND":
 	{
