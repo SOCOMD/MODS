@@ -40,7 +40,6 @@
 									ITEM04("ACE_epinephrine"), \
 									ITEM04("ACE_tourniquet"), \
 									ITEM08("ACE_salineIV_500"), \
-									ITEM04("ACE_personalAidKit"), \
 									ITEM02("ACE_bodyBag")
  								
 ////////////////////////////////////////////////////////////////////////////////
@@ -97,8 +96,8 @@ class SOCOMD_Diver : B_diver_F
 	respawnMagazines[] 			= { CMD_UNIT_COMMON_AMMO };
 	linkedItems[] 				= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_Rebreather", "zeus_earpiece" };
 	respawnLinkedItems[] 		= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_Rebreather", "zeus_earpiece" };
-	Items[] 					= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools" };
-	RespawnItems[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools" };
+	Items[] 					= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", ITEM04("ACE_personalAidKit") };
+	RespawnItems[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_MapTools", ITEM04("ACE_personalAidKit") };
 	backpack					= "";
 };
  

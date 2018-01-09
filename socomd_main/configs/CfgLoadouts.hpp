@@ -801,6 +801,7 @@ class CfgLoadouts
             binocular = "Laserdesignator";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
             gps = "ItemAndroid";
 
             class Uniform 
@@ -836,6 +837,7 @@ class CfgLoadouts
             binocular = "Rangefinder";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
             gps = "ItemAndroid";
 
             class Uniform 
@@ -869,6 +871,7 @@ class CfgLoadouts
             primary = "SMA_HK416CUSTOMCQBvfg";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
 
             class Uniform 
             {
@@ -909,6 +912,7 @@ class CfgLoadouts
             primary = "sma_minimi_mk3_762tsb";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
 
             class Uniform 
             {
@@ -935,6 +939,7 @@ class CfgLoadouts
             primary = "SMA_HK416GLCQB";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
 
             class Uniform 
             {
@@ -961,6 +966,8 @@ class CfgLoadouts
             primary = "SMA_HK417_16in";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
+            binocular = "Rangefinder";
 
             class Uniform 
             {
@@ -989,6 +996,7 @@ class CfgLoadouts
             secondaryMagazine = "CUP_M72A6_M";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
 
             class Uniform 
             {
@@ -1015,6 +1023,7 @@ class CfgLoadouts
             primary = "SMA_HK416CUSTOMCQBvfg";
             handgun = "RH_usp";
             handgunMagazine = "RH_12Rnd_45cal_usp";
+            headgear = "SOCOMD_MICH_Multi";
 
             class Uniform 
             {
