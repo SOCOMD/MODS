@@ -99,7 +99,9 @@ class CfgPatches
 			"SOCOMD_Personal_box",
 			"SOCOMD_Training_box",
 			"SOCOMD_UAV_crate",
-			"SOCOMD_supply_crate",
+			"SOCOMD_Supply_Crate",
+			"SOCOMD_Ammo_Box",
+			"SOCOMD_Medical_Box",
 			"SOCOMD_cargonet",
 
 			// MEN COMMANDO

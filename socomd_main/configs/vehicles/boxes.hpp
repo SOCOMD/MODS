@@ -716,6 +716,8 @@ class SOCOMD_CargoNet: Land_Cargo10_military_green_F
 	ace_cargo_canLoad = 0;
 	ace_dragging_canDrag = 1;
 	ace_dragging_canCarry = 0;
+	ace_dragging_dragDirection = 0;
+	ace_dragging_dragPosition[] = {0,1.2,0};
 
 	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_CargoNet_01_ammo_F.jpg";
 	model = "\A3\Supplies_F_Heli\CargoNets\CargoNet_01_ammo_F.p3d";
@@ -753,6 +755,8 @@ class SOCOMD_Supply_Crate: B_supplyCrate_F
 	transportMaxMagazines = 20000;
 	transportMaxBackpacks = 100;
 	ace_cargo_size = 8;
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 0;
 	weight = 20;
 
 	class TransportMagazines 

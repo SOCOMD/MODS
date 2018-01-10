@@ -65,6 +65,8 @@ _boatClasses = [
 _supplyClasses = [
 	"SOCOMD_CargoNet",
 	"SOCOMD_Supply_Crate",
+	"SOCOMD_Ammo_Box",
+	"SOCOMD_Medical_Box",
 	"SOCOMD_UAV_Crate",
 	"ACE_Wheel"
 ];
