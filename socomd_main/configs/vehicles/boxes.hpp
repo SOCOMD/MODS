@@ -751,22 +751,40 @@ class SOCOMD_Supply_Crate: B_supplyCrate_F
 
 	class TransportMagazines 
 	{
-		LandTransportMagazines
+		TRANSPORT_ITEM(SMA_30Rnd_556x45_M855A1, 24)
+		TRANSPORT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 12)
+		TRANSPORT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
+		TRANSPORT_ITEM(SMA_150Rnd_762_M80A1, 2)
+		TRANSPORT_ITEM(RH_12Rnd_45cal_usp, 16)
+		TRANSPORT_ITEM(SmokeShell, 16)
+		TRANSPORT_ITEM(SmokeShellGreen, 16)
+		TRANSPORT_ITEM(HandGrenade, 16)
+		TRANSPORT_ITEM(ACE_M84, 16)
+		TRANSPORT_ITEM(B_IR_Grenade, 16)
+		TRANSPORT_ITEM(1Rnd_HE_Grenade_shell, 4)
+		TRANSPORT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+		TRANSPORT_ITEM(ACE_HuntIR_M203, 2)
 	};
 
 	class TransportItems 
 	{
-		LandTransportItems
-	};
-
-	class TransportBackpacks 
-	{
-		LandTransportBackpacks
-	};
-
-	class TransportWeapons 
-	{
-		LandTransportWeapons
+		TRANSPORT_ITEM(ACE_Earplugs, 8)
+		TRANSPORT_ITEM(ACE_NVG_Gen4, 8)
+		TRANSPORT_ITEM(ACE_CableTie, 16)
+		TRANSPORT_ITEM(ACE_fieldDressing, 32)
+		TRANSPORT_ITEM(ACE_quikclot, 32)
+		TRANSPORT_ITEM(ACE_elasticBandage, 32)
+		TRANSPORT_ITEM(ACE_packingBandage, 32)
+		TRANSPORT_ITEM(ACE_morphine, 16)
+		TRANSPORT_ITEM(ACE_epinephrine, 16)
+		TRANSPORT_ITEM(ACE_tourniquet, 8)
+		TRANSPORT_ITEM(ACE_salineIV_500, 6)
+		TRANSPORT_ITEM(ACE_bodyBag, 8)
+		TRANSPORT_ITEM(ACE_DefusalKit, 1)
+		TRANSPORT_ITEM(ACE_M26_Clacker, 1)
+		TRANSPORT_ITEM(ACE_wirecutter, 1)
+		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 5)
+		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 1)
 	};
 };
 
