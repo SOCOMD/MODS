@@ -704,16 +704,21 @@ class SOCOMD_Training_box : SOCOMD_Personal_box {
 ////////////////////////////////////////////////////////////////////////////////
 // CARGO BOX
 
-class B_CargoNet_01_ammo_F;
-class SOCOMD_CargoNet: B_CargoNet_01_ammo_F
+class Land_Cargo10_military_green_F;
+class SOCOMD_CargoNet: Land_Cargo10_military_green_F
 {
 	displayName = "SOCOMD Cargo Net Box";
 	author = AUTHOR_STR;
 	
-	ace_cargo_space = 8;
 	ace_cargo_hasCargo = 1;
+	ace_cargo_size = 15;
+	ace_cargo_space = 8;
 	ace_cargo_canLoad = 0;
 	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 0;
+
+	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_CargoNet_01_ammo_F.jpg";
+	model = "\A3\Supplies_F_Heli\CargoNets\CargoNet_01_ammo_F.p3d";
 	
 	class ACE_Actions 
 	{
@@ -751,19 +756,19 @@ class SOCOMD_Supply_Crate: B_supplyCrate_F
 
 	class TransportMagazines 
 	{
-		TRANSPORT_ITEM(SMA_30Rnd_556x45_M855A1, 24)
-		TRANSPORT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 12)
-		TRANSPORT_ITEM(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
-		TRANSPORT_ITEM(SMA_150Rnd_762_M80A1, 2)
-		TRANSPORT_ITEM(RH_12Rnd_45cal_usp, 16)
-		TRANSPORT_ITEM(SmokeShell, 16)
-		TRANSPORT_ITEM(SmokeShellGreen, 16)
-		TRANSPORT_ITEM(HandGrenade, 16)
-		TRANSPORT_ITEM(ACE_M84, 16)
-		TRANSPORT_ITEM(B_IR_Grenade, 16)
-		TRANSPORT_ITEM(1Rnd_HE_Grenade_shell, 4)
-		TRANSPORT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
-		TRANSPORT_ITEM(ACE_HuntIR_M203, 2)
+		TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1, 24)
+		TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1_Tracer, 12)
+		TRANSPORT_MAGAZINE(SMA_20Rnd_762x51mm_M80A1_EPR, 4)
+		TRANSPORT_MAGAZINE(SMA_150Rnd_762_M80A1, 2)
+		TRANSPORT_MAGAZINE(RH_12Rnd_45cal_usp, 16)
+		TRANSPORT_MAGAZINE(SmokeShell, 16)
+		TRANSPORT_MAGAZINE(SmokeShellGreen, 16)
+		TRANSPORT_MAGAZINE(HandGrenade, 16)
+		TRANSPORT_MAGAZINE(ACE_M84, 16)
+		TRANSPORT_MAGAZINE(B_IR_Grenade, 16)
+		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 4)
+		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2)
+		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 2)
 	};
 
 	class TransportItems 

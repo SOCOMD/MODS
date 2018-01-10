@@ -76,7 +76,7 @@
 	}; \
 	class TransportWeapons \
 	{ \
-		TRANSPORT_WEAPON(SMA_MK18MOEBLK, 1) \
+		TRANSPORT_WEAPON(SMA_HK416CUSTOMCQBvfg, 1) \
 	};
 
 ////////////////////////////////////////////////////////////////////////////////
