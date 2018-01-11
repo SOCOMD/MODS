@@ -797,6 +797,9 @@ class SOCOMD_Supply_Crate: B_supplyCrate_F
 		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 5)
 		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 1)
 	};
+
+	class TransportWeapons {}
+	class TransportBackpacks {}
 };
 
 class SOCOMD_Ammo_Box : NATO_Box_Base
@@ -890,6 +893,6 @@ class SOCOMD_UAV_Crate: NATO_Box_Base
 
 	class TransportBackpacks
 	{
-		TRANSPORT_BACKPACK(O_UAV_01_backpack_F, 1)
+		TRANSPORT_BACKPACK(B_UAV_01_backpack_F, 1)
 	};
 };

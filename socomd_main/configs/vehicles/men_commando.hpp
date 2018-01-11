@@ -254,24 +254,6 @@ class SOCOMD_2IC : SOCOMD_Soldier_LongSleeve
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152" };
 };
 
-/*class SOCOMD_Grenadier : SOCOMD_Soldier_LongSleeve
-{
-	scope = public;
-	_generalMacro 			= "SOCOMD_Grenadier";
-	displayName				= "Section Grenadier";
-	vehicleclass 			= "SOCOMD_Core";
-	icon 					= "iconManExplosive";
-
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416GLCQB", "Rangefinder" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG };
-	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi" };
-	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_FAST_Multi" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152" };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152" };
-};*/
-
 class SOCOMD_Sapper : SOCOMD_Soldier_LongSleeve
 {
 	scope 					= public;
@@ -503,8 +485,8 @@ class SOCOMD_Pilot : SOCOMD_Officer_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
 	backpack 				= "SOCOMD_LongRange_Radio";
 };
  
