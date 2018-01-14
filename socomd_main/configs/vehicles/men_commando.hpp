@@ -18,6 +18,7 @@
  
 #define CMD_UNIT_COMMON_ITEMS 		ITEM01("ACRE_PRC343"), \
 									ITEM01("ItemcTabHCam"), \
+									ITEM01("ACE_IR_Strobe_Item"), \
 									ITEM01("ACE_Flashlight_KSF1"), \
 									ITEM01("murshun_cigs_lighter"), \
 									ITEM01("ACE_NVG_Gen4"), \
