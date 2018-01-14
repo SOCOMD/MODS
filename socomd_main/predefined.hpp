@@ -28,6 +28,7 @@
 	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
 #define LandTransportItems \
+	TRANSPORT_ITEM(ACRE_PRC152, 1) \
 	TRANSPORT_ITEM(ToolKit, 1) \
 	TRANSPORT_ITEM(ACE_wirecutter, 1) \
 	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
@@ -63,6 +64,7 @@
 	}; \
 	class TransportItems \
 	{ \
+		TRANSPORT_ITEM(ACRE_PRC152, 1) \
 		TRANSPORT_ITEM(ToolKit, 1) \
 		TRANSPORT_ITEM(ACE_bodyBag, 6) \
 		TRANSPORT_ITEM(ACE_CableTie, 6) \
