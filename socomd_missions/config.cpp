@@ -57,6 +57,7 @@ class CfgMissions {
 	ADD(ALIABADLHD,SOCOMD Aliabad Region LHD (HMAS Canberra),fobs\Aliabad_Freedom.MCN_Aliabad)
 	ADD(FALLUJAHFOB,SOCOMD Fallujah FOB (Rattlesnake),fobs\Fallujah_Rattlesnake_FOB.fallujah)
 	ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
+	ADD(CLAFGHANFOB,SOCOMD Clafghan FOB (Restrepo) ,fobs\Clafghan_FOB.clafghan)
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
