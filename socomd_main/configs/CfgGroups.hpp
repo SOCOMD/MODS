@@ -7,6 +7,15 @@ class Unit##idxX##idxY \
 	position[] = {(idxX * 1), -(idxY * 1) ,0}; \
 };
 
+#define DEFINE_TAKI_INSURGENT(id,type,rating) \
+class Unit##id \
+{ \
+	side = 0; \
+	vehicle = type; \
+	rank = rating; \
+	position[] = {(id * 2),0,0}; \
+};
+
 class CfgGroups
 {
 	class West
@@ -130,6 +139,56 @@ class CfgGroups
 					DEFINE_UNIT(0,4,"SOCOMD_SASR_Trooper", "PRIVATE")
 					DEFINE_UNIT(0,5,"SOCOMD_SASR_Trooper", "PRIVATE")
 				};
+			};
+		};
+	};
+
+	// Enemy Forces for the purpose of modifying their group settings
+
+	//Takistan Militia
+	class East
+	{
+		class CUP_O_TK_MILITIA
+		{
+			//name = "$STR_DN_FN_CUP_TK_MILITIA";
+			class Infantry
+			{
+
+				// New Groups
+
+				class CUP_O_TK_MILITIA_Grunt_Group {
+					name = "Militia Grunt Group";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction = "CUP_O_TK_MILITIA";
+					side = 0;
+					rarityGroup = 0.7;
+
+					DEFINE_TAKI_INSURGENT(0,"CUP_O_TK_INS_Soldier_1","PRIVATE");
+					DEFINE_TAKI_INSURGENT(1,"CUP_O_TK_INS_Soldier_MG_2","PRIVATE");
+					DEFINE_TAKI_INSURGENT(2,"CUP_O_TK_INS_Soldier_MG_3","PRIVATE");
+					DEFINE_TAKI_INSURGENT(3,"CUP_O_TK_INS_Soldier_AR_4","PRIVATE");
+					DEFINE_TAKI_INSURGENT(4,"CUP_O_TK_INS_Soldier_AR_5","PRIVATE");
+					DEFINE_TAKI_INSURGENT(5,"CUP_O_TK_INS_Soldier_AR_6","PRIVATE");
+					DEFINE_TAKI_INSURGENT(6,"CUP_O_TK_INS_Soldier_7","PRIVATE");
+					DEFINE_TAKI_INSURGENT(7,"CUP_O_TK_INS_Soldier_8","PRIVATE");
+					DEFINE_TAKI_INSURGENT(8,"CUP_O_TK_INS_Soldier_9","PRIVATE");
+					DEFINE_TAKI_INSURGENT(9,"CUP_O_TK_INS_Soldier_10","PRIVATE");
+				};
+				class CUP_O_TK_MILITIA_Grunt_Patrol
+				{
+					name = "Militia Grunt Patrol";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					faction = "CUP_O_TK_MILITIA";
+					side = 0;
+					rarityGroup = 0.2;
+
+					DEFINE_TAKI_INSURGENT(0,"CUP_O_TK_INS_Soldier_AR_12","PRIVATE");
+					DEFINE_TAKI_INSURGENT(1,"CUP_O_TK_INS_Soldier_AR_11","PRIVATE");
+					DEFINE_TAKI_INSURGENT(2,"CUP_O_TK_INS_Soldier_10","PRIVATE");
+					DEFINE_TAKI_INSURGENT(3,"CUP_O_TK_INS_Soldier_9","PRIVATE");
+					DEFINE_TAKI_INSURGENT(4,"CUP_O_TK_INS_Soldier_8","PRIVATE");
+				};
+
 			};
 		};
 	};

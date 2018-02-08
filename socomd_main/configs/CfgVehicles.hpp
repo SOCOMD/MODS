@@ -65,5 +65,6 @@ class CfgVehicles
 	#include "vehicles\men.hpp"
 	#include "vehicles\boxes.hpp"
 	#include "vehicles\other.hpp"
+	#include "vehicles\taki_insurgents.hpp"
 
 };
