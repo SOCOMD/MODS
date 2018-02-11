@@ -411,3 +411,47 @@ class SOCOMD_DRAGONFLY_762 : CUP_B_AH6M_USA
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	};
 };
+
+// Modify AH6 Base value's to tweak helo base stats
+class Helicopter_Base_F: Helicopter {
+	class HitPoints;
+};
+
+class Helicopter_Base_H: Helicopter_Base_F {
+	class HitPoints:HitPoints {
+		class HitHull;
+		class HitFuel;
+		class HitEngine;
+		class HitAvionics;
+		class HitVRotor;
+		class HitHRotor;
+		class HitGlass1;
+		class HitGlass2;
+		class HitGlass3;
+		class HitGlass4;
+		class HitGlass5;
+	};
+};
+
+class CUP_AH6_BASE: Helicopter_Base_H {
+	class HitPoints: Hitpoints {
+			class HitHull:HitHull {
+				armor = 2;
+			};
+			class HitFuel:HitFuel {
+				armor = 0.9;
+			};
+			class HitEngine:HitEngine {
+				armor = 1;
+			};
+			class HitAvionics:HitAvionics {
+				armor = 1;
+			};
+			class HitVRotor:HitVRotor {
+				armor = 1.2;
+			};
+			class HitHRotor:HitHRotor {
+				armor = 1.4;
+			};
+	};
+};

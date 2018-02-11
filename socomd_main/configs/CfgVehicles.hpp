@@ -14,7 +14,10 @@ class CfgVehicles
 	class Car;
 	class Car_F : Car
 	{
-		class HitPoints;		
+		class HitPoints;	
+		class Turrets {
+			class MainTurret;
+		};
 	};
 
 	//LAND
@@ -66,5 +69,5 @@ class CfgVehicles
 	#include "vehicles\boxes.hpp"
 	#include "vehicles\other.hpp"
 	#include "vehicles\taki_insurgents.hpp"
-
+	#include "vehicles\taki_insurgents_vic.hpp"
 };

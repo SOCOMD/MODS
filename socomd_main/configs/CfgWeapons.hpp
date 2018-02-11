@@ -8,4 +8,5 @@ class CfgWeapons
 	#include "weapons\vest.hpp"
 	#include "weapons\headgear.hpp"
 	#include "weapons\other.hpp"
+	#include "weapons\taki_insurgents.hpp"
 };

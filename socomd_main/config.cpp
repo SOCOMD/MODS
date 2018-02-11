@@ -1,5 +1,7 @@
 #include "predefined.hpp"
 
+#define TAKI_UNIT_DEFINE(name) QUOTE(##name1),QUOTE(##name2),QUOTE(##name3),QUOTE(##name4),QUOTE(##name5),QUOTE(##name6),QUOTE(##name7),QUOTE(##name8),QUOTE(##name9),QUOTE(##name10),QUOTE(##name11),QUOTE(##name12)
+
 class CfgPatches 
 {
 	class socomd_main 
@@ -105,6 +107,7 @@ class CfgPatches
 			"SOCOMD_cargonet",
 
 			// MEN COMMANDO
+			
 			"SOCOMD_PlatoonLeader",
 			"SOCOMD_PlatoonMedic",
 			"SOCOMD_PlatoonSignaller",
@@ -131,7 +134,20 @@ class CfgPatches
 
 			//MEN SASR
 			"SOCOMD_SASR_Trooper",
-			"SOCOMD_SASR_Homestead"
+			"SOCOMD_SASR_Homestead",
+			
+			// Taki Militia New Units
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_MG_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AR_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AAT_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_GL_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_Enfield_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_FNFAL_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AA_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AT_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_TL_),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Sniper_)
 		};
 
 		//SOCOMD Custom Weapons
