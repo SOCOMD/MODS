@@ -36,15 +36,16 @@
 	{
 		LandTransportWeapons
 	};
-};
+};*/
 
+class bma3_bushmaster_unarmed_ecm_F;
 class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Bushmaster Transport";
+	displayname = "Bushmaster Transport";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -73,7 +74,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	{
 		LandTransportWeapons
 	};
-};*/
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 // JACKAL
@@ -224,6 +225,89 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 		LandTransportBackpacks
 	};
 	
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// MASTIFF
+
+class CUP_B_Mastiff_HMG_GB_D;
+class SOCOMD_MASTIFF_HMG_D : CUP_B_Mastiff_HMG_GB_D {
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Mastiff HMG (Desert)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	transportMaxBackpacks = "30";
+	transportMaxWeapons = "60";
+	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+	
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_Mastiff_HMG_GB_W;
+class SOCOMD_MASTIFF_HMG_W : CUP_B_Mastiff_HMG_GB_W {
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Mastiff HMG (Woodland)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	transportMaxBackpacks = "30";
+	transportMaxWeapons = "60";
+	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+	
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
 	class TransportWeapons 
 	{
 		LandTransportWeapons
