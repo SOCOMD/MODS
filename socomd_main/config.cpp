@@ -1,6 +1,6 @@
 #include "predefined.hpp"
 
-#define TAKI_UNIT_DEFINE(name) QUOTE(##name1),QUOTE(##name2),QUOTE(##name3),QUOTE(##name4),QUOTE(##name5),QUOTE(##name6),QUOTE(##name7),QUOTE(##name8),QUOTE(##name9),QUOTE(##name10),QUOTE(##name11),QUOTE(##name12)
+#define TAKI_UNIT_DEFINE(name) QUOTE(##name_1),QUOTE(##name_2),QUOTE(##name_3),QUOTE(##name_4),QUOTE(##name_5),QUOTE(##name_6),QUOTE(##name_7),QUOTE(##name_8),QUOTE(##name_9),QUOTE(##name_10),QUOTE(##name_11),QUOTE(##name_12)
 
 class CfgPatches 
 {
@@ -137,17 +137,17 @@ class CfgPatches
 			"SOCOMD_SASR_Homestead",
 			
 			// Taki Militia New Units
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_MG_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AR_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AAT_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_GL_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_Enfield_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_FNFAL_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AA_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AT_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_TL_),
-			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Sniper_)
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_MG),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AR),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AAT),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_GL),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_Enfield),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_FNFAL),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AA),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_AT),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Soldier_TL),
+			TAKI_UNIT_DEFINE(CUP_O_TK_INS_Sniper)
 		};
 
 		//SOCOMD Custom Weapons

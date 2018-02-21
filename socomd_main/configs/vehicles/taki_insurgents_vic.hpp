@@ -26,6 +26,6 @@ class CUP_O_LR_MG_TKM: CUP_LR_MG_Base {
             weapons[] = {"Vhmg_M2_veh_TKM"};
         };
     };
-    accuracy = 0.09;
+    accuracy = 0.08;
 
 };

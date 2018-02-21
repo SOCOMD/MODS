@@ -9,12 +9,13 @@
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER(id,man) \
 class CUP_O_TK_INS_Soldier_##id : CUP_O_TKI_Man_##man \
 { \
-	author = "$CUP_AUTHOR_STRING"; \
+	author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
 	scope = 2; \
-	dlc = "CUP_Units"; \
+    side = 0; \
 	scopeCurator = 2; \
 	accuracy = 3.9; \
-	displayName = "Militiaman (AK-74)"; \
+	displayName = QUOTE(Militiaman (AK-74) id); \
 	weapons[] = {"CUP_arifle_AK74","Throw","Put"}; \
 	respawnWeapons[] = {"CUP_arifle_AK74","Throw","Put"}; \
 	magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M"}; \
@@ -23,18 +24,17 @@ class CUP_O_TK_INS_Soldier_##id : CUP_O_TKI_Man_##man \
 	RespawnItems[] = {"FirstAidKit"}; \
 	linkedItems[] = {"CUP_H_TKI_Lungee_01","CUP_V_OI_TKI_Jacket2_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
 	respawnLinkedItems[] = {"CUP_H_TKI_Lungee_01","CUP_V_OI_TKI_Jacket2_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-	editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_MG(id,man) \
 class CUP_O_TK_INS_Soldier_MG_##id: CUP_O_TKI_Man_##man \
 { \
-	author = "$CUP_AUTHOR_STRING"; \
+	author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
 	scope = 2; \
-	dlc = "CUP_Units"; \
 	scopeCurator = 2; \
 	accuracy = 3.9; \
-	displayName = "Machinegunner"; \
+	displayName = QUOTE(Machinegunner id); \
 	weapons[] = {"CUP_lmg_PKM","Throw","Put"}; \
 	respawnWeapons[] = {"CUP_lmg_PKM","Throw","Put"}; \
 	magazines[] = {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"}; \
@@ -45,18 +45,17 @@ class CUP_O_TK_INS_Soldier_MG_##id: CUP_O_TKI_Man_##man \
 	linkedItems[] = {"CUP_V_OI_TKI_Jacket3_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
 	respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket3_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
 	backpack = "CUP_B_TKI_AlicePack_MG"; \
-	editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_MG.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_AR(id,man) \
 class CUP_O_TK_INS_Soldier_AR_##id: CUP_O_TKI_Man_##man \
 { \
-	author = "$CUP_AUTHOR_STRING"; \
+	author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
 	scope = 2; \
-	dlc = "CUP_Units"; \
 	scopeCurator = 2; \
 	accuracy = 3.9; \
-	displayName = "Automatic Rifleman"; \
+	displayName = QUOTE(Automatic Rifleman id); \
 	backpack = "CUP_B_TKI_CivPack_WDL_RPK"; \
 	weapons[] = {"CUP_arifle_RPK74","Throw","Put"}; \
 	respawnWeapons[] = {"CUP_arifle_RPK74","Throw","Put"}; \
@@ -67,15 +66,14 @@ class CUP_O_TK_INS_Soldier_AR_##id: CUP_O_TKI_Man_##man \
 	linkedItems[] = {"CUP_V_OI_TKI_Jacket3_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
 	respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket3_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
 	threat[] = {1,0.1,0.3}; \
-	editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_AR.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_AAT(id,man) \
 class CUP_O_TK_INS_Soldier_AAT_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     weapons[] = {"CUP_arifle_AK74","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_AK74","Throw","Put"}; \
@@ -85,20 +83,19 @@ class CUP_O_TK_INS_Soldier_AAT_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_H_TKI_Lungee_01","CUP_V_OI_TKI_Jacket2_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_H_TKI_Lungee_01","CUP_V_OI_TKI_Jacket2_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    displayName = "Militiaman (RPG ammo)"; \
+    displayName = QUOTE(Militiaman (RPG ammo) id); \
     backpack = "CUP_B_TKI_Backpack_RPG"; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_AAT.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_GL(id,man) \
 class CUP_O_TK_INS_Soldier_GL_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "Militiaman (AK-74 GL)"; \
+    displayName = QUOTE(Militiaman (AK-74 GL) id); \
     backpack = "CUP_B_TKI_AlicePack_Khaki_AmmoAK74"; \
     weapons[] = {"CUP_arifle_AK74_GL","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_AK74_GL","Throw","Put"}; \
@@ -108,18 +105,17 @@ class CUP_O_TK_INS_Soldier_GL_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_H_TKI_Lungee_open_02","CUP_V_OI_TKI_Jacket2_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_H_TKI_Lungee_open_02","CUP_V_OI_TKI_Jacket2_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_GL.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_ENFIELD(id,man) \
 class CUP_O_TK_INS_Soldier_Enfield_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "Militiaman (Lee-Enfield)"; \
+    displayName = QUOTE(Militiaman (Lee-Enfield) id); \
     weapons[] = {"CUP_srifle_LeeEnfield","Throw","Put"}; \
     respawnWeapons[] = {"CUP_srifle_LeeEnfield","Throw","Put"}; \
     magazines[] = {"CUP_10x_303_M","CUP_10x_303_M","CUP_10x_303_M","CUP_10x_303_M","CUP_10x_303_M"}; \
@@ -128,18 +124,17 @@ class CUP_O_TK_INS_Soldier_Enfield_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket4_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket4_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_Enfield.jpg"; \
 }; 
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_FNFAL(id,man) \
 class CUP_O_TK_INS_Soldier_FNFAL_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "Militiaman (FN FAL)"; \
+    displayName = QUOTE(Militiaman (FN FAL) id); \
     backpack = "CUP_B_TIK_CivPack_WDL_Ammo"; \
     weapons[] = {"CUP_arifle_FNFAL","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_FNFAL","Throw","Put"}; \
@@ -149,18 +144,17 @@ class CUP_O_TK_INS_Soldier_FNFAL_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket3_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket3_01","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_FNFAL.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_AA(id,man) \
 class CUP_O_TK_INS_Soldier_AA_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "AA Specialist"; \
+    displayName = QUOTE(AA Specialist id); \
     weapons[] = {"CUP_arifle_AKS74U","CUP_launch_9K32Strela","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_AKS74U","CUP_launch_9K32Strela","Throw","Put"}; \
     magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_Strela_2_M"}; \
@@ -170,19 +164,18 @@ class CUP_O_TK_INS_Soldier_AA_##id: CUP_O_TKI_Man_##man \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket1_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket1_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     threat[] = {1,0.1,0.7}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_AA.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_AT(id,man) \
 class CUP_O_TK_INS_Soldier_AT_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
     threat[] = {1,0.6,0.1}; \
-    displayName = "Militiaman (RPG-7)"; \
+    displayName = QUOTE(Militiaman (RPG-7) id); \
     weapons[] = {"CUP_arifle_AK74","CUP_launch_RPG7V","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_AK74","CUP_launch_RPG7V","Throw","Put"}; \
     magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_PG7VL_M"}; \
@@ -192,18 +185,17 @@ class CUP_O_TK_INS_Soldier_AT_##id: CUP_O_TKI_Man_##man \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket4_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket4_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     backpack = "CUP_B_TKI_Backpack_Gunner_RPG"; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_AT.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SOLIDER_TL(id,man) \
 class CUP_O_TK_INS_Soldier_TL_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "Team Leader"; \
+    displayName = QUOTE(Team Leader id); \
     weapons[] = {"CUP_arifle_AK74_GL","Throw","Put"}; \
     respawnWeapons[] = {"CUP_arifle_AK74_GL","Throw","Put"}; \
     magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","SmokeShell","SmokeShellBlue","CUP_1Rnd_HE_GP25_M","CUP_1Rnd_HE_GP25_M","CUP_1Rnd_HE_GP25_M","CUP_1Rnd_HE_GP25_M"}; \
@@ -212,18 +204,17 @@ class CUP_O_TK_INS_Soldier_TL_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket1_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket1_03","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Soldier_TL.jpg"; \
 };
 
 #define DEFINE_TAKI_INSURGENT_CLASS_GEN_SNIPER(id,man) \
 class CUP_O_TK_INS_Sniper_##id: CUP_O_TKI_Man_##man \
 { \
-    author = "$CUP_AUTHOR_STRING"; \
+    author = "SOCOMD"; \
+    faction = "CUP_O_TK_MILITIA" \
     scope = 2; \
-    dlc = "CUP_Units"; \
     scopeCurator = 2; \
     accuracy = 3.9; \
-    displayName = "Sniper"; \
+    displayName = QUOTE(Sniper id); \
     threat[] = {1,0.3,0.3}; \
     weapons[] = {"CUP_arifle_AKS74_pso","Throw","Put","Binocular"}; \
     respawnWeapons[] = {"CUP_arifle_AKS74_pso","Throw","Put","Binocular"}; \
@@ -233,7 +224,6 @@ class CUP_O_TK_INS_Sniper_##id: CUP_O_TKI_Man_##man \
     RespawnItems[] = {"FirstAidKit"}; \
     linkedItems[] = {"CUP_V_OI_TKI_Jacket2_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
     respawnLinkedItems[] = {"CUP_V_OI_TKI_Jacket2_02","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; \
-    editorPreview = "CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\Data\preview\CUP_O_TK_INS_Sniper.jpg"; \
 };
  
 class CUP_O_TKI_Man_01;
