@@ -38,8 +38,132 @@
 	};
 };*/
 
-class bma3_bushmaster_unarmed_ecm_F;
-class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
+class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
+
+	scope = private;
+	armor = 60;
+	armorStructural = 75;
+	explosionShielding = 1.0;
+	damageResistance = 0.03099;
+	threat[] = {1,0.8,0.3};
+
+	class HitPoints : HitPoints {
+
+		//Integral
+		class HitHull : HitHull {
+			armor = 25.0;
+			passThrough = 1.0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitBody : HitBody {
+			armor = 25.0;
+			passThrough = 1.0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitEngine : HitEngine {
+			armor = 1.0;
+			passThrough = 0.5;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitFuel : HitFuel {
+			armor = 1.0;
+			passThrough = 0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+
+		//Left Wheels
+		class HitLFWheel : HitLFWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitLF2Wheel : HitLF2Wheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitLMWheel : HitLMWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0; 
+		};
+		class HitLBWheel : HitLBWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+
+		//Right Wheels
+		class HitRFWheel : HitRFWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRF2Wheel : HitRF2Wheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRMWheel : HitRMWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRBWheel : HitRBWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+
+		//Glass
+		class HitLGlass : HitLGlass {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRGlass : HitRGlass {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass1 : HitGlass1 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass2 : HitGlass2 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass3 : HitGlass3 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass4 : HitGlass4 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass5 : HitGlass5 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass6 : HitGlass6 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+	};
+};
+
+class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 {
 	scope = public;
 	scopeCurator = public;
@@ -50,6 +174,8 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	
 
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;

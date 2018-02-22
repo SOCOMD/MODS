@@ -18,23 +18,36 @@ class CfgVehicles
 	};
 
 	//LAND
-	/*class bma3_bushmaster_base_F : Car_F
+	class bma3_bushmaster_base_F : Car_F
 	{
 		class HitPoints : HitPoints
 		{
-			//Left Wheels
+			class HitHull;
+			class HitBody;
+			class HitEngine;
+			class HitFuel;
+
 			class HitLFWheel;
 			class HitLF2Wheel;
-			class HitLBWheel;
 			class HitLMWheel;
+			class HitLBWheel;
 
-			//Right Wheels
 			class HitRFWheel;
 			class HitRF2Wheel;
-			class HitRBWheel;
 			class HitRMWheel;
+			class HitRBWheel;
+
+			class HitLGlass;
+			class HitRGlass;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
 		};
-	};*/
+	};
+
 	class B_Quadbike_01_F;
 	class Bicycle;
 
