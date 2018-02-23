@@ -494,14 +494,14 @@ class CAManBase : Man
 			};
 
 			//SWAP PILOT HELMETS
-			class SOCOMD_Helmet_FixedWing
-			{
-				displayName = "Switch to Fixed Wing Helmet";
-				condition = "((headgear _player) == 'SOCOMD_Pilot_helmet') and (alive _player)";
-				statement = "[_player , 'SOCOMD_FixedWing_Pilot_helmet'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
-				showDisabled = 0;
-				exceptions[] = {"isNotInside", "isNotSitting"};
-			};
+			// class SOCOMD_Helmet_FixedWing
+			// {
+			// 	displayName = "Switch to Fixed Wing Helmet";
+			// 	condition = "((headgear _player) == 'SOCOMD_Pilot_helmet') and (alive _player)";
+			// 	statement = "[_player , 'SOCOMD_FixedWing_Pilot_helmet'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+			// 	showDisabled = 0;
+			// 	exceptions[] = {"isNotInside", "isNotSitting"};
+			// };
 
 			class SOCOMD_Helmet_Rotary
 			{
