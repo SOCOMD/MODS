@@ -29,7 +29,9 @@
 									ITEM01("ACE_NVG_Gen4"), \
 									ITEM04("ACE_CableTie"), \
 									ITEM01("ACE_Earplugs"), \
-									ITEM01("ACE_MapTools")
+									ITEM01("ACE_MapTools"), \
+									ITEM01("ACE_Item_DAGR")
+									
 
 #define CMD_UNIT_PILOT_ITEMS 		ITEM01("ACRE_PRC343"), \
 									ITEM01("ItemcTabHCam"), \
@@ -38,7 +40,8 @@
 									ITEM01("murshun_cigs_lighter"), \
 									ITEM04("ACE_CableTie"), \
 									ITEM01("ACE_Earplugs"), \
-									ITEM01("ACE_MapTools")
+									ITEM01("ACE_MapTools"), \
+									ITEM01("ACE_Item_DAGR")
 						
 #define CMD_UNIT_COMMON_MEDS 		ITEM06("ACE_fieldDressing"), \
 									ITEM06("ACE_quikclot"), \
