@@ -27,98 +27,90 @@ class Helicopter_Base_H : Helicopter_Base_F {
 // WARRIOR
 
 class CUP_Uh60_Base : Helicopter_Base_H {
-	armor = 64.0;
-	armorStructural = 3.5;
-	explosionShielding = 1.0;
+	armor = 60.0;
+	armorStructural = 0.5;
+	explosionShielding = 0.5;
 
 	class HitPoints : HitPoints {
 
 		//Integral
 		class HitHull : HitHull {
-			armor = 0.5;
+			armor = 0.7;
 			passThrough = 1.0;
-			explosionShielding = 1.0;
+			explosionShielding = 40;
 		};
 		class HitAvionics : HitAvionics {
-			armor = 3.0;
-			passThrough = 1.0;
-			explosionShielding = 1.0;
+			armor = 0.3;
+			passThrough = 0.2;
+			explosionShielding = 30;
 		};
 		class HitEngine : HitEngine {
-			armor = 10.0;
+			armor = 2.4;
 			passThrough = 1.0;
-			explosionShielding = 1.0;
-			minimalHit = 0.01;
+			explosionShielding = 0.3;
+			minimalHit = 0.001;
 		};
 		class HitFuel : HitFuel {
-			armor = 3.0;
+			armor = 0.2;
 			passThrough = 1.0;
-			explosionShielding = 1.0;
-			minimalHit = 0.01;
+			explosionShielding = 2.5;
+			minimalHit = 0.001;
 		};
 
 		//Rotors
 		class HitHRotor : HitHRotor {
-			armor = 4.0;
-			passThrough = 0.0;
+			armor = 1.4;
+			passThrough = 0.2;
 			explosionShielding = 1.0;
-			minimalHit = 0.01;
+			minimalHit = 0.001;
 		};
 		class HitVRotor : HitVRotor {
-			armor = 1.0;
-			passThrough = 0.0;
-			explosionShielding = 5.0;
-			minimalHit = 0.01;
+			armor = 0.3;
+			passThrough = 0.2;
+			explosionShielding = 8.0;
+			minimalHit = 0.001;
 		};
 
 		//Glass
 		class HitLGlass : HitLGlass {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitRGlass : HitRGlass {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass1 : HitGlass1 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass2 : HitGlass2 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass3 : HitGlass3 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass4 : HitGlass4 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass5 : HitGlass5 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 		class HitGlass6 : HitGlass6 {
-			armor = 1.0;
-			passThrough = 1.0;
+			armor = 2.0;
+			passThrough = 0.0;
 			explosionShielding = 0.0;
-			minimalHit = 0.1;
 		};
 	};
 
