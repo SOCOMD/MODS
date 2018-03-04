@@ -30,7 +30,7 @@
 									ITEM04("ACE_CableTie"), \
 									ITEM01("ACE_Earplugs"), \
 									ITEM01("ACE_MapTools"), \
-									ITEM01("ACE_Item_DAGR")
+									ITEM01("ACE_DAGR")
 									
 
 #define CMD_UNIT_PILOT_ITEMS 		ITEM01("ACRE_PRC343"), \
@@ -41,7 +41,7 @@
 									ITEM04("ACE_CableTie"), \
 									ITEM01("ACE_Earplugs"), \
 									ITEM01("ACE_MapTools"), \
-									ITEM01("ACE_Item_DAGR")
+									ITEM01("ACE_DAGR")
 						
 #define CMD_UNIT_COMMON_MEDS 		ITEM06("ACE_fieldDressing"), \
 									ITEM06("ACE_quikclot"), \
