@@ -36,19 +36,146 @@
 	{
 		LandTransportWeapons
 	};
+};*/
+
+class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
+
+	scope = private;
+	armor = 60;
+	armorStructural = 75;
+	explosionShielding = 1.0;
+	damageResistance = 0.03099;
+	threat[] = {1,0.8,0.3};
+
+	class HitPoints : HitPoints {
+
+		//Integral
+		class HitHull : HitHull {
+			armor = 25.0;
+			passThrough = 1.0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitBody : HitBody {
+			armor = 25.0;
+			passThrough = 1.0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitEngine : HitEngine {
+			armor = 1.0;
+			passThrough = 0.5;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+		class HitFuel : HitFuel {
+			armor = 1.0;
+			passThrough = 0;
+			minimalHit = 0.01;
+			explosionShielding = 1.0;
+		};
+
+		//Left Wheels
+		class HitLFWheel : HitLFWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitLF2Wheel : HitLF2Wheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitLMWheel : HitLMWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0; 
+		};
+		class HitLBWheel : HitLBWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+
+		//Right Wheels
+		class HitRFWheel : HitRFWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRF2Wheel : HitRF2Wheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRMWheel : HitRMWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRBWheel : HitRBWheel {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+
+		//Glass
+		class HitLGlass : HitLGlass {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitRGlass : HitRGlass {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass1 : HitGlass1 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass2 : HitGlass2 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass3 : HitGlass3 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass4 : HitGlass4 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass5 : HitGlass5 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+		class HitGlass6 : HitGlass6 {
+			armor = 1.0;
+			passThrough = 0;
+			explosionShielding = 1.0;
+		};
+	};
 };
 
-class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
+class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "SOCOMD Bushmaster Transport";
+	displayname = "Bushmaster Transport";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	
 
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
@@ -73,7 +200,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_ecm_F
 	{
 		LandTransportWeapons
 	};
-};*/
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 // JACKAL
@@ -224,6 +351,89 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 		LandTransportBackpacks
 	};
 	
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// MASTIFF
+
+class CUP_B_Mastiff_HMG_GB_D;
+class SOCOMD_MASTIFF_HMG_D : CUP_B_Mastiff_HMG_GB_D {
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Mastiff HMG (Desert)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	transportMaxBackpacks = "30";
+	transportMaxWeapons = "60";
+	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+	
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
+	class TransportWeapons 
+	{
+		LandTransportWeapons
+	};
+};
+
+class CUP_B_Mastiff_HMG_GB_W;
+class SOCOMD_MASTIFF_HMG_W : CUP_B_Mastiff_HMG_GB_W {
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "Mastiff HMG (Woodland)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	transportMaxBackpacks = "30";
+	transportMaxWeapons = "60";
+	transportMaxMagazines = "600";
+
+	tf_hasLRradio = 1;
+	tf_isolatedAmount = 0.6;
+	tf_range = 40000;
+	
+	class TransportMagazines 
+	{
+		LandTransportMagazines
+	};
+
+	class TransportItems 
+	{
+		LandTransportItems
+	};
+
+	class TransportBackpacks 
+	{
+		LandTransportBackpacks
+	};
+
 	class TransportWeapons 
 	{
 		LandTransportWeapons

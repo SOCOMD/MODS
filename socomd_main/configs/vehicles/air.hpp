@@ -249,7 +249,49 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 ////////////////////////////////////////////////////////////////////////////////
 // HURRICANE
 
-class CUP_B_AH64D_DL_USA;
+class Helicopter_Base_H;
+class CUP_AH64_base : Helicopter_Base_H {
+	class Turrets;
+};
+
+class CUP_AH64D_Base : CUP_AH64_base
+{
+	class Turrets : Turrets
+	{
+		class MainTurret;
+	};
+};
+
+class CUP_AH64D_dynamic_Base : CUP_AH64D_Base
+{
+	class Turrets : Turrets
+	{
+		class MainTurret : MainTurret
+		{
+			class OpticsIn;
+		};
+	};
+};
+
+class CUP_B_AH64D_DL_USA : CUP_AH64D_dynamic_Base
+{
+	class Turrets : Turrets
+	{
+		class MainTurret : MainTurret
+		{
+			class OpticsIn : OpticsIn
+			{
+				class WideNGS;
+				class Wide;
+				class WideL;
+				class Medium;
+				class Narrow;
+				class Narrower;
+			};
+		};
+	};
+};
+
 /*class SOCOMD_HURRICANE_AA : CUP_B_AH64D_DL_USA
 {
 	scope = public;
@@ -312,6 +354,43 @@ class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
+
+	class Turrets : Turrets
+	{
+		class MainTurret : MainTurret
+		{
+			weapons[] = {"CUP_weapon_mastersafe","Laserdesignator_mounted","CUP_Vacannon_M230_veh"};
+			magazines[] = {"CUP_1200Rnd_TE1_Red_Tracer_30x113mm_M789_HEDP_M","Laserbatteries","CUP_2Rnd_pylonblank_M","CUP_2Rnd_pylonblank_M","CUP_2Rnd_pylonblank_M","CUP_4Rnd_pylonblank_M","CUP_4Rnd_pylonblank_M"};
+
+			class OpticsIn : OpticsIn 
+			{
+				class WideNGS : WideNGS
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Wide : Wide
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class WideL : WideL
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Medium : Medium
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Narrow : Narrow
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Narrower : Narrower
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+			};
+		};
+	};
 
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;

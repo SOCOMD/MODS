@@ -302,4 +302,8 @@ class CfgGlasses
 			mass = 4;
 		};
 	};
+
+	class EWK_Shemag_LULZ : None {
+		scope = private;
+	}
 };
