@@ -3024,6 +3024,17 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 					width = 2.5;
 					points[] = {{"ForwardVec",1,"RadarContact",{-0.01,-0.01},1},{"ForwardVec",1,"RadarContact",{0.01,-0.01},1},{"ForwardVec",1,"RadarContact",{0.01,0.01},1},{"ForwardVec",1,"RadarContact",{-0.01,0.01},1},{"ForwardVec",1,"RadarContact",{-0.01,-0.01},1}};
 				};
+				class AC_Centerline
+				{
+					type = "group";
+					condition = "on";
+					class AC_Cross
+					{
+						type = "line";
+						width = 4;
+						points[] = {{"ForwardVec",1,{" -0.006 + 0.5","0 + 0.5"},1},{"ForwardVec",1,{" 0.006 + 0.5","0 + 0.5"},1},{},{"ForwardVec",1,{" -0.0 + 0.5","0.006 + 0.5"},1},{"ForwardVec",1,{" 0.0 + 0.5","-0.006 + 0.5"},1}};
+					};
+				};
 			};
 			helmetMountedDisplay = 1;
 			helmetPosition[] = {-0.035,0.035,0.1};
