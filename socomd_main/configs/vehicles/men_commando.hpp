@@ -317,8 +317,8 @@ class SOCOMD_Rifleman : SOCOMD_Soldier_LongSleeve
 	vehicleclass 			= "SOCOMD_Core";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg" };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
 	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi" };
