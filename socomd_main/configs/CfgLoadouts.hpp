@@ -113,7 +113,8 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
                                 LOADOUT_ITEM(Chemlight_blue, 2) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1) \
-								LOADOUT_ITEM(ACRE_PRC343, 1)
+								LOADOUT_ITEM(ACRE_PRC343, 1) \
+								LOADOUT_ITEM(ACE_DAGR, 1)
 
 #define SASR_VEST_ESSENTIALS    LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
                                 LOADOUT_ITEM(ACE_M84, 2) \
@@ -126,7 +127,8 @@ class SASR_StandardTrooper
                                 LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
                                 LOADOUT_ITEM(ACE_NVG_Gen4, 1) \
                                 LOADOUT_ITEM(B_IR_Grenade, 1) \
-								LOADOUT_ITEM(ACRE_PRC343, 1)
+								LOADOUT_ITEM(ACRE_PRC343, 1) \
+								LOADOUT_ITEM(ACE_DAGR, 1)
 
 #define JAC_STANDARD_MEDICAL    LOADOUT_ITEM(ACE_elasticBandage, 5) \
                                 LOADOUT_ITEM(ACE_quikclot, 5) \
@@ -169,7 +171,6 @@ class CfgLoadouts
         {
             headgear = "AU_02_780000_v1";
             binocular = "Rangefinder";
-            gps = "ACE_DAGR";
 
             class Uniform 
             {
@@ -219,7 +220,11 @@ class CfgLoadouts
 
             class Backpack
             {
-                type = "SOCOMD_LongRange_Radio";                
+                type = "SOCOMD_LongRange_Radio";
+				class Inventory 
+				{
+					LOADOUT_ITEM(ACRE_PRC117F, 1)
+				};
             };
         };
 
@@ -268,6 +273,10 @@ class CfgLoadouts
             class Backpack
             {
                 type = "SOCOMD_LongRange_Radio";
+				class Inventory 
+				{
+					LOADOUT_ITEM(ACRE_PRC117F, 1)
+				};
             };
         };
 
@@ -277,7 +286,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            gps = "ACE_DAGR";
 
             class Uniform 
             {
@@ -347,7 +355,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            gps = "ACE_DAGR";
 
             class Uniform
             {
@@ -393,7 +400,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            gps = "ACE_DAGR";
 
             class Uniform
             {
@@ -424,7 +430,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
-            gps = "ACE_DAGR";
 
             class Uniform 
             {
@@ -473,8 +478,7 @@ class CfgLoadouts
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
-            gps = "ACE_DAGR";
-            
+
             class Uniform
             {
                 type = "VSM_Multicam_Crye_Camo";
@@ -505,8 +509,7 @@ class CfgLoadouts
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
             binocular = "Rangefinder";
-            gps = "ACE_DAGR";
-            
+
             class Uniform
             {
                 type = "VSM_Multicam_Crye_Camo";
@@ -539,7 +542,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
-            gps = "ACE_DAGR";
 
             class Uniform
             {
@@ -549,7 +551,7 @@ class CfgLoadouts
                     SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
                 };
-            };      
+            };
 
             class Vest
             {
@@ -571,7 +573,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
-            gps = "ACE_DAGR";
 
             class Uniform
             {
@@ -613,7 +614,6 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
-            gps = "ACE_DAGR";
 
             class Uniform
             {
@@ -655,7 +655,6 @@ class CfgLoadouts
             primary = "SMA_M4MOE_Tan";
             headgear = "H_CrewHelmetHeli_B";
             binocular = "Binocular";
-            gps = "ACE_DAGR";
 
             class Uniform 
             {
@@ -678,7 +677,6 @@ class CfgLoadouts
         class JAC_GroundCrew
         {
             headgear = "CUP_H_Navy_CrewHelmet_White";
-            gps = "ACE_DAGR";
 
             class Uniform 
             {
@@ -760,6 +758,10 @@ class CfgLoadouts
             class Backpack
             {
                 type = "SOCOMD_LongRange_Radio";
+				class Inventory 
+				{
+					LOADOUT_ITEM(ACRE_PRC117F, 1)
+				};
             };
         };
         
@@ -795,6 +797,10 @@ class CfgLoadouts
             class Backpack
             {
                 type = "SOCOMD_LongRange_Radio";
+				class Inventory 
+				{
+					LOADOUT_ITEM(ACRE_PRC117F, 1)
+				};
             };
         };
 
