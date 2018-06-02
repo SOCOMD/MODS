@@ -27,6 +27,8 @@ class Helicopter_Base_H : Helicopter_Base_F {
 // WARRIOR
 
 class CUP_Uh60_Base : Helicopter_Base_H {
+// balancing this is a complete bitch, uncomment at your own risk
+/*
 	armor = 60.0;
 	armorStructural = 1;
 	explosionShielding = 0.00001;
@@ -112,7 +114,7 @@ class CUP_Uh60_Base : Helicopter_Base_H {
 			explosionShielding = 0.0;
 		};
 	};
-
+*/
 	class MFD
 	{
 		class CUP_Uh60_HUD_1
