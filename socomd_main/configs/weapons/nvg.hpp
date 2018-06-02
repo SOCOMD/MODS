@@ -21,3 +21,18 @@ class zeus_earpiece : NVGoggles
 		mass = 4;
 	};
 };
+
+class ACE_NVG_Gen4;
+class SOCOMD_Invis_NVG : ACE_NVG_Gen4 
+{
+	model="\A3\Weapons_F\DummyItem.p3d";
+	class ItemInfo
+	{
+		type = 616;
+		//hmdType = 0;
+		uniformModel = "";
+		modelOff = "";
+		mass = 0;
+	};
+
+};

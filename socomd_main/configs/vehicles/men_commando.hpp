@@ -7,7 +7,12 @@
 									ITEM02("HandGrenade"), \
 									ITEM02("ACE_M84"), \
 									ITEM01("B_IR_Grenade")
-	
+
+#define CMD_UNIT_PILOT_AMMO			ITEM04("RH_12Rnd_45cal_usp"), \
+									ITEM02("SmokeShell"), \
+									ITEM02("SmokeShellGreen"), \
+									ITEM01("B_IR_Grenade")
+
 #define CMD_UNIT_COMMON_WEAPONS 	ITEM01("RH_usp"), \
 									ITEM01("Throw"), \
 									ITEM01("Put")
@@ -25,7 +30,16 @@
 									ITEM04("ACE_CableTie"), \
 									ITEM01("ACE_Earplugs"), \
 									ITEM01("ACE_MapTools")
- 								
+
+#define CMD_UNIT_PILOT_ITEMS 		ITEM01("ACRE_PRC343"), \
+									ITEM01("ItemcTabHCam"), \
+									ITEM01("ACE_IR_Strobe_Item"), \
+									ITEM01("ACE_Flashlight_KSF1"), \
+									ITEM01("murshun_cigs_lighter"), \
+									ITEM04("ACE_CableTie"), \
+									ITEM01("ACE_Earplugs"), \
+									ITEM01("ACE_MapTools")
+						
 #define CMD_UNIT_COMMON_MEDS 		ITEM06("ACE_fieldDressing"), \
 									ITEM06("ACE_quikclot"), \
 									ITEM06("ACE_elasticBandage"), \
@@ -154,9 +168,8 @@ class SOCOMD_PlatoonLeader : SOCOMD_Soldier_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, CMD_UNIT_AMMO_UNDERSLUNG, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemcTab" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_MICH_Multi", "ItemcTab" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152"};
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152"};
-	backpack 				= "SOCOMD_LongRange_Radio";
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152", "ACRE_PRC117F"};
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACE_HuntIR_monitor", "ACRE_PRC152", "ACRE_PRC117F"};
 };
  
 class SOCOMD_PlatoonSergeant : SOCOMD_Soldier_LongSleeve
@@ -211,9 +224,8 @@ class SOCOMD_PlatoonSignaller : SOCOMD_Soldier_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN, "Laserbatteries" };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemcTab" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_OP", "SOCOMD_MICH_Multi", "ItemcTab" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
-	backpack 				= "SOCOMD_LongRange_Radio";
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -480,15 +492,15 @@ class SOCOMD_Pilot : SOCOMD_Officer_LongSleeve
 	displayName 			= "Heli-Pilot";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
-	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };
-	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Pilot_helmet", "ItemcTab" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152" };
-	backpack 				= "SOCOMD_LongRange_Radio";
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "Binocular" };
+	magazines[] 			= { CMD_UNIT_PILOT_AMMO };
+	respawnMagazines[] 		= { CMD_UNIT_PILOT_AMMO };
+	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_Pilot_2", "SOCOMD_Pilot_helmet", "ItemcTab", "SOCOMD_Invis_NVG" };
+	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_Pilot_2", "SOCOMD_Pilot_helmet", "ItemcTab", "SOCOMD_Invis_NVG" };
+	Items[] 				= { CMD_UNIT_PILOT_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
+	RespawnItems[] 			= { CMD_UNIT_PILOT_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
+	//backpack 				= "SOCOMD_LongRange_Radio";
 };
  
 class SOCOMD_Crew : SOCOMD_Officer_LongSleeve
@@ -499,15 +511,15 @@ class SOCOMD_Crew : SOCOMD_Officer_LongSleeve
 	displayName 			= "Heli-Crew";
 	icon 					= "iconMan";
 
-	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
-	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "SMA_HK416CUSTOMCQBvfg", "Binocular" };
-	magazines[] 			= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
-	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO, CMD_UNIT_AMMO_RIFLEMAN };
+	weapons[] 				= {	CMD_UNIT_COMMON_WEAPONS, "Binocular" };
+	respawnWeapons[] 		= { CMD_UNIT_COMMON_WEAPONS, "Binocular" };
+	magazines[] 			= { CMD_UNIT_COMMON_AMMO };
+	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Crew_helmet", "ItemcTab" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "SOCOMD_Vest_TL", "SOCOMD_Crew_helmet", "ItemcTab" };
 	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
 	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	backpack 				= "SOCOMD_LongRange_Radio";
+	//backpack 				= "SOCOMD_LongRange_Radio";
 };
  
 class SOCOMD_Homestead: SOCOMD_Soldier_LongSleeve
@@ -524,9 +536,8 @@ class SOCOMD_Homestead: SOCOMD_Soldier_LongSleeve
 	respawnMagazines[] 		= { CMD_UNIT_COMMON_AMMO };
 	linkedItems[] 			= { CMD_UNIT_COMMON_LINKEDITEMS, "ItemMap", "ItemGPS", "SOCOMD_Vest_TL", "SOCOMD_BERET", "zeus_earpiece" };
 	respawnLinkedItems[] 	= { CMD_UNIT_COMMON_LINKEDITEMS, "ItemMap", "ItemGPS", "SOCOMD_Vest_TL", "SOCOMD_BERET", "zeus_earpiece" };
-	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS };
-	backpack 				= "SOCOMD_LongRange_Radio";
+	Items[] 				= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
+	RespawnItems[] 			= { CMD_UNIT_COMMON_ITEMS, CMD_UNIT_COMMON_MEDS, "ACRE_PRC152", "ACRE_PRC117F" };
 };
  
 class SOCOMD_Journalist : SOCOMD_Soldier_LongSleeve

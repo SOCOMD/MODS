@@ -280,6 +280,64 @@ class SOCOMD_Vest_Pilot : V_Chestrig_khk
 	};
 };
 
+class CUP_Vest_RACS_Camo_Base;
+class CUP_V_I_RACS_Carrier_Rig_3: CUP_Vest_RACS_Camo_Base 
+{
+	class ItemInfo;
+};
+class SOCOMD_Vest_Pilot_2: CUP_V_I_RACS_Carrier_Rig_3
+{
+	scope=public;
+	displayName="SOCOMD Pilot Vest (Desert - Radio)";
+	model="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_Carrier_Rig_3.p3d";
+	picture="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\data\ui\icon_v_pouch_harness_ca.paa";
+	hiddenSelectionsTextures[]=
+	{
+		"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex1_co.paa",
+		"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex2_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		hiddenSelectionsTextures[]=
+		{
+			"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex1_co.paa",
+			"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex2_co.paa"
+		};
+		containerClass="Supply200";
+		uniformModel="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_Carrier_Rig_3.p3d";
+		armor=0;
+		passThrough=1;
+		mass=20;
+		class HitpointsProtectionInfo
+		{
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 8;
+				passThrough = 0.5;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 8;
+				passThrough = 0.5;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 8;
+				passThrough = 0.5;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				passThrough = 0.5;
+			};
+		};
+	};
+};
+
+
 class V_RebreatherB : Vest_Camo_Base
 {
 	class ItemInfo;
