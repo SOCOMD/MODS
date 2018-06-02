@@ -28,46 +28,45 @@ class Helicopter_Base_H : Helicopter_Base_F {
 
 class CUP_Uh60_Base : Helicopter_Base_H {
 	armor = 60.0;
-	armorStructural = 0.5;
-	explosionShielding = 0.5;
+	armorStructural = 1;
+	explosionShielding = 0.00001;
 
 	class HitPoints : HitPoints {
 
 		//Integral
 		class HitHull : HitHull {
-			armor = 0.7;
+			armor = 1.2;
 			passThrough = 1.0;
-			explosionShielding = 40;
+			explosionShielding = 0.000001;
 		};
 		class HitAvionics : HitAvionics {
 			armor = 0.3;
 			passThrough = 0.2;
-			explosionShielding = 30;
+			explosionShielding = 0.000001;
 		};
 		class HitEngine : HitEngine {
 			armor = 2.4;
-			passThrough = 1.0;
-			explosionShielding = 0.3;
+			passThrough = 0.6;
+			explosionShielding =0.000001;
 			minimalHit = 0.001;
 		};
 		class HitFuel : HitFuel {
 			armor = 0.2;
 			passThrough = 1.0;
-			explosionShielding = 2.5;
-			minimalHit = 0.001;
+			explosionShielding = 0.000001;
 		};
 
 		//Rotors
 		class HitHRotor : HitHRotor {
 			armor = 1.4;
 			passThrough = 0.2;
-			explosionShielding = 1.0;
+			explosionShielding = 0.000001;
 			minimalHit = 0.001;
 		};
 		class HitVRotor : HitVRotor {
 			armor = 0.3;
 			passThrough = 0.2;
-			explosionShielding = 8.0;
+			explosionShielding = 0.000001;
 			minimalHit = 0.001;
 		};
 
