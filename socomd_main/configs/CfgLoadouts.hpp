@@ -286,6 +286,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
+            binocular = "Binocular";
 
             class Uniform 
             {
@@ -326,6 +327,8 @@ class CfgLoadouts
                 {
                     SASR_STANDARD_MEDICAL
                     SASR_UNIFORM_ESSENTIALS
+                    
+                    LOADOUT_ITEM(ACE_MapTools, 1)
                 };
             };
 
@@ -355,6 +358,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
+            binocular = "Binocular";
 
             class Uniform
             {
@@ -400,6 +404,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
+            binocular = "Binocular";
 
             class Uniform
             {
@@ -430,6 +435,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_OPS_2_multicam";
+            binocular = "Binocular";
 
             class Uniform 
             {
@@ -542,6 +548,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
+            binocular = "Binocular";
 
             class Uniform
             {
@@ -573,6 +580,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
+            binocular = "Binocular";
 
             class Uniform
             {
@@ -614,6 +622,7 @@ class CfgLoadouts
             handgun = "CUP_hgun_Glock17";
             handgunMagazine = "CUP_17Rnd_9x19_glock17";
             headgear = "VSM_Mich2000_2_Multicam";
+            binocular = "Binocular";
 
             class Uniform
             {
