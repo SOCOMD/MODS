@@ -107,7 +107,7 @@ class SASR_StandardTrooper
 
 #define SASR_UNIFORM_ESSENTIALS LOADOUT_ITEM(ItemcTabHCam, 1) \
                                 LOADOUT_ITEM(ACE_EarPlugs, 1) \
-                                LOADOUT_ITEM(ACE_CableTie, 1) \
+                                LOADOUT_ITEM(ACE_CableTie, 4) \
                                 LOADOUT_ITEM(ACE_NVG_Gen4, 1) \
                                 LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
                                 LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
@@ -761,6 +761,7 @@ class CfgLoadouts
 
                     LOADOUT_ITEM(H_Watchcap_camo, 1)
                     LOADOUT_ITEM(CUP_17Rnd_9x19_glock17, 3)
+                    LOADOUT_ITEM(ACRE_PRC152, 1)
                 };
             };
 
