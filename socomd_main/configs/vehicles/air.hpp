@@ -1,5 +1,6 @@
 class Helicopter_Base_F : Helicopter {
-	class HitPoints;	
+	class HitPoints;
+	class Turrets;
 };
 
 class Helicopter_Base_H : Helicopter_Base_F {
@@ -20,6 +21,11 @@ class Helicopter_Base_H : Helicopter_Base_F {
 		class HitGlass4;
 		class HitGlass5;
 		class HitGlass6;
+	};
+
+	class Turrets : Turrets
+	{
+		class CopilotTurret;
 	};
 };
 
@@ -2096,9 +2102,22 @@ class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 
 class CUP_AH6_BASE : Helicopter_Base_H {
 
+	//Armor Damage
 	armor = 60.0;
 	armorStructural = 1.0;
 	explosionShielding = 1.0;
+
+	//Flight Controls
+	altFullForce = 2500;
+	altNoForce = 5000;
+	maxSpeed = 280;
+	maxFordingDepth = 0.05;
+
+	liftForceCoef = 5.0;
+	bodyFrictionCoef = 2.0;
+	cyclicAsideForceCoef = 0.5;
+	cyclicForwardForceCoef = 0.5;
+	backRotorForceCoef = 0.5;
 
 	class HitPoints : HitPoints {
 
@@ -3053,6 +3072,119 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 			helmetPosition[] = {-0.035,0.035,0.1};
 			helmetRight[] = {0.07,0,0};
 			helmetDown[] = {0,-0.07,0};
+		};
+	};
+
+	class Turrets : Turrets
+	{
+		class CopilotTurret : CopilotTurret
+		{
+			class OpticsIn
+			{
+				class WideNGS
+				{
+					opticsDisplayName = "W";
+					initAngleX = 0;
+					minAngleX = -35;
+					maxAngleX = 10;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0,1};
+					gunnerOpticsColor[] = {0.15,1,0.15,1};
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_03_w_F.p3d";
+					directionStabilized = 1;
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+
+				class Wide
+				{
+					opticsDisplayName = "W";
+					initAngleX = 0;
+					minAngleX = -35;
+					maxAngleX = 10;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0,1};
+					gunnerOpticsColor[] = {0.15,1,0.15,1};
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_w_F.p3d";
+					directionStabilized = 1;
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					gunnerOpticsEffect[] = {"TankCommanderOptics1"};
+				};
+
+				class WideL: Wide
+				{
+					opticsDisplayName = "WL";
+					initFov = 0.2;
+					minFov = 0.2;
+					maxFov = 0.2;
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
+					gunnerOpticsColor[] = {0,0,0,1};
+					directionStabilized = 1;
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+
+				class Medium: Wide
+				{
+					opticsDisplayName = "M";
+					initFov = 0.1;
+					minFov = 0.1;
+					maxFov = 0.1;
+					directionStabilized = 1;
+					gunnerOpticsColor[] = {0,0,0,1};
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
+				};
+
+				class Narrow: Wide
+				{
+					opticsDisplayName = "N";
+					gunnerOpticsColor[] = {0,0,0,1};
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
+					directionStabilized = 1;
+					initFov = 0.02;
+					minFov = 0.02;
+					maxFov = 0.02;
+				};
+
+				class Narrower: Wide {
+					opticsDisplayName = "N";
+					gunnerOpticsColor[] = {0,0,0,1};
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
+					directionStabilized = 1;
+					initFov = 0.01;
+					minFov = 0.01;
+					maxFov = 0.01;
+				};
+			};
+
+			class OpticsOut
+			{
+				class Monocular
+				{
+					initAngleX = 0;
+					minAngleX = -100;
+					maxAngleX = 100;
+					initAngleY = 0;
+					minAngleY = -89;
+					maxAngleY = 89;
+					initFov = 1.1;
+					minFov = 0.133;
+					maxFov = 1.1;
+					visionMode[] = {"Normal","NVG"};
+					gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+					gunnerOpticsEffect[] = {};
+				};
+			};
 		};
 	};
 };
