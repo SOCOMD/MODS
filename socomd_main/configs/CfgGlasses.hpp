@@ -305,5 +305,5 @@ class CfgGlasses
 
 	class EWK_Shemag_LULZ : None {
 		scope = private;
-	}
+	};
 };
