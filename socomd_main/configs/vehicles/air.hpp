@@ -2115,9 +2115,9 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 
 	liftForceCoef = 5.0;
 	bodyFrictionCoef = 2.0;
-	cyclicAsideForceCoef = 0.5;
-	cyclicForwardForceCoef = 0.5;
-	backRotorForceCoef = 0.5;
+	cyclicAsideForceCoef = 0.35;
+	cyclicForwardForceCoef = 0.35;
+	backRotorForceCoef = 0.35;
 
 	class HitPoints : HitPoints {
 
@@ -3079,88 +3079,65 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 	{
 		class CopilotTurret : CopilotTurret
 		{
+			turretInfoType = "Rsc_ACE_Helo_UI_Turret";
+			stabilizedInAxes = 3;
+
 			class OpticsIn
 			{
 				class WideNGS
 				{
-					opticsDisplayName = "W";
+					opticsDisplayName = "";
 					initAngleX = 0;
-					minAngleX = -35;
-					maxAngleX = 10;
+					minAngleX = -45;
+					maxAngleX = 45;
 					initAngleY = 0;
 					minAngleY = -100;
 					maxAngleY = 100;
-					initFov = 0.466;
-					minFov = 0.466;
-					maxFov = 0.466;
+					initFov = 0.8;
+					minFov = 0.8;
+					maxFov = 0.8;
 					visionMode[] = {"Normal","NVG","Ti"};
-					thermalMode[] = {0,1};
-					gunnerOpticsColor[] = {0.15,1,0.15,1};
+					thermalMode[] = {0, 1};
+					gunnerOpticsColor[] = {0, 0, 0, 1};
+					directionStabilized = 0;
+					horizontallyStabilized = 1;
 					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_03_w_F.p3d";
-					directionStabilized = 1;
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 				};
 
 				class Wide
 				{
-					opticsDisplayName = "W";
-					initAngleX = 0;
-					minAngleX = -35;
-					maxAngleX = 10;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.466;
-					minFov = 0.466;
-					maxFov = 0.466;
+					opticsDisplayName = "S";
+					initFov = 0.4;
+					minFov = 0.4;
+					maxFov = 0.4;
 					visionMode[] = {"Normal","NVG","Ti"};
-					thermalMode[] = {0,1};
-					gunnerOpticsColor[] = {0.15,1,0.15,1};
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_w_F.p3d";
+					gunnerOpticsColor[] = {0, 0, 0, 1};
 					directionStabilized = 1;
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
-					gunnerOpticsEffect[] = {"TankCommanderOptics1"};
+					horizontallyStabilized = 1;
+					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_w_F.p3d";
 				};
 
-				class WideL: Wide
+				class WideL : Wide
 				{
-					opticsDisplayName = "WL";
 					initFov = 0.2;
 					minFov = 0.2;
 					maxFov = 0.2;
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
-					gunnerOpticsColor[] = {0,0,0,1};
-					directionStabilized = 1;
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 				};
 
-				class Medium: Wide
+				class Medium : Wide
 				{
-					opticsDisplayName = "M";
 					initFov = 0.1;
 					minFov = 0.1;
 					maxFov = 0.1;
-					directionStabilized = 1;
-					gunnerOpticsColor[] = {0,0,0,1};
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
 				};
 
-				class Narrow: Wide
-				{
-					opticsDisplayName = "N";
-					gunnerOpticsColor[] = {0,0,0,1};
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
-					directionStabilized = 1;
-					initFov = 0.02;
-					minFov = 0.02;
-					maxFov = 0.02;
+				class Narrow : Wide {
+					initFov = 0.05;
+					minFov = 0.05;
+					maxFov = 0.05;
 				};
 
-				class Narrower: Wide {
-					opticsDisplayName = "N";
-					gunnerOpticsColor[] = {0,0,0,1};
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
-					directionStabilized = 1;
+				class Narrower : Wide {
 					initFov = 0.01;
 					minFov = 0.01;
 					maxFov = 0.01;
@@ -3169,21 +3146,6 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 
 			class OpticsOut
 			{
-				class Monocular
-				{
-					initAngleX = 0;
-					minAngleX = -100;
-					maxAngleX = 100;
-					initAngleY = 0;
-					minAngleY = -89;
-					maxAngleY = 89;
-					initFov = 1.1;
-					minFov = 0.133;
-					maxFov = 1.1;
-					visionMode[] = {"Normal","NVG"};
-					gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
-					gunnerOpticsEffect[] = {};
-				};
 			};
 		};
 	};
