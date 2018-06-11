@@ -2110,14 +2110,14 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 	//Flight Controls
 	altFullForce = 2500;
 	altNoForce = 5000;
-	maxSpeed = 280;
+	maxSpeed = 282;
 	maxFordingDepth = 0.05;
 
 	liftForceCoef = 5.0;
-	bodyFrictionCoef = 2.0;
-	cyclicAsideForceCoef = 0.35;
-	cyclicForwardForceCoef = 0.35;
-	backRotorForceCoef = 0.35;
+	bodyFrictionCoef = 1.5;
+	cyclicAsideForceCoef = 0.4;
+	cyclicForwardForceCoef = 0.4;
+	backRotorForceCoef = 0.4;
 
 	class HitPoints : HitPoints {
 
