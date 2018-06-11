@@ -2108,15 +2108,6 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 	explosionShielding = 1.0;
 
 	//Flight Controls
-	altFullForce = 2500;
-	altNoForce = 5000;
-	maxSpeed = 282;
-	maxFordingDepth = 0.05;
-
-	liftForceCoef = 5.0;
-	bodyFrictionCoef = 1.5;
-	cyclicAsideForceCoef = 0.4;
-	cyclicForwardForceCoef = 0.4;
 	backRotorForceCoef = 0.4;
 
 	class HitPoints : HitPoints {
@@ -3072,81 +3063,6 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 			helmetPosition[] = {-0.035,0.035,0.1};
 			helmetRight[] = {0.07,0,0};
 			helmetDown[] = {0,-0.07,0};
-		};
-	};
-
-	class Turrets : Turrets
-	{
-		class CopilotTurret : CopilotTurret
-		{
-			turretInfoType = "Rsc_ACE_Helo_UI_Turret";
-			stabilizedInAxes = 3;
-
-			class OpticsIn
-			{
-				class WideNGS
-				{
-					opticsDisplayName = "";
-					initAngleX = 0;
-					minAngleX = -45;
-					maxAngleX = 45;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.8;
-					minFov = 0.8;
-					maxFov = 0.8;
-					visionMode[] = {"Normal","NVG","Ti"};
-					thermalMode[] = {0, 1};
-					gunnerOpticsColor[] = {0, 0, 0, 1};
-					directionStabilized = 0;
-					horizontallyStabilized = 1;
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_03_w_F.p3d";
-				};
-
-				class Wide
-				{
-					opticsDisplayName = "S";
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.4;
-					visionMode[] = {"Normal","NVG","Ti"};
-					gunnerOpticsColor[] = {0, 0, 0, 1};
-					directionStabilized = 1;
-					horizontallyStabilized = 1;
-					gunnerOpticsModel = "A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_w_F.p3d";
-				};
-
-				class WideL : Wide
-				{
-					initFov = 0.2;
-					minFov = 0.2;
-					maxFov = 0.2;
-				};
-
-				class Medium : Wide
-				{
-					initFov = 0.1;
-					minFov = 0.1;
-					maxFov = 0.1;
-				};
-
-				class Narrow : Wide {
-					initFov = 0.05;
-					minFov = 0.05;
-					maxFov = 0.05;
-				};
-
-				class Narrower : Wide {
-					initFov = 0.01;
-					minFov = 0.01;
-					maxFov = 0.01;
-				};
-			};
-
-			class OpticsOut
-			{
-			};
 		};
 	};
 };
