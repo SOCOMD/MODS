@@ -267,15 +267,6 @@ class CfgLoadouts
                     LOADOUT_ITEM(UGL_FlareRed_F, 2)
                     LOADOUT_ITEM(UGL_FlareGreen_F, 2)
                     LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
-                };
-            };
-
-            class Backpack
-            {
-                type = "SOCOMD_LongRange_Radio";
-				class Inventory 
-				{
-					LOADOUT_ITEM(ACRE_PRC117F, 1)
 				};
             };
         };
