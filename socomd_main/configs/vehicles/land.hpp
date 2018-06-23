@@ -38,37 +38,79 @@
 	};
 };*/
 
-class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
+class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F
+{
 
 	scope = private;
 	armor = 60;
 	armorStructural = 75;
 	explosionShielding = 1.0;
 	damageResistance = 0.03099;
-	threat[] = {1,0.8,0.3};
+	threat[] = {1, 0.8, 0.3};
 
-	class HitPoints : HitPoints {
+	acre_hasInfantryPhone = 1;
+	acre_infantryPhoneDisableRinging = 0;
+	acre_infantryPhoneCustomRinging[] = {};
+	acre_infantryPhoneIntercom[] = {"all"};
+	acre_infantryPhoneControlActions[] = {"intercom_1"};
+
+	class AcreIntercoms : AcreIntercoms
+	{
+		class Intercom_1
+		{
+			displayName = "Pax intercom";
+			shortName = "Pax";
+			allowedPositions[] = {"crew", {"cargo", "all"}};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"driver"};
+			connectedByDefault = 1;
+		};
+	};
+
+	class AcreRacks
+	{
+		class Rack_1
+		{
+			displayName = "Dash";
+			shortName = "Dash";
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"driver", "commander", "gunner"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";
+			isRadioRemovable = 0;
+			intercom[] = {"intercom_1"};
+		};
+	};
+
+	class HitPoints : HitPoints
+	{
 
 		//Integral
-		class HitHull : HitHull {
+		class HitHull : HitHull
+		{
 			armor = 25.0;
 			passThrough = 1.0;
 			minimalHit = 0.01;
 			explosionShielding = 1.0;
 		};
-		class HitBody : HitBody {
+		class HitBody : HitBody
+		{
 			armor = 25.0;
 			passThrough = 1.0;
 			minimalHit = 0.01;
 			explosionShielding = 1.0;
 		};
-		class HitEngine : HitEngine {
+		class HitEngine : HitEngine
+		{
 			armor = 1.0;
 			passThrough = 0.5;
 			minimalHit = 0.01;
 			explosionShielding = 1.0;
 		};
-		class HitFuel : HitFuel {
+		class HitFuel : HitFuel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			minimalHit = 0.01;
@@ -76,86 +118,102 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 		};
 
 		//Left Wheels
-		class HitLFWheel : HitLFWheel {
+		class HitLFWheel : HitLFWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitLF2Wheel : HitLF2Wheel {
+		class HitLF2Wheel : HitLF2Wheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitLMWheel : HitLMWheel {
+		class HitLMWheel : HitLMWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
-			explosionShielding = 1.0; 
+			explosionShielding = 1.0;
 		};
-		class HitLBWheel : HitLBWheel {
+		class HitLBWheel : HitLBWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
 
 		//Right Wheels
-		class HitRFWheel : HitRFWheel {
+		class HitRFWheel : HitRFWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitRF2Wheel : HitRF2Wheel {
+		class HitRF2Wheel : HitRF2Wheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitRMWheel : HitRMWheel {
+		class HitRMWheel : HitRMWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitRBWheel : HitRBWheel {
+		class HitRBWheel : HitRBWheel
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
 
 		//Glass
-		class HitLGlass : HitLGlass {
+		class HitLGlass : HitLGlass
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitRGlass : HitRGlass {
+		class HitRGlass : HitRGlass
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass1 : HitGlass1 {
+		class HitGlass1 : HitGlass1
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass2 : HitGlass2 {
+		class HitGlass2 : HitGlass2
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass3 : HitGlass3 {
+		class HitGlass3 : HitGlass3
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass4 : HitGlass4 {
+		class HitGlass4 : HitGlass4
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass5 : HitGlass5 {
+		class HitGlass5 : HitGlass5
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
 		};
-		class HitGlass6 : HitGlass6 {
+		class HitGlass6 : HitGlass6
+		{
 			armor = 1.0;
 			passThrough = 0;
 			explosionShielding = 1.0;
@@ -175,8 +233,6 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
-	
-
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
@@ -186,17 +242,17 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -204,7 +260,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 
 ////////////////////////////////////////////////////////////////////////////////
 // JACKAL
-	
+
 class CUP_B_Jackal2_L2A1_GB_D;
 class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 {
@@ -222,22 +278,22 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -260,22 +316,22 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
-	
-	class TransportBackpacks 
+
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -298,22 +354,22 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -336,22 +392,22 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
-	
-	class TransportWeapons 
+
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -361,7 +417,8 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 // MASTIFF
 
 class CUP_B_Mastiff_HMG_GB_D;
-class SOCOMD_MASTIFF_HMG_D : CUP_B_Mastiff_HMG_GB_D {
+class SOCOMD_MASTIFF_HMG_D : CUP_B_Mastiff_HMG_GB_D
+{
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
@@ -378,30 +435,31 @@ class SOCOMD_MASTIFF_HMG_D : CUP_B_Mastiff_HMG_GB_D {
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
-	
-	class TransportMagazines 
+
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
 };
 
 class CUP_B_Mastiff_HMG_GB_W;
-class SOCOMD_MASTIFF_HMG_W : CUP_B_Mastiff_HMG_GB_W {
+class SOCOMD_MASTIFF_HMG_W : CUP_B_Mastiff_HMG_GB_W
+{
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
@@ -418,23 +476,23 @@ class SOCOMD_MASTIFF_HMG_W : CUP_B_Mastiff_HMG_GB_W {
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
-	
-	class TransportMagazines 
+
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -461,23 +519,23 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
-	
-	class TransportMagazines 
+
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -502,7 +560,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
-	
+
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -518,7 +576,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -543,7 +601,7 @@ class SOCOMD_LANDROVER_HMG_D : CUP_B_LR_MG_GB_D
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
-	
+
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -559,7 +617,7 @@ class SOCOMD_LANDROVER_HMG_D : CUP_B_LR_MG_GB_D
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -576,7 +634,7 @@ class SOCOMD_LANDROVER_HMG_W : CUP_B_LR_MG_GB_W
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
-	
+
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -592,7 +650,7 @@ class SOCOMD_LANDROVER_HMG_W : CUP_B_LR_MG_GB_W
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -609,7 +667,7 @@ class SOCOMD_LANDROVER_TRANS_D : CUP_B_LR_Transport_GB_D
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
-	
+
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -625,7 +683,7 @@ class SOCOMD_LANDROVER_TRANS_D : CUP_B_LR_Transport_GB_D
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -642,7 +700,7 @@ class SOCOMD_LANDROVER_TRANS_W : CUP_B_LR_Transport_GB_W
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
-	
+
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -658,7 +716,7 @@ class SOCOMD_LANDROVER_TRANS_W : CUP_B_LR_Transport_GB_W
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -684,22 +742,22 @@ class SOCOMD_MTVR_Trans : CUP_B_MTVR_USA
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -722,22 +780,22 @@ class SOCOMD_MTVR_Ammo : CUP_B_MTVR_Ammo_USA
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -760,22 +818,22 @@ class SOCOMD_MTVR_Refuel : CUP_B_MTVR_Refuel_USA
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -798,31 +856,30 @@ class SOCOMD_MTVR_Repair : CUP_B_MTVR_Repair_USA
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
 };
 
-
 ////////////////////////////////////////////////////////////////////////////////
 // ASLAV
-	
+
 class CUP_B_LAV25M240_USMC;
 class SOCOMD_ASLAV_W : CUP_B_LAV25M240_USMC
 {
@@ -840,22 +897,22 @@ class SOCOMD_ASLAV_W : CUP_B_LAV25M240_USMC
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -878,22 +935,22 @@ class SOCOMD_ASLAV_D : CUP_B_LAV25M240_desert_USMC
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
 
-	class TransportMagazines 
+	class TransportMagazines
 	{
 		LandTransportMagazines
 	};
 
-	class TransportItems 
+	class TransportItems
 	{
 		LandTransportItems
 	};
 
-	class TransportBackpacks 
+	class TransportBackpacks
 	{
 		LandTransportBackpacks
 	};
 
-	class TransportWeapons 
+	class TransportWeapons
 	{
 		LandTransportWeapons
 	};
@@ -901,7 +958,7 @@ class SOCOMD_ASLAV_D : CUP_B_LAV25M240_desert_USMC
 
 ////////////////////////////////////////////////////////////////////////////////
 // QUADBIKE
-class SOCOMD_QUADBIKE : B_Quadbike_01_F 
+class SOCOMD_QUADBIKE : B_Quadbike_01_F
 {
 	scope = public;
 	scopeCurator = public;
@@ -913,7 +970,7 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
-	class TransportItems 
+	class TransportItems
 	{
 		TI_DefaultMeds
 	};
@@ -947,11 +1004,13 @@ class BIKE_BASE : Bicycle
 	transportMaxBackpacks = 1;
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 90;
-	class DestructionEffects{};
+	class DestructionEffects
+	{
+	};
 	attenuationEffectType = "OpenCarAttenuation";
 	maxSpeed = 60;
 	isBicycle = 1;
-	extCameraPosition[] = {0,0,-3};
+	extCameraPosition[] = {0, 0, -3};
 	class HitPoints
 	{
 		class HitRGlass
@@ -1016,12 +1075,12 @@ class BIKE_BASE : Bicycle
 			hitpoint = "HitFWheel";
 			raw = 1;
 		};
-		class Hit_wheel_2: Hit_wheel_1
+		class Hit_wheel_2 : Hit_wheel_1
 		{
 			hitpoint = "HitBWheel";
 		};
 	};
-	threat[] = {0,0,0};
+	threat[] = {0, 0, 0};
 	armor = 5;
 	turnCoef = 2;
 	driverAction = "MMT_Driver";
@@ -1032,41 +1091,41 @@ class BIKE_BASE : Bicycle
 	leftDustEffect = "NoDust";
 	rightDustEffect = "NoDust";
 	outsideSoundFilter = 0;
-	soundGear[] = {"",0.00056234124,1};
-	SoundGetIn[] = {"",0.0177828,1};
-	SoundGetOut[] = {"",0.0177828,1};
-	soundEngineOnInt[] = {"",0.354813,1};
-	soundEngineOnExt[] = {"",0.354813,1};
-	soundEngineOffInt[] = {"",0.354813,1};
-	soundEngineOffExt[] = {"",0.354813,1};
-	buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1,1,200};
-	buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1,1,200};
-	buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1,1,200};
-	buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04",1,1,200};
-	soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-	WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01",1,1,200};
-	WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02",1,1,200};
-	WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03",1,1,200};
-	WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04",1,1,200};
-	WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05",1,1,200};
-	WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06",1,1,200};
-	soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-	ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1,1,200};
-	ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1,1,200};
-	ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03",1,1,200};
-	ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04",1,1,200};
-	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+	soundGear[] = {"", 0.00056234124, 1};
+	SoundGetIn[] = {"", 0.0177828, 1};
+	SoundGetOut[] = {"", 0.0177828, 1};
+	soundEngineOnInt[] = {"", 0.354813, 1};
+	soundEngineOnExt[] = {"", 0.354813, 1};
+	soundEngineOffInt[] = {"", 0.354813, 1};
+	soundEngineOffExt[] = {"", 0.354813, 1};
+	buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01", 1, 1, 200};
+	buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02", 1, 1, 200};
+	buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03", 1, 1, 200};
+	buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04", 1, 1, 200};
+	soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+	WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01", 1, 1, 200};
+	WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02", 1, 1, 200};
+	WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03", 1, 1, 200};
+	WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04", 1, 1, 200};
+	WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05", 1, 1, 200};
+	WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06", 1, 1, 200};
+	soundWoodCrash[] = {"woodCrash0", 0.166, "woodCrash1", 0.166, "woodCrash2", 0.166, "woodCrash3", 0.166, "woodCrash4", 0.166, "woodCrash5", 0.166};
+	ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01", 1, 1, 200};
+	ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02", 1, 1, 200};
+	ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03", 1, 1, 200};
+	ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04", 1, 1, 200};
+	soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
 	class SoundEvents
 	{
 		class AccelerationIn
 		{
-			sound[] = {"",0.562341,1};
+			sound[] = {"", 0.562341, 1};
 			limit = 0.2;
 			expression = "(engineOn*(1-camPos))*thrust";
 		};
 		class AccelerationOut
 		{
-			sound[] = {"",0.562341,1};
+			sound[] = {"", 0.562341, 1};
 			limit = 0.2;
 			expression = "(engineOn*camPos)*thrust";
 		};
@@ -1077,325 +1136,325 @@ class BIKE_BASE : Bicycle
 	{
 		class Idle_ext
 		{
-			sound[] = {"",0.316228,1,100};
+			sound[] = {"", 0.316228, 1, 100};
 			frequency = 1;
 			volume = "engineOn*camPos*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
 		};
 		class Engine
 		{
-			sound[] = {"",0.3548134,1,200};
+			sound[] = {"", 0.3548134, 1, 200};
 			frequency = "0.9	+	((rpm/	2000) factor[(600/	2000),(1000/	2000)])*0.2";
 			volume = "engineOn*camPos*(((rpm/	2000) factor[(600/	2000),(730/	2000)])	*	((rpm/	2000) factor[(1020/	2000),( 800/	2000)]))";
 		};
 		class Engine1_ext
 		{
-			sound[] = {"",0.39810717,1,200};
+			sound[] = {"", 0.39810717, 1, 200};
 			frequency = "0.9	+	((rpm/	2000) factor[(800/	2000),(1300/	2000)])*0.2";
 			volume = "engineOn*camPos*(((rpm/	2000) factor[(780/	2000),(1000/	2000)])	*	((rpm/	2000) factor[(1300/	2000),( 1100/	2000)]))";
 		};
 		class Engine2_ext
 		{
-			sound[] = {"",0.446684,1,250};
+			sound[] = {"", 0.446684, 1, 250};
 			frequency = "0.9	+	((rpm/	2000) factor[(1080/	2000),(1560/	2000)])*0.2";
 			volume = "engineOn*camPos*(((rpm/	2000) factor[(1100/	2000),(1280/	2000)])	*	((rpm/	2000) factor[(1570/	2000),( 1380/	2000)]))";
 		};
 		class Engine3_ext
 		{
-			sound[] = {"",0.5011872,1,250};
+			sound[] = {"", 0.5011872, 1, 250};
 			frequency = "0.95	+	((rpm/	2000) factor[(1380/	2000),(1860/	2000)])*0.2";
 			volume = "engineOn*camPos*(((rpm/	2000) factor[(1350/	2000),(1550/	2000)])	*	((rpm/	2000) factor[(1870/	2000),( 1630/	2000)]))";
 		};
 		class Engine4_ext
 		{
-			sound[] = {"",0.56234133,1,300};
+			sound[] = {"", 0.56234133, 1, 300};
 			frequency = "0.95	+	((rpm/	2000) factor[(1630/	2000),(2000/	2000)]) *0.2";
 			volume = "engineOn*camPos*((rpm/	2000) factor[(1650/	2000),(1900/	2000)])";
 		};
 		class IdleThrust
 		{
-			sound[] = {"",0.56234133,1,150};
+			sound[] = {"", 0.56234133, 1, 150};
 			frequency = 1;
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
 		};
 		class EngineThrust
 		{
-			sound[] = {"",0.63095737,1,200};
+			sound[] = {"", 0.63095737, 1, 200};
 			frequency = "0.9	+	((rpm/	2000) factor[(600/	2000),(1000/	2000)])*0.2";
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(600/	2000),(730/	2000)])	*	((rpm/	2000) factor[(1020/	2000),( 800/	2000)]))";
 		};
 		class Engine1_Thrust_ext
 		{
-			sound[] = {"",0.707946,1,250};
+			sound[] = {"", 0.707946, 1, 250};
 			frequency = "0.9	+	((rpm/	2000) factor[(800/	2000),(1300/	2000)])*0.2";
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(780/	2000),(1000/	2000)])	*	((rpm/	2000) factor[(1300/	2000),( 1100/	2000)]))";
 		};
 		class Engine2_Thrust_ext
 		{
-			sound[] = {"",0.7943282,1,300};
+			sound[] = {"", 0.7943282, 1, 300};
 			frequency = "0.9	+	((rpm/	2000) factor[(1080/	2000),(1560/	2000)])*0.2";
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(1100/	2000),(1280/	2000)])	*	((rpm/	2000) factor[(1570/	2000),( 1380/	2000)]))";
 		};
 		class Engine3_Thrust_ext
 		{
-			sound[] = {"",0.891251,1,350};
+			sound[] = {"", 0.891251, 1, 350};
 			frequency = "0.95	+	((rpm/	2000) factor[(1380/	2000),(1860/	2000)])*0.2";
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(1350/	2000),(1550/	2000)])	*	((rpm/	2000) factor[(1870/	2000),( 1630/	2000)]))";
 		};
 		class Engine4_Thrust_ext
 		{
-			sound[] = {"",1,1,400};
+			sound[] = {"", 1, 1, 400};
 			frequency = "0.95	+	((rpm/	2000) factor[(1630/	2000),(2000/	2000)]) *0.2";
 			volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	2000) factor[(1650/	2000),(1900/	2000)])";
 		};
 		class Idle_int
 		{
-			sound[] = {"",0.251189,1};
+			sound[] = {"", 0.251189, 1};
 			frequency = 1;
 			volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
 		};
 		class Engine_int
 		{
-			sound[] = {"",0.2818383,1};
+			sound[] = {"", 0.2818383, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(600/	2000),(1000/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(600/	2000),(730/	2000)])	*	((rpm/	2000) factor[(1020/	2000),( 800/	2000)]))";
 		};
 		class Engine1_int
 		{
-			sound[] = {"",0.316228,1};
+			sound[] = {"", 0.316228, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(800/	2000),(1300/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(780/	2000),(1000/	2000)])	*	((rpm/	2000) factor[(1300/	2000),( 1100/	2000)]))";
 		};
 		class Engine2_int
 		{
-			sound[] = {"",0.3548134,1};
+			sound[] = {"", 0.3548134, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(1080/	2000),(1560/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(1100/	2000),(1280/	2000)])	*	((rpm/	2000) factor[(1570/	2000),( 1380/	2000)]))";
 		};
 		class Engine3_int
 		{
-			sound[] = {"",0.39810717,1};
+			sound[] = {"", 0.39810717, 1};
 			frequency = "0.95	+	((rpm/	2000) factor[(1380/	2000),(1860/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(1350/	2000),(1550/	2000)])	*	((rpm/	2000) factor[(1870/	2000),( 1630/	2000)]))";
 		};
 		class Engine4_int
 		{
-			sound[] = {"",0.446684,1};
+			sound[] = {"", 0.446684, 1};
 			frequency = "0.95	+	((rpm/	2000) factor[(1630/	2000),(2000/	2000)]) *0.2";
 			volume = "engineOn*(1-camPos)*((rpm/	2000) factor[(1650/	2000),(1900/	2000)])";
 		};
 		class IdleThrust_Int
 		{
-			sound[] = {"",0.56234133,1};
+			sound[] = {"", 0.56234133, 1};
 			frequency = 1;
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
 		};
 		class EngineThrust_Int
 		{
-			sound[] = {"",0.63095737,1};
+			sound[] = {"", 0.63095737, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(600/	2000),(1000/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(600/	2000),(730/	2000)])	*	((rpm/	2000) factor[(1020/	2000),( 800/	2000)]))";
 		};
 		class Engine1_Thrust_int
 		{
-			sound[] = {"",0.707946,1};
+			sound[] = {"", 0.707946, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(800/	2000),(1300/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(780/	2000),(1000/	2000)])	*	((rpm/	2000) factor[(1300/	2000),( 1100/	2000)]))";
 		};
 		class Engine2_Thrust_int
 		{
-			sound[] = {"",0.7943282,1};
+			sound[] = {"", 0.7943282, 1};
 			frequency = "0.9	+	((rpm/	2000) factor[(1080/	2000),(1560/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(1100/	2000),(1280/	2000)])	*	((rpm/	2000) factor[(1570/	2000),( 1380/	2000)]))";
 		};
 		class Engine3_Thrust_int
 		{
-			sound[] = {"",0.891251,1};
+			sound[] = {"", 0.891251, 1};
 			frequency = "0.95	+	((rpm/	2000) factor[(1380/	2000),(1860/	2000)])*0.2";
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(1350/	2000),(1550/	2000)])	*	((rpm/	2000) factor[(1870/	2000),( 1630/	2000)]))";
 		};
 		class Engine4_Thrust_int
 		{
-			sound[] = {"",1,1};
+			sound[] = {"", 1, 1};
 			frequency = "0.95	+	((rpm/	2000) factor[(1630/	2000),(2000/	2000)]) *0.2";
 			volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	2000) factor[(1650/	2000),(1900/	2000)])";
 		};
 		class TiresRockOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
 		};
 		class TiresSandOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
 		};
 		class TiresGrassOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
 		};
 		class TiresMudOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
 		};
 		class TiresGravelOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
 		};
 		class TiresAsphaltOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2", 1, 1, 60};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
 		};
 		class NoiseOut
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.891251,1,90};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04", 0.891251, 1, 90};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.02)*(speed factor[0, 15])";
 		};
 		class TiresRockIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.63095737,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1", 0.63095737, 1};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
 		};
 		class TiresSandIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand2",0.63095737,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand2", 0.63095737, 1};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
 		};
 		class TiresGrassIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.63095737,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2", 0.63095737, 1};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
 		};
 		class TiresMudIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.63095737,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2", 0.63095737, 1};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
 		};
 		class TiresGravelIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.63095737,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1", 0.63095737, 1};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
 		};
 		class TiresAsphaltIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2", 0.5011872, 1};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
 		};
 		class NoiseIn
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.56234133,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04", 0.56234133, 1};
 			frequency = "1";
 			volume = "(damper0 max 0.1)*(speed factor[0, 15])*(1-camPos)";
 		};
 		class breaking_ext_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.707946,1,80};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04", 0.707946, 1, 80};
 			frequency = 1;
 			volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
 		};
 		class acceleration_ext_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.707946,1,80};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 0.707946, 1, 80};
 			frequency = 1;
 			volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
 		};
 		class turn_left_ext_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.707946,1,80};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 0.707946, 1, 80};
 			frequency = 1;
 			volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
 		};
 		class turn_right_ext_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.707946,1,80};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 0.707946, 1, 80};
 			frequency = 1;
 			volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 		};
 		class breaking_ext_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.707946,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking", 0.707946, 1, 60};
 			frequency = 1;
 			volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
 		};
 		class acceleration_ext_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration",0.707946,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration", 0.707946, 1, 60};
 			frequency = 1;
 			volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
 		};
 		class turn_left_ext_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.707946,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt", 0.707946, 1, 60};
 			frequency = 1;
 			volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
 		};
 		class turn_right_ext_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.707946,1,60};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt", 0.707946, 1, 60};
 			frequency = 1;
 			volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 		};
 		class breaking_int_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 6])";
 		};
 		class acceleration_int_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
 		};
 		class turn_left_int_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
 		};
 		class turn_right_int_road
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 		};
 		class breaking_int_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 6])";
 		};
 		class acceleration_int_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
 		};
 		class turn_left_int_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
 		};
 		class turn_right_int_dirt
 		{
-			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.5011872,1};
+			sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int", 0.5011872, 1};
 			frequency = 1;
 			volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 		};
@@ -1418,9 +1477,11 @@ class BIKE_BASE : Bicycle
 
 	driverLeftHandAnimName = "volant";
 	driverRightHandAnimName = "volant";
-	soundEngine[] = {"",1,1};
-	soundEnviron[] = {"",1,1};
-	class Reflectors{};
+	soundEngine[] = {"", 1, 1};
+	soundEnviron[] = {"", 1, 1};
+	class Reflectors
+	{
+	};
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
 };

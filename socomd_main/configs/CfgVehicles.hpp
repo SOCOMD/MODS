@@ -46,6 +46,8 @@ class CfgVehicles
 			class HitGlass5;
 			class HitGlass6;
 		};
+
+		class AcreIntercoms;
 	};
 
 	class B_Quadbike_01_F;

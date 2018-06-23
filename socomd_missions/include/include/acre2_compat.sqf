@@ -16,7 +16,8 @@ PROGRAM_CHANNEL("ACRE_PRC152", 5, "UNUSED", 0.0, 0.0)
 ["ACRE_PRC152", _presetId] call acre_api_fnc_setPreset;
 
 ["ACRE_PRC117F", "default", _presetId] call acre_api_fnc_copyPreset;
-PROGRAM_CHANNEL("ACRE_PRC117F", 1, "HQ NET", 55.5, 55.5)
+PROGRAM_CHANNEL("ACRE_PRC117F", 1, "PLATOON NET", 31.9, 31.9)
+PROGRAM_CHANNEL("ACRE_PRC117F", 2, "HQ NET", 55.5, 55.5)
 ["ACRE_PRC117F", _presetId] call acre_api_fnc_setPreset;
 
 [] spawn {
