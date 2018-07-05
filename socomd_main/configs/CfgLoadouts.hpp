@@ -736,7 +736,7 @@ class CfgLoadouts
 				type = "VSM_OGA_Vest_3";
 				class Inventory
 				{
-					LOADOUT_ITEM(ACE_surgicalKit) 1
+					LOADOUT_ITEM(ACE_surgicalKit, 1)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_quikclot, 20)
 					LOADOUT_ITEM(ACE_epinephrine, 7)
