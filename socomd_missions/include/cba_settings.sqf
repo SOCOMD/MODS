@@ -299,3 +299,7 @@ force ace_arsenal_fontHeight = 4.5;
 force ace_arsenal_allowDefaultLoadouts = true;
 force ace_arsenal_allowSharedLoadouts = true;
 force ace_arsenal_EnableRPTLog = false;
+force force Animation for automatic wall avoidance = 0;
+Change the position recovery from left click to right click. = false;
+force force Enable automatic wall avoidance. = false;
+force force Lookahead for corner detection (in m) = "0.2";
