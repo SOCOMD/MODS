@@ -198,8 +198,8 @@ class CfgLoadouts
 		class SASR_TroopLeader
 		{
 			primary = "SMA_MK18MOEBLK";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Laserdesignator";
 			gps = "ItemcTab";
@@ -227,7 +227,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 
@@ -244,8 +244,8 @@ class CfgLoadouts
 		class SASR_PatrolLeader
 		{
 			primary = "SMA_MK18BLK_GL_SM";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Laserdesignator";
 			gps = "ItemAndroid";
@@ -273,7 +273,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 
 					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 					LOADOUT_ITEM(UGL_FlareWhite_F, 2)
@@ -287,8 +287,8 @@ class CfgLoadouts
 		class SASR_Rifleman
 		{
 			primary = "SMA_MK18MOEBLK_SM";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Binocular";
 
@@ -310,7 +310,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 		};
@@ -318,8 +318,8 @@ class CfgLoadouts
 		class SASR_Grenadier
 		{
 			primary = "SMA_MK18BLK_GL_SM";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Rangefinder";
 			gps = "ItemAndroid";
@@ -346,7 +346,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 
 					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 					LOADOUT_ITEM(UGL_FlareWhite_F, 2)
@@ -360,8 +360,8 @@ class CfgLoadouts
 		class SASR_Sapper
 		{
 			primary = "SMA_MK18MOEBLK_SM";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Binocular";
 
@@ -383,7 +383,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 
@@ -406,8 +406,8 @@ class CfgLoadouts
 		class SASR_MachineGunner
 		{
 			primary = "sma_minimi_mk3_762tsb";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Binocular";
 
@@ -429,7 +429,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 		};
@@ -437,8 +437,8 @@ class CfgLoadouts
 		class SASR_Medic
 		{
 			primary = "SMA_MK18MOEBLK_SM";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Binocular";
 
@@ -460,7 +460,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 
@@ -485,8 +485,8 @@ class CfgLoadouts
 		class SASR_Marksman
 		{
 			primary = "SMA_HK417_16in";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Rangefinder";
 
@@ -508,7 +508,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 		};
@@ -516,8 +516,8 @@ class CfgLoadouts
 		class SASR_Sniper
 		{
 			primary = "hlc_rifle_awmagnum";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_OPS_2_multicam";
 			binocular = "Rangefinder";
 
@@ -541,7 +541,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 		};
@@ -550,8 +550,8 @@ class CfgLoadouts
 		{
 			primary = "SMA_MK18MOEBLK_SM";
 			secondary = "HAFM_LAW";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_Mich2000_2_Multicam";
 			binocular = "Binocular";
 
@@ -573,7 +573,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 		};
@@ -582,8 +582,8 @@ class CfgLoadouts
 		{
 			primary = "SMA_MK18MOEBLK_SM";
 			secondary = "SOCOMD_Carl_Gustav";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_Mich2000_2_Multicam";
 			binocular = "Binocular";
 
@@ -605,7 +605,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 
@@ -624,8 +624,8 @@ class CfgLoadouts
 		{
 			primary = "SMA_MK18MOEBLK_SM";
 			secondary = "CUP_launch_Javelin";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_Mich2000_2_Multicam";
 			binocular = "Binocular";
 
@@ -647,7 +647,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
 				};
 			};
 
@@ -711,8 +711,8 @@ class CfgLoadouts
 		class JAC_PJ
 		{
 			primary = "SMA_M4MOE_Tan";
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "VSM_oga_OPS_2";
 			binocular = "Binocular";
 			gps = "ItemAndroid";
@@ -750,8 +750,8 @@ class CfgLoadouts
 
 		class JAC_Pilot
 		{
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "SOCOMD_Pilot_helmet";
 			binocular = "Binocular";
 			gps = "ItemcTab";
@@ -765,7 +765,7 @@ class CfgLoadouts
 					JAC_STANDARD_MEDICAL
 
 					LOADOUT_ITEM(H_Watchcap_camo, 1)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 3)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 				};
 			};
@@ -782,8 +782,8 @@ class CfgLoadouts
 
 		class JAC_Officer
 		{
-			handgun = "CUP_hgun_Compact";
-			handgunMagazine = "CUP_10Rnd_9x19_Compact";
+			handgun = "RH_kimber_nw";
+			handgunMagazine = "RH_7Rnd_45cal_m1911";
 			headgear = "H_MilCap_gry";
 			binocular = "Rangefinder";
 			gps = "ItemcTab";
@@ -796,7 +796,7 @@ class CfgLoadouts
 					JAC_ESSENTIALS
 
 					LOADOUT_ITEM(H_Watchcap_camo, 1)
-					LOADOUT_ITEM(CUP_10Rnd_9x19_Compact, 3)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
