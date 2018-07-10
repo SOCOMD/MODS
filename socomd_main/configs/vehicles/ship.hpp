@@ -1,4 +1,4 @@
-class SOCOMD_ASSAULT_BOAT_S : B_Boat_Transport_01_F
+class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 {
 	scope = public;
 	scopeCurator = public;
