@@ -103,6 +103,7 @@ class SASR_StandardTrooper
 // COMMON SASR LOADOUT ITEMS
 
 #define SASR_STANDARD_MEDICAL           \
+	LOADOUT_ITEM(ACE_fieldDressing, 6)  \
 	LOADOUT_ITEM(ACE_elasticBandage, 6) \
 	LOADOUT_ITEM(ACE_packingBandage, 6) \
 	LOADOUT_ITEM(ACE_quikclot, 6)       \
@@ -140,6 +141,7 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define JAC_STANDARD_MEDICAL            \
+	LOADOUT_ITEM(ACE_fieldDressing, 6)  \
 	LOADOUT_ITEM(ACE_elasticBandage, 5) \
 	LOADOUT_ITEM(ACE_quikclot, 5)       \
 	LOADOUT_ITEM(ACE_packingBandage, 5) \
@@ -470,6 +472,7 @@ class CfgLoadouts
 				class Inventory
 				{
 					LOADOUT_ITEM(ACE_surgicalKit, 6)
+					LOADOUT_ITEM(ACE_fieldDressing, 20)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_packingBandage, 20)
 					LOADOUT_ITEM(ACE_quikclot, 20)
@@ -737,6 +740,7 @@ class CfgLoadouts
 				class Inventory
 				{
 					LOADOUT_ITEM(ACE_surgicalKit, 6)
+					LOADOUT_ITEM(ACE_fieldDressing, 20)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_quikclot, 20)
 					LOADOUT_ITEM(ACE_epinephrine, 7)

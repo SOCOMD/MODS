@@ -84,8 +84,7 @@ class CfgPatches
 
 			// SEA
 			"SOCOMD_ASSAULT_BOAT",
-			"SOCOMD_ASSAULT_BOAT_S",
-			"SOCOMD_GUNBOAT",
+			"SOCOMD_RHIB_ARMED",
 
 			// BACKPACKS
 			"SOCOMD_Backpack",

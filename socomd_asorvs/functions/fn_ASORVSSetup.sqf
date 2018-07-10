@@ -60,8 +60,7 @@ _vehicleClasses = [
 
 _boatClasses = [
 	"SOCOMD_ASSAULT_BOAT",
-	"SOCOMD_ASSAULT_BOAT_S",
-	"SOCOMD_GUNBOAT"
+	"SOCOMD_RHIB_ARMED"
  ];
 
 _supplyClasses = [
