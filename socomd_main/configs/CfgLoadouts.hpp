@@ -227,7 +227,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
@@ -273,7 +273,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 
 					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 					LOADOUT_ITEM(UGL_FlareWhite_F, 2)
@@ -310,7 +310,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 		};
@@ -346,7 +346,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 
 					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 					LOADOUT_ITEM(UGL_FlareWhite_F, 2)
@@ -383,7 +383,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
@@ -429,7 +429,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 		};
@@ -460,7 +460,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
@@ -469,7 +469,7 @@ class CfgLoadouts
 				type = "VSM_Multicam_Backpack_Kitbag";
 				class Inventory
 				{
-					LOADOUT_ITEM(ACE_surgicalKit, 1)
+					LOADOUT_ITEM(ACE_surgicalKit, 6)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_packingBandage, 20)
 					LOADOUT_ITEM(ACE_quikclot, 20)
@@ -508,7 +508,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 		};
@@ -541,7 +541,7 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 		};
@@ -573,7 +573,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 		};
@@ -605,7 +605,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
@@ -647,7 +647,7 @@ class CfgLoadouts
 					SASR_VEST_ESSENTIALS
 
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 2)
+					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 				};
 			};
 
@@ -736,7 +736,7 @@ class CfgLoadouts
 				type = "VSM_OGA_Vest_3";
 				class Inventory
 				{
-					LOADOUT_ITEM(ACE_surgicalKit, 1)
+					LOADOUT_ITEM(ACE_surgicalKit, 6)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_quikclot, 20)
 					LOADOUT_ITEM(ACE_epinephrine, 7)
