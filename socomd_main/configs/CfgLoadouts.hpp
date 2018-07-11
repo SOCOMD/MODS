@@ -500,6 +500,8 @@ class CfgLoadouts
 				{
 					SASR_STANDARD_MEDICAL
 					SASR_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(ACE_Kestrel4500, 1)
+					LOADOUT_ITEM(ACE_RangeCard, 1)
 				};
 			};
 
@@ -532,6 +534,8 @@ class CfgLoadouts
 				{
 					SASR_STANDARD_MEDICAL
 					SASR_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(ACE_Kestrel4500, 1)
+					LOADOUT_ITEM(ACE_RangeCard, 1)
 				};
 			};
 
@@ -667,51 +671,7 @@ class CfgLoadouts
 		////////////////////////////////////////////////////////////////////////////////
 		//JAC LOADOUTS
 
-		class JAC_Aircrew
-		{
-			primary = "SMA_M4MOE_Tan";
-			headgear = "H_CrewHelmetHeli_B";
-			binocular = "Binocular";
-
-			class Uniform
-			{
-				type = "VSM_M81_Crye_grey_shirt_Camo";
-				class Inventory
-				{
-					JAC_ESSENTIALS
-					JAC_STANDARD_MEDICAL
-
-					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 3)
-				};
-			};
-
-			class Vest
-			{
-				type = "V_Chestrig_blk";
-			};
-		};
-
-		class JAC_GroundCrew
-		{
-			headgear = "CUP_H_Navy_CrewHelmet_White";
-
-			class Uniform
-			{
-				type = "VSM_M81_Crye_tan_shirt_Camo";
-				class Inventory
-				{
-					JAC_ESSENTIALS
-					JAC_STANDARD_MEDICAL
-				};
-			};
-
-			class Vest
-			{
-				type = "CUP_V_B_LHDVest_White";
-			};
-		};
-
-		class JAC_PJ
+		class 171AVN_PJ
 		{
 			primary = "SMA_M4MOE_Tan";
 			handgun = "RH_kimber_nw";
@@ -752,7 +712,7 @@ class CfgLoadouts
 			};
 		};
 
-		class JAC_Pilot
+		class 171AVN_Pilot
 		{
 			handgun = "RH_kimber_nw";
 			handgunMagazine = "RH_7Rnd_45cal_m1911";
@@ -771,45 +731,6 @@ class CfgLoadouts
 					LOADOUT_ITEM(H_Watchcap_camo, 1)
 					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
 					LOADOUT_ITEM(ACRE_PRC152, 1)
-				};
-			};
-
-			class Backpack
-			{
-				type = "SOCOMD_LongRange_Radio";
-				class Inventory
-				{
-					LOADOUT_ITEM(ACRE_PRC117F, 1)
-				};
-			};
-		};
-
-		class JAC_Officer
-		{
-			handgun = "RH_kimber_nw";
-			handgunMagazine = "RH_7Rnd_45cal_m1911";
-			headgear = "H_MilCap_gry";
-			binocular = "Rangefinder";
-			gps = "ItemcTab";
-
-			class Uniform
-			{
-				type = "VSM_OGA_Crye_SS_grey_Camo";
-				class Inventory
-				{
-					JAC_ESSENTIALS
-
-					LOADOUT_ITEM(H_Watchcap_camo, 1)
-					LOADOUT_ITEM(RH_7Rnd_45cal_m1911, 3)
-				};
-			};
-
-			class Vest
-			{
-				type = "VSM_FAPC_Operator_OGA_OD";
-				class Inventory
-				{
-					JAC_STANDARD_MEDICAL
 				};
 			};
 

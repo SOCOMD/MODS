@@ -45,7 +45,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 				class ACE_SwitchRoleActionsSASR
 				{
-					displayName = "Change Role (SASR)";
+					displayName = "Change Role (2CDO)";
 					selection = "";
 					distance = 5;
 					condition = 1;
@@ -168,27 +168,18 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					};
 				};
 
-				class ACE_SwitchRoleActionsJAC
+				class ACE_SwitchRoleActions171AVN
 				{
-					displayName = "Change Role (JAC)";
+					displayName = "Change Role (171 AVN)";
 					selection = "";
 					distance = 5;
 					condition = 1;
 
-					class SOCOMD_Loadout_Aircrew
+					class SOCOMD_Loadout_Pilot
 					{
-						displayName = "Aircrew";
+						displayName = "Pilot";
 						condition = 1;
-						statement = "[_player, 'JAC_Aircrew'] call SOCOMD_fnc_SwitchUnitLoadout";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Loadout_GroundCrew
-					{
-						displayName = "Ground Crew";
-						condition = 1;
-						statement = "[_player, 'JAC_GroundCrew'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, '171AVN_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -197,25 +188,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "PJ";
 						condition = 1;
-						statement = "[_player, 'JAC_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Loadout_Pilot
-					{
-						displayName = "Pilot";
-						condition = 1;
-						statement = "[_player, 'JAC_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Loadout_Officer
-					{
-						displayName = "Officer";
-						condition = 1;
-						statement = "[_player, 'JAC_Officer'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, '171AVN_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
