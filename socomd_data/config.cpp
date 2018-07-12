@@ -1,0 +1,20 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.20
+//Produced on Fri Aug 14 00:08:11 2015 : Created on Fri Aug 14 00:08:11 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class socomd_data : config.bin{
+class CfgPatches
+{
+	class socomd_data
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {};
+	};
+};
+//};
