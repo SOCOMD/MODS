@@ -15,6 +15,7 @@ class CfgVehicles
 	class Car_F : Car
 	{
 		class HitPoints;		
+		class textureSources;
 	};
 
 	//LAND
@@ -48,6 +49,19 @@ class CfgVehicles
 		};
 
 		class AcreIntercoms;
+
+		class textureSources {
+			class adf_001;
+			class adf_002;
+			class adf_003;
+			class adf_004;
+			class adf_005;
+			class adf_006;
+			class adf_007;
+			class adf_008;
+			class adf_009;
+			class adf_010;
+		};
 	};
 
 	class B_Quadbike_01_F;

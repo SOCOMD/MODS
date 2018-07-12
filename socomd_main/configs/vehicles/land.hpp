@@ -40,7 +40,6 @@
 
 class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F
 {
-
 	scope = private;
 	armor = 60;
 	armorStructural = 75;
@@ -236,6 +235,36 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
+
+	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+	hiddenSelectionsTextures[] = {
+		"socomd_data\bma3\camo1_co.paa",
+		"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+		"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
+		"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
+	};
+
+	class textureSources : textureSources {
+		class adf_001 : adf_001
+		{
+			textures[] = {
+				"socomd_data\bma3\camo1_co.paa",
+				"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+				"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
+				"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
+			};
+		};
+
+		class adf_002 : adf_001 {};
+		class adf_003 : adf_001 {};
+		class adf_004 : adf_001 {};
+		class adf_005 : adf_001 {};
+		class adf_006 : adf_001 {};
+		class adf_007 : adf_001 {};
+		class adf_008 : adf_001 {};
+		class adf_009 : adf_001 {};
+		class adf_010 : adf_001 {};
+	}
 
 	class TransportMagazines
 	{
