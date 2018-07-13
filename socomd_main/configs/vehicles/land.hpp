@@ -922,6 +922,14 @@ class SOCOMD_ASLAV_W : CUP_B_LAV25M240_USMC
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	hiddenSelections[] = {"Camo1","Camo2","Camo3","camoAlfa"};
+	hiddenSelectionsTextures[] = {
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody2_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lav_hq_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"
+	};
+
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
@@ -959,6 +967,14 @@ class SOCOMD_ASLAV_D : CUP_B_LAV25M240_desert_USMC
 	vehicleclass = "Armored";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+
+	hiddenSelections[] = {"Camo1","Camo2","Camo3","camoAlfa"};
+	hiddenSelectionsTextures[] = {
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody2_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lav_hq_co.paa",
+		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"
+	};
 
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
