@@ -420,6 +420,14 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
+				class SOCOMD_Uniforms_ToggleSnow
+                {
+                    displayName = "Toggle Snow Uniform"
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
 			};
 		};
 	};

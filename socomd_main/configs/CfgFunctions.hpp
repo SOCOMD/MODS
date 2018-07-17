@@ -22,6 +22,7 @@ class CfgFunctions
 		{
 			file="\socomd_main\functions\action";
 			class Action_ToggleDiving {};
+			class Action_ToggleSnow {};
 			class Action_ReplaceCrewColours {};
 			class Action_ReplaceUniform {};
 			class Action_ReplaceVest {};
