@@ -144,6 +144,8 @@ class CfgPatches
 			"SOCOMD_Uniform_Officer_LongSleeve",
 			"SOCOMD_Uniform_Officer_ShortSleeve",
 			"SOCOMD_Uniform_GSuit",
+			"SOCOMD_Uniform_Snow_HoodUp",
+			"SOCOMD_Uniform_Snow_HoodDown",
 
 			//VESTS
 			"SOCOMD_Vest_TL",

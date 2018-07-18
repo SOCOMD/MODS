@@ -8,20 +8,18 @@ _unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
 
 if(isNull _unitConfig) exitWith { };
 
-
 _uniformConfig = (_unitConfig >> "Uniform");
 if(isNull _uniformConfig) exitWith { };
 _loadoutUniform =  getText (_uniformConfig >> "type");
 
 _wornUniform = uniform _player;
 _switchUniform = _loadoutUniform;
+_switchHeadgear = "H_Watchcap_blk";
 
-if(_wornUniform == _loadoutUniform) then 
+if(_wornUniform == _loadoutUniform) then
 {
-	_switchUniform = "CUP_I_B_PMC_Unit_26";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	_switchUniform = "SOCOMD_Uniform_Snow_HoodUp";
 };
 
 [_player, _switchUniform] call SOCOMD_fnc_Action_ReplaceUniform;
-
-removeHeadgear _player;
-_player addHeadgear "H_Watchcap_blk";
+[_player, _switchHeadgear] call SOCOMD_fnc_Action_ReplaceHeadgear;

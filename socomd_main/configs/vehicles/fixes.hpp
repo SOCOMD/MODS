@@ -380,6 +380,25 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+
+			//RAISE SNOW HOOD
+			class SOCOMD_Uniform_Snow_RaiseHood
+			{
+				displayName = "Raise Hood";
+				condition = "((uniform _player) == 'SOCOMD_Uniform_Snow_HoodDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Uniform_Snow_HoodUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Uniform_Snow_LowerHood
+			{
+				displayName = "Lower Hood";
+				condition = "((uniform _player) == 'SOCOMD_Uniform_Snow_HoodUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Uniform_Snow_HoodDown'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			
 			//MICH SWITCH GOGGLES
 			class SOCOMD_MICH_Multi_PutGogglesOn

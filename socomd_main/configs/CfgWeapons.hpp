@@ -1,5 +1,7 @@
 class CfgWeapons 
 {
+	class ItemCore;
+
 	#include "weapons\nvg.hpp"
 	#include "weapons\primary.hpp"
 	#include "weapons\launchers.hpp"
