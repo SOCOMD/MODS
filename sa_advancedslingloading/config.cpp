@@ -2,6 +2,11 @@ class CfgPatches
 {
 	class SA_AdvancedSlingLoading
 	{
+		//Internal Version
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = { 1,0,0 };
+
 		units[] = {"SA_AdvancedSlingLoading"};
 		requiredVersion = 1;
 		requiredAddons[] = {"A3_Modules_F", "ace_interaction"};

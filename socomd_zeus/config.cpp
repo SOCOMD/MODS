@@ -4,6 +4,11 @@ class CfgPatches
 {
 	class socomd_zeus
 	{
+		
+		version = 0.0.1;
+		versionStr = "0.0.1";
+		versionAr[] = { 0,0,1 };
+		
 		units[] = {
 			"SOCOMD_Module_ToggleUndercover",
 			"SOCOMD_Module_ToggleTranslator",
@@ -18,11 +23,6 @@ class CfgPatches
 			"ace_zeus",
 			"achilles_modules_f_achilles"
 		};
-		author[] = { };
-		authorUrl = "";
-		version = 0.0.1;
-		versionStr = "0.0.1";
-		versionAr[] = { 0,0,1 };
 	};
 };
 

@@ -11,6 +11,11 @@ class CfgPatches
 {
 	class socomd_data
 	{
+		//Internal Version
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = { 1,0,0 };
+
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
