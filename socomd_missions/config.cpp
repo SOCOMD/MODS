@@ -61,7 +61,7 @@ class CfgMissions {
 	ADD(TANOAFOB,SOCOMD Tanoa FOB (Tiki),fobs\Tanoa_Tiki_FOB.Tanoa)
 	ADD(ALRAYAKFOB,SOCOMD Al-Rayak FOB (Freedom),fobs\Al-Rayak_Freedom_FOB.pja310)
 	ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
-	ADD(ALIABADLHD,SOCOMD Aliabad Region LHD (HMAS Canberra),fobs\Aliabad_Freedom.MCN_Aliabad)
+	ADD(ALIABADLHD,SOCOMD Aliabad Region LHD (HMAS Canberra),fobs\Aliabad_Region_LHS_HMAS_Canberra.MCN_Aliabad)
 	ADD(FALLUJAHFOB,SOCOMD Fallujah FOB (Rattlesnake),fobs\Fallujah_Rattlesnake_FOB.fallujah)
 	ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
 	ADD(CLAFGHANFOB,SOCOMD Clafghan FOB (Restrepo) ,fobs\Clafghan_FOB.clafghan)
