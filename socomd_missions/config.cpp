@@ -65,6 +65,7 @@ class CfgMissions {
 	ADD(FALLUJAHFOB,SOCOMD Fallujah FOB (Rattlesnake),fobs\Fallujah_Rattlesnake_FOB.fallujah)
 	ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
 	ADD(CLAFGHANFOB,SOCOMD Clafghan FOB (Restrepo) ,fobs\Clafghan_FOB.clafghan)
+	ADD(RUHAFOB,SOCOMD Ruha FOB ,fobs\Ruha_FOB.ruha)
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
