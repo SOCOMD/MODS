@@ -306,6 +306,13 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	hiddenSelections[] = {"camo1","camo2","camo3"};
+	hiddenSelectionsTextures[] = {
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_base_woodlnd_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_woodlnd_co.paa",
+		"socomd_data\Nary\jackal_adds_co.paa",
+	};
+
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
