@@ -236,10 +236,11 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
 
+	
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {
 		"socomd_data\bma3\camo1_co.paa",
-		"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+		"socomd_data\bma3\camo2_co.paa",
 		"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 		"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 	};
@@ -249,7 +250,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 		{
 			textures[] = {
 				"socomd_data\bma3\camo1_co.paa",
-				"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+				"socomd_data\bma3\camo2_co.paa",
 				"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 				"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 			};
@@ -290,6 +291,8 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 ////////////////////////////////////////////////////////////////////////////////
 // JACKAL
 
+	
+
 class CUP_B_Jackal2_L2A1_GB_D;
 class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 {
@@ -297,7 +300,7 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Jackal HMG (Desert)";
+	displayname = "4x4 Nary HMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -306,6 +309,7 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;*/
+
 
 	class TransportMagazines
 	{
@@ -335,7 +339,7 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Jackal GMG (Desert)";
+	displayname = "4x4 Nary GMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -344,7 +348,7 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
-
+	
 	class TransportMagazines
 	{
 		LandTransportMagazines
@@ -373,7 +377,7 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Jackal HMG (Woodland)";
+	displayname = "4x4 Nary HMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -411,7 +415,7 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Jackal GMG (Woodland)";
+	displayname = "4x4 Nary GMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -536,7 +540,7 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Coyote Support HMG (Desert)";
+	displayname = "6x6 Nary HMG (Desert)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -577,7 +581,7 @@ class SOCOMD_SUPPORT_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "Coyote Support HMG (Woodland)";
+	displayname = "6x6 Nary HMG (Woodland)";
 	faction = "SOCOMD_CMD";
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
@@ -970,10 +974,10 @@ class SOCOMD_ASLAV_D : CUP_B_LAV25M240_desert_USMC
 
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","camoAlfa"};
 	hiddenSelectionsTextures[] = {
-		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody_co.paa",
-		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody2_co.paa",
-		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lav_hq_co.paa",
-		"\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"
+		"socomd_data\aslav\lavbody_co.paa",
+		"socomd_data\aslav\lavbody2_co.paa",
+		"socomd_data\aslav\lav_hq_co.paa",
+		"socomd_data\aslav\lavalfa_ca.paa"
 	};
 
 	/*tf_hasLRradio = 1;
