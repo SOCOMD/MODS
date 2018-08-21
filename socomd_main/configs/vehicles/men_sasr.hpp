@@ -26,7 +26,7 @@ class SOCOMD_SASR_Soldier : B_Soldier_02_f
 	faction 					= "SOCOMD_SASR";
 	author						= "SOCOMD";
 
-	uniformClass				= "VSM_Multicam_Crye_Camo";
+	uniformClass				= "SOCOMD_Commando_SleevesDown";
 	model 						= "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 	hiddenSelections[]			= { "Camo", "Insignia" };
 

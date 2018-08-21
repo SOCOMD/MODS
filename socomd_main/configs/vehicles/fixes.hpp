@@ -344,6 +344,24 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			
+			class SOCOMD_Commando_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_SleevesDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Commando_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_SleevesUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_SleevesDown'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 
 			class SOCOMD_Uniform_Officer_RollSleeveUp
 			{
@@ -433,6 +451,25 @@ class CAManBase : Man
 				displayName = "Take Goggles Off";
 				condition = "((headgear _player) == 'SOCOMD_MICH_Tan_Gog') and (alive _player)";
 				statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			//AIRFRAME HEADSET
+			class SOCOMD_AIRFRAME_HeadsetOn
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_02_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_03_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_AIRFRAME_HeadsetOff
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_03_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_02_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};

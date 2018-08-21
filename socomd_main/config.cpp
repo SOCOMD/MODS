@@ -198,3 +198,5 @@ class CfgPatches
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
+#include "configs\CfgLoadoutVests.hpp"
+#include "configs\CfgLoadoutBackpacks.hpp"

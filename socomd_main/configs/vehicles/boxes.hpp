@@ -76,21 +76,21 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
+
+					class SOCOMD_Loadout_Grenadier
+					{
+						displayName = "2IC";
+						condition = 1;
+						statement = "[_player, 'SASR_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 					
 					class SOCOMD_Loadout_Rifleman
 					{
 						displayName = "Rifleman";
 						condition = 1;
 						statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Loadout_Grenadier
-					{
-						displayName = "Grenadier";
-						condition = 1;
-						statement = "[_player, 'SASR_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -192,96 +192,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				};
-
-				class SOCOMD_HeadgearActions 
-				{
-					displayName = "Headgear";
-					selection = "";
-					distance = 5;
-					condition = 1;
-
-					class SOCOMD_Headgear_TakeCap
-					{
-						displayName = "Switch to a Cap";
-						condition = 1;
-						statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_TakeBoonie
-					{
-						displayName = "Switch to a Boonie";
-						condition = 1;
-						statement = "[_player , 'SOCOMD_Boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_TakeBandanna
-					{
-						displayName = "Switch to a Bandanna";
-						condition = 1;
-						statement = "[_player , 'SOCOMD_Bandanna'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_TakeBowman
-					{
-						displayName = "Switch to a Bowman";
-						condition = 1;
-						statement = "[_player , 'VSM_Bowman'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_Beanie
-					{
-						displayName = "Switch to a Beanie";
-						condition = 1;
-						statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
-					{
-						displayName = "Switch to a FAST Multicam Helmet";
-						condition = "!(((headgear _player) == 'SOCOMD_FAST_Multi') OR ((headgear _player) == 'SOCOMD_FAST_Multi_Gog'))";
-						statement = "[_player , 'SOCOMD_FAST_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_ReplaceHelmet_FASTTan
-					{
-						displayName = "Switch to a FAST Tan Helmet";
-						condition = "!(((headgear _player) == 'SOCOMD_FAST_Tan') OR ((headgear _player) == 'SOCOMD_FAST_Tan_Gog'))";
-						statement = "[_player , 'SOCOMD_FAST_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
-					{
-						displayName = "Switch to a MICH Multicam Helmet";
-						condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
-						statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-
-					class SOCOMD_Headgear_ReplaceHelmet_MICHTan
-					{
-						displayName = "Switch to a MICH Tan Helmet";
-						condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
-						statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
-						showDisabled = 0;
-						exceptions[] = {"isNotInside", "isNotSitting"};
-					};
-				};
+				};				
 			};
 
 			class SOCOMD_Weapons
@@ -306,6 +217,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					displayName = "M4A5 UGL";
 					condition = "[_player, 'SMA_M4_GL_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'SMA_M4_GL_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+				class SOCOMD_LoadoutWeapon_SMA_HK416CUSTOMCQBvfgB
+				{
+					displayName = "HK416";
+					condition = "[_player, 'SMA_HK416CUSTOMCQBvfgB'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK416CUSTOMCQBvfgB'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -379,6 +299,14 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
+				class SOCOMD_LoadoutWeapon_SMA_HK417vfg
+				{
+					displayName = "HK 417 (Assaulter)";
+					condition = "[_player, 'SMA_HK417vfg'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK417vfg'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
 				class SOCOMD_LoadoutWeapon_hlc_rifle_awmagnum
 				{
 					displayName = "SR98 .300";
@@ -429,6 +357,380 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
 			};
+			
+			class SOCOMD_Vest
+			{
+				displayName = "Vests";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Vest_SOCOMD_Leader_Vest_coy
+				{
+					displayName = "Comms Tan";
+					condition = "[_player, 'SOCOMD_Leader_Vest_coy'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Leader_Vest_coy'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Leader_Vest
+				{
+					displayName = "Comms Multicam";
+					condition = "[_player, 'SOCOMD_Leader_Vest'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Leader_Vest'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Operator_Vest_coy
+				{
+					displayName = "Operator Tan";
+					condition = "[_player, 'SOCOMD_Operator_Vest_coy'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Operator_Vest_coy'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Operator_Vest
+				{
+					displayName = "Operator Multicam";
+					condition = "[_player, 'SOCOMD_Operator_Vest'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Operator_Vest'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Rifleman_Vest_coy
+				{
+					displayName = "Rifleman Tan";
+					condition = "[_player, 'SOCOMD_Rifleman_Vest_coy'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Rifleman_Vest_coy'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Rifleman_Vest
+				{
+					displayName = "Rifleman Multicam";
+					condition = "[_player, 'SOCOMD_Rifleman_Vest'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Rifleman_Vest'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_2IC_Vest_coy
+				{
+					displayName = "2IC Tan";
+					condition = "[_player, 'SOCOMD_2IC_Vest_coy'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_2IC_Vest_coy'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_2IC_Vest
+				{
+					displayName = "2IC Multicam";
+					condition = "[_player, 'SOCOMD_2IC_Vest'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_2IC_Vest'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Medic_Vest_coy
+				{
+					displayName = "Medic Tan";
+					condition = "[_player, 'SOCOMD_Medic_Vest_coy'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Medic_Vest_coy'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_Vest_SOCOMD_Medic_Vest
+				{
+					displayName = "Medic Multicam";
+					condition = "[_player, 'SOCOMD_Medic_Vest'] call SOCOMD_fnc_ActionCondition_CanSwapVest";
+					statement = "[_player , 'SOCOMD_Medic_Vest'] call SOCOMD_fnc_Action_ReplaceVest";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};
+			
+			class SOCOMD_Backpack
+			{
+				displayName = "Backpacks";
+				selection = "";
+				distance = 5;
+				condition = 1;
+				
+				class SOCOMD_Backpack_Tan
+				{
+					displayName = "Tan";
+					selection = "";
+					distance = 5;
+					condition = 1;
+					
+					class SOCOMD_Backpack_Tan_SOG_BAG_recon_Tan
+					{
+					displayName = "SOG Recon Tan";
+					condition = "[_player, 'SOG_BAG_recon_tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_recon_tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_Kit_Bag_R_Tan
+					{
+					displayName = "Kit Bag Recon Tan";
+					condition = "[_player, 'Kit_Bag_R_Tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_R_Tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_SOG_BAG_Tan
+					{
+					displayName = "SOG Bag Tan";
+					condition = "[_player, 'SOG_BAG_Tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_Tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_Kit_Bag_Tan
+					{
+					displayName = "Kit Bag Tan";
+					condition = "[_player, 'Kit_Bag_Tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_Tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_Kit_Bag_pince_TAN
+					{
+					displayName = "Kit Bag Breacher Tan";
+					condition = "[_player, 'Kit_Bag_pince_TAN'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_pince_TAN'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_SOG_BAG_BREACHER_tan
+					{
+					displayName = "SOG Breacher Tan";
+					condition = "[_player, 'SOG_BAG_BREACHER_tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_BREACHER_tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_Tan_SOG_BAG_MED_tan
+					{
+					displayName = "SOG Medic Tan";
+					condition = "[_player, 'SOG_BAG_med_tan'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_med_tan'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+				class SOCOMD_Backpack_MC
+				{
+					displayName = "Multicam";
+					selection = "";
+					distance = 5;
+					condition = 1;
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_recon_MC
+					{
+					displayName = "SOG Recon MC";
+					condition = "[_player, 'SOG_BAG_recon_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_recon_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_R_MC
+					{
+					displayName = "Kit Bag Recon MC";
+					condition = "[_player, 'Kit_Bag_R_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_R_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_MC
+					{
+					displayName = "SOG Bag MC";
+					condition = "[_player, 'SOG_BAG_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_MC
+					{
+					displayName = "Kit Bag MC";
+					condition = "[_player, 'Kit_Bag_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_pince_MC
+					{
+					displayName = "Kit Bag Breacher MC";
+					condition = "[_player, 'Kit_Bag_pince_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_pince_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_BREACHER_MC
+					{
+					displayName = "SOG Breacher MC";
+					condition = "[_player, 'SOG_BAG_BREACHER_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_BREACHER_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Backpack_MC_SOG_BAG_MED_MC
+					{
+					displayName = "SOG MEDIC MC";
+					condition = "[_player, 'SOG_BAG_med_MC'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_med_MC'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+				
+
+			};	
+			class SOCOMD_HeadgearActions 
+				{
+					displayName = "Headgear";
+					selection = "";
+					distance = 5;
+					condition = 1;
+
+					class SOCOMD_Headgear_TakeCap
+					{
+						displayName = "Switch to a Cap (MC)";
+						condition = 1;
+						statement = "[_player , 'ADFU_Cap_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Headgear_TakeCapTAN
+					{
+						displayName = "Switch to a Cap (Tan)";
+						condition = 1;
+						statement = "[_player , 'CUP_H_PMC_Cap_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_TakeBoonie
+					{
+						displayName = "Switch to a Boonie";
+						condition = 1;
+						statement = "[_player , 'VSM_multicam_boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+				//	class SOCOMD_Headgear_TakeBandanna
+				//	{
+				//		displayName = "Switch to a Bandanna";
+				//		condition = 1;
+				//		statement = "[_player , 'SOCOMD_Bandanna'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+				//		showDisabled = 0;
+				//		exceptions[] = {"isNotInside", "isNotSitting"};
+				//	};
+
+				//	class SOCOMD_Headgear_TakeBowman
+				//	{
+				//		displayName = "Switch to a Bowman";
+				//		condition = 1;
+				//		statement = "[_player , 'VSM_Bowman'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+				//		showDisabled = 0;
+				//		exceptions[] = {"isNotInside", "isNotSitting"};
+				//	};
+
+					class SOCOMD_Headgear_Beanie
+					{
+						displayName = "Switch to a Beanie";
+						condition = 1;
+						statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Headgear_Opscore
+					{
+						displayName = "Switch to an Opscore (Tan)";
+						condition = 1;
+						statement = "[_player , 'VSM_oga_OPS'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Headgear_Opscore_MC
+					{
+						displayName = "Switch to an Opscore (MC)";
+						condition = 1;
+						statement = "[_player , 'VSM_OPS_multicam'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+
+				/*	class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
+					{
+						displayName = "Switch to a FAST Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Multi') OR ((headgear _player) == 'SOCOMD_FAST_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_FASTTan
+					{
+						displayName = "Switch to a FAST Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Tan') OR ((headgear _player) == 'SOCOMD_FAST_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				*/
+					
+					class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
+					{
+						displayName = "Switch to a MICH Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+				/*	class SOCOMD_Headgear_ReplaceHelmet_MICHTan
+					{
+						displayName = "Switch to a MICH Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				*/	
+					class SOCOMD_Headgear_TakeAirframe
+					{
+						displayName = "Switch to an Airframe";
+						condition = 1;
+						statement = "[_player , 'ADFU_H_Airframe_Cover_03_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Headgear_TakeShemagh
+					{
+						displayName = "Switch to a Shemag";
+						condition = 1;
+						statement = "[_player , 'H_ShemagOpen_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+
 		};
 	};
 };
@@ -815,6 +1117,38 @@ class SOCOMD_Ammo_Box : NATO_Box_Base
 		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 4)
 		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2)
 		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 2)
+
+	};
+
+};
+
+class SOCOMD_Gustav_Box : NATO_Box_Base
+{
+	scope = public;
+	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
+	accuracy = 1000;
+	displayName = "SOCOMD Gustav Box";
+	author = AUTHOR_STR;
+	maximumLoad = 99999;
+	transportMaxWeapons = 15000;
+	transportMaxMagazines = 20000;
+	transportMaxBackpacks = 100;
+	ace_cargo_size = 2;
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 1;
+	weight = 20;
+
+	class TransportMagazines 
+	{
+		TRANSPORT_MAGAZINE(tf47_m3maaws_HEAT, 10)
+		TRANSPORT_MAGAZINE(tf47_m3maaws_HE, 10)
+
+	};
+	
+	class TransportWeapons {
+		
+		TRANSPORT_WEAPON(SOCOMD_Carl_Gustav, 5)
+		
 	};
 };
 

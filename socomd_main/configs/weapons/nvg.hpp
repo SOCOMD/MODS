@@ -36,3 +36,13 @@ class SOCOMD_Invis_NVG : ACE_NVG_Gen4
 	};
 
 };
+
+//class CUP_NVG_HMNVS;
+//class SOCOMD_Mono_NVG: CUP_NVG_HMNVS
+//{
+//	displayname="SOCOMD Mono NOD";
+//	modelOptics = "\A3\weapons_f\reticle\optics_night";
+//};
+	
+
+

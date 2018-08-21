@@ -354,9 +354,9 @@ class SOCOMD_Vest_Rebreather : V_RebreatherB
 	};
 };
 
-//////////////////////////////////////////////////////////////////////
 
-/*class lbt_comms_mc;
+
+class lbt_comms_mc;
 class SOCOMD_Leader_Vest : lbt_comms_mc
 {
 	scope = public;
@@ -396,4 +396,46 @@ class SOCOMD_Pouchless_Vest : lbt_pouchless_mc
 {
 	scope = public;
 	displayName = "SOCOMD Pouchless Vest";
-};*/
+};
+
+class lbt_comms_coy;
+class SOCOMD_Leader_Vest_coy : lbt_comms_coy
+{
+	scope = public;
+	displayName = "SOCOMD Leader Vest Tan";
+};
+
+class lbt_weapons_coy;
+class SOCOMD_2IC_Vest_coy : lbt_weapons_coy
+{
+	scope = public;
+	displayName = "SOCOMD 2IC Vest Tan";
+};
+
+class lbt_medical_coy;
+class SOCOMD_Medic_Vest_coy : lbt_medical_coy
+{
+	scope = public;
+	displayName = "SOCOMD Medic Vest Tan";
+};
+
+class lbt_tl_coy;
+class SOCOMD_Operator_Vest_coy : lbt_tl_coy
+{
+	scope = public;
+	displayName = "SOCOMD Operator Vest Tan";
+};
+
+class lbt_operator_coy;
+class SOCOMD_Rifleman_Vest_coy : lbt_operator_coy
+{
+	scope = public;
+	displayName = "SOCOMD Rifleman Vest Tan";
+};
+
+class lbt_pouchless_coy;
+class SOCOMD_Pouchless_Vest_coy : lbt_pouchless_coy
+{
+	scope = public;
+	displayName = "SOCOMD Pouchless Vest Tan";
+};
