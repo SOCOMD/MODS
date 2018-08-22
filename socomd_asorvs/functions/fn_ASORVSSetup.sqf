@@ -34,10 +34,10 @@ _aircraftRotaryClasses = [
 _vehicleClasses = [
 	//"SOCOMD_ASLAV_W",
 	//"SOCOMD_ASLAV_D",
-	"SOCOMD_JACKAL_HMG_D",
-	SOCOMD_JACKAL_AGL_D",
-	"SOCOMD_JACKAL_HMG_W",
-	"SOCOMD_JACKAL_AGL_W",
+	//"SOCOMD_JACKAL_HMG_D",
+	//SOCOMD_JACKAL_AGL_D",
+	//"SOCOMD_JACKAL_HMG_W",
+	//"SOCOMD_JACKAL_AGL_W",
 	//"SOCOMD_MASTIFF_HMG_D",
 	//"SOCOMD_MASTIFF_HMG_W",
 	//"SOCOMD_BUSHMASTER_HMG",
@@ -55,9 +55,9 @@ _vehicleClasses = [
 	"SOCOMD_MTVR_Refuel",
 	"SOCOMD_MTVR_Repair",
 	"SOCOMD_QUADBIKE",
-	"SOCOMD_BIKE",
-	"socomd_nds_6x6_atv_mil2",
-	"socomd_nds_6x6_atv_mil"
+	"SOCOMD_BIKE"
+	//"socomd_nds_6x6_atv_mil2",
+	//"socomd_nds_6x6_atv_mil"
  ];
 
 _boatClasses = [
