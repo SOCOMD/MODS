@@ -73,6 +73,8 @@ class CfgPatches
 			"SOCOMD_BIKE",
 			"SOCOMD_SUPPORT_HMG_D",
 			"SOCOMD_SUPPORT_HMG_W",
+			"socomd_nds_6x6_atv_mil",
+			"socomd_nds_6x6_atv_mil2",
 
 			// AIR
 			"SOCOMD_BLACKHAWK",
@@ -109,6 +111,8 @@ class CfgPatches
 			"SOCOMD_Ammo_Box",
 			"SOCOMD_Medical_Box",
 			"SOCOMD_cargonet",
+			"SOCOMD_Gustav_Box",
+			"SOCOMD_Mortar_Box",
 
 			// MEN COMMANDO
 			"SOCOMD_PlatoonLeader",

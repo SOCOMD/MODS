@@ -1126,6 +1126,7 @@ class SOCOMD_Gustav_Box : NATO_Box_Base
 {
 	scope = public;
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
+	hiddenSelectionsTextures[] = {"A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 	accuracy = 1000;
 	displayName = "SOCOMD Gustav Box";
 	author = AUTHOR_STR;
@@ -1151,6 +1152,125 @@ class SOCOMD_Gustav_Box : NATO_Box_Base
 		
 	};
 };
+
+class SOCOMD_Mortar_Box : NATO_Box_Base
+{
+	scope = public;
+	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
+	hiddenSelectionsTextures[] = {"A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+	accuracy = 1000;
+	displayName = "SOCOMD Mortar Box";
+	author = AUTHOR_STR;
+	maximumLoad = 99999;
+	transportMaxWeapons = 15000;
+	transportMaxMagazines = 20000;
+	transportMaxBackpacks = 100;
+	ace_cargo_size = 2;
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 1;
+	weight = 20;
+
+	class TransportMagazines 
+	{
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 10)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided, 10)
+
+	};
+	
+	class TransportItems 
+	{
+		TRANSPORT_ITEM(ACE_RangeTable_82mm, 1)
+		
+	};
+	class TransportBackpacks
+	{
+		TRANSPORT_BACKPACK(B_Mortar_01_weapons_F, 1)
+		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	};
+};
+/*
+class SOCOMD_Sniper_Box : NATO_Box_Base
+{
+	scope = public;
+	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
+	hiddenSelectionsTextures[] = {"A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+	accuracy = 1000;
+	displayName = "SOCOMD Sniper Box";
+	author = AUTHOR_STR;
+	maximumLoad = 99999;
+	transportMaxWeapons = 15000;
+	transportMaxMagazines = 20000;
+	transportMaxBackpacks = 100;
+	ace_cargo_size = 2;
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 1;
+	weight = 20;
+
+	class TransportMagazines 
+	{
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 10)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided, 10)
+
+	};
+	
+	class TransportItems 
+	{
+		TRANSPORT_ITEM(ACE_RangeTable_82mm, 1)
+		
+	};
+	class TransportBackpacks
+	{
+		TRANSPORT_BACKPACK(B_Mortar_01_weapons_F, 1)
+		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	};
+	
+	class ACE_Actions 
+	{
+		class ACE_MainActions 
+		{
+			displayName = "Sniper Loadout";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_OpenGearSelector
+			{
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+		
+			class SOCOMD_Uniforms
+			{
+				displayName = "Uniforms";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Uniforms_ToggleDiving
+                {
+                    displayName = "Toggle Diving Uniform";
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+				class SOCOMD_Uniforms_GhillieArid
+                {
+                    displayName = "Arid Ghillie"
+                    condition = 1;
+                    statement = "[_player, 'U_B_FullGhillie_ard'] call SOCOMD_fnc_Action_ReplaceUniform;"
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+			};
+			
+		};
+	};	
+};
+*/
 
 class SOCOMD_Medical_Box : NATO_Box_Base
 {

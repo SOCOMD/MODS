@@ -91,7 +91,8 @@ class CfgLoadoutWeapons
         loadoutWhitelist[] = {
                 "SASR_Marksman",
 				"SASR_TroopLeader",
-                "SASR_PatrolLeader"
+                "SASR_PatrolLeader",
+				"SASR_Grenadier"
             };
 
         magazines[] = {

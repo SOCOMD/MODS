@@ -306,11 +306,17 @@ class SOCOMD_JACKAL_HMG_D : CUP_B_Jackal2_L2A1_GB_D
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
-	hiddenSelections[] = {"camo1","camo2","camo3"};
-	Textures[] = {
+	hiddenSelections[] = 
+	{
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	hiddenSelectionsTextures[] = 
+	{
 		"socomd_data\Nary\jackal_base_co.paa",
 		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
-		"socomd_data\Nary\pink.paa"
+		"socomd_data\Nary\jackal_adds_co.paa"
 	};
 
 	/*tf_hasLRradio = 1;
@@ -351,6 +357,19 @@ class SOCOMD_JACKAL_AGL_D : CUP_B_Jackal2_GMG_GB_D
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
+	
+	hiddenSelections[] = 
+	{
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	hiddenSelectionsTextures[] = 
+	{
+		"socomd_data\Nary\jackal_base_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
+		"socomd_data\Nary\jackal_adds_co.paa"
+	};
 
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
@@ -390,14 +409,6 @@ class SOCOMD_JACKAL_HMG_W : CUP_B_Jackal2_L2A1_GB_W
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 	
-	hiddenSelections[] = {"camo1","camo2","camo3"};
-	hiddenSelectionsTextures[] = {
-		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_base_co.paa",
-		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
-		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_adds_co.paa"
-	};
-
-
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
 	tf_range = 40000;
@@ -459,6 +470,68 @@ class SOCOMD_JACKAL_AGL_W : CUP_B_Jackal2_GMG_GB_W
 	{
 		LandTransportWeapons
 	};
+};
+////////////////////////////////////////////////////////////////////////////////
+//6x6 ATV
+
+class NDS_6x6_ATV_MIL;
+class socomd_nds_6x6_atv_mil : nds_6x6_atv_mil
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	side = 1;
+	author = AUTHOR_STR;
+	displayname = "6x6 ATV";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+	
+	class AcreRacks
+	{
+		class Rack_1
+		{
+			displayName = "Dash";
+			shortName = "Dash";
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"driver"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";
+			isRadioRemovable = 0;
+			intercom[] = {"intercom_1"};
+		};
+	};
+};
+
+class nds_6x6_atv_mil2;
+class socomd_nds_6x6_atv_mil2 : nds_6x6_atv_mil2
+{
+	scope = public;
+	scopeCurator = public;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "6x6 ATV (V2)";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Car";
+	crew = "SOCOMD_Medic";
+	
+	class AcreRacks
+	{
+		class Rack_1
+		{
+			displayName = "Dash";
+			shortName = "Dash";
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"driver"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";
+			isRadioRemovable = 0;
+			intercom[] = {"intercom_1"};
+		};
+	}; 
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -563,6 +636,19 @@ class SOCOMD_SUPPORT_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	transportMaxBackpacks = "30";
 	transportMaxWeapons = "60";
 	transportMaxMagazines = "600";
+	
+	hiddenSelections[] = 
+	{
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	hiddenSelectionsTextures[] = 
+	{
+		"socomd_data\Nary\jackal_base_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
+		"socomd_data\Nary\jackal_adds_co.paa"
+	};
 
 	tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
