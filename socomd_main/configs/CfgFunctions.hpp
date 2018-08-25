@@ -28,6 +28,7 @@ class CfgFunctions
 			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplacePrimary {};
+			class Action_ReplaceBackpack {};
 		};
 
 		class ActionConditions
@@ -36,7 +37,9 @@ class CfgFunctions
 			class ActionCondition_CanToggleDiving {};
 			class ActionCondition_CanSwitchGroundCrewVest {};
 			class ActionCondition_CanUseLoadoutWeapon {};
-			class ActionCondition_HasPrimary556 {};	
+			class ActionCondition_HasPrimary556	{};
+			class ActionCondition_CanSwapVest {};
+			class ActionCondition_CanSwapBackpacks {};
 		};
 	};
 };

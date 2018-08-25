@@ -22,6 +22,7 @@ class CfgLoadoutWeapons
     class SMA_MK18MOEBLK : Rifle_556 { };
     class SMA_AUG_A3_F : Rifle_556 { };
     class SMA_M4afgSTOCK : Rifle_556 { };
+	class SMA_HK416CUSTOMCQBvfgB : Rifle_556 { };
 
     class RifleGL_556
     {
@@ -67,7 +68,9 @@ class CfgLoadoutWeapons
 
     class SPARTAN_EBR_black_F {
         loadoutWhitelist[] = {
-                "SASR_Marksman"
+                "SASR_Marksman",
+				"SASR_TroopLeader",
+                "SASR_PatrolLeader"
             };
 
         magazines[] = {
@@ -84,6 +87,18 @@ class CfgLoadoutWeapons
                 {"20Rnd_762x51_Mag", 8}
             };
     };
+    class SMA_HK417vfg {
+        loadoutWhitelist[] = {
+                "SASR_Marksman",
+				"SASR_TroopLeader",
+                "SASR_PatrolLeader",
+				"SASR_Grenadier"
+            };
+
+        magazines[] = {
+                {"20Rnd_762x51_Mag", 8}
+            };
+    };	
 
     class hlc_rifle_awmagnum {
         loadoutWhitelist[] = {

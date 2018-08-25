@@ -110,3 +110,15 @@ class CUP_I_B_PMC_Unit_27;
 class SOCOMD_Uniform_Snow_HoodDown : CUP_I_B_PMC_Unit_27 {
 	displayName = "SOCOMD Snow Uniform (Hood Down)";
 };
+
+class ADFU_G3_MC;
+class SOCOMD_Commando_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD Commando";
+	author = "SOCOMD & ADFU";
+};
+
+class ADFU_G3_MC_Rolled;
+class SOCOMD_Commando_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD Commando (Rolled)";
+	author = "SOCOMD & ADFU";
+};
