@@ -53,8 +53,8 @@ class SOCOMD_SASR_Trooper : SOCOMD_SASR_Soldier
 	respawnWeapons[] 		= { };
 	magazines[] 			= { SASR_UNIT_COMMON_AMMO };
 	respawnMagazines[] 		= { SASR_UNIT_COMMON_AMMO };
-	linkedItems[] 			= { SASR_UNIT_COMMON_LINKEDITEMS, "AU_02_780000_v1" };
-	respawnLinkedItems[] 	= { SASR_UNIT_COMMON_LINKEDITEMS, "AU_02_780000_v1" };
+	linkedItems[] 			= { SASR_UNIT_COMMON_LINKEDITEMS, "AU_03_780000_v1" };
+	respawnLinkedItems[] 	= { SASR_UNIT_COMMON_LINKEDITEMS, "AU_03_780000_v1" };
 	Items[] 				= { SASR_UNIT_COMMON_ITEMS };
 	RespawnItems[] 			= { SASR_UNIT_COMMON_ITEMS };
 	backpack				= "";

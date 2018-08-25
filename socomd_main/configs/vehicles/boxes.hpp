@@ -1117,7 +1117,6 @@ class SOCOMD_Ammo_Box : NATO_Box_Base
 		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 4)
 		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2)
 		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 2)
-
 	};
 
 };
@@ -1298,6 +1297,8 @@ class SOCOMD_Medical_Box : NATO_Box_Base
 		TRANSPORT_ITEM(ACE_morphine, 16)
 		TRANSPORT_ITEM(ACE_epinephrine, 16)
 		TRANSPORT_ITEM(ACE_tourniquet, 8)
+		TRANSPORT_ITEM(ACE_surgicalKit, 8)
+		TRANSPORT_ITEM(ACE_personalAidKit, 4)
 		TRANSPORT_ITEM(ACE_salineIV_500, 6)
 		TRANSPORT_ITEM(ACE_bodyBag, 8)
 		TRANSPORT_ITEM(ACE_DefusalKit, 1)
