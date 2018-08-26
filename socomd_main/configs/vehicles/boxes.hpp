@@ -229,12 +229,21 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
+				
+				class SOCOMD_LoadoutWeapon_SMA_KH416GLCQB_B
+				{
+					displayName = "HK416 UGL";
+					condition = "[_player, 'SMA_KH416GLCQB_B'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_KH416GLCQB_B'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
 
-				class SOCOMD_LoadoutWeapon_SMA_MK18MOEBLK
+				class SOCOMD_LoadoutWeapon_SMA_MK18MOEBLK_SM
 				{
 					displayName = "MK18 MOE";
-					condition = "[_player, 'SMA_MK18MOEBLK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
-					statement = "[_player , 'SMA_MK18MOEBLK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					condition = "[_player, 'SMA_MK18MOEBLK_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18MOEBLK_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -605,7 +614,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Headgear_TakeCap
 					{
-						displayName = "Switch to a Cap (MC)";
+						displayName = "Cap (MC)";
 						condition = 1;
 						statement = "[_player , 'ADFU_Cap_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
@@ -614,7 +623,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					
 					class SOCOMD_Headgear_TakeCapTAN
 					{
-						displayName = "Switch to a Cap (Tan)";
+						displayName = "Cap (Tan)";
 						condition = 1;
 						statement = "[_player , 'CUP_H_PMC_Cap_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
@@ -623,7 +632,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Headgear_TakeBoonie
 					{
-						displayName = "Switch to a Boonie";
+						displayName = "Boonie";
 						condition = 1;
 						statement = "[_player , 'VSM_multicam_boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
@@ -650,7 +659,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Headgear_Beanie
 					{
-						displayName = "Switch to a Beanie";
+						displayName = "Beanie";
 						condition = 1;
 						statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
@@ -659,18 +668,18 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					
 					class SOCOMD_Headgear_Opscore
 					{
-						displayName = "Switch to an Opscore (Tan)";
+						displayName = "Opscore (Tan)";
 						condition = 1;
-						statement = "[_player , 'VSM_oga_OPS'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						statement = "[_player , 'ADFU_H_OpsCore_02_TAN'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 					
 					class SOCOMD_Headgear_Opscore_MC
 					{
-						displayName = "Switch to an Opscore (MC)";
+						displayName = "Opscore (MC)";
 						condition = 1;
-						statement = "[_player , 'VSM_OPS_multicam'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						statement = "[_player , 'ADFU_H_OpsCore_02_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -693,18 +702,18 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				*/
+				
 					
 					class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
 					{
-						displayName = "Switch to a MICH Multicam Helmet";
+						displayName = "MICH Multicam Helmet";
 						condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
 						statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
-				/*	class SOCOMD_Headgear_ReplaceHelmet_MICHTan
+					class SOCOMD_Headgear_ReplaceHelmet_MICHTan
 					{
 						displayName = "Switch to a MICH Tan Helmet";
 						condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
@@ -715,7 +724,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				*/	
 					class SOCOMD_Headgear_TakeAirframe
 					{
-						displayName = "Switch to an Airframe";
+						displayName = "Airframe";
 						condition = 1;
 						statement = "[_player , 'ADFU_H_Airframe_Cover_03_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;
@@ -723,7 +732,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					};
 					class SOCOMD_Headgear_TakeShemagh
 					{
-						displayName = "Switch to a Shemag";
+						displayName = "Shemag";
 						condition = 1;
 						statement = "[_player , 'H_ShemagOpen_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
 						showDisabled = 0;

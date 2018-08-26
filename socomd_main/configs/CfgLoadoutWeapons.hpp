@@ -3,10 +3,7 @@ class CfgLoadoutWeapons
     class Rifle_556
     {
         loadoutWhitelist[] = { 
-                "SASR_TroopLeader",
-                "SASR_PatrolLeader",
                 "SASR_Rifleman",
-                "SASR_Grenadier",
                 "SASR_Sapper",
                 "SASR_Medic",
                 "SASR_LAT",
@@ -19,7 +16,7 @@ class CfgLoadoutWeapons
             };
     };
     
-    class SMA_MK18MOEBLK : Rifle_556 { };
+    class SMA_MK18MOEBLK_SM : Rifle_556 { };
     class SMA_AUG_A3_F : Rifle_556 { };
     class SMA_M4afgSTOCK : Rifle_556 { };
 	class SMA_HK416CUSTOMCQBvfgB : Rifle_556 { };
@@ -35,9 +32,7 @@ class CfgLoadoutWeapons
         magazines[] = {
                 {"SMA_30Rnd_556x45_M855A1", 8},
                 {"1Rnd_HE_Grenade_shell", 8},
-                {"UGL_FlareWhite_F", 2},
                 {"UGL_FlareRed_F", 2},
-                {"UGL_FlareGreen_F", 2},
                 {"1Rnd_SmokeRed_Grenade_shell", 2}
             };
     };
@@ -45,6 +40,7 @@ class CfgLoadoutWeapons
     class SMA_MK18BLK_GL_SM : RifleGL_556 { };    
     class SMA_AUG_EGLM : RifleGL_556 { };
     class SMA_M4_GL_SM : RifleGL_556 { };
+	class SMA_KH416GLCQB_B : RifleGL_556 { };
 
     class CUP_lmg_m249_pip2 {
         loadoutWhitelist[] = {
