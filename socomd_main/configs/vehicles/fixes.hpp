@@ -474,6 +474,43 @@ class CAManBase : Man
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 			
+			//OPSCORE HEADSET
+			class SOCOMD_OPSCORE_TAN_HeadsetOn
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_02_TAN') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_08_TAN'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_OPSCORE_TAN_HeadsetOff
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_08_TAN') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_02_TAN'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_OPSCORE_MC_HeadsetOn
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_02_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_08_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_OPSCORE_MC_HeadsetOff
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_08_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_02_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
 			//FAST SWITCH GOGGLES
 			class SOCOMD_FAST_Multi_PutGogglesOn
 			{
@@ -529,6 +566,25 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			
+			/*
+			class SOCOMD_Cap_HS_Reverse_Tan
+			{
+				displayName = "Reverse Cap";
+				condition = "((headgear _player) == 'CUP_H_PMC_Cap_Tan') and (alive _player)";
+				statement = "[_player , 'SOCOMD_Cap_HS_Rev'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Cap_HS_Straighten_Tan
+			{
+				displayName = "Straighten Cap";
+				condition = "((headgear _player) == 'CUP_H_PMC_Cap_Back_Tan') and (alive _player)";
+				statement = "[_player , 'SOCOMD_Cap_HS'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};   */
 
 			//SWAP BEANIES
 			class SOCOMD_Helmet_BeanieTan

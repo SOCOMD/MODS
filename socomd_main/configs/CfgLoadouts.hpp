@@ -131,7 +131,7 @@ class SASR_StandardTrooper
 #define SASR_VEST_ESSENTIALS             \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
 	LOADOUT_ITEM(ACE_M84, 2)             \
-	LOADOUT_ITEM(SmokeShell, 4)          \
+	LOADOUT_ITEM(SmokeShell, 5)          \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)  \
 	//LOADOUT_ITEM(SmokeShellRed, 2)       \
@@ -206,7 +206,7 @@ class CfgLoadouts
 
 		class SASR_TroopLeader
 		{
-			primary = "SMA_M4afgSTOCK";
+			primary = "SMA_M4_GL_SM";
 			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
@@ -220,7 +220,6 @@ class CfgLoadouts
 				{
 					SASR_UNIFORM_ESSENTIALS
 
-					LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 					LOADOUT_ITEM(Laserbatteries, 2)
 					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
 				};
@@ -236,6 +235,9 @@ class CfgLoadouts
 
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+					LOADOUT_ITEM(UGL_FlareRed_F, 2)
+					LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 				};
 			};
 
@@ -248,7 +250,6 @@ class CfgLoadouts
 					SASR_STANDARD_MEDICAL
 					
 					LOADOUT_ITEM(ACRE_PRC117F, 1)
-					LOADOUT_ITEM(ACE_HuntIR_M203, 2)
 					LOADOUT_ITEM(SmokeShellGreen, 2)
 				};
 			};
@@ -270,7 +271,6 @@ class CfgLoadouts
 				{
 					SASR_UNIFORM_ESSENTIALS
 
-					LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 					LOADOUT_ITEM(Laserbatteries, 2)
 					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
 				};
@@ -299,7 +299,6 @@ class CfgLoadouts
 					SASR_STANDARD_MEDICAL
 					
 					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(ACE_HuntIR_M203, 2)
 					LOADOUT_ITEM(SmokeShellGreen, 2)
 				};
 			};
@@ -312,6 +311,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -361,7 +361,7 @@ class CfgLoadouts
 					SASR_UNIFORM_ESSENTIALS
 
 					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
-					LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+					
 				};
 			};
 
@@ -373,7 +373,6 @@ class CfgLoadouts
 				{
 					SASR_VEST_ESSENTIALS
 
-					LOADOUT_ITEM(ACRE_PRC152, 1)
 					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
 					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 					LOADOUT_ITEM(UGL_FlareRed_F, 2)
@@ -389,7 +388,6 @@ class CfgLoadouts
 					SASR_STANDARD_MEDICAL
 					
 					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(ACE_HuntIR_M203, 2)
 					LOADOUT_ITEM(SmokeShellGreen, 2)
 				};
 			};			
@@ -402,6 +400,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -453,6 +452,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -492,6 +492,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -521,14 +522,14 @@ class CfgLoadouts
 				{
 					SASR_BACKPACK_ESSENTIALS
 					
-					LOADOUT_ITEM(ACE_surgicalKit, 6)
+					LOADOUT_ITEM(ACE_surgicalKit, 8)
 					LOADOUT_ITEM(ACE_fieldDressing, 25)
 					LOADOUT_ITEM(ACE_elasticBandage, 20)
 					LOADOUT_ITEM(ACE_packingBandage, 25)
 					LOADOUT_ITEM(ACE_quikclot, 25)
 					LOADOUT_ITEM(ACE_epinephrine, 10)
 					LOADOUT_ITEM(ACE_morphine, 10)
-					LOADOUT_ITEM(ACE_tourniquet, 4)
+					LOADOUT_ITEM(ACE_tourniquet, 6)
 					LOADOUT_ITEM(ACE_salineIV_500, 6)
 					LOADOUT_ITEM(ACE_personalAidKit, 2)
 					//LOADOUT_ITEM(ACE_bodyBag, 6)
@@ -543,6 +544,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Rangefinder";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -584,6 +586,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Rangefinder";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -634,6 +637,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -674,6 +678,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
@@ -718,6 +723,7 @@ class CfgLoadouts
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
 			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
 
 			class Uniform
 			{
