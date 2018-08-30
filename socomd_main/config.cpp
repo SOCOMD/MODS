@@ -5,9 +5,9 @@ class CfgPatches
 	class socomd_main 
 	{
 		//Internal Version
-		version = 1.0.1;
-		versionStr = "1.0.1";
-		versionAr[] = { 1,0,1 };
+		version = 1.0.2;
+		versionStr = "1.0.2";
+		versionAr[] = { 1,0,2 };
 
 		//Required Version
 		requiredVersion = 0.1;
