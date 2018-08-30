@@ -233,8 +233,8 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 				class SOCOMD_LoadoutWeapon_SMA_KH416GLCQB_B
 				{
 					displayName = "HK416 UGL";
-					condition = "[_player, 'SMA_KH416GLCQB_B'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
-					statement = "[_player , 'SMA_KH416GLCQB_B'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					condition = "[_player, 'SMA_HK416GLCQB_B'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK416GLCQB_B'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
@@ -337,6 +337,14 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					displayName = "SR98 .300 Suppressed";
 					condition = "[_player, 'hlc_rifle_awcovert'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
 					statement = "[_player , 'hlc_rifle_awcovert'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_ej_m107
+				{
+					displayName = "Barrett";
+					condition = "[_player, 'ej_m107'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'ej_m107'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
