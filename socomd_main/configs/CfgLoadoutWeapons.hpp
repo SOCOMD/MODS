@@ -40,7 +40,7 @@ class CfgLoadoutWeapons
     class SMA_MK18BLK_GL_SM : RifleGL_556 { };    
     class SMA_AUG_EGLM : RifleGL_556 { };
     class SMA_M4_GL_SM : RifleGL_556 { };
-	class SMA_KH416GLCQB_B : RifleGL_556 { };
+	class SMA_HK416GLCQB_B : RifleGL_556 { };
 
     class CUP_lmg_m249_pip2 {
         loadoutWhitelist[] = {
@@ -123,6 +123,15 @@ class CfgLoadoutWeapons
 
         magazines[] = {
                 {"hlc_5rnd_300WM_FMJ_AWM", 9}
+            };
+    };
+	class ej_m107 {
+        loadoutWhitelist[] = {
+                "SASR_Sniper"
+            };
+
+        magazines[] = {
+                {"Barret_mag", 6}
             };
     };
 };
