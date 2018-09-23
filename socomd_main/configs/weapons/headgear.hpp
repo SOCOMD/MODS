@@ -445,3 +445,89 @@
 		hiddenSelections[] = {"camo","camo1","camo3"};
 		hiddenSelectionsTextures[] = {"\socomd_data\uniform\he\new_mich_co.paa","\socomd_data\uniform\he\velcro_co.paa","\socomd_data\uniform\he\ir_co.paa"};
 	};
+	class ADFU_H_OpsCore_02;
+	class ADFU_H_OpsCore_02_BLK: ADFU_H_OpsCore_02
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="OpsCore (Black)";
+		picture="\ADFU_Units\ui\icon_h_opscore_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"_Camera",
+			"_Chemlights",
+			"_CW",
+			"_ESS",
+			"_IR_Strobe",
+			"_Peltor",
+			"_Surefire",
+			"_Manta_Back",
+			"_Manta_Top",
+			"_Vlite_Green",
+			"_Vlite_Red"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\h_opscore_black_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		};
+	};
+	
+	class ADFU_H_OpsCore_08;
+	class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="OpsCore (Black) [Headset/IR/Batteries]";
+		picture="\ADFU_Units\ui\icon_h_opscore_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"_Camera",
+			"_Chemlights",
+			"_CW",
+			"_ESS",
+			"_IR_Strobe",
+			"_Peltor",
+			"_Surefire",
+			"_Manta_Back",
+			"_Manta_Top",
+			"_Vlite_Green",
+			"_Vlite_Red"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\h_opscore_black_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"socomd_data\CTgear\h_gear_01_black_co.paa",
+			"",
+			"",
+			"",
+			"",
+			""
+		};
+	};
+	

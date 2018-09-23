@@ -575,3 +575,39 @@ class SOCOMD_Trainee : SOCOMD_Rifleman
 	displayName = "Trainee";
 	icon = "iconMan";
 };
+
+class ADFU_Soldier_MC;
+class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD Black Role";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_BLK_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_blk_co.paa"
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};
+
+class ADFU_Soldier_MC_Rolled;
+class SOCOMD_Soldier_BLK_SleevesUp : ADFU_Soldier_MC_Rolled 
+{
+	displayName = "SOCOMD Black Role (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_BLK_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_blk_co.paa"
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};

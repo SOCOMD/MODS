@@ -27,6 +27,7 @@ class CfgFunctions
 			class Action_ReplaceUniform {};
 			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
+			class Action_ReplaceFacewear {};
 			class Action_ReplacePrimary {};
 			class Action_ReplaceBackpack {};
 		};

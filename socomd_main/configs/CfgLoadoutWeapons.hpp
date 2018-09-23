@@ -76,7 +76,8 @@ class CfgLoadoutWeapons
 
     class SMA_HK417_16in {
         loadoutWhitelist[] = {
-                "SASR_Marksman"
+                "SASR_Marksman",
+				"TAGE_Sniper"
             };
 
         magazines[] = {
@@ -125,6 +126,15 @@ class CfgLoadoutWeapons
                 {"hlc_5rnd_300WM_FMJ_AWM", 9}
             };
     };
+	class hlc_rifle_awcovert_BL {
+        loadoutWhitelist[] = {
+                "TAGE_Sniper"
+            };
+
+        magazines[] = {
+                {"hlc_5rnd_300WM_FMJ_AWM", 9}
+            };
+    };
 	class ej_m107 {
         loadoutWhitelist[] = {
                 "SASR_Sniper"
@@ -134,4 +144,26 @@ class CfgLoadoutWeapons
                 {"Barret_mag", 6}
             };
     };
+	class SMG_05_F {
+        loadoutWhitelist[] = {
+                "TAGE_Medic",
+				"TAGE_TroopLeader",
+				"TAGE_Sapper"
+            };
+
+        magazines[] = {
+                {"30Rnd_9x21_Mag_SMG_02", 12}
+            };
+    };
+	class SMA_MK18MOEBLK {
+		loadoutWhitelist[] = {
+				"TAGE_Medic",
+				"TAGE_TroopLeader",
+				"TAGE_Sapper"
+			};
+		
+		magazines[] = {
+                {"SMA_30Rnd_556x45_M855A1", 5}
+            };
+	};
 };

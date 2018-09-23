@@ -1,5 +1,16 @@
-/*class CfgAmmo
+class CfgAmmo
 {
+	class BulletBase;
+	class B_9x21_Ball: BulletBase
+	{
+		hit = 8.5;// MP5 Buff
+	};
+	class HLC_300WM_FMJ: BulletBase
+	{
+		hit = 25;// MP5 Buff
+	};
+};
+/*{
 	class Bulletbase;
 	class LWIRCM_Ammo_MELB : Bulletbase
 	{

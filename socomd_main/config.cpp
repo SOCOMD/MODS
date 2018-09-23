@@ -104,6 +104,7 @@ class CfgPatches
 
 			// BOXES
 			"SOCOMD_Interactive_QStore",
+			"SOCOMD_TAGE_Interactive_QStore",
 			"SOCOMD_Personal_box",
 			"SOCOMD_Training_box",
 			"SOCOMD_UAV_crate",

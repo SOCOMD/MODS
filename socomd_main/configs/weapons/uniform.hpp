@@ -122,3 +122,36 @@ class SOCOMD_Commando_SleevesUp : ADFU_G3_MC_Rolled {
 	displayName = "SOCOMD Commando (Rolled)";
 	author = "SOCOMD & ADFU";
 };
+
+
+////////////////
+////////CT
+////////////
+
+
+
+class UniformItem;
+class SOCOMD_Commando_BLK_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD Black Role";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_BLK_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};
+class SOCOMD_Commando_BLK_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD Black Role (Rolled)";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_BLK_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};

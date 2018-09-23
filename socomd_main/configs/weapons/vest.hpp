@@ -439,3 +439,79 @@ class SOCOMD_Pouchless_Vest_coy : lbt_pouchless_coy
 	scope = public;
 	displayName = "SOCOMD Pouchless Vest Tan";
 };
+
+////
+//// COUNTER TERRORISM ITEMS
+////
+
+class SOCOMD_Leader_Vest_BLK : lbt_comms_coy
+{
+	scope = public;
+	displayName = "SOCOMD Leader Vest Black";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\lbt_blk.paa",
+			"socomd_data\CTgear\gear_blk.paa",
+			"socomd_data\CTgear\radio_blk.paa",
+			"socomd_data\CTgear\grenade_blk.paa",
+			"socomd_data\CTgear\pouch_blk.paa"
+		};
+};
+
+
+
+class SOCOMD_Medic_Vest_BLK : lbt_medical_coy
+{
+	scope = public;
+	displayName = "SOCOMD Medic Vest Black";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\lbt_blk.paa",
+			"socomd_data\CTgear\gear_blk.paa",
+			"socomd_data\CTgear\radio_blk.paa",
+			"socomd_data\CTgear\shears_co.paa",
+			"socomd_data\CTgear\pouch_blk.paa"
+		};
+};
+
+
+class SOCOMD_Operator_Vest_BLK : lbt_tl_coy
+{
+	scope = public;
+	displayName = "SOCOMD Operator Vest Black";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\lbt_blk.paa",
+			"socomd_data\CTgear\gear_blk.paa",
+			"socomd_data\CTgear\radio_blk.paa",
+			"socomd_data\CTgear\grenade_blk.paa",
+			"socomd_data\CTgear\pouch_blk.paa"
+		};
+};
+
+
+

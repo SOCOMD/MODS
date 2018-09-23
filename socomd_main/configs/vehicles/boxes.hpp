@@ -752,6 +752,202 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 	};
 };
 
+class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
+{
+	displayName = "SOCOMD TAG-EAST QStore";
+	author = AUTHOR_STR;
+
+	ace_cargo_hasCargo = 0;
+	ace_cargo_canLoad = 0;
+	ace_dragging_canDrag = 0;
+	ace_dragging_canCarry = 0;
+
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportItems {};
+	class TransportBackpacks {};
+
+	class ACE_Actions 
+	{
+		class ACE_MainActions 
+		{
+			displayName = "Q-Store";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_OpenGearSelector
+			{
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Loadouts
+			{
+				displayName = "Loadouts";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class ACE_SwitchRoleActionsSASR
+				{
+					displayName = "Change Role (TAG-EAST)";
+					selection = "";
+					distance = 5;
+					condition = 1;
+
+					class SOCOMD_TAGE_Loadout_Leader
+					{
+						displayName = "Leader";
+						condition = 1;
+						statement = "[_player, 'TAGE_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'Mask_M40'";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_TAGE_Loadout_Breacher
+					{
+						displayName = "Breacher";
+						condition = 1;
+						statement = "[_player, 'TAGE_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'Mask_M40'";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_TAGE_Loadout_Medic
+					{
+						displayName = "Medic";
+						condition = 1;
+						statement = "[_player, 'TAGE_Medic'] call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'Mask_M40'";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_TAGE_Loadout_Sniper
+					{
+						displayName = "Sniper";
+						condition = 1;
+						statement = "[_player, 'TAGE_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'milgp_f_face_shield_tactical_BLK'";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+
+				class ACE_SwitchRoleActions171AVN
+				{
+					displayName = "Change Role (171 AVN)";
+					selection = "";
+					distance = 5;
+					condition = 1;
+
+					class SOCOMD_Loadout_Pilot
+					{
+						displayName = "Pilot";
+						condition = 1;
+						statement = "[_player, '171AVN_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_PJ
+					{
+						displayName = "PJ";
+						condition = 1;
+						statement = "[_player, '171AVN_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};				
+			};
+
+			class SOCOMD_Weapons
+			{
+				displayName = "Weapons";
+				selection = "";
+				distance = 5;
+				condition = 1;
+				
+				
+				class SOCOMD_LoadoutWeapon_SMG_05_F
+				{
+					displayName = "SMG";
+					condition = "[_player, 'SMG_05_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMG_05_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+
+				class SOCOMD_LoadoutWeapon_SMA_MK18MOEBLK
+				{
+					displayName = "MK18";
+					condition = "[_player, 'SMA_MK18MOEBLK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18MOEBLK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+
+				class SOCOMD_LoadoutWeapon_SPARTAN_EBR_black_F
+				{
+					displayName = "Mk14 EBR";
+					condition = "[_player, 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_SMA_HK417_16in
+				{
+					displayName = "HK 417";
+					condition = "[_player, 'SMA_HK417_16in'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK417_16in'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+								
+				class SOCOMD_LoadoutWeapon_hlc_rifle_awcovert
+				{
+					displayName = "SR98 .300 Suppressed";
+					condition = "[_player, 'hlc_rifle_awcovert_BL'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'hlc_rifle_awcovert_BL'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+			};
+
+			class SOCOMD_Uniforms
+			{
+				displayName = "Uniforms";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Uniforms_ToggleDiving
+                {
+                    displayName = "Toggle Diving Uniform";
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+				class SOCOMD_Uniforms_ToggleSnow
+                {
+                    displayName = "Toggle Snow Uniform"
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+			};
+			
+		};
+	};
+};
+
 class SOCOMD_Personal_box : Land_PaperBox_closed_F
 {
 	displayName = "SOCOMD Personal Box";
