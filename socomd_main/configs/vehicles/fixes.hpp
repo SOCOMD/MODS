@@ -510,6 +510,23 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			class SOCOMD_OPSCORE_BLK_HeadsetOn
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_02_BLK') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_08_BLK'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_OPSCORE_BLK_HeadsetOff
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_OpsCore_08_BLK') and (alive _player)";
+				statement = "[_player , 'ADFU_H_OpsCore_02_BLK'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			
 			//FAST SWITCH GOGGLES
 			class SOCOMD_FAST_Multi_PutGogglesOn

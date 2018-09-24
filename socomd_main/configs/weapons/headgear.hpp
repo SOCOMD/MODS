@@ -462,6 +462,7 @@
 			"_Chemlights",
 			"_CW",
 			"_ESS",
+			"_ESSglass",
 			"_IR_Strobe",
 			"_Peltor",
 			"_Surefire",
@@ -473,6 +474,7 @@
 		hiddenSelectionsTextures[]=
 		{
 			"socomd_data\CTgear\h_opscore_black_co.paa",
+			"",
 			"",
 			"",
 			"",
@@ -505,6 +507,7 @@
 			"_Chemlights",
 			"_CW",
 			"_ESS",
+			"_ESSglass",
 			"_IR_Strobe",
 			"_Peltor",
 			"_Surefire",
@@ -516,6 +519,7 @@
 		hiddenSelectionsTextures[]=
 		{
 			"socomd_data\CTgear\h_opscore_black_co.paa",
+			"",
 			"",
 			"",
 			"",
