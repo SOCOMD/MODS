@@ -659,6 +659,73 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			////////////////////
+						class SOCOMD_AIRFRAME_OD_HeadsetOn //No headset no Acc to yes headset no Acc
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_02_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_03_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_AIRFRAME_OD_HeadsetOff //Yes headset no Acc to no headset no Acc
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_03_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_02_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_OD_HeadsetOn_acc //No headset yes Acc to yes headset yes Acc
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_11_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_10_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_AIRFRAME_OD_HeadsetOff_acc //yes headset yes Acc to no headset yes Acc
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_10_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_11_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_OD_HeadsetOff_accOn //No headset no Acc to no headset yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_02_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_11_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_OD_HeadsetOff_accOff //No headset Yes Acc to no headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_11_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_02_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_OD_HeadsetOn_accOn //Yes headset no Acc to Yes headset yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_03_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_10_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_OD_HeadsetOn_accOff //yes headset yes Acc to yes headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_10_OD') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_03_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			//OPSCORE HEADSET
 			class SOCOMD_OPSCORE_TAN_HeadsetOn
 			{

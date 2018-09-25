@@ -730,6 +730,14 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 				*/	
+					class SOCOMD_Headgear_TakeAirframeOD
+					{
+						displayName = "Airframe Olive";
+						condition = 1;
+						statement = "[_player , 'ADFU_H_Airframe_11_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 					class SOCOMD_Headgear_TakeAirframeTan
 					{
 						displayName = "Airframe Tan";
@@ -762,7 +770,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
 {
-	displayName = "SOCOMD QStore (Old and New)";
+	displayName = "SOCOMD QStore (Extra)";
 	author = AUTHOR_STR;
 
 	ace_cargo_hasCargo = 0;
@@ -1443,6 +1451,14 @@ class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
+					class SOCOMD_Headgear_TakeBoonieDPCU
+					{
+						displayName = "Boonie Camo";
+						condition = 1;
+						statement = "[_player , 'SOCOMD_Aus_Boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 
 				//	class SOCOMD_Headgear_TakeBandanna
 				//	{
@@ -1527,6 +1543,14 @@ class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 				*/	
+					class SOCOMD_Headgear_TakeAirframeOD
+					{
+						displayName = "Airframe Olive";
+						condition = 1;
+						statement = "[_player , 'ADFU_H_Airframe_11_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
 					class SOCOMD_Headgear_TakeAirframeTan
 					{
 						displayName = "Airframe Tan";
@@ -1559,7 +1583,7 @@ class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
 
 class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 {
-	displayName = "SOCOMD QStore (Old School)";
+	displayName = "SOCOMD QStore (Old School Gear)";
 	author = AUTHOR_STR;
 
 	ace_cargo_hasCargo = 0;
@@ -2476,6 +2500,561 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
                 };
 			};
 			
+		};
+	};
+};
+
+class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
+{
+	displayName = "SOCOMD QStore (Jungle/Woodland Theme)";
+	author = AUTHOR_STR;
+
+	ace_cargo_hasCargo = 0;
+	ace_cargo_canLoad = 0;
+	ace_dragging_canDrag = 0;
+	ace_dragging_canCarry = 0;
+
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportItems {};
+	class TransportBackpacks {};
+
+	class ACE_Actions 
+	{
+		class ACE_MainActions 
+		{
+			displayName = "Q-Store";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_OpenGearSelector
+			{
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Loadouts
+			{
+				displayName = "Loadouts";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class ACE_SwitchRoleActionsSASR
+				{
+					displayName = "Change Role (2CDO)";
+					selection = "";
+					distance = 5;
+					condition = 1;
+
+					class SOCOMD_Loadout_TroopLeader
+					{
+						displayName = "Troop Leader";
+						condition = 1;
+						statement = "[_player, 'SASR_TroopLeader_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_PatrolLeader
+					{
+						displayName = "Patrol Leader";
+						condition = 1;
+						statement = "[_player, 'SASR_PatrolLeader_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Grenadier
+					{
+						displayName = "2IC";
+						condition = 1;
+						statement = "[_player, 'SASR_Grenadier_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Loadout_Rifleman
+					{
+						displayName = "Rifleman";
+						condition = 1;
+						statement = "[_player, 'SASR_Rifleman_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Sapper
+					{
+						displayName = "Sapper";
+						condition = 1;
+						statement = "[_player, 'SASR_Sapper_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_MachineGunner
+					{
+						displayName = "Machine Gunner";
+						condition = 1;
+						statement = "[_player, 'SASR_MachineGunner_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Medic
+					{
+						displayName = "Medic";
+						condition = 1;
+						statement = "[_player, 'SASR_Medic_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Marksman
+					{
+						displayName = "Marksman";
+						condition = 1;
+						statement = "[_player, 'SASR_Marksman_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_Sniper
+					{
+						displayName = "Sniper";
+						condition = 1;
+						statement = "[_player, 'SASR_Sniper_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_LAT
+					{
+						displayName = "Light Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_LAT_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_MAT
+					{
+						displayName = "Medium Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_MAT_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_HAT
+					{
+						displayName = "Heavy Anti-tank";
+						condition = 1;
+						statement = "[_player, 'SASR_HAT_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+
+				class ACE_SwitchRoleActions171AVN
+				{
+					displayName = "Change Role (171 AVN)";
+					selection = "";
+					distance = 5;
+					condition = 1;
+
+					class SOCOMD_Loadout_Pilot
+					{
+						displayName = "Pilot";
+						condition = 1;
+						statement = "[_player, '171AVN_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Loadout_PJ
+					{
+						displayName = "PJ";
+						condition = 1;
+						statement = "[_player, '171AVN_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};				
+			};
+
+			class SOCOMD_Weapons
+			{
+				displayName = "Weapons";
+				selection = "";
+				distance = 5;
+				condition = 1;
+				
+				class SOCOMD_LoadoutWeapon_SMA_M4afgSTOCK
+                {
+                    displayName = "M4A5";
+                    condition = "[_player, 'SMA_M4afgSTOCK'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+                    statement = "[_player , 'SMA_M4afgSTOCK'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+
+
+				class SOCOMD_LoadoutWeapon_SMA_M4_GL_SM
+				{
+					displayName = "M4A5 UGL";
+					condition = "[_player, 'SMA_M4_GL_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_M4_GL_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+				class SOCOMD_LoadoutWeapon_SMA_HK416CUSTOMCQBvfgB
+				{
+					displayName = "HK416";
+					condition = "[_player, 'SMA_HK416CUSTOMCQBvfgB'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK416CUSTOMCQBvfgB'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+				class SOCOMD_LoadoutWeapon_SMA_KH416GLCQB_B
+				{
+					displayName = "HK416 UGL";
+					condition = "[_player, 'SMA_HK416GLCQB_B'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK416GLCQB_B'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_SMA_MK18MOEBLK_SM
+				{
+					displayName = "MK18 MOE";
+					condition = "[_player, 'SMA_MK18MOEBLK_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18MOEBLK_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_SMA_MK18BLK_GL_SM
+				{
+					displayName = "MK18 MOE UGL";
+					condition = "[_player, 'SMA_MK18BLK_GL_SM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_MK18BLK_GL_SM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_SMA_AUG_A3_F
+				{
+					displayName = "AUG A3";
+					condition = "[_player, 'SMA_AUG_A3_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_AUG_A3_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_SMA_AUG_EGLM
+				{
+					displayName = "AUG A3 UGL";
+					condition = "[_player, 'SMA_AUG_EGLM'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_AUG_EGLM'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_CUP_lmg_m249_pip2
+				{
+					displayName = "Minimi";
+					condition = "[_player, 'CUP_lmg_m249_pip2'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'CUP_lmg_m249_pip2'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadoutWeapon_sma_minimi_mk3_762tsb
+				{
+					displayName = "Maximi";
+					condition = "[_player, 'sma_minimi_mk3_762tsb'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'sma_minimi_mk3_762tsb'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_SPARTAN_EBR_black_F
+				{
+					displayName = "Mk14 EBR";
+					condition = "[_player, 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SPARTAN_EBR_black_F'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_SMA_HK417_16in
+				{
+					displayName = "HK 417";
+					condition = "[_player, 'SMA_HK417_16in'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK417_16in'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_SMA_HK417vfg
+				{
+					displayName = "HK 417 (Assaulter)";
+					condition = "[_player, 'SMA_HK417vfg'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'SMA_HK417vfg'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_hlc_rifle_awmagnum
+				{
+					displayName = "SR98 .300";
+					condition = "[_player, 'hlc_rifle_awmagnum'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'hlc_rifle_awmagnum'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_hlc_rifle_awMagnum_OD_ghillie
+				{
+					displayName = "SR98 .300 Camo";
+					condition = "[_player, 'hlc_rifle_awMagnum_OD_ghillie'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'hlc_rifle_awMagnum_OD_ghillie'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_hlc_rifle_awcovert
+				{
+					displayName = "SR98 .300 Suppressed";
+					condition = "[_player, 'hlc_rifle_awcovert'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'hlc_rifle_awcovert'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class SOCOMD_LoadoutWeapon_ej_m107
+				{
+					displayName = "Barrett";
+					condition = "[_player, 'ej_m107'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon";
+					statement = "[_player , 'ej_m107'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			};
+
+			class SOCOMD_Uniforms
+			{
+				displayName = "Uniforms";
+				selection = "";
+				distance = 5;
+				condition = 1;
+
+				class SOCOMD_Uniforms_ToggleDiving
+                {
+                    displayName = "Toggle Diving Uniform";
+                    condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                };
+			};
+		
+			class SOCOMD_Backpack
+			{
+				displayName = "Backpacks";
+				selection = "";
+				distance = 5;
+				condition = 1;
+				
+				class SOCOMD_Backpack_OD
+				{
+					displayName = "Olive";
+					selection = "";
+					distance = 5;
+					condition = 1;
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_recon_od
+					{
+					displayName = "SOG Recon OD";
+					condition = "[_player, 'SOG_BAG_recon_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_recon_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_R_od
+					{
+					displayName = "Kit Bag Recon OD";
+					condition = "[_player, 'Kit_Bag_R_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_R_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_od
+					{
+					displayName = "SOG Bag OD";
+					condition = "[_player, 'SOG_BAG_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_od
+					{
+					displayName = "Kit Bag OD";
+					condition = "[_player, 'Kit_Bag_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_Kit_Bag_pince_od
+					{
+					displayName = "Kit Bag Breacher OD";
+					condition = "[_player, 'Kit_Bag_pince_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'Kit_Bag_pince_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Backpack_MC_SOG_BAG_BREACHER_od
+					{
+					displayName = "SOG Breacher OD";
+					condition = "[_player, 'SOG_BAG_BREACHER_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_BREACHER_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Backpack_MC_SOG_BAG_MED_od
+					{
+					displayName = "SOG MEDIC OD";
+					condition = "[_player, 'SOG_BAG_med_od'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks";
+					statement = "[_player , 'SOG_BAG_med_od'] call SOCOMD_fnc_Action_ReplaceBackpack";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+				
+
+			};	
+			class SOCOMD_HeadgearActions 
+				{
+					displayName = "Headgear";
+					selection = "";
+					distance = 5;
+					condition = 1;
+			
+					class SOCOMD_Headgear_TakeCapTAN
+					{
+						displayName = "Cap (Tan)";
+						condition = 1;
+						statement = "[_player , 'CUP_H_PMC_Cap_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					
+					class SOCOMD_Headgear_TakeCapOli
+					{
+						displayName = "Cap (Olive)";
+						condition = 1;
+						statement = "[_player , 'H_Cap_oli'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_TakeBoonie
+					{
+						displayName = "Boonie";
+						condition = 1;
+						statement = "[_player , 'H_Booniehat_khk'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Headgear_TakeBoonieDPCU
+					{
+						displayName = "Boonie Camo";
+						condition = 1;
+						statement = "[_player , 'SOCOMD_Aus_Boonie'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+				//	class SOCOMD_Headgear_TakeBandanna
+				//	{
+				//		displayName = "Switch to a Bandanna";
+				//		condition = 1;
+				//		statement = "[_player , 'SOCOMD_Bandanna'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+				//		showDisabled = 0;
+				//		exceptions[] = {"isNotInside", "isNotSitting"};
+				//	};
+
+				//	class SOCOMD_Headgear_TakeBowman
+				//	{
+				//		displayName = "Switch to a Bowman";
+				//		condition = 1;
+				//		statement = "[_player , 'VSM_Bowman'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+				//		showDisabled = 0;
+				//		exceptions[] = {"isNotInside", "isNotSitting"};
+				//	};
+
+					class SOCOMD_Headgear_Beanie
+					{
+						displayName = "Beanie";
+						condition = 1;
+						statement = "[_player , 'VSM_Beanie_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+								
+
+				/*	class SOCOMD_Headgear_ReplaceHelmet_FASTMulticam
+					{
+						displayName = "Switch to a FAST Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Multi') OR ((headgear _player) == 'SOCOMD_FAST_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_FASTTan
+					{
+						displayName = "Switch to a FAST Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_FAST_Tan') OR ((headgear _player) == 'SOCOMD_FAST_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_FAST_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				
+					
+					class SOCOMD_Headgear_ReplaceHelmet_MICHMulticam
+					{
+						displayName = "MICH Multicam Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Multi') OR ((headgear _player) == 'SOCOMD_MICH_Multi_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Multi'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
+					class SOCOMD_Headgear_ReplaceHelmet_MICHTan
+					{
+						displayName = "Switch to a MICH Tan Helmet";
+						condition = "!(((headgear _player) == 'SOCOMD_MICH_Tan') OR ((headgear _player) == 'SOCOMD_MICH_Tan_Gog'))";
+						statement = "[_player , 'SOCOMD_MICH_Tan'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				*/	
+					class SOCOMD_Headgear_TakeAirframeOD
+					{
+						displayName = "Airframe Olive";
+						condition = 1;
+						statement = "[_player , 'ADFU_H_Airframe_11_OD'] call SOCOMD_fnc_Action_ReplaceHeadgear";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+				};
+
 		};
 	};
 };

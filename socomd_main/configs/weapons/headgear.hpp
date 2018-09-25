@@ -146,6 +146,29 @@
 			passThrough = 1;
 		};
 	};
+	class SOCOMD_Aus_Boonie: H_Booniehat_khk_hs 
+	{
+		author = "SOCOMD";
+		scope = 2;
+		_generalMacro = "SOCOMD_Boonie";
+		displayName = "SOCOMD Booniehat DPCU";
+		picture = "\socomd_data\uniform\icons\icon_H_Booniehat_CA.paa";
+		model = "\A3\Characters_F\Common\booniehat";
+		ace_hearing_protection = 0.5;
+		ace_hearing_lowerVolume = 0;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\socomd_data\CTgear\booniehat_co.paa"};
+
+		class ItemInfo : ItemInfo
+		{
+			mass = 5;
+			allowedSlots[] = {801,901,701,605};
+			uniformModel = "\A3\Characters_F\Common\booniehat";
+			modelSides[] = {6};
+			armor = 0;
+			passThrough = 1;
+		};
+	};
 
 	//BANDANNAS
 
@@ -497,7 +520,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="OpsCore (Black) [Headset/IR/Batteries]";
+		displayName="OpsCore (Black)";
 		picture="\ADFU_Units\ui\icon_h_opscore_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -542,7 +565,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (Tan) [Cover]";
+		displayName="Airframe (Tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -576,7 +599,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (Tan) [Cover/Headphones]";
+		displayName="Airframe (Tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -610,7 +633,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (MC) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (MC)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -643,7 +666,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (MC) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (MC)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -676,7 +699,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (tan) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -709,7 +732,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (tan) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -733,6 +756,138 @@
 			"ADFU_Units\data\h_gear_01_khk_co.paa",
 			"ADFU_Units\data\h_gear_01_khk_co.paa",
 			"socomd_data\CTgear\h_airframe_tan_co.paa",
+			"socomd_data\CTgear\h_fast_khk_co.paa"
+		};
+	};
+		class ADFU_H_Airframe_02_OD: ADFU_H_Airframe_Cover_02
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="Airframe (OD)";
+		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"_arc_peltor",
+			"_camera",
+			"_cover",
+			"_face_cover",
+			"_Manta_Rear",
+			"_NVG_Battery",
+			"_surefire_light",
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"socomd_data\CTgear\h_airframe_OD_co.paa",
+			"socomd_data\CTgear\h_fast_khk_co.paa"
+		};
+	};
+	class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="Airframe (OD)";
+		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"_arc_peltor",
+			"_camera",
+			"_cover",
+			"_face_cover",
+			"_Manta_Rear",
+			"_NVG_Battery",
+			"_surefire_light",
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"socomd_data\CTgear\h_airframe_OD_co.paa",
+			"socomd_data\CTgear\h_fast_khk_co.paa"
+		};
+	};
+	class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="Airframe (OD) [Cover/Headphones/Attachments/Camera]";
+		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"_arc_peltor",
+			"_camera",
+			"_cover",
+			"_face_cover",
+			"_Manta_Rear",
+			"_NVG_Battery",
+			"_surefire_light",
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"",
+			"",
+			"",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"socomd_data\CTgear\h_airframe_OD_co.paa",
+			"socomd_data\CTgear\h_fast_khk_co.paa"
+		};
+	};
+	class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05
+	{
+		author="Adacas + ADFU";
+		dlc="ADFU";
+		scope=2;
+		scopeArsenal=2;
+		displayName="Airframe (OD) [Cover/Headphones/Attachments/Camera]";
+		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+		hiddenSelections[]=
+		{
+			"_arc_peltor",
+			"_camera",
+			"_cover",
+			"_face_cover",
+			"_Manta_Rear",
+			"_NVG_Battery",
+			"_surefire_light",
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"",
+			"",
+			"",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"ADFU_Units\data\h_gear_01_khk_co.paa",
+			"socomd_data\CTgear\h_airframe_OD_co.paa",
 			"socomd_data\CTgear\h_fast_khk_co.paa"
 		};
 	};
