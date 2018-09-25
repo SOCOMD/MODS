@@ -142,7 +142,7 @@ class SOCOMD_Commando_BLK_SleevesDown : ADFU_G3_MC {
 			mass=40;
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
-};
+};/*
 class SOCOMD_Commando_BLK_SleevesUp : ADFU_G3_MC_Rolled {
 	displayName = "SOCOMD Black Role (Rolled)";
 	author = "SOCOMD & ADFU";
@@ -154,4 +154,94 @@ class SOCOMD_Commando_BLK_SleevesUp : ADFU_G3_MC_Rolled {
 			mass=40;
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};*/
+class SOCOMD_Commando_DPDU_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD DPDU Tan";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPDU_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+class SOCOMD_Commando_DPDU_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD DPDU Tan (Rolled)";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPDU_SleevesUp";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+
+class SOCOMD_Commando_DPCU_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD DPCU Tan";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPCU_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+class SOCOMD_Commando_DPCU_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD DPCU Tan (Rolled)";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPCU_SleevesUp";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+class SOCOMD_Commando_DPDU_OD_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD DPDU OD";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPDU_OD_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+class SOCOMD_Commando_DPDU_OD_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD DPDU OD (Rolled)";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPDU_OD_SleevesUp";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+
+class SOCOMD_Commando_DPCU_OD_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD DPCU OD";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPCU_OD_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+};
+class SOCOMD_Commando_DPCU_OD_SleevesUp : ADFU_G3_MC_Rolled {
+	displayName = "SOCOMD DPCU OD (Rolled)";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_DPCU_OD_SleevesUp";
+			containerClass="Supply80";
+			mass=40;
+		};
 };

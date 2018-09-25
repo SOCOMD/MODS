@@ -5,7 +5,10 @@ class CfgLoadoutBackpacks
         loadoutWhitelist[] = { 
                 "SASR_TroopLeader",
                 "SASR_PatrolLeader",
-				"SASR_Grenadier"
+				"SASR_Grenadier",
+				"SASR_TroopLeader_Old",
+                "SASR_PatrolLeader_Old",
+				"SASR_Grenadier_Old"
             };
 
     };
@@ -13,6 +16,8 @@ class CfgLoadoutBackpacks
 	class SOG_BAG_recon_MC : Backpack_Leader { };
     class SOG_BAG_recon_Tan : Backpack_Leader { };
 	class Kit_Bag_R_MC : Backpack_Leader { };
+	class SOG_BAG_recon_od : Backpack_Leader { };
+	class Kit_Bag_R_od : Backpack_Leader { };
 	class Kit_Bag_R_Tan : Backpack_Leader { };
 	
 	class Backpack_Operator
@@ -28,7 +33,18 @@ class CfgLoadoutBackpacks
 				"SASR_Medic",
 				"SASR_TroopLeader",
                 "SASR_PatrolLeader",
-				"SASR_Grenadier"
+				"SASR_Grenadier",
+				"SASR_LAT_Old",
+                "SASR_MAT_Old",
+                "SASR_HAT_Old",
+				"SASR_Marksman_Old",
+				"SASR_Sniper_Old",
+				"SASR_Rifleman_Old",
+				"SASR_MachineGunner_Old",
+				"SASR_Medic_Old",
+				"SASR_TroopLeader_Old",
+                "SASR_PatrolLeader_Old",
+				"SASR_Grenadier_Old"
             };
     };
 	
@@ -36,12 +52,15 @@ class CfgLoadoutBackpacks
     class SOG_BAG_Tan : Backpack_Operator { };
 	class Kit_Bag_MC : Backpack_Operator { };
 	class Kit_Bag_Tan : Backpack_Operator { };
+	class SOG_BAG_od : Backpack_Operator { };
+	class Kit_Bag_od : Backpack_Operator { };
     
 
 	class Backpack_Sapper
     {
         loadoutWhitelist[] = { 
-                "SASR_Sapper"
+                "SASR_Sapper",
+				"SASR_Sapper_Old"
             };
 
     };
@@ -50,17 +69,21 @@ class CfgLoadoutBackpacks
     class SOG_BAG_BREACHER_tan : Backpack_Sapper { };
 	class Kit_Bag_pince_mc : Backpack_Sapper { };
     class SOG_BAG_BREACHER_MC : Backpack_Sapper { };
+	class Kit_Bag_pince_od : Backpack_Sapper { };
+    class SOG_BAG_BREACHER_od : Backpack_Sapper { };
 	
 	
 	class Backpack_Medic
     {
         loadoutWhitelist[] = { 
-                "SASR_Medic"
+                "SASR_Medic",
+				"SASR_Medic_Old"
             };
 
     };
     
 	class SOG_BAG_med_tan : Backpack_Medic { };
     class SOG_BAG_med_MC : Backpack_Medic { };
+	class SOG_BAG_med_od : Backpack_Medic { };
 
 };

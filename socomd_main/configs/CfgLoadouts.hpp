@@ -1056,6 +1056,564 @@ class CfgLoadouts
 		};
 		
 		
+		
+		////////////////////////////////////////////////////////////////////////////////
+		//OldSchool
+		class SASR_TroopLeader_Old
+		{
+			primary = "SMA_M4_GL_SM";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Laserdesignator";
+			gps = "ItemcTab";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+
+					LOADOUT_ITEM(Laserbatteries, 2)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Leader_Vest_coy";
+
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(ACRE_PRC152, 1)
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+					LOADOUT_ITEM(UGL_FlareRed_F, 2)
+					LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+				};
+			};
+
+			class Backpack
+			{
+				type = "Kit_Bag_R_tan";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+					
+					LOADOUT_ITEM(ACRE_PRC117F, 1)
+					LOADOUT_ITEM(SmokeShellGreen, 2)
+				};
+			};
+		};
+
+		class SASR_PatrolLeader_Old
+		{
+			primary = "SMA_M4_GL_SM";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Laserdesignator";
+			gps = "ItemAndroid";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+
+					LOADOUT_ITEM(Laserbatteries, 2)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Leader_Vest_coy";
+
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+					LOADOUT_ITEM(UGL_FlareRed_F, 2)
+					LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+				};
+			};
+			class Backpack
+			{
+				type = "Kit_Bag_R_tan";
+				class Inventory
+				{	
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+					
+					LOADOUT_ITEM(ACRE_PRC152, 1)
+					LOADOUT_ITEM(SmokeShellGreen, 2)
+				};
+			};
+		};
+
+		class SASR_Rifleman_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "H_Booniehat_khk";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+				};
+			};
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{	
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+				};
+			};
+		};
+
+		class SASR_Grenadier_Old
+		{
+			primary = "SMA_M4_GL_SM";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Rangefinder";
+			gps = "ItemAndroid";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+					
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_2IC_Vest_coy";
+
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+					LOADOUT_ITEM(UGL_FlareRed_F, 2)
+					LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+				};
+			};
+			class Backpack
+			{
+				type = "SOG_BAG_recon_tan";
+				class Inventory
+				{	
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+					
+					LOADOUT_ITEM(ACRE_PRC152, 1)
+					LOADOUT_ITEM(SmokeShellGreen, 2)
+				};
+			};			
+		};
+
+		class SASR_Sapper_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "ADFU_H_OpsCore_08_TAN";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+					
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+				};
+			};
+
+			class Backpack
+			{
+				type = "Kit_Bag_pince_TAN";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+					
+					LOADOUT_ITEM(ACE_DefusalKit, 1)
+					LOADOUT_ITEM(ACE_Clacker, 1)
+					LOADOUT_ITEM(ACE_wirecutter, 1)
+					LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+					LOADOUT_ITEM(MineDetector, 1)
+					LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
+					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
+					LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
+					LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+				};
+			};
+		};
+
+		class SASR_MachineGunner_Old
+		{
+			primary = "sma_minimi_mk3_762tsb";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "ADFU_H_OpsCore_08_TAN";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest
+			{
+				type = "VSM_LBT6094_MG_Multicam";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+				};
+			};
+		};
+
+		class SASR_Medic_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Medic_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Backpack
+			{
+				type = "KIT_BAG_TAN";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					
+					LOADOUT_ITEM(ACE_surgicalKit, 8)
+					LOADOUT_ITEM(ACE_fieldDressing, 25)
+					LOADOUT_ITEM(ACE_elasticBandage, 20)
+					LOADOUT_ITEM(ACE_packingBandage, 25)
+					LOADOUT_ITEM(ACE_quikclot, 25)
+					LOADOUT_ITEM(ACE_epinephrine, 10)
+					LOADOUT_ITEM(ACE_morphine, 10)
+					LOADOUT_ITEM(ACE_tourniquet, 6)
+					LOADOUT_ITEM(ACE_salineIV_500, 6)
+					LOADOUT_ITEM(ACE_personalAidKit, 2)
+					//LOADOUT_ITEM(ACE_bodyBag, 6)
+				};
+			};
+		};
+
+		class SASR_Marksman_Old
+		{
+			primary = "SMA_HK417_16in";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "H_Booniehat_khk";
+			binocular = "Rangefinder";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(ACE_Kestrel4500, 1)
+					LOADOUT_ITEM(ACE_RangeCard, 1)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{
+					SASR_STANDARD_MEDICAL
+					SASR_BACKPACK_ESSENTIALS
+				};
+			};
+		};
+
+		class SASR_Sniper_Old
+		{
+			primary = "hlc_rifle_awmagnum";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "H_Booniehat_khk";
+			binocular = "Rangefinder";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(ACE_Kestrel4500, 1)
+					LOADOUT_ITEM(ACE_RangeCard, 1)
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(ACRE_PRC152, 1)
+					LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+			
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{
+					SASR_STANDARD_MEDICAL
+					SASR_BACKPACK_ESSENTIALS
+					
+					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+					LOADOUT_ITEM(ACE_DefusalKit, 1)
+					LOADOUT_ITEM(ACE_Clacker, 1)
+					LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
+				};
+			};
+		};
+
+		class SASR_LAT_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			secondary = "HAFM_LAW";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "H_Booniehat_khk";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{
+					SASR_STANDARD_MEDICAL
+					SASR_BACKPACK_ESSENTIALS
+				};
+			};
+		};
+
+		class SASR_MAT_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			secondary = "SOCOMD_Carl_Gustav";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Backpack
+			{
+				type = "SOG_BAG_tan";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					SASR_STANDARD_MEDICAL
+					
+					LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
+					LOADOUT_ITEM(tf47_m3maaws_HE, 1)
+				};
+			};
+		};
+
+		class SASR_HAT_Old
+		{
+			primary = "SMA_M4afgSTOCK";
+			secondary = "CUP_launch_Javelin";
+			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+			handgunMagazine = "11Rnd_45ACP_Mag";
+			headgear = "CUP_H_PMC_Cap_Tan";
+			binocular = "Binocular";
+			gps = "ItemMicroDAGR";
+
+			class Uniform
+			{
+				type = "SOCOMD_Commando_DPDU_SleevesUp";
+				class Inventory
+				{
+					SASR_STANDARD_MEDICAL
+					SASR_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest
+			{
+				type = "SOCOMD_Operator_Vest_coy";
+				class Inventory
+				{
+					SASR_VEST_ESSENTIALS
+
+					LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)
+					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+				};
+			};
+
+			class Backpack
+			{
+				type = "Kit_Bag_tan";
+				class Inventory
+				{
+					SASR_BACKPACK_ESSENTIALS
+					
+					LOADOUT_ITEM(CUP_Javelin_M, 1)
+				};
+			};
+		};
+		
 		////////////////////////////////////////////////////////////////////////////////
 		//2CDO LOADOUTS
 

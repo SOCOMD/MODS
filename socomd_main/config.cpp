@@ -105,6 +105,8 @@ class CfgPatches
 			// BOXES
 			"SOCOMD_Interactive_QStore",
 			"SOCOMD_TAGE_Interactive_QStore",
+			"SOCOMD_Interactive_QStore_OldSchool",
+			"SOCOMD_Interactive_QStore_OldNew",
 			"SOCOMD_Personal_box",
 			"SOCOMD_Training_box",
 			"SOCOMD_UAV_crate",
@@ -187,6 +189,16 @@ class CfgPatches
 	};
 };
 
+class CfgUnitInsignia
+{
+	class dog
+	{
+		displayName="Dog";
+		author="Monk";
+		texture="socomd_data\insignia\dog.paa";
+	};
+	
+};
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"

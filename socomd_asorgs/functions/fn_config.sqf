@@ -178,7 +178,8 @@ ASORGS_Blacklist = [
 	"VSM_Shemagh_Goggles_tan",
 	"VSM_Thermal",
 	"VSM_SkiMask_Black",
-	"G_Lady_Blue"
+	"G_Lady_Blue",
+	"50Suppressor_ej"
 
 ];
 

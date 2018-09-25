@@ -594,7 +594,7 @@ class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
 
-class ADFU_Soldier_MC_Rolled;
+/*
 class SOCOMD_Soldier_BLK_SleevesUp : ADFU_Soldier_MC_Rolled 
 {
 	displayName = "SOCOMD Black Role (Rolled)";
@@ -610,4 +610,129 @@ class SOCOMD_Soldier_BLK_SleevesUp : ADFU_Soldier_MC_Rolled
 			"socomd_data\CTgear\u_g3_blk_co.paa"
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+}; */
+class SOCOMD_Soldier_DPDU_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD DPDU";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPDU_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPDU_co.paa"
+		};
+};
+
+class ADFU_Soldier_MC_Rolled;
+class SOCOMD_Soldier_DPDU_SleevesUp : ADFU_Soldier_MC_Rolled 
+{
+	displayName = "SOCOMD DPDU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPDU_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPDU_co.paa"
+		};
+};
+class SOCOMD_Soldier_DPCU_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD DPCU";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPCU_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPCU_co.paa"
+		};
+};
+
+class SOCOMD_Soldier_DPCU_SleevesUp : ADFU_Soldier_MC_Rolled 
+{
+	displayName = "SOCOMD DPCU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPCU_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPCU_co.paa"
+		};
+};
+class SOCOMD_Soldier_DPDU_OD_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD DPDU";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPDU_OD_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPDU_OD_co.paa"
+		};
+};
+
+class SOCOMD_Soldier_DPDU_OD_SleevesUp : ADFU_Soldier_MC_Rolled 
+{
+	displayName = "SOCOMD DPDU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPDU_OD_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPDU_OD_co.paa"
+		};
+};
+class SOCOMD_Soldier_DPCU_OD_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD DPCU";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPCU_OD_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPCU_OD_co.paa"
+		};
+};
+
+class SOCOMD_Soldier_DPCU_OD_SleevesUp : ADFU_Soldier_MC_Rolled 
+{
+	displayName = "SOCOMD DPCU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_DPCU_OD_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data\CTgear\u_g3_DPCU_OD_co.paa"
+		};
 };

@@ -398,6 +398,74 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			class SOCOMD_Commando_DPCU_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPCU_SleevesDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPCU_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Commando_DPCU_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPCU_SleevesUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPCU_SleevesDown'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_Commando_DPDU_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPDU_SleevesDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPDU_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Commando_DPDU_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPDU_SleevesUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPDU_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_Commando_DPCU_OD_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPCU_OD_SleevesDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPCU_OD_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Commando_DPCU_OD_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPCU_OD_SleevesUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPCU_OD_SleevesDown'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_Commando_DPDU_OD_Uniform_RollSleeveUp
+			{
+				displayName = "Roll Up Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPDU_OD_SleevesDown') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPDU_OD_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class SOCOMD_Commando_DPDU_OD_Uniform_RollSleeveDown
+			{
+				displayName = "Roll Down Sleeves";
+				condition = "((uniform _player) == 'SOCOMD_Commando_DPDU_OD_SleevesUp') and (alive _player)";
+				statement = "[_player, 'SOCOMD_Commando_DPDU_OD_SleevesUp'] call SOCOMD_fnc_Action_ReplaceUniform;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 
 			//RAISE SNOW HOOD
 			class SOCOMD_Uniform_Snow_RaiseHood
@@ -456,7 +524,7 @@ class CAManBase : Man
 			};
 			
 			//AIRFRAME HEADSET
-			class SOCOMD_AIRFRAME_HeadsetOn
+			class SOCOMD_AIRFRAME_HeadsetOn //No headset no Acc to yes headset no Acc
 			{
 				displayName = "Headset On";
 				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_02_MC') and (alive _player)";
@@ -465,7 +533,7 @@ class CAManBase : Man
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 			
-			class SOCOMD_AIRFRAME_HeadsetOff
+			class SOCOMD_AIRFRAME_HeadsetOff //Yes headset no Acc to no headset no Acc
 			{
 				displayName = "Headset Off";
 				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_03_MC') and (alive _player)";
@@ -473,7 +541,124 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
+			class SOCOMD_AIRFRAME_HeadsetOn_acc //No headset yes Acc to yes headset yes Acc
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_11_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_10_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			
+			class SOCOMD_AIRFRAME_HeadsetOff_acc //Yes headset Yes Acc to no headset Yes Acc
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_10_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_11_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_Headset_AccOn //Yes headset no Acc to yes headset Yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_03_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_10_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_Headset_AccOff //Yes headset yes Acc to yes headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_10_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_03_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_AccOn //No headset no Acc to no headset yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_02_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_11_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_AccOff //No headset yes Acc to no headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_Cover_11_MC') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_Cover_02_MC'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			////////////////////////////
+			
+			class SOCOMD_AIRFRAME_TAN_HeadsetOn //No headset no Acc to yes headset no Acc
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_02_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_03_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_AIRFRAME_TAN_HeadsetOff //Yes headset no Acc to no headset no Acc
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_03_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_02_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_TAN_HeadsetOn_acc //No headset yes Acc to yes headset yes Acc
+			{
+				displayName = "Headset On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_11_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_10_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			
+			class SOCOMD_AIRFRAME_TAN_HeadsetOff_acc //yes headset yes Acc to no headset yes Acc
+			{
+				displayName = "Headset Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_10_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_11_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_TAN_HeadsetOff_accOn //No headset no Acc to no headset yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_02_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_11_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_TAN_HeadsetOff_accOff //No headset Yes Acc to no headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_11_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_02_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_TAN_HeadsetOn_accOn //Yes headset no Acc to Yes headset yes Acc
+			{
+				displayName = "Helmet Accessories On";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_03_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_10_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class SOCOMD_AIRFRAME_TAN_HeadsetOn_accOff //yes headset yes Acc to yes headset no Acc
+			{
+				displayName = "Helmet Accessories Off";
+				condition = "((headgear _player) == 'ADFU_H_Airframe_10_tan') and (alive _player)";
+				statement = "[_player , 'ADFU_H_Airframe_03_tan'] call SOCOMD_fnc_Action_ReplaceHeadgear;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 			//OPSCORE HEADSET
 			class SOCOMD_OPSCORE_TAN_HeadsetOn
 			{
