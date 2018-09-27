@@ -8,7 +8,10 @@ class CfgLoadoutBackpacks
 				"SASR_Grenadier",
 				"SASR_TroopLeader_Old",
                 "SASR_PatrolLeader_Old",
-				"SASR_Grenadier_Old"
+				"SASR_Grenadier_Old",
+				"SASR_TroopLeader_Jngl",
+                "SASR_PatrolLeader_Jngl",
+				"SASR_Grenadier_Jngl"
             };
 
     };
@@ -44,7 +47,18 @@ class CfgLoadoutBackpacks
 				"SASR_Medic_Old",
 				"SASR_TroopLeader_Old",
                 "SASR_PatrolLeader_Old",
-				"SASR_Grenadier_Old"
+				"SASR_Grenadier_Old",
+				"SASR_LAT_Jngl",
+                "SASR_MAT_Jngl",
+                "SASR_HAT_Jngl",
+				"SASR_Marksman_Jngl",
+				"SASR_Sniper_Jngl",
+				"SASR_Rifleman_Jngl",
+				"SASR_MachineGunner_Jngl",
+				"SASR_Medic_Jngl",
+				"SASR_TroopLeader_Jngl",
+                "SASR_PatrolLeader_Jngl",
+				"SASR_Grenadier_Jngl"
             };
     };
 	
@@ -60,6 +74,7 @@ class CfgLoadoutBackpacks
     {
         loadoutWhitelist[] = { 
                 "SASR_Sapper",
+				"SASR_Sapper_Jngl",
 				"SASR_Sapper_Old"
             };
 
@@ -77,6 +92,7 @@ class CfgLoadoutBackpacks
     {
         loadoutWhitelist[] = { 
                 "SASR_Medic",
+				"SASR_Medic_Jngl",
 				"SASR_Medic_Old"
             };
 
