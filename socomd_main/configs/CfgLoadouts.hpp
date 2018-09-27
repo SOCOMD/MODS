@@ -1814,7 +1814,7 @@ class CfgLoadouts
 
 			class Vest
 			{
-				type = "SOCOMD_Operator_Vest_coy";
+				type = "lbt_tl_od";
 				class Inventory
 				{
 					SASR_VEST_ESSENTIALS
