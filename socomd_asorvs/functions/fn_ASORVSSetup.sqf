@@ -69,6 +69,7 @@ _supplyClasses = [
 	"SOCOMD_CargoNet",
 	"SOCOMD_Supply_Crate",
 	"SOCOMD_Ammo_Box",
+	"SOCOMD_Vehicle_Ammo_Box",
 	"SOCOMD_Mortar_Box",
 	"SOCOMD_Gustav_Box",
 	"SOCOMD_Medical_Box",

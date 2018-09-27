@@ -3445,6 +3445,31 @@ class SOCOMD_Ammo_Box : NATO_Box_Base
 
 };
 
+class SOCOMD_Vehicle_Ammo_Box : NATO_Box_Base
+{
+	scope = public;
+	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
+	hiddenSelectionsTextures[] = {"A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+	accuracy = 1000;
+	displayName = "SOCOMD Vehicle Ammo Box";
+	author = AUTHOR_STR;
+	maximumLoad = 99999;
+	transportMaxWeapons = 15000;
+	transportMaxMagazines = 20000;
+	transportMaxBackpacks = 100;
+	ace_cargo_size = 2;
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 1;
+	weight = 20;
+	ace_rearm_defaultSupply = 30;
+
+	class TransportMagazines 
+	{
+		
+	};
+
+};
+
 class SOCOMD_Gustav_Box : NATO_Box_Base
 {
 	scope = public;
