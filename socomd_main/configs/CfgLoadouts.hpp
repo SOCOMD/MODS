@@ -171,48 +171,53 @@ class SASR_StandardTrooper
 	
 #define Troop_Leader_Vest							\
 	LOADOUT_ITEM(ACRE_PRC152, 1)					\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)		\
-	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)			\
-	LOADOUT_ITEM(UGL_FlareRed_F, 2)					\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)	\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
 	
 #define Troop_Leader_Backpack						\
 	LOADOUT_ITEM(ACRE_PRC117F, 1)					\
 	LOADOUT_ITEM(SmokeShellGreen, 2)				\
-
+	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)			\
+	LOADOUT_ITEM(UGL_FlareRed_F, 2)					\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)	\
+	
 //////////////////////////////////////////////////////////////////////
 //Patrol Leader
 
 #define PatrolLeader_Vest	\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)\
-	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
-	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
+	
 	
 #define PatrolLeader_Backpack\
 	LOADOUT_ITEM(ACRE_PRC152, 1)\
 	LOADOUT_ITEM(SmokeShellGreen, 2)\
-	
+	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
+	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
 
 //////////////////////////////////////////////////////////////////////
 //Rifleman
 
 #define Rifleman_Vest\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
 	
 
 //////////////////////////////////////////////////////////////////////
 //2IC
 
 #define Grenadier_Vest\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 8)\
-	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
-	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
+	
 	
 #define Grenadier_Backpack\
 	LOADOUT_ITEM(ACRE_PRC152, 1)\
 	LOADOUT_ITEM(SmokeShellGreen, 2)\
+	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
+	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
 
 //////////////////////////////////////////////////////////////////////
 //Sapper

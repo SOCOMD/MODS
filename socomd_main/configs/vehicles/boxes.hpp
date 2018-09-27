@@ -787,7 +787,7 @@ class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
 	{
 		class ACE_MainActions 
 		{
-			displayName = "Q-Store";
+			displayName = "Q-Store (Extra)";
 			selection = "";
 			distance = 5;
 			condition = 1;
@@ -1600,7 +1600,7 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 	{
 		class ACE_MainActions 
 		{
-			displayName = "Q-Store";
+			displayName = "Q-Store (Old School Gear)";
 			selection = "";
 			distance = 5;
 			condition = 1;
@@ -2327,7 +2327,7 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
 	{
 		class ACE_MainActions 
 		{
-			displayName = "Q-Store";
+			displayName = "Q-Store TAG-EAST";
 			selection = "";
 			distance = 5;
 			condition = 1;
@@ -2523,7 +2523,7 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 	{
 		class ACE_MainActions 
 		{
-			displayName = "Q-Store";
+			displayName = "Q-Store (Jungle/Woodland Theme)";
 			selection = "";
 			distance = 5;
 			condition = 1;
