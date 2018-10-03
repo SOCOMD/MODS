@@ -125,7 +125,7 @@ class SASR_StandardTrooper
 	//LOADOUT_ITEM(Chemlight_blue, 2)      \
 	
 #define SASR_BACKPACK_ESSENTIALS		 \
-	LOADOUT_ITEM(NVGoggles_OPFOR, 1)        \
+	LOADOUT_ITEM(NVGoggles_WP, 1)        \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
 	LOADOUT_ITEM(ACE_CableTie, 4)        \
 	
@@ -296,7 +296,7 @@ class SASR_StandardTrooper
 // COMMON TAGE LOADOUT ITEMS
 	
 #define TAGE_BACKPACK_ESSENTIALS		 \
-	LOADOUT_ITEM(A3_GPNVG18b_BLK_F, 1)   \
+	LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1)   \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
 	LOADOUT_ITEM(ACE_CableTie, 8)        \
 	
