@@ -367,9 +367,9 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
                 };
 				class SOCOMD_Uniforms_ToggleSnow
                 {
-                    displayName = "Toggle Snow Uniform"
+                    displayName = "Toggle Snow Uniform";
                     condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
-                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
@@ -1132,9 +1132,9 @@ class SOCOMD_Interactive_QStore_OldNew : Land_PaperBox_closed_F
                 };
 				class SOCOMD_Uniforms_ToggleSnow
                 {
-                    displayName = "Toggle Snow Uniform"
+                    displayName = "Toggle Snow Uniform";
                     condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
-                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
@@ -1936,9 +1936,9 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
                 };
 				class SOCOMD_Uniforms_ToggleSnow
                 {
-                    displayName = "Toggle Snow Uniform"
+                    displayName = "Toggle Snow Uniform";
                     condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
-                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
@@ -2492,9 +2492,9 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
                 };
 				class SOCOMD_Uniforms_ToggleSnow
                 {
-                    displayName = "Toggle Snow Uniform"
+                    displayName = "Toggle Snow Uniform";
                     condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
-                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow"
+                    statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };

@@ -265,7 +265,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 		class adf_008 : adf_001 {};
 		class adf_009 : adf_001 {};
 		class adf_010 : adf_001 {};
-	}
+	};
 
 	class TransportMagazines
 	{

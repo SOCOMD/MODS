@@ -120,23 +120,19 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(murshun_cigs_lighter, 1)\
 	LOADOUT_ITEM(ACE_DAGR, 1)			 \
 	LOADOUT_ITEM(hlc_acc_DBALPL, 1)		 \
-	LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)	 \
-	
-	//LOADOUT_ITEM(Chemlight_blue, 2)      \
+	LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
 	
 #define SASR_BACKPACK_ESSENTIALS		 \
 	LOADOUT_ITEM(NVGoggles_WP, 1)        \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
-	LOADOUT_ITEM(ACE_CableTie, 4)        \
+	LOADOUT_ITEM(ACE_CableTie, 4)
 	
 #define SASR_VEST_ESSENTIALS             \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
 	LOADOUT_ITEM(ACE_M84, 2)             \
 	LOADOUT_ITEM(SmokeShell, 5)          \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
-	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)  \
-	//LOADOUT_ITEM(SmokeShellRed, 2)       \
-	//LOADOUT_ITEM(SmokeShellGreen, 2)
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
 #define JAC_ESSENTIALS                   \
 	LOADOUT_ITEM(ItemcTabHCam, 1)        \
@@ -157,37 +153,32 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ACE_morphine, 2)       \
 	LOADOUT_ITEM(ACE_epinephrine, 2)
 	
-	
-	
-	
-	
-	
 //////////////////////////////////////////////////////////////////////
 //SASR Individual loadout common items
 //////////////////////////////////////////////////////////////////////
 //Troop Leader
 
-#define Troop_Leader_Uniform						\
-	LOADOUT_ITEM(Laserbatteries, 2)					\
+#define Troop_Leader_Uniform \
+	LOADOUT_ITEM(Laserbatteries, 2)
 	
 #define Troop_Leader_Vest							\
 	LOADOUT_ITEM(ACRE_PRC152, 1)					\
 	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)
 	
 #define Troop_Leader_Backpack						\
 	LOADOUT_ITEM(ACRE_PRC117F, 1)					\
 	LOADOUT_ITEM(SmokeShellGreen, 2)				\
 	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)			\
 	LOADOUT_ITEM(UGL_FlareRed_F, 2)					\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)	\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 	
 //////////////////////////////////////////////////////////////////////
 //Patrol Leader
 
 #define PatrolLeader_Vest	\
 	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)
 	
 	
 #define PatrolLeader_Backpack\
@@ -195,30 +186,28 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(SmokeShellGreen, 2)\
 	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
 	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Rifleman
 
 #define Rifleman_Vest\
 	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
-	
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)
 
 //////////////////////////////////////////////////////////////////////
 //2IC
 
 #define Grenadier_Vest\
 	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1, 7)		\
-	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)	\
-	
-	
+	LOADOUT_ITEM(SMA_30Rnd_556x45_M855A1_Tracer, 1)
+
 #define Grenadier_Backpack\
 	LOADOUT_ITEM(ACRE_PRC152, 1)\
 	LOADOUT_ITEM(SmokeShellGreen, 2)\
 	LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)\
 	LOADOUT_ITEM(UGL_FlareRed_F, 2)\
-	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)\
+	LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Sapper
@@ -232,13 +221,13 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)\
 	LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)\
 	LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)\
-	LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)\
+	LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 
 //////////////////////////////////////////////////////////////////////
 //MG
 
 #define MachineGunner_Vest\
-	LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)\
+	LOADOUT_ITEM(SMA_150Rnd_762_M80A1, 5)
 
 //////////////////////////////////////////////////////////////////////
 //Medic
@@ -253,7 +242,7 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ACE_morphine, 10)\
 	LOADOUT_ITEM(ACE_tourniquet, 6)\
 	LOADOUT_ITEM(ACE_salineIV_500, 6)\
-	LOADOUT_ITEM(ACE_personalAidKit, 2)\
+	LOADOUT_ITEM(ACE_personalAidKit, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Marksman
@@ -261,7 +250,7 @@ class SASR_StandardTrooper
 #define Marksman_Vest\
 	LOADOUT_ITEM(ACE_Kestrel4500, 1)\
 	LOADOUT_ITEM(ACE_RangeCard, 1)\
-	LOADOUT_ITEM(20Rnd_762x51_Mag, 8)\
+	LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
 
 //////////////////////////////////////////////////////////////////////
 //Sniper
@@ -270,13 +259,13 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ACE_Kestrel4500, 1)\
 	LOADOUT_ITEM(ACE_RangeCard, 1)\
 	LOADOUT_ITEM(ACRE_PRC152, 1)\
-	LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)\
+	LOADOUT_ITEM(hlc_5rnd_300WM_FMJ_AWM, 9)
 
 #define Sniper_Backpack\
 	LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)\
 	LOADOUT_ITEM(ACE_DefusalKit, 1)\
 	LOADOUT_ITEM(ACE_Clacker, 1)\
-	LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)\
+	LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 
 
 //////////////////////////////////////////////////////////////////////
@@ -284,13 +273,13 @@ class SASR_StandardTrooper
 
 #define MAT_Backpack\
 	LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)\
-	LOADOUT_ITEM(tf47_m3maaws_HE, 1)\
+	LOADOUT_ITEM(tf47_m3maaws_HE, 1)
 
 //////////////////////////////////////////////////////////////////////
 //HAT
 
 #define HAT_Backpack\
-	LOADOUT_ITEM(CUP_Javelin_M, 1)	\
+	LOADOUT_ITEM(CUP_Javelin_M, 1)
 	
 	
 //////////////////////////////////////////////////////////////////////
@@ -299,19 +288,14 @@ class SASR_StandardTrooper
 #define TAGE_BACKPACK_ESSENTIALS		 \
 	LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1)   \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
-	LOADOUT_ITEM(ACE_CableTie, 8)        \
+	LOADOUT_ITEM(ACE_CableTie, 8)
 	
 #define TAGE_VEST_ESSENTIALS             \
 	LOADOUT_ITEM(ACE_M84, 4)             \
 	LOADOUT_ITEM(SmokeShell, 5)          \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
-	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)  \
-	//LOADOUT_ITEM(SmokeShellRed, 2)       \
-	//LOADOUT_ITEM(SmokeShellGreen, 2)
-	
-	
-	
-	
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
 //////////////////////////////////////////////////////////////////////
 // COMMON 2CDO LOADOUT ITEMS
 
@@ -339,11 +323,6 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ACE_M84, 2)     \
 	LOADOUT_ITEM(SmokeShell, 2)  \
 	LOADOUT_ITEM(SmokeShellGreen, 2)
-
-
-
-
-
 
 class CfgLoadouts
 {
@@ -660,7 +639,6 @@ class CfgLoadouts
 				class Inventory
 				{
 					SASR_UNIFORM_ESSENTIALS
-
 				};
 			};
 
@@ -2354,7 +2332,8 @@ class CfgLoadouts
 		class CDO_AT
 		{
 			primary = "SMA_HK416CUSTOMCQBvfg";
-			secondary = "CUP_launch_M72A6" secondaryMagazine = "CUP_M72A6_M";
+			secondary = "CUP_launch_M72A6";
+			secondaryMagazine = "CUP_M72A6_M";
 			handgun = "RH_usp";
 			handgunMagazine = "RH_12Rnd_45cal_usp";
 			headgear = "SOCOMD_MICH_Multi";

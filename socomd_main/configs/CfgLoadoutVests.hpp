@@ -54,7 +54,7 @@ class CfgLoadoutVests
 	class Vest_Medic
     {
         loadoutWhitelist[] = { 
-                "SASR_Medic",
+                "SASR_Medic"
             };
 
     };
