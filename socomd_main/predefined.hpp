@@ -47,20 +47,21 @@
 	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
 	TRANSPORT_ITEM(ACE_bodyBag, 6) \
 	TRANSPORT_ITEM(ACE_CableTie, 6) \
-	TRANSPORT_ITEM(Mask_M40, 6) \
+	TRANSPORT_ITEM(ACE_tourniquet, 6)	\
 	TRANSPORT_ITEM(ACE_fieldDressing, 20) \
 	TRANSPORT_ITEM(ACE_quikclot, 20) \
 	TRANSPORT_ITEM(ACE_elasticBandage, 20) \
 	TRANSPORT_ITEM(ACE_packingBandage, 20) \
 	TRANSPORT_ITEM(ACE_morphine, 10) \
 	TRANSPORT_ITEM(ACE_epinephrine, 10) \
+	TRANSPORT_ITEM(ACE_surgicalKit, 8)\
 	TRANSPORT_ITEM(ACE_bloodIV_500, 5)
 
 #define LandTransportBackpacks \
 	TRANSPORT_BACKPACK(SOCOMD_Backpack_Empty, 1)
 
 #define LandTransportWeapons \
-	TRANSPORT_WEAPON(SMA_HK416CUSTOMCQBvfg, 1)
+	TRANSPORT_WEAPON(SMA_M4afgSTOCK, 1)
 
 ////////////////////////////////////////////////////////////////////////////////
 // AIR LOADOUT	
