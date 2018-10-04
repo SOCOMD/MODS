@@ -142,7 +142,8 @@ class SASR_StandardTrooper
 	LOADOUT_ITEM(ItemcTabHCam, 1)        \
 	LOADOUT_ITEM(ACE_EarPlugs, 1)        \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-	LOADOUT_ITEM(ACE_NVG_Gen4, 1)        \
+	LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1)   \
+	LOADOUT_ITEM(NVGoggles_WP, 1)        \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)  \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
 	LOADOUT_ITEM(ACE_DAGR, 1)            \
@@ -773,7 +774,7 @@ class CfgLoadouts
 			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "ADFU_H_Airframe_Cover_03_MC";
-			binocular = "Binocular";
+			binocular = "Rangefinder";
 			gps = "ItemMicroDAGR";
 
 			class Uniform
@@ -853,7 +854,7 @@ class CfgLoadouts
 
 		class 171AVN_PJ
 		{
-			primary = "SMA_M4MOE_Tan";
+			primary = "SMA_M4afgSTOCK";
 			handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 			handgunMagazine = "11Rnd_45ACP_Mag";
 			headgear = "VSM_oga_OPS_2";
@@ -902,24 +903,34 @@ class CfgLoadouts
 
 			class Uniform
 			{
-				type = "SOCOMD_Uniform_GSuit";
+				type = "SOCOMD_Commando_SleevesDown";
 				class Inventory
 				{
-					JAC_ESSENTIALS
-					JAC_STANDARD_MEDICAL
-
+					
 					LOADOUT_ITEM(H_Watchcap_camo, 1)
 					LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+					
+				};
+			};
+			
+			class Vest
+			{
+				type = "VSM_OGA_OD_Vest_2";
+				class Inventory
+				{
+					
+					JAC_STANDARD_MEDICAL
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 				};
 			};
 
 			class Backpack
 			{
-				type = "Kit_Bag_R_Tan";
+				type = "SOG_BAG_recon_od";
 				class Inventory
 				{
 					LOADOUT_ITEM(ACRE_PRC117F, 1)
+					JAC_ESSENTIALS
 				};
 			};
 		};
