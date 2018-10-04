@@ -67,9 +67,9 @@ class CfgMissions {
 	ADD(CLAFGHANFOB,SOCOMD Clafghan FOB (Restrepo) ,fobs\Clafghan_FOB.clafghan)
 	ADD(RUHAFOB,SOCOMD Ruha FOB ,fobs\Ruha_FOB.ruha)
 	ADD(HAZARKOTFOB,SOCOMD Hazar-Kot FOB ,fobs\Hazar_Kot_FOB.MCN_HazarKot)
-	ADD(DIYALAFOB, SOCOMD Diyala FOB, fobs\Diyala_FOB.DYA)
-	ADD(IHANTALAFOB, SOCOMD Ihantala FOB, fobs\Ihantala_FOB.tem_ihantala)
-	ADD(PULAULHD, SOCOMD Pulau LHD (HMAS Canberra), fobs\Pulau_LHD_HMAS_Canberra.pulau)
+	ADD(DIYALAFOB,SOCOMD Diyala FOB ,fobs\Diyala_FOB.DYA)
+	ADD(IHANTALAFOB,SOCOMD Ihantala FOB ,fobs\Ihantala_FOB.tem_ihantala)
+	ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberrs),fobs\Pulau_LHD_HMAS_Canberra.pulau)
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
