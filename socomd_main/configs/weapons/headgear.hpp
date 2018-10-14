@@ -699,7 +699,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (tan)";
+		displayName="Airframe (Tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -732,7 +732,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (tan)";
+		displayName="Airframe (Tan)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -831,7 +831,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (OD) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (OD)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{
@@ -864,7 +864,7 @@
 		dlc="ADFU";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Airframe (OD) [Cover/Headphones/Attachments/Camera]";
+		displayName="Airframe (OD)";
 		picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 		hiddenSelections[]=
 		{

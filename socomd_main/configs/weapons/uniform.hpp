@@ -245,3 +245,19 @@ class SOCOMD_Commando_DPCU_OD_SleevesUp : ADFU_G3_MC_Rolled {
 			mass=40;
 		};
 };
+class survival_uniform_black: Uniform_Base
+{
+	author="SOCOMD";
+	scope=2;
+	displayName="SOCOMD Survival Fatigues";
+	picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_tshirt_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="SOCOMD_Survival";
+		containerClass="Supply40";
+		uniformType="Neopren";
+		mass=60;
+	};
+};

@@ -106,7 +106,6 @@ class CfgPatches
 			"SOCOMD_Interactive_QStore",
 			"SOCOMD_TAGE_Interactive_QStore",
 			"SOCOMD_Interactive_QStore_OldSchool",
-			"SOCOMD_Interactive_QStore_OldNew",
 			"SOCOMD_Interactive_QStore_Green",
 			"SOCOMD_Personal_box",
 			"SOCOMD_Training_box",
