@@ -180,7 +180,7 @@ class SASR_StandardTrooper
 //Troop Leader
 
 #define Troop_Leader_Uniform						\
-	LOADOUT_ITEM(Laserbatteries, 2)					\
+	LOADOUT_ITEM(Laserbatteries, 2)					
 	
 #define Troop_Leader_Vest							\
 	LOADOUT_ITEM(ACRE_PRC152, 1)					\
