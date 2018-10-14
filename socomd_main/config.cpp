@@ -112,6 +112,7 @@ class CfgPatches
 			"SOCOMD_UAV_crate",
 			"SOCOMD_Supply_Crate",
 			"SOCOMD_Ammo_Box",
+			"SOCOMD_Vehicle_Ammo_Box",
 			"SOCOMD_Medical_Box",
 			"SOCOMD_cargonet",
 			"SOCOMD_Gustav_Box",

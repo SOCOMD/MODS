@@ -163,7 +163,7 @@ class SASR_StandardTrooper
 #define TAGE_BACKPACK_ESSENTIALS		 \
 	LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1)   \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
-	LOADOUT_ITEM(ACE_CableTie, 8)        \
+	LOADOUT_ITEM(ACE_CableTie, 8)        
 	
 #define TAGE_VEST_ESSENTIALS             \
 	LOADOUT_ITEM(ACE_M84, 4)             \
