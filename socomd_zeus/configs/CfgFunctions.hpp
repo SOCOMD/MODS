@@ -42,6 +42,7 @@ class CfgFunctions
 			class ModuleToggleTranslator {};
 			class ModuleCopyClipboardLoadout {};
 			class ModulePasteClipboardLoadout {};
+			class ModuleFlatten {};
 		};
 	};
 };

@@ -12,7 +12,8 @@ class CfgPatches
 			"SOCOMD_Module_ToggleUndercover",
 			"SOCOMD_Module_ToggleTranslator",
 			"SOCOMD_Module_CopyClipboardLoadout",
-			"SOCOMD_Module_PasteClipboardLoadout"
+			"SOCOMD_Module_PasteClipboardLoadout",
+			"SOCOMD_Module_Flatten"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;

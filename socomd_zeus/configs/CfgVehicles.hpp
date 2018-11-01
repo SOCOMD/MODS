@@ -84,4 +84,14 @@ class CfgVehicles
         displayName = "Paste Loadout";
         function = "SOCOMD_fnc_ModulePasteClipboardLoadout";
     };
+
+	class SOCOMD_Module_Flatten : SOCOMD_Module_Base
+    {
+        scopeCurator = 2;
+        isGlobal = 1;
+
+        _generalMacro = "SOCOMD_Module_Flatten";
+        displayName = "Flatten";
+        function = "SOCOMD_fnc_ModuleFlatten";
+    };
 };
