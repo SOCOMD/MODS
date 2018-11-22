@@ -38,7 +38,7 @@ ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
 ace_common_settingProgressBarLocation = 1;
 force force ace_noradio_enabled = true;
-ace_parachute_hideAltimeter = true;
+force force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
 force force ace_cookoff_ammoCookoffDuration = 1;
@@ -56,7 +56,7 @@ force force ace_explosives_requireSpecialist = false;
 force force ace_frag_enabled = true;
 force force ace_frag_maxTrack = 10;
 force force ace_frag_maxTrackPerFrame = 10;
-force force ace_frag_reflectionsEnabled = true;
+force force ace_frag_reflectionsEnabled = false;
 force force ace_frag_spallEnabled = true;
 
 // ACE Goggles
@@ -65,15 +65,15 @@ ace_goggles_showInThirdPerson = false;
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
-ace_hearing_disableEarRinging = false;
-force force ace_hearing_earplugsVolume = 0.5;
+force force ace_hearing_disableEarRinging = false;
+force force ace_hearing_earplugsVolume = 1.0;
 force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
 force force ace_hearing_unconsciousnessVolume = 0.2;
 
 // ACE Interaction
 force force ace_interaction_disableNegativeRating = true;
-ace_interaction_enableMagazinePassing = true;
+force force ace_interaction_enableMagazinePassing = true;
 force force ace_interaction_enableTeamManagement = true;
 
 // ACE Interaction Menu
@@ -104,7 +104,7 @@ force force ace_refuel_rate = 1;
 force force ace_repair_addSpareParts = true;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
 force force ace_repair_consumeItem_toolKit = 1;
-ace_repair_displayTextOnRepair = false;
+force force ace_repair_displayTextOnRepair = false;
 force force ace_repair_engineerSetting_fullRepair = 0;
 force force ace_repair_engineerSetting_repair = 0;
 force force ace_repair_engineerSetting_wheel = 0;
@@ -129,7 +129,7 @@ force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = true;
 force force ace_map_mapShake = true;
 force force ace_map_mapShowCursorCoordinates = false;
-ace_markers_moveRestriction = 0;
+force force ace_markers_moveRestriction = 0;
 
 // ACE Map Gestures
 ace_map_gestures_defaultColor = [1,0.720811,0,0.503564];
@@ -140,8 +140,8 @@ force force ace_map_gestures_maxRange = 10;
 ace_map_gestures_nameTextColor = [0,0,0,1];
 
 // ACE Map Tools
-ace_maptools_drawStraightLines = true;
-ace_maptools_rotateModifierKey = 1;
+force force ace_maptools_drawStraightLines = true;
+force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
@@ -214,14 +214,14 @@ force force ace_nightvision_disableNVGsWithSights = false;
 force force ace_nightvision_effectScaling = 0.5;
 force force ace_nightvision_fogScaling = 0.5;
 force force ace_nightvision_noiseScaling = 0.2;
-ace_nightvision_shutterEffects = true;
+force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
-ace_overheating_displayTextOnJam = false;
+force force ace_overheating_displayTextOnJam = false;
 force force ace_overheating_enabled = true;
 force force ace_overheating_overheatingDispersion = true;
-ace_overheating_showParticleEffects = true;
-ace_overheating_showParticleEffectsForEveryone = false;
+force force ace_overheating_showParticleEffects = true;
+force force ace_overheating_showParticleEffectsForEveryone = false;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_unJamOnreload = false;
 
@@ -242,7 +242,7 @@ force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
 force force ace_quickmount_distance = 3;
-ace_quickmount_enabled = false;
+force force ace_quickmount_enabled = false;
 ace_quickmount_priority = 0;
 force force ace_quickmount_speed = 18;
 
@@ -356,7 +356,7 @@ force force ace_winddeflection_simulationInterval = 0.05;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
-force force ace_zeus_autoAddObjects = false;
+force force ace_zeus_autoAddObjects = true;
 force force ace_zeus_radioOrdnance = false;
 force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
@@ -404,7 +404,7 @@ Achilles_var_moduleTreeDLC = true;
 Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
-force force acre_sys_core_fullDuplex = false;
+force force acre_sys_core_fullDuplex = true;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = true;
 acre_sys_core_postmixGlobalVolume = 1;
@@ -431,7 +431,7 @@ force force RydFFE_FoAccGain = 1;
 force force RydFFE_FOClass_string = "i_spotter_f, o_spotter_f, b_spotter_f, o_recon_jtac_f, b_recon_jtac_f, i_sniper_f, o_sniper_f, b_sniper_f, i_soldier_m_f, o_soldier_m_f, b_g_soldier_m_f, b_soldier_m_f, o_recon_m_f, b_recon_m_f, o_soldieru_m_f, i_uav_01_f, i_uav_02_cas_f, i_uav_02_f, o_uav_01_f, o_uav_02_cas_f, o_uav_02_f, b_uav_01_f, b_uav_02_cas_f, b_uav_02_f";
 force force RydFFE_Monogamy = true;
 force force RydFFE_OnePhase = true;
-force force RydFFE_Safe = 200;
+force force RydFFE_Safe = 100;
 force force RydFFE_ShellView = false;
 
 // NIArms
@@ -459,17 +459,17 @@ force force VCM_AIDISTANCEVEHPATH = 100;
 force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
 force force VCM_ARTYENABLE = true;
-force force VCM_ARTYSPREAD = 400;
+force force VCM_ARTYSPREAD = 300;
 force force VCM_Debug = false;
 force force VCM_ForceSpeed = false;
 force force VCM_FRMCHANGE = true;
-force force VCM_HEARINGDISTANCE = 500;
+force force VCM_HEARINGDISTANCE = 800;
 force force VCM_MINECHANCE = 5;
-force force VCM_RAGDOLL = true;
+force force VCM_RAGDOLL = false;
 force force VCM_RAGDOLLCHC = 50;
 force force VCM_SIDEENABLED = [WEST,EAST,GUER];
-force force force force VCM_SKILLCHANGE = true;
+force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 5;
 force force VCM_StealVeh = false;
 force force VCM_WARNDELAY = 300;
-force force VCM_WARNDIST = 800;
+force force VCM_WARNDIST = 1000;
