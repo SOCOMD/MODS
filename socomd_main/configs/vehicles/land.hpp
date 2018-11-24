@@ -1011,6 +1011,112 @@ class SOCOMD_MTVR_Repair : CUP_B_MTVR_Repair_USA
 	};
 };
 
+class APC_Wheeled_03_base_F;
+
+class I_APC_Wheeled_03_base_F : APC_Wheeled_03_base_F {
+	class TextureSources;
+	class AnimationSources;
+};
+
+class I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_base_F {
+	class AnimationSources : AnimationSources {
+		class showCamonetHull;
+		class showBags;
+		class showBags2;
+		class showTools;
+		class showSLATHull;
+	};
+};
+
+class SOCOMD_BOXER : I_APC_Wheeled_03_cannon_F {
+	scope = public;
+	scopeCurator = public;
+	side = WEST;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "8x8 Boxer";
+	faction = "SOCOMD_CMD";
+	vehicleclass = "Armored";
+	crew = "SOCOMD_Medic";
+	typicalCargo[] = {"SOCOMD_Medic"};
+
+	textureList[] = {"SOCOMD", 1};
+
+	class TextureSources : TextureSources {
+		class SOCOMD {
+			displayName = "SOCOMD";
+			author = AUTHOR_STR;
+			textures[] = {
+				"socomd_data\boxer\APC_Wheeled_03_Ext_CO.paa",
+				"socomd_data\boxer\APC_Wheeled_03_Ext2_CO.paa",
+				"socomd_data\boxer\RCWS30_CO.paa",
+				"socomd_data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+				"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+				"A3\armor_f\data\cage_sand_co.paa"
+			};
+			faction[] = {"BLU_F_F","OPF_G_F","IND_G_F"};
+		};
+	};
+
+	hiddenSelections[] = {
+		"camo1",
+		"camo2",
+		"camo3",
+		"camo4",
+		"CamoNet",
+		"CamoSlat"
+	};
+
+	hiddenSelectionsTextures[] = {
+		"socomd_data\boxer\APC_Wheeled_03_Ext_CO.paa",
+		"socomd_data\boxer\APC_Wheeled_03_Ext2_CO.paa",
+		"socomd_data\boxer\RCWS30_CO.paa",
+		"socomd_data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+		"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+		"A3\armor_f\data\cage_sand_co.paa"
+	};
+
+	animationList[] = {
+		"showCamonetHull",0,
+		"showBags",0,
+		"showBags2",1,
+		"showTools",1,
+		"showSLATHull",0
+	};
+
+	class AnimationSources : AnimationSources {
+		class showBags2 : showBags2 {
+			initPhase = 1;
+		};
+
+		class showTools : showTools {
+			initPhase = 1;
+		};
+	};
+};
+
+class SOCOMD_BOXER_SLAT : SOCOMD_BOXER {
+	scope = public;
+	scopeCurator = public;
+	side = WEST;
+	forceInGarage = 1;
+	displayname = "8x8 Boxer (Slats)";
+
+	animationList[] = {
+		"showCamonetHull",0,
+		"showBags",0,
+		"showBags2",1,
+		"showTools",1,
+		"showSLATHull",1
+	};
+
+	class AnimationSources : AnimationSources {
+		class showSLATHull : showSLATHull {
+			initPhase = 1;
+		};
+	};
+};
+
 ////////////////////////////////////////////////////////////////////////////////
 // ASLAV
 
@@ -1649,3 +1755,5 @@ class SOCOMD_BIKE : BIKE_BASE
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 };
+
+
