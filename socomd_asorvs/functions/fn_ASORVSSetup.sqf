@@ -34,6 +34,8 @@ _aircraftRotaryClasses = [
 _vehicleClasses = [
 	//"SOCOMD_ASLAV_W",
 	//"SOCOMD_ASLAV_D",
+	"SOCOMD_BOXER",
+	"SOCOMD_BOXER_SLAT",
 	"SOCOMD_JACKAL_HMG_D",
 	"SOCOMD_JACKAL_AGL_D",
 	"SOCOMD_JACKAL_HMG_W",
