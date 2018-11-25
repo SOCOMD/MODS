@@ -52,7 +52,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_TroopLeader
 					{
-						displayName = "Troop Leader";
+						displayName = "Platoon Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -61,7 +61,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_PatrolLeader
 					{
-						displayName = "Patrol Leader";
+						displayName = "Section Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -161,7 +161,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 
 				class ACE_SwitchRoleActions171AVN
 				{
-					displayName = "Change Role (171 AVN)";
+					displayName = "Change Role (SUPPORT)";
 					selection = "";
 					distance = 5;
 					condition = 1;
@@ -175,6 +175,15 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Loadout_Crewman
+					{
+						displayName = "Crewman";
+						condition = 1;
+						statement = "[_player, 'SUPPORT_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Loadout_PJ
 					{
 						displayName = "PJ";
@@ -183,7 +192,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				};				
+				};
 			};
 
 			class SOCOMD_Weapons
@@ -778,7 +787,7 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_TroopLeader
 					{
-						displayName = "Troop Leader";
+						displayName = "Platoon Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_TroopLeader_Old'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -787,7 +796,7 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_PatrolLeader
 					{
-						displayName = "Patrol Leader";
+						displayName = "Section Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_PatrolLeader_Old'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -887,7 +896,7 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 
 				class ACE_SwitchRoleActions171AVN
 				{
-					displayName = "Change Role (171 AVN)";
+					displayName = "Change Role (SUPPORT)";
 					selection = "";
 					distance = 5;
 					condition = 1;
@@ -901,6 +910,15 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Loadout_Crewman
+					{
+						displayName = "Crewman";
+						condition = 1;
+						statement = "[_player, 'SUPPORT_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Loadout_PJ
 					{
 						displayName = "PJ";
@@ -909,7 +927,7 @@ class SOCOMD_Interactive_QStore_OldSchool : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				};				
+				};
 			};
 
 			class SOCOMD_Weapons
@@ -1489,7 +1507,7 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
 
 				class ACE_SwitchRoleActions171AVN
 				{
-					displayName = "Change Role (171 AVN)";
+					displayName = "Change Role (SUPPORT)";
 					selection = "";
 					distance = 5;
 					condition = 1;
@@ -1503,6 +1521,15 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Loadout_Crewman
+					{
+						displayName = "Crewman";
+						condition = 1;
+						statement = "[_player, 'SUPPORT_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Loadout_PJ
 					{
 						displayName = "PJ";
@@ -1511,7 +1538,7 @@ class SOCOMD_TAGE_Interactive_QStore : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				};				
+				};
 			};
 
 			class SOCOMD_Weapons
@@ -1648,7 +1675,7 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_TroopLeader
 					{
-						displayName = "Troop Leader";
+						displayName = "Platoon Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_TroopLeader_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -1657,7 +1684,7 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 
 					class SOCOMD_Loadout_PatrolLeader
 					{
-						displayName = "Patrol Leader";
+						displayName = "Section Leader";
 						condition = 1;
 						statement = "[_player, 'SASR_PatrolLeader_Jngl'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
@@ -1757,7 +1784,7 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 
 				class ACE_SwitchRoleActions171AVN
 				{
-					displayName = "Change Role (171 AVN)";
+					displayName = "Change Role (SUPPORT)";
 					selection = "";
 					distance = 5;
 					condition = 1;
@@ -1771,6 +1798,15 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 
+					class SOCOMD_Loadout_Crewman
+					{
+						displayName = "Crewman";
+						condition = 1;
+						statement = "[_player, 'SUPPORT_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+
 					class SOCOMD_Loadout_PJ
 					{
 						displayName = "PJ";
@@ -1779,7 +1815,7 @@ class SOCOMD_Interactive_QStore_Green : Land_PaperBox_closed_F
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
-				};				
+				};
 			};
 
 			class SOCOMD_Weapons

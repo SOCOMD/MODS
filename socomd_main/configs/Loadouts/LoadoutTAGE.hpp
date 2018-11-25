@@ -8,7 +8,7 @@ class TAGE_TroopLeader
 	headgear = "ADFU_H_OpsCore_08_BLK";
 	facewear = "Mask_M40";
 	binocular = "Laserdesignator";
-	gps = "ItemcTab";
+	gps = "ItemAndroid";
 
 	class Uniform
 	{

@@ -8,7 +8,7 @@ class SASR_TroopLeader_Old
 	handgunMagazine = "11Rnd_45ACP_Mag";
 	headgear = "CUP_H_PMC_Cap_Tan";
 	binocular = "Laserdesignator";
-	gps = "ItemcTab";
+	gps = "ItemAndroid";
 
 	class Uniform
 	{

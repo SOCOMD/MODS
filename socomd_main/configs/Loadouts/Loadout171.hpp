@@ -86,3 +86,45 @@ class 171AVN_Pilot
 		};
 	};
 };
+
+class SUPPORT_Crewman {
+	primary = "CUP_smg_MP5A5";
+	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
+	handgunMagazine = "11Rnd_45ACP_Mag";
+	headgear = "H_HelmetCrew_I";
+	binocular = "Binocular";
+	gps = "ItemAndroid";
+
+	class Uniform
+	{
+		type = "SOCOMD_Commando_SleevesDown";
+		class Inventory
+		{
+			
+			LOADOUT_ITEM(H_Watchcap_camo, 1)
+			LOADOUT_ITEM(11Rnd_45ACP_Mag, 4)
+		};
+	};
+	
+	class Vest
+	{
+		type = "VSM_FAPC_Operator_Multicam";
+		class Inventory
+		{
+			
+			JAC_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(CUP_30Rnd_9x19_MP5, 4)
+		};
+	};
+
+	class Backpack
+	{
+		type = "KIT_BAG_MC";
+		class Inventory
+		{
+			LOADOUT_ITEM(ACRE_PRC117F, 1)
+			JAC_ESSENTIALS
+		};
+	};
+};

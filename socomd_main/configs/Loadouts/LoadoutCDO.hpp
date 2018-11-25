@@ -23,7 +23,7 @@ class SASR_TroopLeader
 	handgunMagazine = "11Rnd_45ACP_Mag";
 	headgear = "ADFU_H_Airframe_Cover_03_MC";
 	binocular = "Laserdesignator";
-	gps = "ItemcTab";
+	gps = "ItemAndroid";
 
 	class Uniform
 	{
