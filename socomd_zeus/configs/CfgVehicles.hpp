@@ -94,4 +94,14 @@ class CfgVehicles
         displayName = "Flatten";
         function = "SOCOMD_fnc_ModuleFlatten";
     };
+
+	class SOCOMD_Module_ConvoyGroup : SOCOMD_Module_Base
+    {
+        scopeCurator = 2;
+        isGlobal = 1;
+
+        _generalMacro = "SOCOMD_Module_ConvoyGroup";
+        displayName = "Convoy Group";
+        function = "SOCOMD_fnc_ModuleConvoyGroup";
+    };
 };

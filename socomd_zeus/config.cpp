@@ -4,16 +4,17 @@ class CfgPatches
 {
 	class socomd_zeus
 	{
-		version = 1.0.1;
-		versionStr = "1.0.1";
-		versionAr[] = { 1,0,1 };
+		version = 1.0.2;
+		versionStr = "1.0.2";
+		versionAr[] = { 1,0,2 };
 
 		units[] = {
 			"SOCOMD_Module_ToggleUndercover",
 			"SOCOMD_Module_ToggleTranslator",
 			"SOCOMD_Module_CopyClipboardLoadout",
 			"SOCOMD_Module_PasteClipboardLoadout",
-			"SOCOMD_Module_Flatten"
+			"SOCOMD_Module_Flatten",
+			"SOCOMD_Module_ConvoyGroup"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;

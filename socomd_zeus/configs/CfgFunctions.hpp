@@ -43,6 +43,7 @@ class CfgFunctions
 			class ModuleCopyClipboardLoadout {};
 			class ModulePasteClipboardLoadout {};
 			class ModuleFlatten {};
+			class ModuleConvoyGroup {};
 		};
 	};
 };
