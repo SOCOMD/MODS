@@ -44,6 +44,7 @@ class CfgFunctions
 			class ModulePasteClipboardLoadout {};
 			class ModuleFlatten {};
 			class ModuleConvoyGroup {};
+			class ModuleShowHitPoints {};
 		};
 	};
 };
