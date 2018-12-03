@@ -31,7 +31,7 @@ class CfgVehicles
 				convoyPIDWeights[] = {0.5, 0.0, 1.0};
 
 				// controls working parameters of steering PID controller (Kp, Ki, Kd)
-				steeringPIDWeights[] = { 2.0, 1.0, 0.1 };
+				steeringPIDWeights[] = { 2.0, 0.2, 0.0 };
 
 				// controls working parameters of speed PID controller (Kp, Ki, Kd)
 				speedPIDWeights[] = { 4.0, 0.5, 2.0 };
@@ -43,10 +43,10 @@ class CfgVehicles
 			
 				// prediction ahead is used for both steering and analysing of shape to modify the speed
 				doPredictForward = true;
-				predictForwardRange[] = { 1, 20 };
+				predictForwardRange[] = { 0.5, 18 };
 
 				// steer ahead is a point to steer to, saturated down to given range, in meters
-				steerAheadSaturation[] = { 2, 6 };
+				steerAheadSaturation[] = { 1, 5 };
 			
 				// set method of predicting safe speed
 				// 0 - three angles method
@@ -61,7 +61,7 @@ class CfgVehicles
 				differenceAngleCoef = 1.0;
 			
 				// for how long we allow the vehicle to be not moving, before it replans
-				stuckMaxTime = 0.5;
+				stuckMaxTime = 3.0;
 							
 				// overtaking is part of collision avoidance
 				allowOvertaking = true;
@@ -72,7 +72,7 @@ class CfgVehicles
 			
 				// parameters of predictionMethod = 1
 				maxWheelAngleDiff = 0.2616;
-				minSpeedToKeep = 0.1;
+				minSpeedToKeep = 0.05;
 			
 				// how strong AI will turn when commanded left/right
 				commandTurnFactor = 1.0;
