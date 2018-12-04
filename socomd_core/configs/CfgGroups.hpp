@@ -23,7 +23,7 @@ class CfgGroups
 				class SOCOMD_CMD_Plt
 				{
 					name = "Commando Plt Squad";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -36,7 +36,7 @@ class CfgGroups
 				class SOCOMD_CMD_Section
 				{
 					name = "Commando Section";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -53,7 +53,7 @@ class CfgGroups
 				class SOCOMD_CMD_Sniper_Team
 				{
 					name = "Commando Sniper Team";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -64,7 +64,7 @@ class CfgGroups
 				class SOCOMD_CMD_Weapons_Team
 				{
 					name = "Commando Weapons Team";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -76,7 +76,7 @@ class CfgGroups
 				class SOCOMD_171_Pilots
 				{
 					name = "171 Aviation Pilots";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -87,7 +87,7 @@ class CfgGroups
 				class SOCOMD_CMD_Homesteads
 				{
 					name = "Homesteads";
-					faction = "SOCOMD_CMD";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -106,7 +106,7 @@ class CfgGroups
 				class SOCOMD_SASR_TROOP_HQ
 				{
 					name = "SASR Troop HQ";
-					faction = "SOCOMD_SASR";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 
@@ -119,7 +119,7 @@ class CfgGroups
 				class SOCOMD_SASR_TROOP_PATROL
 				{
 					name = "SASR Troop Patrol";
-					faction = "SOCOMD_SASR";
+					faction = FACTION_STR;
 					side = 1;
 					rarityGroup = 0.75;
 

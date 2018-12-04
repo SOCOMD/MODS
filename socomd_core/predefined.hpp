@@ -16,7 +16,7 @@
 
 //SOCOMD
 #define AUTHOR_STR "SOCOMD Mod"
-#define FACTION_STR "SOCOMD_CMD"
+#define FACTION_STR "SOCOMD"
 #define SOCOMD_PILOT "SOCOMD_Pilot"
 #define SOCOMD_MEDIC "SOCOMD_Medic"
 

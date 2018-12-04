@@ -37,102 +37,80 @@ class Helicopter_Base_H : Helicopter_Base_F {
 // WARRIOR
 
 class B_Heli_Transport_01_F;
-class SOCOMD_WARRIOR_BASE : B_Heli_Transport_01_F {
-	scope = private;
-	scopeCurator = private;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "Warrior (4/8)";
-	
-	vehicleclass = "Air";
-	forceInGarage = 1;
-	driverCanSee = CanSeeAll;
 
-	crew = SOCOMD_PILOT;
-	typicalCargo[] = {SOCOMD_PILOT};
-
-	//INVENTORY
-	LOADOUT_AIR
-
-	class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(B_Parachute, 16)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
+#define WARRIOR_BASE(ID) \
+class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
+	scope = private; \
+	scopeCurator = private; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	displayname = "Warrior (4/8)"; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	driverCanSee = CanSeeAll; \
+	crew = SOCOMD_PILOT; \
+	typicalCargo[] = {SOCOMD_PILOT}; \
+	LOADOUT_AIR \
+	class TransportBackpacks \
+	{ \
+		TRANSPORT_BACKPACK(B_Parachute, 16) \
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	};\
 };
 
-class SOCOMD_WARRIOR_A : SOCOMD_WARRIOR_BASE {
-	scope = public;
-	scopeCurator = public;
-};
-
-class SOCOMD_WARRIOR_B : SOCOMD_WARRIOR_BASE {
-	scope = private;
-	scopeCurator = private;
-};
+WARRIOR_BASE(A)
+WARRIOR_BASE(B)
 
 ////////////////////////////////////////////////////////////////////////////////
 // NOMAD
 
 class B_Heli_Transport_03_F;
-class SOCOMD_NOMAD_BASE :  B_Heli_Transport_03_F {
-	scope = private;
-	scopeCurator = private;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "Nomad (4/18)";
 
-	vehicleclass = "Air";
-	forceInGarage = 1;
-
-	crew = SOCOMD_PILOT;
-	typicalCargo[] = {SOCOMD_PILOT};
-	
-	//INVENTORY
-	LOADOUT_AIR
-
-	class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(B_Parachute, 30)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
+#define NOMAD_BASE(ID) \
+class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
+	scope = private; \
+	scopeCurator = private; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	displayname = "Nomad (4/18)"; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	crew = SOCOMD_PILOT; \
+	typicalCargo[] = {SOCOMD_PILOT}; \
+	LOADOUT_AIR \
+	class TransportBackpacks \
+	{ \
+		TRANSPORT_BACKPACK(B_Parachute, 30) \
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	}; \
 };
 
-class SOCOMD_NOMAD_A : SOCOMD_NOMAD_BASE {
-	scope = public;
-	scopeCurator = public;
-};
+NOMAD_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // HURRICANE
 
 class B_Heli_Attack_01_dynamicLoadout_F;
-class SOCOMD_HURRICANE_BASE : B_Heli_Attack_01_dynamicLoadout_F {
-	scope = private;
-	scopeCurator = private;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "Hurricane (2/0)";
 
-	vehicleclass = "Air";
-	forceInGarage = 1;
-	
-	crew = SOCOMD_PILOT;
-	typicalCargo[] = {SOCOMD_PILOT};
-
-	//INVENTORY
-	LOADOUT_AIR
-
-	class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
+#define HURRICANE_BASE(ID) \
+class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
+	scope = private; \
+	scopeCurator = private; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	displayname = "Hurricane (2/0)"; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	crew = SOCOMD_PILOT; \
+	typicalCargo[] = {SOCOMD_PILOT}; \
+	LOADOUT_AIR \
+	class TransportBackpacks \
+	{ \
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	}; \
 };
 
-class SOCOMD_HURRICANE_A : SOCOMD_HURRICANE_BASE {
-	scope = public;
-	scopeCurator = public;
-};
+HURRICANE_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY / DRAGONFLY COMMON
@@ -248,70 +226,53 @@ class Heli_Light_01_base_F : Helicopter_Base_H {
 // FIREFLY
 
 class B_Heli_Light_01_F;
-class SOCOMD_FIREFLY_BASE : B_Heli_Light_01_F {
-	scope = private;
-	scopeCurator = private;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "Firefly (2/6)";
 
-	vehicleclass = "Air";
-	forceInGarage = 1;
-	
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
-
-	//Armor Damage
-	armor = 60.0;
-	armorStructural = 1.0;
-	explosionShielding = 1.0;
-
-	//Flight Controls
-	backRotorForceCoef = 0.4;
-
-	//INVENTORY
-	LOADOUT_AIR
-
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_Parachute, 8)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
+#define FIREFLY_BASE(ID) \
+class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
+	scope = private; \
+	scopeCurator = private; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	displayname = "Firefly (2/6)"; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	crew = "SOCOMD_Pilot"; \
+	typicalCargo[] = {"SOCOMD_Pilot"}; \
+	armor = 60.0; \
+	armorStructural = 1.0; \
+	explosionShielding = 1.0; \
+	backRotorForceCoef = 0.4; \
+	LOADOUT_AIR \
+	class TransportBackpacks { \
+		TRANSPORT_BACKPACK(B_Parachute, 8) \
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	};\
 };
 
-class SOCOMD_FIREFLY_A : SOCOMD_FIREFLY_BASE {
-	scope = public;
-	scopeCurator = public;
-};
+FIREFLY_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // DRAGON FLY
 
 class B_Heli_Light_01_dynamicLoadout_F;
-class SOCOMD_DRAGONFLY_BASE : B_Heli_Light_01_dynamicLoadout_F {
-	scope = private;
-	scopeCurator = private;
-	
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "Dragonfly (2/0)";
 
-	vehicleclass = "Air";
-	forceInGarage = 1;
-
-	crew = SOCOMD_PILOT;
-	typicalCargo[] = {SOCOMD_PILOT};
-
-	//INVENTORY
-	LOADOUT_AIR
-
-	class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(B_Parachute, 2)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
+#define DRAGONFLY_BASE(ID) \
+class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
+	scope = private; \
+	scopeCurator = private; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	displayname = "Dragonfly (2/0)"; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	crew = SOCOMD_PILOT; \
+	typicalCargo[] = {SOCOMD_PILOT}; \
+	LOADOUT_AIR \
+	class TransportBackpacks \
+	{ \
+		TRANSPORT_BACKPACK(B_Parachute, 2) \
+		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	}; \
 };
 
-class SOCOMD_DRAGONFLY_A : SOCOMD_DRAGONFLY_BASE {
-	scope = public;
-	scopeCurator = public;
-};
+DRAGONFLY_BASE(A)

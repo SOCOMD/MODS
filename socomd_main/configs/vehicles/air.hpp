@@ -29,6 +29,7 @@ class Helicopter_Base_H : Helicopter_Base_F
 
 	class Turrets : Turrets
 	{
+		class MainTurret;
 		class CopilotTurret;
 	};
 

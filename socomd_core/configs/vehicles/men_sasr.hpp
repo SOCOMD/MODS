@@ -23,7 +23,7 @@ class SOCOMD_SASR_Soldier : B_Soldier_02_f
 {
 	scope 						= protected;
 	side 						= 1;
-	faction 					= "SOCOMD_SASR";
+	faction 					= FACTION_STR;
 	author						= "SOCOMD";
 
 	uniformClass				= "SOCOMD_Commando_SleevesDown";

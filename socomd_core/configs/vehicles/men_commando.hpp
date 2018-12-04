@@ -82,7 +82,7 @@ class SOCOMD_Soldier_LongSleeve : B_Soldier_02_f
 {
 	scope 						= protected;
 	side 						= 1;
-	faction 					= "SOCOMD_CMD";
+	faction 					= FACTION_STR;
 	author						= "SOCOMD";
 	displayName 				= "SOCOMD Solider (Sleeve Down)";
 
@@ -160,7 +160,7 @@ class ADFU_Soldier_MC;
 class SOCOMD_PlatoonLeader : ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_PlatoonLeader";
 	displayName 			= "Platoon Leader";
 	vehicleclass 			= "SOCOMD_Core";
@@ -180,7 +180,7 @@ class SOCOMD_PlatoonLeader : ADFU_Soldier_MC
 class SOCOMD_PlatoonSergeant : ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_PlatoonSergeant";
 	displayName 			= "Platoon Sergeant";
 	vehicleclass 			= "SOCOMD_Core";
@@ -200,7 +200,7 @@ class SOCOMD_PlatoonSergeant : ADFU_Soldier_MC
 class SOCOMD_PlatoonMedic : ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_PlatoonMedic";
 	displayName 			= "Platoon Medic";
 	vehicleclass 			= "SOCOMD_Core";
@@ -220,7 +220,7 @@ class SOCOMD_PlatoonMedic : ADFU_Soldier_MC
 class SOCOMD_PlatoonSignaller : ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_PlatoonSignaller";
 	displayName 			= "Platoon Signaller";
 	vehicleclass 			= "SOCOMD_Core";
@@ -243,7 +243,7 @@ class SOCOMD_PlatoonSignaller : ADFU_Soldier_MC
 class SOCOMD_SectionLeader : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_SectionLeader";
 	displayName 			= "Section Leader";
 	vehicleclass 			= "SOCOMD_Core";
@@ -263,7 +263,7 @@ class SOCOMD_SectionLeader : ADFU_Soldier_MC
 class SOCOMD_2IC : ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_2IC";
 	displayName				= "Section 2IC";
 	vehicleclass 			= "SOCOMD_Core";
@@ -283,7 +283,7 @@ class SOCOMD_2IC : ADFU_Soldier_MC
 class SOCOMD_Sapper : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Sapper";
 	displayName 			= "Section Sapper";
 	vehicleclass 			= "SOCOMD_Core";
@@ -305,7 +305,7 @@ class SOCOMD_Sapper : ADFU_Soldier_MC
 class SOCOMD_Gunner : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Gunner";
 	displayName 			= "Section Gunner";
 	vehicleclass 			= "SOCOMD_Core";
@@ -325,7 +325,7 @@ class SOCOMD_Gunner : ADFU_Soldier_MC
 class SOCOMD_Rifleman : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Rifleman";
 	displayName 			= "Section Rifleman";
 	vehicleclass 			= "SOCOMD_Core";
@@ -345,7 +345,7 @@ class SOCOMD_Rifleman : ADFU_Soldier_MC
 class SOCOMD_Marksman : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Marksman";
 	displayName 			= "Section Marksman";
 	vehicleclass 			= "SOCOMD_Core";
@@ -365,7 +365,7 @@ class SOCOMD_Marksman : ADFU_Soldier_MC
 class SOCOMD_AT : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_AT";
 	displayName 			= "Section AT";
 	vehicleclass 			= "SOCOMD_Core";
@@ -385,7 +385,7 @@ class SOCOMD_AT : ADFU_Soldier_MC
 class SOCOMD_Medic : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Medic";
 	displayName 			= "Section Medic";
 	vehicleclass 			= "SOCOMD_Core";
@@ -408,7 +408,7 @@ class SOCOMD_Medic : ADFU_Soldier_MC
 class SOCOMD_Recon_TeamLeader : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Recon_TeamLeader";
 	displayName 			= "Sniper Team Leader";
 	vehicleclass 			= "SOCOMD_Sniper";
@@ -429,7 +429,7 @@ class SOCOMD_Recon_TeamLeader : ADFU_Soldier_MC
 class SOCOMD_Sniper_Spotter : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Sniper_Spotter";
 	displayName 			= "Sniper Team Spotter";
 	vehicleclass 			= "SOCOMD_Sniper";
@@ -453,7 +453,7 @@ class SOCOMD_Sniper_Spotter : ADFU_Soldier_MC
 class SOCOMD_Weapons_TeamLeader : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Weapons_TeamLeader";
 	displayName 			= "Weapons Team Leader";
 	vehicleclass 			= "SOCOMD_Weapons";
@@ -473,7 +473,7 @@ class SOCOMD_Weapons_TeamLeader : ADFU_Soldier_MC
 class SOCOMD_Weapons_Specialist : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Weapons_Specialist";
 	displayName 			= "Weapons Team Specialist";
 	vehicleclass 			= "SOCOMD_Weapons";
@@ -493,7 +493,7 @@ class SOCOMD_Weapons_Specialist : ADFU_Soldier_MC
 class SOCOMD_Weapons_Assistant : ADFU_Soldier_MC
 {
 	scope 					= public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	_generalMacro 			= "SOCOMD_Weapons_Assistant";
 	displayName 			= "Weapons Team Assistant";
 	vehicleclass 			= "SOCOMD_Weapons";
@@ -554,7 +554,7 @@ class SOCOMD_Crew : SOCOMD_Officer_LongSleeve
 class SOCOMD_Homestead: ADFU_Soldier_MC
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	vehicleclass = "SOCOMD_Core";
 	_generalMacro = "SOCOMD_Homestead";
 	displayName = "Homestead";
@@ -589,7 +589,7 @@ class SOCOMD_Journalist : SOCOMD_Soldier_LongSleeve
 class SOCOMD_Trainer : SOCOMD_Homestead
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	vehicleclass = "SOCOMD_Core";
 	_generalMacro = "SOCOMD_Trainer";
 	displayName = "Trainer";
@@ -599,7 +599,7 @@ class SOCOMD_Trainer : SOCOMD_Homestead
 class SOCOMD_Trainee : SOCOMD_Rifleman
 {
 	scope = public;
-	faction 				= "SOCOMD_CMD";
+	faction 				= FACTION_STR;
 	vehicleclass = "SOCOMD_Core";
 	_generalMacro = "SOCOMD_Trainee";
 	displayName = "Trainee";

@@ -11,6 +11,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 
 		requiredAddons[] = {
+			"socomd_data",
 			"socomd_main"
 		};
 

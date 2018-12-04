@@ -5,7 +5,7 @@ class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "Assault Boat";
-	faction = "SOCOMD_CMD";
+	faction = FACTION_STR;
 	side = WEST;
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";
@@ -74,7 +74,7 @@ class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "RHIB Armed";
-	faction = "SOCOMD_CMD";
+	faction = FACTION_STR;
 	side = WEST;
 	vehicleclass = "Ship";
 	crew = "SOCOMD_Medic";

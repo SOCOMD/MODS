@@ -8,7 +8,7 @@
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "SOCOMD Bushmaster HMG";
-	faction = "SOCOMD_CMD";
+	faction = FACTION_STR;
 	vehicleclass = "Car";
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
@@ -544,7 +544,7 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "Quadbike (1/1)";
-	faction = "SOCOMD_CMD";
+	faction = FACTION_STR;
 	vehicleclass = "Car";
 	crew = SOCOMD_MEDIC;
 	typicalCargo[] = {SOCOMD_MEDIC};
