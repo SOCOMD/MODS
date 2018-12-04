@@ -47,19 +47,16 @@ class B_Heli_Transport_01_F : Heli_Transport_01_base_F {
 	class MFD : SOCOMD_WARRIOR_MFD {};
 };
 
-class SOCOMD_WARRIOR_BASE : B_Heli_Transport_01_F {
-};
-
-class SOCOMD_WARRIOR : SOCOMD_WARRIOR_BASE {
+class SOCOMD_WARRIOR : B_Heli_Transport_01_F {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "Warrior (4/8)";
-	faction = "SOCOMD_CMD";
+	faction = SOCOMD_FACTION;
 	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
+	crew = SOCOMD_PILOT;
+	typicalCargo[] = {SOCOMD_PILOT};
 	driverCanSee = CanSeeAll;
 
 	//INVENTORY
@@ -74,79 +71,22 @@ class SOCOMD_WARRIOR : SOCOMD_WARRIOR_BASE {
 
 ////////////////////////////////////////////////////////////////////////////////
 // NOMAD
-
-class CUP_CH47F_base : Helicopter_Base_H
-{
-
-	class AcreIntercoms : AcreIntercoms
-	{
-		class Intercom_2 : Intercom_1
-		{
-			displayName = "Pax intercom";
-			shortName = "Pax";
-			// Both crew and cargo positions have access to passenger intercom
-			allowedPositions[] = {"crew", {"cargo", "all"}};
-			limitedPositions[] = {};
-			numLimitedPositions = 0;
-			// The intercom initial configuration is disabled upon entering a vehicle
-			connectedByDefault = 0;
-		};
-	};
-
-
-
-};
-
-class CUP_B_CH47F_USA;
-class SOCOMD_CHINOOK : CUP_B_CH47F_USA
-{
+class Heli_Transport_03_base_F;
+class SOCOMD_NOMAD :  Heli_Transport_03_base_F {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "CH-47 Nomad";
-	faction = "SOCOMD_CMD";
+	displayname = "Nomad (4/18)";
+	faction = SOCOMD_FACTION;
 	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
-	hiddenSelectionsTextures[] = {"socomd_data\chinook\ch47_ext_1_co.paa", "socomd_data\chinook\ch47_ext_2_co.paa", "socomd_data\chinook\ch47f_nalepky_ca.paa"};
-
-	/*tf_hasLRradio = 1;
-	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
-
+	crew = SOCOMD_PILOT;
+	typicalCargo[] = {SOCOMD_PILOT};
+	
 	//INVENTORY
 	AirLoadout
 
-		class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(B_Parachute, 30)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
-};
-
-class CUP_B_CH47F_VIV_USA;
-class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
-{
-	scope = public;
-	scopeCurator = public;
-	forceInGarage = 1;
-	author = AUTHOR_STR;
-	displayname = "CH-47 Nomad VIV";
-	faction = "SOCOMD_CMD";
-	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
-	hiddenSelectionsTextures[] = {"socomd_data\chinook\ch47_ext_1_co.paa", "socomd_data\chinook\ch47_ext_2_co.paa", "socomd_data\chinook\ch47f_nalepky_ca.paa"};
-
-	/*tf_hasLRradio = 1;
-	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
-
-	//INVENTORY
-	AirLoadout
-
-		class TransportBackpacks
+	class TransportBackpacks
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 30)
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
@@ -155,107 +95,23 @@ class SOCOMD_CHINOOK_VIV : CUP_B_CH47F_VIV_USA
 
 ////////////////////////////////////////////////////////////////////////////////
 // HURRICANE
-
-class CUP_AH64_base : Helicopter_Base_H
-{
-	class Turrets;
-};
-
-class CUP_AH64D_Base : CUP_AH64_base
-{
-	class Turrets : Turrets
-	{
-		class MainTurret;
-	};
-};
-
-class CUP_AH64D_dynamic_Base : CUP_AH64D_Base
-{
-	class Turrets : Turrets
-	{
-		class MainTurret : MainTurret
-		{
-			class OpticsIn;
-		};
-	};
-};
-
-class CUP_B_AH64D_DL_USA : CUP_AH64D_dynamic_Base
-{
-	class Turrets : Turrets
-	{
-		class MainTurret : MainTurret
-		{
-			class OpticsIn : OpticsIn
-			{
-				class WideNGS;
-				class Wide;
-				class WideL;
-				class Medium;
-				class Narrow;
-				class Narrower;
-			};
-		};
-	};
-};
-
-class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
+class Heli_Attack_01_dynamicLoadout_base_F;
+class SOCOMD_HURRICANE : Heli_Attack_01_dynamicLoadout_base_F
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "AH64D Hurricane";
-	faction = "SOCOMD_CMD";
+	displayname = "Hurricane (2/0)";
+	faction = SOCOMD_FACTION;
 	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
-
-	class Turrets : Turrets
-	{
-		class MainTurret : MainTurret
-		{
-			weapons[] = {"CUP_weapon_mastersafe", "Laserdesignator_mounted", "CUP_Vacannon_M230_veh"};
-			magazines[] = {"CUP_1200Rnd_TE1_Red_Tracer_30x113mm_M789_HEDP_M", "Laserbatteries", "CUP_2Rnd_pylonblank_M", "CUP_2Rnd_pylonblank_M", "CUP_2Rnd_pylonblank_M", "CUP_4Rnd_pylonblank_M", "CUP_4Rnd_pylonblank_M"};
-
-			class OpticsIn : OpticsIn
-			{
-				class WideNGS : WideNGS
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-				class Wide : Wide
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-				class WideL : WideL
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-				class Medium : Medium
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-				class Narrow : Narrow
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-				class Narrower : Narrower
-				{
-					visionMode[] = {"Normal", "NVG", "Ti"};
-				};
-			};
-		};
-	};
-
-	/*tf_hasLRradio = 1;
-	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
+	crew = SOCOMD_PILOT;
+	typicalCargo[] = {SOCOMD_PILOT};
 
 	//INVENTORY
 	AirLoadout
 
-		class TransportBackpacks
+	class TransportBackpacks
 	{
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
 	};
@@ -264,9 +120,9 @@ class SOCOMD_HURRICANE_CAS : CUP_B_AH64D_DL_USA
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY
 
-class CUP_AH6_BASE : Helicopter_Base_H
+class Helicopter_Base_F;
+class Helicopter_Base_H : Helicopter_Base_F
 {
-
 	//Armor Damage
 	armor = 60.0;
 	armorStructural = 1.0;
@@ -275,20 +131,6 @@ class CUP_AH6_BASE : Helicopter_Base_H
 	//Flight Controls
 	backRotorForceCoef = 0.4;
 
-	class AcreIntercoms : AcreIntercoms
-	{
-		class Intercom_2 : Intercom_1
-		{
-			displayName = "Pax intercom";
-			shortName = "Pax";
-			// Both crew and cargo positions have access to passenger intercom
-			allowedPositions[] = {"crew", {"cargo", "all"}};
-			limitedPositions[] = {};
-			numLimitedPositions = 0;
-			// The intercom initial configuration is disabled upon entering a vehicle
-			connectedByDefault = 0;
-		};
-	};
 
 	class HitPoints : HitPoints
 	{
@@ -1266,27 +1108,23 @@ class CUP_AH6_BASE : Helicopter_Base_H
 	};
 };
 
-class CUP_B_MH6M_USA;
-class SOCOMD_FIREFLY : CUP_B_MH6M_USA
+class Heli_Light_01_unarmed_base_F;
+class SOCOMD_FIREFLY : Heli_Light_01_unarmed_base_F
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "MH-6 Firefly";
-	faction = "SOCOMD_CMD";
+	displayname = "Firefly (2/6)";
+	faction = SOCOMD_FACTION;
 	vehicleclass = "Air";
 	crew = "SOCOMD_Pilot";
 	typicalCargo[] = {"SOCOMD_Pilot"};
 
-	/*tf_hasLRradio = 1;
-	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
-
 	//INVENTORY
 	AirLoadout
 
-		class TransportBackpacks
+	class TransportBackpacks
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 8)
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
@@ -1296,18 +1134,18 @@ class SOCOMD_FIREFLY : CUP_B_MH6M_USA
 ////////////////////////////////////////////////////////////////////////////////
 // DRAGONFLY
 
-class CUP_B_AH6M_USA;
-class SOCOMD_DRAGONFLY_127 : CUP_B_AH6M_USA
+class Heli_Light_01_dynamicLoadout_base_F;
+class SOCOMD_DRAGONFLY : Heli_Light_01_dynamicLoadout_base_F
 {
 	scope = public;
 	scopeCurator = public;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
-	displayname = "AH-6 Dragonfly (12.7mm)";
-	faction = "SOCOMD_CMD";
+	displayname = "Dragonfly (2/0)";
+	faction = SOCOMD_FACTION;
 	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
+	crew = SOCOMD_PILOT;
+	typicalCargo[] = {SOCOMD_PILOT};
 
 	/*tf_hasLRradio = 1;
 	tf_isolatedAmount = 0.6;
@@ -1316,33 +1154,7 @@ class SOCOMD_DRAGONFLY_127 : CUP_B_AH6M_USA
 	//INVENTORY
 	AirLoadout
 
-		class TransportBackpacks
-	{
-		TRANSPORT_BACKPACK(B_Parachute, 2)
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)
-	};
-};
-
-class SOCOMD_DRAGONFLY_762 : CUP_B_AH6M_USA
-{
-	scope = public;
-	scopeCurator = public;
-	forceInGarage = 1;
-	author = AUTHOR_STR;
-	displayname = "AH-6 Dragonfly (7.62mm)";
-	faction = "SOCOMD_CMD";
-	vehicleclass = "Air";
-	crew = "SOCOMD_Pilot";
-	typicalCargo[] = {"SOCOMD_Pilot"};
-
-	/*tf_hasLRradio = 1;
-	tf_isolatedAmount = 0.6;
-	tf_range = 40000;*/
-
-	//INVENTORY
-	AirLoadout
-
-		class TransportBackpacks
+	class TransportBackpacks
 	{
 		TRANSPORT_BACKPACK(B_Parachute, 2)
 		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1)

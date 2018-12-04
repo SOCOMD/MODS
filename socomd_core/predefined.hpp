@@ -16,6 +16,9 @@
 
 //SOCOMD
 #define AUTHOR_STR "SOCOMD Mod"
+#define SOCOMD_FACTION "SOCOMD"
+
+#define SOCOMD_PILOT "SOCOMD_Pilot"
 
 //#define true			1
 //#define false			0
