@@ -1,7 +1,7 @@
 
 ///171 Loadouts
 
-class 171AVN_PJ
+class SOCOMD_PJ
 {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -39,7 +39,7 @@ class 171AVN_PJ
 	};
 };
 
-class 171AVN_Pilot
+class SOCOMD_Pilot
 {
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -74,7 +74,7 @@ class 171AVN_Pilot
 	};
 };
 
-class SUPPORT_Crewman {
+class SOCOMD_Crewman {
 	primary = "CUP_smg_MP5A5";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";

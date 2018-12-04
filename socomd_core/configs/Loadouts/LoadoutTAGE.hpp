@@ -1,6 +1,6 @@
 
 ///Counter Terrorism
-class TAGE_TroopLeader {
+class SOCOMD_TroopLeader_TAGE {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -41,7 +41,7 @@ class TAGE_TroopLeader {
 	};
 };
 
-class TAGE_Medic {
+class SOCOMD_Medic_TAGE {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -86,7 +86,7 @@ class TAGE_Medic {
 	};
 };
 
-class TAGE_Sapper {
+class SOCOMD_Sapper_TAGE {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -130,7 +130,7 @@ class TAGE_Sapper {
 	};
 };
 
-class TAGE_Sniper {
+class SOCOMD_Sniper_TAGE {
 	primary = "hlc_rifle_awcovert_BL";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";

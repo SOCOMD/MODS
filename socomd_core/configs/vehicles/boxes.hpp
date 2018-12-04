@@ -54,7 +54,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Platoon Leader";
 						condition = 1;
-						statement = "[_player, 'SASR_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_TroopLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -63,7 +63,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Section Leader";
 						condition = 1;
-						statement = "[_player, 'SASR_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_PatrolLeader'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -72,7 +72,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "2IC";
 						condition = 1;
-						statement = "[_player, 'SASR_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Grenadier'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -81,7 +81,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Rifleman";
 						condition = 1;
-						statement = "[_player, 'SASR_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Rifleman'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -90,7 +90,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Sapper";
 						condition = 1;
-						statement = "[_player, 'SASR_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Sapper'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -99,7 +99,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Machine Gunner";
 						condition = 1;
-						statement = "[_player, 'SASR_MachineGunner'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_MachineGunner'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -108,7 +108,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Medic";
 						condition = 1;
-						statement = "[_player, 'SASR_Medic'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Medic'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -117,7 +117,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Marksman";
 						condition = 1;
-						statement = "[_player, 'SASR_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Marksman'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -126,7 +126,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Sniper";
 						condition = 1;
-						statement = "[_player, 'SASR_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Sniper'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -135,7 +135,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Light Anti-tank";
 						condition = 1;
-						statement = "[_player, 'SASR_LAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_LAT'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -144,7 +144,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Medium Anti-tank";
 						condition = 1;
-						statement = "[_player, 'SASR_MAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_MAT'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -153,7 +153,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Heavy Anti-tank";
 						condition = 1;
-						statement = "[_player, 'SASR_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_HAT'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -170,7 +170,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Pilot";
 						condition = 1;
-						statement = "[_player, '171AVN_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Pilot'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -179,7 +179,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "Crewman";
 						condition = 1;
-						statement = "[_player, 'SUPPORT_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_Crewman'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
@@ -188,7 +188,7 @@ class SOCOMD_Interactive_QStore : Land_PaperBox_closed_F
 					{
 						displayName = "PJ";
 						condition = 1;
-						statement = "[_player, '171AVN_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
+						statement = "[_player, 'SOCOMD_PJ'] call SOCOMD_fnc_SwitchUnitLoadout";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
