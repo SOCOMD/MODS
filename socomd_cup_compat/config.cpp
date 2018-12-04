@@ -9,9 +9,9 @@ class CfgPatches
 		versionAr[] = { 1,0,0 };
 
 		requiredVersion = 0.1;
-		
+
 		requiredAddons[] = {
-			"socomd_main",
+			"socomd_main"
 		};
 
 		units[] = {};
@@ -20,3 +20,5 @@ class CfgPatches
 		magazines[] = {};
 	};
 };
+
+#include "configs\CfgVehicles.hpp"

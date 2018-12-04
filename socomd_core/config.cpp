@@ -26,7 +26,7 @@ class CfgPatches
 			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
-			"ace_huntir",
+			"ace_huntir"
 		};
 
 		//SOCOMD Custom Units
@@ -66,6 +66,7 @@ class CfgPatches
 			"socomd_nds_6x6_atv_mil2",
 
 			// AIR
+			"SOCOMD_WARRIOR",
 			"SOCOMD_BLACKHAWK",
 			"SOCOMD_BLACKHAWK_FFV",
 			"SOCOMD_BLACKHAWK_MEV",
@@ -189,6 +190,7 @@ class CfgUnitInsignia
 	};
 	
 };
+
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
