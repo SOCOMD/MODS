@@ -19,22 +19,22 @@
 
 	class TransportMagazines 
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems 
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks 
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons 
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };*/
 
@@ -233,22 +233,22 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F
 
 	class TransportMagazines
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 
@@ -303,22 +303,22 @@ class SOCOMD_TROOP_TRUCK : B_Truck_01_mover_F
 
 	class TransportMagazines
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 
@@ -337,22 +337,22 @@ class SOCOMD_AMMO_TRUCK : B_Truck_01_ammo_F
 
 	class TransportMagazines
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 
@@ -372,22 +372,22 @@ class SOCOMD_FUEL_TRUCK : B_Truck_01_fuel_F
 
 	class TransportMagazines
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 
@@ -407,22 +407,22 @@ class SOCOMD_REPAIR_TRUCK : B_Truck_01_Repair_F
 
 	class TransportMagazines
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 

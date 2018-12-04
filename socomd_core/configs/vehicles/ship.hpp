@@ -47,22 +47,22 @@ class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 
 	class TransportMagazines 
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems 
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks 
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons 
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };
 
@@ -105,21 +105,21 @@ class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC
 
 	class TransportMagazines 
 	{
-		LandTransportMagazines
+		LOADOUT_LAND_TRANSPORT_MAGAZINES
 	};
 
 	class TransportItems 
 	{
-		LandTransportItems
+		LOADOUT_LAND_TRANSPORT_ITEMS
 	};
 
 	class TransportBackpacks 
 	{
-		LandTransportBackpacks
+		LOADOUT_LAND_TRANSPORT_BACKPACKS
 	};
 
 	class TransportWeapons 
 	{
-		LandTransportWeapons
+		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
 };

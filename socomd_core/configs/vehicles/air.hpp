@@ -52,7 +52,7 @@ class SOCOMD_WARRIOR_BASE : B_Heli_Transport_01_F {
 	typicalCargo[] = {SOCOMD_PILOT};
 
 	//INVENTORY
-	AirLoadout
+	LOADOUT_AIR
 
 	class TransportBackpacks
 	{
@@ -89,7 +89,7 @@ class SOCOMD_NOMAD_BASE :  B_Heli_Transport_03_F {
 	typicalCargo[] = {SOCOMD_PILOT};
 	
 	//INVENTORY
-	AirLoadout
+	LOADOUT_AIR
 
 	class TransportBackpacks
 	{
@@ -121,7 +121,7 @@ class SOCOMD_HURRICANE_BASE : B_Heli_Attack_01_dynamicLoadout_F {
 	typicalCargo[] = {SOCOMD_PILOT};
 
 	//INVENTORY
-	AirLoadout
+	LOADOUT_AIR
 
 	class TransportBackpacks
 	{
@@ -270,7 +270,7 @@ class SOCOMD_FIREFLY_BASE : B_Heli_Light_01_F {
 	backRotorForceCoef = 0.4;
 
 	//INVENTORY
-	AirLoadout
+	LOADOUT_AIR
 
 	class TransportBackpacks {
 		TRANSPORT_BACKPACK(B_Parachute, 8)
@@ -302,7 +302,7 @@ class SOCOMD_DRAGONFLY_BASE : B_Heli_Light_01_dynamicLoadout_F {
 	typicalCargo[] = {SOCOMD_PILOT};
 
 	//INVENTORY
-	AirLoadout
+	LOADOUT_AIR
 
 	class TransportBackpacks
 	{

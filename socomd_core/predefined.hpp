@@ -36,14 +36,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 // LAND LOADOUT
 
-#define LandTransportMagazines \
+#define LOADOUT_LAND_TRANSPORT_MAGAZINES \
 	TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1, 12) \
 	TRANSPORT_MAGAZINE(SMA_20Rnd_762x51mm_M80A1_EPR, 3) \
 	TRANSPORT_MAGAZINE(SMA_150Rnd_762_M80A1, 2) \
 	TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
 	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
-#define LandTransportItems \
+#define LOADOUT_LAND_TRANSPORT_ITEMS \
 	TRANSPORT_ITEM(ACRE_PRC152, 1) \
 	TRANSPORT_ITEM(ToolKit, 1) \
 	TRANSPORT_ITEM(ACE_wirecutter, 1) \
@@ -60,16 +60,16 @@
 	TRANSPORT_ITEM(ACE_surgicalKit, 8)\
 	TRANSPORT_ITEM(ACE_bloodIV_500, 5)
 
-#define LandTransportBackpacks \
+#define LOADOUT_LAND_TRANSPORT_BACKPACKS \
 	TRANSPORT_BACKPACK(SOCOMD_Backpack_Empty, 1)
 
-#define LandTransportWeapons \
+#define LOADOUT_LAND_TRANSPORT_WEAPONS \
 	TRANSPORT_WEAPON(SMA_M4afgSTOCK, 1)
 
 ////////////////////////////////////////////////////////////////////////////////
 // AIR LOADOUT	
 
-#define AirLoadout \
+#define LOADOUT_AIR \
 	class TransportMagazines \
 	{ \
 		TRANSPORT_MAGAZINE(SMA_30Rnd_556x45_M855A1, 12) \
