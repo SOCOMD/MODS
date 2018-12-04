@@ -11,3 +11,4 @@ start /D %projectDir% makepbo.exe -N -P socomd_zeus %modOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_data %modOutput%
 start /D %projectDir% makepbo.exe -N -P ar_advancedrappelling %modOutput%
 start /D %projectDir% makepbo.exe -N -P sa_advancedslingloading %modOutput%
+start /D %projectDir% makepbo.exe -N -P socomd_rhs_compat %modOutput%
