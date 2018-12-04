@@ -18,13 +18,14 @@ class B_Kitbag_mcamo;
 class SOCOMD_LongRange_Radio : B_Kitbag_mcamo
 {
 	scope = public;
-	displayName = "SOCOMD PRC117F Radio Backpack";
+	displayName = "SOCOMD Radio Backpack";
 	maximumLoad = 400;
 	mass = 10;
 
 	class TransportItems 
 	{
-		TRANSPORT_ITEM(ACRE_PRC117F, 1)
+		// insert radio item here
+		//TRANSPORT_ITEM(ACRE_PRC117F, 1)
 	};
 };
 	

@@ -1,7 +1,7 @@
 
 ///Desert Auscam Loadouts
 
-class SASR_TroopLeader_Old
+class SOCOMD_TroopLeader_Desert
 {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -43,7 +43,7 @@ class SASR_TroopLeader_Old
 	};
 };
 
-class SASR_PatrolLeader_Old
+class SOCOMD_PatrolLeader_Desert
 {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -84,7 +84,7 @@ class SASR_PatrolLeader_Old
 	};
 };
 
-class SASR_Rifleman_Old
+class SOCOMD_Rifleman_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -123,7 +123,7 @@ class SASR_Rifleman_Old
 	};
 };
 
-class SASR_Grenadier_Old
+class SOCOMD_Grenadier_Desert
 {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -165,7 +165,7 @@ class SASR_Grenadier_Old
 	};			
 };
 
-class SASR_Sapper_Old
+class SOCOMD_Sapper_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -207,7 +207,7 @@ class SASR_Sapper_Old
 	};
 };
 
-class SASR_MachineGunner_Old
+class SOCOMD_MachineGunner_Desert
 {
 	primary = "sma_minimi_mk3_762tsb";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -246,7 +246,7 @@ class SASR_MachineGunner_Old
 	};
 };
 
-class SASR_Medic_Old
+class SOCOMD_Medic_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -287,7 +287,7 @@ class SASR_Medic_Old
 	};
 };
 
-class SASR_Marksman_Old
+class SOCOMD_Marksman_Desert
 {
 	primary = "SMA_HK417_16in";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -327,7 +327,7 @@ class SASR_Marksman_Old
 	};
 };
 
-class SASR_Sniper_Old
+class SOCOMD_Sniper_Desert
 {
 	primary = "hlc_rifle_awmagnum";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -372,7 +372,7 @@ class SASR_Sniper_Old
 	};
 };
 
-class SASR_LAT_Old
+class SOCOMD_LAT_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "HAFM_LAW";
@@ -412,7 +412,7 @@ class SASR_LAT_Old
 	};
 };
 
-class SASR_MAT_Old
+class SOCOMD_MAT_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "SOCOMD_Carl_Gustav";
@@ -454,7 +454,7 @@ class SASR_MAT_Old
 	};
 };
 
-class SASR_HAT_Old
+class SOCOMD_HAT_Desert
 {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "CUP_launch_Javelin";

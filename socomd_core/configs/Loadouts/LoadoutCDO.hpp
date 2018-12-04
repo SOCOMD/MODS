@@ -1,6 +1,6 @@
 ///Standard SOCOMD
 
-class SASR_Trooper
+class SOCOMD_Trooper
 {
 	headgear = "AU_02_780000_v1";
 	binocular = "Rangefinder";
@@ -13,7 +13,7 @@ class SASR_Trooper
 	};
 };
 
-class SASR_TroopLeader {
+class SOCOMD_TroopLeader {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -48,7 +48,7 @@ class SASR_TroopLeader {
 	};
 };
 
-class SASR_PatrolLeader {
+class SOCOMD_PatrolLeader {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -83,7 +83,7 @@ class SASR_PatrolLeader {
 	};
 };
 
-class SASR_Rifleman {
+class SOCOMD_Rifleman {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -115,7 +115,7 @@ class SASR_Rifleman {
 	};
 };
 
-class SASR_Grenadier {
+class SOCOMD_Grenadier {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -149,7 +149,7 @@ class SASR_Grenadier {
 	};			
 };
 
-class SASR_Sapper {
+class SOCOMD_Sapper {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -183,7 +183,7 @@ class SASR_Sapper {
 	};
 };
 
-class SASR_MachineGunner {
+class SOCOMD_MachineGunner {
 	primary = "sma_minimi_mk3_762tsb";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -215,7 +215,7 @@ class SASR_MachineGunner {
 	};
 };
 
-class SASR_Medic {
+class SOCOMD_Medic {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -247,7 +247,7 @@ class SASR_Medic {
 	};
 };
 
-class SASR_Marksman {
+class SOCOMD_Marksman {
 	primary = "SMA_HK417_16in";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -280,7 +280,7 @@ class SASR_Marksman {
 	};
 };
 
-class SASR_Sniper {
+class SOCOMD_Sniper {
 	primary = "hlc_rifle_awmagnum";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -316,7 +316,7 @@ class SASR_Sniper {
 	};
 };
 
-class SASR_LAT {
+class SOCOMD_LAT {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "HAFM_LAW";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -348,7 +348,7 @@ class SASR_LAT {
 	};
 };
 
-class SASR_MAT {
+class SOCOMD_MAT {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "SOCOMD_Carl_Gustav";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -383,7 +383,7 @@ class SASR_MAT {
 	};
 };
 
-class SASR_HAT
+class SOCOMD_HAT
 {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "CUP_launch_Javelin";
