@@ -16,6 +16,7 @@
 
 //SOCOMD
 #define AUTHOR_STR "SOCOMD Mod"
+#define FACTION_STR "SOCOMD_CMD"
 
 //#define true			1
 //#define false			0

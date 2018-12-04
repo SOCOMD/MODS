@@ -150,8 +150,7 @@ class CfgVehicles
 	//FLAGS
 	class FLAG_NATO_F;
 	class FLAG_CSAT_F;
-		
-	#include "vehicles\mfd.hpp"
+
 	#include "vehicles\fixes.hpp"
 	#include "vehicles\land.hpp"
 	#include "vehicles\air.hpp"
