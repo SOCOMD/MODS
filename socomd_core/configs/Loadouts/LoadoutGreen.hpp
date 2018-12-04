@@ -1,8 +1,7 @@
 
 ///Green Auscam Loadouts
 
-class SASR_TroopLeader_Jngl
-{
+class SASR_TroopLeader_Jngl {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -10,42 +9,36 @@ class SASR_TroopLeader_Jngl
 	binocular = "Laserdesignator";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 
-			Troop_Leader_Uniform
+			LOADOUT_TROOP_LEADER_UNIFORM
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_comms_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Troop_Leader_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_TROOP_LEADER_VEST
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "Kit_Bag_R_od";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 			
-			Troop_Leader_Backpack
+			LOADOUT_TROOP_LEADER_BACKPACK
 		};
 	};
 };
 
-class SASR_PatrolLeader_Jngl
-{
+class SASR_PatrolLeader_Jngl {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -53,43 +46,35 @@ class SASR_PatrolLeader_Jngl
 	binocular = "Laserdesignator";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
-
-			Troop_Leader_Uniform
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_TROOP_LEADER_UNIFORM
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_comms_od";
 
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-
-			PatrolLeader_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_PATROL_LEADER_VEST
 		};
 	};
-	class Backpack
-	{
+	class Backpack	{
 		type = "Kit_Bag_R_od";
-		class Inventory
-		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+		class Inventory	{	
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 			
-			PatrolLeader_Backpack
+			LOADOUT_PATROL_LEADER_BACKPACK
 		};
 	};
 };
 
-class SASR_Rifleman_Jngl
-{
+class SASR_Rifleman_Jngl {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -97,13 +82,10 @@ class SASR_Rifleman_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
-			
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -112,9 +94,9 @@ class SASR_Rifleman_Jngl
 		type = "lbt_tl_od";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 	class Backpack
@@ -122,14 +104,13 @@ class SASR_Rifleman_Jngl
 		type = "SOG_BAG_od";
 		class Inventory
 		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
 
-class SASR_Grenadier_Jngl
-{
+class SASR_Grenadier_Jngl {
 	primary = "SMA_M4_GL_SM";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -137,40 +118,33 @@ class SASR_Grenadier_Jngl
 	binocular = "Rangefinder";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_weapons_od";
 
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Grenadier_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_GRENADIER_VEST
 		};
 	};
-	class Backpack
-	{
+	class Backpack	{
 		type = "SOG_BAG_recon_od";
-		class Inventory
-		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			Grenadier_Backpack
+		class Inventory	{	
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_GRENADIER_BACKPACK
 		};
 	};			
 };
 
-class SASR_Sapper_Jngl
-{
+class SASR_Sapper_Jngl {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -178,41 +152,35 @@ class SASR_Sapper_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "Kit_Bag_pince_od";
-		class Inventory
-		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			Sapper_Backpack
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_SAPPER_BACKPACK
 		};
 	};
 };
 
-class SASR_MachineGunner_Jngl
-{
+class SASR_MachineGunner_Jngl {
 	primary = "sma_minimi_mk3_762tsb";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -220,37 +188,33 @@ class SASR_MachineGunner_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "VSM_LBT6094_MG_Multicam";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			MachineGunner_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_MACHINE_GUNNER_VEST
 		};
 	};
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_od";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
 
-class SASR_Medic_Jngl
-{
+class SASR_Medic_Jngl {
 	primary = "SMA_M4afgSTOCK";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -258,38 +222,32 @@ class SASR_Medic_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_medical_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+		class Inventory {
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "KIT_BAG_od";
-		class Inventory
-		{
-			SASR_BACKPACK_ESSENTIALS
-			Medic_Backpack
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_MEDIC_BACKPACK
 		};
 	};
 };
 
-class SASR_Marksman_Jngl
-{
+class SASR_Marksman_Jngl {
 	primary = "SMA_HK417_16in";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -297,38 +255,31 @@ class SASR_Marksman_Jngl
 	binocular = "Rangefinder";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory {
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Marksman_Vest
+		class Inventory {
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_MARKSMAN_VEST
 		};
 	};
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_od";
-		class Inventory
-		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};
 };
 
-class SASR_Sniper_Jngl
-{
+class SASR_Sniper_Jngl { 
 	primary = "hlc_rifle_awmagnum";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -336,42 +287,35 @@ class SASR_Sniper_Jngl
 	binocular = "Rangefinder";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
 
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Sniper_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_SNIPER_VEST
 		};
 	};
 	
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_od";
-		class Inventory
-		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 			
-			Sniper_Backpack
+			LOADOUT_SNIPER_BACKPACK
 		};
 	};
 };
 
-class SASR_LAT_Jngl
-{
+class SASR_LAT_Jngl { 
 	primary = "SMA_M4afgSTOCK";
 	secondary = "HAFM_LAW";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -380,31 +324,27 @@ class SASR_LAT_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_od";
-		class Inventory
-		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};
 };
@@ -419,39 +359,32 @@ class SASR_MAT_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_od";
-		class Inventory
-		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			MAT_Backpack
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_MAT_BACKPACK
 		};
 	};
 };
 
-class SASR_HAT_Jngl
-{
+class SASR_HAT_Jngl {
 	primary = "SMA_M4afgSTOCK";
 	secondary = "CUP_launch_Javelin";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
@@ -460,33 +393,27 @@ class SASR_HAT_Jngl
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_DPCU_OD_SleevesUp";
-		class Inventory
-		{
-			SASR_STANDARD_MEDICAL
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "lbt_tl_od";
-		class Inventory
-		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "Kit_Bag_od";
-		class Inventory
-		{
-			SASR_BACKPACK_ESSENTIALS
-			HAT_Backpack
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_HAT_BACKPACK
 		};
 	};
 };

@@ -15,8 +15,8 @@ class SASR_TroopLeader_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
-			Troop_Leader_Uniform
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_TROOP_LEADER_UNIFORM
 		};
 	};
 
@@ -26,8 +26,8 @@ class SASR_TroopLeader_Old
 
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			Troop_Leader_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_TROOP_LEADER_VEST
 		};
 	};
 
@@ -36,9 +36,9 @@ class SASR_TroopLeader_Old
 		type = "Kit_Bag_R_tan";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			Troop_Leader_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_TROOP_LEADER_BACKPACK
 		};
 	};
 };
@@ -57,8 +57,8 @@ class SASR_PatrolLeader_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
-			Troop_Leader_Uniform
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_TROOP_LEADER_UNIFORM
 		};
 	};
 
@@ -68,8 +68,8 @@ class SASR_PatrolLeader_Old
 
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			PatrolLeader_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_PATROL_LEADER_VEST
 		};
 	};
 	class Backpack
@@ -77,9 +77,9 @@ class SASR_PatrolLeader_Old
 		type = "Kit_Bag_R_tan";
 		class Inventory
 		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			PatrolLeader_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_PATROL_LEADER_BACKPACK
 		};
 	};
 };
@@ -98,7 +98,7 @@ class SASR_Rifleman_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 
 		};
 	};
@@ -108,8 +108,8 @@ class SASR_Rifleman_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 	class Backpack
@@ -117,8 +117,8 @@ class SASR_Rifleman_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
@@ -137,7 +137,7 @@ class SASR_Grenadier_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 
 			
 		};
@@ -149,8 +149,8 @@ class SASR_Grenadier_Old
 
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			Grenadier_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_GRENADIER_VEST
 		};
 	};
 	class Backpack
@@ -158,9 +158,9 @@ class SASR_Grenadier_Old
 		type = "SOG_BAG_recon_tan";
 		class Inventory
 		{	
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			Grenadier_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_GRENADIER_BACKPACK
 		};
 	};			
 };
@@ -179,7 +179,7 @@ class SASR_Sapper_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
@@ -189,9 +189,9 @@ class SASR_Sapper_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
@@ -200,9 +200,9 @@ class SASR_Sapper_Old
 		type = "Kit_Bag_pince_TAN";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			Sapper_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_SAPPER_BACKPACK
 		};
 	};
 };
@@ -221,7 +221,7 @@ class SASR_MachineGunner_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -230,9 +230,9 @@ class SASR_MachineGunner_Old
 		type = "VSM_LBT6094_MG_Multicam";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			MachineGunner_Vest
+			LOADOUT_MACHINE_GUNNER_VEST
 		};
 	};
 	class Backpack
@@ -240,8 +240,8 @@ class SASR_MachineGunner_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
@@ -260,7 +260,7 @@ class SASR_Medic_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -269,9 +269,9 @@ class SASR_Medic_Old
 		type = "SOCOMD_Medic_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
@@ -280,9 +280,9 @@ class SASR_Medic_Old
 		type = "KIT_BAG_TAN";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
+			LOADOUT_BACKPACK_ESSENTIALS
 			
-			Medic_Backpack
+			LOADOUT_MEDIC_BACKPACK
 		};
 	};
 };
@@ -301,7 +301,7 @@ class SASR_Marksman_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 			
 		};
 	};
@@ -311,9 +311,9 @@ class SASR_Marksman_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Marksman_Vest
+			LOADOUT_MARKSMAN_VEST
 		};
 	};
 	class Backpack
@@ -321,8 +321,8 @@ class SASR_Marksman_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};
 };
@@ -342,7 +342,7 @@ class SASR_Sniper_Old
 
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
@@ -353,9 +353,9 @@ class SASR_Sniper_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Sniper_Vest
+			LOADOUT_SNIPER_VEST
 		};
 	};
 	
@@ -364,10 +364,10 @@ class SASR_Sniper_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 			
-			Sniper_Backpack
+			LOADOUT_SNIPER_BACKPACK
 		};
 	};
 };
@@ -387,7 +387,7 @@ class SASR_LAT_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -396,9 +396,9 @@ class SASR_LAT_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 	class Backpack
@@ -406,8 +406,8 @@ class SASR_LAT_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{
-			SASR_STANDARD_MEDICAL
-			SASR_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};
 };
@@ -427,7 +427,7 @@ class SASR_MAT_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -436,9 +436,9 @@ class SASR_MAT_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
+			LOADOUT_VEST_ESSENTIALS
 
-			Rifleman_Vest
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
@@ -447,9 +447,9 @@ class SASR_MAT_Old
 		type = "SOG_BAG_tan";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			MAT_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_MAT_BACKPACK
 		};
 	};
 };
@@ -469,7 +469,7 @@ class SASR_HAT_Old
 		type = "SOCOMD_Commando_DPDU_SleevesUp";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -478,8 +478,8 @@ class SASR_HAT_Old
 		type = "SOCOMD_Operator_Vest_coy";
 		class Inventory
 		{
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 		};
 	};
 
@@ -488,9 +488,9 @@ class SASR_HAT_Old
 		type = "Kit_Bag_tan";
 		class Inventory
 		{
-			SASR_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
-			HAT_Backpack
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_HAT_BACKPACK
 		};
 	};
 };

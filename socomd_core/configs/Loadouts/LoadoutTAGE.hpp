@@ -1,7 +1,6 @@
 
 ///Counter Terrorism
-class TAGE_TroopLeader
-{
+class TAGE_TroopLeader {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -10,23 +9,19 @@ class TAGE_TroopLeader
 	binocular = "Laserdesignator";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_BLK_SleevesDown";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
-
+		class Inventory {
+			LOADOUT_UNIFORM_ESSENTIALS
+			
 			LOADOUT_ITEM(Laserbatteries, 2)
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "SOCOMD_Leader_Vest_BLK";
 
-		class Inventory
-		{
+		class Inventory	{
 			TAGE_VEST_ESSENTIALS
 
 			LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -35,21 +30,18 @@ class TAGE_TroopLeader
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_recon_blk";
-		class Inventory
-		{
+		class Inventory	{
 			TAGE_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_STANDARD_MEDICAL
 			
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
 		};
 	};
 };
 
-class TAGE_Medic
-{
+class TAGE_Medic {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -58,31 +50,25 @@ class TAGE_Medic
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_BLK_SleevesDown";
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "SOCOMD_Medic_Vest_BLK";
-		class Inventory
-		{
+		class Inventory	{
 			TAGE_VEST_ESSENTIALS
 
 			LOADOUT_ITEM(30Rnd_9x21_Mag_SMG_02, 12)
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_med_blk";
-		class Inventory
-		{
+		class Inventory	{
 			TAGE_BACKPACK_ESSENTIALS
 			
 			LOADOUT_ITEM(ACE_surgicalKit, 8)
@@ -100,8 +86,7 @@ class TAGE_Medic
 	};
 };
 
-class TAGE_Sapper
-{
+class TAGE_Sapper {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -110,18 +95,16 @@ class TAGE_Sapper
 	binocular = "Binocular";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_BLK_SleevesDown";
 		class Inventory
 		{
-			SASR_UNIFORM_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "SOCOMD_Operator_Vest_BLK";
 		class Inventory
 		{
@@ -131,13 +114,12 @@ class TAGE_Sapper
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_BREACHER_BLK";
 		class Inventory
 		{
 			TAGE_BACKPACK_ESSENTIALS
-			SASR_STANDARD_MEDICAL
+			LOADOUT_STANDARD_MEDICAL
 			
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
@@ -148,8 +130,7 @@ class TAGE_Sapper
 	};
 };
 
-class TAGE_Sniper
-{
+class TAGE_Sniper {
 	primary = "hlc_rifle_awcovert_BL";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
 	handgunMagazine = "11Rnd_45ACP_Mag";
@@ -158,23 +139,19 @@ class TAGE_Sniper
 	binocular = "Rangefinder";
 	gps = "ItemMicroDAGR";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_BLK_SleevesDown";
 
-		class Inventory
-		{
-			SASR_UNIFORM_ESSENTIALS
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "SOCOMD_Operator_Vest_BLK";
-		class Inventory
-		{
+		class Inventory	{
 			TAGE_VEST_ESSENTIALS
 
 			LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -183,12 +160,10 @@ class TAGE_Sniper
 		};
 	};
 	
-	class Backpack
-	{
+	class Backpack	{
 		type = "SOG_BAG_blk";
-		class Inventory
-		{
-			SASR_STANDARD_MEDICAL
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
 			TAGE_BACKPACK_ESSENTIALS
 			
 			LOADOUT_ITEM(ACE_DefusalKit, 1)

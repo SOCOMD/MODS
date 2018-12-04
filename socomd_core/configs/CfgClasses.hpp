@@ -1,20 +1,10 @@
 class CfgFactionClasses
 {
-	class SOCOMD_CMD
+	class SOCOMD
 	{
 		priority = 1;
 		side = 1;
-		displayName = "SOCOMD COMMANDOS";
-		flag = "socomd_data\icon\adfu_flag_co.paa";
-		icon = "socomd_data\icon\icon.paa";
-		author = AUTHOR_STR;
-	};
-
-	class SOCOMD_SASR
-	{
-		priority = 1;
-		side = 1;
-		displayName = "SOCOMD SASR";
+		displayName = "SOCOMD";
 		flag = "socomd_data\icon\adfu_flag_co.paa";
 		icon = "socomd_data\icon\icon.paa";
 		author = AUTHOR_STR;

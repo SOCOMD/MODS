@@ -37,8 +37,8 @@ class CfgLoadoutVests
 
     };
     
-	class SOCOMD_Rifleman_Vest : Vest_Rifleman { };
-    class SOCOMD_Rifleman_Vest_coy : Vest_Rifleman { };
+	class SOCOMD_LOADOUT_RIFLEMAN_VEST : Vest_Rifleman { };
+    class SOCOMD_LOADOUT_RIFLEMAN_VEST_coy : Vest_Rifleman { };
 	*/
 	class Vest_2IC
     {

@@ -10,37 +10,31 @@ class 171AVN_PJ
 	binocular = "Binocular";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_SleevesDown";
-		class Inventory
-		{
+		class Inventory	{
 			LOADOUT_ITEM(H_Watchcap_camo, 1)
 			LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)				
 		};
 	};
 
-	class Vest
-	{
+	class Vest {
 		type = "VSM_OGA_OD_Vest_2";
-		class Inventory
-		{
-			JAC_STANDARD_MEDICAL
+		class Inventory	{
+			LOADOUT_SUPPORT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACE_salineIV_500, 6)
 			LOADOUT_ITEM(ACE_personalAidKit, 2)
 			LOADOUT_ITEM(ACE_surgicalKit, 2)
-			SASR_VEST_ESSENTIALS
-			Rifleman_Vest
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_RIFLEMAN_VEST
 			
 		};
 	};
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_med_od";
-		class Inventory
-		{
-			JAC_ESSENTIALS
-			Medic_Backpack
+		class Inventory	{
+			LOADOUT_SUPPORT_ESSENTIALS
+			LOADOUT_MEDIC_BACKPACK
 		};
 	};
 };
@@ -58,31 +52,24 @@ class 171AVN_Pilot
 		type = "SOCOMD_Commando_SleevesDown";
 		class Inventory
 		{
-			
 			LOADOUT_ITEM(H_Watchcap_camo, 1)
 			LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
-			
 		};
 	};
 	
-	class Vest
-	{
+	class Vest {
 		type = "VSM_OGA_OD_Vest_2";
-		class Inventory
-		{
-			
-			JAC_STANDARD_MEDICAL
+		class Inventory {
+			LOADOUT_SUPPORT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "SOG_BAG_recon_od";
-		class Inventory
-		{
+		class Inventory	{
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
-			JAC_ESSENTIALS
+			LOADOUT_SUPPORT_ESSENTIALS
 		};
 	};
 };
@@ -95,36 +82,30 @@ class SUPPORT_Crewman {
 	binocular = "Binocular";
 	gps = "ItemAndroid";
 
-	class Uniform
-	{
+	class Uniform {
 		type = "SOCOMD_Commando_SleevesDown";
-		class Inventory
-		{
+		class Inventory	{
 			
 			LOADOUT_ITEM(H_Watchcap_camo, 1)
 			LOADOUT_ITEM(11Rnd_45ACP_Mag, 4)
 		};
 	};
 	
-	class Vest
-	{
+	class Vest {
 		type = "VSM_FAPC_Operator_Multicam";
-		class Inventory
-		{
+		class Inventory	{
 			
-			JAC_STANDARD_MEDICAL
+			LOADOUT_SUPPORT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(CUP_30Rnd_9x19_MP5, 4)
 		};
 	};
 
-	class Backpack
-	{
+	class Backpack {
 		type = "KIT_BAG_MC";
-		class Inventory
-		{
+		class Inventory	{
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
-			JAC_ESSENTIALS
+			LOADOUT_SUPPORT_ESSENTIALS
 		};
 	};
 };
