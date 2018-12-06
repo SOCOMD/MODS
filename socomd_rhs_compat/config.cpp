@@ -20,3 +20,5 @@ class CfgPatches
 		magazines[] = {};
 	};
 };
+
+#include "configs\CfgVehicles.hpp"
