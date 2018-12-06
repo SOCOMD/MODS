@@ -2,6 +2,8 @@ class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "Assault Boat";
@@ -71,6 +73,8 @@ class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC
 {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	forceInGarage = 1;
 	author = AUTHOR_STR;
 	displayname = "RHIB Armed";

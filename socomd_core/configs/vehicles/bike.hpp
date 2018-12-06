@@ -436,6 +436,8 @@ class BIKE_BASE : Bicycle {
 class SOCOMD_BIKE : BIKE_BASE {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	forceInGarage = 1;
 	side = 1;
 	author = AUTHOR_STR;

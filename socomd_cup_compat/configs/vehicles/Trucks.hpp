@@ -11,6 +11,8 @@ class CUP_B_MTVR_USA;
 class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -45,6 +47,8 @@ class CUP_B_MTVR_Ammo_USA;
 class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -79,6 +83,8 @@ class CUP_B_MTVR_Refuel_USA;
 class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -113,6 +119,8 @@ class CUP_B_MTVR_Repair_USA;
 class SOCOMD_TRUCK_REPAIR_A : CUP_B_MTVR_Repair_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;

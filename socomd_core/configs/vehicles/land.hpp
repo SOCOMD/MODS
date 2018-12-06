@@ -195,6 +195,8 @@ Car
 class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -262,6 +264,8 @@ Car
 class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -327,6 +331,8 @@ class B_Truck_01_covered_F;
 class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	scope = public; \
 	scopeCurator = public; \
+	editorCategory = SOCOMD_EdCat_core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
@@ -360,6 +366,8 @@ class B_Truck_01_ammo_F;
 class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	scope = public; \
 	scopeCurator = public; \
+	editorCategory = SOCOMD_EdCat_core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
@@ -393,6 +401,8 @@ class B_Truck_01_fuel_F;
 class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	scope = public; \
 	scopeCurator = public; \
+	editorCategory = SOCOMD_EdCat_core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
@@ -426,6 +436,8 @@ class B_Truck_01_Repair_F;
 class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	scope = public; \
 	scopeCurator = public; \
+	editorCategory = SOCOMD_EdCat_core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
@@ -473,6 +485,8 @@ class I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_base_F {
 class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -589,6 +603,8 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 class SOCOMD_QUADBIKE : B_Quadbike_01_F {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;

@@ -127,6 +127,8 @@ class CUP_B_MH6J_USA;
 class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -151,6 +153,8 @@ class CUP_B_AH6M_USA;
 class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;

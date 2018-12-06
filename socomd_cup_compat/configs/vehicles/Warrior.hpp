@@ -8,6 +8,8 @@ class CUP_B_UH60M_US;
 class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	displayname = "Warrior (4/12)";
 
@@ -31,6 +33,8 @@ class CUP_B_UH60M_FFV_US;
 class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 	scope = public;
 	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	displayname = "Warrior FFV (4/8)";
 

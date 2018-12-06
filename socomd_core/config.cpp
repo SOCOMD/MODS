@@ -169,6 +169,8 @@ class CfgUnitInsignia
 	
 };
 
+#include "configs\CfgEditorCategories.hpp"
+#include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
