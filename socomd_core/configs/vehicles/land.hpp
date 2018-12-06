@@ -180,6 +180,18 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 	};
 };
 
+class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F {
+	scope = public;
+	scopeCurator = public;
+};
+
+/*
+bma3_bushmaster_unarmed_F
+bma3_bushmaster_base_F
+Car_F
+Car
+*/
+
 class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	scope = public;
 	scopeCurator = public;
@@ -239,14 +251,21 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	};
 };
 
-/*class bma3_bushmaster_pws127mm_ecm_F;
-class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F {
+/*
+bma3_bushmaster_pws127mm_F
+bma3_bushmaster_unarmed_F
+bma3_bushmaster_base_F
+Car_F
+Car
+*/
+
+class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	scope = public;
 	scopeCurator = public;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "SOCOMD Bushmaster HMG";
+	displayname = "Bushmaster Transport (2/6)";
 	vehicleclass = "Car";
 	forceInGarage = 1;
 
@@ -297,7 +316,7 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_ecm_F {
 	class TransportWeapons {
 		LOADOUT_LAND_TRANSPORT_WEAPONS
 	};
-};*/
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Trucks (Transport)
