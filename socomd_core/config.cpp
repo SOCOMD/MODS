@@ -1,8 +1,8 @@
 #include "predefined.hpp"
 
-class CfgPatches 
+class CfgPatches
 {
-	class socomd_main 
+	class socomd_main
 	{
 		//Internal Version
 		version = 1.0.6;
@@ -13,7 +13,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 
 		//Mod Dependencies
-		requiredAddons[] = 
+		requiredAddons[] =
 		{
 			"socomd_data",
 			"A3_Characters_F_BLUFOR",
@@ -30,7 +30,7 @@ class CfgPatches
 		};
 
 		//SOCOMD Custom Units
-		units[] = 
+		units[] =
 		{
 			// OTHER
 			"FLAG_ADFU_F",
@@ -117,7 +117,7 @@ class CfgPatches
 		};
 
 		//SOCOMD Custom Weapons
-	    weapons[] = 
+	    weapons[] =
 		{
 			//UNIFORMS
 			"SOCOMD_Uniform_LongSleeve",
@@ -145,13 +145,13 @@ class CfgPatches
 		};
 
 		//SOCOMD Custom Ammo
-		ammo[] = 
+		ammo[] =
 		{
 			//Empty
 		};
 
 		//SOCOMD Custom Magazines
-		magazines[] = 
+		magazines[] =
 		{
 			//Empty
 		};
@@ -166,7 +166,6 @@ class CfgUnitInsignia
 		author="Monk";
 		texture="socomd_data\insignia\dog.paa";
 	};
-	
 };
 
 #include "configs\CfgEditorCategories.hpp"
