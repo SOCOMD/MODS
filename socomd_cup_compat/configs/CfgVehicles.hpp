@@ -1,5 +1,18 @@
 class CfgVehicles {
 
+	class Land;
+	class LandVehicle : Land {
+
+	};
+
+	class Car : LandVehicle {
+
+	};
+
+	class Car_F : Car {
+
+	};
+
 	////////////////////////////////////////////////////////////////////////////////
 	//AIR VEHICLES
 
@@ -42,4 +55,5 @@ class CfgVehicles {
 	#include "vehicles\Warrior.hpp"
 	#include "vehicles\Nomad.hpp"
 	#include "vehicles\Hurricane.hpp"
+	#include "vehicles\Trucks.hpp"
 };

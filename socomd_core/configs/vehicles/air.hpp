@@ -38,10 +38,11 @@ class Helicopter_Base_H : Helicopter_Base_F {
 
 class B_Heli_Transport_01_F;
 
-#define WARRIOR_BASE(ID) \
+#define WARRIOR_BASE(ID, SCOPE) \
 class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
-	scope = private; \
-	scopeCurator = private; \
+	scope = SCOPE; \
+	scopeCurator = SCOPE; \
+	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
 	displayname = "Warrior (4/8)"; \
@@ -58,8 +59,8 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	};\
 };
 
-WARRIOR_BASE(A)
-WARRIOR_BASE(B)
+WARRIOR_BASE(A,public)
+WARRIOR_BASE(B,private)
 
 ////////////////////////////////////////////////////////////////////////////////
 // NOMAD
@@ -68,8 +69,9 @@ class B_Heli_Transport_03_F;
 
 #define NOMAD_BASE(ID) \
 class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
-	scope = private; \
-	scopeCurator = private; \
+	scope = public; \
+	scopeCurator = public; \
+	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
 	displayname = "Nomad (4/18)"; \
@@ -94,8 +96,9 @@ class B_Heli_Attack_01_dynamicLoadout_F;
 
 #define HURRICANE_BASE(ID) \
 class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
-	scope = private; \
-	scopeCurator = private; \
+	scope = public; \
+	scopeCurator = public; \
+	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
 	displayname = "Hurricane (2/0)"; \
@@ -229,8 +232,9 @@ class B_Heli_Light_01_F;
 
 #define FIREFLY_BASE(ID) \
 class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
-	scope = private; \
-	scopeCurator = private; \
+	scope = public; \
+	scopeCurator = public; \
+	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
 	displayname = "Firefly (2/6)"; \
@@ -258,8 +262,9 @@ class B_Heli_Light_01_dynamicLoadout_F;
 
 #define DRAGONFLY_BASE(ID) \
 class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
-	scope = private; \
-	scopeCurator = private; \
+	scope = public; \
+	scopeCurator = public; \
+	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
 	displayname = "Dragonfly (2/0)"; \

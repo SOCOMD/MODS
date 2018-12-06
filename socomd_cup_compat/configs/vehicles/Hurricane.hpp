@@ -85,6 +85,7 @@ class CUP_B_AH64D_DL_USA;
 class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	scope = public;
 	scopeCurator = public;
+	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Hurricane (2/0)";

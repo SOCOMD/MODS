@@ -127,6 +127,7 @@ class CUP_B_MH6J_USA;
 class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	scope = public;
 	scopeCurator = public;
+	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Firefly (2/6)";
@@ -150,6 +151,7 @@ class CUP_B_AH6M_USA;
 class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	scope = public;
 	scopeCurator = public;
+	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Dragonfly (2/0)";
