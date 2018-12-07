@@ -1,7 +1,5 @@
-class CfgMissions
-{
-	class Cutscenes
-	{
+class CfgMissions {
+	class Cutscenes {
 		//Remove cutscenes so that missions aren't loaded in the menu
 		class Altis_intro1 { directory = ""; };
 		class Map_VR_anim01	{ directory = ""; };

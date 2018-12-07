@@ -20,8 +20,7 @@
 	autoReport			= 0; /*Enables/disables automatic reporting of spotted enemies by players only.*/ \
 	multipleSaves		= 0; /*Allows player to create multiple saves in a mission.*/
 
-class CfgDifficultyPresets
-{
+class CfgDifficultyPresets {
 	defaultPreset = "Custom";
 	myArmorCoef = 1.5;
 	groupArmorCoef = 1.5;
@@ -35,52 +34,43 @@ class CfgDifficultyPresets
 	showCadetHints = 1;
 	showCadetWP = 1;
 
-	class CustomAILevel
-	{
+	class CustomAILevel {
 		skillAI=1.0;
 		precisionAI=0.30000001;
 	};
 
-	class Recruit
-	{
+	class Recruit {
 		displayName = "$STR_Difficulty0";
 		optionDescription = "$STR_Difficulty0_desc";
 		optionPicture = "\A3\Ui_f\data\Logos\arma3_white_ca.paa";
-		class Options
-		{
+		class Options {
 			SOCOMD_DIFFICULTY_PRESET
 		};
 	};
 
-	class Regular
-	{
+	class Regular {
 		displayName = "$STR_Difficulty1";
 		optionDescription = "$STR_Difficulty1_desc";
 		optionPicture = "\A3\Ui_f\data\Logos\arma3_white_ca.paa";
-		class Options
-		{
+		class Options {
 			SOCOMD_DIFFICULTY_PRESET
 		};
 	};
 
-	class Veteran
-	{
+	class Veteran {
 		displayName = "$STR_Difficulty2";
 		optionDescription = "$STR_Difficulty2_desc";
 		optionPicture = "\A3\Ui_f\data\Logos\arma3_white_ca.paa";
-		class Options
-		{
+		class Options {
 			SOCOMD_DIFFICULTY_PRESET
 		};
 	};
 	
-	class Custom
-	{
+	class Custom {
 		displayName = "$STR_Difficulty_Custom";
 		optionDescription = "$STR_Difficulty_Custom_desc";
 		optionPicture = "\A3\Ui_f\data\Logos\arma3_white_ca.paa";
-		class Options
-		{
+		class Options {
 			SOCOMD_DIFFICULTY_PRESET
 		};
 	};

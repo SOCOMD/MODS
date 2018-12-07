@@ -1,5 +1,4 @@
-class CfgWeapons 
-{
+class CfgWeapons {
 	class ItemCore;
 
 	#include "weapons\nvg.hpp"

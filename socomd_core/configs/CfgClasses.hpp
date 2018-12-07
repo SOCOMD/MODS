@@ -1,7 +1,5 @@
-class CfgFactionClasses
-{
-	class SOCOMD
-	{
+class CfgFactionClasses {
+	class SOCOMD {
 		priority = 1;
 		side = 1;
 		displayName = "SOCOMD";
@@ -11,37 +9,31 @@ class CfgFactionClasses
 	};
 };
 
-class CfgVehicleClasses
-{
+class CfgVehicleClasses {
 	//SOCOMD COMMANDOS
-	class SOCOMD_Core
-	{
+	class SOCOMD_Core {
 		displayName = "SOCOMD Core Units";
 		priority = 1;
 	};
 	
-	class SOCOMD_Sniper
-	{
+	class SOCOMD_Sniper {
 		displayName = "SOCOMD Sniper Team";
 		priority = 2;
 	};
 
-	class SOCOMD_Weapons
-	{
+	class SOCOMD_Weapons {
 		displayName = "SOCOMD Weapons Team";
 		priority = 3;
 	};
 
 	//SOCOMD SASR
 
-	class SOCOMD_SASR_Units
-	{
+	class SOCOMD_SASR_Units {
 		displayName = "SOCOMD SASR Units";
 		priority = 1;
 	};
 
-	class SOCOMD_SASR_Logistics
-	{
+	class SOCOMD_SASR_Logistics {
 		displayName = "SOCOMD SASR Logistics";
 		priority = 2;
 	};

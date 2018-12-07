@@ -1,18 +1,13 @@
-class CfgMovesBasic
-{
+class CfgMovesBasic {
 	class DefaultDie;
-	class ManActions
-	{
+	class ManActions {
 		MMT_Driver = "MMT_Driver";
 	};
 };
 
-class CfgMovesMaleSdr : CfgMovesBasic
-{
-	class States
-	{
-		class MMT_Dead : DefaultDie
-		{
+class CfgMovesMaleSdr : CfgMovesBasic {
+	class States {
+		class MMT_Dead : DefaultDie {
 			actions = "DeadActions";
 			file = "\socomd_data\models\nb\MMT_Driver.rtm";
 			speed = 1e+010;
@@ -21,8 +16,7 @@ class CfgMovesMaleSdr : CfgMovesBasic
 		};
 
 		class Crew;
-		class MMT_Driver : Crew
-		{
+		class MMT_Driver : Crew {
 			file = "\socomd_data\models\nb\MMT_Driver.rtm";
 			connectTo[] = {"MMT_Dead",1};
 			speed = 2;

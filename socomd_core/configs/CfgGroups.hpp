@@ -1,27 +1,21 @@
 #define DEFINE_UNIT(unitId,idxX,idxY,type,rating) \
-class Unit##unitId \
-{ \
+class Unit##unitId { \
 	side = 1; \
 	vehicle = type; \
 	rank = rating; \
 	position[] = {(idxX * 1), -(idxY * 1) ,0}; \
 };
 
-class CfgGroups
-{
-	class West
-	{
-		class SOCOMD
-		{
+class CfgGroups {
+	class West {
+		class SOCOMD {
 			name = "SOCOMD";
 
-			class SOCOMD_CMD_Groups
-			{
+			class SOCOMD_CMD_Groups {
 				name = "Commando Groups";
 				aliveCategory = "Infantry";
 
-				class SOCOMD_CMD_Plt
-				{
+				class SOCOMD_CMD_Plt {
 					name = "Commando Plt Squad";
 					faction = FACTION_STR;
 					side = 1;
@@ -33,8 +27,7 @@ class CfgGroups
 					DEFINE_UNIT(3,0,3,"SOCOMD_PlatoonMedic", "CORPORAL")
 				};
 
-				class SOCOMD_CMD_Section
-				{
+				class SOCOMD_CMD_Section {
 					name = "Commando Section";
 					faction = FACTION_STR;
 					side = 1;
@@ -50,8 +43,7 @@ class CfgGroups
 					DEFINE_UNIT(7,1,3,"SOCOMD_Medic", "PRIVATE")
 				};
 
-				class SOCOMD_CMD_Sniper_Team
-				{
+				class SOCOMD_CMD_Sniper_Team {
 					name = "Commando Sniper Team";
 					faction = FACTION_STR;
 					side = 1;
@@ -61,8 +53,7 @@ class CfgGroups
 					DEFINE_UNIT(1,0,1,"SOCOMD_Sniper_Spotter", "CORPORAL")
 				};
 
-				class SOCOMD_CMD_Weapons_Team
-				{
+				class SOCOMD_CMD_Weapons_Team {
 					name = "Commando Weapons Team";
 					faction = FACTION_STR;
 					side = 1;
@@ -73,8 +64,7 @@ class CfgGroups
 					DEFINE_UNIT(2,0,2,"SOCOMD_Weapons_Assistant", "PRIVATE")
 				};
 
-				class SOCOMD_171_Pilots
-				{
+				class SOCOMD_171_Pilots {
 					name = "171 Aviation Pilots";
 					faction = FACTION_STR;
 					side = 1;
@@ -84,8 +74,7 @@ class CfgGroups
 					DEFINE_UNIT(1,0,1,"SOCOMD_Pilot", "CORPORAL")
 				};
 
-				class SOCOMD_CMD_Homesteads
-				{
+				class SOCOMD_CMD_Homesteads {
 					name = "Homesteads";
 					faction = FACTION_STR;
 					side = 1;
@@ -98,13 +87,11 @@ class CfgGroups
 				};
 			};
 
-			class SOCOMD_SASR_Groups
-			{
+			class SOCOMD_SASR_Groups {
 				name = "SASR Groups";
 				aliveCategory = "Infantry";
 
-				class SOCOMD_SASR_TROOP_HQ
-				{
+				class SOCOMD_SASR_TROOP_HQ {
 					name = "SASR Troop HQ";
 					faction = FACTION_STR;
 					side = 1;
@@ -116,8 +103,7 @@ class CfgGroups
 					DEFINE_UNIT(3,0,3,"SOCOMD_SASR_Trooper", "PRIVATE")
 				};
 
-				class SOCOMD_SASR_TROOP_PATROL
-				{
+				class SOCOMD_SASR_TROOP_PATROL {
 					name = "SASR Troop Patrol";
 					faction = FACTION_STR;
 					side = 1;

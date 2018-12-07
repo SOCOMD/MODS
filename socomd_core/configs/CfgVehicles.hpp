@@ -1,7 +1,6 @@
 class NoDust{};
 
-class CfgVehicles 
-{
+class CfgVehicles  {
 	//MAN
 	class Man;
 	class Civilian;
@@ -15,13 +14,14 @@ class CfgVehicles
 	class LandVehicle : Land {
 		class Components;
 	};
+
 	class Car : LandVehicle {
 		class Components : Components {
 			class AICarSteeringComponent;
 		};
 	};
-	class Car_F : Car
-	{
+
+	class Car_F : Car {
 		class HitPoints;		
 		class textureSources;
 
@@ -89,12 +89,10 @@ class CfgVehicles
 	//AIR
 	class Helicopter;
 
-
 	//SEA
 	class B_Boat_Transport_01_F;
 
 	//BACKPACKS
-	//class tf_rt1523g_big_bwmod;
 	class B_Kitbag_Base;
 
 	//AMMOBOX
