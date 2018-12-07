@@ -1,7 +1,8 @@
 class sma_minimi_mk3_762tsb;
 class SOCOMD_Item_Primary_MachineGunner : sma_minimi_mk3_762tsb;
 
-class SOCOMD_Item_Primary_Magazine_MachineGunner;
+class SMA_150Rnd_762_M80A1;
+class SOCOMD_Item_Primary_Magazine_MachineGunner : SMA_150Rnd_762_M80A1;
 
 class DSO_hgun_Pistol_heavy_01_blk_F;
 class SOCOMD_Item_Handgun_MachineGunner : DSO_hgun_Pistol_heavy_01_blk_F;
