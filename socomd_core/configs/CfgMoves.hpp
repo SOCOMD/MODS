@@ -1,12 +1,15 @@
 class CfgMovesBasic {
 	class DefaultDie;
 	class ManActions {
+		//SOCOMD Bike Driver
 		MMT_Driver = "MMT_Driver";
 	};
 };
 
 class CfgMovesMaleSdr : CfgMovesBasic {
 	class States {
+
+		//SOCOMD Bike Anim States
 		class MMT_Dead : DefaultDie {
 			actions = "DeadActions";
 			file = "\socomd_data\models\nb\MMT_Driver.rtm";
