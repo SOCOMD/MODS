@@ -158,19 +158,10 @@ class CfgPatches
 	};
 };
 
-class CfgUnitInsignia
-{
-	class dog
-	{
-		displayName="Dog";
-		author="Monk";
-		texture="socomd_data\insignia\dog.paa";
-	};
-};
-
+#include "configs\CfgFunctions.hpp"
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
-#include "configs\CfgFunctions.hpp"
+#include "configs\CfgAISkill.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
 #include "configs\CfgMarkers.hpp"
@@ -188,3 +179,4 @@ class CfgUnitInsignia
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgLoadoutVests.hpp"
 #include "configs\CfgLoadoutBackpacks.hpp"
+#include "configs\CfgUnitInsignia.hpp"
