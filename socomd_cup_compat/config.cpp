@@ -1,6 +1,6 @@
 #include "predefined.hpp"
 
-class CfgPatches 
+class CfgPatches
 {
 	class socomd_cup_compat
 	{
@@ -11,6 +11,14 @@ class CfgPatches
 		requiredVersion = 0.1;
 
 		requiredAddons[] = {
+			//CUP Requirments
+			"cup_airvehicles_ah6",
+			"cup_airvehicles_ah64",
+			"cup_airvehicles_ch47",
+			"cup_airvehicles_uh60",
+			"cup_wheeledvehicles_mtvr",
+
+			//SOCOMD Requirments
 			"socomd_data",
 			"socomd_main"
 		};

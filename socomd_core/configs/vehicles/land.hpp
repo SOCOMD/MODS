@@ -269,7 +269,7 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Bushmaster Transport (2/6)";
+	displayname = "Bushmaster HMG (2/6)";
 	vehicleclass = "Car";
 	forceInGarage = 1;
 

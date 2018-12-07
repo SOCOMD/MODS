@@ -134,6 +134,18 @@ class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	faction = FACTION_STR;
 	displayname = "Firefly (2/6)";
 
+	hiddenSelections[] = {
+		"camo1",
+		"camo2",
+		"camo_bench"
+	};
+
+	hiddenSelectionsTextures[] = {
+		"socomd_data\ah6\ah6_hull_co.paa",
+		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_interior_co.paa",
+		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_benches_co.paa"
+	};
+
 	//Flight Controls
 	backRotorForceCoef = 0.4;
 };
@@ -159,6 +171,18 @@ class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Dragonfly (2/0)";
+
+	hiddenSelections[] = {
+		"camo1",
+		"camo2",
+		"camo_weapons"
+	};
+
+	hiddenSelectionsTextures[] = {
+		"socomd_data\ah6\ah6_hull_co.paa",
+		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_interior_co.paa",
+		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_weapons_co.paa"
+	};
 
 	//Flight Controls
 	backRotorForceCoef = 0.4;

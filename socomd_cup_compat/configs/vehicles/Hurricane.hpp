@@ -35,7 +35,7 @@ class CUP_AH64D_dynamic_Base : CUP_AH64D_Base {
 				"Laserdesignator_mounted",
 				"CUP_Vacannon_M230_veh"
 			};
-			
+
 			magazines[] = {
 				"CUP_1200Rnd_TE1_Red_Tracer_30x113mm_M789_HEDP_M",
 				"Laserbatteries",
@@ -91,4 +91,16 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Hurricane (2/0)";
+
+	hiddenSelections[] = {
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+
+	hiddenSelectionsTextures[] = {
+		"socomd_data\ah64\ah64d_body_co.paa",
+		"socomd_data\ah64\ah64d_details_co.paa",
+		""
+	};
 };
