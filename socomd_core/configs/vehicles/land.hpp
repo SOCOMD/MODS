@@ -206,7 +206,7 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 
 	crew = SOCOMD_MEDIC;
 	typicalCargo[] = {SOCOMD_MEDIC};
-	
+
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {
 		"socomd_data\bma3\camo1_co.paa",
@@ -236,20 +236,20 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 		class adf_010 : adf_001 {};
 	};
 
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
+
 	class TransportMagazines {
-		LOADOUT_LAND_TRANSPORT_MAGAZINES
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
 	};
 
 	class TransportItems {
-		LOADOUT_LAND_TRANSPORT_ITEMS
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
 	};
 
 	class TransportBackpacks {
-		LOADOUT_LAND_TRANSPORT_BACKPACKS
-	};
-
-	class TransportWeapons {
-		LOADOUT_LAND_TRANSPORT_WEAPONS
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
 
@@ -305,20 +305,20 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 		class adf_010 : adf_001 {};
 	};
 
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
+
 	class TransportMagazines {
-		LOADOUT_LAND_TRANSPORT_MAGAZINES
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
 	};
 
 	class TransportItems {
-		LOADOUT_LAND_TRANSPORT_ITEMS
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
 	};
 
 	class TransportBackpacks {
-		LOADOUT_LAND_TRANSPORT_BACKPACKS
-	};
-
-	class TransportWeapons {
-		LOADOUT_LAND_TRANSPORT_WEAPONS
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
 
@@ -341,18 +341,18 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_MEDIC; \
 	typicalCargo[] = {SOCOMD_MEDIC}; \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
 	class TransportMagazines { \
-		LOADOUT_LAND_TRANSPORT_MAGAZINES \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
 	}; \
 	class TransportItems { \
-		LOADOUT_LAND_TRANSPORT_ITEMS \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		LOADOUT_LAND_TRANSPORT_BACKPACKS \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
-	class TransportWeapons { \
-		LOADOUT_LAND_TRANSPORT_WEAPONS \
-	};\
 };
 
 TRUCK_TRANSPORT_BASE(A)
@@ -376,18 +376,18 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_MEDIC; \
 	typicalCargo[] = {SOCOMD_MEDIC}; \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
 	class TransportMagazines { \
-		LOADOUT_LAND_TRANSPORT_MAGAZINES \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
 	}; \
 	class TransportItems { \
-		LOADOUT_LAND_TRANSPORT_ITEMS \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		LOADOUT_LAND_TRANSPORT_BACKPACKS \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
-	class TransportWeapons { \
-		LOADOUT_LAND_TRANSPORT_WEAPONS \
-	};\
 };
 
 TRUCK_AMMO_BASE(A)
@@ -411,17 +411,17 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_MEDIC; \
 	typicalCargo[] = {SOCOMD_MEDIC}; \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
 	class TransportMagazines { \
-		LOADOUT_LAND_TRANSPORT_MAGAZINES \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
 	}; \
 	class TransportItems { \
-		LOADOUT_LAND_TRANSPORT_ITEMS \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		LOADOUT_LAND_TRANSPORT_BACKPACKS \
-	}; \
-	class TransportWeapons { \
-		LOADOUT_LAND_TRANSPORT_WEAPONS \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
 };
 
@@ -446,17 +446,17 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_MEDIC; \
 	typicalCargo[] = {SOCOMD_MEDIC}; \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
 	class TransportMagazines { \
-		LOADOUT_LAND_TRANSPORT_MAGAZINES \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
 	}; \
 	class TransportItems { \
-		LOADOUT_LAND_TRANSPORT_ITEMS \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		LOADOUT_LAND_TRANSPORT_BACKPACKS \
-	}; \
-	class TransportWeapons { \
-		LOADOUT_LAND_TRANSPORT_WEAPONS \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
 };
 
@@ -497,20 +497,20 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	crew = "SOCOMD_Medic";
 	typicalCargo[] = {"SOCOMD_Medic"};
 
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
+
 	class TransportMagazines {
-		LOADOUT_LAND_TRANSPORT_MAGAZINES
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
 	};
 
 	class TransportItems {
-		LOADOUT_LAND_TRANSPORT_ITEMS
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
 	};
 
 	class TransportBackpacks {
-		LOADOUT_LAND_TRANSPORT_BACKPACKS
-	};
-
-	class TransportWeapons {
-		LOADOUT_LAND_TRANSPORT_WEAPONS
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 
 	textureList[] = {"SOCOMD", 1};
@@ -615,7 +615,8 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F {
 	crew = SOCOMD_MEDIC;
 	typicalCargo[] = {SOCOMD_MEDIC};
 
-	class TransportItems {
-		TI_DefaultMeds
-	};
+	class TransportWeapons {};
+	class TransportMagazines {};
+	class TransportItems {};
+	class TransportBackpacks {};
 };

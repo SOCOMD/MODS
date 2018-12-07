@@ -1,5 +1,4 @@
-class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
-{
+class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_core;
@@ -36,8 +35,7 @@ class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 	minSpeed = -0.5;
 	maxSpeed = 40;
 
-	class complexGearbox
-		{
+	class complexGearbox {
 			GearboxRatios[] = {"R1",-0.5,"N",0,"D1",1.5,"D2",2.0,"D3",2.5};
 			TransmissionRatios[] = {"High",1};
 			gearBoxMode = "auto";
@@ -47,30 +45,25 @@ class SOCOMD_ASSAULT_BOAT : B_Boat_Transport_01_F
 			reverseString = "R";
 		};
 
-	class TransportMagazines 
-	{
-		LOADOUT_LAND_TRANSPORT_MAGAZINES
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
 
-	class TransportItems 
-	{
-		LOADOUT_LAND_TRANSPORT_ITEMS
+	class TransportMagazines {
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
 	};
 
-	class TransportBackpacks 
-	{
-		LOADOUT_LAND_TRANSPORT_BACKPACKS
+	class TransportItems {
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
 	};
 
-	class TransportWeapons 
-	{
-		LOADOUT_LAND_TRANSPORT_WEAPONS
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
 
 class CUP_B_RHIB_USMC;
-class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC
-{
+class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_core;
@@ -107,23 +100,19 @@ class SOCOMD_RHIB_ARMED : CUP_B_RHIB_USMC
 	minSpeed = -0.5;
 	maxSpeed = 60;
 
-	class TransportMagazines 
-	{
-		LOADOUT_LAND_TRANSPORT_MAGAZINES
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
 
-	class TransportItems 
-	{
-		LOADOUT_LAND_TRANSPORT_ITEMS
+	class TransportMagazines {
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
 	};
 
-	class TransportBackpacks 
-	{
-		LOADOUT_LAND_TRANSPORT_BACKPACKS
+	class TransportItems {
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
 	};
 
-	class TransportWeapons 
-	{
-		LOADOUT_LAND_TRANSPORT_WEAPONS
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };

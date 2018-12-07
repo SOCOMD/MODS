@@ -53,12 +53,18 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	driverCanSee = CanSeeAll; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
-	LOADOUT_AIR \
-	class TransportBackpacks \
-	{ \
-		TRANSPORT_BACKPACK(B_Parachute, 16) \
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
-	};\
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
+	class TransportBackpacks { \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
 };
 
 WARRIOR_BASE(A,public)
@@ -83,11 +89,17 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
-	LOADOUT_AIR \
-	class TransportBackpacks \
-	{ \
-		TRANSPORT_BACKPACK(B_Parachute, 30) \
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
+	class TransportBackpacks { \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
 };
 
@@ -112,10 +124,17 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
-	LOADOUT_AIR \
-	class TransportBackpacks \
-	{ \
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
+	class TransportBackpacks { \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
 };
 
@@ -254,11 +273,18 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	armorStructural = 1.0; \
 	explosionShielding = 1.0; \
 	backRotorForceCoef = 0.4; \
-	LOADOUT_AIR \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
 	class TransportBackpacks { \
-		TRANSPORT_BACKPACK(B_Parachute, 8) \
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
-	};\
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
 };
 
 FIREFLY_BASE(A)
@@ -282,11 +308,17 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	forceInGarage = 1; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
-	LOADOUT_AIR \
-	class TransportBackpacks \
-	{ \
-		TRANSPORT_BACKPACK(B_Parachute, 2) \
-		TRANSPORT_BACKPACK(VSM_Multicam_Backpack_Kitbag, 1) \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
+	class TransportBackpacks { \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
 };
 

@@ -10,12 +10,11 @@ class CfgFactionClasses {
 };
 
 class CfgVehicleClasses {
-	//SOCOMD COMMANDOS
 	class SOCOMD_Core {
 		displayName = "SOCOMD Core Units";
 		priority = 1;
 	};
-	
+
 	class SOCOMD_Sniper {
 		displayName = "SOCOMD Sniper Team";
 		priority = 2;
@@ -25,8 +24,6 @@ class CfgVehicleClasses {
 		displayName = "SOCOMD Weapons Team";
 		priority = 3;
 	};
-
-	//SOCOMD SASR
 
 	class SOCOMD_SASR_Units {
 		displayName = "SOCOMD SASR Units";
