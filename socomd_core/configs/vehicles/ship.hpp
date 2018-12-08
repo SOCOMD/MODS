@@ -11,7 +11,7 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Boat (1/0)";
+	displayname = "Boat (1/5)";
 	vehicleclass = "Ship";
 	forceInGarage = 1;
 
@@ -61,7 +61,7 @@ class SOCOMD_SHIP_##ID : SOCOMD_BOAT_ASSAULT { \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
-	displayname = "Boat (1/0)"; \
+	displayname = "Boat (1/5)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
 	driverCanSee = CanSeeAll; \
