@@ -1,444 +1,83 @@
-class Vest_Camo_Base;
 
-////////////////////////////////////////////////////////////////////////////////
-// Default Unit Vests
+#define SOCOMD_VEST(VEST) \
+class ##VEST; \
+class SOCOMD_OVERRIDE_##VEST : ##VEST { \
+	scope = private; \
+	author = AUTHOR_STR; \
+	class ItemInfo; \
+}; \
+class SOCOMD_OVERRIDE_A_##VEST : SOCOMD_OVERRIDE_##VEST { \
+	scope = private; \
+	author = AUTHOR_STR; \
+	class ItemInfo; \
+}; \
+class SOCOMD_##VEST : SOCOMD_OVERRIDE_A_##VEST { \
+	scope = public; \
+	author = AUTHOR_STR; \
+	class ItemInfo : ItemInfo { \
+		containerClass = "Supply400"; \
+		mass = 20; \
+		class HitpointsProtectionInfo { \
+			class Chest { \
+				hitpointName = "HitChest"; \
+				armor = 40; \
+				passThrough = 0.1; \
+			}; \
+			class Diaphragm { \
+				hitpointName = "HitDiaphragm"; \
+				armor = 40; \
+				passThrough = 0.1; \
+			}; \
+			class Abdomen { \
+				hitpointName = "HitAbdomen"; \
+				armor = 40; \
+				passThrough = 0.1; \
+			}; \
+			class Body { \
+				hitpointName = "HitBody"; \
+				passThrough = 0.1; \
+			}; \
+		}; \
+	}; \
+};
 
-class VSM_FAPC_Operator_Multicam;
-class SOCOMD_2IC_Vest : lbt_weapons_mc;
-class SOCOMD_Operator_Vest : lbt_tl_mc;
-class VSM_LBT6094_MG_Multicam;
-class SOCOMD_Medic_Vest : lbt_medical_mc;
-class SOCOMD_Leader_Vest : lbt_comms_coy;
-class VSM_OGA_OD_Vest_2;
-class SOCOMD_Operator_Vest : lbt_tl_mc;
-class SOCOMD_Leader_Vest : lbt_comms_mc;
-
-////////////////////////////////////////////////////////////////////////////////
-// Secondary Unit Vests
-
-class SOG_BAG_MC;
-class SOG_BAG_Tan;
-class SOG_BAG_od;
-class SOG_BAG_recon_MC;
-class SOG_BAG_recon_Tan;
-class SOG_BAG_recon_od;
-class SOG_BAG_BREACHER_tan;
-class SOG_BAG_BREACHER_MC;
-class SOG_BAG_BREACHER_od;
-class SOG_BAG_med_tan;
-class SOG_BAG_med_MC;
-class SOG_BAG_med_od;
-class Kit_Bag_MC;
-class Kit_Bag_Tan;
-class Kit_Bag_od;
-class Kit_Bag_R_MC;
-class Kit_Bag_R_od;
-class Kit_Bag_R_Tan;
-class Kit_Bag_pince_TAN;
-class Kit_Bag_pince_mc;
-class Kit_Bag_pince_od;
+SOCOMD_VEST(V_RebreatherB)
+SOCOMD_VEST(lbt_weapons_mc) //SOCOMD_2IC_Vest
+SOCOMD_VEST(lbt_tl_mc) //SOCOMD_Operator_Vest
+SOCOMD_VEST(lbt_medical_mc) //SOCOMD_Medic_Vest
+SOCOMD_VEST(lbt_comms_coy)
+SOCOMD_VEST(lbt_comms_mc) //SOCOMD_Leader_Vest
+SOCOMD_VEST(lbt_medical_coy)
+SOCOMD_VEST(lbt_tl_coy)
+SOCOMD_VEST(VSM_LBT6094_MG_Multicam)
+SOCOMD_VEST(VSM_OGA_OD_Vest_2)
+SOCOMD_VEST(VSM_FAPC_Operator_Multicam)
+SOCOMD_VEST(SOG_BAG_MC)
+SOCOMD_VEST(SOG_BAG_Tan)
+SOCOMD_VEST(SOG_BAG_od)
+SOCOMD_VEST(SOG_BAG_recon_MC)
+SOCOMD_VEST(SOG_BAG_recon_Tan)
+SOCOMD_VEST(SOG_BAG_recon_od)
+SOCOMD_VEST(SOG_BAG_BREACHER_tan)
+SOCOMD_VEST(SOG_BAG_BREACHER_MC)
+SOCOMD_VEST(SOG_BAG_BREACHER_od)
+SOCOMD_VEST(SOG_BAG_med_tan)
+SOCOMD_VEST(SOG_BAG_med_MC)
+SOCOMD_VEST(SOG_BAG_med_od)
+SOCOMD_VEST(Kit_Bag_MC)
+SOCOMD_VEST(Kit_Bag_Tan)
+SOCOMD_VEST(Kit_Bag_od)
+SOCOMD_VEST(Kit_Bag_R_MC)
+SOCOMD_VEST(Kit_Bag_R_od)
+SOCOMD_VEST(Kit_Bag_R_Tan)
+SOCOMD_VEST(Kit_Bag_pince_TAN)
+SOCOMD_VEST(Kit_Bag_pince_mc)
+SOCOMD_VEST(Kit_Bag_pince_od)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Working
 
-#define SOCOMD_VEST(CLASSNAME) \
-class SOCOMD_##CLASSNAME_BASE : CLASSNAME { \
-	class ItemInfo; \
-}; \
-class SOCOMD_VEST_##CLASSNAME_A : CLASSNAME { \
-	class ItemInfo; \
-}; \
-class SOCOMD_VEST_##CLASSNAME_A : CLASSNAME { \
-	class ItemInfo : ItemInfo { \
-		class HitpointsProtectionInfo; \
-	}; \
-}; \
 
-class Vest_Camo_Base {
-	scope = public;
-	_generalMacro = "Vest_Camo_Base";
-	class ItemInfo;
-};
-
-class V_PlateCarrier1_rgr : Vest_Camo_Base {
-	scope = public;
-	_generalMacro = "V_PlateCarrier1_rgr";
-	class ItemInfo : ItemInfo {};
-};
-
-class VSM_LBT6094_MG_Multicam : Vest_Camo_Base {
-	class ItemInfo : ItemInfo {
-		containerClass = "Supply400";
-	};
-};
-
-class SOCOMD_Vest_TL : V_PlateCarrier1_rgr {
-	scope = public;
-	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_V_plate_carrier_1_CA.paa";
-	displayName = "SOCOMD Platecarrier TL";
-	descriptionShort = "$STR_A3_SP_AL_IV";
-
-	model = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
-	hiddenSelections[] = {"camo","Camo1"};
-	hiddenSelectionsTextures[] = {"\socomd_data\uniform\ve\mas_6094a_co.paa","\socomd_data\uniform\ve\armysf_tl_acu_co.paa"};
-
-	class ItemInfo : ItemInfo {
-		uniformModel = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
-		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply400";
-		mass = 20;
-
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.1;
-			};
-		};
-	};
-};
-
-class SOCOMD_Vest_CM : SOCOMD_Vest_TL {
-	scope = public;
-	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_V_plate_carrier_1_CA.paa";
-	displayName = "SOCOMD Platecarrier CM";
-	descriptionShort = "$STR_A3_SP_AL_IV";
-
-	model = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
-	hiddenSelections[] = {"camo","Camo1"};
-	hiddenSelectionsTextures[] = {"\socomd_data\uniform\ve\cm_mas_6094a_co.paa","\socomd_data\uniform\ve\cm_armysf_tl_acu_co.paa"};
-
-	class ItemInfo : ItemInfo {
-		uniformModel = "\socomd_data\uniform\mas_plate_carrier_TL.p3d";
-		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply400";
-		mass = 20;
-
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.1;
-			};
-		};
-	};
-};
-
-class V_PlateCarrier2_rgr : Vest_Camo_Base {
-	scope = public;
-	_generalMacro = "V_PlateCarrier2_rgr";
-	class ItemInfo : ItemInfo {};
-};
-
-class SOCOMD_Vest_AR : V_PlateCarrier2_rgr {
-	scope = public;
-
-	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_V_plate_carrier_2_CA.paa";
-	displayName = "SOCOMD Platecarrier AR";
-	descriptionShort = "$STR_A3_SP_AL_IV";
-
-	model = "\socomd_data\uniform\mas_plate_carrier_AR";
-	hiddenSelections[] = {"camo","Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"\socomd_data\uniform\ve\mas_6094a_co.paa","\socomd_data\uniform\ve\armysf_tl_acu_co.paa","\socomd_data\uniform\ve\armysf_saw_dcu_co.paa"};
-
-	class ItemInfo : ItemInfo {
-		uniformModel = "\socomd_data\uniform\mas_plate_carrier_AR";
-		hiddenSelections[] = {"Camo", "Camo1", "Camo2"};
-		containerClass = "Supply400";
-		mass = 20;
-
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.1;
-			};
-		};
-	};
-};
-
-class V_PlateCarrierGL_rgr : Vest_Camo_Base {
-	scope = public;
-	_generalMacro = "V_PlateCarrierGL_rgr";
-	class ItemInfo : ItemInfo {};
-};
-
-class SOCOMD_Vest_OP : V_PlateCarrierGL_rgr {
-	scope = public;
-	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_V_plate_carrier_2_CA.paa";
-	displayName = "SOCOMD Platecarrier OP";
-	descriptionShort = "$STR_A3_SP_AL_IV";
-
-	model = "\socomd_data\uniform\mas_plate_carrier_OP";
-	hiddenSelections[] = {"Camo", "Camo1"};
-	hiddenSelectionsTextures[] = {"\socomd_data\uniform\ve\mas_6094a_co.paa","\socomd_data\uniform\ve\armysf_tl_acu_co.paa"};
-
-	class ItemInfo : ItemInfo {
-		uniformModel = "\socomd_data\uniform\mas_plate_carrier_OP";
-		hiddenSelections[] = {"Camo", "Camo1"};
-		containerClass = "Supply400";
-		mass = 20;
-
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 40;
-				passThrough = 0.1;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.1;
-			};
-		};
-	};
-};
-
-class V_Chestrig_khk : Vest_Camo_Base {
-	scope = public;
-	_generalMacro = "V_Chestrig_khk";
-	class ItemInfo : ItemInfo {};
-};
-
-class SOCOMD_Vest_Pilot : V_Chestrig_khk {
-	scope = public;
-	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_V_Chestrig_khk_CA.paa";
-	displayName = "SOCOMD Pilot Vest";
-
-	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"\socomd_data\uniform\ve\equip_chestrig_mul_co.paa","\socomd_data\uniform\ve\armor1_cm.paa"};
-
-	class ItemInfo : ItemInfo {
-		uniformModel = "\A3\Characters_F\Common\equip_chestrig.p3d";
-		hiddenSelections[] = {"Camo1", "Camo2"};
-		containerClass = "Supply200";
-		mass = 20;
-
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.5;
-			};
-		};
-	};
-};
-
-class CUP_Vest_RACS_Camo_Base;
-class CUP_V_I_RACS_Carrier_Rig_3: CUP_Vest_RACS_Camo_Base {
-	class ItemInfo;
-};
-class SOCOMD_Vest_Pilot_2: CUP_V_I_RACS_Carrier_Rig_3 {
-	scope=public;
-	displayName="SOCOMD Pilot Vest (Desert - Radio)";
-	model="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_Carrier_Rig_3.p3d";
-	picture="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\data\ui\icon_v_pouch_harness_ca.paa";
-	hiddenSelectionsTextures[]= {
-		"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex1_co.paa",
-		"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex2_co.paa"
-	};
-	class ItemInfo: ItemInfo {
-		hiddenSelectionsTextures[]= {
-			"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex1_co.paa",
-			"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_racs\data\racs_tex2_co.paa"
-		};
-		containerClass="Supply200";
-		uniformModel="\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_Carrier_Rig_3.p3d";
-		armor=0;
-		passThrough=1;
-		mass=20;
-		class HitpointsProtectionInfo {
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 8;
-				passThrough = 0.5;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough = 0.5;
-			};
-		};
-	};
-};
-
-
-class V_RebreatherB;
-class SOCOMD_Vest_Rebreather : V_RebreatherB {
-	scope = public;
-	author = AUTHOR_STR;
-
-	class ItemInfo : ItemInfo {
-		containerClass = "Supply200";
-		mass = 20;
-	};
-};
-
-
-class lbt_comms_mc;
-class lbt_weapons_mc;
-class lbt_medical_mc;
-class lbt_pouchless_coy;
-class lbt_operator_coy;
-class lbt_tl_coy;
-class lbt_medical_coy;
-class lbt_weapons_coy;
-class lbt_comms_coy;
-class lbt_pouchless_mc;
-class lbt_operator_mc;
-class lbt_tl_mc;
-
-////////////////////////////////////////////////////////////////////////////////
-// SOCOMD Vests
-
-class SOCOMD_Vest_Rebreather : V_RebreatherB {
-	scope = public;
-	author = AUTHOR_STR;
-
-	class ItemInfo : ItemInfo {
-		containerClass = "Supply200";
-		mass = 20;
-	};
-};
-
-class SOCOMD_Leader_Vest : lbt_comms_mc {
-	scope = public;
-	displayName = "SOCOMD Leader Vest";
-};
-
-class SOCOMD_2IC_Vest : lbt_weapons_mc {
-	scope = public;
-	displayName = "SOCOMD 2IC Vest";
-};
-
-class SOCOMD_Medic_Vest : lbt_medical_mc {
-	scope = public;
-	displayName = "SOCOMD Medic Vest";
-};
-
-class SOCOMD_Operator_Vest : lbt_tl_mc {
-	scope = public;
-	displayName = "SOCOMD Operator Vest";
-};
-
-class SOCOMD_Rifleman_Vest : lbt_operator_mc {
-	scope = public;
-	displayName = "SOCOMD Rifleman Vest";
-};
-
-class SOCOMD_Pouchless_Vest : lbt_pouchless_mc {
-	scope = public;
-	displayName = "SOCOMD Pouchless Vest";
-};
-
-class SOCOMD_Leader_Vest_coy : lbt_comms_coy {
-	scope = public;
-	displayName = "SOCOMD Leader Vest Tan";
-};
-
-class SOCOMD_2IC_Vest_coy : lbt_weapons_coy {
-	scope = public;
-	displayName = "SOCOMD 2IC Vest Tan";
-};
-
-class SOCOMD_Medic_Vest_coy : lbt_medical_coy {
-	scope = public;
-	displayName = "SOCOMD Medic Vest Tan";
-};
-
-class SOCOMD_Operator_Vest_coy : lbt_tl_coy {
-	scope = public;
-	displayName = "SOCOMD Operator Vest Tan";
-};
-
-class SOCOMD_Rifleman_Vest_coy : lbt_operator_coy {
-	scope = public;
-	displayName = "SOCOMD Rifleman Vest Tan";
-};
-
-class SOCOMD_Pouchless_Vest_coy : lbt_pouchless_coy {
-	scope = public;
-	displayName = "SOCOMD Pouchless Vest Tan";
-};
 
 ////////////////////////////////////////////////////////////////////////////////
 // COUNTER TERRORISM ITEMS
@@ -447,58 +86,58 @@ class SOCOMD_Leader_Vest_BLK : lbt_comms_coy {
 	scope = public;
 	displayName = "SOCOMD Leader Vest Black";
 	hiddenSelections[]= {
-			"Camo",
-			"Camo2",
-			"Camo3",
-			"Camo4",
-			"Camo5"
-		};
+		"Camo",
+		"Camo2",
+		"Camo3",
+		"Camo4",
+		"Camo5"
+	};
+
 	hiddenSelectionsTextures[]= {
-			"socomd_data\CTgear\lbt_blk.paa",
-			"socomd_data\CTgear\gear_blk.paa",
-			"socomd_data\CTgear\radio_blk.paa",
-			"socomd_data\CTgear\grenade_blk.paa",
-			"socomd_data\CTgear\pouch_blk.paa"
-		};
+		"socomd_data\CTgear\lbt_blk.paa",
+		"socomd_data\CTgear\gear_blk.paa",
+		"socomd_data\CTgear\radio_blk.paa",
+		"socomd_data\CTgear\grenade_blk.paa",
+		"socomd_data\CTgear\pouch_blk.paa"
+	};
 };
-
-
 
 class SOCOMD_Medic_Vest_BLK : lbt_medical_coy {
 	scope = public;
 	displayName = "SOCOMD Medic Vest Black";
 	hiddenSelections[]= {
-			"Camo",
-			"Camo2",
-			"Camo3",
-			"Camo4",
-			"Camo5"
-		};
-	hiddenSelectionsTextures[]= {
-			"socomd_data\CTgear\lbt_blk.paa",
-			"socomd_data\CTgear\gear_blk.paa",
-			"socomd_data\CTgear\radio_blk.paa",
-			"socomd_data\CTgear\shears_co.paa",
-			"socomd_data\CTgear\pouch_blk.paa"
-		};
-};
+		"Camo",
+		"Camo2",
+		"Camo3",
+		"Camo4",
+		"Camo5"
+	};
 
+	hiddenSelectionsTextures[]= {
+		"socomd_data\CTgear\lbt_blk.paa",
+		"socomd_data\CTgear\gear_blk.paa",
+		"socomd_data\CTgear\radio_blk.paa",
+		"socomd_data\CTgear\shears_co.paa",
+		"socomd_data\CTgear\pouch_blk.paa"
+	};
+};
 
 class SOCOMD_Operator_Vest_BLK : lbt_tl_coy {
 	scope = public;
 	displayName = "SOCOMD Operator Vest Black";
 	hiddenSelections[]= {
-			"Camo",
-			"Camo2",
-			"Camo3",
-			"Camo4",
-			"Camo5"
-		};
+		"Camo",
+		"Camo2",
+		"Camo3",
+		"Camo4",
+		"Camo5"
+	};
+
 	hiddenSelectionsTextures[]= {
-			"socomd_data\CTgear\lbt_blk.paa",
-			"socomd_data\CTgear\gear_blk.paa",
-			"socomd_data\CTgear\radio_blk.paa",
-			"socomd_data\CTgear\grenade_blk.paa",
-			"socomd_data\CTgear\pouch_blk.paa"
-		};
+		"socomd_data\CTgear\lbt_blk.paa",
+		"socomd_data\CTgear\gear_blk.paa",
+		"socomd_data\CTgear\radio_blk.paa",
+		"socomd_data\CTgear\grenade_blk.paa",
+		"socomd_data\CTgear\pouch_blk.paa"
+	};
 };
