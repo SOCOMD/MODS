@@ -15,7 +15,7 @@ class RHS_UH60M_D;
 class SOCOMD_WARRIOR_A : RHS_UH60M_D {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	displayname = "Warrior (4/12)";
 

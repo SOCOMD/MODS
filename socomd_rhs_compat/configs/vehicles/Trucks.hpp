@@ -16,7 +16,7 @@ class rhsusf_M1083A1P2_B_D_fmtv_usarmy;
 class SOCOMD_TRUCK_TRANSPORT_A : rhsusf_M1083A1P2_B_D_fmtv_usarmy {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
@@ -41,7 +41,7 @@ class rhsusf_M977A4_AMMO_usarmy_d;
 class SOCOMD_TRUCK_AMMO_A : rhsusf_M977A4_AMMO_usarmy_d {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
@@ -66,7 +66,7 @@ class rhsusf_M978A4_usarmy_d;
 class SOCOMD_TRUCK_FUEL_A : rhsusf_M978A4_usarmy_d {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;
@@ -91,7 +91,7 @@ class rhsusf_M977A4_REPAIR_usarmy_d;
 class SOCOMD_TRUCK_REPAIR_A : rhsusf_M977A4_REPAIR_usarmy_d {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;

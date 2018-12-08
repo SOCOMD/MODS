@@ -17,8 +17,12 @@
 //SOCOMD
 #define AUTHOR_STR "SOCOMD Mod"
 #define FACTION_STR "SOCOMD"
-#define SOCOMD_PILOT "SOCOMD_Pilot"
-#define SOCOMD_MEDIC "SOCOMD_Medic"
+
+#define UNIT_SOCOMD_UNARMED "SOCOMD_Unarmed"
+#define UNIT_SOCOMD_HOMESTEAD "SOCOMD_Homestead"
+#define UNIT_SOCOMD_RIFLEMAN "SOCOMD_Rifleman"
+#define UNIT_SOCOMD_PILOT "SOCOMD_Pilot"
+#define UNIT_SOCOMD_CREWMAN "SOCOMD_Crewman"
 
 //#define true			1
 //#define false			0

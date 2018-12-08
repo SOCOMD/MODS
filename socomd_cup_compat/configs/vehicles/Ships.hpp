@@ -3,7 +3,7 @@ class CUP_B_RHIB_USMC;
 class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	side = WEST;
 	author = AUTHOR_STR;

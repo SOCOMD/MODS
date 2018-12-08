@@ -1,5 +1,6 @@
 class CfgWeapons {
 
+	class RifleCore;
 	class ItemCore;
 
 	//Item Defines
@@ -7,7 +8,6 @@ class CfgWeapons {
 	#include "items\gps.hpp"
 	#include "items\handgun.hpp"
 	#include "items\headgear.hpp"
-	#include "items\magazines.hpp"
 	#include "items\primary.hpp"
 	#include "items\secondary.hpp"
 	#include "items\uniform.hpp"

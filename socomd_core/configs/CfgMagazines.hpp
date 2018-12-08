@@ -1,3 +1,5 @@
 class CfgMagazines {
-	//Placeholder
+	class CA_Magazine;
+	#include "items\magazines.hpp"
+	#include "items\socomd_men_magazines.hpp"
 };

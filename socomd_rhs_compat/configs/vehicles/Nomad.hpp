@@ -13,7 +13,7 @@ class RHS_CH_47F_10;
 class SOCOMD_NOMAD_A : RHS_CH_47F_10 {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;

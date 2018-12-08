@@ -11,7 +11,7 @@ class RHS_MELB_MH6M;
 class SOCOMD_FIREFLY_A : RHS_MELB_MH6M {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
@@ -31,7 +31,7 @@ class RHS_MELB_AH6M;
 class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;

@@ -1,5 +1,5 @@
 class CfgEditorSubcategories {
-	class SOCOMD_EdSubcat_man {
+	class SOCOMD_EdSubcat_Man {
 		displayName = "Man";
 	};
 

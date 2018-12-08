@@ -8,7 +8,7 @@ class CUP_B_CH47F_USA;
 class SOCOMD_NOMAD_A : CUP_B_CH47F_USA {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	author = AUTHOR_STR;

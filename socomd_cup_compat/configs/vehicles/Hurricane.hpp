@@ -85,7 +85,7 @@ class CUP_B_AH64D_DL_USA;
 class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	author = AUTHOR_STR;

@@ -436,7 +436,7 @@ class BIKE_BASE : Bicycle {
 class SOCOMD_BIKE : BIKE_BASE {
 	scope = public;
 	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
 	forceInGarage = 1;
 	side = 1;
@@ -444,6 +444,6 @@ class SOCOMD_BIKE : BIKE_BASE {
 	displayname = "Tactical Bike (1/0)";
 	faction = FACTION_STR;
 	vehicleclass = "Car";
-	crew = SOCOMD_MEDIC;
-	typicalCargo[] = {SOCOMD_MEDIC};
+	crew = UNIT_SOCOMD_UNARMED;
+	typicalCargo[] = {UNIT_SOCOMD_UNARMED};
 };

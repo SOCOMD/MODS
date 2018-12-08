@@ -1,5 +1,5 @@
 class CfgEditorCategories {
-	class SOCOMD_EdCat_core {
+	class SOCOMD_EdCat_Core {
 		displayName = "SOCOMD";
 	};
 };

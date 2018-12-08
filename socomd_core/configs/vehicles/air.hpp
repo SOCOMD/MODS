@@ -42,7 +42,7 @@ class B_Heli_Transport_01_F;
 class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	scope = SCOPE; \
 	scopeCurator = SCOPE; \
-	editorCategory = SOCOMD_EdCat_core; \
+	editorCategory = SOCOMD_EdCat_Core; \
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
 	side = WEST; \
 	author = AUTHOR_STR; \
@@ -79,7 +79,7 @@ class B_Heli_Transport_03_F;
 class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	scope = public; \
 	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_core; \
+	editorCategory = SOCOMD_EdCat_Core; \
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
 	side = WEST; \
 	author = AUTHOR_STR; \
@@ -114,7 +114,7 @@ class B_Heli_Attack_01_dynamicLoadout_F;
 class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	scope = public; \
 	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_core; \
+	editorCategory = SOCOMD_EdCat_Core; \
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
 	side = WEST; \
 	author = AUTHOR_STR; \
@@ -259,7 +259,7 @@ class B_Heli_Light_01_F;
 class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	scope = public; \
 	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_core; \
+	editorCategory = SOCOMD_EdCat_Core; \
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
 	side = WEST; \
 	author = AUTHOR_STR; \
@@ -298,7 +298,7 @@ class B_Heli_Light_01_dynamicLoadout_F;
 class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	scope = public; \
 	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_core; \
+	editorCategory = SOCOMD_EdCat_Core; \
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
 	side = WEST; \
 	author = AUTHOR_STR; \

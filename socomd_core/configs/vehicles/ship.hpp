@@ -4,9 +4,9 @@
 
 class B_Boat_Transport_01_F;
 class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
-	scope = public;
-	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_core;
+	scope = private;
+	scopeCurator = private;
+	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	side = WEST;
 	author = AUTHOR_STR;
@@ -15,8 +15,8 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
 	vehicleclass = "Ship";
 	forceInGarage = 1;
 
-	crew = SOCOMD_MEDIC;
-	typicalCargo[] = {SOCOMD_MEDIC};
+	crew = UNIT_SOCOMD_CREWMAN;
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
 	armor = 10000;
 
 	//Performance
@@ -52,14 +52,12 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
 	};
 };
 
-
-
 #define SHIP_BASE(ID, SCOPE) \
 class SOCOMD_SHIP_##ID : SOCOMD_BOAT_ASSAULT { \
 	scope = SCOPE; \
 	scopeCurator = SCOPE; \
-	editorCategory = SOCOMD_EdCat_core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
+	editorCategory = SOCOMD_EdCat_Core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea; \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
@@ -67,8 +65,8 @@ class SOCOMD_SHIP_##ID : SOCOMD_BOAT_ASSAULT { \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
 	driverCanSee = CanSeeAll; \
-	crew = SOCOMD_PILOT; \
-	typicalCargo[] = {SOCOMD_PILOT}; \
+	crew = SOCOMD_RIFLEMAN; \
+	typicalCargo[] = {SOCOMD_RIFLEMAN}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \

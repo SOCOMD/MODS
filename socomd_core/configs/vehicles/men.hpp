@@ -20,5 +20,149 @@
 #define ITEM20(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
 #define ITEM30(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
 
-#include "men_commando.hpp"
-#include "men_sasr.hpp"
+////////////////////////////////////////////////////////////////////////////////
+
+#define SOLDIER_BASE_LINKEDITEMS \
+	ITEM01("ItemMap"), \
+	ITEM01("ItemCompass"), \
+	ITEM01("ItemWatch") \
+
+#define SOLDER_HOMESTEAD_ITEMS \
+	ITEM01("ACE_EarPlugs"), \
+	ITEM01("ACRE_PRC343"), \
+	ITEM01("ACRE_PRC152"). \
+	ITEM01("ACRE_PRC117F")
+
+class SOCOMD_Unarmed : B_Soldier_02_f {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Man;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Unarmed";
+	vehicleclass = "Man";
+
+	uniformClass = ITEM_UNIFORM_RIFLEMAN;
+
+	weapons[] 					= { };
+	respawnWeapons[] 			= { };
+	magazines[] 				= { };
+	respawnMagazines[] 			= { };
+	respawnLinkedItems[] 		= {SOLDIER_LOADOUT_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_LOADOUT_LINKEDITEMS};
+	Items[] 					= { };
+	RespawnItems[] 				= { };
+	backpack					= "";
+};
+
+class SOCOMD_Homestead : SOCOMD_Unarmed {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Man;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Homestead";
+	vehicleclass = "Man";
+
+	Items[] 					= {SOLDER_HOMESTEAD_ITEMS};
+	RespawnItems[] 				= {SOLDER_HOMESTEAD_ITEMS};
+	backpack					= ITEM_BACKPACK_TROOPLEADER;
+};
+
+#define SOLDER_RIFLEMAN_WEAPONS \
+	ITEM01(ITEM_PRIMARY_RIFLEMAN)
+
+#define SOLDER_RIFLEMAN_MAGAZINES \
+	ITEM07(ITEM_PRIMARY_MAGAZINE_RIFLEMAN)
+
+#define SOLDIER_RIFLEMAN_LINKEDITEMS \
+	SOLDIER_LOADOUT_LINKEDITEMS, \
+	ITEM01(ITEM_VEST_RIFLEMAN), \
+	ITEM01(ITEM_HEADGEAR_RIFLEMAN)
+
+
+class SOCOMD_Rifleman : SOCOMD_Unarmed {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Man;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Rifleman";
+	vehicleclass = "Man";
+
+	weapons[] 					= {SOLDER_RIFLEMAN_WEAPONS};
+	respawnWeapons[] 			= {SOLDER_RIFLEMAN_WEAPONS};
+	magazines[] 				= {SOLDER_RIFLEMAN_MAGAZINES};
+	respawnMagazines[] 			= {SOLDER_RIFLEMAN_MAGAZINES};
+	respawnLinkedItems[] 		= {SOLDIER_RIFLEMAN_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_RIFLEMAN_LINKEDITEMS};
+	backpack					= ITEM_BACKPACK_RIFLEMAN;
+};
+
+#define SOLDER_PILOT_WEAPONS \
+	ITEM01(ITEM_PRIMARY_PILOT)
+
+#define SOLDER_PILOT_MAGAZINES \
+	ITEM07(ITEM_PRIMARY_MAGAZINE_PILOT)
+
+#define SOLDIER_PILOT_LINKEDITEMS \
+	SOLDIER_LOADOUT_LINKEDITEMS, \
+	ITEM01(ITEM_VEST_PILOT), \
+	ITEM01(ITEM_HEADGEAR_PILOT)
+
+class SOCOMD_Pilot : SOCOMD_Unarmed {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Man;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Pilot";
+	vehicleclass = "Man";
+
+	weapons[] 					= {SOLDER_PILOT_WEAPONS};
+	respawnWeapons[] 			= {SOLDER_PILOT_WEAPONS};
+	magazines[] 				= {SOLDER_PILOT_MAGAZINES};
+	respawnMagazines[] 			= {SOLDER_PILOT_MAGAZINES};
+	respawnLinkedItems[] 		= {SOLDIER_PILOT_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_PILOT_LINKEDITEMS};
+	backpack					= ITEM_BACKPACK_PILOT;
+};
+
+#define SOLDER_CREWMAN_WEAPONS \
+	ITEM01(ITEM_PRIMARY_CREWMAN)
+
+#define SOLDER_CREWMAN_MAGAZINES \
+	ITEM07(ITEM_PRIMARY_MAGAZINE_CREWMAN)
+
+#define SOLDIER_CREWMAN_LINKEDITEMS \
+	SOLDIER_LOADOUT_LINKEDITEMS, \
+	ITEM01(ITEM_VEST_CREWMAN), \
+	ITEM01(ITEM_HEADGEAR_CREWMAN)
+
+class SOCOMD_Crewman : SOCOMD_Unarmed {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Man;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Crewman";
+	vehicleclass = "Man";
+
+	weapons[] 					= {SOLDER_CREWMAN_WEAPONS};
+	respawnWeapons[] 			= {SOLDER_CREWMAN_WEAPONS};
+	magazines[] 				= {SOLDER_CREWMAN_MAGAZINES};
+	respawnMagazines[] 			= {SOLDER_CREWMAN_MAGAZINES};
+	respawnLinkedItems[] 		= {SOLDIER_CREWMAN_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_CREWMAN_LINKEDITEMS};
+	backpack					= ITEM_BACKPACK_CREWMAN;
+};
