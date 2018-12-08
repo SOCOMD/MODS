@@ -103,6 +103,10 @@ class CfgVehicles  {
 	class FLAG_NATO_F;
 	class FLAG_CSAT_F;
 
+	//Items
+	#include "items\backpack.hpp"
+	#include "items_socomd\backpacks.hpp"
+
 	#include "vehicles\fixes.hpp"
 	#include "vehicles\land.hpp"
 	#include "vehicles\air.hpp"
@@ -113,5 +117,4 @@ class CfgVehicles  {
 	#include "vehicles\boxes.hpp"
 	#include "vehicles\other.hpp"
 	#include "vehicles\bike.hpp"
-
 };

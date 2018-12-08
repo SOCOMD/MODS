@@ -13,8 +13,8 @@ class CfgPatches
 		requiredVersion = 0.1;
 
 		//Mod Dependencies
-		requiredAddons[] =
-		{
+		requiredAddons[] = {
+			"COS_back_pack",
 			"socomd_data",
 			"A3_Characters_F_BLUFOR",
 			"A3_Weapons_F",
@@ -30,8 +30,7 @@ class CfgPatches
 		};
 
 		//SOCOMD Custom Units
-		units[] =
-		{
+		units[] = {
 			// OTHER
 			"FLAG_ADFU_F",
 			"FLAG_ADFOPFOR_F",
@@ -168,10 +167,10 @@ class CfgPatches
 #include "configs\CfgGlasses.hpp"
 #include "configs\CfgMoves.hpp"
 
+#include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgAmmo.hpp"
 #include "configs\CfgMagazines.hpp"
-#include "configs\CfgVehicles.hpp"
 
 #include "configs\CfgClasses.hpp"
 #include "configs\CfgGroups.hpp"
