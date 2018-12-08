@@ -14,5 +14,5 @@ start /D %projectDir% makepbo.exe -N -P socomd_asorvs %modOutput_lite%
 start /D %projectDir% makepbo.exe -N -P socomd_asorgs %modOutput_lite%
 start /D %projectDir% makepbo.exe -N -P socomd_zeus %modOutput_lite%
 start /D %projectDir% makepbo.exe -N -P socomd_data %modOutput_lite%
-start /D %projectDir% makepbo.exe -N -P ar_advancedrappelling %modOutput%
-start /D %projectDir% makepbo.exe -N -P sa_advancedslingloading %modOutput%
+start /D %projectDir% makepbo.exe -N -P ar_advancedrappelling %modOutput_lite%
+start /D %projectDir% makepbo.exe -N -P sa_advancedslingloading %modOutput_lite%

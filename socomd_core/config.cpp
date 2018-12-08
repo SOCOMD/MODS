@@ -5,9 +5,9 @@ class CfgPatches
 	class socomd_main
 	{
 		//Internal Version
-		version = 1.0.6;
-		versionStr = "1.0.6";
-		versionAr[] = { 1,0,6 };
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = { 1,1,0 };
 
 		//Required Version
 		requiredVersion = 0.1;
@@ -19,19 +19,23 @@ class CfgPatches
 			"A3_Data_F",
 			"A3_Characters_F",
 			"A3_Weapons_F_beta",
+
 			"ace_common",
 			"ace_main",
 			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
 			"ace_huntir",
+
 			"adfu_base",
+			"au_beret_addon",
 			"bma3_bushmaster",
 			"COS_back_pack",
 			"ctab",
 			"dso_weapons",
 			"lbtt_Vest_config",
-			"socomd_data"
+			"socomd_data",
+			"milgp_headgear_cfg"
 		};
 
 		//SOCOMD Custom Units
@@ -90,39 +94,16 @@ class CfgPatches
 			"SOCOMD_Gustav_Box",
 			"SOCOMD_Mortar_Box",
 
-			// MEN COMMANDO
-			"SOCOMD_PlatoonLeader",
-			"SOCOMD_PlatoonMedic",
-			"SOCOMD_PlatoonSignaller",
-			"SOCOMD_SectionLeader",
-			"SOCOMD_2IC",
-			"SOCOMD_Grenadier",
-			"SOCOMD_Sapper",
-			"SOCOMD_Gunner",
-			"SOCOMD_Specialist",
-			"SOCOMD_Marksman",
-			"SOCOMD_AT",
-			"SOCOMD_Medic",
-			"SOCOMD_Rifleman",
-			"SOCOMD_Sniper_Spotter",
-			"SOCOMD_Weapons_TeamLeader",
-			"SOCOMD_Weapons_Specialist",
-			"SOCOMD_Weapons_Assistant",
-			"SOCOMD_Pilot",
-			"SOCOMD_PlatoonSergeant",
-			"SOCOMD_Recon_TeamLeader",
+			// MEN
+			"SOCOMD_Unarmed",
 			"SOCOMD_Homestead",
-			"SOCOMD_Trainer",
-			"SOCOMD_Trainee",
-
-			//MEN SASR
-			"SOCOMD_SASR_Trooper",
-			"SOCOMD_SASR_Homestead"
+			"SOCOMD_Rifleman",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman"
 		};
 
 		//SOCOMD Custom Weapons
-	    weapons[] =
-		{
+	    weapons[] = {
 			//UNIFORMS
 			"SOCOMD_Uniform_LongSleeve",
 			"SOCOMD_Uniform_ShortSleeve",
@@ -149,14 +130,12 @@ class CfgPatches
 		};
 
 		//SOCOMD Custom Ammo
-		ammo[] =
-		{
+		ammo[] = {
 			//Empty
 		};
 
 		//SOCOMD Custom Magazines
-		magazines[] =
-		{
+		magazines[] = {
 			//Empty
 		};
 	};

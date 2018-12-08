@@ -57,6 +57,10 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	ITEM01("ACRE_PRC152"). \
 	ITEM01("ACRE_PRC117F")
 
+#define SOLDIER_HOMESTEAD_LINKEDITEMS \
+	SOLDIER_BASE_LINKEDITEMS,\
+	ITEM01("SOCOMD_BERET")
+
 class SOCOMD_Homestead : SOCOMD_Unarmed {
 	scope = public;
 	scopeCurator = public;
@@ -68,6 +72,8 @@ class SOCOMD_Homestead : SOCOMD_Unarmed {
 	displayname = "Homestead";
 	vehicleclass = "Man";
 
+	respawnLinkedItems[] 		= {SOLDIER_HOMESTEAD_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_HOMESTEAD_LINKEDITEMS};
 	Items[] 					= {SOLDER_HOMESTEAD_ITEMS};
 	RespawnItems[] 				= {SOLDER_HOMESTEAD_ITEMS};
 	backpack					= ITEM_BACKPACK_TROOPLEADER;
