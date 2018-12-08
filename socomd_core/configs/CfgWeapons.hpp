@@ -14,21 +14,7 @@ class CfgWeapons {
 	#include "items\vest.hpp"
 
 	//Item SOCOMD Defines
-	#include "items_socomd\socomd_crewman.hpp"
-	#include "items_socomd\socomd_grenadier.hpp"
-	#include "items_socomd\socomd_hat.hpp"
-	#include "items_socomd\socomd_lat.hpp"
-	#include "items_socomd\socomd_machinegunner.hpp"
-	#include "items_socomd\socomd_marksman.hpp"
-	#include "items_socomd\socomd_mat.hpp"
-	#include "items_socomd\socomd_medic.hpp"
-	#include "items_socomd\socomd_patrolleader.hpp"
-	#include "items_socomd\socomd_pilot.hpp"
-	#include "items_socomd\socomd_pj.hpp"
-	#include "items_socomd\socomd_rifleman.hpp"
-	#include "items_socomd\socomd_sapper.hpp"
-	#include "items_socomd\socomd_sniper.hpp"
-	#include "items_socomd\socomd_troopleader.hpp"
+	#include "items\socomd_men_items.hpp"
 
 	//Misc
 	#include "weapons\nvg.hpp"

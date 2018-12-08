@@ -89,9 +89,6 @@ class CfgVehicles  {
 	//AIR
 	class Helicopter;
 
-	//SEA
-	class B_Boat_Transport_01_F;
-
 	//BACKPACKS
 	class B_Kitbag_Base;
 
@@ -105,7 +102,7 @@ class CfgVehicles  {
 
 	//Items
 	#include "items\backpack.hpp"
-	#include "items_socomd\backpacks.hpp"
+	#include "items\socomd_men_backpacks.hpp"
 
 	#include "vehicles\fixes.hpp"
 	#include "vehicles\land.hpp"

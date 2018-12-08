@@ -23,7 +23,10 @@ class CfgPatches
 			"socomd_main"
 		};
 
-		units[] = {};
+		units[] = {
+			"SOCOMD_RHIB_ARMED"
+		};
+
 		weapons[] = {};
 		ammo[] = {};
 		magazines[] = {};

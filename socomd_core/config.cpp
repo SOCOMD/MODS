@@ -14,8 +14,6 @@ class CfgPatches
 
 		//Mod Dependencies
 		requiredAddons[] = {
-			"COS_back_pack",
-			"socomd_data",
 			"A3_Characters_F_BLUFOR",
 			"A3_Weapons_F",
 			"A3_Data_F",
@@ -26,7 +24,14 @@ class CfgPatches
 			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
-			"ace_huntir"
+			"ace_huntir",
+			"adfu_base",
+			"bma3_bushmaster",
+			"COS_back_pack",
+			"ctab",
+			"dso_weapons",
+			"lbtt_Vest_config",
+			"socomd_data"
 		};
 
 		//SOCOMD Custom Units
@@ -57,8 +62,8 @@ class CfgPatches
 			"SOCOMD_HURRICANE_A",
 
 			// SEA
-			"SOCOMD_ASSAULT_BOAT",
-			"SOCOMD_RHIB_ARMED",
+			"SOCOMD_SHIP_A",
+			"SOCOMD_SHIP_B",
 
 			// BACKPACKS
 			"SOCOMD_Backpack",

@@ -8,12 +8,12 @@
 									ITEM02("ACE_M84"), \
 									ITEM01("B_IR_Grenade")
 
-#define CMD_UNIT_PILOT_AMMO			ITEM04("RH_12Rnd_45cal_usp"), \
+#define CMD_UNIT_PILOT_AMMO			ITEM04("11Rnd_45ACP_Mag"), \
 									ITEM02("SmokeShell"), \
 									ITEM02("SmokeShellGreen"), \
 									ITEM01("B_IR_Grenade")
 
-#define CMD_UNIT_COMMON_WEAPONS 	ITEM01("RH_usp"), \
+#define CMD_UNIT_COMMON_WEAPONS 	ITEM01("DSO_hgun_Pistol_heavy_01_blk_F"), \
 									ITEM01("Throw"), \
 									ITEM01("Put")
 

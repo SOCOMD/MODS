@@ -9,7 +9,7 @@ class CfgVehicles {
 	LandVehicle
 	Land
 	*/
-	
+
 	#include "vehicles\Trucks.hpp"
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -30,7 +30,7 @@ class CfgVehicles {
 	};
 
 	class Helicopter_Base_H : Helicopter_Base_F {
-	
+
 		class Turrets : Turrets {
 			class MainTurret;
 			class CopilotTurret;
@@ -60,4 +60,9 @@ class CfgVehicles {
 	#include "vehicles\Warrior.hpp"
 	#include "vehicles\Nomad.hpp"
 	#include "vehicles\Hurricane.hpp"
+
+	////////////////////////////////////////////////////////////////////////////////
+	//SEA VEHICLES
+
+	#include "vehicles\Ships.hpp"
 };

@@ -101,7 +101,7 @@
 
 #define ITEM_PRIMARY_MAGAZINE_TROOPLEADER	    "SOCOMD_Item_Primary_Magazine_TroopLeader"
 #define ITEM_PRIMARY_MAGAZINE_PATROLLEADER	    "SOCOMD_Item_Primary_Magazine_PatrolLeader"
-#define ITEM_PRIMARY_MAGAZINE_RIFLEMAN		    "SOCOMD_Item_Primary_Magazine_TroopLeader"
+#define ITEM_PRIMARY_MAGAZINE_RIFLEMAN		    "SOCOMD_Item_Primary_Magazine_Rifleman"
 #define ITEM_PRIMARY_MAGAZINE_GRENADIER		    "SOCOMD_Item_Primary_Magazine_Grenadier"
 #define ITEM_PRIMARY_MAGAZINE_SAPPER		    "SOCOMD_Item_Primary_Magazine_Sapper"
 #define ITEM_PRIMARY_MAGAZINE_MACHINEGUNNER	    "SOCOMD_Item_Primary_Magazine_MachineGunner"
