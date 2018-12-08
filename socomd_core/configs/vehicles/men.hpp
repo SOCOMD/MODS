@@ -25,13 +25,7 @@
 #define SOLDIER_BASE_LINKEDITEMS \
 	ITEM01("ItemMap"), \
 	ITEM01("ItemCompass"), \
-	ITEM01("ItemWatch") \
-
-#define SOLDER_HOMESTEAD_ITEMS \
-	ITEM01("ACE_EarPlugs"), \
-	ITEM01("ACRE_PRC343"), \
-	ITEM01("ACRE_PRC152"). \
-	ITEM01("ACRE_PRC117F")
+	ITEM01("ItemWatch")
 
 class SOCOMD_Unarmed : B_Soldier_02_f {
 	scope = public;
@@ -50,12 +44,18 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	respawnWeapons[] 			= { };
 	magazines[] 				= { };
 	respawnMagazines[] 			= { };
-	respawnLinkedItems[] 		= {SOLDIER_LOADOUT_LINKEDITEMS};
-	linkedItems[] 				= {SOLDIER_LOADOUT_LINKEDITEMS};
+	respawnLinkedItems[] 		= {SOLDIER_BASE_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_BASE_LINKEDITEMS};
 	Items[] 					= { };
 	RespawnItems[] 				= { };
 	backpack					= "";
 };
+
+#define SOLDER_HOMESTEAD_ITEMS \
+	ITEM01("ACE_EarPlugs"), \
+	ITEM01("ACRE_PRC343"), \
+	ITEM01("ACRE_PRC152"). \
+	ITEM01("ACRE_PRC117F")
 
 class SOCOMD_Homestead : SOCOMD_Unarmed {
 	scope = public;

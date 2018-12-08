@@ -172,10 +172,11 @@ class CfgPatches
 #include "configs\CfgGlasses.hpp"
 #include "configs\CfgMoves.hpp"
 
+#include "configs\CfgMagazines.hpp"
+#include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgAmmo.hpp"
-#include "configs\CfgMagazines.hpp"
 
 #include "configs\CfgClasses.hpp"
 #include "configs\CfgGroups.hpp"

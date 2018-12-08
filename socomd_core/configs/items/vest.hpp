@@ -42,16 +42,16 @@ class SOCOMD_##VEST : SOCOMD_OVERRIDE_A_##VEST { \
 };
 
 SOCOMD_VEST(V_RebreatherB)
-SOCOMD_VEST(lbt_weapons_mc) //SOCOMD_2IC_Vest
-SOCOMD_VEST(lbt_tl_mc) //SOCOMD_Operator_Vest
-SOCOMD_VEST(lbt_medical_mc) //SOCOMD_Medic_Vest
+
 SOCOMD_VEST(lbt_comms_coy)
-SOCOMD_VEST(lbt_comms_mc) //SOCOMD_Leader_Vest
-SOCOMD_VEST(lbt_medical_coy)
+SOCOMD_VEST(lbt_comms_mc)
 SOCOMD_VEST(lbt_tl_coy)
-SOCOMD_VEST(VSM_LBT6094_MG_Multicam)
-SOCOMD_VEST(VSM_OGA_OD_Vest_2)
-SOCOMD_VEST(VSM_FAPC_Operator_Multicam)
+SOCOMD_VEST(lbt_tl_mc)
+SOCOMD_VEST(lbt_medical_coy)
+SOCOMD_VEST(lbt_medical_mc)
+SOCOMD_VEST(lbt_weapons_coy)
+SOCOMD_VEST(lbt_weapons_mc)
+
 SOCOMD_VEST(SOG_BAG_MC)
 SOCOMD_VEST(SOG_BAG_Tan)
 SOCOMD_VEST(SOG_BAG_od)
@@ -64,6 +64,7 @@ SOCOMD_VEST(SOG_BAG_BREACHER_od)
 SOCOMD_VEST(SOG_BAG_med_tan)
 SOCOMD_VEST(SOG_BAG_med_MC)
 SOCOMD_VEST(SOG_BAG_med_od)
+
 SOCOMD_VEST(Kit_Bag_MC)
 SOCOMD_VEST(Kit_Bag_Tan)
 SOCOMD_VEST(Kit_Bag_od)
@@ -82,7 +83,7 @@ SOCOMD_VEST(Kit_Bag_pince_od)
 ////////////////////////////////////////////////////////////////////////////////
 // COUNTER TERRORISM ITEMS
 
-class SOCOMD_Leader_Vest_BLK : lbt_comms_coy {
+class SOCOMD_lbt_comms_mc_BLK : lbt_comms_coy {
 	scope = public;
 	displayName = "SOCOMD Leader Vest Black";
 	hiddenSelections[]= {
@@ -122,7 +123,7 @@ class SOCOMD_Medic_Vest_BLK : lbt_medical_coy {
 	};
 };
 
-class SOCOMD_Operator_Vest_BLK : lbt_tl_coy {
+class SOCOMD_lbt_tl_mc_BLK : lbt_tl_coy {
 	scope = public;
 	displayName = "SOCOMD Operator Vest Black";
 	hiddenSelections[]= {
