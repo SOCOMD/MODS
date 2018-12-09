@@ -20,7 +20,7 @@ class CfgPatches
 
 			//SOCOMD Requirments
 			"socomd_data",
-			"socomd_main"
+			"socomd_core"
 		};
 
 		units[] = {

@@ -1,41 +1,32 @@
 class CfgMagazineWells {
 	class CBA_556x45_MINIMI {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Primary_Magazine_MachineGunner"
+			"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer"
 		};
 	};
 
 	class CBA_556x45_STANAG {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Primary_Magazine_TroopLeader",
-			"SOCOMD_Item_Primary_Magazine_PatrolLeader",
-			"SOCOMD_Item_Primary_Magazine_Rifleman",
-			"SOCOMD_Item_Primary_Magazine_Grenadier",
-			"SOCOMD_Item_Primary_Magazine_Medic",
-			"SOCOMD_Item_Primary_Magazine_Sapper",
-			"SOCOMD_Item_Primary_Magazine_LAT",
-			"SOCOMD_Item_Primary_Magazine_MAT",
-			"SOCOMD_Item_Primary_Magazine_HAT"
+			"SOCOMD_Item_Magazine_556x45_30Rnd",
+			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer"
 		};
 	};
 
 	class CBA_762x51_HK417 {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Primary_Magazine_Marsksman"
+			"SOCOMD_Item_Magazine_762x51_20Rnd"
 		};
 	};
 
 	class CBA_9x19_MP5 {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Primary_Magazine_PJ",
-			"SOCOMD_Item_Primary_Magazine_Pilot",
-			"SOCOMD_Item_Primary_Magazine_Crewman"
+			"SOCOMD_Item_Magazine_9x21_60Rnd"
 		};
 	};
 
 	class SOCOMD_408_MAG {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Primary_Magazine_Sniper"
+			"SOCOMD_Item_Magazine_408_7Rnd"
 		};
 	};
 };

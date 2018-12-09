@@ -10,7 +10,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 
 		requiredAddons[] = {
-			"socomd_main"
+			"socomd_core"
 		};
 
 		units[] = {};

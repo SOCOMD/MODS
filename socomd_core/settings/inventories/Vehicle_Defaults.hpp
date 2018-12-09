@@ -2,9 +2,9 @@
 	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1)
 
 #define INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Primary_Magazine_Rifleman, 12) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Primary_Magazine_Marsksman, 3) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Primary_Magazine_MachineGunner, 2) \
+	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 12) \
+	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 3) \
+	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2) \
 	TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
 	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 

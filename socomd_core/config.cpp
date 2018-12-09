@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class socomd_main
+	class socomd_core
 	{
 		//Internal Version
 		version = 1.1.0;

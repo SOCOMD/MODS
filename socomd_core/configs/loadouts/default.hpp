@@ -108,7 +108,8 @@ class SOCOMD_Commander {
 		class Inventory {
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACRE_PRC152, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_TroopLeader, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 
@@ -150,7 +151,8 @@ class SOCOMD_Leader {
 		type = ITEM_VEST_PATROLLEADER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_PatrolLeader, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 	class Backpack {
@@ -190,7 +192,8 @@ class SOCOMD_Rifleman {
 		type = ITEM_VEST_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Rifleman, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 	class Backpack {
@@ -226,7 +229,8 @@ class SOCOMD_Grenadier {
 
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Grenadier, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 	class Backpack {
@@ -265,7 +269,8 @@ class SOCOMD_Sapper {
 		type = ITEM_VEST_SAPPER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Sapper, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 
@@ -310,7 +315,7 @@ class SOCOMD_MachineGunner {
 		type = ITEM_VEST_MACHINEGUNNER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_MachineGunner, 5)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 5)
 		};
 	};
 
@@ -346,7 +351,8 @@ class SOCOMD_Medic {
 		type = ITEM_VEST_MEDIC;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Medic, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 
@@ -393,7 +399,7 @@ class SOCOMD_Marksman {
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Marsksman, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
 		};
 	};
 
@@ -432,7 +438,7 @@ class SOCOMD_Sniper {
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Sniper, 9)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
 		};
 	};
 
@@ -472,7 +478,8 @@ class SOCOMD_LAT {
 		type = ITEM_VEST_LAT;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_LAT, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 	class Backpack {
@@ -507,7 +514,8 @@ class SOCOMD_MAT {
 		type = ITEM_VEST_MAT;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_MAT, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 
@@ -544,7 +552,8 @@ class SOCOMD_HAT {
 		type = ITEM_VEST_HAT;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_HAT, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 
@@ -579,7 +588,7 @@ class SOCOMD_Pilot {
 		type = ITEM_VEST_PILOT;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Pilot, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
 	};
@@ -617,7 +626,7 @@ class SOCOMD_Crewman {
 		type = ITEM_VEST_CREWMAN;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_Crewman, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
 	};
@@ -656,7 +665,7 @@ class SOCOMD_PJ {
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACRE_PRC152, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Magazine_PJ, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
 		};
 	};
 

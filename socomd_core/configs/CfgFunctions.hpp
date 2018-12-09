@@ -1,21 +1,21 @@
 class CfgFunctions {
 	class SOCOMD {
 		class Common {
-			file="\socomd_main\functions\common";
+			file="\socomd_core\functions\common";
 			class CommonInitServer { postInit = 1; };
 			class CommonInitLocal {};
 		};
 
 		class Utils {
-			file="\socomd_main\functions\utils";
+			file="\socomd_core\functions\utils";
 			class SetUnitLoadout {};
-			class SwitchUnitLoadout {};	
+			class SwitchUnitLoadout {};
 			class SwitchUnitLoadoutWeapon {};
 			class ToggleTranslator {};
 		};
 
 		class Actions {
-			file="\socomd_main\functions\action";
+			file="\socomd_core\functions\action";
 			class Action_ToggleDiving {};
 			class Action_ToggleSnow {};
 			class Action_ReplaceCrewColours {};
@@ -28,7 +28,7 @@ class CfgFunctions {
 		};
 
 		class ActionConditions {
-			file="\socomd_main\functions\actionConditions";
+			file="\socomd_core\functions\actionConditions";
 			class ActionCondition_CanToggleDiving {};
 			class ActionCondition_CanSwitchGroundCrewVest {};
 			class ActionCondition_CanUseLoadoutWeapon {};
