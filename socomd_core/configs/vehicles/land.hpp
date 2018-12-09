@@ -209,8 +209,8 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {
-		"socomd_data\bma3\camo1_co.paa",
-		"socomd_data\bma3\camo2_co.paa",
+		"socomd_data_core\bma3\camo1_co.paa",
+		"socomd_data_core\bma3\camo2_co.paa",
 		"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 		"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 	};
@@ -218,8 +218,8 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	class textureSources : textureSources {
 		class adf_001 : adf_001 {
 			textures[] = {
-				"socomd_data\bma3\camo1_co.paa",
-				"socomd_data\bma3\camo2_co.paa",
+				"socomd_data_core\bma3\camo1_co.paa",
+				"socomd_data_core\bma3\camo2_co.paa",
 				"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 				"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 			};
@@ -278,8 +278,8 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {
-		"socomd_data\bma3\camo1_co.paa",
-		"socomd_data\bma3\camo2_co.paa",
+		"socomd_data_core\bma3\camo1_co.paa",
+		"socomd_data_core\bma3\camo2_co.paa",
 		"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 		"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 	};
@@ -287,8 +287,8 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	class textureSources : textureSources {
 		class adf_001 : adf_001 {
 			textures[] = {
-				"socomd_data\bma3\camo1_co.paa",
-				"socomd_data\bma3\camo2_co.paa",
+				"socomd_data_core\bma3\camo1_co.paa",
+				"socomd_data_core\bma3\camo2_co.paa",
 				"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
 				"bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
 			};
@@ -520,10 +520,10 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 			displayName = "SOCOMD";
 			author = AUTHOR_STR;
 			textures[] = {
-				"socomd_data\boxer\APC_Wheeled_03_Ext_CO.paa",
-				"socomd_data\boxer\APC_Wheeled_03_Ext2_CO.paa",
-				"socomd_data\boxer\RCWS30_CO.paa",
-				"socomd_data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+				"socomd_data_core\boxer\APC_Wheeled_03_Ext_CO.paa",
+				"socomd_data_core\boxer\APC_Wheeled_03_Ext2_CO.paa",
+				"socomd_data_core\boxer\RCWS30_CO.paa",
+				"socomd_data_core\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
 				"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
 				"A3\armor_f\data\cage_sand_co.paa"
 			};
@@ -541,10 +541,10 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_data\boxer\APC_Wheeled_03_Ext_CO.paa",
-		"socomd_data\boxer\APC_Wheeled_03_Ext2_CO.paa",
-		"socomd_data\boxer\RCWS30_CO.paa",
-		"socomd_data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+		"socomd_data_core\boxer\APC_Wheeled_03_Ext_CO.paa",
+		"socomd_data_core\boxer\APC_Wheeled_03_Ext2_CO.paa",
+		"socomd_data_core\boxer\RCWS30_CO.paa",
+		"socomd_data_core\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
 		"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
 		"A3\armor_f\data\cage_sand_co.paa"
 	};
