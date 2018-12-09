@@ -2,13 +2,15 @@
 set projectDir="C:\git\socomd\mods"
 set toolsDir=%projectDir%\tools
 set modOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd_dev\addons"
+set coreOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Dev\@socomd_core\addons"
 
-start /D %projectDir% makepbo.exe socomd_core %modOutput%
+start /D %projectDir% makepbo.exe socomd_core coreOutput%
 start /D %projectDir% makepbo.exe socomd_main %modOutput%
-start /D %projectDir% makepbo.exe socomd_gcam -P %modOutput%
-start /D %projectDir% makepbo.exe socomd_asorvs -P %modOutput%
-start /D %projectDir% makepbo.exe socomd_asorgs -P %modOutput%
+start /D %projectDir% makepbo.exe socomd_gcam %modOutput%
+start /D %projectDir% makepbo.exe socomd_asorvs %modOutput%
+start /D %projectDir% makepbo.exe socomd_asorgs %modOutput%
 start /D %projectDir% makepbo.exe socomd_zeus %modOutput%
 start /D %projectDir% makepbo.exe socomd_data %modOutput%
-start /D %projectDir% makepbo.exe ar_advancedrappelling -P %modOutput%
-start /D %projectDir% makepbo.exe sa_advancedslingloading -P %modOutput%
+start /D %projectDir% makepbo.exe socomd_data_core %coreOutput%
+start /D %projectDir% makepbo.exe ar_advancedrappelling %modOutput%
+start /D %projectDir% makepbo.exe sa_advancedslingloading %modOutput%
