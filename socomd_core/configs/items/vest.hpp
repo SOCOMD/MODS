@@ -95,11 +95,11 @@ class SOCOMD_lbt_comms_mc_BLK : lbt_comms_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data\CTgear\lbt_blk.paa",
-		"socomd_data\CTgear\gear_blk.paa",
-		"socomd_data\CTgear\radio_blk.paa",
-		"socomd_data\CTgear\grenade_blk.paa",
-		"socomd_data\CTgear\pouch_blk.paa"
+		"socomd_data_core\CTgear\lbt_blk.paa",
+		"socomd_data_core\CTgear\gear_blk.paa",
+		"socomd_data_core\CTgear\radio_blk.paa",
+		"socomd_data_core\CTgear\grenade_blk.paa",
+		"socomd_data_core\CTgear\pouch_blk.paa"
 	};
 };
 
@@ -115,11 +115,11 @@ class SOCOMD_Medic_Vest_BLK : lbt_medical_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data\CTgear\lbt_blk.paa",
-		"socomd_data\CTgear\gear_blk.paa",
-		"socomd_data\CTgear\radio_blk.paa",
-		"socomd_data\CTgear\shears_co.paa",
-		"socomd_data\CTgear\pouch_blk.paa"
+		"socomd_data_core\CTgear\lbt_blk.paa",
+		"socomd_data_core\CTgear\gear_blk.paa",
+		"socomd_data_core\CTgear\radio_blk.paa",
+		"socomd_data_core\CTgear\shears_co.paa",
+		"socomd_data_core\CTgear\pouch_blk.paa"
 	};
 };
 
@@ -135,10 +135,10 @@ class SOCOMD_lbt_tl_mc_BLK : lbt_tl_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data\CTgear\lbt_blk.paa",
-		"socomd_data\CTgear\gear_blk.paa",
-		"socomd_data\CTgear\radio_blk.paa",
-		"socomd_data\CTgear\grenade_blk.paa",
-		"socomd_data\CTgear\pouch_blk.paa"
+		"socomd_data_core\CTgear\lbt_blk.paa",
+		"socomd_data_core\CTgear\gear_blk.paa",
+		"socomd_data_core\CTgear\radio_blk.paa",
+		"socomd_data_core\CTgear\grenade_blk.paa",
+		"socomd_data_core\CTgear\pouch_blk.paa"
 	};
 };

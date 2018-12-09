@@ -10,7 +10,7 @@ class SOCOMD_Uniform_LongSleeve : U_B_CombatUniform_mcam {
 	scope = public;
 	author = "SOCOMD & massi";
 	displayName = "SOCOMD Multcam Uniform (Sleeve Down)";
-	picture = "\socomd_data\uniform\icons\icon_u_ir1_co.paa";
+	picture = "\socomd_data_core\uniform\icons\icon_u_ir1_co.paa";
 
 	class ItemInfo : ItemInfo {
 		uniformModel = "-";
@@ -23,7 +23,7 @@ class SOCOMD_Uniform_LongSleeve : U_B_CombatUniform_mcam {
 class SOCOMD_Uniform_ShortSleeve : SOCOMD_Uniform_LongSleeve {
 	scope = public;
 	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_u_ir2_co.paa";
+	picture = "\socomd_data_core\uniform\icons\icon_u_ir2_co.paa";
 	displayName = "SOCOMD Multcam Uniform (Sleeve Up)";
 
 	class ItemInfo : ItemInfo {
@@ -37,7 +37,7 @@ class SOCOMD_Uniform_ShortSleeve : SOCOMD_Uniform_LongSleeve {
 class SOCOMD_Uniform_Officer_LongSleeve : SOCOMD_Uniform_LongSleeve {
 	scope = public;
 	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_u_ir1_co.paa";
+	picture = "\socomd_data_core\uniform\icons\icon_u_ir1_co.paa";
 	displayName = "SOCOMD Multcam Officer Uniform (Sleeve Down)";
 
 	class ItemInfo : ItemInfo {
@@ -51,7 +51,7 @@ class SOCOMD_Uniform_Officer_LongSleeve : SOCOMD_Uniform_LongSleeve {
 class SOCOMD_Uniform_Officer_ShortSleeve: SOCOMD_Uniform_Officer_LongSleeve {
 	scope = public;
 	author = "SOCOMD & massi";
-	picture = "\socomd_data\uniform\icons\icon_u_ir2_co.paa";
+	picture = "\socomd_data_core\uniform\icons\icon_u_ir2_co.paa";
 	displayName = "SOCOMD Multcam Officer Uniform (Sleeve Up)";
 
 	class ItemInfo : ItemInfo {

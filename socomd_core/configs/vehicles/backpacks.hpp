@@ -7,8 +7,8 @@ class B_Kitbag_mcamo;
 // {
 // 	scope = public;
 // 	displayName = "SOCOMD Long Range Radio";
-// 	model = "\socomd_data\models\clf_nicecomm2";
-// 	hiddenSelectionsTextures[] = {"socomd_data\models\data\radio_paas\clf_nicecomm2_co.paa"};
+// 	model = "\socomd_data_core\models\clf_nicecomm2";
+// 	hiddenSelectionsTextures[] = {"socomd_data_core\models\data\radio_paas\clf_nicecomm2_co.paa"};
 // 	maximumLoad = 400;
 // 	mass = 20;
 
