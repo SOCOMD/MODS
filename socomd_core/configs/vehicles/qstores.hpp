@@ -171,22 +171,6 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
-
-				class SOCOMD_Uniforms_ToggleSnow {
-					displayName = "Toggle Snow Uniform";
-					condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
-					statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
-
-				class SOCOMD_Uniforms_ToggleSurvival {
-					displayName = "Survival Uniform";
-					condition = 1;
-					statement = "[_player, 'survival_uniform_black'] call SOCOMD_fnc_Action_ReplaceUniform";
-					showDisabled = 0;
-					exceptions[] = {"isNotInside", "isNotSitting"};
-				};
 			QSTORE_ACTION_GRP_END
 		};
 	};

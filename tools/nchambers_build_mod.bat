@@ -7,6 +7,7 @@ set modOutput_cup_compat="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\S
 set modOutput_rhs_compat="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Dev\@socomd_rhs_compat\addons"
 
 start /D %projectDir% makepbo.exe socomd_core %modOutput_core%
+start /D %projectDir% makepbo.exe socomd_data_core %modOutput_core%
 start /D %projectDir% makepbo.exe -N -P socomd_asorvs %modOutput_core%
 start /D %projectDir% makepbo.exe -N -P socomd_asorgs %modOutput_core%
 start /D %projectDir% makepbo.exe -N -P socomd_zeus %modOutput_core%

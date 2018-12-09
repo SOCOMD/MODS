@@ -20,10 +20,9 @@ _wornUniform = uniform _player;
 _switchUniform = _loadoutUniform;
 _switchVest = _loadoutVest;
 
-if(_wornUniform == _loadoutUniform) then 
-{
-	_switchUniform = "SOCOMD_Uniform_Diver";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-	_switchVest = "SOCOMD_Vest_Rebreather";
+if(_wornUniform == _loadoutUniform) then {
+	_switchUniform = "SOCOMD_Uniform_Wetsuit";
+	_switchVest = "SOCOMD_V_RebreatherB";
 };
 
 [_player, _switchUniform] call SOCOMD_fnc_Action_ReplaceUniform;
