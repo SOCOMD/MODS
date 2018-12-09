@@ -225,7 +225,7 @@
 #define ITEM_UNIFORM_GRENADIER		            "SOCOMD_Item_Uniform_Grenadier"
 #define ITEM_UNIFORM_SAPPER		                "SOCOMD_Item_Uniform_Sapper"
 #define ITEM_UNIFORM_MACHINEGUNNER	            "SOCOMD_Item_Uniform_MachineGunner"
-#define ITEM_UNIFORM_MEDI			            "SOCOMD_Item_Uniform_Medic"
+#define ITEM_UNIFORM_MEDIC			            "SOCOMD_Item_Uniform_Medic"
 #define ITEM_UNIFORM_MARKSMAN		            "SOCOMD_Item_Uniform_Marsksman"
 #define ITEM_UNIFORM_SNIPER		                "SOCOMD_Item_Uniform_Sniper"
 #define ITEM_UNIFORM_LAT			            "SOCOMD_Item_Uniform_LAT"

@@ -1,66 +1,45 @@
-class CfgLoadoutVests
-{
-    class Vest_Leader
-    {
-        loadoutWhitelist[] = {
-                "SASR_TroopLeader",
-                "SASR_PatrolLeader"
-            };
+class CfgLoadoutVests {
+	class SOCOMD_lbt_comms {
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader"
+		};
+	};
 
-    };
+	class SOCOMD_lbt_comms_coy : SOCOMD_lbt_comms { };
+	class SOCOMD_lbt_comms_mc : SOCOMD_lbt_comms { };
 
-	class SOCOMD_lbt_comms_mc : Vest_Leader { };
-    class SOCOMD_lbt_comms_coy : Vest_Leader { };
+	class SOCOMD_lbt_tl {
+		loadoutWhitelist[] = {
+			"SOCOMD_Grenadier",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Marksman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Sniper",
+			"SOCOMD_LAT",
+			"SOCOMD_MAT",
+			"SOCOMD_HAT"
+		};
+	};
 
-	class Vest_Operator
-    {
-        loadoutWhitelist[] = {
-                "SASR_Sapper",
-                "SASR_LAT",
-                "SASR_MAT",
-                "SASR_HAT",
-				"SASR_Marksman",
-				"SASR_Sniper",
-				"SASR_Rifleman"
-            };
+	class SOCOMD_lbt_tl_coy : SOCOMD_lbt_tl { };
+	class SOCOMD_lbt_tl_mc : SOCOMD_lbt_tl { };
 
-    };
+	class SOCOMD_lbt_weapons {
+		loadoutWhitelist[] = {
+			"SOCOMD_Grenadier"
+		};
+	};
 
-	class SOCOMD_lbt_tl_mc : Vest_Operator { };
-    class SOCOMD_lbt_tl_coy : Vest_Operator { };
+	class SOCOMD_lbt_weapons_coy : SOCOMD_lbt_weapons { };
+	class SOCOMD_lbt_weapons_mc : SOCOMD_lbt_weapons { };
 
-	/*class Vest_Rifleman
-    {
-        loadoutWhitelist[] = {
+	class SOCOMD_lbt_medical {
+		loadoutWhitelist[] = {
+			"SOCOMD_Medic"
+		};
+	};
 
-            };
-
-    };
-
-	class SOCOMD_LOADOUT_RIFLEMAN_VEST : Vest_Rifleman { };
-    class SOCOMD_LOADOUT_RIFLEMAN_VEST_coy : Vest_Rifleman { };
-	*/
-	class Vest_2IC
-    {
-        loadoutWhitelist[] = {
-                "SASR_Grenadier"
-            };
-
-    };
-
-	class SOCOMD_2IC_Vest : Vest_2IC { };
-    class SOCOMD_2IC_Vest_coy : Vest_2IC { };
-
-	class Vest_Medic
-    {
-        loadoutWhitelist[] = {
-                "SASR_Medic"
-            };
-
-    };
-
-	class SOCOMD_Medic_Vest : Vest_Medic { };
-    class SOCOMD_Medic_Vest_coy : Vest_Medic { };
-
+	class SOCOMD_lbt_medical_coy : SOCOMD_lbt_medical { };
+	class SOCOMD_lbt_medical_mc : SOCOMD_lbt_medical { };
 };
-
