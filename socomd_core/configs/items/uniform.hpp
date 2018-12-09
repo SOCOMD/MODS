@@ -1,5 +1,5 @@
 class ADFU_G3_MC;
-class SOCOM_Uniform_SleevesDown : ADFU_G3_MC {
+class SOCOMD_Uniform_SleevesDown : ADFU_G3_MC {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "SOCOMD Uniform";
