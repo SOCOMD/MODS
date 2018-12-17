@@ -144,7 +144,7 @@ force force ace_maptools_drawStraightLines = true;
 force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force force ace_medical_ai_enabledFor = 2;
+force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
@@ -254,10 +254,10 @@ force force ace_respawn_savePreDeathGear = true;
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
 force force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
-force force ace_scopes_defaultZeroRange = 400;
+force force ace_scopes_defaultZeroRange = 0;
 force force ace_scopes_enabled = true;
 force force ace_scopes_forceUseOfAdjustmentTurrets = true;
-force force ace_scopes_overwriteZeroRange = true;
+force force ace_scopes_overwriteZeroRange = false;
 force force ace_scopes_simplifiedZeroing = false;
 ace_scopes_useLegacyUI = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
@@ -465,7 +465,7 @@ force force VCM_Debug = false;
 force force VCM_ForceSpeed = false;
 force force VCM_FRMCHANGE = true;
 force force VCM_HEARINGDISTANCE = 800;
-force force VCM_MINECHANCE = 5;
+force force VCM_MINECHANCE = 0;
 force force VCM_RAGDOLL = false;
 force force VCM_RAGDOLLCHC = 50;
 force force VCM_SIDEENABLED = [WEST,EAST,GUER];

@@ -5,9 +5,9 @@ class CfgPatches
 	class socomd_missions
 	{
 		//Internal Version
-		version = 1.0.1;
-		versionStr = "1.0.1";
-		versionAr[] = {1, 0, 1};
+		version = 1.0.2;
+		versionStr = "1.0.2";
+		versionAr[] = {1, 0, 2};
 
 		units[] = {};
 		weapons[] = {};
@@ -71,7 +71,7 @@ class CfgMissions {
 	ADD(IHANTALAFOB,SOCOMD Ihantala FOB ,fobs\Ihantala_FOB.tem_ihantala)
 	ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberrs),fobs\Pulau_LHD_HMAS_Canberra.pulau)
 	ADD(ANIZAYFOB,SOCOMD Anizay FOB,fobs\Anizay_FOB.tem_anizay)
-	
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
 
