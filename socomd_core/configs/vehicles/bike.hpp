@@ -12,9 +12,9 @@ class BIKE_BASE : Bicycle {
 	scope = public;
 	weapons[] = {"Bicycle_Horn"};
 	wheelCircumference = 2.28;
-	model = "\socomd_data_core\models\dbo_CIV_new_bike.p3d";
-	Picture = "\socomd_data_core\icon\icon_mmt_ca.paa";
-	Icon = "\socomd_data_core\icon\picture_mmt_ca";
+	model = "\socomd_data_core\bike\dbo_CIV_new_bike.p3d";
+	Picture = "\socomd_data_core\bike\icon_mmt_ca.paa";
+	Icon = "\socomd_data_core\bike\picture_mmt_ca";
 	mapSize = 3;
 	class Library {
 		libTextDesc = "hossass";

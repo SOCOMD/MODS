@@ -6,16 +6,16 @@ set modOutput_main="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_
 set modOutput_rhs="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Dev\@socomd_rhs\addons"
 
 ::SOCOMD Core
-start /D %projectDir% makepbo.exe socomd_core %modOutput_core%
-start /D %projectDir% makepbo.exe -N socomd_data_core %modOutput_core%
-start /D %projectDir% makepbo.exe socomd_zeus %modOutput_core%
+start /D %projectDir% makepbo.exe -P socomd_core %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P socomd_data_core %modOutput_core%
+start /D %projectDir% makepbo.exe -P socomd_zeus %modOutput_core%
 
 ::SOCOMD 3rd Party
-start /D %projectDir% makepbo.exe -N socomd_gcam %modOutput_core%
-start /D %projectDir% makepbo.exe -N socomd_asorvs %modOutput_core%
-start /D %projectDir% makepbo.exe -N socomd_asorgs %modOutput_core%
-start /D %projectDir% makepbo.exe -N ar_advancedrappelling %modOutput_core%
-start /D %projectDir% makepbo.exe -N sa_advancedslingloading %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P socomd_gcam %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P socomd_asorvs %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P socomd_asorgs %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P ar_advancedrappelling %modOutput_core%
+start /D %projectDir% makepbo.exe -N -P sa_advancedslingloading %modOutput_core%
 
 ::SOCOMD Main
 start /D %projectDir% makepbo.exe socomd_main %modOutput_main%
