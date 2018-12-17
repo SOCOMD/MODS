@@ -10,6 +10,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 
 		requiredAddons[] = {
+			//SOCOMD Requirments
 			"socomd_core"
 		};
 

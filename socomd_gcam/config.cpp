@@ -12,11 +12,14 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			//SOCOMD Requirments
+			"socomd_core"
+		};
 	};
 };
 
-class CfgFunctions 
+class CfgFunctions
 {
 	class SOCOMD
 	{

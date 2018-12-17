@@ -99,8 +99,8 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_data\ah64\ah64d_body_co.paa",
-		"socomd_data\ah64\ah64d_details_co.paa",
+		"socomd_cup_compat\data\ah64\ah64d_body_co.paa",
+		"socomd_cup_compat\data\ah64\ah64d_details_co.paa",
 		""
 	};
 };

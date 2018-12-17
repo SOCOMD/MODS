@@ -1,9 +1,7 @@
 #include "predefined.hpp"
 
-class CfgPatches
-{
-	class socomd_cup_compat
-	{
+class CfgPatches {
+	class socomd_cup_compat {
 		version = 1.0.0;
 		versionStr = "1.0.0";
 		versionAr[] = { 1,0,0 };
@@ -19,7 +17,6 @@ class CfgPatches
 			"cup_wheeledvehicles_mtvr",
 
 			//SOCOMD Requirments
-			"socomd_data",
 			"socomd_core"
 		};
 
@@ -33,4 +30,6 @@ class CfgPatches
 	};
 };
 
+#include "configs\CfgEditorCategories.hpp"
+#include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgVehicles.hpp"

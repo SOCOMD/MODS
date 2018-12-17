@@ -9,7 +9,12 @@ class CfgPatches
 
 		units[] = {"SA_AdvancedSlingLoading"};
 		requiredVersion = 1;
-		requiredAddons[] = {"A3_Modules_F", "ace_interaction"};
+		requiredAddons[] = {
+			"A3_Modules_F",
+			"ace_interaction",
+			//SOCOMD Requirments
+			"socomd_core"
+		};
 	};
 };
 class CfgNetworkMessages

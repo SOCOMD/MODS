@@ -1,9 +1,7 @@
 #include "predefined.hpp"
 
-class CfgPatches
-{
-	class socomd_core
-	{
+class CfgPatches {
+	class socomd_core {
 		//Internal Version
 		version = 1.1.0;
 		versionStr = "1.1.0";
@@ -34,8 +32,9 @@ class CfgPatches
 			"ctab",
 			"dso_weapons",
 			"lbtt_Vest_config",
-			"socomd_data_core",
-			"milgp_headgear_cfg"
+			"milgp_headgear_cfg",
+
+			"socomd_data_core"
 		};
 
 		//SOCOMD Custom Units

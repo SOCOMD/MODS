@@ -20,10 +20,8 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {
-			"cba_main",
-			"socomd_core",
-			"ace_zeus",
-			"achilles_modules_f_achilles"
+			//SOCOMD Requirments
+			"socomd_core"
 		};
 	};
 };
