@@ -34,7 +34,7 @@ class CfgPatches
 			"ctab",
 			"dso_weapons",
 			"lbtt_Vest_config",
-			"socomd_data",
+			"socomd_data_core",
 			"milgp_headgear_cfg"
 		};
 
