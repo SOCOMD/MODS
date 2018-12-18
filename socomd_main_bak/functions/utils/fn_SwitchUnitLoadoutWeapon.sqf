@@ -17,26 +17,24 @@ _sidearmMagazines = getArray(configFile >> "CfgWeapons" >> _sidearm >> "magazine
 
 _currentMagazineSupport = _primaryMagazines + _secondaryMagazines + _sidearmMagazines;
 
-//Remove unsupported magazines
+//Remove primary magazines from player
 {
-   _player removeMagazines _x;
-} forEach (_primaryMagazines);
-
-//Remove current primary magazines
-{
-    _player removeMagazines _x;
-} forEach _primaryMagazines;
+    _primaryMagazine = _x;
+    {
+        if(_x isKindOf [_primaryMagazine, configFile >> 'CfgMagazines']) then {
+             _player removeMagazines _x;
+        };
+    }foreach(magazines _player);
+}foreach(_primaryMagazines);
 
 //Set Primary Weapon
 _unitLoadout = getUnitLoadout _player;
 
 _primaryLoadout = _unitLoadout select 0;
-if(count _primaryLoadout <= 0) then
-{
+if(count _primaryLoadout <= 0) then {
     _primaryLoadout = [_weaponId, "", "", "", [], [], ""];
 }
-else
-{
+else {
     _primaryLoadout set [0, _weaponId];
     _primaryLoadout set [4, []];
     _primaryLoadout set [5, []];
@@ -48,8 +46,7 @@ _unitLoadout set [0, _primaryLoadout];
 
 //Give Magazines
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
-if(count _loadoutMagazines > 0) then 
-{
+if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
         _magazineCount = _x select 1;
