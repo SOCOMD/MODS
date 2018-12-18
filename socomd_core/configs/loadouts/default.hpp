@@ -3,7 +3,7 @@
 //Common loadout items
 //Contents shared by every loadout
 //////////////////////////////////////////////////////////////////////
-// COMMON SASR LOADOUT ITEMS
+// COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
 	LOADOUT_ITEM(ACE_fieldDressing, 6) \

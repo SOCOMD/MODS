@@ -52,7 +52,7 @@ INVENTORY ITEM
 ////////////////////////////////////////////////////////////////////////////////
 
 ** EXAMPLE LOADOUT **
-class SASR_StandardTrooper {
+class SOCOMD_Loadout {
     primary = "";
     secondary = "";
     handgun = "";

@@ -253,7 +253,7 @@
 
 #define ITEM_BACKPACK_TROOPLEADER		        "SOCOMD_Item_Backpack_TroopLeader"
 #define ITEM_BACKPACK_PATROLLEADER		        "SOCOMD_Item_Backpack_PatrolLeader"
-#define ITEM_BACKPACK_RIFLEMAN			        "SOCOMD_Item_Uniform_Rifleman"
+#define ITEM_BACKPACK_RIFLEMAN			        "SOCOMD_Item_Backpack_Rifleman"
 #define ITEM_BACKPACK_GRENADIER		            "SOCOMD_Item_Backpack_Grenadier"
 #define ITEM_BACKPACK_SAPPER			        "SOCOMD_Item_Backpack_Sapper"
 #define ITEM_BACKPACK_MACHINEGUNNER	            "SOCOMD_Item_Backpack_MachineGunner"

@@ -4,9 +4,7 @@ _target = _args select 0;
 if(!(_target == player)) exitWith {};
 
 _blacklist = [
-	"SOCOMD_Homestead",
-	"SOCOMD_SASR_Homestead",
-	"SOCOMD_Trainer"
+	"SOCOMD_Homestead"
 ];
 
 _type = typeOf player;
