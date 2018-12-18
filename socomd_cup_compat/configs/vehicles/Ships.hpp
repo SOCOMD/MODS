@@ -4,11 +4,11 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Boat (1/0)";
+	displayname = "Boat (2/12)";
 
 	armor = 10000;
 
