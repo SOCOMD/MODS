@@ -149,7 +149,7 @@ force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 1;
+force force ace_medical_bleedingCoefficient = 0.4;
 force force ace_medical_blood_enabledFor = 1;
 force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 1;
@@ -157,7 +157,7 @@ force force ace_medical_delayUnconCaptive = 3;
 force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 0;
 force force ace_medical_enableOverdosing = true;
-force force ace_medical_enableRevive = 1;
+force force ace_medical_enableRevive = 0;
 force force ace_medical_enableScreams = true;
 force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = true;
@@ -167,7 +167,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 120;
+force force ace_medical_maxReviveTime = 900;
 force force ace_medical_medicSetting = 0;
 force force ace_medical_medicSetting_basicEpi = 0;
 force force ace_medical_medicSetting_PAK = 0;
@@ -265,7 +265,7 @@ force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
 
 // ACE Spectator
-force force ace_spectator_enableAI = false;
+force force ace_spectator_enableAI = true;
 force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
 
