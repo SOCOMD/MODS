@@ -37,6 +37,10 @@ class CfgLoadoutWeapons {
 		};
 	};
 
+	class MachineGun_762 : MachineGun_556 {
+		magazines[] = {};
+	};
+
 	class Rifle_762 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Marksman"

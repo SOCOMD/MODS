@@ -1,4 +1,3 @@
-//SMA
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK; //Default
 class SMA_MK18MOEBLK_SM;
@@ -16,4 +15,22 @@ class SMA_762_RIFLEBASE; //Default
 class SMA_HK417_16in : SMA_762_RIFLEBASE {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class SMA_HK417vfg;
+class SMA_HK417vfg : SMA_762_RIFLEBASE {
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+
+//Machine Gun 556
+class CUP_lmg_minimi_railed;
+class CUP_lmg_m249_pip2 : CUP_lmg_minimi_railed {
+	displayName = "FN Minimi HS";
+	magazineWell[] = {"CBA_556x45_MINIMI"};
+};
+
+//Machine Gun 762
+class sma_minimi_762_base_F;
+class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
+	displayName = "Mk 48 Maximi";
+};
+
+//Rifle 300WM
+class hlc_rifle_awmagnum;

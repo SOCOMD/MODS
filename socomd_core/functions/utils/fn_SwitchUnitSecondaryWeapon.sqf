@@ -10,6 +10,14 @@ _secondary = secondaryWeapon _player;
 
 _secondaryMagazines = getArray(configFile >> "CfgWeapons" >> _secondary >> "magazines");
 
+//Get magazines from magazine wells
+{
+    _magazineWellConfig = (configFile >> "CfgMagazineWells" >> _x);
+    for "_i" from 0 to (count _magazineWellConfig) - 1 do {
+        _primaryMagazines = _primaryMagazines + getArray(_magazineWellConfig select _i);
+    };
+}foreach(_primaryMagazineWells);
+
 //Remove secondary magazines from player
 {
     _secondaryMagazine = _x;

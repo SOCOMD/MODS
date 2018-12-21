@@ -10,6 +10,15 @@ _primary = primaryWeapon _player;
 
 _primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
 _primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "EGLM" >> "magazines");
+_primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _primary >> "magazineWell");
+
+//Get magazines from magazine wells
+{
+    _magazineWellConfig = (configFile >> "CfgMagazineWells" >> _x);
+    for "_i" from 0 to (count _magazineWellConfig) - 1 do {
+        _primaryMagazines = _primaryMagazines + getArray(_magazineWellConfig select _i);
+    };
+}foreach(_primaryMagazineWells);
 
 //Remove primary magazines from player
 {
