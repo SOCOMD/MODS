@@ -100,6 +100,7 @@ class SOCOMD_Commander {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 		};
 	};
 
@@ -123,6 +124,7 @@ class SOCOMD_Commander {
 			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 			LOADOUT_ITEM(UGL_FlareRed_F, 2)
 			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
 		};
 	};
 };
@@ -144,6 +146,7 @@ class SOCOMD_Leader {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 		};
 	};
 
@@ -165,6 +168,7 @@ class SOCOMD_Leader {
 			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 			LOADOUT_ITEM(UGL_FlareRed_F, 2)
 			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
 		};
 	};
 };

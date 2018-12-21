@@ -23,7 +23,8 @@ class CfgLoadoutWeapons {
 			{"SOCOMD_Item_Magazine_556x45_30Rnd", 8},
 			{"1Rnd_HE_Grenade_shell", 8},
 			{"UGL_FlareRed_F", 2},
-			{"1Rnd_SmokeRed_Grenade_shell", 2}
+			{"1Rnd_SmokeRed_Grenade_shell", 2},
+			{"ACE_HuntIR_M203", 3}
 		};
 	};
 

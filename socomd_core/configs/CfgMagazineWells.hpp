@@ -24,6 +24,12 @@ class CfgMagazineWells {
 		};
 	};
 
+	class CBA_40mm_M203 {
+		SOCOMD_mags[] = {
+			"ACE_HuntIR_M203"
+		};
+	};
+
 	class SOCOMD_408_MAG {
 		SOCOMD_mags[] = {
 			"SOCOMD_Item_Magazine_408_7Rnd"
