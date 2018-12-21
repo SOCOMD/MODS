@@ -7,7 +7,7 @@ _allowed = false;
 _loadoutVestConfig = (configFile >> "CfgLoadoutVests" >> _vestId);
 if(isNull _loadoutVestConfig) exitWith { _allowed };
 
-_loadoutId = _player getVariable ["SOCOMD_LOADOUTID", "SOCOMD_Unarmed"];
+_loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];
 _loadoutWhitelist = getArray (_loadoutVestConfig >> "loadoutWhitelist");
 if(count _loadoutWhitelist <= 0) exitWith
 {

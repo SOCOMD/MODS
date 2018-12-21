@@ -7,7 +7,7 @@ _allowed = false;
 _loadoutWeaponConfig = (configFile >> "CfgLoadoutWeapons" >> _weaponId);
 if(isNull _loadoutWeaponConfig) exitWith { _allowed };
 
-_loadoutId = _player getVariable ["SOCOMD_LOADOUTID", "SOCOMD_Rifleman"];
+_loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];
 _loadoutWhitelist = getArray (_loadoutWeaponConfig >> "loadoutWhitelist");
 if(count _loadoutWhitelist <= 0) exitWith
 {
