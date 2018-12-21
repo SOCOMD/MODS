@@ -30,9 +30,7 @@ PROGRAM_CHANNEL("ACRE_PRC117F", 2, "HQ NET", 55.5, 55.5)
 	_languagesPlayerSpeaks = ["e"];
 
 	_whitelist = [
-		"SOCOMD_Homestead",
-		"SOCOMD_SASR_Homestead",
-		"SOCOMD_Trainer"
+		"SOCOMD_Homestead"
 	];
 
 	_type = typeOf player;
