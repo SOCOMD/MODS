@@ -15,7 +15,7 @@
 #define LOGIC 7
 
 //SOCOMD
-#define AUTHOR_STR "SOCOMD Mod"
+#define AUTHOR_STR "SOCOMD"
 #define FACTION_STR "SOCOMD"
 
 #define QUOTE(var1) #var1

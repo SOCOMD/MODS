@@ -16,8 +16,8 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_USA {
 	displayname = "Nomad (5/24)";
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\chinook\ch47_ext_1_co.paa",
-		"socomd_cup_compat\data\chinook\ch47_ext_2_co.paa",
-		"socomd_cup_compat\data\chinook\ch47f_nalepky_ca.paa"
+		"socomd_data_cup\data\chinook\ch47_ext_1_co.paa",
+		"socomd_data_cup\data\chinook\ch47_ext_2_co.paa",
+		"socomd_data_cup\data\chinook\ch47f_nalepky_ca.paa"
 	};
 };

@@ -26,10 +26,10 @@ class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\mtvr\mtvr_body_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_body2_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body2_co.paa",
 		"CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_tarp_co.paa"
+		"socomd_data_cup\data\mtvr\mtvr_tarp_co.paa"
 	};
 };
 
@@ -62,10 +62,10 @@ class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\mtvr\mtvr_body_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_body2_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body2_co.paa",
 		"CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_tarp_co.paa"
+		"socomd_data_cup\data\mtvr\mtvr_tarp_co.paa"
 	};
 };
 
@@ -98,10 +98,10 @@ class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\mtvr\mtvr_body_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_body2_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body2_co.paa",
 		"CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\MTVR_interier_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_fuel_co.paa"
+		"socomd_data_cup\data\mtvr\mtvr_fuel_co.paa"
 	};
 };
 
@@ -134,9 +134,9 @@ class SOCOMD_TRUCK_REPAIR_A : CUP_B_MTVR_Repair_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\mtvr\mtvr_body_co.paa",
-		"socomd_cup_compat\data\mtvr\mtvr_body2_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body_co.paa",
+		"socomd_data_cup\data\mtvr\mtvr_body2_co.paa",
 		"CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\MTVR_interier_co.paa",
-		"socomd_cup_compat\data\mtvr\ural_repair_co.paa"
+		"socomd_data_cup\data\mtvr\ural_repair_co.paa"
 	};
 };

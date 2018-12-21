@@ -61,6 +61,8 @@ class CfgVehicles {
 	#include "vehicles\Nomad.hpp"
 	#include "vehicles\Hurricane.hpp"
 
+	#include "objects\QStore.hpp"
+
 	////////////////////////////////////////////////////////////////////////////////
 	//SEA VEHICLES
 

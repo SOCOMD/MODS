@@ -14,9 +14,9 @@ class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	displayname = "Warrior (4/12)";
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\blackhawk\uh60m_fuselage_co.paa",
-		"socomd_cup_compat\data\blackhawk\uh60m_engine_co.paa",
-		"socomd_cup_compat\data\blackhawk\default_co.paa"
+		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
+		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
+		"socomd_data_cup\data\blackhawk\default_co.paa"
 	};
 };
 
@@ -39,8 +39,8 @@ class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 	displayname = "Warrior FFV (4/8)";
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\blackhawk\uh60m_fuselage_co.paa",
-		"socomd_cup_compat\data\blackhawk\uh60m_engine_co.paa",
-		"socomd_cup_compat\data\blackhawk\default_co.paa"
+		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
+		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
+		"socomd_data_cup\data\blackhawk\default_co.paa"
 	};
 };

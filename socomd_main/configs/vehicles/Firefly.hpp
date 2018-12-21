@@ -141,7 +141,7 @@ class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\ah6\ah6_hull_co.paa",
+		"socomd_data_cup\data\ah6\ah6_hull_co.paa",
 		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_interior_co.paa",
 		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_benches_co.paa"
 	};
@@ -179,7 +179,7 @@ class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_cup_compat\data\ah6\ah6_hull_co.paa",
+		"socomd_data_cup\data\ah6\ah6_hull_co.paa",
 		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_interior_co.paa",
 		"CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_weapons_co.paa"
 	};
