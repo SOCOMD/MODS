@@ -164,3 +164,4 @@ class CfgPatches {
 #include "configs\CfgLoadoutVests.hpp"
 #include "configs\CfgLoadoutBackpacks.hpp"
 #include "configs\CfgUnitInsignia.hpp"
+#include "configs\CfgASORVS.hpp"

@@ -13,6 +13,7 @@ class CfgFunctions {
 			class SwitchUnitPrimaryWeapon {};
 			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
+			class GetASORVSClassnames {};
 		};
 
 		class Actions {
