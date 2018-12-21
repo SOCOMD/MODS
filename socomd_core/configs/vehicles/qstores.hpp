@@ -39,11 +39,20 @@ class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	showDisabled = 0; \
 };
 
-#define QSTORE_ACTION_WEAPON(DISPLAY_STR, WEAPON) \
+#define QSTORE_ACTION_WEAPON_PRIMARY(DISPLAY_STR, WEAPON) \
 class SOCOMD_ACTION_WEAPON_##WEAPON { \
 	displayName = DISPLAY_STR; \
 	condition = "[_player, '##WEAPON'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
-	statement = "[_player , '##WEAPON'] call SOCOMD_fnc_SwitchUnitLoadoutWeapon"; \
+	statement = "[_player , '##WEAPON'] call SOCOMD_fnc_SwitchUnitPrimaryWeapon"; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	showDisabled = 0; \
+};
+
+#define QSTORE_ACTION_WEAPON_SECONDARY(DISPLAY_STR, WEAPON) \
+class SOCOMD_ACTION_WEAPON_##WEAPON { \
+	displayName = DISPLAY_STR; \
+	condition = "[_player, '##WEAPON'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
+	statement = "[_player , '##WEAPON'] call SOCOMD_fnc_SwitchUnitSecondaryWeapon"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -107,9 +116,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MachineGunner)
 					QSTORE_ACTION_LOADOUT("Medic",SOCOMD_Medic)
 					QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
-					QSTORE_ACTION_LOADOUT("Light Anti-tank",SOCOMD_LAT)
-					QSTORE_ACTION_LOADOUT("Medium Anti-tank",SOCOMD_MAT)
-					QSTORE_ACTION_LOADOUT("Heavy Anti-tank",SOCOMD_HAT)
+					QSTORE_ACTION_LOADOUT("Anti-tank",SOCOMD_AT)
 				QSTORE_ACTION_GRP_END
 
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB1,"Change Role (SUPPORT)")

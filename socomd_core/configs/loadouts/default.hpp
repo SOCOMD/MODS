@@ -458,60 +458,24 @@ class SOCOMD_Sniper {
 ////////////////////////////////////////////////////////////////////////////////
 // LAT
 
-class SOCOMD_LAT {
-	primary		    = ITEM_PRIMARY_LAT;
-	secondary		= ITEM_SECONDARY_LAT;
-	handgun		    = ITEM_HANDGUN_LAT;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_LAT;
-	headgear		= ITEM_HEADGEAR_LAT;
-	binocular		= ITEM_BINOCULAR_LAT;
-	gps			    = ITEM_GPS_LAT;
+class SOCOMD_AT {
+	primary		    = ITEM_PRIMARY_AT;
+	secondary		= ITEM_SECONDARY_AT;
+	handgun		    = ITEM_HANDGUN_AT;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_AT;
+	headgear		= ITEM_HEADGEAR_AT;
+	binocular		= ITEM_BINOCULAR_AT;
+	gps			    = ITEM_GPS_AT;
 
 	class Uniform {
-		type = ITEM_UNIFORM_LAT;
+		type = ITEM_UNIFORM_AT;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
 	class Vest {
-		type = ITEM_VEST_LAT;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-		};
-	};
-	class Backpack {
-		type = ITEM_BACKPACK_LAT;
-		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_BACKPACK_ESSENTIALS
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
-// MAT
-
-class SOCOMD_MAT {
-	primary		    = ITEM_PRIMARY_MAT;
-	secondary		= ITEM_SECONDARY_MAT;
-	handgun		    = ITEM_HANDGUN_MAT;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MAT;
-	headgear		= ITEM_HEADGEAR_MAT;
-	binocular		= ITEM_BINOCULAR_MAT;
-	gps			    = ITEM_GPS_MAT;
-
-	class Uniform {
-		type = ITEM_UNIFORM_MAT;
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_MAT;
+		type = ITEM_VEST_AT;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -520,46 +484,9 @@ class SOCOMD_MAT {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_MAT;
-		class Inventory	{
-			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
-// HAT
-
-class SOCOMD_HAT {
-	primary		    = ITEM_PRIMARY_HAT;
-	secondary		= ITEM_SECONDARY_HAT;
-	handgun		    = ITEM_HANDGUN_HAT;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_HAT;
-	headgear		= ITEM_HEADGEAR_HAT;
-	binocular		= ITEM_BINOCULAR_HAT;
-	gps			    = ITEM_GPS_HAT;
-
-	class Uniform {
-		type = ITEM_UNIFORM_HAT;
+		type = ITEM_BACKPACK_AT;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_HAT;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-		};
-	};
-
-	class Backpack {
-		type = ITEM_BACKPACK_HAT;
-		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};

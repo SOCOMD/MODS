@@ -7,7 +7,7 @@ set modOutput_main="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_
 set modOutput_rhs="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Dev\@socomd_rhs\addons"
 
 ::SOCOMD Core
-start /D %projectDir% makepbo.exe -P socomd_core %modOutput_core%
+start /D %projectDir% makepbo.exe socomd_core %modOutput_core%
 start /D %projectDir% makepbo.exe -P socomd_zeus %modOutput_core%
 
 ::SOCOMD Data

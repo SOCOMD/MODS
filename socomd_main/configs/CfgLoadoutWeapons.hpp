@@ -16,4 +16,19 @@ class CfgLoadoutWeapons {
 	class Rifle_762;
 	class SMA_HK417_16in : Rifle_762 {};
 	class SMA_HK417vfg : Rifle_762 {};
+
+	class Launcher;
+	class HAFM_LAW : Launcher {};
+	class SOCOMD_Carl_Gustav : Launcher {
+		magazines[] = {
+			{"tf47_m3maaws_HEAT", 1},
+			{"tf47_m3maaws_HEAT", 1}
+		};
+	};
+
+	class CUP_launch_Javelin : Launcher {
+		magazines[] = {
+			{"CUP_Javelin_M", 1}
+		};
+	};
 };

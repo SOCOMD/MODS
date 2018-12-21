@@ -1,3 +1,4 @@
+//SMA
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK; //Default
 class SMA_MK18MOEBLK_SM;

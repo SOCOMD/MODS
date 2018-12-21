@@ -10,7 +10,8 @@ class CfgFunctions {
 			file="\socomd_core\functions\utils";
 			class SetUnitLoadout {};
 			class SwitchUnitLoadout {};
-			class SwitchUnitLoadoutWeapon {};
+			class SwitchUnitPrimaryWeapon {};
+			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
 		};
 

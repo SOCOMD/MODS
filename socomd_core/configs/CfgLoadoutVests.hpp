@@ -16,9 +16,7 @@ class CfgLoadoutVests {
 			"SOCOMD_Marksman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Sniper",
-			"SOCOMD_LAT",
-			"SOCOMD_MAT",
-			"SOCOMD_HAT"
+			"SOCOMD_AT"
 		};
 	};
 
