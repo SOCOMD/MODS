@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //BUSH MASTER
 
-/*class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F 
+/*class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F
 {
 	scope = private;
 
@@ -38,7 +38,7 @@
 			armor = 0.2;
 			explosionShielding = 4;
 		};
-		
+
 		class HitRF2Wheel : HitRF2Wheel
 		{
 			armor = 0.2;
@@ -59,22 +59,22 @@
 	};
 };
 
-class bma3_bushmaster_unarmed_ecm_F : bma3_bushmaster_unarmed_F 
+class bma3_bushmaster_unarmed_ecm_F : bma3_bushmaster_unarmed_F
 {
 	scope = private;
 };
 
-class bma3_bushmaster_unarmed_command_F : bma3_bushmaster_unarmed_F 
+class bma3_bushmaster_unarmed_command_F : bma3_bushmaster_unarmed_F
 {
 	scope = private;
 };
 
-class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F 
+class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F
 {
 	scope = private;
 };
 
-class bma3_bushmaster_pws127mm_ecm_F : bma3_bushmaster_pws127mm_F 
+class bma3_bushmaster_pws127mm_ecm_F : bma3_bushmaster_pws127mm_F
 {
 	scope = private;
 };*/
@@ -92,12 +92,12 @@ class ffaa_famet_tigre_base : Helicopter_Base_F	{
 	scope = private;
 	model = "\socomd_data\tiger1\ffaa_famet_tigre.p3d";
 	hiddenSelectionsTextures[] = {"\socomd_data\tiger1\tigre_co.paa","","",""};
-	class TransportMagazines {}; 
+	class TransportMagazines {};
 	class TransportWeapons {};
 	class TransportItems {};
 };
 
-class ffaa_famet_tigre_cas : ffaa_famet_tigre_base 
+class ffaa_famet_tigre_cas : ffaa_famet_tigre_base
 {
 	scope = private;
 	faction = ;
@@ -324,6 +324,21 @@ class CAManBase : Man
 			hotkey = "C";
 		};
 
+		class SOCOMD_Admin {
+			displayName = "Admin";
+			condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
+			showDisabled = 0;
+			exceptions[] = {"isNotInside", "isNotSitting"};
+
+			class SOCOMD_EnterSpectator {
+				displayName = "Spectate";
+				condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
+				statement = "[_player] call SOCOMD_fnc_Action_EnterSpectator;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+		};
+
 		class ACE_Equipment
 		{
 			//ROLL SLEEVES
@@ -344,7 +359,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_Commando_Uniform_RollSleeveUp
 			{
 				displayName = "Roll Up Sleeves";
@@ -485,7 +500,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			//MICH SWITCH GOGGLES
 			class SOCOMD_MICH_Multi_PutGogglesOn
 			{
@@ -495,7 +510,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_MICH_Multi_TakeGogglesOff
 			{
 				displayName = "Take Goggles Off";
@@ -504,7 +519,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_MICH_Tan_PutGogglesOn
 			{
 				displayName = "Put Goggles On";
@@ -513,7 +528,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_MICH_Tan_TakeGogglesOff
 			{
 				displayName = "Take Goggles Off";
@@ -522,7 +537,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			//AIRFRAME HEADSET
 			class SOCOMD_AIRFRAME_HeadsetOn //No headset no Acc to yes headset no Acc
 			{
@@ -532,7 +547,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_HeadsetOff //Yes headset no Acc to no headset no Acc
 			{
 				displayName = "Headset Off";
@@ -549,7 +564,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_HeadsetOff_acc //Yes headset Yes Acc to no headset Yes Acc
 			{
 				displayName = "Headset Off";
@@ -590,9 +605,9 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			////////////////////////////
-			
+
 			class SOCOMD_AIRFRAME_TAN_HeadsetOn //No headset no Acc to yes headset no Acc
 			{
 				displayName = "Headset On";
@@ -601,7 +616,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_TAN_HeadsetOff //Yes headset no Acc to no headset no Acc
 			{
 				displayName = "Headset Off";
@@ -618,7 +633,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_TAN_HeadsetOff_acc //yes headset yes Acc to no headset yes Acc
 			{
 				displayName = "Headset Off";
@@ -668,7 +683,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_OD_HeadsetOff //Yes headset no Acc to no headset no Acc
 			{
 				displayName = "Headset Off";
@@ -685,7 +700,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_AIRFRAME_OD_HeadsetOff_acc //yes headset yes Acc to no headset yes Acc
 			{
 				displayName = "Headset Off";
@@ -735,7 +750,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_OPSCORE_TAN_HeadsetOff
 			{
 				displayName = "Headset Off";
@@ -744,7 +759,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_OPSCORE_MC_HeadsetOn
 			{
 				displayName = "Headset On";
@@ -753,7 +768,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_OPSCORE_MC_HeadsetOff
 			{
 				displayName = "Headset Off";
@@ -770,7 +785,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_OPSCORE_BLK_HeadsetOff
 			{
 				displayName = "Headset Off";
@@ -779,7 +794,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			//FAST SWITCH GOGGLES
 			class SOCOMD_FAST_Multi_PutGogglesOn
 			{
@@ -789,7 +804,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_FAST_Multi_TakeGogglesOff
 			{
 				displayName = "Take Goggles Off";
@@ -798,7 +813,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_FAST_Tan_PutGogglesOn
 			{
 				displayName = "Put Goggles On";
@@ -807,7 +822,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			class SOCOMD_FAST_Tan_TakeGogglesOff
 			{
 				displayName = "Take Goggles Off";
@@ -816,7 +831,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			//REVERSE CAP
 			class SOCOMD_Cap_HS_Reverse
 			{
@@ -835,7 +850,7 @@ class CAManBase : Man
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
-			
+
 			/*
 			class SOCOMD_Cap_HS_Reverse_Tan
 			{
@@ -963,7 +978,7 @@ class CAManBase : Man
 					showDisabled = 0;
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
-			};	
+			};
 		};
 	};
 };
