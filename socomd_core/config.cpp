@@ -68,15 +68,6 @@ class CfgPatches {
 			"SOCOMD_SHIP_A",
 			"SOCOMD_SHIP_B",
 
-			// BACKPACKS
-			"SOCOMD_Backpack",
-			"SOCOMD_Backpack_Empty",
-			"SOCOMD_Sapper_Backpack",
-			"SOCOMD_Medic_Backpack",
-			"SOCOMD_Sniper_Backpack",
-			"SOCOMD_Gunner_Backpack",
-			"SOCOMD_LongRange_Radio",
-
 			// BOXES
 			"SOCOMD_Interactive_QStore",
 			"SOCOMD_TAGE_Interactive_QStore",

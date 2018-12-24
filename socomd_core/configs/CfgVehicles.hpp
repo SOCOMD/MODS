@@ -10,6 +10,12 @@ class CfgVehicles  {
 	class I_Soldier_04_F;
 	class B_Diver_F;
 
+	////////////////////////////////////////////////////////////////////////////////
+	// Land
+
+	class B_Quadbike_01_F;
+	class Bicycle;
+
 	class Land;
 	class LandVehicle : Land {
 		class Components;
@@ -83,11 +89,47 @@ class CfgVehicles  {
 		};
 	};
 
-	class B_Quadbike_01_F;
-	class Bicycle;
-
-	//AIR
+	////////////////////////////////////////////////////////////////////////////////
+	// Helicopters
 	class Helicopter;
+
+	class Helicopter_Base_F : Helicopter {
+		class HitPoints;
+		class Turrets;
+		class AcreIntercoms;
+	};
+
+	class Helicopter_Base_H : Helicopter_Base_F {
+		class HitPoints : HitPoints {
+			class HitHull;
+			class HitAvionics;
+			class HitEngine;
+			class HitFuel;
+
+			class HitHRotor;
+			class HitVRotor;
+
+			class HitLGlass;
+			class HitRGlass;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+		};
+
+		class Turrets : Turrets {
+			class CopilotTurret;
+		};
+
+		class AcreIntercoms : AcreIntercoms {
+			class Intercom_1;
+		};
+	};
+
+	////////////////////////////////////////////////////////////////////////////////
+	// Other
 
 	//BACKPACKS
 	class B_Kitbag_Base;
@@ -100,18 +142,26 @@ class CfgVehicles  {
 	class FLAG_NATO_F;
 	class FLAG_CSAT_F;
 
-	//Items
-	#include "items\backpack.hpp"
-	#include "items\socomd_men_backpacks.hpp"
+	////////////////////////////////////////////////////////////////////////////////
+	// Includes
 
-	#include "vehicles\fixes.hpp"
-	#include "vehicles\land.hpp"
-	#include "vehicles\air.hpp"
-	#include "vehicles\ship.hpp"
-	#include "vehicles\backpacks.hpp"
-	#include "vehicles\men.hpp"
-	#include "vehicles\qstores.hpp"
-	#include "vehicles\boxes.hpp"
-	#include "vehicles\other.hpp"
-	#include "vehicles\bike.hpp"
+	#include "vehicles\base\backpack.hpp"
+	#include "vehicles\base\bike.hpp"
+	#include "vehicles\base\bushmaster.hpp"
+	#include "vehicles\base\firefly.hpp"
+	#include "vehicles\base\hurricane.hpp"
+	#include "vehicles\base\land.hpp"
+	#include "vehicles\base\nomad.hpp"
+	#include "vehicles\base\ship.hpp"
+	#include "vehicles\base\soldier.hpp"
+	#include "vehicles\base\warrior.hpp"
+
+	#include "vehicles\boxes\qstores.hpp"
+	#include "vehicles\boxes\supply.hpp"
+
+	#include "vehicles\override\extensions.hpp"
+	#include "vehicles\override\flags.hpp"
+	#include "vehicles\override\socomd_men_backpacks.hpp"
 };
+
+

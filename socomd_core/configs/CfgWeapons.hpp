@@ -3,20 +3,16 @@ class CfgWeapons {
 	class RifleCore;
 	class ItemCore;
 
-	//Item Defines
-	#include "items\binocular.hpp"
-	#include "items\gps.hpp"
-	#include "items\handgun.hpp"
-	#include "items\headgear.hpp"
-	#include "items\primary.hpp"
-	#include "items\secondary.hpp"
-	#include "items\uniform.hpp"
-	#include "items\vest.hpp"
+	#include "weapons\base\binocular.hpp"
+	#include "weapons\base\gps.hpp"
+	#include "weapons\base\handgun.hpp"
+	#include "weapons\base\headgear.hpp"
+	#include "weapons\base\nvg.hpp"
+	#include "weapons\base\primary.hpp"
+	#include "weapons\base\secondary.hpp"
+	#include "weapons\base\uniform.hpp"
+	#include "weapons\base\vest.hpp"
 
-	//Item SOCOMD Defines
-	#include "items\socomd_men_items.hpp"
-
-	//Misc
-	#include "weapons\nvg.hpp"
-	#include "weapons\other.hpp"
+	#include "weapons\override\extensions.hpp"
+	#include "weapons\override\socomd_men_items.hpp"
 };

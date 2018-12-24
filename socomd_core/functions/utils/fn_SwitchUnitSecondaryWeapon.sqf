@@ -14,9 +14,9 @@ _secondaryMagazines = getArray(configFile >> "CfgWeapons" >> _secondary >> "maga
 {
     _magazineWellConfig = (configFile >> "CfgMagazineWells" >> _x);
     for "_i" from 0 to (count _magazineWellConfig) - 1 do {
-        _primaryMagazines = _primaryMagazines + getArray(_magazineWellConfig select _i);
+        _secondaryMagazines = _secondaryMagazines + getArray(_magazineWellConfig select _i);
     };
-}foreach(_primaryMagazineWells);
+}foreach(_secondaryMagazines);
 
 //Remove secondary magazines from player
 {
@@ -28,7 +28,7 @@ _secondaryMagazines = getArray(configFile >> "CfgWeapons" >> _secondary >> "maga
     }foreach(magazines _player);
 }foreach(_secondaryMagazines);
 
-//Set Primary Weapon
+//Set Secondary Weapon
 _unitLoadout = getUnitLoadout _player;
 
 _secondaryLoadout = _unitLoadout select 1;
@@ -41,7 +41,7 @@ else {
     _secondaryLoadout set [5, []];
 };
 
-_unitLoadout set [0, _secondaryLoadout];
+_unitLoadout set [1, _secondaryLoadout];
 
 [_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 

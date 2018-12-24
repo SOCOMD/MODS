@@ -50,7 +50,7 @@ class SOCOMD_Item_Headgear_MachineGunner            : ADFU_H_Airframe_Cover_03_M
 class SOCOMD_Item_Headgear_Marsksman                : ADFU_H_Airframe_Cover_03_MC {scope = private;};
 class SOCOMD_Item_Headgear_Sniper                   : ADFU_H_Airframe_Cover_03_MC {scope = private;};
 class SOCOMD_Item_Headgear_AT                       : ADFU_H_Airframe_Cover_03_MC {scope = private;};
-class SOCOMD_Item_Headgear_PJ                       : SOCOMD_Pilot_helmet {scope = private;};
+class SOCOMD_Item_Headgear_PJ                       : ADFU_H_Airframe_Cover_03_MC {scope = private;};
 class SOCOMD_Item_Headgear_Pilot                    : SOCOMD_Pilot_helmet {scope = private;};
 class SOCOMD_Item_Headgear_Crewman                  : H_HelmetCrew_I {scope = private;};
 
