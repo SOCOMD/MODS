@@ -10,7 +10,7 @@ class CfgVehicles {
 	Land
 	*/
 
-	#include "vehicles\Trucks.hpp"
+	#include "vehicles\override_cup\trucks.hpp"
 
 	////////////////////////////////////////////////////////////////////////////////
 	//AIR VEHICLES
@@ -56,15 +56,18 @@ class CfgVehicles {
 		};
 	};
 
-	#include "vehicles\Firefly.hpp"
-	#include "vehicles\Warrior.hpp"
-	#include "vehicles\Nomad.hpp"
-	#include "vehicles\Hurricane.hpp"
-
-	#include "objects\QStore.hpp"
+	#include "vehicles\override_cup\firefly.hpp"
+	#include "vehicles\override_cup\warrior.hpp"
+	#include "vehicles\override_cup\nomad.hpp"
+	#include "vehicles\override_cup\hurricane.hpp"
 
 	////////////////////////////////////////////////////////////////////////////////
 	//SEA VEHICLES
 
-	#include "vehicles\Ships.hpp"
+	#include "vehicles\override_cup\ships.hpp"
+
+	////////////////////////////////////////////////////////////////////////////////
+	//BOXES
+
+	#include "vehicles\boxes\qstore.hpp"
 };

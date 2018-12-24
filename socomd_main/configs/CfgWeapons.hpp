@@ -4,9 +4,9 @@ class CfgWeapons {
 	class ItemCore;
 
 	//Item Defines
-	#include "items\primary.hpp"
-	#include "items\secondary.hpp"
+	#include "weapons\base\primary.hpp"
+	#include "weapons\base\secondary.hpp"
 
 	//Item SOCOMD Defines
-	#include "items\socomd_men_items.hpp"
+	#include "weapons\override\socomd_men_items.hpp"
 };
