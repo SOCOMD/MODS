@@ -3,7 +3,7 @@
 
 class Land_PaperBox_closed_F;
 class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
-	scope = private;
+	scope = protected;
 	scopeCurator = private;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
@@ -33,7 +33,7 @@ class SOCOMD_ACTION_GRP_##GRP_ID { \
 #define QSTORE_ACTION_LOADOUT(DISPLAY_STR, LOADOUT) \
 class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	displayName = DISPLAY_STR; \
-	statement = "[_player," + #LOADOUT + "] call SOCOMD_fnc_SwitchUnitLoadout"; \
+	statement = "[_player, '##LOADOUT']call SOCOMD_fnc_SwitchUnitLoadout"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	condition = 1; \
 	showDisabled = 0; \

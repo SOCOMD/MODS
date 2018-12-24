@@ -2,12 +2,12 @@
 #define SOCOMD_VEST(VEST) \
 class ##VEST; \
 class SOCOMD_OVERRIDE_##VEST : ##VEST { \
-	scope = private; \
+	scope = protected; \
 	author = AUTHOR_STR; \
 	class ItemInfo; \
 }; \
 class SOCOMD_OVERRIDE_A_##VEST : SOCOMD_OVERRIDE_##VEST { \
-	scope = private; \
+	scope = protected; \
 	author = AUTHOR_STR; \
 	class ItemInfo; \
 }; \

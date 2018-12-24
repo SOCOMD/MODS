@@ -4,7 +4,7 @@
 
 class B_Boat_Transport_01_F;
 class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
-	scope = private;
+	scope = protected;
 	scopeCurator = private;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
