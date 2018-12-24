@@ -5,9 +5,9 @@ class CfgPatches
 	class socomd_missions
 	{
 		//Internal Version
-		version = 1.0.2;
-		versionStr = "1.0.2";
-		versionAr[] = {1, 0, 2};
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = {1,1,0};
 
 		units[] = {};
 		weapons[] = {};

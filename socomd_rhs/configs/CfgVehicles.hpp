@@ -9,8 +9,8 @@ class CfgVehicles {
 	LandVehicle
 	Land
 	*/
-	
-	#include "vehicles\Trucks.hpp"
+
+	#include "vehicles\override_rhs\Trucks.hpp"
 
 	////////////////////////////////////////////////////////////////////////////////
 	//AIR VEHICLES
@@ -24,7 +24,7 @@ class CfgVehicles {
 	};
 
 	class Helicopter_Base_H : Helicopter_Base_F {
-	
+
 		class Turrets : Turrets {
 			class MainTurret;
 			class CopilotTurret;
@@ -50,8 +50,8 @@ class CfgVehicles {
 		};
 	};
 
-	#include "vehicles\Firefly.hpp"
-	#include "vehicles\Warrior.hpp"
-	#include "vehicles\Nomad.hpp"
-	#include "vehicles\Hurricane.hpp"
+	#include "vehicles\override_rhs\firefly.hpp"
+	#include "vehicles\override_rhs\warrior.hpp"
+	#include "vehicles\override_rhs\nomad.hpp"
+	#include "vehicles\override_rhs\hurricane.hpp"
 };

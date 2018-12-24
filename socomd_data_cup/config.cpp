@@ -2,9 +2,9 @@
 
 class CfgPatches {
 	class socomd_data_cup {
-		version = 1.0.0;
-		versionStr = "1.0.0";
-		versionAr[] = { 1,0,0 };
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = { 1,1,0 };
 
 		requiredVersion = 0.1;
 

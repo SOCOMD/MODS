@@ -4,9 +4,9 @@ class CfgPatches
 {
 	class socomd_zeus
 	{
-		version = 1.0.3;
-		versionStr = "1.0.3";
-		versionAr[] = { 1,0,3 };
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = { 1,1,0 };
 
 		units[] = {
 			"SOCOMD_Module_ToggleUndercover",
