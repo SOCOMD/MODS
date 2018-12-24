@@ -27,6 +27,7 @@ class CfgFunctions {
 			class Action_ReplaceFacewear {};
 			class Action_ReplacePrimary {};
 			class Action_ReplaceBackpack {};
+			class Action_EnterSpectator {};
 		};
 
 		class ActionConditions {
@@ -37,6 +38,7 @@ class CfgFunctions {
 			class ActionCondition_HasPrimary556	{};
 			class ActionCondition_CanSwapVest {};
 			class ActionCondition_CanSwapBackpacks {};
+			class ActionCondition_IsAdmin {};
 		};
 	};
 };

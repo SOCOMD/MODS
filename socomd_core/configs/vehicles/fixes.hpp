@@ -132,5 +132,20 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_0,"Headset On",ADFU_H_OpsCore_02_BLK,ADFU_H_OpsCore_08_BLK)
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_1,"Headset Off",ADFU_H_OpsCore_08_BLK,ADFU_H_OpsCore_02_BLK)
 		};
+
+		class SOCOMD_Admin {
+			displayName = "Admin";
+			condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
+			showDisabled = 0;
+			exceptions[] = {"isNotInside", "isNotSitting"};
+
+			class SOCOMD_EnterSpectator {
+				displayName = "Spectate";
+				condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
+				statement = "[_player] call SOCOMD_fnc_Action_EnterSpectator;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+		};
 	};
 };
