@@ -3,13 +3,18 @@ class CfgPatches
 	class AR_AdvancedRappelling
 	{
 		//Internal Version
-		version = 1.0.0;
-		versionStr = "1.0.0";
-		versionAr[] = { 1,0,0 };
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = { 1,1,0 };
 
 		units[] = {"AR_AdvancedRappelling"};
 		requiredVersion = 1;
-		requiredAddons[] = {"A3_Modules_F", "ace_interaction"};
+		requiredAddons[] = {
+			"A3_Modules_F",
+			"ace_interaction",
+			//SOCOMD Requirments
+			"socomd_core"
+		};
 	};
 };
 

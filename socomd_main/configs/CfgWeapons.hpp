@@ -1,13 +1,12 @@
-class CfgWeapons 
-{
+class CfgWeapons {
+
+	class RifleCore;
 	class ItemCore;
 
-	#include "weapons\nvg.hpp"
-	#include "weapons\primary.hpp"
-	#include "weapons\launchers.hpp"
-	#include "weapons\pistol.hpp"
-	#include "weapons\uniform.hpp"
-	#include "weapons\vest.hpp"
-	#include "weapons\headgear.hpp"
-	#include "weapons\other.hpp"
+	//Item Defines
+	#include "weapons\base\primary.hpp"
+	#include "weapons\base\secondary.hpp"
+
+	//Item SOCOMD Defines
+	#include "weapons\override\socomd_men_items.hpp"
 };

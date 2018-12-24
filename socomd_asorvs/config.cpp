@@ -5,12 +5,15 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			//SOCOMD Requirments
+			"socomd_core"
+		};
 		author[] = {};
 		authorUrl = "";
-		version = 0.0.1;
-		versionStr = "0.0.1";
-		versionAr[] = { 0,0,1 };
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = { 1,1,0 };
 	};
 };
 
