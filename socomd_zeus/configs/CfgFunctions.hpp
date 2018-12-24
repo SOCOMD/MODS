@@ -1,11 +1,7 @@
-class CfgFunctions
-{
-	class SOCOMD
-	{
-		class Zeus
-		{
+class CfgFunctions {
+	class SOCOMD {
+		class Zeus {
 			file = "\socomd_zeus\functions\zeus";
-			
 			class ZeusInit { postInit = 1; };
 			class ZeusInitLocal {};
 			class ZeusAddObject {};
@@ -18,10 +14,8 @@ class CfgFunctions
 			class ZeusRegisterCallbacks {};
 		};
 
-		class Headless
-		{
+		class Headless {
 			file = "\socomd_zeus\functions\headless";
-
 			class HeadlessAddDisplayHandles {};
 			class HeadlessHandleKeyPress {};
 			class HeadlessHandleKeyRelease {};
@@ -34,10 +28,8 @@ class CfgFunctions
 			class HeadlessSetOwner {};
 		};
 
-		class Modules
-		{
+		class Modules {
 			file = "\socomd_zeus\functions\modules";
-
 			class ModuleToggleUndercover {};
 			class ModuleToggleTranslator {};
 			class ModuleCopyClipboardLoadout {};
