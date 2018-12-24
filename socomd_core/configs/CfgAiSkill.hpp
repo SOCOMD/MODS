@@ -35,6 +35,23 @@ spotDistance
  
 spotTime
 - Affects how quick the AI react to death, damage or observing an enemy (Higher value = quicker reaction)
+
+All values are between 0-1, where 0 is worst and 1 is max.
+Arrays are {w, x, y, z} value from (w,y) gets interpolated into (x,z)
+	w = starting scalar
+	x = starting value
+	y = final scalar
+	z = final value
+Scalar's can be considered what is the theoretical maximum or minimum, i.e for Spot distance, 
+a scalar of 0 would mean right infront of it, while a scalar of 1 is basically at multiple kilomitres.
+if a starting scalar higher than 0 is used, it will be flat to 0 from that point, the same for final in the other direction,
+values linarly scale between between positions, moving scalar positions can configure the ramping of the skill till it flattens.
+
+Example:
+	spotDistance[] = {0, 0.2, 1, 0.4};
+	starting scalar 0, is 20% of maximum skill to spot,
+	finishing scalar 1, is 40% of maxium skill to spot,
+
 */
 
 class CfgAISkill {
