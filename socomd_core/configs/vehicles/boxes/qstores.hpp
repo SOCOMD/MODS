@@ -33,11 +33,7 @@ class SOCOMD_ACTION_GRP_##GRP_ID { \
 #define QSTORE_ACTION_LOADOUT(DISPLAY_STR, LOADOUT) \
 class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	displayName = DISPLAY_STR; \
-<<<<<<< HEAD
 	statement = "[_player,"#LOADOUT"]call SOCOMD_fnc_SwitchUnitLoadout"; \
-=======
-	statement = "[_player, '##LOADOUT'] call SOCOMD_fnc_SwitchUnitLoadout"; \
->>>>>>> d583c36ad08586f1d03ab64a166b970d38952fe9
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	condition = 1; \
 	showDisabled = 0; \
