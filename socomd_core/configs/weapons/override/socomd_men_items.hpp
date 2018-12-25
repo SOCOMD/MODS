@@ -56,11 +56,11 @@ class SOCOMD_Item_Headgear_Crewman                  : H_HelmetCrew_I {scope = pr
 
 class SOCOMD_Item_Binocular_TroopLeader             : Laserdesignator {scope = protected;};
 class SOCOMD_Item_Binocular_PatrolLeader            : Laserdesignator {scope = protected;};
-class SOCOMD_Item_Binocular_Rifleman                : Binocular {scope = protected;};
-class SOCOMD_Item_Binocular_Grenadier               : Binocular {scope = protected;};
-class SOCOMD_Item_Binocular_Medic                   : Binocular {scope = protected;};
-class SOCOMD_Item_Binocular_Sapper                  : Binocular {scope = protected;};
-class SOCOMD_Item_Binocular_MachineGunner           : Binocular {scope = protected;};
+class SOCOMD_Item_Binocular_Rifleman                : Rangefinder {scope = protected;};
+class SOCOMD_Item_Binocular_Grenadier               : Rangefinder {scope = protected;};
+class SOCOMD_Item_Binocular_Medic                   : Rangefinder {scope = protected;};
+class SOCOMD_Item_Binocular_Sapper                  : Rangefinder {scope = protected;};
+class SOCOMD_Item_Binocular_MachineGunner           : Rangefinder {scope = protected;};
 class SOCOMD_Item_Binocular_Marsksman               : Rangefinder {scope = protected;};
 class SOCOMD_Item_Binocular_Sniper                  : Rangefinder {scope = protected;};
 class SOCOMD_Item_Binocular_AT                      : Rangefinder {scope = protected;};
