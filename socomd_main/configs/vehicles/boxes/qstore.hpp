@@ -15,7 +15,7 @@ class SOCOMD_ACTION_GRP_##GRP_ID { \
 #define QSTORE_ACTION_LOADOUT(DISPLAY_STR, LOADOUT) \
 class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	displayName = DISPLAY_STR; \
-	statement = "[_player, '##LOADOUT'] call SOCOMD_fnc_SwitchUnitLoadout"; \
+	statement = "[_player,"#LOADOUT"]call SOCOMD_fnc_SwitchUnitLoadout"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	condition = 1; \
 	showDisabled = 0; \
@@ -24,8 +24,8 @@ class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 #define QSTORE_ACTION_WEAPON_PRIMARY(DISPLAY_STR, WEAPON) \
 class SOCOMD_ACTION_WEAPON_##WEAPON { \
 	displayName = DISPLAY_STR; \
-	condition = "[_player, '##WEAPON'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
-	statement = "[_player , '##WEAPON'] call SOCOMD_fnc_SwitchUnitPrimaryWeapon"; \
+	condition = "[_player,"#WEAPON"] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
+	statement = "[_player ,"#WEAPON"] call SOCOMD_fnc_SwitchUnitPrimaryWeapon"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -33,8 +33,8 @@ class SOCOMD_ACTION_WEAPON_##WEAPON { \
 #define QSTORE_ACTION_WEAPON_SECONDARY(DISPLAY_STR, WEAPON) \
 class SOCOMD_ACTION_WEAPON_##WEAPON { \
 	displayName = DISPLAY_STR; \
-	condition = "[_player, '##WEAPON'] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
-	statement = "[_player , '##WEAPON'] call SOCOMD_fnc_SwitchUnitSecondaryWeapon"; \
+	condition = "[_player,"#WEAPON"] call SOCOMD_fnc_ActionCondition_CanUseLoadoutWeapon"; \
+	statement = "[_player ,"#WEAPON"] call SOCOMD_fnc_SwitchUnitSecondaryWeapon"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -42,8 +42,8 @@ class SOCOMD_ACTION_WEAPON_##WEAPON { \
 #define QSTORE_ACTION_VEST(DISPLAY_STR, VEST) \
 class SOCOMD_ACTION_VEST_##VEST { \
 	displayName = DISPLAY_STR; \
-	condition = "[_player, '##VEST'] call SOCOMD_fnc_ActionCondition_CanSwapVest"; \
-	statement = "[_player , '##VEST'] call SOCOMD_fnc_Action_ReplaceVest"; \
+	condition = "[_player,"#VEST"] call SOCOMD_fnc_ActionCondition_CanSwapVest"; \
+	statement = "[_player ,"#VEST"] call SOCOMD_fnc_Action_ReplaceVest"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -51,8 +51,8 @@ class SOCOMD_ACTION_VEST_##VEST { \
 #define QSTORE_ACTION_BACKPACK(DISPLAY_STR, BACKPACK) \
 class SOCOMD_ACTION_VEST_##BACKPACK { \
 	displayName = DISPLAY_STR; \
-	condition = "[_player, '##BACKPACK'] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks"; \
-	statement = "[_player , '##BACKPACK'] call SOCOMD_fnc_Action_ReplaceBackpack"; \
+	condition = "[_player,"#BACKPACK"] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks"; \
+	statement = "[_player ,"#BACKPACK"] call SOCOMD_fnc_Action_ReplaceBackpack"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -61,7 +61,7 @@ class SOCOMD_ACTION_VEST_##BACKPACK { \
 class SOCOMD_ACTION_VEST_##HEADGEAR { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
-	statement = "[_player , '##HEADGEAR'] call SOCOMD_fnc_Action_ReplaceHeadgear"; \
+	statement = "[_player ,"#HEADGEAR"] call SOCOMD_fnc_Action_ReplaceHeadgear"; \
 	condition = 1; \
 	showDisabled = 0; \
 };
