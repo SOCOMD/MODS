@@ -15,4 +15,6 @@ class CfgWeapons {
 
 	#include "weapons\override\extensions.hpp"
 	#include "weapons\override\socomd_men_items.hpp"
+
+	#include "ai\hmg.hpp"
 };
