@@ -52,8 +52,8 @@ class ACE_ReserveParachute : ACE_NonSteerableParachute {
 #define QSTORE_ACTION_REPLACE_UNIFORM(ID, DISPLAY_STR, UNIFORM_SOURCE, UNIFORM_TARGET) \
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	displayName = DISPLAY_STR; \
-	condition = "(alive _player) and ((uniform _player) isKindOf ['##UNIFORM_SOURCE', configFile >> 'CfgWeapons'])"; \
-	statement = "[_player, '##UNIFORM_TARGET'] call SOCOMD_fnc_Action_ReplaceUniform;"; \
+	condition = "(alive _player) and ((uniform _player) isKindOf ["#UNIFORM_SOURCE", configFile >> 'CfgWeapons'])"; \
+	statement = "[_player, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_ReplaceUniform;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -61,8 +61,8 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 #define QSTORE_ACTION_REPLACE_HEADGEAR(ID, DISPLAY_STR, HEADGEAR_SOURCE, HEADGEAR_TARGET) \
 class SOCOMD_ACTION_REPLACE_HEADGEAR_##ID { \
 	displayName = DISPLAY_STR; \
-	condition = "(alive _player) and ((headgear _player) isKindOf ['##HEADGEAR_SOURCE', configFile >> 'CfgWeapons'])"; \
-	statement = "[_player, '##HEADGEAR_TARGET'] call SOCOMD_fnc_Action_ReplaceHeadgear;"; \
+	condition = "(alive _player) and ((headgear _player) isKindOf ["#HEADGEAR_SOURCE", configFile >> 'CfgWeapons'])"; \
+	statement = "[_player, "#HEADGEAR_TARGET"] call SOCOMD_fnc_Action_ReplaceHeadgear;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
