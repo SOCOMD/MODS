@@ -2,7 +2,7 @@
 set projectDir="C:\git\socomd\mods"
 set toolsDir=%projectDir%\tools
 set modOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd_dev\addons"
-set coreOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd\addons"
+set coreOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_core\addons"
 set mainOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_main\addons"
 
 start /D %projectDir% makepbo.exe -N socomd_core %coreOutput%
