@@ -186,8 +186,9 @@ class SOCOMD_Mortar_Box : NATO_Box_Base
 
 	class TransportMagazines
 	{
-		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 10)
-		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE_LaserGuided, 10)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 15)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke, 5)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum, 5)
 
 	};
 
@@ -198,7 +199,7 @@ class SOCOMD_Mortar_Box : NATO_Box_Base
 	};
 	class TransportBackpacks
 	{
-		TRANSPORT_BACKPACK(B_Mortar_01_weapons_F, 1)
+		TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
 		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
 	};
 };

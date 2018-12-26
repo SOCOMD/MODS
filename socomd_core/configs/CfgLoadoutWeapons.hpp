@@ -45,6 +45,20 @@ class CfgLoadoutWeapons {
 
 	class Rifle_762 {
 		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_Commander",
+			"SOCOMD_Leader"
+		};
+	
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
+		};
+	};
+	class Long_Rifle_762 {
+		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader"
 		};
@@ -65,6 +79,7 @@ class CfgLoadoutWeapons {
 		};	
 	};
 
+Stashed changes
 	class Launcher {
 		loadoutWhitelist[] = {
 			"SOCOMD_AT"

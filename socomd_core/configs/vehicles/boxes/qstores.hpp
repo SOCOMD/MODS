@@ -164,10 +164,19 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 
 			//Select Headgear
 			QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR,"Headgear")
-				QSTORE_ACTION_HEADGEAR("Opscore (Tan)",ADFU_H_OpsCore_08_TAN)
-				QSTORE_ACTION_HEADGEAR("Opscore (MC)",ADFU_H_OpsCore_08_MC)
-				QSTORE_ACTION_HEADGEAR("Airframe (Tan)",ADFU_H_Airframe_03_tan)
-				QSTORE_ACTION_HEADGEAR("Airframe (MC)",ADFU_H_Airframe_Cover_03_MC)
+				QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR_SUB0,"Hard Cover")
+					QSTORE_ACTION_HEADGEAR("Opscore (Tan)",ADFU_H_OpsCore_08_TAN)
+					QSTORE_ACTION_HEADGEAR("Opscore (MC)",ADFU_H_OpsCore_08_MC)
+					QSTORE_ACTION_HEADGEAR("Airframe (Tan)",ADFU_H_Airframe_03_tan)
+					QSTORE_ACTION_HEADGEAR("Airframe (MC)",ADFU_H_Airframe_Cover_03_MC)
+				QSTORE_ACTION_GRP_END
+				
+				QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR_SUB1,"Soft Cover")
+					QSTORE_ACTION_HEADGEAR("Cap (Tan)",CUP_H_PMC_Cap_Tan)
+					QSTORE_ACTION_HEADGEAR("Cap (MC)",ADFU_Cap_MC)
+					QSTORE_ACTION_HEADGEAR("Boonie (Tan)",H_Booniehat_tan)
+					QSTORE_ACTION_HEADGEAR("Boonie",SOCOMD_Aus_Boonie)
+				QSTORE_ACTION_GRP_END
 			QSTORE_ACTION_GRP_END
 
 			// Switch Uniforms
