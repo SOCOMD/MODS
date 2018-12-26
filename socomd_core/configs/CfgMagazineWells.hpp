@@ -36,9 +36,4 @@ class CfgMagazineWells {
 		};
 	};
 
-	class SOCOMD_300_MAG {
-		SOCOMD_mags[] = {
-			"SOCOMD_Item_Magazine_300_5Rnd"
-		};
-	};
 };

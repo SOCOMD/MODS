@@ -45,3 +45,4 @@ class CfgPatches  {
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgVehicles.hpp"
+#include "configs\CfgLoadouts.hpp"

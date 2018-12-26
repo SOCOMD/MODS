@@ -4,7 +4,7 @@ class SOCOMD_Item_Primary_Rifleman                  : arifle_SPAR_01_blk_F {scop
 class SOCOMD_Item_Primary_Medic                     : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Sapper                    : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_MachineGunner             : LMG_03_F {scope = protected;};
-class SOCOMD_Item_Primary_Sniper                    : hlc_rifle_awmagnum {scope = protected;};
+class SOCOMD_Item_Primary_Sniper                    : srifle_LRR_F {scope = protected;};
 class SOCOMD_Item_Primary_Recon                     : srifle_LRR_F {scope = protected;};
 class SOCOMD_Item_Primary_AT                        : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_PJ                        : SMG_05_F {scope = protected;};
@@ -30,7 +30,7 @@ class SOCOMD_Item_Secondary_Rifleman                : ItemCore {scope = protecte
 class SOCOMD_Item_Secondary_Medic                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Sapper                  : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_MachineGunner           : ItemCore {scope = protected;};
-class SOCOMD_Item_Secondary_Sniper                  : srifle_LRR_F {scope = protected;};
+class SOCOMD_Item_Secondary_Sniper                  : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Recon                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_AT                     	: launch_NLAW_F {scope = protected;};
 class SOCOMD_Item_Secondary_PJ                      : ItemCore {scope = protected;};

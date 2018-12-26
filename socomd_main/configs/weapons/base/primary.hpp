@@ -33,4 +33,9 @@ class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
 };
 
 //Rifle 300WM
-class hlc_rifle_awmagnum;
+class hlc_AWC_base;
+class hlc_rifle_awmagnum : hlc_AWC_base {
+	magazineWell[] = {"SOCOMD_300_MAG"};
+	mass=120;
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+};
