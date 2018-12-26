@@ -35,4 +35,10 @@ class CfgMagazineWells {
 			"SOCOMD_Item_Magazine_408_7Rnd"
 		};
 	};
+
+	class SOCOMD_300_MAG {
+		SOCOMD_mags[] = {
+			"SOCOMD_Item_Magazine_300_5Rnd"
+		};
+	};
 };

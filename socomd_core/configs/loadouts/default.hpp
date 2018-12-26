@@ -340,7 +340,7 @@ class SOCOMD_Medic {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-// Marksman
+// Sniper
 
 class SOCOMD_SNIPER {
 	primary	        = ITEM_PRIMARY_SNIPER;
@@ -364,7 +364,8 @@ class SOCOMD_SNIPER {
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 4)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
 		};
 	};
 
@@ -373,12 +374,13 @@ class SOCOMD_SNIPER {
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Primary_Rifleman,1)
 		};
 	};
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-// Sniper
+// Recon
 
 class SOCOMD_Recon {
 	primary		    = ITEM_PRIMARY_RECON;

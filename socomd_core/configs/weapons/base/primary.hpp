@@ -15,3 +15,8 @@ class SMG_05_base_F;
 class SMG_05_F : SMG_05_base_F {
 	magazineWell[] = {"CBA_9x19_MP5"};
 };
+
+class hlc_rifle_awmagnum;
+//class hlc_rifle_awmagnum: {
+//	magazineWell[] = {"SOCOMD_300_MAG"}
+//}

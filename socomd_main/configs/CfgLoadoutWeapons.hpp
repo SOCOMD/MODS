@@ -22,7 +22,7 @@ class CfgLoadoutWeapons {
 	};
 
 	class Rifle_762;
-	class SMA_HK417_16in : Rifle_762 {};
+	//class SMA_HK417_16in : Rifle_762 {};
 	class SMA_HK417vfg : Rifle_762 {};
 
 	class Launcher;

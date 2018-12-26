@@ -4,7 +4,7 @@ class SOCOMD_Item_Backpack_Rifleman                 : SOG_BAG_MC {};
 class SOCOMD_Item_Backpack_Medic                    : SOG_BAG_med_MC {};
 class SOCOMD_Item_Backpack_Sapper                   : Kit_Bag_pince_TAN {};
 class SOCOMD_Item_Backpack_MachineGunner            : SOG_BAG_MC {};
-class SOCOMD_Item_Backpack_Sniper               : SOG_BAG_MC {};
+class SOCOMD_Item_Backpack_Sniper                   : SOG_BAG_MC {};
 class SOCOMD_Item_Backpack_Recon                    : SOG_BAG_MC {};
 class SOCOMD_Item_Backpack_AT                       : SOG_BAG_MC {};
 class SOCOMD_Item_Backpack_PJ                       : Kit_Bag_MC {};
