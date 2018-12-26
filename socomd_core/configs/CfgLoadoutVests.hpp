@@ -12,7 +12,7 @@ class CfgLoadoutVests {
 	class SOCOMD_lbt_tl {
 		loadoutWhitelist[] = {
 			"SOCOMD_Rifleman",
-			"SOCOMD_Marksman",
+			"SOCOMD_Sniper",
 			"SOCOMD_Sapper",
 			"SOCOMD_Recon",
 			"SOCOMD_AT"

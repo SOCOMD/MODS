@@ -340,24 +340,24 @@ class SOCOMD_Medic {
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 
-class SOCOMD_Marksman {
-	primary	        = ITEM_PRIMARY_MARKSMAN;
-	secondary		= ITEM_SECONDARY_MARKSMAN;
-	handgun		    = ITEM_HANDGUN_MARKSMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MARKSMAN;
-	headgear		= ITEM_HEADGEAR_MARKSMAN;
-	binocular		= ITEM_BINOCULAR_MARKSMAN;
-	gps			    = ITEM_GPS_MARKSMAN;
+class SOCOMD_SNIPER {
+	primary	        = ITEM_PRIMARY_SNIPER;
+	secondary		= ITEM_SECONDARY_SNIPER;
+	handgun		    = ITEM_HANDGUN_SNIPER;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SNIPER;
+	headgear		= ITEM_HEADGEAR_SNIPER;
+	binocular		= ITEM_BINOCULAR_SNIPER;
+	gps			    = ITEM_GPS_SNIPER;
 
 	class Uniform {
-		type = ITEM_UNIFORM_MARKSMAN;
+		type = ITEM_UNIFORM_SNIPER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
 	class Vest {
-		type = ITEM_VEST_MARKSMAN;
+		type = ITEM_VEST_SNIPER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
@@ -367,7 +367,7 @@ class SOCOMD_Marksman {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_MARKSMAN;
+		type = ITEM_BACKPACK_SNIPER;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
@@ -379,23 +379,23 @@ class SOCOMD_Marksman {
 // Sniper
 
 class SOCOMD_Recon {
-	primary		    = ITEM_PRIMARY_Recon;
-	secondary		= ITEM_SECONDARY_Recon;
-	handgun		    = ITEM_HANDGUN_Recon;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_Recon;
-	headgear		= ITEM_HEADGEAR_Recon;
-	binocular		= ITEM_BINOCULAR_Recon;
-	gps			    = ITEM_GPS_Recon;
+	primary		    = ITEM_PRIMARY_RECON;
+	secondary		= ITEM_SECONDARY_RECON;
+	handgun		    = ITEM_HANDGUN_RECON;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RECON;
+	headgear		= ITEM_HEADGEAR_RECON;
+	binocular		= ITEM_BINOCULAR_RECON;
+	gps			    = ITEM_GPS_RECON;
 
 	class Uniform {
-		type = ITEM_UNIFORM_Recon;
+		type = ITEM_UNIFORM_RECON;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
 	class Vest {
-		type = ITEM_VEST_Recon;
+		type = ITEM_VEST_RECON;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -406,7 +406,7 @@ class SOCOMD_Recon {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_Recon;
+		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS

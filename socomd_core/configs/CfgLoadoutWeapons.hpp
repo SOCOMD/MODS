@@ -4,7 +4,8 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
-			"SOCOMD_AT"
+			"SOCOMD_AT",
+			"SOCOMD_Sniper"
 		};
 
 		magazines[] = {
@@ -41,15 +42,15 @@ class CfgLoadoutWeapons {
 		magazines[] = {};
 	};
 
-	class Rifle_762 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Marksman"
-		};
-
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
-		};
-	};
+	//class Rifle_762 {
+	//	loadoutWhitelist[] = {
+	//		"SOCOMD_Sniper"
+	//	};
+	//
+	//	magazines[] = {
+	//		{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
+	//	};
+	//};
 
 	class Launcher {
 		loadoutWhitelist[] = {
