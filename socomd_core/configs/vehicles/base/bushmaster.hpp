@@ -273,8 +273,8 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	vehicleclass = "Car";
 	forceInGarage = 1;
 
-	crew = "SOCOMD_Medic";
-	typicalCargo[] = {"SOCOMD_Medic"};
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 	hiddenSelectionsTextures[] = {

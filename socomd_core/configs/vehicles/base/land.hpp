@@ -172,8 +172,8 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	vehicleclass = "Armored";
 	forceInGarage = 1;
 
-	crew = "SOCOMD_Medic";
-	typicalCargo[] = {"SOCOMD_Medic"};
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
