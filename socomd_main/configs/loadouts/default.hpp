@@ -12,6 +12,4 @@ class SOCOMD_SNIPER: SOCOMD_SNIPER {
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
 		};
 	};
-
-
 };
