@@ -257,8 +257,8 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 
 	forceInGarage = 1;
 
-	crew = "SOCOMD_Medic";
-	typicalCargo[] = {"SOCOMD_Medic"};
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	animationList[] = {
 		"showCamonetHull",0,
