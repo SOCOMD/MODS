@@ -8,7 +8,7 @@ class AU_03_780000_v1;
 class SOCOMD_BERET : AU_03_780000_v1 {
 	author = AUTHOR_STR;
 	displayName = "SOCOMD Beret";
-	ace_hearing_protection = 0.9;
+	ace_hearing_protection = 1.0;
 	ace_hearing_lowerVolume = 0.0;
 };
 
@@ -16,7 +16,7 @@ class H_PilotHelmetHeli_O;
 class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O {
 	scope = public;
 	displayName = "SOCOMD Heli-Pilot Helmet";
-	ace_hearing_protection = 0.9;
+	ace_hearing_protection = 1.0;
 	ace_hearing_lowerVolume = 0;
 };
 
@@ -24,7 +24,7 @@ class H_PilotHelmetFighter_B;
 class SOCOMD_FixedWing_Pilot_helmet : H_PilotHelmetFighter_B {
 	scope = public;
 	displayName = "SOCOMD Fixed Wing-Pilot Helmet";
-	ace_hearing_protection = 0.9;
+	ace_hearing_protection = 1.0;
 	ace_hearing_lowerVolume = 0;
 };
 
@@ -32,7 +32,7 @@ class H_CrewHelmetHeli_O;
 class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
 	scope = public;
 	displayName = "SOCOMD Heli-Crew Helmet";
-	ace_hearing_protection = 0.9;
+	ace_hearing_protection = 1.0;
 	ace_hearing_lowerVolume = 0;
 };
 
