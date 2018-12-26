@@ -133,6 +133,7 @@ class CfgPatches {
 			"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",
 			"SOCOMD_Item_Magazine_762x51_20Rnd",
 			"SOCOMD_Item_Magazine_408_7Rnd",
+			"SOCOMD_Item_Magazine_300_5Rnd",
 			"SOCOMD_Item_Magazine_45ACP_11Rnd",
 			"SOCOMD_Item_Magazine_9x21_60Rnd"
 		};

@@ -4,7 +4,7 @@ class SOCOMD_Item_Primary_Rifleman                  : arifle_SPAR_01_blk_F {scop
 class SOCOMD_Item_Primary_Medic                     : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Sapper                    : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_MachineGunner             : LMG_03_F {scope = protected;};
-class SOCOMD_Item_Primary_Sniper                    : arifle_SPAR_03_blk_F {scope = protected;};
+class SOCOMD_Item_Primary_Sniper                    : hlc_rifle_awmagnum {scope = protected;};
 class SOCOMD_Item_Primary_Recon                     : srifle_LRR_F {scope = protected;};
 class SOCOMD_Item_Primary_AT                        : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_PJ                        : SMG_05_F {scope = protected;};
@@ -17,7 +17,7 @@ class SOCOMD_Item_Handgun_Rifleman                  : DSO_hgun_Pistol_heavy_01_b
 class SOCOMD_Item_Handgun_Medic                     : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_Sapper                    : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_MachineGunner             : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
-class SOCOMD_Item_Handgun_Sniper                    : ItemCore {scope = protected;};
+class SOCOMD_Item_Handgun_Sniper                    : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_Recon                     : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_AT                        : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_PJ                        : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
