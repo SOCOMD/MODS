@@ -79,7 +79,6 @@ class CfgLoadoutWeapons {
 		};	
 	};
 
-Stashed changes
 	class Launcher {
 		loadoutWhitelist[] = {
 			"SOCOMD_AT"
