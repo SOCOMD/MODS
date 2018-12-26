@@ -203,7 +203,7 @@ class SOCOMD_Mortar_Box : NATO_Box_Base
 	};
 };
 /*
-class SOCOMD_Sniper_Box : NATO_Box_Base
+class SOCOMD_Recon_Box : NATO_Box_Base
 {
 	scope = public;
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";

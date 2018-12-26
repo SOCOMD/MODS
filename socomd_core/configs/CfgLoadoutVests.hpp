@@ -15,7 +15,7 @@ class CfgLoadoutVests {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Marksman",
 			"SOCOMD_Sapper",
-			"SOCOMD_Sniper",
+			"SOCOMD_Recon",
 			"SOCOMD_AT"
 		};
 	};

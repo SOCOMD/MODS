@@ -21,7 +21,7 @@ class CfgLoadoutBackpacks {
 			"SOCOMD_Grenadier",
 			"SOCOMD_Rifleman",
 			"SOCOMD_Marksman",
-			"SOCOMD_Sniper",
+			"SOCOMD_Recon",
 			"SOCOMD_MachineGunner",
 			"SOCOMD_Medic",
 			"SOCOMD_AT"

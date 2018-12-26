@@ -419,24 +419,24 @@ class SOCOMD_Marksman {
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
-class SOCOMD_Sniper {
-	primary		    = ITEM_PRIMARY_SNIPER;
-	secondary		= ITEM_SECONDARY_SNIPER;
-	handgun		    = ITEM_HANDGUN_SNIPER;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SNIPER;
-	headgear		= ITEM_HEADGEAR_SNIPER;
-	binocular		= ITEM_BINOCULAR_SNIPER;
-	gps			    = ITEM_GPS_SNIPER;
+class SOCOMD_Recon {
+	primary		    = ITEM_PRIMARY_Recon;
+	secondary		= ITEM_SECONDARY_Recon;
+	handgun		    = ITEM_HANDGUN_Recon;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_Recon;
+	headgear		= ITEM_HEADGEAR_Recon;
+	binocular		= ITEM_BINOCULAR_Recon;
+	gps			    = ITEM_GPS_Recon;
 
 	class Uniform {
-		type = ITEM_UNIFORM_SNIPER;
+		type = ITEM_UNIFORM_Recon;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
 	class Vest {
-		type = ITEM_VEST_SNIPER;
+		type = ITEM_VEST_Recon;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -447,7 +447,7 @@ class SOCOMD_Sniper {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_SNIPER;
+		type = ITEM_BACKPACK_Recon;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
