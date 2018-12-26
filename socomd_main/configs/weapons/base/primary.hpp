@@ -15,7 +15,8 @@ class SMA_762_RIFLEBASE; //Default
 class SMA_HK417_16in : SMA_762_RIFLEBASE {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class SMA_HK417vfg : SMA_762_RIFLEBASE {
+class SMA_HK417;
+class SMA_HK417vfg : SMA_HK417 {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
 
