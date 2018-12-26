@@ -39,4 +39,51 @@ class CfgLoadoutWeapons {
 			{"CUP_Javelin_M", 1}
 		};
 	};
+
+	class Rifle_300 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_300_5Rnd", 8}
+		};
+	};
+
+	class SOCOMD_Item_Primary_Sniper : Rifle_300 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Sniper"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_300_5Rnd", 4}
+		};
+	};
+	class SOCOMD_Item_Primary_Recon : Rifle_300 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+	};
+
+	class Rifle_Barret {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_Barret", 8}
+		};
+	};
+
+	class ej_m107;
+	class Recon_Barret : ej_m107 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_Barret", 8}
+		};
+	};
+
+	class Sniper_Barret : ej_m107 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Sniper"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_Barret", 3}
+		};
+	};
+
+
 };

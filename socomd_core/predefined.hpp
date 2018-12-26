@@ -246,7 +246,7 @@
 #define ITEM_BACKPACK_MACHINEGUNNER	            "SOCOMD_Item_Backpack_MachineGunner"
 #define ITEM_BACKPACK_MEDIC			            "SOCOMD_Item_Backpack_Medic"
 #define ITEM_BACKPACK_SNIPER			        "SOCOMD_Item_Backpack_Sniper"
-#define ITEM_BACKPACK_Recon			        	"SOCOMD_Item_Backpack_Recon"
+#define ITEM_BACKPACK_RECON			        	"SOCOMD_Item_Backpack_Recon"
 #define ITEM_BACKPACK_AT				        "SOCOMD_Item_Backpack_AT"
 #define ITEM_BACKPACK_MAT				        "SOCOMD_Item_Backpack_MAT"
 #define ITEM_BACKPACK_HAT				        "SOCOMD_Item_Backpack_HAT"

@@ -57,7 +57,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
-class SOCOMD_SNIPER {
+class SOCOMD_Sniper {
 	class Vest {
 		type = ITEM_VEST_SNIPER;
 		class Inventory	{
@@ -65,7 +65,22 @@ class SOCOMD_SNIPER {
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 4)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0) // remove 408's
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
+		};
+	};
+};
+
+class SOCOMD_Recon {
+	class Vest {
+		type = ITEM_VEST_RECON;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACE_Kestrel4500, 1)
+			LOADOUT_ITEM(ACE_RangeCard, 1)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 9)
 		};
 	};
 };

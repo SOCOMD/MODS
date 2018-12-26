@@ -38,3 +38,5 @@ class hlc_rifle_awmagnum : hlc_AWC_base {
 	mass=120;
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
+
+class ej_m107;

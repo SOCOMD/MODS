@@ -342,7 +342,7 @@ class SOCOMD_Medic {
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
-class SOCOMD_SNIPER {
+class SOCOMD_Sniper {
 	primary	        = ITEM_PRIMARY_SNIPER;
 	secondary		= ITEM_SECONDARY_SNIPER;
 	handgun		    = ITEM_HANDGUN_SNIPER;
