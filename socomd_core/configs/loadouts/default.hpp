@@ -364,8 +364,7 @@ class SOCOMD_Sniper {
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 4)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 10)
 		};
 	};
 
@@ -374,7 +373,6 @@ class SOCOMD_Sniper {
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Rifleman,1)
 		};
 	};
 };

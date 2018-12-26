@@ -69,6 +69,15 @@ class SOCOMD_Sniper {
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
 		};
 	};
+	
+	class Backpack {
+		type = ITEM_BACKPACK_SNIPER;
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Primary_Rifleman,1)
+		};
+	};
 };
 
 class SOCOMD_Recon {
