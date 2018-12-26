@@ -210,47 +210,6 @@ class SOCOMD_Rifleman {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-// Grenadier
-
-class SOCOMD_Grenadier {
-	primary		    = ITEM_PRIMARY_GRENADIER;
-	secondary		= ITEM_SECONDARY_GRENADIER;
-	handgun		    = ITEM_HANDGUN_GRENADIER;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_GRENADIER;
-	headgear		= ITEM_HEADGEAR_GRENADIER;
-	binocular		= ITEM_BINOCULAR_GRENADIER;
-	gps			    = ITEM_GPS_GRENADIER;
-
-	class Uniform {
-		type = ITEM_UNIFORM_GRENADIER;
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_GRENADIER;
-
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-		};
-	};
-	class Backpack {
-		type = ITEM_BACKPACK_GRENADIER;
-		class Inventory	{
-			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_ITEM(SmokeShellGreen, 2)
-			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
-			LOADOUT_ITEM(UGL_FlareRed_F, 2)
-			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
 // Sapper
 
 class SOCOMD_Sapper {

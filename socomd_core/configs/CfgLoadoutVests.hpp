@@ -11,7 +11,6 @@ class CfgLoadoutVests {
 
 	class SOCOMD_lbt_tl {
 		loadoutWhitelist[] = {
-			"SOCOMD_Grenadier",
 			"SOCOMD_Rifleman",
 			"SOCOMD_Marksman",
 			"SOCOMD_Sapper",
@@ -25,7 +24,7 @@ class CfgLoadoutVests {
 
 	class SOCOMD_lbt_weapons {
 		loadoutWhitelist[] = {
-			"SOCOMD_Grenadier"
+			"SOCOMD_Leader"
 		};
 	};
 

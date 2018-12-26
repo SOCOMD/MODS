@@ -15,8 +15,7 @@ class CfgLoadoutWeapons {
 	class RifleGL_556 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
-			"SOCOMD_Leader",
-			"SOCOMD_Grenadier"
+			"SOCOMD_Leader"
 		};
 
 		magazines[] = {
