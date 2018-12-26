@@ -44,7 +44,7 @@ class CfgLoadoutWeapons {
 
 	class Rifle_300 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_300_5Rnd", 8}
+			{"SOCOMD_Item_Magazine_300_5Rnd", 12}
 		};
 	};
 
@@ -53,18 +53,12 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sniper"
 		};
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_300_5Rnd", 4}
+			{"SOCOMD_Item_Magazine_300_5Rnd", 6}
 		};
 	};
 	class SOCOMD_Item_Primary_Recon : Rifle_300 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Recon"
-		};
-	};
-
-	class Rifle_Barret {
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_Barret", 8}
 		};
 	};
 
@@ -74,7 +68,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Recon"
 		};
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_Barret", 8}
+			{"SOCOMD_Item_Magazine_Barret", 6}
 		};
 	};
 

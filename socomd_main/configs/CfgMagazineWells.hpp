@@ -10,4 +10,9 @@ class CfgMagazineWells {
 			"SOCOMD_Item_Magazine_300_5Rnd"
 		};
 	};
+	class SOCOMD_Barret_MAG {
+		SOCOMD_mags[] = {
+			"SOCOMD_Item_Magazine_Barret"
+		};
+	};
 };

@@ -39,4 +39,9 @@ class hlc_rifle_awmagnum : hlc_AWC_base {
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
 
-class ej_m107;
+//Rfile Barret
+class ej_barrett_base;
+class ej_m107 : ej_barrett_base {
+	magazineWell[] = {"SOCOMD_Barret_MAG"};
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+};
