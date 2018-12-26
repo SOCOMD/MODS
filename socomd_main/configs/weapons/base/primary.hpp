@@ -11,14 +11,12 @@ class SMA_AUG_EGLM;
 class SMA_HK416GLCQB_B;
 
 //Rifle 762 - 20Rnd_762x51_Mag
-class SMA_762_RIFLEBASE; //Default
-class SMA_HK417_16in : SMA_762_RIFLEBASE {
+class SMA_AssaultBase;
+class SMA_762_RIFLEBASE : SMA_AssaultBase {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class SMA_HK417;
-class SMA_HK417vfg : SMA_HK417 {
-	magazineWell[] = {"CBA_762x51_HK417"};
-};
+class SMA_HK417_16in;
+class SMA_HK417vfg;
 
 //Machine Gun 556
 class CUP_lmg_minimi_railed;
