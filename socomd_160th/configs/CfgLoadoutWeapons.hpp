@@ -21,4 +21,43 @@ class CfgLoadoutWeapons {
 	class Rifle_762;
 	class SMA_HK417_16in : Rifle_762 {};
 	class SMA_HK417vfg : Rifle_762 {};
+
+	class Rifle_300 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_300_5Rnd", 12}
+		};
+	};
+
+	class SOCOMD_Item_Primary_Sniper : Rifle_300 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Sniper"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_300_5Rnd", 6}
+		};
+	};
+	class SOCOMD_Item_Primary_Recon : Rifle_300 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+	};
+
+	class ej_m107;
+	class Recon_Barret : ej_m107 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_Barret", 6}
+		};
+	};
+
+	class Sniper_Barret : ej_m107 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Sniper"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_Barret", 3}
+		};
+	};
 };

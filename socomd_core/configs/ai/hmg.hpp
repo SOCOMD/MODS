@@ -118,8 +118,8 @@ class HMG_01 : HMG_127 {
 // HMG_01_base_F uses this, csat turrets. watch em go balastic compared to other taliban at 900m range :D.
 class HMG_static : HMG_01 {
     class manual : manual {
-			dispersion=0.00144;
-			reloadTime=0.1;
+        dispersion=0.00144;
+        reloadTime=0.1;
     };
     class close: manual {
         aiBurstTerminable=1;
@@ -182,3 +182,7 @@ class HMG_static : HMG_01 {
         maxRangeProbab=0.050000001;
     };
 };
+
+
+// csat
+// LMG_Minigun_Transport <- minigun car

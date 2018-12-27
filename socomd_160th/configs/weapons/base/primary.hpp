@@ -24,3 +24,18 @@ class sma_minimi_762_base_F;
 class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
 	displayName = "Mk 48 Maximi";
 };
+
+//Rifle 300WM
+class hlc_AWC_base;
+class hlc_rifle_awmagnum : hlc_AWC_base {
+	magazineWell[] = {"SOCOMD_300_MAG"};
+	mass=120;
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+};
+
+//Rfile Barret
+class ej_barrett_base;
+class ej_m107 : ej_barrett_base {
+	magazineWell[] = {"SOCOMD_Barret_MAG"};
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+};
