@@ -1,12 +1,12 @@
-@echo off 
+@echo off
 set projectDir="C:\git\socomd\mods"
 set toolsDir=%projectDir%\tools
 set modOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd_dev\addons"
 set coreOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_core\addons"
-set mainOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_main\addons"
+set mainOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_content\addons"
 
 start /D %projectDir% makepbo.exe -N socomd_core %coreOutput%
-start /D %projectDir% makepbo.exe -N socomd_main %mainOutput%
+start /D %projectDir% makepbo.exe -N socomd_content %mainOutput%
 # start /D %projectDir% makepbo.exe socomd_gcam %modOutput%
 # start /D %projectDir% makepbo.exe socomd_asorvs %modOutput%
 # start /D %projectDir% makepbo.exe socomd_asorgs %modOutput%

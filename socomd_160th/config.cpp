@@ -1,7 +1,7 @@
 #include "predefined.hpp"
 
 class CfgPatches {
-	class jointOp_socomd_160thSOR {
+	class socomd_160th {
 
 		version = 1.0.0;
 		versionStr = "1.0.0";

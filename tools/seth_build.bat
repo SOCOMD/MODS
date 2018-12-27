@@ -1,7 +1,7 @@
 set projectDir="C:\Users\seth\Documents\GitHub\SOCOMD"
 set output="C:\SOCOMD\@socomd_dev\addons"
 
-start /D %projectDir% makepbo.exe -N -P socomd_main %output%
+start /D %projectDir% makepbo.exe -N -P socomd_content %output%
 start /D %projectDir% makepbo.exe -N -P socomd_gcam %output%
 start /D %projectDir% makepbo.exe -N -P socomd_asorvs %output%
 start /D %projectDir% makepbo.exe -N -P socomd_asorgs %output%

@@ -3,7 +3,7 @@ set projectDir="../"
 set toolsDir=%projectDir%\tools
 set modOutput="../../ARMA Addons Dev/SOCOMD_Dev/@socomd_dev/addons"
 
-start /D %projectDir% makepbo.exe -N -P socomd_main %modOutput%
+start /D %projectDir% makepbo.exe -N -P socomd_content %modOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_gcam %modOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_asorvs %modOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_asorgs %modOutput%
