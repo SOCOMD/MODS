@@ -3,7 +3,7 @@
 // WARRIOR
 
 class B_Boat_Transport_01_F;
-class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
+class SOCOMD_BOAT : B_Boat_Transport_01_F {
 	scope = protected;
 	scopeCurator = private;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -52,40 +52,18 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Transport_01_F {
 	};
 };
 
-#define SHIP_BASE(ID, SCOPE) \
-class SOCOMD_SHIP_##ID : SOCOMD_BOAT_ASSAULT { \
-	scope = SCOPE; \
-	scopeCurator = SCOPE; \
-	editorCategory = SOCOMD_EdCat_Core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea; \
-	side = WEST; \
-	author = AUTHOR_STR; \
-	faction = FACTION_STR; \
-	displayname = "Boat (1/4)"; \
-	vehicleclass = "Air"; \
-	forceInGarage = 1; \
-	driverCanSee = CanSeeAll; \
-	crew = SOCOMD_RIFLEMAN; \
-	typicalCargo[] = {SOCOMD_RIFLEMAN}; \
-	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
-	}; \
-	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
-	}; \
-	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
-	}; \
-	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
-	}; \
-};
-
-SHIP_BASE(A,public)
-SHIP_BASE(B,public)
-
-class SOCOMD_SHIP_B : B_Boat_Armed_01_minigun_F {
+class B_Boat_Armed_01_minigun_F;
+class SOCOMD_BOAT_ASSAULT : B_Boat_Armed_01_minigun_F {
+	scope = protected;
+	scopeCurator = private;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
 	displayname = "Assult Boat (3/8)";
+	vehicleclass = "Ship";
+	forceInGarage = 1;
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
@@ -123,3 +101,34 @@ class SOCOMD_SHIP_B : B_Boat_Armed_01_minigun_F {
 		reverseString = "R";
 	};
 }
+
+#define SHIP_BASE(ID, SCOPE, BASE) \
+class SOCOMD_SHIP_##ID : ##BASE { \
+	scope = SCOPE; \
+	scopeCurator = SCOPE; \
+	editorCategory = SOCOMD_EdCat_Core; \
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea; \
+	side = WEST; \
+	author = AUTHOR_STR; \
+	faction = FACTION_STR; \
+	vehicleclass = "Air"; \
+	forceInGarage = 1; \
+	driverCanSee = CanSeeAll; \
+	crew = SOCOMD_RIFLEMAN; \
+	typicalCargo[] = {SOCOMD_RIFLEMAN}; \
+	class TransportWeapons { \
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+	}; \
+	class TransportMagazines { \
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+	}; \
+	class TransportItems { \
+		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+	}; \
+	class TransportBackpacks { \
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
+};
+
+SHIP_BASE(A,public,SOCOMD_BOAT)
+SHIP_BASE(B,public,SOCOMD_BOAT_ASSAULT)
