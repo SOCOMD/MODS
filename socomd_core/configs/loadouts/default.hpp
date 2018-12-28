@@ -404,6 +404,7 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
+			LOADOUT_ITEM(ACE_Vector,1)
 		};
 	};
 
