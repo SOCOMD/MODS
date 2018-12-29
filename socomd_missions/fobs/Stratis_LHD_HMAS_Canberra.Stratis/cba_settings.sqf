@@ -1,1 +1,1 @@
-../../include/cba_settings.sqf
+/home/socomd/arma_modding/git/MODS/socomd_missions/include/cba_settings.sqf
