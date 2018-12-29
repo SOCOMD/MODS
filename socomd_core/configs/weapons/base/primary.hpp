@@ -4,12 +4,16 @@ class arifle_SPAR_01_blk_F; //Using CBA_556x45_STANA
 class LMG_03_F; //Using CBA_556x45_MINIMI
 class arifle_SPAR_03_blk_F; //Using CBA_762x51_HK417
 
-class LRR_base_F;
+class LRR_base_F {
+	class WeaponSlotsInfo;
+};
 //Using SOCOMD_408_MAG
 class srifle_LRR_F : LRR_base_F {
 	magazineWell[] = {"SOCOMD_408_MAG"};
-	mass=60;
-	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+	class WeaponSlotsInfo : WeaponSlotsInfo {
+		mass=4;
+		allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+	};
 };
 
 class SMG_05_base_F;
