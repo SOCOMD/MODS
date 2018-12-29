@@ -92,8 +92,8 @@ class SOCOMD_Commander {
 	handgun			= ITEM_HANDGUN_TROOPLEADER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_TROOPLEADER;
 	headgear		= ITEM_HEADGEAR_TROOPLEADER;
-	binocular		= ITEM_BINOCULAR_TROOPLEADER;
-	gps				= ITEM_GPS_TROOPLEADER;
+	binocular		= Laserdesignator;
+	gps				= ItemAndroid;
 
 	class Uniform {
 		type = ITEM_UNIFORM_TROOPLEADER;
@@ -138,8 +138,8 @@ class SOCOMD_Leader {
 	handgun		    = ITEM_HANDGUN_PATROLLEADER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_PATROLLEADER;
 	headgear		= ITEM_HEADGEAR_PATROLLEADER;
-	binocular		= ITEM_BINOCULAR_PATROLLEADER;
-	gps			    = ITEM_GPS_PATROLLEADER;
+	binocular		= Laserdesignator;
+	gps			    = ItemAndroid;
 
 	class Uniform {
 		type = ITEM_UNIFORM_PATROLLEADER;
@@ -184,8 +184,8 @@ class SOCOMD_Rifleman {
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
-	binocular		= ITEM_BINOCULAR_RIFLEMAN;
-	gps			    = ITEM_GPS_RIFLEMAN;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -220,8 +220,8 @@ class SOCOMD_Sapper {
 	handgun		    = ITEM_HANDGUN_SAPPER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SAPPER;
 	headgear		= ITEM_HEADGEAR_SAPPER;
-	binocular		= ITEM_BINOCULAR_SAPPER;
-	gps			    = ITEM_GPS_SAPPER;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_SAPPER;
@@ -266,8 +266,8 @@ class SOCOMD_MachineGunner {
 	handgun		    = ITEM_HANDGUN_MACHINEGUNNER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MACHINEGUNNER;
 	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
-	binocular		= ITEM_BINOCULAR_MACHINEGUNNER;
-	gps			    = ITEM_GPS_MACHINEGUNNER;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_MACHINEGUNNER;
@@ -302,8 +302,8 @@ class SOCOMD_Medic {
 	handgun		    = ITEM_HANDGUN_MEDIC;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MEDIC;
 	headgear		= ITEM_HEADGEAR_MEDIC;
-	binocular		= ITEM_BINOCULAR_MEDIC;
-	gps			    = ITEM_GPS_MEDIC;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_MEDIC;
@@ -348,8 +348,8 @@ class SOCOMD_Sniper {
 	handgun		    = ITEM_HANDGUN_SNIPER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SNIPER;
 	headgear		= ITEM_HEADGEAR_SNIPER;
-	binocular		= ITEM_BINOCULAR_SNIPER;
-	gps			    = ITEM_GPS_SNIPER;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_SNIPER;
@@ -386,8 +386,8 @@ class SOCOMD_Recon {
 	handgun		    = ITEM_HANDGUN_RECON;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RECON;
 	headgear		= ITEM_HEADGEAR_RECON;
-	binocular		= ITEM_BINOCULAR_RECON;
-	gps			    = ITEM_GPS_RECON;
+	binocular		= Laserdesignator;
+	gps			    = ItemAndroid;
 
 	class Uniform {
 		type = ITEM_UNIFORM_RECON;
@@ -430,8 +430,8 @@ class SOCOMD_AT {
 	handgun		    = ITEM_HANDGUN_AT;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_AT;
 	headgear		= ITEM_HEADGEAR_AT;
-	binocular		= ITEM_BINOCULAR_AT;
-	gps			    = ITEM_GPS_AT;
+	binocular		= Binocular;
+	gps			    = ItemMicroDAGR;
 
 	class Uniform {
 		type = ITEM_UNIFORM_AT;
@@ -467,8 +467,8 @@ class SOCOMD_Pilot {
 	handgun = ITEM_HANDGUN_PILOT;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_PILOT;
 	headgear = ITEM_HEADGEAR_PILOT;
-	binocular = ITEM_BINOCULAR_PILOT;
-	gps = ITEM_GPS_PILOT;
+	binocular = Binocular;
+	gps = ItemcTab;
 
 	class Uniform {
 		type = ITEM_UNIFORM_PILOT;
@@ -505,8 +505,8 @@ class SOCOMD_Crewman {
 	handgun = ITEM_HANDGUN_CREWMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAINE_CREWMAN;
 	headgear = ITEM_HEADGEAR_CREWMAN;
-	binocular = ITEM_BINOCULAR_CREWMAN;
-	gps = ITEM_GPS_CREWMAN;
+	binocular = Binocular;
+	gps = ItemAndroid;
 
 	class Uniform {
 		type = ITEM_UNIFORM_CREWMAN;
@@ -543,8 +543,8 @@ class SOCOMD_PJ {
 	handgun = ITEM_HANDGUN_PJ;
 	handgunMagazine = ITEM_HANDGUN_MAGAINE_PJ;
 	headgear = ITEM_HEADGEAR_PJ;
-	binocular = ITEM_BINOCULAR_PJ;
-	gps = ITEM_GPS_PJ;
+	binocular = Binocular;
+	gps = ItemAndroid;
 
 	class Uniform {
 		type = ITEM_UNIFORM_PJ;
