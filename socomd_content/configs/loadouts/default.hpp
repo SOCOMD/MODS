@@ -62,8 +62,8 @@ class SOCOMD_Sniper {
 	class Vest {
 		type = ITEM_VEST_SNIPER;
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0) // remove 408's
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 2)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
 		};
 	};
