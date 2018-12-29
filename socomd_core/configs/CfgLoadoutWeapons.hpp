@@ -42,13 +42,7 @@ class CfgLoadoutWeapons {
 	};
 
 	class Rifle_762 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Rifleman",
-			"SOCOMD_Sapper",
-			"SOCOMD_Medic",
-			"SOCOMD_AT"
-		};
-	
+		loadoutWhitelist[] = {};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
 		};
