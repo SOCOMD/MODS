@@ -349,7 +349,7 @@ force force ace_weaponselect_displayText = false;
 // ACE Weather
 force force ace_weather_enabled = true;
 force force ace_weather_updateInterval = 60;
-force force ace_weather_windSimulation = true;
+force force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
 force force ace_winddeflection_enabled = true;
