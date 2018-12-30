@@ -46,3 +46,4 @@ class CfgPatches  {
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgLoadouts.hpp"
+#include "configs\CfgAmmo.hpp"

@@ -74,4 +74,5 @@ class CfgVehicles {
 	////////////////////////////////////////////////////////////////////////////////
 	//AI
 	#include "ai\hmg\taki_insurgents_vehicles.hpp"
+	#include "ai\hmg\zu23_all_vehicles.hpp"
 };
