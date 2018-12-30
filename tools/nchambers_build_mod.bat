@@ -4,7 +4,7 @@ set toolsDir=%projectDir%\tools
 set modOutput="C:\Users\nchambers\projects\SOCOMD\MODS\builds"
 set modOutput_core="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Core\@socomd_core\addons"
 set modOutput_main="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Core\@socomd_content\addons"
-set modOutput_jointOp_socomd_160thSOR="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Dev\@socomd_160th\addons"
+set modOutput_jointOp_160th="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Extra\@socomd_160th\addons"
 set buldParam=-N -P -W
 
 ::SOCOMD Core
@@ -29,4 +29,4 @@ start /D %projectDir% makepbo.exe %buldParam% socomd_content %modOutput_main%
 start /D %projectDir% makepbo.exe %buldParam% socomd_rhs %modOutput%
 
 ::JointOps
-start /D %projectDir% makepbo.exe %buldParam% socomd_160th %modOutput_jointOp_socomd_160thSOR%
+start /D %projectDir% makepbo.exe %buldParam% socomd_160th %modOutput_jointOp_160th%
