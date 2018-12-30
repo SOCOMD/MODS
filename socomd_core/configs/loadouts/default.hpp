@@ -393,6 +393,7 @@ class SOCOMD_Recon {
 		type = ITEM_UNIFORM_RECON;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_ITEM(Laserbatteries, 2)
 		};
 	};
 
