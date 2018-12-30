@@ -9,4 +9,5 @@ class CfgWeapons {
 
 	//Item SOCOMD Defines
 	#include "weapons\override\socomd_men_items.hpp"
+	#include "ai\hmg\taki_insurgents_weapons.hpp"
 };

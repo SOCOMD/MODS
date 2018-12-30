@@ -70,4 +70,8 @@ class CfgVehicles {
 	//BOXES
 
 	#include "vehicles\boxes\qstore.hpp"
+
+	////////////////////////////////////////////////////////////////////////////////
+	//AI
+	#include "ai\hmg\taki_insurgents_vehicles.hpp"
 };

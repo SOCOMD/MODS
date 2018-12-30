@@ -182,7 +182,3 @@ class HMG_static : HMG_01 {
         maxRangeProbab=0.050000001;
     };
 };
-
-
-// csat
-// LMG_Minigun_Transport <- minigun car
