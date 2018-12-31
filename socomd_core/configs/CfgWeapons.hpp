@@ -17,4 +17,5 @@ class CfgWeapons {
 	#include "weapons\override\socomd_men_items.hpp"
 
 	#include "ai\hmg.hpp"
+	#include "weapons\override\mortar_82mm.hpp"
 };

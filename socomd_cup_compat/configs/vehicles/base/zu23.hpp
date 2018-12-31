@@ -12,7 +12,9 @@ class CUP_Ural_ZU23_Base : CUP_Ural_BaseTurret {
     };
 };
 // default mags used CUP_40Rnd_23mm_AZP23_M * 16
-
+// default ammo CUP_B_23mm_AA
+// default soundset of ammo soundSetBulletFly[] = {"bulletFlyBy_SoundSet"};
+// which has soundshader set soundShaders[] = {"BulletFlyBy_SoundShader"};
 ///////////////////////////////////////////////////////////////////////////////////
 // ZU23 Urals
 
@@ -28,7 +30,6 @@ class CUP_Ural_ZU23_Base_OCimport_02 : CUP_Ural_ZU23_Base_OCimport_01 {};
 
 ///////////////////////////////////////////////////////////////////////////////////
 // ZU23 Turrets
-class StaticWeapon;
 class StaticCannon : StaticWeapon {
     class Turrets;
 };

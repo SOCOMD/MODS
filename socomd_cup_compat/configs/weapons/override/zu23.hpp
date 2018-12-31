@@ -12,17 +12,18 @@ class CUP_Vacannon_2A14_veh : CannonCore {
         // MIN: 0, MID: 300, MAX: 600
         // burst: 15
         // rof: 0.5
-        burst = 15;
-        burstRangeMax=20;
+        burst = 14;
+        burstRangeMax=14;
         aiRateOfFire = 0.5;
+        dispersion = 0.009;
     };
 
     class short : close {
         // MIN : 400, MID: 600, MAX: 900
         // burst: 10
         // rof: 2
-        burst = 15;
-        burstRangeMax=20;
+        burst = 14;
+        burstRangeMax=14;
         aiRateOfFire = 1;
     };
     class medium : close {
@@ -30,7 +31,7 @@ class CUP_Vacannon_2A14_veh : CannonCore {
         // burst: 7
         // rof: 3
         burst = 12;
-        burstRangeMax=18;
+        burstRangeMax=12;
         aiRateOfFire = 1.5;
     };
 
@@ -39,9 +40,9 @@ class CUP_Vacannon_2A14_veh : CannonCore {
         // burst: 4
         // rof: 5
         burst = 12;
-        burstRangeMax=14;
+        burstRangeMax=12;
         aiRateOfFire = 2.5;
-        maxRange=2600; // real life zu23 has max effective of 2500
-        maxRangeProbab=0.250000001;
+        maxRange=2200; // real life zu23 has max effective of 2500
+        //maxRangeProbab=0.250000001;
     };
 };
