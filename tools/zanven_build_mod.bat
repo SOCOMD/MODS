@@ -11,6 +11,8 @@ start /D %projectDir% makepbo.exe -N -P socomd_core %coreOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_content %mainOutput%
 start /D %projectDir% makepbo.exe -N -P socomd_core %OutputCorejoint%
 start /D %projectDir% makepbo.exe -N -P socomd_160th %OutputCompactjoint%
+start /D %projectDir% makepbo.exe -N -P socomd_cup_compat %mainOutput%
+start /D %projectDir% makepbo.exe -N -P socomd_cup_compat %OutputCompactjoint%
 
 # start /D %projectDir% makepbo.exe socomd_gcam %modOutput%
 # start /D %projectDir% makepbo.exe socomd_asorvs %modOutput%

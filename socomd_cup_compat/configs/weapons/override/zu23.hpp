@@ -1,5 +1,4 @@
-//class Default;
-class CannonCore;
+// Used as main weapon by all zu23's. fires 23mm rounds, efective range 2.5km
 class CUP_Vacannon_2A14_veh : CannonCore {
     // these are default
     magazines[] = {"CUP_40Rnd_23mm_AZP23_M","CUP_2000Rnd_23mm_AZP23_M"};

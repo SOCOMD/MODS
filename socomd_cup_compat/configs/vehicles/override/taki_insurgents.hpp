@@ -1,14 +1,3 @@
-
-class CUP_I_Datsun_PK_TK;
-class CUP_I_Datsun_PK_TK_OCimport_01 : CUP_I_Datsun_PK_TK {
-    class Turrets;
-};
-class CUP_I_Datsun_PK_TK_OCimport_02 : CUP_I_Datsun_PK_TK_OCimport_01 {
-    class Turrets : Turrets {
-        class MainTurret;
-    };
-};
-
 class O_CUPOTban_Technical_PK_01 : CUP_I_Datsun_PK_TK_OCimport_02 {
     class Turrets : Turrets {
         class MainTurret : MainTurret {
@@ -33,15 +22,6 @@ class O_CUPOTban_Technical_PK_01 : CUP_I_Datsun_PK_TK_OCimport_02 {
 
 // this is the Big boy datson with a heavy mg on the back like a badass, he will be super squirty at range.
 // you boys gonna have a bad time at 1km :D.
-class O_G_Offroad_01_armed_F;
-class O_G_Offroad_01_armed_F_OCimport_01 : O_G_Offroad_01_armed_F {
-    class Turrets;
-};
-class O_G_Offroad_01_armed_F_OCimport_02 : O_G_Offroad_01_armed_F_OCimport_01 {
-    class Turrets : Turrets {
-        class M2_Turret;
-    };
-};
 class O_CUPOTban_Offroad_Armed_01 : O_G_Offroad_01_armed_F_OCimport_02 {
     class Turrets : Turrets {
         class M2_Turret : M2_Turret {
