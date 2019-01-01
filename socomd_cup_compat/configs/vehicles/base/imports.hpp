@@ -22,6 +22,7 @@ class CUP_LR_MG_Base : CUP_LR_Base {
         class MainTurret;
     };
 };
+
 // militia btr
 class Wheeled_APC_F : Car_F {
     class Turrets;
@@ -40,3 +41,8 @@ class Tank_F : Tank {
         class MainTurret;
     };
 };
+
+// malita btr 
+// CUP_O_MTLB_pk_TK_MILITIA
+class CUP_MTLB_Base : Tank_F { };
+
