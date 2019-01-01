@@ -17,7 +17,7 @@ VCM_AIDIFA = [
 	['general', 1.0],
 	['reloadSpeed', 1.0],
 	['spotDistance', 1.0],
-	['spotTime', 0.25]
+	['spotTime', 1.0]
 ];
 
 // Infinate Loop, Fix Zeus group bug (will remove deleted groups so more can be added)
