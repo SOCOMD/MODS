@@ -10,7 +10,6 @@ class CUP_Vacannon_AZP23_veh : CannonCore {
         // rof: 0.5
         // rofd: 50
         aiRateOfFire = 0.5;
-        dispersion = 0.009; // miss more plox
         burst = 28; // caution hot potato
         burstRangeMax = 28;
     };

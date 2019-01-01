@@ -15,7 +15,6 @@ class CUP_Vacannon_2A14_veh : CannonCore {
         burst = 14;
         burstRangeMax=14;
         aiRateOfFire = 0.5;
-        dispersion = 0.009;
     };
 
     class short : close {
