@@ -30,3 +30,4 @@ class CfgPatches  {
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgAmmo.hpp"
+#include "configs\cfgMagazines.hpp"

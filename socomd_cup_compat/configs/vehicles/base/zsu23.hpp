@@ -3,7 +3,6 @@ class CUP_ZSU23_Base : Tank_F {
     gunnerCanSee = 31; // can see radar eyes, optics.
     class Turrets : Turrets {
         class MainTurret : MainTurret {
-            discreteDistance[] = {200,400,600,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200,3400,3600,3800,4000,4200};
             magazines[] = {
                 "CUP_2000Rnd_23mm_AZP23_M",
                 "CUP_2000Rnd_23mm_AZP23_M",

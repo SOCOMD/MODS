@@ -9,6 +9,7 @@ class CUP_Vacannon_AZP23_veh : CannonCore {
         // burst: 15
         // rof: 0.5
         // rofd: 50
+        aiRateOfFire = 0.5;
         dispersion = 0.009; // miss more plox
         burst = 28; // caution hot potato
         burstRangeMax = 28;
@@ -19,6 +20,7 @@ class CUP_Vacannon_AZP23_veh : CannonCore {
         // burst: 15
         // rof: 1
         // rofd: 300
+        aiRateOfFire = 1;
         burst = 28;
     };
     class medium : close {
@@ -26,15 +28,21 @@ class CUP_Vacannon_AZP23_veh : CannonCore {
         // burst: 12
         // rof: 1.5
         // rofd: 600
+        aiRateOfFire = 1.5;
         burst = 24;
         burstRangeMax = 24;
     };
     class far : close {
-        // MIN: 1000, MID: 1200, MAX: 2600
+        // MIN: 1000, MID: 1200, MAX: 1500
         // burst: 12
         // rof: 2.5
         // rofd: 1000
+        aiRateOfFire = 1.5;
         burst = 24;
         burstRangeMax = 24;
+        minRange = 1100;
+        midRange = 1800;
+        maxRange = 2600;
+        aiRateOfFireDistance = 1800;
     };
 };

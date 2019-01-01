@@ -42,7 +42,7 @@ class CUP_Vacannon_2A14_veh : CannonCore {
         burst = 12;
         burstRangeMax=12;
         aiRateOfFire = 2.5;
-        maxRange=2200; // real life zu23 has max effective of 2500
+        maxRange=2600; // real life zu23 has max effective of 2500
         //maxRangeProbab=0.250000001;
     };
 };
