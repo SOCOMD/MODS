@@ -9,6 +9,7 @@ class CfgVehicles {
     #include "vehicles\base\datsun_pk.hpp"
     #include "vehicles\base\uaz.hpp"
     #include "vehicles\base\offroad_armed.hpp"
+    #include "vehicles\base\kord.hpp"
 
     // Override
     // AI
@@ -21,6 +22,7 @@ class CfgVehicles {
     #include "vehicles\override\datsun_pk.hpp"
     #include "vehicles\override\uaz.hpp"
     #include "vehicles\override\offroad_armed.hpp"
+    #include "vehicles\override\kord.hpp"
 
     // Player
     #include "vehicles\override\firefly.hpp"
