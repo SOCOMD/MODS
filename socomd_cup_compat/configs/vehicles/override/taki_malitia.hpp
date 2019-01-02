@@ -1,50 +1,3 @@
-// high dishka man
-class CUP_O_DSHKM_TK_INS : CUP_DSHKM_base {
-    class Turrets : Turrets {
-        class MainTurret : MainTurret {
-            magazines[] = {
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M"
-            };
-            weapons[] = {"CUP_Vhmg_DSHKM_veh"};
-        };
-    };
-};
-
-// low dshka man
-class CUP_O_DSHkM_MiniTriPod_TK_INS : CUP_DSHKM_MiniTripod_base {
-    class Turrets : Turrets {
-        class MainTurret : MainTurret {
-            magazines[] = {
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M",
-                "CUP_150Rnd_TE3_LRT5_127x107_DSHKM_M"
-            };
-            weapons[] = {"CUP_Vhmg_DSHKM_veh"};
-        };
-    };
-};
-
-
 // mortar man
 /*
 class CUP_O_2b14_82mm_TK_INS : CUP_2b14_82mm_Base {
@@ -67,35 +20,8 @@ class CUP_O_2b14_82mm_TK_INS : CUP_2b14_82mm_Base {
     };
 };
 */
-// m2 technical milita
-class CUP_O_LR_MG_TKM : CUP_LR_MG_Base {
-    class Turrets : Turrets {
-        class MainTurret : MainTurret {
-            magazines[] = {
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M",
-                "CUP_200Rnd_TE1_Red_Tracer_127x99_M"
-            };
-            weapons[] = {"CUP_Vhmg_M2_veh"};
-        };
-    };
-};
 
+// m2 BTR milita
 class CUP_O_BTR40_MG_TKM : CUP_BTR40_MG_Base {
     class Turrets : Turrets {
         class MainTurret : MainTurret {
@@ -123,7 +49,7 @@ class CUP_O_BTR40_MG_TKM : CUP_BTR40_MG_Base {
         };
     };
 };
-
+// APC MT-LB-LV
 class CUP_O_MTLB_pk_TK_MILITIA : CUP_MTLB_Base {
     class Turrets : Turrets {
         class MainTurret : MainTurret {

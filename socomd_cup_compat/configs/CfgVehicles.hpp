@@ -2,18 +2,25 @@ class CfgVehicles {
 
     // Base
     #include "vehicles\base\imports.hpp"
-    #include "vehicles\base\taki_insurgents.hpp"
     #include "vehicles\base\zu23.hpp"
     #include "vehicles\base\helicopters.hpp"
     #include "vehicles\base\trucks.hpp"
     #include "vehicles\base\zsu23.hpp"
+    #include "vehicles\base\datsun_pk.hpp"
+    #include "vehicles\base\uaz.hpp"
+    #include "vehicles\base\offroad_armed.hpp"
 
     // Override
     // AI
-    #include "vehicles\override\taki_insurgents.hpp"
     #include "vehicles\override\zu23.hpp"
     #include "vehicles\override\zsu23.hpp"
     #include "vehicles\override\taki_malitia.hpp"
+    #include "vehicles\override\taki_army.hpp"
+    #include "vehicles\override\uh1h.hpp"
+    #include "vehicles\override\dshkm.hpp"
+    #include "vehicles\override\datsun_pk.hpp"
+    #include "vehicles\override\uaz.hpp"
+    #include "vehicles\override\offroad_armed.hpp"
 
     // Player
     #include "vehicles\override\firefly.hpp"
