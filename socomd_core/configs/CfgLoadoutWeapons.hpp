@@ -42,7 +42,9 @@ class CfgLoadoutWeapons {
 	};
 
 	class Rifle_762 {
-		loadoutWhitelist[] = {};
+		loadoutWhitelist[] = {
+			"SOCOMD_None"
+		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
 		};
@@ -52,7 +54,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader"
 		};
-	
+
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
 		};
@@ -63,10 +65,10 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sniper",
 			"SOCOMD_Recon"
 		};
-	
+
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_408x7Rnd", 8}
-		};	
+		};
 	};
 
 	class Launcher {
