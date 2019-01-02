@@ -40,11 +40,11 @@ class CUP_Vhmg_DSHKM_veh : MGun {
         aiRateOfFire=0.5;
         aiRateOfFireDispersion=2;
         aiRateOfFireDistance=150;
-        minRange=100;
+        minRange=50;
         minRangeProbab=0.69999999;
-        midRange=400;
+        midRange=150;
         midRangeProbab=0.75;
-        maxRange=800;
+        maxRange=300;
         maxRangeProbab=0.2;
     };
     class medium : close {
@@ -59,11 +59,11 @@ class CUP_Vhmg_DSHKM_veh : MGun {
         aiRateOfFire=1;
         aiRateOfFireDispersion=2;
         aiRateOfFireDistance=400;
-        minRange=400;
+        minRange=200;
         minRangeProbab=0.75;
-        midRange=800;
+        midRange=500;
         midRangeProbab=0.69999999;
-        maxRange=1500;
+        maxRange=800;
         maxRangeProbab=0.1;
     };
     class far : close {
@@ -78,11 +78,11 @@ class CUP_Vhmg_DSHKM_veh : MGun {
         aiRateOfFire=1.5;
         aiRateOfFireDispersion=4;
         aiRateOfFireDistance=800;
-        minRange=800;
+        minRange=600;
         minRangeProbab=0.60000002;
-        midRange=1500;
+        midRange=800;
         midRangeProbab=0.25;
-        maxRange=2000;
+        maxRange=1200;
         maxRangeProbab=0.050000001;
     };
 };
