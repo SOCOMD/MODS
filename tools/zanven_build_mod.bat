@@ -1,24 +1,31 @@
 @echo off
 set projectDir="C:\git\socomd\mods"
 set toolsDir=%projectDir%\tools
-set modOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MODS_SOCOMD_DEV\@socomd_dev\addons"
-set coreOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_core\addons"
-set mainOutput="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_content\addons"
-set OutputCorejoint="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_160th\@socomd_core\addons"
-set Outputcompactjoint="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_160th\@socomd_160th\addons"
+set modOutput="C:\git\socomd\mods\builds"
+set modOutput_core="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_core\addons"
+set modOutput_content="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_content\addons"
+set modOutput_160th="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_160th\@socomd_160th\addons"
+set buldParam=-N -W -P
 
-start /D %projectDir% makepbo.exe -N -P socomd_core %coreOutput%
-start /D %projectDir% makepbo.exe -N -P socomd_content %mainOutput%
-start /D %projectDir% makepbo.exe -N -P socomd_core %OutputCorejoint%
-start /D %projectDir% makepbo.exe -N -P socomd_160th %OutputCompactjoint%
-start /D %projectDir% makepbo.exe -N -P socomd_cup_compat %mainOutput%
-start /D %projectDir% makepbo.exe -N -P socomd_cup_compat %OutputCompactjoint%
+::SOCOMD Core
+start /D %projectDir% makepbo.exe %buldParam% core\socomd_core %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\socomd_zeus %modOutput_core%
 
-# start /D %projectDir% makepbo.exe socomd_gcam %modOutput%
-# start /D %projectDir% makepbo.exe socomd_asorvs %modOutput%
-# start /D %projectDir% makepbo.exe socomd_asorgs %modOutput%
-# start /D %projectDir% makepbo.exe socomd_zeus %modOutput%
-# start /D %projectDir% makepbo.exe socomd_data_cup %modOutput%
-# start /D %projectDir% makepbo.exe socomd_data_core %modOutput%
-# start /D %projectDir% makepbo.exe ar_advancedrappelling %modOutput%
-# start /D %projectDir% makepbo.exe sa_advancedslingloading %modOutput%
+::SOCOMD Core 3rd Party
+start /D %projectDir% makepbo.exe %buldParam% core\3rd_party\socomd_gcam %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\3rd_party\socomd_asorvs %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\3rd_party\socomd_asorgs %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\3rd_party\ar_advancedrappelling %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\3rd_party\sa_advancedslingloading %modOutput_core%
+
+::SOCOMD Data
+start /D %projectDir% makepbo.exe %buldParam% data\socomd_data_core %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% data\socomd_data_cup %modOutput_content%
+
+::SOCOMD Compats
+start /D %projectDir% makepbo.exe %buldParam% compats\socomd_compat_cup %modOutput_content%
+start /D %projectDir% makepbo.exe %buldParam% compats\socomd_compat_rhs %modOutput%
+
+::SOCOMD Modsets
+start /D %projectDir% makepbo.exe %buldParam% modsets\socomd_content %modOutput_content%
+start /D %projectDir% makepbo.exe %buldParam% modsets\socomd_160th %modOutput_160th%
