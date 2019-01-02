@@ -64,7 +64,7 @@ class CUP_Vhmg_M2_veh : HMG_M2 {
     class far: close {
         aiBurstTerminable=1;
         showToPlayer=0;
-        burst=8;
+        burst=12;
         burstRangeMax=12;
         aiRateOfFire=1.5;
         aiRateOfFireDispersion=4;
