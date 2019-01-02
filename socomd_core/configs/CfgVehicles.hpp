@@ -155,6 +155,7 @@ class CfgVehicles  {
 	#include "vehicles\base\ship.hpp"
 	#include "vehicles\base\soldier.hpp"
 	#include "vehicles\base\warrior.hpp"
+	#include "vehicles\base\offroad_armed.hpp"
 
 	#include "vehicles\boxes\qstores.hpp"
 	#include "vehicles\boxes\supply.hpp"
@@ -162,6 +163,7 @@ class CfgVehicles  {
 	#include "vehicles\override\extensions.hpp"
 	#include "vehicles\override\flags.hpp"
 	#include "vehicles\override\socomd_men_backpacks.hpp"
+	#include "vehicles\override\offroad_armed.hpp"
 };
 
 
