@@ -47,8 +47,8 @@ class CUP_Vhmg_PKT_veh : MGun {
         aiRateOfFire=0.3;
     };
     class medium : close {
-        burst=12;
-        burstRangeMax=12;
+        burst=16;
+        burstRangeMax=16;
         aiRateOfFire=0.7;
     };
     // i think it should drop off close to max because he would chew ammo uneffectively for the callibar,
