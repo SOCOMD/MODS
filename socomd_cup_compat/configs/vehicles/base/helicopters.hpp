@@ -17,6 +17,8 @@ class Helicopter_Base_H : Helicopter_Base_F {
     class Turrets : Turrets {
         class MainTurret;
         class CopilotTurret;
+        class LeftDoorGun;
+        class RightDoorGun;
     };
 
     class HitPoints : HitPoints {
@@ -38,3 +40,13 @@ class Helicopter_Base_H : Helicopter_Base_F {
         class HitGlass6;
     };
 };
+
+// UH1H taki army
+class CUP_UH1H_base : Helicopter_Base_H {}; // needs left and right door gunner turret
+class CUP_UH1H_base_OCimport_01 : CUP_UH1H_base { };
+class CUP_UH1H_base_OCimport_02 : CUP_UH1H_base_OCimport_01 { };
+class CUP_UH1H_slick_base : CUP_UH1H_base {};
+class CUP_UH1H_slick_base_OCimport_01 : CUP_UH1H_slick_base {}
+class CUP_UH1H_slick_base_OCimport_02 : CUP_UH1H_slick_base_OCimport_01 { };
+class CUP_UH1H_armed_base : CUP_UH1H_base {};
+class CUP_UH1H_gunship_base : CUP_UH1H_base {};
