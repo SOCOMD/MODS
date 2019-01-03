@@ -30,7 +30,7 @@ class CfgVehicles  {
 	class Car_F : Car {
 		class HitPoints;
 		class textureSources;
-
+		class Turrets;
 		class Components : Components {
 			class AICarSteeringComponent : AICarSteeringComponent {
 
@@ -157,6 +157,8 @@ class CfgVehicles  {
 	#include "vehicles\base\warrior.hpp"
 	#include "vehicles\base\offroad_armed.hpp"
 	#include "vehicles\base\csat_hmg.hpp"
+	#include "vehicles\base\karatel.hpp"
+	#include "vehicles\base\lsv_mk2.hpp"
 
 	#include "vehicles\boxes\qstores.hpp"
 	#include "vehicles\boxes\supply.hpp"
@@ -166,6 +168,8 @@ class CfgVehicles  {
 	#include "vehicles\override\socomd_men_backpacks.hpp"
 	#include "vehicles\override\offroad_armed.hpp"
 	#include "vehicles\override\csat_hmg.hpp"
+	#include "vehicles\override\karatel.hpp"
+	#include "vehicles\override\lsv_mk2.hpp"
 };
 
 

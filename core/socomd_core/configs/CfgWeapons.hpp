@@ -12,11 +12,17 @@ class CfgWeapons {
 	#include "weapons\base\secondary.hpp"
 	#include "weapons\base\uniform.hpp"
 	#include "weapons\base\vest.hpp"
+	
+	#include "weapons\base\lmg_minigun_transport.hpp"
+
+	// neccesary order.
+	#include "weapons\override\hmg_127.hpp"
 	#include "weapons\base\hmg_m2.hpp"
 
 	#include "weapons\override\extensions.hpp"
 	#include "weapons\override\socomd_men_items.hpp"
 	#include "weapons\override\hmg_m2.hpp"
+	#include "weapons\override\lmg_minigun_transport.hpp"
 
 	#include "weapons\override\mortar_82mm.hpp"
 };
