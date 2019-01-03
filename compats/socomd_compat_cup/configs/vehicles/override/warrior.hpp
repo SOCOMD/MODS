@@ -1,13 +1,14 @@
 // modify damage model of warrior
 class CUP_B_UH60M_US : CUP_Uh60_Base {
+	armorStructural = 4; // default 4
 	class HitPoints : Hitpoints {
 		class HitHull {
-			armor = 2.1;// default 1
+			armor = 14;// default 1
 			material = -1;
 			// destroy the shit out of the hull so it looks banged up from the outside.
 			explosionShielding = 10;
 			name = "trup";
-			passThrough = 1;
+			passThrough = 3;
 			visual = "trup";
 		};
 		class HitAvionics : HitAvionics {
@@ -15,12 +16,12 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 		};
 		class HitEngine {
 			// 0.05 armor = 9 shots with 12.7mm to disable
-			armor = 0.05; // default 0.5
+			armor = 12; // default 0.5
 			material = -1;// default 51
 			name = "motor";
-			passThrough = 1;
+			passThrough = 0.7;
 			visual = "motor";
-			explosionShielding = 1.0;
+			explosionShielding = 10.0;
 		};
 		class HitEngine1 : HitEngine {
 			material = -1;// default 51
@@ -99,17 +100,17 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 			visual = "glass6";
 		};
 		class HitHRotor {
-			armor = 1; // default 0.5
+			armor = 40; // default 0.5
 			material = -1;// default 51
 			name = "velka vrtule";
-			passThrough = 0.2; // default 0.1
+			passThrough = 0.3; // default 0.1
 			visual = "velka vrtule staticka";
 		};
 		class HitHStabilizerL1 {
 			armor = 0.8;
 			material = -1;
 			name = "HStabilizerL1";
-			passThrough = 1;
+			passThrough = 0.1;
 		};
 		class HitHStabilizerR1 {
 			armor = 0.8;
@@ -191,20 +192,20 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 			material = -1;
 			name = "tail boom";
 			explosionShielding = 1.0;
-			passThrough = 0.8;
+			passThrough = 0.4;
 		};
 		class HitTransmission {
-			armor = 0.8;
+			armor = 12;
 			material = -1;
 			name = "transmission";
-			passThrough = 0.8;
-			explosionShielding = 1.0;
+			passThrough = 0.4;
+			explosionShielding = 10.0;
 		};
 		class HitVRotor {
 			armor = 0.5;
 			material = -1;// default 51
 			name = "mala vrtule";
-			passThrough = 0.3;
+			passThrough = 0.4;
 			explosionShielding = 1.0;
 			visual = "mala vrtule staticka";
 		};
@@ -213,7 +214,7 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 			material = -1;
 			name = "VStabilizer1";
 			explosionShielding = 1.0;
-			passThrough = 1;
+			passThrough = 0.1;
 		};
 		class HitWinch {
 			armor = -40;
