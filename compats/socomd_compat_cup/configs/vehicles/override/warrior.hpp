@@ -4,9 +4,8 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 		class HitHull {
 			armor = 2.1;// default 1
 			material = -1;
-			// for some reason this set to 1 gives perfectly desired missile protection.
-			// survives 1 hit, second one blows it up. good luck landing mr pilot with no main rotor
-			explosionShielding = 1;
+			// destroy the shit out of the hull so it looks banged up from the outside.
+			explosionShielding = 10;
 			name = "trup";
 			passThrough = 1;
 			visual = "trup";
