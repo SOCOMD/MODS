@@ -2,7 +2,7 @@
 
 class CfgPatches {
 
-	class socomd_rhs {
+	class socomd_compat_rhs {
 		version = 1.1.0;
 		versionStr = "1.1.0";
 		versionAr[] = { 1,1,0 };
