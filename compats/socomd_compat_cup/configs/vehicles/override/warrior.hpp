@@ -241,7 +241,14 @@ class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	displayname = "Warrior (4/12)";
-
+	
+	class AnimationSources : AnimationSources {
+		class Filters_Hide {
+			animPeriod = 1;
+			DisplayName = "Hide Filters";
+			initphase = 1;
+		};
+	};
 	hiddenSelectionsTextures[] = {
 		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
 		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
