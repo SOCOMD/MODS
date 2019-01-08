@@ -153,7 +153,7 @@ class CfgSounds{
 	};
 	class fox_nvg_soundLoud{
 		name = "fox_nvg_soundLoud";
-		sound[] = {"\socomd_data_core\sounds\sp_nvg_loud.ogg", 1, 1};
+		sound[] = {"\socomd_data_core\sounds\sp_nvg_loud.ogg", 0, 0};
 		titles[] = {};
 	};
 
@@ -167,7 +167,7 @@ class CfgMusic{
 	};
 	class fox_nvg_soundLoud{
 		name	= "fox_nvg_soundLoud";
-		sound[]	= { "\socomd_data_core\sounds\sp_nvg_loud.ogg",1, 1.0 };
+		sound[]	= { "\socomd_data_core\sounds\sp_nvg_loud.ogg",0, 0.0 };
 	};
 };
 
