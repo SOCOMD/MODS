@@ -173,3 +173,22 @@ class SOCOMD_Crewman : SOCOMD_Unarmed {
 	linkedItems[] 				= {SOLDIER_CREWMAN_LINKEDITEMS};
 	backpack					= ITEM_BACKPACK_CREWMAN;
 };
+
+
+class ADFU_Soldier_MC;
+class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD Black Role";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_BLK_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\u_g3_blk_co.paa"
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};

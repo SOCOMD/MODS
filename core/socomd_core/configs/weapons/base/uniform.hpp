@@ -18,3 +18,17 @@ class SOCOMD_Uniform_Wetsuit : U_B_Wetsuit {
 	author = AUTHOR_STR;
 	displayName = "SOCOMD Wetsuit";
 };
+
+class UniformItem;
+class SOCOMD_Commando_BLK_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD Black Role";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_BLK_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};
