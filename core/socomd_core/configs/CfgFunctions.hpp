@@ -41,4 +41,10 @@ class CfgFunctions {
 			class ActionCondition_IsAdmin {};
 		};
 	};
+	class ADDON{
+		class functions{
+			file = "\socomd_core\functions\sounds";
+			class init{postInit = 1;};
+		};
+	};
 };

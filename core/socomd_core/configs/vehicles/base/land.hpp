@@ -298,7 +298,40 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F {
 	class TransportItems {};
 	class TransportBackpacks {};
 };
+/*
+class NDS_6x6_ATV_MIL2_LR
+class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
+{
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+	forceInGarage = 1;
+	author = AUTHOR_STR;
+	displayname = "ATV (1/0)";
+	faction = FACTION_STR;
+	vehicleclass = "Car";
 
+	crew = UNIT_SOCOMD_CREWMAN;
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
+	
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
+
+	class TransportMagazines {
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+	};
+
+	class TransportItems {
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
+	};
+
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+	};
+};
+*/
 ////////////////////////////////////////////////////////////////////////////////
 // SOV-CD
 class CUP_B_BAF_Coyote_L2A1_D;
@@ -383,3 +416,4 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
+

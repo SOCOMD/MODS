@@ -51,7 +51,6 @@ class SOCOMD_Aus_Boonie: H_Booniehat_khk_hs {
 	author = AUTHOR_STR;
 	scope = 2;
 	displayName = "SOCOMD Booniehat DPCU";
-	picture = "\socomd_data_core\uniform\icons\icon_H_Booniehat_CA.paa";
 	model = "\A3\Characters_F\Common\booniehat";
 	ace_hearing_protection = 0.5;
 	ace_hearing_lowerVolume = 0;
