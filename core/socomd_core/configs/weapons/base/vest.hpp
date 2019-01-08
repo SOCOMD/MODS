@@ -14,6 +14,7 @@ class SOCOMD_OVERRIDE_A_##VEST : SOCOMD_OVERRIDE_##VEST { \
 class SOCOMD_##VEST : SOCOMD_OVERRIDE_A_##VEST { \
 	scope = public; \
 	author = AUTHOR_STR; \
+	displayName = "SOCOMD "#VEST""; \
 	class ItemInfo : ItemInfo { \
 		containerClass = "Supply400"; \
 		mass = 20; \
