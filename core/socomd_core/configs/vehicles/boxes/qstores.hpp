@@ -39,6 +39,15 @@ class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	showDisabled = 0; \
 };
 
+#define QSTORE_ACTION_LOADOUT_TAG(DISPLAY_STR, LOADOUT) \
+class SOCOMD_ACTION_LOADOUT_TAG_##LOADOUT { \
+	displayName = DISPLAY_STR; \
+	statement = "[_player,"#LOADOUT"]call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'Mask_M40'"; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	condition = 1; \
+	showDisabled = 0; \
+};
+
 #define QSTORE_ACTION_WEAPON_PRIMARY(DISPLAY_STR, WEAPON) \
 class SOCOMD_ACTION_WEAPON_##WEAPON { \
 	displayName = DISPLAY_STR; \
@@ -216,10 +225,10 @@ class SOCOMD_QStore_TAG : SOCOMD_QStore_Base {
 			// Select Loadouts
 			QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (TAG - East)")
-					QSTORE_ACTION_LOADOUT("Leader",TAGE_TroopLeader)
-					QSTORE_ACTION_LOADOUT("Medic",TAGE_Medic)
-					QSTORE_ACTION_LOADOUT("Breacher",TAGE_Sapper)
-					QSTORE_ACTION_LOADOUT("Sniper",TAGE_Sniper)
+					QSTORE_ACTION_LOADOUT_TAG("Leader",TAGE_TroopLeader)
+					QSTORE_ACTION_LOADOUT_TAG("Medic",TAGE_Medic)
+					QSTORE_ACTION_LOADOUT_TAG("Breacher",TAGE_Sapper)
+					QSTORE_ACTION_LOADOUT_TAG("Sniper",TAGE_Sniper)
 				QSTORE_ACTION_GRP_END
 
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB1,"Change Role (SUPPORT)")
