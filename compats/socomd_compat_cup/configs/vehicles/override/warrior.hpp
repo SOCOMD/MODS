@@ -1,6 +1,11 @@
 // modify damage model of warrior
 class CUP_B_UH60M_US : CUP_Uh60_Base {
 	armorStructural = 4; // default 4
+
+	class AnimationSources : AnimationSources {
+		class Filters_Hide;
+	};
+
 	class HitPoints : Hitpoints {
 		class HitHull {
 			armor = 14;// default 1
@@ -241,9 +246,9 @@ class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
 	displayname = "Warrior (4/12)";
-	
+
 	class AnimationSources : AnimationSources {
-		class Filters_Hide {
+		class Filters_Hide : Filters_Hide {
 			animPeriod = 1;
 			DisplayName = "Hide Filters";
 			initphase = 1;

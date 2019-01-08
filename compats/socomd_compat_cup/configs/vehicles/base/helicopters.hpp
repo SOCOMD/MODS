@@ -54,4 +54,5 @@ class CUP_UH1H_gunship_base : CUP_UH1H_base {};
 // socomd heli
 class CUP_Uh60_Base : Helicopter_Base_H {
     class HitMissiles;
+	class AnimationSources;
 };
