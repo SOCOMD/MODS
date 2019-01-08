@@ -60,7 +60,7 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 
 #define SOLDIER_HOMESTEAD_LINKEDITEMS \
 	SOLDIER_BASE_LINKEDITEMS,\
-	ITEM01("ITEM_VEST_Homestead"), \
+	ITEM01("SOCOMD_Item_Vest_Homestead"), \
 	ITEM01("SOCOMD_BERET")
 
 class SOCOMD_Homestead : SOCOMD_Unarmed {
