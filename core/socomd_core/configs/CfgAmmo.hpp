@@ -8,4 +8,9 @@ class CfgAmmo {
 	class HLC_300WM_FMJ: BulletBase {
 		hit = 25;
 	};
+	class SmokeShell;
+	class G_40mm_Smoke: SmokeShell {
+		simulation = "shotSmoke";
+		deflectionSlowDown = 0;
+	};
 };

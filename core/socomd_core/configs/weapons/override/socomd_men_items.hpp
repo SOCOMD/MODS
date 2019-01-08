@@ -101,3 +101,4 @@ class SOCOMD_Item_Vest_AT                           : SOCOMD_lbt_tl_mc {scope = 
 class SOCOMD_Item_Vest_PJ                           : SOCOMD_lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Pilot                        : SOCOMD_lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Crewman                      : SOCOMD_lbt_tl_mc {scope = protected;};
+class SOCOMD_Item_Vest_Homestead                    : SOCOMD_lbt_pouchless_mc {scope = protected;};

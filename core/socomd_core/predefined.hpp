@@ -238,6 +238,8 @@
 #define ITEM_VEST_PJ                            "SOCOMD_Item_Vest_PJ"
 #define ITEM_VEST_PILOT                         "SOCOMD_Item_Vest_Pilot"
 #define ITEM_VEST_CREWMAN                       "SOCOMD_Item_Vest_Crewman"
+#define ITEM_VEST_Homestead                     "SOCOMD_Item_Vest_Homestead"
+
 
 #define ITEM_BACKPACK_TROOPLEADER		        "SOCOMD_Item_Backpack_TroopLeader"
 #define ITEM_BACKPACK_PATROLLEADER		        "SOCOMD_Item_Backpack_PatrolLeader"

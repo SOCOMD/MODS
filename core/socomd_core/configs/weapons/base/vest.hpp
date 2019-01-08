@@ -51,6 +51,8 @@ SOCOMD_VEST(lbt_medical_coy)
 SOCOMD_VEST(lbt_medical_mc)
 SOCOMD_VEST(lbt_weapons_coy)
 SOCOMD_VEST(lbt_weapons_mc)
+SOCOMD_VEST(lbt_pouchless_coy)
+SOCOMD_VEST(lbt_pouchless_mc)
 
 SOCOMD_VEST(SOG_BAG_MC)
 SOCOMD_VEST(SOG_BAG_Tan)
