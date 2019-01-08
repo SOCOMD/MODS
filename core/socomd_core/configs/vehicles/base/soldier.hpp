@@ -55,8 +55,7 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 #define SOLDER_HOMESTEAD_ITEMS \
 	ITEM01("ACE_EarPlugs"), \
 	ITEM01("ACRE_PRC343"), \
-	ITEM01("ACRE_PRC152"), \
-	ITEM01("ACRE_PRC117F")
+	ITEM01("ACRE_PRC152")
 
 #define SOLDIER_HOMESTEAD_LINKEDITEMS \
 	SOLDIER_BASE_LINKEDITEMS,\
@@ -78,7 +77,7 @@ class SOCOMD_Homestead : SOCOMD_Unarmed {
 	linkedItems[] 				= {SOLDIER_HOMESTEAD_LINKEDITEMS};
 	Items[] 					= {SOLDER_HOMESTEAD_ITEMS};
 	RespawnItems[] 				= {SOLDER_HOMESTEAD_ITEMS};
-	backpack					= ITEM_BACKPACK_TROOPLEADER;
+	backpack					= "SOCOMD_BackpackPRC117F";
 };
 
 #define SOLDER_RIFLEMAN_WEAPONS \

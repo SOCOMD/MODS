@@ -164,6 +164,7 @@ class CfgVehicles  {
 	#include "vehicles\boxes\qstores.hpp"
 	#include "vehicles\boxes\supply.hpp"
 
+	#include "vehicles\override\backpack.hpp"
 	#include "vehicles\override\extensions.hpp"
 	#include "vehicles\override\flags.hpp"
 	#include "vehicles\override\socomd_men_backpacks.hpp"
