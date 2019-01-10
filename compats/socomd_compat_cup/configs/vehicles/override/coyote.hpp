@@ -1,8 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // SOV-CD
 
-class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D
-{
+class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -20,14 +19,13 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	transportMaxWeapons = "60";
 	transportMaxMagazines = "600";
 
-	hiddenSelections[] =
-	{
+	hiddenSelections[] = {
 		"camo1",
 		"camo2",
 		"camo3"
 	};
-	hiddenSelectionsTextures[] =
-	{
+
+	hiddenSelectionsTextures[] = {
 		"socomd_data_core\SOV\jackal_base_co.paa",
 		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
 		"socomd_data_core\SOV\jackal_adds_co.paa"
@@ -50,8 +48,7 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D
 	};
 };
 
-class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W
-{
+class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
