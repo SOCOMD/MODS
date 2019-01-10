@@ -57,19 +57,19 @@
 	LOADOUT_ITEM(ACE_packingBandage, 5) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_epinephrine, 2)
-	
+
 // COMMON TAGE LOADOUT ITEMS
-	
+
 #define TAGE_BACKPACK_ESSENTIALS		 \
 	LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1)   \
 	LOADOUT_ITEM(ACE_MapTools, 1)		 \
-	LOADOUT_ITEM(ACE_CableTie, 8)        
-	
+	LOADOUT_ITEM(ACE_CableTie, 8)
+
 #define TAGE_VEST_ESSENTIALS             \
 	LOADOUT_ITEM(ACE_M84, 4)             \
 	LOADOUT_ITEM(SmokeShell, 5)          \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
-	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2) 
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -399,7 +399,7 @@ class SOCOMD_Recon {
 	handgun		    = ITEM_HANDGUN_RECON;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RECON;
 	headgear		= ITEM_HEADGEAR_RECON;
-	binocular		= "Laserdesignator";
+	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
 
 	class Uniform {
@@ -417,8 +417,8 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
+			LOADOUT_ITEM(Laserdesignator, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
-			LOADOUT_ITEM(ACE_Vector,1)
 		};
 	};
 
@@ -612,7 +612,7 @@ class TAGE_TroopLeader
 		type = "SOCOMD_Commando_BLK_SleevesDown";
 		class Inventory
 		{
-			LOADOUT_UNIFORM_ESSENTIALS 
+			LOADOUT_UNIFORM_ESSENTIALS
 
 			LOADOUT_ITEM(Laserbatteries, 2)
 		};
@@ -639,7 +639,7 @@ class TAGE_TroopLeader
 		{
 			TAGE_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
-			
+
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
 		};
 	};
@@ -660,7 +660,7 @@ class TAGE_Medic
 		type = "SOCOMD_Commando_BLK_SleevesDown";
 		class Inventory
 		{
-			LOADOUT_UNIFORM_ESSENTIALS 
+			LOADOUT_UNIFORM_ESSENTIALS
 		};
 	};
 
@@ -681,7 +681,7 @@ class TAGE_Medic
 		class Inventory
 		{
 			TAGE_BACKPACK_ESSENTIALS
-			
+
 			LOADOUT_ITEM(ACE_surgicalKit, 8)
 			LOADOUT_ITEM(ACE_fieldDressing, 25)
 			LOADOUT_ITEM(ACE_elasticBandage, 20)
@@ -711,7 +711,7 @@ class TAGE_Sapper
 		type = "SOCOMD_Commando_BLK_SleevesDown";
 		class Inventory
 		{
-			LOADOUT_UNIFORM_ESSENTIALS 
+			LOADOUT_UNIFORM_ESSENTIALS
 
 		};
 	};
@@ -734,7 +734,7 @@ class TAGE_Sapper
 		{
 			TAGE_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
-			
+
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
@@ -760,7 +760,7 @@ class TAGE_Sniper
 
 		class Inventory
 		{
-			LOADOUT_UNIFORM_ESSENTIALS 
+			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
@@ -778,7 +778,7 @@ class TAGE_Sniper
 
 		};
 	};
-	
+
 	class Backpack
 	{
 		type = "SOG_BAG_blk";
@@ -786,7 +786,7 @@ class TAGE_Sniper
 		{
 			LOADOUT_STANDARD_MEDICAL
 			TAGE_BACKPACK_ESSENTIALS
-			
+
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)

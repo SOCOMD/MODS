@@ -40,50 +40,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // MODULAR LOADOUT
 
-#define TI_DefaultCommon \
-	TRANSPORT_ITEM(SOCOMD_Boonie, 1) \
-	TRANSPORT_ITEM(ACE_CableTie, 2) \
-	TRANSPORT_ITEM(ACE_Earplugs, 1)
-
-#define TI_DefaultMeds \
-	TRANSPORT_ITEM(ACE_fieldDressing, 6) \
-	TRANSPORT_ITEM(ACE_quikclot, 6) \
-	TRANSPORT_ITEM(ACE_elasticBandage, 6) \
-	TRANSPORT_ITEM(ACE_packingBandage, 6) \
-	TRANSPORT_ITEM(ACE_morphine, 2) \
-	TRANSPORT_ITEM(ACE_epinephrine, 2) \
-	TRANSPORT_ITEM(ACE_tourniquet, 1)
-
-#define TI_MedicMeds\
-	TRANSPORT_ITEM(ACE_fieldDressing, 30) \
-	TRANSPORT_ITEM(ACE_quikclot, 30) \
-	TRANSPORT_ITEM(ACE_morphine, 20) \
-	TRANSPORT_ITEM(ACE_epinephrine, 6) \
-	TRANSPORT_ITEM(ACE_tourniquet, 4) \
-	TRANSPORT_ITEM(ACE_elasticBandage, 30) \
-	TRANSPORT_ITEM(ACE_packingBandage, 30) \
-	TRANSPORT_ITEM(ACE_salineIV_500, 8) \
-	TRANSPORT_ITEM(ACE_personalAidKit, 5) \
-	TRANSPORT_ITEM(ACE_bodyBag, 2)
-
-#define TI_SapperItems\
-	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
-	TRANSPORT_ITEM(ACE_M26_Clacker, 1) \
-	TRANSPORT_ITEM(ACE_wirecutter, 1) \
-	TRANSPORT_ITEM(DemoCharge_Remote_Mag, 5) \
-	TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 1)
-
-#define TM_GunnerAmmo\
-	TRANSPORT_MAGAZINE(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 2)
-
-#define TM_ReconAmmo\
-	TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag, 3) \
-	TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag_Tracer_Red, 3) \
-	TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2) \
-	TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 8) \
-	TRANSPORT_MAGAZINE(ClaymoreDirectionalMine_Remote_Mag, 4)
-
-
 // Rifles
 #define ITEM_PRIMARY_TROOPLEADER	            "SOCOMD_Item_Primary_TroopLeader"
 #define ITEM_PRIMARY_PATROLLEADER	            "SOCOMD_Item_Primary_PatrolLeader"
@@ -236,6 +192,8 @@
 #define ITEM_VEST_PJ                            "SOCOMD_Item_Vest_PJ"
 #define ITEM_VEST_PILOT                         "SOCOMD_Item_Vest_Pilot"
 #define ITEM_VEST_CREWMAN                       "SOCOMD_Item_Vest_Crewman"
+#define ITEM_VEST_Homestead                     "SOCOMD_Item_Vest_Homestead"
+
 
 #define ITEM_BACKPACK_TROOPLEADER		        "SOCOMD_Item_Backpack_TroopLeader"
 #define ITEM_BACKPACK_PATROLLEADER		        "SOCOMD_Item_Backpack_PatrolLeader"
@@ -244,7 +202,7 @@
 #define ITEM_BACKPACK_MACHINEGUNNER	            "SOCOMD_Item_Backpack_MachineGunner"
 #define ITEM_BACKPACK_MEDIC			            "SOCOMD_Item_Backpack_Medic"
 #define ITEM_BACKPACK_SNIPER			        "SOCOMD_Item_Backpack_Sniper"
-#define ITEM_BACKPACK_Recon			        	"SOCOMD_Item_Backpack_Recon"
+#define ITEM_BACKPACK_RECON			        	"SOCOMD_Item_Backpack_Recon"
 #define ITEM_BACKPACK_AT				        "SOCOMD_Item_Backpack_AT"
 #define ITEM_BACKPACK_MAT				        "SOCOMD_Item_Backpack_MAT"
 #define ITEM_BACKPACK_HAT				        "SOCOMD_Item_Backpack_HAT"

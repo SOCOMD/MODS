@@ -11,7 +11,6 @@ class CfgPatches {
 
 		requiredAddons[] = {
 			"socomd_core"
-			"socomd_compat_sma"
 		};
 
 		units[] = {};
