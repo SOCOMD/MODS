@@ -1,6 +1,7 @@
 //Vanilla
 class arifle_SPAR_01_GL_blk_F; //Using CBA_556x45_STANAG
-class arifle_SPAR_01_blk_F; //Using CBA_556x45_STANA
+class arifle_SPAR_01_blk_F; //Using CBA_556x45_STANAG
+class arifle_SPAR_02_blk_F; //Using CBA_556x45_STANAG
 class LMG_03_F; //Using CBA_556x45_MINIMI
 class arifle_SPAR_03_blk_F; //Using CBA_762x51_HK417
 

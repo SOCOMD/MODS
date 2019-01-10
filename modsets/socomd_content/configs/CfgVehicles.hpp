@@ -1,5 +1,8 @@
 class CfgVehicles {
 	////////////////////////////////////////////////////////////////////////////////
 	//BOXES
+
+	#include "vehicles\land.hpp"
+
 	#include "vehicles\boxes\qstore.hpp"
 };

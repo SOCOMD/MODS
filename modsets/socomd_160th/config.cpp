@@ -19,3 +19,5 @@ class CfgPatches {
 		magazines[] = {};
 	};
 };
+
+#include "CfgMissions.hpp"
