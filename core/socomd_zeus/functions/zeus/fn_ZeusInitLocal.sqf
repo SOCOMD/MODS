@@ -1,9 +1,7 @@
 if(!hasInterface) exitWith {};
 
 _zeusWhitelist = [
-	"SOCOMD_Homestead",
-	"SOCOMD_SASR_Homestead",
-	"SOCOMD_Trainer"
+	"SOCOMD_Homestead"
 ];
 
 _type = typeOf player;
