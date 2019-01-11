@@ -1,11 +1,9 @@
 if(!hasInterface) exitWith {};
 
-_zeusInitLocalCalled = player getVariable["SOCOMD_zeusInitLocalCalled", 0];
-if(_zeusInitLocalCalled == 1) exitWith {};
-player setVariable ["SOCOMD_zeusInitLocalCalled", 1];
-
 _zeusWhitelist = [
-	"SOCOMD_Homestead"
+	"SOCOMD_Homestead",
+	"SOCOMD_SASR_Homestead",
+	"SOCOMD_Trainer"
 ];
 
 _type = typeOf player;

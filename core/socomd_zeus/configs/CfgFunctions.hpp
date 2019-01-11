@@ -7,7 +7,9 @@ class CfgFunctions {
 			class ZeusAddObject {};
 			class ZeusAddObjectLocal {};
 			class ZeusRegisterCurator {};
+			class ZeusRegisterAdminCurator {};
 			class ZeusCreateCurator {};
+			class ZeusAdminCurator {};
 			class ZeusRefreshCurator {};
 			class ZeusRegisterCallbacks {};
 		};
