@@ -187,7 +187,7 @@ ASORGS_Blacklist = [
 	"CUP_PMC_Facewrap_Smilie",
 	"CUP_PMC_Facewrap_Tan",
 	"CUP_PMC_Facewrap_Tropical",
-	"CUP_PMC_Facewrap_Winter",
+	"CUP_PMC_Facewrap_Winter"
 
 ];
 
