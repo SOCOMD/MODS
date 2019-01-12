@@ -23,10 +23,11 @@ class CfgLoadoutWeapons {
 
 	class Rifle_762;
 	class SMA_HK417vfg : Rifle_762 {};
-	
+
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
-	
+	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
+
 	class Launcher;
 	class HAFM_LAW : Launcher {};
 	class SOCOMD_Carl_Gustav : Launcher {

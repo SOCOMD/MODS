@@ -17,6 +17,7 @@ class SMA_762_RIFLEBASE : SMA_AssaultBase {
 };
 class SMA_HK417_16in;
 class SMA_HK417vfg;
+class SPARTAN_EBR_black_F;
 
 //Machine Gun 556
 class CUP_lmg_minimi_railed;
