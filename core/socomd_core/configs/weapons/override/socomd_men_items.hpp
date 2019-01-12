@@ -63,7 +63,7 @@ class SOCOMD_Item_Binocular_PJ                      : Binocular {scope = protect
 class SOCOMD_Item_Binocular_Pilot                   : Binocular {scope = protected;};
 class SOCOMD_Item_Binocular_Crewman                 : Binocular {scope = protected;};
 
-class SOCOMD_Item_GPS_TroopLeader                   : ItemAndroid {scope = protected;};
+class SOCOMD_Item_GPS_TroopLeader                   : ItemcTab {scope = protected;};
 class SOCOMD_Item_GPS_PatrolLeader                  : ItemAndroid {scope = protected;};
 class SOCOMD_Item_GPS_Rifleman                      : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_Medic                         : ItemMicroDAGR {scope = protected;};
