@@ -179,7 +179,15 @@ ASORGS_Blacklist = [
 	"VSM_Thermal",
 	"VSM_SkiMask_Black",
 	"G_Lady_Blue",
-	"50Suppressor_ej"
+	"50Suppressor_ej",
+	"CUP_PMC_Facewrap_Black",
+	"CUP_PMC_Facewrap_Red",
+	"CUP_PMC_Facewrap_Ranger",
+	"CUP_PMC_Facewrap_Skull",
+	"CUP_PMC_Facewrap_Smilie",
+	"CUP_PMC_Facewrap_Tan",
+	"CUP_PMC_Facewrap_Tropical",
+	"CUP_PMC_Facewrap_Winter",
 
 ];
 
