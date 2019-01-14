@@ -139,6 +139,7 @@ class CfgPatches {
 		};
 	};
 };
+/*  //NVG sound ---- To be turned back on when updated (Monk)
 class Extended_PreInit_EventHandlers{
     fox_nvg_sound_cba = call compile preprocessFileLineNumbers '\socomd_core\functions\sounds\fn_cba.sqf';
 };
@@ -170,7 +171,7 @@ class CfgMusic{
 		sound[]	= { "\socomd_data_core\sounds\sp_nvg_loud.ogg",0, 0.0 };
 	};
 };
-
+*/
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
@@ -196,4 +197,4 @@ class CfgMusic{
 #include "configs\CfgUnitInsignia.hpp"
 #include "configs\CfgASORVS.hpp"
 
-#include "configs\sounds\script_component.hpp"
+//#include "configs\sounds\script_component.hpp" //NVG sound ---- To be turned back on when updated (Monk)

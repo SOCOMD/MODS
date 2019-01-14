@@ -41,10 +41,11 @@ class CfgFunctions {
 			class ActionCondition_IsAdmin {};
 		};
 	};
+	/* //NVG sound ---- To be turned back on when updated (Monk)
 	class ADDON{
 		class functions{
 			file = "\socomd_core\functions\sounds";
 			class init{postInit = 1;};
 		};
-	};
+	};*/
 };

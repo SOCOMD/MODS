@@ -1,10 +1,3 @@
-// [FOX] NVG
-force fox_nvg_debug = false;
-force fox_nvg_mode = "playMusic";
-force fox_nvg_soundFile = "fox_nvg_sound";
-force fox_nvg_volume = true;
-
-
 // ACE Advanced Ballistics
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
