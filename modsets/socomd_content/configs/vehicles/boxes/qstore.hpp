@@ -106,3 +106,55 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 		};
 	};
 };
+
+class SOCOMD_QStore_TAG : SOCOMD_QStore_Base {
+	scope = public;
+	scopeCurator = public;
+	author = AUTHOR_STR;
+	displayName = "QStore TAG";
+
+	class ACE_Actions {
+		class ACE_MainActions {
+			displayName = "TAG - East";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_Personalise {
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			// Select Loadouts
+			QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
+				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (TAG - East)")
+					QSTORE_ACTION_LOADOUT_TAG("Leader",TAGE_TroopLeader)
+					QSTORE_ACTION_LOADOUT_TAG("Medic",TAGE_Medic)
+					QSTORE_ACTION_LOADOUT_TAG("Breacher",TAGE_Sapper)
+					QSTORE_ACTION_LOADOUT_TAG("Sniper",TAGE_Sniper)
+				QSTORE_ACTION_GRP_END
+
+				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB1,"Change Role (SUPPORT)")
+					QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
+					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
+					QSTORE_ACTION_LOADOUT("PJ",SOCOMD_PJ)
+					QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
+				QSTORE_ACTION_GRP_END
+			QSTORE_ACTION_GRP_END
+
+			// Switch Uniforms
+			QSTORE_ACTION_GRP_BEGIN(SELECT_UNIFORMS,"Uniforms")
+				class SOCOMD_Uniforms_ToggleDiving {
+					displayName = "Toggle Diving Uniform";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+					statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			QSTORE_ACTION_GRP_END
+		};
+	};
+};

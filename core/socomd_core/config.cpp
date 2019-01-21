@@ -70,9 +70,6 @@ class CfgPatches {
 
 			// BOXES
 			"SOCOMD_QStore_A",
-			//"SOCOMD_TAGE_Interactive_QStore",
-			//"SOCOMD_Interactive_QStore_OldSchool",
-			//"SOCOMD_Interactive_QStore_Green",
 			"SOCOMD_Personal_box",
 			"SOCOMD_Training_box",
 			"SOCOMD_UAV_crate",
