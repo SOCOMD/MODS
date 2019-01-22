@@ -21,6 +21,15 @@ class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
 	showDisabled = 0; \
 };
 
+#define QSTORE_ACTION_LOADOUT_TAG(DISPLAY_STR, LOADOUT) \
+class SOCOMD_ACTION_LOADOUT_TAG_##LOADOUT { \
+	displayName = DISPLAY_STR; \
+	statement = "[_player,"#LOADOUT"]call SOCOMD_fnc_SwitchUnitLoadout, player addGoggles 'Mask_M40'"; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	condition = 1; \
+	showDisabled = 0; \
+};
+
 #define QSTORE_ACTION_WEAPON_PRIMARY(DISPLAY_STR, WEAPON) \
 class SOCOMD_ACTION_WEAPON_##WEAPON { \
 	displayName = DISPLAY_STR; \

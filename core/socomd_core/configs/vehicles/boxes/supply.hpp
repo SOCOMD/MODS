@@ -194,7 +194,8 @@ class SOCOMD_Mortar_Box : NATO_Box_Base
 
 	class TransportItems
 	{
-		TRANSPORT_ITEM(ACE_RangeTable_82mm, 1)
+		TRANSPORT_ITEM(ACE_RangeTable_82mm, 4)
+		TRANSPORT_ITEM(ACE_Vector, 4)
 
 	};
 	class TransportBackpacks
