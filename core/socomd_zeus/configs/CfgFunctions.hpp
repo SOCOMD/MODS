@@ -37,6 +37,7 @@ class CfgFunctions {
 			class ModuleFlatten {};
 			class ModuleConvoyGroup {};
 			class ModuleShowHitPoints {};
+			class ModuleJamWeapon {};
 		};
 	};
 };

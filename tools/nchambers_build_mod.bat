@@ -1,10 +1,10 @@
 @echo off
-set projectDir="C:\Users\nchambers\projects\SOCOMD\mods"
+set projectDir="C:\Users\nchambers\projects\socomd\"
 set toolsDir=%projectDir%\tools
-set modOutput="C:\Users\nchambers\projects\SOCOMD\MODS\builds"
-set modOutput_core="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Core\@socomd_core\addons"
-set modOutput_content="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Core\@socomd_content\addons"
-set modOutput_160th="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Mods\SOCOMD_Extra\@socomd_160th\addons"
+set modOutput="C:\Users\nchambers\projects\socomd\builds"
+set modOutput_core="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\Mods\SOCOMD\SOCOMD_Core\@socomd_core\addons"
+set modOutput_content="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\Mods\SOCOMD\SOCOMD_Core\@socomd_content\addons"
+set modOutput_160th="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\Mods\SOCOMD\SOCOMD_Extra\@socomd_160th\addons"
 set buldParam=-N -P -W
 
 ::SOCOMD Core

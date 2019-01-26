@@ -117,4 +117,14 @@ class CfgVehicles
 		displayName = "Show Hit Points";
 		function = "SOCOMD_fnc_ModuleShowHitPoints";
 	};
+
+	class SOCOMD_Module_JamWeapon : SOCOMD_Module_Base
+	{
+		scopeCurator = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_JamWeapon";
+		displayName = "Jam Weapon";
+		function = "SOCOMD_fnc_ModuleJamWeapon";
+	};
 };
