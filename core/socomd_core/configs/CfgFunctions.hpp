@@ -14,6 +14,7 @@ class CfgFunctions {
 			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
 			class GetASORVSClassnames {};
+			class GetLoadoutScopeFOV {};
 		};
 
 		class Actions {
@@ -39,6 +40,12 @@ class CfgFunctions {
 			class ActionCondition_CanSwapVest {};
 			class ActionCondition_CanSwapBackpacks {};
 			class ActionCondition_IsAdmin {};
+		};
+
+		class ASORGS {
+			file="\socomd_core\functions\asorgs";
+			class IsASORGSBlacklisted {};
+			class ASORGSCheckScope {};
 		};
 	};
 	/* //NVG sound ---- To be turned back on when updated (Monk)

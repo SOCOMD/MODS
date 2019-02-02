@@ -2,6 +2,10 @@ private["_class", "_RTBlacklist", "_RTWhitelist", "_result", "_useFullLists"];
 _class = [_this, 0, "", [""]] call BIS_fnc_Param;
 if(_class == "") exitWith {false;};
 _useFullLists = [_this, 1, false, [true]] call BIS_fnc_Param;
+
+_socomd_isBlacklisted = [_class] call SOCOMD_fnc_IsASORGSBlacklisted;
+if(_socomd_isBlacklisted > 0) exitWith {false;};
+
 //if runtime black/whitelists haven't been defined, then must be preinit so use normal black/whitelist.
 _RTBlacklist = if(isNil 'ASORGS_RuntimeBlacklist') then { [] } else { ASORGS_RuntimeBlacklist };
 _RTWhitelist = if(isNil 'ASORGS_RuntimeWhitelist') then { [] } else { ASORGS_RuntimeWhitelist };
