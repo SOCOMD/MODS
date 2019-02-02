@@ -1,7 +1,11 @@
 _args = _this;
 _player = _args select 0;
 _loadoutId = _args select 1;
-_unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
+
+_unitConfig = (missionConfigFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
+if(isNull _unitConfig) then {
+    _unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
+};
 
 if(isNull _unitConfig) exitWith { };
 

@@ -4,7 +4,11 @@ _weaponId = _args select 1;
 
 _allowed = false;
 
-_loadoutWeaponConfig = (configFile >> "CfgLoadoutWeapons" >> _weaponId);
+_loadoutWeaponConfig = (missionConfigFile >> "CfgLoadoutWeapons" >> _weaponId);
+if(isNull _loadoutWeaponConfig) then {
+	_loadoutWeaponConfig = (configFile >> "CfgLoadoutWeapons" >> _weaponId);
+};
+
 if(isNull _loadoutWeaponConfig) exitWith { _allowed };
 
 _loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];

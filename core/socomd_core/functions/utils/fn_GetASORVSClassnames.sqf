@@ -2,7 +2,10 @@ _args = _this;
 _type = _args select 0;
 _classNames = [];
 
-_asorvsConfig = (configFile >> "CfgASORVS" >> _type);
+_asorvsConfig = (missionConfigFile >> "CfgASORVS" >> _type);
+if(isNull _asorvsConfig) then {
+	_asorvsConfig = (configFile >> "CfgASORVS" >> _type);
+};
 
 if(isNull(_asorvsConfig)) exitWith {_classNames};
 
