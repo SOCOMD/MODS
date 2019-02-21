@@ -7,20 +7,17 @@ missionNamespace setVariable ["ACE_maxWeightDrag", 10000];
 ["Helicopter", "InitPost", {
 	(_this select 0) addEventHandler["Local", {
 			params ["_entity", "_isLocal"];
-
-            systemChat format["Locality Changed. %1 : %2", _entity, _isLocal];
-            if(_isLocal == false) exitWith{systemChat "You're not the owner"};
+            if(_isLocal isEqualTo false) exitWith {};
 
 			_vehicle = vehicle _entity;
-			if(isNull _vehicle) exitWith {systemChat "You're not in a vehicle?"};
+			if(isNull _vehicle) exitWith {};
 
 			_allCargo = _vehicle getVariable ["ASL_Cargo", []];
-			if(count _allCargo <= 0) exitWith {systemChat "No cargo attached"};
+			if(count _allCargo <= 0) exitWith {};
 
 			{
 				[_x, clientOwner] remoteExecCall ['setOwner',2];
-				systemChat format["Changing ownership of %1", _x];
 			} foreach _allCargo;
-		};
+		}];
 	},true, [], true
 ] call CBA_fnc_addClassEventHandler;
