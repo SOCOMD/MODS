@@ -4,5 +4,6 @@ class CfgVehicles {
 
 	#include "vehicles\land.hpp"
 
-	#include "vehicles\boxes\qstore.hpp"
+	#include "vehicles\boxes\qstores.hpp"
+	#include "vehicles\boxes\supply.hpp"
 };

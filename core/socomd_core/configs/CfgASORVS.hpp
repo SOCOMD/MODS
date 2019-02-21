@@ -34,14 +34,16 @@ class CfgASORVS {
 
 	class Supply {
 		SOCOMD_Core[] = {
-			"SOCOMD_UAV_crate",
-			"SOCOMD_Supply_Crate",
-			"SOCOMD_Ammo_Box",
-			"SOCOMD_Vehicle_Ammo_Box",
-			"SOCOMD_Medical_Box",
-			"SOCOMD_cargonet",
-			"SOCOMD_Gustav_Box",
-			"SOCOMD_Mortar_Box"
+			"SOCOMD_Crate_Empty",
+			"SOCOMD_Crate_Hasty",
+			"SOCOMD_Supply_Empty",
+			"SOCOMD_Supply_Ammo",
+			"SOCOMD_Supply_Medical",
+			"SOCOMD_Supply_Gustav",
+			"SOCOMD_Supply_Mortar",
+			"SOCOMD_Supply_Tools",
+			"SOCOMD_Supply_Vehicle_Ammo",
+			"ACE_Wheel"
 		};
 	};
 };
