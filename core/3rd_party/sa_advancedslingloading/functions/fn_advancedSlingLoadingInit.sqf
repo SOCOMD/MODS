@@ -740,6 +740,9 @@ ASL_Attach_Ropes = {
 	_vehicle = _vehicleWithIndex select 0;
 	if(!isNull _vehicle) then {
 		if(local _vehicle) then {
+			if (!local _cargo) then {
+				[_cargo,clientOwner] remoteExecCall ['setOwner',2];
+			};
 			private ["_ropes","_attachmentPoints","_objDistance","_ropeLength","_allCargo"];
 			_ropes = [_vehicle,(_vehicleWithIndex select 1)] call ASL_Get_Ropes;
 			if(count _ropes == 4) then {
