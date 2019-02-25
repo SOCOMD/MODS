@@ -188,28 +188,6 @@ class SOCOMD_Supply_Gustav : SOCOMD_Supply_Empty {
 	};
 };
 
-class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
-	scope = public;
-	author = AUTHOR_STR;
-	displayName = "[SUPPLY] Mortar";
-
-	class TransportMagazines {
-		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 15)
-		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke, 5)
-		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum, 5)
-	};
-
-	class TransportItems {
-		TRANSPORT_ITEM(ACE_RangeTable_82mm, 4)
-		TRANSPORT_ITEM(ACE_Vector, 4)
-	};
-
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
-	};
-};
-
 class SOCOMD_Supply_Tools : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
@@ -240,4 +218,67 @@ class SOCOMD_Supply_Vehicle_Ammo : SOCOMD_Supply_Empty {
 
 	ace_cargo_size = 2;
     ace_rearm_defaultSupply = 30;
+};
+
+class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] Mortar";
+
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 15)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Smoke, 5)
+		TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_Illum, 5)
+	};
+
+	class TransportItems {
+		TRANSPORT_ITEM(ACE_RangeTable_82mm, 4)
+		TRANSPORT_ITEM(ACE_Vector, 4)
+	};
+
+	class TransportBackpacks {
+		TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
+		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	};
+};
+
+class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] HMG";
+
+	class TransportBackpacks {
+		TRANSPORT_BACKPACK(B_HMG_01_high_weapon_F, 1)
+		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+		TRANSPORT_BACKPACK(B_HMG_01_weapon_F, 1)
+		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	};
+};
+
+class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] AGL";
+
+	class TransportBackpacks {
+		TRANSPORT_BACKPACK(B_GMG_01_high_weapon_F, 1)
+		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+		TRANSPORT_BACKPACK(B_GMG_01_weapon_F, 1)
+		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	};
+};
+
+
+class SOCOMD_Supply_Javelin : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] Javelin";
+
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(CUP_Javelin_M, 4)
+	};
+
+	class TransportWeapons {
+		TRANSPORT_WEAPON(CUP_launch_Javelin, 1)
+	};
 };

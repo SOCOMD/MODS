@@ -80,6 +80,9 @@ class CfgPatches {
 			"SOCOMD_Supply_Medical",
 			"SOCOMD_Supply_Gustav",
 			"SOCOMD_Supply_Mortar",
+			"SOCOMD_Supply_HMG",
+			"SOCOMD_Supply_AGL",
+			"SOCOMD_Supply_Javelin",
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
 
@@ -114,7 +117,6 @@ class CfgPatches {
 			"SOCOMD_Headgear_Helmet",
 			"SOCOMD_Headgear_Helmet_Goggles",
 
-			"SOCOMD_Javelin",
 			"SOCOMD_Coveralls_Black",
 			"SOCOMD_Pistol"
 		};

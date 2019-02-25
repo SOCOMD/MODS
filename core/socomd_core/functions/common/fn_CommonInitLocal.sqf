@@ -4,6 +4,9 @@ missionNamespace setVariable ["ACE_maxWeightDrag", 10000];
 // make the bushmaster not have thermal visible
 ["bma3_bushmaster_base_F", "InitPost", {(_this select 0) disableTIEquipment true;}, true, [], true] call CBA_fnc_addClassEventHandler;
 
+// make the static weapons not have thermal visible
+["StaticWeapon", "InitPost", {(_this select 0) disableTIEquipment true;}, true, [], true] call CBA_fnc_addClassEventHandler;
+
 ["Helicopter", "InitPost", {
 	(_this select 0) addEventHandler["Local", {
 			params ["_entity", "_isLocal"];

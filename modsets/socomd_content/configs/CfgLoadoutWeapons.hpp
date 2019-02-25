@@ -37,12 +37,6 @@ class CfgLoadoutWeapons {
 		};
 	};
 
-	class CUP_launch_Javelin : Launcher {
-		magazines[] = {
-			{"CUP_Javelin_M", 1}
-		};
-	};
-
 	class Rifle_300 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_300_5Rnd", 12}
