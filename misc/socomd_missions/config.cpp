@@ -71,6 +71,8 @@ class CfgMissions {
 	ADD(IHANTALAFOB,SOCOMD Ihantala FOB ,fobs\Ihantala_FOB.tem_ihantala)
 	ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberrs),fobs\Pulau_LHD_HMAS_Canberra.pulau)
 	ADD(ANIZAYFOB,SOCOMD Anizay FOB,fobs\Anizay_FOB.tem_anizay)
+	ADD(CELLEFOB,SOCOMD Celle FOB,fobs\Celle_FOB.mbg_celle2)
+	ADD(ROSCHEFOB,SOCOMD Rosche FOB,fobs\Rosche_FOB.WL_Rosche)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
