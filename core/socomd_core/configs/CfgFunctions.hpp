@@ -13,8 +13,8 @@ class CfgFunctions {
 			class SwitchUnitPrimaryWeapon {};
 			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
-			class GetASORVSClassnames {};
 			class GetLoadoutScopeFOV {};
+			class GetLoadoutMaxOptic {};
 		};
 
 		class Actions {
@@ -44,8 +44,14 @@ class CfgFunctions {
 
 		class ASORGS {
 			file="\socomd_core\functions\asorgs";
-			class IsASORGSBlacklisted {};
-			class ASORGSCheckScope {};
+			class ASORGS_IsBlacklisted {};
+			class ASORGS_GetOpticsWhitelist {};
+			class ASORGS_CheckScopeFOV {};
+		};
+
+		class ASORVS {
+			file="\socomd_core\functions\asorvs";
+			class ASORVS_GetClassnames {};
 		};
 	};
 };

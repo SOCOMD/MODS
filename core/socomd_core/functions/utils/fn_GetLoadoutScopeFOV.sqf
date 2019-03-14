@@ -2,19 +2,10 @@ _fov = 0.0;
 
 _args = _this;
 _player = _args select 0;
+
 if(!(isPlayer _player)) exitWith {_fov};
 
-_loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];
-if(_loadoutId == "") exitWith {_fov};
-
-_unitConfig = (missionConfigFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
-if(isNull _unitConfig) then {
-    _unitConfig = (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
-};
-
-if(isNull _unitConfig) exitWith {_fov};
-
-_maxOptic = getText(_unitConfig >> "maxOptic");
+_maxOptic = [player] call SOCOMD_fnc_GetLoadoutMaxOptic;
 if(_maxOptic == "") exitWith {_fov};
 
 switch(_maxOptic) do {

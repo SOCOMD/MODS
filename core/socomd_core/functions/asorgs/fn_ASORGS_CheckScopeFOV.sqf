@@ -36,7 +36,7 @@ if(_blacklisted <= 0) then {
     _nextScope = getText(_config >> "MRT_SwitchItemNextClass");
     if(_nextScope == "") exitWith {_blacklisted};
 
-    _nextScopeBlackListed = [_nextScope, _mrt_checked] call SOCOMD_fnc_ASORGSCheckScope;
+    _nextScopeBlackListed = [_nextScope, _mrt_checked] call SOCOMD_fnc_ASORGS_CheckScopeFOV;
     if(_nextScopeBlackListed > 0) then {
         _blacklisted = 1;
     };

@@ -3,7 +3,7 @@ _class = [_this, 0, "", [""]] call BIS_fnc_Param;
 if(_class == "") exitWith {false;};
 _useFullLists = [_this, 1, false, [true]] call BIS_fnc_Param;
 
-_socomd_isBlacklisted = [_class] call SOCOMD_fnc_IsASORGSBlacklisted;
+_socomd_isBlacklisted = [_class] call SOCOMD_fnc_ASORGS_IsBlacklisted;
 if(_socomd_isBlacklisted > 0) exitWith {false;};
 
 //if runtime black/whitelists haven't been defined, then must be preinit so use normal black/whitelist.
