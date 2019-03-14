@@ -48,10 +48,4 @@ class CfgFunctions {
 			class ASORGSCheckScope {};
 		};
 	};
-	class ADDON{
-		class functions{
-			file = "\socomd_core\functions\sounds";
-			class init{postInit = 1;};
-		};
-	};
 };

@@ -140,37 +140,6 @@ class CfgPatches {
 		};
 	};
 };
-class Extended_PreInit_EventHandlers{
-    fox_nvg_sound_cba = call compile preprocessFileLineNumbers '\socomd_core\functions\sounds\fn_cba.sqf';
-};
-
-class CfgSounds{
-	sounds[] = {fox_nvg_sound};
-
-	class fox_nvg_sound{
-		name = "fox_nvg_sound";
-		sound[] = {"\socomd_data_core\sounds\sp_nvg.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fox_nvg_soundLoud{
-		name = "fox_nvg_soundLoud";
-		sound[] = {"\socomd_data_core\sounds\sp_nvg_loud.ogg", 0, 0};
-		titles[] = {};
-	};
-
-};
-
-class CfgMusic{
-	tracks[] = {};
-	class fox_nvg_sound{
-		name	= "fox_nvg_sound";
-		sound[]	= { "\socomd_data_core\sounds\sp_nvg.ogg", 1, 1.0 };
-	};
-	class fox_nvg_soundLoud{
-		name	= "fox_nvg_soundLoud";
-		sound[]	= { "\socomd_data_core\sounds\sp_nvg_loud.ogg",0, 0.0 };
-	};
-};
 
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgEditorCategories.hpp"
@@ -196,5 +165,3 @@ class CfgMusic{
 #include "configs\CfgLoadoutBackpacks.hpp"
 #include "configs\CfgUnitInsignia.hpp"
 #include "configs\CfgASORVS.hpp"
-
-#include "configs\sounds\script_component.hpp"
