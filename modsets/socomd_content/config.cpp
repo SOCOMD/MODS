@@ -48,3 +48,4 @@ class CfgPatches  {
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgASORVS.hpp"
+#include "configs\CfgAmmo.hpp"

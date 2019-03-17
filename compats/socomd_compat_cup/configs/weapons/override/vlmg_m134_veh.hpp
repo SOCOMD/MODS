@@ -90,3 +90,17 @@ class CUP_Vlmg_M134_veh2 : CUP_Vlmg_M134_veh {
         aiRateOfFireDistance = 600;
     };
 };
+
+class CUP_Vlmg_TwinM134_veh : CUP_Vlmg_M134_veh {
+    magazines[] = {
+        "CUP_4000Rnd_TE5_White_Tracer_762x51_M134_M",
+        "CUP_2000Rnd_TE5_White_Tracer_762x51_M134_M",
+        "CUP_2000Rnd_TE1_White_Tracer_762x51_M134_M",
+        "CUP_4000Rnd_TE5_Red_Tracer_762x51_M134_M",
+        "CUP_2000Rnd_TE5_Red_Tracer_762x51_M134_M",
+        "CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M",
+        "CUP_2000Rnd_TE1_Red_Tracer_762x51_M134_M",
+        "Pylon_L_GUN_MELB_SOCOMD",
+        "Pylon_R_GUN_MELB_SOCOMD"
+    };
+};
