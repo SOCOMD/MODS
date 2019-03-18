@@ -1,5 +1,6 @@
 #include "predefined.hpp"
-
+class SensorTemplateLaser;
+class SensorTemplateIR;
 class CfgPatches  {
 	class socomd_compat_cup  {
 		version = 1.0.0;

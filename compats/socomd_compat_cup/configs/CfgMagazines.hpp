@@ -167,7 +167,8 @@ class CfgMagazines {
 
     class DAGR_Magazine_MELB;
     class Pylon_DAGR_MELB : DAGR_Magazine_MELB {
-        hardpoints[] = {""};
+        hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
+        displayName = "4x DAGR [ACE]";
     };
 
     class FakeMagazine_MELB;

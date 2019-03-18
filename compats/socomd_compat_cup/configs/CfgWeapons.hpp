@@ -12,4 +12,5 @@ class CfgWeapons {
     #include "weapons\override\uh1h_door_gunners.hpp"
     #include "weapons\override\vlmg_m134_veh.hpp"
     #include "weapons\override\vacannon_2a38m_veh.hpp"
+    #include "weapons\override\melb_dagr.hpp"
 };

@@ -7,3 +7,4 @@ class CUP_Vlmg_M240_veh : MGun {
 };
 
 class CUP_Vacannon_GSh302K_veh;
+class MissileLauncher;
