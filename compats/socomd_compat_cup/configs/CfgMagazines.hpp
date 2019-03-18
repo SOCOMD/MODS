@@ -29,14 +29,29 @@ class CfgMagazines {
             "LeftMount_MELB"
         };
     };
-    class CUP_2Rnd_AGM114K_Hellfire_II_M;
-    class CUP_PylonPod_2Rnd_AGM114K_Hellfire_II_M : CUP_2Rnd_AGM114K_Hellfire_II_M {
+    class 6Rnd_ACE_Hellfire_AGM114K;
+    class PylonRack_1Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
         hardpoints[] = {
-            "CUP_SUPER_PYLON",
-            "DAR",
+            "B_MISSILE_PYLON",
+            "SCALPEL_1RND_EJECTOR",
+            "B_ASRRAM_EJECTOR",
+            "UNI_SCALPEL",
             "CUP_NATO_HELO_SMALL",
             "CUP_NATO_HELO_LARGE",
-            "CUP_2Rnd_AGM114K",
+            "RHS_HP_MELB",
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+    };
+    class PylonRack_1Rnd_ACE_Hellfire_AGM114N : PylonRack_1Rnd_ACE_Hellfire_AGM114K {
+        hardpoints[] = {
+            "B_MISSILE_PYLON",
+            "SCALPEL_1RND_EJECTOR",
+            "B_ASRRAM_EJECTOR",
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_SMALL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_MELB",
             "RightMount_MELB",
             "LeftMount_MELB"
         };

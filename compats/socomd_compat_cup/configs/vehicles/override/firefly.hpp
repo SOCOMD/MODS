@@ -200,7 +200,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	//magazines[] = {"CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","168Rnd_CMFlare_Chaff_Magazine"};
 	class Turrets : Turrets {
 		class CopilotTurret : CopilotTurret {
-			weapons[] = {"Laserdesignator_mounted"};
+			weapons[] = {"CUP_Laserdesignator_mounted"};
 			magazines[] = {"Laserbatteries"};
 		}
 	}
