@@ -198,6 +198,12 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
 	weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
 	//magazines[] = {"CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","168Rnd_CMFlare_Chaff_Magazine"};
+	class Turrets : Turrets {
+		class CopilotTurret : CopilotTurret {
+			weapons[] = {"Laserdesignator_mounted"};
+			magazines[] = {"Laserbatteries"};
+		}
+	}
 	class Components: Components {
 		class TransportPylonsComponent {
 			UIPicture = "melb\data\ui\melb_eden_ca.paa";
@@ -209,9 +215,8 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 					maxweight = 200;
 					UIposition[] = {0.125,0.4};
 				};
+
 				
-
-
 				class R_Rockets_12x {
 					hardpoints[] = {"12x_Rockets_MELB"};
 					attachment = "";
