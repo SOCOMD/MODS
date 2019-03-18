@@ -5,7 +5,7 @@ set modOutput="C:\git\socomd\mods\builds"
 set modOutput_core="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_core\addons"
 set modOutput_content="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_Core\@socomd_content\addons"
 set modOutput_160th="C:\Program Files (x86)\Steam\steamapps\common\Arma 3\SOCOMD_160th\@socomd_160th\addons"
-set buldParam=-N -W
+set buldParam=-N -P -W
 
 ::SOCOMD Core
 start /D %projectDir% makepbo.exe %buldParam% core\socomd_core %modOutput_core%

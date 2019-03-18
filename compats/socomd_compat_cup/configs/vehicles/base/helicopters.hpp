@@ -58,9 +58,11 @@ class CUP_Uh60_Base : Helicopter_Base_H {
 };
 
 // Melb Heli
-class MELB_base;
+class MELB_base : Helicopter_Base_H {
+    class Components;
+};
 class MELB_AH6M : MELB_base {
 	//weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
 	//magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
-	class Components;
+	
 };

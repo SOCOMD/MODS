@@ -202,12 +202,16 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 		class TransportPylonsComponent {
 			UIPicture = "melb\data\ui\melb_eden_ca.paa";
 			class pylons {
+				// Keep
 				class R_Pylon {
 					hardpoints[] = {"RightMount_MELB"};
-					attachment = "Pylon_M260_MELB";
+					attachment = "CUP_PylonPod_19Rnd_CRV7_FAT_M";
 					maxweight = 200;
 					UIposition[] = {0.125,0.4};
 				};
+				
+
+
 				class R_Rockets_12x {
 					hardpoints[] = {"12x_Rockets_MELB"};
 					attachment = "";
@@ -217,18 +221,20 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 				};
 				class R_Rockets_4x: R_Rockets_12x {
 					hardpoints[] = {"4x_Rockets_MELB"};
-					attachment = "Pylon_HE_4x_M260_MELB";
+					attachment = "";
 					priority = 2;
 					maxweight = 200;
 					UIposition[] = {0.04,0.25};
 				};
+				
 				class R_Rockets_3x: R_Rockets_12x {
 					hardpoints[] = {"3x_Rockets_MELB"};
-					attachment = "Pylon_HE_3x_M260_MELB";
+					attachment = "";
 					priority = 1;
 					maxweight = 200;
 					UIposition[] = {0.04,0.3};
 				};
+				
 				class R_HellfireRack_R_slot: R_Pylon {
 					turret[] = {"CopilotTurret"};
 					hardpoints[] = {"HellfireRail_MELB"};
@@ -239,6 +245,8 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 				class R_HellfireRack_L_slot: R_HellfireRack_R_slot {
 					UIposition[] = {0.225,0.45};
 				};
+			
+				// keep x2
 				class R_Minigun: R_Pylon {
 					hardpoints[] = {"Right_MinigunMount_MELB"};
 					attachment = "Pylon_R_GUN_MELB_SOCOMD";
@@ -251,6 +259,9 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 					attachment = "Pylon_L_GUN_MELB_SOCOMD";
 					UIposition[] = {0.415,0.325};
 				};
+
+				
+
 				class L_HellfireRack_R_slot: R_HellfireRack_R_slot {
 					UIposition[] = {0.405,0.45};
 					mirroredMissilePos = 6;
@@ -258,13 +269,15 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 				class L_HellfireRack_L_slot: R_HellfireRack_R_slot {
 					UIposition[] = {0.58,0.45};
 					mirroredMissilePos = 5;
-				};
+				};	
+						
 				class L_Rockets_3x: R_Rockets_3x {
 					hardpoints[] = {"3x_Rockets_MELB"};
 					UIposition[] = {0.58,0.3};
 					priority = 1;
 					mirroredMissilePos = 4;
 				};
+				
 				class L_Rockets_4x: R_Rockets_4x {
 					hardpoints[] = {"4x_Rockets_MELB"};
 					UIposition[] = {0.58,0.25};
@@ -277,33 +290,38 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 					priority = 3;
 					mirroredMissilePos = 2;
 				};
+
+				// keep
 				class L_Pylon: R_Pylon {
 					hardpoints[] = {"LeftMount_MELB"};
 					UIposition[] = {0.4925,0.4};
 					mirroredMissilePos = 1;
 				};
+				/*
+				// this does remove the boxes if you comment out the above classes being deleted but it all goes wacky
+				delete R_HellfireRack_R_slot;
+				delete R_HellfireRack_L_slot;
+				delete R_Rockets_3x;
+				delete R_Rockets_4x;
+				delete R_Rockets_12x;
+
+				delete L_HellfireRack_R_slot;
+				delete L_HellfireRack_L_slot;
+				delete L_Rockets_3x;
+				delete L_Rockets_4x;
+				delete L_Rockets_12x;
+*/
+
 			};
 			class presets {
 				class empty {
 					displayName = "empty";
 					attachment[] = {};
 				};
-				class M260HE_M134 {
-					displayName = "14x HE - 2x M134";
-					attachment[] = {"Pylon_M260_MELB","","Pylon_HE_4x_M260_MELB","Pylon_HE_3x_M260_MELB","","","Pylon_R_3000Rnd_M134_MELB","Pylon_L_3000Rnd_M134_MELB","","","Pylon_HE_3x_M260_MELB","Pylon_HE_4x_M260_MELB","","Pylon_M260_MELB"};
-				};
-				class M260HE_M134_GAU {
-					displayName = "7x HE - M134 - GAU-19";
-					attachment[] = {"Pylon_M260_MELB","","Pylon_HE_4x_M260_MELB","Pylon_HE_3x_M260_MELB","","","Pylon_R_3000Rnd_M134_MELB","","","","","","","Pylon_L_1300Rnd_GAU19_MELB"};
-				};
-				class GAU_M134_DAGR {
-					displayName = "8x DAGR - M134 - GAU-19";
-					attachment[] = {"Pylon_R_1300Rnd_GAU19_MELB","","","","","","Pylon_R_3000Rnd_M134_MELB","","Pylon_DAGR_MELB","Pylon_DAGR_MELB","","","","Pylon_HellfireLauncher_MELB"};
-				};
-				class Hellfires {
-					displayName = "4x Hellfires";
-					attachment[] = {"Pylon_HellfireLauncher_MELB","","","","Pylon_AGM_114K_MELB","Pylon_AGM_114K_MELB","","","Pylon_AGM_114K_MELB","Pylon_AGM_114K_MELB","","","","Pylon_HellfireLauncher_MELB"};
-				};
+				delete M260HE_M134;
+				delete M260HE_M134_GAU;
+				delete GAU_M134_DAGR;
+				delete Hellfires;
 			};
 		};
 	};
