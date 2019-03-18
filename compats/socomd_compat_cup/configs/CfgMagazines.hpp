@@ -44,41 +44,126 @@ class CfgMagazines {
 
     // disable MELB Pylon shit
     /*
+    class VehicleMagazine;
+    class Hydra_Magazine_MELB : VehicleMagazine {
+        hardpoints[] = {""}
+    };
     //delete Hydra_Magazine_MELB;
-    delete M229_Magazine_MELB;
-    delete M255A1_Magazine_MELB;
-    delete Hydra_Magazine_MELB;
-    delete M257_Illum_Magazine_MELB;
-    delete M261_MPSM_Magazine_MELB;
+    class M229_Magazine_MELB : Hydra_Magazine_MELB {
+        hardpoints[] = {""}
+    };
+    class M255A1_Magazine_MELB : Hydra_Magazine_MELB {
+        hardpoints[] = {""}
+    };
 
-    delete Pylon_L_3000Rnd_M134_MELB;
-    delete Pylon_R_3000Rnd_M134_MELB;
-    delete Pylon_L_1300Rnd_GAU19_MELB;
-    delete Pylon_R_1300Rnd_GAU19_MELB;
-    delete Pylon_HE_3x_M260_MELB;
-    //delete Pylon_HE_4x_M260_MELB;
-    delete Pylon_HE_3x_M261_MELB;
-    delete Pylon_HE_4x_M261_MELB;
-    delete Pylon_HE_12x_M261_MELB;
-    delete Pylon_M257_3x_M260_MELB;
-    delete Pylon_M257_4x_M260_MELB;
-    delete Pylon_M257_3x_M261_MELB;
-    delete Pylon_M257_4x_M261_MELB;
-    delete Pylon_M257_12x_M261_MELB;
-    delete Pylon_M255A1_3x_M260_MELB;
-    delete Pylon_M255A1_4x_M260_MELB;
-    delete Pylon_M255A1_3x_M261_MELB;
-    delete Pylon_M255A1_4x_M261_MELB;
-    delete Pylon_M255A1_12x_M261_MELB;
-    delete Pylon_MPSM_3x_M260_MELB;
-    delete Pylon_MPSM_4x_M260_MELB;
-    delete Pylon_MPSM_3x_M261_MELB;
-    delete Pylon_MPSM_4x_M261_MELB;
-    delete Pylon_MPSM_12x_M261_MELB;
-    delete Pylon_AGM_114K_MELB;
-    delete Pylon_DAGR_MELB;
-    delete Pylon_HellfireLauncher_MELB;
-    //delete Pylon_M260_MELB; //needed for melb loading?
-    delete Pylon_M261_MELB;
-    */
+    class M257_Illum_Magazine_MELB : Hydra_Magazine_MELB {
+        hardpoints[] = {""}
+    };
+    class M261_MPSM_Magazine_MELB {
+        hardpoints[] = {""}
+    }; */
+    class 3000Rnd_762x51_Belt_Red_MELB;
+    class Pylon_L_3000Rnd_M134_MELB : 3000Rnd_762x51_Belt_Red_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_R_3000Rnd_M134_MELB : Pylon_L_3000Rnd_M134_MELB {
+        hardpoints[] = {""};
+    };
+    class 1300Rnd_127x99_mag_Tracer_Red_MELB;
+    class Pylon_L_1300Rnd_GAU19_MELB : 1300Rnd_127x99_mag_Tracer_Red_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_R_1300Rnd_GAU19_MELB : Pylon_L_1300Rnd_GAU19_MELB {
+        hardpoints[] = {""};
+    };
+
+    class M229_Magazine_MELB;
+    class Pylon_HE_3x_M260_MELB : M229_Magazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_HE_4x_M260_MELB : Pylon_HE_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_HE_3x_M261_MELB : Pylon_HE_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_HE_4x_M261_MELB : Pylon_HE_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_HE_12x_M261_MELB : Pylon_HE_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+
+
+    class M257_Illum_Magazine_MELB;
+    class Pylon_M257_3x_M260_MELB : M257_Illum_Magazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M257_4x_M260_MELB : Pylon_M257_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M257_3x_M261_MELB : Pylon_M257_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M257_4x_M261_MELB : Pylon_M257_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M257_12x_M261_MELB : Pylon_M257_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+
+    class M255A1_Magazine_MELB;
+    class Pylon_M255A1_3x_M260_MELB : M255A1_Magazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M255A1_4x_M260_MELB : Pylon_M255A1_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M255A1_3x_M261_MELB : Pylon_M255A1_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M255A1_4x_M261_MELB : Pylon_M255A1_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M255A1_12x_M261_MELB : Pylon_M255A1_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+
+    class M261_MPSM_Magazine_MELB;
+    class Pylon_MPSM_3x_M260_MELB : M261_MPSM_Magazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_MPSM_4x_M260_MELB : Pylon_MPSM_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_MPSM_3x_M261_MELB : Pylon_MPSM_3x_M260_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_MPSM_4x_M261_MELB : Pylon_MPSM_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_MPSM_12x_M261_MELB : Pylon_MPSM_3x_M261_MELB {
+        hardpoints[] = {""};
+    };
+    class AGM_114K_MELB;
+    class Pylon_AGM_114K_MELB : AGM_114K_MELB {
+        hardpoints[] = {""};
+    };
+
+    class DAGR_Magazine_MELB;
+    class Pylon_DAGR_MELB : DAGR_Magazine_MELB {
+        hardpoints[] = {""};
+    };
+
+    class FakeMagazine_MELB;
+    class Pylon_HellfireLauncher_MELB : FakeMagazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M260_MELB : FakeMagazine_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_M261_MELB : FakeMagazine_MELB {
+        hardpoints[] = {""};
+    };
+    
 };
