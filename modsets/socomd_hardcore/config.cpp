@@ -9,7 +9,8 @@ class CfgPatches  {
 		requiredVersion = 0.1;
 
 		requiredAddons[] = {
-			"socomd_content"
+			"socomd_content",
+			"ctab"
 		};
 
 		units[] = {};
@@ -21,3 +22,4 @@ class CfgPatches  {
 
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgLoadouts.hpp"
+#include "configs\CfgFunctions.hpp"
