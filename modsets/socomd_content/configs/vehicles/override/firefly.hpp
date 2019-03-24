@@ -25,7 +25,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Dragonfly (2/0)";
+	displayname = "Dragonfly (2/1)";
 
 	hiddenSelections[] = {"camo1","d_sn"};
 	hiddenSelectionsTextures[] = {
