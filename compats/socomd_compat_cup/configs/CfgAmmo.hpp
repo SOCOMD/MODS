@@ -44,7 +44,7 @@ class CfgAmmo {
             seekerAccuracy = 1;  // Seeker accuracy multiplier
 
             seekerMinRange = 1;  // Minimum range from the missile which the seeker can visually search
-            seekerMaxRange = 2200;  // Maximum from the missile which the seeker can visually search
+            seekerMaxRange = 1600;  // Maximum from the missile which the seeker can visually search
 
             defaultAttackProfile = "DIR";  // Default attack profile
             attackProfiles[] = {"DIR"};  // Attack profiles available
