@@ -195,9 +195,9 @@ class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 
 class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 
-	magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
+	//magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
 	weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
-	//magazines[] = {"CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","168Rnd_CMFlare_Chaff_Magazine"};
+	magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 	class Turrets : Turrets {
 		class CopilotTurret : CopilotTurret {
 			weapons[] = {"CUP_Laserdesignator_mounted"};

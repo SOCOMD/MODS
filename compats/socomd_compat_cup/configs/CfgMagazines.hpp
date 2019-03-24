@@ -8,13 +8,13 @@ class CfgMagazines {
     class CUP_PylonPod_2000Rnd_TE5_Red_Tracer_762x51_M134A_M;
     // Melb Changes for pylon system from cup
     class Pylon_L_GUN_MELB_SOCOMD : CUP_PylonPod_2000Rnd_TE5_Red_Tracer_762x51_M134A_M {
-        model = "melb\proxies\pylon_m134_l";
+        //model = "melb\proxies\pylon_m134_l";
 		hardpoints[] = {"Left_MinigunMount_MELB"};
 		mass = 60;
         tracersEvery = 1;
     };
     class Pylon_R_GUN_MELB_SOCOMD : Pylon_L_GUN_MELB_SOCOMD {
-        model = "melb\proxies\pylon_m134_r";
+       // model = "melb\proxies\pylon_m134_r";
 		hardpoints[] = {"Right_MinigunMount_MELB"};
     };
     class CUP_19Rnd_CRV7_FAT_M;
