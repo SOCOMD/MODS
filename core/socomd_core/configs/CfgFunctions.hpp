@@ -42,15 +42,11 @@ class CfgFunctions {
 			class ActionCondition_IsAdmin {};
 		};
 
-		class ASORGS {
-			file="\socomd_core\functions\asorgs";
+		class ASORUtil {
+			file="\socomd_core\functions\asorUtil";
 			class ASORGS_IsBlacklisted {};
 			class ASORGS_GetOpticsWhitelist {};
 			class ASORGS_CheckScopeFOV {};
-		};
-
-		class ASORVS {
-			file="\socomd_core\functions\asorvs";
 			class ASORVS_GetClassnames {};
 		};
 	};
