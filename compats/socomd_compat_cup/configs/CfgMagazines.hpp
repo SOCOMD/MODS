@@ -11,6 +11,7 @@ class CfgMagazines {
         model = "melb\proxies\pylon_m134_l";
 		hardpoints[] = {"Left_MinigunMount_MELB"};
 		mass = 60;
+        tracersEvery = 1;
     };
     class Pylon_R_GUN_MELB_SOCOMD : Pylon_L_GUN_MELB_SOCOMD {
         model = "melb\proxies\pylon_m134_r";
