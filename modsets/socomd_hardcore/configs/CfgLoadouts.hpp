@@ -515,11 +515,11 @@ class CfgLoadouts {
 		};
 
 		class SOCOMD_Sniper {
-			optics[] = {"RH_leu_mk4", "ACE_optic_LRPS_PIP", "optic_LRPS"};
+			optics[] = {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps"};
 		};
 
 		class SOCOMD_Recon {
-			optics[] = {"RH_leu_mk4", "ACE_optic_LRPS_PIP", "optic_LRPS"};
+			optics[] = {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps"};
 		};
 	};
 };
