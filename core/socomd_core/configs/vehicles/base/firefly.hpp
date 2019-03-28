@@ -128,10 +128,6 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	forceInGarage = 1; \
 	crew = "SOCOMD_Pilot"; \
 	typicalCargo[] = {"SOCOMD_Pilot"}; \
-	armor = 60.0; \
-	armorStructural = 1.0; \
-	explosionShielding = 1.0; \
-	backRotorForceCoef = 0.4; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
