@@ -29,7 +29,7 @@ class _xx_##id { \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
-	LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+	LOADOUT_ITEM(11Rnd_45ACP_Mag, 5)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
@@ -207,18 +207,18 @@ class CfgLoadouts {
 				type = ITEM_VEST_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 8)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 4)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
-					// TODO: Add the ammo for the marksman once it is setup
 				};
 			};
+
 			class Backpack {
 				type = ITEM_BACKPACK_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_STANDARD_MEDICAL
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 8)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
 				};
 			};
 		};
