@@ -212,6 +212,40 @@ class SOCOMD_Rifleman {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
+// Marksman
+class SOCOMD_marksman {
+	primary		    = ITEM_PRIMARY_MARKSMAN;
+	secondary		= ITEM_SECONDARY_MARKSMAN;
+	handgun		    = ITEM_HANDGUN_MARKSMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MARKSMAN;
+	headgear		= ITEM_HEADGEAR_MARKSMAN;
+	binocular		= "Binocular";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_MARKSMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_MARKSMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
+		};
+	};
+	class Backpack {
+		type = ITEM_BACKPACK_MARKSMAN;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // Sapper
 
 class SOCOMD_Sapper {

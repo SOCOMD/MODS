@@ -37,8 +37,8 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_CableTie, 4)
 
 #define LOADOUT_VEST_ESSENTIALS \
-	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
-	LOADOUT_ITEM(ACE_M84, 3) \
+	LOADOUT_ITEM(CUP_HandGrenade_M67, 3) \
+	LOADOUT_ITEM(ACE_M84, 4) \
 	LOADOUT_ITEM(SmokeShell, 5) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
@@ -116,7 +116,7 @@ class CfgLoadouts {
 				class Inventory {
 					LOADOUT_VEST_ESSENTIALS
 					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
@@ -162,7 +162,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_PATROLLEADER;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
@@ -207,12 +207,49 @@ class CfgLoadouts {
 				type = ITEM_VEST_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 8)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
+					// TODO: Add the ammo for the marksman once it is setup
 				};
 			};
 			class Backpack {
 				type = ITEM_BACKPACK_RIFLEMAN;
+				class Inventory	{
+					LOADOUT_BACKPACK_ESSENTIALS
+					LOADOUT_STANDARD_MEDICAL
+				};
+			};
+		};
+		////////////////////////////////////////////////////////////////////////////////
+		// Marksman
+		class SOCOMD_marksman {
+			primary		    = ITEM_PRIMARY_MARKSMAN;
+			secondary		= ITEM_SECONDARY_MARKSMAN;
+			handgun		    = ITEM_HANDGUN_MARKSMAN;
+			handgunMagazine = ITEM_HANDGUN_MAGAZINE_MARKSMAN;
+			headgear		= ITEM_HEADGEAR_MARKSMAN;
+			binocular		= "";
+			gps			    = "";
+			maxOptic		= "4x";
+
+			class Uniform {
+				type = ITEM_UNIFORM_MARKSMAN;
+				class Inventory	{
+					LOADOUT_UNIFORM_ESSENTIALS
+				};
+			};
+
+			class Vest {
+				type = ITEM_VEST_MARKSMAN;
+				class Inventory	{
+					LOADOUT_VEST_ESSENTIALS
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 4)
+				};
+			};
+			class Backpack {
+				type = ITEM_BACKPACK_MARKSMAN;
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_STANDARD_MEDICAL
@@ -244,7 +281,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_SAPPER;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
@@ -328,7 +365,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_MEDIC;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
@@ -375,7 +412,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_AT;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
@@ -400,7 +437,7 @@ class CfgLoadouts {
 			headgear 		= ITEM_HEADGEAR_PILOT;
 			binocular 		= "";
 			gps 			= "";
-			maxOptic		= "2x";
+			maxOptic		= "1x";
 
 			class Uniform {
 				type = ITEM_UNIFORM_PILOT;
@@ -439,7 +476,7 @@ class CfgLoadouts {
 			headgear 		= ITEM_HEADGEAR_CREWMAN;
 			binocular		= "";
 			gps 			= "";
-			maxOptic		= "2x";
+			maxOptic		= "1x";
 
 			class Uniform {
 				type = ITEM_UNIFORM_CREWMAN;
@@ -469,7 +506,6 @@ class CfgLoadouts {
 
 		////////////////////////////////////////////////////////////////////////////////
 		// PJ
-
 		class SOCOMD_PJ {
 			primary 		= ITEM_PRIMARY_PJ;
 			secondary 		= ITEM_SECONDARY_PJ;
@@ -478,6 +514,7 @@ class CfgLoadouts {
 			headgear 		= ITEM_HEADGEAR_PJ;
 			binocular 		= "";
 			gps 			= "";
+			maxOptic		= "1x";
 
 			class Uniform {
 				type = ITEM_UNIFORM_PJ;
