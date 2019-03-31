@@ -15,4 +15,10 @@ class CfgMagazineWells {
 			"SOCOMD_Item_Magazine_Barret"
 		};
 	};
+
+	class SOCOMD_762_150Rnd {
+		SOCOMD_mags[] = {
+			"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer"
+		};
+	};
 };

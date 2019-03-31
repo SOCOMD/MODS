@@ -17,7 +17,7 @@ class CfgLoadoutWeapons {
 	class MachineGun_762;
 	class sma_minimi_mk3_762tsb : MachineGun_762 {
 		 magazines[] = {
-			{"SMA_150Rnd_762_M80A1", 4}
+			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
 

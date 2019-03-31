@@ -34,6 +34,7 @@ class CUP_lmg_m249_pip2 : CUP_lmg_minimi_railed {
 class sma_minimi_762_base_F;
 class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
 	displayName = "Mk 48 Maximi";
+	magazineWell[] = {"SOCOMD_762_150Rnd"};
 };
 
 //Rifle 300WM
