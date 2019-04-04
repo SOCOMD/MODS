@@ -19,8 +19,8 @@ class zeus_earpiece : NVGoggles {
 		mass = 4;
 	};
 };
-class NVGoggles_WP;
-class SOCOMD_NVG : NVGoggles_WP	{
+class USP_L3_pvs31_A2;
+class SOCOMD_NVG : USP_L3_pvs31_A2	{
 	displayName = "SOCOMD NVD (WP tube)";
 	descriptionShort = "SOCOMD NVD /w White Phosphor tube";
 	colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; // White Phosphor tube Preset
