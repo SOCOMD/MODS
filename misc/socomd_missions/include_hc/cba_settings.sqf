@@ -506,7 +506,9 @@ force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
 ////////////////////////////////////////////////////////////////////////////////
-// Hardcore Overrides
+//                          HARDCORE OVERRIDES
+//                  MUST REMAIN AT THE BOTTOM OF THE FILE
+////////////////////////////////////////////////////////////////////////////////
 
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_revealToAI = true;
