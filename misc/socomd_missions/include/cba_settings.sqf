@@ -103,9 +103,10 @@ ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
+force force ace_cargo_loadTimeCoefficient = 2.5;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
-force force force force ace_rearm_level = 1;
-force force force force ace_rearm_supply = 0;
+force force ace_rearm_level = 1;
+force force ace_rearm_supply = 1;
 force force ace_refuel_hoseLength = 12;
 force force ace_refuel_rate = 1;
 force force ace_repair_addSpareParts = true;
@@ -197,6 +198,7 @@ force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
 force force ace_medical_useLocation_SurgicalKit = 0;
 force force ace_medical_allowDeadBodyMovement = true;
+force force ace_medical_convertItems = 0;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
@@ -266,7 +268,7 @@ force force ace_scopes_enabled = true;
 force force ace_scopes_forceUseOfAdjustmentTurrets = true;
 force force ace_scopes_overwriteZeroRange = false;
 force force ace_scopes_simplifiedZeroing = false;
-ace_scopes_useLegacyUI = false;
+force force ace_scopes_useLegacyUI = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
 force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
@@ -370,6 +372,7 @@ force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
+force force ace_zeus_canCreateZeus = -1;
 
 // ACEX Fortify
 force force acex_fortify_settingHint = 0;
@@ -428,6 +431,9 @@ acre_sys_core_unmuteClients = true;
 // CBA UI
 cba_ui_StorePasswords = 1;
 
+// CUP
+force force CUP_Vehicles_PreventBarrelClip = false;
+
 // Fire For Effect
 force force RydFFE_2PhWithoutFO = true;
 force force RydFFE_Acc = 4;
@@ -460,10 +466,18 @@ Change the position recovery from left click to right click. = false;
 Enable automatic wall avoidance. = false;
 Lookahead for corner detection (in m) = "0.2";
 
+// VCOM DRIVING
+force force VCM_DRIVERLIMIT = 4;
+force force VCM_DrivingActivated = false;
+force force VCM_DrivingDelay = 0.75;
+force force VCM_DrivingDist = 10;
+
 // VCOM SETTINGS
 force force Vcm_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 100;
+force force VCM_AIHEALING = false;
+force force VCM_LGARRISONCHANCE = 25;
 force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
 force force VCM_ARTYENABLE = true;
@@ -481,3 +495,8 @@ force force VCM_STATICARMT = 5;
 force force VCM_StealVeh = false;
 force force VCM_WARNDELAY = 300;
 force force VCM_WARNDIST = 1000;
+
+// VET_Unflipping
+force force vet_unflipping_time = 10;
+force force vet_unflipping_unit_man_limit = 8;
+force force vet_unflipping_unit_mass_limit = 1200;
