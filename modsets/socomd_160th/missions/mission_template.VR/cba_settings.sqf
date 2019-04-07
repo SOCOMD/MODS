@@ -1,3 +1,10 @@
+// [FOX] NVG
+force fox_nvg_debug = false;
+force fox_nvg_mode = "playMusic";
+force fox_nvg_soundFile = "fox_nvg_sound";
+force fox_nvg_volume = true;
+
+
 // ACE Advanced Ballistics
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
@@ -96,14 +103,15 @@ ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
+force force ace_cargo_loadTimeCoefficient = 2.5;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
-force force force force ace_rearm_level = 1;
-force force force force ace_rearm_supply = 1;
+force force ace_rearm_level = 1;
+force force ace_rearm_supply = 1;
 force force ace_refuel_hoseLength = 12;
 force force ace_refuel_rate = 1;
 force force ace_repair_addSpareParts = true;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
-force force ace_repair_consumeItem_toolKit = 1;
+force force ace_repair_consumeItem_toolKit = 0;
 force force ace_repair_displayTextOnRepair = false;
 force force ace_repair_engineerSetting_fullRepair = 0;
 force force ace_repair_engineerSetting_repair = 0;
@@ -145,11 +153,11 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 1.8;
+force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 0.1;
+force force ace_medical_bleedingCoefficient = 0.4;
 force force ace_medical_blood_enabledFor = 1;
 force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 1;
@@ -164,7 +172,7 @@ force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = true;
 force force ace_medical_increaseTrainingInLocations = false;
 force force ace_medical_keepLocalSettingsSynced = true;
-force force ace_medical_level = 0;
+force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
 force force ace_medical_litterSimulationDetail = 1;
 force force ace_medical_maxReviveTime = 900;
@@ -178,11 +186,11 @@ ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 ace_medical_menuTypeStyle = 0;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 0.1;
+force force ace_medical_painCoefficient = 0.5;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 1.8;
-force force ace_medical_preventInstaDeath = true;
+force force ace_medical_playerDamageThreshold = 5;
+force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
 force force ace_medical_useCondition_SurgicalKit = 1;
@@ -190,6 +198,7 @@ force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
 force force ace_medical_useLocation_SurgicalKit = 0;
 force force ace_medical_allowDeadBodyMovement = true;
+force force ace_medical_convertItems = 0;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
@@ -259,7 +268,7 @@ force force ace_scopes_enabled = true;
 force force ace_scopes_forceUseOfAdjustmentTurrets = true;
 force force ace_scopes_overwriteZeroRange = false;
 force force ace_scopes_simplifiedZeroing = false;
-ace_scopes_useLegacyUI = false;
+force force ace_scopes_useLegacyUI = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
 force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
@@ -363,6 +372,7 @@ force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
+force force ace_zeus_canCreateZeus = -1;
 
 // ACEX Fortify
 force force acex_fortify_settingHint = 0;
@@ -421,6 +431,9 @@ acre_sys_core_unmuteClients = true;
 // CBA UI
 cba_ui_StorePasswords = 1;
 
+// CUP
+force force CUP_Vehicles_PreventBarrelClip = false;
+
 // Fire For Effect
 force force RydFFE_2PhWithoutFO = true;
 force force RydFFE_Acc = 4;
@@ -453,10 +466,18 @@ Change the position recovery from left click to right click. = false;
 Enable automatic wall avoidance. = false;
 Lookahead for corner detection (in m) = "0.2";
 
+// VCOM DRIVING
+force force VCM_DRIVERLIMIT = 4;
+force force VCM_DrivingActivated = false;
+force force VCM_DrivingDelay = 0.75;
+force force VCM_DrivingDist = 10;
+
 // VCOM SETTINGS
 force force Vcm_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 100;
+force force VCM_AIHEALING = false;
+force force VCM_LGARRISONCHANCE = 25;
 force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
 force force VCM_ARTYENABLE = true;
@@ -474,3 +495,20 @@ force force VCM_STATICARMT = 5;
 force force VCM_StealVeh = false;
 force force VCM_WARNDELAY = 300;
 force force VCM_WARNDIST = 1000;
+
+// VET_Unflipping
+force force vet_unflipping_time = 10;
+force force vet_unflipping_unit_man_limit = 8;
+force force vet_unflipping_unit_mass_limit = 1200;
+
+////////////////////////////////////////////////////////////////////////////////
+//                         160th JOINT OP OVERRIDES
+//                  MUST REMAIN AT THE BOTTOM OF THE FILE
+////////////////////////////////////////////////////////////////////////////////
+
+force force ace_medical_AIDamageThreshold = 1.8;
+force force ace_medical_bleedingCoefficient = 0.1;
+force force ace_medical_level = 0;
+force force ace_medical_painCoefficient = 0.1;
+force force ace_medical_playerDamageThreshold = 1.8;
+force force ace_medical_preventInstaDeath = true;

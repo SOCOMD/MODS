@@ -20,8 +20,6 @@ PROGRAM_CHANNEL("ACRE_PRC117F", 1, "HQ NET", 55.5, 55.5)
 PROGRAM_CHANNEL("ACRE_PRC117F", 2, "SOR NET", 33.2, 33.2)
 PROGRAM_CHANNEL("ACRE_PRC117F", 3, "SOCOMD NET", 31.9, 31.9)
 
-["ACRE_PRC117F", _presetId] call acre_api_fnc_setPreset;
-
 [] spawn {
 	waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
 
