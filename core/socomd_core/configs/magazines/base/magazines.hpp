@@ -2,6 +2,8 @@
 class 30Rnd_556x45_Stanag_Red;
 class 30Rnd_556x45_Stanag_Tracer_Red;
 class 200Rnd_556x45_Box_Tracer_Red_F;
+class 30Rnd_65x39_caseless_mag;
+class 30Rnd_65x39_caseless_mag_Tracer;
 class 20Rnd_762x51_Mag;
 class 150Rnd_762x54_Box_Tracer;
 class 7Rnd_408_Mag;

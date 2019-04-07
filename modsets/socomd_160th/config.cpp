@@ -20,4 +20,11 @@ class CfgPatches {
 	};
 };
 
-#include "CfgMissions.hpp"
+#include "configs\CfgMissions.hpp"
+#include "configs\CfgEditorCategories.hpp"
+#include "configs\CfgEditorSubcategories.hpp"
+#include "configs\CfgMagazines.hpp"
+#include "configs\CfgWeapons.hpp"
+#include "configs\CfgVehicles.hpp"
+#include "configs\CfgLoadouts.hpp"
+#include "configs\CfgAmmo.hpp"

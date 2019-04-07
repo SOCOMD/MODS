@@ -12,6 +12,13 @@ class CfgMagazineWells {
 		};
 	};
 
+	class CBA_65x39_MX {
+		SOCOMD_mags[] = {
+			"SOCOMD_Item_Magazine_65x39_30Rnd",
+			"SOCOMD_Item_Magazine_65x39_30Rnd_Tracer"
+		};
+	};
+
 	class CBA_762x51_HK417 {
 		SOCOMD_mags[] = {
 			"SOCOMD_Item_Magazine_762x51_20Rnd"

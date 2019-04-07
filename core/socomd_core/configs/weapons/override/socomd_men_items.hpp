@@ -1,7 +1,7 @@
 class SOCOMD_Item_Primary_TroopLeader               : arifle_SPAR_01_GL_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_PatrolLeader              : arifle_SPAR_01_GL_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Rifleman                  : arifle_SPAR_01_blk_F {scope = protected;};
-class SOCOMD_Item_Primary_Marksman                  : arifle_SPAR_01_blk_F {scope = protected;};
+class SOCOMD_Item_Primary_Marksman                  : arifle_SPAR_03_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Medic                     : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Sapper                    : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_MachineGunner             : LMG_03_F {scope = protected;};
@@ -35,7 +35,7 @@ class SOCOMD_Item_Secondary_Sapper                  : ItemCore {scope = protecte
 class SOCOMD_Item_Secondary_MachineGunner           : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Sniper                  : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Recon                   : ItemCore {scope = protected;};
-class SOCOMD_Item_Secondary_AT                     	: launch_NLAW_F {scope = protected;};
+class SOCOMD_Item_Secondary_AT                     	: launch_MRAWS_green_rail_F {scope = protected;};
 class SOCOMD_Item_Secondary_PJ                      : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Pilot                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Crewman                 : ItemCore {scope = protected;};
