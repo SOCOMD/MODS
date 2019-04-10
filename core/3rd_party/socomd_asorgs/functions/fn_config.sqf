@@ -211,7 +211,7 @@ ASORGS_Blacklist = [
 	"RH_pas13ch",
 	"RH_pas13cm",
 	"RH_pas13cmg",
-	"RH_pas13cl",
+	"RH_pas13cl"
 
 ];
 
