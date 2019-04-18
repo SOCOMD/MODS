@@ -19,6 +19,6 @@ if(!isPlayer _curatorEntity) exitWith {
 	deleteVehicle _logic;
 };
 
-[_curatorEntity, currentWeapon _curatorEntity] call ace_overheating_fnc_jamWeapon;
+[_curatorEntity, currentWeapon _curatorEntity] remoteExec ["ace_overheating_fnc_jamWeapon", owner _curatorEntity];
 
 deleteVehicle _logic;
