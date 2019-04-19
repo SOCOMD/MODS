@@ -140,6 +140,18 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	class AcreIntercoms { \
+		class Intercom_1 { \
+			displayName = "Crew Intercom"; \
+			shortName = "Crew"; \
+			allowedPositions[] = {"crew"}; \
+			disabledPositions[] = {{"Turret", {0,0}, {1}, {2}}}; \
+			limitedPositions[] = {}; \
+			numLimitedPositions = 0; \
+			masterPositions[] = {"commander"}; \
+			connectedByDefault = 1; \
+		}; \
+	}; \
 };
 
 FIREFLY_BASE(A)
@@ -174,6 +186,17 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	}; \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
+	class AcreIntercoms { \
+		class Intercom_1 { \
+			displayName = "Crew Intercom"; \
+			shortName = "Crew"; \
+			allowedPositions[] = {"crew"}; \
+			limitedPositions[] = {}; \
+			numLimitedPositions = 0; \
+			masterPositions[] = {"commander"}; \
+			connectedByDefault = 1; \
+		}; \
 	}; \
 };
 

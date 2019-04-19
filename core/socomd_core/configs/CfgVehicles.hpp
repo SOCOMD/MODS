@@ -122,10 +122,6 @@ class CfgVehicles  {
 		class Turrets : Turrets {
 			class CopilotTurret;
 		};
-
-		class AcreIntercoms : AcreIntercoms {
-			class Intercom_1;
-		};
 	};
 
 	////////////////////////////////////////////////////////////////////////////////

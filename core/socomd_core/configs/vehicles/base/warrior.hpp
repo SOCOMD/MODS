@@ -30,6 +30,17 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	class AcreIntercoms { \
+		class Intercom_1 { \
+			displayName = "Crew Intercom"; \
+			shortName = "Crew"; \
+			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
+			limitedPositions[] = {}; \
+			numLimitedPositions = 0; \
+			masterPositions[] = {"commander"}; \
+			connectedByDefault = 1; \
+		}; \
+	}; \
 };
 
 WARRIOR_BASE(A,public)

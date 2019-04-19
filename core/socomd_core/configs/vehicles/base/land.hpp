@@ -244,6 +244,18 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 			initPhase = 1;
 		};
 	};
+
+	class AcreIntercoms {
+		class Intercom_1 {
+			displayName = "Crew Intercom";
+			shortName = "Crew";
+			allowedPositions[] = {"crew"};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"commander"};
+			connectedByDefault = 1;
+		};
+	};
 };
 
 class SOCOMD_APC_B : SOCOMD_APC_A {

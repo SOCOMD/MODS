@@ -29,6 +29,17 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	class AcreIntercoms { \
+		class Intercom_1 { \
+			displayName = "Crew Intercom"; \
+			shortName = "Crew"; \
+			allowedPositions[] = {"crew"}; \
+			limitedPositions[] = {}; \
+			numLimitedPositions = 0; \
+			masterPositions[] = {"commander"}; \
+			connectedByDefault = 1; \
+		}; \
+	}; \
 };
 
 HURRICANE_BASE(A)
