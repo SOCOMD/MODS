@@ -34,7 +34,7 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 		class Intercom_1 { \
 			displayName = "Crew Intercom"; \
 			shortName = "Crew"; \
-			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
+			allowedPositions[] = {"crew"}; \
 			limitedPositions[] = {}; \
 			numLimitedPositions = 0; \
 			masterPositions[] = {"commander"}; \
