@@ -66,6 +66,7 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	ace_rearm_isSupplyVehicle = 1; \
 };
 
 TRUCK_AMMO_BASE(A)
