@@ -3,10 +3,10 @@ class Vest_Camo_Base: ItemCore
 	{
 		class ItemInfo;
 	};
-class Russian_SSO_Vest: Vest_Camo_Base
+class SOCOMD_RUS_Vest: Vest_Camo_Base
 	{
 		scope=2;
-		displayName="Russian SSO Vest";
+		displayName="Russian Special Forces Vest";
 		author="Monk";
 		model="A3\Characters_F_beta\indep\equip_ia_vest02.p3d";
 		descriptionShort="Vest used by Russian SF";

@@ -37,6 +37,24 @@ class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
 };
 
+//Machine Gun 762
+class CUP_lmg_FNMAG_RIS;
+class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
+	displayName = "MAG 58";
+	magazineWell[] = {
+		"SOCOMD_762_150Rnd",
+		"CBA_762x51_LINKS",
+		"M240_762x51"};
+	magazines[]=
+		{
+			"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+		};
+	ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_slowdownFactor = 1; //Slowdown Factor (this will be scaled based on the barrel temp)
+	ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
+	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)  
+};
+
 //Rifle 300WM
 class hlc_AWC_base;
 class hlc_rifle_awmagnum : hlc_AWC_base {
@@ -52,9 +70,10 @@ class ej_m107 : ej_barrett_base {
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
 
+//Russian Gun
 class CUP_arifle_AK104_railed;
-class Socomd_Russian_AK: CUP_arifle_AK104_railed {
-	displayName="Russian SSO Rifle";
+class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
+	displayName="RU-AK-104 (Modified)";
 	hiddenSelections[]=
 		{
 			"Camo1",
@@ -69,6 +88,75 @@ class Socomd_Russian_AK: CUP_arifle_AK104_railed {
 			"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
 			"socomd_data_core\Russian\fortisshift_foregrip_co.paa"
 		};
+		magazines[]=
+		{
+			"CUP_30Rnd_545x39_AK74M_camo_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_Subsonic_545x39_AK74M_M",
+			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+			"CUP_30Rnd_TE1_White_Tracer_545x39_AK74M_M",
+			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_Subsonic_545x39_AK_M",
+			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M",
+			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",
+			"CUP_30Rnd_TE1_White_Tracer_545x39_AK_M",
+			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK74_plum_M",
+			"CUP_30Rnd_Subsonic_545x39_AK74_plum_M",
+			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74_plum_M",
+			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M",
+			"CUP_30Rnd_TE1_White_Tracer_545x39_AK74_plum_M",
+			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74_plum_M",
+			"CUP_20Rnd_545x39_AKSU_M",
+			"CUP_20Rnd_Subsonic_545x39_AKSU_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M",
+			"CUP_60Rnd_545x39_AK74M_M",
+			"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+			"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+			"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
+			"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
+		};
+};
+class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
+	displayName="RU-AK-104 (Modified)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1_low_OD";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "RH_peq15b";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_Bizon";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+class CUP_arifle_AK103_GL_railed;
+class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
+	displayName="RU-AK-104-GL (Modified)";
+	hiddenSelections[] = {
+		"Camo1",
+		"Camo2",
+		"Camo3",
+		"CamoRail",
+		"CamoGL1",
+		"CamoGL2"};
+		hiddenSelectionsTextures[]=
+		{
+			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_body_camo_co.paa",
+			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_stock_camo_co.paa",
+			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_magazine_camo_co.paa",
+			"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
+			"CUP\Weapons\CUP_Weapons_AK\Data\gp25_body_co.paa",
+			"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
+		};
+
 		magazines[]=
 		{
 			"CUP_30Rnd_545x39_AK74M_camo_M",

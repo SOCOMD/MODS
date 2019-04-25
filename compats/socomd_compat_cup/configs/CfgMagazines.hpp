@@ -182,5 +182,15 @@ class CfgMagazines {
     class Pylon_M261_MELB : FakeMagazine_MELB {
         hardpoints[] = {""};
     };
+
+    class CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M;
+    class SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M{
+        displayName="250rnd Mag 58 Box";
+		count=250;
+		ammo="CUP_B_762x51_Tracer_Red";
+		descriptionShort="Mag 58 200rnd Box 7.62x51";
+		mass=70;
+		tracersEvery=1;
+    }
     
 };

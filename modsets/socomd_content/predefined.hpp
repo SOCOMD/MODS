@@ -253,3 +253,46 @@
 #define ITEM_BACKPACK_PJ                        "SOCOMD_Item_Backpack_PJ"
 #define ITEM_BACKPACK_PILOT                     "SOCOMD_Item_Backpack_Pilot"
 #define ITEM_BACKPACK_CREWMAN                   "SOCOMD_Item_Backpack_Crewman"
+
+//Russian SF
+
+#define Item_RUSSIAN_PRIMARY_Troopleader        "SOCOMD_RUS_AK_GL"
+#define Item_RUSSIAN_PRIMARY_PatrolLeader       "SOCOMD_RUS_AK_GL"
+#define Item_RUSSIAN_PRIMARY_Rifleman           "SOCOMD_RUS_AK_acc"
+#define Item_RUSSIAN_PRIMARY_Marksman		    "SOCOMD_RUS_AK"
+#define Item_RUSSIAN_PRIMARY_Medic              "SOCOMD_RUS_AK"
+#define Item_RUSSIAN_PRIMARY_Sapper             "SOCOMD_RUS_AK"
+#define Item_RUSSIAN_PRIMARY_MachineGunner      "CUP_lmg_Pecheneg"
+#define Item_RUSSIAN_PRIMARY_Sniper             "SOCOMD_RUS_AK"
+#define Item_RUSSIAN_PRIMARY_Recon              "SOCOMD_RUS_AK"
+#define Item_RUSSIAN_PRIMARY_AT                 "SOCOMD_RUS_AK"
+
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Troopleader        "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_PatrolLeader       "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Rifleman           "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Marksman		     "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Medic              "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Sapper             "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_MachineGunner      "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Sniper             "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_Recon              "CUP_30Rnd_545x39_AK74M_camo_M"
+#define Item_RUSSIAN_PRIMARY_MAGAZINE_AT                 "CUP_30Rnd_545x39_AK74M_camo_M"
+
+#define ITEM_RUSSIAN_HANDGUN          			"RH_mak"
+
+#define ITEM_RUSSIAN_HANDGUN_MAGAZINE           "RH_8Rnd_9x18_Mak"
+
+#define ITEM_RUSSIAN_SECONDARY_AT				"CUP_launch_RPG18"
+#define ITEM_RUSSIAN_SECONDARY_MAT				"SOCOMD_Item_Secondary_MAT"
+#define ITEM_RUSSIAN_SECONDARY_HAT				"launch_O_Vorona_green_F"
+
+#define ITEM_RUSSIAN_HEADGEAR               "ADFU_H_Airframe_10_OD"
+#define ITEM_RUSSIAN_FACEGEAR               "milgp_f_face_shield_tactical_shemagh_RGR"
+
+#define ITEM_RUSSIAN_UNIFORM              "SOCOMD_RUS_SleevesDown"
+
+#define ITEM_RUSSIAN_VEST           	"SOCOMD_RUS_Vest"
+
+#define ITEM_RUSSIAN_BACKPACK_light           "backpack_OD"
+#define ITEM_RUSSIAN_BACKPACK_heavy           "KIT_BAG_Alpin_OD"
+#define ITEM_RUSSIAN_BACKPACK_leader           "KIT_BAG_R_blk"

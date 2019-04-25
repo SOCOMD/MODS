@@ -7,7 +7,7 @@ class SOCOMD_RUS_SleevesDown : ADFU_G3_MC {
 	class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="SOCOMD_Soldier_RUS_SleevesDown";
+			uniformClass="SOCOMD_RUS_Soldier_SleevesDown";
 			containerClass="Supply80";
 			mass=40;
 		};
