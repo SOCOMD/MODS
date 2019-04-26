@@ -21,4 +21,23 @@ class CfgMagazineWells {
 			"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer"
 		};
 	};
+	class VOG_40mm
+	{
+		CUP_mags[]=
+		{
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_IlumFlareWhite_GP25_M",
+			"CUP_IlumFlareRed_GP25_M",
+			"CUP_IlumFlareGreen_GP25_M",
+			"CUP_FlareWhite_GP25_M",
+			"CUP_FlareGreen_GP25_M",
+			"CUP_FlareRed_GP25_M",
+			"CUP_FlareYellow_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKERED_GP25_M",
+			"CUP_1Rnd_SMOKEGREEN_GP25_M",
+			"CUP_1Rnd_SMOKEYELLOW_GP25_M",
+			"ACE_HuntIR_M203"
+		};
+	};
 };

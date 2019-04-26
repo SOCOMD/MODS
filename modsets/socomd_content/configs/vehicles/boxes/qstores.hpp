@@ -166,3 +166,61 @@ class SOCOMD_QStore_TAG : SOCOMD_QStore_Base {
 		};
 	};
 };
+
+
+
+class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
+	scope = public;
+	scopeCurator = public;
+	author = AUTHOR_STR;
+	displayName = "QStore RUS";
+
+	class ACE_Actions {
+		class ACE_MainActions {
+			displayName = "TAG - East";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class SOCOMD_Personalise {
+				displayName = "Personalise";
+				condition = 1;
+				statement = "call ASORGS_fnc_Open";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			// Select Loadouts
+			QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
+				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (Russian SSO)")
+					QSTORE_ACTION_LOADOUT("Commander",SOCOMD_RUS_Commander)
+					QSTORE_ACTION_LOADOUT("Leader",SOCOMD_RUS_Leader)
+					QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_RUS_Rifleman)
+					QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_RUS_Marksman)
+					QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_RUS_Sapper)
+					QSTORE_ACTION_LOADOUT("Machinegunner",SOCOMD_RUS_Machinegunner)
+					QSTORE_ACTION_LOADOUT("Medic",SOCOMD_RUS_Medic)
+					QSTORE_ACTION_LOADOUT("AT",SOCOMD_RUS_AT)
+				QSTORE_ACTION_GRP_END
+
+				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB1,"Change Role (SUPPORT)")
+					QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
+					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
+					QSTORE_ACTION_LOADOUT("PJ",SOCOMD_PJ)
+					QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
+				QSTORE_ACTION_GRP_END
+			QSTORE_ACTION_GRP_END
+
+			// Switch Uniforms
+			QSTORE_ACTION_GRP_BEGIN(SELECT_UNIFORMS,"Uniforms")
+				class SOCOMD_Uniforms_ToggleDiving {
+					displayName = "Toggle Diving Uniform";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
+					statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+			QSTORE_ACTION_GRP_END
+		};
+	};
+};

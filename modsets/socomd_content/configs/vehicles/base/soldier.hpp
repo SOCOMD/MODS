@@ -26,7 +26,7 @@
 	ITEM01("ItemMap"), \
 	ITEM01("ItemCompass"), \
 	ITEM01("ItemWatch"), \
-	ITEM01("SOCOMD_BERET")
+	ITEM01("CUP_H_RUS_Beret_Spetsnaz")
 
 class B_Soldier_02_f;
 class SOCOMD_RUS_Unarmed : B_Soldier_02_f {
@@ -56,10 +56,29 @@ class SOCOMD_RUS_Unarmed : B_Soldier_02_f {
 };
 
 #define SOLDER_RUS_RIFLEMAN_WEAPONS \
-	ITEM01(Item_RUSSIAN_PRIMARY_Rifleman )
+	ITEM01(Item_RUSSIAN_PRIMARY_Rifleman_AI ),\
+	ITEM01(ITEM_RUSSIAN_HANDGUN)
+
+#define SOLDER_RUS_LEADER_WEAPONS \
+	ITEM01(Item_RUSSIAN_PRIMARY_Troopleader_AI),\
+	ITEM01(ITEM_RUSSIAN_HANDGUN)
+
+#define SOLDER_RUS_MACHINEGUNNER_WEAPONS \
+	ITEM01(Item_RUSSIAN_PRIMARY_MachineGunner_AI ),\
+	ITEM01(ITEM_RUSSIAN_HANDGUN)
 
 #define SOLDER_RUS_RIFLEMAN_MAGAZINES \
-	ITEM07(Item_RUSSIAN_PRIMARY_MAGAZINE_Rifleman)
+	ITEM07(Item_RUSSIAN_PRIMARY_MAGAZINE_Rifleman), \
+	ITEM03(ITEM_RUSSIAN_HANDGUN_MAGAZINE)
+
+#define SOLDER_RUS_LEADER_MAGAZINES \
+	ITEM07(Item_RUSSIAN_PRIMARY_MAGAZINE_Rifleman), \
+	ITEM03(ITEM_RUSSIAN_HANDGUN_MAGAZINE), \
+	ITEM09("CUP_1Rnd_HE_GP25_M")
+
+#define SOLDER_RUS_MACHINEGUNNER_MAGAZINES \
+	ITEM07(Item_RUSSIAN_PRIMARY_MAGAZINE_MachineGunner), \
+	ITEM03(ITEM_RUSSIAN_HANDGUN_MAGAZINE)
 
 #define SOLDIER_RUS_RIFLEMAN_LINKEDITEMS \
 	SOLDIER_LOADOUT_LINKEDITEMS, \
@@ -69,7 +88,7 @@ class SOCOMD_RUS_Unarmed : B_Soldier_02_f {
 
 
 
-class SOCOMD_RUS_Rifleman : SOCOMD_RUS_Unarmed {
+class SOCOMD_RUS_soldier_Rifleman : SOCOMD_RUS_Unarmed {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_RUS_EdCat_Core;
@@ -77,7 +96,7 @@ class SOCOMD_RUS_Rifleman : SOCOMD_RUS_Unarmed {
 	side = EAST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Rifleman";
+	displayname = "Operator (AK)";
 	vehicleclass = "Man";
 	identityTypes[] = {"Head_Greek", "G_CIVIL_male"};
 
@@ -85,6 +104,48 @@ class SOCOMD_RUS_Rifleman : SOCOMD_RUS_Unarmed {
 	respawnWeapons[] 			= {SOLDER_RUS_RIFLEMAN_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
+	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
+	backpack					= ITEM_RUSSIAN_BACKPACK_light;
+};
+
+class SOCOMD_RUS_soldier_Machinegunner : SOCOMD_RUS_soldier_Rifleman {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_RUS_EdCat_Core;
+	editorSubcategory = SOCOMD_RUS_EdSubcat_Man;
+	side = EAST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Machinegunner (PKP)";
+	vehicleclass = "Man";
+	identityTypes[] = {"Head_Greek", "G_CIVIL_male"};
+
+	weapons[] 					= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
+	respawnWeapons[] 			= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
+	magazines[] 				= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
+	respawnMagazines[] 			= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
+	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
+	backpack					= ITEM_RUSSIAN_BACKPACK_light;
+};
+
+class SOCOMD_RUS_soldier_Leader : SOCOMD_RUS_soldier_Rifleman {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_RUS_EdCat_Core;
+	editorSubcategory = SOCOMD_RUS_EdSubcat_Man;
+	side = EAST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Leader (GL)";
+	vehicleclass = "Man";
+	identityTypes[] = {"Head_Greek", "G_CIVIL_male"};
+
+	weapons[] 					= {SOLDER_RUS_LEADER_WEAPONS};
+	respawnWeapons[] 			= {SOLDER_RUS_LEADER_WEAPONS};
+	magazines[] 				= {SOLDER_RUS_LEADER_MAGAZINES};
+	respawnMagazines[] 			= {SOLDER_RUS_LEADER_MAGAZINES};
 	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
 	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
 	backpack					= ITEM_RUSSIAN_BACKPACK_light;

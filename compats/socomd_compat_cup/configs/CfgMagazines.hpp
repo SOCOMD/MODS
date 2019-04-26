@@ -191,6 +191,35 @@ class CfgMagazines {
 		descriptionShort="Mag 58 200rnd Box 7.62x51";
 		mass=70;
 		tracersEvery=1;
-    }
-    
+    };
+
+    class CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M;
+    class SOCOMD_RPK_MAGAZINE: CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M
+	{
+		author="$STR_CUP_AUTHOR_STRING";
+		scope=2;
+		displayName="$STR_CUP_dn_rpk762_75rnd_M";
+		ammo="CUP_B_545x39_Ball_Tracer_Green";
+		count=75;
+		type="2 * 256";
+		picture="\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\M_RPK_74_CA.paa";
+		tracersEvery=4;
+		lastRoundsTracer=4;
+		nameSound="mgun";
+		descriptionShort="$STR_CUP_dss_rpk762_75rnd_M";
+		mass=36;
+		initSpeed=750;
+		ACE_isBelt=0;
+		model="\CUP\Weapons\CUP_Weapons_Ammunition\magazines\CUP_mag_75Rnd_RPK.p3d";
+		modelSpecial="\CUP\Weapons\CUP_Weapons_Ammunition\magazines_proxy\CUP_mag_75Rnd_RPK.p3d";
+		modelSpecialIsProxy=1;
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\cup\weapons\cup_weapons_ak\data\rpk_magazine_drum_co.paa"
+		};
+	}; 
 };

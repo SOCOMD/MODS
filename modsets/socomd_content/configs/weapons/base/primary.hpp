@@ -189,3 +189,67 @@ class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
 			"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
 		};
 };
+class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1_low_OD";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "RH_peq15b";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_Bizon";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+class CUP_arifle_RPK74M_railed;
+class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
+	displayName="RU-RPK-74m (Modified)";
+	hiddenSelections[] = {
+		"Camo1",
+		"Camo2",
+		"Camo3",
+		"Camo4"
+		};
+	hiddenSelectionsTextures[] = {
+		"CUP\Weapons\CUP_Weapons_AK\Data\rpk_body_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\rpk_furniture_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\rpk74m_furniture_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\rpk74m_other_co.paa"
+		};
+
+	magazines[] = {
+		"SOCOMD_RPK_MAGAZINE",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_Subsonic_545x39_AK_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_Subsonic_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74_plum_M",
+		"CUP_30Rnd_Subsonic_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_545x39_AK74M_camo_M",
+		"CUP_20Rnd_545x39_AKSU_M",
+		"CUP_20Rnd_Subsonic_545x39_AKSU_M",
+		"CUP_60Rnd_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"};
+};
