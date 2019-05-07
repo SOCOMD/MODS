@@ -190,7 +190,7 @@ class CfgMagazines {
 		ammo="CUP_B_762x51_Tracer_Red";
 		descriptionShort="Mag 58 200rnd Box 7.62x51";
 		mass=70;
-		tracersEvery=1;
+		tracersEvery=5;
     };
 
     class CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M;

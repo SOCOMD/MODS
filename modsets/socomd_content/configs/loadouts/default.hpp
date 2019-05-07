@@ -90,15 +90,94 @@ class SOCOMD_Sniper {
 };
 
 class SOCOMD_Recon {
+	primary		    = "bnae_trg42_camo2_virtual";
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
 	class Vest {
 		type = ITEM_VEST_RECON;
 		class Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 9)
+			LOADOUT_ITEM(5Rnd_338LM_Magazine, 7)
+			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2)
 		};
 	};
 };
 
+
+class SOCOMD_MortarMini {
+	primary		    = ITEM_PRIMARY_RIFLEMAN;
+	secondary		= "twc_2inch_bag";
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+	class Backpack {
+		type = "Kit_Bag_MC";
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(twc_2inch_he_1rnd, 5)
+			LOADOUT_ITEM(twc_2inch_smoke_1rnd, 2)
+			LOADOUT_ITEM(twc_2inch_illum_1rnd, 2)
+		};
+	};
+};
+
+class SOCOMD_MMGAmmo {
+	primary		    = ITEM_PRIMARY_RIFLEMAN;
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+			LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 2)
+		};
+	};
+	class Backpack {
+		type = "Kit_Bag_MC";
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 2)
+			LOADOUT_ITEM(dzn_tripod_mg_nato, 1)
+			
+		};
+	};
+};
 
 ///Counter Terrorism
 class TAGE_TroopLeader

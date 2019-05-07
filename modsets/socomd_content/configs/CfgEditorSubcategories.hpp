@@ -7,6 +7,9 @@ class CfgEditorSubcategories {
 	class SOCOMD_RUS_EdSubcat_Man {
 		displayName = "Men"
 	};
+	class SOCOMD_RUS_EdSubcat_Man_Night {
+		displayName = "Men (Night)"
+	};
 	class SOCOMD_RUS_EdSubcat_Vehicle_Land {
 		displayName = "Land"
 	};

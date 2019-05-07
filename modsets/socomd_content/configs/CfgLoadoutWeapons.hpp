@@ -75,6 +75,24 @@ class CfgLoadoutWeapons {
 			{"SOCOMD_Item_Magazine_Barret", 3}
 		};
 	};
+	
+	class bnae_trg42_camo2_virtual;
+	class Recon_338 : bnae_trg42_camo2_virtual {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+		magazines[] = {
+			{"5Rnd_338LM_Magazine", 9}
+		};
+	};
 
-
+	class bnae_falkor_camo1_virtual;
+	class Recon_300WM : bnae_falkor_camo1_virtual {
+		loadoutWhitelist[] = {
+			"SOCOMD_Recon"
+		};
+		magazines[] = {
+			{"10Rnd_300WM_Magazine", 5}
+		};
+	};
 };

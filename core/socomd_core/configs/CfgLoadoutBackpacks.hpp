@@ -33,7 +33,6 @@ class CfgLoadoutBackpacks {
 	class SOG_BAG_od : Backpack_Operator { };
 	class Kit_Bag_od : Backpack_Operator { };
 
-
 	class Backpack_Sapper {
 		loadoutWhitelist[] = {
 			"SOCOMD_Sapper"
@@ -56,4 +55,13 @@ class CfgLoadoutBackpacks {
 	class SOG_BAG_med_tan : Backpack_Medic { };
 	class SOG_BAG_med_MC : Backpack_Medic { };
 	class SOG_BAG_med_od : Backpack_Medic { };
+
+	class Backpack_Mortar {
+		loadoutWhitelist[] = {
+			"SOCOMD_Mortar"
+		};
+	};
+
+	class B_Mortar_01_weapon_F : Backpack_Mortar { };
+	class B_Mortar_01_support_F : Backpack_Mortar { };
 };

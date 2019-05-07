@@ -444,7 +444,7 @@ class SOCOMD_Recon {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_RECON;
+		type = "Kit_Bag_R_MC";
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
@@ -490,6 +490,110 @@ class SOCOMD_AT {
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
 		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// MAG58
+
+class SOCOMD_MMG {
+	primary		    = SOCOMD_mag58;
+	secondary		= ITEM_SECONDARY_RIFLEMAN;
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 3)
+		};
+	};
+	class Backpack {
+		type = "Kit_Bag_MC";
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+		};
+	};
+};
+
+class SOCOMD_MMGAmmo {
+	primary		    = ITEM_PRIMARY_RIFLEMAN;
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+	class Backpack {
+		type = "Kit_Bag_MC";
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 4)
+			
+		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// MORTAR
+
+class SOCOMD_Mortar {
+	primary		    = ITEM_PRIMARY_RIFLEMAN;
+	secondary		= ITEM_SECONDARY_RIFLEMAN;
+	handgun		    = ITEM_HANDGUN_RIFLEMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemMicroDAGR";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+			LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 5)			
+		};
+	};
+	class Backpack {
+		type = B_Mortar_01_weapon_F;
 	};
 };
 

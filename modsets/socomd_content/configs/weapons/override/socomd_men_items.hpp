@@ -16,3 +16,5 @@ class SOCOMD_Item_Secondary_AT                      : HAFM_LAW {};
 
 class Sniper_Barret                                 : ej_m107 {};
 class Recon_Barret                                  : ej_m107 {};
+class Recon_300WM                                   : bnae_falkor_camo1_virtual {};
+class Recon_338                                     : bnae_trg42_camo2_virtual {};

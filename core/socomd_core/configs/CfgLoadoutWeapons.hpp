@@ -4,7 +4,8 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
-			"SOCOMD_AT"
+			"SOCOMD_AT",
+			"SOCOMD_MMGAmmo"
 		};
 
 		magazines[] = {

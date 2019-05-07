@@ -70,6 +70,61 @@ class ej_m107 : ej_barrett_base {
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
 
+class bnae_trg42_camo2_virtual;
+
+class bnae_falkor_camo1_virtual;
+/*
+
+class SOCOMD_trg42 : bnae_trg42_camo2_virtual {
+	magazineWell[] = {"SOCOMD_338_bolt"};
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+	class WeaponSlotsInfo {
+		class UnderBarrelSlot {
+			access=1;
+			compatibleitems[]=
+			{
+				"bnae_bipod_v2_virtual",
+				"dzn_tripod_rifle",
+				"dzn_tripod_rifle_od",
+				"dzn_tripod_rifle_tan"
+			};
+			linkproxy="\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+			iconPosition[]={0.2,0.80000001};
+			iconScale=0.30000001;
+		};
+	};
+	
+};
+
+
+
+class SOCOMD_falkor : bnae_falkor_camo1_virtual{
+	magazineWell[] = {"SOCOMD_300WM_semi"};
+	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
+	class WeaponSlotsInfo
+		{
+		class UnderBarrelSlot
+			{
+			access=1;
+			compatibleitems[] = {
+				"bnae_bipod_blk_virtual",
+				"bnae_bipod_snd_virtual",
+				"bipod_01_F_snd",
+				"bipod_01_F_blk",
+				"bipod_01_F_mtp",
+				"bipod_01_F_khk",
+				"bipod_02_F_blk",
+				"bipod_02_F_tan",
+				"bipod_02_F_hex",
+				"bipod_03_F_blk",
+				"bipod_03_F_oli",
+				"dzn_tripod_rifle",
+				"dzn_tripod_rifle_od",
+				"dzn_tripod_rifle_tan"
+			};
+		};
+	};
+};*/
 //Russian Gun
 class CUP_arifle_AK104_railed;
 class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
@@ -119,6 +174,17 @@ class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
 			"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
 			"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
 		};
+	/*class Single {
+		dispersion=0.00015;
+	};
+	class Burst {
+		dispersion=0.00015;
+	};
+	class FullAuto {
+		dispersion=0.00015;
+	};*/
+	aiDispersionCoefY=4;
+	aiDispersionCoefX=4;
 };
 class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
 	displayName="RU-AK-104 (Modified)";
@@ -147,47 +213,50 @@ class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
 		"CamoRail",
 		"CamoGL1",
 		"CamoGL2"};
-		hiddenSelectionsTextures[]=
-		{
-			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_body_camo_co.paa",
-			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_stock_camo_co.paa",
-			"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_magazine_camo_co.paa",
-			"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
-			"CUP\Weapons\CUP_Weapons_AK\Data\gp25_body_co.paa",
-			"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
-		};
+	hiddenSelectionsTextures[]=
+	{
+		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_body_camo_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_stock_camo_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_magazine_camo_co.paa",
+		"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_body_co.paa",
+		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
+	};
 
-		magazines[]=
-		{
-			"CUP_30Rnd_545x39_AK74M_camo_M",
-			"CUP_30Rnd_545x39_AK74M_M",
-			"CUP_30Rnd_Subsonic_545x39_AK74M_M",
-			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M",
-			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74M_M",
-			"CUP_30Rnd_TE1_White_Tracer_545x39_AK74M_M",
-			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
-			"CUP_30Rnd_545x39_AK_M",
-			"CUP_30Rnd_Subsonic_545x39_AK_M",
-			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M",
-			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",
-			"CUP_30Rnd_TE1_White_Tracer_545x39_AK_M",
-			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
-			"CUP_30Rnd_545x39_AK74_plum_M",
-			"CUP_30Rnd_Subsonic_545x39_AK74_plum_M",
-			"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74_plum_M",
-			"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M",
-			"CUP_30Rnd_TE1_White_Tracer_545x39_AK74_plum_M",
-			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74_plum_M",
-			"CUP_20Rnd_545x39_AKSU_M",
-			"CUP_20Rnd_Subsonic_545x39_AKSU_M",
-			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M",
-			"CUP_60Rnd_545x39_AK74M_M",
-			"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
-			"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
-			"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
-			"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
-		};
+	magazines[]=
+	{
+		"CUP_30Rnd_545x39_AK74M_camo_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_Subsonic_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_Subsonic_545x39_AK_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK74_plum_M",
+		"CUP_30Rnd_Subsonic_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Green_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_White_Tracer_545x39_AK74_plum_M",
+		"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK74_plum_M",
+		"CUP_20Rnd_545x39_AKSU_M",
+		"CUP_20Rnd_Subsonic_545x39_AKSU_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M",
+		"CUP_60Rnd_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
+		"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
+	};
+	aiDispersionCoefY=4;
+	aiDispersionCoefX=4;
+
 };
 class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
 	class LinkedItems{
@@ -251,5 +320,42 @@ class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
 		"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
 		"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
 		"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
-		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"};
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"
+		};
+	aiDispersionCoefY=10;
+	aiDispersionCoefX=10;
+};
+class SOCOMD_RUS_RPK_acc : SOCOMD_RUS_RPK{
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1_low_OD";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "RH_peq15b";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_TGPA";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+
+class srifle_DMR_05_blk_F;
+class SOCOMD_RUS_Cyrus_acc : srifle_DMR_05_blk_F{
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "optic_TWS";
+			slot = "CowsSlot";
+		};
+		class LinkedItemsAcc{
+			item = "RH_peq15b";
+			slot = "PointerSlot";
+		};
+		class LinkedItemsMuzzle{
+			item = "muzzle_snds_93mmg";
+			slot = "MuzzleSlot";
+		};
+	};
 };

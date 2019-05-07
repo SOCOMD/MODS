@@ -34,7 +34,13 @@ class CfgPatches  {
 			"SOCOMD_QStore_RUS",
 			"SOCOMD_RUS_soldier_Rifleman",
 			"SOCOMD_RUS_soldier_Machinegunner",
-			"SOCOMD_RUS_soldier_Leader"
+			"SOCOMD_RUS_soldier_Autorifle",
+			"SOCOMD_RUS_soldier_Leader",
+			"SOCOMD_RUS_soldier_Sniper",
+			"SOCOMD_RUS_soldier_Rifleman_Night",
+			"SOCOMD_RUS_soldier_Machinegunner_Night",
+			"SOCOMD_RUS_soldier_Autorifle_Night",
+			"SOCOMD_RUS_soldier_Leader_Night"
 			
 		};
 
@@ -54,3 +60,4 @@ class CfgPatches  {
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgASORVS.hpp"
 #include "configs\CfgAmmo.hpp"
+#include "configs\CfgGroups.hpp"
