@@ -23,7 +23,6 @@ class CfgMissions {
 //	Place mission in this addons \missions folder (non-pbo)
 //	ADD(Unique_class_name,Mission screen name,Mission folder name)
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	FOBs
 
@@ -73,6 +72,8 @@ class CfgMissions {
 	ADD(ANIZAYFOB,SOCOMD Anizay FOB,fobs\Anizay_FOB.tem_anizay)
 	ADD(CELLEFOB,SOCOMD Celle FOB,fobs\Celle_FOB.mbg_celle2)
 	ADD(ROSCHEFOB,SOCOMD Rosche FOB,fobs\Rosche_FOB.WL_Rosche)
+	ADD(KURJARIFOB,SOCOMD Kurjari FOB,fobs\Kurjari_FOB.tem_kujari)
+	ADD(SUURSAARIVLHD,SOCOMD Suursaariv FOB,fobs\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
@@ -129,5 +130,8 @@ class CfgMissions {
 	ADD(ANIZAYFOB_HC,SOCOMD [HC] Anizay FOB,fobs_hc\Anizay_FOB.tem_anizay)
 	ADD(CELLEFOB_HC,SOCOMD [HC] Celle FOB,fobs_hc\Celle_FOB.mbg_celle2)
 	ADD(ROSCHEFOB_HC,SOCOMD [HC] Rosche FOB,fobs_hc\Rosche_FOB.WL_Rosche)
+	ADD(KURJARIFOB_HC,SOCOMD [HC] Kurjari FOB,fobs_hc\Kurjari_FOB.tem_kujari)
+	ADD(SUURSAARIVLHD_HC,SOCOMD [HC] Suursaariv FOB,fobs_hc\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
+	
 	};
 };
