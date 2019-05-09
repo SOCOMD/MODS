@@ -82,7 +82,8 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Recon"
 		};
 		magazines[] = {
-			{"5Rnd_338LM_Magazine", 9}
+			{"5Rnd_338LM_Magazine", 7},
+			{"5Rnd_APDS_338LM_Magazine", 2}
 		};
 	};
 

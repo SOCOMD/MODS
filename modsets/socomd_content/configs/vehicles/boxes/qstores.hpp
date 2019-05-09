@@ -138,7 +138,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 
 					QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB2,"Weapons")
 						QSTORE_ACTION_LOADOUT("82mm Mortarman",SOCOMD_Mortar)
-						QSTORE_ACTION_LOADOUT("60mm Mortarman",SOCOMD_MortarMini)
+						//QSTORE_ACTION_LOADOUT("60mm Mortarman",SOCOMD_MortarMini)
 						QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MMG)
 						QSTORE_ACTION_LOADOUT("Gunner Ammo",SOCOMD_MMGAmmo)
 						QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)

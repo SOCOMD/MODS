@@ -141,7 +141,7 @@ class SOCOMD_RUS_soldier_Rifleman_Night : SOCOMD_RUS_Unarmed {
 	side = EAST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Operator (Night) (AK)";
+	displayname = "Operator (AK) (Night)";
 	vehicleclass = "Man";
 	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
 

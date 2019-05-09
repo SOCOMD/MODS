@@ -589,7 +589,8 @@ class SOCOMD_Mortar {
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 5)			
+			LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 2)
+			LOADOUT_ITEM(ACE_RangeTable_82mm, 1)			
 		};
 	};
 	class Backpack {
