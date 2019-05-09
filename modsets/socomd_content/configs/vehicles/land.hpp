@@ -5,13 +5,15 @@ class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
-	forceInGarage = 1;
+	side = WEST;
 	author = AUTHOR_STR;
-	displayname = "ATV - LR (1/0)";
 	faction = FACTION_STR;
+	displayname = "6x6 ATV (1/0)";
 	vehicleclass = "Car";
+	forceInGarage = 1;
 
-	crew = UNIT_SOCOMD_CREWMAN;
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
@@ -30,21 +32,23 @@ class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 	};
 };
 
-/*								//////////////// WIP Motorbike
-class V12_KTM450_base;
-class V12_KTM_SOCOMD: V12_KTM450_base
+								//////////////// WIP Motorbike
+class V12_KTM;
+class V12_KTM_SOCOMD: V12_KTM
 {
-	author="V12";
-	model="\V12_KTM450\V12_KTM450";
-	displayName="CDO Motorbike";
-	transportSoldier=0;
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
-	crew= UNIT_SOCOMD_CREWMAN;
-	faction="FACTION_STR";
-	
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "Motorbike (1/0)";
+	vehicleclass = "Car";
+	forceInGarage = 1;
+
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
 
 
 	class TransportWeapons {
@@ -63,4 +67,3 @@ class V12_KTM_SOCOMD: V12_KTM450_base
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
-*/
