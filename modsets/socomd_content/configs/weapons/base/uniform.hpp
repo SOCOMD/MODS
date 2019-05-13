@@ -13,3 +13,13 @@ class SOCOMD_RUS_SleevesDown : ADFU_G3_MC {
 		};
 	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 };
+
+class CUP_I_B_PMC_Unit_26;
+class SOCOMD_Uniform_Snow_HoodUp : CUP_I_B_PMC_Unit_26 {
+	displayName = "SOCOMD Snow Uniform (Hood Up)";
+};
+
+class CUP_I_B_PMC_Unit_27;
+class SOCOMD_Uniform_Snow_HoodDown : CUP_I_B_PMC_Unit_27 {
+	displayName = "SOCOMD Snow Uniform (Hood Down)";
+};

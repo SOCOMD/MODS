@@ -202,6 +202,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						QSTORE_ACTION_HEADGEAR("Cap (MC)",ADFU_Cap_MC)
 						QSTORE_ACTION_HEADGEAR("Boonie (Tan)",H_Booniehat_tan)
 						QSTORE_ACTION_HEADGEAR("Boonie",SOCOMD_Aus_Boonie)
+						QSTORE_ACTION_HEADGEAR("Beanie",H_Watchcap_khk)
 					QSTORE_ACTION_GRP_END
 				QSTORE_ACTION_GRP_END
 

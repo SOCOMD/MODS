@@ -83,10 +83,39 @@ class CAManBase : Man {
 
 		class ACE_Equipment {
 
+		//Recon
+			class SOCOMD_Ghillie_interract {
+				displayName = "Ghillie";
+				condition = "(alive _player)";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_lsh,"Lush",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_lsh)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_sard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_ard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_jngl)
+
+
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_lsh)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_sard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_ard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_jngl)
+
+			};
+			//Recon
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Uniform_SleevesDown_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Uniform_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_lsh,"Uniform",SOCOMD_Ghillie_lsh,SOCOMD_Uniform_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_sard,"Uniform",SOCOMD_Ghillie_sard,SOCOMD_Uniform_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_ard,"Uniform",SOCOMD_Ghillie_ard,SOCOMD_Uniform_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_jngl,"Uniform",SOCOMD_Ghillie_jngl,SOCOMD_Uniform_SleevesUp_Recon)
+		
 			//Roll Sleeves
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown,SOCOMD_Uniform_SleevesUp)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_DOWN,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp,SOCOMD_Uniform_SleevesDown)
-
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_UP,"Hood up",SOCOMD_Uniform_Snow_HoodDown,SOCOMD_Uniform_Snow_HoodUp)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_DOWN,"Hood Down",SOCOMD_Uniform_Snow_HoodUp,SOCOMD_Uniform_Snow_HoodDown)
+	
 			//Airframe MC
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_MC_0,"Headset On",ADFU_H_Airframe_Cover_02_MC,ADFU_H_Airframe_Cover_03_MC) //No headset no Acc to yes headset no Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_MC_1,"Headset Off",ADFU_H_Airframe_Cover_03_MC,ADFU_H_Airframe_Cover_02_MC) //Yes headset no Acc to no headset no Acc

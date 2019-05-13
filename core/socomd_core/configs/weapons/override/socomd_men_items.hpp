@@ -90,7 +90,7 @@ class SOCOMD_Item_Uniform_Medic                     : SOCOMD_Uniform_SleevesDown
 class SOCOMD_Item_Uniform_Sapper                    : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_MachineGunner             : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_Sniper                    : SOCOMD_Uniform_SleevesDown {scope = protected;};
-class SOCOMD_Item_Uniform_Recon                     : SOCOMD_Uniform_SleevesDown {scope = protected;};
+class SOCOMD_Item_Uniform_Recon                     : SOCOMD_Uniform_SleevesDown_Recon {scope = protected;};
 class SOCOMD_Item_Uniform_AT                        : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_PJ                        : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_Pilot                     : SOCOMD_Uniform_SleevesDown {scope = protected;};

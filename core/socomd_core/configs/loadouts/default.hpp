@@ -424,10 +424,10 @@ class SOCOMD_Recon {
 	gps			    = "ItemAndroid";
 
 	class Uniform {
-		type = ITEM_UNIFORM_RECON;
+		type = SOCOMD_Uniform_SleevesDown_Recon;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			LOADOUT_ITEM(Laserbatteries, 2)
+			//LOADOUT_ITEM(Laserbatteries, 2)
 		};
 	};
 
@@ -452,6 +452,7 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
+			LOADOUT_ITEM(ACE_Tripod, 1)
 		};
 	};
 };

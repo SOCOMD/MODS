@@ -146,6 +146,25 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 				QSTORE_ACTION_GRP_END
 			QSTORE_ACTION_GRP_END
 
+			QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Customise Gear")	
+				QSTORE_ACTION_GRP_BEGIN(SELECT_UNIFORMS,"Uniforms")
+					class SOCOMD_Uniforms_ToggleDiving {
+						displayName = "Toggle Diving Uniform";
+						condition = 1;
+						statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Uniforms_ToggleSnow {
+						displayName = "Toggle Snow Uniform";
+						condition = 1;
+						statement = "[_player] call SOCOMD_fnc_Action_ToggleSnow";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+			QSTORE_ACTION_GRP_END			
+		QSTORE_ACTION_GRP_END
+
 		};
 	};
 };

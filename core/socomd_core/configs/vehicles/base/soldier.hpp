@@ -192,3 +192,51 @@ class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
+
+class B_Soldier_base_F;
+class b_soldier_survival_F: B_Soldier_base_F{};
+class SOCOMD_Survival: b_soldier_survival_F
+{
+	author="SOCOMD";
+	nameSound="veh_infantry_diver_s";
+	_generalMacro="b_soldier_survival_F";
+	scope=1;
+	displayName="SOCOMD Survival Fatigues";
+	model="\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
+	modelSides[]={3,1};
+	uniformClass="U_B_survival_uniform";
+	hiddenUnderwaterSelections[]=
+	{
+		"hide"
+	};
+	shownUnderwaterSelections[]=
+	{
+		"unhide",
+		"unhide2"
+	};
+	hiddenUnderwaterSelectionsTextures[]=
+	{
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\A3\characters_f\data\visors_ca.paa"
+	};
+	hiddenSelections[]=
+	{
+		"Camo",
+		"Camo1",
+		"Camo3",
+		"Insignia"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
+		"\socomd_data_core\uniform\clothes\black_boots.paa",
+		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"\ADFU_Units\data\clothing1_ADFU.rvmat",
+		"",
+		""
+	};
+};

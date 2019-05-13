@@ -52,7 +52,7 @@ class V12_KTM_SOCOMD: V12_KTM
 
 
 	class TransportWeapons {
-	INVENTORY_VEHICLE_DEFAULT_WEAPONS
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
 
 	class TransportMagazines {
