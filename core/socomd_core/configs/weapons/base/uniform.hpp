@@ -73,5 +73,5 @@ class SOCOMD_Ghillie_sard : U_B_FullGhillie_sard {};
 class U_B_FullGhillie_ard;
 class SOCOMD_Ghillie_ard : U_B_FullGhillie_ard {};
 
-class U_B_T_Sniper_F;
-class SOCOMD_Ghillie_jngl : U_B_T_Sniper_F {};
+class U_B_T_FullGhillie_tna_F;
+class SOCOMD_Ghillie_jngl : U_B_T_FullGhillie_tna_F {};
