@@ -81,6 +81,15 @@ class CAManBase : Man {
 			hotkey = "C";
 		};
 
+		class ACE_MapDagr {
+			displayName = "Dagr";
+			icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
+			condition = "visibleMap and ('ACE_DAGR' in (items player))";
+			statement = "call ace_dagr_fnc_menuInit";
+			exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+			showDisabled = 0;
+		};
+
 		class ACE_Equipment {
 
 		//Recon

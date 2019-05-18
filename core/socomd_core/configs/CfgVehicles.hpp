@@ -169,5 +169,3 @@ class CfgVehicles  {
 	#include "vehicles\override\karatel.hpp"
 	#include "vehicles\override\lsv_mk2.hpp"
 };
-
-
