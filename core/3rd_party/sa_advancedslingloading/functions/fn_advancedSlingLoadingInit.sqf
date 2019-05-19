@@ -293,6 +293,7 @@ ASL_Extend_Ropes_Action = {
 	params ["_vehicle", "_length"];
 	if([_vehicle] call ASL_Can_Extend_Ropes) then {
 		private ["_activeRopes"];
+		_vehicle setVariable ["ASL_Ropes_Desired_length",_length];
 		_activeRopes = [_vehicle] call ASL_Get_Active_Ropes;
 		[_vehicle,player,(_activeRopes select 0) select 0, _length] call ASL_Extend_Ropes;
 	};
@@ -559,6 +560,7 @@ ASL_Deploy_Ropes = {
 			};
 			_vehicle setVariable ["ASL_Ropes",_cargoRopes,true];
 			_vehicle setVariable ["ASL_Cargo",_cargo,true];
+			_vehicle setVariable ["ASL_Ropes_Desired_length",15];
 			for "_i" from 0 to (_cargoCount-1) do
 			{
 				[_vehicle,_player,_i] call ASL_Deploy_Ropes_Index;
@@ -1061,6 +1063,118 @@ ASL_Add_Player_Actions = {
 };
 
 if(!isDedicated) then {
+	// Keybind to deploy Ropes
+	["ASL","deploy_ropes_key",["Deploy Ropes","Sling load rope will be available for crew to attach to vehicles"],"",{
+		if ([player, vehicle player] call ASL_Deploy_Ropes_Action_Check) then {
+			[] call ASL_Deploy_Ropes_Action;
+			hint "Ropes Deployed";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	// Keybind to Retract Ropes / Drop Cargo
+	["ASL","retract_ropes_key",["Retract Ropes","Retract ropes and drop cargo if slinged"],"",{
+		if ([player, vehicle player] call ASL_Retract_Ropes_Action_Check) then {
+			[] call ASL_Retract_Ropes_Action;
+			hint "Roped Retracting";
+		};
+		if ([player, vehicle player] call ASL_Release_Cargo_Action_Check) then {
+			[] call ASL_Release_Cargo_Action;
+			hint "Cargo Released";
+		};
+	}] call CBA_fnc_addKeybind;
+
+
+	// Keybinds to Change Rope Length
+	["ASL","length_ropes_5m_key",["Ropes 5m","Set Rope length 5m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 5] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 5m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_10m_key",["Ropes 10m","Set Rope length 10m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 10] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 10m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_15m_key",["Ropes 15m","Set Rope length 15m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 15] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 15m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_20m_key",["Ropes 20m","Set Rope length 20m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 20] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 20m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_25m_key",["Ropes 25m","Set Rope length 25m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 25] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 25m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_30m_key",["Ropes 30m","Set Rope length 30m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 30] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 30m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_40m_key",["Ropes 40m","Set Rope length 40m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 40] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 40m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_50m_key",["Ropes 50m","Set Rope length 50m"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			[vehicle player, 50] call ASL_Extend_Ropes_Action;
+			hint "Ropes: 50m";
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_Increase_key",["Ropes Increase length","Set Rope length up one setting"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			_length = (vehicle player) getVariable ["ASL_Ropes_Desired_length",15];
+			switch true do {
+				case (_length == 5): {[vehicle player, 10] call ASL_Extend_Ropes_Action;hint "Ropes: 10m"};
+				case (_length == 10): {[vehicle player, 15] call ASL_Extend_Ropes_Action;hint "Ropes: 15m"};
+				case (_length == 15): {[vehicle player, 20] call ASL_Extend_Ropes_Action;hint "Ropes: 20m"};
+				case (_length == 20): {[vehicle player, 25] call ASL_Extend_Ropes_Action;hint "Ropes: 25m"};
+				case (_length == 25): {[vehicle player, 30] call ASL_Extend_Ropes_Action;hint "Ropes: 30m"};
+				case (_length == 30): {[vehicle player, 40] call ASL_Extend_Ropes_Action;hint "Ropes: 40m"};
+				case (_length == 40): {[vehicle player, 50] call ASL_Extend_Ropes_Action;hint "Ropes: 50m"};
+				case (_length == 50): {hint "Ropes Maxed: 50m"};
+				default {[vehicle player, 5] call ASL_Extend_Ropes_Action;hint "Ropes: 5m"};
+			};
+		};
+	}] call CBA_fnc_addKeybind;
+
+	["ASL","length_ropes_Decrease_key",["Ropes Decrease length","Set Rope length down one setting"],"",{
+		if ([player, vehicle player] call ASL_Extend_Ropes_Action_Check) then {
+			_length = (vehicle player) getVariable ["ASL_Ropes_Desired_length",15];
+			switch true do {
+				case (_length == 5): {hint "Ropes Minimum: 5m"};
+				case (_length == 10): {[vehicle player, 5] call ASL_Extend_Ropes_Action;hint "Ropes: 5m"};
+				case (_length == 15): {[vehicle player, 10] call ASL_Extend_Ropes_Action;hint "Ropes: 10m"};
+				case (_length == 20): {[vehicle player, 15] call ASL_Extend_Ropes_Action;hint "Ropes: 15m"};
+				case (_length == 25): {[vehicle player, 20] call ASL_Extend_Ropes_Action;hint "Ropes: 20m"};
+				case (_length == 30): {[vehicle player, 25] call ASL_Extend_Ropes_Action;hint "Ropes: 25m"};
+				case (_length == 40): {[vehicle player, 30] call ASL_Extend_Ropes_Action;hint "Ropes: 30m"};
+				case (_length == 50): {[vehicle player, 40] call ASL_Extend_Ropes_Action;hint "Ropes: 40m"};
+				default {[vehicle player, 5] call ASL_Extend_Ropes_Action;hint "Ropes: 5m"};
+			};
+		};
+	}] call CBA_fnc_addKeybind;
+	
 	[] spawn {
 		while {true} do {
 			if(!isNull player && isPlayer player) then {

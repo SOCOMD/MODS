@@ -25,6 +25,8 @@ missionNamespace setVariable ["ACE_maxWeightDrag", 10000];
 	},true, [], true
 ] call CBA_fnc_addClassEventHandler;
 
+
+// DAGR Modifications to enable automatic waypoints from Map
 // Default Prefix List
 DAGR_Marker_Prefix = ["!","#","$","%","^","&","*","-","_","=","+"];
 DAGR_Marker_Prefix_ALL = ["!","#","$","%","^","&","*","-","_","=","+"];
