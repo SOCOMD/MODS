@@ -99,7 +99,7 @@ class CfgLoadouts {
 			handgunMagazine = ITEM_HANDGUN_MAGAZINE_TROOPLEADER;
 			headgear		= ITEM_HEADGEAR_TROOPLEADER;
 			binocular		= "Laserdesignator";
-			gps				= "ItemAndroid";
+			gps				= "";
 			maxOptic		= "2x";
 
 			class Uniform {
@@ -146,7 +146,7 @@ class CfgLoadouts {
 			handgunMagazine = ITEM_HANDGUN_MAGAZINE_PATROLLEADER;
 			headgear		= ITEM_HEADGEAR_PATROLLEADER;
 			binocular		= "Laserdesignator";
-			gps			    = "ItemAndroid";
+			gps			    = "";
 			maxOptic		= "2x";
 
 			class Uniform {
