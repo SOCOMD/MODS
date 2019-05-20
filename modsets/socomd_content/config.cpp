@@ -32,6 +32,7 @@ class CfgPatches  {
 			"SOCOMD_SHIP_B",
 			"SOCOMD_QStore_TAG",
 			"SOCOMD_QStore_RUS",
+			"SOCOMD_Supply_Sniper",
 			"SOCOMD_RUS_soldier_Rifleman",
 			"SOCOMD_RUS_soldier_Machinegunner",
 			"SOCOMD_RUS_soldier_Autorifle",
