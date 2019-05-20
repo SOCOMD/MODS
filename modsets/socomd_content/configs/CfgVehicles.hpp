@@ -10,6 +10,7 @@ class CfgVehicles {
 	// Base
 	#include "vehicles\base\helicopter.hpp"
 	#include "vehicles\base\soldier.hpp"
+	#include "vehicles\base\man.hpp"
 
 	// Override
 	#include "vehicles\override\firefly.hpp"

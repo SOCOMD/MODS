@@ -104,6 +104,13 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2)
 		};
 	};
+	class Backpack {
+		type = ITEM_BACKPACK_SNIPER;
+		class Inventory	{
+			LOADOUT_ITEM(SOCOMD_tent_item, 1)
+			LOADOUT_ITEM(SOCOMD_tent_item_des, 1)
+		};
+	};
 };
 
 

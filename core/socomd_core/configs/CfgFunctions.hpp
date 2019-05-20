@@ -29,6 +29,8 @@ class CfgFunctions {
 			class Action_ReplacePrimary {};
 			class Action_ReplaceBackpack {};
 			class Action_EnterSpectator {};
+			class Action_displayName {};
+			class Action_placePlaceables {};
 		};
 
 		class ActionConditions {
