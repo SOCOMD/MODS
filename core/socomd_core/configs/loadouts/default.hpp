@@ -427,7 +427,7 @@ class SOCOMD_Recon {
 		type = SOCOMD_Uniform_SleevesDown_Recon;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			//LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(Laserbatteries, 2)
 		};
 	};
 
@@ -440,11 +440,12 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(Laserdesignator, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
+			LOADOUT_ITEM(ACE_ATragMX, 1)
 		};
 	};
 
 	class Backpack {
-		type = "Kit_Bag_R_MC";
+		type = ITEM_BACKPACK_SNIPER;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS

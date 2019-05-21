@@ -11,7 +11,9 @@ class SOCOMD_Uniform_SleevesDown : ADFU_G3_MC {
 	displayName = "SOCOMD Uniform";
 };
 
-class SOCOMD_Uniform_SleevesDown_Recon : SOCOMD_Uniform_SleevesDown {
+class SOCOMD_Uniform_SleevesDown_Recon : ADFU_G3_MC {
+	scope = public;
+	author = AUTHOR_STR;
 	displayName = "SOCOMD Recon Uniform";
 };
 
@@ -22,7 +24,9 @@ class SOCOMD_Uniform_SleevesUp : ADFU_G3_MC_Rolled {
 	displayName = "SOCOMD Uniform (Rolled)";
 };
 
-class SOCOMD_Uniform_SleevesUp_Recon : SOCOMD_Uniform_SleevesUp {
+class SOCOMD_Uniform_SleevesUp_Recon : ADFU_G3_MC_Rolled {
+	scope = public;
+	author = AUTHOR_STR;
 	displayName = "SOCOMD Recon Uniform (Rolled)";
 }
 

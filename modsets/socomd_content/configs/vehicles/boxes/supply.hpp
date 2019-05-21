@@ -36,7 +36,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 class SOCOMD_Supply_Sniper : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
-	displayName = "[Supply] Sniper";
+	displayName = "[SUPPLY] Sniper";
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
