@@ -24,6 +24,7 @@ class CfgPatches {
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgMagazines.hpp"
+#include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgLoadouts.hpp"

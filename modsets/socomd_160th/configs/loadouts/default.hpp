@@ -71,12 +71,13 @@
 // Commander
 
 class SOCOMD_Commander {
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory {
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 };
@@ -85,12 +86,13 @@ class SOCOMD_Commander {
 // Leader
 
 class SOCOMD_Leader {
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 };
@@ -101,12 +103,24 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 // Rifleman
 
 class SOCOMD_Rifleman {
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Marksman
+class SOCOMD_marksman {
+	maxOptic		= "4x";
+	class Vest {
+		class Inventory	{
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
 		};
 	};
 };
@@ -115,12 +129,13 @@ class SOCOMD_Rifleman {
 // Sapper
 
 class SOCOMD_Sapper {
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 };
@@ -129,13 +144,13 @@ class SOCOMD_Sapper {
 // Medic
 
 class SOCOMD_Medic {
-
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 };
@@ -144,13 +159,13 @@ class SOCOMD_Medic {
 // LAT
 
 class SOCOMD_AT {
-
+	maxOptic		= "2x";
 	class Vest {
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
 	};
 

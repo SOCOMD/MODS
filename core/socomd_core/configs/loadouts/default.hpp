@@ -72,8 +72,9 @@
 // Unarmed
 
 class SOCOMD_Unarmed {
-	headgear = "AU_02_780000_v1";
+	headgear  = "AU_02_780000_v1";
 	binocular = "";
+	maxOptic  = "1x";
 
 	class Uniform {
 		type = SOCOMD_Item_Uniform_Rifleman;
@@ -94,6 +95,7 @@ class SOCOMD_Commander {
 	headgear		= ITEM_HEADGEAR_TROOPLEADER;
 	binocular		= "Laserdesignator";
 	gps				= "ItemAndroid";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_TROOPLEADER;
@@ -140,6 +142,7 @@ class SOCOMD_Leader {
 	headgear		= ITEM_HEADGEAR_PATROLLEADER;
 	binocular		= "Laserdesignator";
 	gps			    = "ItemAndroid";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_PATROLLEADER;
@@ -184,8 +187,9 @@ class SOCOMD_Rifleman {
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -219,8 +223,9 @@ class SOCOMD_marksman {
 	handgun		    = ITEM_HANDGUN_MARKSMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MARKSMAN;
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "4x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_MARKSMAN;
@@ -254,8 +259,9 @@ class SOCOMD_Sapper {
 	handgun		    = ITEM_HANDGUN_SAPPER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SAPPER;
 	headgear		= ITEM_HEADGEAR_SAPPER;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_SAPPER;
@@ -300,8 +306,9 @@ class SOCOMD_MachineGunner {
 	handgun		    = ITEM_HANDGUN_MACHINEGUNNER;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MACHINEGUNNER;
 	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_MACHINEGUNNER;
@@ -336,8 +343,9 @@ class SOCOMD_Medic {
 	handgun		    = ITEM_HANDGUN_MEDIC;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MEDIC;
 	headgear		= ITEM_HEADGEAR_MEDIC;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_MEDIC;
@@ -374,6 +382,44 @@ class SOCOMD_Medic {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
+// LAT
+
+class SOCOMD_AT {
+	primary		    = ITEM_PRIMARY_AT;
+	secondary		= ITEM_SECONDARY_AT;
+	handgun		    = ITEM_HANDGUN_AT;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_AT;
+	headgear		= ITEM_HEADGEAR_AT;
+	binocular		= "";
+	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
+
+	class Uniform {
+		type = ITEM_UNIFORM_AT;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_AT;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_AT;
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
 class SOCOMD_Sniper {
@@ -384,6 +430,8 @@ class SOCOMD_Sniper {
 	headgear		= ITEM_HEADGEAR_SNIPER;
 	binocular		= "Binocular";
 	gps			    = "ItemMicroDAGR";
+	optics[] 		= {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
+
 
 	class Uniform {
 		type = ITEM_UNIFORM_SNIPER;
@@ -422,6 +470,7 @@ class SOCOMD_Recon {
 	headgear		= ITEM_HEADGEAR_RECON;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
+	optics[] 		= {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
 
 	class Uniform {
 		type = SOCOMD_Uniform_SleevesDown_Recon;
@@ -458,42 +507,6 @@ class SOCOMD_Recon {
 	};
 };
 
-////////////////////////////////////////////////////////////////////////////////
-// LAT
-
-class SOCOMD_AT {
-	primary		    = ITEM_PRIMARY_AT;
-	secondary		= ITEM_SECONDARY_AT;
-	handgun		    = ITEM_HANDGUN_AT;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_AT;
-	headgear		= ITEM_HEADGEAR_AT;
-	binocular		= "Binocular";
-	gps			    = "ItemMicroDAGR";
-
-	class Uniform {
-		type = ITEM_UNIFORM_AT;
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_AT;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-		};
-	};
-
-	class Backpack {
-		type = ITEM_BACKPACK_AT;
-		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_BACKPACK_ESSENTIALS
-		};
-	};
-};
 
 ////////////////////////////////////////////////////////////////////////////////
 // MORTAR
@@ -506,6 +519,7 @@ class SOCOMD_Mortar {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -540,8 +554,9 @@ class SOCOMD_Pilot {
 	handgun 		= ITEM_HANDGUN_PILOT;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_PILOT;
 	headgear 		= ITEM_HEADGEAR_PILOT;
-	binocular 		= "Binocular";
+	binocular 		= "";
 	gps 			= "ItemcTab";
+	maxOptic		= "1x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_PILOT;
@@ -578,8 +593,9 @@ class SOCOMD_Crewman {
 	handgun 		= ITEM_HANDGUN_CREWMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAINE_CREWMAN;
 	headgear 		= ITEM_HEADGEAR_CREWMAN;
-	binocular		= "Binocular";
+	binocular		= "";
 	gps 			= "ItemAndroid";
+	maxOptic		= "1x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_CREWMAN;
@@ -616,8 +632,9 @@ class SOCOMD_PJ {
 	handgun 		= ITEM_HANDGUN_PJ;
 	handgunMagazine = ITEM_HANDGUN_MAGAINE_PJ;
 	headgear 		= ITEM_HEADGEAR_PJ;
-	binocular 		= "Binocular";
+	binocular 		= "";
 	gps 			= "ItemAndroid";
+	maxOptic		= "1x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_PJ;
