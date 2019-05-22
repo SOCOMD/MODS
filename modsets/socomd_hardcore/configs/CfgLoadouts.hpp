@@ -80,6 +80,7 @@ class CfgLoadouts {
 		class SOCOMD_Unarmed {
 			headgear = "AU_02_780000_v1";
 			binocular = "";
+			maxOptic  = "1x";
 
 			class Uniform {
 				type = SOCOMD_Item_Uniform_Rifleman;
