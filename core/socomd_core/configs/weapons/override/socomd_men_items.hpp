@@ -53,6 +53,7 @@ class SOCOMD_Item_Headgear_AT                       : ADFU_H_Airframe_Cover_03_M
 class SOCOMD_Item_Headgear_PJ                       : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_Pilot                    : SOCOMD_Pilot_helmet {scope = protected;};
 class SOCOMD_Item_Headgear_Crewman                  : H_HelmetCrew_I {scope = protected;};
+class SOCOMD_Item_Headgear_Soldier_Base				: ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 
 class SOCOMD_Item_Binocular_TroopLeader             : Laserdesignator {scope = protected;};
 class SOCOMD_Item_Binocular_PatrolLeader            : Laserdesignator {scope = protected;};
