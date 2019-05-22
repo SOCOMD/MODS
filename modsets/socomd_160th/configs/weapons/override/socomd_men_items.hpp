@@ -1,6 +1,7 @@
-class SOCOMD_Item_Primary_TroopLeader               : arifle_MX_GL_Black_F {};
-class SOCOMD_Item_Primary_PatrolLeader              : arifle_MX_GL_Black_F {};
-class SOCOMD_Item_Primary_Rifleman                  : arifle_MX_Black_F {};
-class SOCOMD_Item_Primary_Medic                     : arifle_MX_Black_F {};
-class SOCOMD_Item_Primary_Sapper                    : arifle_MX_Black_F {};
-class SOCOMD_Item_Primary_AT                        : arifle_MX_Black_F {};
+class SOCOMD_Item_Primary_TroopLeader               : SMA_M4_GL_SM {};
+class SOCOMD_Item_Primary_PatrolLeader              : SMA_M4_GL_SM {};
+class SOCOMD_Item_Primary_Rifleman                  : SMA_M4afgSTOCK {};
+class SOCOMD_Item_Primary_Marksman					: SMA_HK417_16in{};
+class SOCOMD_Item_Primary_Medic                     : SMA_M4afgSTOCK {};
+class SOCOMD_Item_Primary_Sapper                    : SMA_M4afgSTOCK {};
+class SOCOMD_Item_Primary_AT                        : SMA_M4afgSTOCK {};
