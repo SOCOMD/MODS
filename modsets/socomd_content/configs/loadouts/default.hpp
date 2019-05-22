@@ -67,58 +67,68 @@
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
+class SOCOMD_Loadout_Base;
+class SOCOMD_Unarmed : SOCOMD_Loadout_Base {
+	class Uniform;
+	class Vest;
+	class Backpack;
+}
+class SOCOMD_Soldier_Base : SOCOMD_Unarmed {
+	class Uniform : Uniform {
+		class Inventory;
+	}
+	class Vest : Vest {
+		class Inventory;
+	};
+	class Backpack : Backpack {
+		class Inventory;
+	};
+};
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
 
-class SOCOMD_Sniper {
-	class Vest {
-		type = ITEM_VEST_SNIPER;
+class SOCOMD_Sniper : SOCOMD_Soldier_Base {
+	class Vest : Vest {
 		class Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_300_5Rnd, 2)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 5)
-		};
-	};
-	
-	class Backpack {
-		type = ITEM_BACKPACK_SNIPER;
-		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Primary_Rifleman,1)
 		};
 	};
 };
 
-class SOCOMD_Recon {
-	primary		    = "bnae_trg42_camo2_virtual";
-	handgun		    = ITEM_HANDGUN_RIFLEMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-	headgear		= ITEM_HEADGEAR_RIFLEMAN;
-	binocular		= "ACE_Vector";
-	gps			    = "ItemMicroDAGR";
-	class Vest {
-		type = ITEM_VEST_RECON;
-		class Inventory	{
+class SOCOMD_Recon : SOCOMD_Recon {
+	primary		    = "bnae_trg42_camo2_virtual"; // wtf is this, who did this. Monk?
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
-			LOADOUT_ITEM(5Rnd_338LM_Magazine, 7)
-			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2)
+			LOADOUT_ITEM(5Rnd_338LM_Magazine, 7) // really monk?
+			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2) // stop criminal scum... TODO: Fix monks bullshit
 		};
 	};
-	class Backpack {
-		type = ITEM_BACKPACK_SNIPER;
-		class Inventory	{
+	class Backpack : Backpack {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_tent_item, 1)
 			LOADOUT_ITEM(SOCOMD_tent_item_des, 1)
 		};
 	};
 };
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////// Warning Monks abortions start /////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+// i will refactor these war crimes later... its 3am.
 
 ////////////////////////////////////////////////////////////////////////////////
 // MAG58
 
 class SOCOMD_MMG {
-	primary		    = SOCOMD_mag58;
+	primary		    = SOCOMD_mag58; // no, come on.
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
@@ -141,7 +151,7 @@ class SOCOMD_MMG {
 		};
 	};
 	class Backpack {
-		type = "Kit_Bag_MC";
+		type = "Kit_Bag_MC"; // do you even try to be normal
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -152,7 +162,7 @@ class SOCOMD_MMG {
 
 class SOCOMD_MortarMini {
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
-	secondary		= "twc_2inch_bag";
+	secondary		= "twc_2inch_bag"; // TODO: Slap monk
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
@@ -175,7 +185,7 @@ class SOCOMD_MortarMini {
 		};
 	};
 	class Backpack {
-		type = "Kit_Bag_MC";
+		type = "Kit_Bag_MC"; // TODO: give up on monk
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL

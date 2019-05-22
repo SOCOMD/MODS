@@ -178,6 +178,7 @@
 #define ITEM_HEADGEAR_PJ                        "SOCOMD_Item_Headgear_PJ"
 #define ITEM_HEADGEAR_PILOT                     "SOCOMD_Item_Headgear_Pilot"
 #define ITEM_HEADGEAR_CREWMAN                   "SOCOMD_Item_Headgear_Crewman"
+#define ITEM_HEADGEAR_SOLDIER_BASE				"SOCOMD_Item_Headgear_Soldier_Base"
 
 #define ITEM_BINOCULAR_TROOPLEADER		        "SOCOMD_Item_Binocular_TroopLeader"
 #define ITEM_BINOCULAR_PATROLLEADER	            "SOCOMD_Item_Binocular_PatrolLeader"
