@@ -28,7 +28,7 @@ class SOCOMD_Uniform_SleevesUp_Recon : ADFU_G3_MC_Rolled {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "SOCOMD Recon Uniform (Rolled)";
-}
+};
 
 class U_B_Wetsuit;
 class SOCOMD_Uniform_Wetsuit : U_B_Wetsuit {

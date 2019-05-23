@@ -100,7 +100,7 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Armed_01_minigun_F {
 		neutralString = "N";
 		reverseString = "R";
 	};
-}
+};
 
 #define SHIP_BASE(ID, SCOPE, BASE) \
 class SOCOMD_SHIP_##ID : ##BASE { \

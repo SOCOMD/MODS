@@ -7,4 +7,4 @@ class LWIRCM_Magazine_MELB : CA_Magazine {
 
 	// Custom
 	tracersEvery = 1;
-}
+};

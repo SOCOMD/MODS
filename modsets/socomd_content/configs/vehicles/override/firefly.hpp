@@ -32,4 +32,4 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 		"socomd_data_core\ah6\ah6_hull_co.paa",
 		"melb\data\decals\sn\blank_ca.paa"
 	};
-}
+};
