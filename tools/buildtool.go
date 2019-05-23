@@ -7,6 +7,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 
 	"gopkg.in/yaml.v2"
 )
@@ -75,12 +76,20 @@ func (modset *Modset) Build() error {
 
 //MakePBO - Runs Mikero MakePbo
 func MakePBO(buildPath string, outputPath string) error {
+	
+	var cmdArgs []string
+	var cmdName string
+	if runtime.GOOS == "windows" {
+		cmdName = execMakePbo
+		cmdArgs = []string{"-N", "-P", buildPath, outputPath}
+	} else {
+		cmdName = "wine"
+		cmdArgs = []string{execMakePbo, "-N", "-P", buildPath, outputPath}
+	}
 
-	cmdArgs := []string{"-N", "-P", buildPath, outputPath}
+	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
 
-	fmt.Println(fmt.Sprintf("%s %s", execMakePbo, cmdArgs))
-
-	cmd := exec.Command(execMakePbo, cmdArgs...)
+	cmd := exec.Command(cmdName, cmdArgs...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	err := cmd.Run()
