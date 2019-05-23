@@ -1,0 +1,19 @@
+cd $(dirname $0)
+cd ../
+
+nmFobs=./fobs
+hcFobs=./fobs_hc
+fobs=$(find ${nmFobs}/* -maxdepth 1 -type d)
+
+# sanitise hardcore folder
+rm -rf $hcFobs
+
+for dir in $fobs
+do
+    newFob=$hcFobs/$(basename $dir)
+    mkdir -p $hcFobs
+    cp -R $dir $hcFobs
+    ln -sf ../../$dir/mission.sqm $newFob/mission.sqm
+    ln -sf ../../include_hc/cba_settings.sqf $newFob/cba_settings.sqf
+    echo $newFob
+done
