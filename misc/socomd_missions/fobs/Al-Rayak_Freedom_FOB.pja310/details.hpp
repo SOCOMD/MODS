@@ -1,1 +1,1 @@
-/home/socomd/arma_modding/git/MODS/misc/socomd_missions/include/details.hpp
+../../include/details.hpp
