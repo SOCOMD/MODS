@@ -24,13 +24,17 @@ type Config struct {
 
 var workingDir string
 var outputDir string
+var configDir string
+var execMakePbo string
 
 func main() {
 	flag.StringVar(&workingDir, "d", "./", "-d working directory")
 	flag.StringVar(&outputDir, "o", "./out", "-o output directory")
+	flag.StringVar(&configDir, "c", "", "-o output directory")
+	flag.StringVar(&execMakePbo, "x", "", "-o output directory")
 	flag.Parse()
 
-	yamlFile, err := ioutil.ReadFile("./buildtool.config.yaml")
+	yamlFile, err := ioutil.ReadFile(configDir)
 	if err != nil {
 		fmt.Println(err.Error())
 		return
@@ -72,12 +76,11 @@ func (modset *Modset) Build() error {
 //MakePBO - Runs Mikero MakePbo
 func MakePBO(buildPath string, outputPath string) error {
 
-	cmdName := "MakePbo.exe"
 	cmdArgs := []string{"-N", "-P", buildPath, outputPath}
 
-	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
+	fmt.Println(fmt.Sprintf("%s %s", execMakePbo, cmdArgs))
 
-	cmd := exec.Command(cmdName, cmdArgs...)
+	cmd := exec.Command(execMakePbo, cmdArgs...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	err := cmd.Run()
