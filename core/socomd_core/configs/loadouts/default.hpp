@@ -27,7 +27,6 @@ class SOCOMD_Soldier_Base : SOCOMD_Unarmed {
 			LOADOUT_ITEM(murshun_cigs_cigpack, 1) 
 			LOADOUT_ITEM(murshun_cigs_lighter, 1) 
 			LOADOUT_ITEM(ACE_DAGR, 1) 
-			LOADOUT_ITEM(hlc_acc_DBALPL, 1) // what is this?
 			LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
 		};
 	};
@@ -57,58 +56,11 @@ class SOCOMD_Soldier_Base : SOCOMD_Unarmed {
 		};
 	};
 };
-// NOTE: we can use this as a base for Redi / 160th / ZSU
-class SOCOMD_Soldier_Base_Bluefor : SOCOMD_Soldier_Base {
-	class Vest : Vest {
-		class Inventory : Inventory {
-			LOADOUT_ITEM(ACRE_PRC343, 1)
-		};
-	}
-};
-
-// NOTE: we can use this as a base for monks TAGE and alternative loadouts like undercover etc
-class SOCOMD_Soldier_Base_Socomd : SOCOMD_Soldier_Base_Bluefor {
-	primary		    = ITEM_PRIMARY_RIFLEMAN;
-	secondary		= ITEM_SECONDARY_RIFLEMAN;
-	handgun		    = ITEM_HANDGUN_RIFLEMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-	headgear		= ITEM_HEADGEAR_RIFLEMAN;
-};
-
-// RUS classes can derive from this
-class SOCOMD_Soldier_Base_Opfor : SOCOMD_Soldier_Base {
-	headgear 		= ITEM_HEADGEAR_SOLDIER_BASE;
-	class Vest : Vest {
-		class Inventory : Inventory {
-			//LOADOUT_ITEM(ACRE_PRC343, 1) // Do russian radio here :)
-		};
-	}
-};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Leader
 // This can also be a base for setting overwrites if we drop attributes down to this or make a BlueFor leader base
-class SOCOMD_Leader_Base : SOCOMD_Soldier_Base {
-	binocular		= "Laserdesignator";
-	gps			    = "ItemAndroid";
-	class Uniform : Uniform {
-		class Inventory : Inventory	{
-			LOADOUT_ITEM(Laserbatteries, 2)
-			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
-		};
-	};	
-	class Backpack : Backpack {
-		class Inventory	{
-			LOADOUT_ITEM(SmokeShellGreen, 2)
-			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
-			LOADOUT_ITEM(UGL_FlareRed_F, 2)
-			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
-			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
-		};
-	};
-};
-
-class SOCOMD_Leader : SOCOMD_Leader_Base {
+class SOCOMD_Leader : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_PATROLLEADER;
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
 	handgun		    = ITEM_HANDGUN_PATROLLEADER;
@@ -117,11 +69,16 @@ class SOCOMD_Leader : SOCOMD_Leader_Base {
 
 	class Uniform : Uniform {
 		type = ITEM_UNIFORM_PATROLLEADER;
+		class Inventory : Inventory	{
+			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+		};
 	};
 
 	class Vest : Vest {
 		type = ITEM_VEST_PATROLLEADER;
 		class Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
@@ -129,6 +86,13 @@ class SOCOMD_Leader : SOCOMD_Leader_Base {
 	};
 	class Backpack : Backpack {
 		type = ITEM_BACKPACK_PATROLLEADER;
+		class Inventory	{
+			LOADOUT_ITEM(SmokeShellGreen, 2)
+			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
+			LOADOUT_ITEM(UGL_FlareRed_F, 2)
+			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
+			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
+		};
 	};
 };
 
@@ -148,7 +112,7 @@ class SOCOMD_Commander : SOCOMD_Leader {
 ////////////////////////////////////////////////////////////////////////////////
 // Rifleman
 
-class SOCOMD_Rifleman : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Rifleman : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -161,6 +125,7 @@ class SOCOMD_Rifleman : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_RIFLEMAN;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -172,7 +137,7 @@ class SOCOMD_Rifleman : SOCOMD_Soldier_Base_Bluefor {
 
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
-class SOCOMD_marksman : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_marksman : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun		    = ITEM_HANDGUN_MARKSMAN;
@@ -187,6 +152,7 @@ class SOCOMD_marksman : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_MARKSMAN;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
 		};
 	};
@@ -198,7 +164,7 @@ class SOCOMD_marksman : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // Sapper
 
-class SOCOMD_Sapper : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Sapper : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_SAPPER;
 	secondary		= ITEM_SECONDARY_SAPPER;
 	handgun		    = ITEM_HANDGUN_SAPPER;
@@ -212,6 +178,7 @@ class SOCOMD_Sapper : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_SAPPER;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -236,7 +203,7 @@ class SOCOMD_Sapper : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // Machine Gunner
 
-class SOCOMD_MachineGunner : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_MachineGunner : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_MACHINEGUNNER;
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
 	handgun		    = ITEM_HANDGUN_MACHINEGUNNER;
@@ -251,6 +218,7 @@ class SOCOMD_MachineGunner : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_MACHINEGUNNER;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 4)
 		};
 	};
@@ -263,7 +231,7 @@ class SOCOMD_MachineGunner : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // Medic
 
-class SOCOMD_Medic : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Medic : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_MEDIC;
 	secondary		= ITEM_SECONDARY_MEDIC;
 	handgun		    = ITEM_HANDGUN_MEDIC;
@@ -277,6 +245,7 @@ class SOCOMD_Medic : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_MEDIC;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -302,7 +271,7 @@ class SOCOMD_Medic : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // LAT
 
-class SOCOMD_AT : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_AT : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_AT;
 	secondary		= ITEM_SECONDARY_AT;
 	handgun		    = ITEM_HANDGUN_AT;
@@ -316,6 +285,7 @@ class SOCOMD_AT : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_AT;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -329,7 +299,7 @@ class SOCOMD_AT : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
-class SOCOMD_Sniper : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Sniper : SOCOMD_Soldier_Base {
 	primary	        = ITEM_PRIMARY_SNIPER;
 	secondary		= ITEM_SECONDARY_SNIPER;
 	handgun		    = ITEM_HANDGUN_SNIPER;
@@ -347,6 +317,7 @@ class SOCOMD_Sniper : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_SNIPER;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 10)
@@ -361,7 +332,7 @@ class SOCOMD_Sniper : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // Recon
 
-class SOCOMD_Recon : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Recon : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_RECON;
 	secondary		= ITEM_SECONDARY_RECON;
 	handgun		    = ITEM_HANDGUN_RECON;
@@ -381,6 +352,7 @@ class SOCOMD_Recon : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_RECON;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(ACE_Kestrel4500, 1)
 			LOADOUT_ITEM(ACE_RangeCard, 1)
@@ -406,7 +378,7 @@ class SOCOMD_Recon : SOCOMD_Soldier_Base_Bluefor {
 ////////////////////////////////////////////////////////////////////////////////
 // MORTAR
 
-class SOCOMD_Mortar : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Mortar : SOCOMD_Soldier_Base {
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -421,6 +393,7 @@ class SOCOMD_Mortar : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_RIFLEMAN;
 		class Inventory : Inventory	{
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 			LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 2)
@@ -439,7 +412,7 @@ class SOCOMD_Support_Base {
 
 };
 
-class SOCOMD_Pilot : SOCOMD_Soldier_Base_Bluefor {
+class SOCOMD_Pilot : SOCOMD_Soldier_Base {
     primary 		= ITEM_PRIMARY_PILOT;
     secondary 		= ITEM_SECONDARY_PILOT;
 	handgun 		= ITEM_HANDGUN_PILOT;
@@ -455,8 +428,9 @@ class SOCOMD_Pilot : SOCOMD_Soldier_Base_Bluefor {
 	class Vest : Vest {
 		type = ITEM_VEST_PILOT;
 		class Inventory : Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
+			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
 		};
 	};
 
