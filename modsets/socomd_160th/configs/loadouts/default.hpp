@@ -68,27 +68,25 @@
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
 ////////////////////////////////////////////////////////////////////////////////
-// Commander
-
-class SOCOMD_Commander {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory {
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
 // Leader
+class SOCOMD_Loadout_Base;
+class SOCOMD_Unarmed : SOCOMD_Loadout_Base {
+	class Uniform;
+	class Vest;
+	class Backpack;
+};
+class SOCOMD_Soldier_Base : SOCOMD_Unarmed {
+	class Vest : Vest {
+		class Inventory;
+	};
+	class Backpack : Backpack {
+		class Inventory;
+	};
+};
 
-class SOCOMD_Leader {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory	{
+class SOCOMD_Leader : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -96,16 +94,13 @@ class SOCOMD_Leader {
 		};
 	};
 };
-
-class SOCOMD_2IC : SOCOMD_Leader {};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Rifleman
 
-class SOCOMD_Rifleman {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory	{
+class SOCOMD_Rifleman : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -116,10 +111,10 @@ class SOCOMD_Rifleman {
 
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
-class SOCOMD_marksman {
-	maxOptic		= "4x";
-	class Vest {
-		class Inventory	{
+
+class SOCOMD_marksman : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
 		};
 	};
@@ -128,10 +123,9 @@ class SOCOMD_marksman {
 ////////////////////////////////////////////////////////////////////////////////
 // Sapper
 
-class SOCOMD_Sapper {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory	{
+class SOCOMD_Sapper : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -143,10 +137,9 @@ class SOCOMD_Sapper {
 ////////////////////////////////////////////////////////////////////////////////
 // Medic
 
-class SOCOMD_Medic {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory	{
+class SOCOMD_Medic : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory : Inventory	{
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -158,10 +151,9 @@ class SOCOMD_Medic {
 ////////////////////////////////////////////////////////////////////////////////
 // LAT
 
-class SOCOMD_AT {
-	maxOptic		= "2x";
-	class Vest {
-		class Inventory	{
+class SOCOMD_AT : SOCOMD_Soldier_Base {
+	class Vest : Vest {
+		class Inventory	: Inventory {
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 0)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
@@ -169,8 +161,8 @@ class SOCOMD_AT {
 		};
 	};
 
-	class Backpack {
-		class Inventory {
+	class Backpack : Backpack {
+		class Inventory : Inventory {
 			LOADOUT_ITEM(MRAWS_HEAT_F, 1)
 			LOADOUT_ITEM(MRAWS_HE_F, 1)
 		};

@@ -100,5 +100,6 @@ class _xx_##id { \
 class CfgLoadouts {
 	class SOCOMD {
 		#include "loadouts\default.hpp"
+        #include "loadouts\socomd.hpp"
 	};
 };

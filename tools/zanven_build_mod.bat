@@ -7,3 +7,6 @@ buildtool -x C:\DePboTools\bin\MakePbo.exe -c ./buildtool.config.yaml -d ../ -o 
 
 :: reload core
 :: diag_mergeConfigFile ["C:\git\socomd\mods\core\socomd_core\config.cpp"];diag_resetShapes;
+
+:: reload 160th joint
+:: diag_mergeConfigFile ["C:\git\socomd\mods\modsets\socomd_160th"];diag_resetShapes;
