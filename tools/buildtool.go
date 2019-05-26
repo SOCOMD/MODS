@@ -37,21 +37,21 @@ func main() {
 
 	yamlFile, err := ioutil.ReadFile(configDir)
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Println(err)
 		return
 	}
 
 	var buildConfig Config
 	err = yaml.Unmarshal(yamlFile, &buildConfig)
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Println(err)
 		return
 	}
 
 	for _, modset := range buildConfig.Modsets {
 		err = modset.Build()
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Println(err)
 		}
 	}
 }
@@ -64,19 +64,22 @@ func (modset *Modset) Build() error {
 
 	err := os.MkdirAll(outputPath, os.ModePerm)
 	if err != nil {
-		return err
+		return fmt.Errorf("Failed to make Output Path: %s", err)
 	}
 
 	for _, mod := range modset.Mods {
 		modBuildPath := filepath.Join(workingPath, mod)
 		err = MakePBO(modBuildPath, outputPath)
+		if err != nil {
+			return fmt.Errorf("Failed to makepbo: %s", err)
+		}
 	}
-	return err
+	return nil
 }
 
 //MakePBO - Runs Mikero MakePbo
 func MakePBO(buildPath string, outputPath string) error {
-	
+
 	var cmdArgs []string
 	var cmdName string
 	if runtime.GOOS == "windows" {
