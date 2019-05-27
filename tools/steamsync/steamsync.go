@@ -57,15 +57,15 @@ func main() {
 		err := DownloadContent(id)
 		if err != nil {
 			fmt.Println(err.Error())
+			return
 		}
 
 		err = SymlinkContent(name, id)
 		if err != nil {
 			fmt.Printf(err.Error())
+			return
 		}
 	}
-
-	fmt.Scanln()
 }
 
 //DownloadContent - Download workshop item to output file
@@ -102,7 +102,7 @@ func SymlinkContent(name string, id string) error {
 		cmdArgs = []string{"/c", "mklink", "/d", dest, source}
 	} else {
 		cmdName = "ln"
-		cmdArgs = []string{"-s", dest, source}
+		cmdArgs = []string{"-s", source, dest}
 	}
 
 	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
