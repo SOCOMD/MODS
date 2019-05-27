@@ -102,7 +102,7 @@ func SymlinkContent(name string, id string) error {
 		cmdArgs = []string{"/c", "mklink", "/d", dest, source}
 	} else {
 		cmdName = "ln"
-		cmdArgs = []string{"-s", source, dest}
+		cmdArgs = []string{"-sf", source, dest}
 	}
 
 	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
