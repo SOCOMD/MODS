@@ -1,10 +1,3 @@
-// [FOX] NVG
-force fox_nvg_debug = false;
-force fox_nvg_mode = "playMusic";
-force fox_nvg_soundFile = "fox_nvg_sound";
-force fox_nvg_volume = true;
-
-
 // ACE Advanced Ballistics
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
@@ -12,6 +5,15 @@ force force ace_advanced_ballistics_bulletTraceEnabled = true;
 force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
+
+// ACE Advanced Fatigue
+force force ace_advanced_fatigue_enabled = false;
+force force ace_advanced_fatigue_enableStaminaBar = true;
+force force ace_advanced_fatigue_loadFactor = 1;
+force force ace_advanced_fatigue_performanceFactor = 1;
+force force ace_advanced_fatigue_recoveryFactor = 1;
+force force ace_advanced_fatigue_swayFactor = 1;
+force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
 force force ace_advanced_throwing_enabled = true;
@@ -367,15 +369,33 @@ force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
 force force ace_zeus_autoAddObjects = true;
+force force ace_zeus_canCreateZeus = -1;
 force force ace_zeus_radioOrdnance = false;
 force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
-force force ace_zeus_canCreateZeus = -1;
+
+// ACEX Field Rations
+force force acex_field_rations_affectAdvancedFatigue = false;
+force force acex_field_rations_enabled = false;
+force force acex_field_rations_hudShowLevel = 0;
+force force acex_field_rations_hudTransparency = -1;
+force force acex_field_rations_hudType = 0;
+force force acex_field_rations_hungerSatiated = 1;
+force force acex_field_rations_thirstQuenched = 1;
+force force acex_field_rations_timeWithoutFood = 2;
+force force acex_field_rations_timeWithoutWater = 2;
 
 // ACEX Fortify
 force force acex_fortify_settingHint = 0;
+
+// ACEX Headless
+force force acex_headless_delay = 15;
+force force acex_headless_enabled = false;
+force force acex_headless_endMission = 0;
+force force acex_headless_log = false;
+force force acex_headless_transferLoadout = 0;
 
 // ACEX Sitting
 force force acex_sitting_enable = true;
@@ -431,22 +451,14 @@ acre_sys_core_unmuteClients = true;
 // CBA UI
 cba_ui_StorePasswords = 1;
 
+// CBA Weapons
+force force cba_disposable_dropUsedLauncher = 2;
+force force cba_disposable_replaceDisposableLauncher = true;
+force force cba_events_repetitionMode = 1;
+force force cba_optics_usePipOptics = true;
+
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = false;
-
-// Fire For Effect
-force force RydFFE_2PhWithoutFO = true;
-force force RydFFE_Acc = 4;
-force force RydFFE_Active = true;
-force force RydFFE_Amount = 3;
-force force RydFFE_Debug = false;
-force force RydFFE_FO_string = "";
-force force RydFFE_FoAccGain = 1;
-force force RydFFE_FOClass_string = "i_spotter_f, o_spotter_f, b_spotter_f, o_recon_jtac_f, b_recon_jtac_f, i_sniper_f, o_sniper_f, b_sniper_f, i_soldier_m_f, o_soldier_m_f, b_g_soldier_m_f, b_soldier_m_f, o_recon_m_f, b_recon_m_f, o_soldieru_m_f, i_uav_01_f, i_uav_02_cas_f, i_uav_02_f, o_uav_01_f, o_uav_02_cas_f, o_uav_02_f, b_uav_01_f, b_uav_02_cas_f, b_uav_02_f";
-force force RydFFE_Monogamy = true;
-force force RydFFE_OnePhase = true;
-force force RydFFE_Safe = 100;
-force force RydFFE_ShellView = false;
 
 // NIArms
 force force niarms_magSwitch = true;
@@ -466,23 +478,18 @@ Change the position recovery from left click to right click. = false;
 Enable automatic wall avoidance. = false;
 Lookahead for corner detection (in m) = "0.2";
 
-// VCOM DRIVING
-force force VCM_DRIVERLIMIT = 4;
-force force VCM_DrivingActivated = false;
-force force VCM_DrivingDelay = 0.75;
-force force VCM_DrivingDist = 10;
-
 // VCOM SETTINGS
-force force Vcm_ActivateAI = true;
+force force VCM_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 100;
-force force VCM_AIHEALING = false;
-force force VCM_LGARRISONCHANCE = 25;
 force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
 force force VCM_ARTYENABLE = true;
-force force VCM_ARTYSPREAD = 300;
+force force VCM_ARTYSIDES = [WEST,EAST,GUER];
+force force VCM_CARGOCHNG = true;
+force force VCM_ClassSteal = true;
 force force VCM_Debug = false;
+force force VCM_DISEMBARKRANGE = 200;
 force force VCM_ForceSpeed = false;
 force force VCM_FRMCHANGE = true;
 force force VCM_HEARINGDISTANCE = 800;
@@ -493,6 +500,8 @@ force force VCM_SIDEENABLED = [WEST,EAST,GUER];
 force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 5;
 force force VCM_StealVeh = false;
+force force VCM_TURRETUNLOAD = true;
+force force VCM_USECBASETTINGS = true;
 force force VCM_WARNDELAY = 300;
 force force VCM_WARNDIST = 1000;
 
