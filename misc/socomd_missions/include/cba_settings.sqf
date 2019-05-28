@@ -501,7 +501,6 @@ force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 5;
 force force VCM_StealVeh = false;
 force force VCM_TURRETUNLOAD = true;
-force force VCM_USECBASETTINGS = true;
 force force VCM_WARNDELAY = 300;
 force force VCM_WARNDIST = 1000;
 

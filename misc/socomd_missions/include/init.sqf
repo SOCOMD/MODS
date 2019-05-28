@@ -7,6 +7,9 @@ enableRadio false;
 //Using ACRE2
 [] execVM "include\acre2_compat.sqf";
 
+//Enable VCOM CBA Settings
+VCM_USECBASETTINGS = true;
+
 //VCOM Difficulty Settings
 VCM_AIDIFA = [
 	['aimingAccuracy', 0.01],
