@@ -77,30 +77,12 @@ addMissionEventHandler ["Map", {
 		{
 			// get 12 digit cord for waypoint
 			_pos = getMarkerPos _x;
-			// strip decimals to reduce to 10 digit
-			_posx = parseNumber ((_pos select 0) toFixed 0);
-			_posy = parseNumber ((_pos select 1) toFixed 0);
+			_gridPos = mapGridPosition _pos;
+			_xCoord = _gridPos select [0,3];
+			_xCoord = _xCoord + (str floor((_pos select 0) % 100 / 10)); 
+			_yCoord = _gridPos select [3,3];
+			_yCoord = _yCoord + (str floor((_pos select 1) % 100 / 10));
 
-			// convert to string and strip 1 digit if x or y above 4 digits
-			if (count (str _posx) > 4) then {
-				_posx = parseNumber ((str _posx) select [0,4])
-			};
-			if (count (str _posy) > 4) then {
-				_posy = parseNumber ((str _posy) select [0,4])
-			};
-			_posxPrefix = "";
-			private _xCoord = switch true do {
-				case (_posx >= 1000): {"" + (str _posx)};
-				case (_posx >= 100): {"0" + (str _posx)};
-				case (_posx >= 10): {"00" + (str _posx)};
-				default {"000" + str _posx};
-			};
-			private _yCoord = switch true do {
-				case (_posy >= 1000): {"" + (str _posy)};
-				case (_posy >= 100): {"0" + (str _posy)};
-				case (_posy >= 10): {"00" + (str _posy)};
-				default {"000" + str _posy};
-			};
 			_markerText = markerText _x;
 			switch (_forEachIndex) do {
 				case 0 : {ace_dagr_wp0 = parseNumber (_xCoord + _yCoord); ace_dagr_wpString0 = _markerText; ace_dagr_numWaypoints = 1};
