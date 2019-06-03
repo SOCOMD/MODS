@@ -81,8 +81,6 @@ func DownloadContent(id string) error {
 	download := fmt.Sprintf(`+workshop_download_item %s %s`, arma3productid, id)
 	cmdArgs := []string{auth, output, download, "validate", "+quit"}
 
-	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
-
 	cmd := exec.Command(cmdName, cmdArgs...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -104,8 +102,6 @@ func SymlinkContent(name string, id string) error {
 		cmdName = "ln"
 		cmdArgs = []string{"-sfT", source, dest}
 	}
-
-	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
 
 	err := os.MkdirAll(filepath.Dir(dest), os.ModePerm)
 	if err != nil {

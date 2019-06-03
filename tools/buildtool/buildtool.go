@@ -29,10 +29,10 @@ var configDir string
 var execMakePbo string
 
 func main() {
-	flag.StringVar(&workingDir, "d", "./", "-d working directory")
-	flag.StringVar(&outputDir, "o", "./out", "-o output directory")
-	flag.StringVar(&configDir, "c", "", "-o output directory")
-	flag.StringVar(&execMakePbo, "x", "", "-o output directory")
+	flag.StringVar(&workingDir, "d", "./", "Working directory")
+	flag.StringVar(&outputDir, "o", "./out", "Output directory")
+	flag.StringVar(&configDir, "c", "", "Configuration yaml file")
+	flag.StringVar(&execMakePbo, "x", "", "MakePBO executable file")
 	flag.Parse()
 
 	yamlFile, err := ioutil.ReadFile(configDir)
@@ -85,8 +85,6 @@ func MakePBO(buildPath string, outputPath string) error {
 		cmdName = execMakePbo
 		cmdArgs = []string{"-N", "-P", buildPath, outputPath}
 	}
-
-	fmt.Println(fmt.Sprintf("%s %s", cmdName, cmdArgs))
 
 	cmd := exec.Command(cmdName, cmdArgs...)
 	cmd.Stdout = os.Stdout
