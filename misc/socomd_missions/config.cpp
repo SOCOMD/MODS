@@ -1,9 +1,7 @@
 #define ADD(ID,BRIEF,DIR) class ID { briefingName = BRIEF; directory = socomd_missions\##DIR; };
 
-class CfgPatches
-{
-	class socomd_missions
-	{
+class CfgPatches {
+	class socomd_missions {
 		//Internal Version
 		version = 1.1.0;
 		versionStr = "1.1.0";
@@ -74,6 +72,7 @@ class CfgMissions {
 	ADD(ROSCHEFOB,SOCOMD Rosche FOB,fobs\Rosche_FOB.WL_Rosche)
 	ADD(KURJARIFOB,SOCOMD Kurjari FOB,fobs\Kurjari_FOB.tem_kujari)
 	ADD(SUURSAARIVLHD,SOCOMD Suursaariv FOB,fobs\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
+	ADD(VINJESVINGENFOB,SOCOMD Vinjesvingen FOB,fobs\Vinjesvingen_FOB.tem_vinjesvingenc)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
@@ -132,6 +131,7 @@ class CfgMissions {
 	ADD(ROSCHEFOB_HC,SOCOMD [HC] Rosche FOB,fobs_hc\Rosche_FOB.WL_Rosche)
 	ADD(KURJARIFOB_HC,SOCOMD [HC] Kurjari FOB,fobs_hc\Kurjari_FOB.tem_kujari)
 	ADD(SUURSAARIVLHD_HC,SOCOMD [HC] Suursaariv FOB,fobs_hc\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
-	
+	ADD(VINJESVINGENFOB_HC,SOCOMD [HC] Vinjesvingen FOB,fobs_hc\Vinjesvingen_FOB.tem_vinjesvingenc)
+
 	};
 };
