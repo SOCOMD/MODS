@@ -7,7 +7,7 @@ class ItemInfo : VestItem { \
 	containerClass = "Supply170"; \
 	armor = 6; \
 	passThrough = 0.1; \
-	mass = 240; \
+	mass = 60; \
 	class HitpointsProtectionInfo { \
 		class Neck { \
 			hitpointName = "HitNeck"; \
@@ -48,7 +48,7 @@ class ItemInfo : VestItem { \
 	containerClass = "Supply170"; \
 	armor = 12; \
 	passThrough = 0.1; \
-	mass = 240; \
+	mass = 60; \
 	class HitpointsProtectionInfo { \
 		class Neck { \
 			hitpointName = "HitNeck"; \
