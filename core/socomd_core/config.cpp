@@ -3,12 +3,12 @@
 class CfgPatches {
 	class socomd_core {
 		//Internal Version
-		version = 1.1.1;
-		versionStr = "1.1.1";
-		versionAr[] = { 1,1,1 };
+		version = 1.1.2;
+		versionStr = "1.1.2";
+		versionAr[] = { 1,1,2 };
 
 		//Required Version
-		requiredVersion = 0.1;
+		requiredVersion = 1.1.2;
 
 		//Mod Dependencies
 		requiredAddons[] = {

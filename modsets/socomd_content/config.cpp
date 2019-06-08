@@ -2,11 +2,11 @@
 
 class CfgPatches  {
 	class socomd_content  {
-		version = 1.1.0;
-		versionStr = "1.1.0";
-		versionAr[] = { 1,1,0 };
+		version = 1.1.1;
+		versionStr = "1.1.1";
+		versionAr[] = { 1,1,1 };
 
-		requiredVersion = 0.1;
+		requiredVersion = 1.1.1;
 
 		requiredAddons[] = {
 			//CUP Requirments
