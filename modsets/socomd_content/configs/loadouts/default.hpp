@@ -245,7 +245,7 @@ class TAGE_TroopLeader
 
 	class Vest
 	{
-		type = "SOCOMD_lbt_comms_mc_BLK";
+		type = "lbt_tl_blk";
 
 		class Inventory
 		{
@@ -291,7 +291,7 @@ class TAGE_Medic
 
 	class Vest
 	{
-		type = "SOCOMD_Medic_Vest_BLK";
+		type = "lbt_medical_blk";
 		class Inventory
 		{
 			TAGE_VEST_ESSENTIALS
@@ -343,7 +343,7 @@ class TAGE_Sapper
 
 	class Vest
 	{
-		type = "SOCOMD_lbt_tl_mc_BLK";
+		type = "lbt_tl_blk";
 		class Inventory
 		{
 			TAGE_VEST_ESSENTIALS
@@ -393,7 +393,7 @@ class TAGE_Sniper
 
 	class Vest
 	{
-		type = "SOCOMD_lbt_comms_mc_BLK";
+		type = "lbt_operator_blk";
 		class Inventory
 		{
 			TAGE_VEST_ESSENTIALS

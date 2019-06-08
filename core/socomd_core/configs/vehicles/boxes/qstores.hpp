@@ -152,14 +152,14 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 			QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Customise Gear")
 				// Select Vest
 				QSTORE_ACTION_GRP_BEGIN(SELECT_VESTS,"Vests")
-					QSTORE_ACTION_VEST("Comms Tan",SOCOMD_lbt_comms_coy)
-					QSTORE_ACTION_VEST("Comms Multicam",SOCOMD_lbt_comms_mc)
-					QSTORE_ACTION_VEST("Operator Tan",SOCOMD_lbt_tl_coy)
-					QSTORE_ACTION_VEST("Operator Multicam",SOCOMD_lbt_tl_mc)
-					QSTORE_ACTION_VEST("Medic Tan",SOCOMD_lbt_medical_coy)
-					QSTORE_ACTION_VEST("Medic Multicam",SOCOMD_lbt_medical_mc)
-					QSTORE_ACTION_VEST("Weapons Tan",SOCOMD_lbt_weapons_coy)
-					QSTORE_ACTION_VEST("Weapons Multicam",SOCOMD_lbt_weapons_mc)
+					QSTORE_ACTION_VEST("Comms Tan",lbt_comms_coy)
+					QSTORE_ACTION_VEST("Comms Multicam",lbt_comms_mc)
+					QSTORE_ACTION_VEST("Operator Tan",lbt_tl_coy)
+					QSTORE_ACTION_VEST("Operator Multicam",lbt_tl_mc)
+					QSTORE_ACTION_VEST("Medic Tan",lbt_medical_coy)
+					QSTORE_ACTION_VEST("Medic Multicam",lbt_medical_mc)
+					QSTORE_ACTION_VEST("Weapons Tan",lbt_weapons_coy)
+					QSTORE_ACTION_VEST("Weapons Multicam",lbt_weapons_mc)
 				QSTORE_ACTION_GRP_END
 
 				// Select Mortar

@@ -1,42 +1,42 @@
 class CfgLoadoutVests {
-	class SOCOMD_lbt_comms {
+	class lbt_comms {
 		loadoutWhitelist[] = {
-			"SOCOMD_Commander",
-			"SOCOMD_Leader"
+			"Commander",
+			"Leader"
 		};
 	};
 
-	class SOCOMD_lbt_comms_coy : SOCOMD_lbt_comms { };
-	class SOCOMD_lbt_comms_mc : SOCOMD_lbt_comms { };
+	class lbt_comms_coy : lbt_comms { };
+	class lbt_comms_mc : lbt_comms { };
 
-	class SOCOMD_lbt_tl {
+	class lbt_tl {
 		loadoutWhitelist[] = {
-			"SOCOMD_Rifleman",
-			"SOCOMD_Sniper",
-			"SOCOMD_Sapper",
-			"SOCOMD_Recon",
-			"SOCOMD_AT"
+			"Rifleman",
+			"Sniper",
+			"Sapper",
+			"Recon",
+			"AT"
 		};
 	};
 
-	class SOCOMD_lbt_tl_coy : SOCOMD_lbt_tl { };
-	class SOCOMD_lbt_tl_mc : SOCOMD_lbt_tl { };
+	class lbt_tl_coy : lbt_tl { };
+	class lbt_tl_mc : lbt_tl { };
 
-	class SOCOMD_lbt_weapons {
+	class lbt_weapons {
 		loadoutWhitelist[] = {
-			"SOCOMD_Leader"
+			"Leader"
 		};
 	};
 
-	class SOCOMD_lbt_weapons_coy : SOCOMD_lbt_weapons { };
-	class SOCOMD_lbt_weapons_mc : SOCOMD_lbt_weapons { };
+	class lbt_weapons_coy : lbt_weapons { };
+	class lbt_weapons_mc : lbt_weapons { };
 
-	class SOCOMD_lbt_medical {
+	class lbt_medical {
 		loadoutWhitelist[] = {
-			"SOCOMD_Medic"
+			"Medic"
 		};
 	};
 
-	class SOCOMD_lbt_medical_coy : SOCOMD_lbt_medical { };
-	class SOCOMD_lbt_medical_mc : SOCOMD_lbt_medical { };
+	class lbt_medical_coy : lbt_medical { };
+	class lbt_medical_mc : lbt_medical { };
 };

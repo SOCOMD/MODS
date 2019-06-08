@@ -321,7 +321,7 @@ class SOCOMD_MachineGunner {
 		type = ITEM_VEST_MACHINEGUNNER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 4)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
 		};
 	};
 
@@ -330,6 +330,7 @@ class SOCOMD_MachineGunner {
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
 		};
 	};
 };
