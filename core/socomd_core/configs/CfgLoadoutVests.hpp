@@ -14,7 +14,7 @@ class CfgLoadoutVests {
 		loadoutWhitelist[] = {
 			"SOCOND_Rifleman",
 			"SOCOND_Sniper",
-			"SOCOMD_Marksman"
+			"SOCOMD_Marksman",
 			"SOCOND_Sapper",
 			"SOCOND_Recon",
 			"SOCOND_AT"
