@@ -22,4 +22,3 @@ if (effected == -1) then {
 	_speed = linearConversion[_maxLoad,_minLoad,_weight,_minSpeed,_maxSpeed,true];
 };
 _unit setAnimSpeedCoef _speed;
-hint format ["Speed: %1 - %2 - %3",_speed,_anim,_weight];
