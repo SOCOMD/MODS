@@ -217,7 +217,7 @@ class SOCOMD_Rifleman {
 
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
-class SOCOMD_marksman {
+class SOCOMD_Marksman {
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun		    = ITEM_HANDGUN_MARKSMAN;

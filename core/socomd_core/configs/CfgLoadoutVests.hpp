@@ -1,8 +1,9 @@
 class CfgLoadoutVests {
 	class lbt_comms {
 		loadoutWhitelist[] = {
-			"Commander",
-			"Leader"
+			"SOCOND_Commander",
+			"SOCOND_Leader",
+			"SOCOND_2IC"
 		};
 	};
 
@@ -11,11 +12,12 @@ class CfgLoadoutVests {
 
 	class lbt_tl {
 		loadoutWhitelist[] = {
-			"Rifleman",
-			"Sniper",
-			"Sapper",
-			"Recon",
-			"AT"
+			"SOCOND_Rifleman",
+			"SOCOND_Sniper",
+			"SOCOMD_Marksman"
+			"SOCOND_Sapper",
+			"SOCOND_Recon",
+			"SOCOND_AT"
 		};
 	};
 
@@ -24,7 +26,7 @@ class CfgLoadoutVests {
 
 	class lbt_weapons {
 		loadoutWhitelist[] = {
-			"Leader"
+			"SOCOND_Leader"
 		};
 	};
 
@@ -33,7 +35,7 @@ class CfgLoadoutVests {
 
 	class lbt_medical {
 		loadoutWhitelist[] = {
-			"Medic"
+			"SOCOND_Medic"
 		};
 	};
 
