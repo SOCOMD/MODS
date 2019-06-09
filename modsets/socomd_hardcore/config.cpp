@@ -25,3 +25,4 @@ class CfgPatches  {
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
+#include "configs\CfgExtendedEventHandlers.hpp"

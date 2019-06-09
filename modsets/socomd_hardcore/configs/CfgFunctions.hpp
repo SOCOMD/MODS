@@ -1,5 +1,11 @@
 class CfgFunctions
 {
+	class SOCOMD {
+		class Util {
+			file = "\socomd_hardcore\functions\util";
+			class animSpeedSet {};
+		};
+	};
 	class cTab
 	{
 		class Functions
