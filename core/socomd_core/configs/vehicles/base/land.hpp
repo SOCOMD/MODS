@@ -280,10 +280,84 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 		"showTools",1,
 		"showSLATHull",1
 	};
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
 
+	class TransportMagazines {
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+	};
+
+	class TransportItems {
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
+	};
+
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+	};
 	class AnimationSources : AnimationSources {
 		class showSLATHull : showSLATHull {
 			initPhase = 1;
+		};
+	};
+};
+
+class VTN_LAV25A1_WDL;
+class SOCOMD_APC_C : VTN_LAV25A1_WDL {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "LAV25A1 WDL (3/6)";
+	vehicleclass = "Armored";
+
+	forceInGarage = 1;
+
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
+
+	class AcreIntercoms {
+		class Intercom_1 {
+			displayName = "Crew Intercom";
+			shortName = "Crew";
+			allowedPositions[] = {"crew"};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"commander"};
+			connectedByDefault = 1;
+		};
+	};
+};
+
+class VTN_LAV25A1_DES;
+class SOCOMD_APC_D : VTN_LAV25A1_DES {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "LAV25A1 DES (3/6)";
+	vehicleclass = "Armored";
+
+	forceInGarage = 1;
+
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
+
+	class AcreIntercoms {
+		class Intercom_1 {
+			displayName = "Crew Intercom";
+			shortName = "Crew";
+			allowedPositions[] = {"crew"};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"commander"};
+			connectedByDefault = 1;
 		};
 	};
 };
