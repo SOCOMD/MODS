@@ -84,13 +84,6 @@ class RH_t1 : ItemCore {
 
 class RH_t1_tan : RH_t1 {
 	displayName = "[2x] Aimpoint T1 [TAN]";
-	class ItemInfo : InventoryOpticsItem_Base_F {
-		class OpticsModes {
-			class T1 {
-				OPTIC_X2
-			};
-		};
-	};
 };
 
 // this scope was aids, just let it be
@@ -127,13 +120,6 @@ class RH_compM2 : ItemCore {
 
 class RH_compM2_tan : RH_compM2 {
 	displayName = "[3x] Aimpoint Compm2 [TAN]";
-	class ItemInfo : InventoryOpticsItem_Base_F {
-		class OpticsModes {
-			class AIM {
-				OPTIC_X3
-			};
-		};
-	};
 };
 
 class sma_spitfire_03_sc_black : ItemCore {
@@ -161,14 +147,6 @@ class RH_ta31rco : ItemCore {
 
 class RH_ta31rco_tan : RH_ta31rco {
 	displayName = "[4x] ACOG TA31RCO [TAN]";
-	class ItemInfo : InventoryOpticsItem_Base_F {
-		class OpticsModes {
-			class acogscope {
-				OPTIC_X4
-			};
-			delete acogcqb;
-		};
-	};
 };
 
 class SMA_ELCAN_SPECTER : ItemCore {
