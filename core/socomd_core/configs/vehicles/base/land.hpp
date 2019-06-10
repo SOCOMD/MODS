@@ -280,6 +280,7 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 		"showTools",1,
 		"showSLATHull",1
 	};
+
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
@@ -302,7 +303,25 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	};
 };
 
-class VTN_LAV25A1_WDL;
+////////////////////////////////////////////////////////////////////////////////
+// LAV
+
+class VTN_LAV25_BASE;
+
+class VTN_LAV25A1_BASE : VTN_LAV25_BASE {
+	class TextureSources;
+	class AnimationSources;
+};
+
+class VTN_LAV25A1_WDL : VTN_LAV25A1_BASE {
+	class AnimationSources : AnimationSources {
+		class Backpack;
+		class Br;
+		class Br1;
+		class tabl;
+	};
+};
+
 class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	scope = public;
 	scopeCurator = public;
@@ -311,7 +330,7 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "LAV25A1 WDL (3/6)";
+	displayname = "LAV25A1 (3/6)";
 	vehicleclass = "Armored";
 
 	forceInGarage = 1;
@@ -330,34 +349,42 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 			connectedByDefault = 1;
 		};
 	};
-};
 
-class VTN_LAV25A1_DES;
-class SOCOMD_APC_D : VTN_LAV25A1_DES {
-	scope = public;
-	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
-	side = WEST;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "LAV25A1 DES (3/6)";
-	vehicleclass = "Armored";
+	class TextureSources : TextureSources {
+		class SOCOMD {
+			displayName = "SOCOMD";
+			author = AUTHOR_STR;
+			textures[] = {
+				"socomd_data_core\lav\lavbody_co.paa",
+				"socomd_data_core\lav\lavbody2_co.paa",
+				"socomd_data_core\lav\kangaroo_decal.paa",
+				"socomd_data_core\lav\lavalfa_ca.paa"
+			};
+			faction[] = {"BLU_F_F","OPF_G_F","IND_G_F"};
+		};
+	};
 
-	forceInGarage = 1;
+	hiddenselections[] = {
+		"Camo1",
+		"Camo2",
+		"z1",
+		"Camo3"
+	};
 
-	crew = "SOCOMD_Crewman";
-	typicalCargo[] = {"SOCOMD_Crewman"};
+	hiddenselectionstextures[] = {
+		"socomd_data_core\lav\lavbody_co.paa",
+		"socomd_data_core\lav\lavbody2_co.paa",
+		"socomd_data_core\lav\kangaroo_decal.paa",
+		"socomd_data_core\lav\lavalfa_ca.paa"
+	};
 
-	class AcreIntercoms {
-		class Intercom_1 {
-			displayName = "Crew Intercom";
-			shortName = "Crew";
-			allowedPositions[] = {"crew"};
-			limitedPositions[] = {};
-			numLimitedPositions = 0;
-			masterPositions[] = {"commander"};
-			connectedByDefault = 1;
+	class AnimationSources : AnimationSources {
+		class Backpack : Backpack {
+			initPhase = 1;
+		};
+
+		class tabl : tabl {
+			initPhase = 1;
 		};
 	};
 };
