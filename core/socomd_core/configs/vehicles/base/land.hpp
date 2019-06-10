@@ -322,11 +322,12 @@ class VTN_LAV25A1_WDL : VTN_LAV25A1_BASE {
 		class tabl;
 	};
 	class HitPoints : HitPoints {
-			class HitHull;
-			class HitEngine;
-			class HitFuel;
-			class HitLFWheelDir;
-			class HitGlass1;
+		class HitHull;
+		class HitEngine;
+		class HitFuel;
+		class HitLFWheelDir;
+		class HitLFWheel;
+		class HitGlass1;
 	};
 };
 
@@ -396,15 +397,99 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 		};
 	};
 	class HitPoints : HitPoints {
-			class HitHull : HitHull {
-				armor = 2.2;
-				explosionShielding = 0.0015;
-				passThrough = 0.1;
-			};
-			//class HitEngine;
-			//class HitFuel;
-			//class HitLFWheelDir;
-			//class HitGlass1;
+		class HitHull : HitHull {
+			armor = 2.6;
+			minimalHit = 0.15;
+			explosionShielding = 0.0015;
+			passThrough = 0.1;
+		};
+		//class HitEngine;
+		class HitFuel : HitFuel {
+			explosionShielding = 0.4;
+		};
+		//class HitGlass1;
+		class HitLFWheelDir : HitLFWheelDir {
+			//armor = 0.25;
+			armor = 0.5;
+			explosionShielding = 10;
+			passThrough = 0.5;
+		};
+		class HitLFWheel : HitLFWheel {
+			//explosionShielding = 10;
+			armor = 0.5;
+			explosionShielding = 10;
+			passThrough = 0.5;
+		};
+		class HitLF2WheelDir: HitLFWheelDir
+		{
+			visual = "wheel_1_2_hide";
+			armorComponent = "wheel_1_2_hide";
+		};
+		class HitLF2Wheel: HitLFWheel
+		{
+			name = "wheel_1_2_steering";
+			depends = "HitLF2WheelDir - 0.25";
+		};
+		class HitLMWheelDir: HitLFWheelDir
+		{
+			visual = "wheel_1_3_hide";
+			armorComponent = "wheel_1_3_hide";
+		};
+		class HitLMWheel: HitLFWheel
+		{
+			name = "wheel_1_3_steering";
+			depends = "HitLMWheelDir - 0.25";
+		};
+		class HitLBWheelDir: HitLFWheelDir
+		{
+			visual = "wheel_1_4_hide";
+			armorComponent = "wheel_1_4_hide";
+		};
+		class HitLBWheel: HitLFWheel
+		{
+			name = "wheel_1_4_steering";
+			depends = "HitLBWheelDir - 0.25";
+		};
+		class HitRFWheelDir: HitLFWheelDir
+		{
+			visual = "wheel_2_1_hide";
+			armorComponent = "wheel_2_1_hide";
+		};
+		class HitRFWheel: HitLFWheel
+		{
+			name = "wheel_2_1_steering";
+			depends = "HitRFWheelDir - 0.25";
+		};
+		class HitRF2WheelDir: HitLFWheelDir
+		{
+			visual = "wheel_2_2_hide";
+			armorComponent = "wheel_2_2_hide";
+		};
+		class HitRF2Wheel: HitLFWheel
+		{
+			name = "wheel_2_2_steering";
+			depends = "HitRF2WheelDir - 0.25";
+		};
+		class HitRMWheelDir: HitLFWheelDir
+		{
+			visual = "wheel_2_3_hide";
+			armorComponent = "wheel_2_3_hide";
+		};
+		class HitRMWheel: HitLFWheel
+		{
+			name = "wheel_2_3_steering";
+			depends = "HitRMWheelDir - 0.25";
+		};
+		class HitRBWheelDir: HitLFWheelDir
+		{
+			visual = "wheel_2_4_hide";
+			armorComponent = "wheel_2_4_hide";
+		};
+		class HitRBWheel: HitLFWheel
+		{
+			name = "wheel_2_4_steering";
+			depends = "HitRBWheelDir - 0.25";
+		};
 	};
 };
 
