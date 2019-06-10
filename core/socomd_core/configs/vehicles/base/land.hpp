@@ -305,13 +305,18 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 
 ////////////////////////////////////////////////////////////////////////////////
 // LAV
-
-class VTN_LAV25_BASE;
+class APC_Wheeled_01_base_F;
+class VTN_LAV25_BASE : APC_Wheeled_01_base_F {
+	class Turrets;
+};
 
 class VTN_LAV25A1_BASE : VTN_LAV25_BASE {
 	class TextureSources;
 	class AnimationSources;
 	class HitPoints;
+	class Turrets : Turrets {
+		class MainTurret;
+	};
 };
 
 class VTN_LAV25A1_WDL : VTN_LAV25A1_BASE {
@@ -328,6 +333,11 @@ class VTN_LAV25A1_WDL : VTN_LAV25A1_BASE {
 		class HitLFWheelDir;
 		class HitLFWheel;
 		class HitGlass1;
+	};
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			class HitPoints;
+		};
 	};
 };
 
@@ -396,10 +406,36 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 			initPhase = 1;
 		};
 	};
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			class HitPoints : HitPoints {
+				class HitTurret {
+					armor = 0.7;
+					explosionShielding = 0.05;
+					material = -1;
+					minimalHit = 0.15;
+					name = "vez";
+					passThrough = 0;
+					radius = 0.25;
+					visual = "vez";
+				};
+				class HitGun {
+					armor = 0.25;
+					explosionShielding = 0.4;
+					material = -1;
+					minimalHit = 0.15;
+					name = "zbran";
+					passThrough = 0;
+					radius = 0.25;
+					visual = "zbran";
+				};
+			};
+		};
+	};
 	class HitPoints : HitPoints {
 		class HitHull : HitHull {
 			armor = 2.6;
-			minimalHit = 0.15;
+			minimalHit = 0.060;
 			explosionShielding = 0.0015;
 			passThrough = 0.1;
 		};
@@ -412,13 +448,13 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 			//armor = 0.25;
 			armor = 0.5;
 			explosionShielding = 10;
-			passThrough = 0.5;
+			passThrough = 0;
 		};
 		class HitLFWheel : HitLFWheel {
 			//explosionShielding = 10;
 			armor = 0.5;
 			explosionShielding = 10;
-			passThrough = 0.5;
+			passThrough = 0;
 		};
 		class HitLF2WheelDir: HitLFWheelDir
 		{

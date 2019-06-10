@@ -1256,7 +1256,7 @@ class CfgVehicles
 							initFov = "0.75";
 							minFov = "0.75";
 							maxFov = "0.75";
-							visionMode[] = {"Normal"};
+							visionMode[] = {"Normal","NVG"};
 						};
 						class ViewOptics
 						{
@@ -1269,7 +1269,7 @@ class CfgVehicles
 							initFov = "0.75";
 							minFov = "0.75";
 							maxFov = "0.75";
-							visionMode[] = {"Normal"};
+							visionMode[] = {"Normal","NVG"};
 						};
 						showCrewAim = 1;
 						startEngine = 0;
@@ -1304,7 +1304,7 @@ class CfgVehicles
 								initFov = "0.46 / 7";
 								minFov = "0.46 / 7";
 								maxFov = "0.46 / 7";
-								visionMode[] = {"Normal"};
+								visionMode[] = {"Normal","NVG"};
 								gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
 								gunnerOpticsEffect[] = {};
 							};
@@ -1372,7 +1372,7 @@ class CfgVehicles
 					initFov = "0.75";
 					minFov = "0.75";
 					maxFov = "0.75";
-					visionMode[] = {"Normal"};
+					visionMode[] = {"Normal","NVG"};
 				};
 				castGunnerShadow = 1;
 				stabilizedInAxes = "StabilizedInAxesBoth";
@@ -1419,7 +1419,7 @@ class CfgVehicles
 						initFov = "0.46 / 7";
 						minFov = "0.46 / 7";
 						maxFov = "0.46 / 7";
-						visionMode[] = {"Normal"};
+						visionMode[] = {"Normal","NVG"};
 						gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
 						gunnerOpticsEffect[] = {};
 					};
