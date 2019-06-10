@@ -281,10 +281,130 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 		"showSLATHull",1
 	};
 
+	class TransportWeapons {
+		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+	};
+
+	class TransportMagazines {
+		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+	};
+
+	class TransportItems {
+		INVENTORY_VEHICLE_DEFAULT_ITEMS
+	};
+
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+	};
 	class AnimationSources : AnimationSources {
 		class showSLATHull : showSLATHull {
 			initPhase = 1;
 		};
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// LAV
+
+class VTN_LAV25_BASE;
+
+class VTN_LAV25A1_BASE : VTN_LAV25_BASE {
+	class TextureSources;
+	class AnimationSources;
+	class HitPoints;
+};
+
+class VTN_LAV25A1_WDL : VTN_LAV25A1_BASE {
+	class AnimationSources : AnimationSources {
+		class Backpack;
+		class Br;
+		class Br1;
+		class tabl;
+	};
+	class HitPoints : HitPoints {
+			class HitHull;
+			class HitEngine;
+			class HitFuel;
+			class HitLFWheelDir;
+			class HitGlass1;
+	};
+};
+
+class SOCOMD_APC_C : VTN_LAV25A1_WDL {
+	scope = public;
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+	side = WEST;
+	author = AUTHOR_STR;
+	faction = FACTION_STR;
+	displayname = "LAV-25A1 (3/6)";
+	vehicleclass = "Armored";
+
+	forceInGarage = 1;
+
+	crew = "SOCOMD_Crewman";
+	typicalCargo[] = {"SOCOMD_Crewman"};
+
+	class AcreIntercoms {
+		class Intercom_1 {
+			displayName = "Crew Intercom";
+			shortName = "Crew";
+			allowedPositions[] = {"crew"};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"commander"};
+			connectedByDefault = 1;
+		};
+	};
+
+	class TextureSources : TextureSources {
+		class SOCOMD {
+			displayName = "SOCOMD";
+			author = AUTHOR_STR;
+			textures[] = {
+				"socomd_data_core\lav\lavbody_co.paa",
+				"socomd_data_core\lav\lavbody2_co.paa",
+				"socomd_data_core\lav\kangaroo_decal.paa",
+				"socomd_data_core\lav\lavalfa_ca.paa"
+			};
+			faction[] = {"BLU_F_F","OPF_G_F","IND_G_F"};
+		};
+	};
+
+	hiddenselections[] = {
+		"Camo1",
+		"Camo2",
+		"z1",
+		"Camo3"
+	};
+
+	hiddenselectionstextures[] = {
+		"socomd_data_core\lav\lavbody_co.paa",
+		"socomd_data_core\lav\lavbody2_co.paa",
+		"socomd_data_core\lav\kangaroo_decal.paa",
+		"socomd_data_core\lav\lavalfa_ca.paa"
+	};
+
+	class AnimationSources : AnimationSources {
+		class Backpack : Backpack {
+			initPhase = 1;
+		};
+
+		class tabl : tabl {
+			initPhase = 1;
+		};
+	};
+	class HitPoints : HitPoints {
+			class HitHull : HitHull {
+				armor = 2.2;
+				explosionShielding = 0.0015;
+				passThrough = 0.1;
+			};
+			//class HitEngine;
+			//class HitFuel;
+			//class HitLFWheelDir;
+			//class HitGlass1;
 	};
 };
 

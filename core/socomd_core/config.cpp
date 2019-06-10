@@ -28,6 +28,7 @@ class CfgPatches {
 			"adfu_base",
 			"au_beret_addon",
 			"bma3_bushmaster",
+			"vtn_armorw_lav25_cf",
 			"COS_back_pack",
 			"ctab",
 			"dso_weapons",
@@ -47,6 +48,7 @@ class CfgPatches {
 			//LAND
 			"SOCOMD_APC_A",
 			"SOCOMD_APC_B",
+			"SOCOMD_APC_C",
 			"SOCOMD_BUSHMASTER_TRANS",
 			"SOCOMD_BUSHMASTER_HMG",
 			"SOCOMD_TRUCK_TRANSPORT_A",
