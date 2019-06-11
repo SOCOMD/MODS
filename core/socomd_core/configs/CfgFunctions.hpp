@@ -15,6 +15,7 @@ class CfgFunctions {
 			class ToggleTranslator {};
 			class GetLoadoutScopeFOV {};
 			class GetLoadoutMaxOptic {};
+			class BushMasterInit {};
 		};
 
 		class Actions {

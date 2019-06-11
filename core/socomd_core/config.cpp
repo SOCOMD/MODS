@@ -168,3 +168,4 @@ class CfgPatches {
 #include "configs\CfgUnitInsignia.hpp"
 #include "configs\CfgASORVS.hpp"
 #include "configs\Rsc.hpp"
+#include "configs\CfgExtendedEventHandlers.hpp"

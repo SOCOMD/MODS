@@ -45,8 +45,7 @@ class bma3_bushmaster_base_F : Car_F {
 };
 
 class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
-
-	armor = 60;
+	armor = 6000;
 	armorStructural = 20;
 	explosionShielding = 0.001;
 	damageResistance = 0.03099;
@@ -56,7 +55,7 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 	class HitPoints : HitPoints {
 
 		class HitHull : HitHull {
-			armor = 10.0;
+			armor = 0.1;
 			passThrough = 0.1;
 			minimalHit = 0.01;
 			explosionShielding = 0.0003;
@@ -64,136 +63,136 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 		};
 
 		class HitBody : HitBody {
-			armor = 10.0;
+			armor = 0.3;
 			passThrough = 0.1;
-			minimalHit = 0.01;
+			minimalHit = 0.006;
 			explosionShielding = 0.0003;
 			material = -1;
 		};
 
 		class HitEngine : HitEngine {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
-			minimalHit = 0.01;
-			explosionShielding = 5;
+			minimalHit = 0.0001;
+			explosionShielding = 0.5;
 			material = -1;
 		};
 
 		class HitFuel : HitFuel {
-			armor = 25.0;
+			armor = 0.25;
 			passThrough = 0.5;
-			minimalHit = 0.01;
+			minimalHit = 0.0001;
 			explosionShielding = 0.8;
 			material = -1;
 		};
 
 		class HitLFWheel : HitLFWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitLF2Wheel : HitLF2Wheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitLMWheel : HitLMWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitLBWheel : HitLBWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitRFWheel : HitRFWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitRF2Wheel : HitRF2Wheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitRMWheel : HitRMWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitRBWheel : HitRBWheel {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0.5;
 			explosionShielding = 4.0;
 			material = -1;
 		};
 
 		class HitLGlass : HitLGlass {
-			armor = 1.0;
-			passThrough = 0.5;
+			armor = 0.01;
+			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitRGlass : HitRGlass {
-			armor = 1.0;
-			passThrough = 0.5;
+			armor = 0.01;
+			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass1 : HitGlass1 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass2 : HitGlass2 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass3 : HitGlass3 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass4 : HitGlass4 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass5 : HitGlass5 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 
 		class HitGlass6 : HitGlass6 {
-			armor = 1.0;
+			armor = 0.01;
 			passThrough = 0;
 			explosionShielding = 1.0;
 			material = -1;
