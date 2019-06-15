@@ -16,10 +16,21 @@ class CfgLoadoutWeapons {
 
 	class MachineGun_762;
 	class sma_minimi_mk3_762tsb : MachineGun_762 {
-		 magazines[] = {
+		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
+
+	class Rifle_556_Marksman;
+	class SMA_HK416CUSTOMvfg : Rifle_556_Marksman {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon"
+		};
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_556x45_30Rnd", 8}
+		};
+	}; 
 
 	class Rifle_762;
 	class SMA_HK417vfg : Rifle_762 {};

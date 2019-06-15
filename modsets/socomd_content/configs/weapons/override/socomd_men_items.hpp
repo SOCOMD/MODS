@@ -12,7 +12,7 @@ class SOCOMD_Item_Primary_AT                        : SMA_M4afgSTOCK {};
 //class SOCOMD_Item_Primary_Pilot                   : SMG_05_F {};
 //class SOCOMD_Item_Primary_Crewman                 : SMG_05_F {};
 
-class SOCOMD_Item_Secondary_AT                      : HAFM_LAW {};
+class SOCOMD_Item_Secondary_AT                      : SOCOMD_Carl_Gustav {};
 
 class Sniper_Barret                                 : ej_m107 {};
 class Recon_Barret                                  : ej_m107 {};
