@@ -112,4 +112,7 @@ class CfgAmmo {
 			distance=1;
 		};
 	};
+	class EJ_B_127x99_Ball {
+		hit = 90
+	};
 };
