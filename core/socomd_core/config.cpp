@@ -113,7 +113,6 @@ class CfgPatches {
 			"SOCOMD_Vest_AR",
 			"SOCOMD_Vest_OP",
 			"SOCOMD_Vest_Pilot",
-			"SOCOMD_Vest_Rebreather",
 
 			//HEADGEAR
 			"SOCOMD_Headgear_Helmet",
