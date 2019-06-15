@@ -119,9 +119,9 @@ class SOCOMD_AT {
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM("tf47_m3maaws_HEAT")
-			LOADOUT_ITEM("tf47_m3maaws_HE")
-			};
+			LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
+			LOADOUT_ITEM(tf47_m3maaws_HE, 1)
+		};
 	};
 };
 
@@ -137,6 +137,7 @@ class SOCOMD_MMG {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -170,6 +171,7 @@ class SOCOMD_MortarMini {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -205,6 +207,7 @@ class SOCOMD_MMGAmmo {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;

@@ -209,7 +209,6 @@ ASORGS_Blacklist = [
 	"CUP_optic_CWS",
 	"CUP_optic_goshawk_ris",
 	"RH_anpvs4",
-	"RH_anpvs10",
 	"RH_pas13ch",
 	"RH_pas13cm",
 	"RH_pas13cmg",
