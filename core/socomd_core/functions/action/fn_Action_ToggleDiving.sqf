@@ -22,7 +22,7 @@ _switchVest = _loadoutVest;
 
 if(_wornUniform == _loadoutUniform) then {
 	_switchUniform = "SOCOMD_Uniform_Wetsuit";
-	_switchVest = "SOCOMD_V_RebreatherB";
+	_switchVest = "V_RebreatherB";
 };
 
 [_player, _switchUniform] call SOCOMD_fnc_Action_ReplaceUniform;
