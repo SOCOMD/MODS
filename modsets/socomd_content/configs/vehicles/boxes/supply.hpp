@@ -70,7 +70,7 @@ class SOCOMD_Supply_Sniper : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(SOCOMD_tent_item_sno, 5)
 		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 8)
 		TRANSPORT_ITEM(ACE_DefusalKit, 2)
-		TRANSPORT_ITEM(ACE_Clacker, 2)
+		TRANSPORT_ITEM(ACE_M26_Clacker, 2)
 		TRANSPORT_ITEM(ACE_FlareTripMine_Mag, 8)
 		TRANSPORT_ITEM(ACE_Tripod, 4)
 		TRANSPORT_ITEM(ACRE_PRC152, 4)

@@ -285,7 +285,7 @@ class SOCOMD_Sapper {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
 			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(MineDetector, 1)
@@ -501,7 +501,7 @@ class SOCOMD_Recon {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 			LOADOUT_ITEM(ACE_Tripod, 1)
 		};

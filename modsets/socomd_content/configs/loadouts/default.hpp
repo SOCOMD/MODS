@@ -361,7 +361,7 @@ class TAGE_Sapper
 			LOADOUT_STANDARD_MEDICAL
 
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
 			LOADOUT_ITEM(MineDetector, 1)
 			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
@@ -413,7 +413,7 @@ class TAGE_Sniper
 			TAGE_BACKPACK_ESSENTIALS
 
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 		};
 	};
@@ -597,7 +597,7 @@ class SOCOMD_RUS_Sapper: SOCOMD_Sapper {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
 			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(MineDetector, 1)
