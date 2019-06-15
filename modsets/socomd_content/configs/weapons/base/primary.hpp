@@ -66,6 +66,7 @@ class hlc_rifle_awmagnum : hlc_AWC_base {
 //Rfile Barret
 class ej_barrett_base;
 class ej_m107 : ej_barrett_base {
+	recoil = "recoil_gm6";
 	magazineWell[] = {"SOCOMD_Barret_MAG"};
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
