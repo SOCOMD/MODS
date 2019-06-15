@@ -431,7 +431,7 @@ class SOCOMD_Sniper {
 	headgear		= ITEM_HEADGEAR_SNIPER;
 	binocular		= "Binocular";
 	gps			    = "ItemMicroDAGR";
-	optics[] 		= {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
+	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
 
 
 	class Uniform {
@@ -471,7 +471,7 @@ class SOCOMD_Recon {
 	headgear		= ITEM_HEADGEAR_RECON;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
-	optics[] 		= {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
+	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
 		type = SOCOMD_Uniform_SleevesDown_Recon;
