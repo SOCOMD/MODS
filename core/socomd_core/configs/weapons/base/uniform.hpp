@@ -51,7 +51,7 @@ class SOCOMD_Commando_BLK_SleevesDown : ADFU_G3_MC {
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
 
-class survival_uniform_black: Uniform_Base
+class SOCOMD_Uniform_Survival: Uniform_Base
 {
 	author="SOCOMD";
 	scope=2;

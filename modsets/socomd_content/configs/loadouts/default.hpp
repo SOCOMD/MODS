@@ -113,6 +113,18 @@ class SOCOMD_Recon {
 	};
 };
 
+class SOCOMD_AT {
+	class Backpack {
+		type = ITEM_BACKPACK_AT;
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM("tf47_m3maaws_HEAT")
+			LOADOUT_ITEM("tf47_m3maaws_HE")
+			};
+	};
+};
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // MAG58
@@ -686,7 +698,6 @@ class SOCOMD_RUS_Medic: SOCOMD_Medic {
 	};
 };
 
-class SOCOMD_AT;
 class SOCOMD_RUS_AT: SOCOMD_AT {
 	primary			= Item_RUSSIAN_PRIMARY_AT;
 	secondary		= ITEM_RUSSIAN_SECONDARY_AT;
