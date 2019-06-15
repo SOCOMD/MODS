@@ -2,6 +2,11 @@
 // SOV-CD
 
 class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
+
+	armor = 3000;
+	armorStructural = 20;
+	explosionShielding = 0.0005;
+	damageResistance = 0.03099;
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -79,8 +84,7 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	};
 };
 
-
-class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_GMG_D {
+class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -127,7 +131,7 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_GMG_D {
 	};
 };
 
-class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_GMG_W {
+class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;

@@ -21,7 +21,12 @@ class CfgPatches  {
 			"socomd_core",
 			"socomd_data_cup"
 		};
-		units[] = {};
+		units[] = {
+			"SOCOMD_SOV_GMG_W",
+			"SOCOMD_SOV_HMG_W",
+			"SOCOMD_SOV_GMG_D",
+			"SOCOMD_SOV_HMG_D"
+			};
 		weapons[] = {};
 		ammo[] = {};
 		magazines[] = {};
