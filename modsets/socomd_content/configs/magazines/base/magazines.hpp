@@ -6,4 +6,6 @@ class SMA_150Rnd_762_M80A1;
 //HLC
 class hlc_5rnd_300WM_FMJ_AWM;
 
-class Barret_mag;
+class Barret_mag {
+    count = 5;
+};
