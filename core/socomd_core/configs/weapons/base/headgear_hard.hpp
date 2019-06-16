@@ -1,3 +1,19 @@
+#define HELMET_ARMOR(ARMOR,PASS) \
+class ItemInfo : ItemInfo { \
+	class HitpointsProtectionInfo { \
+		class Head { \
+			armor = ARMOR; \
+			hitPointName = "HitHead"; \
+			passThrough = PASS; \
+		}; \
+	}; \
+};
+
+#define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
+#define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1);
+
+////////////////////////////////////////////////////////////////////////////////
+
 class HeadgearItem;
 class H_HelmetCrew_I;
 
@@ -11,26 +27,30 @@ class H_CrewHelmetHeli_O : H_CrewHelmetHeli_B {
 	class ItemInfo;
 };
 
-class ADFU_H_OpsCore_02;
-class ADFU_H_OpsCore_08;
-class ADFU_H_Airframe_Cover_03;
-class ADFU_H_Airframe_Cover_05;
-class ADFU_H_Airframe_Cover_02;
-class ADFU_H_Airframe_Cover_03_MC;
-
-#define HELMET_ARMOR(ARMOR,PASS,PARENT) \
-class ItemInfo : PARENT { \
-	class HitpointsProtectionInfo { \
-		class Head { \
-			armor = ARMOR; \
-			hitPointName = "HitHead"; \
-			passThrough = PASS; \
-		}; \
-	}; \
+class ADFU_H_OpsCore_02 : ItemCore {
+	class ItemInfo;
 };
 
-#define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1,HeadgearItem)
-#define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1,ItemInfo);
+class ADFU_H_OpsCore_08 : ItemCore {
+	class ItemInfo;
+};
+
+class ADFU_H_Airframe_Cover_03 : ItemCore {
+	class ItemInfo;
+};
+
+class ADFU_H_Airframe_Cover_03_MC;
+
+class ADFU_H_Airframe_Cover_05 : ItemCore {
+	class ItemInfo;
+};
+
+class ADFU_H_Airframe_Cover_02 : ItemCore {
+	class ItemInfo;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+//ADFU Helmets
 
 class ADFU_H_OpsCore_02_BLK: ADFU_H_OpsCore_02 {
 	scope = public;
@@ -116,70 +136,6 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 	};
 };
 
-class ADFU_H_Airframe_02_tan: ADFU_H_Airframe_Cover_02 {
-	scope = public;
-	displayName="Airframe (Tan)";
-	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
-
-	HELMET_ARMOR_STRONG
-
-	hiddenSelections[]= {
-		"_arc_peltor",
-		"_camera",
-		"_cover",
-		"_face_cover",
-		"_Manta_Rear",
-		"_NVG_Battery",
-		"_surefire_light",
-		"camo",
-		"camo2"
-	};
-
-	hiddenSelectionsTextures[]= {
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
-	};
-};
-
-class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
-	scope = public;
-	displayName="Airframe (Tan)";
-	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
-
-	HELMET_ARMOR_STRONG
-
-	hiddenSelections[]= {
-		"_arc_peltor",
-		"_camera",
-		"_cover",
-		"_face_cover",
-		"_Manta_Rear",
-		"_NVG_Battery",
-		"_surefire_light",
-		"camo",
-		"camo2"
-	};
-
-	hiddenSelectionsTextures[]= {
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
-	};
-};
-
 class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
 	scope = public;
 	displayName="Airframe (MC)";
@@ -241,6 +197,70 @@ class ADFU_H_Airframe_Cover_11_MC: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_airframe_khk_co.paa",
 		"ADFU_Units\data\h_fast_khk_co.paa"
+	};
+};
+
+class ADFU_H_Airframe_02_tan: ADFU_H_Airframe_Cover_02 {
+	scope = public;
+	displayName="Airframe (Tan)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+
+	hiddenSelectionsTextures[]= {
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
+		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+	};
+};
+
+class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
+	scope = public;
+	displayName="Airframe (Tan)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+
+	hiddenSelectionsTextures[]= {
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
+		"socomd_data_core\CTgear\h_fast_khk_co.paa"
 	};
 };
 
@@ -338,6 +358,7 @@ class ADFU_H_Airframe_02_OD: ADFU_H_Airframe_Cover_02 {
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
 	};
 };
+
 class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 	scope = public;
 	displayName="Airframe (OD)";
@@ -369,6 +390,7 @@ class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
 	};
 };
+
 class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
 	scope = public;
 	displayName="Airframe (OD)";
@@ -433,14 +455,13 @@ class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05 {
 	};
 };
 
-
 //////////////////////////////////////////////////////////////////////
-// SOLS
+// SOLS Overrides
 
 class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O {
 	author = AUTHOR_STR;
 	scope = public;
-	displayName = "SOCOMD Heli-Pilot Helmet";
+	displayName = "Heli-Pilot Helmet";
 
 	HELMET_SOLS_ARMOR
 
@@ -451,7 +472,7 @@ class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O {
 class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
 	author = AUTHOR_STR;
 	scope = public;
-	displayName = "SOCOMD Heli-Crew Helmet";
+	displayName = "Heli-Crew Helmet";
 
 	HELMET_SOLS_ARMOR
 
