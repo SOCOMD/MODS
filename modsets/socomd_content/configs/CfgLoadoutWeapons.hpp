@@ -4,13 +4,29 @@ class CfgLoadoutWeapons {
 	class SMA_MK18MOEBLK_SM : Rifle_556 {};
 	class SMA_AUG_A3_F : Rifle_556 {};
 	class SMA_HK416CUSTOMCQBvfgB : Rifle_556 {};
-
+	//TAN
+	class SMA_MK18MOETAN_SM : Rifle_556 {};
+	class SMA_AUG_A3_KRYPT_F : Rifle_556 {};
+	class SMA_HK416CUSTOMCQBvfg : Rifle_556 {};
+	//OD
+	class SMA_MK18MOEOD_SM : Rifle_556 {};
+	class SMA_AUG_A3_MCAM_F : Rifle_556 {};
+	class SMA_HK416CQB_vfg_ODPAINTED : Rifle_556 {};
+	
 	class RifleGL_556;
 	class SMA_M4_GL_SM : RifleGL_556 {};
 	class SMA_MK18BLK_GL_SM : RifleGL_556 {};
 	class SMA_AUG_EGLM : RifleGL_556 {};
 	class SMA_HK416GLCQB_B : RifleGL_556 {};
-
+	//TAN
+	class SMA_MK18TAN_GL_SM : RifleGL_556 {};
+	class SMA_AUG_EGLM_tan : RifleGL_556 {};
+	class SMA_HK416GLCQB : RifleGL_556 {};
+	//OD
+	class SMA_MK18OD_GL_SM : RifleGL_556 {};
+	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
+	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
+	
 	class MachineGun_556;
 	class CUP_lmg_m249_pip2 : MachineGun_556 {};
 
@@ -38,6 +54,7 @@ class CfgLoadoutWeapons {
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
 	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
+	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};
