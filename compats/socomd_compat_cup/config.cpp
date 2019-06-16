@@ -37,3 +37,5 @@ class CfgPatches  {
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgAmmo.hpp"
 #include "configs\cfgMagazines.hpp"
+#include "configs\CfgFunctions.hpp"
+#include "configs\CfgExtendedEventHandlers.hpp"
