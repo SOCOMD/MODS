@@ -1,2 +1,4 @@
 class CUP_B_BAF_Coyote_L2A1_D;
 class CUP_B_BAF_Coyote_L2A1_W;
+class CUP_B_BAF_Coyote_GMG_D;
+class CUP_B_BAF_Coyote_GMG_W;

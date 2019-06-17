@@ -1,5 +1,23 @@
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
-class SMA_M4afgSTOCK; //Default
+class SMA_M4afgSTOCK;
+class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
+	hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SMA_M4\data\plastic_diffuse_co.paa",
+			"\SMA_M4\data\grip_blk_co.paa",
+			"\SMA_M4\data\magnoalpha_black_co.paa",
+			"\SMA_M4\data\metal_diffuse_red_co.paa"
+		};
+}; 
+
+//Default
 class SMA_MK18MOEBLK_SM;
 class SMA_AUG_A3_F;
 class SMA_HK416CUSTOMCQBvfgB;
@@ -9,6 +27,22 @@ class SMA_M4_GL_SM; //Default
 class SMA_MK18BLK_GL_SM;
 class SMA_AUG_EGLM;
 class SMA_HK416GLCQB_B;
+
+//Tan
+class SMA_MK18MOETAN_SM;
+class SMA_AUG_A3_KRYPT_F;
+class SMA_HK416CUSTOMCQBvfg;
+class SMA_MK18TAN_GL_SM;
+class SMA_AUG_EGLM_tan;
+class SMA_HK416GLCQB;
+
+//OD
+class SMA_MK18MOEOD_SM;
+class SMA_AUG_A3_MCAM_F;
+class SMA_HK416CQB_vfg_ODPAINTED;
+class SMA_MK18OD_GL_SM;
+class SMA_AUG_EGLM_Olive;
+class SMA_HK416GLCQB_ODP;
 
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_AssaultBase;
@@ -20,6 +54,9 @@ class SMA_HK417vfg;
 
 class srifle_EBR_F;
 class SPARTAN_EBR_black_F : srifle_EBR_F {
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
 
@@ -66,6 +103,7 @@ class hlc_rifle_awmagnum : hlc_AWC_base {
 //Rfile Barret
 class ej_barrett_base;
 class ej_m107 : ej_barrett_base {
+	recoil = "recoil_gm6";
 	magazineWell[] = {"SOCOMD_Barret_MAG"};
 	allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };

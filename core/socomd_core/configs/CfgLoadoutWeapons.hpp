@@ -60,7 +60,9 @@ class CfgLoadoutWeapons {
 	class Long_Rifle_762 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
-			"SOCOMD_Leader"
+			"SOCOMD_Leader",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon"
 		};
 
 		magazines[] = {

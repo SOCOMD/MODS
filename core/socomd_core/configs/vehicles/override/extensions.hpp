@@ -186,6 +186,10 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_ard,"Uniform",SOCOMD_Ghillie_ard,SOCOMD_Uniform_SleevesUp_Recon)
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_jngl,"Uniform",SOCOMD_Ghillie_jngl,SOCOMD_Uniform_SleevesUp_Recon)
 		
+			//Wetsuit
+			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit,"Survival Fatigues",SOCOMD_Uniform_Wetsuit,SOCOMD_Uniform_Survival)
+			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Survival,"Wetsuit",SOCOMD_Uniform_Survival,SOCOMD_Uniform_Wetsuit)
+
 			//Roll Sleeves
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown,SOCOMD_Uniform_SleevesUp)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_DOWN,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp,SOCOMD_Uniform_SleevesDown)

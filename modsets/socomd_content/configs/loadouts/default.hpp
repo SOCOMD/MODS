@@ -113,6 +113,18 @@ class SOCOMD_Recon {
 	};
 };
 
+class SOCOMD_AT {
+	class Backpack {
+		type = ITEM_BACKPACK_AT;
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
+			LOADOUT_ITEM(tf47_m3maaws_HE, 1)
+		};
+	};
+};
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // MAG58
@@ -125,6 +137,7 @@ class SOCOMD_MMG {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -158,6 +171,7 @@ class SOCOMD_MortarMini {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -193,6 +207,7 @@ class SOCOMD_MMGAmmo {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
 
 	class Uniform {
 		type = ITEM_UNIFORM_RIFLEMAN;
@@ -686,7 +701,6 @@ class SOCOMD_RUS_Medic: SOCOMD_Medic {
 	};
 };
 
-class SOCOMD_AT;
 class SOCOMD_RUS_AT: SOCOMD_AT {
 	primary			= Item_RUSSIAN_PRIMARY_AT;
 	secondary		= ITEM_RUSSIAN_SECONDARY_AT;
