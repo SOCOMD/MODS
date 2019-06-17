@@ -42,7 +42,8 @@ class CfgPatches  {
 			"SOCOMD_RUS_soldier_Machinegunner_Night",
 			"SOCOMD_RUS_soldier_Autorifle_Night",
 			"SOCOMD_RUS_soldier_Leader_Night",
-			"V12_KTM_SOCOMD"
+			"V12_KTM_SOCOMD",
+			"SOCOMD_LR_ATV"
 			
 		};
 
