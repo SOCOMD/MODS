@@ -135,13 +135,15 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 	hiddenSelections[] = {
 		"camo1",
 		"camo2",
-		"camo3"
+		"camo3",
+		"karoserie"
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_data_core\SOV\jackal_base_co.paa",
-		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
-		"socomd_data_core\SOV\jackal_adds_co.paa"
+		"socomd_data_core\CTGear\pink.paa",
+		"socomd_data_core\CTGear\pink.paa",
+		"socomd_data_core\CTGear\pink.paa",
+		""
 	};
 
 	class TransportWeapons {
