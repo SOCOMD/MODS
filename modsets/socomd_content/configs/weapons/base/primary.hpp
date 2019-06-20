@@ -1,3 +1,157 @@
+class mk20_base_f;
+class SMA_AssaultBase: mk20_base_f
+{
+	class WeaponSlotsInfo;
+};
+class SMA_556_RIFLEBASE: SMA_AssaultBase
+{
+	class Single;
+	class FullAuto;
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		class PointerSlot;
+		class MuzzleSlot;
+	};
+};
+class SMA_MK18_BASE: SMA_556_RIFLEBASE {
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass=57.200001;
+		class PointerSlot: PointerSlot
+		{
+			compatibleItems[]=
+			{
+				"SMA_ANPEQ15_TOP_BLK_MK18",
+				"SMA_ANPEQ15_TOP_TAN_MK18",
+				"SMA_SFPEQ_MK18TOP_TAN",
+				"SMA_SFPEQ_MK18TOP_BLK",
+				"SMA_SFPEQ_MK18TOP_TAN_LIGHT",
+				"SMA_SFPEQ_MK18TOP_BLK_LIGHT",
+                "RH_SFM952V"
+			};
+		};
+	};
+};
+class SMA_HK416_BASE: SMA_556_RIFLEBASE {
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass=74;
+		class PointerSlot: PointerSlot
+		{
+			compatibleItems[]=
+			{
+				"SMA_ANPEQ15_TOP_TAN",
+				"SMA_ANPEQ15_TOP_BLK",
+				"SMA_SFPEQ_HKTOP_TAN",
+				"SMA_SFPEQ_HKTOP_TAN_LIGHT",
+				"SMA_SFPEQ_HKTOP_BLK",
+				"SMA_SFPEQ_HKTOP_BLK_LIGHT",
+				"SMA_RAILGUARD_OD_HK",
+				"SMA_RAILGUARD_TAN_HK",
+				"SMA_RAILGUARD_BLK_HK",
+                "RH_SFM952V"
+			};
+		};
+	};
+};
+class SMA_M4_BASE: SMA_556_RIFLEBASE {
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass=74.5;
+		class PointerSlot: PointerSlot
+		{
+			compatibleItems[]=
+			{
+				"SMA_ANPEQ15_TOP_BLK_M4",
+				"SMA_ANPEQ15_TOP_TAN_M4",
+				"SMA_SFPEQ_M4TOP_TAN",
+				"SMA_SFPEQ_M4TOP_BLK",
+				"SMA_SFPEQ_M4TOP_TAN_LIGHT",
+				"SMA_SFPEQ_M4TOP_BLK_LIGHT",
+                "RH_SFM952V"
+			};
+		};
+	};
+};
+
+class SMA_762_RIFLEBASE: SMA_AssaultBase {
+	magazineWell[] = {"CBA_762x51_HK417"};
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		class MuzzleSlot;
+		class CowsSlot;
+		class PointerSlot;
+	};
+	class Single;
+	class FullAuto;
+};
+class SMA_HK417: SMA_762_RIFLEBASE { 
+    class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		class MuzzleSlot: MuzzleSlot
+		{
+			linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+			compatibleItems[]+=
+			{
+				"SMA_supptan_762",
+				"SMA_supp_762",
+				"sma_gemtech_one_blk"
+			};
+		};
+		class PointerSlot: PointerSlot
+		{
+			compatibleItems[]=
+			{
+				"SMA_ANPEQ15_TOP_417TAN",
+				"SMA_ANPEQ15_TOP_417BLK",
+				"SMA_SFPEQ_HK417TOP_TAN",
+				"SMA_SFPEQ_HK417TOP_TAN_LIGHT",
+				"SMA_SFPEQ_HK417TOP_BLK",
+				"SMA_SFPEQ_HK417TOP_BLK_LIGHT"
+			};
+		};
+	};
+};
+class acc_flashlight;
+class InventoryFlashLightItem_Base_F;
+class SMA_SFLIGHT_TOPM4: acc_flashlight {
+	scope=1;
+	dlc="SMA";
+	displayName="Surefire flash light";
+	picture="\SMA_PEQ15\data\UI\SFflashblk.paa";
+	model="SMA_PEQ15\sma_peqFlash_top_m4.p3d";
+	class ItemInfo: InventoryFlashLightItem_Base_F
+	{
+		mass=4;
+		class FlashLight
+		{
+			color[]={7000,7500,10000};
+			ambient[]={6,9,9};
+			intensity=2.5;
+			size=1;
+			innerAngle=20;
+			outerAngle=80;
+			coneFadeCoef=10;
+			position="light_dir";
+			direction="light";
+			useFlare=1;
+			flareSize=1.5;
+			flareMaxDistance="600.0f";
+			dayLight=1;
+			class Attenuation
+			{
+				start=0.5;
+				constant=0;
+				linear=0;
+				quadratic=1;
+				hardLimitStart=200;
+				hardLimitEnd=300;
+			};
+			scale[]={0};
+		};
+	};
+};
+
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
@@ -45,10 +199,6 @@ class SMA_AUG_EGLM_Olive;
 class SMA_HK416GLCQB_ODP;
 
 //Rifle 762 - 20Rnd_762x51_Mag
-class SMA_AssaultBase;
-class SMA_762_RIFLEBASE : SMA_AssaultBase {
-	magazineWell[] = {"CBA_762x51_HK417"};
-};
 class SMA_HK417_16in;
 class SMA_HK417vfg;
 
