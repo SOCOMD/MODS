@@ -10,3 +10,16 @@ class Barret_mag;
 class Recon_Barret_mag : Barret_mag {
     count = 5;
 };
+class HandGrenade: CA_Magazine
+{
+};
+class SOCOMD_Grenade : HandGrenade {
+    ammo = "SOCOMD_Grenade_Ammo"
+    initspeed = 10
+    mass = 20
+
+	scope=2;
+		displayName="SOCOMD Grenade";
+		displayNameShort="SOCOMD Grenade";
+		descriptionShort="SOCOMD Grenade";
+};

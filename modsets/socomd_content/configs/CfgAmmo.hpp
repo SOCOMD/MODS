@@ -112,4 +112,15 @@ class CfgAmmo {
 			distance=1;
 		};
 	};
+	class Default;
+	class Grenade: Default
+	{
+	};
+	class GrenadeHand: Grenade
+	{
+	};
+	class SOCOMD_Grenade_Ammo : GrenadeHand {
+		hit = 20
+		model = "\A3\Weapons_F\Explosives\satchel";
+	};
 };
