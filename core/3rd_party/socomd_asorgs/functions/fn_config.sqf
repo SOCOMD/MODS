@@ -28,7 +28,7 @@ ASORGS_ShowGrenades = false;
 ASORGS_ShowExtraAmmo = false;
 ASORGS_ShowExtraAttachments = false;
 ASORGS_ShowGoggles = true;
-ASORGS_ShowNightvision = false;
+ASORGS_ShowNightvision = true;
 ASORGS_ShowBinoculars = false;
 ASORGS_ShowMedical = false;
 ASORGS_ShowMisc = false;
@@ -212,7 +212,46 @@ ASORGS_Blacklist = [
 	"RH_pas13ch",
 	"RH_pas13cm",
 	"RH_pas13cmg",
-	"RH_pas13cl"
+	"RH_pas13cl",
+	"CUP_acc_ANPEQ_15",
+			"CUP_acc_ANPEQ_15_Black",
+			"CUP_acc_ANPEQ_15_OD",
+			"CUP_acc_ANPEQ_15_Tan_Top",
+			"CUP_acc_ANPEQ_15_Black_Top",
+			"CUP_acc_ANPEQ_15_OD_Top",
+			"CUP_acc_ANPEQ_15_Flashlight_Tan_L",
+			"CUP_acc_ANPEQ_15_Flashlight_OD_L",
+			"CUP_acc_ANPEQ_15_Flashlight_Black_L",
+			"CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L",
+			"CUP_acc_ANPEQ_15_Top_Flashlight_OD_L",
+			"CUP_acc_ANPEQ_15_Top_Flashlight_Black_L",
+			"CUP_acc_ANPEQ_2",
+			"CUP_acc_Flashlight",
+			"CUP_acc_Flashlight_wdl",
+			"CUP_acc_Flashlight_desert",
+			"CUP_acc_XM8_light_module",
+			"CUP_acc_ANPEQ_2_camo",
+			"CUP_acc_ANPEQ_2_desert",
+			"CUP_acc_ANPEQ_2_grey",
+			"CUP_acc_CZ_M3X",
+			"CUP_acc_MLPLS_Laser",
+			"CUP_acc_LLM",
+			"CUP_muzzle_mfsup_Flashhider_West_Base",
+			"CUP_muzzle_mfsup_Flashhider_556x45_Black",
+			"CUP_muzzle_mfsup_Flashhider_556x45_OD",
+			"CUP_muzzle_mfsup_Flashhider_556x45_Tan",
+			"CUP_muzzle_mfsup_Flashhider_762x51_Black",
+			"CUP_muzzle_mfsup_Flashhider_762x51_OD",
+			"CUP_muzzle_mfsup_Flashhider_762x51_Tan",
+			"acc_pointer_IR",
+			"acc_flashlight",
+			"RH_peq15",
+			"RH_peq15_top",
+			"RH_peq15b",
+			"RH_peq15b_top",
+			"RH_peq2",
+			"RH_peq2_top",
+			"ACE_acc_pointer_green"
 
 ];
 
