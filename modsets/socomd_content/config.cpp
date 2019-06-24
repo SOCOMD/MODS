@@ -64,3 +64,4 @@ class CfgPatches  {
 #include "configs\CfgASORVS.hpp"
 #include "configs\CfgAmmo.hpp"
 #include "configs\CfgGroups.hpp"
+#include "configs\CfgMedical.hpp"
