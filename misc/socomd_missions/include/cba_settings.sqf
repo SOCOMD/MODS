@@ -155,19 +155,20 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 3.0;
+force force ace_medical_AIDamageThreshold = 3;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
-force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 2.5;
+force force ace_medical_amountOfReviveLives = 1;
+force force ace_medical_bleedingCoefficient = 1.4483;
 force force ace_medical_blood_enabledFor = 1;
 force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 1;
+force force ace_medical_convertItems = 0;
 force force ace_medical_delayUnconCaptive = 0;
 force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 0;
 force force ace_medical_enableOverdosing = true;
-force force ace_medical_enableRevive = 0;
+force force ace_medical_enableRevive = 1;
 force force ace_medical_enableScreams = true;
 force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = true;
@@ -187,20 +188,20 @@ force force ace_medical_menu_maxRange = 3;
 ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 ace_medical_menuTypeStyle = 0;
+ace_medical_menuTypeStyleSelf = true;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 1.5;
+force force ace_medical_painCoefficient = 1.72682;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 3.0;
-force force ace_medical_preventInstaDeath = false;
+force force ace_medical_playerDamageThreshold = 3.5372;
+force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
-force force ace_medical_useCondition_SurgicalKit = 1;
+force force ace_medical_useCondition_SurgicalKit = 0;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
 force force ace_medical_useLocation_SurgicalKit = 0;
-force force ace_medical_allowDeadBodyMovement = true;
-force force ace_medical_convertItems = 0;
+
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
@@ -448,6 +449,17 @@ force force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 acre_sys_core_unmuteClients = true;
 
+// ADV - ACE CPR
+force force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_chance_0 = 9.69248;
+force force adv_aceCPR_chance_1 = 9.69248;
+force force adv_aceCPR_chance_2 = 9.69248;
+force force adv_aceCPR_chance_aed = 85;
+force force adv_aceCPR_enable = true;
+force force adv_aceCPR_maxTime = 1200;
+force force adv_aceCPR_useLocation_AED = 0;
+
 // CBA UI
 cba_ui_StorePasswords = 1;
 
@@ -459,6 +471,31 @@ force force cba_optics_usePipOptics = true;
 
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = false;
+
+// KAT - ACE Airway
+force force kat_aceAirway_checkbox_puking_sound = true;
+force force kat_aceAirway_deathTimer = 244.653;
+force force kat_aceAirway_enable = true;
+force force kat_aceAirway_probability_obstruction = 100;
+force force kat_aceAirway_probability_occluded = 39.2156;
+force force kat_aceAirway_string_exit = "";
+
+// KAT - ACE Breathing
+force force kat_aceBreathing_death_timer_enable = true;
+force force kat_aceBreathing_enable = true;
+force force kat_aceBreathing_pneumothorax = 100;
+force force kat_aceBreathing_spo2_big_value = 23.6186;
+force force kat_aceBreathing_spo2_small_value = 22.5044;
+
+// KAT - ACE Circulation
+kat_aceCirculation_bloodgroup = "B";
+force kat_aceCirculation_enable = true;
+
+// KAT - ACE Misc
+force force kat_aceMisc_enable = true;
+force force kat_aceMisc_limitWounds_condition = 3;
+force force kat_aceMisc_limitWounds_enable = true;
+
 
 // NIArms
 force force niarms_magSwitch = true;

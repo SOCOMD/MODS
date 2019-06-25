@@ -254,9 +254,9 @@ class CAManBase: Man
 		    };
 			class NanoUAV_Deploy {
 				displayName = "Deploy MicroUAV";
-				condition = "'Nano_UAV_ITEM' in items player";
+				condition = "'Nano_UAV_ITEM' in (items ACE_player)";
 				exceptions[] = {};
-				statement = "player removeItem 'Nano_UAV_ITEM';_antenna = 'tut_R22' createVehicle (player modelToWorld [0,1,0]);";
+				statement = "player removeItem 'Nano_UAV_ITEM';_MICROUAV = 'tut_R22' createVehicle (player modelToWorld [0,1,0]); createVehicleCrew _MICROUAV;";
 				icon="\Black_Hornet_Nano_UAV\icon.paa";
 			};
         };

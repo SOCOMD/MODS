@@ -2,7 +2,6 @@ class ACE_ItemCore;
 class ACE_morphine; //displayName= "Morphine Autoinjector 10mg/1mL IM"
 class ACE_atropine; //displayName= "Atropine 1.2mg/1mL IO"
 class ACE_epiniephrine; //displayName="Adrenaline 1mg/1mL IO"
-class CBA_MiscItem_ItemInfo;
 class ACE_fentanyl: ACE_morphine
 {
 	author="ArmaForces";

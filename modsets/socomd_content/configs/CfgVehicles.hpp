@@ -15,4 +15,5 @@ class CfgVehicles {
 
 	// Override
 	#include "vehicles\override\firefly.hpp"
+	#include "vehicles\override\blackhornet.hpp"
 };

@@ -849,9 +849,9 @@ class ACE_Medical_Advanced
 			};
 			class Apap: PainKillers
 			{
-				painReduce=5;
+				painReduce=1;
 				timeInSystem=300;
-				maxDose=10;
+				maxDose=1;
 				inCompatableMedication[]={};
 				viscosityChange=5;
 			};

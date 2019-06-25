@@ -16,6 +16,7 @@ class CfgFunctions {
 			class GetLoadoutScopeFOV {};
 			class GetLoadoutMaxOptic {};
 			class BushMasterInit {};
+			class UAV {};
 		};
 
 		class Actions {
