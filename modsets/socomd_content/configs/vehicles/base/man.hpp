@@ -12,7 +12,7 @@ class CAManBase: Man
 					class fieldDressing;
 					class Apap: fieldDressing
 					{
-						displayName="Give Paracetemol 1g";
+						displayName="Paracetemol 1g";
 						condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
 						icon="socomd_data_core\icon\apap.paa";
@@ -50,15 +50,30 @@ class CAManBase: Man
 				class ACE_ArmLeft
 				{
 					class Morphine;
+					class Morphine_Medic: Morphine
+					{
+						displayName="Morphine 10mg/1mL";
+						condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
+					class Epinephrine;
+					class Epinephrine_Medic : Epinephrine
+					{
+						epinephrinedisplayName="Epinephrine 1mg/1mL";
+						condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
 					class Fentanyl: Morphine
 					{
-						displayName="Inject Fentanyl 100mcg/2mL (IM)";
+						displayName="Fentanyl 100mcg/2mL";
 						condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Naloxone: Morphine
 					{
-						displayName="Inject Naloxone 1.6mg/4mL (IM)";
+						displayName="Naloxone 1.6mg/4mL";
 						condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
 					};
@@ -66,15 +81,30 @@ class CAManBase: Man
 				class ACE_ArmRight
 				{
 					class Morphine;
+					class Morphine_Medic
+					{
+						displayName="Morphine 10mg/1mL";
+						condition="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
+					class Epinephrine;
+					class Epinephrine_Medic : Epinephrine
+					{
+						epinephrinedisplayName="Epinephrine 1mg/1mL";
+						condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
 					class Fentanyl: Morphine
 					{
-						displayName="Inject Fentanyl 100mcg/2mL (IM)";
+						displayName="Fentanyl 100mcg/2mL";
 						condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Naloxone: Morphine
 					{
-						displayName="Inject Naloxone 1.6mg/4mL (IM)";
+						displayName="Naloxone 1.6mg/4mL";
 						condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
 					};
@@ -82,15 +112,30 @@ class CAManBase: Man
 				class ACE_LegLeft
 				{
 					class Morphine;
+					class Morphine_Medic
+					{
+						displayName="Morphine 10mg/1mL";
+						condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
+					class Epinephrine;
+					class Epinephrine_Medic : Epinephrine
+					{
+						epinephrinedisplayName="Epinephrine 1mg/1mL";
+						condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
 					class Fentanyl: Morphine
 					{
-						displayName="Inject Fentanyl 100mcg/2mL (IM)";
+						displayName="Fentanyl 100mcg/2mL";
 						condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Naloxone: Morphine
 					{
-						displayName="Inject Naloxone 1.6mg/4mL (IM)";
+						displayName="Naloxone 1.6mg/4mL";
 						condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
 					};
@@ -98,15 +143,30 @@ class CAManBase: Man
 				class ACE_LegRight
 				{
 					class Morphine;
+					class Morphine_Medic
+					{
+						displayName="Morphine 10mg/1mL";
+						condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
+					class Epinephrine;
+					class Epinephrine_Medic : Epinephrine
+					{
+						epinephrinedisplayName="Epinephrine 1mg/1mL";
+						condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+						statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+						icon="socomd_data_core\icon\VPN.paa";
+					};
 					class Fentanyl: Morphine
 					{
-						displayName="Inject Fentanyl 100mcg/2mL (IM)";
+						displayName="Fentanyl 100mcg/2mL";
 						condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Naloxone: Morphine
 					{
-						displayName="Inject Naloxone 1.6mg/4mL (IM)";
+						displayName="Naloxone 1.6mg/4mL";
 						condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
 					};
@@ -123,7 +183,7 @@ class CAManBase: Man
 				class fieldDressing;
 				class Apap: fieldDressing
 				{
-					displayName="Give Paracetemol 1g";
+					displayName="Paracetemol 1g";
 					condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
 					icon="socomd_data_core\icon\apap.paa";
@@ -132,15 +192,30 @@ class CAManBase: Man
 			class ACE_ArmLeft
 			{
 				class Morphine;
+				class Morphine_Medic: Morphine
+				{
+					displayName="Morphine 10mg/1mL";
+					condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
+				class Epinephrine;
+				class Epinephrine_Medic : Epinephrine
+				{
+					epinephrinedisplayName="Epinephrine 1mg/1mL";
+					condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
 				class Fentanyl: Morphine
 				{
-					displayName="Inject Fentanyl 100mcg/2mL (IM)";
+					displayName="Fentanyl 100mcg/2mL";
 					condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Naloxone: Morphine
 				{
-					displayName="Inject Naloxone 1.6mg/4mL (IM)";
+					displayName="Naloxone 1.6mg/4mL";
 					condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
 				};
@@ -148,15 +223,30 @@ class CAManBase: Man
 			class ACE_ArmRight
 			{
 				class Morphine;
+				class Morphine_Medic: Morphine
+				{
+					displayName="Morphine 10mg/1mL";
+					condition="[_player, _target, 'lhand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
+				class Epinephrine;
+				class Epinephrine_Medic : Epinephrine
+				{
+					epinephrinedisplayName="Epinephrine 1mg/1mL";
+					condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
 				class Fentanyl: Morphine
 				{
-					displayName="Inject Fentanyl 100mcg/2mL (IM)";
+					displayName="Fentanyl 100mcg/2mL";
 					condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Naloxone: Morphine
 				{
-					displayName="Inject Naloxone 1.6mg/4mL (IM)";
+					displayName="Naloxone 1.6mg/4mL";
 					condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
 				};
@@ -164,15 +254,30 @@ class CAManBase: Man
 			class ACE_LegLeft
 			{
 				class Morphine;
+				class Morphine_Medic: Morphine
+				{
+					displayName="Morphine 10mg/1mL";
+					condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
+				class Epinephrine;
+				class Epinephrine_Medic : Epinephrine
+				{
+					epinephrinedisplayName="Epinephrine 1mg/1mL";
+					condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
 				class Fentanyl: Morphine
 				{
-					displayName="Inject Fentanyl 100mcg/2mL (IM)";
+					displayName="Fentanyl 100mcg/2mL";
 					condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Naloxone: Morphine
 				{
-					displayName="Inject Naloxone 1.6mg/4mL (IM)";
+					displayName="Naloxone 1.6mg/4mL";
 					condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
 				};
@@ -180,15 +285,30 @@ class CAManBase: Man
 			class ACE_LegRight
 			{
 				class Morphine;
+				class Morphine_Medic: Morphine
+				{
+					displayName="Morphine 10mg/1mL";
+					condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
+				class Epinephrine;
+				class Epinephrine_Medic : Epinephrine
+				{
+					epinephrinedisplayName="Epinephrine 1mg/1mL";
+					condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+					statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+					icon="socomd_data_core\icon\VPN.paa";
+				};
 				class Fentanyl: Morphine
 				{
-					displayName="Inject Fentanyl 100mcg/2mL (IM)";
+					displayName="Fentanyl 100mcg/2mL";
 					condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Naloxone: Morphine
 				{
-					displayName="Inject Naloxone 1.6mg/4mL (IM)";
+					displayName="Naloxone 1.6mg/4mL";
 					condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
 				};

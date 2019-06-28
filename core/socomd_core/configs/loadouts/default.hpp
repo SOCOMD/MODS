@@ -6,10 +6,8 @@
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 6) \
-	LOADOUT_ITEM(ACE_packingBandage, 6) \
-	LOADOUT_ITEM(ACE_quikclot, 6) \
+	LOADOUT_ITEM(ACE_elasticBandage, 12) \
+	LOADOUT_ITEM(ACE_quikclot, 12) \
 	LOADOUT_ITEM(ACE_epinephrine, 2) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_tourniquet, 2)
@@ -51,12 +49,11 @@
 	LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 5) \
-	LOADOUT_ITEM(ACE_quikclot, 5) \
-	LOADOUT_ITEM(ACE_packingBandage, 5) \
+	LOADOUT_ITEM(ACE_elasticBandage, 12) \
+	LOADOUT_ITEM(ACE_quikclot, 12) \
+	LOADOUT_ITEM(ACE_epinephrine, 2) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_epinephrine, 2)
+	LOADOUT_ITEM(ACE_tourniquet, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items

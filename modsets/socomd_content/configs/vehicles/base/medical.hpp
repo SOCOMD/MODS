@@ -3,7 +3,7 @@ class ACE_fentanylItem: Item_Base_F
 {
 	scope=2;
 	scopeCurator=2;
-	displayName="Fentanyl 100mcg/2mL (IM)";
+	displayName="Fentanyl 100mcg/2mL";
 	author="ArmaForces";
     icon="socomd_data_core\icon\VPN.paa";
 	vehicleClass="Items";
@@ -20,7 +20,7 @@ class ACE_naloxonelItem: Item_Base_F
 {
 	scope=2;
 	scopeCurator=2;
-	displayName="Naloxone 1.6mg/4mL (IM)";
+	displayName="Naloxone 1.6mg/4mL";
 	author="ArmaForces";
     icon="socomd_data_core\icon\VPN.paa";
 	vehicleClass="Items";

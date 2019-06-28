@@ -3,7 +3,7 @@ class ACE_Head
 	class fieldDressing;
 	class Apap: fieldDressing
 	{
-		displayName="Give Paracetamol 1g";
+		displayName="Paracetemol 1g";
 		condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\apap.paa";
@@ -50,16 +50,31 @@ class ACE_Head
 class ACE_ArmLeft
 {
 	class Morphine;
+	class Morphine_Medic: Morphine
+	{
+		displayName="Morphine 10mg/1mL";
+		condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Epinephrine;
+	class Epinephrine_Medic : Epinephrine
+	{
+		displayName="Epinephrine 1mg/1mL";
+		condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
 	class Fentanyl: Morphine
 	{
-		displayName="Inject Fentanyl 100mcg/2mL (IM)";
+		displayName="Fentanyl 100mcg/2m";
 		condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Naloxone: Morphine
 	{
-		displayName="Inject Naloxone 1.6mg/4mL (IM)";
+		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
@@ -68,16 +83,31 @@ class ACE_ArmLeft
 class ACE_ArmRight
 {
 	class Morphine;
+	class Morphine_Medic: Morphine
+	{
+		displayName="Morphine 10mg/1mL";
+		condition="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Epinephrine;
+	class Epinephrine_Medic : Epinephrine
+	{
+		displayName="Epinephrine 1mg/1mL";
+		condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
 	class Fentanyl: Morphine
 	{
-		displayName="Inject Fentanyl 100mcg/2mL (IM)";
+		displayName="Fentanyl 100mcg/2mL";
 		condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Naloxone: Morphine
 	{
-		displayName="Inject Naloxone 1.6mg/4mL (IM)";
+		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
@@ -86,16 +116,31 @@ class ACE_ArmRight
 class ACE_LegLeft
 {
 	class Morphine;
+	class Morphine_Medic: Morphine
+	{
+		displayName="Morphine 10mg/1mL";
+		condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Epinephrine;
+	class Epinephrine_Medic : Epinephrine
+	{
+		displayName="Epinephrine 1mg/1mL";
+		condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
 	class Fentanyl: Morphine
 	{
-		displayName="Inject Fentanyl 100mcg/2mL (IM)";
+		displayName="Fentanyl 100mcg/2mL";
 		condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Naloxone: Morphine
 	{
-		displayName="Inject Naloxone 1.6mg/4mL (IM)";
+		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
@@ -104,16 +149,31 @@ class ACE_LegLeft
 class ACE_LegRight
 {
 	class Morphine;
+	class Morphine_Medic: Morphine
+	{
+		displayName="Morphine 10mg/1mL";
+		condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Epinephrine;
+	class Epinephrine_Medic : Epinephrine
+	{
+		displayName="Epinephrine 1mg/1mL";
+		condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
 	class Fentanyl: Morphine
 	{
-		displayName="Inject Fentanyl 100mcg/2mL (IM)";
+		displayName="Fentanyl 100mcg/2mL";
 		condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Naloxone: Morphine
 	{
-		displayName="Inject Naloxone 1.6mg/4mL (IM)";
+		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
@@ -466,163 +526,165 @@ class ACE_Medical_Advanced
 			{
 				class Abrasion
 				{
-					effectiveness=4;
+					effectiveness=0.2
 					reopeningChance=0.5;
 					reopeningMinDelay=300;
 					reopeningMaxDelay=600;
 				};
 				class AbrasionMinor: Abrasion
 				{
-					effectiveness=4;
+					effectiveness=4.4;
 				};
 				class AbrasionMedium: Abrasion
 				{
-					effectiveness=3;
+					effectiveness=2.4;
 					reopeningChance=0.60000002;
 				};
 				class AbrasionLarge: Abrasion
 				{
-					effectiveness=2;
+					effectiveness=0.2
 					reopeningChance=0.69999999;
 				};
 				class Avulsions: Abrasion
 				{
-					effectiveness=10;
+					effectiveness=0.2
 					reopeningChance=0.1;
 					reopeningMinDelay=1000;
 					reopeningMaxDelay=1600;
 				};
 				class AvulsionsMinor: Avulsions
 				{
-					effectiveness=10;
+					effectiveness=4.4;
 				};
 				class AvulsionsMedium: Avulsions
 				{
-					effectiveness=9;
+					effectiveness=2.4;
 				};
 				class AvulsionsLarge: Avulsions
 				{
-					effectiveness=8;
+					effectiveness=0.2
 				};
 				class Contusion: Abrasion
 				{
-					effectiveness=10;
+					effectiveness=0.2
 					reopeningChance=0;
 					reopeningMinDelay=0;
 					reopeningMaxDelay=0;
 				};
 				class ContusionMinor: Contusion
 				{
+					effectiveness=4.4;
 				};
 				class ContusionMedium: Contusion
 				{
+					effectiveness=2.4;
 				};
 				class ContusionLarge: Contusion
 				{
 				};
 				class CrushWound: Abrasion
 				{
-					effectiveness=10;
+					effectiveness=4.4;
 					reopeningChance=0.1;
 					reopeningMinDelay=600;
 					reopeningMaxDelay=1000;
 				};
 				class CrushWoundMinor: CrushWound
 				{
-					effectiveness=10;
+					effectiveness=4.4;
 					reopeningChance=0.1;
 				};
 				class CrushWoundMedium: CrushWound
 				{
-					effectiveness=9;
+					effectiveness=4.4;
 					reopeningChance=0.15000001;
 				};
 				class CrushWoundLarge: CrushWound
 				{
-					effectiveness=8;
+					effectiveness=4.4;
 					reopeningChance=0.2;
 				};
 				class Cut: Abrasion
 				{
-					effectiveness=4;
+					effectiveness=0.2
 					reopeningChance=0.5;
 					reopeningMinDelay=70;
 					reopeningMaxDelay=100;
 				};
 				class CutMinor: Cut
 				{
-					effectiveness=4;
+					effectiveness=4.4;
 					reopeningChance=0.5;
 				};
 				class CutMedium: Cut
 				{
-					effectiveness=3;
+					effectiveness=2.4;
 					reopeningChance=0.60000002;
 				};
 				class CutLarge: Cut
 				{
-					effectiveness=2;
+					effectiveness=0.2
 					reopeningChance=0.69999999;
 				};
 				class Laceration: Abrasion
 				{
-					effectiveness=4;
+					effectiveness=0.2
 					reopeningChance=0.60000002;
 					reopeningMinDelay=300;
 					reopeningMaxDelay=600;
 				};
 				class LacerationMinor: Laceration
 				{
-					effectiveness=4;
+					effectiveness=4.4;
 					reopeningChance=0.60000002;
 				};
 				class LacerationMedium: Laceration
 				{
-					effectiveness=3;
+					effectiveness=2.4;
 					reopeningChance=0.69999999;
 				};
 				class LacerationLarge: Laceration
 				{
-					effectiveness=2;
+					effectiveness=0.2
 					reopeningChance=0.80000001;
 				};
 				class velocityWound: Abrasion
 				{
-					effectiveness=6;
+					effectiveness=0.2
 					reopeningChance=0.60000002;
 					reopeningMinDelay=600;
 					reopeningMaxDelay=1000;
 				};
 				class velocityWoundMinor: velocityWound
 				{
-					effectiveness=6;
+					effectiveness=4.4;
 				};
 				class velocityWoundMedium: velocityWound
 				{
-					effectiveness=5;
+					effectiveness=2.4;
 				};
 				class velocityWoundLarge: velocityWound
 				{
-					effectiveness=4;
+					effectiveness=0.2
 				};
 				class punctureWound: Abrasion
 				{
-					effectiveness=6;
+					effectiveness=0.2
 					reopeningChance=0.40000001;
 					reopeningMinDelay=360;
 					reopeningMaxDelay=900;
 				};
 				class punctureWoundMinor: punctureWound
 				{
-					effectiveness=6;
+					effectiveness=4.4;
 				};
 				class punctureWoundMedium: punctureWound
 				{
-					effectiveness=5;
+					effectiveness=2.4;
 				};
 				class punctureWoundLarge: punctureWound
 				{
-					effectiveness=4;
+					effectiveness=0.2
 				};
 			};
 			class QuikClot: FieldDressing
@@ -805,18 +867,29 @@ class ACE_Medical_Advanced
 				inCompatableMedication[]={};
 				viscosityChange=-10;
 			};
-			class Fentanyl
-			{
-				painReduce=5000;
+			class Morphine_Medic: Morphine {
+				painReduce=50;
 				hrIncreaseLow[]={-10,-20,35};
 				hrIncreaseNormal[]={-10,-30,35};
 				hrIncreaseHigh[]={-10,-35,50};
+				timeInSystem=3600;
+				maxDose=4;
+				inCompatableMedication[]={};
+				viscosityChange=-10;
+			};
+			class Fentanyl
+			{
+				painReduce=5000;
+				hrIncreaseLow[]={-15,-25,35};
+				hrIncreaseNormal[]={-15,-35,35};
+				hrIncreaseHigh[]={-15,-45,50};
 				timeInSystem=1800;
 				maxDose=2;
 				inCompatableMedication[]={};
 				viscosityChange=-5;
 			};
 			class Epinephrine;
+			class Epinephrine_Medic: Epinephrine {};
 			class Adenosine;
 			class Atropine
 			{
@@ -849,11 +922,11 @@ class ACE_Medical_Advanced
 			};
 			class Apap: PainKillers
 			{
-				painReduce=1;
+				painReduce=0.25;
 				timeInSystem=300;
-				maxDose=1;
+				maxDose=10;
 				inCompatableMedication[]={};
-				viscosityChange=5;
+				viscosityChange=0;
 			};
 		};
 		class IV {
@@ -909,7 +982,7 @@ class ACE_Medical_Actions
 		{
 			displayName="Insert NPA";
 			displayNameProgress="Placing NPA";
-			treatmentTime=2;
+			treatmentTime=1;
 			requiredMedic=0;
 			items[]=
 			{
@@ -921,7 +994,7 @@ class ACE_Medical_Actions
 		{
 			displayName="Triple Airway Maneuvre";
 			displayNameProgress="Adjusting Head";
-			treatmentTime=2;
+			treatmentTime=4;
 			requiredMedic=0;
 			items[]={};
 			condition="!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ['kat_aceAirway_overstretch', false]) && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
@@ -952,18 +1025,46 @@ class ACE_Medical_Actions
 		{
 			treatmentTime=5.5;
 		};
+		class QuikClot: FieldDressing
+		{
+			treatmentTime=5.5;
+		};
+		class ElasticBandage: FieldDressing
+		{
+			treatmentTime=1;
+		};
 		class Tourniquet: FieldDressing
 		{
 			treatmentTime=0.5;
 		};
+		class Epinephrine;
+		class Epinephrine_Medic: Epinephrine{
+			displayName= "Epinephrine 1mg/1mL"
+			displayNameProgress="Injecting Epinephrine";
+			items[]=
+			{
+				"ACE_epinephrine_Medic",
+				"SOCOMD_VPN"
+
+			};
+		};
 		class Morphine;
+		class Morphine_Medic: Morphine {
+			displayName= "Morphine 10mg/1mL"
+			displayNameProgress="Injecting Morphine";
+			items[]=
+			{
+				"ACE_morphine_Medic",
+				"SOCOMD_VPN"
+			};
+		};
 		class Apap: Morphine
 		{
 			allowedSelections[]=
 			{
 				"head"
 			};
-			displayName="Give Paracetemol 1g";
+			displayName="Paracetemol 1g";
 			displayNameProgress="Giving Paracetemol 1g";
 			items[]=
 			{
@@ -985,21 +1086,23 @@ class ACE_Medical_Actions
 		};
 		class Fentanyl: Morphine
 		{
-			displayName="Inject Fentanyl 100mcg/2mL (IM)";
+			displayName="Fentanyl 100mcg/2mL";
 			displayNameProgress="Injecting Fentanyl";
 			items[]=
 			{
-				"ACE_fentanyl"
+				"ACE_fentanyl",
+				"SOCOMD_VPN"
 			};
 		};
 		class Atropine;
 		class Naloxone: Atropine
 		{
-			displayName="Inject Naloxone 1.6mg/4mL (IM)";
+			displayName="Naloxone 1.6mg/4mL";
 			displayNameProgress="Injecting Naloxone";
 			items[]=
 			{
-				"ACE_naloxone"
+				"ACE_naloxone",
+				"SOCOMD_VPN"
 			};
 		};
 		class BloodIV: FieldDressing
@@ -1021,7 +1124,47 @@ class ACE_Medical_Actions
 		class CheckPulse;
 		class CheckAirway: CheckPulse
 		{
-			treatmentTime=3;
+			treatmentTime=2;
+		};
+		class ChestSeal
+		{
+			displayName="Hyfin Chest Seal";
+			displayNameProgress="$STR_kat_aceBreathing_treating";
+			category="advanced";
+			treatmentLocations[]=
+			{
+				"All"
+			};
+			allowedSelections[]=
+			{
+				"body"
+			};
+			allowSelfTreatment=0;
+			requiredMedic=2;
+			treatmentTime=7;
+			items[]=
+			{
+				"KAT_ChestSeal",
+				"SOCOMD_NDC"
+				
+			};
+			condition="_target getVariable ['ace_medical_airwayCollapsed', false]";
+			patientStateCondition=0;
+			callbackSuccess="[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal";
+			callbackFailure="";
+			callbackProgress="";
+			itemConsumed=1;
+			animationPatient="";
+			animationPatientUnconscious="AinjPpneMstpSnonWrflDnon_rolltoback";
+			animationPatientUnconsciousExcludeOn[]=
+			{
+				"ainjppnemstpsnonwrfldnon"
+			};
+			animationCaller="AinvPknlMstpSlayWrflDnon_medicOther";
+			animationCallerProne="AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+			animationCallerSelf="AinvPknlMstpSlayW[wpn]Dnon_medic";
+			animationCallerSelfProne="AinvPpneMstpSlayW[wpn]Dnon_medic";
+			litter[]={};
 		};
 	};
 };

@@ -2,10 +2,8 @@
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 6) \
-	LOADOUT_ITEM(ACE_packingBandage, 6) \
-	LOADOUT_ITEM(ACE_quikclot, 6) \
+	LOADOUT_ITEM(ACE_elasticBandage, 12) \
+	LOADOUT_ITEM(ACE_quikclot, 12) \
 	LOADOUT_ITEM(ACE_epinephrine, 2) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_tourniquet, 2)
@@ -47,12 +45,11 @@
 	LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 5) \
-	LOADOUT_ITEM(ACE_quikclot, 5) \
-	LOADOUT_ITEM(ACE_packingBandage, 5) \
+	LOADOUT_ITEM(ACE_elasticBandage, 12) \
+	LOADOUT_ITEM(ACE_quikclot, 12) \
+	LOADOUT_ITEM(ACE_epinephrine, 2) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_epinephrine, 2)
+	LOADOUT_ITEM(ACE_tourniquet, 2)
 
 // COMMON TAGE LOADOUT ITEMS
 
@@ -66,6 +63,8 @@
 	LOADOUT_ITEM(SmokeShell, 5)          \
 	LOADOUT_ITEM(ACRE_PRC343, 1)         \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
+
+class Inventory_E {};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
@@ -122,6 +121,39 @@ class SOCOMD_AT {
 			LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
 			LOADOUT_ITEM(tf47_m3maaws_HE, 1)
 		};
+	};
+};
+
+
+class SOCOMD_Medic  {
+	class Backpack { 
+		type = ITEM_BACKPACK_MEDIC;
+		class Inventory: Inventory_E	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
+			LOADOUT_ITEM(ACE_fieldDressing, 0)  		//Remove
+			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
+			LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
+			LOADOUT_ITEM(ACE_personalAidKit, 0)  		//Remove
+			LOADOUT_ITEM(ACE_elasticBandage, 30)		//Elastic Bandage
+			LOADOUT_ITEM(ACE_quikclot, 35)				//Quikclot
+			LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+			LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
+			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+			LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
+			LOADOUT_ITEM(ACE_apap, 15)					//Paracetamol 
+			LOADOUT_ITEM(ACE_salineIV_500, 6)			//Saline
+			LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
+			LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
+			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+			LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
+			};
 	};
 };
 
@@ -658,7 +690,6 @@ class SOCOMD_RUS_MachineGunner: SOCOMD_MachineGunner {
 	};
 };
 
-class SOCOMD_Medic;
 class SOCOMD_RUS_Medic: SOCOMD_Medic {
 	primary			= Item_RUSSIAN_PRIMARY_Medic;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
