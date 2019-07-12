@@ -72,11 +72,30 @@ class ACE_ArmLeft
 		statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
+	class Ket: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
+	};
+	class Ket_S: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'hand_l', 'Ket_S'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_l', 'Ket_S'] call ace_medical_fnc_treatment";
+	};
 	class Naloxone: Morphine
 	{
 		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Ondansetron: Morphine
+	{
+		displayName="Ondansetron 8mg/4mL"
+		condition="[_player, _target, 'hand_l', 'Ondansetron] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_l', 'Ondansetron'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 };
@@ -105,11 +124,30 @@ class ACE_ArmRight
 		statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
+	class Ket: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
+	};
+	class Ket_S: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'hand_r', 'Ket_S'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_r', 'Ket_S'] call ace_medical_fnc_treatment";
+	};
 	class Naloxone: Morphine
 	{
 		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Ondansetron: Morphine
+	{
+		displayName="Ondansetron 8mg/4mL"
+		condition="[_player, _target, 'hand_r', 'Ondansetron] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'hand_r', 'Ondansetron'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 };
@@ -138,11 +176,30 @@ class ACE_LegLeft
 		statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
+	class Ket: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
+	};
+	class Ket_S: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'leg_l', 'Ket_S'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_l', 'Ket_S'] call ace_medical_fnc_treatment";
+	};
 	class Naloxone: Morphine
 	{
 		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Ondansetron: Morphine
+	{
+		displayName="Ondansetron 8mg/4mL"
+		condition="[_player, _target, 'leg_l', 'Ondansetron] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_l', 'Ondansetron'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 };
@@ -171,11 +228,30 @@ class ACE_LegRight
 		statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
+	class Ket: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
+	};
+	class Ket_S: Fentanyl
+	{
+		displayName="Ket 100mcg/2mL";
+		condition="[_player, _target, 'leg_r', 'Ket_S'] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_r', 'Ket_S'] call ace_medical_fnc_treatment";
+	};
 	class Naloxone: Morphine
 	{
 		displayName="Naloxone 1.6mg/4mL";
 		condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
+		icon="socomd_data_core\icon\VPN.paa";
+	};
+	class Ondansetron: Morphine
+	{
+		displayName="Ondansetron 8mg/4mL"
+		condition="[_player, _target, 'leg_r', 'Ondansetron] call ace_medical_fnc_canTreatCached";
+		statement="[_player, _target, 'leg_r', 'Ondansetron'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 };
@@ -880,13 +956,35 @@ class ACE_Medical_Advanced
 			class Fentanyl
 			{
 				painReduce=5000;
-				hrIncreaseLow[]={-15,-25,35};
-				hrIncreaseNormal[]={-15,-35,35};
-				hrIncreaseHigh[]={-15,-45,50};
+				hrIncreaseLow[]={-30,-60,100};
+				hrIncreaseNormal[]={-30,-90,100};
+				hrIncreaseHigh[]={-30,-90,120};
 				timeInSystem=1800;
 				maxDose=2;
 				inCompatableMedication[]={};
 				viscosityChange=-5;
+			};
+			class Ket
+			{
+				painReduce=5000;
+				hrIncreaseLow[]={15,25,35};
+				hrIncreaseNormal[]={15,35,35};
+				hrIncreaseHigh[]={15,45,50};
+				timeInSystem=1800;
+				maxDose=2;
+				inCompatableMedication[]={};
+				viscosityChange=5;
+			};
+			class Ket_S
+			{
+				painReduce=5000;
+				hrIncreaseLow[]={15,25,35};
+				hrIncreaseNormal[]={15,35,35};
+				hrIncreaseHigh[]={15,45,50};
+				timeInSystem=1800;
+				maxDose=2;
+				inCompatableMedication[]={};
+				viscosityChange=10;
 			};
 			class Epinephrine;
 			class Epinephrine_Medic: Epinephrine {};
@@ -919,6 +1017,11 @@ class ACE_Medical_Advanced
 				maxDose=10;
 				inCompatableMedication[]={};
 				viscosityChange=5;
+			};
+			class Ondansetron: PainKillers
+			{
+				timeInSystem=5000;
+				viscosityChange=0;
 			};
 			class Apap: PainKillers
 			{
@@ -1093,6 +1196,33 @@ class ACE_Medical_Actions
 				"ACE_fentanyl",
 				"SOCOMD_VPN"
 			};
+		};
+		class Ket: Fentanyl {
+			displayName="Ket 30mg/2mL";
+			displayNameProgress="Injecting Ketamine 30mg/2mL";
+			items[]=
+			{
+				"SOCOMD_Ket"
+			};
+			callbackSuccess="[_target, true, 6, true] call ace_medical_fnc_setUnconscious";
+		};
+		class Ket_S: Ket {
+			displayName="Ket 200mg/2mL";
+			displayNameProgress="Injecting Ketamine 200mg/2mL";
+			items[]=
+			{
+				"SOCOMD_Ket_S"
+			};
+			callbackSuccess="[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
+		};
+		class Ondansetron: Morphine {
+			displayName="Ondansetron 8mg/4mL";
+			displayNameProgress="Injecting Ondansetron";
+			items[]=
+			{
+				"SOCOMD_Ondans"
+			};
+			callbackSuccess="_target setVariable ['ace_medical_airwayOccluded', false, true]";
 		};
 		class Atropine;
 		class Naloxone: Atropine

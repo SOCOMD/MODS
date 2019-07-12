@@ -83,4 +83,36 @@ class SOCOMD_VPN: ACE_ItemCore {
 			mass=0.01;
 		};
 };
-
+class SOCOMD_Ket: ACE_morphine {
+	scope=2;
+	displayName="Ket 30mg/2mL";
+	descriptionShort="For administering drug Ampoules";
+	descriptionUse="For administering drug Ampoules";
+	picture="\socomd_data_core\icon\VPN.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.01;
+		};
+};
+class SOCOMD_Ket_S: ACE_morphine {
+	scope=2;
+	displayName="Ket 200mg/2mL";
+	descriptionShort="For administering drug Ampoules";
+	descriptionUse="For administering drug Ampoules";
+	picture="\socomd_data_core\icon\VPN.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.01;
+		};
+};
+class SOCOMD_Ondans: ACE_morphine {
+	scope=2;
+	displayName="Ondansetron 8mg/4mL";
+	descriptionShort="Anti-emtic, prevents vomiting";
+	descriptionUse="Anti-emtic, prevents vomiting";
+	picture="\socomd_data_core\icon\VPN.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.01;
+		};
+};
