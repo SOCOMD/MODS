@@ -25,7 +25,7 @@ class SOCOMD_NVG : USP_L3_pvs31_A2	{
 	descriptionShort = "SOCOMD NVD /w White Phosphor tube";
 	colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; // White Phosphor tube Preset
 };
-/* 
+
 class A3_GPNVG18_F;
 class SOCOMD_GPNVG18_F : A3_GPNVG18_F {
 	displayName = "GPNVG18 (Tan, WP tube)";
@@ -40,4 +40,3 @@ class SOCOMD_GPNVG18b_BLK_F : A3_GPNVG18b_BLK_F {
 	colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; // White Phosphor tube Preset
 };
 
-*/
