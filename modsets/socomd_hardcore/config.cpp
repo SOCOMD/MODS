@@ -26,3 +26,4 @@ class CfgPatches  {
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
+#include "configs\CfgMedical.hpp"

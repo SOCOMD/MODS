@@ -125,7 +125,7 @@ class SOCOMD_AT {
 };
 
 
-class SOCOMD_Medic  {
+class SOCOMD_Medic;  /* {
 	class Backpack { 
 		type = ITEM_BACKPACK_MEDIC;
 		class Inventory: Inventory_E	{
@@ -155,7 +155,7 @@ class SOCOMD_Medic  {
 			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 			};
 	};
-};
+};*/
 
 
 ////////////////////////////////////////////////////////////////////////////////

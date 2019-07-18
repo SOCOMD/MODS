@@ -110,5 +110,5 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+	#include "vehicles\base\medical.hpp"
 };

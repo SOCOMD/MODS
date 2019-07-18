@@ -1,7 +1,10 @@
 class CfgWeapons
 {
+   class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
 	#include "weapons\weapon_optics.hpp"
 	#include "weapons\optics.hpp"
+   #include "weapons\base\medical.hpp"
 };
 
 /*helper script is below to make it much easier to get optics modes and current values */
