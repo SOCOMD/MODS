@@ -24,6 +24,21 @@ class CfgUnitInsignia {
 		author="Monk";
 		texture="socomd_data_core\insignia\dog4.paa";
 	};
+	class dog5 {
+		displayName="Dog";
+		author="Monk";
+		texture="socomd_data_core\insignia\dog5.paa";
+	};
+	class dog6 {
+		displayName="Dog";
+		author="Monk";
+		texture="socomd_data_core\insignia\dog6.paa";
+	};
+	class dog7 {
+		displayName="Dog";
+		author="Monk";
+		texture="socomd_data_core\insignia\dog7.paa";
+	};
 	class HQ {
 		displayName="HQ";
 		author="Monk";
@@ -53,5 +68,10 @@ class CfgUnitInsignia {
 		displayName="Titty";
 		author="Monk";
 		texture="socomd_data_core\insignia\Titty.paa";
+	};
+	class Reaper {
+		displayName="Reaper";
+		author="Monk";
+		texture="socomd_data_core\insignia\reaper.paa";
 	};
 };
