@@ -53,7 +53,7 @@ class SOCOMD_tent_item_sno: SOCOMD_itemcore
 	{
 		mass=15;
 	};
-};
+};/* 
 class Nano_UAV_ITEM: CBA_MiscItem
 {
 	author = "Monk";
@@ -74,4 +74,4 @@ class Nano_UAV_ITEM: CBA_MiscItem
 			{
 				mass=10;//en lb*10
 			};
-};
+};*/

@@ -1,4 +1,4 @@
-class B_UAV_01_F;
+/*/class B_UAV_01_F;
 class tut_R22: B_UAV_01_F
 {
 	crew="B_UAV_AI";
@@ -84,4 +84,4 @@ class Nano_UAV_ITEM_Ground: Item_Base_F
 			count=1;
 		};
 	};
-};
+};*/
