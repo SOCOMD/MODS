@@ -43,6 +43,8 @@ class CfgFunctions {
 			class ActionCondition_CanSwapVest {};
 			class ActionCondition_CanSwapBackpacks {};
 			class ActionCondition_IsAdmin {};
+			class ActionCondition_IsRadarOn {};
+			class ActionCondition_IsRadarOff {};
 		};
 
 		class ASORUtil {

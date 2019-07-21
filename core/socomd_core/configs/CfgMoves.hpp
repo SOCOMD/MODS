@@ -25,5 +25,10 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 			speed = 2;
 			looped = 1;
 		};
+
+		class LadderCivilStatic;
+		class LadderCivilUpLoop: LadderCivilStatic {
+			speed="1.05/(2/3)";
+		};
 	};
 };

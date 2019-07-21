@@ -258,3 +258,30 @@ class CAManBase : Man {
 		};
 	};
 };
+
+class Radar_System_01_base_F : StaticMGWeapon {
+	class ACE_Actions {
+		class ACE_MainActions {
+			displayName = "Radar System";
+			selection = "";
+			distance = 5;
+			condition = 1;
+
+			class Action_ToggleRadarOn {
+				displayName = "Activate Radar";
+				condition = "([_target] call SOCOMD_fnc_ActionCondition_IsRadarOff)";
+				statement = "_target setVehicleRadar 1;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+
+			class Action_ToggleRadarOff {
+				displayName = "Deactivate Radar";
+				condition = "([_target] call SOCOMD_fnc_ActionCondition_IsRadarOn) and (alive _player)";
+				statement = "_target setVehicleRadar 2;";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+		};
+	};
+};
