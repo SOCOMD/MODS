@@ -12,13 +12,13 @@ class _xx_##id { \
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 6) \
-	LOADOUT_ITEM(ACE_packingBandage, 6) \
-	LOADOUT_ITEM(ACE_quikclot, 6) \
+	LOADOUT_ITEM(ACE_elasticBandage, 12) \
+	LOADOUT_ITEM(ACE_quikclot, 12) \
 	LOADOUT_ITEM(ACE_epinephrine, 2) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 1)
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 0)  		
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -386,16 +386,29 @@ class CfgLoadouts {
 				type = ITEM_BACKPACK_MEDIC;
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_ITEM(ACE_surgicalKit, 3)
-					LOADOUT_ITEM(ACE_fieldDressing, 18)
-					LOADOUT_ITEM(ACE_elasticBandage, 18)
-					LOADOUT_ITEM(ACE_packingBandage, 18)
-					LOADOUT_ITEM(ACE_quikclot, 18)
-					LOADOUT_ITEM(ACE_epinephrine, 6)
-					LOADOUT_ITEM(ACE_morphine, 6)
-					LOADOUT_ITEM(ACE_tourniquet, 4)
-					LOADOUT_ITEM(ACE_salineIV_500, 4)
-					LOADOUT_ITEM(ACE_personalAidKit, 0)
+					LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
+					LOADOUT_ITEM(ACE_fieldDressing, 0)  		//Remove
+					LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
+					LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
+					LOADOUT_ITEM(ACE_personalAidKit, 0)  		//Remove
+					LOADOUT_ITEM(ACE_elasticBandage, 30)		//Elastic Bandage
+					LOADOUT_ITEM(ACE_quikclot, 35)				//Quikclot
+					LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+					LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+					LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
+					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
+					LOADOUT_ITEM(ACE_apap, 15)					//Paracetamol 
+					LOADOUT_ITEM(ACE_salineIV_500, 6)			//Saline
+					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
+					LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
+					LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+					LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+					LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+					LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 				};
 			};
 		};
