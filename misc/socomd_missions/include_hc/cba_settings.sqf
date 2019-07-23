@@ -519,3 +519,52 @@ force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_revealToAI = true;
 force force acre_sys_core_terrainLoss = 0.1;
 force force STHud_Settings_HUDMode = 0
+
+ace_medical_menuTypeStyleSelf = true;
+force force ace_medical_AIDamageThreshold = 2;
+force force ace_medical_amountOfReviveLives = 1;
+force force ace_medical_bleedingCoefficient = 1;
+force force ace_medical_convertItems = 0;
+force force ace_medical_delayUnconCaptive = 0;
+force force ace_medical_enableRevive = 1;
+force force ace_medical_enableUnconsciousnessAI = 1;
+force force ace_medical_maxReviveTime = 128.342;
+force force ace_medical_painCoefficient = 2;
+force force ace_medical_playerDamageThreshold = 3;
+force force ace_medical_preventInstaDeath = true;
+force force ace_medical_useCondition_SurgicalKit = 0;
+
+// ADV - ACE CPR
+force force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_chance_0 = 9.69248;
+force force adv_aceCPR_chance_1 = 9.69248;
+force force adv_aceCPR_chance_2 = 9.69248;
+force force adv_aceCPR_chance_aed = 69.8529;
+force force adv_aceCPR_enable = true;
+force force adv_aceCPR_maxTime = 1200;
+force force adv_aceCPR_useLocation_AED = 0
+
+// KAT - ACE Airway
+kat_aceAirway_checkbox_puking_sound = true;
+kat_aceAirway_deathTimer = 300;
+kat_aceAirway_enable = true;
+kat_aceAirway_probability_obstruction = 20;
+kat_aceAirway_probability_occluded = 30;
+kat_aceAirway_string_exit = "";
+
+// KAT - ACE Breathing
+kat_aceBreathing_death_timer_enable = false;
+kat_aceBreathing_enable = true;
+kat_aceBreathing_pneumothorax = 0;
+kat_aceBreathing_spo2_big_value = 5;
+kat_aceBreathing_spo2_small_value = 2;
+
+// KAT - ACE Circulation
+kat_aceCirculation_bloodgroup = "B";
+kat_aceCirculation_enable = true;
+
+// KAT - ACE Misc
+kat_aceMisc_enable = true;
+kat_aceMisc_limitWounds_condition = 0;
+kat_aceMisc_limitWounds_enable = true;

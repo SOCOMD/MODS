@@ -53,4 +53,25 @@ class SOCOMD_tent_item_sno: SOCOMD_itemcore
 	{
 		mass=15;
 	};
-};
+};/* 
+class Nano_UAV_ITEM: CBA_MiscItem
+{
+	author = "Monk";
+	displayName = "Nano UAV";
+	model="\Black_Hornet_Nano_UAV\r22.p3d";
+	scope = 2;      
+	scopeArsenal = 2;
+	scopeCurator = 2;
+	 //simulation= "ItemMineDetector"
+	editorCategory = "EdCat_Equipment";
+	editorPreview = "\socomd_data_core\icon\UAV.paa";
+	editorSubcategory = "EdSubcat_InventoryItems";
+	picture = "\socomd_data_core\icon\UAV.paa";
+	descriptionShort = "A tiny, single use UAV";
+	//type = 0;
+	ace_arsenal_hide = 0;
+	class ItemInfo: CBA_MiscItem_ItemInfo
+			{
+				mass=10;//en lb*10
+			};
+};*/

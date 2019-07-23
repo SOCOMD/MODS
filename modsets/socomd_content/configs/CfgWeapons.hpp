@@ -2,6 +2,8 @@ class CfgWeapons {
 
 	class RifleCore;
 	class ItemCore;
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
 
 	//Item Defines
 	#include "weapons\base\primary.hpp"

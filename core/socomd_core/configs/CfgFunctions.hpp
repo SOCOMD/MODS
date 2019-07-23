@@ -16,6 +16,7 @@ class CfgFunctions {
 			class GetLoadoutScopeFOV {};
 			class GetLoadoutMaxOptic {};
 			class BushMasterInit {};
+			class UAV {};
 		};
 
 		class Actions {
@@ -55,4 +56,17 @@ class CfgFunctions {
 			class ASORVS_GetClassnames {};
 		};
 	};
+	class armaforces_ace_medical {
+        class functions {
+            file = "\socomd_core\functions\medical";
+            class adenosine {};
+            class adenosineLocal {};
+        };
+    };
+    class ace_medical {
+        class functions {
+            file = "\socomd_core\functions\medical";
+            class handleCreateLitter {};
+        };
+    };
 };

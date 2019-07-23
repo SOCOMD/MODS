@@ -61,6 +61,13 @@ class CAManBase: Man
 		    	showDisabled=0;
 		    	priority=2.7;
 		    };
+			class NanoUAV_Deploy {
+				displayName = "Deploy MicroUAV";
+				condition = "'Nano_UAV_ITEM' in (items ACE_player)";
+				exceptions[] = {};
+				statement = "player removeItem 'Nano_UAV_ITEM';_MICROUAV = 'tut_R22' createVehicle (player modelToWorld [0,1,0]); createVehicleCrew _MICROUAV;";
+				icon="\Black_Hornet_Nano_UAV\icon.paa";
+			};
         };
     };
 };
