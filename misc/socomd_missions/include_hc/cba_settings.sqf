@@ -522,49 +522,49 @@ force force STHud_Settings_HUDMode = 0
 
 ace_medical_menuTypeStyleSelf = true;
 force force ace_medical_AIDamageThreshold = 2;
-force force ace_medical_amountOfReviveLives = 1;
-force force ace_medical_bleedingCoefficient = 1;
+force force ace_medical_amountOfReviveLives = 1;                            // How many chances does the player get
+force force ace_medical_bleedingCoefficient = 1;                            // How fast does the player bleed
 force force ace_medical_convertItems = 0;
 force force ace_medical_delayUnconCaptive = 0;
 force force ace_medical_enableRevive = 1;
 force force ace_medical_enableUnconsciousnessAI = 1;
-force force ace_medical_maxReviveTime = 128.342;
+force force ace_medical_maxReviveTime = 150;                                // Time the player is allowed to have HR=0 before dying (Player can be unconscious for longer)
 force force ace_medical_painCoefficient = 2;
 force force ace_medical_playerDamageThreshold = 3;
-force force ace_medical_preventInstaDeath = true;
+force force ace_medical_preventInstaDeath = false;                          // Can the player be instantly sent to HR = 0 (true/false)
 force force ace_medical_useCondition_SurgicalKit = 0;
 
 // ADV - ACE CPR
-force force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_addTime = 20;                                        // Time added to death timer per round of CPR
 force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
-force force adv_aceCPR_chance_0 = 9.69248;
-force force adv_aceCPR_chance_1 = 9.69248;
-force force adv_aceCPR_chance_2 = 9.69248;
-force force adv_aceCPR_chance_aed = 69.8529;
+force force adv_aceCPR_chance_0 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_1 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_2 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_aed = 70;                                     // Chance for CPR to be successful (AED)
 force force adv_aceCPR_enable = true;
-force force adv_aceCPR_maxTime = 1200;
+force force adv_aceCPR_maxTime = 1200;                                      // Maximum amount of time CPR can be attempted before being made successful (Assuming it was not previously made successful)
 force force adv_aceCPR_useLocation_AED = 0
 
 // KAT - ACE Airway
-kat_aceAirway_checkbox_puking_sound = true;
-kat_aceAirway_deathTimer = 300;
-kat_aceAirway_enable = true;
-kat_aceAirway_probability_obstruction = 20;
-kat_aceAirway_probability_occluded = 30;
-kat_aceAirway_string_exit = "";
+force force kat_aceAirway_checkbox_puking_sound = true;
+force force kat_aceAirway_deathTimer = 150;                                 // Time before Pt dies with low Sp02
+force force kat_aceAirway_enable = true;
+force force kat_aceAirway_probability_obstruction = 90;                     // Probability patient collapses
+force force kat_aceAirway_probability_occluded = 30;                        // Probability airway vomits
+force force kat_aceAirway_string_exit = "";
 
 // KAT - ACE Breathing
-kat_aceBreathing_death_timer_enable = false;
-kat_aceBreathing_enable = true;
-kat_aceBreathing_pneumothorax = 0;
-kat_aceBreathing_spo2_big_value = 5;
-kat_aceBreathing_spo2_small_value = 2;
+force force kat_aceBreathing_death_timer_enable = true;
+force force kat_aceBreathing_enable = true;
+force force kat_aceBreathing_pneumothorax = 100;                            // Probability for a penetrating chest hit to cause a pneumothorax
+force force kat_aceBreathing_spo2_big_value = 15;                           // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_small_value = 12;                         // Value to change Sp02 by (If airway not patent)
 
 // KAT - ACE Circulation
-kat_aceCirculation_bloodgroup = "B";
-kat_aceCirculation_enable = true;
+force force kat_aceCirculation_bloodgroup = "B";
+force force kat_aceCirculation_enable = true;
 
 // KAT - ACE Misc
-kat_aceMisc_enable = true;
-kat_aceMisc_limitWounds_condition = 0;
-kat_aceMisc_limitWounds_enable = true;
+force force kat_aceMisc_enable = true;
+force force kat_aceMisc_limitWounds_condition = 3;
+force force kat_aceMisc_limitWounds_enable = true;
