@@ -12,11 +12,12 @@ class _xx_##id { \
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
-	LOADOUT_ITEM(ACE_morphine, 2) \
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
+	LOADOUT_ITEM(ACE_morphine, 1) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 4) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 0)  		
 
@@ -57,12 +58,14 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_fieldDressing, 6) \
-	LOADOUT_ITEM(ACE_elasticBandage, 5) \
-	LOADOUT_ITEM(ACE_quikclot, 5) \
-	LOADOUT_ITEM(ACE_packingBandage, 5) \
-	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_epinephrine, 2)
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
+	LOADOUT_ITEM(ACE_morphine, 1) \
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 4) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 0) 
 
 #define INFANTRY_OPTICS optics[] = {"optic_ACO_grn","optic_Aco","SMA_eotech","SMA_eotech_T","RH_t1","RH_t1_tan","sma_spitfire_01_black","RH_compM2","RH_compM2_tan","sma_spitfire_03_sc_black"};
 #define MARKSMAN_OPTICS optics[] = {"RH_compm2","RH_compm2_tan","sma_spitfire_03_sc_black","RH_ta31rco","RH_ta31rco_tan","SMA_ELCAN_SPECTER","SMA_ELCAN_SPECTER_TAN"};
@@ -399,7 +402,9 @@ class CfgLoadouts {
 					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
 					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
 					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
-					LOADOUT_ITEM(ACE_apap, 15)					//Paracetamol 
+					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+					LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
+					LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol 
 					LOADOUT_ITEM(ACE_salineIV_500, 6)			//Saline
 					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway

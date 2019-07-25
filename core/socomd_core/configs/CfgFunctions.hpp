@@ -61,6 +61,8 @@ class CfgFunctions {
             file = "\socomd_core\functions\medical";
             class adenosine {};
             class adenosineLocal {};
+			class ketamine {};
+			class ketamine_sedation {};
         };
     };
     class ace_medical {

@@ -35,7 +35,7 @@ class ACE_naloxone: ACE_atropine
 class ACE_apap: ACE_morphine
 {
 	author="ArmaForces";
-	displayName="Paracetemol 1g Ampoule";
+	displayName="Paracetemol 1g Tablets";
 	picture="\socomd_data_core\icon\apap.paa";
 	model="\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
 	descriptionShort="Analgesic/Antipyretic, used for light pain and fever";
@@ -75,8 +75,8 @@ class SOCOMD_NDC: ACE_ItemCore {
 class SOCOMD_VPN: ACE_ItemCore {
 	scope=2;
 	displayName="3mL Drug Syringe";
-	descriptionShort="For administering drug Ampoules";
-	descriptionUse="For administering drug Ampoules";
+	descriptionShort="For administering drugs";
+	descriptionUse="For administering drugs";
 	picture="\socomd_data_core\icon\VPN.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo
 		{
@@ -85,10 +85,10 @@ class SOCOMD_VPN: ACE_ItemCore {
 };
 class SOCOMD_Ket: ACE_morphine {
 	scope=2;
-	displayName="Ket 30mg/2mL";
-	descriptionShort="For administering drug Ampoules";
-	descriptionUse="For administering drug Ampoules";
-	picture="\socomd_data_core\icon\VPN.paa";
+	displayName="Ketamine 30mg/2mL Ampoule";
+	descriptionShort="Analgesic used for severe pain";
+	descriptionUse="Analgesic used for severe pain";
+	picture="\socomd_data_core\icon\ket.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass=0.01;
@@ -96,10 +96,10 @@ class SOCOMD_Ket: ACE_morphine {
 };
 class SOCOMD_Ket_S: ACE_morphine {
 	scope=2;
-	displayName="Ket 200mg/2mL";
-	descriptionShort="For administering drug Ampoules";
-	descriptionUse="For administering drug Ampoules";
-	picture="\socomd_data_core\icon\VPN.paa";
+	displayName="Ketamine 200mg/2mL Ampoule";
+	descriptionShort="Analgesic used for severe pain and sedation";
+	descriptionUse="Analgesic used for severe pain and sedation";
+	picture="\socomd_data_core\icon\ket.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass=0.01;

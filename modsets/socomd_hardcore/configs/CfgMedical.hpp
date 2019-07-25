@@ -602,7 +602,7 @@ class ACE_Medical_Advanced
 			{
 				class Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.5;
 					reopeningMinDelay=300;
 					reopeningMaxDelay=600;
@@ -618,12 +618,12 @@ class ACE_Medical_Advanced
 				};
 				class AbrasionLarge: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.69999999;
 				};
 				class Avulsions: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.1;
 					reopeningMinDelay=1000;
 					reopeningMaxDelay=1600;
@@ -638,11 +638,11 @@ class ACE_Medical_Advanced
 				};
 				class AvulsionsLarge: Avulsions
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 				};
 				class Contusion: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0;
 					reopeningMinDelay=0;
 					reopeningMaxDelay=0;
@@ -682,7 +682,7 @@ class ACE_Medical_Advanced
 				};
 				class Cut: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.5;
 					reopeningMinDelay=70;
 					reopeningMaxDelay=100;
@@ -699,12 +699,12 @@ class ACE_Medical_Advanced
 				};
 				class CutLarge: Cut
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.69999999;
 				};
 				class Laceration: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.60000002;
 					reopeningMinDelay=300;
 					reopeningMaxDelay=600;
@@ -721,12 +721,12 @@ class ACE_Medical_Advanced
 				};
 				class LacerationLarge: Laceration
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.80000001;
 				};
 				class velocityWound: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.60000002;
 					reopeningMinDelay=600;
 					reopeningMaxDelay=1000;
@@ -741,11 +741,11 @@ class ACE_Medical_Advanced
 				};
 				class velocityWoundLarge: velocityWound
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 				};
 				class punctureWound: Abrasion
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 					reopeningChance=0.40000001;
 					reopeningMinDelay=360;
 					reopeningMaxDelay=900;
@@ -760,133 +760,132 @@ class ACE_Medical_Advanced
 				};
 				class punctureWoundLarge: punctureWound
 				{
-					effectiveness=0.2
+					effectiveness=0.2;
 				};
 			};
 			class QuikClot: FieldDressing
 			{
 				class Abrasion
 				{
-					effectiveness=4;
-					reopeningChance=0.30000001;
+					effectiveness=8;
+					reopeningChance=0.3;
 					reopeningMinDelay=800;
 					reopeningMaxDelay=1500;
 				};
 				class AbrasionMinor: Abrasion
 				{
-					effectiveness=4;
+					effectiveness=8;
 				};
 				class AbrasionMedium: Abrasion
 				{
-					effectiveness=3;
-					reopeningChance=0.40000001;
+					effectiveness=8;
 				};
 				class AbrasionLarge: Abrasion
 				{
-					effectiveness=2;
-					reopeningChance=0.5;
+					effectiveness=8;
 				};
 				class Avulsions: Abrasion
 				{
-					effectiveness=4;
-					reopeningChance=0.2;
-					reopeningMinDelay=1000;
-					reopeningMaxDelay=1600;
+					effectiveness=8;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class AvulsionsMinor: Avulsions
 				{
-					effectiveness=4;
+					effectiveness=8;
 				};
 				class AvulsionsMedium: Avulsions
 				{
-					effectiveness=3;
+					effectiveness=8;
 				};
 				class AvulsionsLarge: Avulsions
 				{
-					effectiveness=2;
+					effectiveness=8;
 				};
 				class Contusion: Abrasion
 				{
-					effectiveness=4;
-					reopeningChance=0;
-					reopeningMinDelay=0;
-					reopeningMaxDelay=0;
+					effectiveness=8;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class ContusionMinor: Contusion
 				{
+					effectiveness=8;
 				};
 				class ContusionMedium: Contusion
 				{
+					effectiveness=8;
 				};
 				class ContusionLarge: Contusion
 				{
+					effectiveness=8;
 				};
 				class CrushWound: Abrasion
 				{
-					effectiveness=4;
-					reopeningChance=0.5;
-					reopeningMinDelay=600;
-					reopeningMaxDelay=1000;
+					effectiveness=1;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class CrushWoundMinor: CrushWound
 				{
-					effectiveness=4;
+					effectiveness=1;
 					reopeningChance=0.30000001;
 				};
 				class CrushWoundMedium: CrushWound
 				{
-					effectiveness=3;
+					effectiveness=1;
 				};
 				class CrushWoundLarge: CrushWound
 				{
-					effectiveness=2;
+					effectiveness=1;
 				};
 				class Cut: Abrasion
 				{
-					effectiveness=2;
-					reopeningChance=0.2;
-					reopeningMinDelay=700;
-					reopeningMaxDelay=1000;
+					effectiveness=8;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class CutMinor: Cut
 				{
-					effectiveness=2;
-					reopeningChance=0.30000001;
+					effectiveness=8;
 				};
 				class CutMedium: Cut
 				{
-					effectiveness=1;
+					effectiveness=8;
 				};
 				class CutLarge: Cut
 				{
-					effectiveness=0.60000002;
+					effectiveness=8;
 				};
 				class Laceration: Abrasion
 				{
-					effectiveness=4;
-					reopeningChance=0.40000001;
-					reopeningMinDelay=500;
-					reopeningMaxDelay=2000;
+					effectiveness=8;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class LacerationMinor: Laceration
 				{
-					effectiveness=4;
-					reopeningChance=0.40000001;
+					effectiveness=8;
 				};
 				class LacerationMedium: Laceration
 				{
-					effectiveness=3;
+					effectiveness=8;
 				};
 				class LacerationLarge: Laceration
 				{
-					effectiveness=2;
+					effectiveness=8;
 				};
 				class velocityWound: Abrasion
 				{
 					effectiveness=10;
-					reopeningChance=0.1;
-					reopeningMinDelay=1000;
-					reopeningMaxDelay=2000;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class velocityWoundMinor: velocityWound
 				{
@@ -894,7 +893,7 @@ class ACE_Medical_Advanced
 				};
 				class velocityWoundMedium: velocityWound
 				{
-					effectiveness=9;
+					effectiveness=10;
 				};
 				class velocityWoundLarge: velocityWound
 				{
@@ -903,9 +902,9 @@ class ACE_Medical_Advanced
 				class punctureWound: Abrasion
 				{
 					effectiveness=10;
-					reopeningChance=0.1;
-					reopeningMinDelay=1000;
-					reopeningMaxDelay=3000;
+					reopeningChance=0.3;
+					reopeningMinDelay=800;
+					reopeningMaxDelay=1500;
 				};
 				class punctureWoundMinor: punctureWound
 				{
@@ -934,7 +933,7 @@ class ACE_Medical_Advanced
 			viscosityChange=0;
 			class Morphine
 			{
-				painReduce=50;
+				painReduce=1;
 				hrIncreaseLow[]={-10,-20,35};
 				hrIncreaseNormal[]={-10,-30,35};
 				hrIncreaseHigh[]={-10,-35,50};
@@ -944,7 +943,7 @@ class ACE_Medical_Advanced
 				viscosityChange=-10;
 			};
 			class Morphine_Medic: Morphine {
-				painReduce=50;
+				painReduce=1;
 				hrIncreaseLow[]={-10,-20,35};
 				hrIncreaseNormal[]={-10,-30,35};
 				hrIncreaseHigh[]={-10,-35,50};
@@ -955,39 +954,46 @@ class ACE_Medical_Advanced
 			};
 			class Fentanyl
 			{
-				painReduce=5000;
-				hrIncreaseLow[]={-30,-60,100};
-				hrIncreaseNormal[]={-30,-90,100};
-				hrIncreaseHigh[]={-30,-90,120};
+				painReduce=5;
+				hrIncreaseLow[]={-15,-25,35};
+				hrIncreaseNormal[]={-15,-35,35};
+				hrIncreaseHigh[]={-15,-35,50};
 				timeInSystem=1800;
-				maxDose=2;
+				maxDose=4;
 				inCompatableMedication[]={};
-				viscosityChange=-5;
+				viscosityChange=-15;
 			};
 			class Ket
 			{
-				painReduce=5000;
+				painReduce=50;
 				hrIncreaseLow[]={15,25,35};
 				hrIncreaseNormal[]={15,35,35};
 				hrIncreaseHigh[]={15,45,50};
 				timeInSystem=1800;
-				maxDose=2;
+				maxDose=12;
 				inCompatableMedication[]={};
-				viscosityChange=5;
 			};
 			class Ket_S
 			{
-				painReduce=5000;
+				painReduce=50;
 				hrIncreaseLow[]={15,25,35};
 				hrIncreaseNormal[]={15,35,35};
 				hrIncreaseHigh[]={15,45,50};
 				timeInSystem=1800;
-				maxDose=2;
+				maxDose=12;
 				inCompatableMedication[]={};
-				viscosityChange=10;
 			};
 			class Epinephrine;
-			class Epinephrine_Medic: Epinephrine {};
+			class Epinephrine_Medic: Epinephrine {
+				painReduce=0;
+                hrIncreaseLow[]={30,50,15};
+                hrIncreaseNormal[]={35,50,15};
+                hrIncreaseHigh[]={30,50,15};
+                timeInSystem=240;
+                maxDose=6;
+                inCompatableMedication[]={};
+                viscosityChange=15;
+			};
 			class Adenosine;
 			class Atropine
 			{
@@ -1003,11 +1009,12 @@ class ACE_Medical_Advanced
 			class Naloxone
 			{
 				painReduce=0;
-				hrIncreaseLow[]={30,60,100};
-				hrIncreaseNormal[]={30,90,100};
-				hrIncreaseHigh[]={30,90,120};
+				hrIncreaseLow[]={40,80,10};
+				hrIncreaseNormal[]={20,60,10};
+				hrIncreaseHigh[]={15,30,12};
 				timeInSystem=120;
-				maxDose=6;
+				maxDose=4;
+				onOverDose = "[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
 				inCompatableMedication[]={};
 			};
 			class PainKillers
@@ -1020,14 +1027,19 @@ class ACE_Medical_Advanced
 			};
 			class Ondansetron: PainKillers
 			{
+				painReduce=0;
+				hrIncreaseLow[]={0,0,1};
+				hrIncreaseNormal[]={0,0,1};
+				hrIncreaseHigh[]={0,0,1};
+				hrCallback="_target setVariable ['ace_medical_airwayOccluded', false, true]";
 				timeInSystem=5000;
 				viscosityChange=0;
 			};
 			class Apap: PainKillers
 			{
-				painReduce=0.25;
-				timeInSystem=300;
-				maxDose=10;
+				painReduce=0.2;
+				timeInSystem=600;
+				maxDose=3;
 				inCompatableMedication[]={};
 				viscosityChange=0;
 			};
@@ -1126,11 +1138,11 @@ class ACE_Medical_Actions
 		};
 		class FieldDressing
 		{
-			treatmentTime=5.5;
+			treatmentTime=4.5;
 		};
 		class QuikClot: FieldDressing
 		{
-			treatmentTime=5.5;
+			treatmentTime=4.5;
 		};
 		class ElasticBandage: FieldDressing
 		{
@@ -1197,23 +1209,25 @@ class ACE_Medical_Actions
 				"SOCOMD_VPN"
 			};
 		};
-		class Ket: Fentanyl {
-			displayName="Ket 30mg/2mL";
+		class Ket: Morphine {
+			displayName="Ketamine 30mg/2mL";
 			displayNameProgress="Injecting Ketamine 30mg/2mL";
 			items[]=
 			{
-				"SOCOMD_Ket"
+				"SOCOMD_Ket",
+				"SOCOMD_VPN"
 			};
-			callbackSuccess="[_target, true, 6, true] call ace_medical_fnc_setUnconscious";
+			callbackSuccess=armaforces_ace_medical_fnc_ketamine;
 		};
 		class Ket_S: Ket {
-			displayName="Ket 200mg/2mL";
+			displayName="Ketamine 200mg/2mL";
 			displayNameProgress="Injecting Ketamine 200mg/2mL";
 			items[]=
 			{
-				"SOCOMD_Ket_S"
+				"SOCOMD_Ket_S",
+				"SOCOMD_VPN"
 			};
-			callbackSuccess="[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
+			callbackSuccess=armaforces_ace_medical_fnc_ketamine_sedation;
 		};
 		class Ondansetron: Morphine {
 			displayName="Ondansetron 8mg/4mL";
@@ -1222,7 +1236,6 @@ class ACE_Medical_Actions
 			{
 				"SOCOMD_Ondans"
 			};
-			callbackSuccess="_target setVariable ['ace_medical_airwayOccluded', false, true]";
 		};
 		class Atropine;
 		class Naloxone: Atropine
