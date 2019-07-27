@@ -23,6 +23,7 @@ var steamPass string
 var steamGuard string
 var configDir string
 var outputCache string
+var steamScript string
 var outputMods string
 
 var arma3productid = `107410`
@@ -34,11 +35,13 @@ func main() {
 	flag.StringVar(&steamGuard, "g", "", "Steam guard code")
 	flag.StringVar(&configDir, "c", "workshop.config.yaml", "Workshop content config")
 	flag.StringVar(&outputCache, "cache", "./", "Steamapps cache")
+	flag.StringVar(&steamScript, "script", "./steamCMDScript", "Steamapps cache")
 	flag.StringVar(&outputMods, "mods", "./mods", "Mod Symlink output directory")
 	flag.Parse()
 
 	outputCache, _ = filepath.Abs(outputCache)
 	outputMods, _ = filepath.Abs(outputMods)
+	steamScript, _ = filepath.Abs(steamScript)
 
 	yamlFile, err := ioutil.ReadFile(configDir)
 	if err != nil {
@@ -53,13 +56,13 @@ func main() {
 		return
 	}
 
-	for name, id := range workshopConfig.Content {
-		err := DownloadContent(id)
-		if err != nil {
-			fmt.Println(err.Error())
-			return
-		}
+	err = DownloadContent(workshopConfig)
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
 
+	for name, id := range workshopConfig.Content {
 		err = SymlinkContent(name, id)
 		if err != nil {
 			fmt.Printf(err.Error())
@@ -69,23 +72,37 @@ func main() {
 }
 
 //DownloadContent - Download workshop item to output file
-func DownloadContent(id string) error {
-	cmdName := steamCMD
-	auth := fmt.Sprintf(`+login %s %s`, steamUser, steamPass)
-	output := fmt.Sprintf(`+force_install_dir %s`, outputCache)
+func DownloadContent(workshopConfig Config) error {
+	steamCMDScript := "@ShutdownOnFailedCommand 1\n@NoPromptForPassword 1\n"
+	steamCMDScript += fmt.Sprintf("login %s %s\n", steamUser, steamPass)
+	steamCMDScript += fmt.Sprintf("force_install_dir %s\n", outputCache)
 
-	if steamGuard != "" {
-		auth = fmt.Sprintf(`%s +set_steam_guard_code %s`, auth, steamGuard)
+	for _, id := range workshopConfig.Content {
+		steamCMDScript += fmt.Sprintf("workshop_download_item %s %s validate\n", arma3productid, id)
 	}
 
-	download := fmt.Sprintf(`+workshop_download_item %s %s`, arma3productid, id)
-	cmdArgs := []string{auth, output, download, "validate", "+quit"}
+	steamCMDScript = fmt.Sprintf("%s\nquit", steamCMDScript)
+
+	err := ioutil.WriteFile(steamScript, []byte(steamCMDScript), 0644)
+	if err != nil {
+		return err
+	}
+
+	cmdName := steamCMD
+	cmdArgs := []string{"+runscript", steamScript}
+
+	fmt.Printf("%s %s\n", cmdName, cmdArgs)
 
 	cmd := exec.Command(cmdName, cmdArgs...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
-	err := cmd.Run()
-	return err
+	err = cmd.Run()
+
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 //SymlinkContent - Copy to output
