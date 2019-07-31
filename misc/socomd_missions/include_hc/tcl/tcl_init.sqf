@@ -1,3 +1,5 @@
+if(!isServer) exitWith {};
+
 [] spawn {
 	waitUntil { !(isNil "TCL_Debug") };
 	[] execVM "tcl\tcl_debug.sqf";
