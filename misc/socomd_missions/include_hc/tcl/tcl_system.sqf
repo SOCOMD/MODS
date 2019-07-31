@@ -57,7 +57,7 @@ TCL_System set [5, True];
 // Choose A.I. unit(s) skill divider.
 // Description: 0 = Highly skilled A.I. / 7 = ARMA 3 default skilled A.I.
 // 0 - 7, default is 5
-TCL_System set [6, 2];
+TCL_System set [6, 7];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Spawn: ( System )

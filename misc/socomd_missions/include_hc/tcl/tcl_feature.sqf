@@ -38,7 +38,7 @@ TCL_Feature set [0, True];
 // T.C.L. A.I. Watch: ( Chance )
 // ------------------------------------------------------------
 // 0 - 100, default is 50%
-TCL_Feature set [1, 50];
+TCL_Feature set [1, 75];
 
 // ==============================================================
 // T.C.L. A.I. Garrison:
@@ -56,7 +56,7 @@ TCL_Feature set [3, True];
 // T.C.L. A.I. Smoke: ( Chance )
 // ------------------------------------------------------------
 // 0 - 100, default is 50%
-TCL_Feature set [4, 50];
+TCL_Feature set [4, 25];
 
 // ==============================================================
 // T.C.L. A.I. Smoke: ( Vehicles )
@@ -94,7 +94,7 @@ TCL_Feature set [9, True];
 // T.C.L. A.I. Artillery: ( Chance )
 // ------------------------------------------------------------
 // 0 - 100, default is 15%
-TCL_Feature set [10, 15];
+TCL_Feature set [10, 5];
 
 // ==============================================================
 // T.C.L. A.I. Take Cover:
@@ -115,14 +115,14 @@ TCL_Feature set [16, 50];
 // ------------------------------------------------------------
 // Choose distance within A.I. should be able to search for cover.
 // 10 - 100, default is 30 meters
-TCL_Feature set [17, 30];
+TCL_Feature set [17, 50];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Take Cover: Cover to Cover ( Chance )
 // ------------------------------------------------------------
 // Choose chance of how A.I. should be able to use cover to cover movement.
 // 0 - 100, default is 50%
-TCL_Feature set [18, 50];
+TCL_Feature set [18, 75];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Flanking:
@@ -137,7 +137,7 @@ TCL_Feature set [19, True];
 // ------------------------------------------------------------
 // Choose chance of how A.I. group(s) should be able to use flanking movement.
 // 0 - 100, default is 50%
-TCL_Feature set [20, 50];
+TCL_Feature set [20, 33];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Flanking Type: ( Chance )
@@ -188,14 +188,14 @@ TCL_Feature set [26, 700];
 // ==============================================================
 // Choose if A.I. should be able to self-heal or request medic support.
 // True / False, default is True
-TCL_Feature set [30, True];
+TCL_Feature set [30, False];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Heal / Medic: ( Chance )
 // ------------------------------------------------------------
 // Choose chance of how A.I. should be able to self-heal or request medic support.
 // 0 - 100, default is 50%
-TCL_Feature set [31, 50];
+TCL_Feature set [31, 0];
 
 // ==============================================================
 // T.C.L. A.I. Rearm:
@@ -209,4 +209,4 @@ TCL_Feature set [32, True];
 // ------------------------------------------------------------
 // Choose chance of how A.I. should be able to rearm.
 // 0 - 100, default is 50%
-TCL_Feature set [33, 50];
+TCL_Feature set [33, 75];

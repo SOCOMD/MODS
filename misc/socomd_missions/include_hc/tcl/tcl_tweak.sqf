@@ -24,7 +24,7 @@ Warning: Changes of the T.C.L. Tweak settings may will extremely change your gam
 // Choose the chance between "AWARE" and "COMBAT" A.I. group(s) combat behaviour.
 // Note: If this value was set to 100 A.I. group(s) will always use "AWARE" behaviour.
 // 0 - 100, default is 0% ( v.1.0.27 = 35% )
-TCL_Tweak set [0, 0];
+TCL_Tweak set [0, 75];
 
 // ==============================================================
 // T.C.L. A.I. Push and Stop: ( Distance )
@@ -41,7 +41,7 @@ TCL_Tweak set [1, 300];
 // Choose chance of how A.I. group(s) should be able to push their enemy(s) if within the T.C.L. A.I. Push and Stop: ( Distance ) defined above.
 // Note: Higher value means higher chance of A.I. group(s) pushing their enemy(s).
 // 0 - 100, default is 50% ( v.1.0.27 = 75% )
-TCL_Tweak set [2, 50];
+TCL_Tweak set [2, 75];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Push: ( Factor )
@@ -49,4 +49,4 @@ TCL_Tweak set [2, 50];
 // Choose A.I. group(s) push factor.
 // Note: Higher value means A.I. group(s) will push closer and harder to their enemy(s) position.
 // 0 - 10, default is 1 ( Try 0.3 - 0.7 )
-TCL_Tweak set [3, 1];
+TCL_Tweak set [3, 0.5];

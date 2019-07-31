@@ -28,4 +28,4 @@ TCL_Radio set [1, 30];
 // ==============================================================
 // Choose distance within specific A.I. group(s) are able to request reinforcement(s).
 // 0 - 50000, default is [3000, 5000, 7000, 10000, 13000] - [Man, Car, Tank, Air, Ship]
-TCL_Radio set [2, [3000, 5000, 7000, 10000, 13000] ];
+TCL_Radio set [2, [2000, 2000, 2000, 4000, 4000] ];

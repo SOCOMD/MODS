@@ -25,7 +25,7 @@ TCL_Debug set [1, true];
 // T.C.L. Map Marker Debug: ( Objects )
 // ==============================================================
 // True / False, default is False
-TCL_Debug set [2, true];
+TCL_Debug set [2, false];
 
 // ------------------------------------------------------------
 // T.C.L. Map Marker Debug Type: ( Units / Groups )
@@ -34,7 +34,7 @@ TCL_Debug set [2, true];
 // Choose ( False) to enable Map Marker Debug for A.I. group(s).
 // Note: Requires T.C.L. Map Marker Debug: ( Objects )
 // True / False, default is True
-TCL_Debug set [3, True];
+TCL_Debug set [3, false];
 
 // ==============================================================
 // T.C.L. Cursor Debug: ( System )
