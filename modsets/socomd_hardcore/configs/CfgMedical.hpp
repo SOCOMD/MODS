@@ -36,7 +36,7 @@ class ACE_Head
 			};
 			class Overstretch: Larynxtubus
 			{
-				displayName="Triple Airway Maneuvre";
+				displayName="Head Tilt";
 				condition="[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_canTreatCached";
 				statement="[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_treatment";
 				exceptions[]=
@@ -824,23 +824,23 @@ class ACE_Medical_Advanced
 				};
 				class CrushWound: Abrasion
 				{
-					effectiveness=1;
+					effectiveness=8;
 					reopeningChance=0.3;
 					reopeningMinDelay=800;
 					reopeningMaxDelay=1500;
 				};
 				class CrushWoundMinor: CrushWound
 				{
-					effectiveness=1;
+					effectiveness=8;
 					reopeningChance=0.30000001;
 				};
 				class CrushWoundMedium: CrushWound
 				{
-					effectiveness=1;
+					effectiveness=8;
 				};
 				class CrushWoundLarge: CrushWound
 				{
-					effectiveness=1;
+					effectiveness=8;
 				};
 				class Cut: Abrasion
 				{
@@ -897,7 +897,7 @@ class ACE_Medical_Advanced
 				};
 				class velocityWoundLarge: velocityWound
 				{
-					effectiveness=8;
+					effectiveness=10;
 				};
 				class punctureWound: Abrasion
 				{
@@ -912,11 +912,11 @@ class ACE_Medical_Advanced
 				};
 				class punctureWoundMedium: punctureWound
 				{
-					effectiveness=9;
+					effectiveness=10;
 				};
 				class punctureWoundLarge: punctureWound
 				{
-					effectiveness=8;
+					effectiveness=10;
 				};
 			};
 		};
@@ -1107,7 +1107,7 @@ class ACE_Medical_Actions
 		};
 		class Overstretch: Larynxtubus
 		{
-			displayName="Triple Airway Maneuvre";
+			displayName="Head Tilt";
 			displayNameProgress="Adjusting Head";
 			treatmentTime=4;
 			requiredMedic=0;
@@ -1259,6 +1259,81 @@ class ACE_Medical_Actions
 		class CPR: FieldDressing
 		{
 			treatmentTime=10;
+		};
+		class Pulseoximeter
+		{
+			displayName="$STR_kat_aceBreathing_Pulseoximeter_Display";
+			displayNameProgress="$STR_kat_aceBreathing_placing";
+			category="examine";
+			treatmentLocations[]=
+			{
+				"All"
+			};
+			allowedSelections[]=
+			{
+				"hand_l",
+				"hand_r"
+			};
+			allowSelfTreatment=1;
+			requiredMedic=1;
+			treatmentTime=2;
+			items[]=
+			{
+				"KAT_Pulseoximeter"
+			};
+			condition="missionNamespace getVariable 'kat_aceBreathing_enable'";
+			patientStateCondition=0;
+			callbackSuccess="[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulseoximeter";
+			callbackFailure="";
+			callbackProgress="";
+			itemConsumed=1;
+			animationPatient="";
+			animationPatientUnconscious="AinjPpneMstpSnonWrflDnon_rolltoback";
+			animationPatientUnconsciousExcludeOn[]=
+			{
+				"ainjppnemstpsnonwrfldnon"
+			};
+			animationCaller="AinvPknlMstpSlayWrflDnon_medicOther";
+			animationCallerProne="AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+			animationCallerSelf="AinvPknlMstpSlayW[wpn]Dnon_medic";
+			animationCallerSelfProne="AinvPpneMstpSlayW[wpn]Dnon_medic";
+			litter[]={};
+		};
+		class RemovePulseoximeter
+		{
+			displayName="$STR_kat_aceBreathing_Pulseoximeter_Display_Remove";
+			displayNameProgress="$STR_kat_aceBreathing_remove";
+			category="examine";
+			treatmentLocations[]=
+			{
+				"All"
+			};
+			allowedSelections[]=
+			{
+				"hand_l",
+				"hand_r"
+			};
+			allowSelfTreatment=1;
+			requiredMedic=1;
+			treatmentTime=2;
+			items[]={};
+			condition="_target getVariable ['kat_aceBreathing_pulseoximeter', false]";
+			patientStateCondition=0;
+			callbackSuccess="[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter";
+			callbackFailure="";
+			callbackProgress="";
+			itemConsumed=0;
+			animationPatient="";
+			animationPatientUnconscious="AinjPpneMstpSnonWrflDnon_rolltoback";
+			animationPatientUnconsciousExcludeOn[]=
+			{
+				"ainjppnemstpsnonwrfldnon"
+			};
+			animationCaller="AinvPknlMstpSlayWrflDnon_medicOther";
+			animationCallerProne="AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+			animationCallerSelf="AinvPknlMstpSlayW[wpn]Dnon_medic";
+			animationCallerSelfProne="AinvPpneMstpSlayW[wpn]Dnon_medic";
+			litter[]={};
 		};
 		class BodyBag: FieldDressing
 		{
