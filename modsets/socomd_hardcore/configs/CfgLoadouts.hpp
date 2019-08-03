@@ -67,8 +67,6 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 0) 
 
-#define INFANTRY_OPTICS optics[] = {"optic_ACO_grn","optic_Aco","SMA_eotech","SMA_eotech_T","RH_t1","RH_t1_tan","sma_spitfire_01_black","RH_compM2","RH_compM2_tan","sma_spitfire_03_sc_black"};
-#define MARKSMAN_OPTICS optics[] = {"RH_compm2","RH_compm2_tan","sma_spitfire_03_sc_black","RH_ta31rco","RH_ta31rco_tan","SMA_ELCAN_SPECTER","SMA_ELCAN_SPECTER_TAN"};
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
 //Contents shared by individual loadouts common to every Qstore
@@ -83,10 +81,9 @@ class CfgLoadouts {
 	class SOCOMD {
 		
 		class SOCOMD_Unarmed {
-			headgear = "AU_02_780000_v1";
-			binocular = "";
-			maxOptic  = "1x";
-			INFANTRY_OPTICS
+			headgear 	= "AU_02_780000_v1";
+			binocular 	= "";
+			maxOptic  	= "1x";
 
 			class Uniform {
 				type = SOCOMD_Item_Uniform_Rifleman;
@@ -108,7 +105,6 @@ class CfgLoadouts {
 			binocular		= "Laserdesignator";
 			gps				= "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_TROOPLEADER;
@@ -156,7 +152,6 @@ class CfgLoadouts {
 			binocular		= "Laserdesignator";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_PATROLLEADER;
@@ -204,7 +199,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_RIFLEMAN;
@@ -243,7 +237,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "4x";
-			MARKSMAN_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_MARKSMAN;
@@ -280,7 +273,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_SAPPER;
@@ -328,7 +320,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_MACHINEGUNNER;
@@ -367,7 +358,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_MEDIC;
@@ -430,7 +420,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_AT;
@@ -469,7 +458,6 @@ class CfgLoadouts {
 			binocular 		= "";
 			gps 			= "";
 			maxOptic		= "1x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_PILOT;
@@ -509,7 +497,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps 			= "";
 			maxOptic		= "1x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_CREWMAN;
@@ -548,7 +535,6 @@ class CfgLoadouts {
 			binocular 		= "";
 			gps 			= "";
 			maxOptic		= "1x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_PJ;
@@ -601,7 +587,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_RIFLEMAN;
@@ -639,7 +624,6 @@ class CfgLoadouts {
 			binocular		= "";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_RIFLEMAN;
@@ -673,7 +657,6 @@ class CfgLoadouts {
 			binocular		= "ACE_Vector";
 			gps			    = "";
 			maxOptic		= "2x";
-			INFANTRY_OPTICS
 
 			class Uniform {
 				type = ITEM_UNIFORM_RIFLEMAN;
