@@ -13,7 +13,7 @@
 // ==============================================================
 // Choose if the initialize should be delayed.
 // 0 - 50, default is 0 sconds
-TCL_System set [0, 0];
+TCL_System set [0, 5];
 
 // ==============================================================
 // T.C.L. A.I.: ( System )
@@ -35,7 +35,7 @@ TCL_System set [2, [EAST, WEST, RESISTANCE] ];
 // Choose ( False ) to initialize the A.I. combat system for A.I. vs player(s) and playableUnit(s) only.
 // Choose ( True ) to initialize the A.I. combat system for A.I. vs A.I. and A.I. vs player(s) and playableUnit(s).
 // True / False, default is True
-TCL_System set [3, True];
+TCL_System set [3, False];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Get In: ( System )
@@ -57,7 +57,7 @@ TCL_System set [5, True];
 // Choose A.I. unit(s) skill divider.
 // Description: 0 = Highly skilled A.I. / 7 = ARMA 3 default skilled A.I.
 // 0 - 7, default is 5
-TCL_System set [6, 7];
+TCL_System set [6, 0];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Spawn: ( System )
@@ -71,7 +71,7 @@ TCL_System set [7, True];
 // ------------------------------------------------------------
 // Choose if initialize of spawned A.I. unit(s) A.I. group(s) and vehicle(s) should be delayed.
 // 0 - 50, default is 0 seconds
-TCL_System set [8, 0];
+TCL_System set [8, 5];
 
 // ==============================================================
 // T.C.L. Special FX: ( System )

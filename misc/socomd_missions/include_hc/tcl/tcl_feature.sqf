@@ -81,7 +81,7 @@ TCL_Feature set [7, True];
 // T.C.L. A.I. Flare: ( Chance )
 // ------------------------------------------------------------
 // 0 - 100, default is 50%
-TCL_Feature set [8, 50];
+TCL_Feature set [8, 25];
 
 // ==============================================================
 // T.C.L. A.I. Artillery:
@@ -108,21 +108,21 @@ TCL_Feature set [15, True];
 // ------------------------------------------------------------
 // Choose chance of how A.I. should be able to use cover.
 // 0 - 100, default is 50%
-TCL_Feature set [16, 50];
+TCL_Feature set [16, 80];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Take Cover: ( Distance )
 // ------------------------------------------------------------
 // Choose distance within A.I. should be able to search for cover.
 // 10 - 100, default is 30 meters
-TCL_Feature set [17, 50];
+TCL_Feature set [17, 30];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Take Cover: Cover to Cover ( Chance )
 // ------------------------------------------------------------
 // Choose chance of how A.I. should be able to use cover to cover movement.
 // 0 - 100, default is 50%
-TCL_Feature set [18, 75];
+TCL_Feature set [18, 50];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Flanking:
@@ -137,7 +137,7 @@ TCL_Feature set [19, True];
 // ------------------------------------------------------------
 // Choose chance of how A.I. group(s) should be able to use flanking movement.
 // 0 - 100, default is 50%
-TCL_Feature set [20, 33];
+TCL_Feature set [20, 50];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Flanking Type: ( Chance )
