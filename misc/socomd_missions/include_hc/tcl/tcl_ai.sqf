@@ -38,7 +38,7 @@ TCL_AI set [0, 1];
 // Note: The lower this value the faster A.I. group(s) will be rated overpowered and request reinforcement(s).
 // Example: By default A.I. group(s) with 4 A.I. unit(s) vs 1 enemy unit will not request reinforcement(s) but A.I. group(s) with 4 A.I. unit(s) vs 2 enemy unit(s) will request reinforcement(s).  
 // 0.01 - 1.00, default is 0.15
-TCL_AI set [1, 0.3];
+TCL_AI set [1, 0.15];
 
 // ==============================================================
 // T.C.L. A.I. Reinforcement Request: ( Limit )

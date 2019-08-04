@@ -15,7 +15,7 @@
 // Note: If this value was set to 4 A.I. group(s) are not able to communicate with each other.
 // Description: A.I. group(s) communication includes enemy(s) reveal and enemy(s) synchronization between friendly A.I. group(s).
 // 0 - 4, default is > 1 ( v.1.0.21 = 0 )
-TCL_IQ set [0, 1];
+TCL_IQ set [0, 0];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. I.Q. Communication: ( Distance )
@@ -23,7 +23,7 @@ TCL_IQ set [0, 1];
 // Choose distance within friendly A.I. group(s) should be able to communicate with each other.
 // Warning: If this value was set too high A.I. group(s) enemy(s) reveal and synchronization may will be end up in a chain reaction.
 // 0 - 500, default is 100 meters
-TCL_IQ set [1, 100];
+TCL_IQ set [1, 300];
 
 // ==============================================================
 // T.C.L. A.I. I.Q. Knowledge: ( Duration )
@@ -32,4 +32,4 @@ TCL_IQ set [1, 100];
 // Note: 0 = Very fast / 7 = Very slow
 // Description: If this value was set to 0 A.I. group(s) without line of sight to their enemy(s) will almost instantly loose all their enemy(s) knowledge and enemy(s) position accuracy.
 // 0 - 7, default is 3
-TCL_IQ set [2, 1];
+TCL_IQ set [2, 3];

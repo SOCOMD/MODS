@@ -160,14 +160,14 @@ TCL_Feature set [22, True];
 // ------------------------------------------------------------
 // Choose distance within A.I. should be able to detect suppressed weapons.
 // 0 - 100, default is 15 meters
-TCL_Feature set [23, 15];
+TCL_Feature set [23, 100];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Weapon Fire Detection: ( Grenade Launcher )
 // ------------------------------------------------------------
 // Choose distance within A.I. should be able to detect grenade launchers.
 // 30 - 300, default is 50 meters
-TCL_Feature set [24, 50];
+TCL_Feature set [24, 200];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Weapon Fire Detection: ( Rocket Launcher )
@@ -181,7 +181,7 @@ TCL_Feature set [25, 300];
 // ------------------------------------------------------------
 // Choose distance within A.I. should be able to detect weapon types not listed above.
 // 70 - 1000, default is 700 meters
-TCL_Feature set [26, 700];
+TCL_Feature set [26, 1000];
 
 // ==============================================================
 // T.C.L. A.I. Heal / Medic:

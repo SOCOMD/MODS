@@ -13,7 +13,7 @@
 // ==============================================================
 // Choose if the initialize should be delayed.
 // 0 - 50, default is 0 sconds
-TCL_System set [0, 5];
+TCL_System set [0, 0];
 
 // ==============================================================
 // T.C.L. A.I.: ( System )
@@ -42,7 +42,7 @@ TCL_System set [3, False];
 // ------------------------------------------------------------
 // Choose if A.I. group(s) synchronized with empty vehicle(s) should be assigned automatically.
 // True / False, default is True
-TCL_System set [4, True];
+TCL_System set [4, False];
 
 // ------------------------------------------------------------
 // T.C.L. A.I. Skills: ( System )
@@ -71,14 +71,14 @@ TCL_System set [7, True];
 // ------------------------------------------------------------
 // Choose if initialize of spawned A.I. unit(s) A.I. group(s) and vehicle(s) should be delayed.
 // 0 - 50, default is 0 seconds
-TCL_System set [8, 5];
+TCL_System set [8, 0];
 
 // ==============================================================
 // T.C.L. Special FX: ( System )
 // ==============================================================
 // Choose if Special FX system should be used.
 // True / False, default is True
-TCL_System set [9, True];
+TCL_System set [9, False];
 
 // ==============================================================
 // T.C.L. Player Respawn: ( System )

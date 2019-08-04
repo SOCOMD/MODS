@@ -21,7 +21,7 @@ TCL_Radio set [0, True];
 // Choose time A.I. group(s) should need to request reinforcement(s).
 // Note: This value will be recalculated with the skill of the requesting A.I. group leader.
 // 0 - 100, default is 30 seconds
-TCL_Radio set [1, 30];
+TCL_Radio set [1, 15];
 
 // ==============================================================
 // T.C.L. A.I. Radio: ( Distance )
