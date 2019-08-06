@@ -15,7 +15,7 @@ class CfgVehicles {
 					displayName="$STR_kat_aceAirway_intubating";
 					icon="";
 					class Larynxtubus {
-						displayName="Insert LMA";
+						displayName="Insert SGA";
 						distance=2;
 						condition="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";
@@ -179,7 +179,7 @@ class CfgVehicles {
 							displayName="$STR_kat_aceAirway_intubating";
 							icon="";
 							class Larynxtubus {
-								displayName="Insert LMA";
+								displayName="Insert SGA";
 								distance=2;
 								condition="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
 								statement="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";

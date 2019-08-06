@@ -69,6 +69,7 @@ class CfgFunctions {
         class functions {
             file = "\socomd_core\functions\medical";
             class handleCreateLitter {};
+			class getBloodVolumeChange {};
         };
     };
 };

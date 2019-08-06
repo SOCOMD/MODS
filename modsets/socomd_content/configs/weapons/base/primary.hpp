@@ -101,8 +101,8 @@ class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
 };
 
 //Machine Gun 556
-class CUP_lmg_minimi_railed;
-class CUP_lmg_m249_pip2 : CUP_lmg_minimi_railed {
+class CUP_lmg_minimipara;
+class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 	displayName = "FN Minimi HS";
 	magazineWell[] = {"CBA_556x45_MINIMI"};
 };

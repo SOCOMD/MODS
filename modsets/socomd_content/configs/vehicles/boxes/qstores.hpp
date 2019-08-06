@@ -149,8 +149,12 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 				QSTORE_ACTION_WEAPON_PRIMARY("Falkor",Recon_300WM)
 
 
-				QSTORE_ACTION_WEAPON_PRIMARY("Minimi",CUP_lmg_m249_pip2)
-				QSTORE_ACTION_WEAPON_PRIMARY("Maximi",sma_minimi_mk3_762tsb)
+				QSTORE_ACTION_WEAPON_PRIMARY("Minimi",CUP_lmg_minimi_railed)
+				QSTORE_ACTION_GRP_BEGIN(SELECT_maximi,"Maximi")
+					QSTORE_ACTION_WEAPON_PRIMARY("Black",sma_minimi_mk3_762tsb)
+					QSTORE_ACTION_WEAPON_PRIMARY("Tan",sma_minimi_mk3_762tsb_des)
+					QSTORE_ACTION_WEAPON_PRIMARY("OD",sma_minimi_mk3_762tsb_wdl)
+				QSTORE_ACTION_GRP_END
 			QSTORE_ACTION_GRP_END
 
 			QSTORE_ACTION_GRP_BEGIN(SELECT_LAUNCHER,"Launcher")

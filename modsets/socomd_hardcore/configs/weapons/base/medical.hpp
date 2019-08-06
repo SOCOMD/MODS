@@ -48,7 +48,7 @@ class ACE_apap: ACE_morphine {
 };
 
 class KAT_larynx: ACE_ItemCore {
-	displayName="Laryngeal Mask Airway";
+	displayName="Supraglottic Airway";
 	descriptionShort="Maintains airway patency and prevents vomit from entering the lungs";
 	descriptionUse="Maintains airway patency and prevents vomit from entering the lungs";
 	picture="\socomd_data_core\icon\LMA.paa";
@@ -120,3 +120,18 @@ class SOCOMD_Ondans: ACE_morphine {
 		mass=0.01;
 	};
 };
+
+class ACE_fieldDressing: ACE_ItemCore
+	{
+		scope=2;
+		author="$STR_ace_common_ACETeam";
+		model="\z\ace\addons\medical\data\bandage.p3d";
+		picture="\socomd_data_core\icon\IB.paa";
+		displayName="Israeli Bandage";
+		descriptionShort="Quickly stanches haemorrhaging from injuries";
+		descriptionUse="Quickly stanches haemorrhaging from injuries";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=1;
+		};
+	};
