@@ -17,9 +17,9 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 1) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 4) \
+	LOADOUT_ITEM(ACE_apap, 2) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
-	LOADOUT_ITEM(ACE_fieldDressing, 0)  		
+	LOADOUT_ITEM(ACE_fieldDressing, 2)  		
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -380,7 +380,7 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
-					LOADOUT_ITEM(ACE_fieldDressing, 0)  		//Remove
+					LOADOUT_ITEM(ACE_fieldDressing, 10)  		//Israeli Bandage
 					LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
 					LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
 					LOADOUT_ITEM(ACE_personalAidKit, 0)  		//Remove
@@ -395,7 +395,7 @@ class CfgLoadouts {
 					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
 					LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
 					LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol 
-					LOADOUT_ITEM(ACE_salineIV_500, 6)			//Saline
+					LOADOUT_ITEM(ACE_bloodIV_500, 6)			//Saline
 					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction

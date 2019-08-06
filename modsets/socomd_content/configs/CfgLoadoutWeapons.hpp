@@ -28,10 +28,20 @@ class CfgLoadoutWeapons {
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
 	
 	class MachineGun_556;
-	class CUP_lmg_m249_pip2 : MachineGun_556 {};
+	class CUP_lmg_minimi_railed : MachineGun_556 {};
 
 	class MachineGun_762;
 	class sma_minimi_mk3_762tsb : MachineGun_762 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+		};
+	};
+	class sma_minimi_mk3_762tsb_wdl : MachineGun_762 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+		};
+	};
+	class sma_minimi_mk3_762tsb_des : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
