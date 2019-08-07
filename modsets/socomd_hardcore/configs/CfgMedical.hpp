@@ -81,7 +81,7 @@ class ACE_ArmLeft
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 6mcg/2mL";
 		condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
 	};
@@ -126,7 +126,7 @@ class ACE_ArmRight
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 6mcg/2mL";
 		condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
 	};
@@ -171,7 +171,7 @@ class ACE_LegLeft
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 6mcg/2mL";
 		condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
 	};
@@ -216,7 +216,7 @@ class ACE_LegRight
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 6mcg/2mL";
 		condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
 	};
@@ -1140,7 +1140,7 @@ class ACE_Medical_Actions
 			};
 		};
 		class Ket: Morphine {
-			displayName="Ketamine 30mg/2mL";
+			displayName="Ketamine 6mg/2mL";
 			displayNameProgress="Injecting Ketamine 30mg/2mL";
 			items[]=
 			{

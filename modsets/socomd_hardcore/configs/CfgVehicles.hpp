@@ -58,7 +58,7 @@ class CfgVehicles {
 					statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Ket: Fentanyl {
-					displayName="Ket 100mcg/2mL";
+					displayName="Ket 6mcg/2mL";
 					condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
 				};
@@ -90,7 +90,7 @@ class CfgVehicles {
 					statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Ket: Fentanyl {
-					displayName="Ket 100mcg/2mL";
+					displayName="Ket 6mcg/2mL";
 					condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
 				};
@@ -122,7 +122,7 @@ class CfgVehicles {
 					statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Ket: Fentanyl {
-					displayName="Ket 100mcg/2mL";
+					displayName="Ket 6mcg/2mL";
 					condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
 				};
@@ -154,7 +154,7 @@ class CfgVehicles {
 					statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 				};
 				class Ket: Fentanyl {
-					displayName="Ket 100mcg/2mL";
+					displayName="Ket 6mcg/2mL";
 					condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 					statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
 				};
@@ -222,7 +222,7 @@ class CfgVehicles {
 							statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 						};
 						class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -254,7 +254,7 @@ class CfgVehicles {
 							statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 						};
 						class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -318,7 +318,7 @@ class CfgVehicles {
 							statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 						};
 						class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -366,7 +366,7 @@ class CfgVehicles {
 						statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -398,7 +398,7 @@ class CfgVehicles {
 						statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -430,7 +430,7 @@ class CfgVehicles {
 						statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
 						};
@@ -462,7 +462,7 @@ class CfgVehicles {
 						statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
 					class Ket: Fentanyl {
-							displayName="Ket 100mcg/2mL";
+							displayName="Ket 6mcg/2mL";
 							condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 							statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
 						};
