@@ -110,28 +110,41 @@ class SOCOMD_Ket_S: ACE_morphine {
 	};
 };
 
-class SOCOMD_Ondans: ACE_morphine {
+class SOCOMD_Tetra: ACE_morphine {
 	scope=2;
-	displayName="Ondansetron 8mg/4mL";
-	descriptionShort="Anti-emtic, prevents vomiting";
-	descriptionUse="Anti-emtic, prevents vomiting";
-	picture="\socomd_data_core\icon\VPN.paa";
+	displayName="Tetracycline 250mg capsule";
+	descriptionShort="Antibiotic capsule";
+	descriptionUse="Antibiotic capsule";
+	picture="\socomd_data_core\icon\tetra.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
 	};
 };
 
-class ACE_fieldDressing: ACE_ItemCore
+class ACE_fieldDressing: ACE_ItemCore {
+	scope=2;
+	author="$STR_ace_common_ACETeam";
+	model="\z\ace\addons\medical\data\bandage.p3d";
+	picture="\socomd_data_core\icon\IB.paa";
+	displayName="Israeli Bandage";
+	descriptionShort="Quickly stanches haemorrhaging from injuries";
+	descriptionUse="Quickly stanches haemorrhaging from injuries";
+	class ItemInfo: CBA_MiscItem_ItemInfo
 	{
-		scope=2;
-		author="$STR_ace_common_ACETeam";
-		model="\z\ace\addons\medical\data\bandage.p3d";
-		picture="\socomd_data_core\icon\IB.paa";
-		displayName="Israeli Bandage";
-		descriptionShort="Quickly stanches haemorrhaging from injuries";
-		descriptionUse="Quickly stanches haemorrhaging from injuries";
-		class ItemInfo: CBA_MiscItem_ItemInfo
-		{
-			mass=1;
-		};
+		mass=1;
 	};
+};
+
+class ACE_quikclot: ACE_ItemCore {
+	scope=2;
+	author="$STR_ace_common_ACETeam";
+	displayName="Quikclot Combat Gauze";
+	model="\z\ace\addons\medical\data\QuikClot.p3d";
+	picture="\socomd_data_core\icon\Quikclot.paa";
+	descriptionShort="$STR_ace_medical_QuikClot_Desc_Short";
+	descriptionUse="$STR_ace_medical_QuikClot_Desc_Use";
+	class ItemInfo: CBA_MiscItem_ItemInfo
+	{
+		mass=1;
+	};
+};
