@@ -40,6 +40,19 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 			connectedByDefault = 1; \
 		}; \
 	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"crew"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {"Intercom_1"}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
+	}; \
 };
 
 HURRICANE_BASE(A)

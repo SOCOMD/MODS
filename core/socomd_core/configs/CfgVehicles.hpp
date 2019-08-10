@@ -97,6 +97,7 @@ class CfgVehicles  {
 		class HitPoints;
 		class Turrets;
 		class AcreIntercoms;
+		class AcreRacks;
 	};
 
 	class Helicopter_Base_H : Helicopter_Base_F {

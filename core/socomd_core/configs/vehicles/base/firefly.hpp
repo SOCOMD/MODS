@@ -152,6 +152,19 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 			connectedByDefault = 1; \
 		}; \
 	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"crew"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {"Intercom_1"}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
+	}; \
 };
 
 FIREFLY_BASE(A)
@@ -196,6 +209,19 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 			numLimitedPositions = 0; \
 			masterPositions[] = {"commander"}; \
 			connectedByDefault = 1; \
+		}; \
+	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"crew"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {"Intercom_1"}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
 		}; \
 	}; \
 };

@@ -31,6 +31,19 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"driver"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
+	}; \
 };
 
 TRUCK_TRANSPORT_BASE(A)
@@ -65,6 +78,19 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	}; \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"driver"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
 	}; \
 	ace_rearm_isSupplyVehicle = 1; \
 };
@@ -102,6 +128,19 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
 	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"driver"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
+	}; \
 };
 
 TRUCK_FUEL_BASE(A)
@@ -136,6 +175,19 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	}; \
 	class TransportBackpacks { \
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+	}; \
+	class AcreRacks { \
+		class Rack_1 { \
+			allowedPositions[] = {"driver"}; \
+			componentName = "ACRE_VRC103"; \
+			defaultComponents[] = {}; \
+			defaultPositions[] = {}; \
+			displayName = "Dash"; \
+			intercom[] = {}; \
+			isRadioRemovable = 0; \
+			mountedRadio = "ACRE_PRC117F"; \
+			shortName = "Dash"; \
+		}; \
 	}; \
 };
 
@@ -257,6 +309,20 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 			connectedByDefault = 1;
 		};
 	};
+
+	class AcreRacks {
+		class Rack_1 {
+			allowedPositions[] = {"crew"};
+			componentName = "ACRE_VRC103";
+			defaultComponents[] = {};
+			defaultPositions[] = {};
+			displayName = "Dash";
+			intercom[] = {"Intercom_1"};
+			isRadioRemovable = 0;
+			mountedRadio = "ACRE_PRC117F";
+			shortName = "Dash";
+		};
+	};
 };
 
 class SOCOMD_APC_B : SOCOMD_APC_A {
@@ -296,6 +362,7 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	class TransportBackpacks {
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
+
 	class AnimationSources : AnimationSources {
 		class showSLATHull : showSLATHull {
 			initPhase = 1;
@@ -356,18 +423,6 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
-
-	class AcreIntercoms {
-		class Intercom_1 {
-			displayName = "Crew Intercom";
-			shortName = "Crew";
-			allowedPositions[] = {"crew"};
-			limitedPositions[] = {};
-			numLimitedPositions = 0;
-			masterPositions[] = {"commander"};
-			connectedByDefault = 1;
-		};
-	};
 
 	class TextureSources : TextureSources {
 		class SOCOMD {
@@ -525,6 +580,32 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 		{
 			name = "wheel_2_4_steering";
 			depends = "HitRBWheelDir - 0.25";
+		};
+	};
+
+	class AcreIntercoms {
+		class Intercom_1 {
+			displayName = "Crew Intercom";
+			shortName = "Crew";
+			allowedPositions[] = {"crew"};
+			limitedPositions[] = {};
+			numLimitedPositions = 0;
+			masterPositions[] = {"commander"};
+			connectedByDefault = 1;
+		};
+	};
+
+	class AcreRacks {
+		class Rack_1 {
+			allowedPositions[] = {"crew"};
+			componentName = "ACRE_VRC103";
+			defaultComponents[] = {};
+			defaultPositions[] = {};
+			displayName = "Dash";
+			intercom[] = {};
+			isRadioRemovable = 0;
+			mountedRadio = "ACRE_PRC117F";
+			shortName = "Dash";
 		};
 	};
 };

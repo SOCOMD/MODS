@@ -17,6 +17,7 @@ class CfgFunctions {
 			class GetLoadoutMaxOptic {};
 			class BushMasterInit {};
 			class UAV {};
+			class ACRERackInit {};
 		};
 
 		class Actions {
