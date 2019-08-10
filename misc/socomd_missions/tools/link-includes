@@ -1,6 +1,6 @@
 cd $(dirname $0)
 cd ../
-fobs=$(find ./fobs/* -maxdepth 1 -type d)
+fobs=$(find ./fobs/* -maxdepth 0 -type d)
 for dir in $fobs
 do
 	echo $dir
@@ -12,7 +12,7 @@ do
 	ln -fs ../../include/cba_settings.sqf $dir/
 done
 
-missions=$(find ./missions/* -maxdepth 1 -type d)
+missions=$(find ./missions/* -maxdepth 0 -type d)
 for dir in $missions
 do
 	echo $dir
