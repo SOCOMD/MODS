@@ -25,7 +25,7 @@ missionNamespace setVariable ["ACE_maxWeightDrag", 10000];
 	},true, [], true
 ] call CBA_fnc_addClassEventHandler;
 
-["AllVehicles", "InitPost", {[_this select 0] call SOCOMD_fnc_ACRERackInit;}, true, [], true] call CBA_fnc_addClassEventHandler;
+["ACRE_VRC103", "InitPost", {[_this select 0] call SOCOMD_fnc_ACRERackInit;}, true, [], true] call CBA_fnc_addClassEventHandler;
 
 // DAGR Modifications to enable automatic waypoints from Map
 // Default Prefix List
