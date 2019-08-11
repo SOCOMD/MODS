@@ -17,7 +17,7 @@
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
-	LOADOUT_ITEM(11Rnd_45ACP_Mag, 3)
+	LOADOUT_ITEM(SOCOMD_Item_Magazine_45ACP_11Rnd, 2)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
@@ -273,7 +273,7 @@ class TAGE_TroopLeader
 {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
-	handgunMagazine = "11Rnd_45ACP_Mag";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
 	headgear = "ADFU_H_OpsCore_08_BLK";
 	facewear = "Mask_M40";
 	binocular = "Laserdesignator";
@@ -321,7 +321,7 @@ class TAGE_Medic
 {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
-	handgunMagazine = "11Rnd_45ACP_Mag";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
 	headgear = "ADFU_H_OpsCore_08_BLK";
 	facewear = "Mask_M40";
 	binocular = "Binocular";
@@ -372,7 +372,7 @@ class TAGE_Sapper
 {
 	primary = "SMG_05_F";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
-	handgunMagazine = "11Rnd_45ACP_Mag";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
 	headgear = "ADFU_H_OpsCore_08_BLK";
 	facewear = "Mask_M40";
 	binocular = "Binocular";
@@ -420,7 +420,7 @@ class TAGE_Sniper
 {
 	primary = "hlc_rifle_awcovert_BL";
 	handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
-	handgunMagazine = "11Rnd_45ACP_Mag";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
 	headgear = "CUP_H_PMC_Cap_Grey";
 	facewear = "milgp_f_face_shield_tactical_shemagh_BLK";
 	binocular = "Rangefinder";

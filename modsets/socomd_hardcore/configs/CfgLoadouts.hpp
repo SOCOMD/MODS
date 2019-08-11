@@ -30,7 +30,7 @@ class _xx_##id { \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
-	LOADOUT_ITEM(11Rnd_45ACP_Mag, 5)
+	LOADOUT_ITEM(SOCOMD_Item_Magazine_45ACP_11Rnd, 2)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
