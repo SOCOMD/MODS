@@ -24,6 +24,8 @@ if(_vehicle == objNull) exitWith {};
 	systemChat format["6: %1", _radioId];
 	if(_radioId == "") exitWith {};
 
+	sleep 1;
+
 	systemChat format["7: Configure %1", _radioId];
 	[_radioId, 2] call acre_api_fnc_setRadioChannel;
 	[_radioId, 0.6] call acre_sys_radio_fnc_setRadioVolume;
