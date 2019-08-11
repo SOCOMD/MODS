@@ -219,13 +219,14 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_STANDARD_MEDICAL
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 8)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
 					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
 				};
 			};
 		};
+
 		////////////////////////////////////////////////////////////////////////////////
 		// Marksman
 		class SOCOMD_Marksman {
@@ -397,7 +398,7 @@ class CfgLoadouts {
 					LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
 					LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
 					LOADOUT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
-					LOADOUT_ITEM(ACE_bloodIV_1000, 5)			//Blood
+					LOADOUT_ITEM(ACE_bloodIV_500, 5)			//Blood
 					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction

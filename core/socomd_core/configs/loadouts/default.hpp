@@ -384,7 +384,7 @@ class SOCOMD_Medic {
 
 class SOCOMD_AT {
 	primary		    = ITEM_PRIMARY_AT;
-	secondary		= ITEM_SECONDARY_AT;
+	secondary		= ITEM_SECONDARY_MAT;
 	handgun		    = ITEM_HANDGUN_AT;
 	handgunMagazine = ITEM_HANDGUN_MAGAZINE_AT;
 	headgear		= ITEM_HEADGEAR_AT;

@@ -51,19 +51,8 @@ class V12_KTM_SOCOMD: V12_KTM
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
 
-	class TransportWeapons {
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS
-	};
-
-	class TransportMagazines {
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
-	};
-
-	class TransportItems {
-		INVENTORY_VEHICLE_DEFAULT_ITEMS
-	};
-
-	class TransportBackpacks {
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
-	};
+	class TransportWeapons {};
+	class TransportMagazines {};
+	class TransportItems {};
+	class TransportBackpacks {};
 };

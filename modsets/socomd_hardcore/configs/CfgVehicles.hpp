@@ -476,5 +476,8 @@ class CfgVehicles {
    		};
 	};
 	
+	#include "vehicles\base\land.hpp"
+	#include "vehicles\base\air.hpp"
+	#include "vehicles\base\sea.hpp"
 	#include "vehicles\base\medical.hpp"
 };
