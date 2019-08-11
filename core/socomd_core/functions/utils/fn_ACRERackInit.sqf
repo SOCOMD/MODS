@@ -17,14 +17,17 @@ if(_vehicle == objNull) exitWith {};
 	if(!(local _vehicle)) exitWith {};
 	systemChat format["4: %1 is local", _vehicle];
 
-	waitUntil {([_rackId] call acre_api_fnc_getMountedRackRadio) != ""};
+	waitUntil {
+		_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
+		_valid = (_radioId != "" && _rackId != "ACRE_PRC117F");
+		_valid
+	};
+	
 	systemChat format["5: %1 has radio", _rackId];
 
 	_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
 	systemChat format["6: %1", _radioId];
 	if(_radioId == "") exitWith {};
-
-	sleep 1;
 
 	systemChat format["7: Configure %1", _radioId];
 	[_radioId, 2] call acre_api_fnc_setRadioChannel;
