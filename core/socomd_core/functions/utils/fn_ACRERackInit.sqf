@@ -19,10 +19,10 @@ if(_vehicle == objNull) exitWith {};
 
 	waitUntil {
 		_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
-		_valid = (_radioId != "" && _rackId != "ACRE_PRC117F");
+		_valid = (_radioId != "" && _radioId != "ACRE_PRC117F");
 		_valid
 	};
-	
+
 	systemChat format["5: %1 has radio", _rackId];
 
 	_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
