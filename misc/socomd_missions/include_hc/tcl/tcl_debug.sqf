@@ -12,20 +12,20 @@
 // T.C.L. System Debug:
 // ==============================================================
 // True / False, default is False
-TCL_Debug set [0, True];
+TCL_Debug set [0, False];
 
 // ==============================================================
 // T.C.L. Map Marker Debug: ( System )
 // ==============================================================
 // Choose ( True ) to enable Map Marker Debug System.
 // True / False, default is False
-TCL_Debug set [1, True];
+TCL_Debug set [1, False];
 
 // ==============================================================  
 // T.C.L. Map Marker Debug: ( Objects )
 // ==============================================================
 // True / False, default is False
-TCL_Debug set [2, True];
+TCL_Debug set [2, False];
 
 // ------------------------------------------------------------
 // T.C.L. Map Marker Debug Type: ( Units / Groups )
