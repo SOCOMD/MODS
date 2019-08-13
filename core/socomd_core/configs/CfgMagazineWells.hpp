@@ -43,4 +43,9 @@ class CfgMagazineWells {
 		};
 	};
 
+	class PistolHeavy_01_45ACP {
+		SOCOMD_mags[] = {
+			"SOCOMD_Item_Magazine_45ACP_11Rnd"
+		};
+	};
 };
