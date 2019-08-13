@@ -1141,7 +1141,7 @@ class ACE_Medical_Actions
 		};
 		class Ket: Morphine {
 			displayName="Ketamine 6mg/2mL";
-			displayNameProgress="Injecting Ketamine 30mg/2mL";
+			displayNameProgress="Injecting Ketamine 6mg/2mL";
 			items[]=
 			{
 				"SOCOMD_Ket",

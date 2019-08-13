@@ -90,7 +90,7 @@ class SOCOMD_VPN: ACE_ItemCore {
 
 class SOCOMD_Ket: ACE_morphine {
 	scope=2;
-	displayName="Ketamine 30mg/2mL Ampoule";
+	displayName="Ketamine 6mg/2mL Ampoule";
 	descriptionShort="Analgesic used for severe pain";
 	descriptionUse="Analgesic used for severe pain";
 	picture="\socomd_data_core\icon\ket.paa";
