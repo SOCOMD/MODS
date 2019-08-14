@@ -63,6 +63,7 @@ class CfgFunctions {
             class adenosine {};
             class adenosineLocal {};
 			class ketamine {};
+			class ketamineLocal {};
 			class ketamine_sedation {};
 			class ketEffect {};
         };
