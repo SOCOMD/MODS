@@ -66,4 +66,11 @@ class CfgAmmo {
 			};
 		};
 	};
+
+	class CUP_B_762x51_Tracer_Red;
+	class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
+		hit = 12.0;
+		indirectHit = 4.0;
+		indirectHitRange = 2.0;
+	};
 };
