@@ -34,6 +34,7 @@ class CfgFunctions {
 			class Action_EnterSpectator {};
 			class Action_displayName {};
 			class Action_placePlaceables {};
+			class Action_putBlindfoldOn {};
 		};
 
 		class ActionConditions {
@@ -47,6 +48,7 @@ class CfgFunctions {
 			class ActionCondition_IsAdmin {};
 			class ActionCondition_IsRadarOn {};
 			class ActionCondition_IsRadarOff {};
+			class ActionCondition_canInteract {};
 		};
 
 		class ASORUtil {

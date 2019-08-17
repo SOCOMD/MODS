@@ -188,7 +188,7 @@ class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\u_g3_blk_co.paa"
+			"socomd_data_core\CTgear\u_g3_amc_co.paa"
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };

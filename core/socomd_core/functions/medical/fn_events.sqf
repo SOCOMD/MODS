@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_events;
+ * call call SOCOMD_medical_fnc_events;
  *
  * Public: No
  */

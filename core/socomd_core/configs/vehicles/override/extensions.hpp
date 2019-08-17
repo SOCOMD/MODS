@@ -257,6 +257,18 @@ class CAManBase : Man {
 			};
 		};
 	};
+	class ACE_Actions{
+		class ACE_Head{
+			class Blindfold{
+				displayName="Blindfold";
+				condition="[_player,_target] call SOCOMD_fnc_ActionCondition_canInteract";
+				statement="[_player,_target] call SOCOMD_fnc_Action_putBlindfoldOn";
+				showDisabled=0;
+				priority=1;
+				distance=2;
+			};
+		};
+	};
 };
 
 class Radar_System_01_base_F : StaticMGWeapon {
