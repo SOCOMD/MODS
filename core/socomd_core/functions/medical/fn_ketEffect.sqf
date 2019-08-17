@@ -1,4 +1,3 @@
-hintSilent "You have drugs";
 
 "chromAberration" ppEffectEnable true; 
 "radialBlur" ppEffectEnable true;

@@ -57,12 +57,14 @@ class CfgFunctions {
 			class ASORVS_GetClassnames {};
 		};
 	};
-	class armaforces_ace_medical {
+	class SOCOMD_medical {
         class functions {
             file = "\socomd_core\functions\medical";
-            class adenosine {};
+            class events {};
+			class adenosine {};
             class adenosineLocal {};
 			class ketamine {};
+			class ketamineLocal {};
 			class ketamine_sedation {};
 			class ketEffect {};
         };

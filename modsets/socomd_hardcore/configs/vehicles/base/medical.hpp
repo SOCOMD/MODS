@@ -4,7 +4,7 @@ class ACE_fentanylItem: Item_Base_F
 	scope=2;
 	scopeCurator=2;
 	displayName="Fentanyl 100mcg/2mL";
-	author="ArmaForces";
+	author="Monk";
     icon="socomd_data_core\icon\VPN.paa";
 	vehicleClass="Items";
 	class TransportItems
@@ -21,7 +21,7 @@ class ACE_naloxonelItem: Item_Base_F
 	scope=2;
 	scopeCurator=2;
 	displayName="Naloxone 1.6mg/4mL";
-	author="ArmaForces";
+	author="Monk";
     icon="socomd_data_core\icon\VPN.paa";
 	vehicleClass="Items";
 	class TransportItems
@@ -38,7 +38,7 @@ class ACE_apapItem: Item_Base_F
 	scope=2;
 	scopeCurator=2;
 	displayName="Paracetemol 1g";
-	author="ArmaForces";
+	author="Monk";
 	icon="socomd_data_core\icon\apap.paa";
 	model="\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
 	vehicleClass="Items";
