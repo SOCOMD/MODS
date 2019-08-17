@@ -1328,7 +1328,7 @@ class ACE_Medical_Actions
 };
 class Extended_PostInit_EventHandlers
 {
-	class kat_aceAirway_postInit
+	class SOCOMD_medical_postInit
 	{
 		init="call SOCOMD_medical_fnc_events";
 	};
