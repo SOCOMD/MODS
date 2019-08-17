@@ -416,7 +416,7 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "LAV-25A1 (3/6)";
+	displayname = "LAV-25A1 (3/4)";
 	vehicleclass = "Armored";
 
 	forceInGarage = 1;

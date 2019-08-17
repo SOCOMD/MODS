@@ -1,25 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-// INTERACTIVE BOX
-
-class Land_PaperBox_closed_F;
-class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
-	scope = protected;
-	scopeCurator = private;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
-	author = AUTHOR_STR;
-	displayName = "QStore";
-
-	ace_cargo_hasCargo = 0;
-	ace_cargo_canLoad = 0;
-	ace_dragging_canDrag = 0;
-	ace_dragging_canCarry = 0;
-
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class TransportItems {};
-	class TransportBackpacks {};
-};
 
 #define QSTORE_ACTION_GRP_BEGIN(GRP_ID, DISPLAY_STR) \
 class SOCOMD_ACTION_GRP_##GRP_ID { \
@@ -93,6 +71,30 @@ class SOCOMD_ACTION_VEST_##HEADGEAR { \
 	showDisabled = 0; \
 };
 
+////////////////////////////////////////////////////////////////////////////////
+// INTERACTIVE BOX
+
+class Land_PaperBox_closed_F;
+class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
+	scope = protected;
+	scopeCurator = private;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	author = AUTHOR_STR;
+	displayName = "QStore";
+
+	ace_cargo_hasCargo = 0;
+	ace_cargo_canLoad = 0;
+	ace_dragging_canDrag = 0;
+	ace_dragging_canCarry = 0;
+
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportItems {};
+	class TransportBackpacks {};
+};
+
+
 class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 	scope = public;
 	scopeCurator = public;
@@ -125,29 +127,15 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)
 					QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MachineGunner)
 					QSTORE_ACTION_LOADOUT("Medic",SOCOMD_Medic)
-					//QSTORE_ACTION_LOADOUT("Sniper",SOCOMD_Sniper)
 					QSTORE_ACTION_LOADOUT("Anti-tank",SOCOMD_AT)
 				QSTORE_ACTION_GRP_END
 
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (SUPPORT)")
-					QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB1,"Logistics")
-						QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
-						QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
-						QSTORE_ACTION_LOADOUT("PJ",SOCOMD_PJ)
-
-					QSTORE_ACTION_GRP_END
-
-					QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB2,"Weapons")
-							QSTORE_ACTION_LOADOUT("82mm Mortarman",SOCOMD_Mortar)
-							QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
-					QSTORE_ACTION_GRP_END
+					QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
+					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
+					QSTORE_ACTION_LOADOUT("PJ",SOCOMD_PJ)
 				QSTORE_ACTION_GRP_END
 			QSTORE_ACTION_GRP_END
-			
-			QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACK_MORTAR,"Mortar")
-					QSTORE_ACTION_BACKPACK("Tube",B_Mortar_01_weapon_F)
-					QSTORE_ACTION_BACKPACK("Bipod",B_Mortar_01_support_F)
-				QSTORE_ACTION_GRP_END
 
 			QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Customise Gear")
 				// Select Vest
@@ -161,9 +149,6 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_VEST("Weapons Tan",lbt_weapons_coy)
 					QSTORE_ACTION_VEST("Weapons Multicam",lbt_weapons_mc)
 				QSTORE_ACTION_GRP_END
-
-				// Select Mortar
-				
 
 				//Select Backpack
 				QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACKS,"Backpacks")

@@ -1150,7 +1150,7 @@ class ACE_Medical_Actions
 				"SOCOMD_Ket",
 				"SOCOMD_VPN"
 			};
-			callbackSuccess=SOCOMD_medical_fnc_ketamine;
+			callbackSuccess=SOCOMD_fnc_ketamine;
 		};
 		class Ket_S: Ket {
 			displayName="Ketamine 200mg/2mL";
@@ -1160,7 +1160,7 @@ class ACE_Medical_Actions
 				"SOCOMD_Ket_S",
 				"SOCOMD_VPN"
 			};
-			callbackSuccess=SOCOMD_medical_fnc_ketamine_sedation;
+			callbackSuccess=SOCOMD_fnc_ketamine_sedation;
 		};
 		class Tetra: Morphine {
 			allowedSelections[]=
@@ -1330,6 +1330,6 @@ class Extended_PostInit_EventHandlers
 {
 	class SOCOMD_medical_postInit
 	{
-		init="call SOCOMD_medical_fnc_events";
+		init="call SOCOMD_fnc_events";
 	};
 };

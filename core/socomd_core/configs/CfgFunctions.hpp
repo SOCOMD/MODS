@@ -58,10 +58,9 @@ class CfgFunctions {
 			class ASORGS_CheckScopeFOV {};
 			class ASORVS_GetClassnames {};
 		};
-	};
-	class SOCOMD_medical {
-        class functions {
-            file = "\socomd_core\functions\medical";
+
+		class Medical {
+			file = "\socomd_core\functions\medical";
             class events {};
 			class adenosine {};
             class adenosineLocal {};
@@ -69,8 +68,8 @@ class CfgFunctions {
 			class ketamineLocal {};
 			class ketamine_sedation {};
 			class ketEffect {};
-        };
-    };
+		};
+	};
     class ace_medical {
         class functions {
             file = "\socomd_core\functions\medical";

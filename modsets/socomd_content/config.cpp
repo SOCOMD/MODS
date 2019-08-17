@@ -30,6 +30,7 @@ class CfgPatches  {
 
 		units[] = {
 			"SOCOMD_SHIP_B",
+			"SOCOMD_QStore_B",
 			"SOCOMD_QStore_TAG",
 			"SOCOMD_QStore_RUS",
 			"SOCOMD_Supply_Sniper",
@@ -44,7 +45,6 @@ class CfgPatches  {
 			"SOCOMD_RUS_soldier_Leader_Night",
 			"V12_KTM_SOCOMD",
 			"SOCOMD_LR_ATV"
-			
 		};
 
 		weapons[] = {};
