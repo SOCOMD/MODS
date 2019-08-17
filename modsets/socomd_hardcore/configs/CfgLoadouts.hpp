@@ -211,6 +211,8 @@ class CfgLoadouts {
 				type = ITEM_VEST_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 				};
 			};
 
@@ -445,6 +447,8 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_STANDARD_MEDICAL
 					LOADOUT_BACKPACK_ESSENTIALS
+					LOADOUT_ITEM(tf47_m3maaws_HEAT, 0)
+					LOADOUT_ITEM(tf47_m3maaws_HE, 0)
 				};
 			};
 		};
@@ -473,7 +477,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_PILOT;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 4)
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 				};
 			};
@@ -512,7 +516,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_CREWMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 4)
 					LOADOUT_ITEM(ACRE_PRC152, 1)
 				};
 			};
@@ -551,7 +555,7 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
 					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 4)
 				};
 			};
 
