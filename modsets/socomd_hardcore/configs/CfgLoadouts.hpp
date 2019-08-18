@@ -564,16 +564,30 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_ITEM(ACRE_PRC117F, 1)
-					LOADOUT_ITEM(ACE_surgicalKit, 8)
-					LOADOUT_ITEM(ACE_fieldDressing, 25)
-					LOADOUT_ITEM(ACE_elasticBandage, 20)
-					LOADOUT_ITEM(ACE_packingBandage, 25)
-					LOADOUT_ITEM(ACE_quikclot, 25)
-					LOADOUT_ITEM(ACE_epinephrine, 10)
-					LOADOUT_ITEM(ACE_morphine, 10)
-					LOADOUT_ITEM(ACE_tourniquet, 6)
-					LOADOUT_ITEM(ACE_salineIV_500, 6)
-					LOADOUT_ITEM(ACE_personalAidKit, 2)
+					LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
+					LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
+					LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
+					LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
+					LOADOUT_ITEM(ACE_personalAidKit, 4)			//Remove
+					LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
+					LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
+					LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
+					LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+					LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+					LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
+					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
+					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+					LOADOUT_ITEM(ACE_bloodIV_1000, 10)			//Blood
+					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
+					LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
+					LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+					LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+					LOADOUT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
+					LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 				};
 			};
 		};
@@ -583,7 +597,48 @@ class CfgLoadouts {
 		};
 
 		class SOCOMD_Recon {
-			optics[] = {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
+			primary		    = ITEM_PRIMARY_RECON;
+			secondary		= ITEM_SECONDARY_RECON;
+			handgun		    = ITEM_HANDGUN_RECON;
+			handgunMagazine = ITEM_HANDGUN_MAGAZINE_RECON;
+			headgear		= ITEM_HEADGEAR_RECON;
+			binocular		= "ACE_Vector";
+			gps			    = "ItemAndroid";
+			optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
+
+			class Uniform {
+				type = SOCOMD_Uniform_SleevesDown_Recon;
+				class Inventory	{
+					LOADOUT_UNIFORM_ESSENTIALS
+					LOADOUT_ITEM(Laserbatteries, 2)
+				};
+			};
+
+			class Vest {
+				type = ITEM_VEST_RECON;
+				class Inventory	{
+					LOADOUT_VEST_ESSENTIALS
+					LOADOUT_ITEM(ACRE_PRC152, 1)
+					LOADOUT_ITEM(ACE_Kestrel4500, 1)
+					LOADOUT_ITEM(ACE_RangeCard, 1)
+					LOADOUT_ITEM(Laserdesignator, 1)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
+					LOADOUT_ITEM(ACE_ATragMX, 1)
+				};
+			};
+
+			class Backpack {
+				type = ITEM_BACKPACK_SNIPER;
+				class Inventory	{
+					LOADOUT_STANDARD_MEDICAL
+					LOADOUT_BACKPACK_ESSENTIALS
+					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+					LOADOUT_ITEM(ACE_DefusalKit, 1)
+					LOADOUT_ITEM(ACE_M26_Clacker, 1)
+					LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
+					LOADOUT_ITEM(ACE_Tripod, 1)
+				};
+			};
 		};
 
 		class SOCOMD_MMGAmmo {

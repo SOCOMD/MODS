@@ -62,8 +62,24 @@ class SOCOMD_Uniform_Survival: Uniform_Base
 	{
 		uniformModel="-";
 		uniformClass="SOCOMD_Survival";
-		containerClass="Supply40";
+		containerClass="Supply80";
 		uniformType="Neopren";
+		mass=60;
+	};
+};
+
+class SOCOMD_Tee_uniform: Uniform_Base
+{
+	author="SOCOMD";
+	scope=2;
+	displayName="SOCOMD Tee";
+	picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_tshirt_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="SOCOMD_Tee";
+		containerClass="Supply80";
 		mass=60;
 	};
 };

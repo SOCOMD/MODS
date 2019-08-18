@@ -193,6 +193,8 @@ class CAManBase : Man {
 			//Roll Sleeves
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown,SOCOMD_Uniform_SleevesUp)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_DOWN,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp,SOCOMD_Uniform_SleevesDown)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_TEE_ON,"Swap to Tee",SOCOMD_Uniform_SleevesDown,SOCOMD_Tee_uniform)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_TEE_OFF,"Swap to Shirt",SOCOMD_Tee_uniform,SOCOMD_Uniform_SleevesDown)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_UP,"Hood up",SOCOMD_Uniform_Snow_HoodDown,SOCOMD_Uniform_Snow_HoodUp)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_DOWN,"Hood Down",SOCOMD_Uniform_Snow_HoodUp,SOCOMD_Uniform_Snow_HoodDown)
 	
