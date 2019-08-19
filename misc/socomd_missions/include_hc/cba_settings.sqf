@@ -521,7 +521,8 @@ force force acre_sys_core_terrainLoss = 0.1;
 force force STHud_Settings_HUDMode = 0
 
 ace_medical_menuTypeStyleSelf = true;
-force force ace_medical_AIDamageThreshold = 2;
+force force ace_medical_AIDamageThreshold = 1.3;
+force force ace_medical_playerDamageThreshold = 3.5;
 force force ace_medical_amountOfReviveLives = 1;                            // How many chances does the player get
 force force ace_medical_bleedingCoefficient = 1;                            // How fast does the player bleed
 force force ace_medical_convertItems = 0;
@@ -530,7 +531,6 @@ force force ace_medical_enableRevive = 1;
 force force ace_medical_enableUnconsciousnessAI = 1;
 force force ace_medical_maxReviveTime = 150;                                // Time the player is allowed to have HR=0 before dying (Player can be unconscious for longer)
 force force ace_medical_painCoefficient = 2;
-force force ace_medical_playerDamageThreshold = 3;
 force force ace_medical_preventInstaDeath = false;                          // Can the player be instantly sent to HR = 0 (true/false)
 force force ace_medical_useCondition_SurgicalKit = 0;
 
