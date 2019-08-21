@@ -4,7 +4,7 @@ opticsZoomMax = FOVMAX;\
 opticsZoomInit = FOVINIT; \
 distanceZoomMin = ZOOM_MIN; \
 distanceZoomMax = ZOOM_MAX; \
-memoryPointCamera="eye";\
+memoryPointCamera="eye"; \
 opticsFlare = FLARE; \
 opticsDisablePeripherialVision = 0; \
 opticsID = 1; \
@@ -40,7 +40,6 @@ class SMA_ELCAN_SPECTER : ItemCore {
 
 			class IronSight {
 				OPTIC_RifleM
-				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
@@ -62,7 +61,6 @@ class SMA_ELCAN_SPECTER_GREEN : ItemCore {
 
 			class IronSight {
 				OPTIC_RifleM
-				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
@@ -84,7 +82,6 @@ class SMA_ELCAN_SPECTER_TAN : ItemCore {
 
 			class IronSight {
 				OPTIC_RifleM
-				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
