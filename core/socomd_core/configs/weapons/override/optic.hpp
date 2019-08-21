@@ -4,13 +4,9 @@ opticsZoomMax = FOVMAX;\
 opticsZoomInit = FOVINIT; \
 distanceZoomMin = ZOOM_MIN; \
 distanceZoomMax = ZOOM_MAX; \
-memoryPointCamera="eye"; \
-opticsFlare = FLARE; \
-opticsDisablePeripherialVision = 0; \
-opticsID = 1; \
-opticsPPEffects[] = {""};
 
 #define OPTIC_RifleM OPTIC_FOV(1.25,0.25,0.75,100,100,false)
+#define OPTIC_SMA_ELCAN OPTIC_FOV(0.75,0.25,0.4,100,100,false)
 /*
 #define OPTIC_MarkM OPTIC_FOV(0.16,0.15,100,400,true)*/
 
@@ -31,15 +27,16 @@ class RH_t1 : ItemCore {
 class RH_t1_tan : RH_t1 {};
 
 class SMA_ELCAN_SPECTER : ItemCore {
-	scope=1;
+	scope = 1;
 	class ItemInfo : InventoryOpticsItem_Base_F {
 		class OpticsModes {
 			class ACOG4x {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
 			};
 
 			class IronSight {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
+				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
@@ -56,11 +53,12 @@ class SMA_ELCAN_SPECTER_GREEN : ItemCore {
 	class ItemInfo : InventoryOpticsItem_Base_F {
 		class OpticsModes {
 			class ACOG4x {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
 			};
 
 			class IronSight {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
+				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
@@ -77,11 +75,12 @@ class SMA_ELCAN_SPECTER_TAN : ItemCore {
 	class ItemInfo : InventoryOpticsItem_Base_F {
 		class OpticsModes {
 			class ACOG4x {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
 			};
 
 			class IronSight {
-				OPTIC_RifleM
+				OPTIC_SMA_ELCAN
+				memoryPointCamera = "opticView";
 			};
 
 			delete RedDotSight;
