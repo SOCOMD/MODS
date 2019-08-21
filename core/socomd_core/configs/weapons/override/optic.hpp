@@ -4,6 +4,7 @@ opticsZoomMax = FOVMAX;\
 opticsZoomInit = FOVINIT; \
 distanceZoomMin = ZOOM_MIN; \
 distanceZoomMax = ZOOM_MAX; \
+memoryPointCamera="eye";\
 opticsFlare = FLARE; \
 opticsDisablePeripherialVision = 0; \
 opticsID = 1; \
@@ -47,7 +48,7 @@ class SMA_ELCAN_SPECTER : ItemCore {
 	};
 };
 
-class SMA_ELCAN_SPECTER6: SMA_ELCAN_SPECTER {
+class SMA_ELCAN_SPECTER5: SMA_ELCAN_SPECTER {
 	scope=2;
 };
 
@@ -69,7 +70,7 @@ class SMA_ELCAN_SPECTER_GREEN : ItemCore {
 	};
 };
 
-class SMA_ELCAN_SPECTER_GREEN6: SMA_ELCAN_SPECTER_GREEN {
+class SMA_ELCAN_SPECTER_GREEN5: SMA_ELCAN_SPECTER_GREEN {
 	scope=2;
 };
 
@@ -91,6 +92,6 @@ class SMA_ELCAN_SPECTER_TAN : ItemCore {
 	};
 };
 
-class SMA_ELCAN_SPECTER_TAN6: SMA_ELCAN_SPECTER_TAN {
+class SMA_ELCAN_SPECTER_TAN5: SMA_ELCAN_SPECTER_TAN {
 	scope=2;
 };
