@@ -24,6 +24,7 @@ class CfgWeapons {
 	#include "weapons\override\socomd_men_items.hpp"
 	#include "weapons\override\hmg_m2.hpp"
 	#include "weapons\override\lmg_minigun_transport.hpp"
+	#include "weapons\override\optic.hpp"
 
 	#include "weapons\override\mortar_82mm.hpp"
 };
