@@ -16,7 +16,8 @@ class CfgPatches
 			"SOCOMD_Module_Flatten",
 			"SOCOMD_Module_ConvoyGroup",
 			"SOCOMD_Module_ShowHitPoints",
-			"SOCOMD_Module_JamWeapon"
+			"SOCOMD_Module_JamWeapon",
+			"SOCOMD_Module_ModuleGenerateUnitConfig"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;

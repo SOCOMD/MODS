@@ -127,4 +127,14 @@ class CfgVehicles
 		displayName = "Jam Weapon";
 		function = "SOCOMD_fnc_ModuleJamWeapon";
 	};
+
+	class SOCOMD_Module_ModuleGenerateUnitConfig : SOCOMD_Module_Base
+	{
+		scopeCurator = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_ModuleGenerateUnitConfig";
+		displayName = "Loadout To Config";
+		function = "SOCOMD_fnc_ModuleGenerateUnitConfig";
+	};
 };

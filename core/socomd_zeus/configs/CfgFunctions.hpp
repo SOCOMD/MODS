@@ -38,6 +38,7 @@ class CfgFunctions {
 			class ModuleConvoyGroup {};
 			class ModuleShowHitPoints {};
 			class ModuleJamWeapon {};
+			class ModuleGenerateUnitConfig {};
 		};
 	};
 };
