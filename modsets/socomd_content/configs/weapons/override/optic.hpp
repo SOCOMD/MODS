@@ -5,7 +5,9 @@ opticsZoomInit = FOVINIT; \
 distanceZoomMin = ZOOM_MIN; \
 distanceZoomMax = ZOOM_MAX; \
 
-#define OPTIC_RifleM OPTIC_FOV(1.25,0.25,0.75,100,100,false)
+#define OPTIC_Holo OPTIC_FOV(1.25,0.4,0.75,100,100,false)
+#define OPTIC_HoloM OPTIC_FOV(0.75,0.25,0.5,100,100,false)
+#define OPTIC_T1 OPTIC_FOV(1.25,0.25,0.75,100,100,false)
 #define OPTIC_SMA_ELCAN OPTIC_FOV(0.75,0.25,0.4,100,100,false)
 /*
 #define OPTIC_MarkM OPTIC_FOV(0.16,0.15,100,400,true)*/
@@ -18,13 +20,94 @@ class RH_t1 : ItemCore {
 	class ItemInfo : InventoryOpticsItem_Base_F {
 		class OpticsModes {
 			class T1 {
-				OPTIC_RifleM
+				OPTIC_T1
 			};
 		};
 	};
 };
 
 class RH_t1_tan : RH_t1 {};
+
+class SMA_eotech: ItemCore {};
+
+class SMA_eotechG33_3XDOWN: SMA_eotech
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class AIM
+				{
+					OPTIC_Holo
+				};
+			};
+		};
+	};
+class SMA_eotechG33_3XUP: SMA_eotechG33_3XDOWN
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Magnified
+				{
+					OPTIC_HoloM
+				};
+			};
+		};
+	};
+class SMA_eotechG33_grn_3XDOWN: SMA_eotech
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class AIM
+				{
+					OPTIC_Holo
+				};
+			};
+		};
+	};
+class SMA_eotechG33_grn_3XUP: SMA_eotechG33_3XDOWN
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Magnified
+				{
+					OPTIC_HoloM
+				};
+			};
+		};
+	};
+class SMA_eotechG33_tan_3XDOWN: SMA_eotech
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class AIM
+				{
+					OPTIC_Holo
+				};
+			};
+		};
+	};
+class SMA_eotechG33_tan_3XUP: SMA_eotechG33_3XDOWN
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Magnified
+				{
+					OPTIC_HoloM
+				};
+			};
+		};
+	};
 
 class SMA_ELCAN_SPECTER : ItemCore {
 	scope = 1;
