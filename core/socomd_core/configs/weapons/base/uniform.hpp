@@ -50,6 +50,19 @@ class SOCOMD_Commando_BLK_SleevesDown : ADFU_G3_MC {
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
+class SOCOMD_Commando_AMCU_SleevesDown : ADFU_G3_MC {
+	displayName = "SOCOMD AMCU";
+	author = "SOCOMD & ADFU";
+	class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="SOCOMD_Soldier_AMC_SleevesDown";
+			containerClass="Supply80";
+			mass=40;
+		};
+	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+};
+
 
 class SOCOMD_Uniform_Survival: Uniform_Base
 {

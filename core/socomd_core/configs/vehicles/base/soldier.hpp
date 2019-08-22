@@ -192,6 +192,21 @@ class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
+class SOCOMD_Soldier_AMC_SleevesDown : ADFU_Soldier_MC 
+{
+	displayName = "SOCOMD AMCU";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_AMCU_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\u_g3_amc_co.paa"
+		};
+};
 
 class B_Soldier_base_F;
 class b_soldier_survival_F: B_Soldier_base_F{};
