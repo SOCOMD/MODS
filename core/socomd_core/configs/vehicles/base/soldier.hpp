@@ -257,7 +257,7 @@ class SOCOMD_Tee: B_Soldier_02_F
 	hiddenSelectionsTextures[]=
 	{
 		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+		"socomd_data_core\CTgear\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{

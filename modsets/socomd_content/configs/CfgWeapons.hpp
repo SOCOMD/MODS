@@ -11,7 +11,8 @@ class CfgWeapons {
 	#include "weapons\base\uniform.hpp"
 	#include "weapons\base\vest.hpp"
 	#include "weapons\base\items.hpp"
-
+	
 	//Item SOCOMD Defines
 	#include "weapons\override\socomd_men_items.hpp"
+	#include "weapons\override\optic.hpp"
 };
