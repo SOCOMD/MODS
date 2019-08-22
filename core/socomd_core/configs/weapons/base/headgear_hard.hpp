@@ -455,6 +455,38 @@ class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05 {
 	};
 };
 
+class ADFU_H_Airframe_AMCU: ADFU_H_Airframe_Cover_05 {
+	scope = public;
+	displayName="Airframe (AMCU)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+
+	hiddenSelectionsTextures[]= {
+		"",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",
+		"",
+		"",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
+		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+	};
+};
+
 //////////////////////////////////////////////////////////////////////
 // SOLS Overrides
 
