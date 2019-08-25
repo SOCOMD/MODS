@@ -276,8 +276,6 @@ class SOCOMD_Tee: B_Soldier_02_F
 	};
 	hiddenSelectionsMaterials[]=
 	{
-		"\ADFU_Units\data\clothing1_ADFU.rvmat",
-		"",
-		""
+		"\ADFU_Units\data\clothing1_ADFU.rvmat"
 	};
 };
