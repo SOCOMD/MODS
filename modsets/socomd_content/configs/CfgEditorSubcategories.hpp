@@ -4,6 +4,9 @@ class CfgEditorSubcategories {
 	class SOCOMD_EdSubcat_Vehicle_Air;
 	class SOCOMD_EdSubcat_Vehicle_Sea;
 	class SOCOMD_EdSubcat_Vehicle_Obj;
+	class SOCOMD_EdSubcat_Vehicle_Drones {
+		displayName = "Drones";
+	};
 	class SOCOMD_RUS_EdSubcat_Man {
 		displayName = "Men";
 	};
@@ -22,4 +25,5 @@ class CfgEditorSubcategories {
 	class SOCOMD_RUS_EdSubcat_Vehicle_Obj {
 		displayName = "Objects";
 	};
+	
 };

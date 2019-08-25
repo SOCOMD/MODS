@@ -1,9 +1,12 @@
 class B_UAV_01_F;
 class tut_R22: B_UAV_01_F
 {
+	scopeCurator = public;
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Drones;
+	faction = FACTION_STR;
+	vehicleclass = "Drones";
 	crew="B_UAV_AI";
-	vehicleClass="Autonomous";
-	faction="BLU_F";
 	side=1;
 	scope=2;
 	author="Aran Anderson";

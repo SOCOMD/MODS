@@ -54,6 +54,7 @@ class ADFU_H_Airframe_Cover_02 : ItemCore {
 
 class ADFU_H_OpsCore_02_BLK: ADFU_H_OpsCore_02 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName = "OpsCore (Black)";
 	picture="\ADFU_Units\ui\icon_h_opscore_cb_ca.paa";
 
@@ -96,6 +97,7 @@ class ADFU_H_OpsCore_02_BLK: ADFU_H_OpsCore_02 {
 
 class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="OpsCore (Black)";
 	picture="\ADFU_Units\ui\icon_h_opscore_cb_ca.paa";
 
@@ -138,6 +140,7 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 
 class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (MC)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -170,6 +173,7 @@ class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_Cover_11_MC: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (MC)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -202,6 +206,7 @@ class ADFU_H_Airframe_Cover_11_MC: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_02_tan: ADFU_H_Airframe_Cover_02 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (Tan)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -234,6 +239,7 @@ class ADFU_H_Airframe_02_tan: ADFU_H_Airframe_Cover_02 {
 
 class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (Tan)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -266,6 +272,7 @@ class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
 
 class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (Tan)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -298,6 +305,7 @@ class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_11_tan: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (Tan)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -330,6 +338,7 @@ class ADFU_H_Airframe_11_tan: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_02_OD: ADFU_H_Airframe_Cover_02 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (OD)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -361,6 +370,7 @@ class ADFU_H_Airframe_02_OD: ADFU_H_Airframe_Cover_02 {
 
 class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (OD)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -393,6 +403,7 @@ class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 
 class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (OD)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -425,6 +436,7 @@ class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (OD)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
@@ -457,6 +469,7 @@ class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05 {
 
 class ADFU_H_Airframe_AMCU: ADFU_H_Airframe_Cover_05 {
 	scope = public;
+	scopeArsenal = 2;
 	displayName="Airframe (AMCU)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
