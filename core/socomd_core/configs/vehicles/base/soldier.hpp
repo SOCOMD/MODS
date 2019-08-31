@@ -207,6 +207,21 @@ class SOCOMD_Soldier_AMC_SleevesDown : ADFU_Soldier_MC
 			"socomd_data_core\CTgear\u_g3_amc_co.paa"
 		};
 };
+class SEAL_AOR1 : ADFU_Soldier_MC 
+{
+	displayName = "SEAL AOR1";
+	author = "SOCOMD & ADFU";
+	uniformClass="SEAL_AOR1_U";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\VSM_ARD_AOR1_1.paa"
+		};
+};
 
 class B_Soldier_base_F;
 class b_soldier_survival_F: B_Soldier_base_F{};

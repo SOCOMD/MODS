@@ -97,6 +97,22 @@ class SOCOMD_Tee_uniform: Uniform_Base
 	};
 };
 
+class SEAL_AOR1_U: Uniform_Base
+{
+	author="SOCOMD";
+	scope=2;
+	displayName="SEAL AOR1";
+	picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_tshirt_ca.paa";
+	model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="SEAL_AOR1";
+		containerClass="Supply80";
+		mass=60;
+	};
+};
+
 class U_B_FullGhillie_lsh;
 class SOCOMD_Ghillie_lsh : U_B_FullGhillie_lsh {};
 

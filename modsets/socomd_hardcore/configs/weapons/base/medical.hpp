@@ -13,7 +13,7 @@ class ACE_morphine_Medic: ACE_morphine {
 
 class ACE_epinephrine_Medic: ACE_epinephrine {
 	author="Monk";
-	displayName="Epinephrine 1mg/1mL Ampoule"
+	displayName="Epinephrine 1mg/1mL Ampoule";
 	picture="\socomd_data_core\icon\epi.paa";
 	descriptionShort="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";
 	descriptionUse="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";

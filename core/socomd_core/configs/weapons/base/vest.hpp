@@ -408,9 +408,9 @@ class lbt_tl_amcu: lbt_tl_mc
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_co.paa",
-		"lbt\Data\grenade_coy.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\grenade_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -427,9 +427,9 @@ class lbt_tl_amcu: lbt_tl_mc
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_coy.paa",
-			"lbt\Data\grenade_coy.paa",
-			"lbt\Data\pouch_coy.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\grenade_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\tl";
@@ -455,9 +455,9 @@ class lbt_operator_amcu: lbt_pouchless_coy
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_coy.paa",
-		"lbt\Data\grenade_coy.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\grenade_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -474,9 +474,9 @@ class lbt_operator_amcu: lbt_pouchless_coy
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_coy.paa",
-			"lbt\Data\grenade_coy.paa",
-			"lbt\Data\pouch_coy.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\grenade_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\operator";
@@ -504,9 +504,9 @@ class lbt_weapons_amcu: lbt_pouchless_coy
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_co.paa",
-		"lbt\Data\grenade_coy.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\grenade_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"lbt\Data\m203_co.paa",
 		"lbt\Data\m203_gn.paa",
 		"insignia"
@@ -527,9 +527,9 @@ class lbt_weapons_amcu: lbt_pouchless_coy
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_co.paa",
-			"lbt\Data\grenade_co.paa",
-			"lbt\Data\pouch_coy.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\grenade_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"lbt\Data\m203_co.paa",
 			"lbt\Data\m203_gn.paa",
 			"insignia"
@@ -557,9 +557,9 @@ class lbt_medical_amcu: lbt_pouchless_coy
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_coy.paa",
-		"lbt\Data\shears_co.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\shears_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -576,9 +576,9 @@ class lbt_medical_amcu: lbt_pouchless_coy
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_coy.paa",
-			"lbt\Data\shears_co.paa",
-			"lbt\Data\pouch_coy.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\shears_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\medical";
@@ -604,9 +604,9 @@ class lbt_comms_amcu: lbt_pouchless_coy
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_coy.paa",
-		"lbt\Data\grenade_coy.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\grenade_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -623,9 +623,9 @@ class lbt_comms_amcu: lbt_pouchless_coy
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_coy.paa",
-			"lbt\Data\grenade_coy.paa",
-			"lbt\Data\pouch_co.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\grenade_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\comms";
@@ -651,9 +651,9 @@ class lbt_light_amcu: lbt_pouchless_coy
 	{
 		"socomd_data_core\CTgear\lbt_amcu.paa",
 		"socomd_data_core\CTgear\gear_amcu.paa",
-		"lbt\Data\radio_coy.paa",
-		"lbt\Data\grenade_coy.paa",
-		"lbt\Data\pouch_coy.paa",
+		"socomd_data_core\CTgear\radio_AMCU_co.paa",
+		"socomd_data_core\CTgear\grenade_AMCU.paa",
+		"socomd_data_core\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -670,9 +670,9 @@ class lbt_light_amcu: lbt_pouchless_coy
 		{
 			"socomd_data_core\CTgear\lbt_amcu.paa",
 			"socomd_data_core\CTgear\gear_amcu.paa",
-			"lbt\Data\radio_coy.paa",
-			"lbt\Data\grenade_coy.paa",
-			"lbt\Data\pouch_coy.paa",
+			"socomd_data_core\CTgear\radio_AMCU_co.paa",
+			"socomd_data_core\CTgear\grenade_AMCU.paa",
+			"socomd_data_core\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\light";
