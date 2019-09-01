@@ -5,7 +5,7 @@ class CfgAmmo {
 
 	class B_45ACP_Ball: BulletBase {
 		hit = 9;
-	} 
+	};
 
 	class B_9x21_Ball: BulletBase {	
 		hit = 8.5;

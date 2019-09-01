@@ -940,9 +940,9 @@ class ACE_Medical_Advanced
 				timeInSystem=1800;
 				maxDose=12;
 				inCompatableMedication[]={};
-				viscosityChange=5
+				viscosityChange=5;
 			};
-			class Ket_S
+			class Ket_S 
 			{
 				painReduce=50;
 				hrIncreaseLow[]={15,25,45};
@@ -951,7 +951,7 @@ class ACE_Medical_Advanced
 				timeInSystem=1800;
 				maxDose=12;
 				inCompatableMedication[]={};
-				viscosityChange=5
+				viscosityChange=5;
 			};
 			class Epinephrine;
 			class Epinephrine_Medic: Epinephrine {
@@ -1087,7 +1087,7 @@ class ACE_Medical_Actions
 		};
 		class Epinephrine;
 		class Epinephrine_Medic: Epinephrine{
-			displayName= "Epinephrine 1mg/1mL"
+			displayName= "Epinephrine 1mg/1mL";
 			displayNameProgress="Injecting Epinephrine";
 			items[]=
 			{
@@ -1098,7 +1098,7 @@ class ACE_Medical_Actions
 		};
 		class Morphine;
 		class Morphine_Medic: Morphine {
-			displayName= "Morphine 10mg/1mL"
+			displayName= "Morphine 10mg/1mL";
 			displayNameProgress="Injecting Morphine";
 			items[]=
 			{

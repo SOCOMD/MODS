@@ -12,7 +12,7 @@ class tut_R22: B_UAV_01_F
 	author="Aran Anderson";
 	authorUrl="http://arananderson.com";
 	_generalMacro="B_UAV_01_F";
-	camouflage = 0.0001
+	camouflage = 0.0001;
 	displayname="Black Hornet Nano UAV";
 	model="\Black_Hornet_Nano_UAV\r22.p3d";
 	mainRotorSpeed=-7;

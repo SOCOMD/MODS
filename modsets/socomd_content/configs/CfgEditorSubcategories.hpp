@@ -25,5 +25,4 @@ class CfgEditorSubcategories {
 	class SOCOMD_RUS_EdSubcat_Vehicle_Obj {
 		displayName = "Objects";
 	};
-	
 };
