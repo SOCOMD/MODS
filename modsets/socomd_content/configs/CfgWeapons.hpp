@@ -15,4 +15,5 @@ class CfgWeapons {
 	//Item SOCOMD Defines
 	#include "weapons\override\socomd_men_items.hpp"
 	#include "weapons\override\optic.hpp"
+	#include "weapons\override\malfunctions.hpp"
 };

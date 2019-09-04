@@ -48,7 +48,11 @@ class CfgPatches  {
 			"tut_R22"
 		};
 
-		weapons[] = {};
+		weapons[] = {
+			"broken_launch_RPG7_F",
+			"broken_CUP_launch_RPG7V"
+		};
+		
 		ammo[] = {};
 		magazines[] = {};
 	};
@@ -65,3 +69,5 @@ class CfgPatches  {
 #include "configs\CfgASORVS.hpp"
 #include "configs\CfgAmmo.hpp"
 #include "configs\CfgGroups.hpp"
+#include "configs\CfgExtendedEventHandlers.hpp"
+#include "configs\CfgFunctions.hpp"
