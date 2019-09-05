@@ -359,7 +359,7 @@ class lbt_pouchless_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Pouchless)";
+	displayName="TBAS T2 (AMCU - Pouchless)";
 	picture="\lbt\UI\lbtod_ca.paa";
 	model="\lbt\pouchless";
 	hiddenSelections[]=
@@ -393,7 +393,7 @@ class lbt_tl_amcu: lbt_tl_mc
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Team Lead)";
+	displayName="TBAS T2 (AMCU - Team Lead)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\tl";
 	hiddenSelections[]=
@@ -439,7 +439,7 @@ class lbt_operator_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Operator)";
+	displayName="TBAS T2 (AMCU - Operator)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\operator";
 	containerClass="Supply160";
@@ -486,7 +486,7 @@ class lbt_weapons_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Weapons)";
+	displayName="TBAS T2 (AMCU - Weapons)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\weapons";
 	containerClass="Supply160";
@@ -541,7 +541,7 @@ class lbt_medical_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Medical)";
+	displayName="TBAS T2 (AMCU - Medical)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\medical";
 	containerClass="Supply160";
@@ -588,7 +588,7 @@ class lbt_comms_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Comms)";
+	displayName="TBAS T2 (AMCU - Comms)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\comms";
 	containerClass="Supply160";
@@ -635,7 +635,7 @@ class lbt_light_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Light)";
+	displayName="TBAS T2 (AMCU - Light)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\light";
 	
@@ -686,7 +686,7 @@ class lbt_fast_amcu: lbt_pouchless_coy
 {
 	author="Cunico";
 	scope=2;
-	displayName="TBAS T1 (AMCU - Fast)";
+	displayName="TBAS T2 (AMCU - Fast)";
 	picture="\lbt\UI\lbtcoy_ca.paa";
 	model="\lbt\fast";
 	hiddenSelections[]=
