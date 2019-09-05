@@ -11,7 +11,7 @@ class ItemInfo : ItemInfo { \
 
 #define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
-
+// git is hard
 ////////////////////////////////////////////////////////////////////////////////
 
 class HeadgearItem;
