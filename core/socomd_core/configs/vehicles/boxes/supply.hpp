@@ -1,6 +1,7 @@
 class CargoNet_01_box_F; //Cardboard box with net
 class B_supplyCrate_F; //Tall Green box with net
 class Box_NATO_Wps_F; //Flat long box
+class plp_cts_FuelCrateOlive; // Fuel Metal Box designed for transport
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -34,6 +35,26 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 	class TransportWeapons {};
 	class TransportItems {};
 	class TransportBackpacks {};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
+	icon = "iconObject_1x1";
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[CRATE] Fuel";
+	editorCategory = SOCOMD_EdCat_Core;
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+
+	ace_dragging_canDrag = 1;
+	ace_dragging_canCarry = 0;
+	ace_dragging_dragDirection = 0;
+	ace_dragging_dragPosition[] = {0,1.5,0};
+	ace_refuel_flowRate = 1;
+	ace_refuel_fuelCargo = 300;
+
+	weight = 20;
 };
 
 ////////////////////////////////////////////////////////////////////////////////

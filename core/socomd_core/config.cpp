@@ -29,6 +29,7 @@ class CfgPatches {
 			"au_beret_addon",
 			"bma3_bushmaster",
 			"vtn_armorw_lav25_cf",
+			"plp_containers",
 			"COS_back_pack",
 			"ctab",
 			"dso_weapons",
@@ -76,6 +77,7 @@ class CfgPatches {
 			"SOCOMD_Training_box",
 
 			"SOCOMD_Crate_Empty",
+			"SOCOMD_Crate_Fuel",
 			"SOCOMD_Crate_Hasty",
 			"SOCOMD_Supply_Empty",
 			"SOCOMD_Supply_Ammo",
