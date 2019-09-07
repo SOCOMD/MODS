@@ -15,6 +15,8 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	displayname = "Warrior (4/8)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
+	fuelCapacity = 1360; \
+	fuelConsumptionRate = 0.28; \
 	driverCanSee = CanSeeAll; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \

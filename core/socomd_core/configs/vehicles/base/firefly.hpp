@@ -126,6 +126,8 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	displayname = "Firefly (2/6)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
+	fuelCapacity = 440; \
+	fuelConsumptionRate = 0.14; \
 	crew = "SOCOMD_Pilot"; \
 	typicalCargo[] = {"SOCOMD_Pilot"}; \
 	class TransportWeapons { \
@@ -186,6 +188,8 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	displayname = "Dragonfly (2/0)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
+	fuelCapacity = 440; \
+	fuelConsumptionRate = 0.16; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \

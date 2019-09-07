@@ -15,6 +15,8 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	displayname = "Hurricane (2/0)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
+	fuelCapacity = 1420; \
+	fuelConsumptionRate = 0.30; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
