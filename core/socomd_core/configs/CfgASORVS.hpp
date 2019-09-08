@@ -37,6 +37,7 @@ class CfgASORVS {
 		SOCOMD_Core[] = {
 			"SOCOMD_Crate_Empty",
 			"SOCOMD_Crate_Hasty",
+			"SOCOMD_Crate_Fuel",
 			"SOCOMD_Supply_Empty",
 			"SOCOMD_Supply_Ammo",
 			"SOCOMD_Supply_Medical",
