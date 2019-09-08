@@ -5,3 +5,9 @@ class Extended_Init_EventHandlers {
 		};	
     };
 };
+
+class Extended_PostInit_EventHandlers {
+    class socomd_core {
+        clientinit = "[_this select 0] call socomd_fnc_XEH_postInit";
+    };
+};

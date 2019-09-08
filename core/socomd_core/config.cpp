@@ -23,6 +23,7 @@ class CfgPatches {
 			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
+			"ace_hearing",
 			"ace_huntir",
 
 			"adfu_base",
