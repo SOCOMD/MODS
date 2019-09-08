@@ -54,7 +54,7 @@ class V12_KTM_SOCOMD: V12_KTM
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	fuelCapacity = 15; // 15 == 50 minutes
-	ace_refuel_fuelCapacity = 60;
+	ace_refuel_fuelCapacity = 10;
 
 	class TransportWeapons {};
 	class TransportMagazines {};
