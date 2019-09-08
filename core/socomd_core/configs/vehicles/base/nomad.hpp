@@ -16,7 +16,7 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
 	fuelCapacity = 3914; \
-	fuelConsumptionRate = 0.34; \
+	fuelConsumptionRate = 0.55; \
 	crew = SOCOMD_PILOT; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
