@@ -18,6 +18,7 @@ class CfgFunctions {
 			class BushMasterInit {};
 			class UAV {};
 			class ACRERackInit {};
+			class XEH_postInit {};
 		};
 
 		class Actions {
@@ -77,4 +78,13 @@ class CfgFunctions {
 			class getBloodVolumeChange {};
         };
     };
+	class advanced_peltors{
+		class functions {
+			file = "\socomd_core\functions\advanced_peltors";
+			class explosionEventNear {};
+			class gunShotNear {};
+			class handlePeltors {};
+			class handlePeltorStatus {};
+		};
+	};
 };
