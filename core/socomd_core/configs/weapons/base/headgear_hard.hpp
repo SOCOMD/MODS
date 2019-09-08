@@ -12,8 +12,9 @@ class ItemInfo : ItemInfo { \
 #define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
 
-#define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0.85;\
-ace_hearing_protection = 0.6;
+#define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0;\
+ace_hearing_protection = 1;\
+advanced_peltors_protection = 1;
 #define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
 ace_hearing_protection = 0.5;
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
@@ -24,15 +25,20 @@ advanced_peltors_protection = 1;
 
 class HeadgearItem;
 class H_HelmetCrew_I;
-
+class SOCOMD_Item_Headgear_Crewman;
+class SOCOMD_Item_Headgear_Crewman : SOCOMD_Item_Headgear_Crewman{
+	HEARING_PROTECTION_VICCREW
+}
 class H_PilotHelmetHeli_B;
 class H_PilotHelmetHeli_O : H_PilotHelmetHeli_B {
 	class ItemInfo;
+	HEARING_PROTECTION_VICCREW
 };
 
 class H_CrewHelmetHeli_B;
 class H_CrewHelmetHeli_O : H_CrewHelmetHeli_B {
 	class ItemInfo;
+	HEARING_PROTECTION_VICCREW
 };
 
 class ADFU_H_OpsCore_02 : ItemCore {
@@ -561,9 +567,6 @@ class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O {
 	displayName = "Heli-Pilot Helmet";
 
 	HELMET_SOLS_ARMOR
-
-	ace_hearing_protection = 1.0;
-	ace_hearing_lowerVolume = 0;
 };
 
 class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
@@ -572,7 +575,4 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
 	displayName = "Heli-Crew Helmet";
 
 	HELMET_SOLS_ARMOR
-
-	ace_hearing_protection = 1.0;
-	ace_hearing_lowerVolume = 0;
 };
