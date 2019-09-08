@@ -12,6 +12,9 @@ class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 	vehicleclass = "Car";
 	forceInGarage = 1;
 
+	fuelCapacity = 4; // 4 == 24m at max (4 == default)
+	ace_refuel_fuelCapacity = 15;
+
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
@@ -50,6 +53,8 @@ class V12_KTM_SOCOMD: V12_KTM
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
+	fuelCapacity = 15; // 15 == 50 minutes
+	ace_refuel_fuelCapacity = 60;
 
 	class TransportWeapons {};
 	class TransportMagazines {};

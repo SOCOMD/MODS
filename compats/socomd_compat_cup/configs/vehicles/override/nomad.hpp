@@ -14,7 +14,8 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Nomad (5/24)";
-
+	fuelCapacity = 3914;
+	fuelConsumptionRate = 0.34;
 	hiddenSelectionsTextures[] = {
 		"socomd_data_cup\data\chinook\ch47_ext_1_co.paa",
 		"socomd_data_cup\data\chinook\ch47_ext_2_co.paa",

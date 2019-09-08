@@ -2,8 +2,9 @@
 // BUSHMASTER
 
 class bma3_bushmaster_base_F : Car_F {
-	fuelCapacity = 94;
-	fuelConsumptionRate = 88;
+	fuelCapacity = 14; // 49m at 100km/hr
+	ace_refuel_fuelCapacity = 80;
+
 	class HitPoints : HitPoints {
 		class HitHull;
 		class HitBody;

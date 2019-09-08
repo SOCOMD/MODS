@@ -9,7 +9,9 @@ class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Truck Transport (1/12)";
-
+	fuelCapacity = 24;
+	ace_refuel_fuelCapacity = 120;
+	
 	hiddenSelections[] = {
 		"Camo1",
 		"Camo2",
@@ -36,6 +38,8 @@ class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Truck Ammo (1/2)";
+	fuelCapacity = 24;
+	ace_refuel_fuelCapacity = 120;
 
 	hiddenSelections[] = {
 		"Camo1",
@@ -63,6 +67,8 @@ class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Truck Fuel (1/2)";
+	fuelCapacity = 24;
+	ace_refuel_fuelCapacity = 120;
 
 	hiddenSelections[] = {
 		"Camo1",
@@ -90,7 +96,8 @@ class SOCOMD_TRUCK_REPAIR_A : CUP_B_MTVR_Repair_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Truck Repair (1/2)";
-
+	fuelCapacity = 24;
+	ace_refuel_fuelCapacity = 120;
 	hiddenSelections[] = {
 		"Camo1",
 		"Camo2",

@@ -2,7 +2,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Trucks (Transport)
-
+// trucks at 24 fuel should be 2 hours of driving time
 class B_Truck_01_covered_F;
 
 #define TRUCK_TRANSPORT_BASE(ID) \
@@ -19,6 +19,8 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	forceInGarage = 1; \
 	crew = UNIT_SOCOMD_CREWMAN; \
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
+	fuelCapacity = 24; \
+	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
@@ -67,6 +69,8 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	forceInGarage = 1; \
 	crew = UNIT_SOCOMD_CREWMAN; \
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
+	fuelCapacity = 24; \
+	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
@@ -116,6 +120,8 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	forceInGarage = 1; \
 	crew = UNIT_SOCOMD_CREWMAN; \
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
+	fuelCapacity = 24; \
+	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
@@ -164,6 +170,8 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	forceInGarage = 1; \
 	crew = UNIT_SOCOMD_CREWMAN; \
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
+	fuelCapacity = 24; \
+	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
@@ -214,6 +222,8 @@ class I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_base_F {
 };
 
 class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
+	fuelCapacity = 11; // 1 hr 10m at 100km/hr
+	ace_refuel_fuelCapacity = 200;
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -326,6 +336,8 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 };
 
 class SOCOMD_APC_B : SOCOMD_APC_A {
+	fuelCapacity = 11;
+	ace_refuel_fuelCapacity = 200;
 	scope = public;
 	scopeCurator = public;
 	side = WEST;
@@ -418,6 +430,9 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	faction = FACTION_STR;
 	displayname = "LAV-25A1 (3/4)";
 	vehicleclass = "Armored";
+
+	fuelCapacity = 300; // 1 hr 51m at 100km hr
+	ace_refuel_fuelCapacity = 140;
 
 	forceInGarage = 1;
 
@@ -624,6 +639,9 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F {
 	displayname = "ATV (1/1)";
 	vehicleclass = "Car";
 	forceInGarage = 1;
+
+	fuelCapacity = 4; // 4 == 24m at max speed
+	ace_refuel_fuelCapacity = 10;
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};

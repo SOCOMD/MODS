@@ -1,8 +1,12 @@
+// fuelCapcity = 35; == 106m driving time @ 100km/hr
+
 /////////////////////////////////////////////////////////////////////////////////
 // SOV Base
 class CUP_BAF_Coyote_BASE_D : Car_F {
 	armor = 750;
 	explosionShielding = 0.000000001;
+	fuelCapacity = 35;
+	ace_refuel_fuelCapacity = 50;
 	class HitPoints {
 		class HitBody {
 			armor = 2.5;
@@ -141,6 +145,8 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 	//armorStructural = 20;
 	//explosionShielding = 0.0005;
 	//damageResistance = 0.03099;
+	fuelCapacity = 35;
+	ace_refuel_fuelCapacity = 50;
 	scope = public;
 	scopeCurator = public;
 	editorCategory = SOCOMD_EdCat_Core;
@@ -197,6 +203,8 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	displayname = "SOV-CDO (M2) (3/9)";
 	faction = FACTION_STR;
 	vehicleclass = "Car";
+	fuelCapacity = 35;
+	ace_refuel_fuelCapacity = 50;
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
@@ -228,6 +236,8 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	displayname = "SOV-CDO (GMG) (3/9) ";
 	faction = FACTION_STR;
 	vehicleclass = "Car";
+	fuelCapacity = 35;
+	ace_refuel_fuelCapacity = 50;
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
@@ -275,6 +285,8 @@ class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
 	displayname = "SOV-CDO (GMG) (3/9) ";
 	faction = FACTION_STR;
 	vehicleclass = "Car";
+	fuelCapacity = 35;
+	ace_refuel_fuelCapacity = 50;
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};

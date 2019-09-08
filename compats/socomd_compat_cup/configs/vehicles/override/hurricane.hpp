@@ -91,7 +91,9 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Hurricane (2/0)";
-
+	fuelCapacity = 1420;
+	fuelConsumptionRate = 0.30;
+	
 	hiddenSelections[] = {
 		"camo1",
 		"camo2",
