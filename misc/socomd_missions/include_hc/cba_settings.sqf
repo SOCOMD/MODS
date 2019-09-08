@@ -529,8 +529,8 @@ force force ace_medical_convertItems = 0;
 force force ace_medical_delayUnconCaptive = 0;
 force force ace_medical_enableRevive = 1;
 force force ace_medical_enableUnconsciousnessAI = 1;
-force force ace_medical_maxReviveTime = 150;                                // Time the player is allowed to have HR=0 before dying (Player can be unconscious for longer)
-force force ace_medical_painCoefficient = 2;
+force force ace_medical_maxReviveTime = 100;                                // Time the player is allowed to have HR=0 before dying (Player can be unconscious for longer)
+force force ace_medical_painCoefficient = 1.2;
 force force ace_medical_preventInstaDeath = false;                          // Can the player be instantly sent to HR = 0 (true/false)
 force force ace_medical_useCondition_SurgicalKit = 0;
 
@@ -547,7 +547,7 @@ force force adv_aceCPR_useLocation_AED = 0
 
 // KAT - ACE Airway
 force force kat_aceAirway_checkbox_puking_sound = true;
-force force kat_aceAirway_deathTimer = 150;                                 // Time before Pt dies with low Sp02
+force force kat_aceAirway_deathTimer = 100;                                 // Time before Pt dies with low Sp02
 force force kat_aceAirway_enable = true;
 force force kat_aceAirway_probability_obstruction = 90;                     // Probability patient collapses
 force force kat_aceAirway_probability_occluded = 30;                        // Probability airway vomits
