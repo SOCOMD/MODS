@@ -70,7 +70,7 @@
 
 class SOCOMD_Unarmed {
 	displayName = "Unarmed";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	headgear  = "AU_02_780000_v1";
 	binocular = "";
@@ -89,7 +89,7 @@ class SOCOMD_Unarmed {
 
 class SOCOMD_Commander {
 	displayName = "Commander";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary			= ITEM_PRIMARY_TROOPLEADER;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
@@ -139,7 +139,7 @@ class SOCOMD_Commander {
 
 class SOCOMD_Leader {
 	displayName = "Leader";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_PATROLLEADER;
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
@@ -189,7 +189,7 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 
 class SOCOMD_Rifleman {
 	displayName = "Rifleman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
@@ -228,7 +228,7 @@ class SOCOMD_Rifleman {
 // Marksman
 class SOCOMD_Marksman {
 	displayName = "Marksman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
@@ -267,7 +267,7 @@ class SOCOMD_Marksman {
 
 class SOCOMD_Sapper {
 	displayName = "Sapper";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_SAPPER;
 	secondary		= ITEM_SECONDARY_SAPPER;
@@ -318,7 +318,7 @@ class SOCOMD_Sapper {
 
 class SOCOMD_MachineGunner {
 	displayName = "Machine Gunner";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_MACHINEGUNNER;
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
@@ -359,7 +359,7 @@ class SOCOMD_MachineGunner {
 
 class SOCOMD_Medic {
 	displayName = "Medic";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_MEDIC;
 	secondary		= ITEM_SECONDARY_MEDIC;
@@ -409,7 +409,7 @@ class SOCOMD_Medic {
 
 class SOCOMD_AT {
 	displayName = "Anti-tank";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_AT;
 	secondary		= ITEM_SECONDARY_MAT;
@@ -450,7 +450,7 @@ class SOCOMD_AT {
 
 class SOCOMD_Sniper {
 	displayName = "Sniper";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary	        = ITEM_PRIMARY_SNIPER;
 	secondary		= ITEM_SECONDARY_SNIPER;
@@ -493,7 +493,7 @@ class SOCOMD_Sniper {
 
 class SOCOMD_Recon {
 	displayName = "Recon";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_RECON;
 	secondary		= ITEM_SECONDARY_RECON;
@@ -546,7 +546,7 @@ class SOCOMD_Recon {
 
 class SOCOMD_Mortar {
 	displayName = "Mortar";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
@@ -586,7 +586,7 @@ class SOCOMD_Mortar {
 
 class SOCOMD_Pilot {
 	displayName = "Pilot";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
     primary 		= ITEM_PRIMARY_PILOT;
     secondary 		= ITEM_SECONDARY_PILOT;
@@ -628,7 +628,7 @@ class SOCOMD_Pilot {
 
 class SOCOMD_Crewman {
 	displayName = "Crewman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary 		= ITEM_PRIMARY_CREWMAN;
     secondary 		= ITEM_SECONDARY_CREWMAN;
@@ -670,7 +670,7 @@ class SOCOMD_Crewman {
 
 class SOCOMD_PJ {
 	displayName = "PJ";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
 
 	primary 		= ITEM_PRIMARY_PJ;
     secondary 		= ITEM_SECONDARY_PJ;
