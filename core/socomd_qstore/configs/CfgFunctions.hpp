@@ -7,6 +7,7 @@ class CfgFunctions {
 
 		class uiEvents {
 			file="\socomd_qstore\functions\uiEvents";
+			class QStoreOnLoad {};
 			class RoleOnLoad {};
 			class RoleOnSelected {};
 			class HeadgearOnLoad {};

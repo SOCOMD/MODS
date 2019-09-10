@@ -1,1 +1,2 @@
-systemChat format["%1", _this];
+params["_ctrl", "_selectedIdx"];
+//Switch Loadout
