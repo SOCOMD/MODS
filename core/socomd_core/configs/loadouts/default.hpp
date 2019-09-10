@@ -69,6 +69,9 @@
 // Unarmed
 
 class SOCOMD_Unarmed {
+	displayName = "Unarmed";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	headgear  = "AU_02_780000_v1";
 	binocular = "";
 	maxOptic  = "1x";
@@ -85,6 +88,9 @@ class SOCOMD_Unarmed {
 // Commander
 
 class SOCOMD_Commander {
+	displayName = "Commander";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary			= ITEM_PRIMARY_TROOPLEADER;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_HANDGUN_TROOPLEADER;
@@ -132,6 +138,9 @@ class SOCOMD_Commander {
 // Leader
 
 class SOCOMD_Leader {
+	displayName = "Leader";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_PATROLLEADER;
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
 	handgun		    = ITEM_HANDGUN_PATROLLEADER;
@@ -179,6 +188,9 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 // Rifleman
 
 class SOCOMD_Rifleman {
+	displayName = "Rifleman";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -215,6 +227,9 @@ class SOCOMD_Rifleman {
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 class SOCOMD_Marksman {
+	displayName = "Marksman";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun		    = ITEM_HANDGUN_MARKSMAN;
@@ -251,6 +266,9 @@ class SOCOMD_Marksman {
 // Sapper
 
 class SOCOMD_Sapper {
+	displayName = "Sapper";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_SAPPER;
 	secondary		= ITEM_SECONDARY_SAPPER;
 	handgun		    = ITEM_HANDGUN_SAPPER;
@@ -299,6 +317,9 @@ class SOCOMD_Sapper {
 // Machine Gunner
 
 class SOCOMD_MachineGunner {
+	displayName = "Machine Gunner";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_MACHINEGUNNER;
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
 	handgun		    = ITEM_HANDGUN_MACHINEGUNNER;
@@ -337,6 +358,9 @@ class SOCOMD_MachineGunner {
 // Medic
 
 class SOCOMD_Medic {
+	displayName = "Medic";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_MEDIC;
 	secondary		= ITEM_SECONDARY_MEDIC;
 	handgun		    = ITEM_HANDGUN_MEDIC;
@@ -384,6 +408,9 @@ class SOCOMD_Medic {
 // LAT
 
 class SOCOMD_AT {
+	displayName = "Anti-tank";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_AT;
 	secondary		= ITEM_SECONDARY_MAT;
 	handgun		    = ITEM_HANDGUN_AT;
@@ -422,6 +449,9 @@ class SOCOMD_AT {
 // Sniper
 
 class SOCOMD_Sniper {
+	displayName = "Sniper";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary	        = ITEM_PRIMARY_SNIPER;
 	secondary		= ITEM_SECONDARY_SNIPER;
 	handgun		    = ITEM_HANDGUN_SNIPER;
@@ -462,6 +492,9 @@ class SOCOMD_Sniper {
 // Recon
 
 class SOCOMD_Recon {
+	displayName = "Recon";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_RECON;
 	secondary		= ITEM_SECONDARY_RECON;
 	handgun		    = ITEM_HANDGUN_RECON;
@@ -512,6 +545,9 @@ class SOCOMD_Recon {
 // MORTAR
 
 class SOCOMD_Mortar {
+	displayName = "Mortar";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -549,6 +585,9 @@ class SOCOMD_Mortar {
 // Pilot
 
 class SOCOMD_Pilot {
+	displayName = "Pilot";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
     primary 		= ITEM_PRIMARY_PILOT;
     secondary 		= ITEM_SECONDARY_PILOT;
 	handgun 		= ITEM_HANDGUN_PILOT;
@@ -588,6 +627,9 @@ class SOCOMD_Pilot {
 // Crewman
 
 class SOCOMD_Crewman {
+	displayName = "Crewman";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary 		= ITEM_PRIMARY_CREWMAN;
     secondary 		= ITEM_SECONDARY_CREWMAN;
 	handgun 		= ITEM_HANDGUN_CREWMAN;
@@ -627,6 +669,9 @@ class SOCOMD_Crewman {
 // PJ
 
 class SOCOMD_PJ {
+	displayName = "PJ";
+	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+
 	primary 		= ITEM_PRIMARY_PJ;
     secondary 		= ITEM_SECONDARY_PJ;
 	handgun 		= ITEM_HANDGUN_PJ;
