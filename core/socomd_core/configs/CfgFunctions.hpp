@@ -108,7 +108,8 @@ class CfgFunctions {
 			class explosionEventNear {};
 			class gunShotNear {};
 			class handlePeltors {};
-			class handlePeltorStatus {};			
+			class handlePeltorStatus {};
+			class explosionShake {};
 		};
 	};
 };

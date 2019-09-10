@@ -3,28 +3,26 @@
 
 (_this select 0) params [["_justUpdateVolume", false]];
 
-// hint format ["%1",GVAR(hasPeltors)];
-private _lowestVolume = 1;
-
+private _lowestVolume = 5;
+private _setVolume = 0;
 if (isNull ACE_player) exitWith {
-    _peltorValue = 0;
+    GVAR(hasPeltors) = 0;
 };
-// Handle headgear
-_peltorValue = getNumber (configFile >> "CfgWeapons" >> headgear ACE_player >> "advanced_peltors_protection");
+
+// // Handle headgear
+// _peltorValue = getNumber (configFile >> "CfgWeapons" >> headgear ACE_player >> "advanced_peltors_protection");
+
+private _baseVolume;
+{
+	_baseVolume = _baseVolume min (_x select 1);
+} forEach ace_common_setHearingCapabilityMap;
 
 if (!_justUpdateVolume) then {
-		if (CBA_missionTime - _hearing_time3 < 4) exitWith {};
-		_hearing_time3 = CBA_missionTime;
-		if(_peltorValue isEqualTo 1) then {
-			_lowestVolume = 0.3;
+	if(GVAR(hasPeltors) == 1) then {
+		_lowestVolume = 0.4;
+		if(_baseVolume <= 1) then {
+			_lowestVolume = _baseVolume * 0.4;
 		};
+	};
 };
-
-0 fadeSound _lowestVolume;
-0 fadeRadio _lowestVolume;
-if (GVAR(allowFadeMusic)) then {
-    0 fadeMusic _lowestVolume;
-};
-// Set Radio mod variables.
-ACE_player setVariable ["tf_globalVolume", _lowestVolume];
-if (!isNil "acre_api_fnc_setGlobalVolume") then { [_lowestVolume^0.33] call acre_api_fnc_setGlobalVolume; };
+["peltor", _lowestVolume,true] call ace_common_fnc_setHearingCapability;

@@ -7,4 +7,8 @@ if (isNull ACE_player) exitWith {
 };
 // Handle headgear
 _peltorValue = getNumber (configFile >> "CfgWeapons" >> headgear ACE_player >> "advanced_peltors_protection");
-_hasPeltors = _peltorValue;
+GVAR(hasPeltors) = _peltorValue;
+if(_peltorValue == 0) then {
+    _peltorValue = getNumber (configFile >> "CfgGlasses" >> goggles ACE_player >> "advanced_peltors_protection");
+    GVAR(hasPeltors) = _peltorValue;
+};

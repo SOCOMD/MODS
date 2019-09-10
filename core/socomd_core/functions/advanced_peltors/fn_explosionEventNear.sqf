@@ -25,5 +25,5 @@ private _strength = (0 max _damage) * 30;
 if (_strength < 0.01) exitWith {};
 // Call inmediately, as it will get pick up later anyway by the update thread
 _on = false;
-if ( _strength < 0.1 ) then { _on = true;};
+if ( _strength < 0.05 ) then { _on = true;};
 [_on] call advanced_peltors_fnc_handlePeltors;

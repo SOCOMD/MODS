@@ -2,8 +2,8 @@
 
 if (!hasInterface) exitWith {};
 
-_hasPeltors = 0;
-_hearing_time3 = 3;
+
+GVAR(hasPeltors) = 0;
 ["ace_settingsInitialized", {
 // Reset deafness on respawn (or remote control player switch)
     ["unit", {
@@ -31,13 +31,9 @@ _hearing_time3 = 3;
             TRACE_3("added unit eh",_player,_firedEH,_explosionEH);
         };
 		
-		GVAR(hasPeltors) = 0;
-        EGVAR(hearing,deafnessDV) = 0;
-        EGVAR(hearing,deafnessPrior) = 0;
-        EGVAR(hearing,time3) = 0;
-        [] call  advanced_peltors_fnc_handlePeltorStaus;
+        []  call advanced_peltors_fnc_handlePeltorStatus;
     }, true] call CBA_fnc_addPlayerEventHandler;
 
     // Update protection on possible helmet change
-    ["loadout", call  advanced_peltors_fnc_handlePeltorStaus, false] call CBA_fnc_addPlayerEventHandler;
+    ["loadout", {_this call advanced_peltors_fnc_handlePeltorStatus}, false] call CBA_fnc_addPlayerEventHandler;
 }] call CBA_fnc_addEventHandler;
