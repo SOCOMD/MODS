@@ -39,6 +39,12 @@ class H_CrewHelmetHeli_O : H_CrewHelmetHeli_B {
 	HEARING_PROTECTION_VICCREW
 };
 
+class H_HelmetCrew_B;
+class H_HelmetCrew_I :H_HelmetCrew_B {
+	class ItemInfo;
+	HEARING_PROTECTION_VICCREW
+};
+
 class ADFU_H_OpsCore_02 : ItemCore {
 	class ItemInfo;
 };
@@ -572,5 +578,12 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
 	scope = public;
 	displayName = "Heli-Crew Helmet";
 
+	HELMET_SOLS_ARMOR
+};
+
+class SOCOMD_Ground_Crew_helmet : H_HelmetCrew_I {
+	author = AUTHOR_STR;
+	scope = public;
+	displayName = "Armour Crew Helmet";
 	HELMET_SOLS_ARMOR
 };

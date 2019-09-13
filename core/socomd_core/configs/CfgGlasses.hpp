@@ -1,3 +1,8 @@
+#define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
+ace_hearing_protection = 0.4;\
+advanced_peltors_protection = 1;
+
+
 class CfgGlasses {
 	class EWK_Shemag_LULZ {
 		author = AUTHOR_STR;
@@ -53,4 +58,165 @@ class CfgGlasses {
 		ACE_Protection = 1;
 		ACE_Resistance = 2;
 	};
+
+	// Peltors for Facewear
+	//  balaclava 
+	class VSM_Balaclava_black_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_black_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_black_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	//  balaclava 2
+	class VSM_Balaclava2_black_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_black_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_black_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Balaclava2_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	// face mask 
+	class VSM_FaceMask_black_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_black_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_black_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_FaceMask_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	//  balaclava + Shemagh
+	class VSM_Shemagh_Balaclava_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	//  balaclava 2 + Shemagh
+	class VSM_Shemagh_Balaclava2_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava2_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava2_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava2_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava2_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_Balaclava2_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	// face mask + Shemagh
+	class VSM_Shemagh_FaceMask_OD_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_FaceMask_tan_Peltor{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_FaceMask_OD_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_FaceMask_tan_Peltor_glasses{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_FaceMask_OD_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	class VSM_Shemagh_FaceMask_tan_Peltor_Goggles{
+		HEARING_PROTECTION_PELTOR
+	}
+	// peltors by themselves
+	class VSM_Peltor_AOR1_glasses {
+		HEARING_PROTECTION_PELTOR		
+	}
+	class VSM_Peltor_coyote_glasses {
+		HEARING_PROTECTION_PELTOR		
+	}
+	class VSM_Peltor_m81_glasses {
+		HEARING_PROTECTION_PELTOR		
+	}
+	class VSM_Peltor_OCP_glasses {
+		HEARING_PROTECTION_PELTOR		
+	}
+	class VSM_Peltor_OD_glasses {
+		HEARING_PROTECTION_PELTOR		
+	}
+
+
 };
