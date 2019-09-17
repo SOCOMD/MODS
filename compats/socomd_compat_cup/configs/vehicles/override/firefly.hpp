@@ -202,8 +202,9 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 		class CopilotTurret : CopilotTurret {
 			weapons[] = {"CUP_Laserdesignator_mounted"};
 			magazines[] = {"Laserbatteries"};
-		}
-	}
+		};
+	};
+	
 	class Components: Components {
 		class TransportPylonsComponent {
 			UIPicture = "melb\data\ui\melb_eden_ca.paa";

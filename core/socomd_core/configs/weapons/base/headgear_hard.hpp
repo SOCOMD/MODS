@@ -52,7 +52,7 @@ class ADFU_H_OpsCore_02 : ItemCore {
 class ADFU_H_OpsCore_03 : ItemCore {
 	class ItemInfo;
 	HEARING_PROTECTION_PELTOR
-}
+};
 class ADFU_H_OpsCore_08 : ItemCore {
 	class ItemInfo;
 	HEARING_PROTECTION_PELTOR

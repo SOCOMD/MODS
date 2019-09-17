@@ -46,8 +46,8 @@ class CUP_UH1H_base : Helicopter_Base_H {}; // needs left and right door gunner 
 class CUP_UH1H_base_OCimport_01 : CUP_UH1H_base { };
 class CUP_UH1H_base_OCimport_02 : CUP_UH1H_base_OCimport_01 { };
 class CUP_UH1H_slick_base : CUP_UH1H_base {};
-class CUP_UH1H_slick_base_OCimport_01 : CUP_UH1H_slick_base {}
-class CUP_UH1H_slick_base_OCimport_02 : CUP_UH1H_slick_base_OCimport_01 { };
+class CUP_UH1H_slick_base_OCimport_01 : CUP_UH1H_slick_base {};
+class CUP_UH1H_slick_base_OCimport_02 : CUP_UH1H_slick_base_OCimport_01 {};
 class CUP_UH1H_armed_base : CUP_UH1H_base {};
 class CUP_UH1H_gunship_base : CUP_UH1H_base {};
 
@@ -67,7 +67,7 @@ class MELB_AH6M : MELB_base {
 	//magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
 	class Turrets : Turrets {
         class CopilotTurret;
-    }
+    };
     class Components : Components {
 		class TransportPylonsComponent {
 			class pylons {
