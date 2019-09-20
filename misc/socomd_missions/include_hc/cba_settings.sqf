@@ -549,8 +549,8 @@ force force adv_aceCPR_useLocation_AED = 0
 force force kat_aceAirway_checkbox_puking_sound = true;
 force force kat_aceAirway_deathTimer = 100;                                 // Time before Pt dies with low Sp02
 force force kat_aceAirway_enable = true;
-force force kat_aceAirway_probability_obstruction = 90;                     // Probability patient collapses
-force force kat_aceAirway_probability_occluded = 30;                        // Probability airway vomits
+force force kat_aceAirway_probability_obstruction = 80;                     // Probability patient collapses
+force force kat_aceAirway_probability_occluded = 10;                        // Probability airway vomits
 force force kat_aceAirway_string_exit = "";
 
 // KAT - ACE Breathing

@@ -901,7 +901,7 @@ class ACE_Medical_Advanced
 			viscosityChange=0;
 			class Morphine
 			{
-				painReduce=0.4;
+				painReduce=1;
 				hrIncreaseLow[]={-10,-20,45};
 				hrIncreaseNormal[]={-10,-30,45};
 				hrIncreaseHigh[]={-10,-35,45};
@@ -911,7 +911,7 @@ class ACE_Medical_Advanced
 				viscosityChange=-5;
 			};
 			class Morphine_Medic: Morphine {
-				painReduce=0.4;
+				painReduce=1;
 				hrIncreaseLow[]={-10,-20,45};
 				hrIncreaseNormal[]={-10,-30,45};
 				hrIncreaseHigh[]={-10,-35,45};
@@ -1007,7 +1007,7 @@ class ACE_Medical_Advanced
 			};
 			class Apap: PainKillers
 			{
-				painReduce=0.28;
+				painReduce=0.4;
 				timeInSystem=1200;
 				maxDose=15;
 				inCompatableMedication[]={};
