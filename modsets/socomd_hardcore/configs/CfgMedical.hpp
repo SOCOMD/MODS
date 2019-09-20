@@ -902,34 +902,34 @@ class ACE_Medical_Advanced
 			class Morphine
 			{
 				painReduce=1;
-				hrIncreaseLow[]={-10,-20,45};
-				hrIncreaseNormal[]={-10,-30,45};
-				hrIncreaseHigh[]={-10,-35,45};
+				hrIncreaseLow[]={-15,-25,45};
+				hrIncreaseNormal[]={-15,-35,45};
+				hrIncreaseHigh[]={-15,-35,45};
 				timeInSystem=9800;
 				maxDose=4;
 				inCompatableMedication[]={};
-				viscosityChange=-5;
+				viscosityChange=-3;
 			};
 			class Morphine_Medic: Morphine {
 				painReduce=1;
-				hrIncreaseLow[]={-10,-20,45};
-				hrIncreaseNormal[]={-10,-30,45};
-				hrIncreaseHigh[]={-10,-35,45};
+				hrIncreaseLow[]={-15,-25,45};
+				hrIncreaseNormal[]={-15,-35,45};
+				hrIncreaseHigh[]={-15,-35,45};
 				timeInSystem=9800;
 				maxDose=4;
 				inCompatableMedication[]={};
-				viscosityChange=-5;
+				viscosityChange=-3;
 			};
 			class Fentanyl
 			{
 				painReduce=5;
-				hrIncreaseLow[]={-15,-25,45};
-				hrIncreaseNormal[]={-15,-35,45};
-				hrIncreaseHigh[]={-15,-35,45};
+				hrIncreaseLow[]={-10,-20,45};
+				hrIncreaseNormal[]={-10,-30,45};
+				hrIncreaseHigh[]={-10,-35,45};
 				timeInSystem=6800;
 				maxDose=4;
 				inCompatableMedication[]={};
-				viscosityChange=-10;
+				viscosityChange=-3;
 			};
 			class Ket
 			{
