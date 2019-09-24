@@ -522,7 +522,7 @@ force force STHud_Settings_HUDMode = 0
 
 ace_medical_menuTypeStyleSelf = true;
 force force ace_medical_AIDamageThreshold = 1.3;
-force force ace_medical_playerDamageThreshold = 3.5;
+force force ace_medical_playerDamageThreshold = 4.0;
 force force ace_medical_amountOfReviveLives = 1;                            // How many chances does the player get
 force force ace_medical_bleedingCoefficient = 1;                            // How fast does the player bleed
 force force ace_medical_convertItems = 0;
@@ -542,7 +542,7 @@ force force adv_aceCPR_chance_1 = 5;                                        // C
 force force adv_aceCPR_chance_2 = 5;                                        // Chance for CPR to be successful
 force force adv_aceCPR_chance_aed = 70;                                     // Chance for CPR to be successful (AED)
 force force adv_aceCPR_enable = true;
-force force adv_aceCPR_maxTime = 1200;                                      // Maximum amount of time CPR can be attempted before being made successful (Assuming it was not previously made successful)
+force force adv_aceCPR_maxTime = 300;                                      // Maximum amount of time CPR can be attempted before being made successful (Assuming it was not previously made successful)
 force force adv_aceCPR_useLocation_AED = 0
 
 // KAT - ACE Airway

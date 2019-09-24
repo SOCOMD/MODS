@@ -223,6 +223,23 @@ class SEAL_AOR1 : ADFU_Soldier_MC
 		};
 };
 
+class SEAL_AOR2 : SEAL_AOR1
+{
+	displayName = "SEAL AOR2";
+	author = "SOCOMD & ADFU";
+	uniformClass="SEAL_AOR2_U";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\AOR_2.paa"
+		};
+};
+
+
 class B_Soldier_base_F;
 class b_soldier_survival_F: B_Soldier_base_F{};
 class SOCOMD_Survival: b_soldier_survival_F
