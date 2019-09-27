@@ -137,4 +137,15 @@ class CfgVehicles
 		displayName = "Loadout To Config";
 		function = "SOCOMD_fnc_ModuleGenerateUnitConfig";
 	};
+
+	class SOCOMD_Module_PowerGrid : SOCOMD_Module_Base
+	{
+		scope = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_PowerGrid";
+		displayName = "Power Grid";
+		function = "SOCOMD_fnc_ModulePowerGrid";
+	};
+
 };

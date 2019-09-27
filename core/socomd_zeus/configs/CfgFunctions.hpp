@@ -39,6 +39,7 @@ class CfgFunctions {
 			class ModuleShowHitPoints {};
 			class ModuleJamWeapon {};
 			class ModuleGenerateUnitConfig {};
+			class ModulePowerGrid {};
 		};
 	};
 };
