@@ -147,5 +147,12 @@ class CfgVehicles
 		displayName = "Power Grid";
 		function = "SOCOMD_fnc_ModulePowerGrid";
 	};
+	class SOCOMD_Module_PowerGenerator : SOCOMD_Module_Base {
+		scope = 2;
+		isGlobal = 1;
 
+		_generalMacro = "SOCOMD_Module_PowerGenerator";
+		displayName = "Power Generator";
+		function = "SOCOMD_fnc_ModulePowerGenerator";
+	};
 };
