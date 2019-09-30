@@ -1,6 +1,5 @@
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;\
-advanced_peltors_protection = 1;
+ace_hearing_protection = 0.4;
 
 
 class CfgGlasses {

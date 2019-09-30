@@ -13,13 +13,12 @@ class ItemInfo : ItemInfo { \
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
 
 #define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0;\
-ace_hearing_protection = 1;\
-advanced_peltors_protection = 1;
+ace_hearing_protection = 1;
+
 #define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
 ace_hearing_protection = 0.5;
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;\
-advanced_peltors_protection = 1;
+ace_hearing_protection = 0.4;
 
 ////////////////////////////////////////////////////////////////////////////////
 
