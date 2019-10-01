@@ -60,7 +60,7 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 			"\SMA_M4\data\metal_diffuse_red_co.paa"
 		};
 }; 
-
+/*
 class hlc_HK416_base : Rifle_Base_F {};
 class hlc_rifle_416D145 : hlc_HK416_base {};
 class S_M4A5_base : hlc_rifle_416D145 {
@@ -105,7 +105,7 @@ class S_M4A5_base : hlc_rifle_416D145 {
 			};
 		};
 	};
-};
+};*/
 
 //Default
 class SMA_MK18MOEBLK_SM;
