@@ -36,6 +36,7 @@ class CfgFunctions {
 			class Action_displayName {};
 			class Action_placePlaceables {};
 			class Action_putBlindfoldOn {};
+			class Action_ReplaceNvg {};
 		};
 
 		class ActionConditions {

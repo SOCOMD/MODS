@@ -70,7 +70,14 @@ class SOCOMD_ACTION_VEST_##HEADGEAR { \
 	condition = 1; \
 	showDisabled = 0; \
 };
-
+#define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
+class SOCOMD_ACTION_VEST_##NVG { \
+	displayName = DISPLAY_STR; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
+	condition = 1; \
+	showDisabled = 0; \
+};
 ////////////////////////////////////////////////////////////////////////////////
 // INTERACTIVE BOX
 
@@ -173,6 +180,12 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_GRP_END
 				QSTORE_ACTION_GRP_END
 
+				// Swap NVG Type
+				QSTORE_ACTION_GRP_BEGIN(SELECT_NVG,"NVG")
+					QSTORE_ACTION_NVG("White Phosphor Tube",SOCOMD_NVG)
+					QSTORE_ACTION_NVG("Green Tube",SOCOMD_NVG_GR)
+				QSTORE_ACTION_GRP_END
+				
 				//Select Headgear
 				QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR,"Headgear")
 					QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR_SUB0,"Hard Cover")
@@ -201,6 +214,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 				QSTORE_ACTION_GRP_END
+				
 			QSTORE_ACTION_GRP_END
 		};
 	};

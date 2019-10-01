@@ -75,6 +75,14 @@ class SOCOMD_ACTION_VEST_##HEADGEAR { \
 	showDisabled = 0; \
 };
 
+#define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
+class SOCOMD_ACTION_VEST_##NVG { \
+	displayName = DISPLAY_STR; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
+	condition = 1; \
+	showDisabled = 0; \
+};
 class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 	scope = public;
 	scopeCurator = public;
@@ -334,6 +342,12 @@ class SOCOMD_QStore_B : SOCOMD_QStore_Base {
 						QSTORE_ACTION_BACKPACK("SOG Breacher MC",SOG_BAG_BREACHER_MC)
 						QSTORE_ACTION_BACKPACK("SOG MEDIC MC",SOG_BAG_med_MC)
 					QSTORE_ACTION_GRP_END
+				QSTORE_ACTION_GRP_END
+
+				// Swap NVG Type
+				QSTORE_ACTION_GRP_BEGIN(SELECT_NVG,"NVG")
+					QSTORE_ACTION_NVG("White Phosphor Tube",SOCOMD_NVG)
+					QSTORE_ACTION_NVG("Green Tube",SOCOMD_NVG_GR)
 				QSTORE_ACTION_GRP_END
 
 				//Select Headgear
