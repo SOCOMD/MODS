@@ -61,6 +61,52 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 		};
 }; 
 
+class hlc_HK416_base : Rifle_Base_F {};
+class hlc_rifle_416D145 : hlc_HK416_base {};
+class S_M4A5_base : hlc_rifle_416D145 {
+	class WeaponSlotsInfo
+	{
+		class MuzzleSlot
+		{
+			compatibleItems[]=
+			{
+				"sma_gemtech_one_blk",
+				"sma_gemtech_one_des",
+				"sma_gemtech_one_wdl",
+				"SMA_Silencer_556",
+				"SMA_Silencer_556_Bronze",
+				"SMA_Silencer_556_Silver",
+				"SMA_FLASHHIDER1",
+				"SMA_FLASHHIDER2",
+				"SMA_supp2btan_556",
+				"SMA_supp1tan_556",
+				"SMA_supp1b_556",
+				"SMA_supp2b_556",
+				"SMA_supp1BB_556",
+				"SMA_supp1BOD_556",
+				"SMA_supp1BT_556",
+				"SMA_supp1Bwht_556",
+				"SMA_supp1TB_556",
+				"SMA_supp1TOD_556",
+				"SMA_supp1TT_556",
+				"SMA_supp1TW_556",
+				"SMA_supp2BOD_556",
+				"SMA_supp2BT_556",
+				"SMA_supp2BW_556",
+				"SMA_supp2T_556",
+				"SMA_supp2TB_556",
+				"SMA_supp2TOD_556",
+				"SMA_supp2TWH_556",
+				"SMA_supp2smaB_556",
+				"SMA_supp2smaT_556",
+				"SMA_rotex_blk",
+				"SMA_rotex_tan",
+				"SMA_rotex_gry"
+			};
+		};
+	};
+};
+
 //Default
 class SMA_MK18MOEBLK_SM;
 class SMA_AUG_A3_F;
