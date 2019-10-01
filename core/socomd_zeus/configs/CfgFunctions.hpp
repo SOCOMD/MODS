@@ -39,6 +39,12 @@ class CfgFunctions {
 			class ModuleShowHitPoints {};
 			class ModuleJamWeapon {};
 			class ModuleGenerateUnitConfig {};
+			class ModulePowerGrid {};
+			class ModulePowerGenerator {};
+		};
+		class Power {
+			file = "\socomd_zeus\functions\power";
+			class TogglePower {};
 		};
 	};
 };

@@ -11,3 +11,11 @@ class Extended_PostInit_EventHandlers {
         clientinit = "[_this select 0] call socomd_fnc_XEH_postInit";
     };
 };
+
+class Extended_PreInit_EventHandlers
+{
+	class AB_WindowBreaker
+	{
+		init="call compile preprocessFileLineNumbers 'socomd_core\functions\common\XEH_PreInit.sqf'";
+	};
+};

@@ -1,4 +1,4 @@
-#include "predefined.hpp"
+#include "\socomd_core\predefined.hpp"
 
 class CfgPatches {
 

@@ -1,4 +1,5 @@
-#include "predefined.hpp"
+#include "\socomd_core\predefined.hpp"
+
 class SensorTemplateLaser;
 class SensorTemplateIR;
 class CfgPatches  {
