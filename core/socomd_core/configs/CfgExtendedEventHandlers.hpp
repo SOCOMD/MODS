@@ -10,10 +10,6 @@ class Extended_PostInit_EventHandlers {
     class socomd_core {
         clientinit = "[_this select 0] call socomd_fnc_XEH_postInit";
     };
-    class bnae_functions_f
-	{
-		init="nul = [] execVM 'socomd_core\functions\bnae_functions\Misc\MainInit.sqf'";
-	};
 };
 
 class Extended_PreInit_EventHandlers

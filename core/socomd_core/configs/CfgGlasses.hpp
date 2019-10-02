@@ -3,26 +3,6 @@ ace_hearing_protection = 0.4;
 
 
 class CfgGlasses {
-	class milgp_glasses_class;
-	class milgp_f_face_shield_tactical_shemagh_BLK: milgp_glasses_class {};
-	class AMCU_f_face_shield_tactical_shemagh: milgp_f_face_shield_tactical_shemagh_BLK {
-		displayname="AMCU Face Shield + Tactical/Shemagh";
-		scope=2;
-		author="Adacas";
-		model="milgp_headgear\models\f_face_shield_base.p3d";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"_Shades",
-			"_ESS"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"socomd_data_core\CTgear\AMCU_mask.paa",
-			"milgp_headgear\textures\f_shemagh_BLK_co.paa"
-		};
-	};
 	class EWK_Shemag_LULZ {
 		author = AUTHOR_STR;
 		identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
