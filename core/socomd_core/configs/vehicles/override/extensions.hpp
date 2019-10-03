@@ -236,10 +236,10 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_OD_7,"Helmet Accessories Off",ADFU_H_Airframe_10_OD,ADFU_H_Airframe_03_OD) //yes headset yes Acc to yes headset no Acc
 
 			//Airframe AMCU
-			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_0,"Headset On",ADFU_H_Airframe_02_AMCU,ADFU_H_Airframe_03_AMCU //No headset no Acc to yes headset no Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_0,"Headset On",ADFU_H_Airframe_02_AMCU,ADFU_H_Airframe_03_AMCU) //No headset no Acc to yes headset no Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_1,"Headset Off",ADFU_H_Airframe_03_AMCU,ADFU_H_Airframe_02_AMCU) //Yes headset no Acc to no headset no Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_2,"Headset On",ADFU_H_Airframe_11_AMCU,ADFU_H_Airframe_10_AMCU) //No headset yes Acc to yes headset yes Acc
-			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_3,"Headset Off",ADFU_H_Airframe_10_AMCU,ADFU_H_Airframe_11_AMCU //yes headset yes Acc to no headset yes Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_3,"Headset Off",ADFU_H_Airframe_10_AMCU,ADFU_H_Airframe_11_AMCU) //yes headset yes Acc to no headset yes Acc
 
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_4,"Helmet Accessories On",ADFU_H_Airframe_02_AMCU,ADFU_H_Airframe_11_AMCU) //No headset no Acc to no headset yes Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_5,"Helmet Accessories Off",ADFU_H_Airframe_11_AMCU,ADFU_H_Airframe_02_AMCU) //No headset Yes Acc to no headset no Acc
