@@ -195,6 +195,10 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_DOWN,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp,SOCOMD_Uniform_SleevesDown)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_TEE_ON,"Swap to Tee",SOCOMD_Uniform_SleevesDown,SOCOMD_Tee_uniform)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_TEE_OFF,"Swap to Shirt",SOCOMD_Tee_uniform,SOCOMD_Uniform_SleevesDown)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_AMCU_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_AMCU_SleevesDown,SOCOMD_Uniform_AMCU_SleevesUp)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_AMCU_ROLL_DOWN,"Roll Down Sleeves",SOCOMD_Uniform_AMCU_SleevesUp,SOCOMD_Uniform_AMCU_SleevesDown)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_AMCU_TEE_ON,"Swap to Tee",SOCOMD_Uniform_AMCU_SleevesDown,SOCOMD_Tee_AMCU_uniform)
+			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_AMCU_TEE_OFF,"Swap to Shirt",SOCOMD_Tee_AMCU_uniform,SOCOMD_Uniform_AMCU_SleevesDown)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_UP,"Hood up",SOCOMD_Uniform_Snow_HoodDown,SOCOMD_Uniform_Snow_HoodUp)
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_HOOD_DOWN,"Hood Down",SOCOMD_Uniform_Snow_HoodUp,SOCOMD_Uniform_Snow_HoodDown)
 	
@@ -230,6 +234,17 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_OD_5,"Helmet Accessories Off",ADFU_H_Airframe_11_OD,ADFU_H_Airframe_02_OD) //No headset Yes Acc to no headset no Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_OD_6,"Helmet Accessories On",ADFU_H_Airframe_03_OD,ADFU_H_Airframe_10_OD) //Yes headset no Acc to Yes headset yes Acc
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_OD_7,"Helmet Accessories Off",ADFU_H_Airframe_10_OD,ADFU_H_Airframe_03_OD) //yes headset yes Acc to yes headset no Acc
+
+			//Airframe AMCU
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_0,"Headset On",ADFU_H_Airframe_02_ADFU,ADFU_H_Airframe_03_ADFU) //No headset no Acc to yes headset no Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_1,"Headset Off",ADFU_H_Airframe_03_ADFU,ADFU_H_Airframe_02_ADFU) //Yes headset no Acc to no headset no Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_2,"Headset On",ADFU_H_Airframe_11_ADFU,ADFU_H_Airframe_10_ADFU) //No headset yes Acc to yes headset yes Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_3,"Headset Off",ADFU_H_Airframe_10_ADFU,ADFU_H_Airframe_11_ADFU) //yes headset yes Acc to no headset yes Acc
+
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_4,"Helmet Accessories On",ADFU_H_Airframe_02_ADFU,ADFU_H_Airframe_11_ADFU) //No headset no Acc to no headset yes Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_5,"Helmet Accessories Off",ADFU_H_Airframe_11_ADFU,ADFU_H_Airframe_02_ADFU) //No headset Yes Acc to no headset no Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_6,"Helmet Accessories On",ADFU_H_Airframe_03_ADFU,ADFU_H_Airframe_10_ADFU) //Yes headset no Acc to Yes headset yes Acc
+			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_AIRFRAME_AMCU_7,"Helmet Accessories Off",ADFU_H_Airframe_10_ADFU,ADFU_H_Airframe_03_ADFU) //yes headset yes Acc to yes headset no Acc
 
 			//Opscore Tan
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_Tan_0,"Headset On",ADFU_H_OpsCore_02_TAN,ADFU_H_OpsCore_08_TAN)

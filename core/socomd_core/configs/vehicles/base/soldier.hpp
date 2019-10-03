@@ -176,6 +176,7 @@ class SOCOMD_Crewman : SOCOMD_Unarmed {
 
 
 class ADFU_Soldier_MC;
+class ADFU_Soldier_MC_Rolled;
 class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC 
 {
 	displayName = "SOCOMD Black Role";
@@ -197,6 +198,21 @@ class SOCOMD_Soldier_AMC_SleevesDown : ADFU_Soldier_MC
 	displayName = "SOCOMD AMCU";
 	author = "SOCOMD & ADFU";
 	uniformClass="SOCOMD_Commando_AMCU_SleevesDown";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\u_g3_amc_co.paa"
+		};
+};
+class SOCOMD_Soldier_AMC_SleevesUp : ADFU_Soldier_MC_Rolled
+{
+	displayName = "SOCOMD AMCU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_AMCU_SleevesUp";
 	hiddenSelections[]=
 		{
 			"Camo",
@@ -287,13 +303,52 @@ class SOCOMD_Survival: b_soldier_survival_F
 		""
 	};
 };
+
+class SOCOMD_Survival_AMCU: SOCOMD_Survival {
+	displayName="SOCOMD AMCU Survival Fatigues";
+	uniformClass="SOCOMD_Uniform_AMCU_Survival";
+	hiddenUnderwaterSelections[]=
+	{
+		"hide"
+	};
+	shownUnderwaterSelections[]=
+	{
+		"unhide",
+		"unhide2"
+	};
+	hiddenUnderwaterSelectionsTextures[]=
+	{
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\A3\characters_f\data\visors_ca.paa"
+	};
+	hiddenSelections[]=
+	{
+		"Camo",
+		"Camo1",
+		"Camo3",
+		"Insignia"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"socomd_data_core\CTgear\u_g3_amc_co.paa",
+		"\socomd_data_core\uniform\clothes\black_boots.paa",
+		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"\ADFU_Units\data\clothing1_ADFU.rvmat",
+		"",
+		""
+	};
+};
+
 class SOCOMD_Tee: B_Soldier_02_F
 {
 	author="SOCOMD";
 	_generalMacro="B_Soldier_F";
 	scope=2;
 	displayName="SOCOMD G3 (Tee)";
-	modelsides[]={3,2,1,0};
 	uniformClass="SOCOMD_Tee_uniform";
 	hiddenSelections[]=
 		{
@@ -304,10 +359,21 @@ class SOCOMD_Tee: B_Soldier_02_F
 	hiddenSelectionsTextures[]=
 	{
 		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"socomd_data_core\CTgear\basicbody_brown_co.paa"
+		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\ADFU_Units\data\clothing1_ADFU.rvmat"
+	};
+};
+
+class SOCOMD_Tee_AMCU: SOCOMD_Tee
+{
+	displayName="SOCOMD AMCU (Tee)";
+	uniformClass="SOCOMD_Tee_AMCU_uniform";
+	hiddenSelectionsTextures[]=
+	{
+		"socomd_data_core\CTgear\u_g3_amc_co.paa",
+		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 };
