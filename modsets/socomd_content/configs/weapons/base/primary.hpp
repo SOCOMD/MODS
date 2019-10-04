@@ -41,9 +41,43 @@ class SMA_SFLIGHT_TOPM4: acc_flashlight {
 		};
 	};
 };
-
+class S_WMLX: acc_flashlight {
+	scope=2;
+	dlc="Troy_4A5_Acc";
+	displayName="WMLX";
+	model="M4A5_Troy_Acc\mesh\wmlxdbal.p3d";
+	class ItemInfo: InventoryFlashLightItem_Base_F {
+		mass=4;
+		class FlashLight {
+			color[]={7000,7500,10000};
+			ambient[]={6,9,9};
+			intensity=2.5;
+			size=1;
+			innerAngle=20;
+			outerAngle=80;
+			coneFadeCoef=10;
+			position="light_dir";
+			direction="light";
+			useFlare=1;
+			flareSize=1.5;
+			flareMaxDistance="600.0f";
+			dayLight=1;
+			class Attenuation
+			{
+				start=0.5;
+				constant=0;
+				linear=0;
+				quadratic=1;
+				hardLimitStart=200;
+				hardLimitEnd=300;
+			};
+			scale[]={0};
+		};
+	};
+};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
+class S_145_KAG_MAG;
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 	hiddenSelections[]=
 		{
