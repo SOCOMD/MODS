@@ -561,7 +561,7 @@ class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
-class ADFU_H_Airframe_02_AMCU: ADFU_H_Airframe_02_OD {
+class ADFU_H_Airframe_02_AMCU: ADFU_H_Airframe_Cover_02 {
 	scope = public;
 	scopeArsenal = 2;
 	displayName="Airframe (AMCU)";
@@ -593,7 +593,7 @@ class ADFU_H_Airframe_02_AMCU: ADFU_H_Airframe_02_OD {
 	};
 };
 
-class ADFU_H_Airframe_03_AMCU: ADFU_H_Airframe_03_OD {
+class ADFU_H_Airframe_03_AMCU: ADFU_H_Airframe_Cover_03 {
 	scope = public;
 	scopeArsenal = 2;
 	displayName="Airframe (AMCU)";

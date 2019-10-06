@@ -171,11 +171,20 @@ class CAManBase : Man {
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_ard)
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_jngl)
 
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_lsh)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_sard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_ard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_jngl)
 
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_lsh)
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_sard)
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_ard)
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_jngl)
+
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_lsh)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_sard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_ard)
+				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_jngl)
 
 			};
 			//Recon
@@ -185,10 +194,20 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_sard,"Uniform",SOCOMD_Ghillie_sard,SOCOMD_Uniform_SleevesUp_Recon)
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_ard,"Uniform",SOCOMD_Ghillie_ard,SOCOMD_Uniform_SleevesUp_Recon)
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_jngl,"Uniform",SOCOMD_Ghillie_jngl,SOCOMD_Uniform_SleevesUp_Recon)
+
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up,"Roll Down Sleeves",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_Uniform_AMCU_SleevesDown_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down,"Roll Up Sleeves",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_lsh,"Uniform",SOCOMD_AMCU_Ghillie_lsh,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_sard,"Uniform",SOCOMD_AMCU_Ghillie_sard,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_ard,"Uniform",SOCOMD_AMCU_Ghillie_ard,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
+			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_jngl,"Uniform",SOCOMD_AMCU_Ghillie_jngl,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
 		
 			//Wetsuit
 			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit,"Survival Fatigues",SOCOMD_Uniform_Wetsuit,SOCOMD_Uniform_Survival)
 			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Survival,"Wetsuit",SOCOMD_Uniform_Survival,SOCOMD_Uniform_Wetsuit)
+
+			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit_AMCU,"Survival Fatigues",SOCOMD_Uniform_Wetsuit_AMCU,SOCOMD_Uniform_AMCU_Survival)
+			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_AMCU_Survival,"Wetsuit",SOCOMD_Uniform_AMCU_Survival,SOCOMD_Uniform_Wetsuit_AMCU)
 
 			//Roll Sleeves
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown,SOCOMD_Uniform_SleevesUp)

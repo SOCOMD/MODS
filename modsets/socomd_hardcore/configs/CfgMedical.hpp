@@ -924,7 +924,7 @@ class ACE_Medical_Advanced
 			{
 				painReduce=5;
 				hrIncreaseLow[]={-10,-20,45};
-				hrIncreaseNormal[]={-10,-30,45};
+				hrIncreaseNormal[]={-10,-20,45};
 				hrIncreaseHigh[]={-10,-35,45};
 				timeInSystem=6800;
 				maxDose=4;
