@@ -15,11 +15,12 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_elasticBandage, 8) \
 	LOADOUT_ITEM(ACE_quikclot, 8) \
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
-	LOADOUT_ITEM(ACE_morphine, 1) \
+	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 2) \
+	LOADOUT_ITEM(ACE_apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
-	LOADOUT_ITEM(ACE_fieldDressing, 2)  		
+	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
+	LOADOUT_ITEM(KAT_guedel, 2)		
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
