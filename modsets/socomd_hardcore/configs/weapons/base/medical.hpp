@@ -3,6 +3,18 @@ class ACE_morphine; //displayName= "Morphine Autoinjector 10mg/1mL IM"
 class ACE_atropine; //displayName= "Atropine 1.2mg/1mL IO"
 class ACE_epinephrine; //displayName="Adrenaline 1mg/1mL IO"
 
+class adv_aceCPR_AED: ACE_ItemCore {
+	displayName="HeartStart MRx";
+	picture="\socomd_data_core\icon\AED.paa";
+	scope = 2;
+	model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+	descriptionShort = "$STR_ADV_ACECPR_AED_DESCRIPTION";
+	descriptionUse = "$STR_ADV_ACECPR_AED_DESCRIPTION";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+    	mass = 30;
+	};
+};
+
 class ACE_morphine_Medic: ACE_morphine {
 	author="Monk";
 	displayName="Morphine 10mg/1mL";
@@ -48,21 +60,21 @@ class ACE_apap: ACE_morphine {
 };
 
 class KAT_larynx: ACE_ItemCore {
-	displayName="Supraglottic Airway";
+	displayName="i-Gel";
 	descriptionShort="Maintains airway patency and prevents vomit from entering the lungs";
 	descriptionUse="Maintains airway patency and prevents vomit from entering the lungs";
 	picture="\socomd_data_core\icon\LMA.paa";
 };
 
 class KAT_guedel: ACE_ItemCore {
-	displayName="Nasopharyngeal Airway";
+	displayName="NPA";
 	descriptionShort="Maintains airway patency";
 	descriptionUse="Maintains airway patency";
 	picture="\socomd_data_core\icon\NPA.paa";
 };
 
 class KAT_ChestSeal: ACE_ItemCore {
-	displayName="Hyfin Chest Seal";
+	displayName="Chest Seal";
 	picture="\socomd_data_core\icon\Hyfin.paa";
 };
 
