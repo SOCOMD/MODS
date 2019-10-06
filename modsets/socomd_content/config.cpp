@@ -1,3 +1,4 @@
+#include "\socomd_content\settings\inventories.hpp"
 #include "\socomd_core\predefined.hpp"
 #include "predefined.hpp"
 

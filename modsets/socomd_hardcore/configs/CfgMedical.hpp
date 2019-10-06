@@ -979,14 +979,14 @@ class ACE_Medical_Advanced
 			class Naloxone
 			{
 				painReduce=0;
-				hrIncreaseLow[]={45,65,60};
-				hrIncreaseNormal[]={40,50,60};
-				hrIncreaseHigh[]={5,10,60};
+				hrIncreaseLow[]={5,7,60};
+				hrIncreaseNormal[]={7,10,60};
+				hrIncreaseHigh[]={15,25,60};
 				timeInSystem=120;
 				maxDose=4;
 				onOverDose = "[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
 				inCompatableMedication[]={};
-				viscosityChange=5;
+				viscosityChange=20;
 			};
 			class PainKillers
 			{

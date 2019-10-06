@@ -393,9 +393,8 @@ class CfgLoadouts {
 					LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
 					LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
 					LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
-					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
 					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
-					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
+					LOADOUT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
 					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
 					LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
 					LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
@@ -404,7 +403,7 @@ class CfgLoadouts {
 					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
-					LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
+					LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
 					LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
 					LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
 					LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit

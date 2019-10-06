@@ -16,15 +16,16 @@
 	TRANSPORT_ITEM(ACE_DefusalKit, 0) \
 	TRANSPORT_ITEM(ACE_bodyBag, 6) \
 	TRANSPORT_ITEM(ACE_CableTie, 6) \
-	TRANSPORT_ITEM(ACE_tourniquet, 3)	\
-	TRANSPORT_ITEM(ACE_fieldDressing, 6) \
-	TRANSPORT_ITEM(ACE_quikclot, 6) \
-	TRANSPORT_ITEM(ACE_elasticBandage, 6) \
+	TRANSPORT_ITEM(ACE_tourniquet, 0)	\
+	TRANSPORT_ITEM(ACE_fieldDressing, 0) \
+	TRANSPORT_ITEM(ACE_quikclot, 0) \
+	TRANSPORT_ITEM(ACE_elasticBandage, 0) \
 	TRANSPORT_ITEM(ACE_packingBandage, 0) \
 	TRANSPORT_ITEM(ACE_morphine, 0) \
 	TRANSPORT_ITEM(ACE_epinephrine, 0) \
-	TRANSPORT_ITEM(ACE_surgicalKit, 2)\
-	TRANSPORT_ITEM(ACE_bloodIV_500, 4)
+	TRANSPORT_ITEM(ACE_surgicalKit, 0)\
+	TRANSPORT_ITEM(ACE_bloodIV_500, 0)
 
 #define INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Item_Backpack_Rifleman, 0)
+	TRANSPORT_BACKPACK(SOCOMD_Item_Backpack_Rifleman, 0)\
+	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)

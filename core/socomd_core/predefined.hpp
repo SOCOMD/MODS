@@ -37,8 +37,6 @@
 #define TRANSPORT_WEAPON(id,qty) class _xx_##id { weapon = #id; count = qty; };
 #define TRANSPORT_BACKPACK(id,qty) class _xx_##id { backpack = #id; count = qty; };
 
-#include "settings\inventories.hpp"
-
 ////////////////////////////////////////////////////////////////////////////////
 // MODULAR LOADOUT
 

@@ -1,5 +1,5 @@
+#include "\socomd_hardcore\settings\inventories.hpp"
 #include "\socomd_core\predefined.hpp"
-
 
 class CfgPatches  {
 	class socomd_hardcore {

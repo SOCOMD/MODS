@@ -480,4 +480,5 @@ class CfgVehicles {
 	#include "vehicles\base\air.hpp"
 	#include "vehicles\base\sea.hpp"
 	#include "vehicles\base\medical.hpp"
+	#include "vehicles\base\backpack.hpp"
 };

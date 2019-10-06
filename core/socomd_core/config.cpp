@@ -1,3 +1,4 @@
+#include "settings\inventories.hpp"
 #include "predefined.hpp"
 
 class CfgPatches {
