@@ -74,3 +74,4 @@ class CfgPatches  {
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgMuzzleslot.hpp"
+#include "configs\CfgWorldType.hpp"

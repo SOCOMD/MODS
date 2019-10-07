@@ -176,4 +176,5 @@ class CfgAnimation {
 #include "configs\CfgASORVS.hpp"
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
+#include "configs\CfgWorldType.hpp"
 //#include "configs\CfgModels.hpp"

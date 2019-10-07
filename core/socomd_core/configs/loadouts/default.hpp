@@ -66,6 +66,14 @@
 	LOADOUT_ITEM(CUP_Javelin_M, 1)
 
 ////////////////////////////////////////////////////////////////////////////////
+// Uniforms
+
+class SOCOMD_Uniforms {
+	Arid = "SOCOMD_Uniform_SleevesDown";
+	Woodland = "SOCOMD_Uniform_AMCU_SleevesDown";
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // Unarmed
 
 class SOCOMD_Unarmed {
@@ -74,7 +82,6 @@ class SOCOMD_Unarmed {
 	maxOptic  = "1x";
 
 	class Uniform {
-		type = SOCOMD_Item_Uniform_Rifleman;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -95,7 +102,6 @@ class SOCOMD_Commander {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_TROOPLEADER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -142,7 +148,6 @@ class SOCOMD_Leader {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_PATROLLEADER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -189,7 +194,6 @@ class SOCOMD_Rifleman {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -225,7 +229,6 @@ class SOCOMD_Marksman {
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MARKSMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -261,7 +264,6 @@ class SOCOMD_Sapper {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_SAPPER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -309,7 +311,6 @@ class SOCOMD_MachineGunner {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MACHINEGUNNER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -347,7 +348,6 @@ class SOCOMD_Medic {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MEDIC;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -394,7 +394,6 @@ class SOCOMD_AT {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_AT;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -433,7 +432,6 @@ class SOCOMD_Sniper {
 
 
 	class Uniform {
-		type = ITEM_UNIFORM_SNIPER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -472,7 +470,6 @@ class SOCOMD_Recon {
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
-		type = SOCOMD_Uniform_SleevesDown_Recon;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -522,7 +519,6 @@ class SOCOMD_Mortar {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -559,7 +555,6 @@ class SOCOMD_Pilot {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_PILOT;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -598,7 +593,6 @@ class SOCOMD_Crewman {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_CREWMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -637,7 +631,6 @@ class SOCOMD_PJ {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_PJ;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};

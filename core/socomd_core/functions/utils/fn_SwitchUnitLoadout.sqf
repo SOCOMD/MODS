@@ -81,7 +81,12 @@ _uniformConfig = (_unitConfig >> "Uniform");
 _uniformLoadout = _unitLoadout select 3;
 if(not isNull _uniformConfig) then
 {
-    _uniformType = getText (_uniformConfig >> "type");
+    _uniformType = [] call SOCOMD_fnc_GetWorldUniform;
+    _loadoutUniformType = getText (_uniformConfig >> "type");
+    if(!(_loadoutUniformType == "")) then {
+        _uniformType = _loadoutUniformType;
+    };
+    
     _uniformLoadout set [0, _uniformType];
 
     _uniformInventoryConfig = (_uniformConfig >> "Inventory");

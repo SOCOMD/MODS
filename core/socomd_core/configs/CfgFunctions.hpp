@@ -19,6 +19,8 @@ class CfgFunctions {
 			class BushMasterInit {};
 			class ACRERackInit {};
 			class XEH_postInit {};
+			class GetWorldType {};
+			class GetWorldUniform {};
 		};
 
 		class Actions {

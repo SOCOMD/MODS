@@ -69,6 +69,9 @@ class Inventory_E {};
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
+class SOCOMD_Uniforms {
+	Snow = "SOCOMD_Uniform_Snow_HoodDown";
+};
 
 class SOCOMD_Sniper {
 	class Vest {
