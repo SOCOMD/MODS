@@ -35,22 +35,18 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 		class Intercom_1 { \
 			displayName = "Crew Intercom"; \
 			shortName = "Crew"; \
-			allowedPositions[] = {"crew"}; \
+			allowedPositions[] = {"driver", "gunner", "copilot"}; \
 			limitedPositions[] = {}; \
 			numLimitedPositions = 0; \
-			masterPositions[] = {"commander"}; \
+			masterPositions[] = {"driver"}; \
 			connectedByDefault = 1; \
 		}; \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
-			allowedPositions[] = {"crew"}; \
+			allowedPositions[] = {"driver", "gunner", "copilot"}; \
 			componentName = "ACRE_VRC103"; \
-			defaultComponents[] = {}; \
-			defaultPositions[] = {}; \
 			displayName = "Dash"; \
-			intercom[] = {"Intercom_1"}; \
-			isRadioRemovable = 0; \
 			mountedRadio = "ACRE_PRC117F"; \
 			shortName = "Dash"; \
 		}; \
