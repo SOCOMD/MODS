@@ -435,6 +435,7 @@ Achilles_var_moduleTreeDLC = true;
 Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
+force force acre_sys_core_automaticAntennaDirection = true;
 force force acre_sys_core_fullDuplex = true;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = true;
@@ -447,6 +448,7 @@ force force acre_sys_core_ts3ChannelName = "";
 force force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 acre_sys_core_unmuteClients = true;
+force force acre_sys_signal_signalModel = 0;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
