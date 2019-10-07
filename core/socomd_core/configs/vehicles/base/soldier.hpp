@@ -342,24 +342,17 @@ class SOCOMD_Survival_AMCU: SOCOMD_Survival {
 		""
 	};
 };
-
-class SOCOMD_Tee: B_Soldier_02_F
+class B_soldier_AR_F;
+class SOCOMD_Tee: B_soldier_AR_F
 {
 	author="SOCOMD";
 	_generalMacro="B_Soldier_F";
 	scope=2;
 	displayName="SOCOMD G3 (Tee)";
 	uniformClass="SOCOMD_Tee_uniform";
-	hiddenSelections[]=
-		{
-			"Camo",
-			"Camo2",
-			"insignia"
-		};
 	hiddenSelectionsTextures[]=
 	{
-		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+		"\ADFU_Units_MC\data\u_g3_mc_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
@@ -373,7 +366,6 @@ class SOCOMD_Tee_AMCU: SOCOMD_Tee
 	uniformClass="SOCOMD_Tee_AMCU_uniform";
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\u_g3_amc_co.paa",
-		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+		"socomd_data_core\CTgear\u_g3_amc_co.paa"
 	};
 };
