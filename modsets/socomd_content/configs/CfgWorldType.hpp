@@ -45,6 +45,7 @@ class CfgWorldType {
 		class tem_suursaariv;
 		class Thirsk;
 		class tem_vinjesvingenc;
+		class pja305; //N'Ziwasogo
 	};
 
 	class Snow {
