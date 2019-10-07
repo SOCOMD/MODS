@@ -347,7 +347,7 @@ class SOCOMD_Tee: B_soldier_AR_F
 {
 	author="SOCOMD";
 	_generalMacro="B_Soldier_F";
-	scope=2;
+	scope=1;
 	displayName="SOCOMD G3 (Tee)";
 	uniformClass="SOCOMD_Tee_uniform";
 	hiddenSelectionsTextures[]=

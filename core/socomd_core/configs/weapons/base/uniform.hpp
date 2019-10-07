@@ -123,10 +123,10 @@ class SOCOMD_Uniform_AMCU_Survival: Uniform_Base
 	};
 };
 
-class SOCOMD_Tee_uniform: Uniform_Base
+class SOCOMD_Tee_base: Uniform_Base
 {
 	author="SOCOMD";
-	scope=2;
+	scope=0;
 	displayName="SOCOMD MC Tee";
 	picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_tshirt_ca.paa";
 	model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
@@ -138,8 +138,10 @@ class SOCOMD_Tee_uniform: Uniform_Base
 		mass=60;
 	};
 };
-
-class SOCOMD_Tee_AMCU_uniform: SOCOMD_Tee_uniform
+class SOCOMD_Tee_uniform:SOCOMD_Tee_base{
+	scope=2;
+};
+class SOCOMD_Tee_AMCU_uniform: SOCOMD_Tee_base
 {
 	displayName="SOCOMD AMCU Tee";
 	scope=2;
