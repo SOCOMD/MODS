@@ -36,9 +36,9 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -82,9 +82,9 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -129,9 +129,9 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -175,9 +175,9 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -307,9 +307,9 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	class AcreRacks {
 		class Rack_1 {
 			allowedPositions[] = {"driver", "commander", "gunner"};
-			componentName = "ACRE_VRC103";
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};
@@ -593,9 +593,9 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	class AcreRacks {
 		class Rack_1 {
 			allowedPositions[] = {"driver", "commander", "gunner"};
-			componentName = "ACRE_VRC103";
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};

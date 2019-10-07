@@ -157,9 +157,9 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver", "gunner", "copilot"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -214,9 +214,9 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver", "gunner", "copilot"}; \
-			componentName = "ACRE_VRC103"; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
