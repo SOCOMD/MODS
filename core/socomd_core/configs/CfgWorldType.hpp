@@ -1,12 +1,11 @@
 class CfgWorldType {
-	class Arid {
-		class Altis;
-		class Stratis;
-		class Malden;
-	};
+	class Arid {};
 
 	class Woodland {
 		class Tanoa;
-		class Enoch; //Livonia
+		class Enoch;
+		class Altis;
+		class Stratis;
+		class Malden; //Livonia
 	};
 };
