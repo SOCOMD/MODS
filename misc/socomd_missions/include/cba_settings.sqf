@@ -155,21 +155,21 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 3.0;
+force force ace_medical_AIDamageThreshold = 1.3;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
-force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 0.4;
+force force ace_medical_amountOfReviveLives = 3;
+force force ace_medical_bleedingCoefficient = 1;
 force force ace_medical_blood_enabledFor = 1;
 force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 1;
-force force ace_medical_delayUnconCaptive = 0.8;
+force force ace_medical_delayUnconCaptive = 0;
 force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 0;
 force force ace_medical_enableOverdosing = true;
-force force ace_medical_enableRevive = 0;
+force force ace_medical_enableRevive = 1;
 force force ace_medical_enableScreams = true;
-force force ace_medical_enableUnconsciousnessAI = 0;
+force force ace_medical_enableUnconsciousnessAI = 1;
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = true;
 force force ace_medical_increaseTrainingInLocations = false;
@@ -177,7 +177,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 1800;
+force force ace_medical_maxReviveTime = 100;
 force force ace_medical_medicSetting = 0;
 force force ace_medical_medicSetting_basicEpi = 0;
 force force ace_medical_medicSetting_PAK = 0;
@@ -188,19 +188,54 @@ ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 ace_medical_menuTypeStyle = 0;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 0.5;
+force force ace_medical_painCoefficient = 1.2;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 3.0;
+force force ace_medical_playerDamageThreshold = 4.0;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
-force force ace_medical_useCondition_SurgicalKit = 1;
+force force ace_medical_useCondition_SurgicalKit = 0;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
 force force ace_medical_useLocation_SurgicalKit = 0;
 force force ace_medical_allowDeadBodyMovement = true;
 force force ace_medical_convertItems = 0;
+
+// ADV - ACE CPR
+force force adv_aceCPR_addTime = 20;                                        // Time added to death timer per round of CPR
+force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_chance_0 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_1 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_2 = 5;                                        // Chance for CPR to be successful
+force force adv_aceCPR_chance_aed = 70;                                     // Chance for CPR to be successful (AED)
+force force adv_aceCPR_enable = true;
+force force adv_aceCPR_maxTime = 300;                                      // Maximum amount of time CPR can be attempted before being made successful (Assuming it was not previously made successful)
+force force adv_aceCPR_useLocation_AED = 0
+
+// KAT - ACE Airway
+force force kat_aceAirway_checkbox_puking_sound = true;
+force force kat_aceAirway_deathTimer = 100;                                 // Time before Pt dies with low Sp02
+force force kat_aceAirway_enable = true;
+force force kat_aceAirway_probability_obstruction = 80;                     // Probability patient collapses
+force force kat_aceAirway_probability_occluded = 10;                        // Probability airway vomits
+force force kat_aceAirway_string_exit = "";
+
+// KAT - ACE Breathing
+force force kat_aceBreathing_death_timer_enable = true;
+force force kat_aceBreathing_enable = true;
+force force kat_aceBreathing_pneumothorax = 100;                            // Probability for a penetrating chest hit to cause a pneumothorax
+force force kat_aceBreathing_spo2_big_value = 15;                           // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_small_value = 12;                         // Value to change Sp02 by (If airway not patent)
+
+// KAT - ACE Circulation
+force force kat_aceCirculation_bloodgroup = "B";
+force force kat_aceCirculation_enable = true;
+
+// KAT - ACE Misc
+force force kat_aceMisc_enable = true;
+force force kat_aceMisc_limitWounds_condition = 3;
+force force kat_aceMisc_limitWounds_enable = true;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
