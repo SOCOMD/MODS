@@ -38,7 +38,11 @@ class CfgPatches {
 			"lbtt_Vest_config",
 			"milgp_headgear_cfg",
 
-			"socomd_data_core"
+			"socomd_data_core",
+			"kat_aceAirway",
+			"kat_aceCirculation",
+			"kat_aceBreathing",
+			"kat_aceMisc"
 		};
 
 		//SOCOMD Custom Units
