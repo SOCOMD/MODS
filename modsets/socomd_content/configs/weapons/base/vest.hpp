@@ -3,25 +3,15 @@ class Vest_Camo_Base: ItemCore
 	{
 		class ItemInfo;
 	};
-class SOCOMD_RUS_Vest: Vest_Camo_Base
+class CUP_V_B_LBT_LBV_MCam;
+class SOCOMD_RUS_Vest: CUP_V_B_LBT_LBV_MCam
 	{
 		scope=2;
 		displayName="Russian Special Forces Vest";
 		author="Monk";
-		model="A3\Characters_F_beta\indep\equip_ia_vest02.p3d";
 		descriptionShort="Vest used by Russian SF";
-		hiddenSelections[]=
-		{
-			"Camo",
-			"Insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"socomd_data_core\Russian\RUS_Vest.paa"
-		};
 		class ItemInfo: VestItem
 		{
-			uniformModel="A3\Characters_F_beta\indep\equip_ia_vest02.p3d";
 			containerClass="Supply150";
 			mass=20;
 			hiddenSelections[]=

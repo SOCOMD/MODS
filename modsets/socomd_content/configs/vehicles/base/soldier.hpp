@@ -104,7 +104,7 @@ class SOCOMD_RUS_Unarmed : B_Soldier_02_f {
 
 #define SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS \
 	SOLDIER_RUS_RIFLEMAN_LINKEDITEMS, \
-	ITEM01("SOCOMD_NVG")
+	ITEM01("CUP_NVG_GPNVG_black")
 
 #define SOLDIER_RUS_SNIPER_LINKEDITEMS \
 	SOLDIER_LOADOUT_LINKEDITEMS, \
@@ -166,7 +166,7 @@ class SOCOMD_RUS_soldier_Machinegunner : SOCOMD_RUS_soldier_Rifleman {
 	vehicleclass = "Man";
 	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
 
-	weapons[] 					= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
+	weapons[] 					= {SOCOMD_pkp_acc};
 	respawnWeapons[] 			= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};

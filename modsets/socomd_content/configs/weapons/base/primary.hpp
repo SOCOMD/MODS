@@ -348,11 +348,11 @@ class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
 	displayName="RU-AK-104 (Modified)";
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
@@ -361,26 +361,9 @@ class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
 		};
 	};
 };
-class CUP_arifle_AK103_GL_railed;
-class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
+class CUP_arifle_AK74M_GL_railed_camo;
+class SOCOMD_RUS_AK_GL: CUP_arifle_AK74M_GL_railed_camo {
 	displayName="RU-AK-104-GL (Modified)";
-	hiddenSelections[] = {
-		"Camo1",
-		"Camo2",
-		"Camo3",
-		"CamoRail",
-		"CamoGL1",
-		"CamoGL2"};
-	hiddenSelectionsTextures[]=
-	{
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_body_camo_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_stock_camo_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_magazine_camo_co.paa",
-		"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_body_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
-	};
-
 	magazines[]=
 	{
 		"CUP_30Rnd_545x39_AK74M_camo_M",
@@ -419,15 +402,15 @@ class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
 class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
-			item = "CUP_muzzle_Bizon";
+			item = "CUP_muzzle_TGPA_woodland";
 			slot = "CUP_EastMuzzleSlotAK";
 		};
 	};
@@ -486,15 +469,15 @@ class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
 class SOCOMD_RUS_RPK_acc : SOCOMD_RUS_RPK{
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
-			item = "CUP_muzzle_TGPA";
+			item = "CUP_muzzle_TGPA_woodland";
 			slot = "CUP_EastMuzzleSlotAK";
 		};
 	};
@@ -516,4 +499,19 @@ class SOCOMD_RUS_Cyrus_acc : srifle_DMR_05_blk_F{
 			slot = "MuzzleSlot";
 		};
 	};
+};
+
+class CUP_lmg_Pecheneg_woodland;
+class SOCOMD_pkp: CUP_lmg_Pecheneg_woodland{
+
+};
+class SOCOMD_pkp_acc: SOCOMD_pkp{
+	class LinkedItemsOptic{
+			item = "CUP_optic_1p63";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_snds_KZRZP_PK_woodland";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
 };
