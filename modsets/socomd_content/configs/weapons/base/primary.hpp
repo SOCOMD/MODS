@@ -77,7 +77,46 @@ class S_WMLX: acc_flashlight {
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
+class S_M4A5_base;
 class S_145_KAG_MAG;
+class S_145_KAG_MAG_monk: S_145_KAG_MAG {
+        displayName = "M4A5 Troy/KAG/CMPCT Monk";
+        scope = public;
+        scopeArsenal = 2;
+        class __MAGSWITCHCLASS {
+            hlc_50rnd_556x45_EPR = "S_145_KAG_CMPCT_monk";
+            hlc_50rnd_556x45_SOST = "S_145_KAG_CMPCT_monk";
+            hlc_50rnd_556x45_SPR = "S_145_KAG_CMPCT_monk";
+            hlc_50rnd_556x45_M = "S_145_KAG_CMPCT_monk";
+            hlc_50rnd_556x45_MDim = "S_145_KAG_CMPCT_monk";
+        default = "S_145_KAG_CMPCT_monk";
+        };
+        rhs_grip1_change = "S_145_KAG_CMPCT_monk";
+        rhs_grip2_change = "S_145_KAG_CMPCT_monk";
+        rhs_grip3_change = "S_145_KAG_CMPCT_monk";
+        baseWeapon = "S_145_KAG_CMPCT_monk";
+	
+	hiddenSelections[] = {
+		"416_upper", 
+		"416_lower", 
+		"416_SBRBarrel", 
+		"416_mainparts", 
+		"CTR"};
+    hiddenSelectionsTextures[] = {
+		"\socomd_data_core\guncamo\416_upper_camo_co.paa", 
+		"\socomd_data_core\guncamo\416_lower_camo_co.paa", 
+		"nia_wp_hk416\tex\toadie_416\416_barrel_co.paa", 
+		"\socomd_data_core\guncamo\416_common_camo_co.paa", 
+		"\socomd_data_core\guncamo\magpul_CTR_camo_co.paa"
+		};
+	HiddenSelectionsMaterials[] = {
+		"nia_wp_hk416\mat\416_upper.rvmat", 
+		"nia_wp_hk416\mat\416_lower.rvmat", 
+		"nia_wp_hk416\mat\416_barrel.rvmat", 
+		"nia_wp_hk416\mat\416_common.rvmat", 
+		"nia_wp_hk416\mat\magpul_CTR.rvmat"
+		};
+};
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 	hiddenSelections[]=
 		{
