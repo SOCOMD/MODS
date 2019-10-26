@@ -87,7 +87,6 @@ class CfgLoadouts {
 			maxOptic  	= "1x";
 
 			class Uniform {
-				type = SOCOMD_Item_Uniform_Rifleman;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -108,7 +107,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_TROOPLEADER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 					LOADOUT_ITEM(Laserbatteries, 2)
@@ -117,7 +115,6 @@ class CfgLoadouts {
 			};
 
 			class Vest {
-				type = ITEM_VEST_TROOPLEADER;
 				class Inventory {
 					LOADOUT_VEST_ESSENTIALS
 					LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -127,7 +124,6 @@ class CfgLoadouts {
 			};
 
 			class Backpack {
-				type = ITEM_BACKPACK_TROOPLEADER;
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_STANDARD_MEDICAL
@@ -155,7 +151,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_PATROLLEADER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 					LOADOUT_ITEM(Laserbatteries, 2)
@@ -202,7 +197,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -243,7 +237,6 @@ class CfgLoadouts {
 			maxOptic		= "4x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MARKSMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -279,7 +272,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_SAPPER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -326,7 +318,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MACHINEGUNNER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -364,7 +355,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MEDIC;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -427,7 +417,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_AT;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -467,7 +456,6 @@ class CfgLoadouts {
 			maxOptic		= "1x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_PILOT;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -506,7 +494,6 @@ class CfgLoadouts {
 			maxOptic		= "1x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_CREWMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -544,7 +531,6 @@ class CfgLoadouts {
 			maxOptic		= "1x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_PJ;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -651,7 +637,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -688,7 +673,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -721,7 +705,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
