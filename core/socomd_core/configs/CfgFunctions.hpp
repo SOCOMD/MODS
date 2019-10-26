@@ -1,5 +1,4 @@
 class CfgFunctions {
-	
 	class SOCOMD {
 		class Common {
 			file="\socomd_core\functions\common";
@@ -81,29 +80,6 @@ class CfgFunctions {
 			class getBloodVolumeChange {};
         };
     };
-	class GEARF
-	{
-		class vectorFunctions
-		{
-			file="\socomd_core\functions\utils\Vectors";
-			class rotateObject
-			{
-			};
-		};
-		class helmetFunctions
-		{
-			file="\socomd_core\functions\utils\Helmet";
-			class slingHelmet
-			{
-			};
-			class unslingHelmet
-			{
-			};
-			class hideSlungHelmet
-			{
-			};
-		};
-	};
 	class advanced_peltors{
 		class functions {
 			file = "\socomd_core\functions\advanced_peltors";
