@@ -9,7 +9,6 @@ class CfgLoadoutWeapons {
     class SMA_HK417vfg : WeaponLock {};
     class sma_minimi_mk3_762tsb : WeaponLock {};
     class SMA_HK417_16in : WeaponLock {};
-    class SPARTAN_EBR_black_F : WeaponLock {};
 
     //Launchers
     class SOCOMD_Carl_Gustav : WeaponLock {};

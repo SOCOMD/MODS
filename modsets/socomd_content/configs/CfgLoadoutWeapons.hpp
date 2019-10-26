@@ -64,8 +64,6 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
-	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
-	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};
