@@ -547,6 +547,19 @@ force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
+// Zeus Enhanced
+zen_common_autoAddObjects = true;
+zen_common_darkMode = true;
+zen_common_disableGearAnim = true;
+zen_common_preferredArsenal = 1;
+zen_context_menu_enabled = 2;
+zen_editor_declutterEmptyTree = false;
+zen_editor_disableLiveSearch = false;
+zen_editor_moveDisplayToEdge = true;
+zen_editor_removeWatermark = true;
+zen_editor_unitRadioMessages = 2;
+zen_visibility_enabled = false;
+
 ////////////////////////////////////////////////////////////////////////////////
 //                          HARDCORE OVERRIDES
 //                  MUST REMAIN AT THE BOTTOM OF THE FILE
