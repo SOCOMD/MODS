@@ -17,3 +17,6 @@ class Barret_mag;
 class Recon_Barret_mag : Barret_mag {
     count = 5;
 };
+
+//CUP
+class CUP_30Rnd_9x19_MP5;

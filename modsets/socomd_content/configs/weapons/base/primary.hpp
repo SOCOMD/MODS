@@ -210,6 +210,12 @@ class SMA_HK416GLCQB_ODP;
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_HK417_16in;
 class SMA_HK417vfg;
+class CUP_srifle_M110 : Rifle_Base_F {
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+class CUP_srifle_m110_kac_black;
+class CUP_srifle_m110_kac;
+class CUP_srifle_m110_kac_woodland;
 
 //Machine Gun 556
 class CUP_lmg_minimipara;
@@ -242,6 +248,9 @@ class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
 	ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
 	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
+
+//MP5
+class CUP_smg_MP5A5;
 
 //Rifle 300WM
 class hlc_AWC_base;

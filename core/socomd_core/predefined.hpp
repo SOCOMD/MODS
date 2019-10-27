@@ -95,7 +95,6 @@
 #define ITEM_PRIMARY_SNIPER                     "SOCOMD_Item_Primary_Sniper"
 #define ITEM_PRIMARY_RECON		                "SOCOMD_Item_Primary_Recon"
 #define ITEM_PRIMARY_AT			                "SOCOMD_ITEM_PRIMARY_AT"
-#define ITEM_PRIMARY_PJ                         "SOCOMD_Item_Primary_PJ"
 #define ITEM_PRIMARY_PILOT                      "SOCOMD_Item_Primary_Pilot"
 #define ITEM_PRIMARY_CREWMAN                    "SOCOMD_Item_Primary_Crewman"
 
@@ -111,7 +110,6 @@
 #define ITEM_PRIMARY_MAGAZINE_AT			    "SOCOMD_Item_Magazine_556x45_30Rnd"
 #define ITEM_PRIMARY_MAGAZINE_MAT			    "SOCOMD_Item_Magazine_556x45_30Rnd"
 #define ITEM_PRIMARY_MAGAZINE_HAT			    "SOCOMD_Item_Magazine_556x45_30Rnd"
-#define ITEM_PRIMARY_MAGAZINE_PJ                "SOCOMD_Item_Magazine_9x21_60Rnd"
 #define ITEM_PRIMARY_MAGAZINE_PILOT             "SOCOMD_Item_Magazine_9x21_60Rnd"
 #define ITEM_PRIMARY_MAGAZINE_CREWMAN           "SOCOMD_Item_Magazine_9x21_60Rnd"
 
@@ -128,7 +126,6 @@
 #define ITEM_HANDGUN_AT			                "SOCOMD_Item_Handgun_AT"
 #define ITEM_HANDGUN_MAT			            "SOCOMD_Item_Handgun_MAT"
 #define ITEM_HANDGUN_HAT			            "SOCOMD_Item_Handgun_HAT"
-#define ITEM_HANDGUN_PJ                         "SOCOMD_Item_Handgun_PJ"
 #define ITEM_HANDGUN_PILOT                      "SOCOMD_Item_Handgun_Pilot"
 #define ITEM_HANDGUN_CREWMAN                    "SOCOMD_Item_Handgun_Crewman"
 
@@ -145,7 +142,6 @@
 #define ITEM_HANDGUN_MAGAZINE_AT				"SOCOMD_Item_Magazine_45ACP_11Rnd"
 #define ITEM_HANDGUN_MAGAZINE_MAT				"SOCOMD_Item_Magazine_45ACP_11Rnd"
 #define ITEM_HANDGUN_MAGAZINE_HAT				"SOCOMD_Item_Magazine_45ACP_11Rnd"
-#define ITEM_HANDGUN_MAGAINE_PJ                 "SOCOMD_Item_Magazine_45ACP_11Rnd"
 #define ITEM_HANDGUN_MAGAINE_PILOT              "SOCOMD_Item_Magazine_45ACP_11Rnd"
 #define ITEM_HANDGUN_MAGAINE_CREWMAN            "SOCOMD_Item_Magazine_45ACP_11Rnd"
 
@@ -162,7 +158,6 @@
 #define ITEM_SECONDARY_AT				        "SOCOMD_Item_Secondary_AT"
 #define ITEM_SECONDARY_MAT				        "SOCOMD_Item_Secondary_MAT"
 #define ITEM_SECONDARY_HAT				        "SOCOMD_Item_Secondary_HAT"
-#define ITEM_SECONDARY_PJ                       "SOCOMD_Item_Secondary_PJ"
 #define ITEM_SECONDARY_PILOT                    "SOCOMD_Item_Secondary_Pilot"
 #define ITEM_SECONDARY_CREWMAN                  "SOCOMD_Item_Secondary_Crewman"
 
@@ -179,7 +174,6 @@
 #define ITEM_HEADGEAR_AT				        "SOCOMD_Item_Headgear_AT"
 #define ITEM_HEADGEAR_MAT				        "SOCOMD_Item_Headgear_MAT"
 #define ITEM_HEADGEAR_HAT				        "SOCOMD_Item_Headgear_HAT"
-#define ITEM_HEADGEAR_PJ                        "SOCOMD_Item_Headgear_PJ"
 #define ITEM_HEADGEAR_PILOT                     "SOCOMD_Item_Headgear_Pilot"
 #define ITEM_HEADGEAR_CREWMAN                   "SOCOMD_Item_Headgear_Crewman"
 
@@ -195,7 +189,6 @@
 #define ITEM_BINOCULAR_AT				        "SOCOMD_Item_Binocular_AT"
 #define ITEM_BINOCULAR_MAT				        "SOCOMD_Item_Binocular_MAT"
 #define ITEM_BINOCULAR_HAT				        "SOCOMD_Item_Binocular_HAT"
-#define ITEM_BINOCULAR_PJ                       "SOCOMD_Item_Binocular_PJ"
 #define ITEM_BINOCULAR_PILOT                    "SOCOMD_Item_Binocular_Pilot"
 #define ITEM_BINOCULAR_CREWMAN                  "SOCOMD_Item_Binocular_Crewman"
 
@@ -211,7 +204,6 @@
 #define ITEM_GPS_AT				                "SOCOMD_Item_GPS_AT"
 #define ITEM_GPS_MAT				            "SOCOMD_Item_GPS_MAT"
 #define ITEM_GPS_HAT				            "SOCOMD_Item_GPS_HAT"
-#define ITEM_GPS_PJ                             "SOCOMD_Item_GPS_PJ"
 #define ITEM_GPS_PILOT                          "SOCOMD_Item_GPS_Pilot"
 #define ITEM_GPS_CREWMAN                        "SOCOMD_Item_GPS_Crewman"
 
@@ -227,7 +219,6 @@
 #define ITEM_UNIFORM_AT			                "SOCOMD_Item_Uniform_AT"
 #define ITEM_UNIFORM_MAT			            "SOCOMD_Item_Uniform_MAT"
 #define ITEM_UNIFORM_HAT			            "SOCOMD_Item_Uniform_HAT"
-#define ITEM_UNIFORM_PJ                         "SOCOMD_Item_Uniform_PJ"
 #define ITEM_UNIFORM_PILOT                      "SOCOMD_Item_Uniform_Pilot"
 #define ITEM_UNIFORM_CREWMAN                    "SOCOMD_Item_Uniform_Crewman"
 
@@ -243,7 +234,6 @@
 #define ITEM_VEST_AT				            "SOCOMD_Item_Vest_AT"
 #define ITEM_VEST_MAT				            "SOCOMD_Item_Vest_MAT"
 #define ITEM_VEST_HAT				            "SOCOMD_Item_Vest_HAT"
-#define ITEM_VEST_PJ                            "SOCOMD_Item_Vest_PJ"
 #define ITEM_VEST_PILOT                         "SOCOMD_Item_Vest_Pilot"
 #define ITEM_VEST_CREWMAN                       "SOCOMD_Item_Vest_Crewman"
 
@@ -259,6 +249,5 @@
 #define ITEM_BACKPACK_AT				        "SOCOMD_Item_Backpack_AT"
 #define ITEM_BACKPACK_MAT				        "SOCOMD_Item_Backpack_MAT"
 #define ITEM_BACKPACK_HAT				        "SOCOMD_Item_Backpack_HAT"
-#define ITEM_BACKPACK_PJ                        "SOCOMD_Item_Backpack_PJ"
 #define ITEM_BACKPACK_PILOT                     "SOCOMD_Item_Backpack_Pilot"
 #define ITEM_BACKPACK_CREWMAN                   "SOCOMD_Item_Backpack_Crewman"

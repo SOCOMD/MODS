@@ -32,7 +32,6 @@ class CfgPatches  {
 
 		units[] = {
 			"SOCOMD_SHIP_B",
-			"SOCOMD_QStore_B",
 			"SOCOMD_QStore_TAG",
 			"SOCOMD_QStore_RUS",
 			"SOCOMD_Supply_Sniper",

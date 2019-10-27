@@ -64,6 +64,9 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};

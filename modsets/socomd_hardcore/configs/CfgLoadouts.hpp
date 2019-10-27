@@ -518,66 +518,6 @@ class CfgLoadouts {
 			};
 		};
 
-		////////////////////////////////////////////////////////////////////////////////
-		// PJ
-		class SOCOMD_PJ {
-			primary 		= ITEM_PRIMARY_PJ;
-			secondary 		= ITEM_SECONDARY_PJ;
-			handgun 		= ITEM_HANDGUN_PJ;
-			handgunMagazine = ITEM_HANDGUN_MAGAINE_PJ;
-			headgear 		= ITEM_HEADGEAR_PJ;
-			binocular 		= "";
-			gps 			= "";
-			maxOptic		= "1x";
-
-			class Uniform {
-				class Inventory	{
-					LOADOUT_UNIFORM_ESSENTIALS
-				};
-			};
-
-			class Vest {
-				type = ITEM_VEST_PJ;
-				class Inventory	{
-					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 4)
-				};
-			};
-
-			class Backpack {
-				type = ITEM_BACKPACK_PJ;
-				class Inventory	{
-					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_ITEM(ACRE_PRC117F, 1)
-					LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
-					LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
-					LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
-					LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
-					LOADOUT_ITEM(ACE_personalAidKit, 4)			//Remove
-					LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
-					LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
-					LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
-					LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
-					LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
-					LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
-					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
-					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
-					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
-					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
-					LOADOUT_ITEM(ACE_bloodIV_1000, 10)			//Blood
-					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
-					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
-					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
-					LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
-					LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
-					LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
-					LOADOUT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
-					LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
-				};
-			};
-		};
-
 		class SOCOMD_Sniper {
 			optics[] = {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
 		};

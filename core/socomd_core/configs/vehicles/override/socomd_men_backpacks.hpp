@@ -8,6 +8,5 @@ class SOCOMD_Item_Backpack_MachineGunner            : SOG_BAG_MC {};
 class SOCOMD_Item_Backpack_Sniper                   : Kit_Bag_R_MC {};
 class SOCOMD_Item_Backpack_Recon                    : Kit_Bag_R_MC {};
 class SOCOMD_Item_Backpack_AT                       : SOG_BAG_MC {};
-class SOCOMD_Item_Backpack_PJ                       : Kit_Bag_MC {};
 class SOCOMD_Item_Backpack_Pilot                    : SOG_BAG_recon_od {};
 class SOCOMD_Item_Backpack_Crewman                  : KIT_BAG_MC {};
