@@ -85,8 +85,8 @@ class Land_PaperBox_closed_F;
 class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
 	scope = protected;
 	scopeCurator = private;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 	author = AUTHOR_STR;
 	displayName = "QStore";
 

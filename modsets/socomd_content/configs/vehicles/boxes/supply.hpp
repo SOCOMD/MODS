@@ -37,8 +37,6 @@ class SOCOMD_Supply_Sniper : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Sniper";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	accuracy = 1000;
 	maximumLoad = 99999;
