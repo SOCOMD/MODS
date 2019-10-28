@@ -47,6 +47,7 @@
 #define ITEM_RUSSIAN_FACEGEAR               			 "CUP_G_ESS_BLK_Scarf_Face_Grn"
 #define ITEM_RUSSIAN_UNIFORM              				 "SOCOMD_RUS_SleevesDown"
 #define ITEM_RUSSIAN_VEST           					 "SOCOMD_RUS_Vest"
+#define ITEM_RUSSIAN_VEST_light           			     "SOCOMD_RUS_Vest_light"
 #define ITEM_RUSSIAN_BACKPACK_light          			 "CUP_B_Bergen_BAF"
-#define ITEM_RUSSIAN_BACKPACK_heavy           			 "B_Carryall_cbr"
+#define ITEM_RUSSIAN_BACKPACK_heavy           			 "B_Carryall_mcamo"
 #define ITEM_RUSSIAN_BACKPACK_leader           			 "KIT_BAG_R_blk"
