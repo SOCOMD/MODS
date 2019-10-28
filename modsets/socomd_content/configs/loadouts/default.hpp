@@ -2,11 +2,15 @@
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2)
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 3) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
+	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -127,6 +131,51 @@ class SOCOMD_AT {
 	};
 };
 
+class SOCOMD_Sapper {
+	primary		    = ITEM_PRIMARY_SAPPER;
+	secondary		= ITEM_SECONDARY_SAPPER;
+	handgun		    = ITEM_HANDGUN_SAPPER;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SAPPER;
+	headgear		= ITEM_HEADGEAR_SAPPER;
+	binocular		= "";
+	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
+
+	class Uniform {
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_SAPPER;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+			LOADOUT_ITEM(CUP_6Rnd_B_Beneli_74Pellets, 5)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_SAPPER;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_DefusalKit, 1)
+			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
+			LOADOUT_ITEM(ACE_wirecutter, 1)
+			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+			LOADOUT_ITEM(MineDetector, 1)
+			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
+			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
+			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
+			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+			LOADOUT_ITEM(SOCOMD_Shotgun, 1)
+		};
+	};
+};
 
 class SOCOMD_Medic;  /* {
 	class Backpack { 
@@ -616,7 +665,6 @@ class SOCOMD_RUS_marksman: SOCOMD_marksman {
 	};
 };
 
-class SOCOMD_Sapper;
 class SOCOMD_RUS_Sapper: SOCOMD_Sapper {
 	primary			= Item_RUSSIAN_PRIMARY_Sapper;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
