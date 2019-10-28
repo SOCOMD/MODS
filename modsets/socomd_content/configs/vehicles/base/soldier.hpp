@@ -102,8 +102,18 @@ class SOCOMD_RUS_Unarmed : B_Soldier_02_f {
 	ITEM01(ITEM_RUSSIAN_HEADGEAR), \
 	ITEM01(ITEM_RUSSIAN_FACEGEAR)
 
+#define SOLDIER_RUS_RIFLEMAN_light_LINKEDITEMS \
+	SOLDIER_LOADOUT_LINKEDITEMS, \
+	ITEM01(ITEM_RUSSIAN_VEST_light), \
+	ITEM01(ITEM_RUSSIAN_HEADGEAR), \
+	ITEM01(ITEM_RUSSIAN_FACEGEAR)
+
 #define SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS \
 	SOLDIER_RUS_RIFLEMAN_LINKEDITEMS, \
+	ITEM01("CUP_NVG_GPNVG_black")
+
+#define SOLDIER_RUS_RIFLEMAN_NIGHT_light_LINKEDITEMS \
+	SOLDIER_RUS_RIFLEMAN_light_LINKEDITEMS, \
 	ITEM01("CUP_NVG_GPNVG_black")
 
 #define SOLDIER_RUS_SNIPER_LINKEDITEMS \
@@ -124,12 +134,12 @@ class SOCOMD_RUS_soldier_Rifleman : SOCOMD_RUS_Unarmed {
 	vehicleclass = "Man";
 	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
 
-	weapons[] 					= {SOLDER_RUS_RIFLEMAN_WEAPONS};
 	respawnWeapons[] 			= {SOLDER_RUS_RIFLEMAN_WEAPONS};
+	weapons[] 					= {SOLDER_RUS_RIFLEMAN_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
-	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
-	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_LINKEDITEMS};
+	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_light_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_light_LINKEDITEMS};
 	backpack					= ITEM_RUSSIAN_BACKPACK_light;
 };
 
@@ -149,8 +159,8 @@ class SOCOMD_RUS_soldier_Rifleman_Night : SOCOMD_RUS_Unarmed {
 	respawnWeapons[] 			= {SOLDER_RUS_RIFLEMAN_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_RIFLEMAN_MAGAZINES};
-	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS};
-	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS};
+	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_NIGHT_light_LINKEDITEMS};
+	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_NIGHT_light_LINKEDITEMS};
 	backpack					= ITEM_RUSSIAN_BACKPACK_light;
 };
 
@@ -166,7 +176,7 @@ class SOCOMD_RUS_soldier_Machinegunner : SOCOMD_RUS_soldier_Rifleman {
 	vehicleclass = "Man";
 	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
 
-	weapons[] 					= {SOCOMD_pkp_acc};
+	weapons[]                   = {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
 	respawnWeapons[] 			= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
@@ -191,7 +201,7 @@ class SOCOMD_RUS_soldier_Machinegunner_Night : SOCOMD_RUS_soldier_Rifleman {
 	respawnWeapons[] 			= {SOLDER_RUS_MACHINEGUNNER_WEAPONS};
 	magazines[] 				= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
 	respawnMagazines[] 			= {SOLDER_RUS_MACHINEGUNNER_MAGAZINES};
-	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_Night_LINKEDITEMS};
+	respawnLinkedItems[] 		= {SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS};
 	linkedItems[] 				= {SOLDIER_RUS_RIFLEMAN_NIGHT_LINKEDITEMS};
 	backpack					= ITEM_RUSSIAN_BACKPACK_heavy;
 };

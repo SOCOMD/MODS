@@ -117,6 +117,30 @@ class S_145_KAG_MAG_monk: S_145_KAG_MAG {
 		"nia_wp_hk416\mat\magpul_CTR.rvmat"
 		};
 };
+class CUP_sgun_M1014_Entry_vfg;
+class CUP_sgun_M1014_base: Rifle_Base_F {
+		modes[] = {"Single","Single_close","Single_far"};
+		class single: mode_semiauto
+		{
+			sounds[]=
+			{
+				"standardsound",
+				"silencedsound"
+			};
+			class basesoundmodetype;
+			class standardsound: basesoundmodetype
+			{
+				soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
+			};
+			class silencedsound: basesoundmodetype
+			{
+				soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
+			};
+		};
+};
+class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
+	displayname = "SOCOMD Bernelli M4 Entry";
+};
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 	hiddenSelections[]=
 		{

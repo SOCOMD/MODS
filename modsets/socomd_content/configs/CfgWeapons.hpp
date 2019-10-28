@@ -1,3 +1,4 @@
+class mode_semiauto;
 class CfgWeapons {
 
 	class Rifle;
