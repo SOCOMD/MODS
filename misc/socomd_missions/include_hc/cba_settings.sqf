@@ -483,7 +483,7 @@ force force acre_sys_core_ts3ChannelName = "";
 force force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 0;
+force force acre_sys_signal_signalModel = 3;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
