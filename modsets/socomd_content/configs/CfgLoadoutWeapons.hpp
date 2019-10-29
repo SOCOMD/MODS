@@ -27,6 +27,21 @@ class CfgLoadoutWeapons {
 	class SMA_MK18OD_GL_SM : RifleGL_556 {};
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
+
+	class Rifle_556_Camo;
+	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_MMGAmmo",
+			"SOCOMD_Mortar"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
+		};
+	};
 	
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};

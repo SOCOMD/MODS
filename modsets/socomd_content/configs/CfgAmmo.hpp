@@ -112,4 +112,9 @@ class CfgAmmo {
 			distance=1;
 		};
 	};
+	class B_12Gauge_Pellets_Submunition;
+	class CUP_B_12Gauge_Pellets: B_12Gauge_Pellets_Submunition
+	{
+		cartridge = "FxCartridge_slug";
+	};
 };

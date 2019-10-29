@@ -79,44 +79,7 @@ class S_WMLX: acc_flashlight {
 class SMA_M4afgSTOCK;
 class S_M4A5_base;
 class S_145_KAG_MAG;
-class S_145_KAG_MAG_monk: S_145_KAG_MAG {
-        displayName = "M4A5 Troy/KAG/CMPCT Monk";
-        scope = public;
-        scopeArsenal = 2;
-        class __MAGSWITCHCLASS {
-            hlc_50rnd_556x45_EPR = "S_145_KAG_CMPCT_monk";
-            hlc_50rnd_556x45_SOST = "S_145_KAG_CMPCT_monk";
-            hlc_50rnd_556x45_SPR = "S_145_KAG_CMPCT_monk";
-            hlc_50rnd_556x45_M = "S_145_KAG_CMPCT_monk";
-            hlc_50rnd_556x45_MDim = "S_145_KAG_CMPCT_monk";
-        default = "S_145_KAG_CMPCT_monk";
-        };
-        rhs_grip1_change = "S_145_KAG_CMPCT_monk";
-        rhs_grip2_change = "S_145_KAG_CMPCT_monk";
-        rhs_grip3_change = "S_145_KAG_CMPCT_monk";
-        baseWeapon = "S_145_KAG_CMPCT_monk";
-	
-	hiddenSelections[] = {
-		"416_upper", 
-		"416_lower", 
-		"416_SBRBarrel", 
-		"416_mainparts", 
-		"CTR"};
-    hiddenSelectionsTextures[] = {
-		"\socomd_data_core\guncamo\416_upper_camo_co.paa", 
-		"\socomd_data_core\guncamo\416_lower_camo_co.paa", 
-		"nia_wp_hk416\tex\toadie_416\416_barrel_co.paa", 
-		"\socomd_data_core\guncamo\416_common_camo_co.paa", 
-		"\socomd_data_core\guncamo\magpul_CTR_camo_co.paa"
-		};
-	HiddenSelectionsMaterials[] = {
-		"nia_wp_hk416\mat\416_upper.rvmat", 
-		"nia_wp_hk416\mat\416_lower.rvmat", 
-		"nia_wp_hk416\mat\416_barrel.rvmat", 
-		"nia_wp_hk416\mat\416_common.rvmat", 
-		"nia_wp_hk416\mat\magpul_CTR.rvmat"
-		};
-};
+class S_145_MOD_MAG_Camo;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
@@ -139,7 +102,7 @@ class CUP_sgun_M1014_base: Rifle_Base_F {
 		};
 };
 class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
-	displayname = "SOCOMD Bernelli M4 Entry";
+	displayname = "SOCOMD Benelli M4 Entry";
 };
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 	hiddenSelections[]=
@@ -236,10 +199,17 @@ class SMA_HK417_16in;
 class SMA_HK417vfg;
 class CUP_srifle_M110 : Rifle_Base_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
+	displayName = "SR-25";
 };
-class CUP_srifle_m110_kac_black;
-class CUP_srifle_m110_kac;
-class CUP_srifle_m110_kac_woodland;
+class CUP_srifle_m110_kac_black: CUP_srifle_M110 {
+	displayName = "SR-25 Black";
+};
+class CUP_srifle_m110_kac: CUP_srifle_M110 {
+	displayName = "SR-25";
+};
+class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
+	displayName = "SR-25 Woodland";
+};
 
 //Machine Gun 556
 class CUP_lmg_minimipara;
