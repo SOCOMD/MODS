@@ -79,6 +79,7 @@ class S_WMLX: acc_flashlight {
 class SMA_M4afgSTOCK;
 class S_M4A5_base;
 class S_145_KAG_MAG;
+class S_145_MOD_MAG_Camo;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
