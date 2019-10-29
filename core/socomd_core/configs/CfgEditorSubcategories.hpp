@@ -1,6 +1,14 @@
 class CfgEditorSubcategories {
+	class SOCOMD_EdSubcat_Vehicle_Drones {
+		displayName = "Drones";
+	};
+
 	class SOCOMD_EdSubcat_Man {
 		displayName = "Man";
+	};
+
+	class SOCOMD_EdSubcat_Man_Night {
+		displayName = "Men (Night)";
 	};
 
 	class SOCOMD_EdSubcat_Vehicle_Land {

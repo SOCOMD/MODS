@@ -1,6 +1,7 @@
 class CfgVehicles {
 
 	class Item_Base_F;
+	class B_Soldier_02_f;
 	
 	////////////////////////////////////////////////////////////////////////////////
 	//BOXES
@@ -12,7 +13,8 @@ class CfgVehicles {
 
 	// Base
 	#include "vehicles\base\helicopter.hpp"
-	#include "vehicles\base\soldier.hpp"
+	#include "vehicles\base\soldier_opfor_sso.hpp"
+	#include "vehicles\base\soldier_opfor_vympel.hpp"
 	#include "vehicles\base\man.hpp"
 
 	// Override

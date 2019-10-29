@@ -349,7 +349,7 @@ class SOCOMD_falkor : bnae_falkor_camo1_virtual{
 };*/
 //Russian Gun
 class CUP_arifle_AK104_railed;
-class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
+class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
 	displayName="RU-AK-104 (Modified)";
 	hiddenSelections[]=
 		{
@@ -408,7 +408,7 @@ class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
 	aiDispersionCoefY=4;
 	aiDispersionCoefX=4;
 };
-class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
+class SOCOMD_SSO_AK_acc: SOCOMD_SSO_AK {
 	displayName="RU-AK-104 (Modified)";
 	class LinkedItems{
 		class LinkedItemsOptic{
@@ -426,7 +426,7 @@ class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
 	};
 };
 class CUP_arifle_AK74M_GL_railed_camo;
-class SOCOMD_RUS_AK_GL: CUP_arifle_AK74M_GL_railed_camo {
+class SOCOMD_SSO_AK_GL: CUP_arifle_AK74M_GL_railed_camo {
 	displayName="RU-AK-104-GL (Modified)";
 	magazines[]=
 	{
@@ -463,7 +463,7 @@ class SOCOMD_RUS_AK_GL: CUP_arifle_AK74M_GL_railed_camo {
 	aiDispersionCoefX=4;
 
 };
-class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
+class SOCOMD_SSO_AK_GL_acc: SOCOMD_SSO_AK_GL{
 	class LinkedItems{
 		class LinkedItemsOptic{
 			item = "CUP_optic_MARS_OD";
@@ -480,7 +480,7 @@ class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
 	};
 };
 class CUP_arifle_RPK74M_railed;
-class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
+class SOCOMD_SSO_RPK: CUP_arifle_RPK74M_railed{
 	displayName="RU-RPK-74m (Modified)";
 	hiddenSelections[] = {
 		"Camo1",
@@ -530,7 +530,7 @@ class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
 	aiDispersionCoefY=10;
 	aiDispersionCoefX=10;
 };
-class SOCOMD_RUS_RPK_acc : SOCOMD_RUS_RPK{
+class SOCOMD_SSO_RPK_acc : SOCOMD_SSO_RPK{
 	class LinkedItems{
 		class LinkedItemsOptic{
 			item = "CUP_optic_MARS_OD";
@@ -548,7 +548,7 @@ class SOCOMD_RUS_RPK_acc : SOCOMD_RUS_RPK{
 };
 
 class srifle_DMR_05_blk_F;
-class SOCOMD_RUS_Cyrus_acc : srifle_DMR_05_blk_F{
+class SOCOMD_SSO_Cyrus_acc : srifle_DMR_05_blk_F{
 	class LinkedItems{
 		class LinkedItemsOptic{
 			item = "optic_TWS";

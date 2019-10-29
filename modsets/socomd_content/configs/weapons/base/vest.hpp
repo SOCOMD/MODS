@@ -5,7 +5,7 @@ class Vest_Camo_Base: ItemCore
 	};
 class CUP_V_B_LBT_LBV_MCam;
 class CUP_V_B_Armatus_BB_MCam;
-class SOCOMD_RUS_Vest_light: CUP_V_B_Armatus_BB_MCam
+class SOCOMD_SSO_Vest_light: CUP_V_B_Armatus_BB_MCam
 	{
 		scope=2;
 		displayName="Russian Special Forces Vest";
@@ -45,7 +45,7 @@ class SOCOMD_RUS_Vest_light: CUP_V_B_Armatus_BB_MCam
 			};
 		};
 };
-class SOCOMD_RUS_Vest: CUP_V_B_LBT_LBV_MCam
+class SOCOMD_SSO_Vest: CUP_V_B_LBT_LBV_MCam
 	{
 		scope=2;
 		displayName="Russian Special Forces Vest";

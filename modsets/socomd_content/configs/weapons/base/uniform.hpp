@@ -1,13 +1,13 @@
 class UniformItem;
 
 class ADFU_G3_MC;
-class SOCOMD_RUS_SleevesDown : ADFU_G3_MC {
+class SOCOMD_SSO_SleevesDown : ADFU_G3_MC {
 	displayName = "Russian SSO";
 	author = "SOCOMD & ADFU";
 	class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="SOCOMD_RUS_Soldier_SleevesDown";
+			uniformClass="SOCOMD_SSO_Soldier_SleevesDown";
 			containerClass="Supply80";
 			mass=40;
 		};
@@ -22,4 +22,30 @@ class SOCOMD_Uniform_Snow_HoodUp : CUP_I_B_PMC_Unit_26 {
 class CUP_I_B_PMC_Unit_27;
 class SOCOMD_Uniform_Snow_HoodDown : CUP_I_B_PMC_Unit_27 {
 	displayName = "SOCOMD Snow Uniform (Hood Down)";
+};
+
+class CUP_U_CRYE_ATACSFG_Full;
+class SOCOMD_Vympel_Uniform_Full : CUP_U_CRYE_ATACSFG_Full {
+	scope = public;
+	displayName = "Vympel Sleeves Down";
+	
+	class ItemInfo: UniformItem {
+		uniformModel="-";
+		uniformClass="SOCOMD_Vympel_Soldier_Full";
+		containerClass="Supply80";
+		mass=40;
+	};
+};
+
+class CUP_U_CRYE_ATACSFG_Roll;
+class SOCOMD_Vympel_Uniform_Roll : CUP_U_CRYE_ATACSFG_Roll {
+	scope = public;
+	displayName = "Vympel Sleeves Up";
+
+	class ItemInfo: UniformItem {
+		uniformModel="-";
+		uniformClass="SOCOMD_Vympel_Soldier_Roll";
+		containerClass="Supply80";
+		mass=40;
+	};
 };
