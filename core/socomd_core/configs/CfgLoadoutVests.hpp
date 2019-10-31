@@ -19,7 +19,8 @@ class CfgLoadoutVests {
 			"SOCOMD_Sapper",
 			"SOCOMD_Recon",
 			"SOCOMD_AT",
-			"SOCOMD_Mortar"
+			"SOCOMD_Mortar",
+			"SOCOMD_Gunner"
 		};
 	};
 
