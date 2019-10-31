@@ -65,10 +65,10 @@ class SOCOMD_Vympel_Leader : SOCOMD_Vympel_Unarmed {
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";
 	backpack = "backpack_1_OD";
 
-	weapons[] = { "CUP_arifle_AK101_GL_railed" };
-	respawnWeapons[] = { "CUP_arifle_AK101_GL_railed" };
-	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"hlc_VOG25_AK" };
-	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"hlc_VOG25_AK" };
+	weapons[] = { "CUP_arifle_AK101_GL_railed","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_arifle_AK101_GL_railed","CUP_hgun_Makarov" };
+	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"hlc_VOG25_AK","hlc_VOG25_AK" };
+	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"CUP_30Rnd_556x45_AK" ,"hlc_VOG25_AK","hlc_VOG25_AK" };
 	linkedItems[] = { "CUP_V_B_Ciras_Olive3" ,"CUP_H_OpsCore_Spray_SF" ,"milgp_f_face_shield_shades_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
 	respawnLinkedItems[] = { "CUP_V_B_Ciras_Olive3" ,"CUP_H_OpsCore_Spray_SF" ,"milgp_f_face_shield_shades_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
 	items[] = { "ItemcTabHCam" ,"ACE_EarPlugs" ,"ACE_Flashlight_KSF1" ,"ACE_DAGR" ,"ACE_IR_Strobe_Item" ,"ACRE_PRC343" ,"ACE_quikclot" ,"ACE_quikclot" ,"ACE_quikclot" ,"ACE_quikclot" ,"ACE_quikclot" ,"ACE_apap" ,"ACE_apap" ,"ACE_morphine" ,"ACE_elasticBandage" ,"ACE_elasticBandage" ,"ACE_elasticBandage" ,"ACE_elasticBandage" ,"ACE_elasticBandage" ,"ACE_fieldDressing" ,"ACE_fieldDressing" ,"ACE_MapTools" };
@@ -86,8 +86,8 @@ class SOCOMD_Vympel_Operator : SOCOMD_Vympel_Unarmed {
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";
 	backpack = "backpack_OD";
 
-	weapons[] = { "CUP_arifle_AK104_railed" };
-	respawnWeapons[] = { "CUP_arifle_AK104_railed" };
+	weapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
 	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" };
 	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" };
 	linkedItems[] = { "CUP_V_B_Armatus_BB_OD" ,"CUP_H_OpsCore_Spray_NoHS" ,"milgp_f_face_shield_tactical_shemagh_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
@@ -105,10 +105,10 @@ class SOCOMD_Vympel_Medic : SOCOMD_Vympel_Unarmed {
 	vehicleclass = "Man";
 
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";
-	backpack = "backpack_OD";
+	backpack = "KIT_BAG_od";
 
-	weapons[] = { "CUP_arifle_AK104_railed" };
-	respawnWeapons[] = { "CUP_arifle_AK104_railed" };
+	weapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
 	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" };
 	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" };
 	linkedItems[] = { "CUP_V_B_Ciras_Olive" ,"CUP_H_OpsCore_Spray" ,"FGN_CAG_Tactical_clr_Shemagh_rgr" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
@@ -126,10 +126,10 @@ class SOCOMD_Vympel_MachineGunner: SOCOMD_Vympel_Unarmed {
 	vehicleclass = "Man";
 
 	uniformClass = "SOCOMD_Vympel_Uniform_Roll";
-	backpack = "backpack_OD";
+	backpack = "backpack_2_OD";
 
-	weapons[] = { "CUP_arifle_RPK74M_top_rail" };
-	respawnWeapons[] = { "CUP_arifle_RPK74M_top_rail" };
+	weapons[] = { "CUP_arifle_RPK74M_top_rail","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_arifle_RPK74M_top_rail","CUP_hgun_Makarov" };
 	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" };
 	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" ,"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M" };
 	linkedItems[] = { "CUP_V_B_Armatus_BB_OD" ,"CUP_H_OpsCore_Spray" ,"milgp_f_face_shield_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
@@ -149,8 +149,8 @@ class SOCOMD_Vympel_Sapper : SOCOMD_Vympel_Unarmed {
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";
 	backpack = "backpack_OD";
 
-	weapons[] = { "CUP_arifle_AK104_railed" };
-	respawnWeapons[] = { "CUP_arifle_AK104_railed" };
+	weapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_arifle_AK104_railed","CUP_hgun_Makarov" };
 	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" };
 	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_HandGrenade_M67" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_30Rnd_762x39_AK103_bakelite_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" };
 	linkedItems[] = { "CUP_V_B_Armatus_OD" ,"CUP_H_OpsCore_Spray" ,"milgp_f_face_shield_goggles_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
@@ -170,8 +170,8 @@ class SOCOMD_Vympel_Marksman : SOCOMD_Vympel_Unarmed {
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";
 	backpack = "backpack_1_OD";
 
-	weapons[] = { "CUP_srifle_SVD_wdl_top_rail" };
-	respawnWeapons[] = { "CUP_srifle_SVD_wdl_top_rail" };
+	weapons[] = { "CUP_srifle_SVD_wdl_top_rail","CUP_hgun_Makarov" };
+	respawnWeapons[] = { "CUP_srifle_SVD_wdl_top_rail","CUP_hgun_Makarov"};
 	magazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_10Rnd_762x54_SVD_M" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" };
 	respawnMagazines[] = { "ACE_Chemlight_HiRed" ,"ACE_Chemlight_HiRed" ,"murshun_cigs_cigpack" ,"murshun_cigs_lighter" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_10Rnd_762x54_SVD_M" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"SmokeShell" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_8Rnd_9x18_Makarov_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" ,"CUP_10Rnd_762x54_SVD_M" };
 	linkedItems[] = { "CUP_V_B_Armatus_OD" ,"CUP_H_OpsCore_Spray_NoHS" ,"milgp_f_face_shield_shemagh_RGR" ,"ItemMap" ,"ItemAndroid" ,"ItemRadioAcreFlagged" ,"ItemCompass" ,"ItemWatch" };
