@@ -15,7 +15,6 @@ class Bicycle_Horn : CarHorn {
 };
 
 class ACRE_BaseRadio;
-class CBA_MiscItem_ItemInfo;
 class ACRE_PRC117F: ACRE_BaseRadio {
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=120; // 120 Default

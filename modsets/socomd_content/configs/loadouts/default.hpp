@@ -2,11 +2,15 @@
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2)
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 3) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
+	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -69,6 +73,9 @@ class Inventory_E {};
 ////////////////////////////////////////////////////////////////////////////////
 // Sniper
 
+class SOCOMD_Uniforms {
+	Snow = "SOCOMD_Uniform_Snow_HoodDown";
+};
 
 class SOCOMD_Sniper {
 	class Vest {
@@ -124,6 +131,51 @@ class SOCOMD_AT {
 	};
 };
 
+class SOCOMD_Sapper {
+	primary		    = ITEM_PRIMARY_SAPPER;
+	secondary		= ITEM_SECONDARY_SAPPER;
+	handgun		    = ITEM_HANDGUN_SAPPER;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SAPPER;
+	headgear		= ITEM_HEADGEAR_SAPPER;
+	binocular		= "";
+	gps			    = "ItemMicroDAGR";
+	maxOptic		= "2x";
+
+	class Uniform {
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_SAPPER;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+			LOADOUT_ITEM(CUP_6Rnd_B_Beneli_74Pellets, 5)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_SAPPER;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_DefusalKit, 1)
+			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
+			LOADOUT_ITEM(ACE_wirecutter, 1)
+			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+			LOADOUT_ITEM(MineDetector, 1)
+			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
+			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
+			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
+			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+			LOADOUT_ITEM(SOCOMD_Shotgun, 1)
+		};
+	};
+};
 
 class SOCOMD_Medic;  /* {
 	class Backpack { 
@@ -469,7 +521,7 @@ class TAGE_Sniper
 ///Russian SSO (DMOCOS)
 
 class SOCOMD_Commander;
-class SOCOMD_RUS_Commander: SOCOMD_Commander{
+class SOCOMD_SSO_Commander: SOCOMD_Commander{
 	primary			= Item_RUSSIAN_PRIMARY_Troopleader;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -510,7 +562,7 @@ class SOCOMD_RUS_Commander: SOCOMD_Commander{
 };
 
 class SOCOMD_Leader;
-class SOCOMD_RUS_Leader: SOCOMD_Leader{
+class SOCOMD_SSO_Leader: SOCOMD_Leader{
 	primary			= Item_RUSSIAN_PRIMARY_PatrolLeader;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -549,7 +601,7 @@ class SOCOMD_RUS_Leader: SOCOMD_Leader{
 };
 
 class SOCOMD_Rifleman;
-class SOCOMD_RUS_Rifleman: SOCOMD_Rifleman {
+class SOCOMD_SSO_Rifleman: SOCOMD_Rifleman {
 	primary			= Item_RUSSIAN_PRIMARY_Rifleman;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -581,7 +633,7 @@ class SOCOMD_RUS_Rifleman: SOCOMD_Rifleman {
 };
 
 class SOCOMD_marksman;
-class SOCOMD_RUS_marksman: SOCOMD_marksman {
+class SOCOMD_SSO_marksman: SOCOMD_marksman {
 	primary			= Item_RUSSIAN_PRIMARY_Marksman;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -613,8 +665,7 @@ class SOCOMD_RUS_marksman: SOCOMD_marksman {
 	};
 };
 
-class SOCOMD_Sapper;
-class SOCOMD_RUS_Sapper: SOCOMD_Sapper {
+class SOCOMD_SSO_Sapper: SOCOMD_Sapper {
 	primary			= Item_RUSSIAN_PRIMARY_Sapper;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -657,7 +708,7 @@ class SOCOMD_RUS_Sapper: SOCOMD_Sapper {
 };
 
 class SOCOMD_MachineGunner;
-class SOCOMD_RUS_MachineGunner: SOCOMD_MachineGunner {
+class SOCOMD_SSO_MachineGunner: SOCOMD_MachineGunner {
 	primary			= Item_RUSSIAN_PRIMARY_MachineGunner;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -690,7 +741,7 @@ class SOCOMD_RUS_MachineGunner: SOCOMD_MachineGunner {
 	};
 };
 
-class SOCOMD_RUS_Medic: SOCOMD_Medic {
+class SOCOMD_SSO_Medic: SOCOMD_Medic {
 	primary			= Item_RUSSIAN_PRIMARY_Medic;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_RUSSIAN_HANDGUN;
@@ -732,7 +783,7 @@ class SOCOMD_RUS_Medic: SOCOMD_Medic {
 	};
 };
 
-class SOCOMD_RUS_AT: SOCOMD_AT {
+class SOCOMD_SSO_AT: SOCOMD_AT {
 	primary			= Item_RUSSIAN_PRIMARY_AT;
 	secondary		= ITEM_RUSSIAN_SECONDARY_AT;
 	handgun			= ITEM_RUSSIAN_HANDGUN;

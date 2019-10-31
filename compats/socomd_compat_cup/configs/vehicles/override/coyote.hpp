@@ -109,24 +109,20 @@ class CUP_BAF_Coyote_BASE_D : Car_F {
 		class Intercom_1 {
 			displayName = "Crew Intercom";
 			shortName = "Crew";
-			allowedPositions[] = {"crew"};
+			allowedPositions[] = {"driver", "commander", "gunner"};
 			limitedPositions[] = {};
 			numLimitedPositions = 0;
-			masterPositions[] = {"commander"};
+			masterPositions[] = {"driver"};
 			connectedByDefault = 1;
 		};
 	};
 
 	class AcreRacks {
 		class Rack_1 {
-			allowedPositions[] = {"crew"};
-			componentName = "ACRE_VRC103";
-			defaultComponents[] = {};
-			defaultPositions[] = {};
+			allowedPositions[] = {"driver", "commander", "gunner"};
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			intercom[] = {};
-			isRadioRemovable = 0;
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};

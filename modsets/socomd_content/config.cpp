@@ -1,3 +1,5 @@
+#include "\socomd_content\settings\inventories.hpp"
+#include "\socomd_core\predefined.hpp"
 #include "predefined.hpp"
 
 class CfgPatches  {
@@ -15,6 +17,7 @@ class CfgPatches  {
 			"cup_airvehicles_ch47",
 			"cup_airvehicles_uh60",
 			"cup_wheeledvehicles_mtvr",
+			"CUP_Creatures_Military_USArmy",
 
 			//SMA Requirments
 			"sma_weapons",
@@ -30,19 +33,28 @@ class CfgPatches  {
 
 		units[] = {
 			"SOCOMD_SHIP_B",
-			"SOCOMD_QStore_B",
 			"SOCOMD_QStore_TAG",
 			"SOCOMD_QStore_RUS",
 			"SOCOMD_Supply_Sniper",
-			"SOCOMD_RUS_soldier_Rifleman",
-			"SOCOMD_RUS_soldier_Machinegunner",
-			"SOCOMD_RUS_soldier_Autorifle",
-			"SOCOMD_RUS_soldier_Leader",
-			"SOCOMD_RUS_soldier_Sniper",
-			"SOCOMD_RUS_soldier_Rifleman_Night",
-			"SOCOMD_RUS_soldier_Machinegunner_Night",
-			"SOCOMD_RUS_soldier_Autorifle_Night",
-			"SOCOMD_RUS_soldier_Leader_Night",
+
+			"SOCOMD_SSO_soldier_Rifleman",
+			"SOCOMD_SSO_soldier_Machinegunner",
+			"SOCOMD_SSO_soldier_Autorifle",
+			"SOCOMD_SSO_soldier_Leader",
+			"SOCOMD_SSO_soldier_Sniper",
+			"SOCOMD_SSO_soldier_Rifleman_Night",
+			"SOCOMD_SSO_soldier_Machinegunner_Night",
+			"SOCOMD_SSO_soldier_Autorifle_Night",
+			"SOCOMD_SSO_soldier_Leader_Night",
+
+			"SOCOMD_Vympel_Unarmed",
+			"SOCOMD_Vympel_Leader",
+			"SOCOMD_Vympel_Operator",
+			"SOCOMD_Vympel_Medic",
+			"SOCOMD_Vympel_MachineGunner",
+			"SOCOMD_Vympel_Sapper",
+			"SOCOMD_Vympel_Marksman",
+
 			"V12_KTM_SOCOMD",
 			"SOCOMD_LR_ATV",
 			"tut_R22"
@@ -59,7 +71,6 @@ class CfgPatches  {
 };
 
 #include "configs\CfgEditorCategories.hpp"
-#include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgMagazines.hpp"
 #include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
@@ -71,3 +82,5 @@ class CfgPatches  {
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgFunctions.hpp"
+#include "configs\CfgMuzzleslot.hpp"
+#include "configs\CfgWorldType.hpp"

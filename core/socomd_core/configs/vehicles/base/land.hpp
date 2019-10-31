@@ -36,13 +36,9 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
-			defaultComponents[] = {}; \
-			defaultPositions[] = {}; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			intercom[] = {}; \
-			isRadioRemovable = 0; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -86,13 +82,9 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
-			defaultComponents[] = {}; \
-			defaultPositions[] = {}; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			intercom[] = {}; \
-			isRadioRemovable = 0; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -137,13 +129,9 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
-			defaultComponents[] = {}; \
-			defaultPositions[] = {}; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			intercom[] = {}; \
-			isRadioRemovable = 0; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -187,13 +175,9 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	class AcreRacks { \
 		class Rack_1 { \
 			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC103"; \
-			defaultComponents[] = {}; \
-			defaultPositions[] = {}; \
+			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
-			intercom[] = {}; \
-			isRadioRemovable = 0; \
-			mountedRadio = "ACRE_PRC117F"; \
+			mountedRadio = "ACRE_PRC152"; \
 			shortName = "Dash"; \
 		}; \
 	}; \
@@ -312,24 +296,20 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 		class Intercom_1 {
 			displayName = "Crew Intercom";
 			shortName = "Crew";
-			allowedPositions[] = {"crew"};
+			allowedPositions[] = {"driver", "commander", "gunner"};
 			limitedPositions[] = {};
 			numLimitedPositions = 0;
-			masterPositions[] = {"commander"};
+			masterPositions[] = {"driver"};
 			connectedByDefault = 1;
 		};
 	};
 
 	class AcreRacks {
 		class Rack_1 {
-			allowedPositions[] = {"crew"};
-			componentName = "ACRE_VRC103";
-			defaultComponents[] = {};
-			defaultPositions[] = {};
+			allowedPositions[] = {"driver", "commander", "gunner"};
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			intercom[] = {"Intercom_1"};
-			isRadioRemovable = 0;
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};
@@ -602,24 +582,20 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 		class Intercom_1 {
 			displayName = "Crew Intercom";
 			shortName = "Crew";
-			allowedPositions[] = {"crew"};
+			allowedPositions[] = {"driver", "commander", "gunner"};
 			limitedPositions[] = {};
 			numLimitedPositions = 0;
-			masterPositions[] = {"commander"};
+			masterPositions[] = {"driver"};
 			connectedByDefault = 1;
 		};
 	};
 
 	class AcreRacks {
 		class Rack_1 {
-			allowedPositions[] = {"crew"};
-			componentName = "ACRE_VRC103";
-			defaultComponents[] = {};
-			defaultPositions[] = {};
+			allowedPositions[] = {"driver", "commander", "gunner"};
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			intercom[] = {};
-			isRadioRemovable = 0;
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};

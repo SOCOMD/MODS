@@ -4,6 +4,7 @@ class CfgLoadoutWeapons {
 	class SMA_MK18MOEBLK_SM : Rifle_556 {};
 	class SMA_AUG_A3_F : Rifle_556 {};
 	class SMA_HK416CUSTOMCQBvfgB : Rifle_556 {};
+	class S_145_KAG_MAG : Rifle_556 {};
 	//TAN
 	class SMA_MK18MOETAN_SM : Rifle_556 {};
 	class SMA_AUG_A3_KRYPT_F : Rifle_556 {};
@@ -26,6 +27,21 @@ class CfgLoadoutWeapons {
 	class SMA_MK18OD_GL_SM : RifleGL_556 {};
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
+
+	class Rifle_556_Camo;
+	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_MMGAmmo",
+			"SOCOMD_Mortar"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
+		};
+	};
 	
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
@@ -63,8 +79,9 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
-	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
-	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};

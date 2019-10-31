@@ -6,11 +6,15 @@
 // COMMON SOCOMD LOADOUT ITEMS
 
 #define LOADOUT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2)
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 3) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
+	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -49,11 +53,14 @@
 	LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
-	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2)
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
+	LOADOUT_ITEM(ACE_morphine, 1) \
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_apap, 4) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 0) 
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -66,18 +73,22 @@
 	LOADOUT_ITEM(CUP_Javelin_M, 1)
 
 ////////////////////////////////////////////////////////////////////////////////
+// Uniforms
+
+class SOCOMD_Uniforms {
+	Arid = "SOCOMD_Uniform_SleevesDown";
+	Woodland = "SOCOMD_Uniform_AMCU_SleevesDown";
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // Unarmed
 
 class SOCOMD_Unarmed {
-	displayName = "Unarmed";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	headgear  = "AU_02_780000_v1";
 	binocular = "";
 	maxOptic  = "1x";
 
 	class Uniform {
-		type = SOCOMD_Item_Uniform_Rifleman;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -88,9 +99,6 @@ class SOCOMD_Unarmed {
 // Commander
 
 class SOCOMD_Commander {
-	displayName = "Commander";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary			= ITEM_PRIMARY_TROOPLEADER;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= ITEM_HANDGUN_TROOPLEADER;
@@ -101,7 +109,6 @@ class SOCOMD_Commander {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_TROOPLEADER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -138,9 +145,6 @@ class SOCOMD_Commander {
 // Leader
 
 class SOCOMD_Leader {
-	displayName = "Leader";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_PATROLLEADER;
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
 	handgun		    = ITEM_HANDGUN_PATROLLEADER;
@@ -151,7 +155,6 @@ class SOCOMD_Leader {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_PATROLLEADER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -188,9 +191,6 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 // Rifleman
 
 class SOCOMD_Rifleman {
-	displayName = "Rifleman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -201,7 +201,6 @@ class SOCOMD_Rifleman {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -227,9 +226,6 @@ class SOCOMD_Rifleman {
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 class SOCOMD_Marksman {
-	displayName = "Marksman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun		    = ITEM_HANDGUN_MARKSMAN;
@@ -240,7 +236,6 @@ class SOCOMD_Marksman {
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MARKSMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -266,9 +261,6 @@ class SOCOMD_Marksman {
 // Sapper
 
 class SOCOMD_Sapper {
-	displayName = "Sapper";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_SAPPER;
 	secondary		= ITEM_SECONDARY_SAPPER;
 	handgun		    = ITEM_HANDGUN_SAPPER;
@@ -279,7 +271,6 @@ class SOCOMD_Sapper {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_SAPPER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -317,9 +308,6 @@ class SOCOMD_Sapper {
 // Machine Gunner
 
 class SOCOMD_MachineGunner {
-	displayName = "Machine Gunner";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_MACHINEGUNNER;
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
 	handgun		    = ITEM_HANDGUN_MACHINEGUNNER;
@@ -330,7 +318,6 @@ class SOCOMD_MachineGunner {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MACHINEGUNNER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -358,9 +345,6 @@ class SOCOMD_MachineGunner {
 // Medic
 
 class SOCOMD_Medic {
-	displayName = "Medic";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_MEDIC;
 	secondary		= ITEM_SECONDARY_MEDIC;
 	handgun		    = ITEM_HANDGUN_MEDIC;
@@ -371,7 +355,6 @@ class SOCOMD_Medic {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_MEDIC;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -390,16 +373,32 @@ class SOCOMD_Medic {
 		type = ITEM_BACKPACK_MEDIC;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACE_surgicalKit, 8)
-			LOADOUT_ITEM(ACE_fieldDressing, 25)
-			LOADOUT_ITEM(ACE_elasticBandage, 20)
-			LOADOUT_ITEM(ACE_packingBandage, 25)
-			LOADOUT_ITEM(ACE_quikclot, 25)
-			LOADOUT_ITEM(ACE_epinephrine, 10)
-			LOADOUT_ITEM(ACE_morphine, 10)
-			LOADOUT_ITEM(ACE_tourniquet, 6)
-			LOADOUT_ITEM(ACE_salineIV_500, 6)
-			LOADOUT_ITEM(ACE_personalAidKit, 2)
+			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
+			LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
+			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
+			LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
+			LOADOUT_ITEM(ACE_personalAidKit, 0)			//Remove
+			LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
+			LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
+			LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
+			LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+			LOADOUT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
+			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
+			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
+			LOADOUT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
+			LOADOUT_ITEM(ACE_bloodIV_500, 5)			//Blood
+			LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
+			LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+			LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 		};
 	};
 };
@@ -408,9 +407,6 @@ class SOCOMD_Medic {
 // LAT
 
 class SOCOMD_AT {
-	displayName = "Anti-tank";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_AT;
 	secondary		= ITEM_SECONDARY_MAT;
 	handgun		    = ITEM_HANDGUN_AT;
@@ -421,7 +417,6 @@ class SOCOMD_AT {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_AT;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -449,9 +444,6 @@ class SOCOMD_AT {
 // Sniper
 
 class SOCOMD_Sniper {
-	displayName = "Sniper";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary	        = ITEM_PRIMARY_SNIPER;
 	secondary		= ITEM_SECONDARY_SNIPER;
 	handgun		    = ITEM_HANDGUN_SNIPER;
@@ -463,7 +455,6 @@ class SOCOMD_Sniper {
 
 
 	class Uniform {
-		type = ITEM_UNIFORM_SNIPER;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -492,9 +483,6 @@ class SOCOMD_Sniper {
 // Recon
 
 class SOCOMD_Recon {
-	displayName = "Recon";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_RECON;
 	secondary		= ITEM_SECONDARY_RECON;
 	handgun		    = ITEM_HANDGUN_RECON;
@@ -505,7 +493,6 @@ class SOCOMD_Recon {
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
-		type = SOCOMD_Uniform_SleevesDown_Recon;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -545,9 +532,6 @@ class SOCOMD_Recon {
 // MORTAR
 
 class SOCOMD_Mortar {
-	displayName = "Mortar";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun		    = ITEM_HANDGUN_RIFLEMAN;
@@ -558,7 +542,6 @@ class SOCOMD_Mortar {
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -585,9 +568,6 @@ class SOCOMD_Mortar {
 // Pilot
 
 class SOCOMD_Pilot {
-	displayName = "Pilot";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
     primary 		= ITEM_PRIMARY_PILOT;
     secondary 		= ITEM_SECONDARY_PILOT;
 	handgun 		= ITEM_HANDGUN_PILOT;
@@ -598,7 +578,6 @@ class SOCOMD_Pilot {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_PILOT;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -627,9 +606,6 @@ class SOCOMD_Pilot {
 // Crewman
 
 class SOCOMD_Crewman {
-	displayName = "Crewman";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
 	primary 		= ITEM_PRIMARY_CREWMAN;
     secondary 		= ITEM_SECONDARY_CREWMAN;
 	handgun 		= ITEM_HANDGUN_CREWMAN;
@@ -640,7 +616,6 @@ class SOCOMD_Crewman {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = ITEM_UNIFORM_CREWMAN;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -661,57 +636,6 @@ class SOCOMD_Crewman {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
-// PJ
-
-class SOCOMD_PJ {
-	displayName = "PJ";
-	displayIcon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-
-	primary 		= ITEM_PRIMARY_PJ;
-    secondary 		= ITEM_SECONDARY_PJ;
-	handgun 		= ITEM_HANDGUN_PJ;
-	handgunMagazine = ITEM_HANDGUN_MAGAINE_PJ;
-	headgear 		= ITEM_HEADGEAR_PJ;
-	binocular 		= "";
-	gps 			= "ItemAndroid";
-	maxOptic		= "1x";
-
-	class Uniform {
-		type = ITEM_UNIFORM_PJ;
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_PJ;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC152, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
-		};
-	};
-
-	class Backpack {
-		type = ITEM_BACKPACK_PJ;
-		class Inventory	{
-			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC117F, 1)
-			LOADOUT_ITEM(ACE_surgicalKit, 8)
-			LOADOUT_ITEM(ACE_fieldDressing, 25)
-			LOADOUT_ITEM(ACE_elasticBandage, 20)
-			LOADOUT_ITEM(ACE_packingBandage, 25)
-			LOADOUT_ITEM(ACE_quikclot, 25)
-			LOADOUT_ITEM(ACE_epinephrine, 10)
-			LOADOUT_ITEM(ACE_morphine, 10)
-			LOADOUT_ITEM(ACE_tourniquet, 6)
-			LOADOUT_ITEM(ACE_salineIV_500, 6)
-			LOADOUT_ITEM(ACE_personalAidKit, 2)
 		};
 	};
 };

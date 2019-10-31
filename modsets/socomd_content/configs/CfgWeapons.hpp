@@ -1,6 +1,12 @@
+class mode_semiauto;
 class CfgWeapons {
 
-	class RifleCore;
+	class Rifle;
+	class RifleCore; 
+	class Rifle_Base_F: Rifle {
+		class WeaponSlotsInfo;
+    	class GunParticles;
+	};
 	class ItemCore;
 	class CBA_MiscItem;
 	class CBA_MiscItem_ItemInfo;

@@ -41,9 +41,69 @@ class SMA_SFLIGHT_TOPM4: acc_flashlight {
 		};
 	};
 };
-
+class S_WMLX: acc_flashlight {
+	scope=2;
+	dlc="Troy_4A5_Acc";
+	displayName="WMLX";
+	model="M4A5_Troy_Acc\mesh\wmlxdbal.p3d";
+	class ItemInfo: InventoryFlashLightItem_Base_F {
+		mass=4;
+		class FlashLight {
+			color[]={7000,7500,10000};
+			ambient[]={6,9,9};
+			intensity=2.5;
+			size=1;
+			innerAngle=20;
+			outerAngle=80;
+			coneFadeCoef=10;
+			position="light_dir";
+			direction="light";
+			useFlare=1;
+			flareSize=1.5;
+			flareMaxDistance="600.0f";
+			dayLight=1;
+			class Attenuation
+			{
+				start=0.5;
+				constant=0;
+				linear=0;
+				quadratic=1;
+				hardLimitStart=200;
+				hardLimitEnd=300;
+			};
+			scale[]={0};
+		};
+	};
+};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
+class S_M4A5_base;
+class S_145_KAG_MAG;
+class S_145_MOD_MAG_Camo;
+class CUP_sgun_M1014_Entry_vfg;
+class CUP_sgun_M1014_base: Rifle_Base_F {
+		modes[] = {"Single","Single_close","Single_far"};
+		class single: mode_semiauto
+		{
+			sounds[]=
+			{
+				"standardsound",
+				"silencedsound"
+			};
+			class basesoundmodetype;
+			class standardsound: basesoundmodetype
+			{
+				soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
+			};
+			class silencedsound: basesoundmodetype
+			{
+				soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
+			};
+		};
+};
+class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
+	displayname = "SOCOMD Benelli M4 Entry";
+};
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 	hiddenSelections[]=
 		{
@@ -60,6 +120,52 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 			"\SMA_M4\data\metal_diffuse_red_co.paa"
 		};
 }; 
+/*
+class hlc_HK416_base : Rifle_Base_F {};
+class hlc_rifle_416D145 : hlc_HK416_base {};
+class S_M4A5_base : hlc_rifle_416D145 {
+	class WeaponSlotsInfo
+	{
+		class MuzzleSlot
+		{
+			compatibleItems[]=
+			{
+				"sma_gemtech_one_blk",
+				"sma_gemtech_one_des",
+				"sma_gemtech_one_wdl",
+				"SMA_Silencer_556",
+				"SMA_Silencer_556_Bronze",
+				"SMA_Silencer_556_Silver",
+				"SMA_FLASHHIDER1",
+				"SMA_FLASHHIDER2",
+				"SMA_supp2btan_556",
+				"SMA_supp1tan_556",
+				"SMA_supp1b_556",
+				"SMA_supp2b_556",
+				"SMA_supp1BB_556",
+				"SMA_supp1BOD_556",
+				"SMA_supp1BT_556",
+				"SMA_supp1Bwht_556",
+				"SMA_supp1TB_556",
+				"SMA_supp1TOD_556",
+				"SMA_supp1TT_556",
+				"SMA_supp1TW_556",
+				"SMA_supp2BOD_556",
+				"SMA_supp2BT_556",
+				"SMA_supp2BW_556",
+				"SMA_supp2T_556",
+				"SMA_supp2TB_556",
+				"SMA_supp2TOD_556",
+				"SMA_supp2TWH_556",
+				"SMA_supp2smaB_556",
+				"SMA_supp2smaT_556",
+				"SMA_rotex_blk",
+				"SMA_rotex_tan",
+				"SMA_rotex_gry"
+			};
+		};
+	};
+};*/
 
 //Default
 class SMA_MK18MOEBLK_SM;
@@ -91,13 +197,18 @@ class SMA_HK416GLCQB_ODP;
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_HK417_16in;
 class SMA_HK417vfg;
-
-class srifle_EBR_F;
-class SPARTAN_EBR_black_F : srifle_EBR_F {
+class CUP_srifle_M110 : Rifle_Base_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
+	displayName = "SR-25";
 };
-class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
-	magazineWell[] = {"CBA_762x51_HK417"};
+class CUP_srifle_m110_kac_black: CUP_srifle_M110 {
+	displayName = "SR-25 Black";
+};
+class CUP_srifle_m110_kac: CUP_srifle_M110 {
+	displayName = "SR-25";
+};
+class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
+	displayName = "SR-25 Woodland";
 };
 
 //Machine Gun 556
@@ -131,6 +242,9 @@ class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
 	ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
 	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
+
+//MP5
+class CUP_smg_MP5A5;
 
 //Rifle 300WM
 class hlc_AWC_base;
@@ -205,7 +319,7 @@ class SOCOMD_falkor : bnae_falkor_camo1_virtual{
 };*/
 //Russian Gun
 class CUP_arifle_AK104_railed;
-class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
+class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
 	displayName="RU-AK-104 (Modified)";
 	hiddenSelections[]=
 		{
@@ -264,15 +378,15 @@ class SOCOMD_RUS_AK: CUP_arifle_AK104_railed {
 	aiDispersionCoefY=4;
 	aiDispersionCoefX=4;
 };
-class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
+class SOCOMD_SSO_AK_acc: SOCOMD_SSO_AK {
 	displayName="RU-AK-104 (Modified)";
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
@@ -281,26 +395,9 @@ class SOCOMD_RUS_AK_acc: SOCOMD_RUS_AK {
 		};
 	};
 };
-class CUP_arifle_AK103_GL_railed;
-class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
+class CUP_arifle_AK74M_GL_railed_camo;
+class SOCOMD_SSO_AK_GL: CUP_arifle_AK74M_GL_railed_camo {
 	displayName="RU-AK-104-GL (Modified)";
-	hiddenSelections[] = {
-		"Camo1",
-		"Camo2",
-		"Camo3",
-		"CamoRail",
-		"CamoGL1",
-		"CamoGL2"};
-	hiddenSelectionsTextures[]=
-	{
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_body_camo_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_stock_camo_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\ak74m_magazine_camo_co.paa",
-		"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_body_co.paa",
-		"CUP\Weapons\CUP_Weapons_AK\Data\gp25_sight_co.paa"
-	};
-
 	magazines[]=
 	{
 		"CUP_30Rnd_545x39_AK74M_camo_M",
@@ -336,24 +433,24 @@ class SOCOMD_RUS_AK_GL: CUP_arifle_AK103_GL_railed {
 	aiDispersionCoefX=4;
 
 };
-class SOCOMD_RUS_AK_GL_acc: SOCOMD_RUS_AK_GL{
+class SOCOMD_SSO_AK_GL_acc: SOCOMD_SSO_AK_GL{
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
-			item = "CUP_muzzle_Bizon";
+			item = "CUP_muzzle_TGPA_woodland";
 			slot = "CUP_EastMuzzleSlotAK";
 		};
 	};
 };
 class CUP_arifle_RPK74M_railed;
-class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
+class SOCOMD_SSO_RPK: CUP_arifle_RPK74M_railed{
 	displayName="RU-RPK-74m (Modified)";
 	hiddenSelections[] = {
 		"Camo1",
@@ -403,25 +500,25 @@ class SOCOMD_RUS_RPK: CUP_arifle_RPK74M_railed{
 	aiDispersionCoefY=10;
 	aiDispersionCoefX=10;
 };
-class SOCOMD_RUS_RPK_acc : SOCOMD_RUS_RPK{
+class SOCOMD_SSO_RPK_acc : SOCOMD_SSO_RPK{
 	class LinkedItems{
 		class LinkedItemsOptic{
-			item = "CUP_optic_MicroT1_low_OD";
+			item = "CUP_optic_MARS_OD";
 			slot = "CUP_PicatinnySideMountAK";
 		};
 		class LinkedItemsAcc{
-			item = "RH_peq15b";
+			item = "CUP_acc_ANPEQ_15_Flashlight_OD_L";
 			slot = "CUP_PicatinnyTopMountAK";
 		};
 		class LinkedItemsMuzzle{
-			item = "CUP_muzzle_TGPA";
+			item = "CUP_muzzle_TGPA_woodland";
 			slot = "CUP_EastMuzzleSlotAK";
 		};
 	};
 };
 
 class srifle_DMR_05_blk_F;
-class SOCOMD_RUS_Cyrus_acc : srifle_DMR_05_blk_F{
+class SOCOMD_SSO_Cyrus_acc : srifle_DMR_05_blk_F{
 	class LinkedItems{
 		class LinkedItemsOptic{
 			item = "optic_TWS";
@@ -436,4 +533,19 @@ class SOCOMD_RUS_Cyrus_acc : srifle_DMR_05_blk_F{
 			slot = "MuzzleSlot";
 		};
 	};
+};
+
+class CUP_lmg_Pecheneg_woodland;
+class SOCOMD_pkp: CUP_lmg_Pecheneg_woodland{
+
+};
+class SOCOMD_pkp_acc: SOCOMD_pkp{
+	class LinkedItemsOptic{
+			item = "CUP_optic_1p63";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_snds_KZRZP_PK_woodland";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
 };

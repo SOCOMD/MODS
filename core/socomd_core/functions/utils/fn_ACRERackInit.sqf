@@ -14,13 +14,14 @@ if(_vehicle == objNull) exitWith {};
 
 	waitUntil {
 		_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
-		_valid = (_radioId != "" && _radioId != "ACRE_PRC117F");
+		_valid = (_radioId != "" && _radioId != "ACRE_PRC152");
 		_valid
 	};
 
 	_radioId = [_rackId] call acre_api_fnc_getMountedRackRadio;
 	if(_radioId == "") exitWith {};
 
-	[_radioId, 2] call acre_api_fnc_setRadioChannel;
-	[_radioId, 0.6] call acre_sys_radio_fnc_setRadioVolume;
+	[_radioId, 1] call acre_api_fnc_setRadioChannel;
+	[_radioId, 0.7] call acre_sys_radio_fnc_setRadioVolume;
+	[_radioId, "setState", ["audioPath", "INTAUDIO"]] call acre_sys_data_fnc_dataEvent;
 };

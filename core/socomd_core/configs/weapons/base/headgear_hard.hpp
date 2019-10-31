@@ -13,13 +13,12 @@ class ItemInfo : ItemInfo { \
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
 
 #define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0;\
-ace_hearing_protection = 1;\
-advanced_peltors_protection = 1;
+ace_hearing_protection = 1;
+
 #define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
 ace_hearing_protection = 0.5;
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;\
-advanced_peltors_protection = 1;
+ace_hearing_protection = 0.4;
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -39,6 +38,12 @@ class H_CrewHelmetHeli_O : H_CrewHelmetHeli_B {
 	HEARING_PROTECTION_VICCREW
 };
 
+class H_HelmetCrew_B;
+class H_HelmetCrew_I :H_HelmetCrew_B {
+	class ItemInfo;
+	HEARING_PROTECTION_VICCREW
+};
+
 class ADFU_H_OpsCore_02 : ItemCore {
 	class ItemInfo;
 };
@@ -46,7 +51,7 @@ class ADFU_H_OpsCore_02 : ItemCore {
 class ADFU_H_OpsCore_03 : ItemCore {
 	class ItemInfo;
 	HEARING_PROTECTION_PELTOR
-}
+};
 class ADFU_H_OpsCore_08 : ItemCore {
 	class ItemInfo;
 	HEARING_PROTECTION_PELTOR
@@ -556,6 +561,72 @@ class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
+class ADFU_H_Airframe_02_AMCU: ADFU_H_Airframe_Cover_02 {
+	scope = public;
+	scopeArsenal = 2;
+	displayName="Airframe (AMCU)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]= {
+		"",
+		"",
+		"socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",
+		"",
+		"",
+		"",
+		"",
+		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
+		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+	};
+};
+
+class ADFU_H_Airframe_03_AMCU: ADFU_H_Airframe_Cover_03 {
+	scope = public;
+	scopeArsenal = 2;
+	displayName="Airframe (AMCU)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+
+	hiddenSelectionsTextures[]= {
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"",
+		"socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",
+		"",
+		"",
+		"",
+		"",
+		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
+		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+	};
+};
+
+
 //////////////////////////////////////////////////////////////////////
 // SOLS Overrides
 
@@ -572,5 +643,12 @@ class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
 	scope = public;
 	displayName = "Heli-Crew Helmet";
 
+	HELMET_SOLS_ARMOR
+};
+
+class SOCOMD_Ground_Crew_helmet : H_HelmetCrew_I {
+	author = AUTHOR_STR;
+	scope = public;
+	displayName = "Armour Crew Helmet";
 	HELMET_SOLS_ARMOR
 };

@@ -1,5 +1,4 @@
 class CfgFunctions {
-	
 	class SOCOMD {
 		class Common {
 			file="\socomd_core\functions\common";
@@ -17,9 +16,10 @@ class CfgFunctions {
 			class GetLoadoutScopeFOV {};
 			class GetLoadoutMaxOptic {};
 			class BushMasterInit {};
-			class UAV {};
 			class ACRERackInit {};
 			class XEH_postInit {};
+			class GetWorldType {};
+			class GetWorldUniform {};
 		};
 
 		class Actions {
@@ -37,6 +37,7 @@ class CfgFunctions {
 			class Action_displayName {};
 			class Action_placePlaceables {};
 			class Action_putBlindfoldOn {};
+			class Action_ReplaceNvg {};
 		};
 
 		class ActionConditions {
@@ -79,29 +80,6 @@ class CfgFunctions {
 			class getBloodVolumeChange {};
         };
     };
-	class GEARF
-	{
-		class vectorFunctions
-		{
-			file="\socomd_core\functions\utils\Vectors";
-			class rotateObject
-			{
-			};
-		};
-		class helmetFunctions
-		{
-			file="\socomd_core\functions\utils\Helmet";
-			class slingHelmet
-			{
-			};
-			class unslingHelmet
-			{
-			};
-			class hideSlungHelmet
-			{
-			};
-		};
-	};
 	class advanced_peltors{
 		class functions {
 			file = "\socomd_core\functions\advanced_peltors";

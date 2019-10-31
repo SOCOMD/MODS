@@ -70,7 +70,14 @@ class SOCOMD_ACTION_VEST_##HEADGEAR { \
 	condition = 1; \
 	showDisabled = 0; \
 };
-
+#define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
+class SOCOMD_ACTION_VEST_##NVG { \
+	displayName = DISPLAY_STR; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
+	condition = 1; \
+	showDisabled = 0; \
+};
 ////////////////////////////////////////////////////////////////////////////////
 // INTERACTIVE BOX
 
@@ -78,8 +85,8 @@ class Land_PaperBox_closed_F;
 class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
 	scope = protected;
 	scopeCurator = private;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 	author = AUTHOR_STR;
 	displayName = "QStore";
 
@@ -133,7 +140,10 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (SUPPORT)")
 					QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
 					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
-					QSTORE_ACTION_LOADOUT("PJ",SOCOMD_PJ)
+					QSTORE_ACTION_LOADOUT("82mm Mortarman",SOCOMD_Mortar)
+					QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MMG)
+					QSTORE_ACTION_LOADOUT("Gunner Ammo",SOCOMD_MMGAmmo)
+					QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
 				QSTORE_ACTION_GRP_END
 			QSTORE_ACTION_GRP_END
 
@@ -142,12 +152,16 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 				QSTORE_ACTION_GRP_BEGIN(SELECT_VESTS,"Vests")
 					QSTORE_ACTION_VEST("Comms Tan",lbt_comms_coy)
 					QSTORE_ACTION_VEST("Comms Multicam",lbt_comms_mc)
+					QSTORE_ACTION_VEST("Comms AMCU",lbt_comms_amcu)
 					QSTORE_ACTION_VEST("Operator Tan",lbt_tl_coy)
 					QSTORE_ACTION_VEST("Operator Multicam",lbt_tl_mc)
+					QSTORE_ACTION_VEST("Operator AMCU",lbt_tl_amcu)
 					QSTORE_ACTION_VEST("Medic Tan",lbt_medical_coy)
 					QSTORE_ACTION_VEST("Medic Multicam",lbt_medical_mc)
+					QSTORE_ACTION_VEST("Medic AMCU",lbt_medical_amcu)
 					QSTORE_ACTION_VEST("Weapons Tan",lbt_weapons_coy)
 					QSTORE_ACTION_VEST("Weapons Multicam",lbt_weapons_mc)
+					QSTORE_ACTION_VEST("Weapons AMCU",lbt_weapons_amcu)
 				QSTORE_ACTION_GRP_END
 
 				//Select Backpack
@@ -162,7 +176,17 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						QSTORE_ACTION_BACKPACK("SOG Medic Tan",SOG_BAG_med_tan)
 					QSTORE_ACTION_GRP_END
 
-					QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACKS_SUB1,"Multicam")
+					QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACKS_SUB1,"OD")
+						QSTORE_ACTION_BACKPACK("SOG Recon OD",SOG_BAG_recon_od)
+						QSTORE_ACTION_BACKPACK("Kit Bag Recon OD",Kit_Bag_R_od)
+						QSTORE_ACTION_BACKPACK("SOG Bag OD",SOG_BAG_od)
+						QSTORE_ACTION_BACKPACK("Kit Bag OD",Kit_Bag_od)
+						QSTORE_ACTION_BACKPACK("Kit Bag Breacher OD",Kit_Bag_pince_od)
+						QSTORE_ACTION_BACKPACK("SOG Breacher OD",SOG_BAG_BREACHER_od)
+						QSTORE_ACTION_BACKPACK("SOG Medic OD",SOG_BAG_med_od)
+					QSTORE_ACTION_GRP_END
+
+					QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACKS_SUB2,"Multicam")
 						QSTORE_ACTION_BACKPACK("SOG Recon MC",SOG_BAG_recon_MC)
 						QSTORE_ACTION_BACKPACK("Kit Bag Recon MC",Kit_Bag_R_MC)
 						QSTORE_ACTION_BACKPACK("SOG Bag MC",SOG_BAG_MC)
@@ -173,6 +197,12 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_GRP_END
 				QSTORE_ACTION_GRP_END
 
+				// Swap NVG Type
+				QSTORE_ACTION_GRP_BEGIN(SELECT_NVG,"NVG")
+					QSTORE_ACTION_NVG("White Phosphor Tube",SOCOMD_NVG)
+					QSTORE_ACTION_NVG("Green Tube",SOCOMD_NVG_GR)
+				QSTORE_ACTION_GRP_END
+				
 				//Select Headgear
 				QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR,"Headgear")
 					QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR_SUB0,"Hard Cover")
@@ -180,6 +210,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						QSTORE_ACTION_HEADGEAR("Opscore (MC)",ADFU_H_OpsCore_08_MC)
 						QSTORE_ACTION_HEADGEAR("Airframe (Tan)",ADFU_H_Airframe_03_tan)
 						QSTORE_ACTION_HEADGEAR("Airframe (MC)",ADFU_H_Airframe_Cover_03_MC)
+						QSTORE_ACTION_HEADGEAR("Airframe (AMCU)",ADFU_H_Airframe_03_AMCU)
 					QSTORE_ACTION_GRP_END
 
 					QSTORE_ACTION_GRP_BEGIN(SELECT_HEADGEAR_SUB1,"Soft Cover")
@@ -201,6 +232,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};
 				QSTORE_ACTION_GRP_END
+				
 			QSTORE_ACTION_GRP_END
 		};
 	};

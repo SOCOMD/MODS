@@ -1,26 +1,3 @@
-#define ITEM01(id) id
-#define ITEM02(id) id,id
-#define ITEM03(id) id,id,id
-#define ITEM04(id) id,id,id,id
-#define ITEM05(id) id,id,id,id,id
-#define ITEM06(id) id,id,id,id,id,id
-#define ITEM07(id) id,id,id,id,id,id,id
-#define ITEM08(id) id,id,id,id,id,id,id,id
-#define ITEM09(id) id,id,id,id,id,id,id,id,id
-#define ITEM10(id) id,id,id,id,id,id,id,id,id,id
-#define ITEM11(id) id,id,id,id,id,id,id,id,id,id,id
-#define ITEM12(id) id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM13(id) id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM14(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM15(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM16(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM17(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM18(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM19(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM20(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-#define ITEM30(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
-
-////////////////////////////////////////////////////////////////////////////////
 
 #define SOLDIER_BASE_LINKEDITEMS \
 	ITEM01("ItemMap"), \
@@ -176,6 +153,7 @@ class SOCOMD_Crewman : SOCOMD_Unarmed {
 
 
 class ADFU_Soldier_MC;
+class ADFU_Soldier_MC_Rolled;
 class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC 
 {
 	displayName = "SOCOMD Black Role";
@@ -207,6 +185,21 @@ class SOCOMD_Soldier_AMC_SleevesDown : ADFU_Soldier_MC
 			"socomd_data_core\CTgear\u_g3_amc_co.paa"
 		};
 };
+class SOCOMD_Soldier_AMC_SleevesUp : ADFU_Soldier_MC_Rolled
+{
+	displayName = "SOCOMD AMCU (Rolled)";
+	author = "SOCOMD & ADFU";
+	uniformClass="SOCOMD_Commando_AMCU_SleevesUp";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\u_g3_amc_co.paa"
+		};
+};
 class SEAL_AOR1 : ADFU_Soldier_MC 
 {
 	displayName = "SEAL AOR1";
@@ -222,6 +215,23 @@ class SEAL_AOR1 : ADFU_Soldier_MC
 			"socomd_data_core\CTgear\VSM_ARD_AOR1_1.paa"
 		};
 };
+
+class SEAL_AOR2 : SEAL_AOR1
+{
+	displayName = "SEAL AOR2";
+	author = "SOCOMD & ADFU";
+	uniformClass="SEAL_AOR2_U";
+	hiddenSelections[]=
+		{
+			"Camo",
+			"insignia"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"socomd_data_core\CTgear\AOR_2.paa"
+		};
+};
+
 
 class B_Soldier_base_F;
 class b_soldier_survival_F: B_Soldier_base_F{};
@@ -270,27 +280,69 @@ class SOCOMD_Survival: b_soldier_survival_F
 		""
 	};
 };
-class SOCOMD_Tee: B_Soldier_02_F
+
+class SOCOMD_Survival_AMCU: SOCOMD_Survival {
+	displayName="SOCOMD AMCU Survival Fatigues";
+	uniformClass="SOCOMD_Uniform_AMCU_Survival";
+	hiddenUnderwaterSelections[]=
+	{
+		"hide"
+	};
+	shownUnderwaterSelections[]=
+	{
+		"unhide",
+		"unhide2"
+	};
+	hiddenUnderwaterSelectionsTextures[]=
+	{
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\A3\characters_f\data\visors_ca.paa"
+	};
+	hiddenSelections[]=
+	{
+		"Camo",
+		"Camo1",
+		"Camo3",
+		"Insignia"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"socomd_data_core\CTgear\u_g3_amc_co.paa",
+		"\socomd_data_core\uniform\clothes\black_boots.paa",
+		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"\ADFU_Units\data\clothing1_ADFU.rvmat",
+		"",
+		""
+	};
+};
+class B_soldier_AR_F;
+class SOCOMD_Tee: B_soldier_AR_F
 {
 	author="SOCOMD";
 	_generalMacro="B_Soldier_F";
-	scope=2;
+	scope=1;
 	displayName="SOCOMD G3 (Tee)";
-	modelsides[]={3,2,1,0};
 	uniformClass="SOCOMD_Tee_uniform";
-	hiddenSelections[]=
-		{
-			"Camo",
-			"Camo2",
-			"insignia"
-		};
 	hiddenSelectionsTextures[]=
 	{
-		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"socomd_data_core\CTgear\basicbody_brown_co.paa"
+		"\ADFU_Units_MC\data\u_g3_mc_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\ADFU_Units\data\clothing1_ADFU.rvmat"
+	};
+};
+
+class SOCOMD_Tee_AMCU: SOCOMD_Tee
+{
+	displayName="SOCOMD AMCU (Tee)";
+	uniformClass="SOCOMD_Tee_AMCU_uniform";
+	hiddenSelectionsTextures[]=
+	{
+		"socomd_data_core\CTgear\u_g3_amc_co.paa"
 	};
 };

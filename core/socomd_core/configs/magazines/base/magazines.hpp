@@ -1,7 +1,7 @@
 //Vanilla
 class 30Rnd_556x45_Stanag_Red;
 class 30Rnd_556x45_Stanag_Tracer_Red;
-class 200Rnd_556x45_Box_Tracer_Red_F;
+class CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch;
 class 30Rnd_65x39_caseless_mag;
 class 30Rnd_65x39_caseless_mag_Tracer;
 class 20Rnd_762x51_Mag;

@@ -291,13 +291,9 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	class AcreRacks {
 		class Rack_1 {
 			allowedPositions[] = {"driver"};
-			componentName = "ACRE_VRC103";
-			defaultComponents[] = {};
-			defaultPositions[] = {};
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			intercom[] = {"Intercom_1"};
-			isRadioRemovable = 0;
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};
@@ -375,7 +371,7 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 		class Intercom_1 {
 			displayName = "Intercom";
 			shortName = "Intercom";
-			allowedPositions[] = {"crew"};
+			allowedPositions[] = {"driver", "commander", "gunner"};
 			limitedPositions[] = {};
 			numLimitedPositions = 0;
 			masterPositions[] = {"driver"};
@@ -385,14 +381,10 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 
 	class AcreRacks {
 		class Rack_1 {
-			allowedPositions[] = {"crew"};
-			componentName = "ACRE_VRC103";
-			defaultComponents[] = {};
-			defaultPositions[] = {};
+			allowedPositions[] = {"driver", "commander", "gunner"};
+			componentName = "ACRE_VRC110";
 			displayName = "Dash";
-			intercom[] = {"Intercom_1"};
-			isRadioRemovable = 0;
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
 	};

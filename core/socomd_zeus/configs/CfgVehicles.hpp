@@ -137,4 +137,38 @@ class CfgVehicles
 		displayName = "Loadout To Config";
 		function = "SOCOMD_fnc_ModuleGenerateUnitConfig";
 	};
+
+	class SOCOMD_Module_PowerGrid : SOCOMD_Module_Base
+	{
+		scope = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_PowerGrid";
+		displayName = "Power Grid";
+		function = "SOCOMD_fnc_ModulePowerGrid";
+	};
+	class SOCOMD_Module_PowerGenerator : SOCOMD_Module_Base {
+		scope = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_PowerGenerator";
+		displayName = "Power Generator";
+		function = "SOCOMD_fnc_ModulePowerGenerator";
+	};
+	class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
+		scope = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_DisableAI";
+		displayName = "Disable AI";
+		function = "SOCOMD_fnc_DisableAI";
+	};
+	class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
+		scope = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_EnableAI";
+		displayName = "Enable AI";
+		function = "SOCOMD_fnc_EnableAI";
+	};
 };

@@ -1,3 +1,4 @@
+#include "settings\inventories.hpp"
 #include "predefined.hpp"
 
 class CfgPatches {
@@ -37,7 +38,11 @@ class CfgPatches {
 			"lbtt_Vest_config",
 			"milgp_headgear_cfg",
 
-			"socomd_data_core"
+			"socomd_data_core",
+			"kat_aceAirway",
+			"kat_aceCirculation",
+			"kat_aceBreathing",
+			"kat_aceMisc"
 		};
 
 		//SOCOMD Custom Units
@@ -175,4 +180,6 @@ class CfgAnimation {
 #include "configs\CfgASORVS.hpp"
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
+#include "configs\CfgWorldType.hpp"
+#include "configs\CfgMedical.hpp"
 //#include "configs\CfgModels.hpp"

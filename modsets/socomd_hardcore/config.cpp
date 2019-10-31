@@ -1,4 +1,5 @@
-#include "predefined.hpp"
+#include "\socomd_hardcore\settings\inventories.hpp"
+#include "\socomd_core\predefined.hpp"
 
 class CfgPatches  {
 	class socomd_hardcore {
@@ -24,6 +25,4 @@ class CfgPatches  {
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgWeapons.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
-#include "configs\CfgMedical.hpp"
