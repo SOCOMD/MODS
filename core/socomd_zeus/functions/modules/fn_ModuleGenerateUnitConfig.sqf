@@ -36,7 +36,7 @@ if(_secondary select 0 != "") then {
 	_weapons = _weapons + [_secondary select 0];
 };
 
-_handgun = _loadout select 1;
+_handgun = _loadout select 2;
 if(_handgun select 0 != "") then {
 	_weapons = _weapons + [_handgun select 0];
 };
