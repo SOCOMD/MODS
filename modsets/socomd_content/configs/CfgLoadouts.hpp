@@ -99,6 +99,8 @@ class _xx_##id { \
 
 class CfgLoadouts {
 	class SOCOMD {
-		#include "loadouts\default.hpp"
+		#include "loadouts\loadouts_default.hpp"
+        #include "loadouts\loadouts_tage.hpp"
+        #include "loadouts\loadouts_sso.hpp"
 	};
 };

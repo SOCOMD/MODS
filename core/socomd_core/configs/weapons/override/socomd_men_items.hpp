@@ -5,7 +5,6 @@ class SOCOMD_Item_Primary_Marksman                  : arifle_SPAR_03_blk_F {scop
 class SOCOMD_Item_Primary_Medic                     : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Sapper                    : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_MachineGunner             : LMG_03_F {scope = protected;};
-class SOCOMD_Item_Primary_Sniper                    : srifle_LRR_F {scope = protected;};
 class SOCOMD_Item_Primary_Recon                     : srifle_LRR_F {scope = protected;};
 class SOCOMD_Item_Primary_AT                        : arifle_SPAR_01_blk_F {scope = protected;};
 class SOCOMD_Item_Primary_Pilot                     : SMG_05_F {scope = protected;};
@@ -18,7 +17,6 @@ class SOCOMD_Item_Handgun_Marksman                  : DSO_hgun_Pistol_heavy_01_b
 class SOCOMD_Item_Handgun_Medic                     : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_Sapper                    : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_MachineGunner             : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
-class SOCOMD_Item_Handgun_Sniper                    : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_Recon                     : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_AT                        : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
 class SOCOMD_Item_Handgun_Pilot                     : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
@@ -31,7 +29,6 @@ class SOCOMD_Item_Secondary_Marksman                : ItemCore {scope = protecte
 class SOCOMD_Item_Secondary_Medic                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Sapper                  : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_MachineGunner           : ItemCore {scope = protected;};
-class SOCOMD_Item_Secondary_Sniper                  : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Recon                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_AT                     	: launch_MRAWS_green_rail_F {scope = protected;};
 class SOCOMD_Item_Secondary_Pilot                   : ItemCore {scope = protected;};
@@ -44,7 +41,6 @@ class SOCOMD_Item_Headgear_Marksman                 : ADFU_H_Airframe_Cover_03_M
 class SOCOMD_Item_Headgear_Medic                    : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_Sapper                   : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_MachineGunner            : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Sniper                   : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_Recon                    : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_AT                       : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
 class SOCOMD_Item_Headgear_Pilot                    : SOCOMD_Pilot_helmet {scope = protected;};
@@ -57,7 +53,6 @@ class SOCOMD_Item_Binocular_Marksman                : Binocular {scope = protect
 class SOCOMD_Item_Binocular_Medic                   : Binocular {scope = protected;};
 class SOCOMD_Item_Binocular_Sapper                  : Binocular {scope = protected;};
 class SOCOMD_Item_Binocular_MachineGunner           : Binocular {scope = protected;};
-class SOCOMD_Item_Binocular_Sniper                  : Binocular {scope = protected;};
 class SOCOMD_Item_Binocular_Recon                   : Laserdesignator {scope = protected;};
 class SOCOMD_Item_Binocular_AT                      : Binocular {scope = protected;};
 class SOCOMD_Item_Binocular_Pilot                   : Binocular {scope = protected;};
@@ -70,7 +65,6 @@ class SOCOMD_Item_GPS_Marksman                      : ItemMicroDAGR {scope = pro
 class SOCOMD_Item_GPS_Medic                         : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_Sapper                        : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_MachineGunner                 : ItemMicroDAGR {scope = protected;};
-class SOCOMD_Item_GPS_Sniper                        : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_Recon                         : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_AT                            : ItemMicroDAGR {scope = protected;};
 class SOCOMD_Item_GPS_Pilot                         : ItemcTab {scope = protected;};
@@ -83,7 +77,6 @@ class SOCOMD_Item_Uniform_Marksman                  : SOCOMD_Uniform_SleevesDown
 class SOCOMD_Item_Uniform_Medic                     : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_Sapper                    : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_MachineGunner             : SOCOMD_Uniform_SleevesDown {scope = protected;};
-class SOCOMD_Item_Uniform_Sniper                    : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_Recon                     : SOCOMD_Uniform_SleevesDown_Recon {scope = protected;};
 class SOCOMD_Item_Uniform_AT                        : SOCOMD_Uniform_SleevesDown {scope = protected;};
 class SOCOMD_Item_Uniform_Pilot                     : SOCOMD_Uniform_SleevesDown {scope = protected;};
@@ -96,9 +89,22 @@ class SOCOMD_Item_Vest_Marksman                     : lbt_tl_mc {scope = protect
 class SOCOMD_Item_Vest_Medic                        : lbt_medical_mc {scope = protected;};
 class SOCOMD_Item_Vest_Sapper                       : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_MachineGunner                : lbt_comms_mc {scope = protected;};
-class SOCOMD_Item_Vest_Sniper                       : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Recon                        : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_AT                           : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Pilot                        : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Crewman                      : lbt_tl_mc {scope = protected;};
 class SOCOMD_Item_Vest_Homestead                    : lbt_pouchless_mc {scope = protected;};
+
+
+//////////////////////////////////////////////////
+
+class SOCOMD_Weapon_Empty : ItemCore {scope = protected;};
+class SOCOMD_Weapon_Rifle_9x21 : SMG_05_F {scope = protected;};
+class SOCOMD_Weapon_Rifle_556x45 : arifle_SPAR_01_blk_F {scope = protected;};
+class SOCOMD_Weapon_Rifle_762x51 : arifle_SPAR_03_blk_F {scope = protected;};
+class SOCOMD_Weapon_Handgun_45ACP : DSO_hgun_Pistol_heavy_01_blk_F {scope = protected;};
+
+class SOCOMD_Headgear_SoftCover : SOCOMD_BERET {scope = protected;};
+class SOCOMD_Headgear_HardCover : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
+class SOCOMD_Headgear_Pilot : SOCOMD_Pilot_helmet {scope = protected;};
+class SOCOMD_Headgear_Crew : SOCOMD_Ground_Crew_helmet {scope = protected;};

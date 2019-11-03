@@ -16,5 +16,4 @@ class CfgLoadoutWeapons {
 
     //Snipers
     class Recon_Barret : WeaponLock {};
-    class Sniper_Barret : WeaponLock {};
 };

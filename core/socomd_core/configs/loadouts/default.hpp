@@ -441,45 +441,6 @@ class SOCOMD_AT {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
-// Sniper
-
-class SOCOMD_Sniper {
-	primary	        = ITEM_PRIMARY_SNIPER;
-	secondary		= ITEM_SECONDARY_SNIPER;
-	handgun		    = ITEM_HANDGUN_SNIPER;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_SNIPER;
-	headgear		= ITEM_HEADGEAR_SNIPER;
-	binocular		= "Binocular";
-	gps			    = "ItemMicroDAGR";
-	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
-
-
-	class Uniform {
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_SNIPER;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(ACE_Kestrel4500, 1)
-			LOADOUT_ITEM(ACE_RangeCard, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 10)
-		};
-	};
-
-	class Backpack {
-		type = ITEM_BACKPACK_SNIPER;
-		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_BACKPACK_ESSENTIALS
-		};
-	};
-};
-
-////////////////////////////////////////////////////////////////////////////////
 // Recon
 
 class SOCOMD_Recon {
@@ -493,6 +454,7 @@ class SOCOMD_Recon {
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
+		type = ITEM_UNIFORM_RECON;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
@@ -513,7 +475,7 @@ class SOCOMD_Recon {
 	};
 
 	class Backpack {
-		type = ITEM_BACKPACK_SNIPER;
+		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
@@ -527,19 +489,18 @@ class SOCOMD_Recon {
 	};
 };
 
-
 ////////////////////////////////////////////////////////////////////////////////
-// MORTAR
+// LOGISTICIAN
 
-class SOCOMD_Mortar {
-	primary		    = ITEM_PRIMARY_RIFLEMAN;
-	secondary		= ITEM_SECONDARY_RIFLEMAN;
-	handgun		    = ITEM_HANDGUN_RIFLEMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-	headgear		= ITEM_HEADGEAR_RIFLEMAN;
-	binocular		= "ACE_Vector";
-	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+class SOCOMD_Logistician {
+	primary 		= "SOCOMD_Weapon_Rifle_556x45";
+    secondary 		= "SOCOMD_Weapon_Empty";
+	handgun 		= "SOCOMD_Weapon_Handgun_45ACP";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
+	headgear 		= "SOCOMD_Headgear_HardCover";
+	binocular		= "";
+	gps 			= "ItemcTab";
+	maxOptic		= "1x";
 
 	class Uniform {
 		class Inventory	{
@@ -550,17 +511,22 @@ class SOCOMD_Mortar {
 	class Vest {
 		type = ITEM_VEST_RIFLEMAN;
 		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-			LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 2)
-			LOADOUT_ITEM(ACE_RangeTable_82mm, 1)			
+			LOADOUT_ITEM(SmokeShell, 3)
+			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACRE_PRC343, 1)
+			LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 		};
 	};
+
 	class Backpack {
-		type = B_Mortar_01_weapon_F;
+		type = ITEM_BACKPACK_RIFLEMAN;
+		class Inventory	{
+			LOADOUT_ITEM(ToolKit, 1)
+		};
 	};
 };
 
@@ -568,11 +534,11 @@ class SOCOMD_Mortar {
 // Pilot
 
 class SOCOMD_Pilot {
-    primary 		= ITEM_PRIMARY_PILOT;
-    secondary 		= ITEM_SECONDARY_PILOT;
-	handgun 		= ITEM_HANDGUN_PILOT;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_PILOT;
-	headgear 		= ITEM_HEADGEAR_PILOT;
+    primary 		= "SOCOMD_Weapon_Rifle_9x21"
+    secondary 		= "SOCOMD_Weapon_Empty";
+	handgun 		= "SOCOMD_Weapon_Handgun_45ACP";
+	handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
+	headgear 		= "SOCOMD_Headgear_Pilot";
 	binocular 		= "";
 	gps 			= "ItemcTab";
 	maxOptic		= "1x";
@@ -605,37 +571,6 @@ class SOCOMD_Pilot {
 ////////////////////////////////////////////////////////////////////////////////
 // Crewman
 
-class SOCOMD_Crewman {
-	primary 		= ITEM_PRIMARY_CREWMAN;
-    secondary 		= ITEM_SECONDARY_CREWMAN;
-	handgun 		= ITEM_HANDGUN_CREWMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAINE_CREWMAN;
-	headgear 		= ITEM_HEADGEAR_CREWMAN;
-	binocular		= "";
-	gps 			= "ItemAndroid";
-	maxOptic		= "1x";
-
-	class Uniform {
-		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
-		};
-	};
-
-	class Vest {
-		type = ITEM_VEST_CREWMAN;
-		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
-			LOADOUT_ITEM(ACRE_PRC152, 1)
-		};
-	};
-
-	class Backpack {
-		type = ITEM_BACKPACK_CREWMAN;
-		class Inventory	{
-			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
-			LOADOUT_ITEM(ACRE_PRC117F, 1)
-		};
-	};
+class SOCOMD_Crewman : SOCOMD_Pilot {
+	headgear = "SOCOMD_Headgear_Crew";
 };

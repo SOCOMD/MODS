@@ -35,8 +35,6 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
-			"SOCOMD_MMGAmmo",
-			"SOCOMD_Mortar"
 		};
 		magazines[] = {
 			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
@@ -98,14 +96,6 @@ class CfgLoadoutWeapons {
 		};
 	};
 
-	class SOCOMD_Item_Primary_Sniper : Rifle_300 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Sniper"
-		};
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_300_5Rnd", 6}
-		};
-	};
 	class SOCOMD_Item_Primary_Recon : Rifle_300 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Recon"
@@ -119,15 +109,6 @@ class CfgLoadoutWeapons {
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_Barret", 6}
-		};
-	};
-
-	class Sniper_Barret : ej_m107 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Sniper"
-		};
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_Barret", 3}
 		};
 	};
 	
