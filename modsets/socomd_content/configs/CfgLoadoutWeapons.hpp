@@ -45,17 +45,22 @@ class CfgLoadoutWeapons {
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
 
 	class MachineGun_762;
-	class sma_minimi_mk3_762tsb : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
-	class sma_minimi_mk3_762tsb_wdl : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg_des : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
-	class sma_minimi_mk3_762tsb_des : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg_tan : MachineGun_762 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+		};
+	};
+	class CUP_lmg_Mk48_nohg_wdl : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};

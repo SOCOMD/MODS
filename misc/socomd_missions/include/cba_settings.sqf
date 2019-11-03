@@ -177,7 +177,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 100;
+force force ace_medical_maxReviveTime = 200;
 force force ace_medical_medicSetting = 0;
 force force ace_medical_medicSetting_basicEpi = 0;
 force force ace_medical_medicSetting_PAK = 0;
@@ -215,18 +215,18 @@ force force adv_aceCPR_useLocation_AED = 0
 
 // KAT - ACE Airway
 force force kat_aceAirway_checkbox_puking_sound = true;
-force force kat_aceAirway_deathTimer = 100;                                 // Time before Pt dies with low Sp02
+force force kat_aceAirway_deathTimer = 150;                                 // Time before Pt dies with low Sp02
 force force kat_aceAirway_enable = true;
 force force kat_aceAirway_probability_obstruction = 80;                     // Probability patient collapses
-force force kat_aceAirway_probability_occluded = 10;                        // Probability airway vomits
+force force kat_aceAirway_probability_occluded = 2;                        // Probability airway vomits
 force force kat_aceAirway_string_exit = "";
 
 // KAT - ACE Breathing
 force force kat_aceBreathing_death_timer_enable = true;
 force force kat_aceBreathing_enable = true;
 force force kat_aceBreathing_pneumothorax = 100;                            // Probability for a penetrating chest hit to cause a pneumothorax
-force force kat_aceBreathing_spo2_big_value = 15;                           // Value to change Sp02 by (If airway not patent)
-force force kat_aceBreathing_spo2_small_value = 12;                         // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_big_value = 20;                           // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_small_value = 8;                         // Value to change Sp02 by (If airway not patent)
 
 // KAT - ACE Circulation
 force force kat_aceCirculation_bloodgroup = "B";

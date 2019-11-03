@@ -219,11 +219,14 @@ class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 };
 
 //Machine Gun 762
-class sma_minimi_762_base_F;
-class sma_minimi_mk3_762tsb : sma_minimi_762_base_F {
+class CUP_lmg_Mk48;
+class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-};
+}
+class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48 {};
+class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48 {};
+class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48 {};
 
 //Machine Gun 762
 class CUP_lmg_FNMAG_RIS;

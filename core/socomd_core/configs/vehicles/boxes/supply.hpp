@@ -178,15 +178,29 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 	displayName = "[SUPPLY] Medical";
 
 	class TransportItems {
-		TRANSPORT_ITEM(ACE_fieldDressing, 32)
-		TRANSPORT_ITEM(ACE_quikclot, 32)
-		TRANSPORT_ITEM(ACE_elasticBandage, 32)
-		TRANSPORT_ITEM(ACE_packingBandage, 32)
 		TRANSPORT_ITEM(ACE_morphine, 16)
-		TRANSPORT_ITEM(ACE_epinephrine, 16)
-		TRANSPORT_ITEM(ACE_surgicalKit, 8)
-		TRANSPORT_ITEM(ACE_salineIV_500, 6)
 		TRANSPORT_ITEM(ACE_bodyBag, 6)
+		TRANSPORT_ITEM(ACE_fieldDressing, 30)  		//Israeli Bandage
+		TRANSPORT_ITEM(ACE_elasticBandage, 30)		//Elastic Bandage
+		TRANSPORT_ITEM(ACE_quikclot, 30)				//Quikclot
+		TRANSPORT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+		TRANSPORT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+		TRANSPORT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+		TRANSPORT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+		TRANSPORT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
+		TRANSPORT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+		TRANSPORT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
+		TRANSPORT_ITEM(ACE_apap, 10)					//Paracetamol
+		TRANSPORT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
+		TRANSPORT_ITEM(ACE_bloodIV_500, 5)			//Blood
+		TRANSPORT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+		TRANSPORT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+		TRANSPORT_ITEM(KAT_accuvac, 1)				//Medical Suction
+		TRANSPORT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+		TRANSPORT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+		TRANSPORT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+		TRANSPORT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+		TRANSPORT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 	};
 };
 
