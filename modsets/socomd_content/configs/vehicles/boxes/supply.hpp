@@ -14,6 +14,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_MAGAZINE(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 4)
 		TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 8)
 		TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 8)
+		TRANSPORT_MAGAZINE(CUP_6Rnd_B_Beneli_74Pellets, 10)
 	};
 };
 
@@ -30,6 +31,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 		TRANSPORT_MAGAZINE(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 4)
 		TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 8)
 		TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 8)
+		TRANSPORT_MAGAZINE(CUP_6Rnd_B_Beneli_74Pellets, 10)
 	};
 };
 
@@ -56,6 +58,7 @@ class SOCOMD_Supply_Sniper : SOCOMD_Supply_Empty {
 		TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 15)
 		TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 15)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 15)
+		
 	};
 	class TransportWeapons {
 		TRANSPORT_WEAPON(SMA_M4afgSTOCK, 2)

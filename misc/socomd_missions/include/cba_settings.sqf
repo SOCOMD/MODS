@@ -194,7 +194,7 @@ force force ace_medical_painIsOnlySuppressed = true;
 force force ace_medical_playerDamageThreshold = 4.0;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
-force force ace_medical_useCondition_PAK = 0;
+force force ace_medical_useCondition_PAK = 1;
 force force ace_medical_useCondition_SurgicalKit = 0;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
@@ -225,7 +225,7 @@ force force kat_aceAirway_string_exit = "";
 force force kat_aceBreathing_death_timer_enable = true;
 force force kat_aceBreathing_enable = true;
 force force kat_aceBreathing_pneumothorax = 100;                            // Probability for a penetrating chest hit to cause a pneumothorax
-force force kat_aceBreathing_spo2_big_value = 15;                           // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_big_value = 20;                           // Value to change Sp02 by (If airway not patent)
 force force kat_aceBreathing_spo2_small_value = 8;                         // Value to change Sp02 by (If airway not patent)
 
 // KAT - ACE Circulation

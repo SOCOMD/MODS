@@ -8,7 +8,11 @@ class S_30rnd_556x45_EPR_PMAG_tracer: S_30rnd_556x45_EPR_PMAG {
     scope = 2;
     tracersevery = 1;
 };
-class SMA_150Rnd_762_M80A1;
+
+class CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M;
+class CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M {
+    count = 100;
+};
 
 //HLC
 class hlc_5rnd_300WM_FMJ_AWM;
