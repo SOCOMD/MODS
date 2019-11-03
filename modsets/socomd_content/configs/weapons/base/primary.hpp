@@ -549,3 +549,86 @@ class SOCOMD_pkp_acc: SOCOMD_pkp{
 			slot = "CUP_EastMuzzleSlotAK";
 		};
 };
+
+class SOCOMD_VEGA_AK_V1_acc: CUP_arifle_AK104_railed{
+	displayName="RU-AK-104 V1 (VEGA)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "SMA_eotech552";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "CUP_acc_Flashlight_wdl";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_mfsup_Flashhider_556x45_OD";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+
+class CUP_arifle_AK101_railed;
+class SOCOMD_VEGA_AK_V2_acc: CUP_arifle_AK101_railed{
+	displayName="RU-AK-101 (VEGA)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "CUP_acc_Flashlight_wdl";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_mfsup_Flashhider_556x45_OD";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+
+class CUP_arifle_AK101_GL_railed;
+class SOCOMD_VEGA_AK_GL_acc: CUP_arifle_AK101_GL_railed{
+	displayName="RU-AK-101 GL (VEGA)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "SMA_eotech552";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsAcc{
+			item = "CUP_acc_Flashlight_wdl";
+			slot = "CUP_PicatinnyTopMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_mfsup_Flashhider_556x45_OD";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+
+class SOCOMD_VEGA_RPK_acc: CUP_arifle_RPK74M_railed{
+	displayName="RU-RPK-74M (VEGA)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1";
+			slot = "CUP_PicatinnySideMountAK";
+		};
+		class LinkedItemsMuzzle{
+			item = "CUP_muzzle_mfsup_Flashhider_556x45_OD";
+			slot = "CUP_EastMuzzleSlotAK";
+		};
+	};
+};
+
+class CUP_srifle_SVD_wdl_top_rail;
+class SOCOMD_VEGA_SVD: CUP_srifle_SVD_wdl_top_rail{
+};
+class SOCOMD_VEGA_SVD_acc: CUP_srifle_SVD_wdl_top_rail{
+	displayName="RU-SVD (VEGA)";
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_SB_11_4x20_PM_od";
+			slot = "CUP_PicatinnyTopMount_SVD";
+		};
+	};
+};
