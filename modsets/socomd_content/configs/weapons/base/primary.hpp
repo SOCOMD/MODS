@@ -224,9 +224,9 @@ class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
 }
-class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48 {};
-class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48 {};
-class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48 {};
+class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
+class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48_nohg {};
+class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};
 
 //Machine Gun 762
 class CUP_lmg_FNMAG_RIS;
