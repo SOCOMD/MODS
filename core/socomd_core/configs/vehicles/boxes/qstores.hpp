@@ -54,7 +54,7 @@ class SOCOMD_ACTION_VEST_##VEST { \
 };
 
 #define QSTORE_ACTION_BACKPACK(DISPLAY_STR, BACKPACK) \
-class SOCOMD_ACTION_VEST_##BACKPACK { \
+class SOCOMD_ACTION_BACKPACK_##BACKPACK { \
 	displayName = DISPLAY_STR; \
 	condition = "[_player,"#BACKPACK"] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks"; \
 	statement = "[_player ,"#BACKPACK"] call SOCOMD_fnc_Action_ReplaceBackpack"; \
@@ -63,19 +63,20 @@ class SOCOMD_ACTION_VEST_##BACKPACK { \
 };
 
 #define QSTORE_ACTION_HEADGEAR(DISPLAY_STR, HEADGEAR) \
-class SOCOMD_ACTION_VEST_##HEADGEAR { \
+class SOCOMD_ACTION_HEADGEAR_##HEADGEAR { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	statement = "[_player ,"#HEADGEAR"] call SOCOMD_fnc_Action_ReplaceHeadgear"; \
 	condition = 1; \
 	showDisabled = 0; \
 };
+
 #define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
-class SOCOMD_ACTION_VEST_##NVG { \
+class SOCOMD_ACTION_NVG_##NVG { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	condition = "[_player, "#NVG"] call SOCOMD_fnc_ActionCondition_CanSwapNVG"; \
 	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
-	condition = 1; \
 	showDisabled = 0; \
 };
 ////////////////////////////////////////////////////////////////////////////////
@@ -199,8 +200,8 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 				QSTORE_ACTION_GRP_BEGIN(SELECT_NVG,"NVG")
 					QSTORE_ACTION_NVG("PVS-31 White Phosphor Tube",SOCOMD_NVG)
 					QSTORE_ACTION_NVG("PVS-31 Green Tube",SOCOMD_NVG_GR)
-					QSTORE_ACTION_NVG("GPNVG Green Tube",CUP_NVG_GPNVG_black)
 					QSTORE_ACTION_NVG("GPNVG White Phosphor Tube",SOCOMD_NVG_GPNVG_WP_black)
+					QSTORE_ACTION_NVG("GPNVG Green Tube",SOCOMD_NVG_GPNVG_GR_black)
 				QSTORE_ACTION_GRP_END
 				
 				//Select Headgear

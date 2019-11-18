@@ -58,7 +58,7 @@ class SOCOMD_ACTION_VEST_##VEST { \
 };
 
 #define QSTORE_ACTION_BACKPACK(DISPLAY_STR, BACKPACK) \
-class SOCOMD_ACTION_VEST_##BACKPACK { \
+class SOCOMD_ACTION_BACKPACK_##BACKPACK { \
 	displayName = DISPLAY_STR; \
 	condition = "[_player,"#BACKPACK"] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks"; \
 	statement = "[_player ,"#BACKPACK"] call SOCOMD_fnc_Action_ReplaceBackpack"; \
@@ -67,7 +67,7 @@ class SOCOMD_ACTION_VEST_##BACKPACK { \
 };
 
 #define QSTORE_ACTION_HEADGEAR(DISPLAY_STR, HEADGEAR) \
-class SOCOMD_ACTION_VEST_##HEADGEAR { \
+class SOCOMD_ACTION_HEADGEAR_##HEADGEAR { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	statement = "[_player ,"#HEADGEAR"] call SOCOMD_fnc_Action_ReplaceHeadgear"; \
@@ -76,13 +76,14 @@ class SOCOMD_ACTION_VEST_##HEADGEAR { \
 };
 
 #define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
-class SOCOMD_ACTION_VEST_##NVG { \
+class SOCOMD_ACTION_NVG_##NVG { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	condition = "[_player, "#NVG"] call SOCOMD_fnc_ActionCondition_CanSwapNVG"; \
 	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
-	condition = 1; \
 	showDisabled = 0; \
 };
+
 class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 	scope = public;
 	scopeCurator = public;

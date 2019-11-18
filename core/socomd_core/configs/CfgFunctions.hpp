@@ -37,7 +37,7 @@ class CfgFunctions {
 			class Action_displayName {};
 			class Action_placePlaceables {};
 			class Action_putBlindfoldOn {};
-			class Action_ReplaceNvg {};
+			class Action_ReplaceNVG {};
 		};
 
 		class ActionConditions {
@@ -48,6 +48,7 @@ class CfgFunctions {
 			class ActionCondition_HasPrimary556	{};
 			class ActionCondition_CanSwapVest {};
 			class ActionCondition_CanSwapBackpacks {};
+			class ActionCondition_CanSwapNVG {};
 			class ActionCondition_IsAdmin {};
 			class ActionCondition_IsRadarOn {};
 			class ActionCondition_IsRadarOff {};
