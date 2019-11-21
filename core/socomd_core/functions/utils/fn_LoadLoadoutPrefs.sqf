@@ -53,7 +53,7 @@ if(count _primaryItem == 7) then {
 //Secondary Acc
 _secondaryItem = _loadoutPrefs select 1;
 if(count _secondaryItem == 7) then {
-    _secondaryLoadout = _unitLoadout select 0;
+    _secondaryLoadout = _unitLoadout select 1;
     _secondaryLoadout set [1, _secondaryItem select 1];
     _secondaryLoadout set [2, _secondaryItem select 2];
     _secondaryLoadout set [3, _secondaryItem select 3];
@@ -64,7 +64,7 @@ if(count _secondaryItem == 7) then {
 //Handgun Acc
 _handgunItem = _loadoutPrefs select 2;
 if(count _handgunItem == 7) then {
-    _handgunLoadout = _unitLoadout select 0;
+    _handgunLoadout = _unitLoadout select 2;
     _handgunLoadout set [1, _handgunItem select 1];
     _handgunLoadout set [2, _handgunItem select 2];
     _handgunLoadout set [3, _handgunItem select 3];
@@ -72,6 +72,6 @@ if(count _handgunItem == 7) then {
     _unitLoadout set [2, _handgunLoadout];
 };
 
-[player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
+[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 
 systemChat "Loadout Loaded";
