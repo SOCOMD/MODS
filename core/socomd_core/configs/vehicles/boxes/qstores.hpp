@@ -144,6 +144,22 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
 					QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
 				QSTORE_ACTION_GRP_END
+
+				class SOCOMD_SavePrefs {
+					displayName = "Save";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
+					statement = "[_player] spawn SOCOMD_fnc_SaveLoadoutPrefs";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadPrefs {
+					displayName = "Load";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
+					statement = "[_player] spawn SOCOMD_fnc_LoadLoadoutPrefs";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
 			QSTORE_ACTION_GRP_END
 
 			QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Customise Gear")

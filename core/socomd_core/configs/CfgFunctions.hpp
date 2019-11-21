@@ -20,6 +20,8 @@ class CfgFunctions {
 			class XEH_postInit {};
 			class GetWorldType {};
 			class GetWorldUniform {};
+			class SaveLoadoutPrefs {};
+			class LoadLoadoutPrefs {};
 		};
 
 		class Actions {
@@ -53,6 +55,7 @@ class CfgFunctions {
 			class ActionCondition_IsRadarOn {};
 			class ActionCondition_IsRadarOff {};
 			class ActionCondition_canInteract {};
+			class ActionCondition_HasLoadout {};
 		};
 
 		class ASORUtil {
