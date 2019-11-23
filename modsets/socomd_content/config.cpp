@@ -61,7 +61,11 @@ class CfgPatches  {
 
 		weapons[] = {
 			"broken_launch_RPG7_F",
-			"broken_CUP_launch_RPG7V"
+			"broken_CUP_launch_RPG7V",
+			"broken_CUP_launch_RPG7V_NSPU",
+			"broken_CUP_launch_RPG7V_PGO7V",
+			"broken_CUP_launch_RPG7V_PGO7V2",
+			"broken_CUP_launch_RPG7V_PGO7V3"
 		};
 		
 		ammo[] = {};
