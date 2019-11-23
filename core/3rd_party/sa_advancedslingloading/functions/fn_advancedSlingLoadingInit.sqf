@@ -10,6 +10,49 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+AR_SUPPORTED_VEHICLES = [
+	"Helicopter",
+	"VTOL_Base_F"
+];
+
+AR_Is_Supported_Vehicle = {
+	params ["_vehicle","_isSupported"];
+	_isSupported = false;
+	if(not isNull _vehicle) then {
+		{
+			if(_vehicle isKindOf _x) then {
+				_isSupported = true;
+			};
+		} forEach (missionNamespace getVariable ["AR_SUPPORTED_VEHICLES_OVERRIDE",AR_SUPPORTED_VEHICLES]);
+	};
+	_isSupported;
+};
+
+AR_Is_Vehicle_Crew = {
+	params ["_player", "_vehicle"];
+	_isCrew = false;
+	_crewTurrets = [-1,0];
+
+	if(_vehicle isKindOf "CUP_CH47F_base") then
+	{
+		_crewTurrets = [-1,0,1,2,3];
+	};
+
+	if(_vehicle isKindOf "CUP_Uh60_Base") then
+	{
+		_crewTurrets = [-1,0,1,2];
+	};
+
+	{
+		_turretUnit = _vehicle turretUnit [_x];
+		if(_turretUnit == _player) then
+		{
+			_isCrew = true;
+		};
+	} forEach _crewTurrets;
+	_isCrew;
+};
+
 ASL_Advanced_Sling_Loading_Install = {
 
 // Prevent advanced sling loading from installing twice
