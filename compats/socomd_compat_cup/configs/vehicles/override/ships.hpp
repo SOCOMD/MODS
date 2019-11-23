@@ -1,5 +1,19 @@
+#define SHIP_FAST_TURRETS \
+maxHorizontalRotSpeed = 8; \
+maxVerticalRotSpeed = 8;
 
-class CUP_B_RHIB_USMC;
+class Ship_F;
+
+class CUP_RHIB_Base : Ship_F {
+	class Turrets;
+};
+
+class CUP_B_RHIB_USMC : CUP_RHIB_Base {
+	class Turrets : Turrets {
+		class MainTurret;
+	};
+};
+
 class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
 	scope = public;
 	scopeCurator = public;
@@ -33,4 +47,10 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
 
 	minSpeed = -0.5;
 	maxSpeed = 60;
+
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			SHIP_FAST_TURRETS
+		};
+	};
 };

@@ -11,7 +11,6 @@ class CfgVehicles {
     #include "vehicles\base\offroad_armed.hpp"
     #include "vehicles\base\kord.hpp"
     #include "vehicles\base\tunguska.hpp"
-	#include "vehicles\base\coyote.hpp"
 
     // Override
     // AI
