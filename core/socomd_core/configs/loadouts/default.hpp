@@ -440,6 +440,11 @@ class SOCOMD_AT {
 	};
 };
 
+class SOCOMD_AT_Assistant : SOCOMD_AT {
+	secondary = "";
+	binocular = "Binocular";
+};
+
 ////////////////////////////////////////////////////////////////////////////////
 // Recon
 

@@ -35,6 +35,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
 		};
 		magazines[] = {
 			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}

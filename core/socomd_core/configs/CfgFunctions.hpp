@@ -33,7 +33,6 @@ class CfgFunctions {
 			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplaceFacewear {};
-			class Action_ReplacePrimary {};
 			class Action_ReplaceBackpack {};
 			class Action_EnterSpectator {};
 			class Action_displayName {};
