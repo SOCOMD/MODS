@@ -85,6 +85,8 @@ class CfgLoadoutWeapons {
 	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
 	class CUP_srifle_m110_kac : Long_Rifle_762 {};
 	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
+	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
+	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};

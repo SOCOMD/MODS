@@ -211,6 +211,14 @@ class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
 	displayName = "SR-25 Woodland";
 };
 
+class srifle_EBR_F;
+class SPARTAN_EBR_black_F : srifle_EBR_F {
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+
 //Machine Gun 556
 class CUP_lmg_minimipara;
 class CUP_lmg_minimi_railed : CUP_lmg_minimipara {

@@ -494,14 +494,49 @@ class SOCOMD_Recon {
 	};
 };
 
-class SOCOMD_Recon_Assistant : SOCOMD_Recon {
+class SOCOMD_Recon_Assistant {
 	primary		    = ITEM_PRIMARY_MARKSMAN;
-	maxOptic		= "4x";
+	secondary		= ITEM_SECONDARY_MARKSMAN;
+	handgun		    = ITEM_HANDGUN_MARKSMAN;
+	handgunMagazine = ITEM_HANDGUN_MAGAZINE_MARKSMAN;
+	headgear		= ITEM_HEADGEAR_MARKSMAN;
+	binocular		= "ACE_Vector";
+	gps			    = "ItemAndroid";
+	maxOptic		= "6x";
+
+	class Uniform {
+		type = ITEM_UNIFORM_RECON;
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_ITEM(Laserbatteries, 2)
+		};
+	};
 
 	class Vest {
+		type = ITEM_VEST_RECON;
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACE_Kestrel4500, 1)
+			LOADOUT_ITEM(ACE_RangeCard, 1)
+			LOADOUT_ITEM(Laserdesignator, 1)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 9)
+			LOADOUT_ITEM(ACE_ATragMX, 1)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_RECON;
+		class Inventory	{
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(ACRE_PRC117F, 1)
+			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
+			LOADOUT_ITEM(ACE_DefusalKit, 1)
+			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M26_Clacker, 1)
+			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
+			LOADOUT_ITEM(ACE_Tripod, 1)
 		};
 	};
 };
