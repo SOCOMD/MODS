@@ -104,7 +104,7 @@
 	TRANSPORT_MAGAZINE(30Rnd_556x45_Stanag_Tracer_Red, 3) \
 	TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2) \
 	TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 8) \
-	TRANSPORT_MAGAZINE(ClaymoreDirectionalMine_Remote_Mag, 4)
+	TRANSPORT_MAGAZINE(ClaymoreDirectionalMine_Remote_Mag, 3)
 
 
 // Rifles

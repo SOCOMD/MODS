@@ -1,7 +1,3 @@
-#define SOV_FAST_TURRETS \
-maxHorizontalRotSpeed = 8; \
-maxVerticalRotSpeed = 8;
-
 // fuelCapcity = 35; == 106m driving time @ 100km/hr
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -11,8 +7,6 @@ class CUP_BAF_Coyote_BASE_D : Car_F {
 	explosionShielding = 0.000000001;
 	fuelCapacity = 35;
 	ace_refuel_fuelCapacity = 50;
-
-	class Turrets;
 
 	class HitPoints {
 		class HitBody {
@@ -135,25 +129,9 @@ class CUP_BAF_Coyote_BASE_D : Car_F {
 	};
 };
 
-class CUP_B_BAF_Coyote_L2A1_D : CUP_BAF_Coyote_BASE_D {
-	class Turrets : Turrets {
-		class M2_Turret;
-		class M240_Turret;
-	};
-};
-class CUP_B_BAF_Coyote_L2A1_W : CUP_B_BAF_Coyote_L2A1_D {};
-
-class CUP_B_BAF_Coyote_GMG_D : CUP_BAF_Coyote_BASE_D {
-	class Turrets : Turrets {
-		class GMG_Turret;
-		class M240_Turret;
-	};
-};
-class CUP_B_BAF_Coyote_GMG_W : CUP_B_BAF_Coyote_GMG_D {};
-
 ////////////////////////////////////////////////////////////////////////////////
 // SOV-CD
-
+class CUP_B_BAF_Coyote_L2A1_D;
 class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 
 	//armor = 3000;
@@ -173,7 +151,7 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 	vehicleclass = "Car";
 
 	crew = UNIT_SOCOMD_CREWMAN;
-	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN, UNIT_SOCOMD_CREWMAN};
 
 	transportMaxBackpacks = "30";
 	transportMaxWeapons = "60";
@@ -191,16 +169,6 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 		"socomd_data_core\SOV\jackal_adds_co.paa"
 	};
 
-	class Turrets : Turrets {
-		class M2_Turret : M2_Turret {
-			SOV_FAST_TURRETS
-		};
-
-		class M240_Turret : M240_Turret {
-			SOV_FAST_TURRETS
-		};
-	};
-
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
@@ -217,6 +185,8 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
 };
+
+class CUP_B_BAF_Coyote_L2A1_W;
 
 class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	scope = public;
@@ -234,16 +204,6 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
 
-	class Turrets : Turrets {
-		class M2_Turret : M2_Turret {
-			SOV_FAST_TURRETS
-		};
-
-		class M240_Turret : M240_Turret {
-			SOV_FAST_TURRETS
-		};
-	};
-
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
@@ -261,6 +221,7 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	};
 };
 
+class CUP_B_BAF_Coyote_GMG_D;
 class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	scope = public;
 	scopeCurator = public;
@@ -293,16 +254,6 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 		"socomd_data_core\SOV\jackal_adds_co.paa"
 	};
 
-	class Turrets : Turrets {
-		class GMG_Turret : GMG_Turret {
-			SOV_FAST_TURRETS
-		};
-
-		class M240_Turret : M240_Turret {
-			SOV_FAST_TURRETS
-		};
-	};
-
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS
 	};
@@ -320,6 +271,7 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	};
 };
 
+class CUP_B_BAF_Coyote_GMG_W;
 class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
 	scope = public;
 	scopeCurator = public;
@@ -335,16 +287,6 @@ class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
 
 	crew = UNIT_SOCOMD_CREWMAN;
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
-
-	class Turrets : Turrets {
-		class GMG_Turret : GMG_Turret {
-			SOV_FAST_TURRETS
-		};
-
-		class M240_Turret : M240_Turret {
-			SOV_FAST_TURRETS
-		};
-	};
 
 	class TransportWeapons {
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS

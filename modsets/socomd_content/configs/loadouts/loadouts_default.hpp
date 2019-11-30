@@ -105,6 +105,19 @@ class SOCOMD_Recon {
 	};
 };
 
+class SOCOMD_Recon_Assistant : SOCOMD_Recon {
+	primary		    = ITEM_PRIMARY_MARKSMAN;
+	maxOptic		= "4x";
+
+	class Vest {
+		class Inventory	{
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
+			LOADOUT_ITEM(5Rnd_338LM_Magazine, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
+		};
+	};
+};
+
 class SOCOMD_AT {
 	class Backpack {
 		type = ITEM_BACKPACK_AT;

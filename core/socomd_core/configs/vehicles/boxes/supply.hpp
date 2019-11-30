@@ -105,6 +105,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_ITEM(ACE_salineIV_500, 12)
 		TRANSPORT_ITEM(ACE_surgicalKit, 12)
 		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
+		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
 		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
 	};
 

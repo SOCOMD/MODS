@@ -297,7 +297,6 @@ class SOCOMD_Sapper {
 			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(MineDetector, 1)
 			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
-			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
 			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
 			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 		};
@@ -484,12 +483,25 @@ class SOCOMD_Recon {
 		class Inventory	{
 			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+			LOADOUT_ITEM(ACRE_PRC117F, 1)
+			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 			LOADOUT_ITEM(ACE_Tripod, 1)
+		};
+	};
+};
+
+class SOCOMD_Recon_Assistant : SOCOMD_Recon {
+	primary		    = ITEM_PRIMARY_MARKSMAN;
+	maxOptic		= "4x";
+
+	class Vest {
+		class Inventory	{
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
 		};
 	};
 };
