@@ -38,3 +38,5 @@ VCM_SKILL_CLASSNAMES = [];
 };
 
 missionNamespace setVariable ["SOCOMD_InitComplete", 1];
+
+[west, -1, [["Land_BagFence_Short_F", 5],["Land_BagFence_Long_F", 5],["Land_BagFence_Round_F", 5],["Land_HBarrier_1_F", 5],["Land_HBarrier_3_F", 5],["Land_HBarrier_5_F", 5],["Land_Plank_01_4m_F", 5],["Land_Plank_01_8m_F", 5]]] call acex_fortify_fnc_registerObjects;
