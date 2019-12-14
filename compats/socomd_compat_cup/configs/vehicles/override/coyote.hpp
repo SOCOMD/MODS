@@ -1,3 +1,7 @@
+#define COYOTE_FAST_TURRETS \
+maxHorizontalRotSpeed = 8; \
+maxVerticalRotSpeed = 8;
+
 // fuelCapcity = 35; == 106m driving time @ 100km/hr
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -127,11 +131,30 @@ class CUP_BAF_Coyote_BASE_D : Car_F {
 			shortName = "Dash";
 		};
 	};
+
+	class Turrets : Turrets {
+		class M240_Turret;
+	};
 };
 
 ////////////////////////////////////////////////////////////////////////////////
 // SOV-CD
-class CUP_B_BAF_Coyote_L2A1_D;
+class CUP_B_BAF_Coyote_L2A1_D : CUP_BAF_Coyote_BASE_D {
+	class Turrets : Turrets {
+		class M240_Turret : M240_Turret{};
+		class M2_Turret;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
+		class CargoTurret_05;
+		class CargoTurret_06;
+		class CargoTurret_07;
+		class CargoTurret_08;
+		class CargoTurret_09;
+	};
+};
+
 class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 
 	//armor = 3000;
@@ -184,9 +207,29 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 	class TransportBackpacks {
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
+
+	class Turrets : Turrets {
+		class M240_Turret : M240_Turret{
+			COYOTE_FAST_TURRETS
+		};
+
+		class M2_Turret : M2_Turret {
+			COYOTE_FAST_TURRETS
+		};
+		
+		class CargoTurret_01 : CargoTurret_01{};
+		class CargoTurret_02 : CargoTurret_02{};
+		class CargoTurret_03 : CargoTurret_03{};
+		class CargoTurret_04 : CargoTurret_04{};
+		class CargoTurret_05 : CargoTurret_05{};
+		class CargoTurret_06 : CargoTurret_06{};
+		class CargoTurret_07 : CargoTurret_07{};
+		class CargoTurret_08 : CargoTurret_08{};
+		class CargoTurret_09 : CargoTurret_09{};
+	};
 };
 
-class CUP_B_BAF_Coyote_L2A1_W;
+class CUP_B_BAF_Coyote_L2A1_W : CUP_B_BAF_Coyote_L2A1_D {};
 
 class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	scope = public;
@@ -221,7 +264,22 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
 	};
 };
 
-class CUP_B_BAF_Coyote_GMG_D;
+class CUP_B_BAF_Coyote_GMG_D : CUP_BAF_Coyote_BASE_D {
+	class Turrets : Turrets {
+		class M240_Turret : M240_Turret{};
+		class GMG_Turret;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
+		class CargoTurret_05;
+		class CargoTurret_06;
+		class CargoTurret_07;
+		class CargoTurret_08;
+		class CargoTurret_09;
+	};
+};
+
 class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	scope = public;
 	scopeCurator = public;
@@ -269,9 +327,29 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 	class TransportBackpacks {
 		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
 	};
+
+	class Turrets : Turrets {
+		class M240_Turret : M240_Turret{
+			COYOTE_FAST_TURRETS
+		};
+
+		class GMG_Turret : GMG_Turret {
+			COYOTE_FAST_TURRETS
+		};
+		
+		class CargoTurret_01 : CargoTurret_01{};
+		class CargoTurret_02 : CargoTurret_02{};
+		class CargoTurret_03 : CargoTurret_03{};
+		class CargoTurret_04 : CargoTurret_04{};
+		class CargoTurret_05 : CargoTurret_05{};
+		class CargoTurret_06 : CargoTurret_06{};
+		class CargoTurret_07 : CargoTurret_07{};
+		class CargoTurret_08 : CargoTurret_08{};
+		class CargoTurret_09 : CargoTurret_09{};
+	};
 };
 
-class CUP_B_BAF_Coyote_GMG_W;
+class CUP_B_BAF_Coyote_GMG_W : CUP_B_BAF_Coyote_GMG_D {};
 class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
 	scope = public;
 	scopeCurator = public;

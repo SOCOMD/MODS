@@ -14,7 +14,10 @@ class CUP_CH47F_base : Helicopter_Base_H {
 
 class CUP_B_CH47F_USA : CUP_CH47F_base {
 	class Turrets : Turrets {
+		class MainTurret;
+		class RightDoorGun;
 		class BackDoorGun;
+		class CopilotTurret;
 	};
 };
 
@@ -40,11 +43,15 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_USA {
 		class MainTurret : MainTurret {
 			NOMAD_FAST_TURRETS
 		};
+
 		class RightDoorGun : RightDoorGun {
 			NOMAD_FAST_TURRETS
 		};
+
 		class BackDoorGun : BackDoorGun {
 			NOMAD_FAST_TURRETS
 		};
+
+		class CopilotTurret : CopilotTurret {};		
 	};
 };

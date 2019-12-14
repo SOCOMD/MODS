@@ -234,12 +234,23 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 			visual = "";
 		};
 	};
+
+	class Turrets : Turrets {
+		class CopilotTurret;
+		class MainTurret;
+		class RightDoorGun;
+	};
 };
 
 class CUP_Uh60_FFV_Base : CUP_Uh60_Base {
 	class Turrets : Turrets {
+		class CopilotTurret;
 		class MainTurret;
 		class RightDoorGun;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
 	};
 };
 
@@ -265,6 +276,7 @@ class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	};
 
 	class Turrets : Turrets {
+		class CopilotTurret : CopilotTurret {};
 		class MainTurret : MainTurret {
 			WARRIOR_FAST_TURRETS
 		};
@@ -308,11 +320,17 @@ class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 	};
 
 	class Turrets : Turrets {
+		class CopilotTurret : CopilotTurret {};
 		class MainTurret : MainTurret {
 			WARRIOR_FAST_TURRETS
 		};
 		class RightDoorGun : RightDoorGun {
 			WARRIOR_FAST_TURRETS
 		};
+		
+		class CargoTurret_01 : CargoTurret_01{};
+		class CargoTurret_02 : CargoTurret_02{};
+		class CargoTurret_03 : CargoTurret_03{};
+		class CargoTurret_04 : CargoTurret_04{};
 	};
 };
