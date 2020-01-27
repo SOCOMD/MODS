@@ -3,8 +3,8 @@ class Morphine: FieldDressing {
 	displayNameProgress = "Injecting Morphine";
 	icon = "socomd_data_core\icon\VPN.paa";
 	items[] = {
-		"ACE_Morphine"
-		//"SOCOMD_VPN"
+		"ACE_Morphine",
+		"SOCOMD_VPN"
 	};
 };
 class Epinephrine: Morphine {
@@ -12,8 +12,8 @@ class Epinephrine: Morphine {
 	displayNameProgress = "Injecting Epinephrine";
 	icon = "socomd_data_core\icon\VPN.paa";
 	items[] = {
-		"ACE_epinephrine"
-		//"SOCOMD_VPN"
+		"ACE_Epinephrine",
+		"SOCOMD_VPN"
 	};
 };
 
@@ -27,8 +27,8 @@ class Naloxone : Morphine {
 	displayNameProgress="Injecting Naloxone";
 	icon="socomd_data_core\icon\VPN.paa";
 	items[] = {
-		"SOCOMD_Naloxone"
-		//"SOCOMD_VPN"
+		"SOCOMD_Naloxone",
+		"SOCOMD_VPN"
 	};
 };
 
@@ -36,8 +36,8 @@ class Fentanyl: Morphine{
 	displayName="Fentanyl 100mcg/2mL";
 	displayNameProgress="Injecting Fentanyl";
 	items[]={
-		"ACE_fentanyl"
-		//"SOCOMD_VPN"
+		"SOCOMD_Fentanyl",
+		"SOCOMD_VPN"
 	};
 };
 
@@ -46,7 +46,7 @@ class Ketamine_6mg : Morphine {
 	displayNameProgress="Injecting Ketamine 6mg/2mL";
 	items[] = {
 		"SOCOMD_Ketamine_6mg"
-		//"SOCOMD_VPN"
+		"SOCOMD_VPN"
 	};
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
 };
@@ -55,8 +55,8 @@ class Ketamine_200mg : Morphine {
 	displayName="Ketamine 200mg/2mL";
 	displayNameProgress="Injecting Ketamine 200mg/2mL";
 	items[] = {
-		"SOCOMD_Ketamine_200mg"
-		//"SOCOMD_VPN"
+		"SOCOMD_Ketamine_200mg",
+		"SOCOMD_VPN"
 	};
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
 };
@@ -76,7 +76,7 @@ class Apap : Morphine{
 	displayName="Paracetemol 1g";
 	displayNameProgress="Giving Paracetemol 1g";
 	items[] = {
-		"ACE_apap"
+		"SOCOMD_apap"
 	};
 	allowedSelections[] = {
 		"Head"

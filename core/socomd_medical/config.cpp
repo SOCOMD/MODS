@@ -13,11 +13,20 @@ class CfgPatches {
 			"ace_medical_treatment"
 		};
 
-		units[] = {};
+		units[] = {
+			"SOCOMD_FentanylItem",
+			"SOCOMD_NaloxonelItem",
+			"SOCOMD_ApapItem",
+		};
 
 		weapons[] = {
+			"SOCOMD_Naloxone",
+			"SOCOMD_Fentanyl",
 			"SOCOMD_Ketamine_6mg",
-			"SOCOMD_Ketamine_200mg"
+			"SOCOMD_Ketamine_200mg",
+			"SOCOMD_Tetra",
+			"SOCOMD_Apap",
+			"SOCOMD_VPN"
 		};
 	};
 };
