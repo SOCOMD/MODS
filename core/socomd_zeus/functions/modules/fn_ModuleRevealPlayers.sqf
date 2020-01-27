@@ -1,7 +1,8 @@
 params["_logic", "_units", "_activated"];
 
 if!(_activated && local _logic) exitWith {};
-if !(isNil "_units") exitWith {
+
+if !(isNil "_units" || (count _units) == 0) exitWith {
 	{ 
 		_unit = _x;
 		{ 

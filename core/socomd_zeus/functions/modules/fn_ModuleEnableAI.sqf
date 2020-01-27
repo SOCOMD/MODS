@@ -2,7 +2,7 @@ params["_logic", "_units", "_activated"];
 //if(!_activated) exitWith {};
 if!(_activated && local _logic) exitWith {};
 //_objects = synchronizedObjects _logic;
-if !(isNil "_units") exitWith {
+if !(isNil "_units" || (count _units) == 0) exitWith {
 	{_x  enableAI "PATH";} forEach _units;
 };
 
