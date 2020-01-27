@@ -159,6 +159,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_DisableAI";
 		displayName = "Disable AI";
@@ -168,6 +169,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_EnableAI";
 		displayName = "Enable AI";
@@ -177,6 +179,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_RevealPlayers";
 		displayName = "Reveal Players";
@@ -186,6 +189,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_ForgetPlayers";
 		displayName = "Forget Players";

@@ -1,5 +1,5 @@
 params["_logic", "_units", "_activated"];
-diag_log "executed forgetplayers";
+
 if!(_activated && local _logic) exitWith {};
 
 if !(isNil "_units" || (count _units) == 0) exitWith {

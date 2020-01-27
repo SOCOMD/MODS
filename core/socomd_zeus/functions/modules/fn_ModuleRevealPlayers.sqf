@@ -1,5 +1,5 @@
 params["_logic", "_units", "_activated"];
-diag_log "executed revealplayers";
+
 if!(_activated && local _logic) exitWith {};
 
 if !(isNil "_units" || (count _units) == 0) exitWith {
@@ -7,7 +7,9 @@ if !(isNil "_units" || (count _units) == 0) exitWith {
 		_unit = _x;
 		{ 
 			if((_x distance _unit) < 1000) then {
-				_unit reveal _x;
+				if(([objNull,"VIEW"] checkVisibility [eyePos _unit, eyePos _x ]) > 0.5) then {
+					_unit reveal _x;
+				};
 			};
 		} foreach allPlayers;
 	} foreach _units;
@@ -16,7 +18,7 @@ if !(isNil "_units" || (count _units) == 0) exitWith {
 _mouseOver = missionNamespace getVariable [ "bis_fnc_curatorObjectPlaced_mouseOver", [""]];
 
 _curatorEntity = objnull;
-if ((_mouseOver select 0) == "OBJECT") then 
+if ((_mouseOver select 0) == "OBJECT") then
 {
 	 _curatorEntity = (_mouseOver select 1);
 };
@@ -28,10 +30,15 @@ if(isNull _curatorEntity) exitWith {
 
 _group = Group _curatorEntity;
 if !(isNull _group) then {
-	{ 
-		if((_x distance _unit) < 1000) then {
-			_group reveal _x;
-		};
+	{
+		_player = _x;
+		{
+			if((_x distance _player) < 1000) then {
+				if(([objNull,"VIEW"] checkVisibility [eyePos _player, eyePos _x ]) > 0.5) then {
+					_x reveal _player;
+				};
+			};
+		} foreach (units _group);
 	} foreach allPlayers;
 };
 deleteVehicle _logic;
