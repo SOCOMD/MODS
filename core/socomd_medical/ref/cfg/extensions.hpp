@@ -1,3 +1,4 @@
+/*
 class Self_Medical {
 
 	class ACE_Head {
@@ -141,14 +142,6 @@ class Self_Medical {
 
 class ACE_Actions{
 class ACE_Head{
-	class Blindfold{
-		displayName="Blindfold";
-		condition="[_player,_target] call SOCOMD_fnc_ActionCondition_canInteract";
-		statement="[_player,_target] call SOCOMD_fnc_Action_putBlindfoldOn";
-		showDisabled=0;
-		priority=1;
-		distance=2;
-	};
 };
 class fieldDressing;
 class Apap: fieldDressing {
@@ -477,3 +470,4 @@ class ACE_MainActions {
 			};
 		};
 	};
+	*/

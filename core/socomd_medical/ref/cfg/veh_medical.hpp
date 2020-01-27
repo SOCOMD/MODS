@@ -1,3 +1,4 @@
+/*
 class Item_Base_F;
 class ACE_fentanylItem: Item_Base_F
 {
@@ -91,3 +92,4 @@ class KAT_larynxItem: Item_Base_F
 			};
 		};
 	};
+	*/

@@ -1,5 +1,7 @@
+#include "predefined.hpp"
+
 class CfgPatches {
-	class socomd_medical {
+	class SOCOMD_Medical {
 		//Internal Version
 		version = 1.2.0;
 		versionStr = "1.2.0";
@@ -12,10 +14,18 @@ class CfgPatches {
 		};
 
 		units[] = {};
-		weapons[] = {};
+
+		weapons[] = {
+			"SOCOMD_Ketamine_6mg",
+			"SOCOMD_Ketamine_200mg"
+		};
 	};
 };
-#include "configs\ACE_Medical_Treatment.hpp"
-#include "configs\ACE_Medical_Treatment_Actions.hpp"
+
+#include "configs\CfgFunctions.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
+#include "configs\CfgExtendedEventHandler.hpp"
+
+#include "configs\ACE_Medical_Treatment.hpp"
+#include "configs\ACE_Medical_Treatment_Actions.hpp"

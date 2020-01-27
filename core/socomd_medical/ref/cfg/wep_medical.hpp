@@ -1,3 +1,4 @@
+/*
 class ACE_ItemCore;
 class ACE_morphine; //displayName= "Morphine Autoinjector 10mg/1mL IM"
 class ACE_atropine; //displayName= "Atropine 1.2mg/1mL IO"
@@ -132,31 +133,4 @@ class SOCOMD_Tetra: ACE_morphine {
 		mass=0.01;
 	};
 };
-
-class ACE_fieldDressing: ACE_ItemCore {
-	scope=2;
-	author="$STR_ace_common_ACETeam";
-	model="\z\ace\addons\medical\data\bandage.p3d";
-	picture="\socomd_data_core\icon\IB.paa";
-	displayName="Israeli Bandage";
-	descriptionShort="Quickly stanches haemorrhaging from injuries";
-	descriptionUse="Quickly stanches haemorrhaging from injuries";
-	class ItemInfo: CBA_MiscItem_ItemInfo
-	{
-		mass=1;
-	};
-};
-
-class ACE_quikclot: ACE_ItemCore {
-	scope=2;
-	author="$STR_ace_common_ACETeam";
-	displayName="Quikclot Combat Gauze";
-	model="\z\ace\addons\medical\data\QuikClot.p3d";
-	picture="\socomd_data_core\icon\Quikclot.paa";
-	descriptionShort="$STR_ace_medical_QuikClot_Desc_Short";
-	descriptionUse="$STR_ace_medical_QuikClot_Desc_Use";
-	class ItemInfo: CBA_MiscItem_ItemInfo
-	{
-		mass=1;
-	};
-};
+*/
