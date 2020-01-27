@@ -16,7 +16,31 @@ class Epinephrine: Morphine {
 		//"SOCOMD_VPN"
 	};
 };
-class Adenosine: Morphine {};
+
+class Adenosine : Morphine {};
+class Atropine : Morphine {};
+
+////////////////////////////////////////////////////////////////////////////////
+
+class Naloxone : Morphine {
+	displayName="Naloxone 1.6mg/4mL";
+	displayNameProgress="Injecting Naloxone";
+	icon="socomd_data_core\icon\VPN.paa";
+	items[] = {
+		"SOCOMD_Naloxone"
+		//"SOCOMD_VPN"
+	};
+};
+
+class Fentanyl: Morphine{
+	displayName="Fentanyl 100mcg/2mL";
+	displayNameProgress="Injecting Fentanyl";
+	items[]={
+		"ACE_fentanyl"
+		//"SOCOMD_VPN"
+	};
+};
+
 class Ketamine_6mg : Morphine {
 	displayName="Ketamine 6mg/2mL";
 	displayNameProgress="Injecting Ketamine 6mg/2mL";
@@ -35,4 +59,30 @@ class Ketamine_200mg : Morphine {
 		//"SOCOMD_VPN"
 	};
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
+};
+
+class Tetra : Morphine {
+	displayName="Tetracycline 250mg";
+	displayNameProgress="Giving Tetracycline";
+	items[]={
+		"SOCOMD_Tetra"
+	};
+	allowedSelections[]={
+		"Head"
+	};
+};
+
+class Apap : Morphine{
+	displayName="Paracetemol 1g";
+	displayNameProgress="Giving Paracetemol 1g";
+	items[] = {
+		"ACE_apap"
+	};
+	allowedSelections[] = {
+		"Head"
+	};
+	treatmentTime=1;
+	litter[]={
+		{"All","",{"ACE_MedicalLitter_apap"}}
+	};
 };

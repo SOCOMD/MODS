@@ -69,90 +69,7 @@ class ACE_ArmLeft{
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 };
-class ACE_Medical_Advanced{
-		////////////////////////////////////////////////////////////////////////////////
-		class Medication{
-			painReduce=0;
-			hrIncreaseLow[]={0,0,0};
-			hrIncreaseNormal[]={0,0,0};
-			hrIncreaseHigh[]={0,0,0};
-			hrCallback="";
-			timeInSystem=120;
-			maxDose=4;
-			onOverDose="";
-			viscosityChange=0;
-			
-			class Fentanyl{
-				painReduce=5;
-				hrIncreaseLow[]={-10,-20,45};
-				hrIncreaseNormal[]={-10,-20,45};
-				hrIncreaseHigh[]={-10,-35,45};
-				timeInSystem=6800;
-				maxDose=4;
-				inCompatableMedication[]={};
-				viscosityChange=-3;
-			};
-			class Ket{
-				painReduce=50;
-				hrIncreaseLow[]={15,25,45};
-				hrIncreaseNormal[]={15,35,45};
-				hrIncreaseHigh[]={15,45,45};
-				timeInSystem=1800;
-				maxDose=12;
-				inCompatableMedication[]={};
-				viscosityChange=5;
-			};
-			class Ket_S {
-				painReduce=50;
-				hrIncreaseLow[]={15,25,45};
-				hrIncreaseNormal[]={15,35,45};
-				hrIncreaseHigh[]={15,45,50};
-				timeInSystem=1800;
-				maxDose=12;
-				inCompatableMedication[]={};
-				viscosityChange=5;
-			};
 
-			class Adenosine;
-			class Atropine{
-				painReduce=0;
-				hrIncreaseLow[]={7,10,15};
-				hrIncreaseNormal[]={15,25,20};
-				hrIncreaseHigh[]={15,30,10};
-				timeInSystem=120;
-				maxDose=6;
-				inCompatableMedication[]={};
-				viscosityChange=-10;
-			};
-			class Naloxone{
-				painReduce=0;
-				hrIncreaseLow[]={5,7,60};
-				hrIncreaseNormal[]={7,10,60};
-				hrIncreaseHigh[]={15,25,60};
-				timeInSystem=120;
-				maxDose=4;
-				onOverDose = "[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
-				inCompatableMedication[]={};
-				viscosityChange=20;
-			};
-			class Tetra: PainKillers{
-				painReduce=0;
-				hrIncreaseLow[]={0,0,1};
-				hrIncreaseNormal[]={0,0,1};
-				hrIncreaseHigh[]={0,0,1};
-				timeInSystem=5000;
-				viscosityChange=0;
-			};
-			class Apap: PainKillers{
-				painReduce=0.4;
-				timeInSystem=1200;
-				maxDose=15;
-				inCompatableMedication[]={};
-				viscosityChange=0;
-			};
-		};
-	};
-};
 
 class ACE_Medical_Actions{
 	class Advanced{
@@ -227,24 +144,7 @@ class ACE_Medical_Actions{
 				"SOCOMD_VPN"
 			};
 		};
-		class Ket: Morphine {
-			displayName="Ketamine 6mg/2mL";
-			displayNameProgress="Injecting Ketamine 6mg/2mL";
-			items[]={
-				"SOCOMD_Ket",
-				"SOCOMD_VPN"
-			};
-			callbackSuccess=SOCOMD_fnc_ketamine;
-		};
-		class Ket_S: Ket {
-			displayName="Ketamine 200mg/2mL";
-			displayNameProgress="Injecting Ketamine 200mg/2mL";
-			items[]={
-				"SOCOMD_Ket_S",
-				"SOCOMD_VPN"
-			};
-			callbackSuccess=SOCOMD_fnc_ketamine_sedation;
-		};
+		
 		class Tetra: Morphine {
 			allowedSelections[]={
 				"head"

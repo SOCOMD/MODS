@@ -424,11 +424,6 @@ class ACE_MainActions {
 						condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 						statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 					};
-					class Ket: Fentanyl {
-						displayName="Ket 100mcg/2mL";
-						condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
-					};
 					class Naloxone: Morphine {
 						displayName="Naloxone 1.6mg/4mL";
 						condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";

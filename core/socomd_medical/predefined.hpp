@@ -21,6 +21,12 @@
 //Quotes
 #define QUOTE(var1) #var1
 
+//Transport Items
+#define TRANSPORT_MAGAZINE(id,qty) class _xx_##id { magazine = #id; count = qty; };
+#define TRANSPORT_ITEM(id,qty) class _xx_##id { name = #id; count = qty; };
+#define TRANSPORT_WEAPON(id,qty) class _xx_##id { weapon = #id; count = qty; };
+#define TRANSPORT_BACKPACK(id,qty) class _xx_##id { backpack = #id; count = qty; };
+
 //Items
 #define ITEM01(id) id
 #define ITEM02(id) id,id

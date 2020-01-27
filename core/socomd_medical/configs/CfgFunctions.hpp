@@ -3,7 +3,7 @@ class CfgFunctions {
 		class XEH {
 			file="\socomd_medical\functions\xeh";
 			class XEH_postInit {};
-		}
+		};
 		
 		class Medication {
 			file="\socomd_medical\functions\medication";
