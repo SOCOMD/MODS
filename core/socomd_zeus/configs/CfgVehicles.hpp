@@ -157,6 +157,7 @@ class CfgVehicles
 	};
 	class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
 		scope = 2;
+		scopeCurator = 2;
 		isGlobal = 1;
 
 		_generalMacro = "SOCOMD_Module_DisableAI";
@@ -165,10 +166,20 @@ class CfgVehicles
 	};
 	class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
 		scope = 2;
+		scopeCurator = 2;
 		isGlobal = 1;
 
 		_generalMacro = "SOCOMD_Module_EnableAI";
 		displayName = "Enable AI";
 		function = "SOCOMD_fnc_EnableAI";
+	};
+	class SOCOMD_Module_RevealPlayers : SOCOMD_Module_Base {
+		scope = 2;
+		scopeCurator = 2;
+		isGlobal = 1;
+		
+		_generalMacro = "SOCOMD_Module_RevealPlayers";
+		displayName = "Reveal Players";
+		function = "SOCOMD_fnc_RevealPlayers";
 	};
 };
