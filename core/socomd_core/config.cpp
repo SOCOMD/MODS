@@ -21,7 +21,6 @@ class CfgPatches {
 
 			"ace_common",
 			"ace_main",
-			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
 			"ace_hearing",
@@ -181,5 +180,3 @@ class CfgAnimation {
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgWorldType.hpp"
-#include "configs\CfgMedical.hpp"
-//#include "configs\CfgModels.hpp"
