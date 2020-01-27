@@ -10,8 +10,5 @@ class BodyBag: BasicBandage {
 	treatmentTime = 10;
 };
 
-class CPR: BasicBandage {
-	treatmentTime = 10;
-};
 class SurgicalKit: FieldDressing {};
 class PersonalAidKit: BasicBandage {};

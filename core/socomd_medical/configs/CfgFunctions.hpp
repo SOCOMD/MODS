@@ -11,5 +11,12 @@ class CfgFunctions {
 			class KetamineLocal {};
 			class KetamineEffect {};
 		};
+
+		class Actions {
+			file="\socomd_medical\functions\actions";
+			class DefibrillatorLocal {};
+			class DefibrillatorProgress {};
+			class DefibrillatorSuccess {};
+		};
 	};
 };

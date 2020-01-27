@@ -4,4 +4,5 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
 	#include "weapons\Bandages.hpp"
 	#include "weapons\Medication.hpp"
+	#include "weapons\Resuscitation.hpp"
 };

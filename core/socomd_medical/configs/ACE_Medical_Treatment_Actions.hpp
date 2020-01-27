@@ -3,5 +3,6 @@ class ace_medical_treatment_actions {
 	#include "actions\Medication.hpp"
 	#include "actions\IV.hpp"
 	#include "actions\Diagnose.hpp"
+	#include "actions\Resuscitation.hpp"
 	#include "actions\Misc.hpp"
 };

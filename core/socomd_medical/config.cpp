@@ -16,7 +16,7 @@ class CfgPatches {
 		units[] = {
 			"SOCOMD_FentanylItem",
 			"SOCOMD_NaloxonelItem",
-			"SOCOMD_ApapItem",
+			"SOCOMD_ApapItem"
 		};
 
 		weapons[] = {

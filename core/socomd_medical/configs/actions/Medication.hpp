@@ -45,7 +45,7 @@ class Ketamine_6mg : Morphine {
 	displayName="Ketamine 6mg/2mL";
 	displayNameProgress="Injecting Ketamine 6mg/2mL";
 	items[] = {
-		"SOCOMD_Ketamine_6mg"
+		"SOCOMD_Ketamine_6mg",
 		"SOCOMD_VPN"
 	};
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
