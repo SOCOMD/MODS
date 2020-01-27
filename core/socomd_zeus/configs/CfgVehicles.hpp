@@ -182,4 +182,13 @@ class CfgVehicles
 		displayName = "Reveal Players";
 		function = "SOCOMD_fnc_ModuleRevealPlayers";
 	};
+	class SOCOMD_Module_ForgetPlayers : SOCOMD_Module_Base {
+		scope = 2;
+		scopeCurator = 2;
+		isGlobal = 1;
+
+		_generalMacro = "SOCOMD_Module_ForgetPlayers";
+		displayName = "Forget Players";
+		function = "SOCOMD_fnc_ModuleForgetPlayers";
+	};
 };

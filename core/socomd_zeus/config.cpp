@@ -22,7 +22,8 @@ class CfgPatches
 			"SOCOMD_Module_PowerGenerator",
 			"SOCOMD_Module_DisableAI",
 			"SOCOMD_Module_EnableAI",
-			"SOCOMD_Module_RevealPlayers"
+			"SOCOMD_Module_RevealPlayers",
+			"SOCOMD_Module_ForgetPlayers"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;

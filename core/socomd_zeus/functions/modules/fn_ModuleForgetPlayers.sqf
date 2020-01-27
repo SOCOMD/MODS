@@ -1,14 +1,12 @@
 params["_logic", "_units", "_activated"];
-diag_log "executed revealplayers";
+diag_log "executed forgetplayers";
 if!(_activated && local _logic) exitWith {};
 
 if !(isNil "_units" || (count _units) == 0) exitWith {
 	{ 
 		_unit = _x;
 		{ 
-			if((_x distance _unit) < 1000) then {
-				_unit reveal _x;
-			};
+			_unit forgetTarget _x;
 		} foreach allPlayers;
 	} foreach _units;
 };
@@ -29,9 +27,7 @@ if(isNull _curatorEntity) exitWith {
 _group = Group _curatorEntity;
 if !(isNull _group) then {
 	{ 
-		if((_x distance _unit) < 1000) then {
-			_group reveal _x;
-		};
+		_group forgetTarget _x;
 	} foreach allPlayers;
 };
 deleteVehicle _logic;
