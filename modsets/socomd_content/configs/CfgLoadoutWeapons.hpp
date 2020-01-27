@@ -27,22 +27,41 @@ class CfgLoadoutWeapons {
 	class SMA_MK18OD_GL_SM : RifleGL_556 {};
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
+
+	class Rifle_556_Camo;
+	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
+		};
+	};
 	
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
 
 	class MachineGun_762;
-	class sma_minimi_mk3_762tsb : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
-	class sma_minimi_mk3_762tsb_wdl : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg_des : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
 	};
-	class sma_minimi_mk3_762tsb_des : MachineGun_762 {
+	class CUP_lmg_Mk48_nohg_tan : MachineGun_762 {
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+		};
+	};
+	class CUP_lmg_Mk48_nohg_wdl : MachineGun_762 {
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
 		};
@@ -52,7 +71,6 @@ class CfgLoadoutWeapons {
 	class SMA_HK416CUSTOMvfgB : Rifle_556_Marksman {
 		loadoutWhitelist[] = {
 			"SOCOMD_Marksman",
-			"SOCOMD_Recon"
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_556x45_30Rnd", 5}
@@ -64,6 +82,9 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac : Long_Rifle_762 {};
+	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
 	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
 	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
 
@@ -82,14 +103,6 @@ class CfgLoadoutWeapons {
 		};
 	};
 
-	class SOCOMD_Item_Primary_Sniper : Rifle_300 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Sniper"
-		};
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_300_5Rnd", 6}
-		};
-	};
 	class SOCOMD_Item_Primary_Recon : Rifle_300 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Recon"
@@ -103,15 +116,6 @@ class CfgLoadoutWeapons {
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_Barret", 6}
-		};
-	};
-
-	class Sniper_Barret : ej_m107 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Sniper"
-		};
-		magazines[] = {
-			{"SOCOMD_Item_Magazine_Barret", 3}
 		};
 	};
 	

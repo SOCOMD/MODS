@@ -9,8 +9,8 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Empty";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 
 	ace_cargo_hasCargo = 1;
 	ace_cargo_size = 8;
@@ -40,12 +40,12 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 ////////////////////////////////////////////////////////////////////////////////
 
 class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
-	icon = "iconObject_1x1";
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Fuel";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
+	icon = "iconObject_1x1";
 
 	ace_dragging_canDrag = 1;
 	ace_dragging_canCarry = 0;
@@ -63,8 +63,8 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Hasty";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 
 	accuracy = 1000;
 	maximumLoad = 99999;
@@ -105,6 +105,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_ITEM(ACE_salineIV_500, 12)
 		TRANSPORT_ITEM(ACE_surgicalKit, 12)
 		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
+		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
 		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
 	};
 
@@ -118,8 +119,8 @@ class SOCOMD_Supply_Empty : Box_NATO_Wps_F {
 	scope = private;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Empty";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
+	editorCategory = EdCat_Supplies;
+	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 
 	model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
 	hiddenSelectionsTextures[] = {
@@ -149,8 +150,6 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Ammo";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 24)
@@ -178,19 +177,31 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Medical";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	class TransportItems {
-		TRANSPORT_ITEM(ACE_fieldDressing, 32)
-		TRANSPORT_ITEM(ACE_quikclot, 32)
-		TRANSPORT_ITEM(ACE_elasticBandage, 32)
-		TRANSPORT_ITEM(ACE_packingBandage, 32)
 		TRANSPORT_ITEM(ACE_morphine, 16)
-		TRANSPORT_ITEM(ACE_epinephrine, 16)
-		TRANSPORT_ITEM(ACE_surgicalKit, 8)
-		TRANSPORT_ITEM(ACE_salineIV_500, 6)
 		TRANSPORT_ITEM(ACE_bodyBag, 6)
+		TRANSPORT_ITEM(ACE_fieldDressing, 30)  		//Israeli Bandage
+		TRANSPORT_ITEM(ACE_elasticBandage, 30)		//Elastic Bandage
+		TRANSPORT_ITEM(ACE_quikclot, 30)				//Quikclot
+		TRANSPORT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+		TRANSPORT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+		TRANSPORT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+		TRANSPORT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+		TRANSPORT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
+		TRANSPORT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+		TRANSPORT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
+		TRANSPORT_ITEM(ACE_apap, 10)					//Paracetamol
+		TRANSPORT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
+		TRANSPORT_ITEM(ACE_bloodIV_500, 5)			//Blood
+		TRANSPORT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
+		TRANSPORT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+		TRANSPORT_ITEM(KAT_accuvac, 1)				//Medical Suction
+		TRANSPORT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+		TRANSPORT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+		TRANSPORT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+		TRANSPORT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+		TRANSPORT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 	};
 };
 
@@ -198,8 +209,6 @@ class SOCOMD_Supply_Gustav : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Gustav";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(tf47_m3maaws_HEAT, 4)
@@ -215,8 +224,6 @@ class SOCOMD_Supply_Tools : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Tools";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	class TransportItems {
 		TRANSPORT_ITEM(ToolKit, 2)
@@ -236,8 +243,6 @@ class SOCOMD_Supply_Vehicle_Ammo : SOCOMD_Supply_Empty {
     scope = public;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] Vehicle Ammo";
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Obj;
 
 	ace_cargo_size = 2;
     ace_rearm_defaultSupply = 30;

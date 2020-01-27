@@ -1,3 +1,7 @@
+#define WARRIOR_FAST_TURRETS \
+maxHorizontalRotSpeed = 8; \
+maxVerticalRotSpeed = 8;
+
 // modify damage model of warrior
 class CUP_B_UH60M_US : CUP_Uh60_Base {
 	armorStructural = 4; // default 4
@@ -230,6 +234,24 @@ class CUP_B_UH60M_US : CUP_Uh60_Base {
 			visual = "";
 		};
 	};
+
+	class Turrets : Turrets {
+		class CopilotTurret;
+		class MainTurret;
+		class RightDoorGun;
+	};
+};
+
+class CUP_Uh60_FFV_Base : CUP_Uh60_Base {
+	class Turrets : Turrets {
+		class CopilotTurret;
+		class MainTurret;
+		class RightDoorGun;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
+	};
 };
 
 
@@ -247,17 +269,28 @@ class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
 	side = WEST;
 	displayname = "Warrior (4/12)";
 
+	hiddenSelectionsTextures[] = {
+		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
+		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
+		"socomd_data_cup\data\blackhawk\default_co.paa"
+	};
+
+	class Turrets : Turrets {
+		class CopilotTurret : CopilotTurret {};
+		class MainTurret : MainTurret {
+			WARRIOR_FAST_TURRETS
+		};
+		class RightDoorGun : RightDoorGun {
+			WARRIOR_FAST_TURRETS
+		};
+	};
+
 	class AnimationSources : AnimationSources {
 		class Filters_Hide : Filters_Hide {
 			animPeriod = 1;
 			DisplayName = "Hide Filters";
 			initphase = 1;
 		};
-	};
-	hiddenSelectionsTextures[] = {
-		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
-		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
-		"socomd_data_cup\data\blackhawk\default_co.paa"
 	};
 };
 
@@ -270,7 +303,8 @@ CUP_Uh60_Base
 Helicopter_Base_H
 */
 
-class CUP_B_UH60M_FFV_US;
+class CUP_B_UH60M_FFV_US : CUP_Uh60_FFV_Base {};
+
 class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 	scope = public;
 	scopeCurator = public;
@@ -283,5 +317,20 @@ class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
 		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
 		"socomd_data_cup\data\blackhawk\default_co.paa"
+	};
+
+	class Turrets : Turrets {
+		class CopilotTurret : CopilotTurret {};
+		class MainTurret : MainTurret {
+			WARRIOR_FAST_TURRETS
+		};
+		class RightDoorGun : RightDoorGun {
+			WARRIOR_FAST_TURRETS
+		};
+		
+		class CargoTurret_01 : CargoTurret_01{};
+		class CargoTurret_02 : CargoTurret_02{};
+		class CargoTurret_03 : CargoTurret_03{};
+		class CargoTurret_04 : CargoTurret_04{};
 	};
 };

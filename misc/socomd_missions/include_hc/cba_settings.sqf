@@ -256,11 +256,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.4;
+force force ace_nightvision_aimDownSightsBlur = 1.0;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.5;
-force force ace_nightvision_fogScaling = 0.5;
-force force ace_nightvision_noiseScaling = 0.2;
+force force ace_nightvision_effectScaling = 1.0;
+force force ace_nightvision_fogScaling = 0.1;
+force force ace_nightvision_noiseScaling = 0.1;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -483,7 +483,7 @@ force force acre_sys_core_ts3ChannelName = "";
 force force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 0;
+force force acre_sys_signal_signalModel = 3;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -546,6 +546,19 @@ force force VCM_WARNDIST = 1000;
 force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
+
+// Zeus Enhanced
+zen_common_autoAddObjects = false;
+zen_common_darkMode = true;
+zen_common_disableGearAnim = true;
+zen_common_preferredArsenal = 1;
+force force zen_context_menu_enabled = 0;
+zen_editor_declutterEmptyTree = true;
+zen_editor_disableLiveSearch = false;
+zen_editor_moveDisplayToEdge = true;
+zen_editor_removeWatermark = true;
+zen_editor_unitRadioMessages = 2;
+zen_visibility_enabled = false;
 
 ////////////////////////////////////////////////////////////////////////////////
 //                          HARDCORE OVERRIDES

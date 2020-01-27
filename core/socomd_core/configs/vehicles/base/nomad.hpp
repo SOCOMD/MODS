@@ -35,7 +35,7 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 		class Intercom_1 { \
 			displayName = "Crew Intercom"; \
 			shortName = "Crew"; \
-			allowedPositions[] = {"driver", "gunner", "copilot"}; \
+			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
 			limitedPositions[] = {}; \
 			numLimitedPositions = 0; \
 			masterPositions[] = {"driver"}; \
@@ -44,7 +44,7 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
-			allowedPositions[] = {"driver", "gunner", "copilot"}; \
+			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
 			componentName = "ACRE_VRC110"; \
 			displayName = "Dash"; \
 			mountedRadio = "ACRE_PRC152"; \

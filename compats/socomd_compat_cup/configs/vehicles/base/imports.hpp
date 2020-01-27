@@ -8,6 +8,7 @@ class CUP_DSHKM_base : StaticMGWeapon {
         class MainTurret;
     };
 };
+
 class CUP_DSHKM_MiniTripod_base : CUP_DSHKM_base { };
 class CUP_DSHKM_base_OCimport_01 : CUP_DSHKM_base { };
 class CUP_DSHKM_base_OCimport_02 : CUP_DSHKM_base_OCimport_01 {};
@@ -15,29 +16,35 @@ class CUP_DSHKM_MiniTripod_base_OCimport_01 : CUP_DSHKM_MiniTripod_base {};
 class CUP_DSHKM_MiniTripod_base_OCimport_02 : CUP_DSHKM_MiniTripod_base_OCimport_01 {};
 
 class StaticMortar;
-class CUP_2b14_82mm_Base : StaticMortar { };
+class CUP_2b14_82mm_Base : StaticMortar {};
 
-class Car_F;
+class LandVehicle;
 
-// militia btr
-class Wheeled_APC_F : Car_F {
-    class Turrets;
+class Car : LandVehicle {
+    class NewTurret;
 };
-class CUP_BTR40_MG_Base : Wheeled_APC_F {
-    class Turrets : Turrets {
-        class MainTurret;
+
+class Car_F : Car {
+    class Turrets {
+        class MainTurret : NewTurret {};
     };
 };
-class LandVehicle;
+
+class Wheeled_APC_F : Car_F {};
+
 class Tank : LandVehicle {
     class Turrets;
 };
+
 class Tank_F : Tank {
     class Turrets : Turrets {
         class MainTurret;
     };
 };
 
+// militia btr
+class CUP_BTR40_MG_Base : Wheeled_APC_F{};
+
 // malita btr 
 // CUP_O_MTLB_pk_TK_MILITIA
-class CUP_MTLB_Base : Tank_F { };
+class CUP_MTLB_Base : Tank_F {};

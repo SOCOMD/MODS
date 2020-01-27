@@ -1,5 +1,4 @@
 class CfgFunctions {
-	
 	class SOCOMD {
 		class Common {
 			file="\socomd_core\functions\common";
@@ -21,6 +20,8 @@ class CfgFunctions {
 			class XEH_postInit {};
 			class GetWorldType {};
 			class GetWorldUniform {};
+			class SaveLoadoutPrefs {};
+			class LoadLoadoutPrefs {};
 		};
 
 		class Actions {
@@ -32,13 +33,12 @@ class CfgFunctions {
 			class Action_ReplaceVest {};
 			class Action_ReplaceHeadgear {};
 			class Action_ReplaceFacewear {};
-			class Action_ReplacePrimary {};
 			class Action_ReplaceBackpack {};
 			class Action_EnterSpectator {};
 			class Action_displayName {};
 			class Action_placePlaceables {};
 			class Action_putBlindfoldOn {};
-			class Action_ReplaceNvg {};
+			class Action_ReplaceNVG {};
 		};
 
 		class ActionConditions {
@@ -49,10 +49,12 @@ class CfgFunctions {
 			class ActionCondition_HasPrimary556	{};
 			class ActionCondition_CanSwapVest {};
 			class ActionCondition_CanSwapBackpacks {};
+			class ActionCondition_CanSwapNVG {};
 			class ActionCondition_IsAdmin {};
 			class ActionCondition_IsRadarOn {};
 			class ActionCondition_IsRadarOff {};
 			class ActionCondition_canInteract {};
+			class ActionCondition_HasLoadout {};
 		};
 
 		class ASORUtil {
@@ -81,29 +83,6 @@ class CfgFunctions {
 			class getBloodVolumeChange {};
         };
     };
-	class GEARF
-	{
-		class vectorFunctions
-		{
-			file="\socomd_core\functions\utils\Vectors";
-			class rotateObject
-			{
-			};
-		};
-		class helmetFunctions
-		{
-			file="\socomd_core\functions\utils\Helmet";
-			class slingHelmet
-			{
-			};
-			class unslingHelmet
-			{
-			};
-			class hideSlungHelmet
-			{
-			};
-		};
-	};
 	class advanced_peltors{
 		class functions {
 			file = "\socomd_core\functions\advanced_peltors";

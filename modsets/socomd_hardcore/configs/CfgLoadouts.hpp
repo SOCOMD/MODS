@@ -87,7 +87,6 @@ class CfgLoadouts {
 			maxOptic  	= "1x";
 
 			class Uniform {
-				type = SOCOMD_Item_Uniform_Rifleman;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -108,7 +107,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_TROOPLEADER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 					LOADOUT_ITEM(Laserbatteries, 2)
@@ -117,7 +115,6 @@ class CfgLoadouts {
 			};
 
 			class Vest {
-				type = ITEM_VEST_TROOPLEADER;
 				class Inventory {
 					LOADOUT_VEST_ESSENTIALS
 					LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -127,7 +124,6 @@ class CfgLoadouts {
 			};
 
 			class Backpack {
-				type = ITEM_BACKPACK_TROOPLEADER;
 				class Inventory	{
 					LOADOUT_BACKPACK_ESSENTIALS
 					LOADOUT_STANDARD_MEDICAL
@@ -155,7 +151,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_PATROLLEADER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 					LOADOUT_ITEM(Laserbatteries, 2)
@@ -202,7 +197,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -243,7 +237,6 @@ class CfgLoadouts {
 			maxOptic		= "4x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MARKSMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -279,7 +272,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_SAPPER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -305,7 +297,6 @@ class CfgLoadouts {
 					LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 					LOADOUT_ITEM(MineDetector, 1)
 					LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
-					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
 					LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
 					LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 				};
@@ -326,7 +317,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MACHINEGUNNER;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -364,7 +354,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_MEDIC;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -427,7 +416,6 @@ class CfgLoadouts {
 			maxOptic		= "2x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_AT;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -467,7 +455,6 @@ class CfgLoadouts {
 			maxOptic		= "1x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_PILOT;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -506,7 +493,6 @@ class CfgLoadouts {
 			maxOptic		= "1x";
 
 			class Uniform {
-				type = ITEM_UNIFORM_CREWMAN;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 				};
@@ -531,71 +517,6 @@ class CfgLoadouts {
 			};
 		};
 
-		////////////////////////////////////////////////////////////////////////////////
-		// PJ
-		class SOCOMD_PJ {
-			primary 		= ITEM_PRIMARY_PJ;
-			secondary 		= ITEM_SECONDARY_PJ;
-			handgun 		= ITEM_HANDGUN_PJ;
-			handgunMagazine = ITEM_HANDGUN_MAGAINE_PJ;
-			headgear 		= ITEM_HEADGEAR_PJ;
-			binocular 		= "";
-			gps 			= "";
-			maxOptic		= "1x";
-
-			class Uniform {
-				type = ITEM_UNIFORM_PJ;
-				class Inventory	{
-					LOADOUT_UNIFORM_ESSENTIALS
-				};
-			};
-
-			class Vest {
-				type = ITEM_VEST_PJ;
-				class Inventory	{
-					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(ACRE_PRC152, 1)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 4)
-				};
-			};
-
-			class Backpack {
-				type = ITEM_BACKPACK_PJ;
-				class Inventory	{
-					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_ITEM(ACRE_PRC117F, 1)
-					LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
-					LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
-					LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
-					LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
-					LOADOUT_ITEM(ACE_personalAidKit, 4)			//Remove
-					LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
-					LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
-					LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
-					LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
-					LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
-					LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
-					LOADOUT_ITEM(ACE_morphine_Medic, 5)			//Morphine Ampoule
-					LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
-					LOADOUT_ITEM(ACE_fentanyl, 5)				//Fentanyl Ampoule
-					LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
-					LOADOUT_ITEM(ACE_bloodIV_1000, 10)			//Blood
-					LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
-					LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
-					LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
-					LOADOUT_ITEM(KAT_Pulseoximeter, 1)			//Pulseoximeter
-					LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
-					LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
-					LOADOUT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
-					LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
-				};
-			};
-		};
-
-		class SOCOMD_Sniper {
-			optics[] = {"ace_optic_lrps_2d", "optic_khs_old", "hlc_optic_leupoldm3a", "optic_lrps", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "bnae_truglo_blk_virtual", "bnae_truglo_snd_virtual"};
-		};
-
 		class SOCOMD_Recon {
 			primary		    = ITEM_PRIMARY_RECON;
 			secondary		= ITEM_SECONDARY_RECON;
@@ -607,7 +528,7 @@ class CfgLoadouts {
 			optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 			class Uniform {
-				type = SOCOMD_Uniform_SleevesDown_Recon;
+				type = ITEM_UNIFORM_RECON;
 				class Inventory	{
 					LOADOUT_UNIFORM_ESSENTIALS
 					LOADOUT_ITEM(Laserbatteries, 2)
@@ -628,11 +549,11 @@ class CfgLoadouts {
 			};
 
 			class Backpack {
-				type = ITEM_BACKPACK_SNIPER;
+				type = ITEM_BACKPACK_RECON;
 				class Inventory	{
 					LOADOUT_STANDARD_MEDICAL
 					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
 					LOADOUT_ITEM(ACE_DefusalKit, 1)
 					LOADOUT_ITEM(ACE_M26_Clacker, 1)
 					LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
@@ -641,106 +562,11 @@ class CfgLoadouts {
 			};
 		};
 
-		class SOCOMD_MMGAmmo {
-			primary		    = ITEM_PRIMARY_RIFLEMAN;
-			handgun		    = ITEM_HANDGUN_RIFLEMAN;
-			handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-			headgear		= ITEM_HEADGEAR_RIFLEMAN;
-			binocular		= "";
-			gps			    = "";
-			maxOptic		= "2x";
-
-			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
-				class Inventory	{
-					LOADOUT_UNIFORM_ESSENTIALS
-				};
-			};
-
+		class SOCOMD_Recon_Assistant {
 			class Vest {
-				type = ITEM_VEST_RIFLEMAN;
 				class Inventory	{
-					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-					//LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 2)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 4)
 				};
-			};
-			class Backpack {
-				type = "Kit_Bag_MC";
-				class Inventory	{
-					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_STANDARD_MEDICAL
-					LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 4)
-
-				};
-			};
-		};
-
-		class SOCOMD_MMG {
-			primary		    = SOCOMD_mag58;
-			secondary		= ITEM_SECONDARY_RIFLEMAN;
-			handgun		    = ITEM_HANDGUN_RIFLEMAN;
-			handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-			headgear		= ITEM_HEADGEAR_RIFLEMAN;
-			binocular		= "";
-			gps			    = "";
-			maxOptic		= "2x";
-
-			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
-				class Inventory	{
-					LOADOUT_UNIFORM_ESSENTIALS
-				};
-			};
-
-			class Vest {
-				type = ITEM_VEST_RIFLEMAN;
-				class Inventory	{
-					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M, 3)
-				};
-			};
-			class Backpack {
-				type = "Kit_Bag_MC";
-				class Inventory	{
-					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_STANDARD_MEDICAL
-				};
-			};
-		};
-
-		class SOCOMD_Mortar {
-			primary		    = ITEM_PRIMARY_RIFLEMAN;
-			secondary		= ITEM_SECONDARY_RIFLEMAN;
-			handgun		    = ITEM_HANDGUN_RIFLEMAN;
-			handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-			headgear		= ITEM_HEADGEAR_RIFLEMAN;
-			binocular		= "ACE_Vector";
-			gps			    = "";
-			maxOptic		= "2x";
-
-			class Uniform {
-				type = ITEM_UNIFORM_RIFLEMAN;
-				class Inventory	{
-					LOADOUT_UNIFORM_ESSENTIALS
-				};
-			};
-
-			class Vest {
-				type = ITEM_VEST_RIFLEMAN;
-				class Inventory	{
-					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_STANDARD_MEDICAL
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
-					LOADOUT_ITEM(ACE_1Rnd_82mm_Mo_HE, 2)
-					LOADOUT_ITEM(ACE_RangeTable_82mm, 1)			
-				};
-			};
-			class Backpack {
-				type = B_Mortar_01_weapon_F;
 			};
 		};
 	};

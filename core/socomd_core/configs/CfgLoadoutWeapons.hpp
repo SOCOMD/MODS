@@ -5,8 +5,8 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
-			"SOCOMD_MMGAmmo",
-			"SOCOMD_Mortar"
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Logistician"
 		};
 
 		magazines[] = {
@@ -53,7 +53,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
-			"SOCOMD_Mortar"
+			"SOCOMD_AT_Assistant"
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
@@ -61,10 +61,8 @@ class CfgLoadoutWeapons {
 	};
 	class Long_Rifle_762 {
 		loadoutWhitelist[] = {
-			"SOCOMD_Commander",
-			"SOCOMD_Leader",
 			"SOCOMD_Marksman",
-			"SOCOMD_Recon"
+			"SOCOMD_Recon_Assistant"
 		};
 
 		magazines[] = {
@@ -74,7 +72,6 @@ class CfgLoadoutWeapons {
 
 	class Rifle_408 {
 		loadoutWhitelist[] = {
-			"SOCOMD_Sniper",
 			"SOCOMD_Recon"
 		};
 

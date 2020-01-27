@@ -21,12 +21,12 @@ class CfgLoadoutBackpacks {
 			"SOCOMD_2IC",
 			"SOCOMD_Rifleman",
 			"SOCOMD_Marksman",
-			"SOCOMD_Sniper",
 			"SOCOMD_Recon",
+			"SOCOMD_Recon_Assistant",
 			"SOCOMD_MachineGunner",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
-			"SOCOMD_Mortar"
+			"SOCOMD_AT_Assistant"
 		};
 	};
 
@@ -59,13 +59,4 @@ class CfgLoadoutBackpacks {
 	class SOG_BAG_med_tan : Backpack_Medic { };
 	class SOG_BAG_med_MC : Backpack_Medic { };
 	class SOG_BAG_med_od : Backpack_Medic { };
-
-	class Backpack_Mortar {
-		loadoutWhitelist[] = {
-			"SOCOMD_Mortar"
-		};
-	};
-
-	class B_Mortar_01_weapon_F : Backpack_Mortar { };
-	class B_Mortar_01_support_F : Backpack_Mortar { };
 };
