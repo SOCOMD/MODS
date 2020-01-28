@@ -396,7 +396,7 @@ class CfgWeapons {
 				aidispersioncoefx = 6;
 				aidispersioncoefy = 6;
 				textureType = "fullAuto";
-				dispersion = 0.005;
+				dispersion = 0.0005;
 				ffcount = 6;
 				fffrequency = 11;
 				ffmagnitude = 0.5;
@@ -430,7 +430,7 @@ class CfgWeapons {
 				textureType = "fastAuto";
 				displayname = "2A42 TEMPB";
 				displaynameShort = "2A42 TEMPB";
-				dispersion = 0.0075;
+				dispersion = 0.0005;
 				maxrange = 3;
 				maxrangeprobab = 0.004;
 				midrange = 2;
@@ -1293,6 +1293,21 @@ class CfgVehicles
 						hideWeaponsgunner = 1;
 						class OpticsIn
 						{
+							class m36th_day_2x
+							{
+								initAngleX = 0;
+								minAngleX = -30;
+								maxAngleX = 30;
+								initAngleY = 0;
+								minAngleY = -100;
+								maxAngleY = 100;
+								initFov = "0.46 / 2";
+								minFov = "0.46 / 2";
+								maxFov = "0.46 / 2";
+								visionMode[] = {"Normal","NVG"};
+								gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
+								gunnerOpticsEffect[] = {};
+							};
 							class m36th_day_7x
 							{
 								initAngleX = 0;
@@ -1408,6 +1423,21 @@ class CfgVehicles
 				selectionFireAnim = "zasleh";
 				class OpticsIn
 				{
+					class m36th_day_2x
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = "0.46 / 2";
+						minFov = "0.46 / 2";
+						maxFov = "0.46 / 2";
+						visionMode[] = {"Normal","NVG"};
+						gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
+						gunnerOpticsEffect[] = {};
+					};
 					class m36th_day_7x
 					{
 						initAngleX = 0;
@@ -2215,7 +2245,7 @@ class CfgVehicles
 				gunnerGetOutAction = "GetOutHelicopterCargo";
 				memoryPointsGetInGunner = "pos cargo rr";
 				memoryPointsGetInGunnerDir = "pos cargo rr dir";
-				gunnerName = "$STR_DN_LAV25_RIGHT_BOARD_GUNNER";
+				gunnerName = "Right hatch gunner";
 				gunnerCompartments = "Compartment1";
 				gunnerDoor = "Door1";
 				allowLauncherIn = 0;
@@ -2244,7 +2274,7 @@ class CfgVehicles
 				gunnerGetOutAction = "GetOutHelicopterCargo";
 				memoryPointsGetInGunner = "pos cargo lr";
 				memoryPointsGetInGunnerDir = "pos cargo lr dir";
-				gunnerName = "$STR_DN_LAV25_LEFT_BOARD_GUNNER";
+				gunnerName = "Left hatch gunner";
 				gunnerCompartments = "Compartment1";
 				gunnerDoor = "Door2";
 				allowLauncherIn = 0;
