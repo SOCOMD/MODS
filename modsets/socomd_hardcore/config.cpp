@@ -25,4 +25,3 @@ class CfgPatches  {
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgExtendedEventHandlers.hpp"
