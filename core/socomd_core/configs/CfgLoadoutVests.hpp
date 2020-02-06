@@ -21,7 +21,9 @@ class CfgLoadoutVests {
 			"SOCOMD_Recon_Assistant",
 			"SOCOMD_AT",
 			"SOCOMD_AT_Assistant",
-			"SOCOMD_Logistician"
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician",
 		};
 	};
 
