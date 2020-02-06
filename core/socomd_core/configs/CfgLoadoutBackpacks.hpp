@@ -26,7 +26,8 @@ class CfgLoadoutBackpacks {
 			"SOCOMD_MachineGunner",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
-			"SOCOMD_AT_Assistant"
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Logistician"
 		};
 	};
 
