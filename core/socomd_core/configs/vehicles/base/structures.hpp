@@ -13,4 +13,16 @@ class B_Slingload_01_Ammo_F : Slingload_01_Base_F {
     ace_cargo_space = 0;
 };
 
-// ace_repair_canRepair
+// Medical Centre Add Ace Heal Option
+class B_Slingload_01_Medevac_F : Slingload_01_Base_F {
+    class ACE_Actions {
+        class ACE_ZeusHeal {
+            displayName = "Full Heal";
+            selection = "";
+            distance = 7;
+            condition = 1;
+            exceptions[] = {"isNotInside", "isNotSitting"};
+            statement = "_player setdamage 0; [objNull, _player] call ace_medical_fnc_treatmentAdvanced_fullHeal;";
+        };
+    };
+};
