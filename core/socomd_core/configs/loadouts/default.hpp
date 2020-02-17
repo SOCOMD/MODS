@@ -552,7 +552,7 @@ class SOCOMD_Logistician {
 	headgear 		= "SOCOMD_Headgear_HardCover";
 	binocular		= "";
 	gps 			= "ItemcTab";
-	maxOptic		= "1x";
+	maxOptic		= "2x";
 
 	class Uniform {
 		class Inventory	{

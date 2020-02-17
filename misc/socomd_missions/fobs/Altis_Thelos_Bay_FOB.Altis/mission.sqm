@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1155;
+		nextID=1162;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1;
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={23862.828,12.430277,16037.791};
-		dir[]={-0.37773085,-0.18454486,-0.90745735};
-		up[]={-0.070964523,0.98277414,-0.17049152};
-		aside[]={-0.92331856,-9.5862197e-007,0.38433433};
+		pos[]={23809.961,13.225966,16034.218};
+		dir[]={0.76254302,-0.40420896,-0.50535464};
+		up[]={0.33701515,0.91459739,-0.22334227};
+		aside[]={-0.55249405,-5.4773409e-007,-0.83367139};
 	};
 };
 binarizationWanted=0;
@@ -60,13 +60,14 @@ addons[]=
 	"acex_sitting",
 	"A3_Structures_F_Civ_Garbage",
 	"A3_Structures_F_EPC_Civ_Accessories",
-	"CUP_CAStructures_E_Misc_Misc_Market"
+	"CUP_CAStructures_E_Misc_Misc_Market",
+	"tf47_launchers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -218,6 +219,11 @@ class AddonsMetaData
 			className="CUP_CAStructures_E_Misc_Misc_Market";
 			name="CUP_CAStructures_E_Misc_Misc_Market";
 		};
+		class Item23
+		{
+			className="tf47_launchers";
+			name="tf47_launchers";
+		};
 	};
 };
 randomSeed=4371615;
@@ -298,7 +304,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=113;
+		items=114;
 		class Item0
 		{
 			dataType="Marker";
@@ -3253,29 +3259,6 @@ class Mission
 			id=707;
 			type="B_Slingload_01_Repair_F";
 			atlOffset=0.043680191;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item79
 		{
@@ -3410,86 +3393,6 @@ class Mission
 			};
 			id=747;
 			type="B_Slingload_01_Fuel_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=100000;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=4;
-			};
 		};
 		class Item85
 		{
@@ -3507,67 +3410,6 @@ class Mission
 			};
 			id=748;
 			type="B_Slingload_01_Cargo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=3;
-			};
 		};
 		class Item86
 		{
@@ -5285,48 +5127,6 @@ class Mission
 			};
 			id=1110;
 			type="B_Slingload_01_Ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_rearm_rearmCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=9.9999996e+024;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 		class Item109
 		{
@@ -5340,52 +5140,9 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1134;
 			type="B_Slingload_01_Medevac_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 		class Item110
 		{
@@ -5403,48 +5160,6 @@ class Mission
 			};
 			id=1111;
 			type="B_Slingload_01_Repair_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_cargo_space";
-					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 		class Item111
 		{
@@ -5459,7 +5174,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23854.15,5.7125812,16031.088};
-						angles[]={-0,3.8629222,0};
+						angles[]={0,3.8629222,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5478,7 +5193,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23853.652,5.7121091,16033.532};
-						angles[]={-0,2.5015473,0};
+						angles[]={0,2.5015473,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5497,7 +5212,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23853.223,5.2957258,16032.745};
-						angles[]={-0,0.97792077,0};
+						angles[]={0,0.97792077,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5515,7 +5230,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23853.148,5.7121024,16030.733};
-						angles[]={-0,5.0063744,0};
+						angles[]={0,5.0063744,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5533,7 +5248,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23852.934,5.6735392,16032.424};
-						angles[]={-0,0.97824144,0};
+						angles[]={0,0.97824144,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5551,7 +5266,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23852.818,5.7121263,16034.146};
-						angles[]={-0,1.5548811,0};
+						angles[]={0,1.5548811,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5570,7 +5285,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23851.418,5.7121253,16032.854};
-						angles[]={-0,0.26886988,0};
+						angles[]={0,0.26886988,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5589,7 +5304,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23854.182,5.7142234,16032.833};
-						angles[]={-0,2.6272635,0};
+						angles[]={0,2.6272635,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5608,7 +5323,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23851.682,5.712111,16031.978};
-						angles[]={-0,5.854744,0};
+						angles[]={0,5.854744,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5627,7 +5342,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23852.256,5.7124228,16031.216};
-						angles[]={-0,5.5691557,0};
+						angles[]={0,5.5691557,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5646,7 +5361,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23851.889,5.7121329,16033.841};
-						angles[]={-0,0.92572474,0};
+						angles[]={0,0.92572474,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5665,7 +5380,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23854.576,5.7135262,16032.028};
-						angles[]={-0,3.0381489,0};
+						angles[]={0,3.0381489,0};
 					};
 					side="Empty";
 					flags=4;
@@ -5688,7 +5403,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={23852.939,6.2824602,16032.392};
-				angles[]={-0,3.2956028,0};
+				angles[]={0,3.2956028,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5698,6 +5413,35 @@ class Mission
 			};
 			id=1154;
 			type="Land_sunshade_EP1";
+		};
+		class Item113
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={23793.361,5.2314386,16057.813};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1161;
+					type="TF47_B_soldier_AT4HEAT";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1160;
 		};
 	};
 };

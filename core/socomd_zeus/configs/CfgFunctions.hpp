@@ -43,6 +43,8 @@ class CfgFunctions {
 			class ModulePowerGenerator {};
 			class ModuleDisableAI {};
 			class ModuleEnableAI {};
+			class ModuleRevealPlayers {};
+			class ModuleForgetPlayers {};
 		};
 		class Power {
 			file = "\socomd_zeus\functions\power";

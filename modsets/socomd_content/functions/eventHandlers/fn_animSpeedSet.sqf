@@ -9,8 +9,8 @@ _anim = _this select 1;
 
 _speed = 1.0;
 _weight = 0.0;
-_minSpeed = 0.75;
-_maxSpeed = 1.20;
+_minSpeed = 0.85;
+_maxSpeed = 1.15;
 // Weight is 330 for 15kg (its in lb's)
 // 27.5kg is normal speed (600 lb)
 _minLoad = 300;

@@ -1356,8 +1356,8 @@ class CfgVehicles
 				gunnerForceOptics = 0;
 				inGunnerMayFire = 1;
 				outGunnerMayFire = 0;
-				maxHorizontalRotSpeed = 0.6;
-				maxVerticalRotSpeed = 0.13;
+				maxHorizontalRotSpeed = 6;
+				maxVerticalRotSpeed = 1.3;
 				startEngine = 0;
 				primaryGunner = 1;
 				primaryObserver = 0;
