@@ -1,3 +1,5 @@
+#include ../../
+
 // Save ALL Gear in Backpack - Simulate Unit Backpack on Chest
 // original GearSaving and HALO set-up by cobra4v320 - Thanks!!!
 if (VQI_HINTS_HALO == 1) then { hint "backpack_onfront.sqf"; };
@@ -10,15 +12,11 @@ private ["_unit"];
 
 _unit = _this select 0;
 dropGear = false;
+_vest = Vest _unit;
 
 
+playSound "rebreather_breath"; // Gear-Up Sound Needed
 
-
-//Immersion EFX & Sound ???? WIP - REDO!
-//playSound "HALOExt"; //need cool transition sound here?
-if ("VQI_Vest_Dragonfly" == Vest _unit) then {	
-	playSound "rebreather_breath"; // Gear-Up Sound Needed
-};
 
 // Navigation Gear packed away
 if (VQI_HALO_HIDENAV == 1) then {			
