@@ -74,22 +74,8 @@ class SOCOMD_Uniforms {
 	Snow = "SOCOMD_Uniform_Snow_HoodDown";
 };
 
-class SOCOMD_Commander {
-	class Backpack {
-		class Inventory {
-			LOADOUT_ITEM(CUP_glaunch_Mk13, 1)
-		};
-	};
-};
-
-class SOCOMD_Leader {
-	class Backpack {
-		class Inventory {
-			LOADOUT_ITEM(CUP_glaunch_Mk13, 1)
-		};
-	};
-};
-
+class SOCOMD_Commander;
+class SOCOMD_Leader;
 class SOCOMD_Rifleman;
 class SOCOMD_Marksman;
 class SOCOMD_MachineGunner;
