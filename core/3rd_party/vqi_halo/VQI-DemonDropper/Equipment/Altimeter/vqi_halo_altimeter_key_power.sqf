@@ -1,0 +1,6 @@
+//
+//
+
+
+
+hint "Battery: GOOD";

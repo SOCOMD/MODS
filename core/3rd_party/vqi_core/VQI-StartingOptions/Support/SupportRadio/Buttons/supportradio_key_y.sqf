@@ -1,0 +1,14 @@
+//	Y Key (options)
+//	??????????????
+
+playSound "Orange_PhoneCall_Reject";
+hint "y";
+
+
+
+////////////////
+/* NOTES:
+
+
+
+*/
