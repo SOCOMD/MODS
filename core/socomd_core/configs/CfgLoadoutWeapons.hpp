@@ -1,6 +1,9 @@
 class CfgLoadoutWeapons {
 	class Rifle_556 {
 		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
 			"SOCOMD_Rifleman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
