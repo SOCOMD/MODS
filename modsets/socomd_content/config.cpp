@@ -78,6 +78,7 @@ class CfgPatches  {
 #include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgWeapons.hpp"
+#include "configs\CfgMuzzleslot.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgLoadouts.hpp"
 #include "configs\CfgASORVS.hpp"
@@ -85,5 +86,4 @@ class CfgPatches  {
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgFunctions.hpp"
-#include "configs\CfgMuzzleslot.hpp"
 #include "configs\CfgWorldType.hpp"

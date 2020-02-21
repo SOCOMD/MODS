@@ -1,4 +1,33 @@
 class mode_semiauto;
+class Mode_Burst;
+class Mode_FullAuto;
+class SlotInfo;
+class CowsSlot;
+class PointerSlot;
+class CUP_PicatinnyTopMount;
+class CUP_PicatinnyTopShortMount;
+class CUP_PicatinnySideMount;
+class ItemCore;
+class InventoryItem_Base_F;
+class InventoryMuzzleItem_Base_F;
+class InventoryFlashLightItem_Base_F;
+class InventoryOpticsItem_Base_F;
+class GrenadeLauncher;
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
+class asdg_OpticRail1913_short;
+class asdg_UnderSlot;
+// class asdg_MuzzleSlot;
+class CfgRecoils
+{
+	class recoil_default;
+	class recoil_saw: recoil_default
+	{
+		muzzleOuter[]={0.2,0.60000002,0.2,0.2};
+		kickBack[]={0.0049999999,0.02};
+		temporary=0.0049999999;
+	};
+};
 class CfgWeapons {
 
 	class Rifle;
@@ -10,6 +39,7 @@ class CfgWeapons {
 	class ItemCore;
 	class CBA_MiscItem;
 	class CBA_MiscItem_ItemInfo;
+	class asdg_MuzzleSlot_556;
 
 	//Item Defines
 	#include "weapons\base\primary.hpp"
