@@ -11,18 +11,7 @@ execVM "vqi_halo\VQI-DemonDropper\vqi_leap_functions.sqf";
 
 
 if (isServer) then {
-
-	// MC-130J
-	if (!isNil "VQI_HALO_MC130") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_MC130.sqf"; };
-
-	// XC-130
-	if (!isNil "VQI_HALO_XC130") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XC130.sqf"; };
-
-	// C-17
-	if (!isNil "VQI_HALO_C17") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_C17.sqf"; };
-
-	// XHR-1
-	if (!isNil "VQI_HALO_XHR1") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XHR1.sqf"; };
+ 	execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XC130.sqf"; 
 };
 
 
@@ -57,8 +46,6 @@ if (isServer) then {
 	
 	
 	
-	// Enemy Airspace AOs
-	//execVM "vqi_halo\VQI-DemonDropper\Airspace\vqi_leap_airspace.sqf";			// moved to SCAR
 };
 
 

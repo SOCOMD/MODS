@@ -57,8 +57,9 @@ objHALO setVectorUp [0,0,1]; publicVariable "objHALO"; // Sign_Sphere25cm_F
 ///////////////////////////////////------------------------------------------------
 
 hint "Stand by...";
-sleep 1;
+sleep 5;
 
+hint "";
 
 // Create Jump Craft! 			
 if (planeType == 1) then { VQI_HALO_JUMPCRAFT = "USAF_MC130" createVehicle _start0; };					// MC-130J Commando II ---	"USAF_MC130"
@@ -74,10 +75,6 @@ if (flightHALO == 1) then {
 	// set Fog-of-War (pilot error, wind, etc)  ----> HALO ONLY
 	_flightFOWx = (random VQI_HALO_FFOW) - (random VQI_HALO_FFOW);
 	_flightFOWy = (random VQI_HALO_FFOW) - (random VQI_HALO_FFOW);
-};
-if (flightPARA == 1) then {
-	_flightFOWx = (random VQI_PARA_FFOW) - (random VQI_PARA_FFOW);;
-	_flightFOWy = (random VQI_PARA_FFOW) - (random VQI_PARA_FFOW);;
 };
 
 

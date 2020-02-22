@@ -5,42 +5,7 @@ gearHide = 1;
 
 deleteVehicle parentObject LZchute;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/////////////////////
+////////////////////
 /* NOTES:
 
 

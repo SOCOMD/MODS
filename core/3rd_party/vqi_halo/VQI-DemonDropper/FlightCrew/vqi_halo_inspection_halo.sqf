@@ -35,7 +35,13 @@ if (count VQI_LEAP_RQD_O2SYSTEM_H > 0) then { if (_o2system in VQI_LEAP_RQD_O2SY
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check jumpsuit (uniform)
-if (count VQI_LEAP_RQD_JUMPSUIT_H > 0) then { if (_jumpsuit in VQI_LEAP_RQD_JUMPSUIT_H) then { systemChat "JumpSuit: Check"; } else { _gearpass = 0; systemChat "JumpSuit: FAIL"; }; } else { systemChat "You'll freeze! It often colder than -50° up there. You need a Thermal Jumpsuit or an approved Wetsuit"; };
+if (count VQI_LEAP_RQD_JUMPSUIT_H > 0) then { if (_jumpsuit in VQI_LEAP_RQD_JUMPSUIT_H) then { systemChat "JumpSuit: Check"; } else { _gearpass = 0; 
+	if (_jumpsuit == "SOCOMD_Ghillie_lsh" || _jumpsuit == "SOCOMD_AMCU_Ghillie_lsh" || _jumpsuit == "SOCOMD_Ghillie_sard" || _jumpsuit == "SOCOMD_AMCU_Ghillie_sard" || _jumpsuit == "SOCOMD_Ghillie_ard" || _jumpsuit == "SOCOMD_AMCU_Ghillie_ard" || _jumpsuit == "SOCOMD_Ghillie_jngl" || _jumpsuit == "SOCOMD_AMCU_Ghillie_jngl") then {
+		systemChat "Get that tree off your gear, it's going to tangle up your gear.";
+	} else {
+		systemChat "It's going to be cold up there, get a shirt on and then come back."
+	}
+}; } else { systemChat "You'll freeze! It often colder than -50° up there. You need a Thermal Jumpsuit or an approved Wetsuit"; };
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check misc gear (reserve)
@@ -74,7 +80,8 @@ if (!isNil "VQI_HALO_JUMPCRAFT") then {
 		
 		sleep 1; // Holster Weapon
 		_unit action ["SwitchWeapon", _unit, _unit, 100];
-		
+		_unit setVariable ["haloReady", true];
+		_unit setVariable ["haloLanded", false];
 		// AI Support
 		if (VQI_HALO_AI == 1) then { execVM "vqi_halo\VQI-DemonDropper\AI\vqi_halo_ai_jump.sqf"; };
 

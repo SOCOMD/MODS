@@ -45,46 +45,6 @@ missionNamespace setVariable ["VQI_HALO_T_AUDIO", _haloTransAudio];
 // Travel Time
 _haloTravelTime = _logic getVariable "vqi_module_halo_plane_travel";
 missionNamespace setVariable ["VQI_HALO_TravelTime", _haloTravelTime];
-/*
-/////////////////////////////////////////////////////////////
-// Enemy ACK Systems
-_haloACK = _logic getVariable "vqi_module_leap_ao_ack_sites";
-missionNamespace setVariable ["VQI_LEAP_EnemyACK", _haloACK];
-
-// Enemy ACK Num
-_haloACKn = _logic getVariable "vqi_module_leap_ao_ack_num";
-missionNamespace setVariable ["VQI_LEAP_ACK_NUM", _haloACKn];
-
-// Enemy SAM Systems
-_haloSAM = _logic getVariable "vqi_module_leap_ao_sam_sites";
-missionNamespace setVariable ["VQI_LEAP_EnemySAM", _haloSAM];
-
-// Enemy SAM Num
-_haloSAMn = _logic getVariable "vqi_module_leap_ao_sam_num";
-missionNamespace setVariable ["VQI_LEAP_SAM_NUM", _haloSAMn];
-
-// Enemy RADAR Systems
-_haloRAD = _logic getVariable "vqi_module_leap_ao_radar_sites";
-missionNamespace setVariable ["VQI_LEAP_EnemyRAD", _haloRAD];
-
-// Enemy RADAR Num
-_haloRADn = _logic getVariable "vqi_module_leap_ao_radar_num";
-missionNamespace setVariable ["VQI_LEAP_RAD_NUM", _haloRADn];
-
-// Enemy RADAR Side
-_haloRADs = _logic getVariable "vqi_module_leap_ao_radar_qrf";
-missionNamespace setVariable ["VQI_LEAP_RAD_QRF", _haloRADs];
-/////////////////////////////////////////////////////////////
-
-// Enemy SAM Team
-//_haloSAMT = _logic getVariable "vqi_module_halo_sam_team";
-//missionNamespace setVariable ["VQI_HALO_EnemySAM_TEAM", _haloSAMT];
-
-// Enemy SAM Team %
-//_haloSAMTP = _logic getVariable "vqi_module_halo_sam_team_p";
-//missionNamespace setVariable ["VQI_HALO_EnemySAM_TEAMp", _haloSAMTP];
-*/
-
 
 
 
@@ -105,30 +65,12 @@ _HALOAircraft = _logic getVariable "vqi_module_halo_aircraft";
 
 if (isServer) then {
 	// MC-130J Commando II
-	if (_HALOAircraft == 1) then { 
-		VQI_HALO_MC130 = "USAF_MC130" createVehicle (position _logic);
-		VQI_HALO_MC130 setDir (getDir _logic);
-		if (_HALOAircraftALT == 2) then {VQI_HALO_MC130 setPosASL [position VQI_HALO_MC130 select 0, position VQI_HALO_MC130 select 1, 18.3]; }; 	// Nimitz 18.3m Deck
-	};
 
 	// XC-130 Nightmare
 	if (_HALOAircraft == 2) then { 
-		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE" createVehicle (position _logic);
-		VQI_HALO_XC130 setDir (getDir _logic);
+		_pos_veh = "Land_CampingTable_F" createVehicle (position _logic);
+		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
 		if (_HALOAircraftALT == 2) then {VQI_HALO_XC130 setPosASL [position VQI_HALO_XC130 select 0, position VQI_HALO_XC130 select 1, 18.3]; }; // Nimitz 18.3m Deck
-	};
-
-	// C-17 Globemaster III
-	if (_HALOAircraft == 3) then { 
-		VQI_HALO_C17 = "USAF_C17" createVehicle (position _logic);
-		VQI_HALO_C17 setDir (getDir _logic);
-	};
-
-	// XHR-1:Vampyre
-	if (_HALOAircraft == 4) then { 
-		VQI_HALO_XHR1 = "VQI_XHR1_Vampyre" createVehicle (position _logic);
-		VQI_HALO_XHR1 setDir (getDir _logic);
-		if (_HALOAircraftALT == 2) then {VQI_HALO_XHR1 setPosASL [position VQI_HALO_XHR1 select 0, position VQI_HALO_XHR1 select 1, 18.3]; }; // Nimitz 18.3m Deck
 	};
 };
 // -----------------------------------------------------------------------
@@ -141,18 +83,10 @@ missionNamespace setVariable ["VQI_HALO_FLIGHTPATH_MKR", _HALOFLightPath];
 // Flight Path
 _HALOFFOW = _logic getVariable "vqi_module_halo_flight_fow";
 missionNamespace setVariable ["VQI_HALO_FFOW", _HALOFFOW];
-
-// Flight Path
-_PARAFFOW = _logic getVariable "vqi_module_para_flight_fow";
-missionNamespace setVariable ["VQI_PARA_FFOW", _PARAFFOW];
 	
 // Add Gen Crate
 _HALOAircraftCgen	= _logic getVariable "vqi_module_halo_aircraft_crate_gen";
 missionNamespace setVariable ["VQI_XTRACRATE_GEN", _HALOAircraftCgen];
-
-// Add VA Crate
-_HALOAircraftCva = _logic getVariable "vqi_module_halo_aircraft_crate_va";
-missionNamespace setVariable ["VQI_XTRACRATE_VA", _HALOAircraftCva];
 
 // Add AI Support
 _HALOAI = _logic getVariable "vqi_module_halo_ai";
@@ -218,26 +152,6 @@ missionNamespace setVariable ["VQI_LEAP_DAMAGE_SUP", _damSup];
 
 _damBip = _logic getVariable "vqi_module_leap_damage_bip";
 missionNamespace setVariable ["VQI_LEAP_DAMAGE_BIP", _damBip];
-
-
-
-
-
-
-
-
-// required jump gear
-_rqdHeadgear_P = _logic getVariable "vqi_module_leap_rqd_headgear_p";
-missionNamespace setVariable ["VQI_LEAP_RQD_HEADGEAR_P", _rqdHeadgear_P];
-VQI_LEAP_RQD_HEADGEAR_P = VQI_LEAP_RQD_HEADGEAR_P splitString ", ";
-
-_rqdFacewear_P = _logic getVariable "vqi_module_leap_rqd_facewear_p";
-missionNamespace setVariable ["VQI_LEAP_RQD_FACEWEAR_P", _rqdFacewear_P];
-VQI_LEAP_RQD_FACEWEAR_P = VQI_LEAP_RQD_FACEWEAR_P splitString ", ";
-
-_rqdMiscgear_P = _logic getVariable "vqi_module_leap_rqd_miscgear_p";
-missionNamespace setVariable ["VQI_LEAP_RQD_MISCGEAR_P", _rqdMiscgear_P];
-VQI_LEAP_RQD_MISCGEAR_P = VQI_LEAP_RQD_MISCGEAR_P splitString ", ";
 
 
 // required halo gear

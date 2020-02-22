@@ -75,11 +75,6 @@ sleep 10;
 
 
 
-
-// HALO Damaged Gear
-[_unit] execVM "vqi_halo\VQI-DemonDropper\Equipment\vqi_halo_damaged_gear.sqf";
-
-
 // Landing EFX!
 efxLND = [_unit] execVM "vqi_halo\VQI-DemonDropper\Landing\vqi_halo_efx_landing.sqf";
 

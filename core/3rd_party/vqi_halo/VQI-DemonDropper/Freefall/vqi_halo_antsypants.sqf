@@ -16,23 +16,7 @@ _antsyPosR1 = [getPos _antsy, (2222 + (random 2222)), random 360] call BIS_fnc_r
 _antsyPosR2 = [getPos _antsy, (1111 + (random 2222)), random 360] call BIS_fnc_relPos; //1-3
 */
 
-_pAlt = getPosASL VQI_HALO_JUMPCRAFT select 2;
 
-
-if (!isNull lightBLUE) then {
-	_unit setPosASL [getMarkerPos "mkrHT0" select 0, getMarkerPos "mkrHT0" select 1, _pAlt];
-	if (VQI_HINTS_HALO == 1) then { hint "Jumped WAY too soon! \n WAY Off Course!"; };
-} else {
-	if (!isNull lightRED1) then {
-		_unit setPosASL [getMarkerPos "mkrHT1" select 0, getMarkerPos "mkrHT1" select 1, _pAlt];
-		if (VQI_HINTS_HALO == 1) then { hint "Jumped too soon! \n Off Course!"; };
-	} else {
-		if (!isNull lightRED2) then {
-			_unit setPosASL [getMarkerPos "mkrHT2" select 0, getMarkerPos "mkrHT2" select 1, _pAlt];
-			if (VQI_HINTS_HALO == 1) then { hint "Jumped a little soon \n Slightly Off Course"; };	
-		};
-	};
-};
 
 
 

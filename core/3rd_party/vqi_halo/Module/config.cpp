@@ -143,9 +143,9 @@ class CfgVehicles {
 				
 				class Values
 				{
-					class 0HTT	{name = "None, Teleport Instantly";  value = 0; }; // ListBox Items
+					class 0HTT	{name = "None, Teleport Instantly";  value = 0; default = 0;}; // ListBox Items
 					class 1HTT	{name = "Advance Game Time 1 Hour";  value = 1; };
-					class 2HTT	{name = "Advance Game Time 1-3 Hours, Random";  value = 2; default = 2;};
+					class 2HTT	{name = "Advance Game Time 1-3 Hours, Random";  value = 2; };
 					class 3HTT	{name = "Advance Game Time 2-6 Hours, Random";  value = 3; };
 				};
 			};
@@ -275,11 +275,7 @@ class CfgVehicles {
 				
 				class Values
 				{
-					class 0noair {name = "None - System ONLY";  value = 0; };
-					class 1MC130 {name = "MC-130J: Commando II (by SGT Fuller)";  value = 1;};
 					class 2XC130 {name = "XC-130: Nightmare";  value = 2; default = 2;};
-					//class 3C17	 {name = "C-17 Globemaster III (by SGT Fuller)"; value = 3; };
-					//class 4XHR1	 {name = "XHR-1: Vampyre Drone";  value = 4; }; // ListBox Items
 				};
 			};
 			class vqi_module_halo_aircraft_alt { //set height, USS Nimitz, etc
@@ -300,8 +296,8 @@ class CfgVehicles {
 				
 				class Values
 				{
-					class 0FPM	{name = "OFF / None";  value = 0; }; // ListBox Items
-					class 1FPM	{name = "ON - Show Path";  value = 1; default = 1;};
+					class 0FPM	{name = "OFF / None";  value = 0; default = 1;}; // ListBox Items
+					class 1FPM	{name = "ON - Show Path";  value = 1; };
 				};
 			};
 			
@@ -311,13 +307,7 @@ class CfgVehicles {
 				displayName = "HALO Flight Error";
 				description = "HALO - Enter Error Rate (Wind, Pilot Error, Map Variance, etc) of TRUE Flight Path";
 				typeName = NUMBER;
-				defaultValue = "1111";
-			};
-			class vqi_module_para_flight_fow { //
-				displayName = "PARA Flight Error";
-				description = "ParaJump - Enter Error Rate (Wind, Pilot Error, Map Variance, etc) of TRUE Flight Path";
-				typeName = NUMBER;
-				defaultValue = "111";
+				defaultValue = "0000";
 			};
 			
 			
@@ -406,7 +396,7 @@ class CfgVehicles {
 				displayName = "Airspace Msg Line 3";
 				description = "Enter small Text for Bottom Line";
 				typeName = STRING;
-				defaultValue = "ADREAN SEA - MALDEN, GREECE";
+				defaultValue = "";
 			};
 			class vqi_module_leap_msg_x { //
 				displayName = "Msg Loc X";
@@ -429,7 +419,7 @@ class CfgVehicles {
 				displayName = "Bury/Hide Chute";
 				description = "Enter the % chance (0-100) that the Enemy will send a QRF Team to track you IF they find your Parachute after landing";
 				typeName = NUMBER;
-				defaultValue = "20";
+				defaultValue = "0";
 			};		
 
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -440,52 +430,27 @@ class CfgVehicles {
 				displayName = "Damaged Optic";
 				description = "Enter the probability (0-100%) of Damaged/Lost Sensitive Scopes on Jumps. Effects 3x power scopes and higher ONLY (low power scopes are more rugged). You must protect your sensitive equipment. Pack your Gear to avoid losing it.";
 				typeName = NUMBER;
-				defaultValue = "90";
+				defaultValue = "0";
 			};
 			class vqi_module_leap_damage_lit { //
 				displayName = "Damaged Light";
 				description = "Enter the probability (0-100%) of Damaged/Lost Lights on Jumps. You must protect your sensitive equipment. Pack your Gear to avoid losing it.";
 				typeName = NUMBER;
-				defaultValue = "33";
+				defaultValue = "0";
 			};
 			class vqi_module_leap_damage_sup { //
 				displayName = "Damaged Silencer";
 				description = "Enter the probability (0-100%) of Damaged/Lost Silencers on Jumps. You must protect your sensitive equipment. Pack your Gear to avoid losing it.";
 				typeName = NUMBER;
-				defaultValue = "20";
+				defaultValue = "0";
 			};	
 			class vqi_module_leap_damage_bip { //
 				displayName = "Damaged Bipod";
 				description = "Enter the probability (0-100%) of Damaged/Lost Bi-Pods on Jumps. You must protect your sensitive equipment. Pack your Gear to avoid losing it.";
 				typeName = NUMBER;
-				defaultValue = "10";
+				defaultValue = "0";
 			};		
 
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			class vqi_module_leap_spacer7 { displayName = " "; description = " "; typeName = STRING; defaultValue = " "; };
-			class vqi_module_leap_spacer7a { displayName = " "; description = " "; typeName = STRING; defaultValue = " "; };
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-			class vqi_module_leap_rqd_headgear_p { //
-				displayName = "ParaJump - Required Headgear";
-				description = "Enter the Classname(s) of the REQUIRED HEADGEAR (Helmet, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
-				typeName = STRING;
-				defaultValue = "VQI_Helmet_Jump";
-			};	
-			class vqi_module_leap_rqd_facewear_p { //
-				displayName = "ParaJump - Required Facewear";
-				description = "Enter the Classname(s) of the REQUIRED FACEWEAR (Goggles, Mask, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
-				typeName = STRING;
-				defaultValue = " ";
-			};
-			class vqi_module_leap_rqd_miscgear_p { //
-				displayName = "ParaJump - Required Gear";
-				description = "Enter the Classname(s) of the REQUIRED MISC GEAR (Reserve Chute, AAD, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
-				typeName = STRING;
-				defaultValue = "VQI_ReserveChute, VQI_Sentinel";
-			};	
-			
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			class vqi_module_leap_spacer8 { displayName = " "; description = " "; typeName = STRING; defaultValue = " "; };
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -494,13 +459,13 @@ class CfgVehicles {
 				displayName = "HALO - Required Headgear";
 				description = "Enter the Classname(s) of the REQUIRED HEADGEAR (Helmet, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "VQI_Helmet_HALO";
+				defaultValue = "ADFU_H_OpsCore_08_BLK, ADFU_H_OpsCore_02_BLK, ADFU_H_Airframe_Cover_10_MC, ADFU_H_Airframe_Cover_11_MC, ADFU_H_Airframe_02_tan, ADFU_H_Airframe_03_tan, ADFU_H_Airframe_10_tan, ADFU_H_Airframe_11_tan, ADFU_H_Airframe_02_AMCU, ADFU_H_Airframe_03_AMCU, ADFU_H_Airframe_10_AMCU, ADFU_H_Airframe_11_AMCU, SOCOMD_Item_Headgear_TroopLeader, SOCOMD_Item_Headgear_PatrolLeader, SOCOMD_Item_Headgear_Rifleman, SOCOMD_Item_Headgear_Marksman, SOCOMD_Item_Headgear_Medic ,SOCOMD_Item_Headgear_Sapper ,SOCOMD_Item_Headgear_MachineGunner, SOCOMD_Item_Headgear_Recon, SOCOMD_Item_Headgear_AT, SOCOMD_Item_Headgear_Pilot, SOCOMD_Item_Headgear_Crewman";
 			};	
 			class vqi_module_leap_rqd_facewear_h { //
 				displayName = "HALO - Required Facewear";
 				description = "Enter the Classname(s) of the REQUIRED FACEWEAR (Goggles, Mask, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "G_Balaclava_lowprofile, G_Balaclava_combat, G_Balaclava_TI_G_blk_F, G_Balaclava_TI_G_tna_F";
+				defaultValue = "";
 			};
 			class vqi_module_leap_rqd_o2system_h { //
 				displayName = "HALO - Required Oxygen";
@@ -512,7 +477,7 @@ class CfgVehicles {
 				displayName = "HALO - Required JumpSuit";
 				description = "Enter the Classname(s) of the REQUIRED JUMPSUIT (Uniform, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "VQI_Jumpsuit_Icarus, U_B_Wetsuit";
+				defaultValue = "SOCOMD_Uniform_Snow_HoodDown, CUP_U_CRYE_ATACSFG_Full, SOCOMD_Vympel_Uniform_Full, SOCOMD_Uniform_SleevesUp, SOCOMD_Uniform_SleevesUp_Recon, SOCOMD_Uniform_SleevesDown, SOCOMD_Uniform_SleevesDown_Recon, SOCOMD_Uniform_AMCU_SleevesUp, SOCOMD_Uniform_AMCU_SleevesUp_Recon. SOCOMD_Uniform_Wetsuit, SOCOMD_Commando_BLK_SleevesDown, SOCOMD_Uniform_AMCU_SleevesDown, SOCOMD_Uniform_AMCU_SleevesDown_Recon, SEAL_AOR1_U";
 			};
 			class vqi_module_leap_rqd_miscgear_h { //
 				displayName = "HALO - Required Gear";

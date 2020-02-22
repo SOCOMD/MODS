@@ -2,7 +2,7 @@
 // https://resources.bisimulations.com/w/index.php?title=DIK_KeyCodes
 
 //Key, [Shift, Ctrl, Alt]: L
-["=VQI= L.E.A.P", "menu_halo_full", "HALO/ParaJump (full menu)", {_this execVM "vqi_halo\VQI-DemonDropper\vqi_leap_menu.sqf";}, {}, [38, [true, false, false]]] call CBA_fnc_addKeybind;
+
 
 ["=VQI= L.E.A.P", "cut_main_chute", "Main Parachute - CUT AWAY", {_this execVM "vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_parachute_cutaway.sqf";}, {}, [38, [true, true, false]]] call CBA_fnc_addKeybind;
 

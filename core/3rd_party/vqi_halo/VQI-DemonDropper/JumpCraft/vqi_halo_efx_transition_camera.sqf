@@ -35,7 +35,6 @@ cutText ["", "BLACK", 3];
 // HALO System
 if (flightHALO == 1) then { [_unit] execVM "vqi_halo\VQI-DemonDropper\JumpCraft\HALO\vqi_halo_transition_halo.sqf"; };
 // PARA System
-if (flightPARA == 1) then { [_unit] execVM "vqi_halo\VQI-DemonDropper\JumpCraft\PARA\vqi_halo_transition_para.sqf"; };
 
 // Terminate Camera
 _cam cameraEffect ["terminate","BACK"];

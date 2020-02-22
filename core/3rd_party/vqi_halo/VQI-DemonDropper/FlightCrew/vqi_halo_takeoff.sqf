@@ -67,7 +67,6 @@ if (flightPARA == 1) then {
 			
 			// PARA Transition and Systems Start-Up
 			[_unit] execVM "vqi_halo\VQI-DemonDropper\JumpCraft\vqi_halo_efx_transition.sqf";
-			//[_unit] execVM "vqi_halo\VQI-DemonDropper\JumpCraft\PARA\vqi_halo_transition_para.sqf";
 			
 		} else { systemChat "Seriously? Where the hell is your Parachute?"; };
 		

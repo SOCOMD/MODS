@@ -15,13 +15,6 @@ _menuS0= player addAction ["----------------"," "];
 _menu0 = player addAction ["Altimeter - POWER ON/OFF","vqi_halo\VQI-DemonDropper\Equipment\Altimeter\vqi_halo_altimeter_key_power.sqf"];
 _menu1 = player addAction ["Altimeter - Toggle View ON/OFF","vqi_halo\VQI-DemonDropper\Equipment\Altimeter\vqi_halo_altimeter_key_toggle.sqf"];
 _menu2 = player addAction ["AR3 Millibar hPA Setting","vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_setting.sqf"];
-_menuS1= player addAction ["----------------"," "];
-
-//if ("Chemlight_Red" in UniformItems player) then {
-_menu3 = player addAction ["JumpLight - RED Chemlight - On Boot","vqi_halo\VQI-DemonDropper\Equipment\vqi_halo_jumplight_red_attach.sqf"];
-_menu4 = player addAction ["JumpLight - RED Chemlight - Remove","vqi_halo\VQI-DemonDropper\Equipment\vqi_halo_jumplight_red_detach.sqf"];
-//};
-_menu5 = player addAction ["SmokeShell - BLUE Smoke - On Boot","vqi_halo\VQI-DemonDropper\Equipment\vqi_halo_attach_smoke_blue.sqf"];
 _menuS2= player addAction ["----------------"," "];
 
 
