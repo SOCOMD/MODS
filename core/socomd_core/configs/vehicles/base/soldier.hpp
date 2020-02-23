@@ -18,6 +18,7 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 
 	uniformClass = ITEM_UNIFORM_RIFLEMAN;
 
+	threat[] = {1, 0.7, 0.4};
 	weapons[] 					= { };
 	respawnWeapons[] 			= { };
 	magazines[] 				= { };
