@@ -49,30 +49,6 @@ if (flightHALO == 1) then {
 
 
 
-if (flightPARA == 1) then {
-
-	if (!isNil "VQI_HALO_JUMPCRAFT") then {
-
-		if ("B_Parachute" == Backpack _unit) then {
-		
-			systemChat "Buckle Up. Prepare for Take Off...";
-			33 cutText ["", "BLACK IN", 15];
-			
-			
-			if (planeType == 1) then { _unit switchCamera "INTERNAL"; _unit attachTo [VQI_HALO_JUMPCRAFT,[0, 13, -4.5]]; };		// MC-130J Commando II
-			if (planeType == 2) then { _unit switchCamera "INTERNAL"; _unit attachTo [VQI_HALO_JUMPCRAFT,[0,  3, -4.5]]; };		// XC-130 "Nightmare"
-			if (planeType == 3) then { _unit switchCamera "INTERNAL"; _unit attachTo [VQI_HALO_JUMPCRAFT,[0,  5, -1.0]]; };		// C-17 Globemaster III
-			if (planeType == 4) then { _unit switchCamera "INTERNAL"; _unit attachTo [VQI_HALO_JUMPCRAFT,[0, -2, -1.0]]; };		// XSR-72 "Vampyre" Drone
-			
-			
-			// PARA Transition and Systems Start-Up
-			[_unit] execVM "vqi_halo\VQI-DemonDropper\JumpCraft\vqi_halo_efx_transition.sqf";
-			
-		} else { systemChat "Seriously? Where the hell is your Parachute?"; };
-		
-	} else { systemChat "Paperwork missing... File a Flight Plan first."; };
-};
-
 
 
 

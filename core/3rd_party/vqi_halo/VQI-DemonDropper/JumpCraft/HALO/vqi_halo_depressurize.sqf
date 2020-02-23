@@ -26,5 +26,5 @@ if (true) then {
 	sleep 20;
 	
 	// Decompression Sickness Check...
-	DSICK = [_unit] execVM "vqi_halo\VQI-DemonDropper\Hazard\vqi_halo_bends.sqf";
+	// DSICK = [_unit] execVM "vqi_halo\VQI-DemonDropper\Hazard\vqi_halo_bends.sqf";
 };

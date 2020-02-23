@@ -26,8 +26,8 @@ sleep 1;
 	//_FlightCrew5 = "USAF_SFS_Officer_Green1" createUnit [position player, _groupHALO5, "FlightMedic = this", 0.6, "SERGEANT"];
 	//_FlightCrew6 = "B_Helipilot_F" createUnit [position player, _groupHALO6, "SecurityOps = this", 0.6, "SERGEANT"];
 
-	JumpMaster  = _flightCrew3 createUnit ["SOCOMD_unarmed", position _pos_veh, [], 25, "NONE"]; publicVariable "JumpMaster";
-	LoadMaster  = _flightCrew4 createUnit ["SOCOMD_unarmed", position _pos_veh, [], 25, "NONE"]; publicVariable "LoadMaster";
+	JumpMaster  = _flightCrew3 createUnit ["SOCOMD_unarmed", position player, [], 25, "NONE"]; publicVariable "JumpMaster";
+	LoadMaster  = _flightCrew4 createUnit ["SOCOMD_unarmed", position player, [], 25, "NONE"]; publicVariable "LoadMaster";
 
 if (VQI_HINTS_HALO == 1) then { hint "Units set"; };
 sleep 1;
@@ -42,8 +42,8 @@ sleep 1;
 	JumpMaster  SetGroupID ["JumpMaster"];
 	LoadMaster  SetGroupID ["LoadMaster"];
 
-	JumpMaster  attachTo [_pos_veh,[ 0,0,0]]; 		// 
-	LoadMaster  attachTo [_pos_veh,[ 0,0,0]];		// 
+	JumpMaster  attachTo [CONTROL_TABLE,[ -1,0,0]]; 		// 
+	LoadMaster  attachTo [CONTROL_TABLE,[ 1,0,0.5]];		// 
 
 	sleep 1;
 
@@ -51,6 +51,9 @@ sleep 1;
 	detach LoadMaster;
 	//detach FlightMedic;
 
+
+	JumpMaster  setFormDir (getDir CONTROL_TABLE + 1);
+	LoadMaster  setFormDir (getDir CONTROL_TABLE + 40);
 	//FlightMedic setFormDir (getDir VQI_HALO_XC130 + 200);
 
 	// https://community.bistudio.com/wiki/BIS_fnc_ambientAnim
@@ -71,6 +74,5 @@ sleep 1;
 	
 	[[LoadMaster, ["CLEARED for TakeOff", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_takeoff.sqf'; [LoadMaster, 1]"]], "addAction", true, true] call BIS_fnc_MP; // Cleared for Take-Off
 
-	[[VQI_HALO_XC130, ["Cargo Lighting - ON", "execVM 'vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_lighting_groundplane.sqf'; [VQI_HALO_XC130, 1]"]], "addAction", true, true] call BIS_fnc_MP;
 
 };

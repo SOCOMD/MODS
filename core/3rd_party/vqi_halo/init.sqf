@@ -11,7 +11,7 @@ execVM "vqi_halo\VQI-DemonDropper\vqi_leap_functions.sqf";
 
 
 if (isServer) then {
- 	execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XC130.sqf"; 
+ 	if (!isNil "CONTROL_TABLE") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XC130.sqf" }; 
 };
 
 

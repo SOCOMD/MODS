@@ -22,19 +22,13 @@ deleteMarker "mkrHT4";
 
 _start0 = [0,0,1000];
 
-_flightPARA = random 610;		// 2,000'  -- random 2k for ParaJumps
 _flightAlt1 = random 610;		// 2,000'  -- random 2k for C-XXX
 _flightAlt2 = random 3000;		// 9,800'  -- random 10k for XSR-72
 _flightHALO = 1;
 
-if (flightPARA == 1) then { 	// ParaJumps
-	if (planeType == 1) then { _flightALT = 2300 + _flightPARA; };		// MC-130J Commando II		 7,500' - 9,500'
-	if (planeType == 2) then { _flightALT = 2300 + _flightPARA; };		// XC-130 "Nightmare"		 7,500' - 9,500'
-};
-
 if (flightHALO == 1) then {	// H.A.L.O.
 	if (planeType == 1) then { _flightALT = 10700 + _flightAlt1; };	// MC-130J Commando II		35,000' - 37,000'
-	if (planeType == 2) then { _flightALT = 10700 + _flightAlt1; };	// XC-130 "Nightmare"		35,000' - 37,000'
+	if (planeType == 2) then { _flightALT = 7500 + _flightAlt1; };	// XC-130 "Nightmare"		35,000' - 37,000'
 	if (planeType == 3) then { _flightALT = 13700 + _flightAlt1; };	// C-17 Globemaster III	45,000' - 47,000'
 	if (planeType == 4) then { _flightALT = 22000 + _flightAlt2; };	// XHR-1 "Vampyre"		72,000' - 82,000'
 };
@@ -57,9 +51,8 @@ objHALO setVectorUp [0,0,1]; publicVariable "objHALO"; // Sign_Sphere25cm_F
 ///////////////////////////////////------------------------------------------------
 
 hint "Stand by...";
-sleep 5;
+sleep 1;
 
-hint "";
 
 // Create Jump Craft! 			
 if (planeType == 1) then { VQI_HALO_JUMPCRAFT = "USAF_MC130" createVehicle _start0; };					// MC-130J Commando II ---	"USAF_MC130"
@@ -90,6 +83,7 @@ publicVariable "VQI_HALO_JUMPCRAFT";
 sleep 1; 
 
 
+hint "";
 // Markers & Intel
 execVM "vqi_halo\VQI-DemonDropper\FlightPlan\vqi_halo_flightplan_markers.sqf";
 

@@ -22,15 +22,6 @@ if (true) then {
 		"mkrFP" setMarkerText format ["HALO - %1'ft",_altFP];
 		"mkrFP" setMarkerAlpha 1;
 	};
-	if (flightPARA == 1) then {
-		_altFP = round (((getPosASL VQI_HALO_JUMPCRAFT) select 2)*3.2808);
-		_mkrFP = createMarker ["mkrFP", posFLIGHTPLAN];
-		"mkrFP" setMarkerShape "ICON";
-		"mkrFP" setMarkerType "mil_end";
-		"mkrFP" setMarkerColor "ColorGreen";
-		"mkrFP" setMarkerText format ["ParaJump - %1'ft",_altFP];
-		"mkrFP" setMarkerAlpha 1;
-	};
 	//////////////////////////////////////////////////////////////
 	
 	
