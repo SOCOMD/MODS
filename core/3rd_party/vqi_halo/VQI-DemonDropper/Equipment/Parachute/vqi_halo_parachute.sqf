@@ -1,7 +1,6 @@
 // Pulling the Ripcord efx
 // W-I-P
 if (VQI_HINTS_HALO == 1) then { hint "parachute.sqf"; };
-sleep 1;
 
 
 private ["_unit"];

@@ -1,7 +1,6 @@
 //
 //
 if (VQI_HINTS_HALO == 1) then { hint "flightplan.sqf"; };
-sleep 1;
 
 private ["_start0","_flightAlt1","_flightAlt2","_flightALT","_rDir","_flightFOWx","_flightFOWy","_floorfix1","_floorfix2","_logicC","_logicG"];
 
@@ -51,7 +50,6 @@ objHALO setVectorUp [0,0,1]; publicVariable "objHALO"; // Sign_Sphere25cm_F
 ///////////////////////////////////------------------------------------------------
 
 hint "Stand by...";
-sleep 1;
 
 
 // Create Jump Craft! 			
@@ -80,7 +78,6 @@ VQI_HALO_JUMPCRAFT setDamage 0;
 VQI_HALO_JUMPCRAFT setVectorUp [0,0,1];
 player action ["LandGearUp", VQI_HALO_JUMPCRAFT];
 publicVariable "VQI_HALO_JUMPCRAFT";
-sleep 1; 
 
 
 hint "";
@@ -95,7 +92,6 @@ jumpV attachTo [VQI_HALO_JUMPCRAFT,[0,0,0]];
 jumpV setDir -180; publicVariable "jumpV";
 
 
-sleep 1;
 
 // Add Altimeters to JumpCraft?
 //VQI_HALO_JUMPCRAFT addItemCargoGlobal ["VQI_JumpBuddy_1",8];
@@ -125,7 +121,6 @@ sleep 1;
 	
 	
 //};
-sleep 1;
 
 
 
@@ -169,7 +164,6 @@ publicVariable "RampOpenYES";
 
 
 
-sleep 1;
 if (VQI_HINTS_HALO == 1) then { hint "flightplan.sqf -END-"; };
 
 /////////////////////////////

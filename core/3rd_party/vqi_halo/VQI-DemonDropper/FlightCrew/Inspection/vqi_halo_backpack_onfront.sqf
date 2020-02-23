@@ -1,7 +1,6 @@
 // Save ALL Gear in Backpack - Simulate Unit Backpack on Chest
 // original GearSaving and HALO set-up by cobra4v320 - Thanks!!!
 if (VQI_HINTS_HALO == 1) then { hint "backpack_onfront.sqf"; };
-sleep 1;
 
 
 

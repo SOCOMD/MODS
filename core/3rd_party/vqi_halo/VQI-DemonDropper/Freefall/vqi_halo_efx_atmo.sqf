@@ -22,5 +22,4 @@ while {((getPosATL _unit select 2) > 20)} do {
 	waitUntil {animationState _unit == "HaloFreeFall_f"};
 	efxFFf = execVM "vqi_halo\VQI-DemonDropper\FreeFall\vqi_halo_efx_atmo_ff_f.sqf";
 
-sleep 1;
 };

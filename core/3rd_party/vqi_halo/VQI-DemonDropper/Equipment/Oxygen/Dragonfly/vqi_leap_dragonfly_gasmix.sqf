@@ -1,7 +1,6 @@
 // Turn ON/OFF GASMIX
 //
 if (VQI_HINTS_HALO == 1) then { hint "dragonfly_gasmix.sqf"; };
-sleep 1;
 
 
 

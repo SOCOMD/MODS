@@ -1,7 +1,6 @@
 // IF Jump too soon --- then OFF COURSE! ------> Wait for GREEN LIGHT!
 //
 if (VQI_HINTS_HALO == 1) then { hint "antsypants.sqf"; };
-sleep 1;
 
 
 private ["_unit","_pAlt"];
@@ -21,7 +20,6 @@ _antsyPosR2 = [getPos _antsy, (1111 + (random 2222)), random 360] call BIS_fnc_r
 
 
 
-sleep 5;
 if (VQI_HINTS_HALO == 1) then { hint "antsypants.sqf -END-"; };
 
 ////////////////////////////

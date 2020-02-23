@@ -1,7 +1,6 @@
 //	Dragonfly - Re-Breather Diver System
 //	HALO/UBA  - 10m:1h (32'-60min)
 //if (true) then { hint "dragonfly_system.sqf"; };
-sleep 1;
 
 
 

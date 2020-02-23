@@ -322,7 +322,7 @@ class CAManBase : Man {
 			// 1000 hpa = 363'/110m
 			class HALO_Set_AR3 {
 				condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
-				displayName = "Parachute Auto-Deploy\nAltitude";
+				displayName = "Set ARD Alt.";
 				
 				class HALO_Set_AR3_150 {
 					displayName = "~ 150m ASL ";

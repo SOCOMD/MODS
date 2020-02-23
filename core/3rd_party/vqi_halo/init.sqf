@@ -1,6 +1,5 @@
 waitUntil {sleep 1; !isNil "bis_fnc_init"};
 ///////////////////////////////////////////
-sleep 1;
 
 
 // Functions, EventHandlers, Variables
@@ -20,7 +19,6 @@ sleep 20;
 
 // Equipment - Altimeter
 _nul = [player] execVM "vqi_halo\VQI-DemonDropper\Equipment\Altimeter\vqi_halo_altimeter_key_watch.sqf"; // Altimeter
-sleep 1;
 
 
 if (isServer) then { 

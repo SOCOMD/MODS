@@ -18,7 +18,6 @@ waitUntil {!isNull(findDisplay 46)};
 waitUntil {!isNull player};
 
 
-sleep 5;
 
 //---HALO Module Setup-----------------------------------------------------
 

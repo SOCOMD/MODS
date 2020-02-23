@@ -1,7 +1,6 @@
 // Automatic Opening Device Settings
 // AR3 ARR - Barometric Pressure hPA
 if (VQI_HINTS_HALO == 1) then { hint "ar3_set_hpa.sqf"; };
-sleep 1;
 
 
 

@@ -1,7 +1,6 @@
 //
 //
 if (VQI_HINTS_HALO == 1) then { hint "dragonfly_breath.sqf"; };
-sleep 1;
 
 
 private ["_unit","_O2Tank"];

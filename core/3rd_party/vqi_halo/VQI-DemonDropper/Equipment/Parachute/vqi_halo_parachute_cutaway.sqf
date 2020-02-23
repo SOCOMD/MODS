@@ -1,7 +1,6 @@
 //
 //
 if (VQI_HINTS_HALO == 1) then { hint "parachute_cutaway.sqf"; };
-sleep 1;
 
 private ["_csP","_csF"];
 

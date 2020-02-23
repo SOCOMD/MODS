@@ -20,11 +20,9 @@ waitUntil { sleep 1; animationState player == "HaloFreeFall_non"; };
 // AI ParaJump with Player
 //player setPos (player modelToWorld [0,0,2222]); player allowDamage false;
 { _x allowDamage false; } forEach units group player; 
-sleep 1; 
  
 { moveOut _x } forEach units group player; 
 { unassignVehicle _x } forEach units group player; 
-sleep 1; 
  
  
 { if (_x != player) then { _x playMove "HaloFreeFall_non"; }; } forEach units group player; 
