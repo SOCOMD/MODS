@@ -465,7 +465,7 @@ class CfgVehicles {
 				displayName = "HALO - Required Facewear";
 				description = "Enter the Classname(s) of the REQUIRED FACEWEAR (Goggles, Mask, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "";
+				defaultValue = "Mask_M50";
 			};
 			class vqi_module_leap_rqd_o2system_h { //
 				displayName = "HALO - Required Oxygen";

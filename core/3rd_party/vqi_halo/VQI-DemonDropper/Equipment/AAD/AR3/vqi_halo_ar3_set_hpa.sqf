@@ -15,8 +15,10 @@ if ("VQI_AR3" in assignedItems player) then {
 	_altMetre =  _altFeet / 3.281;
 	_altSound = _altMetre + 300;
 	hint format ["AR3 Set to: %1 hPA \n %2'ft / %3m \n ASL: Above Sea Level", _ar3, round _altFeet, round _altMetre];
-	waitUntil { getPosASL _unt select 2 < _altSound }; playSound "aad_beeping";	// Alert +300m
-	waitUntil { getPosASL _unt select 2 < _altMetre }; _unt action ["openParachute"];
+	player setVariable ["AR3_Height", _altMetre];
+	// would take all inputs and do them all, not suitable refactoring to the freefall script;
+	// waitUntil { getPosASL _unt select 2 < _altSound }; playSound "aad_beeping";	// Alert +300m
+	// waitUntil { getPosASL _unt select 2 < _altMetre }; _unt action ["openParachute"];
 
 
 } else {

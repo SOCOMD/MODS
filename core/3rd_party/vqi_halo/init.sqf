@@ -38,7 +38,6 @@ if (isServer) then {
 	RampOpenYES = 0;	publicVariable "RampOpenYES";
 	
 	
-	flightPARA = 0;	publicVariable "flightPARA";
 	flightHALO = 0;	publicVariable "flightHALO";
 	sleep 1;
 	

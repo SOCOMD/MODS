@@ -17,7 +17,7 @@ playSound "aad_beeping";
 deleteVehicle vehicle player;
 sleep 0.5;
 
-player addBackpack "B_Parachute";
+player addBackpack "ACE_ReserveParachute";
 sleep 0.3;
 player action ["openParachute"];
 

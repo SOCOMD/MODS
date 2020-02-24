@@ -284,7 +284,7 @@ class CAManBase : Man {
 			condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
 			class HALO_Attatch_Base{
 				
-				condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
 				displayName = "Attatch signal";
 				class HALO_Attatch_Smoke {
 					displayName = "Smoke";
@@ -321,7 +321,7 @@ class CAManBase : Man {
 			// Height is based on barometric pressure, conversion is 
 			// 1000 hpa = 363'/110m
 			class HALO_Set_AR3 {
-				condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
 				displayName = "Set ARD Alt.";
 				
 				class HALO_Set_AR3_150 {
@@ -388,7 +388,7 @@ class CAManBase : Man {
 				};
 			};
 			class HALO_Post_landing{
-				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				condition = "([_player, 2] call SOCOMD_fnc_ActionCondition_HaloActions)";
 				displayName = "Remove Parachite";
 				statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';"
 			}

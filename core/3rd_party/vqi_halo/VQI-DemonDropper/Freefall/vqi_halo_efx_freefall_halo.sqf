@@ -31,6 +31,7 @@ ANTSY = [_unit] execVM "vqi_halo\VQI-DemonDropper\FreeFall\vqi_halo_antsypants.s
 efxATM = [_unit] execVM "vqi_halo\VQI-DemonDropper\FreeFall\vqi_halo_efx_atmo.sqf";
 
 
+
 // Blurring EFX  -WIP-
 33 cutText ["", "BLACK IN", 3];
 "DynamicBlur" ppEffectEnable true;  
@@ -73,7 +74,12 @@ if ("VQI_Helmet_HALO" == Headgear _unit) then {										// temp, upgrade soon..
 };
 sleep 10;
 
+_savedHeight = _unit getVariable ["AR3_height", 300];
 
+waitUntil { 
+	getPosASL _unit select 2 < _savedHeight + 300 
+}; playSound "aad_beeping";	// Alert +300m
+waitUntil { getPosASL _unit select 2 < _savedHeight }; _unit action ["openParachute"];
 
 // Landing EFX!
 efxLND = [_unit] execVM "vqi_halo\VQI-DemonDropper\Landing\vqi_halo_efx_landing.sqf";

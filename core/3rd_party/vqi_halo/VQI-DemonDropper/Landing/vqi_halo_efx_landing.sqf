@@ -72,7 +72,7 @@ player setVariable ["haloLanded", true];
 
 
 
-sleep 30;
+sleep 1200;
 if (isServer) then {
 	if (VQI_AIRCRAFT_DEL == 1) then { deleteVehicle VQI_HALO_JUMPCRAFT; };
 };
