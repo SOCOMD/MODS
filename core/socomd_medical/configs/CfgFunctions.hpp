@@ -15,8 +15,9 @@ class CfgFunctions {
 		class Actions {
 			file="\socomd_medical\functions\actions";
 			class DefibrillatorLocal {};
-			class DefibrillatorProgress {};
+			class DefibrillatorStart {};
 			class DefibrillatorSuccess {};
+			class DefibrillatorFailure {};
 		};
 	};
 };

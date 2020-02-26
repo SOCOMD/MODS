@@ -397,7 +397,7 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
 			LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
 			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
-			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
+			LOADOUT_ITEM(SOCOMD_Defibrillator, 1)		//Defibrillator
 		};
 	};
 };

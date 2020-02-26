@@ -10,6 +10,7 @@ class DefibrillatorSuccess : CPR {
 		"SOCOMD_Defibrillator"
 	};
 
-	callbackProgress = "SOCOMD_Medical_fnc_DefibrillatorProgress";
+	callbackStart = "SOCOMD_Medical_fnc_DefibrillatorStart";
 	callbackSuccess = "SOCOMD_Medical_fnc_DefibrillatorSuccess";
+	callbackFailure = "SOCOMD_Medical_fnc_DefibrillatorFailure";
 };

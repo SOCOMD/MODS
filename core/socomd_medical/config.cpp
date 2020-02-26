@@ -10,7 +10,8 @@ class CfgPatches {
 		requiredVersion = 1.0;
 		requiredAddons[] = {
 			"socomd_core",
-			"ace_medical_treatment"
+			"ace_medical_treatment",
+			"kat"
 		};
 
 		units[] = {
