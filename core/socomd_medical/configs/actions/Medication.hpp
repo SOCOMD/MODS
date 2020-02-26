@@ -2,18 +2,19 @@ class Morphine: FieldDressing {
 	displayName = "Morphine 10mg/1mL";
 	displayNameProgress = "Injecting Morphine";
 	icon = "socomd_data_core\icon\VPN.paa";
+	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
+	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
 	items[] = {
-		"ACE_Morphine",
-		"SOCOMD_VPN"
+		"ACE_morphine"
 	};
 };
+
 class Epinephrine: Morphine {
 	displayName = "Epinephrine 1mg/1mL";
 	displayNameProgress = "Injecting Epinephrine";
 	icon = "socomd_data_core\icon\VPN.paa";
 	items[] = {
-		"ACE_Epinephrine",
-		"SOCOMD_VPN"
+		"ACE_epinephrine"
 	};
 };
 
@@ -27,8 +28,7 @@ class Naloxone : Morphine {
 	displayNameProgress="Injecting Naloxone";
 	icon="socomd_data_core\icon\VPN.paa";
 	items[] = {
-		"SOCOMD_Naloxone",
-		"SOCOMD_VPN"
+		"SOCOMD_naloxone"
 	};
 };
 
@@ -36,8 +36,7 @@ class Fentanyl: Morphine{
 	displayName="Fentanyl 100mcg/2mL";
 	displayNameProgress="Injecting Fentanyl";
 	items[]={
-		"SOCOMD_Fentanyl",
-		"SOCOMD_VPN"
+		"SOCOMD_fentanyl"
 	};
 };
 
@@ -45,44 +44,52 @@ class Ketamine_6mg : Morphine {
 	displayName="Ketamine 6mg/2mL";
 	displayNameProgress="Injecting Ketamine 6mg/2mL";
 	items[] = {
-		"SOCOMD_Ketamine_6mg",
-		"SOCOMD_VPN"
+		"SOCOMD_ketamine_6mg"
 	};
-	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
+	callbackSuccess = "SOCOMD_Medical_fnc_ketamineSuccess";
 };
 
 class Ketamine_200mg : Morphine {
 	displayName="Ketamine 200mg/2mL";
 	displayNameProgress="Injecting Ketamine 200mg/2mL";
 	items[] = {
-		"SOCOMD_Ketamine_200mg",
-		"SOCOMD_VPN"
+		"SOCOMD_ketamine_200mg"
 	};
-	callbackSuccess = "SOCOMD_Medical_fnc_ketamine";
+	callbackSuccess = "SOCOMD_Medical_fnc_ketamineSuccess";
 };
 
-class Tetra : Morphine {
+////////////////////////////////////////////////////////////////////////////////
+
+class NonVPNMedication : Morphine {
+	condition = "";
+	callbackSuccess = "";
+};
+
+class Tetra : NonVPNMedication {
 	displayName="Tetracycline 250mg";
 	displayNameProgress="Giving Tetracycline";
 	items[]={
-		"SOCOMD_Tetra"
+		"SOCOMD_tetra"
 	};
 	allowedSelections[]={
 		"Head"
 	};
 };
 
-class Apap : Morphine{
+class Apap : NonVPNMedication {
 	displayName="Paracetemol 1g";
 	displayNameProgress="Giving Paracetemol 1g";
+	condition = "";
+	callbackStart = "";
+
 	items[] = {
-		"SOCOMD_apap"
+		"SOCOMD_Apap"
 	};
 	allowedSelections[] = {
 		"Head"
 	};
 	treatmentTime=1;
 	litter[]={
-		{"All","",{"ACE_MedicalLitter_apap"}}
+		{"All","",{"SOCOMD_ApapLitter"}}
 	};
 };

@@ -1,4 +1,4 @@
-class SOCOMD_FentanylItem : Item_Base_F {
+class SOCOMD_fentanylItem : Item_Base_F {
 	scope=public;
 	scopeCurator=public;
 	displayName="Fentanyl 100mcg/2mL";
@@ -6,11 +6,11 @@ class SOCOMD_FentanylItem : Item_Base_F {
 	vehicleClass="Items";
 
 	class TransportItems {
-		TRANSPORT_ITEM(SOCOMD_Fentanyl,1)
+		TRANSPORT_ITEM(SOCOMD_fentanyl,1)
 	};
 };
 
-class SOCOMD_NaloxonelItem : Item_Base_F {
+class SOCOMD_naloxonelItem : Item_Base_F {
 	scope=2;
 	scopeCurator=2;
 	displayName="Naloxone 1.6mg/4mL";
@@ -18,7 +18,14 @@ class SOCOMD_NaloxonelItem : Item_Base_F {
     icon="socomd_data_core\icon\VPN.paa";
 	vehicleClass="Items";
 	class TransportItems {
-		TRANSPORT_ITEM(SOCOMD_Naloxone,1)
+		TRANSPORT_ITEM(SOCOMD_naloxone,1)
+	};
+};
+
+class Leaflet_05_F;
+class SOCOMD_ApapLitter : Leaflet_05_F {
+	hiddenSelectionsTextures[]= {
+		"socomd_data_core\icon\apap_litter.paa"
 	};
 };
 

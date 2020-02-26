@@ -9,23 +9,22 @@ class CfgPatches {
 
 		requiredVersion = 1.0;
 		requiredAddons[] = {
-			"socomd_core",
 			"ace_medical_treatment",
 			"kat"
 		};
 
 		units[] = {
-			"SOCOMD_FentanylItem",
-			"SOCOMD_NaloxonelItem",
+			"SOCOMD_fentanylItem",
+			"SOCOMD_naloxonelItem",
 			"SOCOMD_ApapItem"
 		};
 
 		weapons[] = {
-			"SOCOMD_Naloxone",
-			"SOCOMD_Fentanyl",
-			"SOCOMD_Ketamine_6mg",
-			"SOCOMD_Ketamine_200mg",
-			"SOCOMD_Tetra",
+			"SOCOMD_naloxone",
+			"SOCOMD_fentanyl",
+			"SOCOMD_ketamine_6mg",
+			"SOCOMD_ketamine_200mg",
+			"SOCOMD_tetra",
 			"SOCOMD_Apap",
 			"SOCOMD_VPN"
 		};

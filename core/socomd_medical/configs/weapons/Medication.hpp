@@ -1,6 +1,6 @@
 
-class ACE_Atropine;
-class ACE_Morphine : ACE_ItemCore {
+class ACE_atropine;
+class ACE_morphine : ACE_ItemCore {
 	scope=public;
 	displayName="Morphine 10mg/1mL";
 	picture="\socomd_data_core\icon\morphine.paa";
@@ -11,7 +11,7 @@ class ACE_Morphine : ACE_ItemCore {
 	};
 };
 
-class ACE_Epinephrine : ACE_ItemCore {
+class ACE_epinephrine : ACE_ItemCore {
 	scope=public;
 	displayName="Epinephrine 1mg/1mL Ampoule";
 	picture="\socomd_data_core\icon\epi.paa";
@@ -24,7 +24,7 @@ class ACE_Epinephrine : ACE_ItemCore {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-class SOCOMD_Naloxone : ACE_Atropine {
+class SOCOMD_naloxone : ACE_atropine {
 	scope=public;
 	displayName="Naloxone 1.6mg/4mL Ampoule";
 	picture="\socomd_data_core\icon\naloxone.paa";
@@ -32,7 +32,7 @@ class SOCOMD_Naloxone : ACE_Atropine {
 	descriptionUse="Opiod antagonist, reverses negative effects of narcotics";
 };
 
-class SOCOMD_Fentanyl : ACE_Morphine {
+class SOCOMD_fentanyl : ACE_morphine {
 	scope=public;
 	displayName="Fentanyl 100mcg/2mL Ampoule";
 	picture="\socomd_data_core\icon\fentanyl.paa";
@@ -40,7 +40,7 @@ class SOCOMD_Fentanyl : ACE_Morphine {
 	descriptionUse="Analgesic, used for severe pain";
 };
 
-class SOCOMD_Ketamine_6mg : ACE_Morphine {
+class SOCOMD_ketamine_6mg : ACE_morphine {
 	scope=public;
 	displayName="Ketamine 6mg/2mL Ampoule";
 	descriptionShort="Analgesic used for severe pain";
@@ -51,7 +51,7 @@ class SOCOMD_Ketamine_6mg : ACE_Morphine {
 	};
 };
 
-class SOCOMD_Ketamine_200mg : ACE_Morphine {
+class SOCOMD_ketamine_200mg : ACE_morphine {
 	scope=2;
 	displayName="Ketamine 200mg/2mL Ampoule";
 	descriptionShort="Analgesic used for severe pain and sedation";
@@ -62,7 +62,7 @@ class SOCOMD_Ketamine_200mg : ACE_Morphine {
 	};
 };
 
-class SOCOMD_Tetra : ACE_Morphine {
+class SOCOMD_tetra : ACE_morphine {
 	scope=public;
 	displayName="Tetracycline 250mg capsule";
 	descriptionShort="Antibiotic capsule";
@@ -73,7 +73,7 @@ class SOCOMD_Tetra : ACE_Morphine {
 	};
 };
 
-class SOCOMD_Apap : ACE_Morphine {
+class SOCOMD_Apap : ACE_morphine {
 	scope=public;
 	displayName="Paracetemol 1g Tablets";
 	picture="\socomd_data_core\icon\apap.paa";

@@ -7,7 +7,7 @@ class CfgFunctions {
 		
 		class Medication {
 			file="\socomd_medical\functions\medication";
-			class Ketamine {};
+			class KetamineSuccess {};
 			class KetamineLocal {};
 			class KetamineEffect {};
 		};
@@ -18,6 +18,8 @@ class CfgFunctions {
 			class DefibrillatorStart {};
 			class DefibrillatorSuccess {};
 			class DefibrillatorFailure {};
+			class vpnMedicationCondition {};
+			class vpnMedicationSuccess {};
 		};
 	};
 };

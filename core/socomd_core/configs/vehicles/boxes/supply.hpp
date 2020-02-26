@@ -186,13 +186,13 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(ACE_quikclot, 30)				//Quikclot
 		TRANSPORT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
 		TRANSPORT_ITEM(ACE_tourniquet, 6)				//Tourniquet
-		TRANSPORT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+		TRANSPORT_ITEM(ACE_epinephrine_Medic, 10)		//Epinephrine Ampoule
 		TRANSPORT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
 		TRANSPORT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
 		TRANSPORT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
 		TRANSPORT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
 		TRANSPORT_ITEM(ACE_apap, 10)					//Paracetamol
-		TRANSPORT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
+		TRANSPORT_ITEM(SOCOMD_tetra, 5)				//Paracetamol  
 		TRANSPORT_ITEM(ACE_bloodIV_500, 5)			//Blood
 		TRANSPORT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 		TRANSPORT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway

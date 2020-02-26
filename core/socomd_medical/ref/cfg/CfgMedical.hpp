@@ -152,7 +152,7 @@ class ACE_Medical_Actions{
 			displayName="Tetracycline 250mg";
 			displayNameProgress="Giving Tetracycline";
 			items[]={
-				"SOCOMD_Tetra"
+				"SOCOMD_tetra"
 			};
 		};
 		class Atropine;

@@ -91,6 +91,7 @@ class TAGE_Medic
 			LOADOUT_ITEM(ACE_quikclot, 25)
 			LOADOUT_ITEM(ACE_epinephrine, 10)
 			LOADOUT_ITEM(ACE_morphine, 10)
+			LOADOUT_ITEM(SOCOMD_VPN, 10)
 			LOADOUT_ITEM(ACE_tourniquet, 6)
 			LOADOUT_ITEM(ACE_salineIV_500, 6)
 			LOADOUT_ITEM(ACE_personalAidKit, 2)
