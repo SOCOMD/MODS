@@ -96,3 +96,14 @@ addMissionEventHandler ["Map", {
 		} foreach DAGR_Marker_Waypoints;
 	};
 }];
+
+if(local player) then {
+	player addEventHandler["Put", {
+		params ["_unit", "_container", "_item"];
+		if(_container isKindOf "SOCOMD_Void_Box") then {
+			clearWeaponCargoGlobal _container;
+			clearMagazineCargoGlobal _container;
+			clearItemCargoGlobal _container;
+		};
+	}];
+};

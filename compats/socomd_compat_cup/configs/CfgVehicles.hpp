@@ -11,6 +11,7 @@ class CfgVehicles {
     #include "vehicles\base\offroad_armed.hpp"
     #include "vehicles\base\kord.hpp"
     #include "vehicles\base\tunguska.hpp"
+    #include "vehicles\base\apc.hpp"
 
     // Override
     // AI
@@ -25,6 +26,7 @@ class CfgVehicles {
     #include "vehicles\override\offroad_armed.hpp"
     #include "vehicles\override\kord.hpp"
     #include "vehicles\override\tunguska.hpp"
+    #include "vehicles\override\apc.hpp"
 
     // Player
     #include "vehicles\override\firefly.hpp"

@@ -160,6 +160,7 @@ class CfgVehicles  {
 
 	#include "vehicles\boxes\qstores.hpp"
 	#include "vehicles\boxes\supply.hpp"
+	#include "vehicles\boxes\voidBox.hpp"
 
 	#include "vehicles\override\backpack.hpp"
 	#include "vehicles\override\extensions.hpp"
