@@ -10,19 +10,6 @@ class SOCOMD_Item_Primary_AT                        : S_145_KAG_MAG {};
 class SOCOMD_Item_Primary_Pilot                   	: CUP_smg_MP5A5 {};
 class SOCOMD_Item_Primary_Crewman                 	: CUP_smg_MP5A5 {};
 
-class SOCOMD_Item_Handgun_TroopLeader               : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_PatrolLeader              : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Rifleman                  : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Marksman                  : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Medic                     : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Sapper                    : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_MachineGunner             : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Recon                     : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_AT                        : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Pilot                     : Troy_USP {scope = protected;};
-class SOCOMD_Item_Handgun_Crewman                   : Troy_USP {scope = protected;};
-
-
 class SOCOMD_Item_Secondary_AT                      : HAFM_LAW {};
 class SOCOMD_Item_Secondary_MAT						: SOCOMD_Carl_Gustav {};
 
