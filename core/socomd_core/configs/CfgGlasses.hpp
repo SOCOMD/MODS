@@ -216,4 +216,24 @@ class CfgGlasses {
 	class VSM_Peltor_OD_glasses {
 		HEARING_PROTECTION_PELTOR		
 	};
+	class FGN_CAG_glasses_class;
+	class FGN_CAG_Tactical_clr_Shemagh_mc: FGN_CAG_glasses_class
+	{
+		displayname = "Face Shield + Tactical Glasses /Shemagh (AMCU)";
+		scope = 2;
+		author = "Adacas & Fingolfin";
+		model = "\FGN_CAG\f_face_shield_base.p3d";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1",
+			"_Shades",
+			"_ESS"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"socomd_data_core\CTGear\f_Face_shield_amc_co.paa",
+			"milgp_headgear\textures\f_shemagh_khk_co.paa"
+		};
+	};
 };

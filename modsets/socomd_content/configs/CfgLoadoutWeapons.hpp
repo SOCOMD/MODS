@@ -130,6 +130,8 @@ class CfgLoadoutWeapons {
 		};
 	};
 
+	class Troy_USP;
+
 	class bnae_falkor_camo1_virtual;
 	class Recon_300WM : bnae_falkor_camo1_virtual {
 		loadoutWhitelist[] = {
