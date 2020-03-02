@@ -74,3 +74,5 @@ class CfgAmmo {
 		indirectHitRange = 2.0;
 	};
 };
+
+#include "ammo\CUP_Sh_PG15V.hpp"

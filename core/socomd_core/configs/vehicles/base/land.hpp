@@ -218,6 +218,8 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	displayname = "APC (3/8)";
 	vehicleclass = "Armored";
 	forceInGarage = 1;
+	cost = 700000;
+	threat[] = {0.8,1.0,0.7};
 
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
@@ -325,7 +327,8 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	faction = FACTION_STR;
 	displayname = "APC Slated (3/8)";
 	vehicleclass = "Armored";
-
+	cost = 700000;
+	threat[] = {0.8,0.7,0.7};
 	forceInGarage = 1;
 
 	crew = "SOCOMD_Crewman";
