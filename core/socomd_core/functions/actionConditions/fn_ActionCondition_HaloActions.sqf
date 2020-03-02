@@ -9,7 +9,7 @@ if (_check == 0)  then {
 		_allowed = true;
 	};
 };
-if ((_check == 1) && ((isTouchingGround _player) || (_isUnderwater = eyePos _player select 2 < 0;))) then {
+if ((_check == 1) && ((isTouchingGround _player) || (eyePos _player select 2 < 0))) then {
 	if (_player getVariable "haloReady") then {
 		_allowed = true;
 	};
