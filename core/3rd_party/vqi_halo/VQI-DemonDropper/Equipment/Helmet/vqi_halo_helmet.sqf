@@ -10,11 +10,11 @@ _unit = _this select 0;
 
 
 
-while { "VQI_Helmet_HALO" == Headgear player } do {
+while { "SOCOMD_COS_PARACHUTE" == Backpack player } do {
 disableSerialization;
 
 	// Hawkers 3H HALO Helmet
-	if ((cameraView == "INTERNAL") && ("VQI_Helmet_HALO" == Headgear player)) then {
+	if ((cameraView == "INTERNAL") && ("SOCOMD_COS_PARACHUTE" == Backpack player)) then {
 	
 		222 cutRsc ["VQI_HALO_HELMET_CLASSII", "PLAIN"];
 		sleep 0.1;

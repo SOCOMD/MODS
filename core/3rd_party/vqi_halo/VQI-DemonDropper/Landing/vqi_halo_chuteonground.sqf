@@ -13,7 +13,7 @@ player setVariable ["haloReady", false];
 player setVariable ["haloLanded", false];
 
 // chute & bury menu
-LZchute = createVehicle ["B_Parachute", position player, [], 0, "CAN_COLLIDE"];
+LZchute = createVehicle ["SOCOMD_COS_PARACHUTE", position player, [], 0, "CAN_COLLIDE"];
 (objectParent LZchute) setPos getPos player;
 
 hint "'Bury/Hide' Menu on \n Ground Gear (optional)";

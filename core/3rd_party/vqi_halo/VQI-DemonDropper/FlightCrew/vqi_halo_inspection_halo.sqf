@@ -26,12 +26,9 @@ _miscgear = uniformItems _unit + vestItems _unit + backpackItems _unit + assigne
 if (count VQI_LEAP_RQD_HEADGEAR_H > 0) then { if (_headgear in VQI_LEAP_RQD_HEADGEAR_H) then { systemChat "Headgear: Check"; } else { _gearpass = 0; systemChat "Headgear: FAIL. Helmets only, stuff a hat in your bag if you have to"; }; } else { systemChat "No Bucket? Where's your HALO-Class Helmet!?"; };
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
-// HALO - check facewear (goggles)
-if (count VQI_LEAP_RQD_FACEWEAR_H > 0) then { if (_facewear in VQI_LEAP_RQD_FACEWEAR_H) then { systemChat "Facewear: Check"; } else { _gearpass = 0; systemChat "Facewear: FAIL. You're going to need an oxygen mask if you want to breath"; }; } else { systemChat "It's too cold to not wear a thermal mask. You sure?"; };
-if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check oxygen (vest)
-if (count VQI_LEAP_RQD_O2SYSTEM_H > 0) then { if ("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backpackItems player))) then { systemChat "Vest/O2: Check"; } else { _gearpass = 0; systemChat "Vest/O2: FAIL. And What, pray tell, do you plan on breathing? Nitrogen?"; }; } else { systemChat "Vest Rig is all wrong... How in the hell do you expect to breathe?"; };
+if (count VQI_LEAP_RQD_O2SYSTEM_H > 0) then { if ("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backpackItems player))) then { systemChat "Vest/O2: Check"; } else { _gearpass = 0; systemChat "Vest/O2: FAIL. And What, pray tell, do you plan on breathing? Nitrogen?"; }; };
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check jumpsuit (uniform)

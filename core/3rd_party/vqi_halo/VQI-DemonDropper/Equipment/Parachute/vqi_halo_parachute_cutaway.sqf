@@ -16,7 +16,7 @@ deleteVehicle vehicle player;
 if ( "VQI_ReserveChute" in assignedItems player ) then {
 	sleep 0.5;
 	
-	player addBackpack "B_Parachute";
+	player addBackpack "SOCOMD_COS_PARACHUTE";
 	sleep 1; //remove reserve chute
 	
 	player unassignItem "VQI_ReserveChute";

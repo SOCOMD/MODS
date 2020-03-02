@@ -30,7 +30,7 @@ if (VQI_HALO_HIDENAV == 1) then {
 
 
 //save the backpack and its contents, also adds faux backpack to front of unit
-if (!isNull (unitBackpack _unit) && (backpack _unit) != "b_parachute") then {
+if (!isNull (unitBackpack _unit) && (backpack _unit) != "SOCOMD_COS_PARACHUTE") then {
 	private ["_pack","_bag","_magazines","_weapons","_items","_helmet","_goggles"];
 	_pack	   	= unitBackpack _unit;
 	_bag	   		= typeOf _pack;
@@ -43,8 +43,8 @@ if (!isNull (unitBackpack _unit) && (backpack _unit) != "b_parachute") then {
  
 	removeBackpack _unit; //remove the backpack
 	sleep 1;
-	_unit addBackpack "b_parachute"; //add the parachute				/////////////////////////
-	//{_x addBackpack "B_Parachute";} forEach units group _unit;		/////////////////////////
+	_unit addBackpack "SOCOMD_COS_PARACHUTE"; //add the parachute				/////////////////////////
+	//{_x addBackpack "SOCOMD_COS_PARACHUTE";} forEach units group _unit;		/////////////////////////
 	// Set Group A.I.
 
 
@@ -109,11 +109,9 @@ if (!isNull (unitBackpack _unit) && (backpack _unit) != "b_parachute") then {
 			// land
 			_packHolder attachTo [_unit,[-0.07,0.67,-0.3],"pelvis"]; 
 			_packHolder setVectorDirAndUp [[0,-0.2,-1],[0,1,0]];
-			_unit addBackpack "B_Parachute";
+			_unit addBackpack "SOCOMD_COS_PARACHUTE";
 			
 			sleep 10;
-			hint "Shift + L \n \n 'Drop Chute' from Menu";
-			
 			
 			waitUntil {dropGear};
 			removeBackpack _unit;
@@ -130,7 +128,7 @@ if (!isNull (unitBackpack _unit) && (backpack _unit) != "b_parachute") then {
 		};
 	};
 } else {
-	if ((backpack _unit) != "b_parachute") then {_unit addBackpack "b_parachute"}; //add the parachute if unit has no backpack, needed?
+	if ((backpack _unit) != "SOCOMD_COS_PARACHUTE") then {_unit addBackpack "SOCOMD_COS_PARACHUTE"}; //add the parachute if unit has no backpack, needed?
 };
 
 

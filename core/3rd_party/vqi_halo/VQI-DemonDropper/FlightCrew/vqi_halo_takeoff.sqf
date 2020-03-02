@@ -16,7 +16,7 @@ if (flightHALO == 1) then {
 
 	if (!isNil "VQI_HALO_JUMPCRAFT") then {
 
-		if ("B_Parachute" == Backpack _unit) then {
+		if ("SOCOMD_COS_PARACHUTE" == Backpack _unit) then {
 
 			// Equipment (minimum) Safety Re-Check...
 			//if 	((("VQI_Helmet_HALO" == Headgear _unit) || ("VQI_Helmet_Jump" == Headgear _unit)) && 													// Helmet (or any Headgear soon)

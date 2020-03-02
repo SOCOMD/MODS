@@ -12,7 +12,7 @@ deleteVehicle parentObject LZchute;
 
 params ["_jumpGear1","_jumpGear2","_jumpGear3","_jumpGear4","_jumpGear5","_jumpGear6","_jumpGear7","_jumpGear8","_jumpGear9","_jumpGear10","_jumpGear11","_jumpGear12"];
 
-_jumpGear1 = nearestObject [player, "B_Parachute"];
+_jumpGear1 = nearestObject [player, "SOCOMD_COS_PARACHUTE"];
 _jumpGear2 = nearestObject [player, "VQI_ReserveChute"];
 _jumpGear3 = nearestObject [player, "VQI_Jumpsuit_Icarus"];
 _jumpGear4 = nearestObject [player, "VQI_JumpBuddy_1"];

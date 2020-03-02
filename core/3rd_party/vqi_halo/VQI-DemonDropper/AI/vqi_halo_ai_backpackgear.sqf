@@ -13,7 +13,7 @@ hint format ["%1",_items];
 sleep 3; 
 
 removeBackpack _unit; 
-_unit addBackpack "B_Parachute"; 
+_unit addBackpack "SOCOMD_COS_PARACHUTE"; 
 sleep 3; 
 
 // on ground

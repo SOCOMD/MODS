@@ -3,7 +3,7 @@
 
 
 //
-if (("Helmet_VQI_HALO" == Headgear player) && ("Vest_VQI_Stingray" == Vest player) && (("Uniform_VQI_Slipstream" == Uniform player) || ("U_B_Wetsuit" == Uniform player)) && ("B_parachute" == Backpack player)) then {
+if (("Helmet_VQI_HALO" == Headgear player) && ("Vest_VQI_Stingray" == Vest player) && (("Uniform_VQI_Slipstream" == Uniform player) || ("U_B_Wetsuit" == Uniform player)) && ("SOCOMD_COS_PARACHUTE" == Backpack player)) then {
 
 	33 cutText ["", "BLACK IN", 15];
 	

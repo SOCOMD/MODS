@@ -54,8 +54,6 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	_player assignItem "VQI_ReserveChute";
 	_player assignItem "VQI_AR3";
 	_player assignItem "ACE_Altimeter";
-	removeGoggles _player;
-	_player addGoggles "Mask_M50";
 	(vestContainer _player) addItemCargoGlobal ["VQI_BOTTLE_DF1_GAS", 1];
 };
 

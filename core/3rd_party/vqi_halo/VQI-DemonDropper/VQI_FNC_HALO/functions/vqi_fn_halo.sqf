@@ -44,7 +44,7 @@ if (isPlayer _unit) then {
 
 
 //save the backpack and its contents, also adds faux backpack to front of unit
-if (_saveLoadOut && !isNull (unitBackpack _unit) && (backpack _unit) != "b_parachute") then {
+if (_saveLoadOut && !isNull (unitBackpack _unit) && (backpack _unit) != "SOCOMD_COS_PARACHUTE") then {
 	private ["_pack","_class","_magazines","_weapons","_items","_helmet","_goggles"];
 	_pack	   	= unitBackpack _unit;
 	_class	   	= typeOf _pack;
@@ -57,8 +57,8 @@ if (_saveLoadOut && !isNull (unitBackpack _unit) && (backpack _unit) != "b_parac
  
 	removeBackpack _unit; //remove the backpack
 	sleep 1;
-	//_unit addBackpack "b_parachute"; //add the parachute
-	{_x addBackpack "B_Parachute";} forEach units group _unit;
+	//_unit addBackpack "SOCOMD_COS_PARACHUTE"; //add the parachute
+	{_x addBackpack "SOCOMD_COS_PARACHUTE";} forEach units group _unit;
 
 	[_unit,_class,_magazines,_weapons,_items,_helmet,_altitude,_goggles] spawn {
 		private ["_unit","_class","_magazines","_weapons","_items","_helmet","_altitude","_goggles"];
@@ -112,7 +112,7 @@ if (_saveLoadOut && !isNull (unitBackpack _unit) && (backpack _unit) != "b_parac
 		};
 	};
 } else {
-	if ((backpack _unit) != "b_parachute") then {_unit addBackpack "b_parachute"}; //add the parachute if unit has no backpack, needed?
+	if ((backpack _unit) != "SOCOMD_COS_PARACHUTE") then {_unit addBackpack "SOCOMD_COS_PARACHUTE"}; //add the parachute if unit has no backpack, needed?
 };
 
 
