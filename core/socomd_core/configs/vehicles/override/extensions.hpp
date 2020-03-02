@@ -81,12 +81,12 @@ class CAManBase : Man {
 			hotkey = "C";
 		};
 		class SOCOMD_Parachute {
-			condition = "vehicle player == SOCOMD_COS_PARACHUTE;"
+			condition = "vehicle player == 'SOCOMD_COS_PARACHUTE';"
 			icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
 			priority = 2.9;
 			displayName = "$STR_ace_parachute_CutParachute";
 			exceptions[] = {"isNotInside"};
-			statement = "player execVM 'vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_parachute_cutaway.sqf';"
+			statement = "[player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_parachute_cutaway.sqf';"
 		};
 		class ACE_MapDagr {
 			displayName = "Dagr Config";
