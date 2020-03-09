@@ -234,7 +234,7 @@ class CfgGroups {
 		};
 
 		class SOCOMD_Vympel {
-			name = "Spetsnaz VEGA Group (Vympel)"
+			name = "Spetsnaz VEGA Group (Vympel)";
 
 			class SOCOMD_Vympel_CMD_Groups {
 				name = "Infantry";

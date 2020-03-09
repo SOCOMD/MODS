@@ -70,7 +70,7 @@ class CfgLoadoutWeapons {
 	class Rifle_556_Marksman;
 	class SMA_HK416CUSTOMvfgB : Rifle_556_Marksman {
 		loadoutWhitelist[] = {
-			"SOCOMD_Marksman",
+			"SOCOMD_Marksman"
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_556x45_30Rnd", 5}

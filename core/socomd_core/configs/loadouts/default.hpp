@@ -586,7 +586,7 @@ class SOCOMD_Logistician {
 // Pilot
 
 class SOCOMD_Pilot {
-    primary 		= "SOCOMD_Weapon_Rifle_9x21"
+    primary 		= "SOCOMD_Weapon_Rifle_9x21";
     secondary 		= "SOCOMD_Weapon_Empty";
 	handgun			= "Troy_USP";
 	handgunMagazine = "18Rnd_9x21_Mag_USP";
