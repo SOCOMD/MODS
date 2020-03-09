@@ -232,7 +232,7 @@ class CfgGlasses {
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"socomd_data_core\CTGear\f_Face_shield_amc_co.paa",
+			"socomd_data_core\CTgear\f_Face_shield_amc_co.paa",
 			"milgp_headgear\textures\f_shemagh_khk_co.paa"
 		};
 	};
