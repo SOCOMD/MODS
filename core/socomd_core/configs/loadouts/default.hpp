@@ -23,6 +23,7 @@
 	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
@@ -137,6 +138,7 @@ class SOCOMD_Commander {
 			LOADOUT_ITEM(UGL_FlareRed_F, 2)
 			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
+			LOADOUT_ITEM(ACE_M14, 3)
 		};
 	};
 };
@@ -181,6 +183,7 @@ class SOCOMD_Leader {
 			LOADOUT_ITEM(UGL_FlareRed_F, 2)
 			LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
 			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
+			LOADOUT_ITEM(ACE_M14, 3)
 		};
 	};
 };
@@ -299,6 +302,7 @@ class SOCOMD_Sapper {
 			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
 			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
 			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+			LOADOUT_ITEM(ACE_M14, 3)
 		};
 	};
 };

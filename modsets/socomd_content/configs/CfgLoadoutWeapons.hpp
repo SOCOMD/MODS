@@ -41,6 +41,45 @@ class CfgLoadoutWeapons {
 			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
 		};
 	};
+	class Rifle_556_AWM;
+	class S_145_MOD_MAG_AWM: Rifle_556_AWM {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_AWM", 8}
+		};
+	};
+	class Rifle_556_Donaldson;
+	class S_145_MOD_MAG_Donaldson: Rifle_556_Donaldson {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_Donaldson", 8}
+		};
+	};
+	class Rifle_556_leafbrown;
+	class S_145_MOD_MAG_leafbrown: Rifle_556_leafbrown {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_leafbrown", 8}
+		};
+	};
 	
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
