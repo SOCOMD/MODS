@@ -2,6 +2,7 @@ class CfgAmmo {
 	class BulletBase;
 	class MissileBase;
 	class SmokeShell;
+	class CA_Magazine;
 
 	class B_45ACP_Ball: BulletBase {
 		hit = 9;
@@ -33,4 +34,14 @@ class CfgAmmo {
 	class CUP_M_Javelin_AT : MissileBase {
 		hit = 9001;
 	};
+	class ClaymoreDirectionalMine_Remote_Mag: CA_Magazine {
+        class ACE_Triggers {
+            SupportedTriggers[] = {"Command", "MK16_Transmitter"};
+            class Command {
+                FuseTime = 0.5;
+                digDistance = -0.026;
+            };
+            class MK16_Transmitter: Command {};
+        };
+    };
 };
