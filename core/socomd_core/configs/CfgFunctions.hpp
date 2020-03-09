@@ -58,6 +58,7 @@ class CfgFunctions {
 			class ActionCondition_IsRadarOff {};
 			class ActionCondition_canInteract {};
 			class ActionCondition_HasLoadout {};
+			class ActionCondition_HandleResrve {};
 			class ActionCondition_HaloActions {};
 		};
 
