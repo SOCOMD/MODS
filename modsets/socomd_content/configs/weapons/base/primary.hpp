@@ -80,6 +80,9 @@ class SMA_M4afgSTOCK;
 class S_M4A5_base;
 class S_145_KAG_MAG;
 class S_145_MOD_MAG_Camo;
+class S_145_MOD_MAG_AWM;
+class S_145_MOD_MAG_donaldson;
+class S_145_MOD_MAG_leafbrown;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
@@ -231,7 +234,8 @@ class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-}
+};
+
 class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};

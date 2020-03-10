@@ -23,7 +23,7 @@ class CfgLoadoutVests {
 			"SOCOMD_AT_Assistant",
 			"SOCOMD_Pilot",
 			"SOCOMD_Crewman",
-			"SOCOMD_Logistician",
+			"SOCOMD_Logistician"
 		};
 	};
 
