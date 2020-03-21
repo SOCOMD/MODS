@@ -81,7 +81,7 @@ class CAManBase : Man {
 			hotkey = "C";
 		};
 		class SOCOMD_Parachute {
-			condition = "vehicle player == 'SOCOMD_COS_PARACHUTE';"
+			condition = "([_player] call SOCOMD_fnc_ActionCondition_HandleReserve)"
 			icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
 			priority = 2.9;
 			displayName = "$STR_ace_parachute_CutParachute";

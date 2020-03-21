@@ -59,6 +59,10 @@ class CfgVehicles
 		picture = "\A3\Air_F_Beta\Parachute_01\Data\UI\Portrait_Parachute_01_CA.paa";
 		editorPreview = "\Mod\ui\para_preview.jpg";
 	};
+	class SOCOMD_COS_PARACHUTE_RESERVE: SOCOMD_COS_PARACHUTE {
+		_generalMacro = "SOCOMD_COS_PARACHUTE_RESRVE";
+		displayName = "RESERVE PARACHUTE";
+	};
 	class Weapon_Bag_Base;
 	class Boat_F;
 	class Rubber_duck_base_F: Boat_F
