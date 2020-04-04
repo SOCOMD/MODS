@@ -69,9 +69,9 @@ class CfgAmmo {
 
 	class CUP_B_762x51_Tracer_Red;
 	class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
-		hit = 12.0;
-		indirectHit = 4.0;
-		indirectHitRange = 2.0;
+		hit=2.5;
+		indirectHit=1.75;
+		indirectHitRange=2;
 	};
 	#include "ammo\CUP_Sh_PG15V.hpp"
 	// BTR and BDRM primary
