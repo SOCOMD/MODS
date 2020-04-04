@@ -7,8 +7,9 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Firefly (2/6)";
 
+	displayname = "Firefly (2/6)";
+	mass=1220; // higher makes controls more sensitive default: 1220
 	hiddenSelections[] = {"camo1","d_sn"};
 	hiddenSelectionsTextures[] = {
 		"socomd_data_core\ah6\ah6_hull_co.paa",
@@ -19,26 +20,26 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 	class HitPoints : HitPoints {
 		class HitHull : HitHull {
 			material = -1;
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 		};
 		class HitEngine : HitEngine {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitFuel : HitFuel {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitAvionics : HitAvionics {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			material = -1;
@@ -51,28 +52,28 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 			material = -1;
 		};
 		class HitHRotor : HitHRotor {
-			armor = 4.0;
+			armor = 8.0;
 			passThrough = 0.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitVRotor : HitVRotor {
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 0.0;
 			explosionShielding = 5.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitMissiles : HitMissiles {
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 1.0;
 			explosionShielding = 0.0;
 			minimalHit = 0.1;
 			material = -1;
 		};
 		class HitTransmission : HitTransmission {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
@@ -90,7 +91,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 	displayname = "Dragonfly (2/1)";
-
+	mass=1220; // higher makes controls more sensitive default: 1220
 	hiddenSelections[] = {"camo1","d_sn"};
 	hiddenSelectionsTextures[] = {
 		"socomd_data_core\ah6\ah6_hull_co.paa",
@@ -101,60 +102,60 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	class HitPoints : HitPoints {
 		class HitHull : HitHull {
 			material = -1;
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 		};
 		class HitEngine : HitEngine {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitFuel : HitFuel {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitAvionics : HitAvionics {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			material = -1;
 		};
 		class HitGlass1 : HitGlass1 {
-			armor = 1.0;
+			armor = 0.7;
 			passThrough = 1.0;
 			explosionShielding = 0.0;
 			minimalHit = 0.1;
 			material = -1;
 		};
 		class HitHRotor : HitHRotor {
-			armor = 4.0;
+			armor = 8.0;
 			passThrough = 0.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitVRotor : HitVRotor {
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 0.0;
 			explosionShielding = 5.0;
 			minimalHit = 0.01;
 			material = -1;
 		};
 		class HitMissiles : HitMissiles {
-			armor = 1.0;
+			armor = 2.0;
 			passThrough = 1.0;
 			explosionShielding = 0.0;
 			minimalHit = 0.1;
 			material = -1;
 		};
 		class HitTransmission : HitTransmission {
-			armor = 3.0;
+			armor = 6.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 			minimalHit = 0.01;

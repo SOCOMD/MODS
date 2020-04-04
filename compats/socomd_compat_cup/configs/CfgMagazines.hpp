@@ -19,6 +19,7 @@ class CfgMagazines {
     };
     class CUP_19Rnd_CRV7_FAT_M;
     class CUP_PylonPod_19Rnd_CRV7_FAT_M : CUP_19Rnd_CRV7_FAT_M {
+        mass=300;
         hardpoints[] = {
             "CUP_SUPER_PYLON",
             "DAR",
@@ -26,12 +27,12 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "CUP_NATO_HELO_ROCKETS",
             "CUP_19Rnd_CRV7_FAT",
-            "RightMount_MELB",
-            "LeftMount_MELB"
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
     class 6Rnd_ACE_Hellfire_AGM114K;
     class PylonRack_1Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=300;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -41,10 +42,12 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
             "RightMount_MELB",
-            "LeftMount_MELB"
+            "LeftMount_MELB",
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
     class PylonRack_1Rnd_ACE_Hellfire_AGM114N : PylonRack_1Rnd_ACE_Hellfire_AGM114K {
+        mass=300;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -54,10 +57,53 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
             "RightMount_MELB",
-            "LeftMount_MELB"
+            "LeftMount_MELB",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    
+    class PylonRack_3Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=900;
+        hardpoints[] = {
+            "B_MISSILE_PYLON",
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    class PylonRack_3Rnd_ACE_Hellfire_AGM114N : PylonRack_3Rnd_ACE_Hellfire_AGM114K {
+        mass=900;
+        hardpoints[] = {
+            "B_MISSILE_PYLON",
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };       
+    };
+    class PylonRack_4Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=1200;
+        hardpoints[] = {
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_HELLFIRE_RACK",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
 
+    class PylonRack_4Rnd_ACE_Hellfire_AGM114N : PylonRack_4Rnd_ACE_Hellfire_AGM114K {
+        mass=1200;
+        hardpoints[] = {
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_HELLFIRE_RACK",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    
     // disable MELB Pylon shit
     /*
     class VehicleMagazine;
@@ -168,6 +214,7 @@ class CfgMagazines {
 
     class DAGR_Magazine_MELB;
     class Pylon_DAGR_MELB : DAGR_Magazine_MELB {
+        mass=200;
         hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
         displayName = "4x DAGR [ACE]";
     };

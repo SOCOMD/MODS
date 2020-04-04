@@ -205,15 +205,15 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 		};
 	};
 	
-	class Components: Components {
+	class Components : Components {
 		class TransportPylonsComponent {
 			UIPicture = "melb\data\ui\melb_eden_ca.paa";
 			class pylons {
 				// Keep
 				class R_Pylon {
 					hardpoints[] = {"RightMount_MELB"};
-					attachment = "CUP_PylonPod_19Rnd_CRV7_FAT_M";
-					maxweight = 200;
+					attachment = "";
+					maxweight = 800;
 					UIposition[] = {0.125,0.4};
 				};
 

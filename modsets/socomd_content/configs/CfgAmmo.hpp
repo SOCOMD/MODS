@@ -1,10 +1,14 @@
 class CfgAmmo {
 	class BulletBase;
 	class LWIRCM_Ammo_MELB : BulletBase {
+		Hit=0.1;
+		indirectHit=0.03;
+		indirectHitRange=1.5;
 		timeToLive = 10;
 		tracerStartTime = 0.00000001;
 		tracerEndTime = 7;
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		simulation = "shotBullet";
 		tracerScale = 1.3;
 	};
 	
