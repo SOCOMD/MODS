@@ -19,6 +19,8 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	fuelConsumptionRate = 0.28; \
 	driverCanSee = CanSeeAll; \
 	crew = SOCOMD_PILOT; \
+	cost = 40000; \
+	threat[] = {1.0,0.9,0.9}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \

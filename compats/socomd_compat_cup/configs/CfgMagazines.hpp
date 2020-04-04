@@ -221,5 +221,11 @@ class CfgMagazines {
 		{
 			"\cup\weapons\cup_weapons_ak\data\rpk_magazine_drum_co.paa"
 		};
-	}; 
+	};
+
+    // BTR-60PB
+    class CUP_500Rnd_TE2_Green_Tracer_145x115_KPVT_M : VehicleMagazine {
+        maxLeadSpeed = 300;
+        // ammo = "CUP_B_145x115_AP_Green_Tracer";
+    };
 };

@@ -18,6 +18,8 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	fuelCapacity = 3914; \
 	fuelConsumptionRate = 0.55; \
 	crew = SOCOMD_PILOT; \
+	cost = 40000; \
+	threat[] = {1.0,0.7,0.3}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \

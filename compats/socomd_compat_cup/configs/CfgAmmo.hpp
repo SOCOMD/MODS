@@ -73,6 +73,9 @@ class CfgAmmo {
 		indirectHit = 4.0;
 		indirectHitRange = 2.0;
 	};
+	#include "ammo\CUP_Sh_PG15V.hpp"
+	// BTR and BDRM primary
+	class CUP_B_145x115_AP_Green_Tracer : BulletBase {
+		cost = 1; // was 22
+	};
 };
-
-#include "ammo\CUP_Sh_PG15V.hpp"

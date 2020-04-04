@@ -129,6 +129,8 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	fuelCapacity = 440; \
 	fuelConsumptionRate = 0.14; \
 	crew = "SOCOMD_Pilot"; \
+	cost = 30000; \
+	threat[] = {1.0,0.7,0.3}; \
 	typicalCargo[] = {"SOCOMD_Pilot"}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
@@ -187,6 +189,8 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	fuelCapacity = 440; \
 	fuelConsumptionRate = 0.16; \
 	crew = SOCOMD_PILOT; \
+	cost = 40000; \
+	threat[] = {1.0,0.9,0.9}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \

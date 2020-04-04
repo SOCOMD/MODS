@@ -93,7 +93,6 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
 	displayname = "Hurricane (2/0)";
 	fuelCapacity = 1420;
 	fuelConsumptionRate = 0.30;
-	
 	hiddenSelections[] = {
 		"camo1",
 		"camo2",
