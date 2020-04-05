@@ -78,4 +78,11 @@ class CfgAmmo {
 	class CUP_B_145x115_AP_Green_Tracer : BulletBase {
 		cost = 1; // was 22
 	};
+
+	class CUP_M_AIM_9L_Sidewinder_AA : MissileBase {
+		//cmImmunity = 0.8;
+		//cost = 1000;
+		cmImmunity = 0.95;
+		cost = 100;
+	};
 };
