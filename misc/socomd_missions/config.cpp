@@ -141,7 +141,7 @@ class CfgMissions {
 	ADD(VINJESVINGENFOB_HC,SOCOMD [HC] Vinjesvingen FOB,fobs_hc\Vinjesvingen_FOB.tem_vinjesvingenc)
 	ADD(LIVONIAFOB_HC,SOCOMD [HC] Livonia FOB,fobs_hc\Livonia_FOB.Enoch)
 	ADD(VIROLAHTIFOB_HC,SOCOMD [HC] Virolahti FOB,fobs_hc\Virolahti_FOB.vt7)
-	ADD(MOZARTFOB_HC,SOCOMD Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
+	ADD(MOZARTFOB_HC,SOCOMD [HC] Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
 
 	};
 };
