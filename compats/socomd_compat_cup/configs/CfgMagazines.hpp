@@ -103,6 +103,32 @@ class CfgMagazines {
             "SOCOMD_HURRICANE_PYLON"
         };
     };
+
+    class magazine_Missile_HARM_x1;
+    class PylonRack_Missile_HARM_x1 : magazine_Missile_HARM_x1 {
+        mass=500;
+        hardpoints[] = {
+            "B_HARM_RAIL",
+            "I_HARM_RAIL",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    
+    class CUP_1Rnd_AIM_9L_Sidewinder_External_M;
+    class CUP_PylonPod_1Rnd_AIM_9L_Sidewinder_M : CUP_1Rnd_AIM_9L_Sidewinder_External_M {
+        // ammo = "CUP_M_AIM_9L_Sidewinder_AA";
+        hardpoints[] = {
+            "CUP_SUPER_PYLON",
+            "CUP_NATO_HELO_SMALL",
+            "CUP_NATO_HELO_LARGE",
+            "CUP_NATO_HELO_WINGTIP",
+            "CUP_1Rnd_AIM_9L",
+            "SOCOMD_HURRICANE_PYLON",
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+        mass = 150;
+    };
     
     // disable MELB Pylon shit
     /*
