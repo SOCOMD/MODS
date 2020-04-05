@@ -19,7 +19,7 @@ class CfgMagazines {
     };
     class CUP_19Rnd_CRV7_FAT_M;
     class CUP_PylonPod_19Rnd_CRV7_FAT_M : CUP_19Rnd_CRV7_FAT_M {
-        mass=300;
+        mass=800;
         hardpoints[] = {
             "CUP_SUPER_PYLON",
             "DAR",
@@ -298,7 +298,7 @@ class CfgMagazines {
 
     // BTR-60PB
     class CUP_500Rnd_TE2_Green_Tracer_145x115_KPVT_M : VehicleMagazine {
-        maxLeadSpeed = 300;
+        maxLeadSpeed = 400;
         // ammo = "CUP_B_145x115_AP_Green_Tracer";
     };
 };
