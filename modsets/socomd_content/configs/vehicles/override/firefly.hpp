@@ -20,7 +20,7 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 	class HitPoints : HitPoints {
 		class HitHull : HitHull {
 			material = -1;
-			armor = 2.0;
+			armor = 4.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 		};
@@ -59,7 +59,7 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 			material = -1;
 		};
 		class HitVRotor : HitVRotor {
-			armor = 2.0;
+			armor = 4.0;
 			passThrough = 0.0;
 			explosionShielding = 5.0;
 			minimalHit = 0.01;
@@ -102,7 +102,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 	class HitPoints : HitPoints {
 		class HitHull : HitHull {
 			material = -1;
-			armor = 2.0;
+			armor = 4.0;
 			passThrough = 1.0;
 			explosionShielding = 1.0;
 		};
@@ -141,7 +141,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 			material = -1;
 		};
 		class HitVRotor : HitVRotor {
-			armor = 2.0;
+			armor = 4.0;
 			passThrough = 0.0;
 			explosionShielding = 5.0;
 			minimalHit = 0.01;

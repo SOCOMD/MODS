@@ -349,6 +349,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 // - CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M
 // - CUP_PylonPod_1Rnd_AIM_9L_Sidewinder_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19L_M
+// - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19R_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19A_M
 // - CUP_PylonPod_2000Rnd_TE5_Red_Tracer_762x51_M134A_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_M621_20mm_HE_M
