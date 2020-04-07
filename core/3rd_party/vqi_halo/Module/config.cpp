@@ -35,7 +35,7 @@ class CfgFactionClasses {
 	class NO_CATEGORY;
 	class VQI_LEAP: NO_CATEGORY
 	{
-		displayName = "=VQI= L. E. A. P";
+		displayName = "HALO SETTINGS";
 	};
 	class VQI_ZERODARKTHIRTY : NO_CATEGORY
 	{
@@ -131,8 +131,8 @@ class CfgVehicles {
 				
 				class Values
 				{
-					class 0TA0	{name = "OFF - No Audio";  value = 0; }; // ListBox Items
-					class 1TA1	{name = "ON - Short Music Clip 1";  value = 1; default = 1;};
+					class 0TA0	{name = "OFF - No Audio";  value = 0;  default = 0;}; // ListBox Items
+					class 1TA1	{name = "ON - Short Music Clip 1";  value = 1;};
 
 				};
 			};
@@ -235,21 +235,21 @@ class CfgVehicles {
 				};
 			};
 			*/
-			class vqi_module_halo_viewdist { //
-				displayName = "HALO View Distance";
-				description = "Sets Visual Range of Ground (not units) during HALO Freefall (Recommend 4800m)";
-				typeName = NUMBER;
+			// class vqi_module_halo_viewdist { //
+			// 	displayName = "HALO View Distance";
+			// 	description = "Sets Visual Range of Ground (not units) during HALO Freefall (Recommend 4800m)";
+			// 	typeName = NUMBER;
 				
-				class Values
-				{
-					class 0VIEW	{name = "Off - Game Default";  value = 0; }; // ListBox Items
-					class 1VIEW	{name = "1600m / 5000ft";    value = 1600; };
-					class 2VIEW	{name = "3200m / 10,000ft";  value = 3200; };
-					class 3VIEW	{name = "4800m / 15,000ft";  value = 4800; default = 4800;};
-					class 4VIEW	{name = "6400m / 20,000ft";  value = 6400; };
-					class 5VIEW	{name = "9000m / 30,000ft";  value = 9000; };
-				};
-			};
+			// 	class Values
+			// 	{
+			// 		class 0VIEW	{name = "Off - Game Default";  value = 0; }; // ListBox Items
+			// 		class 1VIEW	{name = "1600m / 5000ft";    value = 1600; };
+			// 		class 2VIEW	{name = "3200m / 10,000ft";  value = 3200; };
+			// 		class 3VIEW	{name = "4800m / 15,000ft";  value = 4800; default = 4800;};
+			// 		class 4VIEW	{name = "6400m / 20,000ft";  value = 6400; };
+			// 		class 5VIEW	{name = "9000m / 30,000ft";  value = 9000; };
+			// 	};
+			// };
 			
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			class vqi_module_leap_spacer2 { displayName = " "; description = " "; typeName = STRING; defaultValue = " "; };
@@ -459,7 +459,7 @@ class CfgVehicles {
 				displayName = "HALO - Required Headgear";
 				description = "Enter the Classname(s) of the REQUIRED HEADGEAR (Helmet, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "ADFU_H_OpsCore_08_BLK, ADFU_H_OpsCore_02_BLK, ADFU_H_Airframe_Cover_10_MC, ADFU_H_Airframe_Cover_11_MC, ADFU_H_Airframe_02_tan, ADFU_H_Airframe_03_tan, ADFU_H_Airframe_10_tan, ADFU_H_Airframe_11_tan, ADFU_H_Airframe_02_AMCU, ADFU_H_Airframe_03_AMCU, ADFU_H_Airframe_10_AMCU, ADFU_H_Airframe_11_AMCU, SOCOMD_Item_Headgear_TroopLeader, SOCOMD_Item_Headgear_PatrolLeader, SOCOMD_Item_Headgear_Rifleman, SOCOMD_Item_Headgear_Marksman, SOCOMD_Item_Headgear_Medic ,SOCOMD_Item_Headgear_Sapper ,SOCOMD_Item_Headgear_MachineGunner, SOCOMD_Item_Headgear_Recon, SOCOMD_Item_Headgear_AT, SOCOMD_Item_Headgear_Pilot, SOCOMD_Item_Headgear_Crewman";
+				defaultValue = "ADFU_H_OpsCore_02_TAN,ADFU_H_OpsCore_08_TAN,ADFU_H_OpsCore_02_MC,ADFU_H_OpsCore_08_MC,ADFU_H_OpsCore_08_BLK, ADFU_H_OpsCore_02_BLK, ADFU_H_Airframe_Cover_10_MC, ADFU_H_Airframe_Cover_11_MC, ADFU_H_Airframe_02_tan, ADFU_H_Airframe_03_tan, ADFU_H_Airframe_10_tan, ADFU_H_Airframe_11_tan, ADFU_H_Airframe_02_AMCU, ADFU_H_Airframe_03_AMCU, ADFU_H_Airframe_10_AMCU, ADFU_H_Airframe_11_AMCU, SOCOMD_Item_Headgear_TroopLeader, SOCOMD_Item_Headgear_PatrolLeader, SOCOMD_Item_Headgear_Rifleman, SOCOMD_Item_Headgear_Marksman, SOCOMD_Item_Headgear_Medic ,SOCOMD_Item_Headgear_Sapper ,SOCOMD_Item_Headgear_MachineGunner, SOCOMD_Item_Headgear_Recon, SOCOMD_Item_Headgear_AT, SOCOMD_Item_Headgear_Pilot, SOCOMD_Item_Headgear_Crewman";
 			};	
 			class vqi_module_leap_rqd_facewear_h { //
 				displayName = "HALO - Required Facewear";
@@ -477,7 +477,7 @@ class CfgVehicles {
 				displayName = "HALO - Required JumpSuit";
 				description = "Enter the Classname(s) of the REQUIRED JUMPSUIT (Uniform, etc) to Pass Inspection, leave Blank if NONE. (Separate each classname with comma and/or space. No quotes.)";
 				typeName = STRING;
-				defaultValue = "SOCOMD_Uniform_Snow_HoodDown, CUP_U_CRYE_ATACSFG_Full, SOCOMD_Vympel_Uniform_Full, SOCOMD_Uniform_SleevesUp, SOCOMD_Uniform_SleevesUp_Recon, SOCOMD_Uniform_SleevesDown, SOCOMD_Uniform_SleevesDown_Recon, SOCOMD_Uniform_AMCU_SleevesUp, SOCOMD_Uniform_AMCU_SleevesUp_Recon. SOCOMD_Uniform_Wetsuit, SOCOMD_Commando_BLK_SleevesDown, SOCOMD_Uniform_AMCU_SleevesDown, SOCOMD_Uniform_AMCU_SleevesDown_Recon, SEAL_AOR1_U";
+				defaultValue = "";
 			};
 			class vqi_module_leap_rqd_miscgear_h { //
 				displayName = "HALO - Required Gear";

@@ -72,9 +72,6 @@ DD = [_unit] execVM "vqi_halo\VQI-DemonDropper\FreeFall\vqi_halo_efx_freefall_ha
 
 
 
-// Visual Range
-setViewDistance VQI_HALO_ViewDist; //3600 = 12,000'
-
 
 
 

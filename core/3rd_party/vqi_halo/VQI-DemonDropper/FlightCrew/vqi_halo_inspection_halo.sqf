@@ -32,13 +32,11 @@ if (count VQI_LEAP_RQD_O2SYSTEM_H > 0) then { if ("VQI_BOTTLE_DF1_GAS" in ((vest
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check jumpsuit (uniform)
-if (count VQI_LEAP_RQD_JUMPSUIT_H > 0) then { if (_jumpsuit in VQI_LEAP_RQD_JUMPSUIT_H) then { systemChat "JumpSuit: Check"; } else { _gearpass = 0; 
-	if (_jumpsuit == "SOCOMD_Ghillie_lsh" || _jumpsuit == "SOCOMD_AMCU_Ghillie_lsh" || _jumpsuit == "SOCOMD_Ghillie_sard" || _jumpsuit == "SOCOMD_AMCU_Ghillie_sard" || _jumpsuit == "SOCOMD_Ghillie_ard" || _jumpsuit == "SOCOMD_AMCU_Ghillie_ard" || _jumpsuit == "SOCOMD_Ghillie_jngl" || _jumpsuit == "SOCOMD_AMCU_Ghillie_jngl") then {
-		systemChat "Get that tree off your gear, it's going to tangle up your gear.";
-	} else {
-		systemChat "It's going to be cold up there, get a shirt on and then come back."
-	}
-}; } else { systemChat "You'll freeze! It often colder than -50° up there. You need a Thermal Jumpsuit or an approved Wetsuit"; };
+if (_jumpsuit != "SOCOMD_Ghillie_lsh" || _jumpsuit != "SOCOMD_AMCU_Ghillie_lsh" || _jumpsuit != "SOCOMD_Ghillie_sard" || _jumpsuit != "SOCOMD_AMCU_Ghillie_sard" || _jumpsuit != "SOCOMD_Ghillie_ard" || _jumpsuit != "SOCOMD_AMCU_Ghillie_ard" || _jumpsuit != "SOCOMD_Ghillie_jngl" || _jumpsuit != "SOCOMD_AMCU_Ghillie_jngl") then { systemChat "JumpSuit: Check"; } else { _gearpass = 0; 
+	
+		systemChat "Get that tree off of you, it's going to tangle up your gear.";
+	
+};
 if (_gearpass == 0) exitWith { hint "INSPECTION FAIL"; }; sleep 1;
 
 // HALO - check misc gear (reserve)

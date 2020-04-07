@@ -16,7 +16,7 @@ if (VQI_HINTS_HALO == 1) then { hint "is server"; };
 sleep 1;
 
 	_flightCrew3 = createGroup WEST; // BLUFOR Black-Ops HALO/PARA Crew
-	_flightCrew4 = createGroup WEST; // BLUFOR Black-Ops HALO/PARA Crew
+	// _flightCrew4 = createGroup WEST; // BLUFOR Black-Ops HALO/PARA Crew
 
 	// SYNTAX:   "classname" createUnit [position, group, init, skill, rank]
 	//_FlightCrew1 = "B_Helipilot_F" createUnit [position player, _groupHALO1, "Commander = this", 0.9, "MAJOR"];
@@ -27,33 +27,33 @@ sleep 1;
 	//_FlightCrew6 = "B_Helipilot_F" createUnit [position player, _groupHALO6, "SecurityOps = this", 0.6, "SERGEANT"];
 
 	JumpMaster  = _flightCrew3 createUnit ["SOCOMD_unarmed", position player, [], 25, "NONE"]; publicVariable "JumpMaster";
-	LoadMaster  = _flightCrew4 createUnit ["SOCOMD_unarmed", position player, [], 25, "NONE"]; publicVariable "LoadMaster";
+	// LoadMaster  = _flightCrew4 createUnit ["SOCOMD_unarmed", position player, [], 25, "NONE"]; publicVariable "LoadMaster";
 
 if (VQI_HINTS_HALO == 1) then { hint "Units set"; };
 sleep 1;
 	{ removeAllweapons _x; removeAllItems _x;  removeAllAssignedItems _x;  removeBackpack _x;  removeVest _x; } forEach units _flightCrew3;
-	{ removeAllweapons _x; removeAllItems _x;  removeAllAssignedItems _x;  removeBackpack _x;  removeVest _x; } forEach units _flightCrew4;
+	// { removeAllweapons _x; removeAllItems _x;  removeAllAssignedItems _x;  removeBackpack _x;  removeVest _x; } forEach units _flightCrew4;
 
 
 	JumpMaster  addHeadgear "H_Cap_headphones";
-	LoadMaster  addHeadgear "H_Cap_headphones";
+	// LoadMaster  addHeadgear "H_Cap_headphones";
 
 
 	JumpMaster  SetGroupID ["JumpMaster"];
-	LoadMaster  SetGroupID ["LoadMaster"];
+	// LoadMaster  SetGroupID ["LoadMaster"];
 
 	JumpMaster  attachTo [CONTROL_TABLE,[ -1,0,0]]; 		// 
-	LoadMaster  attachTo [CONTROL_TABLE,[ 1,0,0.5]];		// 
+	// LoadMaster  attachTo [CONTROL_TABLE,[ 1,0,0.5]];		// 
 
 	sleep 1;
 
 	detach JumpMaster;
-	detach LoadMaster;
+	// detach LoadMaster;
 	//detach FlightMedic;
 
 
 	JumpMaster  setFormDir (getDir CONTROL_TABLE + 1);
-	LoadMaster  setFormDir (getDir CONTROL_TABLE + 40);
+	// LoadMaster  setFormDir (getDir CONTROL_TABLE + 40);
 	//FlightMedic setFormDir (getDir VQI_HALO_XC130 + 200);
 
 	// https://community.bistudio.com/wiki/BIS_fnc_ambientAnim
@@ -62,8 +62,8 @@ sleep 1;
 	[[JumpMaster,"Acts_A_M01_briefing"],
 	"switchMove"] call BIS_fnc_MP;
 	
-	[[LoadMaster,"Acts_A_M01_briefing"],
-	"switchMove"] call BIS_fnc_MP;
+	// [[LoadMaster,"Acts_A_M01_briefing"],
+	// "switchMove"] call BIS_fnc_MP;
 	
 
 
@@ -72,7 +72,7 @@ sleep 1;
 
 	[[JumpMaster, ["H.A.L.O. Inspection", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_inspection_halo.sqf'; [JumpMaster, 2]"]], "addAction", true, true] call BIS_fnc_MP;
 	
-	[[LoadMaster, ["CLEARED for TakeOff", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_takeoff.sqf'; [LoadMaster, 1]"]], "addAction", true, true] call BIS_fnc_MP; // Cleared for Take-Off
+	[[CONTROL_TABLE, ["CLEARED for TakeOff", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_takeoff.sqf'; [CONTROL_TABLE, 1]"]], "addAction", true, true] call BIS_fnc_MP; // Cleared for Take-Off
 
 
 };

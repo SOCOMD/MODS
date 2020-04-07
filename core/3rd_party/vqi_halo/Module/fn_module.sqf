@@ -46,11 +46,6 @@ _haloTravelTime = _logic getVariable "vqi_module_halo_plane_travel";
 missionNamespace setVariable ["VQI_HALO_TravelTime", _haloTravelTime];
 
 
-
-// Jump View Distance
-_haloViewDist	= _logic getVariable "vqi_module_halo_viewdist";
-missionNamespace setVariable ["VQI_HALO_ViewDist",_haloViewDist];
-
 // Parachute Failure Rate
 _parachuteFail = _logic getVariable "vqi_module_halo_chute_fail";
 missionNamespace setVariable ["VQI_PARACHUTE_FAIL",_parachuteFail];
@@ -67,7 +62,7 @@ if (isServer) then {
 
 	// XC-130 Nightmare
 	if (_HALOAircraft == 2) then { 
-		CONTROL_TABLE = "B_Quadbike_01_F" createVehicle (position _logic);
+		CONTROL_TABLE = "FlagPole_F" createVehicle (position _logic);
 		CONTROL_TABLE setDir (getDir _logic);
 		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
 		if (_HALOAircraftALT == 2) then {VQI_HALO_XC130 setPosASL [position VQI_HALO_XC130 select 0, position VQI_HALO_XC130 select 1, 18.3]; }; // Nimitz 18.3m Deck
