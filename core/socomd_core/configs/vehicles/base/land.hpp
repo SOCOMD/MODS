@@ -157,6 +157,8 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	vehicleclass = "Car"; \
 	forceInGarage = 1; \
 	crew = UNIT_SOCOMD_CREWMAN; \
+	cost = 30000; \
+	threat[] = {0.7,0.7,0.7}; \
 	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
 	fuelCapacity = 24; \
 	ace_refuel_fuelCapacity = 120; \
@@ -218,6 +220,8 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	displayname = "APC (3/8)";
 	vehicleclass = "Armored";
 	forceInGarage = 1;
+	cost = 40000;
+	threat[] = {0.8,1.0,0.7};
 
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
@@ -325,7 +329,8 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	faction = FACTION_STR;
 	displayname = "APC Slated (3/8)";
 	vehicleclass = "Armored";
-
+	cost = 40000;
+	threat[] = {0.8,1.0,0.7};
 	forceInGarage = 1;
 
 	crew = "SOCOMD_Crewman";
@@ -410,7 +415,8 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	faction = FACTION_STR;
 	displayname = "LAV-25A1 (3/4)";
 	vehicleclass = "Armored";
-
+	cost = 35000;
+	threat[] = {0.8,0.7,0.7};
 	fuelCapacity = 300; // 1 hr 51m at 100km hr
 	ace_refuel_fuelCapacity = 140;
 
@@ -615,7 +621,8 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F {
 	displayname = "ATV (1/1)";
 	vehicleclass = "Car";
 	forceInGarage = 1;
-
+	cost = 10000;
+	threat[] = {0.5,0.5,0.2};
 	fuelCapacity = 4; // 4 == 24m at max speed
 	ace_refuel_fuelCapacity = 10;
 

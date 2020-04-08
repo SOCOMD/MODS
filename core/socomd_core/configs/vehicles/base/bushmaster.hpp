@@ -4,6 +4,7 @@
 class bma3_bushmaster_base_F : Car_F {
 	fuelCapacity = 14; // 14 == 49m
 	ace_refuel_fuelCapacity = 80;
+	cost = 40000;
 
 	class HitPoints : HitPoints {
 		class HitHull;
@@ -49,11 +50,11 @@ class bma3_bushmaster_base_F : Car_F {
 };
 
 class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
-	armor = 6000;
+	armor = 750;
 	armorStructural = 20;
 	explosionShielding = 0.001;
 	damageResistance = 0.03099;
-	threat[] = {1, 0.8, 0.3};
+	threat[] = {1, 0.7, 0.3};
 	acre_hasInfantryPhone = 0;
 
 	class HitPoints : HitPoints {
@@ -207,6 +208,7 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F {
 	scope = public;
 	scopeCurator = public;
+	threat[] = {1, 0.9, 0.5};
 };
 
 /*

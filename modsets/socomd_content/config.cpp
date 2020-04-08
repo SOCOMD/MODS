@@ -1,5 +1,5 @@
-#include "\socomd_content\settings\inventories.hpp"
 #include "\socomd_core\predefined.hpp"
+#include "settings\inventories.hpp"
 #include "predefined.hpp"
 
 class CfgPatches  {
@@ -28,7 +28,8 @@ class CfgPatches  {
 
 			//SOCOMD Requirments
 			"socomd_core",
-			"socomd_data_cup"
+			"socomd_data_cup",
+			"Troy_4A5_Acc"
 		};
 
 		units[] = {
@@ -70,6 +71,30 @@ class CfgPatches  {
 		
 		ammo[] = {};
 		magazines[] = {};
+	};
+};
+
+class asdg_SlotInfo;
+class asdg_FrontSideRail: asdg_SlotInfo
+{
+	class compatibleItems
+	{
+        PEQ_T_point_tan = 1;
+        PEQ_R_point_tan = 1;
+        WMLX_L_PEQ_T_point_tan = 1;
+        WMLX_T_PEQ_R_point_tan = 1;
+        WMLX_L_PEQ_R_point_tan = 1;
+        M300_L_PEQ_R_point_tan = 1;
+        M300_B_PEQ_T_point_tan = 1;
+        M600_L_PEQ_R_point_tan = 1;
+        M600_B_PEQ_T_point_tan = 1;
+        WMLX_L_PEQ_T_point_black = 1;
+        WMLX_T_PEQ_R_point_black = 1;
+        WMLX_L_PEQ_R_point_black = 1;
+        M300_L_PEQ_R_point_black = 1;
+        M300_B_PEQ_T_point_black = 1;
+        M600_L_PEQ_R_point_black = 1;
+        M600_B_PEQ_T_point_black = 1;	
 	};
 };
 

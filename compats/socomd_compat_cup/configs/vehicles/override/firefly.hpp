@@ -205,15 +205,15 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 		};
 	};
 	
-	class Components: Components {
+	class Components : Components {
 		class TransportPylonsComponent {
 			UIPicture = "melb\data\ui\melb_eden_ca.paa";
 			class pylons {
 				// Keep
 				class R_Pylon {
 					hardpoints[] = {"RightMount_MELB"};
-					attachment = "CUP_PylonPod_19Rnd_CRV7_FAT_M";
-					maxweight = 200;
+					attachment = "";
+					maxweight = 800;
 					UIposition[] = {0.125,0.4};
 				};
 
@@ -349,6 +349,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
 // - CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M
 // - CUP_PylonPod_1Rnd_AIM_9L_Sidewinder_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19L_M
+// - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19R_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_GAU19A_M
 // - CUP_PylonPod_2000Rnd_TE5_Red_Tracer_762x51_M134A_M
 // - CUP_PylonPod_1200Rnd_TE1_Red_Tracer_M621_20mm_HE_M

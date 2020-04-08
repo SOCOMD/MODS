@@ -18,6 +18,8 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	fuelCapacity = 1420; \
 	fuelConsumptionRate = 0.30; \
 	crew = SOCOMD_PILOT; \
+	cost = 40000; \
+	threat[] = {1.0,1.0,1.0}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \

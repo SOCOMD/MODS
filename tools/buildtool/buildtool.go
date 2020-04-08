@@ -80,10 +80,10 @@ func MakePBO(buildPath string, outputPath string) error {
 	var cmdName string
 	if runtime.GOOS == "windows" {
 		cmdName = execMakePbo
-		cmdArgs = []string{"-N", "-P", buildPath, outputPath}
+		cmdArgs = []string{"-N", "-U", "-P", buildPath, outputPath}
 	} else {
 		cmdName = execMakePbo
-		cmdArgs = []string{"-N", "-P", buildPath, outputPath}
+		cmdArgs = []string{"-N", "-U", "-P", buildPath, outputPath}
 	}
 
 	cmd := exec.Command(cmdName, cmdArgs...)

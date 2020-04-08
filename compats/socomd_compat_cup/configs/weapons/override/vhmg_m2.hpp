@@ -21,7 +21,7 @@ class CUP_Vhmg_M2_veh : HMG_M2 {
         showToPlayer=0;
         burst=16;
         burstRangeMax=16;
-        aiRateOfFire=0.2;
+        aiRateOfFire=0.5;
         aiRateOfFireDispersion=1.5;
         aiRateOfFireDistance=50;
         minRange=0;

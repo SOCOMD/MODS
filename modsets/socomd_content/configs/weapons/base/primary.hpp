@@ -2,84 +2,14 @@ class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class acc_flashlight;
-class InventoryFlashLightItem_Base_F;
-class SMA_SFLIGHT_TOPM4: acc_flashlight {
-	scope=1;
-	dlc="SMA";
-	displayName="Surefire flash light";
-	picture="\SMA_PEQ15\data\UI\SFflashblk.paa";
-	model="SMA_PEQ15\sma_peqFlash_top_m4.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F
-	{
-		mass=4;
-		class FlashLight
-		{
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
-class S_WMLX: acc_flashlight {
-	scope=2;
-	dlc="Troy_4A5_Acc";
-	displayName="WMLX";
-	model="M4A5_Troy_Acc\mesh\wmlxdbal.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F {
-		mass=4;
-		class FlashLight {
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
 class S_M4A5_base;
 class S_145_KAG_MAG;
 class S_145_MOD_MAG_Camo;
+class S_145_MOD_MAG_AWM;
+class S_145_MOD_MAG_donaldson;
+class S_145_MOD_MAG_leafbrown;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
@@ -231,7 +161,8 @@ class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-}
+};
+
 class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};
