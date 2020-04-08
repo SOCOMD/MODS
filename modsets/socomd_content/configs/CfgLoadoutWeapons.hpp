@@ -84,6 +84,9 @@ class CfgLoadoutWeapons {
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
 
+	class Rifle_65;
+	class arifle_MX_Black_F : Rifle_65 {};
+
 	class MachineGun_762;
 	class CUP_lmg_Mk48_nohg : MachineGun_762 {
 		magazines[] = {
