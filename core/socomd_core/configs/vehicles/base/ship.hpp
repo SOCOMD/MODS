@@ -103,6 +103,11 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Armed_01_minigun_F {
 		reverseString = "R";
 	};
 };
+class B_SDV_01_F;
+class SOCOMD_BOAT_SUB : B_SDV_01_F {
+	displayname = "SDV (2/2)";
+	cost = 40000;
+};
 
 #define SHIP_BASE(ID, SCOPE, BASE) \
 class SOCOMD_SHIP_##ID : ##BASE { \
@@ -134,3 +139,4 @@ class SOCOMD_SHIP_##ID : ##BASE { \
 
 SHIP_BASE(A,public,SOCOMD_BOAT)
 SHIP_BASE(B,public,SOCOMD_BOAT_ASSAULT)
+SHIP_BASE(C,public,SOCOMD_BOAT_SUB)

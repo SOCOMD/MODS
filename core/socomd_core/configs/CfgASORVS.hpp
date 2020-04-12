@@ -29,7 +29,8 @@ class CfgASORVS {
 	class Sea {
 		SOCOMD_Core[] = {
 			"SOCOMD_SHIP_A",
-			"SOCOMD_SHIP_B"
+			"SOCOMD_SHIP_B",
+			"SOCOMD_SHIP_C"
 		};
 	};
 
