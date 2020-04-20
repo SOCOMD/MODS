@@ -39,12 +39,13 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
+class SOCOMD_Crate_Fuel : CargoNet_01_box_F {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Fuel";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
+	model = "\plp_containers\plp_cts_FuelCrateOlive.p3d";
 	icon = "iconObject_1x1";
 
 	ace_dragging_canDrag = 1;
@@ -52,7 +53,7 @@ class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
 	ace_dragging_dragDirection = 0;
 	ace_dragging_dragPosition[] = {0,1.5,0};
 	ace_refuel_flowRate = 1;
-	ace_refuel_fuelCargo = 300;
+	ace_refuel_fuelCargo = 1500;
 
 	weight = 20;
 };
@@ -65,7 +66,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 	displayName = "[CRATE] Hasty";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
-
+	
 	accuracy = 1000;
 	maximumLoad = 99999;
 	weight = 20;
