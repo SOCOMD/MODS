@@ -28,6 +28,8 @@ class CfgLoadoutWeapons {
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
 
+	class CUP_arifle_M16A4_GL : RifleGL_556 {};
+
 	class Rifle_556_Camo;
 	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
 		loadoutWhitelist[] = {
