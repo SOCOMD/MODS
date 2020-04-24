@@ -67,10 +67,11 @@ class CfgAmmo {
 		};
 	};
 
+	// littlebird ammo
 	class CUP_B_762x51_Tracer_Red;
 	class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
-		hit=2.5;
-		indirectHit=1.75;
+		hit=2.75;
+		indirectHit=1.925;
 		indirectHitRange=2;
 	};
 	#include "ammo\CUP_Sh_PG15V.hpp"
