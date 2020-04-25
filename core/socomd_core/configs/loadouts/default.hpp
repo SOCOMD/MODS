@@ -248,7 +248,7 @@ class SOCOMD_Marksman {
 		type = ITEM_VEST_MARKSMAN;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 7)
+			LOADOUT_ITEM(CUP_20Rnd_762x51_B_M110, 8)
 		};
 	};
 	class Backpack {

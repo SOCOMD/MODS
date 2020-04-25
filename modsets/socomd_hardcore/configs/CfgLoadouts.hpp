@@ -246,7 +246,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_MARKSMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 4)
+					LOADOUT_ITEM(CUP_20Rnd_762x51_B_M110, 4)
 				};
 			};
 			class Backpack {

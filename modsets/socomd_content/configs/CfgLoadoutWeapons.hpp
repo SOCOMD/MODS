@@ -84,8 +84,10 @@ class CfgLoadoutWeapons {
 	};
 	
 	class MachineGun_556;
-	class CUP_lmg_minimi_railed : MachineGun_556 {};
+	class CUP_lmg_L110A1_railed : MachineGun_556 {};
+	class CUP_lmg_minimi_railed	: MachineGun_556 {};
 
+	
 	class Rifle_65;
 	class arifle_MX_Black_F : Rifle_65 {};
 
@@ -126,11 +128,34 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
 	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
 	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
+
+	class Long_Rifle_M110;
+	class CUP_srifle_m110_kac_black : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
+	class CUP_srifle_m110_kac : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
+	class CUP_srifle_m110_kac_woodland : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};
