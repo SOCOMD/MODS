@@ -1293,6 +1293,21 @@ class CfgVehicles
 						hideWeaponsgunner = 1;
 						class OpticsIn
 						{
+							class m36th_day_2x
+							{
+								initAngleX = 0;
+								minAngleX = -30;
+								maxAngleX = 30;
+								initAngleY = 0;
+								minAngleY = -100;
+								maxAngleY = 100;
+								initFov = "0.46 / 1";
+								minFov = "0.46 / 1";
+								maxFov = "0.46 / 1";
+								visionMode[] = {"Normal","NVG"};
+								gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
+								gunnerOpticsEffect[] = {};
+							};
 							class m36th_day_7x
 							{
 								initAngleX = 0;
@@ -1404,10 +1419,25 @@ class CfgVehicles
 						radius = 0.25;
 					};
 				};
-				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGunnerOptics = "Usti hlavne1";
 				selectionFireAnim = "zasleh";
 				class OpticsIn
 				{
+					class m36th_day_2x
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = "0.46 / 1";
+						minFov = "0.46 / 1";
+						maxFov = "0.46 / 1";
+						visionMode[] = {"Normal","NVG"};
+						gunnerOpticsModel = "\vtn_armorw_lav25_opt\m36th_day";
+						gunnerOpticsEffect[] = {};
+					};
 					class m36th_day_7x
 					{
 						initAngleX = 0;

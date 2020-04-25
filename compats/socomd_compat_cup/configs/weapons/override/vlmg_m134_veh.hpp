@@ -92,6 +92,16 @@ class CUP_Vlmg_M134_veh2 : CUP_Vlmg_M134_veh {
 };
 
 class CUP_Vlmg_TwinM134_veh : CUP_Vlmg_M134_veh {
+    class LowROF : LowROF {
+        //reloadTime = 0.03;// 0.03 default
+        reloadTime = 0.06;
+        showToPlayer = 1;
+        textureType = "fullAuto"; // textureType = "burst";
+    };
+    class HighROF : HighROF {
+        //reloadTime = 0.015;// 0.015 default
+        showToPlayer = 0;
+    };
     magazines[] = {
         "CUP_4000Rnd_TE5_White_Tracer_762x51_M134_M",
         "CUP_2000Rnd_TE5_White_Tracer_762x51_M134_M",

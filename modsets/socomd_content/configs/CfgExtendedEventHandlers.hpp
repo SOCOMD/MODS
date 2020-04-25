@@ -16,3 +16,31 @@ class Extended_AnimStateChanged_EventHandlers {
 		  animStateChanged = "[_this select 0,_this select 1] call SOCOMD_fnc_animSpeedSet";
     };
 };
+
+class Extended_Engine_EventHandlers {
+	class SOCOMD_DRAGONFLY_A {
+		engine="[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+
+	class SOCOMD_FIREFLY_A {
+		engine="[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+
+	class SOCOMD_HURRICANE_A {
+		engine= "[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+};
+
+class Extended_GetIn_EventHandlers {
+	class SOCOMD_DRAGONFLY_A {
+		engine="[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+
+	class SOCOMD_FIREFLY_A {
+		engine="[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+
+	class SOCOMD_HURRICANE_A {
+		engine= "[_this select 0] call SOCOMD_fnc_Event_heliMassBalance";
+	};
+};

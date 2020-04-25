@@ -6,6 +6,7 @@ class CfgFunctions {
 			class Event_weaponMalfunction {};
 			class Event_shotgunBreach {};
 			class animSpeedSet {};
+			class Event_heliMassBalance {};
 		};
 	};
 };

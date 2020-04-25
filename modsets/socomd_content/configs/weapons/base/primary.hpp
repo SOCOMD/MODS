@@ -124,6 +124,8 @@ class SMA_MK18OD_GL_SM;
 class SMA_AUG_EGLM_Olive;
 class SMA_HK416GLCQB_ODP;
 
+class CUP_arifle_M16A4_GL;
+
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_HK417_16in;
 class SMA_HK417vfg;

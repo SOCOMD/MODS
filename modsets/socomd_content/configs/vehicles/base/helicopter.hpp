@@ -1,3 +1,8 @@
+class AllVehicles;
+class Air : AllVehicles {
+	ace_refuel_flowRate = 2;
+};
+
 class Helicopter_Base_H;
 class MELB_base : Helicopter_Base_H {
 	class Hitpoints;

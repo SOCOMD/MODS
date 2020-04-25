@@ -40,6 +40,21 @@ class CfgLoadoutWeapons {
 		};
 	};
 
+	class Rifle_65 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Logistician"
+		};
+
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_65x39_30Rnd", 6}
+		};
+	};
+
 	class MachineGun_762 : MachineGun_556 {
 		magazines[] = {};
 	};

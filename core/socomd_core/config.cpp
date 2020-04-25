@@ -76,6 +76,7 @@ class CfgPatches {
 			// SEA
 			"SOCOMD_SHIP_A",
 			"SOCOMD_SHIP_B",
+			"SOCOMD_SHIP_C",
 
 			// BOXES
 			"SOCOMD_QStore_A",

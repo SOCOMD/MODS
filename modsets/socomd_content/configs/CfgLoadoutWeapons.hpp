@@ -28,6 +28,8 @@ class CfgLoadoutWeapons {
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
 
+	class CUP_arifle_M16A4_GL : RifleGL_556 {};
+
 	class Rifle_556_Camo;
 	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
 		loadoutWhitelist[] = {
@@ -83,6 +85,9 @@ class CfgLoadoutWeapons {
 	
 	class MachineGun_556;
 	class CUP_lmg_minimi_railed : MachineGun_556 {};
+
+	class Rifle_65;
+	class arifle_MX_Black_F : Rifle_65 {};
 
 	class MachineGun_762;
 	class CUP_lmg_Mk48_nohg : MachineGun_762 {

@@ -74,7 +74,7 @@ ace_goggles_showInThirdPerson = false;
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
-force force ace_hearing_disableEarRinging = false;
+force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 1.0;
 force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
@@ -191,7 +191,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1.2;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 4.0;
+force force ace_medical_playerDamageThreshold = 3.0;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -256,7 +256,7 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 1.0;
+force force ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
 force force ace_nightvision_effectScaling = 1.0;
 force force ace_nightvision_fogScaling = 0.1;
@@ -471,18 +471,11 @@ Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = true;
+force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = true;
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1;
-force force acre_sys_core_revealToAI = false;
-acre_sys_core_spectatorVolume = 1;
+force force acre_sys_core_interference = false;
+force force acre_sys_core_revealToAI = 0;
 force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_core_ts3ChannelName = "";
-force force acre_sys_core_ts3ChannelPassword = "";
-acre_sys_core_ts3ChannelSwitch = true;
-acre_sys_core_unmuteClients = true;
 force force acre_sys_signal_signalModel = 0;
 
 // CBA UI

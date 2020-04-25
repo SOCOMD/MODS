@@ -39,12 +39,13 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
+class SOCOMD_Crate_Fuel : CargoNet_01_box_F {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Fuel";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
+	model = "\plp_containers\plp_cts_FuelCrateOlive.p3d";
 	icon = "iconObject_1x1";
 
 	ace_dragging_canDrag = 1;
@@ -52,7 +53,7 @@ class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
 	ace_dragging_dragDirection = 0;
 	ace_dragging_dragPosition[] = {0,1.5,0};
 	ace_refuel_flowRate = 1;
-	ace_refuel_fuelCargo = 300;
+	ace_refuel_fuelCargo = 1500;
 
 	weight = 20;
 };
@@ -65,7 +66,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 	displayName = "[CRATE] Hasty";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
-
+	
 	accuracy = 1000;
 	maximumLoad = 99999;
 	weight = 20;
@@ -83,6 +84,8 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 48)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 8)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd, 24)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 4)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 32)
@@ -155,6 +158,8 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd, 24)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 4)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 16)
