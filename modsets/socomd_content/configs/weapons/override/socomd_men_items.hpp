@@ -4,7 +4,7 @@ class SOCOMD_Item_Primary_Rifleman                  : S_145_KAG_MAG {};
 class SOCOMD_Item_Primary_Marksman					: CUP_srifle_m110_kac_black{};
 class SOCOMD_Item_Primary_Medic                     : S_145_KAG_MAG {};
 class SOCOMD_Item_Primary_Sapper                    : S_145_KAG_MAG {};
-class SOCOMD_Item_Primary_MachineGunner             : CUP_lmg_minimi_railed {};
+class SOCOMD_Item_Primary_MachineGunner             : SOCOMD_minimi {};
 class SOCOMD_Item_Primary_Recon                     : hlc_rifle_awmagnum {};
 class SOCOMD_Item_Primary_AT                        : S_145_KAG_MAG {};
 class SOCOMD_Item_Primary_Pilot                   	: CUP_smg_MP5A5 {};

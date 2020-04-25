@@ -13,7 +13,7 @@ class InventoryMuzzleItem_Base_F;
 class InventoryFlashLightItem_Base_F;
 class InventoryOpticsItem_Base_F;
 class GrenadeLauncher;
-class asdg_FrontSideRail;
+// class asdg_FrontSideRail;
 class asdg_OpticRail1913;
 class asdg_OpticRail1913_short;
 class asdg_UnderSlot;

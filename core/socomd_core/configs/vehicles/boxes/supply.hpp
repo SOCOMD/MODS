@@ -106,9 +106,9 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_ITEM(ACE_epinephrine, 24)
 		TRANSPORT_ITEM(ACE_salineIV_500, 12)
 		TRANSPORT_ITEM(ACE_surgicalKit, 12)
-		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
+		TRANSPORT_ITEM(DemoCharge_F, 6)
 		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
-		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
+		TRANSPORT_ITEM(SatchelCharge_F, 2)
 	};
 
 	class TransportWeapons {};
@@ -172,8 +172,8 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 
 	class TransportItems {
 		TRANSPORT_ITEM(ACE_CableTie, 12)
-		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 4)
-		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 1)
+		TRANSPORT_ITEM(DemoCharge_F, 4)
+		TRANSPORT_ITEM(SatchelCharge_F, 1)
 	};
 };
 

@@ -296,8 +296,8 @@ class CfgLoadouts {
 					LOADOUT_ITEM(ACE_wirecutter, 1)
 					LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 					LOADOUT_ITEM(MineDetector, 1)
-					LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
-					LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
+					LOADOUT_ITEM(DemoCharge_F, 3)
+					LOADOUT_ITEM(SatchelCharge_F, 1)
 					LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 				};
 			};

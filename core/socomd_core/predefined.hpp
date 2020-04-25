@@ -93,8 +93,8 @@
 	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
 	TRANSPORT_ITEM(ACE_M26_Clacker, 1) \
 	TRANSPORT_ITEM(ACE_wirecutter, 1) \
-	TRANSPORT_ITEM(DemoCharge_Remote_Mag, 5) \
-	TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 1)
+	TRANSPORT_ITEM(DemoCharge_F, 5) \
+	TRANSPORT_ITEM(SatchelCharge_F, 1)
 
 #define TM_GunnerAmmo\
 	TRANSPORT_MAGAZINE(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 2)
