@@ -155,14 +155,25 @@ class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
 class CUP_lmg_minimipara;
 class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 	displayName = "FN Minimi HS";
-	magazineWell[] = {"CBA_556x45_MINIMI"};
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
+	ace_overheating_mrbs = 800; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 
+class CUP_lmg_L110A1;
+class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
+	displayName = "FN Minimi PARA";
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)
+	ace_overheating_mrbs = 800; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
+	ace_overheating_mrbs = 600; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
 
 class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
