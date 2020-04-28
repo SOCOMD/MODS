@@ -80,7 +80,6 @@ class CAManBase : Man {
 			icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
 			hotkey = "C";
 		};
-
 		class ACE_MapDagr {
 			displayName = "Dagr Config";
 			icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
@@ -278,6 +277,121 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_1,"Headset Off",ADFU_H_OpsCore_08_BLK,ADFU_H_OpsCore_02_BLK)
 		};
 
+		// HALO Specific Actions
+		class SOCOMD_HALO_Functions {
+			displayName = "HALO Actions";
+			condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
+			class HALO_Attatch_Base{
+				
+				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				displayName = "Attatch signal";
+				class HALO_Attatch_Smoke {
+					displayName = "Smoke";
+					class HALO_Attatch_Smoke_Red{
+						displayName = "Red";
+						statement = "[_player, 'smoke', 'SmokeShellRed'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+					class HALO_Attatch_Smoke_Blue{
+						displayName = "Blue";
+						statement = "[_player, 'smoke', 'SmokeShellBlue'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+					class HALO_Attatch_Smoke_Green{
+						displayName = "Green";
+						statement = "[_player, 'smoke', 'SmokeShellGreen'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+				};
+				class HALO_Attatch_Chem {
+					displayName = "Chemlight";
+					class HALO_Attatch_Smoke_Red{
+						displayName = "Red";
+						statement = "[_player, 'chem', 'chemlight_red'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+					class HALO_Attatch_Smoke_Blue{
+						displayName = "Blue";
+						statement = "[_player, 'chem', 'chemlight_blue'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+					class HALO_Attatch_Smoke_Green{
+						displayName = "Green";
+						statement = "[_player, 'chem', 'chemlight_green'] call SOCOMD_fnc_Action_ConnectSignal";
+					};
+				};
+			}
+
+			// Height is based on barometric pressure, conversion is 
+			// 1000 hpa = 363'/110m
+			class HALO_Set_AR3 {
+				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				displayName = "Set ARD Alt.";
+				
+				class HALO_Set_AR3_150 {
+					displayName = "~ 150m ASL ";
+					statement = "[995,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_200 {
+					displayName = "~ 200m ASL";
+					statement = "[990,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_250 {
+					displayName = "~ 250m ASL";
+					statement = "[983,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_300 {
+					displayName = "~ 300m ASL";
+					statement = "[978,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_400 {
+					displayName = "~ 400m ASL";
+					statement = "[966,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_500 {
+					displayName = "~ 500m ASL";
+					statement = "[954,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_600 {
+					displayName = "~ 600m ASL";
+					statement = "[943,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_700 {
+					displayName = "~ 700m ASL";
+					statement = "[932,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_800 {
+					displayName = "~ 800m ASL";
+					statement = "[921,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_900 {
+					displayName = "~ 900m ASL";
+					statement = "[910,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_1000 {
+					displayName = "~ 1000m ASL";
+					statement = "[899,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				
+				class HALO_Set_AR3_1200 {
+					displayName = "~ 1200m ASL";
+					statement = "[877,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				
+				class HALO_Set_AR3_1500 {
+					displayName = "~ 1500m ASL";
+					statement = "[845,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_1750 {
+					displayName = "~ 1750m ASL";
+					statement = "[820,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+				class HALO_Set_AR3_2000 {
+					displayName = "~ 2000m ASL";
+					statement = "[795,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+				};
+			};
+			class HALO_Post_landing{
+				condition = "([_player, 2] call SOCOMD_fnc_ActionCondition_HaloActions)";
+				displayName = "Remove Parachite";
+				statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';"
+			}
+		};
 		class SOCOMD_Admin {
 			displayName = "Admin";
 			condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
