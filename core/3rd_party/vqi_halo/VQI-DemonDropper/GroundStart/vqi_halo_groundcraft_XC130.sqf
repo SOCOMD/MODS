@@ -36,13 +36,14 @@ sleep 1;
 
 
 	JumpMaster  addHeadgear "H_Cap_headphones";
+	JumpMaster addVest "V_DeckCrew_white_F";
 	// LoadMaster  addHeadgear "H_Cap_headphones";
 
 
 	JumpMaster  SetGroupID ["JumpMaster"];
 	// LoadMaster  SetGroupID ["LoadMaster"];
 
-	JumpMaster  attachTo [CONTROL_TABLE,[ -1,0,0]]; 		// 
+	JumpMaster  attachTo [CONTROL_TABLE,[ -1,0,-0.5]]; 		// 
 	// LoadMaster  attachTo [CONTROL_TABLE,[ 1,0,0.5]];		// 
 
 	sleep 1;

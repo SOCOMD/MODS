@@ -54,7 +54,6 @@ if (true) then {
 // forgot why I needed this...
 if (!isNil "CARGO_HALOCRATE") then { CARGO_HALOCRATE setVelocity [0, 0, -1]; };
 
-player setVariable ["haloLanded", true];
 
 
 // ADD Parachute and Hide/Bury Equipment?

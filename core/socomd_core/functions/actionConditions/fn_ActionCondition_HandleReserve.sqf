@@ -3,9 +3,9 @@ _player = _this select 0;
 private _backpack = backpack _player;
 
 _allowed = false ;
-if ( _backpack == "" && (vehicle _player) isKindOf "ParachuteBase" &&  _player getVariable ["_hasReserve"] )then {
+if ( _backpack == "" && (vehicle _player) isKindOf "ParachuteBase" &&  _player getVariable ["_hasReserve"]  )then {
     // Case where unit has just opened parachute and reserve should be added
-    _player addBackpackGlobal "SOCOMD_COS_PARACHUTE_RESERVE";
+    // _player addBackpackGlobal "SOCOMD_COS_PARACHUTE_RESERVE";
     _allowed = true; // Mark the parachute cuttable since reserve is present
 } else {
     // Case where inventory has changed otherwise (including when reserve is added)

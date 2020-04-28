@@ -65,7 +65,7 @@ if (isServer) then {
 		CONTROL_TABLE = "FlagPole_F" createVehicle (position _logic);
 		CONTROL_TABLE setDir (getDir _logic);
 		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
-		if (_HALOAircraftALT == 2) then {VQI_HALO_XC130 setPosASL [position VQI_HALO_XC130 select 0, position VQI_HALO_XC130 select 1, 18.3]; }; // Nimitz 18.3m Deck
+		if (_HALOAircraftALT == 2) then {CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 17]; }; // Nimitz 18.3m Deck
 	};
 };
 // -----------------------------------------------------------------------
