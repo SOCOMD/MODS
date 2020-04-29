@@ -35,15 +35,6 @@ if (true) then {
 	resetCamShake;
 	
 	// W-I-P Visual Range
-	setViewDistance 2500;
-	
-	
-			cutText ["","PLAIN"];
-		222 	cutText ["","PLAIN"];
-		3 	cutText ["","PLAIN"];
-		4 	cutText ["","PLAIN"];
-	
-	
 	showGPS True;
 	showMAP True;
 	showCompass True;

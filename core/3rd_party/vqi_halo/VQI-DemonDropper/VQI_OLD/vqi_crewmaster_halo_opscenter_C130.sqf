@@ -19,7 +19,6 @@ if (("Helmet_VQI_HALO" == Headgear player) && ("Vest_VQI_Stingray" == Vest playe
 	sleep 3;
 	
 	// W-I-P Visual Range, Better Immersion? FPS Lag???
-	setViewDistance 9000;
 	
 } else { //chat NOT working
 	CrewMaster CommandChat "Equipment or Paperwork Missing! See the JumpMaster...";

@@ -275,7 +275,7 @@ class CfgVehicles {
 				
 				class Values
 				{
-					class 2XC130 {name = "XC-130: Nightmare";  value = 2; default = 2;};
+					class 2XC130 {name = "C-130";  value = 2; default = 2;};
 				};
 			};
 			class vqi_module_halo_aircraft_alt { //set height, USS Nimitz, etc
@@ -286,7 +286,8 @@ class CfgVehicles {
 				class Values
 				{
 					class 1ASH	{name = "On Ground";  value = 1; default = 1;}; // ListBox Items
-					class 2ASH	{name = "USS Nimitz Deck";  value = 2; };
+					class 2ASH	{name = "HMAS Canberra";  value = 2; };
+					class 3ASH	{name = "USS Liberty";  value = 3; };
 				};
 			};
 			class vqi_module_halo_flightpath_mkrs { //
@@ -384,7 +385,7 @@ class CfgVehicles {
 				displayName = "Airspace Msg Line 1";
 				description = "Enter small Text for Top Line";
 				typeName = STRING;
-				defaultValue = "XC-130 NIGHTMARE : 32,000'ft";
+				defaultValue = "C-130 : 23,000'ft";
 			};
 			class vqi_module_leap_msg_2 { //
 				displayName = "Airspace Msg Line 2";
