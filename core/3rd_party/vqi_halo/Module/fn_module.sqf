@@ -62,7 +62,7 @@ if (isServer) then {
 
 	// XC-130 Nightmare
 	if (_HALOAircraft == 2) then { 
-		CONTROL_TABLE = "FlagPole_F" createVehicle (position _logic);
+		CONTROL_TABLE = "FLAG_ADFU_F" createVehicle (position _logic);
 		CONTROL_TABLE setDir (getDir _logic);
 		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
 		if (_HALOAircraftALT == 2) then {  // Wasp/Canberra 16.8m Deck
