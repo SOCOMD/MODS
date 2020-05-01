@@ -298,18 +298,7 @@ class lbt_weapons_od : Vest_Camo_Base {
 // Rebreather
 class V_RebreatherB : Vest_Camo_Base {
 	displayName = "SOCOMD Rebreather";
-	shownUnderwaterSelections[]=
-	{
-		"NOunhide1",
-		"NOunhide2"
-	};
-	hiddenSelectionsTextures[]=
-	{
-		"\A3\characters_f\common\data\diver_equip_nato_co.paa"
-	};
-	model="\A3\Characters_F\Common\equip_rebreather";
 	class ItemInfo : VestItem {
-		uniformModel="\A3\Characters_F\Common\equip_rebreather";
 		hitpointName = "HitBody";
 		containerClass = "Supply400";
 		armor = 12;
