@@ -284,7 +284,7 @@ force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = false;
 force force ace_pylons_requireEngineer = false;
 force force ace_pylons_requireToolkit = false;
-force force ace_pylons_searchDistance = 25;
+force force ace_pylons_searchDistance = 40;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
@@ -474,7 +474,7 @@ force force acre_sys_core_automaticAntennaDirection = true;
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = false;
-force force acre_sys_core_revealToAI = 0;
+force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
 
