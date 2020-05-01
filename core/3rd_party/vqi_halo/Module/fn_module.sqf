@@ -184,5 +184,4 @@ VQI_LEAP_RQD_MISCGEAR_H = VQI_LEAP_RQD_MISCGEAR_H splitString ", ";
 
 
 
-sleep 3;
-[] spawn VQI_fnc_HALOinit;
+[] call VQI_fnc_HALOinit;

@@ -37,6 +37,8 @@ sleep 1;
 
 	JumpMaster  addHeadgear "H_Cap_headphones";
 	JumpMaster addVest "V_DeckCrew_white_F";
+	JumpMaster addGoggles "G_Aviator";
+	[JumpMaster,"asczHead_olson_A3","male01eng"] call BIS_fnc_setIdentity;
 	// LoadMaster  addHeadgear "H_Cap_headphones";
 
 
