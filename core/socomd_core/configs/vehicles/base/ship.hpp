@@ -107,6 +107,12 @@ class B_SDV_01_F;
 class SOCOMD_BOAT_SUB : B_SDV_01_F {
 	displayname = "SDV (2/2)";
 	cost = 40000;
+
+	waterResistanceCoef = 0.002;
+	overSpeedBrakeCoef = 0.8;
+
+	minSpeed = -0.5;
+	maxSpeed = 35;
 };
 
 #define SHIP_BASE(ID, SCOPE, BASE) \
