@@ -55,13 +55,41 @@ Example:
 */
 
 class CfgAISkill {
-	aimingAccuracy[]	= {0.0, 0.0, 1.0, 0.4};
-	aimingShake[]		= {0.0, 0.5, 1.0, 0.5};
+	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.6};
+	aimingShake[]		= {0.0, 0.2, 1.0, 0.75};
 	aimingSpeed[]		= {0.0, 0.5, 1.0, 0.5};
 	commanding[]		= {0.0, 1.0, 1.0, 1.0};
 	courage[]			= {0.0, 1.0, 1.0, 1.0};
 	general[]			= {0.0, 1.0, 1.0, 1.0};
 	reloadSpeed[]		= {0.0, 1.0, 1.0 ,1.0};
 	spotDistance[]		= {0.0, 1.0, 1.0, 1.0};
-	spotTime[]			= {0.0, 0.25, 1.0, 0.25};
+	spotTime[]			= {0.0, 0.25, 1.0, 1.0};
 };
+
+/*
+
+// Below is defaults
+class CfgAILevelPresets {
+	class AILevelHigh {
+		displayName = "Expert";
+		precisionAI = 0.7;
+		skillAI = 0.8;
+	};
+	class AILevelMedium {
+		displayName = "Normal";
+		precisionAI = 0.5;
+		skillAI = 0.7;
+	};
+	class AILevelLow {
+		displayName = "Novice";
+		precisionAI = 0.2;
+		skillAI = 0.5;
+	};
+	class Custom {
+		displayName = "Custom";
+		precisionAI = 0.5;
+		skillAI = 0.5;
+	};
+};
+
+*/
