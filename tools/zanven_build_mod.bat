@@ -1,5 +1,5 @@
 @echo off
-buildtool -x C:\DePboTools\bin\MakePbo.exe -c ./buildtool/buildtool.config.yaml -d ../ -o "C:\Program Files (x86)\Steam\steamapps\common\Arma 3"
+go run buildtool/buildtool.go -x C:\DePboTools\bin\MakePbo.exe -c ./buildtool/buildtool.config.yaml -d ../ -o "C:\Program Files (x86)\Steam\steamapps\common\Arma 3"
 
 :: ingame script to reload configs
 :: reload cup compat
