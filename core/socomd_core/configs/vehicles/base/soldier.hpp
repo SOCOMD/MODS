@@ -15,7 +15,7 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	faction = FACTION_STR;
 	displayname = "Unarmed";
 	vehicleclass = "Man";
-	camouflage = 2.1; // default 1.4 ( higher values make you easier to spot)
+	camouflage = 1.9; // default 1.4 ( higher values make you easier to spot)
 
 	uniformClass = ITEM_UNIFORM_RIFLEMAN;
 

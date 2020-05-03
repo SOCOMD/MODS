@@ -2,7 +2,10 @@ class NoDust{};
 
 class CfgVehicles  {
 	//MAN
-	class Man;
+	class Land;
+	class Man : Land {
+		skill=0.5;
+	};
 	class Civilian;
 	class O_helipilot_F;
 	class B_Soldier_02_f;
@@ -16,7 +19,7 @@ class CfgVehicles  {
 	class B_Quadbike_01_F;
 	class Bicycle;
 
-	class Land;
+
 	class LandVehicle : Land {
 		class Components;
 	};

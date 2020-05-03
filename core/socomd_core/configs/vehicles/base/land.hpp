@@ -222,6 +222,7 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	forceInGarage = 1;
 	cost = 40000;
 	threat[] = {0.8,1.0,0.7};
+	camouflage = 10;
 
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
@@ -332,6 +333,7 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	cost = 40000;
 	threat[] = {0.8,1.0,0.7};
 	forceInGarage = 1;
+	camouflage = 10;
 
 	crew = "SOCOMD_Crewman";
 	typicalCargo[] = {"SOCOMD_Crewman"};
@@ -419,6 +421,7 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 	threat[] = {0.8,0.7,0.7};
 	fuelCapacity = 300; // 1 hr 51m at 100km hr
 	ace_refuel_fuelCapacity = 140;
+	camouflage = 8;
 
 	forceInGarage = 1;
 

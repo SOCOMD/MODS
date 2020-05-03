@@ -12,7 +12,7 @@ class SOCOMD_Vympel_Soldier_Full : CUP_CRYE_ATACSFG_Full {
 	scope = public;
 	scopeCurator = public;
 	side = EAST;
-
+	skill=1.0;
 	displayName = "Vympel Sleeves Down";
 	uniformClass="CUP_U_CRYE_ATACSFG_Full";
 };
@@ -22,7 +22,8 @@ class SOCOMD_Vympel_Soldier_Roll : CUP_CRYE_ATACSFG_Roll {
 	scope = public;
 	scopeCurator = public;
 	side = EAST;
-
+	SKILL=1.0;
+	
 	displayName = "Vympel Sleeves Up";
 	uniformClass="CUP_U_CRYE_ATACSFG_Roll";
 };
@@ -38,6 +39,7 @@ class SOCOMD_Vympel_Unarmed : B_Soldier_02_f {
 	displayname = "Unarmed";
 	vehicleclass = "Man";
 	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
+	skill=1.0;
 	class EventHandlers;
 
 	uniformClass = "SOCOMD_Vympel_Uniform_Full";

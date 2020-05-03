@@ -55,15 +55,15 @@ Example:
 */
 
 class CfgAISkill {
-	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.6};
-	aimingShake[]		= {0.0, 0.2, 1.0, 0.75};
-	aimingSpeed[]		= {0.0, 0.5, 1.0, 0.5};
-	commanding[]		= {0.0, 1.0, 1.0, 1.0};
+	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.9};
+	aimingShake[]		= {0.0, 0.0, 1.0, 0.75};
+	aimingSpeed[]		= {0.0, 0.2, 1.0, 0.7};
+	commanding[]		= {0.0, 0.5, 1.0, 1.0};
 	courage[]			= {0.0, 1.0, 1.0, 1.0};
-	general[]			= {0.0, 1.0, 1.0, 1.0};
-	reloadSpeed[]		= {0.0, 1.0, 1.0 ,1.0};
-	spotDistance[]		= {0.0, 1.0, 1.0, 1.0};
-	spotTime[]			= {0.0, 0.25, 1.0, 1.0};
+	general[]			= {0.0, 0.0, 1.0, 1.0};
+	reloadSpeed[]		= {0.0, 0.4, 1.0 ,1.0};
+	spotDistance[]		= {0.0, 0.3, 1.0, 1.0};
+	spotTime[]			= {0.0, 0.3, 1.0, 0.9};
 };
 
 /*
