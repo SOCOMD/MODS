@@ -26,7 +26,7 @@ if(_safe == 1) exitWith {};
 
 deleteVehicle _projectile;
 
-_explosion = "R_PG7_F" createVehicle (position player);
+_explosion = "R_PG7_F" createVehicle (getPosASL player);
 
 _unitLoadout = getUnitLoadout player;
 _secondaryLoadout = ["", "", "", "", ["", 0], ["", 0], ""];
