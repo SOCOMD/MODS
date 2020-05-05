@@ -16,4 +16,13 @@ class CfgFactionClasses {
 		icon = "socomd_data_core\icon\icon.paa";
 		author = AUTHOR_STR;
 	};
+	
+	class SOCOMD_FSB {
+		priority = 1;
+		side = 2;
+		displayName = "Russian FSB";
+		flag = "socomd_data_core\icon\adfu_flag_co.paa";
+		icon = "socomd_data_core\icon\icon.paa";
+		author = AUTHOR_STR;
+	};
 };
