@@ -55,6 +55,12 @@ class CfgPatches  {
 			"SOCOMD_Vympel_Sapper",
 			"SOCOMD_Vympel_Marksman",
 
+			"SOCOMD_FSB_Unarmed",
+			"SOCOMD_FSB_Leader",
+			"SOCOMD_FSB_Operator",
+			"SOCOMD_FSB_Medic",
+			"SOCOMD_FSB_Breacher",
+
 			"V12_KTM_SOCOMD",
 			"SOCOMD_LR_ATV",
 			"tut_R22"
