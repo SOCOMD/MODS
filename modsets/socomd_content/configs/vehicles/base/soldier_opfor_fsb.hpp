@@ -26,6 +26,7 @@ class SOCOMD_FSB_Unarmed : B_Soldier_02_f {
 	faction = FACTION_SOCOMD_FSB_STR;
 	displayname = "Unarmed";
 	vehicleclass = "Man";
+	identityTypes[] = {"CUP_D_Language_RU","Head_Euro","CUP_G_ARMY"};
     skill=1.0;
 	class EventHandlers;
 
