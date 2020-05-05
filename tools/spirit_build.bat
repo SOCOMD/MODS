@@ -1,0 +1,1 @@
+C:\bin\buildtool.exe -x C:\bin\DePboTools\bin\MakePbo.exe -c ./buildtool/buildtool.config.yaml -d ../ -o C:\SOCOMD

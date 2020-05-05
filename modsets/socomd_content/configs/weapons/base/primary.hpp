@@ -2,84 +2,14 @@ class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class acc_flashlight;
-class InventoryFlashLightItem_Base_F;
-class SMA_SFLIGHT_TOPM4: acc_flashlight {
-	scope=1;
-	dlc="SMA";
-	displayName="Surefire flash light";
-	picture="\SMA_PEQ15\data\UI\SFflashblk.paa";
-	model="SMA_PEQ15\sma_peqFlash_top_m4.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F
-	{
-		mass=4;
-		class FlashLight
-		{
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
-class S_WMLX: acc_flashlight {
-	scope=2;
-	dlc="Troy_4A5_Acc";
-	displayName="WMLX";
-	model="M4A5_Troy_Acc\mesh\wmlxdbal.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F {
-		mass=4;
-		class FlashLight {
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
 class S_M4A5_base;
 class S_145_KAG_MAG;
 class S_145_MOD_MAG_Camo;
+class S_145_MOD_MAG_AWM;
+class S_145_MOD_MAG_donaldson;
+class S_145_MOD_MAG_leafbrown;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
@@ -194,6 +124,8 @@ class SMA_MK18OD_GL_SM;
 class SMA_AUG_EGLM_Olive;
 class SMA_HK416GLCQB_ODP;
 
+class CUP_arifle_M16A4_GL;
+
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_HK417_16in;
 class SMA_HK417vfg;
@@ -211,22 +143,42 @@ class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
 	displayName = "SR-25 Woodland";
 };
 
+class srifle_EBR_F;
+class SPARTAN_EBR_black_F : srifle_EBR_F {
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
+	magazineWell[] = {"CBA_762x51_HK417"};
+};
+
 //Machine Gun 556
 class CUP_lmg_minimipara;
 class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 	displayName = "FN Minimi HS";
-	magazineWell[] = {"CBA_556x45_MINIMI"};
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
+	ace_overheating_mrbs = 800; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 
+class CUP_lmg_L110A1;
+class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
+	displayName = "FN Minimi PARA";
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)
+	ace_overheating_mrbs = 800; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-}
-class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48 {};
-class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48 {};
-class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48 {};
+	ace_overheating_mrbs = 600; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
+};
+
+class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
+class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48_nohg {};
+class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};
 
 //Machine Gun 762
 class CUP_lmg_FNMAG_RIS;
@@ -632,6 +584,19 @@ class SOCOMD_VEGA_SVD_acc: CUP_srifle_SVD_wdl_top_rail{
 		class LinkedItemsOptic{
 			item = "CUP_optic_SB_11_4x20_PM_od";
 			slot = "CUP_PicatinnyTopMount_SVD";
+		};
+	};
+};
+
+class CUP_smg_vityaz_vfg_front_rail;
+class SOCOMD_ALFA_PP19: CUP_smg_vityaz_vfg_front_rail{
+};
+class SOCOMD_ALFA_PP19_acc: CUP_smg_vityaz_vfg_front_rail{
+	displayname="RU-PP19 (ALFA)"
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1_low";
+			slot = "CUP_DovetailMountBizon";
 		};
 	};
 };
