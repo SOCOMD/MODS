@@ -11,7 +11,8 @@ class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
 	displayname = "Truck Transport (1/12)";
 	fuelCapacity = 24;
 	ace_refuel_fuelCapacity = 120;
-	
+	cost = 20000;
+	threat[] = {0.8,0.8,0.5};	
 	hiddenSelections[] = {
 		"Camo1",
 		"Camo2",
@@ -40,7 +41,8 @@ class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
 	displayname = "Truck Ammo (1/2)";
 	fuelCapacity = 24;
 	ace_refuel_fuelCapacity = 120;
-
+	cost = 20000;
+	threat[] = {0.8,0.8,0.5};	
 	hiddenSelections[] = {
 		"Camo1",
 		"Camo2",
@@ -69,6 +71,8 @@ class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
 	displayname = "Truck Fuel (1/2)";
 	fuelCapacity = 24;
 	ace_refuel_fuelCapacity = 120;
+	cost = 20000;
+	threat[] = {0.8,0.8,0.5};
 
 	hiddenSelections[] = {
 		"Camo1",
@@ -98,6 +102,9 @@ class SOCOMD_TRUCK_REPAIR_A : CUP_B_MTVR_Repair_USA {
 	displayname = "Truck Repair (1/2)";
 	fuelCapacity = 24;
 	ace_refuel_fuelCapacity = 120;
+	cost = 20000;
+	threat[] = {0.8,0.8,0.5};
+
 	hiddenSelections[] = {
 		"Camo1",
 		"Camo2",

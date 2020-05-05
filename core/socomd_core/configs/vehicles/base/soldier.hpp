@@ -15,9 +15,11 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	faction = FACTION_STR;
 	displayname = "Unarmed";
 	vehicleclass = "Man";
+	camouflage = 1.9; // default 1.4 ( higher values make you easier to spot)
 
 	uniformClass = ITEM_UNIFORM_RIFLEMAN;
 
+	threat[] = {1, 0.7, 0.4};
 	weapons[] 					= { };
 	respawnWeapons[] 			= { };
 	magazines[] 				= { };

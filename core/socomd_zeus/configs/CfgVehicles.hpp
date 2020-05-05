@@ -157,18 +157,42 @@ class CfgVehicles
 	};
 	class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
 		scope = 2;
+		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_DisableAI";
 		displayName = "Disable AI";
-		function = "SOCOMD_fnc_DisableAI";
+		function = "SOCOMD_fnc_ModuleDisableAI";
 	};
 	class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
 		scope = 2;
+		scopeCurator = 2;
 		isGlobal = 1;
+		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_EnableAI";
 		displayName = "Enable AI";
-		function = "SOCOMD_fnc_EnableAI";
+		function = "SOCOMD_fnc_ModuleEnableAI";
+	};
+	class SOCOMD_Module_RevealPlayers : SOCOMD_Module_Base {
+		scope = 2;
+		scopeCurator = 2;
+		isGlobal = 1;
+		isTriggerActivated = 1;
+
+		_generalMacro = "SOCOMD_Module_RevealPlayers";
+		displayName = "Reveal Players";
+		function = "SOCOMD_fnc_ModuleRevealPlayers";
+	};
+	class SOCOMD_Module_ForgetPlayers : SOCOMD_Module_Base {
+		scope = 2;
+		scopeCurator = 2;
+		isGlobal = 1;
+		isTriggerActivated = 1;
+
+		_generalMacro = "SOCOMD_Module_ForgetPlayers";
+		displayName = "Forget Players";
+		function = "SOCOMD_fnc_ModuleForgetPlayers";
 	};
 };

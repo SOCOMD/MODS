@@ -54,7 +54,7 @@ class SOCOMD_ACTION_VEST_##VEST { \
 };
 
 #define QSTORE_ACTION_BACKPACK(DISPLAY_STR, BACKPACK) \
-class SOCOMD_ACTION_VEST_##BACKPACK { \
+class SOCOMD_ACTION_BACKPACK_##BACKPACK { \
 	displayName = DISPLAY_STR; \
 	condition = "[_player,"#BACKPACK"] call SOCOMD_fnc_ActionCondition_CanSwapBackpacks"; \
 	statement = "[_player ,"#BACKPACK"] call SOCOMD_fnc_Action_ReplaceBackpack"; \
@@ -63,19 +63,20 @@ class SOCOMD_ACTION_VEST_##BACKPACK { \
 };
 
 #define QSTORE_ACTION_HEADGEAR(DISPLAY_STR, HEADGEAR) \
-class SOCOMD_ACTION_VEST_##HEADGEAR { \
+class SOCOMD_ACTION_HEADGEAR_##HEADGEAR { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	statement = "[_player ,"#HEADGEAR"] call SOCOMD_fnc_Action_ReplaceHeadgear"; \
 	condition = 1; \
 	showDisabled = 0; \
 };
+
 #define QSTORE_ACTION_NVG(DISPLAY_STR, NVG) \
-class SOCOMD_ACTION_VEST_##NVG { \
+class SOCOMD_ACTION_NVG_##NVG { \
 	displayName = DISPLAY_STR; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	condition = "[_player, "#NVG"] call SOCOMD_fnc_ActionCondition_CanSwapNVG"; \
 	statement = "[_player ,"#NVG"] call SOCOMD_fnc_Action_ReplaceNvg"; \
-	condition = 1; \
 	showDisabled = 0; \
 };
 ////////////////////////////////////////////////////////////////////////////////
@@ -135,6 +136,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MachineGunner)
 					QSTORE_ACTION_LOADOUT("Medic",SOCOMD_Medic)
 					QSTORE_ACTION_LOADOUT("Anti-tank",SOCOMD_AT)
+					QSTORE_ACTION_LOADOUT("Anti-tank Asst.",SOCOMD_AT_Assistant)
 				QSTORE_ACTION_GRP_END
 
 				QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (SUPPORT)")
@@ -142,7 +144,24 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
 					QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
 					QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
+					QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
 				QSTORE_ACTION_GRP_END
+
+				class SOCOMD_SavePrefs {
+					displayName = "Save";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
+					statement = "[_player] spawn SOCOMD_fnc_SaveLoadoutPrefs";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+
+				class SOCOMD_LoadPrefs {
+					displayName = "Load";
+					condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
+					statement = "[_player] spawn SOCOMD_fnc_LoadLoadoutPrefs";
+					showDisabled = 0;
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
 			QSTORE_ACTION_GRP_END
 
 			QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Customise Gear")
@@ -197,8 +216,10 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 
 				// Swap NVG Type
 				QSTORE_ACTION_GRP_BEGIN(SELECT_NVG,"NVG")
-					QSTORE_ACTION_NVG("White Phosphor Tube",SOCOMD_NVG)
-					QSTORE_ACTION_NVG("Green Tube",SOCOMD_NVG_GR)
+					QSTORE_ACTION_NVG("PVS-31 White Phosphor Tube",SOCOMD_NVG)
+					QSTORE_ACTION_NVG("PVS-31 Green Tube",SOCOMD_NVG_GR)
+					QSTORE_ACTION_NVG("GPNVG White Phosphor Tube",SOCOMD_NVG_GPNVG_WP_black)
+					QSTORE_ACTION_NVG("GPNVG Green Tube",SOCOMD_NVG_GPNVG_GR_black)
 				QSTORE_ACTION_GRP_END
 				
 				//Select Headgear
@@ -226,6 +247,13 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 						displayName = "Toggle Diving Uniform";
 						condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleDiving";
 						statement = "[_player] call SOCOMD_fnc_Action_ToggleDiving";
+						showDisabled = 0;
+						exceptions[] = {"isNotInside", "isNotSitting"};
+					};
+					class SOCOMD_Uniforms_ToggleHalo {
+						displayName = "Toggle HALO Gear";
+						condition = "[_player] call SOCOMD_fnc_ActionCondition_CanToggleHalo";
+						statement = "[_player] call SOCOMD_fnc_Action_ToggleHalo";
 						showDisabled = 0;
 						exceptions[] = {"isNotInside", "isNotSitting"};
 					};

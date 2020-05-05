@@ -5,6 +5,7 @@ if!(_activated && local _logic) exitWith {};
 _objects = synchronizedObjects _logic; 
 _logic setVariable ["POWER","AUTO"];
 _delay = _logic getVariable ["KICKON_DELAY",120];
+private _GeneratorClasses = ["Land_dp_transformer_F","Land_DPP_01_transformer_F","PowGen_Big","PowGen_Big_EP1","Land_PowerGenerator_F"];
 
 sleep 1;
 _GridPower = _logic getVariable ["GRID_POWER","OFF"];
@@ -19,7 +20,7 @@ _counter = 0;
   if(((typeOf _x) find "EmptyDetector") != -1 ) then { 
     _triggers pushBack _x;
   };
-  if (((typeOf _x) find "PowGen_Big")!= -1 ) then {
+  if (((typeOf _x) in _GeneratorClasses)) then {
 	_Generators pushBack _x;
   };
 } forEach _objects;

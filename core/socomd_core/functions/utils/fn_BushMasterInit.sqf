@@ -21,7 +21,8 @@ while{ _run } do {
 	_veh setHitPointDamage ["hitturret",_turret];
 	_veh setHitPointDamage ["hitgun",_turret];
 	if (_motor == 1 && isNull _smoke) then {
-		_smoke = "test_EmptyObjectForSmoke" createVehicle position _veh;
+		_smoke = "#particlesource" createVehicleLocal position _veh;
+		_smoke setParticleClass "AirObjectDestructionSmoke";
 		_smoke attachTo [_veh,[0,2.8,0.5]];
 	};
 	if( _motor < 1.0 && ! isNull _smoke ) then {

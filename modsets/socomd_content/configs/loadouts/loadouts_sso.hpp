@@ -176,7 +176,6 @@ class SOCOMD_SSO_Sapper: SOCOMD_Sapper {
 			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(MineDetector, 1)
 			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
-			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
 			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
 			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 		};

@@ -28,6 +28,8 @@ class CfgLoadoutWeapons {
 	class SMA_AUG_EGLM_Olive : RifleGL_556 {};
 	class SMA_HK416GLCQB_ODP : RifleGL_556 {};
 
+	class CUP_arifle_M16A4_GL : RifleGL_556 {};
+
 	class Rifle_556_Camo;
 	class S_145_MOD_MAG_Camo: Rifle_556_Camo {
 		loadoutWhitelist[] = {
@@ -35,14 +37,59 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
 		};
 		magazines[] = {
 			{"S_30rnd_556x45_EPR_PMAG_Camo", 8}
 		};
 	};
+	class Rifle_556_AWM;
+	class S_145_MOD_MAG_AWM: Rifle_556_AWM {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_AWM", 8}
+		};
+	};
+	class Rifle_556_Donaldson;
+	class S_145_MOD_MAG_Donaldson: Rifle_556_Donaldson {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_Donaldson", 8}
+		};
+	};
+	class Rifle_556_leafbrown;
+	class S_145_MOD_MAG_leafbrown: Rifle_556_leafbrown {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
+		};
+		magazines[] = {
+			{"S_30rnd_556x45_EPR_PMAG_leafbrown", 8}
+		};
+	};
 	
 	class MachineGun_556;
-	class CUP_lmg_minimi_railed : MachineGun_556 {};
+	class CUP_lmg_L110A1_railed : MachineGun_556 {};
+	class CUP_lmg_minimi_railed	: MachineGun_556 {};
+
+	
+	class Rifle_65;
+	class arifle_MX_Black_F : Rifle_65 {};
 
 	class MachineGun_762;
 	class CUP_lmg_Mk48_nohg : MachineGun_762 {
@@ -69,8 +116,7 @@ class CfgLoadoutWeapons {
 	class Rifle_556_Marksman;
 	class SMA_HK416CUSTOMvfgB : Rifle_556_Marksman {
 		loadoutWhitelist[] = {
-			"SOCOMD_Marksman",
-			"SOCOMD_Recon"
+			"SOCOMD_Marksman"
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_556x45_30Rnd", 5}
@@ -82,9 +128,34 @@ class CfgLoadoutWeapons {
 
 	class Long_Rifle_762;
 	class SMA_HK417_16in : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac_black : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac : Long_Rifle_762 {};
-	class CUP_srifle_m110_kac_woodland : Long_Rifle_762 {};
+	class SPARTAN_EBR_black_F : Long_Rifle_762 {};
+	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
+
+	class Long_Rifle_M110;
+	class CUP_srifle_m110_kac_black : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
+	class CUP_srifle_m110_kac : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
+	class CUP_srifle_m110_kac_woodland : Long_Rifle_M110 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Marksman"
+		};
+		magazines[] = {
+			{"CUP_20Rnd_762x51_B_M110", 8}
+		};
+	};
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};
@@ -127,6 +198,8 @@ class CfgLoadoutWeapons {
 			{"5Rnd_APDS_338LM_Magazine", 2}
 		};
 	};
+
+	class Troy_USP;
 
 	class bnae_falkor_camo1_virtual;
 	class Recon_300WM : bnae_falkor_camo1_virtual {

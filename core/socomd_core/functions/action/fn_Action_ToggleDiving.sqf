@@ -14,13 +14,18 @@ _loadoutVest =  getText (_vestConfig >> "type");
 
 _uniformConfig = (_unitConfig >> "Uniform");
 if(isNull _uniformConfig) exitWith { };
-_loadoutUniform =  getText (_uniformConfig >> "type");
+
+_uniformType = [] call SOCOMD_fnc_GetWorldUniform;
+_loadoutUniformType = getText (_uniformConfig >> "type");
+if(!(_loadoutUniformType == "")) then {
+	_uniformType = _loadoutUniformType;
+};
 
 _wornUniform = uniform _player;
-_switchUniform = _loadoutUniform;
+_switchUniform = _uniformType;
 _switchVest = _loadoutVest;
 
-if(_wornUniform == _loadoutUniform) then {
+if(_wornUniform == _uniformType) then {
 	_switchUniform = "SOCOMD_Uniform_Wetsuit";
 	_switchVest = "V_RebreatherB";
 };

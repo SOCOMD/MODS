@@ -3,6 +3,7 @@ class CfgLoadoutVests {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader",
+			"SOCOMD_MachineGunner",
 			"SOCOMD_2IC"
 		};
 	};
@@ -17,7 +18,12 @@ class CfgLoadoutVests {
 			"SOCOMD_Marksman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Recon",
-			"SOCOMD_AT"
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
 		};
 	};
 

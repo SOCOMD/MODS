@@ -246,7 +246,7 @@ class CfgLoadouts {
 				type = ITEM_VEST_MARKSMAN;
 				class Inventory	{
 					LOADOUT_VEST_ESSENTIALS
-					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 4)
+					LOADOUT_ITEM(CUP_20Rnd_762x51_B_M110, 4)
 				};
 			};
 			class Backpack {
@@ -297,7 +297,6 @@ class CfgLoadouts {
 					LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 					LOADOUT_ITEM(MineDetector, 1)
 					LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
-					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 1)
 					LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
 					LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 				};
@@ -554,11 +553,19 @@ class CfgLoadouts {
 				class Inventory	{
 					LOADOUT_STANDARD_MEDICAL
 					LOADOUT_BACKPACK_ESSENTIALS
-					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+					LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
 					LOADOUT_ITEM(ACE_DefusalKit, 1)
 					LOADOUT_ITEM(ACE_M26_Clacker, 1)
 					LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 					LOADOUT_ITEM(ACE_Tripod, 1)
+				};
+			};
+		};
+
+		class SOCOMD_Recon_Assistant {
+			class Vest {
+				class Inventory	{
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 4)
 				};
 			};
 		};

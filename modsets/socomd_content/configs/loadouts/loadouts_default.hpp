@@ -83,8 +83,8 @@ class SOCOMD_Medic;
 
 class SOCOMD_Recon {
 	primary		    = "bnae_trg42_camo2_virtual";
-	handgun		    = ITEM_HANDGUN_RIFLEMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
+	handgun			= "Troy_USP";
+	handgunMagazine = "18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
@@ -96,6 +96,16 @@ class SOCOMD_Recon {
 			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2)
 		};
 	};
+	class Backpack {
+		type = ITEM_BACKPACK_RECON;
+		class Inventory	{
+			LOADOUT_ITEM(SOCOMD_tent_item, 1)
+			LOADOUT_ITEM(SOCOMD_tent_item_des, 1)
+		};
+	};
+};
+
+class SOCOMD_Recon_Assistant {
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{

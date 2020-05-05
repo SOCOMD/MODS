@@ -5,6 +5,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
 			"SOCOMD_Logistician"
 		};
 
@@ -39,6 +40,21 @@ class CfgLoadoutWeapons {
 		};
 	};
 
+	class Rifle_65 {
+		loadoutWhitelist[] = {
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Logistician"
+		};
+
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_65x39_30Rnd", 6}
+		};
+	};
+
 	class MachineGun_762 : MachineGun_556 {
 		magazines[] = {};
 	};
@@ -51,7 +67,8 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
-			"SOCOMD_AT"
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant"
 		};
 		magazines[] = {
 			{"SOCOMD_Item_Magazine_762x51_20Rnd", 8}
@@ -59,10 +76,8 @@ class CfgLoadoutWeapons {
 	};
 	class Long_Rifle_762 {
 		loadoutWhitelist[] = {
-			"SOCOMD_Commander",
-			"SOCOMD_Leader",
 			"SOCOMD_Marksman",
-			"SOCOMD_Recon"
+			"SOCOMD_Recon_Assistant"
 		};
 
 		magazines[] = {

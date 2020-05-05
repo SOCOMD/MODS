@@ -75,6 +75,9 @@ class CfgMissions {
 	ADD(KURJARIFOB,SOCOMD Kurjari FOB,fobs\Kurjari_FOB.tem_kujari)
 	ADD(SUURSAARIVLHD,SOCOMD Suursaariv FOB,fobs\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
 	ADD(VINJESVINGENFOB,SOCOMD Vinjesvingen FOB,fobs\Vinjesvingen_FOB.tem_vinjesvingenc)
+	ADD(LIVONIAFOB,SOCOMD Livonia FOB,fobs\Livonia_FOB.Enoch)
+	ADD(VIROLAHTIFOB,SOCOMD Virolahti FOB,fobs\Virolahti_FOB.vt7)
+	ADD(MOZARTFOB,SOCOMD Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions
@@ -136,6 +139,9 @@ class CfgMissions {
 	ADD(KURJARIFOB_HC,SOCOMD [HC] Kurjari FOB,fobs_hc\Kurjari_FOB.tem_kujari)
 	ADD(SUURSAARIVLHD_HC,SOCOMD [HC] Suursaariv FOB,fobs_hc\Suursaariv_LHS_HMAS_Canberra.tem_suursaariv)
 	ADD(VINJESVINGENFOB_HC,SOCOMD [HC] Vinjesvingen FOB,fobs_hc\Vinjesvingen_FOB.tem_vinjesvingenc)
+	ADD(LIVONIAFOB_HC,SOCOMD [HC] Livonia FOB,fobs_hc\Livonia_FOB.Enoch)
+	ADD(VIROLAHTIFOB_HC,SOCOMD [HC] Virolahti FOB,fobs_hc\Virolahti_FOB.vt7)
+	ADD(MOZARTFOB_HC,SOCOMD [HC] Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
 
 	};
 };

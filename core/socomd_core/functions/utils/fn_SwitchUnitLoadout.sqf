@@ -19,32 +19,12 @@ _unitLoadout = getUnitLoadout _player;
 
 //Primary
 _primary = getText (_unitConfig >> "primary");
-_primaryLoadout = _unitLoadout select 0;
-if(count _primaryLoadout <= 0) then
-{
-    _primaryLoadout = [_primary, "", "", "", [], [], ""];
-}
-else
-{
-    _primaryLoadout set [0, _primary];
-    _primaryLoadout set [4, []];
-    _primaryLoadout set [5, []];
-};
+_primaryLoadout = [_primary, "", "", "", [], [], ""];
 _unitLoadout set [0, _primaryLoadout];
 
 //Secondary
 _secondary = getText (_unitConfig >> "secondary");
-_secondaryLoadout = _unitLoadout select 1;
-if(count _secondaryLoadout <= 0) then
-{
-    _secondaryLoadout = [_secondary, "", "", "", [], [], ""];
-}
-else
-{
-    _secondaryLoadout set [0, _secondary];
-    _secondaryLoadout set [4, []];
-    _secondaryLoadout set [5, []];
-};
+_secondaryLoadout = [_secondary, "", "", "", [], [], ""];
 
 _secondaryMagazine = getText (_unitConfig >> "secondaryMagazine");
 if(_secondaryMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
@@ -55,17 +35,7 @@ _unitLoadout set [1, _secondaryLoadout];
 
 //Handgun
 _handgun = getText (_unitConfig >> "handgun");
-_handgunLoadout = _unitLoadout select 2;
-if(count _handgunLoadout <= 0) then
-{
-    _handgunLoadout = [_handgun, "", "", "", [], [], ""];
-}
-else
-{
-    _handgunLoadout set [0, _handgun];
-    _handgunLoadout set [4, []];
-    _handgunLoadout set [5, []];
-};
+_handgunLoadout = [_handgun, "", "", "", [], [], ""];
 
 _handgunMagazine = getText (_unitConfig >> "handgunMagazine");
 if(_handgunMagazine isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then 
