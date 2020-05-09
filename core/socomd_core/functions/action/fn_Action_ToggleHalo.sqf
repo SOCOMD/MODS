@@ -17,7 +17,6 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	};
 	_player removeItems "VQI_BOTTLE_DF1_GAS";
 	_player unassignItem "VQI_ReserveChute";
-	_player unassignItem "VQI_AR3";
 	_player unassignItem "ACE_Altimeter";
 	_player removeItem "VQI_ReserveChute";
 	_player removeItem "VQI_AR3";
@@ -36,6 +35,5 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	(vestContainer _player) addItemCargoGlobal ["VQI_AR3", 1];
 	(vestContainer _player) addItemCargoGlobal ["ACE_Altimeter", 1];
 	_player assignItem "VQI_ReserveChute";
-	_player assignItem "VQI_AR3";
 	_player assignItem "ACE_Altimeter";
 };

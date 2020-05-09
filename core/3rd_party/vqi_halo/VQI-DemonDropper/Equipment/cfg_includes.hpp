@@ -24,11 +24,11 @@ class ItemWatch;
 class Binocular;
 class ItemGPS;
 #include "Altimeter\cfg_altimeter.hpp"
-#include "AAD\cfg_ar3.hpp"
-#include "AAD\cfg_astra.hpp"
 #include "AAD\cfg_sentinel.hpp"
 #include "Oxygen\cfg_gasmix.hpp"
 #include "Parachute\cfg_reservechute.hpp"
+#include "AAD\cfg_ar3.hpp"
+#include "AAD\cfg_astra.hpp"
 
 
 

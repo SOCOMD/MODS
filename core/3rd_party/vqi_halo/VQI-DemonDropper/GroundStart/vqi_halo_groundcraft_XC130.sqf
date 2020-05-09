@@ -56,17 +56,12 @@ sleep 1;
 
 
 	JumpMaster  setFormDir (getDir CONTROL_TABLE + 1);
-	// LoadMaster  setFormDir (getDir CONTROL_TABLE + 40);
-	//FlightMedic setFormDir (getDir VQI_HALO_XC130 + 200);
 
 	// https://community.bistudio.com/wiki/BIS_fnc_ambientAnim
 	//[JumpMaster,"LISTEN_BRIEFING","ASIS"] call BIS_fnc_ambientAnim;
 	
-	[[JumpMaster,"Acts_A_M01_briefing"],
-	"switchMove"] call BIS_fnc_MP;
+	[[JumpMaster,"Acts_A_M01_briefing"],"switchMove"] call BIS_fnc_MP;
 	
-	// [[LoadMaster,"Acts_A_M01_briefing"],
-	// "switchMove"] call BIS_fnc_MP;
 	
 
 

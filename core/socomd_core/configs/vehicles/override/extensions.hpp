@@ -315,7 +315,7 @@ class CAManBase : Man {
 						statement = "[_player, 'chem', 'chemlight_green'] call SOCOMD_fnc_Action_ConnectSignal";
 					};
 				};
-			}
+			};
 
 			// Height is based on barometric pressure, conversion is 
 			// 1000 hpa = 363'/110m

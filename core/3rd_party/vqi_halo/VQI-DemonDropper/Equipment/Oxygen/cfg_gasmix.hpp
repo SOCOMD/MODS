@@ -19,7 +19,7 @@ class VQI_BOTTLE_DF1_GAS : ItemCore
 	class ItemInfo : InventoryItem_Base_F
 	{
 		mass = 60;
-		allowedSlots[] = {701};		// 7v/8u/9b
+		allowedSlots[] = {701,801,901};		// 7v/8u/9b
 	}; 
 	picture = "\vqi_halo\VQI-DemonDropper\Equipment\Oxygen\DF1\iconDF-1.paa";
 	author = "Von Quest Industries";

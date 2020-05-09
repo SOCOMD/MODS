@@ -4,7 +4,7 @@
 
 private ["_aad1","_aad2","_aad3","_aad4","_aad5","_aad6","_aad7"];
 
-if ("VQI_AR3" in assignedItems player) then {
+if ("VQI_AR3" in (vestItems player) + (uniformItems player) + (backpackItems player)) then {
 	
 	// 1000 = 363'/110m
 	_aad1 = player addAction ["AR3 Set: 998 hPA","[998,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"]; // 998 = 418'/127m

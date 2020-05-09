@@ -66,12 +66,12 @@ class cfgWeapons {
 class cfgVehicles {
 
 	class B_Pilot_F;								// B_Soldier_04_F
-	class VQI_HALO_Cadet : B_Pilot_F {				// Assign Unit (other config)
-		uniformClass = "VQI_Jumpsuit_Icarus";
-		scope = 1; 									//1,2,public,private? 1 will hide Unit!
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\vqi_halo\VQI-DemonDropper\Equipment\Jumpsuit\Icarus.paa"};
-	};
+	// class VQI_HALO_Cadet : B_Pilot_F {				// Assign Unit (other config)
+	// 	uniformClass = "VQI_Jumpsuit_Icarus";
+	// 	scope = 1; 									//1,2,public,private? 1 will hide Unit!
+	// 	hiddenSelections[] = {"Camo"};
+	// 	hiddenSelectionsTextures[] = {"./Equipment/Jumpsuit/Icarus.paa"};
+	// };
 };
 
 

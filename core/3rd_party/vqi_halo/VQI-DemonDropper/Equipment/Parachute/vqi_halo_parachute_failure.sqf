@@ -15,7 +15,7 @@ waitUntil { sleep 1; animationState _unit == "para_pilot"; };
 if (random 100 < VQI_PARACHUTE_FAIL) then {
 
 	// Check/Activate Sentinel + Reserve Chute
-	if (("VQI_Sentinel" in assignedItems _unit) && ("VQI_ReserveChute" in assignedItems _unit)) then {
+	if (("VQI_Sentinel" in (vestItems player) + (uniformItems player) + (backpackItems player)) && ("VQI_ReserveChute" in (vestItems player) + (uniformItems player) + (backpackItems player))) then {
 	
 		hint "Sentinel Activated!";
 		execVM "vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_reservechute_sentinel.sqf";
