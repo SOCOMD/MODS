@@ -30,7 +30,7 @@ class SoldierWB;
 class CUP_Creatures_Military_TKI_Insurgent_Base : SoldierWB {
 	INSURGENT
 };
-// Taki Militia
+// Taki Militia (is this army?)
 class CUP_Creatures_Military_TK_Soldier_Base : SoldierWB {
 	ARMY
 };
