@@ -165,7 +165,70 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 		""
 	};
 };
+class ADFU_H_Airframe_02_MC: ADFU_H_Airframe_Cover_02 {
+	scope = public;
+	scopeArsenal = 2;
+	displayName="Airframe (AMCU)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+	hiddenSelectionsTextures[]= {
+		"",
+		"",
+		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
+		"",
+		"",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"ADFU_Units\data\h_airframe_khk_co.paa",
+		"ADFU_Units\data\h_fast_khk_co.paa"
+	};
+};
+
+class ADFU_H_Airframe_03_MC: ADFU_H_Airframe_Cover_03 {
+	scope = public;
+	scopeArsenal = 2;
+	displayName="Airframe (MC)";
+	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
+
+	HELMET_ARMOR_STRONG
+
+	hiddenSelections[]= {
+		"_arc_peltor",
+		"_camera",
+		"_cover",
+		"_face_cover",
+		"_Manta_Rear",
+		"_NVG_Battery",
+		"_surefire_light",
+		"camo",
+		"camo2"
+	};
+
+	hiddenSelectionsTextures[]= {
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"",
+		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
+		"",
+		"",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"ADFU_Units\data\h_airframe_khk_co.paa",
+		"ADFU_Units\data\h_fast_khk_co.paa"
+	};
+};
 class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
 	scope = public;
 	scopeArsenal = 2;
