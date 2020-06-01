@@ -167,7 +167,7 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 class ADFU_H_Airframe_Cover_02_MC: ADFU_H_Airframe_Cover_02 {
 	scope = public;
 	scopeArsenal = 2;
-	displayName="Airframe (AMCU)";
+	displayName="Airframe (MC)";
 	picture="\ADFU_Units\ui\icon_h_airframe_cb_ca.paa";
 
 	HELMET_ARMOR_STRONG
@@ -189,8 +189,8 @@ class ADFU_H_Airframe_Cover_02_MC: ADFU_H_Airframe_Cover_02 {
 		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
 		"",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"",
+		"",
 		"ADFU_Units\data\h_airframe_khk_co.paa",
 		"ADFU_Units\data\h_fast_khk_co.paa"
 	};
@@ -222,8 +222,8 @@ class ADFU_H_Airframe_Cover_03_MC: ADFU_H_Airframe_Cover_03 {
 		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
 		"",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
+		"",
+		"",
 		"ADFU_Units\data\h_airframe_khk_co.paa",
 		"ADFU_Units\data\h_fast_khk_co.paa"
 	};
