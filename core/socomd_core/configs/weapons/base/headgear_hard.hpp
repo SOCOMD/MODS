@@ -67,7 +67,6 @@ class ADFU_H_Airframe_Cover_10 : ItemCore {
 	HEARING_PROTECTION_PELTOR
 };
 
-class ADFU_H_Airframe_Cover_03_MC;
 
 class ADFU_H_Airframe_Cover_05 : ItemCore {
 	class ItemInfo;
