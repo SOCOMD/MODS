@@ -27,7 +27,7 @@ _flightHALO = 1;
 
 if (flightHALO == 1) then {	// H.A.L.O.
 	if (planeType == 1) then { _flightALT = 10700 + _flightAlt1; };	// MC-130J Commando II		35,000' - 37,000'
-	if (planeType == 2) then { _flightALT = 7500 + _flightAlt1; };	// XC-130 "Nightmare"		35,000' - 37,000'
+	if (planeType == 2) then { _flightALT = 5500 + _flightAlt1; };	// XC-130 "Nightmare"		35,000' - 37,000'
 	if (planeType == 3) then { _flightALT = 13700 + _flightAlt1; };	// C-17 Globemaster III	45,000' - 47,000'
 	if (planeType == 4) then { _flightALT = 22000 + _flightAlt2; };	// XHR-1 "Vampyre"		72,000' - 82,000'
 };
@@ -145,6 +145,12 @@ if (planeType == 1) then {
 if (planeType == 2) then {
 	_floorfix1 attachTo [VQI_HALO_JUMPCRAFT,[ 0.68, 0.6, -4.7]];		// XC-130
 	_floorfix2 attachTo [VQI_HALO_JUMPCRAFT,[-0.75, 0.6, -4.7]];		// XC-130
+	_pos = getPos VQI_HALO_JUMPCRAFT;
+	_light = "#lightpoint" createVehicleLocal _pos;
+	_light setLightBrightness 0.1;
+	_light setLightAmbient [0.5, 0.0, 0.0];
+	_light setLightColor [0.5, 0.0, 0.0];
+	_light lightAttachObject [VQI_HALO_JUMPCRAFT, [ 0.71, 4, 0]];
 };
 
 

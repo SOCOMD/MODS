@@ -12,7 +12,7 @@ _activ = [_this, 2, true, [true]] call BIS_fnc_param;
 if !(_activ) exitWith{};
 
 
-if !(hasInterface) exitWith{};
+// if !(hasInterface) exitWith{};
 
 waitUntil {!isNull(findDisplay 46)};
 waitUntil {!isNull player};
@@ -57,21 +57,16 @@ _HALOAircraftALT = _logic getVariable "vqi_module_halo_aircraft_alt";
 //HALO Jump Aircraft
 _HALOAircraft = _logic getVariable "vqi_module_halo_aircraft";
 
-if (isServer) then {
-	// MC-130J Commando II
+if !(hasInterface) then {
+// 	// MC-130J Commando II
+
+hint 'this is just a test';
+
 
 	// XC-130 Nightmare
-	if (_HALOAircraft == 2) then { 
-		CONTROL_TABLE = "FLAG_ADFU_F" createVehicle (position _logic);
-		CONTROL_TABLE setDir (getDir _logic);
-		VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
-		if (_HALOAircraftALT == 2) then {  // Wasp/Canberra 16.8m Deck
-			CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 16.8];
-		};
-		if (_HALOAircraftALT == 3) then { // Liberty Deck
-			CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 8.9];
-		};
-	};
+	// if (_HALOAircraft == 2) then { 
+		
+	// };
 };
 // -----------------------------------------------------------------------
 
@@ -175,13 +170,5 @@ _rqdMiscgear_H = _logic getVariable "vqi_module_leap_rqd_miscgear_h";
 missionNamespace setVariable ["VQI_LEAP_RQD_MISCGEAR_H", _rqdMiscgear_H];
 VQI_LEAP_RQD_MISCGEAR_H = VQI_LEAP_RQD_MISCGEAR_H splitString ", ";
 
-
-
-
-
-
-
-
-
-
-[] call VQI_fnc_HALOinit;
+sleep 3;
+[_logic] spawn VQI_fnc_HALOinit;

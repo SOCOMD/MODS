@@ -42,7 +42,8 @@ if (!isNull (unitBackpack _unit) && (backpack _unit) != "SOCOMD_COS_PARACHUTE") 
 	// _X		= backpack? add ability to store other Backpack as well??
  
 	// removeBackpack _unit; //remove the backpack
-	_unit call zade_boc_fnc_actionOnChest;
+	_unit call grad_boc_fnc_actionOnChest;
+	sleep 3;
 	_unit addBackpack "SOCOMD_COS_PARACHUTE"; //add the parachute				/////////////////////////
 	//{_x addBackpack "SOCOMD_COS_PARACHUTE";} forEach units group _unit;		/////////////////////////
 	// Set Group A.I.

@@ -4,12 +4,20 @@ waitUntil {sleep 1; !isNil "bis_fnc_init"};
 
 // Functions, EventHandlers, Variables
 execVM "vqi_halo\VQI-DemonDropper\vqi_leap_functions.sqf";
-
-
-
+_args = _this;
+_logic = _this select 0;
 
 
 if (isServer) then {
+	CONTROL_TABLE = "FLAG_ADFU_F" createVehicle (position _logic);
+	CONTROL_TABLE setDir (getDir _logic);
+	VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
+	if (_HALOAircraftALT == 2) then {  // Wasp/Canberra 16.8m Deck
+		CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 16.8];
+	};
+	if (_HALOAircraftALT == 3) then { // Liberty Deck
+		CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 8.9];
+	};
  	if (!isNil "CONTROL_TABLE") then { execVM "vqi_halo\VQI-DemonDropper\GroundStart\vqi_halo_groundcraft_XC130.sqf" }; 
 };
 

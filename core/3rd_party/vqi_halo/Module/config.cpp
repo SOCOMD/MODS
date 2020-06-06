@@ -10,7 +10,7 @@ class CfgPatches {
 		name = "LEAP";
 		author = "R. Von Quest";
 		requiredVersion = 1.68;
-		requiredAddons[] = {"A3_Modules_F"};
+		requiredAddons[] = {"A3_Modules_F","socomd_core"};
 		units[] = {"VQI_ModuleHALO"};
 	};
 };
@@ -149,107 +149,6 @@ class CfgVehicles {
 					class 3HTT	{name = "Advance Game Time 2-6 Hours, Random";  value = 3; };
 				};
 			};
-			/*
-			class vqi_module_leap_ao_ack_sites { //
-				displayName = "Enemy ACK Sites";
-				description = "Adds Simulated Enemy Ack-Ack (Flak) Batteries to Maps. Effective Range is within 2KM. Flak error rate is 200m (random). Low-Alt AA, 100m floor. Designed for Anti-Heli Ops.";
-				typeName = NUMBER;
-				
-				class Values
-				{
-					class 0ACK	{name = "OFF / NONE";  value = 0; }; // ListBox Items
-					class 1ACK	{name = "ON - ACTIVE";  value = 1; default = 1; };
-				};
-			};
-			class vqi_module_leap_ao_ack_num { //
-				displayName = "Enemy ACK A.O.s #";
-				description = "How many Ack-Ack SITES for the Map. Enter 0, Positive, or a Negative Number. Positive is EXACTLY that many AOs. A Negative number is RANDOM upto that Number.";
-				typeName = NUMBER;
-				defaultValue = "-30";
-			};
-			class vqi_module_leap_ao_sam_sites { //
-				displayName = "Enemy SAM Sites";
-				description = "Adds Simulated Enemy SAM Sites to Maps. HALO Jumps are usually safe within SAM Site Areas of 7km (23,000') or higher. You should be out-of-range. Designed for Higher-Alt Aircraft.";
-				typeName = NUMBER;
-				
-				class Values
-				{
-					class 0SAM	{name = "OFF / NONE";  value = 0; }; // ListBox Items
-					class 1SAM	{name = "ON - ACTIVE";  value = 1; default = 1; };
-				};
-			};
-			class vqi_module_leap_ao_sam_num { //
-				displayName = "Enemy SAM A.O.s #";
-				description = "How many SAM SITES for the Map. Enter 0, Positive, or a Negative Number. Positive is EXACTLY that many AOs. A Negative number is RANDOM upto that Number.";
-				typeName = NUMBER;
-				defaultValue = "-10";
-			};
-			/*
-			class vqi_module_halo_sam_team { //
-				displayName = "Enemy S.A.M Team";
-				description = "Adds random SAM Teams to operate/guard the Missile Sites";
-				typeName = NUMBER;
-				
-				class Values
-				{
-					class 0SAMT	{name = "OFF - None";  value = 0; }; // ListBox Items
-					class 1SAMT	{name = "RED / OPF / CSAT";  value = 1; default = 1;};
-					class 2SAMT	{name = "GRN / IND / A.A.F";  value = 2; };
-				};
-			};
-			class vqi_module_halo_sam_team_p { //
-				displayName = "Enemy S.A.M Team %";
-				description = "Enter the chance (0-100%) of SAM Team at the Site";
-				typeName = NUMBER;
-				defaultValue = "30";
-			};
-			
-			class vqi_module_leap_ao_radar_sites { //
-				displayName = "Enemy RADAR Sites";
-				description = "Adds Simulated RADAR Sites to Maps. Hi-Res Tracking/Intel. Enemy QRF Teams may respond if detected within RADAR Ranges of 50m AGL upto the Max-Radius in Height.";
-				typeName = NUMBER;
-				
-				class Values
-				{
-					class 0RAD	{name = "OFF / NONE";  value = 0; }; // ListBox Items
-					class 1RAD	{name = "ON - ACTIVE";  value = 1; default = 2; };
-				};
-			};
-			class vqi_module_leap_ao_radar_num { //
-				displayName = "Enemy RADAR A.O.s";
-				description = "How many RADAR STATIONS for the Map. Enter 0, Positive, or a Negative Number. Positive is EXACTLY that many AOs. A Negative number is RANDOM upto that Number.";
-				typeName = NUMBER;
-				defaultValue = "-3";
-			};
-			class vqi_module_leap_ao_radar_qrf { //
-				displayName = "RADAR QRF Team";
-				description = "Select the Faction Side that Responds to a successful RADAR Ping.";
-				typeName = NUMBER;
-				
-				class Values
-				{
-					class 1RADT	{name = "RED / OPF / CSAT";  value = 1; default = 1;};
-					class 2RADT	{name = "GRN / IND / A.A.F";  value = 2; };
-					class 3RADT	{name = "BLU / BLU / NATO";  value = 3; };
-					class 4RADT	{name = "RED / OPF / RHS Russians";  value = 4; };
-				};
-			};
-			*/
-			// class vqi_module_halo_viewdist { //
-			// 	displayName = "HALO View Distance";
-			// 	description = "Sets Visual Range of Ground (not units) during HALO Freefall (Recommend 4800m)";
-			// 	typeName = NUMBER;
-				
-			// 	class Values
-			// 	{
-			// 		class 0VIEW	{name = "Off - Game Default";  value = 0; }; // ListBox Items
-			// 		class 1VIEW	{name = "1600m / 5000ft";    value = 1600; };
-			// 		class 2VIEW	{name = "3200m / 10,000ft";  value = 3200; };
-			// 		class 3VIEW	{name = "4800m / 15,000ft";  value = 4800; default = 4800;};
-			// 		class 4VIEW	{name = "6400m / 20,000ft";  value = 6400; };
-			// 		class 5VIEW	{name = "9000m / 30,000ft";  value = 9000; };
-			// 	};
-			// };
 			
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			class vqi_module_leap_spacer2 { displayName = " "; description = " "; typeName = STRING; defaultValue = " "; };

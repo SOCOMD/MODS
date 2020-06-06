@@ -9,8 +9,6 @@ dropGear = true;
 gearSpot = true;
 
 
-player setVariable ["haloReady", false];
-player setVariable ["haloLanded", false];
 
 // chute & bury menu
 LZchute = createVehicle ["SOCOMD_COS_PARACHUTE", position player, [], 0, "CAN_COLLIDE"];
