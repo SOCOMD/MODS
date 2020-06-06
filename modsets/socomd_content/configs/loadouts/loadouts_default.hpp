@@ -82,7 +82,7 @@ class SOCOMD_MachineGunner;
 class SOCOMD_Medic;
 
 class SOCOMD_Recon {
-	primary		    = "bnae_trg42_camo2_virtual";
+	primary		    = "Recon_338";
 	handgun			= "Troy_USP";
 	handgunMagazine = "18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
