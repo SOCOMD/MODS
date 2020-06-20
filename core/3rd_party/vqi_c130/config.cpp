@@ -5,7 +5,7 @@ class CfgPatches{
 		units[] = {"VQI_C130_NIGHTMARE"};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		//requiredAddons[] = {"A3_Air_F", "A3_Characters_F_Gamma"};
+		requiredAddons[] = {"A3_Air_F", "A3_Characters_F_Gamma"};
 	};
 };
 

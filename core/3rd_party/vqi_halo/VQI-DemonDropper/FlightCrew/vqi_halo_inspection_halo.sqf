@@ -66,22 +66,18 @@ sleep 2;
 
 if (!isNil "VQI_HALO_JUMPCRAFT") then {
 
-	if ((getPosASL VQI_HALO_JUMPCRAFT select 2) > 6000) then { // over 20,000'
-
-		systemChat "Lets take a look..."; sleep 3;
-		systemChat "Helmet, Oxygen, Jumpsuit, Gear... Looks good."; sleep 2;
-		systemChat "HALO Inspection: PASS - Good luck up there!"; sleep 1; // Function?
-		[_unit] execVM "vqi_halo\VQI-DemonDropper\FlightCrew\Inspection\vqi_halo_backpack_onfront.sqf"; 
-		
-		sleep 1; // Holster Weapon
-		_unit action ["SwitchWeapon", _unit, _unit, 100];
-		_unit setVariable ["haloReady", true];
-		_unit setVariable ["haloLanded", false];
-		// AI Support
-		if (VQI_HALO_AI == 1) then { execVM "vqi_halo\VQI-DemonDropper\AI\vqi_halo_ai_jump.sqf"; };
-
-	} else { systemChat "Flight Plan Too Low... Gear-Up for standard ParaJump."; };
+	systemChat "Lets take a look..."; sleep 3;
+	systemChat "Helmet, Oxygen, Jumpsuit, Gear... Looks good."; sleep 2;
+	systemChat "HALO Inspection: PASS - Good luck up there!"; sleep 1; // Function?
+	[_unit] execVM "vqi_halo\VQI-DemonDropper\FlightCrew\Inspection\vqi_halo_backpack_onfront.sqf"; 
 	
+	sleep 1; // Holster Weapon
+	_unit action ["SwitchWeapon", _unit, _unit, 100];
+	_unit setVariable ["haloReady", true];
+	_unit setVariable ["haloLanded", false];
+	// AI Support
+	if (VQI_HALO_AI == 1) then { execVM "vqi_halo\VQI-DemonDropper\AI\vqi_halo_ai_jump.sqf"; };
+
 } else { systemChat "No Paperwork? File Flight Plan First... HALO or ParaJump?"; };
 
 

@@ -14,8 +14,8 @@ if !(_activ) exitWith{};
 
 // if !(hasInterface) exitWith{};
 
-waitUntil {!isNull(findDisplay 46)};
-waitUntil {!isNull player};
+// waitUntil {!isNull(findDisplay 46)};
+// waitUntil {!isNull player};
 
 
 
@@ -53,14 +53,12 @@ missionNamespace setVariable ["VQI_PARACHUTE_FAIL",_parachuteFail];
 // ------------------------------------------------------------------
 // Height
 _HALOAircraftALT = _logic getVariable "vqi_module_halo_aircraft_alt";
-
+missionNamespace setVariable ["VQI_HALOAircraftALT", _HALOAircraftALT];
 //HALO Jump Aircraft
 _HALOAircraft = _logic getVariable "vqi_module_halo_aircraft";
 
 if !(hasInterface) then {
 // 	// MC-130J Commando II
-
-hint 'this is just a test';
 
 
 	// XC-130 Nightmare

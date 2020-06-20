@@ -147,7 +147,7 @@ if (planeType == 2) then {
 	_floorfix2 attachTo [VQI_HALO_JUMPCRAFT,[-0.75, 0.6, -4.7]];		// XC-130
 	_pos = getPos VQI_HALO_JUMPCRAFT;
 	_light = "#lightpoint" createVehicleLocal _pos;
-	_light setLightBrightness 0.1;
+	_light setLightBrightness 0.3;
 	_light setLightAmbient [0.5, 0.0, 0.0];
 	_light setLightColor [0.5, 0.0, 0.0];
 	_light lightAttachObject [VQI_HALO_JUMPCRAFT, [ 0.71, 4, 0]];
