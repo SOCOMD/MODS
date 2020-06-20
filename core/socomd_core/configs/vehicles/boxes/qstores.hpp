@@ -115,7 +115,13 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 			selection = "";
 			distance = 5;
 			condition = 1;
-
+			class SOCOMD_arsenal {
+                displayName = "Arsenal";
+                condition = 1;
+                statement = "[player, player, false] call ace_arsenal_fnc_openBox";
+                showDisabled = 0;
+                exceptions[] = {"isNotInside", "isNotSitting"};                
+            };
 			class SOCOMD_Personalise {
 				displayName = "Personalise";
 				condition = 1;

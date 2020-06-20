@@ -29,7 +29,6 @@ MakePbo %buldParam% data\cos_content %modOutput_core%
 
 ::SOCOMD Compats
 MakePbo %buldParam% compats\socomd_compat_cup %modOutput_content%
-MakePbo %buldParam% compats\socomd_compat_rhs %modOutput%
 
 ::SOCOMD Modsets
 MakePbo %buldParam% modsets\socomd_content %modOutput_content%

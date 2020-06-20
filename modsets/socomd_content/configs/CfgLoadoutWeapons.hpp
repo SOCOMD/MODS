@@ -199,8 +199,50 @@ class CfgLoadoutWeapons {
 		};
 	};
 
-	class Troy_USP;
-
+	class USP_base;
+	class Troy_USP: USP_base{
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_Recon",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
+		};
+		magazines[] ={
+			{"18Rnd_9x21_Mag_USP",4}
+		};
+	};
+	class hgun_Pistol_heavy_01_F;
+	class DSO_hgun_Pistol_heavy_01_blk_F: hgun_Pistol_heavy_01_F{
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_Recon",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
+		};
+		magazines[] = {
+			{"11Rnd_45ACP_Mag",4}
+		};
+	};
 	class bnae_falkor_camo1_virtual;
 	class Recon_300WM : bnae_falkor_camo1_virtual {
 		loadoutWhitelist[] = {

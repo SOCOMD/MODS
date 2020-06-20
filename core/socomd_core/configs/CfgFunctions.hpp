@@ -22,6 +22,7 @@ class CfgFunctions {
 			class GetWorldUniform {};
 			class SaveLoadoutPrefs {};
 			class LoadLoadoutPrefs {};
+			class GetWeaponMagazines {};
 		};
 
 		class Actions {
