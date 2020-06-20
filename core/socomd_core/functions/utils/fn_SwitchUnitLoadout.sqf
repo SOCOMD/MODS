@@ -422,6 +422,18 @@ if( _loadoutId ==  "SOCOMD_Recon_Assistant") then  {
     [_player, _sra_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 
+// arsenal Event Handlers
+
+// removes old event handlers if exist
+
+// private _isInit = player getVariable ["SOCOMD_eh_ids", false];
+
+// if( _isInit != false) then {
+//     ["ace_arsenal_displayOpened", _isInit select 0] call CBA_fnc_removeEventHandler;
+//     ["ace_arsenal_rightPanelFilled", _isInit select 1] call CBA_fnc_removeEventHandler;
+//     ["ace_arsenal_displayClosed", _isInit select 2] call CBA_fnc_removeEventHandler;
+// };
+
 _openedEh = ["ace_arsenal_displayOpened", {
     params ["_display"];
     // systemChat format ["display: %1", _display]; 
@@ -458,11 +470,16 @@ _openedEh = ["ace_arsenal_displayOpened", {
         _ctrl ctrlCommit 0;
         
     } forEach _disabledButtons;
-
+    
 }] call CBA_fnc_addEventHandler;
-["ace_arsenal_rightPanelFilled", { 
-     _currentTab = missionNamespace getVariable "ace_arsenal_currentLeftPanel";
-    systemChat format ["%1", _currentTab];
+_closedEh = ["ace_arsenal_displayClosed", {
+    // for some reason using _player inside here doesnt work
+    [player, primaryWeapon player] call SOCOMD_fnc_GetWeaponMagazines;
+    [player, handgunWeapon player] call SOCOMD_fnc_GetWeaponMagazines;
+    [player, secondaryWeapon player] call SOCOMD_fnc_SwitchUnitSecondaryWeapon;
+}] call CBA_fnc_addEventHandler;
+_removedRight = ["ace_arsenal_rightPanelFilled", { 
+    _currentTab = missionNamespace getVariable "ace_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ 
            TOGGLE_RIGHT_PANEL_HIDE
@@ -475,11 +492,4 @@ _openedEh = ["ace_arsenal_displayOpened", {
         };
     };
 }] call CBA_fnc_addEventHandler;
-_closedEh = ["ace_arsenal_displayClosed", {
-    // for some reason using _player inside here doesnt work
-    [player, primaryWeapon player] call SOCOMD_fnc_GetWeaponMagazines;
-    [player, handgunWeapon player] call SOCOMD_fnc_GetWeaponMagazines;
-    [player, secondaryWeapon player] call SOCOMD_fnc_SwitchUnitSecondaryWeapon;
-    ["ace_arsenal_displayOpened", _openedEh] call CBA_fnc_removeEventHandler;
-    ["ace_arsenal_displayClosed", _closedEh] call CBA_fnc_removeEventHandler;
-}] call CBA_fnc_addEventHandler;
+// player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];

@@ -34,7 +34,6 @@ _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _weaponId >> "mag
 
 
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
-_loadoutMagazines deleteAt 0;
 if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
@@ -42,3 +41,4 @@ if(count _loadoutMagazines > 0) then  {
         _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
 };
+_player removeMagazine _loadoutMagazines select 0 select 0;
