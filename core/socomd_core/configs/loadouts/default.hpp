@@ -25,8 +25,8 @@
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
-	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
+	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \

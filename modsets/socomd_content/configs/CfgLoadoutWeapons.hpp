@@ -132,30 +132,11 @@ class CfgLoadoutWeapons {
 	class SPARTAN_EBR_snake_F : Long_Rifle_762 {};
 
 	class Long_Rifle_M110;
-	class CUP_srifle_m110_kac_black : Long_Rifle_M110 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Marksman"
-		};
-		magazines[] = {
-			{"CUP_20Rnd_762x51_B_M110", 8}
-		};
-	};
-	class CUP_srifle_m110_kac : Long_Rifle_M110 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Marksman"
-		};
-		magazines[] = {
-			{"CUP_20Rnd_762x51_B_M110", 8}
-		};
-	};
-	class CUP_srifle_m110_kac_woodland : Long_Rifle_M110 {
-		loadoutWhitelist[] = {
-			"SOCOMD_Marksman"
-		};
-		magazines[] = {
-			{"CUP_20Rnd_762x51_B_M110", 8}
-		};
-	};
+	class S_kio_sr25 : Long_Rifle_762 {};
+	class S_kio_sr25_camo : Long_Rifle_762 {};
+	class S_kio_sr25_ec : Long_Rifle_762 {};
+	class S_kio_sr25_ec_camo : Long_Rifle_762 {};
+	
 
 	class Launcher;
 	class HAFM_LAW : Launcher {};
@@ -218,7 +199,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Logistician"
 		};
 		magazines[] ={
-			{"18Rnd_9x21_Mag_USP",4}
+			{"18Rnd_9x21_Mag_USP",3}
 		};
 	};
 	class hgun_Pistol_heavy_01_F;
@@ -240,7 +221,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Logistician"
 		};
 		magazines[] = {
-			{"11Rnd_45ACP_Mag",4}
+			{"11Rnd_45ACP_Mag",3}
 		};
 	};
 	class bnae_falkor_camo1_virtual;

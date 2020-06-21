@@ -133,15 +133,19 @@ class CUP_srifle_M110 : Rifle_Base_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
 	displayName = "SR-25";
 };
-class CUP_srifle_m110_kac_black: CUP_srifle_M110 {
-	displayName = "SR-25 Black";
-};
-class CUP_srifle_m110_kac: CUP_srifle_M110 {
-	displayName = "SR-25";
-};
-class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
-	displayName = "SR-25 Woodland";
-};
+// class S_kio_sr25: Rifle_Base_F {
+// 	magazineWell[] = {"CBA_762x51_HK417"};
+// 	displayName = "SR-25";
+// };
+// class S_kio_sr25_camo: S_kio_sr25 {
+// 	displayName = "SR-25 Camo";
+// };
+// class S_kio_sr25_ec: S_kio_sr25 {
+// 	displayName = "SR-25 EC";
+// };
+// class S_kio_sr25_ec_camo: S_kio_sr25 {
+// 	displayName = "SR-25 EC Camo";
+// };
 
 class srifle_EBR_F;
 class SPARTAN_EBR_black_F : srifle_EBR_F {
