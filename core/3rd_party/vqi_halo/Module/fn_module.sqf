@@ -57,15 +57,7 @@ missionNamespace setVariable ["VQI_HALOAircraftALT", _HALOAircraftALT];
 //HALO Jump Aircraft
 _HALOAircraft = _logic getVariable "vqi_module_halo_aircraft";
 
-if !(hasInterface) then {
-// 	// MC-130J Commando II
 
-
-	// XC-130 Nightmare
-	// if (_HALOAircraft == 2) then { 
-		
-	// };
-};
 // -----------------------------------------------------------------------
 
 
@@ -88,8 +80,6 @@ missionNamespace setVariable ["VQI_HALO_AI", _HALOAI];
 // Delete PARA
 _HALOAircraftDEL = _logic getVariable "vqi_module_halo_aircraft_delete";
 missionNamespace setVariable ["VQI_AIRCRAFT_DEL", _HALOAircraftDEL];
-sleep 1;
-
 
 
 

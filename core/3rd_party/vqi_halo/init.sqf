@@ -12,7 +12,7 @@ if (isServer) then {
 	CONTROL_TABLE = "FLAG_ADFU_F" createVehicle (position _logic);
 	CONTROL_TABLE setDir (getDir _logic);
 	VQI_HALO_XC130 = "VQI_C130_NIGHTMARE";
-	_HALOAircraftALT = missionNamespace setVariable ["VQI_HALOAircraftALT", 0];
+	_HALOAircraftALT = missionNamespace getVariable ["VQI_HALOAircraftALT", 0];
 	if (_HALOAircraftALT == 2) then {  // Wasp/Canberra 16.8m Deck
 		CONTROL_TABLE setPosASL [position CONTROL_TABLE select 0, position CONTROL_TABLE select 1, 16.8];
 	};
