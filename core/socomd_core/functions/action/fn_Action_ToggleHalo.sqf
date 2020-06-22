@@ -1,10 +1,8 @@
 _args = _this;
 _player = _this select 0;
 _savedGps = '';
-_items = items _player;
-
-
-_gpsItem = assignedItems _player select 4;
+_gpsItem = '';
+_loudoutid = player getVariable "SOCOMD_LOADOUTID";
 if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backpackItems player)))) then {
 	if(("ItemMicroDAGR" in ((vestItems player) + (uniformItems player) + (backpackItems player)))) then {
 		_savedGps = "ItemMicroDAGR";
@@ -26,7 +24,7 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	player assignItem _savedGps;
 	player assignItem "ItemWatch";
 	if ((backpack player)  == "SOCOMD_COS_PARACHUTE") then {
-		 removeBackpack  player;
+		removeBackpack player;
 	};
 	player call grad_boc_fnc_actionOnBack;
 } else {
@@ -48,6 +46,7 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 			(uniformContainer player) addItemCargoGlobal ["ItemMicroDAGR", 1];
 		};
 	};
+	// is faster than swapping bag to chest and adding
 	[player,"SOCOMD_COS_PARACHUTE"] call grad_boc_fnc_addChestpack;
 	[player] call grad_boc_fnc_actionSwap;
 	player action ["SwitchWeapon", player, player, 100];
