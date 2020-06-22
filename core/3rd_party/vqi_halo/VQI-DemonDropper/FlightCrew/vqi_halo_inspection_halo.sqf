@@ -72,9 +72,6 @@ if (!isNil "VQI_HALO_JUMPCRAFT") then {
 	[_unit] execVM "vqi_halo\VQI-DemonDropper\FlightCrew\Inspection\vqi_halo_backpack_onfront.sqf"; 
 	
 	sleep 1; // Holster Weapon
-	_unit action ["SwitchWeapon", _unit, _unit, 100];
-	_unit setVariable ["haloReady", true];
-	_unit setVariable ["haloLanded", false];
 	// AI Support
 	if (VQI_HALO_AI == 1) then { execVM "vqi_halo\VQI-DemonDropper\AI\vqi_halo_ai_jump.sqf"; };
 

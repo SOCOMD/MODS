@@ -17,6 +17,8 @@ if (flightHALO == 1) then {
 	if (!isNil "VQI_HALO_JUMPCRAFT") then {
 
 		if ("SOCOMD_COS_PARACHUTE" == Backpack _unit) then {
+			_unit setVariable ["haloLanded", false];
+			_unit setVariable ["haloReady", true];
 
 			// Equipment (minimum) Safety Re-Check...
 			//if 	((("VQI_Helmet_HALO" == Headgear _unit) || ("VQI_Helmet_Jump" == Headgear _unit)) && 													// Helmet (or any Headgear soon)
