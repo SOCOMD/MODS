@@ -23,6 +23,10 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	(uniformContainer player) addItemCargoGlobal ["ItemWatch", 1];
 	player assignItem _savedGps;
 	player assignItem "ItemWatch";
+	if ((backpack player)  == "SOCOMD_COS_PARACHUTE") then {
+		 removeBackpack  player;
+	};
+	player call grad_boc_fnc_actionOnBack;
 } else {
 	(vestContainer player) addItemCargoGlobal ["VQI_BOTTLE_DF1_GAS", 1];
 	(vestContainer player) addItemCargoGlobal ["VQI_ReserveChute", 1];
@@ -42,4 +46,7 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 			(uniformContainer player) addItemCargoGlobal ["ItemMicroDAGR", 1];
 		};
 	};
+	[player,"SOCOMD_COS_PARACHUTE"] call grad_boc_fnc_addChestpack;
+	[player] call grad_boc_fnc_actionSwap;
+	player action ["SwitchWeapon", player, player, 100];
 };

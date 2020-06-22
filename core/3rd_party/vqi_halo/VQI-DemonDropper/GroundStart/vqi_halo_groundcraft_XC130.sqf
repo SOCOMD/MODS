@@ -67,8 +67,6 @@ sleep 1;
 
 	// HALO/PARA Operations Flight Crew Menu
 	[[JumpMaster, ["Flight Plan -- H.A.L.O.", "missionNamespace setVariable ['planeType', 2, true]; missionNamespace setVariable ['flightHALO', 1, true];  execVM 'vqi_halo\VQI-DemonDropper\FlightPlan\vqi_halo_flightplan.sqf'; [JumpMaster, 1]"]], "addAction", true, true] call BIS_fnc_MP;
-
-	[[JumpMaster, ["H.A.L.O. Inspection", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_inspection_halo.sqf'; [JumpMaster, 2]"]], "addAction", true, true] call BIS_fnc_MP;
 	
 	[[CONTROL_TABLE, ["CLEARED for TakeOff", "[player] execVM 'vqi_halo\VQI-DemonDropper\FlightCrew\vqi_halo_takeoff.sqf'; [CONTROL_TABLE, 1]"]], "addAction", true, true] call BIS_fnc_MP; // Cleared for Take-Off
 
