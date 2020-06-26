@@ -157,7 +157,7 @@ class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 	displayName = "FN Minimi HS";
 	magazineWell[] += {"CBA_556x45_MINIMI"};
 	ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
-	ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	// ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 
 class CUP_lmg_L110A1;
@@ -165,14 +165,14 @@ class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
 	displayName = "FN Minimi PARA";
 	magazineWell[] += {"CBA_556x45_MINIMI"};
 	ace_overheating_dispersion = 0.90; //Dispersion Factor (this will be scaled based on the barrel temp)
-	ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	// ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-	ace_overheating_mrbs = 1000 //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	// ace_overheating_mrbs = 1000 //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 	ace_overheating_dispersion = 0.9; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
 
@@ -192,7 +192,7 @@ class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
 		{
 			"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
 		};
-	ace_overheating_mrbs = 1000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_mrbs = 1500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 	ace_overheating_slowdownFactor = 1; //Slowdown Factor (this will be scaled based on the barrel temp)
 	ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
 	ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
