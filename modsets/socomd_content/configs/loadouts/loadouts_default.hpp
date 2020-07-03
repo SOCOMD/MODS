@@ -19,13 +19,13 @@
 	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1)
 	LOADOUT_ITEM(ACE_DAGR, 1) \
-	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 	LOADOUT_ITEM(SOCOMD_Item_Magazine_45ACP_11Rnd, 2)
+	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
-	LOADOUT_ITEM(ACE_MapTools, 1) \
 	LOADOUT_ITEM(ACE_CableTie, 4)
 
 #define LOADOUT_VEST_ESSENTIALS \

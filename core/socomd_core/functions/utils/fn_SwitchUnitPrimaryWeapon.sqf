@@ -10,7 +10,10 @@ if(isNull _loadoutWeaponConfig) then {
 //Return if no config is available
 if(isNull _loadoutWeaponConfig) exitWith { };
 
-_primary = primaryWeapon _player;
+_currentPrimary = primaryWeapon _player;
+
+_primary = _player getVariable ["SOCOMD_prev_primary", _currentPrimary];
+
 
 _primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
 _primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "EGLM" >> "magazines");

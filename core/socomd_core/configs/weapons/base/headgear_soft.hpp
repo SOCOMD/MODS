@@ -9,7 +9,7 @@ class H_Booniehat_khk_hs;
 class SOCOMD_Aus_Boonie: H_Booniehat_khk_hs {
 	author = AUTHOR_STR;
 	scope = public;
-	displayName = "SOCOMD Booniehat DPCU";
+	displayName = "SOCOMD Booniehat MC";
 
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\socomd_data_core\CTgear\booniehat_co.paa"};

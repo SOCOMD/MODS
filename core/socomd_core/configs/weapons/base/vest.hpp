@@ -305,11 +305,11 @@ class V_RebreatherB : Vest_Camo_Base {
 		passThrough = 0.1;
 		mass = 90;
 		vestType = "Rebreather";
-		shownUnderwaterSelections[]=
-			{
-				"NOunhide1",
-				"NOunhide2"
-			};
+		// shownUnderwaterSelections[]=
+		// 	{
+		// 		"NOunhide1",
+		// 		"NOunhide2"
+		// 	};
 		class HitpointsProtectionInfo {
 			class Neck {
 				hitpointName = "HitNeck";

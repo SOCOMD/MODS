@@ -25,8 +25,8 @@
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(ACE_DAGR, 1) \
-	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
+	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
@@ -248,7 +248,7 @@ class SOCOMD_Marksman {
 		type = ITEM_VEST_MARKSMAN;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(CUP_20Rnd_762x51_B_M110, 8)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
 		};
 	};
 	class Backpack {

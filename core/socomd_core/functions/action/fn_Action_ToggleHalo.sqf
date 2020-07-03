@@ -24,7 +24,11 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 	player assignItem _savedGps;
 	player assignItem "ItemWatch";
 	if ((backpack player)  == "SOCOMD_COS_PARACHUTE") then {
+<<<<<<< HEAD
 		removeBackpack player;
+=======
+		 removeBackpack  player;
+>>>>>>> 6fae788... Halo updates
 	};
 	player call grad_boc_fnc_actionOnBack;
 } else {
@@ -46,7 +50,10 @@ if(("VQI_BOTTLE_DF1_GAS" in ((vestItems player) + (uniformItems player) + (backp
 			(uniformContainer player) addItemCargoGlobal ["ItemMicroDAGR", 1];
 		};
 	};
+<<<<<<< HEAD
 	// is faster than swapping bag to chest and adding
+=======
+>>>>>>> 6fae788... Halo updates
 	[player,"SOCOMD_COS_PARACHUTE"] call grad_boc_fnc_addChestpack;
 	[player] call grad_boc_fnc_actionSwap;
 	player action ["SwitchWeapon", player, player, 100];
