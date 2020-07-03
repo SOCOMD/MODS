@@ -116,7 +116,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 			distance = 5;
 			condition = 1;
 			class SOCOMD_arsenal {
-                displayName = "Arsenal";
+                displayName = "Personalise";
                 condition = 1;
                 statement = "[player, player, false] call ace_arsenal_fnc_openBox";
                 showDisabled = 0;
