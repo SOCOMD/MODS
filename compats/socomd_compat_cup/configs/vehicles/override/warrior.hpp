@@ -311,7 +311,7 @@ class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
 	side = WEST;
-	displayname = "Warrior FFV (4/8)";
+	displayname = "Warrior FFV (4/12)";
 
 	hiddenSelectionsTextures[] = {
 		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
