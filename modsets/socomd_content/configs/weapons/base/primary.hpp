@@ -137,6 +137,7 @@ class srifle_DMR_06_camo_F;
 class S_kio_sr25: srifle_DMR_06_camo_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
 	displayName = "SR-25";
+	modes[] = {"Single","single_close_optics1","single_medium_optics1","single_far_optics1","ACE_Burst_far"};
 };
 class S_kio_sr25_camo: S_kio_sr25 {
 	displayName = "SR-25 Camo";

@@ -5,7 +5,7 @@ class SOCOMD_BERET : AU_03_780000_v1 {
 	displayName = "SOCOMD Beret";
 };
 
-class H_Booniehat_khk_hs;
+
 class SOCOMD_Aus_Boonie: H_Booniehat_khk_hs {
 	author = AUTHOR_STR;
 	scope = public;

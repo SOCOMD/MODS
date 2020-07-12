@@ -11,6 +11,7 @@ class CfgFunctions {
 			class SetUnitLoadout {};
 			class SwitchUnitLoadout {};
 			class SwitchUnitPrimaryWeapon {};
+			class SwitchUnitHandgunWeapon {};
 			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
 			class GetLoadoutScopeFOV {};
@@ -22,7 +23,7 @@ class CfgFunctions {
 			class GetWorldUniform {};
 			class SaveLoadoutPrefs {};
 			class LoadLoadoutPrefs {};
-			class SwitchUnitHandgunWeapon {};
+			class UpdateArsenalContent {};
 		};
 
 		class Actions {

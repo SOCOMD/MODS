@@ -11,6 +11,7 @@ class ItemInfo : ItemInfo { \
 
 #define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
+#define HELMET_BOONIE_ARMOR HELMET_ARMOR(0,1)
 
 #define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0;\
 ace_hearing_protection = 1;
@@ -687,6 +688,30 @@ class ADFU_H_Airframe_03_AMCU: ADFU_H_Airframe_Cover_03 {
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
 	};
 };
+class ADFU_H_OpsCore_02_TAN: ADFU_H_OpsCore_02{
+	scope = public;
+	scopeArsenal = 2;
+
+	HELMET_ARMOR_STRONG
+};
+class ADFU_H_OpsCore_02_MC: ADFU_H_OpsCore_02{
+	scope = public;
+	scopeArsenal = 2;
+
+	HELMET_ARMOR_STRONG
+};
+class ADFU_H_OpsCore_08_TAN: ADFU_H_OpsCore_08{
+	scope = public;
+	scopeArsenal = 2;
+
+	HELMET_ARMOR_STRONG
+};
+class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
+	scope = public;
+	scopeArsenal = 2;
+
+	HELMET_ARMOR_STRONG
+};
 
 
 //////////////////////////////////////////////////////////////////////
@@ -713,4 +738,53 @@ class SOCOMD_Ground_Crew_helmet : H_HelmetCrew_I {
 	scope = public;
 	displayName = "Armour Crew Helmet";
 	HELMET_SOLS_ARMOR
+};
+
+
+// Boonie hat remove armour values
+class H_HelmetB:ItemCore{
+	class ItemInfo;
+};
+
+class H_Booniehat_khk:H_HelmetB{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_khk_hs:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_dgtl:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_dirty:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_eaf:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_grn:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_indp:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_mcamo:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_mgrn:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_oli:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_taiga:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_tan:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_tna_F:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
+};
+class H_Booniehat_wdl:H_Booniehat_khk{
+	HELMET_BOONIE_ARMOR
 };
