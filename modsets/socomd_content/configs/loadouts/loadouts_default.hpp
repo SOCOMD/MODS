@@ -77,10 +77,12 @@ class SOCOMD_Uniforms {
 class SOCOMD_Commander;
 class SOCOMD_Leader;
 class SOCOMD_Rifleman;
-class SOCOMD_Marksman;
 class SOCOMD_MachineGunner;
 class SOCOMD_Medic;
 
+class SOCOMD_Marksman{
+	binocular		= "ACE_Yardage450";
+};
 class SOCOMD_Recon {
 	primary		    = "Recon_338";
 	handgun			= "Troy_USP";

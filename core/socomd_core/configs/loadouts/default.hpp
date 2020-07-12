@@ -107,7 +107,7 @@ class SOCOMD_Commander {
 	headgear		= ITEM_HEADGEAR_TROOPLEADER;
 	binocular		= "Laserdesignator";
 	gps				= "ItemAndroid";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -154,7 +154,7 @@ class SOCOMD_Leader {
 	headgear		= ITEM_HEADGEAR_PATROLLEADER;
 	binocular		= "Laserdesignator";
 	gps			    = "ItemAndroid";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -201,7 +201,7 @@ class SOCOMD_Rifleman {
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -236,7 +236,8 @@ class SOCOMD_Marksman {
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "4x";
+	maxOptic		= "6x";
+	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4_mrt_tan"};
 
 	class Uniform {
 		class Inventory	{
@@ -271,7 +272,7 @@ class SOCOMD_Sapper {
 	headgear		= ITEM_HEADGEAR_SAPPER;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -318,7 +319,7 @@ class SOCOMD_MachineGunner {
 	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -355,7 +356,7 @@ class SOCOMD_Medic {
 	headgear		= ITEM_HEADGEAR_MEDIC;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -417,7 +418,7 @@ class SOCOMD_AT {
 	headgear		= ITEM_HEADGEAR_AT;
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
-	maxOptic		= "2x";
+	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
@@ -507,6 +508,7 @@ class SOCOMD_Recon_Assistant {
 	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
 	maxOptic		= "6x";
+	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
 		type = ITEM_UNIFORM_RECON;
