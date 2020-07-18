@@ -44,19 +44,3 @@ if(count _loadoutMagazines > 0) then  {
         _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
 };
-//Set Primary Weapon
-_unitLoadout = getUnitLoadout _player;
-
-_primaryLoadout = _unitLoadout select 2;
-if(count _primaryLoadout <= 0) then {
-    _primaryLoadout = [_weaponId, "", "", "", [], [], ""];
-}
-else {
-    _primaryLoadout set [2, _weaponId];
-    // _primaryLoadout set [4, []];
-    _primaryLoadout set [5, []];
-};
-
-_unitLoadout set [2, _primaryLoadout];
-
-[_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;

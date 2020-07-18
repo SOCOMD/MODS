@@ -14,8 +14,8 @@ _currentPrimary = primaryWeapon _player;
 
 _primary = _player getVariable ["SOCOMD_prev_primary", _currentPrimary];
 
-
-_primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
+_primaryMagazines = ["SOCOMD_Item_Magazine_556x45_30Rnd", "1Rnd_HE_Grenade_shell", "UGL_FlareRed_F", "1Rnd_SmokeRed_Grenade_shell", "ACE_HuntIR_M203"];
+_primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
 _primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "EGLM" >> "magazines");
 _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _primary >> "magazineWell");
 

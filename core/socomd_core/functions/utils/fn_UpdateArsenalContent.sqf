@@ -226,6 +226,7 @@ if( _loadoutId ==  "SOCOMD_AT") then  {
 if( _loadoutId ==  "SOCOMD_Pilot") then  {
     _sp_array = [];
     _sp_array append _vests_tl;
+    _sp_array append _Backpack_Leader;
     _sp_array append ["SOLS_tshirt"]; 
     [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
     [_player, _sp_array, false] call ace_arsenal_fnc_addVirtualItems;
@@ -233,6 +234,7 @@ if( _loadoutId ==  "SOCOMD_Pilot") then  {
 if( _loadoutId ==  "SOCOMD_Crewman") then  {
     _scr_array = [];
     _scr_array append _vests_tl;
+    _src_array append _Backpack_Leader;
     _scr_array append ["SOLS_tshirt"];
     [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
     [_player, _scr_array, false] call ace_arsenal_fnc_addVirtualItems;
