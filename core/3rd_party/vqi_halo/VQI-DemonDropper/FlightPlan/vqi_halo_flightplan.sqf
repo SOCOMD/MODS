@@ -1,5 +1,8 @@
 //
 //
+if ((leader player != player)) exitWith {
+	systemChat 'Sorry, Section commanders only.';
+};
 if (VQI_HINTS_HALO == 1) then { hint "flightplan.sqf"; };
 
 private ["_start0","_flightAlt1","_flightAlt2","_flightALT","_rDir","_flightFOWx","_flightFOWy","_floorfix1","_floorfix2","_logicC","_logicG"];
