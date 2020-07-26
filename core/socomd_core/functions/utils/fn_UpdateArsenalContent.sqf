@@ -7,6 +7,22 @@ _unitConfig = _args select 2;
 _blackList = ["cup_optic_goshawk_ris","cup_acc_glock17_flashlight","acc_flashlight_pistol","hlc_acc_dbalpl_fl","hlc_acc_tlr1","rhsusf_acc_SFMB556", "rhsusf_acc_SF3P556", "rhsusf_acc_anpeq15_light", "acc_flashlight", "FHQ_optic_TWS3050", "optic_tws_mg", "optic_tws", "optic_nvs", "optic_Nightstalker", "UK3CB_BAF_SFFH", "UK3CB_BAF_BFA_L110", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "Balaclava_Black", "Kio_Balaclava_hex", "Kio_Balaclava_wcam", "R3F_OB50", "R3F_FELIN_DES", "R3F_FELIN", "Kio_Balaclava_blk", "Kio_Balaclava_blkSkull", "Kio_Balaclava_des", "Kio_Balaclava_grn", "Kio_Balaclava_multicam", "Kio_Balaclava_urbcam", "G_Goggles_VR", "G_Respirator_blue_F", "G_Respirator_white_F", "G_Respirator_yellow_F", "G_EyeProtectors_F", "G_EyeProtectors_Earpiece_F", "G_WirelessEarpiece_F", "VSM_FaceMask_black", "VSM_FaceMask_Ghost", "VSM_FaceMask_Ghost_olive", "VSM_FaceMask_Ghost_tan", "VSM_FaceMask_olive", "VSM_FaceMask_tan", "VSM_FaceMask_black_glasses", "VSM_FaceMask_OD_glasses", "VSM_FaceMask_tan_glasses", "VSM_FaceMask_black_goggles", "VSM_FaceMask_OD_goggles", "VSM_FaceMask_tan_goggles", "VSM_Shemagh_OD", "VSM_Shemagh_tan", "EWK_Cig1", "EWK_Cig2", "EWK_Cig3", "EWK_Cig4", "EWK_Glasses_Cig1", "EWK_Glasses_Cig2", "EWK_Glasses_Cig3", "EWK_Glasses_Cig4", "EWK_Cigar1", "EWK_Cigar2", "EWK_CigPack_Helmet", "EWK_CigPack_Helmet_OCP", "EWK_CigPack_Helmet2", "EWK_CigPack_Helmet2_OCP", "EWK_Glasses_Shemag_GRE_Cig6", "EWK_Glasses_Shemag_NB_Cig6", "EWK_Glasses_Shemag_tan_Cig6", "EWK_Shemag_tan_Cig6", "EWK_Shemag_NB_Cig6", "EWK_Shemag_GRE_Cig6", "EWK_Shemag_LULZ", "EWK_Shemag_GRE", "EWK_Shemag_tan", "EWK_Shemag_NB", "CUP_SSO_Balaclava_blk", "CUP_SSO_Balaclava_grn", "VSM_Shemagh_Facemask_OD", "VSM_Shemagh_Facemask_tan", "VSM_Shemagh_Facemask_OD_Glasses", "VSM_Shemagh_Facemask_tan_Glasses", "VSM_Shemagh_Facemask_OD_Goggles", "VSM_Shemagh_Facemask_tan_Goggles", "VSM_Shemagh_Facemask_OD_Peltor", "VSM_Shemagh_Facemask_tan_Peltor", "VSM_Shemagh_Facemask_OD_Peltor_Glasses", "VSM_Shemagh_Facemask_tan_Peltor_Glasses", "VSM_Shemagh_Facemask_OD_Peltor_Goggles", "VSM_Shemagh_Facemask_tan_Peltor_Goggles", "VSM_Shemagh_Glasses_OD", "VSM_Shemagh_Glasses_tan", "VSM_Shemagh_Goggles_OD", "VSM_Shemagh_Goggles_tan", "VSM_SkiMask_Black", "G_Lady_Blue", "50Suppressor_ej", "CUP_PMC_Facewrap_Black", "CUP_G_PMC_Facewrap_Black_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Black_Glasses_Dark", "CUP_G_PMC_Facewrap_Black_Glasses_Ember", "CUP_PMC_Facewrap_Red", "CUP_PMC_Facewrap_Ranger", "CUP_PMC_Facewrap_Skull", "CUP_PMC_Facewrap_Smilie", "CUP_PMC_Facewrap_Tan", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark", "CUP_G_PMC_Facewrap_Tan_Glasses_Ember", "CUP_PMC_Facewrap_Tropical", "CUP_G_PMC_Facewrap_Tropical_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Tropical_Glasses_Dark", "CUP_G_PMC_Facewrap_Tropical_Glasses_Ember", "CUP_PMC_Facewrap_Winter", "CUP_G_PMC_Facewrap_Winter_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Winter_Glasses_Dark", "CUP_G_PMC_Facewrap_Winter_Glasses_Ember", "CUP_PMC_G_thug", "CUP_FR_NeckScarf4", "CUP_optic_AN_PAS_13c1", "CUP_optic_AN_PAS_13c2", "CUP_optic_AN_PVS_10", "CUP_optic_AN_PVS_4", "CUP_optic_CWS", "CUP_optic_goshawk_ris", "RH_anpvs4", "RH_pas13ch", "RH_pas13cm", "RH_pas13cmg", "RH_pas13cl", "CUP_acc_ANPEQ_15", "CUP_acc_ANPEQ_15_Black", "CUP_acc_ANPEQ_15_OD", "CUP_acc_ANPEQ_2", "CUP_acc_Flashlight", "CUP_acc_Flashlight_wdl", "CUP_acc_Flashlight_desert", "CUP_acc_XM8_light_module", "CUP_acc_ANPEQ_2_camo", "CUP_acc_ANPEQ_2_desert", "CUP_acc_ANPEQ_2_grey", "CUP_acc_CZ_M3X", "CUP_acc_MLPLS_Laser", "CUP_acc_LLM", "CUP_muzzle_mfsup_Flashhider_West_Base", "CUP_muzzle_mfsup_Flashhider_556x45_Black", "CUP_muzzle_mfsup_Flashhider_556x45_OD", "CUP_muzzle_mfsup_Flashhider_556x45_Tan", "CUP_muzzle_mfsup_Flashhider_762x51_Black", "CUP_muzzle_mfsup_Flashhider_762x51_OD", "CUP_muzzle_mfsup_Flashhider_762x51_Tan", "acc_pointer_IR", "acc_flashlight", "RH_peq15", "RH_peq15_top", "RH_peq15b", "RH_peq15b_top", "ACE_acc_pointer_green"];
 
 // Loudout Specific
+_one_coms_rigs = [
+    "vss_04_RG",
+    "vss_04_MC",
+    "vss_03_RG",
+    "vss_03_MC",
+    "vss_01_RG",
+    "vss_01_MC"
+];
+_two_coms_rigs = [
+    "vss_06_MC",
+    "vss_06_RG",
+    "vss_05_RG",
+    "vss_05_MC",
+    "vss_02_RG",
+    "vss_02_MC"
+];
 _vests_tl = [
     "lbt_tl_coy",
     "lbt_tl_mc",
@@ -180,18 +196,21 @@ if( _loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadout
     _sc_array append _general_rifle;
     _sc_array append _556_rifle_gl;
     _sc_array append _Backpack_Leader;
+    _sc_array append _two_coms_rigs;
     [_player, _sc_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Rifleman" || _loadoutId ==   "SOCOMD_AT_Assistant" ) then  {
     _sr_arrtay = [];
     _sr_arrtay append _vests_tl;
     _sr_arrtay append _general_rifle;
+    _sr_arrtay append _one_coms_rigs;
     [_player, _sr_arrtay, false] call ace_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Marksman") then  {
     _sm_array = [];
     _sm_array append _vests_tl;
     _sm_array append _marksman;
+    _sm_array append _one_coms_rigs;
     _sm_array append getArray(_unitConfig >> "optics");
     [_player, _sm_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
@@ -200,12 +219,14 @@ if( _loadoutId ==  "SOCOMD_Sapper") then  {
     _ss_array append _vests_tl;
     _ss_array append _general_rifle;
     _ss_array append _Backpack_Sapper;
+    _ss_array append _one_coms_rigs;
     [_player, _ss_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_MachineGunner") then  {
     _smg_array = [];
     _smg_array append _vests_comms;
     _smg_array append _machine_gun;
+    _smg_array append _one_coms_rigs;
     [_player, _smg_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Medic") then  {
@@ -213,6 +234,7 @@ if( _loadoutId ==  "SOCOMD_Medic") then  {
     _smed_array append _vests_med;
     _smed_array append _general_rifle;
     _smed_array append _Backpack_Medic;
+    _smed_array append _one_coms_rigs;
     [_player, _smed_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_AT") then  {
@@ -220,13 +242,15 @@ if( _loadoutId ==  "SOCOMD_AT") then  {
     _sat_array append _vests_tl;
     _sat_array append _general_rifle;
     _sat_array append _launchers;
+    _sat_array append _one_coms_rigs;
     [_player, _sat_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
 // Support Kits 
 if( _loadoutId ==  "SOCOMD_Pilot") then  {
     _sp_array = [];
     _sp_array append _vests_tl;
-    _sp_array append _Backpack_Leader;
+    _sp_array append _Backpack_Leader;    
+    _sp_array append _two_coms_rigs;
     _sp_array append ["SOLS_tshirt"]; 
     [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
     [_player, _sp_array, false] call ace_arsenal_fnc_addVirtualItems;
@@ -234,7 +258,8 @@ if( _loadoutId ==  "SOCOMD_Pilot") then  {
 if( _loadoutId ==  "SOCOMD_Crewman") then  {
     _scr_array = [];
     _scr_array append _vests_tl;
-    _src_array append _Backpack_Leader;
+    _scr_array append _Backpack_Leader;
+    _scr_array append _two_coms_rigs;
     _scr_array append ["SOLS_tshirt"];
     [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
     [_player, _scr_array, false] call ace_arsenal_fnc_addVirtualItems;
@@ -243,6 +268,7 @@ if( _loadoutId ==  "SOCOMD_Logistician") then  {
     _sl_array = [];
     _sl_array append _vests_tl;
     _sl_array append _general_rifle;
+    _sl_array append _one_coms_rigs;
     _sl_array append ["SOLS_tshirt"];
     [_player, _sl_array, false] call ace_arsenal_fnc_addVirtualItems;
 };
@@ -252,6 +278,7 @@ if( _loadoutId ==  "SOCOMD_Recon") then  {
     _src_array append _sniper;
     _src_array append _reconUniforms;
     _src_array append _Backpack_Leader;
+    _src_array append _two_coms_rigs;
     _src_array append getArray(_unitConfig >> "optics");
     [_player, _uniforms, false] call ace_arsenal_fnc_removeVirtualItems;    
     [_player, _configOptics, false] call ace_arsenal_fnc_removeVirtualItems;
@@ -264,6 +291,7 @@ if( _loadoutId ==  "SOCOMD_Recon_Assistant") then  {
     _sra_array append _marksman;
     _sra_array append _reconUniforms;
     _sra_array append _Backpack_Leader;
+    _sra_array append _two_coms_rigs;
     _sra_array append getArray(_unitConfig >> "optics");
     [_player, _uniforms, false] call ace_arsenal_fnc_removeVirtualItems;
     [_player, _configOptics, false] call ace_arsenal_fnc_removeVirtualItems; 
