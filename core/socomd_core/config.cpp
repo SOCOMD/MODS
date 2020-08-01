@@ -97,6 +97,7 @@ class CfgPatches {
 			"SOCOMD_Supply_Javelin",
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
+			"SOCOMD_Recon_Supply",
 
 			// MEN
 			"SOCOMD_Unarmed",

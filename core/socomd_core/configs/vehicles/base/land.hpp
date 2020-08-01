@@ -22,16 +22,16 @@ class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
 	fuelCapacity = 24; \
 	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_LARGE_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_LARGE_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_LARGE_BACKPACKS \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
@@ -68,16 +68,16 @@ class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
 	fuelCapacity = 24; \
 	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_LARGE_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_LARGE_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_LARGE_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_LARGE_BACKPACKS \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
@@ -115,16 +115,16 @@ class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
 	fuelCapacity = 24; \
 	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_SMALL_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_SMALL_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_SMALL_BACKPACKS \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
@@ -163,16 +163,16 @@ class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
 	fuelCapacity = 24; \
 	ace_refuel_fuelCapacity = 120; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_MEDIUM_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
 	}; \
 	class AcreRacks { \
 		class Rack_1 { \
@@ -228,19 +228,19 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	class TransportWeapons {
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+		INVENTORY_VEHICLE_LARGE_WEAPONS
 	};
 
 	class TransportMagazines {
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+		INVENTORY_VEHICLE_LARGE_MAGAZINES
 	};
 
 	class TransportItems {
-		INVENTORY_VEHICLE_DEFAULT_ITEMS
+		INVENTORY_VEHICLE_LARGE_ITEMS
 	};
 
 	class TransportBackpacks {
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+		INVENTORY_VEHICLE_LARGE_BACKPACKS
 	};
 
 	textureList[] = {"SOCOMD", 1};
@@ -347,19 +347,19 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
 	};
 
 	class TransportWeapons {
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+		INVENTORY_VEHICLE_LARGE_WEAPONS
 	};
 
 	class TransportMagazines {
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+		INVENTORY_VEHICLE_LARGE_MAGAZINES
 	};
 
 	class TransportItems {
-		INVENTORY_VEHICLE_DEFAULT_ITEMS
+		INVENTORY_VEHICLE_LARGE_ITEMS
 	};
 
 	class TransportBackpacks {
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+		INVENTORY_VEHICLE_LARGE_BACKPACKS
 	};
 
 	class AnimationSources : AnimationSources {
@@ -607,6 +607,22 @@ class SOCOMD_APC_C : VTN_LAV25A1_WDL {
 			mountedRadio = "ACRE_PRC152";
 			shortName = "Dash";
 		};
+	};
+
+	class TransportWeapons {
+		INVENTORY_VEHICLE_LARGE_WEAPONS
+	};
+
+	class TransportMagazines {
+		INVENTORY_VEHICLE_LARGE_MAGAZINES
+	};
+
+	class TransportItems {
+		INVENTORY_VEHICLE_LARGE_ITEMS
+	};
+
+	class TransportBackpacks {
+		INVENTORY_VEHICLE_LARGE_BACKPACKS
 	};
 };
 

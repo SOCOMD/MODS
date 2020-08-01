@@ -19,26 +19,26 @@
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1) \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
+	LOADOUT_ITEM(ACE_DAGR, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
 	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
-#define LOADOUT_BACKPACK_ESSENTIALS \
-	LOADOUT_ITEM(SOCOMD_NVG, 1) \
-	LOADOUT_ITEM(ACE_MapTools, 1) \
-	LOADOUT_ITEM(ACE_CableTie, 4)
-
 #define LOADOUT_VEST_ESSENTIALS \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
+	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
 	LOADOUT_ITEM(ACE_M84, 2) \
 	LOADOUT_ITEM(SmokeShell, 5) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
+#define LOADOUT_BACKPACK_ESSENTIALS \
+	LOADOUT_ITEM(SOCOMD_NVG, 1) \
+	LOADOUT_ITEM(ACE_CableTie, 4)
 
 // COMMON JAC LOADOUT ITEMS
 
@@ -112,8 +112,7 @@ class SOCOMD_Commander {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			LOADOUT_ITEM(Laserbatteries, 2)
-			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -131,7 +130,8 @@ class SOCOMD_Commander {
 		type = ITEM_BACKPACK_TROOPLEADER;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
 			LOADOUT_ITEM(SmokeShellGreen, 2)
 			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
@@ -159,8 +159,7 @@ class SOCOMD_Leader {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			LOADOUT_ITEM(Laserbatteries, 2)
-			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -176,7 +175,8 @@ class SOCOMD_Leader {
 		type = ITEM_BACKPACK_PATROLLEADER;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 			LOADOUT_ITEM(SmokeShellGreen, 2)
 			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
@@ -206,6 +206,7 @@ class SOCOMD_Rifleman {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -221,7 +222,6 @@ class SOCOMD_Rifleman {
 		type = ITEM_BACKPACK_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
@@ -242,6 +242,7 @@ class SOCOMD_Marksman {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -256,7 +257,6 @@ class SOCOMD_Marksman {
 		type = ITEM_BACKPACK_MARKSMAN;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 };
@@ -277,6 +277,7 @@ class SOCOMD_Sapper {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -293,7 +294,6 @@ class SOCOMD_Sapper {
 		type = ITEM_BACKPACK_SAPPER;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_M26_Clacker, 1)
@@ -324,6 +324,7 @@ class SOCOMD_MachineGunner {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -339,7 +340,6 @@ class SOCOMD_MachineGunner {
 		type = ITEM_BACKPACK_MACHINEGUNNER;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
 		};
 	};
@@ -423,6 +423,7 @@ class SOCOMD_AT {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
@@ -438,7 +439,6 @@ class SOCOMD_AT {
 	class Backpack {
 		type = ITEM_BACKPACK_AT;
 		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
 		};
 	};
@@ -466,7 +466,9 @@ class SOCOMD_Recon {
 		type = ITEM_UNIFORM_RECON;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_Kestrel4500, 1)
+			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
 	};
 
@@ -474,11 +476,7 @@ class SOCOMD_Recon {
 		type = ITEM_VEST_RECON;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC152, 1)
-			LOADOUT_ITEM(ACE_Kestrel4500, 1)
-			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(Laserdesignator, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 9)
 			LOADOUT_ITEM(ACE_ATragMX, 1)
 		};
 	};
@@ -486,15 +484,9 @@ class SOCOMD_Recon {
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC117F, 1)
-			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
-			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
-			LOADOUT_ITEM(ACE_M26_Clacker, 1)
-			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 			LOADOUT_ITEM(ACE_Tripod, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
 	};
 };
@@ -514,7 +506,9 @@ class SOCOMD_Recon_Assistant {
 		type = ITEM_UNIFORM_RECON;
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
-			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_Kestrel4500, 1)
+			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
 	};
 
@@ -522,11 +516,7 @@ class SOCOMD_Recon_Assistant {
 		type = ITEM_VEST_RECON;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC152, 1)
-			LOADOUT_ITEM(ACE_Kestrel4500, 1)
-			LOADOUT_ITEM(ACE_RangeCard, 1)
 			LOADOUT_ITEM(Laserdesignator, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 9)
 			LOADOUT_ITEM(ACE_ATragMX, 1)
 		};
 	};
@@ -534,15 +524,9 @@ class SOCOMD_Recon_Assistant {
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC117F, 1)
-			LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 3)
-			LOADOUT_ITEM(ACE_DefusalKit, 1)
-			LOADOUT_ITEM(ACE_Clacker, 1)
-			LOADOUT_ITEM(ACE_M26_Clacker, 1)
-			LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
 			LOADOUT_ITEM(ACE_Tripod, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
 	};
 };
@@ -563,13 +547,13 @@ class SOCOMD_Logistician {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 
 	class Vest {
 		type = ITEM_VEST_RIFLEMAN;
 		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
@@ -620,7 +604,6 @@ class SOCOMD_Pilot {
 		type = ITEM_BACKPACK_PILOT;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
 		};
 	};

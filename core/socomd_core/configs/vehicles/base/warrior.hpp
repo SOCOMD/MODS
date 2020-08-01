@@ -26,13 +26,13 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_MEDIUM_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
 	}; \
 	class AcreIntercoms { \
 		class Intercom_1 { \

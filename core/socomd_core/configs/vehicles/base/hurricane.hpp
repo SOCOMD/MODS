@@ -22,16 +22,16 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
 	threat[] = {1.0,1.0,1.0}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_SMALL_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_SMALL_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_SMALL_BACKPACKS \
 	}; \
 	class AcreIntercoms { \
 		class Intercom_1 { \
