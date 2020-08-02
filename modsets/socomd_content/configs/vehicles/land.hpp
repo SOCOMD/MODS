@@ -19,7 +19,7 @@ class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 	typicalCargo[] = {"SOCOMD_Crewman"};
 
 	class TransportWeapons {
-		INVENTORY_VEHICLE_MEDIUM_MAGAZINES
+		INVENTORY_VEHICLE_MEDIUM_WEAPONS
 	};
 
 	class TransportMagazines {
