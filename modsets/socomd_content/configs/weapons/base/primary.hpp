@@ -4,8 +4,8 @@ class SMA_762_RIFLEBASE: SMA_AssaultBase {
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
-class S_M4A5_base;
-class S_M4A5_145_troy_base;
+class ACWP_M4A5_base;
+class ACWP_M4A5_145_troy_base;
 class S_145_MOD_MAG_Camo;
 class S_145_MOD_MAG_AWM;
 class S_145_MOD_MAG_donaldson;
@@ -53,7 +53,7 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 /*
 class hlc_HK416_base : Rifle_Base_F {};
 class hlc_rifle_416D145 : hlc_HK416_base {};
-class S_M4A5_base : hlc_rifle_416D145 {
+class ACWP_M4A5_base : hlc_rifle_416D145 {
 	class WeaponSlotsInfo
 	{
 		class MuzzleSlot

@@ -3,15 +3,18 @@ class CfgLoadoutWeapons {
 	class SMA_M4afgSTOCK : Rifle_556 {};
 	class SMA_MK18MOEBLK_SM : Rifle_556 {};
 	class SMA_AUG_A3_F : Rifle_556 {};
-	class hlc_rifle_416D10 : Rifle_556 {};
+	class ACWP_HK416_base : Rifle_556 {};
+	class ACWP_HK416D_105_AFG : Rifle_556 {};
 	//TAN
 	class SMA_MK18MOETAN_SM : Rifle_556 {};
 	class SMA_AUG_A3_KRYPT_F : Rifle_556 {};
-	class hlc_rifle_416D10_tan : Rifle_556 {};
+	class ACWP_HK416D_105_tan : Rifle_556 {};
+	class ACWP_HK416D_105_AFG_tan : Rifle_556 {};
 	//OD
 	class SMA_MK18MOEOD_SM : Rifle_556 {};
 	class SMA_AUG_A3_MCAM_F : Rifle_556 {};
-	class hlc_rifle_416D10_wdl : Rifle_556 {};
+	class ACWP_HK416D_105_don : Rifle_556 {};
+	class ACWP_HK416D_105_AFG_don : Rifle_556 {};
 	
 	class RifleGL_556;
 	class SMA_M4_GL_SM : RifleGL_556 {};
@@ -30,55 +33,55 @@ class CfgLoadoutWeapons {
 	class CUP_arifle_M16A4_GL : RifleGL_556 {};
 
 	// M4A5
-	class S_M4A5_145_troy_base		: RifleGL_556 {};
-	class S_M4A5_105_troy_base		: RifleGL_556 {};
-	class S_M4A5_145_ris_base		: RifleGL_556 {};
-	class S_M4A5_145_troy_AFG		: RifleGL_556 {};
-	class S_M4A5_145_troy_tango		: RifleGL_556 {};
-	class S_M4A5_145_troy_KAG		: RifleGL_556 {};
-	class S_M4A5_145_troy_MOD3		: RifleGL_556 {};
-	class S_M4A5_145_troy_ROE		: RifleGL_556 {};
-	class S_M4A5_105_troy_AFG		: RifleGL_556 {};
-	class S_M4A5_105_troy_tango		: RifleGL_556 {};
-	class S_M4A5_105_troy_KAG		: RifleGL_556 {};
-	class S_M4A5_105_troy_MOD3		: RifleGL_556 {};
-	class S_M4A5_105_troy_ROE		: RifleGL_556 {};
-	class S_M4A5_145_troy_base_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_base_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_AFG_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_Tango_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_KAG_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_MOD3_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_AFG_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_Tango_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_KAG_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_MOD3_TAN	: RifleGL_556 {};
-	class S_M4A5_105_troy_ROE_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_ROE_TAN	: RifleGL_556 {};
-	class S_M4A5_145_troy_base_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_base_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_AFG_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_Tango_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_KAG_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_MOD3_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_AFG_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_Tango_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_KAG_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_MOD3_DON	: RifleGL_556 {};
-	class S_M4A5_105_troy_ROE_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_ROE_DON	: RifleGL_556 {};
-	class S_M4A5_145_troy_base_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_base_NET	: RifleGL_556 {};
-	class S_M4A5_145_troy_AFG_NET	: RifleGL_556 {};
-	class S_M4A5_145_troy_Tango_NET	: RifleGL_556 {};
-	class S_M4A5_145_troy_KAG_NET	: RifleGL_556 {};
-	class S_M4A5_145_troy_MOD3_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_AFG_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_Tango_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_KAG_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_MOD3_NET	: RifleGL_556 {};
-	class S_M4A5_105_troy_ROE_NET	: RifleGL_556 {};
-	class S_M4A5_145_troy_ROE_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_base		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_base		: RifleGL_556 {};
+	class ACWP_M4A5_145_ris_base		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_AFG		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_tango		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_KAG		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_MOD3		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_ROE		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_AFG		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_tango		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_KAG		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_MOD3		: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_ROE		: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_base_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_base_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_AFG_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_Tango_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_KAG_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_MOD3_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_AFG_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_Tango_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_KAG_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_MOD3_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_ROE_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_ROE_TAN	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_base_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_base_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_AFG_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_Tango_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_KAG_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_MOD3_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_AFG_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_Tango_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_KAG_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_MOD3_DON	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_ROE_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_ROE_DON	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_base_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_base_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_AFG_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_Tango_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_KAG_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_MOD3_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_AFG_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_Tango_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_KAG_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_MOD3_NET	: RifleGL_556 {};
+	class ACWP_M4A5_105_troy_ROE_NET	: RifleGL_556 {};
+	class ACWP_M4A5_145_troy_ROE_NET	: RifleGL_556 {};
 	
 	class MachineGun_556;
 	class CUP_lmg_L110A1_railed : MachineGun_556 {};
@@ -177,8 +180,8 @@ class CfgLoadoutWeapons {
 		};
 	};
 
-	class USP_base;
-	class Troy_USP: USP_base{
+	class ACWP_pistol_base;
+	class ACWP_USP: ACWP_pistol_base{
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader",
@@ -196,7 +199,49 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Logistician"
 		};
 		magazines[] ={
-			{"18Rnd_9x21_Mag_USP",3}
+			{"ACWP_18Rnd_9x21_Mag_USP",3}
+		};
+	};
+	class ACWP_HP: ACWP_pistol_base{
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_Recon",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
+		};
+		magazines[] ={
+			{"ACWP_13Rnd_9x21_Mag_HP",3}
+		};
+	};
+	class acwp_glock17: ACWP_pistol_base{
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_Recon",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
+		};
+		magazines[] ={
+			{"ACWP_18Rnd_9x21_Mag_glock",3}
 		};
 	};
 	class hgun_Pistol_heavy_01_F;
