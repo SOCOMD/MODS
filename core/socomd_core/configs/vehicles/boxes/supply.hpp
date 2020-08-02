@@ -157,11 +157,11 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 12)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 10)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 16)
 		TRANSPORT_MAGAZINE(SmokeShell, 12)
 		TRANSPORT_MAGAZINE(HandGrenade, 6)
@@ -313,5 +313,28 @@ class SOCOMD_Supply_Javelin : SOCOMD_Supply_Empty {
 
 	class TransportWeapons {
 		TRANSPORT_WEAPON(CUP_launch_Javelin, 1)
+	};
+};
+
+class SOCOMD_Recon_Supply : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] Recon";
+
+	class TransportItems {
+		TRANSPORT_ITEM(ACE_wirecutter, 4)
+		TRANSPORT_ITEM(ACE_EntrenchingTool, 4)
+		TRANSPORT_ITEM(ACE_DefusalKit, 4)
+		TRANSPORT_ITEM(ACE_Clacker, 4)
+		TRANSPORT_ITEM(ACE_M26_Clacker, 4)
+		TRANSPORT_ITEM(ACE_bodyBag, 4)
+		TRANSPORT_ITEM(ACE_CableTie, 12)
+		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 8)
+		TRANSPORT_ITEM(ACE_FlareTripMine_Mag, 8)
+		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 4)
+		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 8)
+		TRANSPORT_ITEM(SOCOMD_tent_item,4)
+		TRANSPORT_ITEM(SOCOMD_tent_item_des,4)
+		TRANSPORT_ITEM(ACRE_PRC117F,4)		
 	};
 };
