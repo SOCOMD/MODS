@@ -22,16 +22,16 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	threat[] = {1.0,0.7,0.3}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_MEDIUM_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_MEDIUM_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
 	}; \
 	class AcreIntercoms { \
 		class Intercom_1 { \

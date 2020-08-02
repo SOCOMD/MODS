@@ -133,16 +133,16 @@ class SOCOMD_FIREFLY_##ID : B_Heli_Light_01_F { \
 	threat[] = {1.0,0.7,0.3}; \
 	typicalCargo[] = {"SOCOMD_Pilot"}; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_SMALL_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_SMALL_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_SMALL_BACKPACKS \
 	}; \
 	class AcreIntercoms { \
 		class Intercom_1 { \
@@ -193,16 +193,16 @@ class SOCOMD_DRAGONFLY_##ID : B_Heli_Light_01_dynamicLoadout_F { \
 	threat[] = {1.0,0.9,0.9}; \
 	typicalCargo[] = {SOCOMD_PILOT}; \
 	class TransportWeapons { \
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS \
+		INVENTORY_VEHICLE_SMALL_WEAPONS \
 	}; \
 	class TransportMagazines { \
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
+		INVENTORY_VEHICLE_SMALL_MAGAZINES \
 	}; \
 	class TransportItems { \
-		INVENTORY_VEHICLE_DEFAULT_ITEMS \
+		INVENTORY_VEHICLE_SMALL_ITEMS \
 	}; \
 	class TransportBackpacks { \
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
+		INVENTORY_VEHICLE_SMALL_BACKPACKS \
 	}; \
 	class AcreIntercoms { \
 		class Intercom_1 { \
