@@ -3,7 +3,7 @@ class CfgLoadoutWeapons {
 	class SMA_M4afgSTOCK : Rifle_556 {};
 	class SMA_MK18MOEBLK_SM : Rifle_556 {};
 	class SMA_AUG_A3_F : Rifle_556 {};
-	class ACWP_HK416_base : Rifle_556 {};
+	class ACWP_HK416D_105_base : Rifle_556 {};
 	class ACWP_HK416D_105_AFG : Rifle_556 {};
 	//TAN
 	class SMA_MK18MOETAN_SM : Rifle_556 {};

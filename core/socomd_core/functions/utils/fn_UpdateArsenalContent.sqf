@@ -99,7 +99,7 @@ _general_rifle = [
     "SMA_AUG_A3_F",
     "SMA_AUG_A3_KRYPT_F",
     "SMA_AUG_A3_MCAM_F",
-    "ACWP_HK416_base",
+    "ACWP_HK416D_105_base",
     "ACWP_HK416D_105_tan",
     "ACWP_HK416D_105_don",
     "ACWP_HK416D_105_AFG",
