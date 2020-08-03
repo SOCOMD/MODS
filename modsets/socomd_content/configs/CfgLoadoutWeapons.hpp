@@ -204,7 +204,12 @@ class CfgLoadoutWeapons {
 			{"ACWP_18Rnd_9x21_Mag_USP",3}
 		};
 	};
-	class ACWP_HP: ACWP_pistol_base{
+	
+    class ACWP_USP_TBRK:ACWP_USP{};
+    class ACWP_USP_TAN:ACWP_USP{};
+
+	class ACWP_HP;
+	class ACWP_HP_ba: ACWP_HP{
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader",
@@ -225,7 +230,29 @@ class CfgLoadoutWeapons {
 			{"ACWP_13Rnd_9x21_Mag_HP",3}
 		};
 	};
-	class acwp_glock17: ACWP_pistol_base{
+	class acwp_glock_base;
+	class acwp_glock17_black: acwp_glock_base{
+		loadoutWhitelist[] = {
+			"SOCOMD_Commander",
+			"SOCOMD_Leader",
+			"SOCOMD_2IC",
+			"SOCOMD_Rifleman",
+			"SOCOMD_Sapper",
+			"SOCOMD_Medic",
+			"SOCOMD_AT",
+			"SOCOMD_AT_Assistant",
+			"SOCOMD_Marksman",
+			"SOCOMD_Recon_Assistant",
+			"SOCOMD_Recon",
+			"SOCOMD_Pilot",
+			"SOCOMD_Crewman",
+			"SOCOMD_Logistician"
+		};
+		magazines[] ={
+			{"ACWP_18Rnd_9x21_Mag_glock",3}
+		};
+	};
+	class acwp_glock19_black: acwp_glock_base{
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
 			"SOCOMD_Leader",

@@ -76,16 +76,15 @@ _general_rifle = [
     // "ACWP_M4A5_105_troy_MOD3_TAN",
 
     
-    "ACWP_M4A5_145_troy_base",
     "ACWP_M4A5_105_troy_base",
-    "ACWP_M4A5_145_troy_base_DON",
     "ACWP_M4A5_105_troy_base_DON",
-    "ACWP_M4A5_145_troy_base_NET",
     "ACWP_M4A5_105_troy_base_NET",
+    "ACWP_M4A5_145_troy_base",
+    "ACWP_M4A5_145_troy_base_DON",
+    "ACWP_M4A5_145_troy_base_NET",
     "ACWP_M4A5_145_troy_base_TAN",
     "ACWP_M4A5_105_troy_base_TAN",
     "ACWP_M4A5_145_troy_ROE",
-    "ACWP_M4A5_105_troy_ROE",
     "ACWP_M4A5_145_troy_ROE_DON",
     "ACWP_M4A5_145_troy_ROE_NET",
     "ACWP_M4A5_145_troy_ROE_TAN",
@@ -134,7 +133,7 @@ _marksman = [
     "ACWP_sr25",
     "ACWP_sr25_camo",
     "ACWP_sr25_ec",
-    "ACWP_sr25_ec_camo"
+    "ACWP_sr25_ec_camo",
     "ACWP_sr25_VFG",
     "ACWP_sr25_VFG_camo"
 ];
@@ -162,8 +161,11 @@ _helmets = ["VSM_Bowman","VSM_Bowman_cap_Black","VSM_Bowman_cap_Green","VSM_Bowm
 _secondaries = [
     "DSO_hgun_Pistol_heavy_01_blk_F",
     "ACWP_USP",
-    "ACWP_HP",
-    "acwp_glock17"
+    "ACWP_USP_TBRK",
+    "ACWP_USP_TAN",
+    "ACWP_HP_ba",
+    "acwp_glock17_black",
+    "acwp_glock19_black"
     ];
 // accesories and facewear blacklist check
 _configClasses = "(getNumber (_x >> 'scope') >= 2)" configClasses (configFile >> "CfgGlasses");

@@ -189,7 +189,7 @@ class ACWP_sr25_ec_camo: ACWP_sr25 {
 class ACWP_sr25_VFG: ACWP_sr25 {
 	displayName = "SR-25 VFG";
 };
-class ACWP_sr25_VFG_camo: ACWP_sr25 {
+class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {
 	displayName = "SR-25 VFG Camo";
 };
 
