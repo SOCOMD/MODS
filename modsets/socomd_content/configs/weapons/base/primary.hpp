@@ -4,8 +4,8 @@ class SMA_762_RIFLEBASE: SMA_AssaultBase {
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
-class S_M4A5_base;
-class S_145_KAG_MAG;
+class ACWP_M4A5_base;
+class ACWP_M4A5_145_troy_base;
 class S_145_MOD_MAG_Camo;
 class S_145_MOD_MAG_AWM;
 class S_145_MOD_MAG_donaldson;
@@ -53,7 +53,7 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 /*
 class hlc_HK416_base : Rifle_Base_F {};
 class hlc_rifle_416D145 : hlc_HK416_base {};
-class S_M4A5_base : hlc_rifle_416D145 {
+class ACWP_M4A5_base : hlc_rifle_416D145 {
 	class WeaponSlotsInfo
 	{
 		class MuzzleSlot
@@ -100,29 +100,67 @@ class S_M4A5_base : hlc_rifle_416D145 {
 //Default
 class SMA_MK18MOEBLK_SM;
 class SMA_AUG_A3_F;
-class SMA_HK416CUSTOMCQBvfgB;
+class hlc_rifle_416D10;
 
 //RifleGL 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4_GL_SM; //Default
 class SMA_MK18BLK_GL_SM;
 class SMA_AUG_EGLM;
-class SMA_HK416GLCQB_B;
+class hlc_rifle_416D10_gl;
 
 //Tan
 class SMA_MK18MOETAN_SM;
 class SMA_AUG_A3_KRYPT_F;
-class SMA_HK416CUSTOMCQBvfg;
+class hlc_rifle_416D10_tan;
 class SMA_MK18TAN_GL_SM;
 class SMA_AUG_EGLM_tan;
-class SMA_HK416GLCQB;
+// defining retextures for Toadie's 416GL variants
+class hlc_rifle_416D10_tan_gl:hlc_rifle_416D10_gl{
+	displayName = "H&K HK416 D10 (Tan/GL)";
+	baseWeapon = "hlc_rifle_416D10_tan_gl";
+	rhs_grip1_change = "hlc_rifle_416D10_tan_gl";
+	rhs_grip2_change = "hlc_rifle_416D10_tan_gl";
+	rhs_grip3_change = "hlc_rifle_416D10_tan_gl";
+	class nia_magSwitch {
+		default = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_M = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_tan_gl";
+	};
+	hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
+	HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
+	hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo1_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
+};
 
 //OD
 class SMA_MK18MOEOD_SM;
 class SMA_AUG_A3_MCAM_F;
-class SMA_HK416CQB_vfg_ODPAINTED;
+class hlc_rifle_416D10_wdl;
 class SMA_MK18OD_GL_SM;
 class SMA_AUG_EGLM_Olive;
-class SMA_HK416GLCQB_ODP;
+// defining retextures for Toadie's 416GL variants
+class hlc_rifle_416D10_wdl_gl:hlc_rifle_416D10_gl{
+	displayName = "H&K HK416 D10 (Woodland/GL)";
+	baseWeapon = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip1_change = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip2_change = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip3_change = "hlc_rifle_416D10_wdl_gl";
+	class nia_magSwitch {
+		default = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_M = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_wdl_gl";
+	};
+	hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
+	HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
+	hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo2_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
+};
+
+
 
 class CUP_arifle_M16A4_GL;
 
@@ -134,19 +172,25 @@ class CUP_srifle_M110 : Rifle_Base_F {
 	displayName = "SR-25";
 };
 class srifle_DMR_06_camo_F;
-class S_kio_sr25: srifle_DMR_06_camo_F {
+class ACWP_sr25: srifle_DMR_06_camo_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
 	displayName = "SR-25";
 	modes[] = {"Single","single_close_optics1","single_medium_optics1","single_far_optics1","ACE_Burst_far"};
 };
-class S_kio_sr25_camo: S_kio_sr25 {
+class ACWP_sr25_camo: ACWP_sr25 {
 	displayName = "SR-25 Camo";
 };
-class S_kio_sr25_ec: S_kio_sr25 {
+class ACWP_sr25_ec: ACWP_sr25 {
 	displayName = "SR-25 EC";
 };
-class S_kio_sr25_ec_camo: S_kio_sr25 {
+class ACWP_sr25_ec_camo: ACWP_sr25 {
 	displayName = "SR-25 EC Camo";
+};
+class ACWP_sr25_VFG: ACWP_sr25 {
+	displayName = "SR-25 VFG";
+};
+class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {
+	displayName = "SR-25 VFG Camo";
 };
 
 class srifle_EBR_F;

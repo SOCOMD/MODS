@@ -65,21 +65,61 @@ _Backpack_Medic = [
     "SOG_BAG_med_od"
 ];
 _general_rifle = [
-    "S_145_KAG_MAG",
-    "S_145_MOD_MAG_Camo",
-    "S_145_MOD_MAG_AWM",
-    "S_145_MOD_MAG_Donaldson",
-    "S_145_MOD_MAG_leafbrown",
+    // "ACWP_M4A5_145_ris_base",
+    // "ACWP_M4A5_145_troy_AFG",
+    // "ACWP_M4A5_145_troy_tango",
+    // "ACWP_M4A5_145_troy_MOD3",
+    // "ACWP_M4A5_105_troy_AFG",
+    // "ACWP_M4A5_105_troy_tango",
+    // "ACWP_M4A5_105_troy_MOD3",
+    // "ACWP_M4A5_145_troy_AFG_TAN",
+    // "ACWP_M4A5_145_troy_Tango_TAN",
+    // "ACWP_M4A5_105_troy_AFG_TAN",
+    // "ACWP_M4A5_105_troy_Tango_TAN",
+    // "ACWP_M4A5_145_troy_AFG_DON",
+    // "ACWP_M4A5_145_troy_Tango_DON",
+    // "ACWP_M4A5_105_troy_AFG_DON",
+    // "ACWP_M4A5_105_troy_Tango_DON",
+    // "ACWP_M4A5_145_troy_AFG_NET",
+    // "ACWP_M4A5_145_troy_Tango_NET",
+    // "ACWP_M4A5_105_troy_AFG_NET",
+    // "ACWP_M4A5_105_troy_Tango_NET",
+    // "ACWP_M4A5_145_troy_MOD3_TAN",
+    // "ACWP_M4A5_145_troy_MOD3_DON",
+    // "ACWP_M4A5_145_troy_MOD3_NET",
+    // "ACWP_M4A5_105_troy_MOD3_NET",
+    // "ACWP_M4A5_105_troy_MOD3_DON",
+    // "ACWP_M4A5_105_troy_MOD3_TAN",
+
+    
+    "ACWP_M4A5_105_troy_base",
+    "ACWP_M4A5_105_troy_base_DON",
+    "ACWP_M4A5_105_troy_base_NET",
+    "ACWP_M4A5_145_troy_base",
+    "ACWP_M4A5_145_troy_base_DON",
+    "ACWP_M4A5_145_troy_base_NET",
+    "ACWP_M4A5_145_troy_base_TAN",
+    "ACWP_M4A5_105_troy_base_TAN",
+    "ACWP_M4A5_145_troy_ROE",
+    "ACWP_M4A5_145_troy_ROE_DON",
+    "ACWP_M4A5_145_troy_ROE_NET",
+    "ACWP_M4A5_145_troy_ROE_TAN",
+    "ACWP_M4A5_145_troy_KAG",
+    "ACWP_M4A5_145_troy_KAG_TAN",
+    "ACWP_M4A5_145_troy_KAG_DON",
+    "ACWP_M4A5_145_troy_KAG_NET",
     "SMA_MK18MOEBLK_SM",
     "SMA_MK18MOETAN_SM",
     "SMA_MK18MOEOD_SM",
     "SMA_AUG_A3_F",
     "SMA_AUG_A3_KRYPT_F",
     "SMA_AUG_A3_MCAM_F",
-    "SMA_HK416CUSTOMCQBvfgB",
-    "SMA_HK416CUSTOMCQBvfg",
-    "SMA_HK416CQB_vfg_ODPAINTED",
-    "SMA_HK417vfg"
+    "ACWP_HK416D_105_base",
+    "ACWP_HK416D_105_tan",
+    "ACWP_HK416D_105_don",
+    "ACWP_HK416D_105_AFG",
+    "ACWP_HK416D_105_AFG_tan",
+    "ACWP_HK416D_105_AFG_don"
 ];
 _556_rifle_gl = [
     "SMA_M4_GL_SM",
@@ -89,9 +129,9 @@ _556_rifle_gl = [
     "SMA_AUG_EGLM",
     "SMA_AUG_EGLM_tan",
     "SMA_AUG_EGLM_Olive",
-    "SMA_HK416GLCQB_B",
-    "SMA_HK416GLCQB",
-    "SMA_HK416GLCQB_ODP",
+    "hlc_rifle_416D10_gl",
+    "hlc_rifle_416D10_tan_gl",
+    "hlc_rifle_416D10_wdl_gl",
     "CUP_arifle_M16A4_GL"
 ];
 _machine_gun = [
@@ -106,10 +146,12 @@ _marksman = [
     "SPARTAN_EBR_black_F",
     "SPARTAN_EBR_snake_F",
     "SMA_HK417_16in",
-    "S_kio_sr25",
-    "S_kio_sr25_camo",
-    "S_kio_sr25_ec",
-    "S_kio_sr25_ec_camo"
+    "ACWP_sr25",
+    "ACWP_sr25_camo",
+    "ACWP_sr25_ec",
+    "ACWP_sr25_ec_camo",
+    "ACWP_sr25_VFG",
+    "ACWP_sr25_VFG_camo"
 ];
 _sniper = [
     "Recon_Barret",
@@ -130,9 +172,17 @@ _uniforms = ["SOCOMD_Uniform_AMCU_SleevesDown","SOCOMD_Uniform_AMCU_SleevesUp", 
 };
 _reconUniforms = ["SOCOMD_Uniform_AMCU_SleevesDown_Recon", "SOCOMD_Uniform_SleevesDown_Recon"];
 _bags = ["KIT_BAG_mc","KIT_BAG_OD","KIT_BAG_TAN","SOG_BAG_tan","SOG_BAG_od","SOG_BAG_MC"];
-_secondaries = ["DSO_hgun_Pistol_heavy_01_blk_F","Troy_USP"];
 _helmets = ["VSM_Bowman","VSM_Bowman_cap_Black","VSM_Bowman_cap_Green","VSM_Bowman_cap_Tan","ADFU_H_Airframe_02_tan","ADFU_H_Airframe_Cover_02_MC","ADFU_H_Airframe_02_AMCU","H_Watchcap_blk","H_Watchcap_cbr","CUP_H_RUS_Bandana_HS","H_Bandanna_sgg","H_Bandanna_sand","AU_03_780000_v1","H_Booniehat_mgrn","H_Booniehat_tan","H_Booniehat_khk","ADFU_Booniehat_MC","ADFU_Cap_MC","H_Cap_oli","CUP_H_PMC_Cap_Tan","ADFU_H_OpsCore_02_MC","ADFU_H_OpsCore_02_TAN","SOCOMD_Aus_Boonie_AMC","SOCOMD_Aus_Boonie"];
 
+_secondaries = [
+    "DSO_hgun_Pistol_heavy_01_blk_F",
+    "ACWP_USP",
+    "ACWP_USP_TBRK",
+    "ACWP_USP_TAN",
+    "ACWP_HP_ba",
+    "acwp_glock17_black",
+    "acwp_glock19_black"
+    ];
 // accesories and facewear blacklist check
 _configClasses = "(getNumber (_x >> 'scope') >= 2)" configClasses (configFile >> "CfgGlasses");
 _facewear = [];
