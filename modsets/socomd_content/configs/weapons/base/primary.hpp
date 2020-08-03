@@ -172,19 +172,25 @@ class CUP_srifle_M110 : Rifle_Base_F {
 	displayName = "SR-25";
 };
 class srifle_DMR_06_camo_F;
-class S_kio_sr25: srifle_DMR_06_camo_F {
+class ACWP_sr25: srifle_DMR_06_camo_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
 	displayName = "SR-25";
 	modes[] = {"Single","single_close_optics1","single_medium_optics1","single_far_optics1","ACE_Burst_far"};
 };
-class S_kio_sr25_camo: S_kio_sr25 {
+class ACWP_sr25_camo: ACWP_sr25 {
 	displayName = "SR-25 Camo";
 };
-class S_kio_sr25_ec: S_kio_sr25 {
+class ACWP_sr25_ec: ACWP_sr25 {
 	displayName = "SR-25 EC";
 };
-class S_kio_sr25_ec_camo: S_kio_sr25 {
+class ACWP_sr25_ec_camo: ACWP_sr25 {
 	displayName = "SR-25 EC Camo";
+};
+class ACWP_sr25_VFG: ACWP_sr25 {
+	displayName = "SR-25 VFG";
+};
+class ACWP_sr25_VFG_camo: ACWP_sr25 {
+	displayName = "SR-25 VFG Camo";
 };
 
 class srifle_EBR_F;

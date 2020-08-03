@@ -86,20 +86,13 @@ _general_rifle = [
     "ACWP_M4A5_105_troy_base_TAN",
     "ACWP_M4A5_145_troy_ROE",
     "ACWP_M4A5_105_troy_ROE",
-    "ACWP_M4A5_105_troy_ROE_DON",
     "ACWP_M4A5_145_troy_ROE_DON",
-    "ACWP_M4A5_105_troy_ROE_NET",
     "ACWP_M4A5_145_troy_ROE_NET",
-    "ACWP_M4A5_105_troy_ROE_TAN",
     "ACWP_M4A5_145_troy_ROE_TAN",
     "ACWP_M4A5_145_troy_KAG",
-    "ACWP_M4A5_105_troy_KAG",
     "ACWP_M4A5_145_troy_KAG_TAN",
-    "ACWP_M4A5_105_troy_KAG_TAN",
     "ACWP_M4A5_145_troy_KAG_DON",
-    "ACWP_M4A5_105_troy_KAG_DON",
     "ACWP_M4A5_145_troy_KAG_NET",
-    "ACWP_M4A5_105_troy_KAG_NET",
     "SMA_MK18MOEBLK_SM",
     "SMA_MK18MOETAN_SM",
     "SMA_MK18MOEOD_SM",
@@ -138,10 +131,12 @@ _marksman = [
     "SPARTAN_EBR_black_F",
     "SPARTAN_EBR_snake_F",
     "SMA_HK417_16in",
-    "S_kio_sr25",
-    "S_kio_sr25_camo",
-    "S_kio_sr25_ec",
-    "S_kio_sr25_ec_camo"
+    "ACWP_sr25",
+    "ACWP_sr25_camo",
+    "ACWP_sr25_ec",
+    "ACWP_sr25_ec_camo"
+    "ACWP_sr25_VFG",
+    "ACWP_sr25_VFG_camo"
 ];
 _sniper = [
     "Recon_Barret",

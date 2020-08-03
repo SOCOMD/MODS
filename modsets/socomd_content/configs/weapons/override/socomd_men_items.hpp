@@ -1,7 +1,7 @@
 class SOCOMD_Item_Primary_TroopLeader               : SMA_M4_GL_SM {};
 class SOCOMD_Item_Primary_PatrolLeader              : SMA_M4_GL_SM {};
 class SOCOMD_Item_Primary_Rifleman                  : ACWP_M4A5_145_troy_base {};
-class SOCOMD_Item_Primary_Marksman					: S_kio_sr25{};
+class SOCOMD_Item_Primary_Marksman					: ACWP_sr25{};
 class SOCOMD_Item_Primary_Medic                     : ACWP_M4A5_145_troy_base {};
 class SOCOMD_Item_Primary_Sapper                    : ACWP_M4A5_145_troy_base {};
 class SOCOMD_Item_Primary_MachineGunner             : CUP_lmg_L110A1_railed {};
@@ -21,4 +21,4 @@ class Recon_338                                     : bnae_trg42_camo2_virtual {
 
 class SOCOMD_Weapon_Rifle_9x21 : CUP_smg_MP5A5 {scope = protected;};
 class SOCOMD_Weapon_Rifle_556x45 : ACWP_M4A5_145_troy_base {scope = protected;};
-class SOCOMD_Weapon_Rifle_762x51 : S_kio_sr25 {scope = protected;};
+class SOCOMD_Weapon_Rifle_762x51 : ACWP_sr25 {scope = protected;};
