@@ -249,7 +249,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Logistician"
 		};
 		magazines[] ={
-			{"ACWP_18Rnd_9x21_Mag_glock",3}
+			{"ACWP_19Rnd_9x21_Mag_glock",3}
 		};
 	};
 	class acwp_glock19_black: acwp_glock_base{
@@ -270,7 +270,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Logistician"
 		};
 		magazines[] ={
-			{"ACWP_18Rnd_9x21_Mag_glock",3}
+			{"ACWP_19Rnd_9x21_Mag_glock",3}
 		};
 	};
 	class hgun_Pistol_heavy_01_F;

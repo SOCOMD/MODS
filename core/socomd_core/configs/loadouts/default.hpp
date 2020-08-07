@@ -102,7 +102,7 @@ class SOCOMD_Unarmed {
 class SOCOMD_Commander {
 	primary			= ITEM_PRIMARY_TROOPLEADER;
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_TROOPLEADER;
 	binocular		= "Laserdesignator";
@@ -149,7 +149,7 @@ class SOCOMD_Commander {
 class SOCOMD_Leader {
 	primary		    = ITEM_PRIMARY_PATROLLEADER;
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_PATROLLEADER;
 	binocular		= "Laserdesignator";
@@ -196,7 +196,7 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 class SOCOMD_Rifleman {
 	primary		    = ITEM_PRIMARY_RIFLEMAN;
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "";
@@ -231,7 +231,7 @@ class SOCOMD_Rifleman {
 class SOCOMD_Marksman {
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
 	binocular		= "";
@@ -267,7 +267,7 @@ class SOCOMD_Marksman {
 class SOCOMD_Sapper {
 	primary		    = ITEM_PRIMARY_SAPPER;
 	secondary		= ITEM_SECONDARY_SAPPER;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_SAPPER;
 	binocular		= "";
@@ -314,7 +314,7 @@ class SOCOMD_Sapper {
 class SOCOMD_MachineGunner {
 	primary		    = ITEM_PRIMARY_MACHINEGUNNER;
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
 	binocular		= "";
@@ -351,7 +351,7 @@ class SOCOMD_MachineGunner {
 class SOCOMD_Medic {
 	primary		    = ITEM_PRIMARY_MEDIC;
 	secondary		= ITEM_SECONDARY_MEDIC;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MEDIC;
 	binocular		= "";
@@ -413,7 +413,7 @@ class SOCOMD_Medic {
 class SOCOMD_AT {
 	primary		    = ITEM_PRIMARY_AT;
 	secondary		= ITEM_SECONDARY_MAT;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_AT;
 	binocular		= "";
@@ -455,7 +455,7 @@ class SOCOMD_AT_Assistant : SOCOMD_AT {
 class SOCOMD_Recon {
 	primary		    = ITEM_PRIMARY_RECON;
 	secondary		= ITEM_SECONDARY_RECON;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RECON;
 	binocular		= "ACE_Vector";
@@ -494,7 +494,7 @@ class SOCOMD_Recon {
 class SOCOMD_Recon_Assistant {
 	primary		    = ITEM_PRIMARY_MARKSMAN;
 	secondary		= ITEM_SECONDARY_MARKSMAN;
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
 	binocular		= "ACE_Vector";
@@ -537,7 +537,7 @@ class SOCOMD_Recon_Assistant {
 class SOCOMD_Logistician {
 	primary 		= "SOCOMD_Weapon_Rifle_556x45";
     secondary 		= "SOCOMD_Weapon_Empty";
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear 		= "SOCOMD_Headgear_HardCover";
 	binocular		= "";
@@ -578,7 +578,7 @@ class SOCOMD_Logistician {
 class SOCOMD_Pilot {
     primary 		= "SOCOMD_Weapon_Rifle_9x21";
     secondary 		= "SOCOMD_Weapon_Empty";
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear 		= "SOCOMD_Headgear_Pilot";
 	binocular 		= "";
@@ -588,6 +588,7 @@ class SOCOMD_Pilot {
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
 		};
 	};
 

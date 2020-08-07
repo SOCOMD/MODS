@@ -85,7 +85,7 @@ class SOCOMD_Marksman{
 };
 class SOCOMD_Recon {
 	primary		    = "Recon_338";
-	handgun			= "Troy_USP";
+	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "ACE_Vector";

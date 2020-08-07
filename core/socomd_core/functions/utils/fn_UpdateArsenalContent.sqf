@@ -111,9 +111,9 @@ _general_rifle = [
     "SMA_MK18MOEBLK_SM",
     "SMA_MK18MOETAN_SM",
     "SMA_MK18MOEOD_SM",
-    "SMA_AUG_A3_F",
-    "SMA_AUG_A3_KRYPT_F",
-    "SMA_AUG_A3_MCAM_F",
+    // "SMA_AUG_A3_F",
+    // "SMA_AUG_A3_KRYPT_F",
+    // "SMA_AUG_A3_MCAM_F",
     "ACWP_HK416D_105_base",
     "ACWP_HK416D_105_tan",
     "ACWP_HK416D_105_don",
@@ -126,13 +126,13 @@ _556_rifle_gl = [
     "SMA_MK18BLK_GL_SM",
     "SMA_MK18TAN_GL_SM",
     "SMA_MK18OD_GL_SM",
-    "SMA_AUG_EGLM",
-    "SMA_AUG_EGLM_tan",
-    "SMA_AUG_EGLM_Olive",
+    // "SMA_AUG_EGLM",
+    // "SMA_AUG_EGLM_tan",
+    // "SMA_AUG_EGLM_Olive",
     "hlc_rifle_416D10_gl",
     "hlc_rifle_416D10_tan_gl",
     "hlc_rifle_416D10_wdl_gl",
-    "CUP_arifle_M16A4_GL"
+    // "CUP_arifle_M16A4_GL"
 ];
 _machine_gun = [
     "CUP_lmg_L110A1_railed",
