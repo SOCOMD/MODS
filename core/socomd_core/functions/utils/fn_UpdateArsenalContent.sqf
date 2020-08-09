@@ -255,5 +255,8 @@ _closedEh = ["ace_arsenal_displayClosed", {
     [player, secondaryWeapon player] call SOCOMD_fnc_SwitchUnitSecondaryWeapon;
     [player, handgunWeapon player] call SOCOMD_fnc_SwitchUnitHandgunWeapon;
     [player, primaryWeapon player] call SOCOMD_fnc_SwitchUnitPrimaryWeapon;
+    if( _loadoutId ==  "SOCOMD_Rifleman" ) then  {
+        player addMagazines ["SOCOMD_Item_Magazine_556x45_30Rnd", 4]
+    };
 }] call CBA_fnc_addEventHandler;
 player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];

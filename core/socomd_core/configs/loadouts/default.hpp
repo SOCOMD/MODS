@@ -222,7 +222,7 @@ class SOCOMD_Rifleman {
 		type = ITEM_BACKPACK_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACWP_30rnd_556x45_EPR_PMAG, 6) // Gotta do it like this to stop the set unit loadout from eating them
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
 		};

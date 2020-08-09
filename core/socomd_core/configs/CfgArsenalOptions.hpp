@@ -34,7 +34,10 @@
     "SMA_M4_GL_SM",\
     "SMA_MK18BLK_GL_SM",\
     "SMA_MK18TAN_GL_SM",\
-    "SMA_MK18OD_GL_SM",
+    "SMA_MK18OD_GL_SM",\
+	"hlc_rifle_416D10_gl",\
+    "hlc_rifle_416D10_tan_gl",\
+    "hlc_rifle_416D10_wdl_gl"
 
 #define MACHINE_GUN \
     "CUP_lmg_L110A1_railed",\
