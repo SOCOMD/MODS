@@ -226,6 +226,43 @@ class CfgLoadouts {
 		};
 
 		////////////////////////////////////////////////////////////////////////////////
+		// BREACHER
+
+		class SOCOMD_Breacher {
+			primary		    = ITEM_PRIMARY_BREACHER;
+			secondary		= ITEM_SECONDARY_BREACHER;
+			handgun		    = ITEM_HANDGUN_BREACHER;
+			handgunMagazine = ITEM_HANDGUN_MAGAZINE_BREACHER;
+			headgear		= ITEM_HEADGEAR_BREACHER;
+			binocular		= "";
+			gps			    = "";
+			maxOptic		= "2x";
+
+			class Uniform {
+				class Inventory	{
+					LOADOUT_UNIFORM_ESSENTIALS
+					LOADOUT_STANDARD_MEDICAL
+				};
+			};
+
+			class Vest {
+				type = ITEM_VEST_BREACHER;
+				class Inventory	{
+					LOADOUT_VEST_ESSENTIALS
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
+					LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+				};
+			};
+
+			class Backpack {
+				type = ITEM_BACKPACK_BREACHER;
+				class Inventory	{
+					LOADOUT_BACKPACK_ESSENTIALS
+				};
+			};
+		};
+
+		////////////////////////////////////////////////////////////////////////////////
 		// Marksman
 		class SOCOMD_Marksman {
 			primary		    = ITEM_PRIMARY_MARKSMAN;

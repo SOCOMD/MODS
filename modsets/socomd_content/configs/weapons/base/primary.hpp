@@ -159,8 +159,25 @@ class hlc_rifle_416D10_wdl_gl:hlc_rifle_416D10_gl{
 	HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
 	hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo2_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
 };
-
-
+// class ACWP_HK416_base;
+// class ACWP_HK416D_105_base:ACWP_HK416_base{
+	
+// 	class WeaponSlotsInfo  {
+// 		mass = 71.6;
+// 		class CowsSlot : asdg_OpticRail1913{};
+// 		class PointerSlot : asdg_FrontSideRail{};
+// 		class MuzzleSlot : asdg_MuzzleSlot_556{};
+// 		class UnderBarrelSlot : ACWP_troy_underslot{
+// 			compatibleItems[] = {
+// 			};
+// 		};
+// 	};
+// };
+// class ACWP_HK416D_105_AFG: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_don: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_AFG_don: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_tan: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_AFG_tan: ACWP_HK416D_105_base{};
 
 class CUP_arifle_M16A4_GL;
 

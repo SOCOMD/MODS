@@ -1,12 +1,13 @@
 :: The build tool crashes my pc for some reason...
 set projectDir=P:\SOCOMD\MODS
-set modOutput=..\release\
-set modOutput_core=..\release\
-set modOutput_content=..\release\
+set modOutput=..\addons\
+set modOutput_core=..\addons\
+set modOutput_content=..\addons\
 set buldParam=  -P -U -N
 cd P:\SOCOMD\MODS 
 ::SOCOMD Core
 MakePbo %buldParam% core\socomd_core %modOutput_core%
+MakePbo %buldParam% core\socomd_arsenal %modOutput_core%
 MakePbo %buldParam% core\socomd_zeus %modOutput_core%
 
 ::SOCOMD Core 3rd Party

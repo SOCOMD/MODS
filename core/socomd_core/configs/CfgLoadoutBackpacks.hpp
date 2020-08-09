@@ -20,6 +20,7 @@ class CfgLoadoutBackpacks {
 			"SOCOMD_Leader",
 			"SOCOMD_2IC",
 			"SOCOMD_Rifleman",
+			"SOCOMD_Breacher",
 			"SOCOMD_Marksman",
 			"SOCOMD_Recon",
 			"SOCOMD_Recon_Assistant",

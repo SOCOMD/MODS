@@ -222,10 +222,52 @@ class SOCOMD_Rifleman {
 		type = ITEM_BACKPACK_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(ACWP_30rnd_556x45_EPR_PMAG, 6) // Gotta do it like this to stop the set unit loadout from eating them
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
 		};
 	};
 };
 
+////////////////////////////////////////////////////////////////////////////////
+// Breacher
+class SOCOMD_Breacher {
+	primary		    = ITEM_PRIMARY_BREACHER;
+	secondary		= ITEM_SECONDARY_BREACHER;
+	handgun			= "ACWP_USP";
+	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
+	headgear		= ITEM_HEADGEAR_BREACHER;
+	binocular		= "";
+	gps			    = "ItemMicroDAGR";
+	maxOptic		= "4x";
+
+	class Uniform {
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_BREACHER;
+		class Inventory	{
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+	class Backpack {
+		type = ITEM_BACKPACK_BREACHER;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+			LOADOUT_ITEM(ACE_DefusalKit, 1)
+			LOADOUT_ITEM(ACE_Clacker, 1)
+			LOADOUT_ITEM(ACE_M84, 3)
+			LOADOUT_ITEM(ACE_CTS9, 3)
+		};
+	};
+};
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 class SOCOMD_Marksman {
@@ -294,7 +336,6 @@ class SOCOMD_Sapper {
 		type = ITEM_BACKPACK_SAPPER;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_M26_Clacker, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
@@ -302,7 +343,6 @@ class SOCOMD_Sapper {
 			LOADOUT_ITEM(MineDetector, 1)
 			LOADOUT_ITEM(DemoCharge_Remote_Mag, 3)
 			LOADOUT_ITEM(SatchelCharge_Remote_Mag, 1)
-			LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
 			LOADOUT_ITEM(ACE_M14, 3)
 		};
 	};

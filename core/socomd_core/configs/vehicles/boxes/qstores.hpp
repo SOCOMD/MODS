@@ -139,6 +139,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
 					QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_Rifleman)
 					QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
 					QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)
+					QSTORE_ACTION_LOADOUT("Breacher",SOCOMD_Breacher)
 					QSTORE_ACTION_LOADOUT("Gunner",SOCOMD_MachineGunner)
 					QSTORE_ACTION_LOADOUT("Medic",SOCOMD_Medic)
 					QSTORE_ACTION_LOADOUT("Anti-tank",SOCOMD_AT)

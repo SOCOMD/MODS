@@ -124,6 +124,13 @@ class SOCOMD_AT {
 };
 
 class SOCOMD_Sapper {
+	class Backpack {
+		class Inventory	{
+			LOADOUT_ITEM(ACE_VMH3, 1)
+		};
+	};
+};
+class SOCOMD_Breacher {
 	class Vest {
 		class Inventory	{
 			LOADOUT_ITEM(CUP_6Rnd_B_Beneli_74Pellets, 5)

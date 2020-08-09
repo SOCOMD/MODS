@@ -63,3 +63,16 @@ if(count _loadoutMagazines > 0) then  {
         _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
 };
+
+// commandGrenades
+_loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];
+if (_loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadoutId ==  "SOCOMD_Leader") then {
+    commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
+    if(count commandGrenades > 0) then  {
+        {
+            _magazine = _x select 0;
+            _magazineCount = _x select 1;
+            _player addMagazines[_magazine, _magazineCount];
+        } forEach commandGrenades;
+    };
+};
