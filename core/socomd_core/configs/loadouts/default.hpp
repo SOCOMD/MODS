@@ -338,6 +338,7 @@ class SOCOMD_Sapper {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_M26_Clacker, 1)
+			LOADOUT_ITEM(ACE_DefusalKit, 1)
 			LOADOUT_ITEM(ACE_wirecutter, 1)
 			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(MineDetector, 1)
