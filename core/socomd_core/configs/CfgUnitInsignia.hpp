@@ -179,4 +179,19 @@ class CfgUnitInsignia {
 		author="Monk";
 		texture="socomd_data_core\insignia\useless.paa";
 	};	
+	class gunscoffee {
+		displayName="Guns and Coffee";
+		author="Slatery";
+		texture="socomd_data_core\insignia\gunsCoffee.paa";
+	};
+	class trunkMonkey {
+		displayName="Trunk Monkey";
+		author="Slatery";
+		texture="socomd_data_core\insignia\trunkMonkey.paa";
+	};
+	class edoRunner {
+		displayName="EOD";
+		author="Slatery";
+		texture="socomd_data_core\insignia\EOD.paa";
+	};	
 };
