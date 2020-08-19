@@ -2,6 +2,18 @@
     "SMA_MK18MOEBLK_SM",\
     "SMA_MK18MOETAN_SM",\
     "SMA_MK18MOEOD_SM",\
+    "ACWP_HK416D_105_base",\
+    "ACWP_HK416D_105_tan",\
+    "ACWP_HK416D_105_don",\
+    "ACWP_HK416D_105_AFG",\
+    "ACWP_HK416D_105_AFG_tan",\
+    "ACWP_HK416D_105_AFG_don",\
+	"ACWP_HK416D_105_CTR_don",\
+	"ACWP_HK416D_105_CTR_AFG_don",\
+	"ACWP_HK416D_105_CTR_tan",\
+	"ACWP_HK416D_105_CTR_AFG_tan",\
+	"ACWP_HK416D_105_CTR_base",\
+	"ACWP_HK416D_105_CTR_AFG",\
     "ACWP_M4A5_105_troy_base",\
     "ACWP_M4A5_105_troy_base_DON",\
     "ACWP_M4A5_105_troy_base_NET",\
@@ -18,12 +30,30 @@
     "ACWP_M4A5_145_troy_KAG_TAN",\
     "ACWP_M4A5_145_troy_KAG_DON",\
     "ACWP_M4A5_145_troy_KAG_NET",\
-    "ACWP_HK416D_105_base",\
-    "ACWP_HK416D_105_tan",\
-    "ACWP_HK416D_105_don",\
-    "ACWP_HK416D_105_AFG",\
-    "ACWP_HK416D_105_AFG_tan",\
-    "ACWP_HK416D_105_AFG_don"
+    "ACWP_M4A5_145_troy_AFG",\
+    "ACWP_M4A5_145_troy_tango",\
+    "ACWP_M4A5_145_troy_MOD3",\
+    "ACWP_M4A5_105_troy_AFG",\
+    "ACWP_M4A5_105_troy_tango",\
+    "ACWP_M4A5_105_troy_MOD3",\
+    "ACWP_M4A5_145_troy_AFG_TAN",\
+    "ACWP_M4A5_145_troy_Tango_TAN",\
+    "ACWP_M4A5_105_troy_AFG_TAN",\
+    "ACWP_M4A5_105_troy_Tango_TAN",\
+    "ACWP_M4A5_145_troy_AFG_DON",\
+    "ACWP_M4A5_145_troy_Tango_DON",\
+    "ACWP_M4A5_105_troy_AFG_DON",\
+    "ACWP_M4A5_105_troy_Tango_DON",\
+    "ACWP_M4A5_145_troy_AFG_NET",\
+    "ACWP_M4A5_145_troy_Tango_NET",\
+    "ACWP_M4A5_105_troy_AFG_NET",\
+    "ACWP_M4A5_105_troy_Tango_NET",\
+    "ACWP_M4A5_145_troy_MOD3_TAN",\
+    "ACWP_M4A5_145_troy_MOD3_DON",\
+    "ACWP_M4A5_145_troy_MOD3_NET",\
+    "ACWP_M4A5_105_troy_MOD3_NET",\
+    "ACWP_M4A5_105_troy_MOD3_DON",\
+    "ACWP_M4A5_105_troy_MOD3_TAN",
 
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
@@ -74,7 +104,9 @@
     "ACWP_USP_TAN",\
     "ACWP_HP_ba",\
     "acwp_glock17_black",\
-    "acwp_glock19_black"
+    "acwp_glock19_black",\
+	"acwp_glock19_sim",\
+	"acwp_glock19_hlmnd"
 
 #define HELMETS \
 	"VSM_Bowman",\
