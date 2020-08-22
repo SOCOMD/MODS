@@ -17,14 +17,15 @@ _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _weaponId >> "mag
 
 //Set Primary Weapon
 _unitLoadout = getUnitLoadout _player;
+_loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 
 _primaryLoadout = _unitLoadout select 2;
 if(count _primaryLoadout <= 0) then {
-    _primaryLoadout = [_weaponId, "", "", "", [], [], ""];
+    _primaryLoadout = [_weaponId, "", "", "", [_loadoutMagazines select 0], [], ""];
 }
 else {
     _primaryLoadout set [0, _weaponId];
-    _primaryLoadout set [4, []];
+    _primaryLoadout set [4, [_loadoutMagazines select 0]];
     _primaryLoadout set [5, []];
 };
 
@@ -51,7 +52,6 @@ _unitLoadout set [2, _primaryLoadout];
 
 
 //Give Magazines
-_loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
