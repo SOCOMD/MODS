@@ -23,8 +23,8 @@ if(count _secondaryItem == 7) then {
 
 // Handgun
 _handgunItem = _loadoutPrefs select 2;
-if(count _primaryItem == 7) then {
-    [_player, _handgunItem select 2] call SOCOMD_fnc_SwitchUnitPrimaryWeapon;
+if(count _handgunItem == 7) then {
+    [_player, _handgunItem select 0] call SOCOMD_fnc_SwitchUnitHandgunWeapon;
 };
 
 

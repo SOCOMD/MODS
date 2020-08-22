@@ -190,7 +190,9 @@
     "Kit_Bag_R_MC",\
     "SOG_BAG_recon_od",\
     "Kit_Bag_R_od",\
-    "Kit_Bag_R_Tan"
+    "Kit_Bag_R_Tan",\
+	"ACWP_Bullock_radio_MC",\
+	"ACWP_Bullock_radio_AMCU"
 
 #define BACKPACK_SAPPER \
     "Kit_Bag_pince_TAN",\
@@ -198,7 +200,8 @@
     "Kit_Bag_pince_mc",\
     "SOG_BAG_BREACHER_MC",\
     "Kit_Bag_pince_od",\
-    "SOG_BAG_BREACHER_od"
+    "SOG_BAG_BREACHER_od",\
+	"ACWP_Bullock_radio_MC"
 
 #define BAGS \
 	"KIT_BAG_mc",\
@@ -206,7 +209,9 @@
 	"KIT_BAG_TAN",\
 	"SOG_BAG_tan",\
 	"SOG_BAG_od",\
-	"SOG_BAG_MC"
+	"SOG_BAG_MC",\
+	"ACWP_Bullock_AMCU",\
+	"ACWP_Bullock_MC"
 
 class CfgArsenalOptions{
 	class helmets{
@@ -347,6 +352,7 @@ class CfgArsenalOptions{
 	class SOCOMD_AT{
 		weapons[]={
 			GENERAL_RIFLE,
+			HANDGUNS,
 			LAUNCHERS
 		};
 		vests[]={

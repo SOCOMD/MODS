@@ -191,23 +191,12 @@ class CUP_srifle_M110 : Rifle_Base_F {
 class srifle_DMR_06_camo_F;
 class ACWP_sr25: srifle_DMR_06_camo_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
-	displayName = "SR-25";
 };
-class ACWP_sr25_camo: ACWP_sr25 {
-	displayName = "SR-25 Camo";
-};
-class ACWP_sr25_ec: ACWP_sr25 {
-	displayName = "SR-25 EC";
-};
-class ACWP_sr25_ec_camo: ACWP_sr25 {
-	displayName = "SR-25 EC Camo";
-};
-class ACWP_sr25_VFG: ACWP_sr25 {
-	displayName = "SR-25 VFG";
-};
-class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {
-	displayName = "SR-25 VFG Camo";
-};
+class ACWP_sr25_camo: ACWP_sr25 {};
+class ACWP_sr25_ec: ACWP_sr25 {};
+class ACWP_sr25_ec_camo: ACWP_sr25 {};
+class ACWP_sr25_VFG: ACWP_sr25 {};
+class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {};
 
 class srifle_EBR_F;
 class SPARTAN_EBR_black_F : srifle_EBR_F {
