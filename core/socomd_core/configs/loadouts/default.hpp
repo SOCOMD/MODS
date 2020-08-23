@@ -28,6 +28,18 @@
 	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
+#define LOADOUT_PILOT_ESSENTIALS \
+	LOADOUT_ITEM(ItemcTabHCam, 1) \
+	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1) \
+	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+	LOADOUT_ITEM(ACE_microDAGR, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
+	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
+	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
+
 #define LOADOUT_VEST_ESSENTIALS \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
 	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
@@ -628,7 +640,7 @@ class SOCOMD_Pilot {
 
 	class Uniform {
 		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_PILOT_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 		};
 	};

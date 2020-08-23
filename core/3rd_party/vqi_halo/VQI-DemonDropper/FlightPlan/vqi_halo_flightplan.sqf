@@ -1,6 +1,6 @@
 //
 //
-if ((leader player != player)) exitWith {
+if ((leader group player != player)) exitWith {
 	systemChat 'Sorry, Section commanders only.';
 };
 if (VQI_HINTS_HALO == 1) then { hint "flightplan.sqf"; };
