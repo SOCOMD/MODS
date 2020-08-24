@@ -200,8 +200,7 @@
     "Kit_Bag_pince_mc",\
     "SOG_BAG_BREACHER_MC",\
     "Kit_Bag_pince_od",\
-    "SOG_BAG_BREACHER_od",\
-	"ACWP_Bullock_radio_MC"
+    "SOG_BAG_BREACHER_od"
 
 #define BAGS \
 	"KIT_BAG_mc",\
