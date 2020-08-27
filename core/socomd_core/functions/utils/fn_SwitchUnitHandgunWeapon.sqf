@@ -36,9 +36,6 @@ _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _weaponId >> "mag
 
 //Set Handgun Weapon
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
-systemChat format ["first %1", _loadoutMagazines];
-systemChat format ["second %1", _loadoutMagazines#0];
-systemChat format ["third %1", _loadoutMagazines#0#0];
 _unitLoadout = getUnitLoadout _player;
 
 _primaryLoadout = _unitLoadout select 2;
