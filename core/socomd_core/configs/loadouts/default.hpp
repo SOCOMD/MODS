@@ -132,7 +132,7 @@ class SOCOMD_Commander {
 		type = ITEM_VEST_TROOPLEADER;
 		class Inventory {
 			LOADOUT_VEST_ESSENTIALS
-			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 2)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -141,7 +141,8 @@ class SOCOMD_Commander {
 	class Backpack {
 		type = ITEM_BACKPACK_TROOPLEADER;
 		class Inventory	{
-			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_BACKPACK_ESSENTIALS			
+			LOADOUT_ITEM(itc_land_tablet_rover,1)
 			LOADOUT_ITEM(Laserbatteries, 2)
 			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
 			LOADOUT_ITEM(ACRE_PRC117F, 1)
@@ -179,6 +180,7 @@ class SOCOMD_Leader {
 		type = ITEM_VEST_PATROLLEADER;
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(itc_land_tablet_rover,1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 		};
@@ -189,7 +191,7 @@ class SOCOMD_Leader {
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(Laserbatteries, 2)
 			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
-			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 2)
 			LOADOUT_ITEM(SmokeShellGreen, 2)
 			LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
 			LOADOUT_ITEM(UGL_FlareRed_F, 2)
@@ -538,6 +540,7 @@ class SOCOMD_Recon {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(itc_land_tablet_rover,1)
 			LOADOUT_ITEM(ACE_Tripod, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
@@ -578,6 +581,7 @@ class SOCOMD_Recon_Assistant {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(itc_land_tablet_rover,1)
 			LOADOUT_ITEM(ACE_Tripod, 1)
 			LOADOUT_ITEM(ACRE_PRC152, 1)
 		};
@@ -611,7 +615,7 @@ class SOCOMD_Logistician {
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
 			LOADOUT_ITEM(SmokeShell, 3)
-			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 2)
 			LOADOUT_ITEM(ACRE_PRC343, 1)
 			LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 		};

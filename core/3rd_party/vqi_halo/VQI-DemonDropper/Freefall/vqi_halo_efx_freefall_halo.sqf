@@ -74,7 +74,7 @@ if ("VQI_Helmet_HALO" == Headgear _unit) then {										// temp, upgrade soon..
 };
 sleep 10;
 
-_savedHeight = _unit getVariable ["AR3_height", 300];
+_savedHeight = _unit getVariable ["AR3_height", -1]; // get height, or warn at 300m above the ground
 
 waitUntil { 
 	getPosASL _unit select 2 < _savedHeight + 300 
