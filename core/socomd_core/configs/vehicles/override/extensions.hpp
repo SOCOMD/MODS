@@ -323,7 +323,7 @@ class CAManBase : Man {
 				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
 				displayName = "Set ARD Alt.";
 				
-				class HALO_Set_AR3_150 {
+				class HALO_Set_AR3_100 {
 					displayName = "~ 100m AGL ";
 					statement = "[1001,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
 				};				
