@@ -91,22 +91,22 @@ class CfgLoadoutWeapons {
 	class MachineGun_762;
 	class CUP_lmg_Mk48_nohg : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_des : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_tan : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_wdl : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
 		};
 	};
 

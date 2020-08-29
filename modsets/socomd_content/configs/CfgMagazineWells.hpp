@@ -18,7 +18,7 @@ class CfgMagazineWells {
 
 	class SOCOMD_762_150Rnd {
 		SOCOMD_mags[] = {
-			"SOCOMD_Item_Magazine_762x51_150Rnd_Tracer"
+			"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer"
 		};
 	};
 	class VOG_40mm
