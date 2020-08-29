@@ -30,7 +30,6 @@ class CfgPatches {
 			"adfu_base",
 			"au_beret_addon",
 			"bma3_bushmaster",
-			"vtn_armorw_lav25_cf",
 			"plp_containers",
 			"COS_back_pack",
 			"ctab",
