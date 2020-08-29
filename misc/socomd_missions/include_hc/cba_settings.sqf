@@ -23,13 +23,13 @@ force force ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
 // ACE Arsenal
-force force ace_socomd_arsenal_allowDefaultLoadouts = true;
-force force ace_socomd_arsenal_allowSharedLoadouts = true;
-ace_socomd_arsenal_camInverted = false;
-force force ace_socomd_arsenal_enableIdentityTabs = true;
-ace_socomd_arsenal_enableModIcons = true;
-ace_socomd_arsenal_EnableRPTLog = false;
-ace_socomd_arsenal_fontHeight = 4.5;
+force force ace_arsenal_allowDefaultLoadouts = true;
+force force ace_arsenal_allowSharedLoadouts = true;
+ace_arsenal_camInverted = false;
+force force ace_arsenal_enableIdentityTabs = true;
+ace_arsenal_enableModIcons = true;
+ace_arsenal_EnableRPTLog = false;
+ace_arsenal_fontHeight = 4.5;
 
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
