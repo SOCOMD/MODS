@@ -458,6 +458,7 @@ class CfgArsenalOptions{
 	class SOCOMD_Recon_Assistant{
 		weapons[]={
 			GENERAL_RIFLE,
+			MARKSMAN,
 			HANDGUNS
 		};
 		vests[]={
