@@ -53,7 +53,15 @@
     "ACWP_M4A5_145_troy_MOD3_NET",\
     "ACWP_M4A5_105_troy_MOD3_NET",\
     "ACWP_M4A5_105_troy_MOD3_DON",\
-    "ACWP_M4A5_105_troy_MOD3_TAN",
+    "ACWP_M4A5_105_troy_MOD3_TAN",\
+	"ACWP_M4A5_105_troy_ROE",\
+	"ACWP_M4A5_105_troy_ROE_DON",\
+	"ACWP_M4A5_105_troy_ROE_NET",\
+	"ACWP_M4A5_105_troy_ROE_TAN",\
+	"ACWP_M4A5_105_troy_KAG",\
+	"ACWP_M4A5_105_troy_KAG_DON",\
+	"ACWP_M4A5_105_troy_KAG_NET",\
+	"ACWP_M4A5_105_troy_KAG_TAN"
 
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
@@ -67,7 +75,11 @@
     "SMA_MK18OD_GL_SM",\
 	"hlc_rifle_416D10_gl",\
     "hlc_rifle_416D10_tan_gl",\
-    "hlc_rifle_416D10_wdl_gl"
+    "hlc_rifle_416D10_wdl_gl",\
+	"1Rnd_HE_Grenade_shell",\
+	"UGL_FlareRed_F",\
+	"1Rnd_SmokeRed_Grenade_shell",\
+	"ACE_HuntIR_M203"
 
 #define MACHINE_GUN \
     "CUP_lmg_L110A1_railed",\
@@ -75,7 +87,9 @@
     "CUP_lmg_Mk48_nohg",\
     "CUP_lmg_Mk48_nohg_des",\
     "CUP_lmg_Mk48_nohg_tan",\
-    "CUP_lmg_Mk48_nohg_wdl"
+    "CUP_lmg_Mk48_nohg_wdl",\
+	"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",\
+	"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer"
 
 #define MARKSMAN \
     "SPARTAN_EBR_black_F",\
@@ -86,16 +100,24 @@
     "ACWP_sr25_ec",\
     "ACWP_sr25_ec_camo",\
     "ACWP_sr25_VFG",\
-    "ACWP_sr25_VFG_camo"
+    "ACWP_sr25_VFG_camo",\
+	"SOCOMD_Item_Magazine_762x51_20Rnd"
 
 #define SNIPER \
     "Recon_Barret",\
     "Recon_338",\
-    "Recon_300WM"
+    "Recon_300WM",\
+	"5Rnd_338LM_Magazine",\
+	"5Rnd_APDS_338LM_Magazine",\
+	"SOCOMD_Item_Magazine_300_5Rnd",\
+	"10Rnd_300WM_Magazine",\
+	"SOCOMD_Item_Magazine_Barret"
 
 #define LAUNCHERS \
     "HAFM_LAW",\
-    "SOCOMD_Carl_Gustav"
+    "SOCOMD_Carl_Gustav",\
+	"tf47_m3maaws_HEAT",\
+	"tf47_m3maaws_HE"
 
 #define HANDGUNS  \
     "DSO_hgun_Pistol_heavy_01_blk_F",\
@@ -106,7 +128,12 @@
     "acwp_glock17_black",\
     "acwp_glock19_black",\
 	"acwp_glock19_sim",\
-	"acwp_glock19_hlmnd"
+	"acwp_glock19_hlmnd",\
+	"ACWP_18Rnd_9x21_Mag_USP",\
+	"ACWP_13Rnd_9x21_Mag_HP",\
+	"ACWP_19Rnd_9x21_Mag_glock",\
+	"ACWP_19Rnd_9x21_Mag_glock_sim",\
+	"11Rnd_45ACP_Mag"
 
 #define HELMETS \
 	"VSM_Bowman",\
@@ -238,7 +265,8 @@ class CfgArsenalOptions{
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
-			VESTS_WEAPONS
+			VESTS_WEAPONS,
+			
 		};
 		bags[]={
 			BAGS,
@@ -257,7 +285,8 @@ class CfgArsenalOptions{
 		vests[]={
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS
+			VESTS_WEAPONS,
+			
 		};
 		bags[]={
 			BAGS
@@ -273,7 +302,8 @@ class CfgArsenalOptions{
 		vests[]={
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS
+			VESTS_WEAPONS,
+			
 		};
 		bags[]={
 			BAGS,
@@ -288,7 +318,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_TL,
+			
 		};
 		bags[]={
 			BAGS
@@ -301,7 +332,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_TL,
+			
 		};
 		bags[]={
 			BAGS
@@ -314,7 +346,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_TL,
+			
 		};
 		bags[]={
 			BAGS,
@@ -328,7 +361,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_COMMS,
+			
 		};
 		bags[]={
 			BAGS
@@ -341,7 +375,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_MED,
+			
 		};
 		bags[]={
 			BAGS,
@@ -356,7 +391,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_TL,
+			
 		};
 		bags[]={
 			BAGS
@@ -369,6 +405,7 @@ class CfgArsenalOptions{
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
+			
 		};
 		bags[]={
 			BAGS,
@@ -382,6 +419,7 @@ class CfgArsenalOptions{
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
+			
 		};
 		bags[]={
 			BAGS,
@@ -395,7 +433,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL
+			VESTS_TL,
+			
 		};
 		bags[]={
 			BAGS
@@ -409,6 +448,7 @@ class CfgArsenalOptions{
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
+			
 		};
 		bags[]={
 			BAGS,
@@ -423,6 +463,7 @@ class CfgArsenalOptions{
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
+			
 		};
 		bags[]={
 			BAGS,

@@ -32,12 +32,12 @@ _facewear = [];
 // 302, items & bipods, bipods must be seperated by config attribute "hasBipod"
 _accessories = [];
 _configAcc = "getNumber (_x >> 'ItemInfo' >> 'type') in [101,301] and getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgWeapons");
-_configBipods = "getNumber (_x >> 'ItemInfo' >> 'type') in [302] and getNumber (_x >> 'ItemInfo' >> 'hasBipod')  == 1 and getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgWeapons");
+_configBipods = "getNumber (_x >> 'ItemInfo' >> 'type') in [302] and getNumber (_x >> 'ItemInfo' >> 'hasBipod') == 1 and getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgWeapons");
 _configOptics = "getNumber (_x >> 'ItemInfo' >> 'type') in [201] and getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgWeapons");
 // filters optics, skips if recon class
 {
 	_scopeFOVBlacklisted =  [configName _x, []] call SOCOMD_fnc_ASORGS_CheckScopeFOV;
-    if( _scopeFOVBlacklisted == 0  && !(configName _x in _blackList ) && _loadoutId != "SOCOMD_Recon") then {
+    if( _scopeFOVBlacklisted == 0  && !(configName _x in _blackList )) then {
 		_accessories pushBack (configName _x);
     };
 } forEach _configOptics;
@@ -56,7 +56,7 @@ _configOptics = "getNumber (_x >> 'ItemInfo' >> 'type') in [201] and getNumber (
 	};
 } forEach _configBipods;
 // clears player's existing arsenal
-[_player, true, false] call ace_arsenal_fnc_removeVirtualItems;
+[_player, true, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
 
 _configWeapons = "(getNumber (_x >> 'scope') >= 2)" configClasses (configFile >> "CfgWeapons");
 
@@ -66,11 +66,15 @@ _loadOut append _facewear;
 _loadOut append _uniforms;
 _loadOut append _bags;
 _loadOut append _secondaries;
+_loadOut append uniformItems _player;
+_loadOut append vestItems _player;
+_loadOut append backpackItems _player;
+_loadOut append assignedItems _player;
 
 // Adds new arsenal items to player
-[_player, _loadOut, false] call ace_arsenal_fnc_addVirtualItems;
-// [_player, _configWeapons, false] call ace_arsenal_fnc_removeVirtualItems;
-[_player, _accessories, false] call ace_arsenal_fnc_addVirtualItems;
+[_player, _loadOut, false] call ace_socomd_arsenal_fnc_addVirtualItems;
+// [_player, _configWeapons, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
+[_player, _accessories, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 
 // Adds kit specific gear
 if( _loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadoutId ==  "SOCOMD_Leader") then  {
@@ -78,21 +82,21 @@ if( _loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadout
     _sc_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _sc_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sc_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _sc_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sc_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Rifleman" ) then  {
     _sr_array = [];
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _sr_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sr_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if(  _loadoutId ==   "SOCOMD_AT_Assistant" ) then  {
     _sat_array = [];
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _sat_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sat_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Marksman") then  {
     _sm_array = [];
@@ -100,42 +104,42 @@ if( _loadoutId ==  "SOCOMD_Marksman") then  {
     _sm_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sm_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _sm_array append getArray(_unitConfig >> "optics");
-    [_player, _sm_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sm_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Breacher") then  {
     _sb_array = [];
     _sb_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _sb_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sb_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _sb_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sb_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Sapper") then  {
     _ss_array = [];
     _ss_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _ss_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _ss_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _ss_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _ss_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_MachineGunner") then  {
     _smg_array = [];
     _smg_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _smg_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _smg_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _smg_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _smg_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Medic") then  {
     _smed_array = [];
     _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _smed_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _smed_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_AT") then  {
     _sat_array = [];
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
-    [_player, _sat_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sat_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 // Support Kits 
 if( _loadoutId ==  "SOCOMD_Pilot") then  {
@@ -144,8 +148,8 @@ if( _loadoutId ==  "SOCOMD_Pilot") then  {
     _sp_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sp_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _sp_array append ["SOLS_tshirt"]; 
-    [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
-    [_player, _sp_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _helmets, false] call ace_socomd_arsenal_fnc_removeVirtualItems;  
+    [_player, _sp_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Crewman") then  {
     _scr_array = [];
@@ -153,8 +157,8 @@ if( _loadoutId ==  "SOCOMD_Crewman") then  {
     _scr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _scr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _scr_array append ["SOLS_tshirt"];
-    [_player, _helmets, false] call ace_arsenal_fnc_removeVirtualItems;  
-    [_player, _scr_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _helmets, false] call ace_socomd_arsenal_fnc_removeVirtualItems;  
+    [_player, _scr_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Logistician") then  {
     _sl_array = [];
@@ -162,7 +166,7 @@ if( _loadoutId ==  "SOCOMD_Logistician") then  {
     _sl_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
     _sl_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _sl_array append ["SOLS_tshirt"];
-    [_player, _sl_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _sl_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Recon") then  {
     _src_array = [];
@@ -171,9 +175,9 @@ if( _loadoutId ==  "SOCOMD_Recon") then  {
     _src_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _src_array append getArray (configFile >> "CfgArsenalOptions" >> "uniforms" >> "recon_uniforms"); 
     _src_array append getArray(_unitConfig >> "optics");
-    [_player, _uniforms, false] call ace_arsenal_fnc_removeVirtualItems;    
-    [_player, _configOptics, false] call ace_arsenal_fnc_removeVirtualItems;
-    [_player, _src_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _uniforms, false] call ace_socomd_arsenal_fnc_removeVirtualItems;    
+    [_player, _configOptics, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
+    [_player, _src_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 if( _loadoutId ==  "SOCOMD_Recon_Assistant") then  {
     _sra_array = [];
@@ -182,9 +186,9 @@ if( _loadoutId ==  "SOCOMD_Recon_Assistant") then  {
     _sra_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");
     _src_array append getArray (configFile >> "CfgArsenalOptions" >> "uniforms" >> "recon_uniforms"); 
     _sra_array append getArray(_unitConfig >> "optics");
-    [_player, _uniforms, false] call ace_arsenal_fnc_removeVirtualItems;
-    [_player, _configOptics, false] call ace_arsenal_fnc_removeVirtualItems; 
-    [_player, _sra_array, false] call ace_arsenal_fnc_addVirtualItems;
+    [_player, _uniforms, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
+    [_player, _configOptics, false] call ace_socomd_arsenal_fnc_removeVirtualItems; 
+    [_player, _sra_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
 
 // arsenal Event Handlers
@@ -194,12 +198,12 @@ if( _loadoutId ==  "SOCOMD_Recon_Assistant") then  {
 _isPrevInit = player getVariable ["SOCOMD_eh_ids","failed"];
 
 if ( typeName _isPrevInit == "ARRAY") then {
-    ["ace_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
-    ["ace_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
-    ["ace_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
+    ["ace_socomd_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
+    ["ace_socomd_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
+    ["ace_socomd_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
 };
 
-_openedEh = ["ace_arsenal_displayOpened", {
+_openedEh = ["ace_socomd_arsenal_displayOpened", {
     player setVariable ["SOCOMD_prev_primary", primaryWeapon player]
     params ["_display"];
     
@@ -215,7 +219,7 @@ _openedEh = ["ace_arsenal_displayOpened", {
         2035,   // IDC_buttonVoice 
         3002,   // IDC_buttonCurrentMag
         3004,   // IDC_buttonCurrentMag2
-        1003,   // IDC_buttonLoadouts 
+        // 1003,   // IDC_buttonLoadouts 
         1004,   // IDC_buttonExport 
         1005,   // IDC_buttonImport 
         307,    // IDC_buttonDelete 
@@ -236,8 +240,8 @@ _openedEh = ["ace_arsenal_displayOpened", {
     } forEach _disabledButtons;
     
 }] call CBA_fnc_addEventHandler;
-_removedRight = ["ace_arsenal_rightPanelFilled", { 
-    _currentTab = currentNamespace getVariable "ace_arsenal_currentLeftPanel";
+_removedRight = ["ace_socomd_arsenal_rightPanelFilled", { 
+    _currentTab = currentNamespace getVariable "ace_socomd_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ // uniform panel
            TOGGLE_RIGHT_PANEL_HIDE
@@ -250,10 +254,11 @@ _removedRight = ["ace_arsenal_rightPanelFilled", {
         };
     };
 }] call CBA_fnc_addEventHandler;
-_closedEh = ["ace_arsenal_displayClosed", {
+_closedEh = ["ace_socomd_arsenal_displayClosed", {
     // for some reason using _player inside here doesnt work. Done in this order so primary weapon is out last
     [player, secondaryWeapon player] call SOCOMD_fnc_SwitchUnitSecondaryWeapon;
     [player, handgunWeapon player] call SOCOMD_fnc_SwitchUnitHandgunWeapon;
     [player, primaryWeapon player] call SOCOMD_fnc_SwitchUnitPrimaryWeapon;
+    [player] call SOCOMD_fnc_RefreshInsignia;
 }] call CBA_fnc_addEventHandler;
 player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];

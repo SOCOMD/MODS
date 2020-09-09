@@ -79,6 +79,14 @@ class CfgLoadoutWeapons {
 	class ACWP_M4A5_105_troy_MOD3_NET 		: Rifle_556 {};
 	class ACWP_M4A5_105_troy_MOD3_DON 		: Rifle_556 {};
 	class ACWP_M4A5_105_troy_MOD3_TAN 		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_ROE			: Rifle_556 {};
+	class ACWP_M4A5_105_troy_ROE_DON		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_ROE_NET		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_ROE_TAN		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_KAG			: Rifle_556 {};
+	class ACWP_M4A5_105_troy_KAG_DON		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_KAG_NET		: Rifle_556 {};
+	class ACWP_M4A5_105_troy_KAG_TAN		: Rifle_556 {};
 
 	class MachineGun_556;
 	class CUP_lmg_L110A1_railed : MachineGun_556 {};

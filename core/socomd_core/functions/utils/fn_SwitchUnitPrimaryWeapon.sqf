@@ -55,6 +55,7 @@ _unitLoadout set [0, _primaryLoadout];
 [_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 
 //Give Magazines
+_loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 if(count _loadoutMagazines > 0) then  {
     {
@@ -68,7 +69,6 @@ if(count _loadoutMagazines > 0) then  {
 };
 
 // commandGrenades
-_loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];
 if (_loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadoutId ==  "SOCOMD_Leader") then {
     commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
     if(count commandGrenades > 0) then  {

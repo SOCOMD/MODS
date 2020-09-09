@@ -24,6 +24,7 @@ class CfgFunctions {
 			class SaveLoadoutPrefs {};
 			class LoadLoadoutPrefs {};
 			class UpdateArsenalContent {};
+			class RefreshInsignia {};
 		};
 
 		class Actions {
