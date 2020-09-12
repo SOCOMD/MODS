@@ -1,5 +1,6 @@
 class AU_03_780000_v1;
 class SOCOMD_BERET : AU_03_780000_v1 {
+	rgoc_canAcceptNVG = 0;
 	author = AUTHOR_STR;
 	scope = public;
 	displayName = "SOCOMD Beret";
