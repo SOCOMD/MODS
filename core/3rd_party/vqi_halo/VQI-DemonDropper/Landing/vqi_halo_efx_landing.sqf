@@ -16,6 +16,9 @@ resetCamShake;
 
 // Landing EFX
 if (true) then {	
+	player setVariable ["haloReady", false];
+	player setVariable ["haloLanded", true];
+
 	
 	playSound "grunt_equip";
 
@@ -54,9 +57,6 @@ if (!isNil "CARGO_HALOCRATE") then { CARGO_HALOCRATE setVelocity [0, 0, -1]; };
 if (isServer) then {
 	// if (VQI_AIRCRAFT_DEL == 1) then { deleteVehicle VQI_HALO_JUMPCRAFT; };
 };
-
-player setVariable ["haloReady", false];
-player setVariable ["haloLanded", true];
 
 /////////
 /* NOTES:
