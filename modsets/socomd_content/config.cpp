@@ -104,6 +104,7 @@ class asdg_FrontSideRail: asdg_SlotInfo
 	};
 };
 
+#include "configs\bettir_config.hpp"
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgMagazines.hpp"
 #include "configs\CfgMagazineWells.hpp"
