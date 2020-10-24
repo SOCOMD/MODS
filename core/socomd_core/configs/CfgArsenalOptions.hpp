@@ -63,6 +63,10 @@
 	"ACWP_M4A5_105_troy_KAG_NET",\
 	"ACWP_M4A5_105_troy_KAG_TAN"
 
+#define SOLS_RIFLES \
+	"SMA_Steyr_AUG_F",\
+	"CUP_smg_MP5A5"
+
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
     "SOG_BAG_med_MC",\
@@ -159,7 +163,15 @@
 	"ADFU_H_OpsCore_02_MC",\
 	"ADFU_H_OpsCore_02_TAN",\
 	"SOCOMD_Aus_Boonie_AMC",\
-	"SOCOMD_Aus_Boonie"
+	"SOCOMD_Aus_Boonie",\
+	"SOCOMD_NVG",\
+	"SOCOMD_NVG_GR",\
+	"SOCOMD_NVG_GPNVG_WP_black",\
+	"SOCOMD_NVG_GPNVG_GR_black"
+
+#define SOLS_HELMS \
+	"SOCOMD_Crew_helmet",\
+	"SOCOMD_Pilot_helmet"
 
 #define MC_UNIFORMS \
 	"SOCOMD_Uniform_SleevesDown",\
@@ -400,21 +412,23 @@ class CfgArsenalOptions{
 	};
 	class SOCOMD_Pilot{
 		weapons[]={
-			HANDGUNS
+			HANDGUNS,
+			SOLS_RIFLES
 		};
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
-			
 		};
 		bags[]={
 			BAGS,
-			BACKPACK_COMMS
+			BACKPACK_COMMS,
+			SOLS_HELMS
 		};
 	};
 	class SOCOMD_Crewman{
 		weapons[]={
-			HANDGUNS
+			HANDGUNS,
+			SOLS_RIFLES
 		};
 		vests[]={
 			TWO_COMMS_RIGS,

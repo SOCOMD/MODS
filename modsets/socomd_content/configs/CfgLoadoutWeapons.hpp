@@ -21,7 +21,7 @@ class CfgLoadoutWeapons {
 	class ACWP_HK416D_105_AFG_don : Rifle_556 {};
 	class ACWP_HK416D_105_CTR_don : Rifle_556 {};
 	class ACWP_HK416D_105_CTR_AFG_don : Rifle_556 {};
-	
+	class SMA_Steyr_AUG_F : Rifle_556 {};
 	class RifleGL_556;
 	class SMA_M4_GL_SM : RifleGL_556 {};
 	class SMA_MK18BLK_GL_SM : RifleGL_556 {};
@@ -357,6 +357,12 @@ class CfgLoadoutWeapons {
 		};
 		magazines[] = {
 			{"10Rnd_300WM_Magazine", 5}
+		};
+	};
+	class CUP_smg_MP5SD6;
+	class CUP_smg_MP5A5 : CUP_smg_MP5SD6{
+		magazines[] = {
+			{"CUP_30Rnd_9x19_MP5", 8}
 		};
 	};
 };
