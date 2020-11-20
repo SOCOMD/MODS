@@ -10,10 +10,6 @@ class CfgWeapons {
 	class ItemCore;
 	class CBA_MiscItem;
 	class CBA_MiscItem_ItemInfo;
-	class ItemcTabHCam: ItemCore {
-		delete simulation;
-		delete detectRange;
-	};
 
 	//Item Defines
 	#include "weapons\base\primary.hpp"
