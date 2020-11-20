@@ -41,7 +41,7 @@ force force ace_captives_requireSurrenderAi = false;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys']";
+force force ace_common_checkPBOsWhitelist = "['ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -489,6 +489,61 @@ force force cba_optics_usePipOptics = true;
 
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = false;
+
+/ DUI - Squad Radar - Main
+diwako_dui_ace_hide_interaction = true;
+diwako_dui_colors = "standard";
+diwako_dui_font = "RobotoCondensed";
+diwako_dui_icon_style = "standard";
+diwako_dui_main_hide_ui_by_default = false;
+diwako_dui_main_squadBlue = [0,0,1,1];
+diwako_dui_main_squadGreen = [0,1,0,1];
+diwako_dui_main_squadMain = [1,1,1,1];
+diwako_dui_main_squadRed = [1,0,0,1];
+diwako_dui_main_squadYellow = [1,1,0,1];
+
+// DUI - Squad Radar - Radar
+force force diwako_dui_compass_hide_alone_group = false;
+force force diwako_dui_compass_hide_blip_alone_group = false;
+diwako_dui_compass_icon_scale = 1;
+diwako_dui_compass_opacity = 1;
+force force diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+force force diwako_dui_compassRange = 35;
+diwako_dui_compassRefreshrate = 0;
+diwako_dui_dir_showMildot = false;
+diwako_dui_dir_size = 1.25;
+diwako_dui_distanceWarning = 3;
+force force diwako_dui_enable_compass = true;
+force force diwako_dui_enable_compass_dir = 1;
+force force diwako_dui_enable_occlusion = true;
+force force diwako_dui_enable_occlusion_cone = 178.977;
+diwako_dui_hudScaling = 1.33333;
+diwako_dui_namelist = false;
+diwako_dui_namelist_bg = 0;
+diwako_dui_namelist_only_buddy_icon = false;
+diwako_dui_namelist_size = 1;
+diwako_dui_namelist_text_shadow = 2;
+diwako_dui_namelist_width = 215;
+diwako_dui_radar_ace_finger = true;
+diwako_dui_radar_compassRangeCrew = 500;
+force force diwako_dui_radar_group_by_vehicle = true;
+diwako_dui_radar_icon_scale_crew = 6;
+force force diwako_dui_radar_leadingZeroes = true;
+diwako_dui_radar_namelist_hideWhenLeader = false;
+diwako_dui_radar_namelist_vertical_spacing = 0.75;
+force force diwako_dui_radar_occlusion_fade_time = 10;
+diwako_dui_radar_pointer_color = [1,0.5,0,1];
+diwako_dui_radar_pointer_style = "standard";
+force force diwako_dui_radar_show_cardinal_points = true;
+force force diwako_dui_radar_showSpeaking = true;
+force force diwako_dui_radar_showSpeaking_radioOnly = true;
+force force diwako_dui_radar_showSpeaking_replaceIcon = false;
+force force diwako_dui_radar_sortType = "fireteam";
+force force diwako_dui_radar_sqlFirst = true;
+diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
+force diwako_dui_radar_vehicleCompassEnabled = false;
+diwako_dui_reset_ui_pos = false;
+diwako_dui_use_layout_editor = false;
 
 // NIArms
 force force niarms_magSwitch = true;
