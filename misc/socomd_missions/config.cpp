@@ -149,13 +149,13 @@ class CfgMissions {
 	ADD(LIVONIAFOB_HC,SOCOMD [HC] Livonia FOB,fobs_hc\Livonia_FOB.Enoch)
 	ADD(VIROLAHTIFOB_HC,SOCOMD [HC] Virolahti FOB,fobs_hc\Virolahti_FOB.vt7)
 	ADD(MOZARTFOB_HC,SOCOMD [HC] Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
-	ADD(TRIAFOB_HC,SOCOMD Tria FOB,fobs_hc\Tria_FOB.jns_tria)
-	ADD(FAPAVOFOB_HC,SOCOMD Fapavo FOB,fobs_hc\Fapavo_Demise_FOB.fapovo)
-	ADD(FAPAVOLHD_HC,SOCOMD Fapavo LHD (HMAS Canberra),fobs_hc\Fapavo_Demise_FOB.fapovo)
-	ADD(NZWFOB_HC,SOCOMD NZiwasogo FOB,fobs_hc\NZiwasogo_Trigger_FOB.pja305)
-	ADD(LAGHISOLAFOB_HC,SOCOMD Laghisola LHD (HMAS Canberra),fobs_hc\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
-	ADD(SBTFOB_HC,SOCOMD Song Bin Tanh FOB,fobs_hc\SBT_FOB.pja312)
-	ADD(DENILANDFOB_HC,SOCOMD Deniland FOB,fobs\Deniland_FOB_Krusty.Deniland)
+	ADD(TRIAFOB_HC,SOCOMD [HC] Tria FOB,fobs_hc\Tria_FOB.jns_tria)
+	ADD(FAPAVOFOB_HC,SOCOMD [HC] Fapavo FOB,fobs_hc\Fapavo_Demise_FOB.fapovo)
+	ADD(FAPAVOLHD_HC,SOCOMD [HC] Fapavo LHD (HMAS Canberra),fobs_hc\Fapavo_Demise_FOB.fapovo)
+	ADD(NZWFOB_HC,SOCOMD [HC] NZiwasogo FOB,fobs_hc\NZiwasogo_Trigger_FOB.pja305)
+	ADD(LAGHISOLAFOB_HC,SOCOMD [HC] Laghisola LHD (HMAS Canberra),fobs_hc\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
+	ADD(SBTFOB_HC,SOCOMD [HC] Song Bin Tanh FOB,fobs_hc\SBT_FOB.pja312)
+	ADD(DENILANDFOB_HC,SOCOMD [HC] Deniland FOB,fobs\Deniland_FOB_Krusty.Deniland)
 
 	};
 };
