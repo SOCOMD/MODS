@@ -2,7 +2,7 @@ class CfgFunctions {
 	class SOCOMD {
 		class Zeus {
 			file = "\socomd_zeus\functions\zeus";
-			class ZeusInit { postInit = 1; };
+			class ZeusInit {};
 			class ZeusInitLocal {};
 			class ZeusAddObject {};
 			class ZeusAddObjectLocal {};
@@ -61,4 +61,11 @@ class CfgFunctions {
 			};
 		};
 	};
+};
+class Extended_InitPost_EventHandlers {
+    class SOCOMD_Homestead {
+        class My_car_initpost_eh {
+            init = "call SOCOMD_fnc_ZeusInitLocal;";
+        };
+    };
 };
