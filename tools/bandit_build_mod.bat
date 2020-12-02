@@ -1,8 +1,8 @@
 :: The build tool crashes my pc for some reason...
 set projectDir=A:\J4\ModsClone 
-set modOutput=A:\SOCOMD Mods\J4 Testing\
-set modOutput_core=A:\SOCOMD Mods\J4 Testing\
-set modOutput_content=A:\SOCOMD Mods\J4 Testing\
+set modOutput=..\local testing
+set modOutput_core=..\local testing
+set modOutput_content=..\local testing
 set buldParam=  -P -U -N
 cd A:\J4\ModsClone 
 ::SOCOMD Core
