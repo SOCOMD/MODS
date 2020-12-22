@@ -254,6 +254,13 @@ class CfgMagazines {
         displayName = "4x DAGR [ACE]";
     };
 
+    class CUP_7Rnd_Rocket_FFAR_M;
+    class CUP_PylonPod_7Rnd_Rocket_FFAR_M : CUP_7Rnd_Rocket_FFAR_M {
+        mass=250;
+        hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
+        displayName = "7x Hyrda [CUP]";
+    };
+
     class FakeMagazine_MELB;
     class Pylon_HellfireLauncher_MELB : FakeMagazine_MELB {
         hardpoints[] = {""};
