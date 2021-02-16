@@ -129,6 +129,15 @@ class CfgMagazines {
         };
         mass = 150;
     };
+
+    class CUP_7Rnd_Rocket_FFAR_M;
+    class CUP_PylonPod_7Rnd_Rocket_FFAR_M : CUP_7Rnd_Rocket_FFAR_M {
+        hardpoints[] = {
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+        mass = 250;
+    };
     
     // disable MELB Pylon shit
     /*

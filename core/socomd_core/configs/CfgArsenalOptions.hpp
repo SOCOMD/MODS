@@ -94,7 +94,8 @@
     "CUP_lmg_Mk48_nohg_tan",\
     "CUP_lmg_Mk48_nohg_wdl",\
 	"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",\
-	"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer"
+	"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer",\
+	"SOCOMD_mag58"
 
 #define MARKSMAN \
     "SPARTAN_EBR_black_F",\
@@ -144,10 +145,16 @@
 	"VSM_Bowman",\
 	"VSM_Bowman_cap_Black",\
 	"VSM_Bowman_cap_Green",\
-	"VSM_Bowman_cap_Tan",\
+	"CUP_H_PMC_Cap_PRR_Tan",\
 	"ADFU_H_Airframe_02_tan",\
 	"ADFU_H_Airframe_Cover_02_MC",\
+	"ADFU_H_Airframe_Cover_11_MC",\
+	"ADFU_H_Airframe_Cover_10_MC",\
+	"ADFU_H_Airframe_Cover_03_MC",\
 	"ADFU_H_Airframe_02_AMCU",\
+	"ADFU_H_Airframe_03_AMCU",\
+	"ADFU_H_Airframe_10_AMCU",\
+	"ADFU_H_Airframe_11_AMCU",\
 	"H_Watchcap_blk",\
 	"H_Watchcap_cbr",\
 	"CUP_H_RUS_Bandana_HS",\
@@ -168,7 +175,20 @@
 	"SOCOMD_NVG",\
 	"SOCOMD_NVG_GR",\
 	"SOCOMD_NVG_GPNVG_WP_black",\
-	"SOCOMD_NVG_GPNVG_GR_black"
+	"SOCOMD_NVG_GPNVG_GR_black",\
+	"CUP_H_PMC_Cap_Back_Tan",\
+	"CUP_H_PMC_Cap_Back_EP_Tan",\
+	"CUP_H_PMC_Cap_Back_PRR_Tan",\
+	"CFP_75th_Beanie_Blk2",\
+	"CFP_75th_Beanie_Khaki2",\
+	"CFP_75th_Beanie_Olv2",\
+	"CFP_75th_Beanie_Blk",\
+	"CFP_75th_Beanie_Olv",\
+	"CFP_75th_Beanie_Khaki",\
+	"CFP_BaseballCap_Multicam_DEF",\
+	"CFP_BaseballCap_Multicam_DEF_Back",\
+	"CFP_BaseballCap_Multicam_Back",\
+
 
 #define SOLS_HELMS \
 	"SOCOMD_Crew_helmet",\

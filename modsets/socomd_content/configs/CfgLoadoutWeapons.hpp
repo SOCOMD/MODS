@@ -88,9 +88,28 @@ class CfgLoadoutWeapons {
 	class ACWP_M4A5_105_troy_KAG_NET		: Rifle_556 {};
 	class ACWP_M4A5_105_troy_KAG_TAN		: Rifle_556 {};
 
-	class MachineGun_556;
+	class MachineGun_556 {
+		loadoutWhitelist[] = {
+			"SOCOMD_MachineGunner"
+		};
+
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer", 5}
+		};
+	};
 	class CUP_lmg_L110A1_railed : MachineGun_556 {};
-	class CUP_lmg_minimi_railed	: MachineGun_556 {};
+	
+
+	class MachineGun_556_extra {
+		loadoutWhitelist[] = {
+			"SOCOMD_MachineGunner"
+		};
+
+		magazines[] = {
+			{"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer", 6}
+		};
+	};
+	class CUP_lmg_minimi_railed	: MachineGun_556_extra {};
 
 	
 	class Rifle_65;
@@ -99,25 +118,29 @@ class CfgLoadoutWeapons {
 	class MachineGun_762;
 	class CUP_lmg_Mk48_nohg : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 6}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_des : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 6}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_tan : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 6}
 		};
 	};
 	class CUP_lmg_Mk48_nohg_wdl : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 4}
+			{"SOCOMD_Item_Magazine_762x51_100Rnd_Tracer", 6}
 		};
 	};
-
+	class SOCOMD_mag58 : MachineGun_762 {
+		magazines[] = {
+			{"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4},
+		};
+	};
 	class Rifle_556_Marksman;
 	class SMA_HK416CUSTOMvfgB : Rifle_556_Marksman {
 		loadoutWhitelist[] = {

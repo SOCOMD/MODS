@@ -10,6 +10,7 @@ class ACWP_18Rnd_9x21_Mag_USP;
 class CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M;
 class CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M {
     count = 100;
+    mass = 40;
 };
 
 //HLC

@@ -84,7 +84,7 @@ class SOCOMD_Marksman{
 	binocular		= "ACE_Yardage450";
 };
 class SOCOMD_Recon {
-	primary		    = "Recon_338";
+	primary		    = "bnae_trg42_camo2_virtual";
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
