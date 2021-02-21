@@ -7,6 +7,7 @@ class CfgWeapons {
 		class WeaponSlotsInfo;
     	class GunParticles;
 	};
+	class Default;
 	class ItemCore;
 	class CBA_MiscItem;
 	class CBA_MiscItem_ItemInfo;
@@ -19,6 +20,8 @@ class CfgWeapons {
 	#include "weapons\base\uniform.hpp"
 	#include "weapons\base\vest.hpp"
 	#include "weapons\base\items.hpp"
+	#include "weapons\base\GrenadeOptions.hpp"
+	#include "weapons\base\ExtrasOptions.hpp"
 	
 	//Item SOCOMD Defines
 	#include "weapons\override\socomd_men_items.hpp"

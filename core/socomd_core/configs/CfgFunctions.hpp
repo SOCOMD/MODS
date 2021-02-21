@@ -25,6 +25,10 @@ class CfgFunctions {
 			class LoadLoadoutPrefs {};
 			class UpdateArsenalContent {};
 			class RefreshInsignia {};
+			class addPrimaryAmmo {};
+			class addSecondaryAmmo {};
+			class addHandgunAmmo {};
+			class removeAmmo {};
 		};
 
 		class Actions {
