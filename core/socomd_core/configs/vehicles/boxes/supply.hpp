@@ -269,10 +269,16 @@ class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(ACE_Vector, 4)
 	};
 
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	// };
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticMortarCarry, 1)
+		TRANSPORT_WEAPON(ace_csw_carryMortarBaseplate, 1)
 	};
+};
 };
 
 class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
@@ -280,25 +286,43 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] HMG";
 
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_HMG_01_high_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(ace_csw_100Rnd_127x99_mag, 8)
+	}
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticHMGCarry, 2)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
 	};
+
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_HMG_01_high_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	// };
 };
 
 class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] AGL";
-
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_GMG_01_high_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
-		TRANSPORT_BACKPACK(B_GMG_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(ace_csw_40Rnd_20mm_G_belt, 8)
+	}
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticGMGCarry, 2)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
 	};
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_GMG_01_high_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+	// 	TRANSPORT_BACKPACK(B_GMG_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	// };
 };
 
 
