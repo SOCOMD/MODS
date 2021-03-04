@@ -652,12 +652,15 @@ class SOCOMD_Pilot {
 	class Vest {
 		type = ITEM_VEST_PILOT;
 		class Inventory	{
-			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
+			LOADOUT_ITEM(ACE_Chemlight_HiRed, 2)
+			LOADOUT_ITEM(ACE_M84, 2)
+			LOADOUT_ITEM(SmokeShell, 5)
+			LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
-			LOADOUT_ITEM(ACRE_PRC152, 1)
+			LOADOUT_ITEM(ACRE_PRC152, 2)
 		};
 	};
-
 	class Backpack {
 		type = ITEM_BACKPACK_PILOT;
 		class Inventory	{
