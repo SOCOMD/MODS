@@ -236,6 +236,7 @@ class SOCOMD_Rifleman {
 		type = ITEM_BACKPACK_RIFLEMAN;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
@@ -279,6 +280,7 @@ class SOCOMD_Breacher {
 			LOADOUT_ITEM(ACE_Clacker, 1)
 			LOADOUT_ITEM(ACE_M84, 3)
 			LOADOUT_ITEM(ACE_CTS9, 3)
+			LOADOUT_ITEM(ACE_EntrenchingTool, 1)
 		};
 	};
 };
