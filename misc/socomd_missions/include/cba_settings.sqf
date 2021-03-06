@@ -2,7 +2,7 @@
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_enabled = false;
+force force ace_advanced_ballistics_enabled = true;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -23,13 +23,13 @@ force force ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
 // ACE Arsenal
-force force ace_arsenal_allowDefaultLoadouts = true;
-force force ace_arsenal_allowSharedLoadouts = true;
-ace_arsenal_camInverted = false;
-force force ace_arsenal_enableIdentityTabs = true;
-ace_arsenal_enableModIcons = true;
-ace_arsenal_EnableRPTLog = false;
-ace_arsenal_fontHeight = 4.5;
+force force ace_socomd_arsenal_allowDefaultLoadouts = true;
+force force ace_socomd_arsenal_allowSharedLoadouts = true;
+ace_socomd_arsenal_camInverted = false;
+force force ace_socomd_arsenal_enableIdentityTabs = true;
+ace_socomd_arsenal_enableModIcons = true;
+ace_socomd_arsenal_EnableRPTLog = false;
+ace_socomd_arsenal_fontHeight = 4.5;
 
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
@@ -41,7 +41,7 @@ force force ace_captives_requireSurrenderAi = false;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys']";
+force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -74,7 +74,7 @@ ace_goggles_showInThirdPerson = false;
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
-force force ace_hearing_disableEarRinging = false;
+force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 1.0;
 force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
@@ -191,7 +191,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1.2;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 4.0;
+force force ace_medical_playerDamageThreshold = 3.0;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -256,7 +256,7 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 1.0;
+force force ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
 force force ace_nightvision_effectScaling = 1.0;
 force force ace_nightvision_fogScaling = 0.1;
@@ -284,7 +284,7 @@ force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = false;
 force force ace_pylons_requireEngineer = false;
 force force ace_pylons_requireToolkit = false;
-force force ace_pylons_searchDistance = 25;
+force force ace_pylons_searchDistance = 40;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
@@ -471,18 +471,11 @@ Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = true;
+force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = true;
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1;
-force force acre_sys_core_revealToAI = false;
-acre_sys_core_spectatorVolume = 1;
+force force acre_sys_core_interference = false;
+force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_core_ts3ChannelName = "";
-force force acre_sys_core_ts3ChannelPassword = "";
-acre_sys_core_ts3ChannelSwitch = true;
-acre_sys_core_unmuteClients = true;
 force force acre_sys_signal_signalModel = 0;
 
 // CBA UI
@@ -496,6 +489,61 @@ force force cba_optics_usePipOptics = true;
 
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = false;
+
+/ DUI - Squad Radar - Main
+diwako_dui_ace_hide_interaction = true;
+diwako_dui_colors = "standard";
+diwako_dui_font = "RobotoCondensed";
+diwako_dui_icon_style = "standard";
+diwako_dui_main_hide_ui_by_default = false;
+diwako_dui_main_squadBlue = [0,0,1,1];
+diwako_dui_main_squadGreen = [0,1,0,1];
+diwako_dui_main_squadMain = [1,1,1,1];
+diwako_dui_main_squadRed = [1,0,0,1];
+diwako_dui_main_squadYellow = [1,1,0,1];
+
+// DUI - Squad Radar - Radar
+force force diwako_dui_compass_hide_alone_group = false;
+force force diwako_dui_compass_hide_blip_alone_group = false;
+diwako_dui_compass_icon_scale = 1;
+diwako_dui_compass_opacity = 1;
+force force diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+force force diwako_dui_compassRange = 35;
+diwako_dui_compassRefreshrate = 0;
+diwako_dui_dir_showMildot = false;
+diwako_dui_dir_size = 1.25;
+diwako_dui_distanceWarning = 3;
+force force diwako_dui_enable_compass = true;
+force force diwako_dui_enable_compass_dir = 1;
+force force diwako_dui_enable_occlusion = true;
+force force diwako_dui_enable_occlusion_cone = 178.977;
+diwako_dui_hudScaling = 1.33333;
+diwako_dui_namelist = false;
+diwako_dui_namelist_bg = 0;
+diwako_dui_namelist_only_buddy_icon = false;
+diwako_dui_namelist_size = 1;
+diwako_dui_namelist_text_shadow = 2;
+diwako_dui_namelist_width = 215;
+diwako_dui_radar_ace_finger = true;
+diwako_dui_radar_compassRangeCrew = 500;
+force force diwako_dui_radar_group_by_vehicle = true;
+diwako_dui_radar_icon_scale_crew = 6;
+force force diwako_dui_radar_leadingZeroes = true;
+diwako_dui_radar_namelist_hideWhenLeader = false;
+diwako_dui_radar_namelist_vertical_spacing = 0.75;
+force force diwako_dui_radar_occlusion_fade_time = 10;
+diwako_dui_radar_pointer_color = [1,0.5,0,1];
+diwako_dui_radar_pointer_style = "standard";
+force force diwako_dui_radar_show_cardinal_points = true;
+force force diwako_dui_radar_showSpeaking = true;
+force force diwako_dui_radar_showSpeaking_radioOnly = true;
+force force diwako_dui_radar_showSpeaking_replaceIcon = false;
+force force diwako_dui_radar_sortType = "fireteam";
+force force diwako_dui_radar_sqlFirst = true;
+diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
+force diwako_dui_radar_vehicleCompassEnabled = false;
+diwako_dui_reset_ui_pos = false;
+diwako_dui_use_layout_editor = false;
 
 // NIArms
 force force niarms_magSwitch = true;
@@ -552,7 +600,7 @@ zen_common_autoAddObjects = false;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
-force force zen_context_menu_enabled = 0;
+force force zen_context_menu_enabled = 2;
 zen_editor_declutterEmptyTree = true;
 zen_editor_disableLiveSearch = false;
 zen_editor_moveDisplayToEdge = true;

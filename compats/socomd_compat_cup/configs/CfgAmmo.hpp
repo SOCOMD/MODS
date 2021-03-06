@@ -67,12 +67,23 @@ class CfgAmmo {
 		};
 	};
 
+	// littlebird ammo
 	class CUP_B_762x51_Tracer_Red;
 	class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
-		hit = 12.0;
-		indirectHit = 4.0;
-		indirectHitRange = 2.0;
+		hit=2.5;
+		indirectHit=1.75;
+		indirectHitRange=2;
+	};
+	#include "ammo\CUP_Sh_PG15V.hpp"
+	// BTR and BDRM primary
+	class CUP_B_145x115_AP_Green_Tracer : BulletBase {
+		cost = 1; // was 22
+	};
+
+	class CUP_M_AIM_9L_Sidewinder_AA : MissileBase {
+		//cmImmunity = 0.8;
+		//cost = 1000;
+		cmImmunity = 0.95;
+		cost = 100;
 	};
 };
-
-#include "ammo\CUP_Sh_PG15V.hpp"

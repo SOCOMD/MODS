@@ -39,12 +39,13 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
+class SOCOMD_Crate_Fuel : CargoNet_01_box_F {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[CRATE] Fuel";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
+	model = "\plp_containers\plp_cts_FuelCrateOlive.p3d";
 	icon = "iconObject_1x1";
 
 	ace_dragging_canDrag = 1;
@@ -52,7 +53,7 @@ class SOCOMD_Crate_Fuel : plp_cts_FuelCrateOlive {
 	ace_dragging_dragDirection = 0;
 	ace_dragging_dragPosition[] = {0,1.5,0};
 	ace_refuel_flowRate = 1;
-	ace_refuel_fuelCargo = 300;
+	ace_refuel_fuelCargo = 1500;
 
 	weight = 20;
 };
@@ -65,7 +66,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 	displayName = "[CRATE] Hasty";
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
-
+	
 	accuracy = 1000;
 	maximumLoad = 99999;
 	weight = 20;
@@ -83,8 +84,10 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 48)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 8)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd, 24)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 12)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 4)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 32)
 		TRANSPORT_MAGAZINE(SmokeShell, 24)
 		TRANSPORT_MAGAZINE(HandGrenade, 12)
@@ -154,9 +157,11 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 24)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 12)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 12)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd, 24)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_65x39_30Rnd_Tracer, 12)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_150Rnd_Tracer, 4)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 10)
 		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 16)
 		TRANSPORT_MAGAZINE(SmokeShell, 12)
 		TRANSPORT_MAGAZINE(HandGrenade, 6)
@@ -264,9 +269,14 @@ class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(ACE_Vector, 4)
 	};
 
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_Mortar_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
+	// };
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticMortarCarry, 1)
+		TRANSPORT_WEAPON(ace_csw_carryMortarBaseplate, 1)
 	};
 };
 
@@ -275,25 +285,43 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] HMG";
 
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_HMG_01_high_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(ace_csw_100Rnd_127x99_mag, 8)
+	}
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticHMGCarry, 2)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
 	};
+
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_HMG_01_high_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	// };
 };
 
 class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
 	scope = public;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] AGL";
-
-	class TransportBackpacks {
-		TRANSPORT_BACKPACK(B_GMG_01_high_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
-		TRANSPORT_BACKPACK(B_GMG_01_weapon_F, 1)
-		TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	class TransportMagazines {
+		TRANSPORT_MAGAZINE(ace_csw_40Rnd_20mm_G_belt, 8)
+	}
+	class TransportWeapons {
+		TRANSPORT_WEAPON(ace_csw_staticGMGCarry, 2)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
+		TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
 	};
+	// legacy ace
+	// class TransportBackpacks {
+	// 	TRANSPORT_BACKPACK(B_GMG_01_high_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_high_F, 1)
+	// 	TRANSPORT_BACKPACK(B_GMG_01_weapon_F, 1)
+	// 	TRANSPORT_BACKPACK(B_HMG_01_support_F, 1)
+	// };
 };
 
 
@@ -308,5 +336,28 @@ class SOCOMD_Supply_Javelin : SOCOMD_Supply_Empty {
 
 	class TransportWeapons {
 		TRANSPORT_WEAPON(CUP_launch_Javelin, 1)
+	};
+};
+
+class SOCOMD_Recon_Supply : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] Recon";
+
+	class TransportItems {
+		TRANSPORT_ITEM(ACE_wirecutter, 4)
+		TRANSPORT_ITEM(ACE_EntrenchingTool, 4)
+		TRANSPORT_ITEM(ACE_DefusalKit, 4)
+		TRANSPORT_ITEM(ACE_Clacker, 4)
+		TRANSPORT_ITEM(ACE_M26_Clacker, 4)
+		TRANSPORT_ITEM(ACE_bodyBag, 4)
+		TRANSPORT_ITEM(ACE_CableTie, 12)
+		TRANSPORT_ITEM(DemoCharge_Remote_Mag, 8)
+		TRANSPORT_ITEM(ACE_FlareTripMine_Mag, 8)
+		TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 4)
+		TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 8)
+		TRANSPORT_ITEM(SOCOMD_tent_item,4)
+		TRANSPORT_ITEM(SOCOMD_tent_item_des,4)
+		TRANSPORT_ITEM(ACRE_PRC117F,4)		
 	};
 };

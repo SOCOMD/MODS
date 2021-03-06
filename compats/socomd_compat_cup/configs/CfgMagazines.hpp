@@ -17,8 +17,17 @@ class CfgMagazines {
        // model = "melb\proxies\pylon_m134_r";
 		hardpoints[] = {"Right_MinigunMount_MELB"};
     };
+    class CUP_14Rnd_FFAR_M;
+    class CUP_PylonPod_7Rnd_Rocket_FFAR_M : CUP_14Rnd_FFAR_M {
+        mass=100;
+        hardpoints[] += {
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+    }
     class CUP_19Rnd_CRV7_FAT_M;
     class CUP_PylonPod_19Rnd_CRV7_FAT_M : CUP_19Rnd_CRV7_FAT_M {
+        mass=250;
         hardpoints[] = {
             "CUP_SUPER_PYLON",
             "DAR",
@@ -26,12 +35,12 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "CUP_NATO_HELO_ROCKETS",
             "CUP_19Rnd_CRV7_FAT",
-            "RightMount_MELB",
-            "LeftMount_MELB"
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
     class 6Rnd_ACE_Hellfire_AGM114K;
     class PylonRack_1Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=100;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -41,10 +50,12 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
             "RightMount_MELB",
-            "LeftMount_MELB"
+            "LeftMount_MELB",
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
     class PylonRack_1Rnd_ACE_Hellfire_AGM114N : PylonRack_1Rnd_ACE_Hellfire_AGM114K {
+        mass=100;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -54,10 +65,80 @@ class CfgMagazines {
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
             "RightMount_MELB",
-            "LeftMount_MELB"
+            "LeftMount_MELB",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    
+    class PylonRack_3Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=300;
+        hardpoints[] = {
+            "B_MISSILE_PYLON",
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    class PylonRack_3Rnd_ACE_Hellfire_AGM114N : PylonRack_3Rnd_ACE_Hellfire_AGM114K {
+        mass=300;
+        hardpoints[] = {
+            "B_MISSILE_PYLON",
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };       
+    };
+    class PylonRack_4Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
+        mass=400;
+        hardpoints[] = {
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_HELLFIRE_RACK",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
         };
     };
 
+    class PylonRack_4Rnd_ACE_Hellfire_AGM114N : PylonRack_4Rnd_ACE_Hellfire_AGM114K {
+        mass=400;
+        hardpoints[] = {
+            "UNI_SCALPEL",
+            "CUP_NATO_HELO_LARGE",
+            "RHS_HP_HELLFIRE_RACK",
+            "RHS_HP_LONGBOW_RACK",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+
+    class magazine_Missile_HARM_x1;
+    class PylonRack_Missile_HARM_x1 : magazine_Missile_HARM_x1 {
+        mass=150;
+        hardpoints[] = {
+            "B_HARM_RAIL",
+            "I_HARM_RAIL",
+            "SOCOMD_HURRICANE_PYLON"
+        };
+    };
+    
+    class CUP_1Rnd_AIM_9L_Sidewinder_External_M;
+    class CUP_PylonPod_1Rnd_AIM_9L_Sidewinder_M : CUP_1Rnd_AIM_9L_Sidewinder_External_M {
+        // ammo = "CUP_M_AIM_9L_Sidewinder_AA";
+        hardpoints[] = {
+            "CUP_SUPER_PYLON",
+            "CUP_NATO_HELO_SMALL",
+            "CUP_NATO_HELO_LARGE",
+            "CUP_NATO_HELO_WINGTIP",
+            "CUP_1Rnd_AIM_9L",
+            "SOCOMD_HURRICANE_PYLON",
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+        mass = 50;
+    };
+
+    
     // disable MELB Pylon shit
     /*
     class VehicleMagazine;
@@ -168,6 +249,7 @@ class CfgMagazines {
 
     class DAGR_Magazine_MELB;
     class Pylon_DAGR_MELB : DAGR_Magazine_MELB {
+        mass=200;
         hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
         displayName = "4x DAGR [ACE]";
     };
@@ -189,7 +271,7 @@ class CfgMagazines {
 		count=250;
 		ammo="CUP_B_762x51_Tracer_Red";
 		descriptionShort="Mag 58 200rnd Box 7.62x51";
-		mass=70;
+		mass=22;
 		tracersEvery=5;
     };
 
@@ -221,5 +303,11 @@ class CfgMagazines {
 		{
 			"\cup\weapons\cup_weapons_ak\data\rpk_magazine_drum_co.paa"
 		};
-	}; 
+	};
+
+    // BTR-60PB
+    class CUP_500Rnd_TE2_Green_Tracer_145x115_KPVT_M : VehicleMagazine {
+        maxLeadSpeed = 400;
+        // ammo = "CUP_B_145x115_AP_Green_Tracer";
+    };
 };

@@ -40,6 +40,7 @@ class Tank_F : Tank {
     class Turrets : Turrets {
         class MainTurret;
     };
+    class Components;
 };
 
 // militia btr

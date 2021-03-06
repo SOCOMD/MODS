@@ -234,7 +234,7 @@ class CfgGroups {
 		};
 
 		class SOCOMD_Vympel {
-			name = "Spetsnaz VEGA Group (Vympel)"
+			name = "Spetsnaz VEGA Group (Vympel)";
 
 			class SOCOMD_Vympel_CMD_Groups {
 				name = "Infantry";
@@ -292,5 +292,36 @@ class CfgGroups {
 				};                     
 			};
 		};
-	 };
+
+		class SOCOMD_FSB {
+			name = "Spetsnaz ALFA Group (FSB)";
+
+			class SOCOMD_FSB_CMD_Groups {
+				name = "Infantry";
+				aliveCategory = "Infantry";
+
+				class SOCOMD_FSB_CMD_Group2 {
+					faction = FACTION_STR;
+					side = EAST;
+					name = "2 Man Group";
+					rarityGroup = 0.75;
+
+					DEFINE_UNIT(0,0,0,"SOCOMD_FSB_Leader", "SERGEANT")
+					DEFINE_UNIT(1,0,1,"SOCOMD_FSB_Breacher", "CORPORAL")
+				};
+
+				class SOCOMD_FSB_CMD_Group4 {
+					faction = FACTION_STR;
+					side = EAST;
+					name = "4 Man Group";
+					rarityGroup = 0.75;
+
+					DEFINE_UNIT(0,0,0,"SOCOMD_FSB_Leader", "SERGEANT")
+					DEFINE_UNIT(1,0,1,"SOCOMD_FSB_Breacher", "CORPORAL")
+					DEFINE_UNIT(2,0,2,"SOCOMD_FSB_Medic", "PRIVATE")
+					DEFINE_UNIT(5,1,1,"SOCOMD_FSB_Operator", "PRIVATE")
+				};
+			};
+		};
+	};
 };

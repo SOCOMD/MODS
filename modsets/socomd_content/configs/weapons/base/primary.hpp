@@ -2,84 +2,14 @@ class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {
 	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class acc_flashlight;
-class InventoryFlashLightItem_Base_F;
-class SMA_SFLIGHT_TOPM4: acc_flashlight {
-	scope=1;
-	dlc="SMA";
-	displayName="Surefire flash light";
-	picture="\SMA_PEQ15\data\UI\SFflashblk.paa";
-	model="SMA_PEQ15\sma_peqFlash_top_m4.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F
-	{
-		mass=4;
-		class FlashLight
-		{
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
-class S_WMLX: acc_flashlight {
-	scope=2;
-	dlc="Troy_4A5_Acc";
-	displayName="WMLX";
-	model="M4A5_Troy_Acc\mesh\wmlxdbal.p3d";
-	class ItemInfo: InventoryFlashLightItem_Base_F {
-		mass=4;
-		class FlashLight {
-			color[]={7000,7500,10000};
-			ambient[]={6,9,9};
-			intensity=2.5;
-			size=1;
-			innerAngle=20;
-			outerAngle=80;
-			coneFadeCoef=10;
-			position="light_dir";
-			direction="light";
-			useFlare=1;
-			flareSize=1.5;
-			flareMaxDistance="600.0f";
-			dayLight=1;
-			class Attenuation
-			{
-				start=0.5;
-				constant=0;
-				linear=0;
-				quadratic=1;
-				hardLimitStart=200;
-				hardLimitEnd=300;
-			};
-			scale[]={0};
-		};
-	};
-};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4afgSTOCK;
-class S_M4A5_base;
-class S_145_KAG_MAG;
+class ACWP_M4A5_base;
+class ACWP_M4A5_145_troy_base;
 class S_145_MOD_MAG_Camo;
+class S_145_MOD_MAG_AWM;
+class S_145_MOD_MAG_donaldson;
+class S_145_MOD_MAG_leafbrown;
 class CUP_sgun_M1014_Entry_vfg;
 class CUP_sgun_M1014_base: Rifle_Base_F {
 		modes[] = {"Single","Single_close","Single_far"};
@@ -123,7 +53,7 @@ class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {		/// WIP Retexturing
 /*
 class hlc_HK416_base : Rifle_Base_F {};
 class hlc_rifle_416D145 : hlc_HK416_base {};
-class S_M4A5_base : hlc_rifle_416D145 {
+class ACWP_M4A5_base : hlc_rifle_416D145 {
 	class WeaponSlotsInfo
 	{
 		class MuzzleSlot
@@ -170,29 +100,86 @@ class S_M4A5_base : hlc_rifle_416D145 {
 //Default
 class SMA_MK18MOEBLK_SM;
 class SMA_AUG_A3_F;
-class SMA_HK416CUSTOMCQBvfgB;
+class hlc_rifle_416D10;
 
 //RifleGL 556 - SMA_30Rnd_556x45_M855A1
 class SMA_M4_GL_SM; //Default
 class SMA_MK18BLK_GL_SM;
 class SMA_AUG_EGLM;
-class SMA_HK416GLCQB_B;
+class hlc_rifle_416D10_gl;
 
 //Tan
 class SMA_MK18MOETAN_SM;
 class SMA_AUG_A3_KRYPT_F;
-class SMA_HK416CUSTOMCQBvfg;
+class hlc_rifle_416D10_tan;
 class SMA_MK18TAN_GL_SM;
 class SMA_AUG_EGLM_tan;
-class SMA_HK416GLCQB;
+// defining retextures for Toadie's 416GL variants
+class hlc_rifle_416D10_tan_gl:hlc_rifle_416D10_gl{
+	displayName = "H&K HK416 D10 (Tan/GL)";
+	baseWeapon = "hlc_rifle_416D10_tan_gl";
+	rhs_grip1_change = "hlc_rifle_416D10_tan_gl";
+	rhs_grip2_change = "hlc_rifle_416D10_tan_gl";
+	rhs_grip3_change = "hlc_rifle_416D10_tan_gl";
+	class nia_magSwitch {
+		default = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_M = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_tan_gl";
+		hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_tan_gl";
+	};
+	hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
+	HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
+	hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo1_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
+};
 
 //OD
 class SMA_MK18MOEOD_SM;
 class SMA_AUG_A3_MCAM_F;
-class SMA_HK416CQB_vfg_ODPAINTED;
+class hlc_rifle_416D10_wdl;
 class SMA_MK18OD_GL_SM;
 class SMA_AUG_EGLM_Olive;
-class SMA_HK416GLCQB_ODP;
+// defining retextures for Toadie's 416GL variants
+class hlc_rifle_416D10_wdl_gl:hlc_rifle_416D10_gl{
+	displayName = "H&K HK416 D10 (Woodland/GL)";
+	baseWeapon = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip1_change = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip2_change = "hlc_rifle_416D10_wdl_gl";
+	rhs_grip3_change = "hlc_rifle_416D10_wdl_gl";
+	class nia_magSwitch {
+		default = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_M = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_wdl_gl";
+		hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_wdl_gl";
+	};
+	hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
+	HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
+	hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo2_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
+};
+// class ACWP_HK416_base;
+// class ACWP_HK416D_105_base:ACWP_HK416_base{
+	
+// 	class WeaponSlotsInfo  {
+// 		mass = 71.6;
+// 		class CowsSlot : asdg_OpticRail1913{};
+// 		class PointerSlot : asdg_FrontSideRail{};
+// 		class MuzzleSlot : asdg_MuzzleSlot_556{};
+// 		class UnderBarrelSlot : ACWP_troy_underslot{
+// 			compatibleItems[] = {
+// 			};
+// 		};
+// 	};
+// };
+// class ACWP_HK416D_105_AFG: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_don: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_AFG_don: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_tan: ACWP_HK416D_105_base{};
+// class ACWP_HK416D_105_AFG_tan: ACWP_HK416D_105_base{};
+
+class CUP_arifle_M16A4_GL;
 
 //Rifle 762 - 20Rnd_762x51_Mag
 class SMA_HK417_16in;
@@ -201,15 +188,15 @@ class CUP_srifle_M110 : Rifle_Base_F {
 	magazineWell[] = {"CBA_762x51_HK417"};
 	displayName = "SR-25";
 };
-class CUP_srifle_m110_kac_black: CUP_srifle_M110 {
-	displayName = "SR-25 Black";
+class srifle_DMR_06_camo_F;
+class ACWP_sr25: srifle_DMR_06_camo_F {
+	magazineWell[] = {"CBA_762x51_HK417"};
 };
-class CUP_srifle_m110_kac: CUP_srifle_M110 {
-	displayName = "SR-25";
-};
-class CUP_srifle_m110_kac_woodland: CUP_srifle_M110 {
-	displayName = "SR-25 Woodland";
-};
+class ACWP_sr25_camo: ACWP_sr25 {};
+class ACWP_sr25_ec: ACWP_sr25 {};
+class ACWP_sr25_ec_camo: ACWP_sr25 {};
+class ACWP_sr25_VFG: ACWP_sr25 {};
+class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {};
 
 class srifle_EBR_F;
 class SPARTAN_EBR_black_F : srifle_EBR_F {
@@ -223,15 +210,27 @@ class SPARTAN_EBR_snake_F : srifle_EBR_F { 		//Camo
 class CUP_lmg_minimipara;
 class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
 	displayName = "FN Minimi HS";
-	magazineWell[] = {"CBA_556x45_MINIMI"};
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
+	// ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 
+class CUP_lmg_L110A1;
+class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
+	displayName = "FN Minimi PARA";
+	magazineWell[] += {"CBA_556x45_MINIMI"};
+	ace_overheating_dispersion = 0.85; //Dispersion Factor (this will be scaled based on the barrel temp)
+	// ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-}
+	ace_overheating_mrbs = 2000 //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
+};
+
 class CUP_lmg_Mk48_nohg_des : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_tan : CUP_lmg_Mk48_nohg {};
 class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};
@@ -239,6 +238,7 @@ class CUP_lmg_Mk48_nohg_wdl : CUP_lmg_Mk48_nohg {};
 //Machine Gun 762
 class CUP_lmg_FNMAG_RIS;
 class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
+	inertia = 3;
 	displayName = "MAG 58";
 	magazineWell[] = {
 		"SOCOMD_762_150Rnd",
@@ -248,10 +248,10 @@ class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
 		{
 			"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
 		};
-	ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 	ace_overheating_slowdownFactor = 1; //Slowdown Factor (this will be scaled based on the barrel temp)
 	ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
-	ace_overheating_dispersion = 0.75; //Dispersion Factor (this will be scaled based on the barrel temp)  
+	ace_overheating_dispersion = 0.9; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
 
 //MP5
@@ -640,6 +640,19 @@ class SOCOMD_VEGA_SVD_acc: CUP_srifle_SVD_wdl_top_rail{
 		class LinkedItemsOptic{
 			item = "CUP_optic_SB_11_4x20_PM_od";
 			slot = "CUP_PicatinnyTopMount_SVD";
+		};
+	};
+};
+
+class CUP_smg_vityaz_vfg_front_rail;
+class SOCOMD_ALFA_PP19: CUP_smg_vityaz_vfg_front_rail{
+};
+class SOCOMD_ALFA_PP19_acc: CUP_smg_vityaz_vfg_front_rail{
+	displayname="RU-PP19 (ALFA)"
+	class LinkedItems{
+		class LinkedItemsOptic{
+			item = "CUP_optic_MicroT1_low";
+			slot = "CUP_DovetailMountBizon";
 		};
 	};
 };

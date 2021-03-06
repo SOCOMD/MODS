@@ -14,7 +14,7 @@ class CfgASORVS {
 		SOCOMD_Core[] = {
 			"SOCOMD_APC_A",
 			"SOCOMD_APC_B",
-			"SOCOMD_APC_C",
+			// "SOCOMD_APC_C",
 			"SOCOMD_BUSHMASTER_TRANS",
 			"SOCOMD_BUSHMASTER_HMG",
 			"SOCOMD_TRUCK_TRANSPORT_A",
@@ -29,7 +29,8 @@ class CfgASORVS {
 	class Sea {
 		SOCOMD_Core[] = {
 			"SOCOMD_SHIP_A",
-			"SOCOMD_SHIP_B"
+			"SOCOMD_SHIP_B",
+			"SOCOMD_SHIP_C"
 		};
 	};
 
@@ -48,6 +49,7 @@ class CfgASORVS {
 			"SOCOMD_Supply_Javelin",
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
+			"SOCOMD_Recon_Supply",
 			"ACE_Wheel"
 		};
 	};

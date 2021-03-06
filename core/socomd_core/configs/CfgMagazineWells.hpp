@@ -3,14 +3,18 @@ class CfgMagazineWells {
 		SOCOMD_mags[] = {
 			"SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",
 			"SOCOMD_Item_Magazine_556x45_30Rnd",
-			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer"
+			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
+			"SOCOMD_Item_Magazine_556x45_30Rnd",
+			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
+			"ACWP_30rnd_556x45_EPR_PMAG"
 		};
 	};
 
 	class CBA_556x45_STANAG {
 		SOCOMD_mags[] = {
 			"SOCOMD_Item_Magazine_556x45_30Rnd",
-			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer"
+			"SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
+			"ACWP_30rnd_556x45_EPR_PMAG"
 		};
 	};
 

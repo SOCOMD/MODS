@@ -34,11 +34,6 @@ class CfgUnitInsignia {
 		author="Monk";
 		texture="socomd_data_core\insignia\dog6.paa";
 	};
-	class dog7 {
-		displayName="Dog";
-		author="Monk";
-		texture="socomd_data_core\insignia\dog7.paa";
-	};
 	class dog8 {
 		displayName="Dog";
 		author="Monk";
@@ -109,4 +104,94 @@ class CfgUnitInsignia {
 		author="Monk";
 		texture="socomd_data_core\insignia\bus.paa";
 	};
+	class section10 {
+		displayName="1-0";
+		author="Monk";
+		texture="socomd_data_core\insignia\1-0.paa";
+	};
+	class section11 {
+		displayName="1-1";
+		author="Monk";
+		texture="socomd_data_core\insignia\1-1.paa";
+	};
+	class section12 {
+		displayName="1-2";
+		author="Monk";
+		texture="socomd_data_core\insignia\1-2.paa";
+	};
+	class Acoy {
+		displayName="2CDO A Company";
+		author="Monk";
+		texture="socomd_data_core\insignia\Acoy.paa";
+	};
+	class Acoy2 {
+		displayName="2CDO A Company";
+		author="Monk";
+		texture="socomd_data_core\insignia\Acoy2.paa";
+	};
+	class Bcoy {
+		displayName="2CDO B Company";
+		author="Monk";
+		texture="socomd_data_core\insignia\Bcoy.paa";
+	};
+	class Ccoy {
+		displayName="2CDO C Company";
+		author="Monk";
+		texture="socomd_data_core\insignia\Ccoy.paa";
+	};
+	class Dcoy {
+		displayName="2CDO D Company";
+		author="Monk";
+		texture="socomd_data_core\insignia\Dcoy.paa";
+	};
+	class Diedre {
+		displayName="Diedre";
+		author="Monk";
+		texture="socomd_data_core\insignia\Diedre.paa";
+	};
+	class RDBK1 {
+		displayName="SASR Redback 1";
+		author="Monk";
+		texture="socomd_data_core\insignia\RDBK-1.paa";
+	};
+	class role3 {
+		displayName="Role 3 Medical";
+		author="Monk";
+		texture="socomd_data_core\insignia\role3.paa";
+	};
+	class SAS3sqn {
+		displayName="SAS 3 sqn";
+		author="Monk";
+		texture="socomd_data_core\insignia\SAS3sqn.paa";
+	};
+	class SAS3sqn2 {
+		displayName="SAS 3 sqn";
+		author="Monk";
+		texture="socomd_data_core\insignia\SAS3sqn-2.paa";
+	};
+	class TPE {
+		displayName="Pineapples";
+		author="Monk";
+		texture="socomd_data_core\insignia\TPE.paa";
+	};
+	class useless {
+		displayName="Just a useless patch";
+		author="Monk";
+		texture="socomd_data_core\insignia\useless.paa";
+	};	
+	class gunscoffee {
+		displayName="Guns and Coffee";
+		author="Slatery";
+		texture="socomd_data_core\insignia\gunsCoffee.paa";
+	};
+	class trunkMonkey {
+		displayName="Trunk Monkey";
+		author="Slatery";
+		texture="socomd_data_core\insignia\trunkMonkey.paa";
+	};
+	class edoRunner {
+		displayName="EOD";
+		author="Slatery";
+		texture="socomd_data_core\insignia\EOD.paa";
+	};	
 };

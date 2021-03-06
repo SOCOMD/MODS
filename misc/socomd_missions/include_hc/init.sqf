@@ -7,8 +7,6 @@ enableRadio false;
 //Using ACRE2
 [] execVM "include\acre2_compat.sqf";
 
-//Using TCL AI
-[] execVM "tcl\tcl_init.sqf";
 
 // Infinate Loop, Fix Zeus group bug (will remove deleted groups so more can be added)
 [] spawn {

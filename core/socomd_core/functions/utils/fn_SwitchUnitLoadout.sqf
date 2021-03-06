@@ -180,3 +180,6 @@ _equipmentLoadout set [5, ""];
 _unitLoadout set [9, _equipmentLoadout];
 
 [_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
+[_player, _loadoutId,_unitConfig] call SOCOMD_fnc_UpdateArsenalContent;
+
+// Custom Arsenal code

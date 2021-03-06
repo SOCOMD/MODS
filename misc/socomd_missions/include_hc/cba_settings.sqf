@@ -23,13 +23,13 @@ force force ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
 // ACE Arsenal
-force force ace_arsenal_allowDefaultLoadouts = true;
-force force ace_arsenal_allowSharedLoadouts = true;
-ace_arsenal_camInverted = false;
-force force ace_arsenal_enableIdentityTabs = true;
-ace_arsenal_enableModIcons = true;
-ace_arsenal_EnableRPTLog = false;
-ace_arsenal_fontHeight = 4.5;
+force force ace_socomd_arsenal_allowDefaultLoadouts = true;
+force force ace_socomd_arsenal_allowSharedLoadouts = true;
+ace_socomd_arsenal_camInverted = false;
+force force ace_socomd_arsenal_enableIdentityTabs = true;
+ace_socomd_arsenal_enableModIcons = true;
+ace_socomd_arsenal_EnableRPTLog = false;
+ace_socomd_arsenal_fontHeight = 4.5;
 
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
@@ -74,7 +74,7 @@ ace_goggles_showInThirdPerson = false;
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
-force force ace_hearing_disableEarRinging = false;
+force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 1.0;
 force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
@@ -177,7 +177,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 100;
+force force ace_medical_maxReviveTime = 200;
 force force ace_medical_medicSetting = 0;
 force force ace_medical_medicSetting_basicEpi = 0;
 force force ace_medical_medicSetting_PAK = 0;
@@ -191,7 +191,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1.2;
 ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 4.0;
+force force ace_medical_playerDamageThreshold = 3.0;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -215,18 +215,18 @@ force force adv_aceCPR_useLocation_AED = 0
 
 // KAT - ACE Airway
 force force kat_aceAirway_checkbox_puking_sound = true;
-force force kat_aceAirway_deathTimer = 100;                                 // Time before Pt dies with low Sp02
+force force kat_aceAirway_deathTimer = 150;                                 // Time before Pt dies with low Sp02
 force force kat_aceAirway_enable = true;
 force force kat_aceAirway_probability_obstruction = 80;                     // Probability patient collapses
-force force kat_aceAirway_probability_occluded = 10;                        // Probability airway vomits
+force force kat_aceAirway_probability_occluded = 2;                        // Probability airway vomits
 force force kat_aceAirway_string_exit = "";
 
 // KAT - ACE Breathing
 force force kat_aceBreathing_death_timer_enable = true;
 force force kat_aceBreathing_enable = true;
 force force kat_aceBreathing_pneumothorax = 100;                            // Probability for a penetrating chest hit to cause a pneumothorax
-force force kat_aceBreathing_spo2_big_value = 15;                           // Value to change Sp02 by (If airway not patent)
-force force kat_aceBreathing_spo2_small_value = 12;                         // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_big_value = 20;                           // Value to change Sp02 by (If airway not patent)
+force force kat_aceBreathing_spo2_small_value = 8;                         // Value to change Sp02 by (If airway not patent)
 
 // KAT - ACE Circulation
 force force kat_aceCirculation_bloodgroup = "B";
@@ -256,7 +256,7 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 1.0;
+force force ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
 force force ace_nightvision_effectScaling = 1.0;
 force force ace_nightvision_fogScaling = 0.1;
@@ -284,7 +284,7 @@ force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = false;
 force force ace_pylons_requireEngineer = false;
 force force ace_pylons_requireToolkit = false;
-force force ace_pylons_searchDistance = 25;
+force force ace_pylons_searchDistance = 40;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
@@ -471,19 +471,12 @@ Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = true;
+force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = true;
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1;
-force force acre_sys_core_revealToAI = false;
-acre_sys_core_spectatorVolume = 1;
+force force acre_sys_core_interference = false;
+force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_core_ts3ChannelName = "";
-force force acre_sys_core_ts3ChannelPassword = "";
-acre_sys_core_ts3ChannelSwitch = true;
-acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 3;
+force force acre_sys_signal_signalModel = 0;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -552,7 +545,7 @@ zen_common_autoAddObjects = false;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
-force force zen_context_menu_enabled = 0;
+force force zen_context_menu_enabled = 2;
 zen_editor_declutterEmptyTree = true;
 zen_editor_disableLiveSearch = false;
 zen_editor_moveDisplayToEdge = true;

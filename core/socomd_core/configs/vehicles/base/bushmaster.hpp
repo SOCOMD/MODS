@@ -4,6 +4,7 @@
 class bma3_bushmaster_base_F : Car_F {
 	fuelCapacity = 14; // 14 == 49m
 	ace_refuel_fuelCapacity = 80;
+	cost = 40000;
 
 	class HitPoints : HitPoints {
 		class HitHull;
@@ -49,11 +50,11 @@ class bma3_bushmaster_base_F : Car_F {
 };
 
 class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
-	armor = 6000;
+	armor = 750;
 	armorStructural = 20;
 	explosionShielding = 0.001;
 	damageResistance = 0.03099;
-	threat[] = {1, 0.8, 0.3};
+	threat[] = {1, 0.7, 0.3};
 	acre_hasInfantryPhone = 0;
 
 	class HitPoints : HitPoints {
@@ -207,6 +208,7 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
 class bma3_bushmaster_pws127mm_F : bma3_bushmaster_unarmed_F {
 	scope = public;
 	scopeCurator = public;
+	threat[] = {1, 0.9, 0.5};
 };
 
 /*
@@ -261,19 +263,19 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
 	};
 
 	class TransportWeapons {
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+		INVENTORY_VEHICLE_LARGE_WEAPONS
 	};
 
 	class TransportMagazines {
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+		INVENTORY_VEHICLE_LARGE_MAGAZINES
 	};
 
 	class TransportItems {
-		INVENTORY_VEHICLE_DEFAULT_ITEMS
+		INVENTORY_VEHICLE_LARGE_ITEMS
 	};
 
 	class TransportBackpacks {
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+		INVENTORY_VEHICLE_LARGE_BACKPACKS
 	};
 
 	class AcreIntercoms {
@@ -352,19 +354,19 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
 	};
 
 	class TransportWeapons {
-		INVENTORY_VEHICLE_DEFAULT_WEAPONS
+		INVENTORY_VEHICLE_LARGE_WEAPONS
 	};
 
 	class TransportMagazines {
-		INVENTORY_VEHICLE_DEFAULT_MAGAZINES
+		INVENTORY_VEHICLE_LARGE_MAGAZINES
 	};
 
 	class TransportItems {
-		INVENTORY_VEHICLE_DEFAULT_ITEMS
+		INVENTORY_VEHICLE_LARGE_ITEMS
 	};
 
 	class TransportBackpacks {
-		INVENTORY_VEHICLE_DEFAULT_BACKPACKS
+		INVENTORY_VEHICLE_LARGE_BACKPACKS
 	};
 
 	class AcreIntercoms {

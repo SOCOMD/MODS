@@ -49,3 +49,16 @@ class SOCOMD_Vympel_Uniform_Roll : CUP_U_CRYE_ATACSFG_Roll {
 		mass=40;
 	};
 };
+
+class U_O_R_Gorka_01_black_F;
+class SOCOMD_FSB_Uniform : U_O_R_Gorka_01_black_F {
+    scope = public;
+    displayName = "Gorka CBRN Suit";
+
+    class ItemInfo: UniformItem {
+        uniformModel="-";
+        uniformClass="SOCOMD_FSB_Uniform";
+        containerClass="Supply80";
+        mass=40;
+    };
+};

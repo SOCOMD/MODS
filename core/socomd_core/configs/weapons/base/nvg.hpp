@@ -24,12 +24,6 @@ class SOCOMD_NVG : USP_L3_pvs31_A2	{
 	displayName = "SOCOMD NVD (WP tube)";
 	descriptionShort = "SOCOMD NVD /w White Phosphor tube";
 	//colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; //WP
-	colorPreset[] = {
-		0.05, //Offset
-		{0.0, 0.0, 0.0, 0.25}, //Blend
-		{0.5, 0.1, 1.5, 1.1}, //Colour
-		{-1, -1, -6, 0.0} //Desaturation
-	};
 	ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_GR : SOCOMD_NVG	{
@@ -50,13 +44,7 @@ class CUP_NVG_GPNVG_black;
 class SOCOMD_NVG_GPNVG_WP_black: CUP_NVG_GPNVG_black {
 	displayName = "GPNVG (WP tube)";
 	descriptionShort = "Quad NVD /w White Phosphor tube";
-	//colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; //WP
-	colorPreset[] = {
-		0.05, //Offset
-		{0.0, 0.0, 0.0, 0.25}, //Blend
-		{0.5, 0.1, 1.5, 1.1}, //Colour
-		{-1, -1, -6, 0.0} //Desaturation
-	};
+	colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; //WP
 	ace_nightvision_generation = 2;
 };
 
@@ -78,4 +66,3 @@ class SOCOMD_GPNVG18b_BLK_F : A3_GPNVG18b_BLK_F {
 	descriptionShort = "Quad NVD /w White Phosphor tube";
 	colorPreset[] = {0.0, {0.0, 0.0, 0.0, 0.0}, {0.5, 0.1, 1.5, 0.9}, {1, 1, 6, 0.0}}; // White Phosphor tube Preset
 };
-

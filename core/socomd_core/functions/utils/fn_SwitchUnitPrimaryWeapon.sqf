@@ -10,9 +10,12 @@ if(isNull _loadoutWeaponConfig) then {
 //Return if no config is available
 if(isNull _loadoutWeaponConfig) exitWith { };
 
-_primary = primaryWeapon _player;
+_currentPrimary = primaryWeapon _player;
 
-_primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
+_primary = _player getVariable ["SOCOMD_prev_primary", _currentPrimary];
+
+_primaryMagazines = ["SOCOMD_Item_Magazine_556x45_30Rnd", "1Rnd_HE_Grenade_shell", "UGL_FlareRed_F", "1Rnd_SmokeRed_Grenade_shell", "ACE_HuntIR_M203"];
+_primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "magazines");
 _primaryMagazines = _primaryMagazines + getArray(configFile >> "CfgWeapons" >> _primary >> "EGLM" >> "magazines");
 _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _primary >> "magazineWell");
 
@@ -52,11 +55,27 @@ _unitLoadout set [0, _primaryLoadout];
 [_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 
 //Give Magazines
+_loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
         _magazineCount = _x select 1;
+        if( _loadoutId ==  "SOCOMD_Rifleman" ) then  {
+            _magazineCount = _magazineCount + 4;
+        };
         _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
+};
+
+// commandGrenades
+if (_loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadoutId ==  "SOCOMD_Leader") then {
+    commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
+    if(count commandGrenades > 0) then  {
+        {
+            _magazine = _x select 0;
+            _magazineCount = _x select 1;
+            _player addMagazines[_magazine, _magazineCount];
+        } forEach commandGrenades;
+    };
 };

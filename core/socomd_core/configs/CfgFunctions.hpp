@@ -11,6 +11,7 @@ class CfgFunctions {
 			class SetUnitLoadout {};
 			class SwitchUnitLoadout {};
 			class SwitchUnitPrimaryWeapon {};
+			class SwitchUnitHandgunWeapon {};
 			class SwitchUnitSecondaryWeapon {};
 			class ToggleTranslator {};
 			class GetLoadoutScopeFOV {};
@@ -22,12 +23,20 @@ class CfgFunctions {
 			class GetWorldUniform {};
 			class SaveLoadoutPrefs {};
 			class LoadLoadoutPrefs {};
+			class UpdateArsenalContent {};
+			class RefreshInsignia {};
+			class addPrimaryAmmo {};
+			class addSecondaryAmmo {};
+			class addHandgunAmmo {};
+			class removeAmmo {};
 		};
 
 		class Actions {
 			file="\socomd_core\functions\action";
+			class Action_ConnectSignal {};
 			class Action_ToggleDiving {};
 			class Action_ToggleSnow {};
+			class Action_ToggleHalo {};
 			class Action_ReplaceCrewColours {};
 			class Action_ReplaceUniform {};
 			class Action_ReplaceVest {};
@@ -44,6 +53,7 @@ class CfgFunctions {
 		class ActionConditions {
 			file="\socomd_core\functions\actionConditions";
 			class ActionCondition_CanToggleDiving {};
+			class ActionCondition_CanToggleHalo {};
 			class ActionCondition_CanSwitchGroundCrewVest {};
 			class ActionCondition_CanUseLoadoutWeapon {};
 			class ActionCondition_HasPrimary556	{};
@@ -55,6 +65,8 @@ class CfgFunctions {
 			class ActionCondition_IsRadarOff {};
 			class ActionCondition_canInteract {};
 			class ActionCondition_HasLoadout {};
+			class ActionCondition_HandleReserve {};
+			class ActionCondition_HaloActions {};
 		};
 
 		class ASORUtil {

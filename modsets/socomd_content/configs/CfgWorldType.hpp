@@ -46,6 +46,10 @@ class CfgWorldType {
 		class Thirsk;
 		class tem_vinjesvingenc;
 		class pja305; //N'Ziwasogo
+		class egl_laghisola;
+		class fapavo;
+		class pja312; // Song Bin Tanh
+		class jns_tria;
 	};
 
 	class Snow {

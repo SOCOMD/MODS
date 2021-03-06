@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 // COMMON SOCOMD LOADOUT ITEMS
 
+
 #define LOADOUT_STANDARD_MEDICAL \
 	LOADOUT_ITEM(ACE_elasticBandage, 8) \
 	LOADOUT_ITEM(ACE_quikclot, 8) \
@@ -16,25 +17,26 @@
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1) \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
+	LOADOUT_ITEM(ACE_DAGR, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1) \
-	LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
-	LOADOUT_ITEM(SOCOMD_Item_Magazine_45ACP_11Rnd, 2)
-
-#define LOADOUT_BACKPACK_ESSENTIALS \
-	LOADOUT_ITEM(SOCOMD_NVG, 1) \
-	LOADOUT_ITEM(ACE_MapTools, 1) \
-	LOADOUT_ITEM(ACE_CableTie, 4)
+	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
+	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
 #define LOADOUT_VEST_ESSENTIALS \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
+	LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
 	LOADOUT_ITEM(ACE_M84, 2) \
 	LOADOUT_ITEM(SmokeShell, 5) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
+#define LOADOUT_BACKPACK_ESSENTIALS \
+	LOADOUT_ITEM(SOCOMD_NVG, 1) \
+	LOADOUT_ITEM(ACE_CableTie, 4)
 
 // COMMON JAC LOADOUT ITEMS
 
@@ -46,9 +48,7 @@
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1) \
-	LOADOUT_ITEM(ACE_MapTools, 1)
-
+	LOADOUT_ITEM(ACE_DAGR, 1)
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
 	LOADOUT_ITEM(ACE_elasticBandage, 12) \
 	LOADOUT_ITEM(ACE_quikclot, 12) \
@@ -76,24 +76,42 @@ class SOCOMD_Uniforms {
 	Snow = "SOCOMD_Uniform_Snow_HoodDown";
 };
 
-class SOCOMD_Commander;
-class SOCOMD_Leader;
-class SOCOMD_Rifleman;
-class SOCOMD_Marksman;
-class SOCOMD_MachineGunner;
-class SOCOMD_Medic;
+class SOCOMD_Commander{
+	primary			= "SMA_M4_GL_SM";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+};
+class SOCOMD_Leader{
+	primary			= "SMA_M4_GL_SM";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+};
+class SOCOMD_Rifleman{
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+};
+class SOCOMD_MachineGunner{
+	primary			= "CUP_lmg_minimi_railed";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+};
+class SOCOMD_Medic{
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+};
 
+class SOCOMD_Marksman{
+	primary			= "ACWP_sr25";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	binocular		= "ACE_Yardage450";
+};
 class SOCOMD_Recon {
 	primary		    = "bnae_trg42_camo2_virtual";
-	handgun		    = ITEM_HANDGUN_RIFLEMAN;
-	handgunMagazine = ITEM_HANDGUN_MAGAZINE_RIFLEMAN;
-	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	handgun			= "ACWP_USP";
+	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
 	class Vest {
 		type = ITEM_VEST_RECON;
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_408_7Rnd, 0)
 			LOADOUT_ITEM(5Rnd_338LM_Magazine, 7)
 			LOADOUT_ITEM(5Rnd_APDS_338LM_Magazine, 2)
 		};
@@ -101,27 +119,27 @@ class SOCOMD_Recon {
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_tent_item, 1)
-			LOADOUT_ITEM(SOCOMD_tent_item_des, 1)
 		};
 	};
 };
 
 class SOCOMD_Recon_Assistant {
+	primary			= "ACWP_sr25";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
-			LOADOUT_ITEM(SOCOMD_tent_item, 1)
-			LOADOUT_ITEM(SOCOMD_tent_item_des, 1)
 		};
 	};
 };
 
 class SOCOMD_AT {
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	secondary		= "SOCOMD_Carl_Gustav";
 	class Backpack {
 		type = ITEM_BACKPACK_AT;
 		class Inventory	{
-			LOADOUT_STANDARD_MEDICAL
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
 			LOADOUT_ITEM(tf47_m3maaws_HE, 1)
@@ -130,6 +148,17 @@ class SOCOMD_AT {
 };
 
 class SOCOMD_Sapper {
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Backpack {
+		class Inventory	{
+			LOADOUT_ITEM(ACE_VMH3, 1)
+		};
+	};
+};
+class SOCOMD_Breacher {
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	class Vest {
 		class Inventory	{
 			LOADOUT_ITEM(CUP_6Rnd_B_Beneli_74Pellets, 5)
@@ -141,4 +170,8 @@ class SOCOMD_Sapper {
 			LOADOUT_ITEM(SOCOMD_Shotgun, 1)
 		};
 	};
+};
+class SOCOMD_Logistician {
+	primary			= "ACWP_M4A5_145_troy_base";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";	
 };

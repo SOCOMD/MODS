@@ -261,38 +261,38 @@ CUP_Uh60_Base
 Helicopter_Base_H
 */
 
-class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
-	scope = public;
-	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
-	side = WEST;
-	displayname = "Warrior (4/12)";
+// class SOCOMD_WARRIOR_A : CUP_B_UH60M_US {
+// 	scope = public;
+// 	scopeCurator = public;
+// 	editorCategory = SOCOMD_EdCat_Core;
+// 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
+// 	side = WEST;
+// 	displayname = "Warrior (4/12)";
 
-	hiddenSelectionsTextures[] = {
-		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
-		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
-		"socomd_data_cup\data\blackhawk\default_co.paa"
-	};
+// 	hiddenSelectionsTextures[] = {
+// 		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
+// 		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
+// 		"socomd_data_cup\data\blackhawk\default_co.paa"
+// 	};
 
-	class Turrets : Turrets {
-		class CopilotTurret : CopilotTurret {};
-		class MainTurret : MainTurret {
-			WARRIOR_FAST_TURRETS
-		};
-		class RightDoorGun : RightDoorGun {
-			WARRIOR_FAST_TURRETS
-		};
-	};
+// 	class Turrets : Turrets {
+// 		class CopilotTurret : CopilotTurret {};
+// 		class MainTurret : MainTurret {
+// 			WARRIOR_FAST_TURRETS
+// 		};
+// 		class RightDoorGun : RightDoorGun {
+// 			WARRIOR_FAST_TURRETS
+// 		};
+// 	};
 
-	class AnimationSources : AnimationSources {
-		class Filters_Hide : Filters_Hide {
-			animPeriod = 1;
-			DisplayName = "Hide Filters";
-			initphase = 1;
-		};
-	};
-};
+// 	class AnimationSources : AnimationSources {
+// 		class Filters_Hide : Filters_Hide {
+// 			animPeriod = 1;
+// 			DisplayName = "Hide Filters";
+// 			initphase = 1;
+// 		};
+// 	};
+// };
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -305,32 +305,32 @@ Helicopter_Base_H
 
 class CUP_B_UH60M_FFV_US : CUP_Uh60_FFV_Base {};
 
-class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
-	scope = public;
-	scopeCurator = public;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
-	side = WEST;
-	displayname = "Warrior FFV (4/8)";
+// class SOCOMD_WARRIOR_B : CUP_B_UH60M_FFV_US {
+// 	scope = public;
+// 	scopeCurator = public;
+// 	editorCategory = SOCOMD_EdCat_Core;
+// 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air;
+// 	side = WEST;
+// 	displayname = "Warrior FFV (4/12)";
 
-	hiddenSelectionsTextures[] = {
-		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
-		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
-		"socomd_data_cup\data\blackhawk\default_co.paa"
-	};
+// 	hiddenSelectionsTextures[] = {
+// 		"socomd_data_cup\data\blackhawk\uh60m_fuselage_co.paa",
+// 		"socomd_data_cup\data\blackhawk\uh60m_engine_co.paa",
+// 		"socomd_data_cup\data\blackhawk\default_co.paa"
+// 	};
 
-	class Turrets : Turrets {
-		class CopilotTurret : CopilotTurret {};
-		class MainTurret : MainTurret {
-			WARRIOR_FAST_TURRETS
-		};
-		class RightDoorGun : RightDoorGun {
-			WARRIOR_FAST_TURRETS
-		};
+// 	class Turrets : Turrets {
+// 		class CopilotTurret : CopilotTurret {};
+// 		class MainTurret : MainTurret {
+// 			WARRIOR_FAST_TURRETS
+// 		};
+// 		class RightDoorGun : RightDoorGun {
+// 			WARRIOR_FAST_TURRETS
+// 		};
 		
-		class CargoTurret_01 : CargoTurret_01{};
-		class CargoTurret_02 : CargoTurret_02{};
-		class CargoTurret_03 : CargoTurret_03{};
-		class CargoTurret_04 : CargoTurret_04{};
-	};
-};
+// 		class CargoTurret_01 : CargoTurret_01{};
+// 		class CargoTurret_02 : CargoTurret_02{};
+// 		class CargoTurret_03 : CargoTurret_03{};
+// 		class CargoTurret_04 : CargoTurret_04{};
+// 	};
+// };

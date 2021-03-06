@@ -29,7 +29,6 @@ class CfgPatches {
 			"adfu_base",
 			"au_beret_addon",
 			"bma3_bushmaster",
-			"vtn_armorw_lav25_cf",
 			"plp_containers",
 			"COS_back_pack",
 			"ctab",
@@ -50,7 +49,7 @@ class CfgPatches {
 			//LAND
 			"SOCOMD_APC_A",
 			"SOCOMD_APC_B",
-			"SOCOMD_APC_C",
+			// "SOCOMD_APC_C",
 			"SOCOMD_BUSHMASTER_TRANS",
 			"SOCOMD_BUSHMASTER_HMG",
 			"SOCOMD_TRUCK_TRANSPORT_A",
@@ -71,6 +70,7 @@ class CfgPatches {
 			// SEA
 			"SOCOMD_SHIP_A",
 			"SOCOMD_SHIP_B",
+			"SOCOMD_SHIP_C",
 
 			// BOXES
 			"SOCOMD_QStore_A",
@@ -91,6 +91,7 @@ class CfgPatches {
 			"SOCOMD_Supply_Javelin",
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
+			"SOCOMD_Recon_Supply",
 
 			// MEN
 			"SOCOMD_Unarmed",
@@ -177,3 +178,6 @@ class CfgAnimation {
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgWorldType.hpp"
+#include "configs\CfgMedical.hpp"
+#include "configs\CfgArsenalOptions.hpp"
+//#include "configs\CfgModels.hpp"

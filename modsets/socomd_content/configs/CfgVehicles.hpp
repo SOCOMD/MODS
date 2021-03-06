@@ -15,8 +15,10 @@ class CfgVehicles {
 	#include "vehicles\base\helicopter.hpp"
 	#include "vehicles\base\soldier_opfor_sso.hpp"
 	#include "vehicles\base\soldier_opfor_vympel.hpp"
+	#include "vehicles\base\soldier_opfor_fsb.hpp"
 	#include "vehicles\base\man.hpp"
 
 	// Override
 	#include "vehicles\override\firefly.hpp"
+	#include "vehicles\override\aiunits.hpp"
 };

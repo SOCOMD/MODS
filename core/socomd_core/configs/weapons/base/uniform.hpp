@@ -89,7 +89,7 @@ class SOCOMD_Uniform_AMCU_SleevesUp_Recon : SOCOMD_Uniform_AMCU_SleevesUp {
 class SOCOMD_Uniform_AMCU_SleevesDown_Recon : SOCOMD_Uniform_AMCU_SleevesDown {
 	scope = public;
 	author = AUTHOR_STR;
-	displayName = "SOCOMD AMCU Recon Uniform (Rolled)";
+	displayName = "SOCOMD AMCU Recon Uniform";
 };
 
 class SOCOMD_Uniform_Survival: Uniform_Base

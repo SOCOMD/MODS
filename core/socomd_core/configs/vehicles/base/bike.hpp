@@ -30,6 +30,8 @@ class BIKE_BASE : Bicycle {
 	maxSpeed = 60;
 	isBicycle = 1;
 	extCameraPosition[] = {0, 0, -3};
+	cost = 20000;
+	threat[] = {0.6,0.6,0.6};
 	class HitPoints {
 		class HitRGlass {
 			armor = 0.3;
@@ -88,7 +90,6 @@ class BIKE_BASE : Bicycle {
 			hitpoint = "HitBWheel";
 		};
 	};
-	threat[] = {0, 0, 0};
 	armor = 5;
 	turnCoef = 2;
 	driverAction = "MMT_Driver";

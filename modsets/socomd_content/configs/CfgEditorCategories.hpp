@@ -7,4 +7,7 @@ class CfgEditorCategories {
 	class SOCOMD_Vympel_EdCat_Core {
 		displayName = "Spetsnaz VEGA Group (Vympel)";
 	};
+	class SOCOMD_FSB_Edcat_Core {
+		displayName = "Spetsnaz ALFA Group (FSB)";
+	};
 };
