@@ -17,9 +17,17 @@ class CfgMagazines {
        // model = "melb\proxies\pylon_m134_r";
 		hardpoints[] = {"Right_MinigunMount_MELB"};
     };
+    class CUP_14Rnd_FFAR_M;
+    class CUP_PylonPod_7Rnd_Rocket_FFAR_M : CUP_14Rnd_FFAR_M {
+        mass=100;
+        hardpoints[] += {
+            "RightMount_MELB",
+            "LeftMount_MELB"
+        };
+    }
     class CUP_19Rnd_CRV7_FAT_M;
     class CUP_PylonPod_19Rnd_CRV7_FAT_M : CUP_19Rnd_CRV7_FAT_M {
-        mass=800;
+        mass=250;
         hardpoints[] = {
             "CUP_SUPER_PYLON",
             "DAR",
@@ -32,7 +40,7 @@ class CfgMagazines {
     };
     class 6Rnd_ACE_Hellfire_AGM114K;
     class PylonRack_1Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
-        mass=300;
+        mass=100;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -47,7 +55,7 @@ class CfgMagazines {
         };
     };
     class PylonRack_1Rnd_ACE_Hellfire_AGM114N : PylonRack_1Rnd_ACE_Hellfire_AGM114K {
-        mass=300;
+        mass=100;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "SCALPEL_1RND_EJECTOR",
@@ -63,7 +71,7 @@ class CfgMagazines {
     };
     
     class PylonRack_3Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
-        mass=900;
+        mass=300;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "UNI_SCALPEL",
@@ -73,7 +81,7 @@ class CfgMagazines {
         };
     };
     class PylonRack_3Rnd_ACE_Hellfire_AGM114N : PylonRack_3Rnd_ACE_Hellfire_AGM114K {
-        mass=900;
+        mass=300;
         hardpoints[] = {
             "B_MISSILE_PYLON",
             "UNI_SCALPEL",
@@ -83,7 +91,7 @@ class CfgMagazines {
         };       
     };
     class PylonRack_4Rnd_ACE_Hellfire_AGM114K : 6Rnd_ACE_Hellfire_AGM114K {
-        mass=1200;
+        mass=400;
         hardpoints[] = {
             "UNI_SCALPEL",
             "CUP_NATO_HELO_LARGE",
@@ -94,7 +102,7 @@ class CfgMagazines {
     };
 
     class PylonRack_4Rnd_ACE_Hellfire_AGM114N : PylonRack_4Rnd_ACE_Hellfire_AGM114K {
-        mass=1200;
+        mass=400;
         hardpoints[] = {
             "UNI_SCALPEL",
             "CUP_NATO_HELO_LARGE",
@@ -106,7 +114,7 @@ class CfgMagazines {
 
     class magazine_Missile_HARM_x1;
     class PylonRack_Missile_HARM_x1 : magazine_Missile_HARM_x1 {
-        mass=500;
+        mass=150;
         hardpoints[] = {
             "B_HARM_RAIL",
             "I_HARM_RAIL",
@@ -127,7 +135,7 @@ class CfgMagazines {
             "RightMount_MELB",
             "LeftMount_MELB"
         };
-        mass = 150;
+        mass = 50;
     };
 
     
@@ -251,7 +259,7 @@ class CfgMagazines {
         hardpoints[] = {""};
     };
     class Pylon_M260_MELB : FakeMagazine_MELB {
-        hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
+        hardpoints[] = {""};
     };
     class Pylon_M261_MELB : FakeMagazine_MELB {
         hardpoints[] = {""};
@@ -263,7 +271,7 @@ class CfgMagazines {
 		count=250;
 		ammo="CUP_B_762x51_Tracer_Red";
 		descriptionShort="Mag 58 200rnd Box 7.62x51";
-		mass=70;
+		mass=22;
 		tracersEvery=5;
     };
 
