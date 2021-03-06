@@ -1,4 +1,3 @@
-class CfgVehicles{
 #define INVENTORY_VEHICLE_DEFAULT_WEAPONS \
 	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1)
 
@@ -118,82 +117,82 @@ class CfgVehicles{
 			class RADAR_HIDE;
 		};
 	};
-	// class SOCOMD_WARRIOR_A:vtx_uh60M {
-	// 	scope = public; 
-	// 	scopeCurator = public; 
-	// 	editorCategory = SOCOMD_EdCat_Core; 
-	// 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; 
-	// 	side = WEST; 
-	// 	author = AUTHOR_STR; 
-	// 	faction = FACTION_STR; 
-	// 	vehicleclass = "Air"; 
-	// 	forceInGarage = 1; 
-	// 	fuelCapacity = 1360; 
-	// 	fuelConsumptionRate = 0.28; 
-	// 	driverCanSee = CanSeeAll; 
-	// 	crew = SOCOMD_PILOT; 
-	// 	cost = 40000; 
-	// 	threat[] = {1.0,0.9,0.9}; 
-	// 	hiddenSelectionsTextures[]=
-	// 		{
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"",
-	// 			"H-60 Skins\S-70A-9 Australia\Hull Main_Aussie.paa",
-	// 			"H-60 Skins\S-70A-9 Australia\Misc_Aussie.paa",
-	// 			"H-60 Skins\S-70A-9 Australia\Hull Tail_Aussie.paa",
-	// 			""
-	// 	};
-	// 	typicalCargo[] = {SOCOMD_PILOT}; 
-	// 	class TransportWeapons { 
-	// 		INVENTORY_VEHICLE_DEFAULT_WEAPONS 
-	// 	}; 
-	// 	class TransportMagazines { 
-	// 		INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
-	// 	}; 
-	// 	class TransportItems { 
-	// 		INVENTORY_VEHICLE_MEDIUM_ITEMS 
-	// 	}; 
-	// 	class TransportBackpacks { 
-	// 		INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
-	// 	}; 
-	// 	class AcreIntercoms { 
-	// 		class Intercom_1 { 
-	// 			displayName = "Crew Intercom"; 
-	// 			shortName = "Crew"; 
-	// 			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; 
-	// 			limitedPositions[] = {}; 
-	// 			numLimitedPositions = 0; 
-	// 			masterPositions[] = {"driver"}; 
-	// 			connectedByDefault = 1; 
-	// 		}; 
-	// 	}; 
-	// 	class AcreRacks { 
-	// 		class Rack_1 { 
-	// 			allowedPositions[] = {"driver", "commander", {"turret", "all"}}; 
-	// 			componentName = "ACRE_VRC110"; 
-	// 			displayName = "Dash"; 
-	// 			mountedRadio = "ACRE_PRC152"; 
-	// 			shortName = "Dash"; 
-	// 		}; 
-	// 	}; 
-	// 	displayName="Warrior (4/11)";
-	// 	icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
-	// 	picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
-	// };
+	class SOCOMD_WARRIOR_A:vtx_uh60M {
+		scope = public; 
+		scopeCurator = public; 
+		editorCategory = SOCOMD_EdCat_Core; 
+		editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; 
+		side = WEST; 
+		author = AUTHOR_STR; 
+		faction = FACTION_STR; 
+		vehicleclass = "Air"; 
+		forceInGarage = 1; 
+		fuelCapacity = 1360; 
+		fuelConsumptionRate = 0.28; 
+		driverCanSee = CanSeeAll; 
+		crew = SOCOMD_PILOT; 
+		cost = 40000; 
+		threat[] = {1.0,0.9,0.9}; 
+		hiddenSelectionsTextures[]=
+			{
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"socomd_data_core\S-70A-9 Australia\Hull Main_Aussie.paa",
+				"socomd_data_core\S-70A-9 Australia\Misc_Aussie.paa",
+				"socomd_data_core\S-70A-9 Australia\Hull Tail_Aussie.paa",
+				""
+		};
+		typicalCargo[] = {SOCOMD_PILOT}; 
+		class TransportWeapons { 
+			INVENTORY_VEHICLE_DEFAULT_WEAPONS 
+		}; 
+		class TransportMagazines { 
+			INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
+		}; 
+		class TransportItems { 
+			INVENTORY_VEHICLE_MEDIUM_ITEMS 
+		}; 
+		class TransportBackpacks { 
+			INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
+		}; 
+		class AcreIntercoms { 
+			class Intercom_1 { 
+				displayName = "Crew Intercom"; 
+				shortName = "Crew"; 
+				allowedPositions[] = {"driver", "commander", {"turret", "all"}}; 
+				limitedPositions[] = {}; 
+				numLimitedPositions = 0; 
+				masterPositions[] = {"driver"}; 
+				connectedByDefault = 1; 
+			}; 
+		}; 
+		class AcreRacks { 
+			class Rack_1 { 
+				allowedPositions[] = {"driver", "commander", {"turret", "all"}}; 
+				componentName = "ACRE_VRC110"; 
+				displayName = "Dash"; 
+				mountedRadio = "ACRE_PRC152"; 
+				shortName = "Dash"; 
+			}; 
+		}; 
+		displayName="Warrior (4/11)";
+		icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
+		picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
+	};
 	class SOCOMD_WARRIOR_B:vtx_MH60M{
 		scope = public; 
 		scopeCurator = public; 
@@ -228,9 +227,9 @@ class CfgVehicles{
 				"",
 				"",
 				"",
-				"H-60 Skins\S-70A-9 Australia\Hull Main_Aussie.paa",
-				"H-60 Skins\S-70A-9 Australia\Misc_Aussie.paa",
-				"H-60 Skins\S-70A-9 Australia\Hull Tail_Aussie.paa",
+				"socomd_data_core\S-70A-9 Australia\Hull Main_Aussie.paa",
+				"socomd_data_core\S-70A-9 Australia\Misc_Aussie.paa",
+				"socomd_data_core\S-70A-9 Australia\Hull Tail_Aussie.paa",
 				""
 		};
 		typicalCargo[] = {SOCOMD_PILOT}; 
@@ -295,4 +294,3 @@ class CfgVehicles{
 		picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
 	};
 	
-};

@@ -279,7 +279,6 @@ class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
 		TRANSPORT_WEAPON(ace_csw_carryMortarBaseplate, 1)
 	};
 };
-};
 
 class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
 	scope = public;

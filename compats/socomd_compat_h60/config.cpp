@@ -23,4 +23,4 @@ class CfgPatches {
 	};
 };
 
-#include "configs\CfgVehicles.hpp"
+#include "CfgVehicles.hpp"

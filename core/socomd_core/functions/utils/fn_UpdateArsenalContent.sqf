@@ -59,6 +59,7 @@ _configOptics = "getNumber (_x >> 'ItemInfo' >> 'type') in [201] and getNumber (
 [_player, true, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
 // resets extras selection
 _player setVariable ["ace_socomd_arseal_extras","none"];
+_player setVariable ["ace_socomd_arseal_nvg","SOCOMD_NVG"];
 
 _configWeapons = "(getNumber (_x >> 'scope') >= 2)" configClasses (configFile >> "CfgWeapons");
 
@@ -229,7 +230,6 @@ _openedEh = ["ace_socomd_arsenal_displayOpened", {
     _loadoutIdEH = player getVariable ["SOCOMD_LOADOUTID","failed"];
     
     _disabledButtons = [
-        2018,   // IDC_buttonNVG 
         2022,   // IDC_buttonMap 
         2024,   // IDC_buttonGPS 
         2026,   // IDC_buttonRadio 
@@ -250,12 +250,13 @@ _openedEh = ["ace_socomd_arsenal_displayOpened", {
         39,     // IDC_buttonRemoveAllSelected
         40      // IDC_buttonRemoveAll
         // refrence IDC for adding back in
+        // 2018,   // IDC_buttonNVG 
         // 2020,   // IDC_buttonBinoculars 
         // 1003,   // IDC_buttonLoadouts 
     ];
 
     if( _loadoutIdEH ==  "SOCOMD_Rifleman" ) then  {
-        _disabledButtons deleteAt 1;
+        _disabledButtons deleteAt 0;
     };
     
     if( _loadoutIdEH ==  "SOCOMD_Pilot"|| _loadoutId ==  "SOCOMD_Crewman"|| _loadoutId ==  "SOCOMD_Logistician") then  {
