@@ -191,6 +191,10 @@
 
 
 #define SOLS_HELMS \
+	"SOCOMD_NVG",\
+	"SOCOMD_NVG_GR",\
+	"SOCOMD_NVG_GPNVG_WP_black",\
+	"SOCOMD_NVG_GPNVG_GR_black",\
 	"SOCOMD_Crew_helmet",\
 	"SOCOMD_Pilot_helmet"
 
@@ -458,7 +462,11 @@ class CfgArsenalOptions{
 		};
 		bags[]={
 			BAGS,
-			BACKPACK_COMMS
+			BACKPACK_COMMS,
+			"SOCOMD_NVG",
+			"SOCOMD_NVG_GR",
+			"SOCOMD_NVG_GPNVG_WP_black",
+			"SOCOMD_NVG_GPNVG_GR_black"
 		};
 	};
 	class SOCOMD_Logistician{
