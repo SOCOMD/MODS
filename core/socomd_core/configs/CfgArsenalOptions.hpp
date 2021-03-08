@@ -174,17 +174,18 @@
 	"SOCOMD_Aus_Boonie",\
 	"SOCOMD_NVG",\
 	"SOCOMD_NVG_GR",\
+	"SOCOMD_NVG_AM",\
+	"SOCOMD_NVG_B",\
+	"SOCOMD_NVG_GR_B",\
+	"SOCOMD_NVG_AM_B",\
+	"SOCOMD_NVG_C",\
+	"SOCOMD_NVG_GR_C",\
+	"SOCOMD_NVG_AM_C",\
 	"SOCOMD_NVG_GPNVG_WP_black",\
 	"SOCOMD_NVG_GPNVG_GR_black",\
 	"CUP_H_PMC_Cap_Back_Tan",\
 	"CUP_H_PMC_Cap_Back_EP_Tan",\
 	"CUP_H_PMC_Cap_Back_PRR_Tan",\
-	"CFP_75th_Beanie_Blk2",\
-	"CFP_75th_Beanie_Khaki2",\
-	"CFP_75th_Beanie_Olv2",\
-	"CFP_75th_Beanie_Blk",\
-	"CFP_75th_Beanie_Olv",\
-	"CFP_75th_Beanie_Khaki",\
 	"CFP_BaseballCap_Multicam_DEF",\
 	"CFP_BaseballCap_Multicam_DEF_Back",\
 	"CFP_BaseballCap_Multicam_Back",\
@@ -193,6 +194,12 @@
 #define SOLS_HELMS \
 	"SOCOMD_NVG",\
 	"SOCOMD_NVG_GR",\
+	"SOCOMD_NVG_B",\
+	"SOCOMD_NVG_GR_B",\
+	"SOCOMD_NVG_AM_B",\
+	"SOCOMD_NVG_C",\
+	"SOCOMD_NVG_GR_C",\
+	"SOCOMD_NVG_AM_C",\
 	"SOCOMD_NVG_GPNVG_WP_black",\
 	"SOCOMD_NVG_GPNVG_GR_black",\
 	"SOCOMD_Crew_helmet",\
@@ -465,6 +472,13 @@ class CfgArsenalOptions{
 			BACKPACK_COMMS,
 			"SOCOMD_NVG",
 			"SOCOMD_NVG_GR",
+			"SOCOMD_NVG_AM",
+			"SOCOMD_NVG_B",
+			"SOCOMD_NVG_GR_B",
+			"SOCOMD_NVG_AM_B",
+			"SOCOMD_NVG_C",
+			"SOCOMD_NVG_GR_C",
+			"SOCOMD_NVG_AM_C",
 			"SOCOMD_NVG_GPNVG_WP_black",
 			"SOCOMD_NVG_GPNVG_GR_black"
 		};
