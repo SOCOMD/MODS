@@ -29,7 +29,7 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Nomad (5/24)";
+	displayname = "Boeing CH-47 Chinook (5/24)";
 	fuelCapacity = 3914;
 	fuelConsumptionRate = 0.34;
 

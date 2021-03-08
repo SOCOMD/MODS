@@ -12,7 +12,7 @@ class SOCOMD_NOMAD_##ID :  B_Heli_Transport_03_F { \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
-	displayname = "Nomad (4/18)"; \
+	displayname = "Boeing CH-47 Chinook (4/18)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
 	fuelCapacity = 3914; \
