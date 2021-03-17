@@ -145,7 +145,7 @@ if(not isNull _backpackConfig) then
                 _added = 1;
             }; 
             
-            if(_type isKindOf ["Rifle", configFile >> "CfgWeapons"] && _added == 0) then 
+            if((_type isKindOf ["Rifle", configFile >> "CfgWeapons"] || _type isKindOf ["Pistol", configFile >> "CfgWeapons"] ) && _added == 0) then 
             {
                 _weapon = [_type, "", "", "", [], [], ""];
                 _backpackInventoryLoadout = _backpackInventoryLoadout + [[_weapon, _count]];
