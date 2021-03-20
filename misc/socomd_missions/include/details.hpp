@@ -21,7 +21,7 @@ maxPlayers = 88;
 overviewPicture = "\socomd_missions\images\missionpicture.paa";
 
 // Include a short description and units required to play the mission if nessisary
-overviewText = "SOCOMD Mission<br />Commandos: Up to 3 Platoons with HQ elements and attachments<br /><br />171st Squadron: Pilots and co-pilots<br /><br />";
+overviewText = "SOCOMD Mission<br />2CDO: 1st Platoon with HQ element and attachments<br /><br />SOLS: Pilots and co-pilots<br /><br />";
 
 // This header text will be displayed as people are loading the mission
 OnLoadName = "SOCOMD Mission";
