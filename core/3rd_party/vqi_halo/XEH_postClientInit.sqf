@@ -4,7 +4,7 @@
 //Key, [Shift, Ctrl, Alt]: L
 
 
-["=VQI= L.E.A.P", "cut_main_chute", "Main Parachute - CUT AWAY", {_this execVM "vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_parachute_cutaway.sqf";}, {}, [38, [true, true, false]]] call CBA_fnc_addKeybind;
+// ["=VQI= L.E.A.P", "cut_main_chute", "Main Parachute - CUT AWAY", {_this execVM "vqi_halo\VQI-DemonDropper\Equipment\Parachute\vqi_halo_parachute_cutaway.sqf";}, {}, [38, [true, true, false]]] call CBA_fnc_addKeybind;
 
 //Key, [Shift, Ctrl, Alt]: H
 //["SpookWarCom - HALO/ParaJump", "Altimeter (Temporary)", { _this execVM "\vqi_halo\VQI-DemonDropper\Altimeter\vqi_altimeter_key_temp.sqf"; }, [35, [false, false, true]]] call CBA_fnc_registerKeybind;
