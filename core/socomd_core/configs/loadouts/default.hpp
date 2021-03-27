@@ -21,12 +21,16 @@
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
 	LOADOUT_ITEM(ACE_MapTools, 1) \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
-	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
+
+#define LOADOUT_UNIFORM_AO_ESSENTIALS \
+	LOADOUT_ITEM(ItemcTabHCam, 1) \
+	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 2)
 
 #define LOADOUT_PILOT_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -38,7 +42,6 @@
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
 	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
-	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
 
 #define LOADOUT_VEST_ESSENTIALS \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
@@ -46,6 +49,14 @@
 	LOADOUT_ITEM(ACE_M84, 2) \
 	LOADOUT_ITEM(SmokeShell, 5) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
+#define LOADOUT_VEST_AO_ESSENTIALS \
+	LOADOUT_ITEM(ACE_Chemlight_HiWhite, 8) \
+	LOADOUT_ITEM(SmokeShellPurple, 3) \
+	LOADOUT_ITEM(ACE_HandFlare_White, 2) \
+	LOADOUT_ITEM(ACRE_PRC343, 1) \
+	LOADOUT_ITEM(ACRE_PRC152, 2) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
@@ -459,6 +470,64 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
 			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
 			LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
+			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
+		};
+	};
+};
+
+class SOCOMD_AO{
+	primary		    = ITEM_PRIMARY_MEDIC;
+	secondary		= ITEM_SECONDARY_MEDIC;
+	handgun			= "ACWP_USP";
+	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
+	headgear		= ITEM_HEADGEAR_MEDIC;
+	binocular		= "";
+	gps			    = "ItemcTab";
+	maxOptic		= "2x";
+
+	class Uniform {
+		class Inventory	{
+			LOADOUT_UNIFORM_AO_ESSENTIALS
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_MEDIC;
+		class Inventory	{
+			LOADOUT_VEST_AO_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_MEDIC;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
+			LOADOUT_ITEM(ACE_fieldDressing, 15)  		//Israeli Bandage
+			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
+			LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
+			LOADOUT_ITEM(ACE_personalAidKit, 0)			//Remove
+			LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
+			LOADOUT_ITEM(ACE_elasticBandage, 5)			//Elastic Bandage
+			LOADOUT_ITEM(ACE_quikclot, 20)				//Quikclot
+			LOADOUT_ITEM(KAT_ChestSeal, 8)				//Hyfin Chest Seal
+			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
+			LOADOUT_ITEM(ACE_Epinephrine_Medic, 15)		//Epinephrine Ampoule
+			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
+			LOADOUT_ITEM(ACE_fentanyl, 0)				//Fentanyl Ampoule
+			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_Ket_S, 0)				//Ketamine (Sedation) Ampoule
+			LOADOUT_ITEM(ACE_apap, 0)					//Paracetamol
+			LOADOUT_ITEM(SOCOMD_Tetra, 0)				//Paracetamol  
+			LOADOUT_ITEM(ACE_bloodIV_500, 16)			//Blood
+			LOADOUT_ITEM(KAT_guedel, 0)					//Nasopharangeal Airway
+			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
+			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
+			LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
+			LOADOUT_ITEM(SOCOMD_NDC, 8)					//14 Gauge needle
 			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
 			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
 		};
