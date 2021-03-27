@@ -705,7 +705,7 @@ class SOCOMD_Logistician {
 // Pilot
 
 class SOCOMD_Pilot {
-    primary 		= "SOCOMD_Weapon_Rifle_9x21";
+    primary 		= "SOCOMD_Weapon_Empty";
     secondary 		= "SOCOMD_Weapon_Empty";
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
@@ -724,7 +724,6 @@ class SOCOMD_Pilot {
 	class Vest {
 		type = ITEM_VEST_PILOT;
 		class Inventory	{
-			LOADOUT_ITEM(CUP_HandGrenade_M67, 2)
 			LOADOUT_ITEM(ACE_Chemlight_HiRed, 2)
 			LOADOUT_ITEM(ACE_M84, 2)
 			LOADOUT_ITEM(SmokeShell, 5)
