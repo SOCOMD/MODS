@@ -25,6 +25,7 @@ start /D %projectDir% makepbo.exe %buldParam% data\socomd_data_cup %modOutput_co
 
 ::SOCOMD Compats
 start /D %projectDir% makepbo.exe %buldParam% compats\socomd_compat_cup %modOutput_content%
+start /D %projectDir% makepbo.exe %buldParam% compats\socomd_compat_h60 %modOutput_content%
 start /D %projectDir% makepbo.exe %buldParam% compats\socomd_compat_rhs %modOutput%
 
 ::SOCOMD Modsets

@@ -52,11 +52,11 @@
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
 #define LOADOUT_VEST_AO_ESSENTIALS \
-	LOADOUT_ITEM(ACE_Chemlight_HiWhite, 8) \
-	LOADOUT_ITEM(SmokeShellPurple, 3) \
+	LOADOUT_ITEM(ACE_Chemlight_HiWhite, 4) \
+	LOADOUT_ITEM(SmokeShellPurple, 2) \
 	LOADOUT_ITEM(ACE_HandFlare_White, 2) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
-	LOADOUT_ITEM(ACRE_PRC152, 2) \
+	LOADOUT_ITEM(ACRE_PRC152, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
@@ -483,7 +483,7 @@ class SOCOMD_AO{
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MEDIC;
 	binocular		= "";
-	gps			    = "ItemcTab";
+	gps			    = "ItemAndroid";
 	maxOptic		= "2x";
 
 	class Uniform {
@@ -514,22 +514,23 @@ class SOCOMD_AO{
 			LOADOUT_ITEM(ACE_quikclot, 20)				//Quikclot
 			LOADOUT_ITEM(KAT_ChestSeal, 8)				//Hyfin Chest Seal
 			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
-			LOADOUT_ITEM(ACE_Epinephrine_Medic, 15)		//Epinephrine Ampoule
+			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
-			LOADOUT_ITEM(ACE_fentanyl, 0)				//Fentanyl Ampoule
+			LOADOUT_ITEM(ACE_fentanyl, 4)				//Fentanyl Ampoule
 			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
 			LOADOUT_ITEM(SOCOMD_Ket_S, 0)				//Ketamine (Sedation) Ampoule
-			LOADOUT_ITEM(ACE_apap, 0)					//Paracetamol
+			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
 			LOADOUT_ITEM(SOCOMD_Tetra, 0)				//Paracetamol  
-			LOADOUT_ITEM(ACE_bloodIV_500, 16)			//Blood
+			LOADOUT_ITEM(ACE_bloodIV_500, 14)			//Blood
 			LOADOUT_ITEM(KAT_guedel, 0)					//Nasopharangeal Airway
 			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
-			LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+			LOADOUT_ITEM(KAT_Pulseoximeter, 3)			//Pulseoximeter
 			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
 			LOADOUT_ITEM(SOCOMD_NDC, 8)					//14 Gauge needle
-			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
+			LOADOUT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
 			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
+			LOADOUT_ITEM(ACE_bodyBag, 2)				//Defibrillator
 		};
 	};
 };
@@ -728,7 +729,6 @@ class SOCOMD_Pilot {
 			LOADOUT_ITEM(ACE_M84, 2)
 			LOADOUT_ITEM(SmokeShell, 5)
 			LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
-			LOADOUT_ITEM(SOCOMD_Item_Magazine_9x21_60Rnd, 8)
 			LOADOUT_ITEM(ACRE_PRC152, 2)
 		};
 	};
