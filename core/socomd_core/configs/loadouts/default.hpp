@@ -446,24 +446,29 @@ class SOCOMD_Medic {
 		type = ITEM_BACKPACK_MEDIC;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_booboo, 1)
 			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
 			LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
+			LOADOUT_ITEM(SOCOMD_triangleban, 3)  		//Israeli Bandage
 			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
 			LOADOUT_ITEM(ACE_morphine, 0)  				//Remove
 			LOADOUT_ITEM(ACE_personalAidKit, 0)			//Remove
 			LOADOUT_ITEM(ACE_salineIV_500, 0) 			//Remove
+			LOADOUT_ITEM(SOCOMD_cascard, 2)
 			LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
 			LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
 			LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+			LOADOUT_ITEM(SOCOMD_nargloves, 10)
+			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
 			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
 			LOADOUT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
-			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
-			LOADOUT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
+			LOADOUT_ITEM(SOCOMD_Ket, 8)					//Ketamine Ampoule
 			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
 			LOADOUT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
 			LOADOUT_ITEM(ACE_bloodIV_500, 5)			//Blood
+			LOADOUT_ITEM(SOCOMD_notes, 0)
 			LOADOUT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
 			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
@@ -504,6 +509,10 @@ class SOCOMD_AO{
 		type = ITEM_BACKPACK_MEDIC;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
+			LOADOUT_ITEM(SOCOMD_cascard, 2)
+			LOADOUT_ITEM(SOCOMD_booboo, 1)
+			LOADOUT_ITEM(SOCOMD_nargloves, 10)
+			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
 			LOADOUT_ITEM(ACE_fieldDressing, 15)  		//Israeli Bandage
 			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
