@@ -427,6 +427,21 @@ class CfgArsenalOptions{
 			BACKPACK_MEDIC
 		};
 	};
+	class SOCOMD_AO{
+		weapons[]={
+			GENERAL_RIFLE,
+			HANDGUNS
+		};
+		vests[]={
+			ONE_COMM_RIGS,
+			VESTS_MED,
+			
+		};
+		bags[]={
+			BAGS,
+			BACKPACK_MEDIC
+		};
+	};
 	class SOCOMD_AT{
 		weapons[]={
 			GENERAL_RIFLE,

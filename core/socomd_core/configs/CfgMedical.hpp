@@ -67,27 +67,27 @@ class ACE_ArmLeft
 	class Epinephrine;
 	class Epinephrine_Medic : Epinephrine
 	{
-		displayName="Epinephrine 1mg/1mL";
+		displayName="Adrenaline 1mg/1mL";
 		condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Fentanyl: Morphine
 	{
-		displayName="Fentanyl 100mcg/2m";
+		displayName="Fentanyl 50mcg/2m";
 		condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 6mcg/2mL";
+		displayName="Ket 25mg/0.25mL";
 		condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
 	};
 	class Ket_S: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 100mg/1mL";
 		condition="[_player, _target, 'hand_l', 'Ket_S'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_l', 'Ket_S'] call ace_medical_fnc_treatment";
 	};
@@ -112,27 +112,27 @@ class ACE_ArmRight
 	class Epinephrine;
 	class Epinephrine_Medic : Epinephrine
 	{
-		displayName="Epinephrine 1mg/1mL";
+		displayName="Adrenaline 1mg/1mL";
 		condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Fentanyl: Morphine
 	{
-		displayName="Fentanyl 100mcg/2mL";
+		displayName="Fentanyl 50mcg/1mL";
 		condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 6mcg/2mL";
+		displayName="Ket 25mg/0.25mL";
 		condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
 	};
 	class Ket_S: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 100mg/1mL";
 		condition="[_player, _target, 'hand_r', 'Ket_S'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'hand_r', 'Ket_S'] call ace_medical_fnc_treatment";
 	};
@@ -157,27 +157,27 @@ class ACE_LegLeft
 	class Epinephrine;
 	class Epinephrine_Medic : Epinephrine
 	{
-		displayName="Epinephrine 1mg/1mL";
+		displayName="Adrenaline 1mg/1mL";
 		condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Fentanyl: Morphine
 	{
-		displayName="Fentanyl 100mcg/2mL";
+		displayName="Fentanyl 50mcg/1mL";
 		condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 6mcg/2mL";
+		displayName="Ket 25mg/0.25mL";
 		condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
 	};
 	class Ket_S: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 100mg/1mL";
 		condition="[_player, _target, 'leg_l', 'Ket_S'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_l', 'Ket_S'] call ace_medical_fnc_treatment";
 	};
@@ -202,27 +202,27 @@ class ACE_LegRight
 	class Epinephrine;
 	class Epinephrine_Medic : Epinephrine
 	{
-		displayName="Epinephrine 1mg/1mL";
+		displayName="Adrenaline 1mg/1mL";
 		condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Fentanyl: Morphine
 	{
-		displayName="Fentanyl 100mcg/2mL";
+		displayName="Fentanyl 50mcg/1mL";
 		condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
 		icon="socomd_data_core\icon\VPN.paa";
 	};
 	class Ket: Fentanyl
 	{
-		displayName="Ket 6mcg/2mL";
+		displayName="Ket 25mg/0.25mL";
 		condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
 	};
 	class Ket_S: Fentanyl
 	{
-		displayName="Ket 100mcg/2mL";
+		displayName="Ket 100mg/1mL";
 		condition="[_player, _target, 'leg_r', 'Ket_S'] call ace_medical_fnc_canTreatCached";
 		statement="[_player, _target, 'leg_r', 'Ket_S'] call ace_medical_fnc_treatment";
 	};
@@ -1088,8 +1088,8 @@ class ACE_Medical_Actions
 		};
 		class Epinephrine;
 		class Epinephrine_Medic: Epinephrine{
-			displayName= "Epinephrine 1mg/1mL";
-			displayNameProgress="Injecting Epinephrine";
+			displayName= "Adrenaline 1mg/1mL";
+			displayNameProgress="Injecting Adrenaline";
 			items[]=
 			{
 				"ACE_epinephrine_Medic",
@@ -1135,7 +1135,7 @@ class ACE_Medical_Actions
 		};
 		class Fentanyl: Morphine
 		{
-			displayName="Fentanyl 100mcg/2mL";
+			displayName="Fentanyl 50mcg/1mL IV";
 			displayNameProgress="Injecting Fentanyl";
 			items[]=
 			{
@@ -1144,8 +1144,8 @@ class ACE_Medical_Actions
 			};
 		};
 		class Ket: Morphine {
-			displayName="Ketamine 6mg/2mL";
-			displayNameProgress="Injecting Ketamine 6mg/2mL";
+			displayName="Ketamine 25mg/0.25mL";
+			displayNameProgress="Injecting Ketamine 25mg/0.25mL";
 			items[]=
 			{
 				"SOCOMD_Ket",
@@ -1158,7 +1158,7 @@ class ACE_Medical_Actions
 			displayNameProgress="Injecting Ketamine 200mg/2mL";
 			items[]=
 			{
-				"SOCOMD_Ket_S",
+				"SOCOMD_Ket",
 				"SOCOMD_VPN"
 			};
 			callbackSuccess=SOCOMD_fnc_ketamine_sedation;
@@ -1169,7 +1169,7 @@ class ACE_Medical_Actions
 				"head"
 			};
 			displayName="Tetracycline 250mg";
-			displayNameProgress="Giving Tetracycline";
+			displayNameProgress="Giving Antibiotic";
 			items[]=
 			{
 				"SOCOMD_Tetra"

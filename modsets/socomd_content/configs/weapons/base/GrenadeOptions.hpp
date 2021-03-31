@@ -155,3 +155,14 @@ class grenades_less_lethal_leader : grenades_default {
 		{SmokeShellGreen, 2}
 	};
 };
+
+// AO Medic
+class grenades_standard_ao : grenades_default {
+	displayName = "High Marker";
+	vest[] = {
+		{ACE_Chemlight_HiWhite, 8},
+		{ACE_IR_Strobe_Item, 1},
+		{ACE_HandFlare_White, 2},
+		{SmokeShellPurple, 3},
+	};
+};

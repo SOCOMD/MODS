@@ -17,7 +17,10 @@ if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
         _magazineCount = _x select 1;
-        _player addMagazines[_magazine, _magazineCount];
+        if (_loadoutId ==  "SOCOMD_AO") then {
+            _magazineCount = _magazineCount / 2;
+        };
+            _player addMagazines[_magazine, _magazineCount];
     } forEach _loadoutMagazines;
 };
 

@@ -1,4 +1,4 @@
-class O_G_Offroad_01_armed_F : I_G_Offroad_01_armed_F {
+/*class O_G_Offroad_01_armed_F : I_G_Offroad_01_armed_F {
     class Turrets : Turrets {
         class M2_Turret : M2_Turret {
             // yay a vanilla gun :D
@@ -23,4 +23,4 @@ class O_G_Offroad_01_armed_F : I_G_Offroad_01_armed_F {
             };
         };
     };
-};
+};*/

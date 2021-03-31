@@ -1,4 +1,4 @@
-// insurgents
+/*// insurgents
 class O_CUPOTban_Technical_PK_01 : CUP_I_Datsun_PK_TK_OCimport_02 {
     class Turrets : Turrets {
         class MainTurret : MainTurret {
@@ -180,4 +180,4 @@ class O_CUPAFRMReb_Technical_PK_01 : CUP_O_Datsun_PK_Random_OCimport_02 {
             };
         };
     }; 
-};
+};*/

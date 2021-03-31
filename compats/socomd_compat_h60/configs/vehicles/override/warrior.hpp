@@ -75,7 +75,8 @@
 	TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)
+	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
+	TRANSPORT_BACKPACK(SOCOMD_Medical_AO, 1)
 
 // large
 #define INVENTORY_VEHICLE_LARGE_WEAPONS \
@@ -289,7 +290,7 @@
 			{1.405, 2.031, 0.49}
 		};
 		
-		displayName="S-70A-9 Blackhawk FFV(4/10)";
+		displayName="S-70A-9 Blackhawk FFV (4/10)";
 		icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
 		picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
 	};

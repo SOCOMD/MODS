@@ -25,7 +25,7 @@ class ACE_morphine_Medic: ACE_morphine {
 
 class ACE_epinephrine_Medic: ACE_epinephrine {
 	author="Monk";
-	displayName="Epinephrine 1mg/1mL Ampoule";
+	displayName="Adrenaline 1mg/1mL Ampoule";
 	picture="\socomd_data_core\icon\epi.paa";
 	descriptionShort="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";
 	descriptionUse="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";
@@ -49,7 +49,7 @@ class ACE_naloxone: ACE_atropine {
 
 class ACE_apap: ACE_morphine {
 	author="Monk";
-	displayName="Paracetemol 1g Tablets";
+	displayName="Paracetemol 2x500mg Tablets";
 	picture="\socomd_data_core\icon\apap.paa";
 	model="\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
 	descriptionShort="Analgesic/Antipyretic, used for light pain and fever";
@@ -74,15 +74,62 @@ class KAT_guedel: ACE_ItemCore {
 };
 
 class KAT_ChestSeal: ACE_ItemCore {
-	displayName="Chest Seal";
+	displayName="HyFin Vent Compact Chest Seal";
 	picture="\socomd_data_core\icon\Hyfin.paa";
 };
 
+class SOCOMD_booboo: ACE_ItemCore {
+	displayName="Blue Force Gear Boo Boo Kit";
+	descriptionShort="Contains: Wiggles bandaids, iodine, dental hygiene, elctrolytes, jelly beans and more";
+	descriptionUse="Contains: Wiggles bandaids, iodine, dental hygiene, elctrolytes, jelly beans and more";
+	picture="\socomd_data_core\icon\extra\booboo_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+class SOCOMD_cascard: ACE_ItemCore {
+	displayName="TACMED Casualty Cards";
+	picture="\socomd_data_core\icon\extra\cascard_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+class SOCOMD_nargloves: ACE_ItemCore {
+	displayName="NAR Nitrile Gloves (Sand)";
+	picture="\socomd_data_core\icon\extra\nargloves_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+class SOCOMD_shears: ACE_ItemCore {
+	displayName="Trauma Shears";
+	picture="\socomd_data_core\icon\extra\shears_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+class SOCOMD_notes: ACE_ItemCore {
+	displayName="Notebook";
+	descriptionShort="For recording patient details for handover";
+	picture="\socomd_data_core\icon\extra\notes_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+class SOCOMD_triangleban: ACE_ItemCore {
+	displayName="NAR Triangle Bandage";
+	picture="\socomd_data_core\icon\extra\triangleban_ca.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};
+
+
 class SOCOMD_NDC: ACE_ItemCore {
 	scope=2;
-	displayName="14 gauge NDC";
-	descriptionShort="14 gauge needle for performing emergency chest decompression";
-	descriptionUse="14 gauge needle for performing emergency chest decompression";
+	displayName="ARS Needle for decompression";
+	descriptionShort="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression";
+	descriptionUse="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression";
 	picture="\socomd_data_core\icon\NDC.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
@@ -91,7 +138,7 @@ class SOCOMD_NDC: ACE_ItemCore {
 
 class SOCOMD_VPN: ACE_ItemCore {
 	scope=2;
-	displayName="3mL Drug Syringe";
+	displayName="10mL Drug Syringe";
 	descriptionShort="For administering drugs";
 	descriptionUse="For administering drugs";
 	picture="\socomd_data_core\icon\VPN.paa";
@@ -102,9 +149,9 @@ class SOCOMD_VPN: ACE_ItemCore {
 
 class SOCOMD_Ket: ACE_morphine {
 	scope=2;
-	displayName="Ketamine 6mg/2mL Ampoule";
-	descriptionShort="Analgesic used for severe pain";
-	descriptionUse="Analgesic used for severe pain";
+	displayName="Ketamine Hydrochloride 200mg/2mL Ampoule";
+	descriptionShort="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes hypertension and tachtcardia.";
+	descriptionUse="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes hypertension and tachtcardia.";
 	picture="\socomd_data_core\icon\ket.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
