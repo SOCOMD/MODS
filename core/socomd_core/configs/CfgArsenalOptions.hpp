@@ -62,6 +62,73 @@
 	"ACWP_M4A5_105_troy_KAG_DON",\
 	"ACWP_M4A5_105_troy_KAG_NET",\
 	"ACWP_M4A5_105_troy_KAG_TAN",\
+	"ACWP_M4A5_105_troy_base_BLK",\
+    "ACWP_M4A5_105_troy_base_BLK_DON",\
+    "ACWP_M4A5_105_troy_base_BLK_NET",\
+    "ACWP_M4A5_145_troy_base_BLK",\
+    "ACWP_M4A5_145_troy_base_BLK_DON",\
+    "ACWP_M4A5_145_troy_base_BLK_NET",\
+    "ACWP_M4A5_145_troy_base_BLK_TAN",\
+    "ACWP_M4A5_105_troy_base_BLK_TAN",\
+    "ACWP_M4A5_145_troy_ROE_blk",\
+    "ACWP_M4A5_145_troy_ROE_BLK_DON",\
+    "ACWP_M4A5_145_troy_ROE_BLK_NET",\
+    "ACWP_M4A5_145_troy_ROE_BLK_TAN",\
+    "ACWP_M4A5_145_troy_KAG_BLK",\
+    "ACWP_M4A5_145_troy_KAG_BLK_TAN",\
+    "ACWP_M4A5_145_troy_KAG_BLK_DON",\
+    "ACWP_M4A5_145_troy_KAG_BLK_NET",\
+    "ACWP_M4A5_145_troy_afg_BLK",\
+    "ACWP_M4A5_145_troy_tango_BLK",\
+    "ACWP_M4A5_145_troy_MOD3_BLK",\
+    "ACWP_M4A5_105_troy_afg_BLK",\
+    "ACWP_M4A5_105_troy_tango_BLK",\
+    "ACWP_M4A5_105_troy_MOD3_BLK",\
+    "ACWP_M4A5_145_troy_afg_BLK_TAN",\
+    "ACWP_M4A5_145_troy_tango_BLK_TAN",\
+    "ACWP_M4A5_105_troy_afg_BLK_TAN",\
+    "ACWP_M4A5_105_troy_tango_BLK_TAN",\
+    "ACWP_M4A5_145_troy_afg_BLK_DON",\
+    "ACWP_M4A5_145_troy_tango_BLK_DON",\
+    "ACWP_M4A5_105_troy_afg_BLK_DON",\
+    "ACWP_M4A5_105_troy_tango_BLK_DON",\
+    "ACWP_M4A5_145_troy_afg_BLK_NET",\
+    "ACWP_M4A5_145_troy_tango_BLK_NET",\
+    "ACWP_M4A5_105_troy_afg_BLK_NET",\
+    "ACWP_M4A5_105_troy_tango_BLK_NET",\
+    "ACWP_M4A5_145_troy_MOD3_BLK_TAN",\
+    "ACWP_M4A5_145_troy_MOD3_BLK_DON",\
+    "ACWP_M4A5_145_troy_MOD3_BLK_NET",\
+    "ACWP_M4A5_105_troy_MOD3_BLK_NET",\
+    "ACWP_M4A5_105_troy_MOD3_BLK_DON",\
+    "ACWP_M4A5_105_troy_MOD3_BLK_TAN",\
+	"ACWP_M4A5_105_troy_ROE_blk",\
+	"ACWP_M4A5_105_troy_ROE_BLK_DON",\
+	"ACWP_M4A5_105_troy_ROE_BLK_NET",\
+	"ACWP_M4A5_105_troy_ROE_BLK_TAN",\
+	"ACWP_M4A5_105_troy_KAG_BLK",\
+	"ACWP_M4A5_105_troy_KAG_BLK_DON",\
+	"ACWP_M4A5_105_troy_KAG_BLK_NET",\
+	"ACWP_M4A5_145_ris_base",\
+    "ACWP_M4A5_145_ris_ROE",\
+    "ACWP_M4A5_145_ris_afg",\
+    "ACWP_M4A5_145_ris_tango",\
+    "ACWP_M4A5_145_ris_kag",\
+    "ACWP_M4A5_145_ris_base_DON",\
+    "ACWP_M4A5_145_ris_ROE_DON",\
+    "ACWP_M4A5_145_ris_afg_DON",\
+    "ACWP_M4A5_145_ris_tango_DON",\
+    "ACWP_M4A5_145_ris_kag_DON",\
+    "ACWP_M4A5_145_ris_base_tan",\
+    "ACWP_M4A5_145_ris_ROE_tan",\
+    "ACWP_M4A5_145_ris_afg_tan",\
+    "ACWP_M4A5_145_ris_tango_tan",\
+    "ACWP_M4A5_145_ris_kag_tan",\
+    "ACWP_M4A5_145_ris_base_NET",\
+    "ACWP_M4A5_145_ris_ROE_NET",\
+    "ACWP_M4A5_145_ris_afg_NET",\
+    "ACWP_M4A5_145_ris_tango_NET",\
+    "ACWP_M4A5_145_ris_kag_NET",\
 	"SMA_HK417vfg"
 
 #define SOLS_RIFLES \
@@ -74,10 +141,17 @@
     "SOG_BAG_med_od"
 
 #define GL_RIFLE \
-    "SMA_M4_GL_SM",\
     "SMA_MK18BLK_GL_SM",\
     "SMA_MK18TAN_GL_SM",\
     "SMA_MK18OD_GL_SM",\
+    "ACWP_M4A5_145_7rail_GL",\
+    "ACWP_M4A5_145_7rail_GL_GRIP",\
+    "ACWP_M4A5_145_7rail_GL_NET",\
+    "ACWP_M4A5_145_7rail_GL_GRIP_NET",\
+    "ACWP_M4A5_145_7rail_GL_TAN",\
+    "ACWP_M4A5_145_7rail_GL_GRIP_TAN",\
+    "ACWP_M4A5_145_7rail_GL_DON",\
+    "ACWP_M4A5_145_7rail_GL_GRIP_DON",\
 	"hlc_rifle_416D10_gl",\
     "hlc_rifle_416D10_tan_gl",\
     "hlc_rifle_416D10_wdl_gl",\
