@@ -217,9 +217,9 @@ class CfgGlasses {
 		HEARING_PROTECTION_PELTOR		
 	};
 	class FGN_CAG_glasses_class;
-	class FGN_CAG_Tactical_clr_Shemagh_mc: FGN_CAG_glasses_class
+	class FGN_CAG_Tactical_clr_Shemagh_amcu: FGN_CAG_glasses_class
 	{
-		displayname = "Face Shield + Tactical Glasses /Shemagh (AMCU)";
+		displayname = "Face Shield + Clear Glasses /Shmgh (AMCU)";
 		scope = 2;
 		author = "Adacas & Fingolfin";
 		model = "\FGN_CAG\f_face_shield_base.p3d";
@@ -234,6 +234,79 @@ class CfgGlasses {
 		{
 			"socomd_data_core\CTgear\f_Face_shield_amc_co.paa",
 			"milgp_headgear\textures\f_shemagh_khk_co.paa"
+		};
+	};
+	class FGN_CAG_Tactical_clr_amcu: FGN_CAG_glasses_class
+	{
+		displayname = "Face Shield + Clear Glasses (AMCU)";
+		scope = 2;
+		author = "Adacas & Fingolfin";
+		model = "\FGN_CAG\f_face_shield_base.p3d";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1",
+			"_Shades",
+			"_ESS"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"socomd_data_core\CTgear\f_Face_shield_amc_co.paa",
+			""
+		};
+	};
+	class milgp_f_face_shield_MC;
+	class SOCOMD_faceshield_AMCU : milgp_f_face_shield_MC
+	{
+		displayname = "Face Shield (AMCU)";
+		scope = 2;
+		hiddenSelections[] = {"camo","_Tactical","_Shades","_ESS","_Shemagh"};
+		hiddenSelectionsTextures[] = {"socomd_data_core\CTgear\f_Face_shield_amc_co.paa"};
+	};
+	class milgp_f_face_shield_tactical_MC;
+	class SOCOMD_faceshield_tac_AMCU : milgp_f_face_shield_tactical_MC
+	{
+		displayname = "Face Shield + Tactical(AMCU)";
+		scope = 2;
+		hiddenSelections[] = {"camo","_Shades","_ESS","_Shemagh"};
+		hiddenSelectionsTextures[] = {"socomd_data_core\CTgear\f_Face_shield_amc_co.paa"};
+	};
+	class FGN_CAG_Tactical_clr_Shemagh_mc: FGN_CAG_glasses_class
+	{
+		displayname = "Face Shield + Clear Glasses /Shmgh (MC)";
+		scope = 2;
+		author = "Adacas & Fingolfin";
+		model = "\FGN_CAG\f_face_shield_base.p3d";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1",
+			"_Shades",
+			"_ESS"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"milgp_headgear\textures\f_face_shield_MC_co.paa",
+			"milgp_headgear\textures\f_shemagh_khk_co.paa"
+		};
+	};
+	class FGN_CAG_Tactical_clr_mc: FGN_CAG_glasses_class
+	{
+		displayname = "Face Shield + Clear Glasses (MC)";
+		scope = 2;
+		author = "Adacas & Fingolfin";
+		model = "\FGN_CAG\f_face_shield_base.p3d";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo1",
+			"_Shades",
+			"_ESS"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"milgp_headgear\textures\f_face_shield_MC_co.paa",
+			""
 		};
 	};
 };

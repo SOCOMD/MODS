@@ -54,10 +54,11 @@
 #define LOADOUT_VEST_AO_ESSENTIALS \
 	LOADOUT_ITEM(ACE_Chemlight_HiWhite, 4) \
 	LOADOUT_ITEM(SmokeShellPurple, 2) \
+	LOADOUT_ITEM(B_IR_Grenade, 2) \
 	LOADOUT_ITEM(ACE_HandFlare_White, 2) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
-	LOADOUT_ITEM(ACRE_PRC152, 1) \
-	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+	LOADOUT_ITEM(ACRE_PRC152, 2) \
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
@@ -447,6 +448,7 @@ class SOCOMD_Medic {
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_booboo, 1)
+			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
 			LOADOUT_ITEM(ACE_fieldDressing, 20)  		//Israeli Bandage
 			LOADOUT_ITEM(SOCOMD_triangleban, 3)  		//Israeli Bandage
@@ -459,7 +461,6 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
 			LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
 			LOADOUT_ITEM(SOCOMD_nargloves, 10)
-			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
 			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
@@ -509,10 +510,7 @@ class SOCOMD_AO{
 		type = ITEM_BACKPACK_MEDIC;
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
-			LOADOUT_ITEM(SOCOMD_cascard, 2)
 			LOADOUT_ITEM(SOCOMD_booboo, 1)
-			LOADOUT_ITEM(SOCOMD_nargloves, 10)
-			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(ACE_packingBandage, 0)  		//Remove
 			LOADOUT_ITEM(ACE_fieldDressing, 15)  		//Israeli Bandage
 			LOADOUT_ITEM(ACE_epinephrine, 0)  			//Remove
@@ -529,9 +527,12 @@ class SOCOMD_AO{
 			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
 			LOADOUT_ITEM(SOCOMD_Ket_S, 0)				//Ketamine (Sedation) Ampoule
 			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
+			LOADOUT_ITEM(SOCOMD_nargloves, 5)
 			LOADOUT_ITEM(SOCOMD_Tetra, 0)				//Paracetamol  
 			LOADOUT_ITEM(ACE_bloodIV_500, 14)			//Blood
+			LOADOUT_ITEM(SOCOMD_shears, 1)
 			LOADOUT_ITEM(KAT_guedel, 0)					//Nasopharangeal Airway
+			LOADOUT_ITEM(SOCOMD_cascard, 2)
 			LOADOUT_ITEM(KAT_larynx, 6)					//Laryngeal Mask Airway
 			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
 			LOADOUT_ITEM(KAT_Pulseoximeter, 3)			//Pulseoximeter

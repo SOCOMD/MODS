@@ -147,7 +147,7 @@ class CfgUnitInsignia {
 	class Diedre {
 		displayName="Diedre";
 		author="Monk";
-		texture="socomd_data_core\insignia\Diedre.paa";
+		texture="socomd_data_core\insignia\Deidre.paa";
 	};
 	class RDBK1 {
 		displayName="SASR Redback 1";
