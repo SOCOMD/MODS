@@ -80,6 +80,7 @@ class KAT_ChestSeal: ACE_ItemCore {
 
 class SOCOMD_booboo: ACE_ItemCore {
 	displayName="Blue Force Gear Boo Boo Kit";
+	scope = 2;
 	descriptionShort="Contains: Wiggles bandaids, iodine, dental hygiene, elctrolytes, jelly beans and more";
 	descriptionUse="Contains: Wiggles bandaids, iodine, dental hygiene, elctrolytes, jelly beans and more";
 	picture="\socomd_data_core\icon\extra\booboo_ca.paa";
@@ -87,28 +88,28 @@ class SOCOMD_booboo: ACE_ItemCore {
 		mass=0.01;
 	};
 };
-class SOCOMD_cascard: ACE_ItemCore {
+class SOCOMD_cascard: SOCOMD_booboo {
 	displayName="TACMED Casualty Cards";
 	picture="\socomd_data_core\icon\extra\cascard_ca.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
 	};
 };
-class SOCOMD_nargloves: ACE_ItemCore {
+class SOCOMD_nargloves: SOCOMD_booboo {
 	displayName="NAR Nitrile Gloves (Sand)";
 	picture="\socomd_data_core\icon\extra\nargloves_ca.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
 	};
 };
-class SOCOMD_shears: ACE_ItemCore {
+class SOCOMD_shears: SOCOMD_booboo {
 	displayName="Trauma Shears";
 	picture="\socomd_data_core\icon\extra\shears_ca.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass=0.01;
 	};
 };
-class SOCOMD_notes: ACE_ItemCore {
+class SOCOMD_notes: SOCOMD_booboo {
 	displayName="Notebook";
 	descriptionShort="For recording patient details for handover";
 	picture="\socomd_data_core\icon\extra\notes_ca.paa";
@@ -116,7 +117,7 @@ class SOCOMD_notes: ACE_ItemCore {
 		mass=0.01;
 	};
 };
-class SOCOMD_triangleban: ACE_ItemCore {
+class SOCOMD_triangleban: SOCOMD_booboo {
 	displayName="NAR Triangle Bandage";
 	picture="\socomd_data_core\icon\extra\triangleban_ca.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
