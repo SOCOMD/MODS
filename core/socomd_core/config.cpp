@@ -178,6 +178,5 @@ class CfgAnimation {
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgWorldType.hpp"
-#include "configs\CfgMedical.hpp"
 #include "configs\CfgArsenalOptions.hpp"
 //#include "configs\CfgModels.hpp"

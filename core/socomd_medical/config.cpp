@@ -10,7 +10,7 @@ class CfgPatches {
 		requiredVersion = 1.0;
 		requiredAddons[] = {
 			"ace_medical_treatment",
-			"kat"
+			"kat_main"
 		};
 
 		units[] = {
