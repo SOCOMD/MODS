@@ -113,7 +113,7 @@ class Tetra : PainKillers {
 	viscosityChange=0;
 };
 
-class Apap : PainKillers {
+class paracetamol : PainKillers {
 	painReduce=0.4;
 	timeInSystem=1200;
 	maxDose=15;
