@@ -88,6 +88,7 @@ class Ketamine_6mg {
 	inCompatableMedication[]={};
 	viscosityChange=5;
 	unconsciousTime=30;
+	effectTime = 30;
 };
 
 class Ketamine_200mg : Ketamine_6mg {
@@ -100,6 +101,7 @@ class Ketamine_200mg : Ketamine_6mg {
 	inCompatableMedication[]={};
 	viscosityChange=5;
 	unconsciousTime=300;
+	effectTime = 30;
 };
 
 class Tetra : PainKillers {

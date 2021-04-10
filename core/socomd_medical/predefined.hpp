@@ -49,3 +49,6 @@
 #define ITEM19(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
 #define ITEM20(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
 #define ITEM30(id) id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id,id
+#include "\z\ace\addons\main\script_mod.hpp"
+#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
+#include "\z\ace\addons\main\script_macros.hpp"

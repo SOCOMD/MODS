@@ -46,6 +46,8 @@ class Ketamine_6mg : Morphine {
 	items[] = {
 		"SOCOMD_ketamine_6mg"
 	};
+	callbackStart = "";
+	callbackProgress = "";
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamineSuccess";
 };
 
@@ -55,6 +57,8 @@ class Ketamine_200mg : Morphine {
 	items[] = {
 		"SOCOMD_ketamine_200mg"
 	};
+	callbackStart = "";
+	callbackProgress = "";
 	callbackSuccess = "SOCOMD_Medical_fnc_ketamineSuccess";
 };
 
