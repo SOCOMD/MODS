@@ -21,9 +21,9 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
 		TRANSPORT_ITEM(ACE_quikclot, 8)				//Quikclot
 		TRANSPORT_ITEM(KAT_ChestSeal, 1)				//Hyfin Chest Seal
 		TRANSPORT_ITEM(ACE_tourniquet, 2)				//Tourniquet
-		TRANSPORT_ITEM(ACE_epinephrine_Medic, 3)		//Epinephrine Ampoule
-		TRANSPORT_ITEM(ACE_naloxone, 1)				//Naloxone Ampoule
-		TRANSPORT_ITEM(ACE_fentanyl, 1)				//Fentanyl Ampoule
+		TRANSPORT_ITEM(SOCOMD_Epinephrine, 3)		//Epinephrine Ampoule
+		TRANSPORT_ITEM(SOCOMD_naloxone, 1)				//Naloxone Ampoule
+		TRANSPORT_ITEM(SOCOMD_fentanyl, 1)				//Fentanyl Ampoule
 		TRANSPORT_ITEM(SOCOMD_ketamine_6mg, 1)					//Ketamine Ampoule
 		TRANSPORT_ITEM(SOCOMD_Apap, 2)					//Paracetamol
 		TRANSPORT_ITEM(SOCOMD_tetra, 2)				//Paracetamol  
