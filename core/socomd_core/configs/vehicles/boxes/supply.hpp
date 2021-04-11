@@ -287,7 +287,7 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
 
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(ace_csw_100Rnd_127x99_mag, 8)
-	}
+	};
 	class TransportWeapons {
 		TRANSPORT_WEAPON(ace_csw_staticHMGCarry, 2)
 		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
@@ -309,7 +309,7 @@ class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
 	displayName = "[SUPPLY] AGL";
 	class TransportMagazines {
 		TRANSPORT_MAGAZINE(ace_csw_40Rnd_20mm_G_belt, 8)
-	}
+	};
 	class TransportWeapons {
 		TRANSPORT_WEAPON(ace_csw_staticGMGCarry, 2)
 		TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)

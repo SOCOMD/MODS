@@ -5,4 +5,4 @@ class SOCOMD_Item_Magazine_762x51_100Rnd_Tracer     : CUP_150Rnd_TE4_LRT4_White_
 class SOCOMD_Item_Magazine_300_5Rnd                 : hlc_5rnd_300WM_FMJ_AWM {scope = protected;};
 class SOCOMD_Item_Magazine_Barret                   : Recon_Barret_mag {scope = protected;};
 class SOCOMD_Item_Magazine_9x21_60Rnd               : CUP_30Rnd_9x19_MP5 {};
-class SOCOMD_Item_Magazine_556x45_200Rnd_Tracer		: CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch{}
+class SOCOMD_Item_Magazine_556x45_200Rnd_Tracer		: CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch{};

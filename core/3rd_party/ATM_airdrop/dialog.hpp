@@ -319,16 +319,16 @@ class ATM_AD_ALTITUDE_SELECT
 			w = 0.275; h = 0.04;
 		};
 
-		class ATM_AD_SelectKeys : ATM_AD_Keys{
-			idc = 2903;
-			rowHeight = 0.03;
-			wholeHeight = 6.5 * 0.03;
-			x = 0.505 * safezoneW + safezoneX;
-			y = 0.425 * safezoneH + safezoneY;
-			w = 0.0459375 * safezoneW;
-			h = 0.018 * safezoneH;
-			onLBSelChanged = "[] call pkChangeKey;";
-		};
+		// class ATM_AD_SelectKeys : ATM_AD_Keys{
+		// 	idc = 2903;
+		// 	rowHeight = 0.03;
+		// 	wholeHeight = 6.5 * 0.03;
+		// 	x = 0.505 * safezoneW + safezoneX;
+		// 	y = 0.425 * safezoneH + safezoneY;
+		// 	w = 0.0459375 * safezoneW;
+		// 	h = 0.018 * safezoneH;
+		// 	onLBSelChanged = "[] call pkChangeKey;";
+		// };
 		
 		class ATM_AD_ButtonClose : ATM_AD_RscButtonMenu {
 			idc = -1;

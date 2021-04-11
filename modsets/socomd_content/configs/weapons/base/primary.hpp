@@ -227,7 +227,7 @@ class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
 	displayName = "Mk 48 Maximi";
 	magazineWell[] = {"SOCOMD_762_150Rnd"};
-	ace_overheating_mrbs = 2000 //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+	ace_overheating_mrbs = 2000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 	ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };
 
@@ -341,10 +341,10 @@ class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\Russian\ak74m_body_camo_co.paa",
-			"socomd_data_core\Russian\ak74m_stock_camo_co.paa",
-			"socomd_data_core\Russian\ak74m_grip_rail_co.paa",
-			"socomd_data_core\Russian\fortisshift_foregrip_co.paa"
+			"\socomd_data_core\Russian\ak74m_body_camo_co.paa",
+			"\socomd_data_core\Russian\ak74m_stock_camo_co.paa",
+			"\socomd_data_core\Russian\ak74m_grip_rail_co.paa",
+			"\socomd_data_core\Russian\fortisshift_foregrip_co.paa"
 		};
 		magazines[]=
 		{
@@ -648,7 +648,7 @@ class CUP_smg_vityaz_vfg_front_rail;
 class SOCOMD_ALFA_PP19: CUP_smg_vityaz_vfg_front_rail{
 };
 class SOCOMD_ALFA_PP19_acc: CUP_smg_vityaz_vfg_front_rail{
-	displayname="RU-PP19 (ALFA)"
+	displayname="RU-PP19 (ALFA)";
 	class LinkedItems{
 		class LinkedItemsOptic{
 			item = "CUP_optic_MicroT1_low";

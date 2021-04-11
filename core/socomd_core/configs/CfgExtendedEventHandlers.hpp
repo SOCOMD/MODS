@@ -16,7 +16,7 @@ class Extended_PreInit_EventHandlers
 {
 	class AB_WindowBreaker
 	{
-		init="call compile preprocessFileLineNumbers 'socomd_core\functions\common\XEH_PreInit.sqf'";
+		init="call compile preprocessFileLineNumbers '\socomd_core\functions\common\XEH_PreInit.sqf'";
 	};
 
 };

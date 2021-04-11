@@ -13,13 +13,13 @@ class ExtrasBase: ItemMap {
 	};
 };
 class extras_none : ExtrasBase{
-	displayName = "No Spare Ammo"
+	displayName = "No Spare Ammo";
 	scope=2;
 	scopeArsenal = 2;
 	picture = "";
 };
 class extras_spare_squad_ammo: extras_none{
-	displayName = "Squad Ammo"
+	displayName = "Squad Ammo";
 	bag[] = {
 		{SOCOMD_Item_Magazine_556x45_30Rnd, 4},
 		{SOCOMD_Item_Magazine_762x51_20Rnd, 2},
@@ -27,32 +27,32 @@ class extras_spare_squad_ammo: extras_none{
 	};
 };
 class extras_mg_support: extras_none{
-	displayName = "Minimi Ammo"
+	displayName = "Minimi Ammo";
 	bag[] = {
 		{SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,3}
 	};
 };
 class extras_medium_mg_support: extras_none{
-	displayName = "Maximi Ammo"
+	displayName = "Maximi Ammo";
 	bag[] = {
 		{SOCOMD_Item_Magazine_762x51_100Rnd_Tracer,3}
 	};
 };
 class extras_heavy_mg_support: extras_none{
-	displayName = "MAG58 Assitant"
+	displayName = "MAG58 Assitant";
 	bag[] = {
 		{SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M,2}
 	};
 };
 class extras_at_assistant_mixed: extras_none{
-	displayName = "AT Assistant (mixed)"
+	displayName = "AT Assistant (mixed)";
 	bag[] = {
 		{tf47_m3maaws_HEAT,1},
 		{tf47_m3maaws_HE,1}
 	};
 };
 class extras_at_assistant_heat: extras_none{
-	displayName = "AT Assistant (2x HEAT)"
+	displayName = "AT Assistant (2x HEAT)";
 	bag[] = {
 		{tf47_m3maaws_HEAT,2}
 	};
