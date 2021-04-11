@@ -46,6 +46,7 @@ class ElasticBandage: fieldDressing {
 		effectiveness=2.4;
 	};
 	class ContusionLarge: Contusion{
+		effectiveness=0.2;
 	};
 
 	class Crush: Abrasion{

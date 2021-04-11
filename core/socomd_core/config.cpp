@@ -36,7 +36,7 @@ class CfgPatches {
 			"lbtt_Vest_config",
 			"milgp_headgear_cfg",
 			"socomd_data_core",
-			"socomd_medical"
+			"SOCOMD_Medical"
 		};
 
 		//SOCOMD Custom Units

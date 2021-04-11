@@ -123,7 +123,7 @@ class ACE_Medical_Actions{
 			displayName="Paracetemol 1g";
 			displayNameProgress="Giving Paracetemol 1g";
 			items[]={
-				"ACE_apap"
+				"SOCOMD_Apap"
 			};
 			treatmentTime=1;
 			litter[]={

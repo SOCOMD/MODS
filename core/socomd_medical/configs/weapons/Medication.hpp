@@ -2,7 +2,29 @@
 class ACE_atropine;
 class ACE_morphine : ACE_ItemCore {
 	scope=public;
-	displayName="Morphine 10mg/1mL";
+	displayName="Morphine autoinjector 10mg/1mL";
+	descriptionShort="Analgesic, used for moderate pain";
+	descriptionUse="Analgesic, used for moderate pain";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass = 1;
+	};
+};
+
+class ACE_epinephrine : ACE_ItemCore {
+	scope=public;
+	displayName="Adrenaline autoinjector 1mg/1mL";
+	descriptionShort="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";
+	descriptionUse="Sympathomimetic, increases HR, bronchodilation and vasoconstriction";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass = 1;
+	};
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+class SOCOMD_morphine : ACE_ItemCore {
+	scope=public;
+	displayName="Morphine 10mg/1mL Ampoule";
 	picture="\socomd_data_core\icon\morphine.paa";
 	descriptionShort="Analgesic, used for moderate pain";
 	descriptionUse="Analgesic, used for moderate pain";
@@ -11,7 +33,7 @@ class ACE_morphine : ACE_ItemCore {
 	};
 };
 
-class ACE_epinephrine : ACE_ItemCore {
+class SOCOMD_epinephrine : ACE_ItemCore {
 	scope=public;
 	displayName="Adrenaline 1mg/1mL Ampoule";
 	picture="\socomd_data_core\icon\epi.paa";
@@ -21,9 +43,6 @@ class ACE_epinephrine : ACE_ItemCore {
 		mass = 0.01;
 	};
 };
-
-////////////////////////////////////////////////////////////////////////////////
-
 class SOCOMD_naloxone : ACE_atropine {
 	scope=public;
 	displayName="Naloxone Hydrochloride Dihydrate 1.6mg/4mL Ampoule";
@@ -62,7 +81,7 @@ class SOCOMD_tetra : ACE_morphine {
 	};
 };
 
-class SOCOMD_paracetamol: ACE_morphine {
+class SOCOMD_Apap : ACE_morphine {
 	author="Monk";
 	displayName="Paracetemol 2x500mg Tablets";
 	picture="\socomd_data_core\icon\apap.paa";
@@ -74,3 +93,13 @@ class SOCOMD_paracetamol: ACE_morphine {
 	};
 };
 
+class SOCOMD_VPN : ACE_ItemCore {
+	scope=public;
+	displayName="3mL Drug Syringe";
+	descriptionShort="For administering drugs";
+	descriptionUse="For administering drugs";
+	picture="\socomd_data_core\icon\VPN.paa";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass=0.01;
+	};
+};

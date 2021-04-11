@@ -11,11 +11,10 @@
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 3) \
+	LOADOUT_ITEM(SOCOMD_Apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
-	LOADOUT_ITEM(KAT_guedel, 2)	\
-	LOADOUT_ITEM(SOCOMD_VPN, 2)
+	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -84,7 +83,7 @@
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 1) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 4) \
+	LOADOUT_ITEM(SOCOMD_Apap, 4) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 0) \
 	LOADOUT_ITEM(SOCOMD_VPN, 1)
@@ -462,13 +461,14 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(ACE_elasticBandage, 20)		//Elastic Bandage
 			LOADOUT_ITEM(ACE_quikclot, 25)				//Quikclot
 			LOADOUT_ITEM(KAT_ChestSeal, 6)				//Hyfin Chest Seal
+			LOADOUT_ITEM(KAT_aatKit, 6)					//Hemopneumothorax kit
 			LOADOUT_ITEM(SOCOMD_nargloves, 10)
 			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
 			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
 			LOADOUT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
-			LOADOUT_ITEM(SOCOMD_Ket, 8)					//Ketamine Ampoule
-			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
+			LOADOUT_ITEM(SOCOMD_ketamine_6mg 8)					//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_Apap, 10)				//Paracetamol
 			LOADOUT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
 			LOADOUT_ITEM(ACE_bloodIV_500, 5)			//Blood
 			LOADOUT_ITEM(SOCOMD_notes, 0)
@@ -477,9 +477,8 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(KAT_accuvac, 1)				//Medical Suction
 			LOADOUT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
 			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
-			LOADOUT_ITEM(SOCOMD_NDC, 6)					//14 Gauge needle
 			LOADOUT_ITEM(ACE_surgicalKit, 8)			//Surgical Kit
-			LOADOUT_ITEM(SOCOMD_Defibrillator, 1)		//Defibrillator
+			LOADOUT_ITEM(kat_AED, 1)		//Defibrillator
 		};
 	};
 };
@@ -522,13 +521,13 @@ class SOCOMD_AO{
 			LOADOUT_ITEM(ACE_elasticBandage, 5)			//Elastic Bandage
 			LOADOUT_ITEM(ACE_quikclot, 20)				//Quikclot
 			LOADOUT_ITEM(KAT_ChestSeal, 8)				//Hyfin Chest Seal
+			LOADOUT_ITEM(KAT_aatKit, 8)					//Hemopneumothorax kit
 			LOADOUT_ITEM(ACE_tourniquet, 6)				//Tourniquet
-			LOADOUT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
-			LOADOUT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
-			LOADOUT_ITEM(ACE_fentanyl, 4)				//Fentanyl Ampoule
-			LOADOUT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
-			LOADOUT_ITEM(SOCOMD_Ket_S, 0)				//Ketamine (Sedation) Ampoule
-			LOADOUT_ITEM(ACE_apap, 10)					//Paracetamol
+			LOADOUT_ITEM(SOCOMD_Epinephrine, 10)		//Epinephrine Ampoule
+			LOADOUT_ITEM(SOCOMD_naloxone, 2)				//Naloxone Ampoule
+			LOADOUT_ITEM(SOCOMD_fentanyl, 4)				//Fentanyl Ampoule
+			LOADOUT_ITEM(SOCOMD_ketamine_6mg, 4)		//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_Apap, 10)					//Paracetamol
 			LOADOUT_ITEM(SOCOMD_nargloves, 5)
 			LOADOUT_ITEM(SOCOMD_Tetra, 0)				//Paracetamol  
 			LOADOUT_ITEM(ACE_bloodIV_500, 14)			//Blood
@@ -541,7 +540,7 @@ class SOCOMD_AO{
 			LOADOUT_ITEM(SOCOMD_VPN, 30)				//3mL drug Syringe
 			LOADOUT_ITEM(SOCOMD_NDC, 8)					//14 Gauge needle
 			LOADOUT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
-			LOADOUT_ITEM(adv_aceCPR_AED, 1)				//Defibrillator
+			LOADOUT_ITEM(kat_aed, 1)				    //Defibrillator
 			LOADOUT_ITEM(ACE_bodyBag, 2)				//Defibrillator
 		};
 	};

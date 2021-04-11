@@ -27,7 +27,7 @@ _handle ppEffectEnable true;
 enableCamShake true;  
 _handle ppEffectAdjust [1, 1, 1, 4.10, 3.70, 2.50, 1.85, 0.0035, 0.0025, 0.03, 0.00450, 0.1, 0.1, 0.1, 0.1];   
 _handle ppEffectCommit 2; 
-for "_i" from 0 to (30 + _unconsciousTime) do {                          //PP Effects last for 30s  
+for "_i" from 0 to (30 + _unconsciousTime) do {                          //PP Effects last for 30s after waking up
 [{  
 	_rand1 = random [0, 0.2, 1];  
 	_rand2 = random [0, 0.05, 0.2];  

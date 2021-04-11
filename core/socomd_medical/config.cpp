@@ -10,13 +10,18 @@ class CfgPatches {
 		requiredVersion = 1.0;
 		requiredAddons[] = {
 			"ace_medical_treatment",
-			"kat_main"
+            "kat_main",
+            "kat_airway",
+            "kat_circulation",
 		};
 
 		units[] = {
-			"SOCOMD_fentanylItem",
-			"SOCOMD_naloxonelItem",
-			"SOCOMD_ApapItem"
+			SOCOMD_MorphineItem,
+			SOCOMD_epinephrineItem,
+			SOCOMD_fentanylItem,
+			SOCOMD_naloxonelItem,
+			SOCOMD_ketamineItem,
+			SOCOMD_ApapItem
 		};
 
 		weapons[] = {
@@ -27,6 +32,7 @@ class CfgPatches {
 			"SOCOMD_tetra",
 			"SOCOMD_Apap",
 			"SOCOMD_VPN"
+			"SOCOMD_NDC"
 		};
 	};
 };

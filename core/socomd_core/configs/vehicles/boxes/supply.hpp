@@ -194,9 +194,9 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(ACE_epinephrine_Medic, 10)		//Epinephrine Ampoule
 		TRANSPORT_ITEM(ACE_naloxone, 2)				//Naloxone Ampoule
 		TRANSPORT_ITEM(ACE_fentanyl, 8)				//Fentanyl Ampoule
-		TRANSPORT_ITEM(SOCOMD_Ket, 4)					//Ketamine Ampoule
+		TRANSPORT_ITEM(SOCOMD_ketamine_6mg 4)					//Ketamine Ampoule
 		TRANSPORT_ITEM(SOCOMD_Ket_S, 4)				//Ketamine (Sedation) Ampoule
-		TRANSPORT_ITEM(ACE_apap, 10)					//Paracetamol
+		TRANSPORT_ITEM(SOCOMD_Apap, 10)					//Paracetamol
 		TRANSPORT_ITEM(SOCOMD_tetra, 5)				//Paracetamol  
 		TRANSPORT_ITEM(ACE_bloodIV_500, 5)			//Blood
 		TRANSPORT_ITEM(KAT_guedel, 9)					//Nasopharangeal Airway
