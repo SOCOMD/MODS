@@ -2,7 +2,7 @@ class Morphine;
 class SOCOMD_Morphine: Morphine {
 	displayName = "Morphine 10mg/1mL";
 	displayNameProgress = "Injecting Morphine";
-	icon = "socomd_data_core\icon\VPN.paa";
+	icon = "\socomd_medical\tex\VPN.paa";
 	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
 	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
 	items[] = {
@@ -14,7 +14,7 @@ class SOCOMD_Morphine: Morphine {
 class SOCOMD_Epinephrine: Morphine {
 	displayName = "Adrenaline 1mg/1mL";
 	displayNameProgress = "Injecting Adrenaline";
-	icon = "socomd_data_core\icon\VPN.paa";
+	icon = "\socomd_medical\tex\VPN.paa";
 	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
 	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
 	requiresAll=true;
@@ -30,7 +30,7 @@ class SOCOMD_Epinephrine: Morphine {
 class Naloxone : Morphine {
 	displayName="Naloxone 1.6mg/4mL";
 	displayNameProgress="Injecting Naloxone";
-	icon="socomd_data_core\icon\VPN.paa";
+	icon="\socomd_medical\tex\VPN.paa";
 	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
 	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
 	requiresAll=true;
@@ -43,7 +43,7 @@ class Naloxone : Morphine {
 class Fentanyl: Morphine{
 	displayName="Fentanyl 100mcg/2mL";
 	displayNameProgress="Injecting Fentanyl";
-	icon = "socomd_data_core\icon\VPN.paa";
+	icon = "\socomd_medical\tex\VPN.paa";
 	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
 	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
 	requiresAll=true;
@@ -56,7 +56,7 @@ class Fentanyl: Morphine{
 class Ketamine_6mg : Morphine {
 	displayName="Ketamine 6mg/2mL";
 	displayNameProgress="Injecting Ketamine 6mg/2mL";
-	icon = "socomd_data_core\icon\VPN.paa";
+	icon = "\socomd_medical\tex\VPN.paa";
 	requiresAll=true;
 	items[] = {
 		"SOCOMD_ketamine_6mg"
@@ -70,7 +70,7 @@ class Ketamine_6mg : Morphine {
 class Ketamine_200mg : Morphine {
 	displayName="Ketamine 200mg/2mL";
 	displayNameProgress="Injecting Ketamine 200mg/2mL";
-	icon = "socomd_data_core\icon\VPN.paa";
+	icon = "\socomd_medical\tex\VPN.paa";
 	requiresAll=true;
 	items[] = {
 		"SOCOMD_ketamine_6mg"
@@ -91,7 +91,7 @@ class NonVPNMedication : Morphine {
 class Tetra : NonVPNMedication {
 	displayName="Tetracycline 250mg";
 	displayNameProgress="Giving Tetracycline";
-	icon="\socomd_data_core\icon\tetra.paa";
+	icon="\socomd_medical\tex\tetra.paa";
 	items[]={
 		"SOCOMD_tetra"
 	};
@@ -103,7 +103,7 @@ class Tetra : NonVPNMedication {
 class Apap : NonVPNMedication {
 	displayName="Paracetemol 1g";
 	displayNameProgress="Giving Paracetemol 1g";
-	icon="\socomd_data_core\icon\apap.paa";
+	icon="\socomd_medical\tex\apap.paa";
 	condition = "";
 	callbackStart = "";
 
