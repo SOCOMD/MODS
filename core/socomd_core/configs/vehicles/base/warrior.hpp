@@ -12,7 +12,7 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 	side = WEST; \
 	author = AUTHOR_STR; \
 	faction = FACTION_STR; \
-	displayname = "Warrior (4/8)"; \
+	displayname = "S-70A-9 Blackhawk (4/8)"; \
 	vehicleclass = "Air"; \
 	forceInGarage = 1; \
 	fuelCapacity = 1360; \

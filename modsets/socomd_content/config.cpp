@@ -80,7 +80,7 @@ class CfgPatches  {
 	};
 };
 
-class asdg_SlotInfo;
+class asdg_SlotInfo;/*
 class asdg_FrontSideRail: asdg_SlotInfo
 {
 	class compatibleItems
@@ -102,7 +102,7 @@ class asdg_FrontSideRail: asdg_SlotInfo
         M600_L_PEQ_R_point_black = 1;
         M600_B_PEQ_T_point_black = 1;	
 	};
-};
+};*/
 
 #include "configs\bettir_config.hpp"
 #include "configs\CfgEditorCategories.hpp"

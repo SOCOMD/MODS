@@ -258,9 +258,9 @@ ace_nametags_tagSize = 2;
 // ACE Nightvision
 force force ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 1.0;
+force force ace_nightvision_effectScaling = 0.4;
 force force ace_nightvision_fogScaling = 0.1;
-force force ace_nightvision_noiseScaling = 0.1;
+force force ace_nightvision_noiseScaling = 0.05;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -300,10 +300,10 @@ force force ace_respawn_savePreDeathGear = true;
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
 force force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
-force force ace_scopes_defaultZeroRange = 0;
+force force ace_scopes_defaultZeroRange = 100;
 force force ace_scopes_enabled = true;
 force force ace_scopes_forceUseOfAdjustmentTurrets = true;
-force force ace_scopes_overwriteZeroRange = false;
+force force ace_scopes_overwriteZeroRange = true;
 force force ace_scopes_simplifiedZeroing = false;
 force force ace_scopes_useLegacyUI = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;

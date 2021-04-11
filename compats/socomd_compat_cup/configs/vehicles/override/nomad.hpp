@@ -1,8 +1,8 @@
-#define NOMAD_FAST_TURRETS \
+/*#define NOMAD_FAST_TURRETS \
 maxHorizontalRotSpeed = 8; \
 maxVerticalRotSpeed = 8;
 
-/*
+
 CUP_B_CH47F_USA <== TARGET
 CUP_CH47F_base
 Helicopter_Base_H
@@ -29,9 +29,22 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Nomad (5/24)";
+	displayname = "Boeing CH-47 Chinook (5/24)";
 	fuelCapacity = 3914;
 	fuelConsumptionRate = 0.34;
+	class TransportWeapons { 
+			INVENTORY_VEHICLE_DEFAULT_WEAPONS 
+		}; 
+		class TransportMagazines { 
+			INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
+		}; 
+		class TransportItems { 
+			INVENTORY_VEHICLE_MEDIUM_ITEMS 
+		}; 
+		class TransportBackpacks { 
+			INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
+			TRANSPORT_BACKPACK(SOCOMD_Medical_AO, 1)
+		}; 
 
 	hiddenSelectionsTextures[] = {
 		"socomd_data_cup\data\chinook\ch47_ext_1_co.paa",
@@ -39,7 +52,7 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
 		"socomd_data_cup\data\chinook\ch47f_nalepky_ca.paa",
 		"cup\airvehicles\cup_airvehicles_ch47\data\ch47_ext_mlod_co.paa"
 	};
-	class Turrets : Turrets {
+	/*class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			NOMAD_FAST_TURRETS
 		};
@@ -53,5 +66,5 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
 		};
 
 		class CopilotTurret : CopilotTurret {};		
-	};
+	};*/
 };

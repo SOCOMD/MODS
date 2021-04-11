@@ -260,8 +260,8 @@ class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_airframe_khk_co.paa",
 		"ADFU_Units\data\h_fast_khk_co.paa"
@@ -294,8 +294,8 @@ class ADFU_H_Airframe_Cover_11_MC: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units_MC\data\h_airframe_cover_mc_co.paa",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_airframe_khk_co.paa",
 		"ADFU_Units\data\h_fast_khk_co.paa"
@@ -396,8 +396,8 @@ class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
@@ -430,8 +430,8 @@ class ADFU_H_Airframe_11_tan: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
@@ -531,8 +531,8 @@ class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
@@ -565,8 +565,8 @@ class ADFU_H_Airframe_11_OD: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
@@ -599,8 +599,8 @@ class ADFU_H_Airframe_11_AMCU: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"
@@ -633,8 +633,8 @@ class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_03 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",
 		"",
+		"socomd_data_core\CTGear\manta_dark.paa",
 		"",
-		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"socomd_data_core\CTgear\h_airframe_OD_co.paa",
 		"socomd_data_core\CTgear\h_fast_khk_co.paa"

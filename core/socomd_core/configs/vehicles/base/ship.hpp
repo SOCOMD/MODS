@@ -11,7 +11,7 @@ class SOCOMD_BOAT : B_Boat_Transport_01_F {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Boat (1/4)";
+	displayname = "Zodiak F470 CRRC (1/4)";
 	vehicleclass = "Ship";
 	forceInGarage = 1;
 	cost = 40000;
@@ -62,7 +62,7 @@ class SOCOMD_BOAT_ASSAULT : B_Boat_Armed_01_minigun_F {
 	side = WEST;
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
-	displayname = "Assult Boat (3/8)";
+	displayname = "ADRHIB HMG (3/8)";
 	vehicleclass = "Ship";
 	forceInGarage = 1;
 	cost = 40000;

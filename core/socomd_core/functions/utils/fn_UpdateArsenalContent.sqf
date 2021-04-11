@@ -153,6 +153,14 @@ if( _loadoutId ==  "SOCOMD_Medic") then  {
     [_player, ["grenades_default","grenades_more_flash","grenades_less_lethal"], false] call ace_socomd_arsenal_fnc_addVirtualItems;
     [_player, _smed_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
 };
+if( _loadoutId ==  "SOCOMD_AO") then  {
+    _smed_array = [];
+    _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
+    _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "vests");
+    _smed_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "bags");    
+    [_player, ["grenades_standard_ao"], false] call ace_socomd_arsenal_fnc_addVirtualItems;
+    [_player, _smed_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
+};
 if( _loadoutId ==  "SOCOMD_AT") then  {
     _sat_array = [];
     _sat_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");

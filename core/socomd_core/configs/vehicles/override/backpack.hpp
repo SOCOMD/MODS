@@ -37,3 +37,32 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
         TRANSPORT_ITEM(KAT_accuvac, 1)				//Medical Suction
 	};    
 };
+class B_TacticalPack_blk;
+class SOCOMD_Medical_AO: B_TacticalPack_blk {
+    scope = public;
+	author = AUTHOR_STR;
+    displayname = "Aeromedical Resupply Pack";
+    maximumLoad = 200;
+	class TransportItems {
+		TRANSPORT_ITEM(ACE_fieldDressing, 30)  		//Israeli Bandage
+		TRANSPORT_ITEM(ACE_elasticBandage, 30)		    //Elastic Bandage
+		TRANSPORT_ITEM(ACE_quikclot, 30)				//Quikclot
+		TRANSPORT_ITEM(KAT_ChestSeal, 8)				//Hyfin Chest Seal
+		TRANSPORT_ITEM(ACE_tourniquet, 10)				//Tourniquet
+		TRANSPORT_ITEM(ACE_Epinephrine_Medic, 10)		//Epinephrine Ampoule
+		TRANSPORT_ITEM(ACE_naloxone, 10)				//Naloxone Ampoule
+		TRANSPORT_ITEM(ACE_fentanyl, 10)				//Fentanyl Ampoule
+		TRANSPORT_ITEM(SOCOMD_Ket, 10)					//Ketamine Ampoule
+		TRANSPORT_ITEM(ACE_bloodIV_500, 10)			//Blood
+		TRANSPORT_ITEM(KAT_larynx, 4)					//Laryngeal Mask Airway
+		TRANSPORT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter
+		TRANSPORT_ITEM(ACE_surgicalKit, 4)			//Surgical Kit
+		TRANSPORT_ITEM(ACE_bodyBag, 6)				//Defibrillator
+		TRANSPORT_ITEM(ACE_apap, 10)					//Paracetamol
+		TRANSPORT_ITEM(SOCOMD_VPN, 30)				    //3mL drug Syringe
+		TRANSPORT_ITEM(SOCOMD_NDC, 8)					//14 Gauge needle
+		TRANSPORT_ITEM(ACE_Chemlight_HiWhite, 10) 
+		TRANSPORT_ITEM(SmokeShellPurple, 10) 
+		TRANSPORT_ITEM(ACE_HandFlare_White, 10) 
+	};    
+};
