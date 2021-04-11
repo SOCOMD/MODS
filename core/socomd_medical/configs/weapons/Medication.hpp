@@ -49,6 +49,9 @@ class SOCOMD_naloxone : ACE_atropine {
 	picture="\socomd_medical\tex\naloxone.paa";
 	descriptionShort="Opiod antagonist, reverses negative effects of narcotics";
 	descriptionUse="Opiod antagonist, reverses negative effects of narcotics";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass = 0.01;
+	};
 };
 
 class SOCOMD_fentanyl : ACE_morphine {
@@ -57,6 +60,9 @@ class SOCOMD_fentanyl : ACE_morphine {
 	picture="\socomd_medical\tex\fentanyl.paa";
 	descriptionShort="Analgesic, used for severe pain";
 	descriptionUse="Analgesic, used for severe pain";
+	class ItemInfo: CBA_MiscItem_ItemInfo {
+		mass = 0.01;
+	};
 };
 
 class SOCOMD_ketamine_6mg : ACE_morphine {
@@ -82,6 +88,7 @@ class SOCOMD_tetra : ACE_morphine {
 };
 
 class SOCOMD_Apap : ACE_morphine {
+	scope=public;
 	author="Monk";
 	displayName="Paracetemol 2x500mg Tablets";
 	picture="\socomd_medical\tex\apap.paa";

@@ -12,6 +12,7 @@ class CfgPatches {
 			"ace_medical_treatment",
             "kat_main",
             "kat_airway",
+            "kat_breathing",
             "kat_circulation",
 		};
 

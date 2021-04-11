@@ -18,7 +18,7 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 3) \
+	LOADOUT_ITEM(SOCOMD_Apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
 	LOADOUT_ITEM(KAT_guedel, 2)	\
@@ -66,7 +66,7 @@ class _xx_##id { \
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 1) \
 	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(ACE_apap, 4) \
+	LOADOUT_ITEM(SOCOMD_Apap, 4) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 0) \
 	LOADOUT_ITEM(SOCOMD_VPN, 1)
