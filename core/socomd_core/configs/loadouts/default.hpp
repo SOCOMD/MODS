@@ -466,7 +466,7 @@ class SOCOMD_Medic {
 			LOADOUT_ITEM(SOCOMD_Epinephrine, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(SOCOMD_naloxone, 2)				//Naloxone Ampoule
 			LOADOUT_ITEM(SOCOMD_fentanyl, 8)				//Fentanyl Ampoule
-			LOADOUT_ITEM(SOCOMD_ketamine_6mg, 8)					//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_ketamine, 8)					//Ketamine Ampoule
 			LOADOUT_ITEM(SOCOMD_Apap, 10)				//Paracetamol
 			LOADOUT_ITEM(SOCOMD_Tetra, 5)				//Paracetamol  
 			LOADOUT_ITEM(ACE_bloodIV_500, 5)			//Blood
@@ -525,7 +525,7 @@ class SOCOMD_AO{
 			LOADOUT_ITEM(SOCOMD_Epinephrine, 10)		//Epinephrine Ampoule
 			LOADOUT_ITEM(SOCOMD_naloxone, 2)				//Naloxone Ampoule
 			LOADOUT_ITEM(SOCOMD_fentanyl, 4)				//Fentanyl Ampoule
-			LOADOUT_ITEM(SOCOMD_ketamine_6mg, 4)		//Ketamine Ampoule
+			LOADOUT_ITEM(SOCOMD_ketamine, 4)		//Ketamine Ampoule
 			LOADOUT_ITEM(SOCOMD_Apap, 10)					//Paracetamol
 			LOADOUT_ITEM(SOCOMD_nargloves, 5)
 			LOADOUT_ITEM(SOCOMD_Tetra, 0)				//Paracetamol  

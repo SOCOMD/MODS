@@ -12,12 +12,22 @@ class BodyBag: BasicBandage {
 
 class SurgicalKit: FieldDressing {};
 class PersonalAidKit: BasicBandage {};
-class larynxtubus;
-class TurnAround: larynxtubus {
-	displayName = "Manually Remove Debris";
-	displayNameProgress = "Manually clearing airway...";
+class larynxtubus {
+	displayName = "$STR_socomd_medical_Larynx_Display";
+	displayNameProgress = "$STR_socomd_medical_Larynx_action";
 };
-
+class Guedeltubus:larynxtubus {
+	displayName = "$STR_socomd_medical_Guedel_Display";
+	displayNameProgress = "$STR_socomd_medical_Guedel_action";
+};
+class Overstretch: larynxtubus {
+	displayName = "$STR_socomd_medicaloverstretch";
+	displayNameProgress = "$STR_socomd_medicaloverstretching";
+};
+class TurnAround: larynxtubus {
+	displayName = "$STR_socomd_medical_turnaround";
+	displayNameProgress = "$STR_socomd_medical_turnaround_action";
+};
 
 class TensionpneumothoraxTreatment {
 	items[] = {"SOCOMD_NDC"};

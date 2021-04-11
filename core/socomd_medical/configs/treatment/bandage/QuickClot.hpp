@@ -1,130 +1,123 @@
-class QuikClot: fieldDressing {
-	class Abrasion{
-		effectiveness=21;
+class QuikClot: FieldDressing {
+	class Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class AbrasionMinor: Abrasion{
-		effectiveness=21;
+	class AbrasionMinor: Abrasion {
+		effectiveness=7;
 	};
-	class AbrasionMedium: Abrasion{
-		effectiveness=21;
+	class AbrasionMedium: Abrasion {
+		effectiveness=7;
 	};
-	class AbrasionLarge: Abrasion{
-		effectiveness=21;
+	class AbrasionLarge: Abrasion {
+		effectiveness=7;
 	};
-
-	class Avulsions: Abrasion{
-		effectiveness=21;
+	class Avulsion: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class AvulsionsMinor: Avulsions{
-		effectiveness=21;
+	class AvulsionMinor: Avulsion {
+		effectiveness=7;
 	};
-	class AvulsionsMedium: Avulsions{
-		effectiveness=21;
+	class AvulsionMedium: Avulsion {
+		effectiveness=7;
 	};
-	class AvulsionsLarge: Avulsions{
-		effectiveness=21;
+	class AvulsionLarge: Avulsion {
+		effectiveness=7;
 	};
-
-	class Contusion: Abrasion{
-		effectiveness=21;
+	class Contusion: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class ContusionMinor: Contusion{
-		effectiveness=21;
+	class ContusionMinor: Contusion {
+		effectiveness=7;
 	};
-	class ContusionMedium: Contusion{
-		effectiveness=21;
+	class ContusionMedium: Contusion {
+		effectiveness=7;
 	};
-	class ContusionLarge: Contusion{
-		effectiveness=21;
+	class ContusionLarge: Contusion {
+		effectiveness=7;
 	};
-
-	class Crush: Abrasion{
-		effectiveness=21;
+	class Crush: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class CrushMinor: Crush{
-		effectiveness=21;
-		reopeningChance=0.30000001;
+	class CrushMinor: Crush {
+		effectiveness=7;
+		reopeningChance=0.3;
 	};
-	class CrushMedium: Crush{
-		effectiveness=21;
+	class CrushMedium: Crush {
+		effectiveness=7;
 	};
-	class CrushLarge: Crush{
-		effectiveness=21;
+	class CrushLarge: Crush {
+		effectiveness=7;
 	};
-
-	class Cut: Abrasion{
-		effectiveness=21;
+	class Cut: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class CutMinor: Cut{
-		effectiveness=21;
+	class CutMinor: Cut {
+		effectiveness=7;
 	};
-	class CutMedium: Cut{
-		effectiveness=21;
+	class CutMedium: Cut {
+		effectiveness=7;
 	};
-	class CutLarge: Cut{
-		effectiveness=21;
+	class CutLarge: Cut {
+		effectiveness=7;
 	};
-
-	class Laceration: Abrasion{
-		effectiveness=21;
+	class Laceration: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class LacerationMinor: Laceration{
-		effectiveness=21;
+	class LacerationMinor: Laceration {
+		effectiveness=7;
 	};
-	class LacerationMedium: Laceration{
-		effectiveness=21;
+	class LacerationMedium: Laceration {
+		effectiveness=7;
 	};
-	class LacerationLarge: Laceration{
-		effectiveness=21;
+	class LacerationLarge: Laceration {
+		effectiveness=7;
 	};
-
-	class VelocityWound: Abrasion{
-		effectiveness=21;
+	class velocityWound: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class VelocityWoundMinor: VelocityWound{
-		effectiveness=21;
+	class velocityWoundMinor: velocityWound {
+		effectiveness=7;
 	};
-	class VelocityWoundMedium: VelocityWound{
-		effectiveness=21;
+	class velocityWoundMedium: velocityWound {
+		effectiveness=7;
 	};
-	class VelocityWoundLarge: VelocityWound{
-		effectiveness=21;
+	class velocityWoundLarge: velocityWound {
+		effectiveness=7;
 	};
-	
-	class PunctureWound: Abrasion{
-		effectiveness=21;
+	class punctureWound: Abrasion {
+		effectiveness=7;
 		reopeningChance=0.3;
 		reopeningMinDelay=100;
 		reopeningMaxDelay=300;
 	};
-	class PunctureWoundMinor: PunctureWound{
-		effectiveness=21;
+	class punctureWoundMinor: punctureWound {
+		effectiveness=7;
 	};
-	class PunctureWoundMedium: PunctureWound{
-		effectiveness=21;
+	class punctureWoundMedium: punctureWound {
+		effectiveness=7;
 	};
-	class PunctureWoundLarge: PunctureWound{
-		effectiveness=21;
+	class punctureWoundLarge: punctureWound {
+		effectiveness=7;
 	};
 };

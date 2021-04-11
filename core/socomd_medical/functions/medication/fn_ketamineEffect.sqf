@@ -1,24 +1,46 @@
-"chromAberration" ppEffectEnable true;              //Enable PPeffect
-"radialBlur" ppEffectEnable true;
-enableCamShake true;
-    
-for "_i" from 0 to 30 do {                          //PP Effects last for 30s
-    "chromAberration" ppEffectAdjust [0,0.5,true];  //PP effect strength/values
-    "chromAberration" ppEffectCommit 1; 
-    "radialBlur" ppEffectAdjust [0.1,4,0.01,0.01]; 
-    "radialBlur" ppEffectCommit 1;
-    addcamShake[3, 30, 1];                          //Camera shake effects last for 30s
-    sleep 1;
-};
 
-
-"chromAberration" ppEffectAdjust [0,0,true];        //Fade out effects
-"chromAberration" ppEffectCommit 5;
-"radialBlur" ppEffectAdjust [0,0,0,0];
-"radialBlur" ppEffectCommit 5;
-sleep 6;
-
-//Deactivate ppEffects
-"chromAberration" ppEffectEnable false;             //Disable effects
-"radialBlur" ppEffectEnable false;
-resetCamShake;
+//Play special effect 
+"chromAberration" ppEffectEnable true;              //Enable PPeffect  
+"radialBlur" ppEffectEnable true;                //Enable PPeffect  
+"ColorInversion" ppEffectEnable true;
+_aberEffect = ppEffectCreate ["chromAberration", 2005];       //Enable PPeffect  
+_WetEffect = ppEffectCreate ["WetDistortion", 20];       //Enable PPeffect  
+_WetEffect = ppEffectCreate ["WetDistortion", 20];       //Enable PPeffect  
+_WetEffect ppEffectEnable true;  
+enableCamShake true;  
+_WetEffect ppEffectAdjust [1, 1, 1, 4.10, 3.70, 2.50, 1.85, 0.0035, 0.0025, 0.03, 0.00450, 0.1, 0.1, 0.1, 0.1];   
+_WetEffect ppEffectCommit 2; 
+for "_i" from 0 to (30 + _unconsciousTime) do {                          //PP Effects last for 30s after waking up
+[{  
+	_rand1 = random [0, 0.2, 1];  
+	_rand2 = random [0, 0.05, 0.2];  
+	_rand3 = random [0, 2, 8];  
+	_rand4 = random [0, 0.005, 0.02];  
+	_rand5 = random [0, 0.005, 0.02]; 
+	_ciR = random [0, 0.05, 0.2];
+	_ciG = random [0, 0.05, 0.2];
+	_ciB = random [0, 0.05, 0.2];
+	"ColorInversion" ppEffectAdjust [_ciR,_ciG,_ciB];
+	"ColorInversion" ppEffectCommit 1; 
+	"chromAberration" ppEffectAdjust [0,_rand1,true];  //PP effect strength/values  
+	"chromAberration" ppEffectCommit 1;   
+	"radialBlur" ppEffectAdjust [_rand2,_rand3,_rand4,_rand5];   
+	"radialBlur" ppEffectCommit 1;
+}, [], _i] call CBA_fnc_waitAndExecute;  
+}; 
+[{  
+    params ["_WetEffect"]
+	"chromAberration" ppEffectAdjust [0,0,true];        //Fade out effects  
+	"chromAberration" ppEffectCommit 5;  
+	"ColorInversion" ppEffectAdjust [0,0,0];
+	"ColorInversion" ppEffectCommit 5; 
+	"radialBlur" ppEffectAdjust [0,0,0,0];  
+	"radialBlur" ppEffectCommit 5; 
+	_WetEffect ppEffectAdjust [0, 
+	0, 0, 
+	4.10, 3.70, 2.50, 1.85, 
+	0, 0, 0, 0, 
+	0, 0, 0, 0];  
+	_WetEffect ppEffectCommit 300; // calm down over 5 minutes
+	
+}, [_WetEffect], (31 + _unconsciousTime)] call CBA_fnc_waitAndExecute;

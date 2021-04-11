@@ -28,7 +28,7 @@ class CfgPatches {
 		weapons[] = {
 			"SOCOMD_naloxone",
 			"SOCOMD_fentanyl",
-			"SOCOMD_ketamine_6mg",
+			"SOCOMD_ketamine",
 			"SOCOMD_ketamine_200mg",
 			"SOCOMD_tetra",
 			"SOCOMD_Apap",

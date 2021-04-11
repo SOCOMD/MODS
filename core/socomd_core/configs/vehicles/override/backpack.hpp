@@ -24,7 +24,7 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
 		TRANSPORT_ITEM(SOCOMD_Epinephrine, 3)		//Epinephrine Ampoule
 		TRANSPORT_ITEM(SOCOMD_naloxone, 1)				//Naloxone Ampoule
 		TRANSPORT_ITEM(SOCOMD_fentanyl, 1)				//Fentanyl Ampoule
-		TRANSPORT_ITEM(SOCOMD_ketamine_6mg, 1)					//Ketamine Ampoule
+		TRANSPORT_ITEM(SOCOMD_ketamine, 1)					//Ketamine Ampoule
 		TRANSPORT_ITEM(SOCOMD_Apap, 2)					//Paracetamol
 		TRANSPORT_ITEM(SOCOMD_tetra, 2)				//Paracetamol  
 		TRANSPORT_ITEM(ACE_bloodIV_500, 4)			//Blood
@@ -52,7 +52,7 @@ class SOCOMD_Medical_AO: B_TacticalPack_blk {
 		TRANSPORT_ITEM(SOCOMD_Epinephrine, 10)		//Epinephrine Ampoule
 		TRANSPORT_ITEM(SOCOMD_naloxone, 10)				//Naloxone Ampoule
 		TRANSPORT_ITEM(SOCOMD_fentanyl, 10)				//Fentanyl Ampoule
-		TRANSPORT_ITEM(SOCOMD_ketamine_6mg, 10)					//Ketamine Ampoule
+		TRANSPORT_ITEM(SOCOMD_ketamine, 10)					//Ketamine Ampoule
 		TRANSPORT_ITEM(ACE_bloodIV_500, 10)			//Blood
 		TRANSPORT_ITEM(KAT_larynx, 4)					//Laryngeal Mask Airway
 		TRANSPORT_ITEM(KAT_Pulseoximeter, 4)			//Pulseoximeter

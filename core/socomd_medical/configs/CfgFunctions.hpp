@@ -18,7 +18,6 @@ class CfgFunctions {
 			class DefibrillatorStart {};
 			class DefibrillatorSuccess {};
 			class DefibrillatorFailure {};
-			class chestSealCondition {};
 			class vpnMedicationCondition {};
 			class vpnMedicationSuccess {};
 		};
