@@ -1,4 +1,10 @@
 class FieldDressing {
+	// How effect is the bandage for treating one wounds type injury
+            effectiveness = 3;
+            // What is the chance and delays (in seconds) of the treated default injury reopening
+            reopeningChance=0.3;
+			reopeningMinDelay=800;
+			reopeningMaxDelay=1500;
 	class Abrasion{
 		effectiveness=27;
 		reopeningChance=0.3;
