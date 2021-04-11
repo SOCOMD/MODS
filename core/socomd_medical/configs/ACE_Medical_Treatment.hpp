@@ -29,22 +29,22 @@ class ace_medical_treatment {
 				{
 					effectiveness=9;
 				};
-				class Avulsions: Abrasion
+				class Avulsion: Abrasion
 				{
 					effectiveness=9;
 					reopeningChance=0.3;
 					reopeningMinDelay=800;
 					reopeningMaxDelay=1500;
 				};
-				class AvulsionsMinor: Avulsions
+				class AvulsionMinor: Avulsion
 				{
 					effectiveness=9;
 				};
-				class AvulsionsMedium: Avulsions
+				class AvulsionMedium: Avulsion
 				{
 					effectiveness=9;
 				};
-				class AvulsionsLarge: Avulsions
+				class AvulsionLarge: Avulsion
 				{
 					effectiveness=9;
 				};
@@ -67,23 +67,23 @@ class ace_medical_treatment {
 				{
 					effectiveness=9;
 				};
-				class CrushWound: Abrasion
+				class Crush: Abrasion
 				{
 					effectiveness=9;
 					reopeningChance=0.3;
 					reopeningMinDelay=800;
 					reopeningMaxDelay=1500;
 				};
-				class CrushWoundMinor: CrushWound
+				class CrushMinor: Crush
 				{
 					effectiveness=9;
 					reopeningChance=0.30000001;
 				};
-				class CrushWoundMedium: CrushWound
+				class CrushMedium: Crush
 				{
 					effectiveness=9;
 				};
-				class CrushWoundLarge: CrushWound
+				class CrushLarge: Crush
 				{
 					effectiveness=9;
 				};
@@ -187,22 +187,22 @@ class ace_medical_treatment {
 					effectiveness=2;
 					reopeningChance=0.69999999;
 				};
-				class Avulsions: Abrasion
+				class Avulsion: Abrasion
 				{
 					effectiveness=4;
 					reopeningChance=0.5;
 					reopeningMinDelay=1000;
 					reopeningMaxDelay=1600;
 				};
-				class AvulsionsMinor: Avulsions
+				class AvulsionMinor: Avulsion
 				{
 					effectiveness=4;
 				};
-				class AvulsionsMedium: Avulsions
+				class AvulsionMedium: Avulsion
 				{
 					effectiveness=3;
 				};
-				class AvulsionsLarge: Avulsions
+				class AvulsionLarge: Avulsion
 				{
 					effectiveness=2;
 				};
@@ -222,24 +222,24 @@ class ace_medical_treatment {
 				class ContusionLarge: Contusion
 				{
 				};
-				class CrushWound: Abrasion
+				class Crush: Abrasion
 				{
 					effectiveness=4;
 					reopeningChance=0.40000001;
 					reopeningMinDelay=600;
 					reopeningMaxDelay=1000;
 				};
-				class CrushWoundMinor: CrushWound
+				class CrushMinor: Crush
 				{
 					effectiveness=4;
 					reopeningChance=0.40000001;
 				};
-				class CrushWoundMedium: CrushWound
+				class CrushMedium: Crush
 				{
 					effectiveness=3;
 					reopeningChance=0.5;
 				};
-				class CrushWoundLarge: CrushWound
+				class CrushLarge: Crush
 				{
 					effectiveness=2;
 					reopeningChance=0.60000002;
@@ -350,22 +350,22 @@ class ace_medical_treatment {
 					effectiveness=0.2;
 					reopeningChance=0.69999999;
 				};
-				class Avulsions: Abrasion
+				class Avulsion: Abrasion
 				{
 					effectiveness=0.2;
 					reopeningChance=0.1;
 					reopeningMinDelay=1000;
 					reopeningMaxDelay=1600;
 				};
-				class AvulsionsMinor: Avulsions
+				class AvulsionMinor: Avulsion
 				{
 					effectiveness=4.4;
 				};
-				class AvulsionsMedium: Avulsions
+				class AvulsionMedium: Avulsion
 				{
 					effectiveness=2.4;
 				};
-				class AvulsionsLarge: Avulsions
+				class AvulsionLarge: Avulsion
 				{
 					effectiveness=0.2;
 				};
@@ -387,24 +387,24 @@ class ace_medical_treatment {
 				class ContusionLarge: Contusion
 				{
 				};
-				class CrushWound: Abrasion
+				class Crush: Abrasion
 				{
 					effectiveness=4.4;
 					reopeningChance=0.1;
 					reopeningMinDelay=600;
 					reopeningMaxDelay=1000;
 				};
-				class CrushWoundMinor: CrushWound
+				class CrushMinor: Crush
 				{
 					effectiveness=4.4;
 					reopeningChance=0.1;
 				};
-				class CrushWoundMedium: CrushWound
+				class CrushMedium: Crush
 				{
 					effectiveness=4.4;
 					reopeningChance=0.15000001;
 				};
-				class CrushWoundLarge: CrushWound
+				class CrushLarge: Crush
 				{
 					effectiveness=4.4;
 					reopeningChance=0.2;
@@ -513,22 +513,22 @@ class ace_medical_treatment {
 				{
 					effectiveness=7;
 				};
-				class Avulsions: Abrasion
+				class Avulsion: Abrasion
 				{
 					effectiveness=7;
 					reopeningChance=0.3;
 					reopeningMinDelay=100;
 					reopeningMaxDelay=300;
 				};
-				class AvulsionsMinor: Avulsions
+				class AvulsionMinor: Avulsion
 				{
 					effectiveness=7;
 				};
-				class AvulsionsMedium: Avulsions
+				class AvulsionMedium: Avulsion
 				{
 					effectiveness=7;
 				};
-				class AvulsionsLarge: Avulsions
+				class AvulsionLarge: Avulsion
 				{
 					effectiveness=7;
 				};
@@ -551,23 +551,23 @@ class ace_medical_treatment {
 				{
 					effectiveness=7;
 				};
-				class CrushWound: Abrasion
+				class Crush: Abrasion
 				{
 					effectiveness=7;
 					reopeningChance=0.3;
 					reopeningMinDelay=100;
 					reopeningMaxDelay=300;
 				};
-				class CrushWoundMinor: CrushWound
+				class CrushMinor: Crush
 				{
 					effectiveness=7;
 					reopeningChance=0.30000001;
 				};
-				class CrushWoundMedium: CrushWound
+				class CrushMedium: Crush
 				{
 					effectiveness=7;
 				};
-				class CrushWoundLarge: CrushWound
+				class CrushLarge: Crush
 				{
 					effectiveness=7;
 				};
