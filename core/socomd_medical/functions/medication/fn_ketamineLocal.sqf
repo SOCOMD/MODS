@@ -22,7 +22,7 @@ _unconsciousTime = getNumber(configFile >> "ace_medical_treatment" >> "Medicatio
 //Play special effect 
 aberEffect = ppEffectCreate ["chromAberration", 300];
 _radialEffect = ppEffectCreate ["radialBlur", 301];
-_ColorEffect = ppEffectCreate ["ColorInversion", 302
+_ColorEffect = ppEffectCreate ["ColorInversion", 302];
 _WetEffect = ppEffectCreate ["WetDistortion", 300];
 _aberEffect ppEffectEnable true;  
 _radialEffect ppEffectEnable true;  

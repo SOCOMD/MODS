@@ -68,8 +68,8 @@ class SOCOMD_fentanyl : ACE_morphine {
 class SOCOMD_ketamine : ACE_morphine {
 	scope=public;
 	displayName="Ketamine Hydrochloride 200mg/2mL Ampoule";
-	descriptionShort="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes hypertension and tachtcardia.";
-	descriptionUse="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes hypertension and tachtcardia.";
+	descriptionShort="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes mild hypertension and tachycardia.";
+	descriptionUse="Dissociative analgesic/anestehtic used for severe pain, available in a 25mg or 200mg doses. Causes mild hypertension and tachycardia.";
 	picture="\socomd_medical\tex\ket.paa";
 	class ItemInfo: CBA_MiscItem_ItemInfo {
 		mass = 0.01;

@@ -21,7 +21,7 @@ class Guedeltubus:larynxtubus {
 	displayNameProgress = "$STR_socomd_medical_Guedel_action";
 };
 class Overstretch: larynxtubus {
-	displayName = "$STR_socomd_medicaloverstretch";
+	displayName = "$STR_socomd_medical_overstretch";
 	displayNameProgress = "$STR_socomd_medicaloverstretching";
 };
 class TurnAround: larynxtubus {

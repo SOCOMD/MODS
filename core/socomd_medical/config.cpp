@@ -32,7 +32,7 @@ class CfgPatches {
 			"SOCOMD_ketamine_200mg",
 			"SOCOMD_tetra",
 			"SOCOMD_Apap",
-			"SOCOMD_VPN"
+			"SOCOMD_VPN",
 			"SOCOMD_NDC"
 		};
 	};
