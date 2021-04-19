@@ -425,7 +425,7 @@ class CfgLoadouts {
 					LOADOUT_ITEM(ACE_epinephrine, 10)			//Epinephrine Ampoule
 					LOADOUT_ITEM(SOCOMD_naloxone, 2)			//Naloxone Ampoule
 					LOADOUT_ITEM(SOCOMD_fentanyl, 8)			//Fentanyl Ampoule
-					LOADOUT_ITEM(SOCOMD_ketamine_6mg, 4)		//Ketamine Ampoule
+					LOADOUT_ITEM(SOCOMD_ketamine, 4)		//Ketamine Ampoule
 					LOADOUT_ITEM(SOCOMD_ketamine_200mg, 4)		//Ketamine (Sedation) Ampoule
 					LOADOUT_ITEM(SOCOMD_Apap, 10)				//Paracetamol
 					LOADOUT_ITEM(SOCOMD_tetra, 5)				//Paracetamol  
