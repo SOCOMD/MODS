@@ -2,6 +2,7 @@ class CfgFunctions {
 	class SOCOMD_Medical {
 		class XEH {
 			file="\socomd_medical\functions\xeh";
+			class XEH_preInit {};
 			class XEH_postInit {};
 		};
 		
@@ -14,12 +15,9 @@ class CfgFunctions {
 
 		class Actions {
 			file="\socomd_medical\functions\actions";
-			class DefibrillatorLocal {};
-			class DefibrillatorStart {};
-			class DefibrillatorSuccess {};
-			class DefibrillatorFailure {};
-			class vpnMedicationCondition {};
-			class vpnMedicationSuccess {};
+			class vpnMedicationCondition 	{};
+			class vpnMedicationSuccess 		{};
+			class revivalTimer				{};
 		};
 	};
 };

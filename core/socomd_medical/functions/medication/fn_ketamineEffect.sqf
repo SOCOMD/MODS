@@ -2,10 +2,10 @@ params ["_unconsciousTime"];
 //Play special effect 
 
 //Play special effect 
-aberEffect = ppEffectCreate ["chromAberration", 300];
+_aberEffect = ppEffectCreate ["chromAberration", 300];
 _radialEffect = ppEffectCreate ["radialBlur", 301];
 _ColorEffect = ppEffectCreate ["ColorInversion", 302];
-_WetEffect = ppEffectCreate ["WetDistortion", 300];    
+_WetEffect = ppEffectCreate ["WetDistortion", 299];    
 _aberEffect ppEffectEnable true;  
 _radialEffect ppEffectEnable true;  
 _ColorEffect ppEffectEnable true;  

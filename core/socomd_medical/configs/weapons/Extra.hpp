@@ -12,32 +12,41 @@ class SOCOMD_cascard: SOCOMD_booboo {
 	scope = 2;
 	displayName="TACMED Casualty Cards";
 	picture="\socomd_medical\tex\cascard_ca.paa";
+	descriptionShort="";
+	descriptionUse="";
 };
 class SOCOMD_nargloves: SOCOMD_booboo {
 	scope = 2;
 	displayName="NAR Nitrile Gloves (Sand)";
 	picture="\socomd_medical\tex\nargloves_ca.paa";
+	descriptionShort="";
+	descriptionUse="";
 };
 class SOCOMD_shears: SOCOMD_booboo {
 	scope = 2;
 	displayName="Trauma Shears";
 	picture="\socomd_medical\tex\shears_ca.paa";
+	descriptionShort="";
+	descriptionUse="";
 };
 class SOCOMD_notes: SOCOMD_booboo {
 	scope = 2;
 	displayName="Notebook";
-	descriptionShort="For recording patient details for handover";
 	picture="\socomd_medical\tex\notes_ca.paa";
+	descriptionShort="For recording patient details for handover";
+	descriptionUse="For recording patient details for handover";
 };
 class SOCOMD_triangleban: SOCOMD_booboo {
 	scope = 2;
 	displayName="NAR Triangle Bandage";
 	picture="\socomd_medical\tex\triangleban_ca.paa";
+	descriptionShort="";
+	descriptionUse="";
 };
 class SOCOMD_NDC: SOCOMD_booboo {
 	scope = 2;
 	displayName="ARS Needle for decompression";
-	descriptionShort="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression";
-	descriptionUse="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression";
+	descriptionShort="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression and drainage";
+	descriptionUse="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression and drainage";
 	picture="\socomd_medical\tex\NDC.paa";
 };
