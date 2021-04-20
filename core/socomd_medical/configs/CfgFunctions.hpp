@@ -19,5 +19,9 @@ class CfgFunctions {
 			class vpnMedicationSuccess 		{};
 			class revivalTimer				{};
 		};
+		class Statemachine {
+			file="\socomd_medical\functions\statemachine";
+			class handleStateCardiacArrest	{};
+		};
 	};
 };

@@ -43,5 +43,6 @@ class CfgPatches {
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgExtendedEventHandler.hpp"
 
+#include "configs\ACE_Medical_Statemachine.hpp"
 #include "configs\ACE_Medical_Treatment.hpp"
 #include "configs\ACE_Medical_Treatment_Actions.hpp"
