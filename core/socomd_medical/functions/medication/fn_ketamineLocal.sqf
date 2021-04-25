@@ -8,6 +8,7 @@ params ["_patient", "_bodyPart", "_classname"];
 
 // Medication has no effects on dead units
 if (!alive _patient) exitWith {};
+if (!local _patient) exitWith {};
 
 _message = format ["Ketamine was given by %1",name _player];
 
