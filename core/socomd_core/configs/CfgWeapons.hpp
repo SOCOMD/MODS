@@ -15,7 +15,6 @@ class CfgWeapons {
 	#include "weapons\base\secondary.hpp"
 	#include "weapons\base\uniform.hpp"
 	#include "weapons\base\vest.hpp"
-   	#include "weapons\base\medical.hpp"
 	
 	#include "weapons\base\lmg_minigun_transport.hpp"
 

@@ -80,6 +80,16 @@ class CAManBase : Man {
 			icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
 			hotkey = "C";
 		};
+
+		class ACE_SwapAltType {
+			displayName = "Swap Altimeter Type";
+			exceptions[] = {"isNotInside"};
+			condition = "'ACE_Altimeter' in (assignedItems player)";
+			statement = "[player] call ACWE_parachute_fnc_SwapAltType;";
+			showDisabled = 0;
+			priority = 2.9;
+			icon = "z\ace\addons\parachute\UI\watch_altimeter.paa";
+		};
 		class ACE_MapDagr {
 			displayName = "Dagr Config";
 			icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
@@ -325,76 +335,76 @@ class CAManBase : Man {
 				
 				class HALO_Set_AR3_100 {
 					displayName = "~ 100m AGL ";
-					statement = "[1001,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[1001,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};				
 				class HALO_Set_AR3_150 {
 					displayName = "~ 150m AGL ";
-					statement = "[995,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[995,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_200 {
 					displayName = "~ 200m AGL";
-					statement = "[990,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[990,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_250 {
 					displayName = "~ 250m AGL";
-					statement = "[983,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[983,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_300 {
 					displayName = "~ 300m AGL";
-					statement = "[978,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[978,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_400 {
 					displayName = "~ 400m AGL";
-					statement = "[966,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[966,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_500 {
 					displayName = "~ 500m AGL";
-					statement = "[954,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[954,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_600 {
 					displayName = "~ 600m AGL";
-					statement = "[943,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[943,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_700 {
 					displayName = "~ 700m AGL";
-					statement = "[932,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[932,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_800 {
 					displayName = "~ 800m AGL";
-					statement = "[921,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[921,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_900 {
 					displayName = "~ 900m AGL";
-					statement = "[910,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[910,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_1000 {
 					displayName = "~ 1000m AGL";
-					statement = "[899,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[899,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				
 				class HALO_Set_AR3_1200 {
 					displayName = "~ 1200m AGL";
-					statement = "[877,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[877,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				
 				class HALO_Set_AR3_1500 {
 					displayName = "~ 1500m AGL";
-					statement = "[845,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[845,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_1750 {
 					displayName = "~ 1750m AGL";
-					statement = "[820,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[820,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 				class HALO_Set_AR3_2000 {
 					displayName = "~ 2000m AGL";
-					statement = "[795,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';"
+					statement = "[795,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
 				};
 			};
 			class HALO_Post_landing{
 				condition = "([_player, 2] call SOCOMD_fnc_ActionCondition_HaloActions)";
 				displayName = "Remove Parachite";
-				statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';"
-			}
+				statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';";
+			};
 		};
 		class SOCOMD_Admin {
 			displayName = "Admin";
@@ -410,147 +420,6 @@ class CAManBase : Man {
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 		};
-
-		class Medical {
-
-			class ACE_Head {
-				class fieldDressing;
-				class Apap: fieldDressing {
-					displayName="Paracetemol 1g";
-					condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\apap.paa";
-				};
-			};
-
-			class ACE_ArmLeft {
-				class Morphine;
-				class Morphine_Medic: Morphine {
-					displayName="Morphine 10mg/1mL";
-					condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Epinephrine;
-				class Epinephrine_Medic : Epinephrine {
-					epinephrinedisplayName="Epinephrine 1mg/1mL";
-					condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Fentanyl: Morphine {
-					displayName="Fentanyl 100mcg/2mL";
-					condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-				};
-				class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
-					};
-				class Naloxone: Morphine {
-					displayName="Naloxone 1.6mg/4mL";
-					condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
-				};
-			};
-			
-			class ACE_ArmRight {
-				class Morphine;
-				class Morphine_Medic: Morphine {
-					displayName="Morphine 10mg/1mL";
-					condition="[_player, _target, 'lhand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Epinephrine;
-				class Epinephrine_Medic : Epinephrine {
-					epinephrinedisplayName="Epinephrine 1mg/1mL";
-					condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Fentanyl: Morphine {
-					displayName="Fentanyl 100mcg/2mL";
-					condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-				};
-				class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
-					};
-				class Naloxone: Morphine {
-					displayName="Naloxone 1.6mg/4mL";
-					condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
-				};
-			};
-			
-			class ACE_LegLeft {
-				class Morphine;
-				class Morphine_Medic: Morphine {
-					displayName="Morphine 10mg/1mL";
-					condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Epinephrine;
-				class Epinephrine_Medic : Epinephrine {
-					epinephrinedisplayName="Epinephrine 1mg/1mL";
-					condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Fentanyl: Morphine {
-					displayName="Fentanyl 100mcg/2mL";
-					condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-				};
-				class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
-					};
-				class Naloxone: Morphine {
-					displayName="Naloxone 1.6mg/4mL";
-					condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
-				};
-			};
-
-			class ACE_LegRight {
-				class Morphine;
-				class Morphine_Medic: Morphine {
-					displayName="Morphine 10mg/1mL";
-					condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Epinephrine;
-				class Epinephrine_Medic : Epinephrine {
-					epinephrinedisplayName="Epinephrine 1mg/1mL";
-					condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-					icon="socomd_data_core\icon\VPN.paa";
-				};
-				class Fentanyl: Morphine {
-					displayName="Fentanyl 100mcg/2mL";
-					condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-				};
-				class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
-					};
-				class Naloxone: Morphine {
-					displayName="Naloxone 1.6mg/4mL";
-					condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-					statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
-				};
-			};
-		};
 	};
 	class ACE_Actions{
 		class ACE_Head{
@@ -561,332 +430,6 @@ class CAManBase : Man {
 				showDisabled=0;
 				priority=1;
 				distance=2;
-			};
-		};
-		class fieldDressing;
-		class Apap: fieldDressing {
-			displayName="Paracetemol 1g";
-			condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
-			statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
-			icon="socomd_data_core\icon\apap.paa";
-		};
-
-		class intubating {
-			displayName="$STR_kat_aceAirway_intubating";
-			icon="";
-			class Larynxtubus {
-				displayName="Insert SGA";
-				distance=2;
-				condition="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";
-				exceptions[]= {
-					""
-				};
-				showDisabled=0;
-				icon="\kat_aceAirway\images\larynx.paa";
-			};
-			class Guedeltubus: Larynxtubus {
-				displayName="Insert NPA";
-				condition="[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_treatment";
-				exceptions[]= {
-					""
-				};
-				icon="\kat_aceAirway\images\guedel.paa";
-			};
-		};
-
-		class ACE_ArmLeft {
-			class Morphine;
-			class Morphine_Medic: Morphine {
-				displayName="Morphine 10mg/1mL";
-				condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Epinephrine;
-			class Epinephrine_Medic : Epinephrine {
-				epinephrinedisplayName="Epinephrine 1mg/1mL";
-				condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Fentanyl: Morphine {
-				displayName="Fentanyl 100mcg/2mL";
-				condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-			};
-			class Ket: Fentanyl {
-				displayName="Ket 6mcg/2mL";
-				condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
-			};
-			class Naloxone: Morphine {
-				displayName="Naloxone 1.6mg/4mL";
-				condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
-			};
-		};
-	
-		class ACE_ArmRight {
-			class Morphine;
-			class Morphine_Medic {
-				displayName="Morphine 10mg/1mL";
-				condition="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Epinephrine;
-			class Epinephrine_Medic : Epinephrine {
-				epinephrinedisplayName="Epinephrine 1mg/1mL";
-				condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Fentanyl: Morphine {
-				displayName="Fentanyl 100mcg/2mL";
-				condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-			};
-			class Ket: Fentanyl {
-				displayName="Ket 6mcg/2mL";
-				condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
-			};
-			class Naloxone: Morphine {
-				displayName="Naloxone 1.6mg/4mL";
-				condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
-			};
-		};
-
-		class ACE_LegLeft {
-			class Morphine;
-			class Morphine_Medic {
-				displayName="Morphine 10mg/1mL";
-				condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Epinephrine;
-			class Epinephrine_Medic : Epinephrine {
-				epinephrinedisplayName="Epinephrine 1mg/1mL";
-				condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Fentanyl: Morphine {
-				displayName="Fentanyl 100mcg/2mL";
-				condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-			};
-			class Ket: Fentanyl {
-				displayName="Ket 6mcg/2mL";
-				condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
-			};
-			class Naloxone: Morphine {
-				displayName="Naloxone 1.6mg/4mL";
-				condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
-			};
-		};
-
-		class ACE_LegRight {
-			class Morphine;
-			class Morphine_Medic {
-				displayName="Morphine 10mg/1mL";
-				condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Epinephrine;
-			class Epinephrine_Medic : Epinephrine {
-				epinephrinedisplayName="Epinephrine 1mg/1mL";
-				condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-				icon="socomd_data_core\icon\VPN.paa";
-			};
-			class Fentanyl: Morphine {
-				displayName="Fentanyl 100mcg/2mL";
-				condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-			};
-			class Ket: Fentanyl {
-				displayName="Ket 6mcg/2mL";
-				condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
-			};
-			class Naloxone: Morphine {
-				displayName="Naloxone 1.6mg/4mL";
-				condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-				statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
-			};
-		};
-
-		class ACE_MainActions {
-			class Medical {
-				class ACE_Head {
-					class fieldDressing;
-					class Apap: fieldDressing {
-						displayName="Paracetemol 1g";
-						condition="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'head', 'Apap'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\apap.paa";
-					};
-					class intubating {
-						displayName="$STR_kat_aceAirway_intubating";
-						icon="";
-						class Larynxtubus {
-							displayName="Insert SGA";
-							distance=2;
-							condition="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
-							statement="[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";
-							exceptions[]= {
-								""
-							};
-							showDisabled=0;
-							icon="\kat_aceAirway\images\larynx.paa";
-						};
-						class Guedeltubus: Larynxtubus {
-							displayName="Insert NPA";
-							condition="[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_canTreatCached";
-							statement="[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_treatment";
-							exceptions[]= {
-								""
-							};
-							icon="\kat_aceAirway\images\guedel.paa";
-						};
-					};
-				};
-
-				class ACE_ArmLeft {
-					class Morphine;
-					class Morphine_Medic: Morphine {
-						displayName="Morphine 10mg/1mL";
-						condition="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Epinephrine;
-					class Epinephrine_Medic : Epinephrine {
-						epinephrinedisplayName="Epinephrine 1mg/1mL";
-						condition="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Fentanyl: Morphine {
-						displayName="Fentanyl 100mcg/2mL";
-						condition="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-					};
-					class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Ket'] call ace_medical_fnc_treatment";
-					};
-					class Naloxone: Morphine {
-						displayName="Naloxone 1.6mg/4mL";
-						condition="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_l', 'Naloxone'] call ace_medical_fnc_treatment";
-					};
-				};
-
-				class ACE_ArmRight {
-					class Morphine;
-					class Morphine_Medic {
-						displayName="Morphine 10mg/1mL";
-						condition="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Epinephrine;
-					class Epinephrine_Medic : Epinephrine {
-						epinephrinedisplayName="Epinephrine 1mg/1mL";
-						condition="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Fentanyl: Morphine {
-						displayName="Fentanyl 100mcg/2mL";
-						condition="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-					};
-					class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Ket'] call ace_medical_fnc_treatment";
-					};
-					class Naloxone: Morphine {
-						displayName="Naloxone 1.6mg/4mL";
-						condition="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'hand_r', 'Naloxone'] call ace_medical_fnc_treatment";
-					};
-				};
-
-				class ACE_LegLeft {
-					class Morphine;
-					class Morphine_Medic {
-						displayName="Morphine 10mg/1mL";
-						condition="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Epinephrine;
-					class Epinephrine_Medic : Epinephrine {
-						epinephrinedisplayName="Epinephrine 1mg/1mL";
-						condition="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Fentanyl: Morphine {
-						displayName="Fentanyl 100mcg/2mL";
-						condition="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Fentanyl'] call ace_medical_fnc_treatment";
-					};
-					class Ket: Fentanyl {
-						displayName="Ket 100mcg/2mL";
-						condition="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Ket'] call ace_medical_fnc_treatment";
-					};
-					class Naloxone: Morphine {
-						displayName="Naloxone 1.6mg/4mL";
-						condition="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_l', 'Naloxone'] call ace_medical_fnc_treatment";
-					};
-				};
-
-				class ACE_LegRight {
-					class Morphine;
-					class Morphine_Medic {
-						displayName="Morphine 10mg/1mL";
-						condition="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Morphine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Epinephrine;
-					class Epinephrine_Medic : Epinephrine {
-						epinephrinedisplayName="Epinephrine 1mg/1mL";
-						condition="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Epinephrine_Medic'] call ace_medical_fnc_treatment";
-						icon="socomd_data_core\icon\VPN.paa";
-					};
-					class Fentanyl: Morphine {
-						displayName="Fentanyl 100mcg/2mL";
-						condition="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Fentanyl'] call ace_medical_fnc_treatment";
-					};
-					class Ket: Fentanyl {
-						displayName="Ket 6mcg/2mL";
-						condition="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Ket'] call ace_medical_fnc_treatment";
-					};
-					class Naloxone: Morphine {
-						displayName="Naloxone 1.6mg/4mL";
-						condition="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_canTreatCached";
-						statement="[_player, _target, 'leg_r', 'Naloxone'] call ace_medical_fnc_treatment";
-					};
-				};
 			};
 		};
 	};

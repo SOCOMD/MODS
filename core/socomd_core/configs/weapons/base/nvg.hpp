@@ -2,23 +2,23 @@
 // NVGS
 
 class NVGoggles;
-class zeus_earpiece : NVGoggles {
-	author = "Pomigit";
-	displayName = "Zeus Radio Earpiece";
-	picture = "\socomd_data_core\icon\icon_H_earpiece.paa";
-	model = "\socomd_data_core\models\earpiece.p3d";
-	modelOptics = "-";
-	visionMode[] = {"Normal", "NVG", "TI"};
-	thermalMode[] = {0,1};
+// class zeus_earpiece : NVGoggles {
+// 	author = "Pomigit";
+// 	displayName = "Zeus Radio Earpiece";
+// 	picture = "\socomd_data_core\icon\icon_H_earpiece.paa";
+// 	model = "\socomd_data_core\models\earpiece.p3d";
+// 	modelOptics = "-";
+// 	visionMode[] = {"Normal", "NVG", "TI"};
+// 	thermalMode[] = {0,1};
 
-	class ItemInfo {
-		type = 616;
-		hmdType = 0;
-		uniformModel = "\socomd_data_core\models\earpiece.p3d";
-		modelOff = "\socomd_data_core\models\earpiece.p3d";
-		mass = 4;
-	};
-};
+// 	class ItemInfo {
+// 		type = 616;
+// 		hmdType = 0;
+// 		uniformModel = "\socomd_data_core\models\earpiece.p3d";
+// 		modelOff = "\socomd_data_core\models\earpiece.p3d";
+// 		mass = 4;
+// 	};
+// };
 class USP_L3_pvs31_A2;
 class SOCOMD_NVG : USP_L3_pvs31_A2	{
 	ace_nightvision_border = "\socomd_data_core\nvgoverlay\nvg_mask_binos_4096_125.paa";

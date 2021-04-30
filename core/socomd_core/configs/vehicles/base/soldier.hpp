@@ -17,6 +17,10 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	vehicleclass = "Man";
 	camouflage = 1.9; // default 1.4 ( higher values make you easier to spot)
 
+	engineer = 1;
+	canDeactivateMines = 1;
+	attendant = 1;
+
 	uniformClass = ITEM_UNIFORM_RIFLEMAN;
 
 	threat[] = {1, 0.7, 0.4};

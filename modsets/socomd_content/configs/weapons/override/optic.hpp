@@ -103,7 +103,7 @@ class CUP_optic_ACOG_3D : ItemCore {
 	delete MRT_switchItemHintText;
 	delete MRT_SwitchItemNextClass;
 	delete MRT_SwitchItemPrevClass;
-}
+};
 class CUP_optic_ACOG_Reflex_Desert_3D:  CUP_optic_ACOG_3D{
 	scope=public;
 	delete MRT_switchItemHintText;

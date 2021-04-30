@@ -1,9 +1,13 @@
 _args = _this;
 _player = _this select 0;
 if ((backpack player)  == "SOCOMD_COS_PARACHUTE") then {
+	
+	player LinkItem "ItemWatch";
 	removeBackpack player;
 	player call grad_boc_fnc_actionOnBack;
 }  else {
+	
+	player LinkItem "ACE_Altimeter";
 	if ((player call grad_boc_fnc_chestpack) == "SOCOMD_COS_PARACHUTE") then {
 		player call grad_boc_fnc_removeChestpack;
 	} else {
