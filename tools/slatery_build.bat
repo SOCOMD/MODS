@@ -3,7 +3,7 @@ set projectDir=P:\
 set modOutput=P:\SOCOMD\addons\
 set modOutput_core=P:\SOCOMD\addons\
 set modOutput_content=P:\SOCOMD\addons\
-set buldParam=-P -F
+set buldParam=-P 
 cd P:\SOCOMD\MODS 
 @REM @REM ::SOCOMD Core
 @REM MakePbo %buldParam% %projectDir%socomd_core %modOutput_core%
