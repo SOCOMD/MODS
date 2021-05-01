@@ -49,10 +49,10 @@ class BettIR_Config{
         class PEQ_T_black:__base_topRailPointer{};
         class WMLX_L_PEQ_T_black:__base_topRailPointer{};
         class M300_B_PEQ_T_black:__base_topRailPointer{};
-        class M600_B_PEQ_T_black :__base_topRailPointer{}	
+        class M600_B_PEQ_T_black :__base_topRailPointer{};
         class WMLX_L_PEQ_T_IR_black:__base_topRailPointer{};
         class M300_B_PEQ_T_IR_black:__base_topRailPointer{};
-        class M600_B_PEQ_T_IR_black :__base_topRailPointer{}	
+        class M600_B_PEQ_T_IR_black :__base_topRailPointer{};
 
 		// right
         class PEQ_R_tan:__base_rightSiderailPointer{};
@@ -73,7 +73,7 @@ class BettIR_Config{
         class WMLX_L_PEQ_R_IR_black:__base_rightSiderailPointer{};
         class M300_L_PEQ_R_IR_black:__base_rightSiderailPointer{};
         class M600_L_PEQ_R_IR_black:__base_rightSiderailPointer{};
-	}
+	};
 	class CompatibleNightvisionGoggles
 	{
 		class __base_NVG
@@ -85,6 +85,6 @@ class BettIR_Config{
 		class SOCOMD_NVG_GPNVG_WP_black: __base_NVG{};
 		class SOCOMD_NVG_GR: __base_NVG{};
 		class SOCOMD_NVG: __base_NVG{};
-		class zeus_earpiece: __base_NVG{};
-	}
-}
+		// class zeus_earpiece: __base_NVG{};
+	};
+};

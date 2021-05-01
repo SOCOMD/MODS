@@ -36,11 +36,4 @@ REM ::SOCOMD Modsets
 MakePbo %buldParam% modsets\socomd_content %modOutput_content%
 
 :: NGoC
-MakePbo %buldParam% rgoc %modOutput_content%
-MakePbo %buldParam% rgoc_cup_compat %modOutput_content%
-MakePbo %buldParam% rgoc_rhsafrf_compat %modOutput_content%
-MakePbo %buldParam% rgoc_rhssaf_compat %modOutput_content%
-MakePbo %buldParam% rgoc_rhsgref_compat %modOutput_content%
-MakePbo %buldParam% rgoc_rhsusaf_compat %modOutput_content%
-
 cd A:\J4\ModsClone\tools

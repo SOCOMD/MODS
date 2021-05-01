@@ -12,21 +12,11 @@ class Extended_Init_EventHandlers {
 	};
 };
 
-class Extended_PostInit_EventHandlers {
-    class socomd_core {
-        clientinit = "[_this select 0] call socomd_fnc_XEH_postInit";
-    };
-	class SOCOMD_medical_postInit
-	{
-		init="call SOCOMD_fnc_events";
-	};
-};
-
 class Extended_PreInit_EventHandlers
 {
 	class AB_WindowBreaker
 	{
-		init="call compile preprocessFileLineNumbers 'socomd_core\functions\common\XEH_PreInit.sqf'";
+		init="call compile preprocessFileLineNumbers '\socomd_core\functions\common\XEH_PreInit.sqf'";
 	};
 
 };

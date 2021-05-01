@@ -10,6 +10,7 @@ set buldParam=-N -P -W
 
 ::SOCOMD Core
 start /D %projectDir% makepbo.exe %buldParam% core\socomd_core %modOutput_core%
+start /D %projectDir% makepbo.exe %buldParam% core\socomd_medical %modOutput_core%
 start /D %projectDir% makepbo.exe %buldParam% core\socomd_zeus %modOutput_core%
 
 ::SOCOMD Core 3rd Party

@@ -50,7 +50,7 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
 		"socomd_data_cup\data\chinook\ch47_ext_1_co.paa",
 		"socomd_data_cup\data\chinook\ch47_ext_2_co.paa",
 		"socomd_data_cup\data\chinook\ch47f_nalepky_ca.paa",
-		"cup\airvehicles\cup_airvehicles_ch47\data\ch47_ext_mlod_co.paa"
+		"\CUP\airvehicles\cup_airvehicles_ch47\data\ch47_ext_mlod_co.paa"
 	};
 	/*class Turrets : Turrets {
 		class MainTurret : MainTurret {

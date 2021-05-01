@@ -24,7 +24,7 @@ class CfgMagazines {
             "RightMount_MELB",
             "LeftMount_MELB"
         };
-    }
+    };
     class CUP_19Rnd_CRV7_FAT_M;
     class CUP_PylonPod_19Rnd_CRV7_FAT_M : CUP_19Rnd_CRV7_FAT_M {
         mass=250;

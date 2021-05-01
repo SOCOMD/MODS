@@ -21,7 +21,6 @@ class CfgPatches {
 
 			"ace_common",
 			"ace_main",
-			"ace_medical",
 			"ace_zeus",
 			"ace_parachute",
 			"ace_hearing",
@@ -36,12 +35,8 @@ class CfgPatches {
 			"dso_weapons",
 			"lbtt_Vest_config",
 			"milgp_headgear_cfg",
-
 			"socomd_data_core",
-			"kat_aceAirway",
-			"kat_aceCirculation",
-			"kat_aceBreathing",
-			"kat_aceMisc"
+			"SOCOMD_Medical"
 		};
 
 		//SOCOMD Custom Units
@@ -183,6 +178,5 @@ class CfgAnimation {
 #include "configs\Rsc.hpp"
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgWorldType.hpp"
-#include "configs\CfgMedical.hpp"
 #include "configs\CfgArsenalOptions.hpp"
 //#include "configs\CfgModels.hpp"

@@ -1,4 +1,4 @@
-#include "\socomd_core\predefined.hpp"
+// #include "\socomd_core\predefined.hpp"
 #include "settings\inventories.hpp"
 #include "predefined.hpp"
 

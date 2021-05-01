@@ -160,7 +160,6 @@ class CfgVehicles  {
 	#include "vehicles\base\karatel.hpp"
 	#include "vehicles\base\lsv_mk2.hpp"
 	#include "vehicles\base\structures.hpp"
-	#include "vehicles\base\medical.hpp"
 
 	#include "vehicles\boxes\qstores.hpp"
 	#include "vehicles\boxes\supply.hpp"
