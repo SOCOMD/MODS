@@ -11,6 +11,8 @@ class CfgFunctions {
 			class KetamineSuccess {};
 			class KetamineLocal {};
 			class KetamineEffect {};
+			class naloxoneLocal {};
+			class naloxoneSuccess {};
 		};
 
 		class Actions {

@@ -49,7 +49,7 @@ class Naloxone : SOCOMD_Morphine {
 	displayNameProgress="Injecting Naloxone";
 	icon="\socomd_medical\tex\VPN.paa";
 	condition = "SOCOMD_Medical_fnc_vpnMedicationCondition";
-	callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
+	callbackSuccess = "SOCOMD_Medical_fnc_naloxoneSuccess";
 	requiresAll=true;
 	items[] = {
 		"SOCOMD_naloxone"
