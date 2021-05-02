@@ -22,18 +22,17 @@ class grenades_default: baseLodout {
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 2},
-		{SmokeShell, 5}
+		{SmokeShell, 2}
 	};
 };
 class grenades_more_flash: grenades_default {
 	
-	displayName = "More flash, less smoke";
+	displayName = "More flash, No smoke";
 	vest[] = {
 		{ACE_Chemlight_HiRed, 2},
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
-		{ACE_M84, 5},
-		{SmokeShell, 2}
+		{ACE_M84, 4},
 	};
 };
 class grenades_less_lethal: grenades_default {
@@ -54,19 +53,18 @@ class grenades_default_sapper: grenades_default {
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 2},
-		{SmokeShell, 5},
+		{SmokeShell, 2},
 		{ACE_M14,3}
 	};
 };;
 class grenades_more_flash_sapper: grenades_default {
 	
-	displayName = "More flash, less smoke";
+	displayName = "More flash, No smoke";
 	vest[] = {
 		{ACE_Chemlight_HiRed, 2},
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
-		{ACE_M84, 5},
-		{SmokeShell, 2},
+		{ACE_M84, 4},
 		{ACE_M14,3}
 	};
 };
@@ -90,19 +88,18 @@ class grenades_default_breacher: grenades_default {
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 3},
-		{SmokeShell, 5},
+		{SmokeShell, 2},
 		{ACE_CTS9, 3}
 	};
 };;
 class grenades_more_flash_breacher: grenades_default {
 	
-	displayName = "More flash, less smoke";
+	displayName = "More flash, No smoke";
 	vest[] = {
 		{ACE_Chemlight_HiRed, 2},
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 5},
-		{SmokeShell, 2},
 		{ACE_CTS9,3}
 	};
 };
@@ -126,20 +123,18 @@ class grenades_default_leader: grenades_default {
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 2},
-		{SmokeShell, 5},
-		{ACE_M14,3}
+		{SmokeShell, 2},
+		{SmokeShellGreen, 2}
 	};
 };;
 class grenades_more_flash_leader: grenades_default {
 	
-	displayName = "More flash, less smoke";
+	displayName = "More flash, No smoke";
 	vest[] = {
 		{ACE_Chemlight_HiRed, 2},
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 2},
 		{ACE_M84, 5},
-		{SmokeShell, 2},
-		{ACE_M14,3},
 		{SmokeShellGreen, 2}
 	};
 };
@@ -149,9 +144,8 @@ class grenades_less_lethal_leader : grenades_default {
 		{ACE_Chemlight_HiRed, 2},
 		{ACE_IR_Strobe_Item, 1},
 		{CUP_HandGrenade_M67, 1},
-		{ACE_M84, 4},
-		{SmokeShell, 4},
-		{ACE_M14,3},
+		{ACE_M84, 3},
+		{SmokeShell, 3},
 		{SmokeShellGreen, 2}
 	};
 };
