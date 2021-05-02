@@ -7,7 +7,7 @@
 	LOADOUT_ITEM(ACE_quikclot, 8) \
 	LOADOUT_ITEM(ACE_epinephrine, 0) \
 	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(ACE_tourniquet, 4) \
 	LOADOUT_ITEM(SOCOMD_Apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
