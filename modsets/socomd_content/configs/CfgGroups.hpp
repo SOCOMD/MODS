@@ -323,5 +323,6 @@ class CfgGroups {
 				};
 			};
 		};
+		#include "groups\red_hand.hpp"
 	};
 };

@@ -16,7 +16,6 @@ class SOCOMD_SSO_Vest_light: CUP_V_B_Armatus_BB_MCam
 		{
 			containerClass="Supply150";
 			mass=20;
-			uniformModel = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_LBTPlate_Operator.p3d";
 			hiddenSelections[] = {"camo","camo1","camo2","camo4","camo5","camo6","_ButtPouch"};
 			class HitpointsProtectionInfo
 			{
@@ -56,7 +55,6 @@ class SOCOMD_SSO_Vest: CUP_V_B_LBT_LBV_MCam
 		{
 			containerClass="Supply150";
 			mass=20;
-			uniformModel = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Germany\CUP_Ger_LBTPlate.p3d";
 			hiddenSelections[] = {"camo","camo2","insignia"};
 			class HitpointsProtectionInfo
 			{

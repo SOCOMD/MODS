@@ -62,3 +62,24 @@ class SOCOMD_FSB_Uniform : U_O_R_Gorka_01_black_F {
         mass=40;
     };
 };
+class U_I_GhillieSuit;
+class U_G_GhillieSuit:U_I_GhillieSuit{
+    displayName = "Ghillie Suit [GUER]";
+	hiddenSelections[]=
+	{
+		"camo",
+		"camo3"
+	};
+	hiddenSelectionsTextures[] = {
+		"\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_tigerstripe.paa",
+		"\A3\Characters_F_Exp\OPFOR\Data\ghillie_tna_CO.paa"		
+	};
+	author="$STR_A3_Bohemia_Interactive";
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="I_G_Ghillie_Unit";
+		containerClass="Supply60";
+		mass=60;
+	};
+};

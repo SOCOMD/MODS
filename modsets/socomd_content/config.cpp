@@ -63,7 +63,41 @@ class CfgPatches  {
 
 			"V12_KTM_SOCOMD",
 			"SOCOMD_LR_ATV",
-			"tut_R22"
+			"tut_R22",
+			 "O_SEAHVT_Darmanto_Mansur_01",
+            "O_SEAHVT_Gandi_Pradana_01",
+            "O_SEAHVT_Umaya_Sitorus_01",
+            "O_SEAHVT_Lac_Thuy_Du_01",
+            "O_SEAHVT_Cagak_Pramata_01",
+			 "O_SEARebels_Squad_Leader_01",
+            "O_SEARebels_Rifleman_01",
+            "O_SEARebels_Grenadier_01",
+            "O_SEARebels_Machine_Gunner_01",
+            "O_SEARebels_Marksman_01",
+            "O_SEARebels_Rifleman_AT_01",
+            "O_SEARebels_Medic_01",
+            "O_SEARebels_Rifleman_AA_01",
+            "O_SEARebels_Crew_01",
+            "O_SEARebels_Pilot_01",
+            "O_SEARebels_Driver_01",
+            "O_SEARebels_Sniper_01",
+            "O_SEARebels_UAZ_DShKM_01",
+            "O_SEARebels_Ural_ZU_23_01",
+            "O_SEARebels_Mi_8MT_01",
+            "O_SEARebels_ZU_23_01",
+            "O_SEARebels_DShKM_01",
+            "O_SEARebels_DShKM_Minitripod_01",
+            "O_SEARebels_Gunner_01",
+            "O_SEARebels_UAZ_01",
+            "O_SEARebels_Ural_Covered_01",
+            "O_SEARebels_Ural_Open_01",
+            "O_SEARebels_Ural_Refuel_01",
+            "O_SEARebels_Ural_Ammo_01",
+            "O_SEARebels_Ural_Empty_01",
+            "O_SEARebels_Mi_8MT_VIV_01",
+            "O_SEARebels_Assault_Boat_01",
+            "O_SEARebels_Podnos_2B14_01",
+            "O_OSEARebels_Spotter_01"
 		};
 
 		weapons[] = {
@@ -106,6 +140,7 @@ class asdg_FrontSideRail: asdg_SlotInfo
 
 #include "configs\bettir_config.hpp"
 #include "configs\CfgEditorCategories.hpp"
+#include "configs\CfgFactionClasses.hpp"
 #include "configs\CfgMagazines.hpp"
 #include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
