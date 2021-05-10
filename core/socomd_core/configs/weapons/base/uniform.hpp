@@ -135,7 +135,7 @@ class SOCOMD_Tee_base: Uniform_Base
 		uniformModel="-";
 		uniformClass="SOCOMD_Tee";
 		containerClass="Supply80";
-		mass=60;
+		mass=40;
 	};
 };
 class SOCOMD_Tee_uniform:SOCOMD_Tee_base{
@@ -150,7 +150,7 @@ class SOCOMD_Tee_AMCU_uniform: SOCOMD_Tee_base
 		uniformModel="-";
 		uniformClass="SOCOMD_Tee_AMCU";
 		containerClass="Supply80";
-		mass=60;
+		mass=40;
 	};
 };
 
@@ -166,7 +166,7 @@ class SEAL_AOR1_U: Uniform_Base
 		uniformModel="-";
 		uniformClass="SEAL_AOR1";
 		containerClass="Supply80";
-		mass=60;
+		mass=40;
 	};
 };
 
@@ -182,7 +182,7 @@ class SEAL_AOR2_U: Uniform_Base
 		uniformModel="-";
 		uniformClass="SEAL_AOR2";
 		containerClass="Supply80";
-		mass=60;
+		mass=40;
 	};
 };
 

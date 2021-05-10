@@ -1,6 +1,6 @@
 class FieldDressing {
 	class Abrasion {
-		effectiveness=9;
+		effectiveness=12;
 		reopeningChance=0.3;
 		reopeningMinDelay=800;
 		reopeningMaxDelay=1500;

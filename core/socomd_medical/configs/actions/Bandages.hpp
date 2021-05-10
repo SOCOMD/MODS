@@ -8,5 +8,5 @@ class ElasticBandage: BasicBandage {
 	treatmentTime = 1;
 };
 class QuikClot: BasicBandage {
-	treatmentTime = 4;
+	treatmentTime = 3;
 };
