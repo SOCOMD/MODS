@@ -13,10 +13,10 @@ class Epinephrine {
 };
 
 class Morphine {
-	painReduce=1;
+	painReduce=2;
 	hrIncreaseLow[]={-15,-25};
-	hrIncreaseNormal[]={-15,-35};
-	hrIncreaseHigh[]={-15,-35};
+	hrIncreaseNormal[]={-15,-25};
+	hrIncreaseHigh[]={-15,-30};
 	timeInSystem=9800;
 	maxDose=4;
 	inCompatableMedication[]={};
@@ -62,16 +62,16 @@ class Naloxone {
 	hrIncreaseHigh[]={15,25};
 	timeInSystem=120;
 	maxDose=4;
-	onOverDose = "[_target, true, 60, true] call ace_medical_fnc_setUnconscious";
+	onOverDose = "[_target, true, 60] call ace_medical_fnc_setUnconscious";
 	inCompatableMedication[]={};
 	viscosityChange=20;
 };
 
 class Fentanyl {
 	painReduce=5;
-	hrIncreaseLow[]={-10,-20};
-	hrIncreaseNormal[]={-10,-20};
-	hrIncreaseHigh[]={-10,-35};
+	hrIncreaseLow[]={-10,-15};
+	hrIncreaseNormal[]={-10,-15};
+	hrIncreaseHigh[]={-10,-20};
 	timeInSystem=6800;
 	maxDose=4;
 	inCompatableMedication[]={};
@@ -114,9 +114,17 @@ class Tetra : PainKillers {
 };
 
 class paracetamol : PainKillers {
-	painReduce=0.4;
+	painReduce=2;
 	timeInSystem=1200;
 	maxDose=15;
 	inCompatableMedication[]={};
-	viscosityChange=0;
+};
+class paracetamol_half : paracetamol {
+	painReduce=1;
+};
+class paracetamol_quarter : paracetamol {
+	painReduce=0.5;
+};
+class paracetamol_nil : paracetamol {
+	painReduce=0;
 };

@@ -323,6 +323,7 @@ class CfgGroups {
 				};
 			};
 		};
+		#include "groups\atom_pmc.hpp"
 		#include "groups\red_hand.hpp"
 	};
 };

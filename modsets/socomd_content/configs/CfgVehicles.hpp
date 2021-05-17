@@ -17,6 +17,7 @@ class CfgVehicles {
 	#include "vehicles\base\soldier_opfor_sso.hpp"
 	#include "vehicles\base\soldier_opfor_vympel.hpp"
 	#include "vehicles\base\soldier_opfor_fsb.hpp"
+	#include "vehicles\base\units_atom_pmc.hpp"
 	#include "vehicles\base\units_red_hand.hpp"
 	#include "vehicles\base\units_red_hand_leader.hpp"
 	#include "vehicles\base\man.hpp"

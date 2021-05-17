@@ -13,4 +13,12 @@ class CfgFactionClasses {
         icon = "\socomd_data_core\icon\red_hand.paa";
         priority = 0;
     };
+    
+    class O_PulauPMC_Woodland {
+        displayName = "Mansur PMC";
+        side = 0;
+        flag = "\socomd_data_core\icon\red_hand.paa";
+        icon = "\socomd_data_core\icon\red_hand.paa";
+        priority = 0;
+    };
 };
