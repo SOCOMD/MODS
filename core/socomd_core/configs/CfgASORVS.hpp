@@ -50,6 +50,7 @@ class CfgASORVS {
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
 			"SOCOMD_Recon_Supply",
+			"SOCOMD_UAV_Supply",
 			"ACE_Wheel"
 		};
 	};

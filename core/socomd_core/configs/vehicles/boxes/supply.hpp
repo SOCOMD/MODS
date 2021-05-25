@@ -308,7 +308,7 @@ class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] AGL";
 	class TransportMagazines {
-		TRANSPORT_MAGAZINE(ace_csw_40Rnd_20mm_G_belt, 8)
+		TRANSPORT_MAGAZINE(ace_csw_20Rnd_20mm_G_belt, 8)
 	};
 	class TransportWeapons {
 		TRANSPORT_WEAPON(ace_csw_staticGMGCarry, 2)
@@ -361,3 +361,18 @@ class SOCOMD_Recon_Supply : SOCOMD_Supply_Empty {
 		TRANSPORT_ITEM(ACRE_PRC117F,4)		
 	};
 };
+
+class SOCOMD_UAV_Supply : SOCOMD_Supply_Empty {
+	scope = public;
+	author = AUTHOR_STR;
+	displayName = "[SUPPLY] UAV";
+	
+	class TransportBackpacks {
+		TRANSPORT_BACKPACK(B_UAV_01_backpack_F, 1)
+	};
+	
+	class TransportItems {
+		TRANSPORT_ITEM(ACE_UAVBattery, 6)
+		TRANSPORT_ITEM(B_UavTerminal, 1)
+	}
+}
