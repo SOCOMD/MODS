@@ -374,5 +374,5 @@ class SOCOMD_UAV_Supply : SOCOMD_Supply_Empty {
 	class TransportItems {
 		TRANSPORT_ITEM(ACE_UAVBattery, 6)
 		TRANSPORT_ITEM(B_UavTerminal, 1)
-	}
-}
+	};
+};
