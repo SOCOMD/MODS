@@ -20,20 +20,16 @@ _lowered_rifle = _anim find "lowwrfldf";
 _unarmed = _anim find "nonwnondf";
 _running = _anim find "amovpercmrun";
 if (_running == -1) then {
-	systemChat "updating speed";
 	_weight = loadAbs _unit;
-	systemChat format ["animspeed: %1", _animspeed];
 	_speed =  linearConversion[_maxLoad,_minLoad,_weight,_minSpeed,_maxSpeed,true]; 
-	if( 
-		_walking != -1  
-	) then { 
-		systemChat "walking"; 
+	if (!isNil "ace_advanced_fatigue_setAnimExclusions") then {
+			ace_advanced_fatigue_setAnimExclusions pushBack _anim;
+	};
+	if( _walking != -1 ) then {
 		_speed = _speed * _animspeed;
 		if( _unarmed != -1 ) then {
-			systemChat "unarmed"; 
 			_speed = _speed * 0.9;
 		};
 	};
 };
-systemChat format ["speed: %1", _speed];
 _unit setAnimSpeedCoef _speed;

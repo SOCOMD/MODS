@@ -6,23 +6,18 @@ _setMax = _keypress find "setMax";
 _setMin = _keypress find "setMin";
 _animspeed = player getVariable ["socomd_anim_speed_coef",1];
 if ( _reset != -1 ) then {
-	systemChat "reset speed";
-	_val = 1;
+	_animspeed = 1;
 };
 if ( _increase != -1 && _animspeed < 1.7 ) then {
-	systemChat "increase speed";
 	_animspeed = _animspeed + 0.1;
 };
 if ( _decrease != -1 && _animspeed > 0.3 ) then {
-	systemChat "decrease speed";
 	_animspeed = _animspeed - 0.1;
 };
 if ( _setMax != -1 ) then {
-	systemChat "max speed";
 	_animspeed = 0.3;
 };
 if ( _setMin != -1 ) then {
-	systemChat "min speed";
 	_animspeed = 0.3;
 };
 
