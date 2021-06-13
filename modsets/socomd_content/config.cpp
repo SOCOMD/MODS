@@ -11,8 +11,11 @@ class CfgPatches  {
 		requiredVersion = 1.2;
 
 		requiredAddons[] = {
+            // CBA requirements
+            "cba_keybinding",
+            
 			//CUP Requirments
-			
+			"gearcollectionbackpack",
             "CUP_AirVehicles_Ka52",
             "CUP_AirVehicles_MH60S",
             "CUP_AirVehciles_UH1Y",

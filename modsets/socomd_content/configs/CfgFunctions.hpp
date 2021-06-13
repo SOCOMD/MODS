@@ -7,6 +7,8 @@ class CfgFunctions {
 			class Event_shotgunBreach {};
 			class animSpeedSet {};
 			class Event_heliMassBalance {};
+			class changeWalkSpeed {};
+			class postInit {postInit = 1;};
 		};
 	};
 };

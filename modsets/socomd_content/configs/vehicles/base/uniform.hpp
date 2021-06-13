@@ -14,3 +14,9 @@ class I_G_Ghillie_Unit : I_sniper_F
 		"\A3\Characters_F_Exp\OPFOR\Data\ghillie_tna_CO.paa"		
 	};
 };
+class tgc_tssi_m9_hpc;
+class tgc_tssi_m9_hpc_: tgc_tssi_m9_hpc
+	{
+		displayName = "[TGC] TSSI M9 HPC [MC]";
+		hiddenSelectionsTextures[] = {"\socomd_data_core\uniform\bags\tssi_bag_mc_CO.paa","\tgc_backpack\data\tssi_molle_CO.paa"};
+	};
