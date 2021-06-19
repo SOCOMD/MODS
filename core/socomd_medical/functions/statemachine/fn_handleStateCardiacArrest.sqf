@@ -26,5 +26,5 @@ if (_timeDiff >= 1) then {
 	    [_message, false, 5, 3] call ace_common_fnc_displayText;
     };
     _unit setVariable ["ace_medical_statemachine_cardiacArrestTimeLeft", _timeLeft];
-    _unit setVariable ["SOCOMD_REVIVAL", _totalTimeLeft];
+    _unit setVariable ["SOCOMD_REVIVAL", _totalTimeLeft, true];
 };
