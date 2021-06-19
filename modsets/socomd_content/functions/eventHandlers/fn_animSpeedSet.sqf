@@ -32,4 +32,5 @@ if (_running == -1) then {
 		};
 	};
 };
-_unit setAnimSpeedCoef _speed;
+
+["SOCOMD_setAnimSpeedCoef", [_unit, _speed]] call CBA_fnc_globalEvent;

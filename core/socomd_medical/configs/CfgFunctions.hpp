@@ -20,10 +20,16 @@ class CfgFunctions {
 			class vpnMedicationCondition 	{};
 			class vpnMedicationSuccess 		{};
 			class revivalTimer				{};
+			class pneumoLocal				{};
+			class checkResponse				{};
 		};
 		class Statemachine {
 			file="\socomd_medical\functions\statemachine";
 			class handleStateCardiacArrest	{};
+		};
+		class zen {
+			file="\socomd_medical\functions\zen_functions";
+			class resetTimer	{};
 		};
 	};
 };

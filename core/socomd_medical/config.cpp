@@ -46,3 +46,5 @@ class CfgPatches {
 #include "configs\ACE_Medical_Statemachine.hpp"
 #include "configs\ACE_Medical_Treatment.hpp"
 #include "configs\ACE_Medical_Treatment_Actions.hpp"
+
+#include "configs\ZEN_Context_Actions.hpp"

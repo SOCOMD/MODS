@@ -22,7 +22,7 @@ class B_Slingload_01_Medevac_F : Slingload_01_Base_F {
             distance = 7;
             condition = 1;
             exceptions[] = {"isNotInside", "isNotSitting"};
-            statement = "_player setdamage 0; [objNull, _player] call ace_medical_fnc_treatmentAdvanced_fullHeal;";
+            statement = "_player setdamage 0; [objNull, _player] call ace_medical_treatment_fnc_fullHeal; _player setVariable ['SOCOMD_REVIVAL', SOCOMD_medical_persistantReviveTimer]";
         };
     };
 };
