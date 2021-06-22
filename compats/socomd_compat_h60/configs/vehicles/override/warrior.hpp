@@ -192,7 +192,7 @@
 		}; 
 		ace_fastroping_enabled = 1;
 		ace_fastroping_ropeOrigins[] = {
-			{1.405, 2.031, 0.08}
+			{1.405, 2.031, 0.05}
 		};
 		displayName="S-70A-9 Blackhawk (4/11)";
 		icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
@@ -291,7 +291,7 @@
 		};
 		ace_fastroping_enabled = 1;
 		ace_fastroping_ropeOrigins[] = {
-			{1.405, 2.031, 0.08}
+			{1.405, 2.031, 0.05}
 		};
 		
 		displayName="S-70A-9 Blackhawk FFV (4/10)";
