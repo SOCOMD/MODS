@@ -57,3 +57,37 @@ class extras_at_assistant_heat: extras_none{
 		{tf47_m3maaws_HEAT,2}
 	};
 };
+class extras_sso_spare_squad_ammo: extras_none{
+	displayName = "Squad Ammo";
+	bag[] = {
+		{CUP_30Rnd_545x39_AK74M_camo_M, 4},
+		{CUP_10Rnd_762x54_SVD_M, 4},
+		{CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M,1}
+	};
+};
+class extras_sso_mg_support: extras_none{
+	displayName = "RPK Ammo";
+	bag[] = {
+		{CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M,3}
+	};
+};
+class extras_sso_heavy_mg_support: extras_none{
+	displayName = "PKP Assitant";
+	bag[] = {
+		{CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M,2}
+	};
+};
+class extras_sso_at_assistant_heat: extras_none{
+	displayName = "3x HEAT 1x HE Frag";
+	bag[] = {
+		{CUP_PG7VM_M,3},
+		{CUP_OG7_M,1},
+	};
+};
+class extras_sso_at_assistant_mixed: extras_none{
+	displayName = "2x HEAT 2x HE Frag";
+	bag[] = {
+		{CUP_PG7VM_M,2},
+		{CUP_OG7_M,2},
+	};
+};

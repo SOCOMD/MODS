@@ -20,3 +20,8 @@ class tgc_tssi_m9_hpc_: tgc_tssi_m9_hpc
 		displayName = "[TGC] TSSI M9 HPC [MC]";
 		hiddenSelectionsTextures[] = {"\socomd_data_core\uniform\bags\tssi_bag_mc_CO.paa","\tgc_backpack\data\tssi_molle_CO.paa"};
 	};
+class CFP_Kitbag_MCam_Grn;
+class SSO_Kitbag : CFP_Kitbag_MCam_Grn {
+    maximumLoad = 450;
+ };
+    

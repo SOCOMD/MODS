@@ -12,6 +12,7 @@ class CfgWeapons {
 	class CBA_MiscItem;
 	class CBA_MiscItem_ItemInfo;
 
+	#include "weapons\override\malfunctions.hpp"
 	//Item Defines
 	#include "weapons\base\primary.hpp"
 	#include "weapons\base\pointer.hpp"
@@ -26,5 +27,4 @@ class CfgWeapons {
 	//Item SOCOMD Defines
 	#include "weapons\override\socomd_men_items.hpp"
 	#include "weapons\override\optic.hpp"
-	#include "weapons\override\malfunctions.hpp"
 };

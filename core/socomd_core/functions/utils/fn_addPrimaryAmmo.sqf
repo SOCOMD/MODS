@@ -18,7 +18,7 @@ if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
         _magazineCount = _x select 1;
-        if (_loadoutId ==  "SOCOMD_AO") then {
+        if (_loadoutId ==  "SOCOMD_AO" || _loadoutId ==  "SOCOMD_SSO_AO") then {
             _magazineCount = _magazineCount / 2;
         };
             _player addMagazines[_magazine, _magazineCount];
@@ -26,7 +26,7 @@ if(count _loadoutMagazines > 0) then  {
 };
 
 // commandGrenades
-if (_loadoutId ==  "SOCOMD_Commander" || _loadoutId ==  "SOCOMD_2IC" || _loadoutId ==  "SOCOMD_Leader") then {
+if ( isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") == 1)) then {
     commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
     if(count commandGrenades > 0) then  {
         {

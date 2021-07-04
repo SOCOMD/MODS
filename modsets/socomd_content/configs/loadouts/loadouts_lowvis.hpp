@@ -1,18 +1,17 @@
-///Russian SSO (DMOCOS)
+///Russian LOWVIS (DMOCOS)
 	
-class SOCOMD_SSO_Commander {
-	primary			= "SOCOMD_SSO_AK_GL";
+class SOCOMD_LOWVIS_Commander {
+	primary			= "ACWP_M4A5_145_7rail_GL";
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "Laserdesignator";
 	gps				= "ItemAndroid";
 	maxOptic		= "4x";
 	isCommander		= 1;
-
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_42";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -20,7 +19,7 @@ class SOCOMD_SSO_Commander {
 	};
 
 	class Vest {
-		type = "AGE_LV119_SL_Holster_MultiCam";
+		type = "lbt_comms_mc";
 		class Inventory {
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(ACRE_PRC152, 2)
@@ -49,19 +48,19 @@ class SOCOMD_SSO_Commander {
 ////////////////////////////////////////////////////////////////////////////////
 // Leader
 
-class SOCOMD_SSO_Leader {
-	primary		    = "SOCOMD_SSO_AK_GL";
+class SOCOMD_LOWVIS_Leader {
+	primary		    = "ACWP_M4A5_145_7rail_GL";
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "Laserdesignator";
 	gps			    = "ItemAndroid";
 	maxOptic		= "4x";
 	isCommander		= 1;
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_43";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -69,7 +68,7 @@ class SOCOMD_SSO_Leader {
 	};
 
 	class Vest {
-		type = "AGE_LV119_SL_Holster_MultiCam";
+		type = "lbt_comms_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(itc_land_tablet_rover,1)
@@ -93,23 +92,23 @@ class SOCOMD_SSO_Leader {
 	};
 };
 
-class SOCOMD_SSO_2IC : SOCOMD_Leader {};
+class SOCOMD_LOWVIS_2IC : SOCOMD_Leader {};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Rifleman
 
-class SOCOMD_SSO_Rifleman {
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_Rifleman {
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_15";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -117,7 +116,7 @@ class SOCOMD_SSO_Rifleman {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
@@ -137,18 +136,18 @@ class SOCOMD_SSO_Rifleman {
 
 ////////////////////////////////////////////////////////////////////////////////
 // Breacher
-class SOCOMD_SSO_Breacher {
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_Breacher {
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= ITEM_SECONDARY_BREACHER;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_1";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -156,7 +155,7 @@ class SOCOMD_SSO_Breacher {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
@@ -177,19 +176,19 @@ class SOCOMD_SSO_Breacher {
 };
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
-class SOCOMD_SSO_Marksman {
-	primary		    = "CUP_srifle_SVD_top_rail";
+class SOCOMD_LOWVIS_Marksman {
+	primary		    = "ACWP_sr25";
 	secondary		= ITEM_SECONDARY_MARKSMAN;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "6x";
 	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4_mrt_tan"};
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_3";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -197,7 +196,7 @@ class SOCOMD_SSO_Marksman {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
@@ -214,18 +213,18 @@ class SOCOMD_SSO_Marksman {
 ////////////////////////////////////////////////////////////////////////////////
 // Sapper
 
-class SOCOMD_SSO_Sapper {
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_Sapper {
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= ITEM_SECONDARY_SAPPER;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_20";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -233,7 +232,7 @@ class SOCOMD_SSO_Sapper {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
@@ -261,18 +260,18 @@ class SOCOMD_SSO_Sapper {
 ////////////////////////////////////////////////////////////////////////////////
 // Machine Gunner
 
-class SOCOMD_SSO_MachineGunner {
-	primary		    = "SOCOMD_SSO_RPK";
+class SOCOMD_LOWVIS_MachineGunner {
+	primary		    = "CUP_lmg_L110A1_railed";
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_11";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -280,7 +279,7 @@ class SOCOMD_SSO_MachineGunner {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
@@ -298,18 +297,18 @@ class SOCOMD_SSO_MachineGunner {
 ////////////////////////////////////////////////////////////////////////////////
 // Medic
 
-class SOCOMD_SSO_Medic {
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_Medic {
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= ITEM_SECONDARY_MEDIC;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_38";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 		};
@@ -362,25 +361,25 @@ class SOCOMD_SSO_Medic {
 	};
 };
 
-class SOCOMD_SSO_AO{
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_AO{
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= ITEM_SECONDARY_MEDIC;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemAndroid";
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_40";
 		class Inventory	{
 			LOADOUT_UNIFORM_AO_ESSENTIALS
 		};
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_AO_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 4)
@@ -428,18 +427,18 @@ class SOCOMD_SSO_AO{
 ////////////////////////////////////////////////////////////////////////////////
 // LAT
 
-class SOCOMD_SSO_AT {
-	primary		    = "SOCOMD_SSO_AK";
+class SOCOMD_LOWVIS_AT {
+	primary		    = "ACWP_M4A5_145_troy_base";
 	secondary		= "CUP_launch_RPG18";
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps			    = "ItemMicroDAGR";
 	maxOptic		= "4x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_2";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -447,7 +446,7 @@ class SOCOMD_SSO_AT {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
@@ -462,7 +461,7 @@ class SOCOMD_SSO_AT {
 	};
 };
 
-class SOCOMD_SSO_AT_Assistant : SOCOMD_AT {
+class SOCOMD_LOWVIS_AT_Assistant : SOCOMD_AT {
 	secondary = "";
 	binocular = "Binocular";
 };
@@ -470,18 +469,18 @@ class SOCOMD_SSO_AT_Assistant : SOCOMD_AT {
 ////////////////////////////////////////////////////////////////////////////////
 // Recon
 
-class SOCOMD_SSO_Recon {
-	primary		    = "AGE_OrsisT5000";
+class SOCOMD_LOWVIS_Recon {
+	primary		    = "bnae_trg42_camo2_virtual";
 	secondary		= ITEM_SECONDARY_RECON;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear		= "AGE_Fast_Tan_C_H_A";
+	headgear		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_41";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -491,7 +490,7 @@ class SOCOMD_SSO_Recon {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(Laserdesignator, 1)
@@ -510,19 +509,19 @@ class SOCOMD_SSO_Recon {
 	};
 };
 
-class SOCOMD_SSO_Recon_Assistant {
-	primary		    = "CUP_srifle_SVD_top_rail";
+class SOCOMD_LOWVIS_Recon_Assistant {
+	primary		    = "ACWP_sr25";
 	secondary		= ITEM_SECONDARY_MARKSMAN;
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear 		= "AGE_Fast_Tan_C_H_A";
+	headgear 		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "ACE_Vector";
 	gps			    = "ItemAndroid";
 	maxOptic		= "6x";
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_39";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -532,7 +531,7 @@ class SOCOMD_SSO_Recon_Assistant {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(Laserdesignator, 1)
@@ -554,18 +553,18 @@ class SOCOMD_SSO_Recon_Assistant {
 ////////////////////////////////////////////////////////////////////////////////
 // LOGISTICIAN
 
-class SOCOMD_SSO_Logistician {
-	primary 		= "SOCOMD_Weapon_Rifle_556x45";
+class SOCOMD_LOWVIS_Logistician {
+	primary 		= "ACWP_M4A5_145_troy_base";
     secondary 		= "SOCOMD_Weapon_Empty";
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-	headgear 		= "AGE_Fast_Tan_C_H_A";
+	headgear 		= "ADFU_H_Airframe_Cover_05_MC";
 	binocular		= "";
 	gps 			= "ItemcTab";
 	maxOptic		= "2x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_38";
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -573,7 +572,7 @@ class SOCOMD_SSO_Logistician {
 	};
 
 	class Vest {
-		type = "AGE_TV110_AK_Holster_MultiCam";
+		type = "lbt_tl_mc";
 		class Inventory	{
 			LOADOUT_BACKPACK_ESSENTIALS
 			LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
@@ -595,10 +594,10 @@ class SOCOMD_SSO_Logistician {
 ////////////////////////////////////////////////////////////////////////////////
 // Pilot
 
-class SOCOMD_SSO_Pilot {
-    primary 		= "CUP_arifle_AKS74U_top_rail";
+class SOCOMD_LOWVIS_Pilot {
+    primary 		= "CUP_smg_MP5A5";
     secondary 		= "SOCOMD_Weapon_Empty";
-	handgun			= "acwp_glock17_black";
+	handgun			= "acwp_glock19_black";
 	handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
 	headgear 		= "SOCOMD_Headgear_Pilot";
 	binocular 		= "";
@@ -606,7 +605,7 @@ class SOCOMD_SSO_Pilot {
 	maxOptic		= "1x";
 
 	class Uniform {
-		type = "SOCOMD_SSO_SleevesDown";
+		type = "CUP_I_B_PMC_Unit_42";
 		class Inventory	{
 			LOADOUT_PILOT_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
@@ -614,7 +613,7 @@ class SOCOMD_SSO_Pilot {
 	};
 
 	class Vest {
-		type = "AGE_LV119_SL_MultiCam";
+		type = "lbt_comms_mc";
 		class Inventory	{
 			LOADOUT_ITEM(ACE_Chemlight_HiRed, 2)
 			LOADOUT_ITEM(ACE_M84, 2)
@@ -636,6 +635,6 @@ class SOCOMD_SSO_Pilot {
 ////////////////////////////////////////////////////////////////////////////////
 // Crewman
 
-class SOCOMD_SSO_Crewman : SOCOMD_SSO_Pilot {
+class SOCOMD_LOWVIS_Crewman : SOCOMD_LOWVIS_Pilot {
 	headgear = "SOCOMD_Headgear_Crew";
 };

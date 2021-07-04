@@ -11,20 +11,34 @@
 	LOADOUT_ITEM(SOCOMD_Apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
-	LOADOUT_ITEM(KAT_guedel, 2)	\
-	LOADOUT_ITEM(SOCOMD_VPN, 2)
+	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
 	LOADOUT_ITEM(ACE_MapTools, 1) \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1) \
 	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
 	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
 	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-	LOADOUT_ITEM(18Rnd_9x21_Mag_USP, 3)
-	// LOADOUT_ITEM(hlc_acc_DBALPL, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+
+#define LOADOUT_UNIFORM_AO_ESSENTIALS \
+	LOADOUT_ITEM(ItemcTabHCam, 1) \
+	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 2)
+
+#define LOADOUT_PILOT_ESSENTIALS \
+	LOADOUT_ITEM(ItemcTabHCam, 1) \
+	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1) \
+	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+	LOADOUT_ITEM(ACE_microDAGR, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
+	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
+	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_VEST_ESSENTIALS \
 	LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
@@ -33,6 +47,15 @@
 	LOADOUT_ITEM(SmokeShell, 5) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
+#define LOADOUT_VEST_AO_ESSENTIALS \
+	LOADOUT_ITEM(ACE_Chemlight_HiWhite, 4) \
+	LOADOUT_ITEM(SmokeShellPurple, 2) \
+	LOADOUT_ITEM(B_IR_Grenade, 2) \
+	LOADOUT_ITEM(ACE_HandFlare_White, 2) \
+	LOADOUT_ITEM(ACRE_PRC343, 1) \
+	LOADOUT_ITEM(ACRE_PRC152, 2) \
+	LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
@@ -48,15 +71,20 @@
 	LOADOUT_ITEM(SOCOMD_NVG, 1) \
 	LOADOUT_ITEM(ACE_IR_Strobe_Item, 1) \
 	LOADOUT_ITEM(ACRE_PRC343, 1) \
-	LOADOUT_ITEM(ACE_DAGR, 1)
-#define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-	LOADOUT_ITEM(ACE_elasticBandage, 12) \
-	LOADOUT_ITEM(ACE_quikclot, 12) \
-	LOADOUT_ITEM(ACE_epinephrine, 2) \
-	LOADOUT_ITEM(ACE_morphine, 2) \
-	LOADOUT_ITEM(ACE_tourniquet, 2) \
-	LOADOUT_ITEM(SOCOMD_VPN, 2)
+	LOADOUT_ITEM(ACE_DAGR, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1)
 
+#define LOADOUT_SUPPORT_STANDARD_MEDICAL \
+	LOADOUT_ITEM(ACE_elasticBandage, 8) \
+	LOADOUT_ITEM(ACE_quikclot, 8) \
+	LOADOUT_ITEM(ACE_epinephrine, 0) \
+	LOADOUT_ITEM(ACE_morphine, 1) \
+	LOADOUT_ITEM(ACE_tourniquet, 2) \
+	LOADOUT_ITEM(SOCOMD_Apap, 4) \
+	LOADOUT_ITEM(ACE_packingBandage, 0) \
+	LOADOUT_ITEM(ACE_fieldDressing, 0) \
+	LOADOUT_ITEM(SOCOMD_VPN, 1)
+	
 // COMMON TAGE LOADOUT ITEMS
 
 #define TAGE_BACKPACK_ESSENTIALS		 \
@@ -77,12 +105,19 @@ class SOCOMD_Uniforms {
 };
 
 class SOCOMD_Commander{
-	primary			= "SMA_M4_GL_SM";
+	primary			= "ACWP_M4A5_145_7rail_GL";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	isCommander		= 1;
 };
 class SOCOMD_Leader{
-	primary			= "SMA_M4_GL_SM";
+	primary			= "ACWP_M4A5_145_7rail_GL";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	isCommander		= 1;
+};
+class SOCOMD_2IC{
+	primary			= "ACWP_M4A5_145_7rail_GL";
+	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	isCommander		= 1;
 };
 class SOCOMD_Rifleman{
 	primary			= "ACWP_M4A5_145_troy_base";

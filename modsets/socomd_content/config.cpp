@@ -217,3 +217,4 @@ class asdg_FrontSideRail: asdg_SlotInfo
 #include "configs\CfgFunctions.hpp"
 #include "configs\CfgMuzzleslot.hpp"
 #include "configs\CfgWorldType.hpp"
+#include "configs\CfgArsenalOptions.hpp"

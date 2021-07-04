@@ -463,4 +463,71 @@ class CfgLoadoutWeapons {
 			{"CUP_30Rnd_9x19_MP5", 8}
 		};
 	};
+
+	// SSO WEAPONS 
+	class SOCOMD_SSO_RPK {
+		magazines[]={
+			{"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",7}
+		};
+	};
+	class SOCOMD_pkp_acc {
+		magazines[]={
+			{"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",5}
+		};		
+	};
+	class SOCOMD_SSO_AK_GL {
+		magazines[] = {
+			{"CUP_30Rnd_545x39_AK74M_camo_M", 8},
+			{"CUP_1Rnd_HE_GP25_M", 8}
+		};
+		commandGrenades[] = {
+			{"CUP_FlareRed_GP25_M", 2},
+			{"CUP_1Rnd_SmokeRed_GP25_M", 2},
+			{"ACE_HuntIR_M203", 3}
+		};
+	};
+	class Rifle_545 {
+		magazines[] = {
+			{"CUP_30Rnd_545x39_AK74M_M", 8},
+		};
+	};
+	class SOCOMD_SSO_AK : Rifle_545 {};
+	class AGE_AK105 : Rifle_545 {};
+	class AGE_AK105_Camo : Rifle_545 {};
+	class AGE_AK105_V_R : Rifle_545 {};
+	class AGE_AK105_V : Rifle_545 {};
+	class AGE_AK105_V_Camo : Rifle_545 {};
+	class AGE_AK74M_C_Q : Rifle_545 {};
+	class AGE_AK74M_V_Q : Rifle_545 {};
+	class CUP_arifle_AKS74U_top_rail : Rifle_545 {};
+
+
+	class Sniper_762x54R {
+		magazines[] = {
+			{"CUP_10Rnd_762x54_SVD_M", 14},
+		};
+	};
+	
+	class CUP_srifle_SVD_des_top_rail : Sniper_762x54R {};
+	class CUP_srifle_SVD_wdl_top_rail : Sniper_762x54R {};
+	class CUP_srifle_SVD_top_rail : Sniper_762x54R {};
+
+
+	class Rifle_338 {
+		magazines[] ={
+			{"AGE_10Rnd_338_Mag",8}
+		};
+	};
+
+	class AGE_OrsisT5000 : Rifle_338 {};
+	class AGE_OrsisT5000_Camo : Rifle_338 {};
+	class AGE_OrsisT5000_Snow : Rifle_338 {};
+
+	class SOCOMD_RPG7{
+		
+		magazines[] ={
+			{"CUP_PG7VM_M",1},
+			{"CUP_OG7_M",2}
+		};
+	};
 };

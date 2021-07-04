@@ -477,6 +477,7 @@ class SOCOMD_SSO_RPK: CUP_arifle_RPK74M_railed{
 		};
 
 	magazines[] = {
+		"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
 		"SOCOMD_RPK_MAGAZINE",
 		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M",
 		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
@@ -502,7 +503,6 @@ class SOCOMD_SSO_RPK: CUP_arifle_RPK74M_railed{
 		"CUP_20Rnd_545x39_AKSU_M",
 		"CUP_20Rnd_Subsonic_545x39_AKSU_M",
 		"CUP_60Rnd_545x39_AK74M_M",
-		"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",
 		"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M",
 		"CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
 		"CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M",
@@ -548,6 +548,7 @@ class SOCOMD_SSO_Cyrus_acc : srifle_DMR_05_blk_F{
 
 class CUP_lmg_Pecheneg_woodland;
 class SOCOMD_pkp: CUP_lmg_Pecheneg_woodland{
+	inertia = 3;
 
 };
 class SOCOMD_pkp_acc: SOCOMD_pkp{
