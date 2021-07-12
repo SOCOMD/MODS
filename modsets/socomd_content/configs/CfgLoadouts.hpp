@@ -102,5 +102,6 @@ class CfgLoadouts {
 		#include "loadouts\loadouts_default.hpp"
         #include "loadouts\loadouts_tage.hpp"
         #include "loadouts\loadouts_sso.hpp"
+        #include "loadouts\loadouts_lowvis.hpp"
 	};
 };

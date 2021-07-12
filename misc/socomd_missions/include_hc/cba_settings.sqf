@@ -41,7 +41,8 @@ force force ace_captives_requireSurrenderAi = false;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys']";
+
+force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
