@@ -93,7 +93,12 @@ if(count _secondaryLoadout <= 0) then {
 }
 else {
     _secondaryLoadout set [0, _secondary];
-    _secondaryLoadout set [4, []];
+    
+    if(isNumber( _loadoutWeaponConfig >> "startLoaded") && (getNumber( _loadoutWeaponConfig >> "startLoaded") == 1)) then {
+        _secondaryLoadout set [4, [_loadoutMagazines#0#0,1000000]];
+    } else {
+        _secondaryLoadout set [4, []];
+    };
     _secondaryLoadout set [5, []];
 };
 

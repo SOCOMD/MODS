@@ -244,7 +244,13 @@ class CfgLoadoutWeapons {
 	
 
 	class Launcher;
-	class HAFM_LAW : Launcher {};
+	class SOCOMD_LAW : Launcher {
+		startLoaded = 1;
+		magazines[] = {
+			{"SOCOMD_M72_Rocket", 1}
+		};
+		
+	};
 	class SOCOMD_Carl_Gustav : Launcher {
 		magazines[] = {
 			{"tf47_m3maaws_HEAT", 1},

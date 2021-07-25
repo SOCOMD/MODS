@@ -200,7 +200,7 @@
 	"SOCOMD_Item_Magazine_Barret"
 
 #define LAUNCHERS \
-    "HAFM_LAW",\
+    "SOCOMD_LAW",\
     "SOCOMD_Carl_Gustav",\
 	"tf47_m3maaws_HEAT",\
 	"tf47_m3maaws_HE"

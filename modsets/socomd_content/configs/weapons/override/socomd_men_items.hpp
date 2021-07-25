@@ -11,7 +11,7 @@ class SOCOMD_Item_Primary_AT                        : ACWP_M4A5_145_troy_base {}
 class SOCOMD_Item_Primary_Pilot                   	: CUP_smg_MP5A5 {};
 class SOCOMD_Item_Primary_Crewman                 	: CUP_smg_MP5A5 {};
 
-class SOCOMD_Item_Secondary_AT                      : HAFM_LAW {};
+class SOCOMD_Item_Secondary_AT                      : SOCOMD_LAW {};
 class SOCOMD_Item_Secondary_MAT						: SOCOMD_Carl_Gustav {};
 
 class Recon_Barret                                  : ej_m107 {};
