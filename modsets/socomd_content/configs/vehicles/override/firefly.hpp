@@ -8,6 +8,11 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
 	author = AUTHOR_STR;
 	faction = FACTION_STR;
 
+	ace_fastroping_enabled = 1;
+	ace_fastroping_ropeOrigins[] = {
+		{-1.16, 0.78, -0.065},
+		{ 1.16, 0.78, -0.065}
+	};
 	displayname = "Firefly (2/6)";
 	mass=1220; // higher makes controls more sensitive default: 1220
 	hiddenSelections[] = {"camo1","d_sn"};
