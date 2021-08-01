@@ -29,6 +29,7 @@ class CfgFunctions {
 			class addSecondaryAmmo {};
 			class addHandgunAmmo {};
 			class removeAmmo {};
+			class backpackHandler {};
 		};
 
 		class Actions {
@@ -48,6 +49,7 @@ class CfgFunctions {
 			class Action_placePlaceables {};
 			class Action_putBlindfoldOn {};
 			class Action_ReplaceNVG {};
+			class Action_gcamxecVM {};
 		};
 
 		class ActionConditions {
@@ -67,6 +69,7 @@ class CfgFunctions {
 			class ActionCondition_HasLoadout {};
 			class ActionCondition_HandleReserve {};
 			class ActionCondition_HaloActions {};
+			class ActionCondition_GcamLoaded {};
 		};
 
 		class ASORUtil {
