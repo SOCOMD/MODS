@@ -425,7 +425,7 @@ class CAManBase : Man {
 			condition = "([_player] call SOCOMD_fnc_ActionCondition_GcamLoaded) and (alive _player)";
 			showDisabled = 0;
 			exceptions[] = {"isNotInside", "isNotSitting"};
-			statement = "[_player] execVM 'gcam\gcam.sqf';";
+			statement = "[player] execVM 'gcam\gcam.sqf';";
 
 		};
 	};
