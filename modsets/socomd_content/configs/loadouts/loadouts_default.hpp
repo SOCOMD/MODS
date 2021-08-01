@@ -114,11 +114,7 @@ class SOCOMD_Leader{
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	isCommander		= 1;
 };
-class SOCOMD_2IC{
-	primary			= "ACWP_M4A5_145_7rail_GL";
-	headgear		= "ADFU_H_Airframe_Cover_03_MC";
-	isCommander		= 1;
-};
+class SOCOMD_2IC : SOCOMD_Leader {};
 class SOCOMD_Rifleman{
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
