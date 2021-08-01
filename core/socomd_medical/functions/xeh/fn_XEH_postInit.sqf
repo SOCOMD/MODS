@@ -7,7 +7,7 @@
 //         _target setVariable ["SOCOMD_REVIVAL", SOCOMD_medical_persistantReviveTimer]
 //     };
 //  }] call CBA_fnc_addEventHandler;
-["ace_medical_injured",{
+["ace_medical_woundReceived",{
     params ["_unit", "_woundedHitPoint", "_receivedDamage", "", "_ammo", "_damageSelectionArray"];
     [_unit, _woundedHitPoint, _receivedDamage, _ammo, _damageSelectionArray] call SOCOMD_Medical_fnc_pneumoLocal;
 }] call CBA_fnc_addEventHandler;

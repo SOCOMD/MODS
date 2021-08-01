@@ -420,6 +420,14 @@ class CAManBase : Man {
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 		};
+		class SOCOMD_Gcam {
+			displayName = "Enter Gcam";
+			condition = "([_player] call SOCOMD_fnc_ActionCondition_GcamLoaded) and (alive _player)";
+			showDisabled = 0;
+			exceptions[] = {"isNotInside", "isNotSitting"};
+			statement = "[_player] execVM 'gcam\gcam.sqf';";
+
+		};
 	};
 	class ACE_Actions{
 		class ACE_Head{

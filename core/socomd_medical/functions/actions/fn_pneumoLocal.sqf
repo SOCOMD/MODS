@@ -1,14 +1,10 @@
 
 
-params ["_unit", "_bodyPart", "_damage", "_typeOfDamage", "_damageSelectionArray"];
-if (_bodyPart isEqualTo "Body") exitWith {
-};
-if (_damage < kat_medical_pneumothoraxDamageThreshold) exitWith {
-};
-// if !(_typeOfDamage isKindOF "BulletBase") exitWith {
-// 	systemChat "is not a bullet";
-// };
-
+params ["_unit", "_bodyPart", "_damage", "_ammo", "_damageSelectionArray"];
+if !(KAT_breathing_enable) exitWith {};
+if !(_bodyPart isEqualTo "Body") exitWith {};
+if !(_ammo isKindOF "BulletBase") exitWith {};
+if (_damage < kat_medical_pneumothoraxDamageThreshold) exitWith {};
 if (random 100 <= KAT_breathing_pneumothorax) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
