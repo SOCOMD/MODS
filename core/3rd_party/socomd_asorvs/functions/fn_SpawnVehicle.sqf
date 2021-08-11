@@ -25,7 +25,7 @@ objNull spawn {
 	try
 	{
 		//REMOVED ACE FRIES, ADVANCED RAPPELLING USED INSTEAD
-		//[_veh] call ace_fastroping_fnc_equipFRIES
+		[_veh] call ace_fastroping_fnc_equipFRIES
 	}
 	catch
 	{
