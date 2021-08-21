@@ -20,3 +20,11 @@ class Extended_PreInit_EventHandlers
 	};
 
 };
+
+class Extended_PostInit_EventHandlers
+{
+	class AB_WindowBreaker
+	{
+		init="call compile preprocessFileLineNumbers '\socomd_core\functions\common\XEH_PostInit.sqf'";
+	};
+};

@@ -5,7 +5,10 @@ _output = "Unit is deceased";
 if(alive _patient) then {
 	_totalTimeLeft = _patient getVariable ["SOCOMD_REVIVAL", SOCOMD_medical_persistantReviveTimer];
 	_condition = _totalTimeLeft/SOCOMD_medical_persistantReviveTimer;
-	_output = "Unit appears very injured";
+	_output = "Unit is in critical condition";
+	if(_condition > 0.1) then {
+		_output = "Unit appears very injured";
+	};
 	if(_condition > 0.3333) then {
 		_output = "Unit appears moderately injured";
 	};

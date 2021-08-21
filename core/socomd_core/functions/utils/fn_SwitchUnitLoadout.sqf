@@ -179,6 +179,8 @@ _equipmentLoadout set [1, _gps];
 _equipmentLoadout set [5, ""];
 _unitLoadout set [9, _equipmentLoadout];
 
+_player setVariable ["SOCOMD_stashedGear", false];
+_player setVariable ["SOCOMD_hasDivingGear", false];
 [_player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
 [_player, _loadoutId,_unitConfig] call SOCOMD_fnc_UpdateArsenalContent;
 

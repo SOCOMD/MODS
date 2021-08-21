@@ -64,96 +64,8 @@ class CfgVehicles
 		displayName = "RESERVE PARACHUTE";
 	};
 	class Weapon_Bag_Base;
-	class Boat_F;
-	class Rubber_duck_base_F: Boat_F
-	{
-		class EventHandlers;
-	};
-	class B_Boat_Transport_01_F: Rubber_duck_base_F
-	{
-		class assembleInfo
-		{
-			assembleto = "";
-			base = "";
-			displayname = "";
-			dissasembleto[] = {"SOCOMD_drybag_zodiac_od","SOCOMD_drybag_zodiac_blk"};
-			primary = "true";
-		};
-	};
-	class B_UAV_01_backpack_F: Weapon_Bag_Base
-	{
-		class assembleinfo;
-		class EventHandlers;
-	};
-	class SOCOMD_drybag_zodiac_od: B_UAV_01_backpack_F
-	{
-		author = ".../modifiedbySakuraba";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		icon = "iconBackpack";
-		transportMaxWeapons = 1;
-		transportMaxMagazines = 20;
-		isbackpack = 1;
-		reversed = 1;
-		mapSize = 2;
-		vehicleClass = "Backpacks";
-		allowedSlots[] = {901};
-		_generalMacro = "drybag_zodiac_od";
-		displayName = ".DryBag zodiac Od";
-		picture = "";
-		model = "\cos_content\drybag";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"cos_content\data\drybag\DryBag_Z_od_co.paa"};
-		hiddenSelectionsMaterials[] = {"cos_content\data\drybag\drybag.rvmat"};
-		hiddenUnderwaterSelections[] = {"hide"};
-		shownUnderwaterSelections[] = {"unhide","unhide2"};
-		hiddenUnderwaterSelectionsTextures[] = {"cos_content\data\halo\diver_kit_co.paa","cos_content\data\halo\diver_kit_co.paa","A3\characters_f\data\visors_ca.paa"};
-		maximumLoad = 10;
-		mass = 74;
-		side = "TWest";
-		class assembleInfo: assembleinfo
-		{
-			assembleto = "B_Boat_Transport_01_F";
-			base = "";
-			displayname = "Zodiac";
-		};
-	};
-	class SOCOMD_drybag_zodiac_blk: B_UAV_01_backpack_F
-	{
-		author = ".../modifiedbySakuraba";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		icon = "iconBackpack";
-		transportMaxWeapons = 1;
-		transportMaxMagazines = 20;
-		isbackpack = 1;
-		reversed = 1;
-		mapSize = 2;
-		vehicleClass = "Backpacks";
-		allowedSlots[] = {901};
-		_generalMacro = "drybag_zodiac_blk";
-		displayName = ".DryBag zodiac blk";
-		picture = "";
-		model = "\cos_content\drybag";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"cos_content\data\drybag\DryBag_Z_blk_co.paa"};
-		hiddenSelectionsMaterials[] = {"cos_content\data\drybag\drybag.rvmat"};
-		hiddenUnderwaterSelections[] = {"hide"};
-		shownUnderwaterSelections[] = {"unhide","unhide2"};
-		hiddenUnderwaterSelectionsTextures[] = {"cos_content\data\halo\diver_kit_co.paa","cos_content\data\halo\diver_kit_co.paa","A3\characters_f\data\visors_ca.paa"};
-		maximumLoad = 10;
-		mass = 74;
-		side = "TWest";
-		class assembleInfo: assembleinfo
-		{
-			assembleto = "B_Boat_Transport_01_F";
-			base = "";
-			displayname = "Zodiac";
-		};
-	};
-	class SOCOMD_drybag_od: B_AssaultPack_mcamo
+	class B_Bergen_Base;
+	class SOCOMD_drybag_od: B_Bergen_Base
 	{
 		author = ".../modifiedbySakuraba";
 		scope = 2;
@@ -169,8 +81,8 @@ class CfgVehicles
 		allowedSlots[] = {901};
 		_generalMacro = "drybag_od ";
 		displayName = ".drybag_od ";
-		picture = "\cos_content\data\icon\ic_drybag_OD.ca.paa";
-		model = "\cos_content\drybag";
+		picture = "cos_content\data\icon\ic_drybag_OD.ca.paa";
+		model = "cos_content\drybag";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"cos_content\data\drybag\DryBag_od_co.paa"};
 		hiddenSelectionsMaterials[] = {"cos_content\data\drybag\drybag.rvmat"};
@@ -180,7 +92,7 @@ class CfgVehicles
 		maximumLoad = 120;
 		mass = 33;
 	};
-	class SOCOMD_drybag_blk: B_AssaultPack_mcamo
+	class SOCOMD_drybag_blk: B_Bergen_Base
 	{
 		author = ".../modifiedbySakuraba";
 		scope = 2;
@@ -196,8 +108,8 @@ class CfgVehicles
 		allowedSlots[] = {901};
 		_generalMacro = "drybag_blk";
 		displayName = ".drybag_blk";
-		picture = "\cos_content\data\icon\ic_drybag_blk.ca.paa";
-		model = "\cos_content\drybag";
+		picture = "cos_content\data\icon\ic_drybag_blk.ca.paa";
+		model = "cos_content\drybag";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"cos_content\data\drybag\DryBag_blk_co.paa"};
 		hiddenSelectionsMaterials[] = {"cos_content\data\drybag\drybag.rvmat"};

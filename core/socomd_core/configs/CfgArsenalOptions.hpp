@@ -252,6 +252,8 @@
 	"ADFU_H_OpsCore_02_TAN",\
 	"SOCOMD_Aus_Boonie_AMC",\
 	"SOCOMD_Aus_Boonie",\
+	"CUP_H_PMC_Cap_Tan",\
+	"CUP_H_PMC_Cap_EP_Tan",\
 	"CUP_H_PMC_Cap_Back_Tan",\
 	"CUP_H_PMC_Cap_Back_EP_Tan",\
 	"CUP_H_PMC_Cap_Back_PRR_Tan",\

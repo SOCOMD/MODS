@@ -28,9 +28,10 @@ if (_running == -1) then {
 	if( _walking != -1 ) then {
 		_speed = _speed * _animspeed;
 		if( _unarmed != -1 ) then {
-			_speed = _speed * 0.9;
+			_speed = _speed * 0.87;
 		};
 	};
 };
 
+_unit setAnimSpeedCoef _speed;
 ["SOCOMD_setAnimSpeedCoef", [_unit, _speed]] call CBA_fnc_globalEvent;

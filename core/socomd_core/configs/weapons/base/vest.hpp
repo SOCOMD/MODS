@@ -299,48 +299,7 @@ class lbt_weapons_od : Vest_Camo_Base {
 class V_RebreatherB : Vest_Camo_Base {
 	displayName = "SOCOMD Rebreather";
 	class ItemInfo : VestItem {
-		hitpointName = "HitBody";
 		containerClass = "Supply400";
-		armor = 12;
-		passThrough = 0.1;
-		mass = 90;
-		vestType = "Rebreather";
-		// shownUnderwaterSelections[]=
-		// 	{
-		// 		"NOunhide1",
-		// 		"NOunhide2"
-		// 	};
-		class HitpointsProtectionInfo {
-			class Neck {
-				hitpointName = "HitNeck";
-				armor = 4;
-				passThrough	= 0.5;
-			};
-			class Arms {
-				hitpointName = "HitArms";
-				armor = 4;
-				passThrough	= 0.5;
-			};
-			class Chest {
-				hitpointName = "HitChest";
-				armor = 12;
-				passThrough	= 0.1;
-			};
-			class Diaphragm {
-				hitpointName = "HitDiaphragm";
-				armor = 12;
-				passThrough	= 0.1;
-			};
-			class Abdomen {
-				hitpointName = "HitAbdomen";
-				armor = 12;
-				passThrough	= 0.1;
-			};
-			class Body {
-				hitpointName = "HitBody";
-				passThrough	= 0.1;
-			};
-		};
 	};
 };
 

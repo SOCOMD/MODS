@@ -18,7 +18,6 @@ class CfgFunctions {
 			class GetLoadoutMaxOptic {};
 			class BushMasterInit {};
 			class ACRERackInit {};
-			class XEH_postInit {};
 			class GetWorldType {};
 			class GetWorldUniform {};
 			class SaveLoadoutPrefs {};
@@ -30,8 +29,16 @@ class CfgFunctions {
 			class addHandgunAmmo {};
 			class removeAmmo {};
 			class backpackHandler {};
+			class getMass {};
+			class handleMass {};
 		};
-
+		class Peltors {
+			file="\socomd_core\functions\peltors";
+			class Peltor_hasPeltor {};
+			class Peltor_setVolume {};
+			class Peltor_gunShotNear {};
+			class Peltor_togglePeltor {};
+		};
 		class Actions {
 			file="\socomd_core\functions\action";
 			class Action_ConnectSignal {};
@@ -50,6 +57,7 @@ class CfgFunctions {
 			class Action_putBlindfoldOn {};
 			class Action_ReplaceNVG {};
 			class Action_gcamxecVM {};
+			class Action_toggleStashDivingGear{};
 		};
 
 		class ActionConditions {
@@ -81,14 +89,4 @@ class CfgFunctions {
 		};
 	};
 
-	class advanced_peltors{
-		class functions {
-			file = "\socomd_core\functions\advanced_peltors";
-			class explosionEventNear {};
-			class gunShotNear {};
-			class handlePeltors {};
-			class handlePeltorStatus {};
-			class explosionShake {};
-		};
-	};
 };

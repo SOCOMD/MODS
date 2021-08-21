@@ -23,3 +23,15 @@ class SOCOMD_Aus_Boonie_AMC: H_Booniehat_khk_hs {
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\socomd_data_core\CTgear\booniehat_AMC_co.paa"};
 };
+class CFP_BaseballCap_Multicam_DEF_Back : ItemCore {
+	HEARING_PROTECTION_PELTOR
+};
+class CFP_BaseballCap_Multicam_DEF : ItemCore {
+	HEARING_PROTECTION_PELTOR
+};
+class CUP_H_PMC_Cap_EP_Tan : ItemCore {
+	HEARING_PROTECTION_PELTOR
+};
+class CUP_H_PMC_Cap_Back_EP_Tan : ItemCore {
+	HEARING_PROTECTION_PELTOR
+};

@@ -14,13 +14,17 @@ class ItemInfo : ItemInfo { \
 #define HELMET_BOONIE_ARMOR HELMET_ARMOR(0,1)
 
 
-#define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0;\
-ace_hearing_protection = 1;
+#define HEARING_PROTECTION_VICCREW ace_hearing_protection = 1;\
+advanced_peltors_protection = 1;
+
 
 #define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
 ace_hearing_protection = 0.5;
+
+
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;
+ace_hearing_protection = 0.4;\
+advanced_peltors_protection = 1;
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -234,7 +238,7 @@ class ADFU_H_Airframe_Cover_03_MC: ADFU_H_Airframe_Cover_03 {
 		"ADFU_Units\data\h_fast_khk_co.paa"
 	};
 };
-class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
+class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_10 {
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -370,7 +374,7 @@ class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
-class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
+class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_10 {
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -505,7 +509,7 @@ class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
-class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
+class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_10 {
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -607,7 +611,7 @@ class ADFU_H_Airframe_11_AMCU: ADFU_H_Airframe_Cover_05 {
 	};
 };
 
-class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_03 {
+class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_10 {
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;

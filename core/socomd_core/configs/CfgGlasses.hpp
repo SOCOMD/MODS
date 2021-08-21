@@ -1,5 +1,17 @@
+
+
+#define HEARING_PROTECTION_VICCREW ace_hearing_protection = 1;\
+advanced_peltors_protection = 1;
+
+
+#define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
+ace_hearing_protection = 0.5;
+
+
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;
+ace_hearing_protection = 0.4;\
+advanced_peltors_protection = 1;
+
 
 
 class CfgGlasses {

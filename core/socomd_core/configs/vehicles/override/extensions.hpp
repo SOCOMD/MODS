@@ -81,15 +81,6 @@ class CAManBase : Man {
 			hotkey = "C";
 		};
 
-		class ACE_SwapAltType {
-			displayName = "Swap Altimeter Type";
-			exceptions[] = {"isNotInside"};
-			condition = "'ACE_Altimeter' in (assignedItems player)";
-			statement = "[player] call ACWE_parachute_fnc_SwapAltType;";
-			showDisabled = 0;
-			priority = 2.9;
-			icon = "z\ace\addons\parachute\UI\watch_altimeter.paa";
-		};
 		class ACE_MapDagr {
 			displayName = "Dagr Config";
 			icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
@@ -196,6 +187,32 @@ class CAManBase : Man {
 				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_jngl)
 
 			};
+			class SOCOMD_Diving_interract {
+				displayName = "Diving Gear";
+				condition = "((stance _player) in ['STAND','CROUCH','PRONE']) and (_player getVariable ['SOCOMD_hasDivingGear', false]) and (alive _player)";
+				showDisabled = 0;
+				exceptions[] = {"isNotInside", "isNotSitting"};
+
+				class doff_Diving_Gear { 
+					displayName ="Change out of diving gear";
+					condition = "!(_player getVariable ['SOCOMD_stashedGear', false])";
+					statement = "[_player,'Stashing diving gear', true] call SOCOMD_fnc_Action_toggleStashDivingGear";
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				class don_Diving_Gear { 
+					displayName ="Put On Diving Gear";
+					condition = "(_player getVariable ['SOCOMD_stashedGear', false]) and ((backpack _player) == 'SOCOMD_drybag_blk')";
+					statement = "[_player,'Putting on diving gear', false] call SOCOMD_fnc_Action_toggleStashDivingGear";
+					exceptions[] = {"isNotInside", "isNotSitting"};
+				};
+				
+				//Wetsuit
+				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit,"Survival Fatigues",SOCOMD_Uniform_Wetsuit,SOCOMD_Uniform_Survival)
+				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Survival,"Wetsuit",SOCOMD_Uniform_Survival,SOCOMD_Uniform_Wetsuit)
+
+				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit_AMCU,"Survival Fatigues",SOCOMD_Uniform_Wetsuit_AMCU,SOCOMD_Uniform_AMCU_Survival)
+				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_AMCU_Survival,"Wetsuit",SOCOMD_Uniform_AMCU_Survival,SOCOMD_Uniform_Wetsuit_AMCU)
+			};
 			//Recon
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Uniform_SleevesDown_Recon)
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Uniform_SleevesUp_Recon)
@@ -211,12 +228,6 @@ class CAManBase : Man {
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_ard,"Uniform",SOCOMD_AMCU_Ghillie_ard,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
 			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_jngl,"Uniform",SOCOMD_AMCU_Ghillie_jngl,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
 		
-			//Wetsuit
-			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit,"Survival Fatigues",SOCOMD_Uniform_Wetsuit,SOCOMD_Uniform_Survival)
-			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Survival,"Wetsuit",SOCOMD_Uniform_Survival,SOCOMD_Uniform_Wetsuit)
-
-			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit_AMCU,"Survival Fatigues",SOCOMD_Uniform_Wetsuit_AMCU,SOCOMD_Uniform_AMCU_Survival)
-			QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_AMCU_Survival,"Wetsuit",SOCOMD_Uniform_AMCU_Survival,SOCOMD_Uniform_Wetsuit_AMCU)
 
 			//Roll Sleeves
 			QSTORE_ACTION_REPLACE_UNIFORM(UNIFORM_ROLL_UP,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown,SOCOMD_Uniform_SleevesUp)
@@ -285,6 +296,19 @@ class CAManBase : Man {
 			//Opscore Blk
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_0,"Headset On",ADFU_H_OpsCore_02_BLK,ADFU_H_OpsCore_08_BLK)
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_1,"Headset Off",ADFU_H_OpsCore_08_BLK,ADFU_H_OpsCore_02_BLK)
+
+			class togglePeltorOn { 
+				displayName ="Turn on peltors";
+				condition = "(hasPeltors == 1) and (hasPeltorsOn == 0)";
+				statement = "[true] call SOCOMD_fnc_Peltor_togglePeltor";
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
+			class togglePeltorOff { 
+				displayName ="Turn off peltors";
+				condition = "(hasPeltors == 1) and (hasPeltorsOn == 1)";
+				statement = "[false] call SOCOMD_fnc_Peltor_togglePeltor";
+				exceptions[] = {"isNotInside", "isNotSitting"};
+			};
 		};
 
 		// HALO Specific Actions
