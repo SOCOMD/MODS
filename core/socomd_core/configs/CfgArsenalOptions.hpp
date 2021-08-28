@@ -141,11 +141,6 @@
 	"SMA_Steyr_AUG_F",\
 	"CUP_smg_MP5A5"
 
-#define BACKPACK_MEDIC \
-    "SOG_BAG_med_tan",\
-    "SOG_BAG_med_MC",\
-    "SOG_BAG_med_od"
-
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
     "SMA_MK18TAN_GL_SM",\
@@ -289,20 +284,40 @@
 	"SOCOMD_Pilot_helmet"
 
 #define MC_UNIFORMS \
-	"SOCOMD_Uniform_SleevesDown",\
-	"SOCOMD_Uniform_SleevesUp",\
-	"SOCOMD_Tee_uniform"
+	"USP_G3C_KP_MC_SOCOMD",\
+	"USP_PCU_G3C_KP_MC_SOCOMD",\
+	"USP_SOFTSHELL_G3C_KP_MC_SOCOMD",\
+	"USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
+	"USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD",\
+	"USP_OVERWHITE_G3C_KP_MC_SOCOMD",\
+	"USP_TSHIRT_G3C_KP_MC_SOCOMD"
 
 #define AMCU_UNIFORMS \
-	"SOCOMD_Uniform_AMCU_SleevesDown",\
-	"SOCOMD_Uniform_AMCU_SleevesUp",\
-	"SOCOMD_Tee_AMCU_uniform"
+	"USP_G3C_KP_MC_SOCOMD",\
+	"USP_PCU_G3C_KP_MC_SOCOMD",\
+	"USP_SOFTSHELL_G3C_KP_MC_SOCOMD",\
+	"USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
+	"USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD",\
+	"USP_OVERWHITE_G3C_KP_MC_SOCOMD",\
+	"USP_TSHIRT_G3C_KP_MC_SOCOMD"
 	
 #define RECON_UNIFORMS \
-	"SOCOMD_Uniform_SleevesDown_Recon"
+	"USP_G3C_KP_MC_RECON",\
+	"USP_PCU_G3C_KP_MC_RECON",\
+	"USP_SOFTSHELL_G3C_KP_MC_RECON",\
+	"USP_OVERWHITE_G3C_KP_MC_RECON",\
+	"USP_PCU_G3C_KP_MC_GRY_RECON",\
+	"USP_SOFTSHELL_G3C_KP_MC_GRN_RECON",\
+	"USP_TSHIRT_G3C_KP_MC_RECON"
 
 #define RECON_AMCU_UNIFORMS \
-	"SOCOMD_Uniform_AMCU_SleevesDown_Recon"
+	"USP_G3C_KP_MC_RECON",\
+	"USP_PCU_G3C_KP_MC_RECON",\
+	"USP_SOFTSHELL_G3C_KP_MC_RECON",\
+	"USP_OVERWHITE_G3C_KP_MC_RECON",\
+	"USP_PCU_G3C_KP_MC_GRY_RECON",\
+	"USP_SOFTSHELL_G3C_KP_MC_GRN_RECON",\
+	"USP_TSHIRT_G3C_KP_MC_RECON"
 
 #define PILOT_UNIFORMS \
 	"SOLS_tshirt"
@@ -351,9 +366,11 @@
     "Kit_Bag_R_od",\
     "Kit_Bag_R_Tan",\
 	"ACWP_Bullock_radio_MC",\
-	"ACWP_Bullock_radio_AMCU"
-	// "ACWP_Bullock_radio_no_helm_MC",\
-	// "ACWP_Bullock_radio_no_helm_AMCU"
+	"ACWP_Bullock_radio_AMCU",\
+	"ACWP_Bullock_radio_no_helm_MC",\
+	"ACWP_Bullock_radio_no_helm_AMCU",\
+	"COMM4",\
+	"ECPV2"
 
 #define BACKPACK_SAPPER \
     "Kit_Bag_pince_TAN",\
@@ -363,6 +380,14 @@
     "Kit_Bag_pince_od",\
     "SOG_BAG_BREACHER_od"
 
+#define BACKPACK_MEDIC \
+    "SOG_BAG_med_tan",\
+    "SOG_BAG_med_MC",\
+    "SOG_BAG_med_od",\
+	"M9_Backpack",\
+	"WALK",\
+	"RATS"
+
 #define BAGS \
 	"KIT_BAG_mc",\
 	"KIT_BAG_OD",\
@@ -371,9 +396,13 @@
 	"SOG_BAG_od",\
 	"SOG_BAG_MC",\
 	"ACWP_Bullock_AMCU",\
-	"ACWP_Bullock_MC"
-	// "ACWP_Bullock_no_helm_AMCU",\
-	// "ACWP_Bullock_no_helm_MC"
+	"ACWP_Bullock_MC",\
+	"ACWP_Bullock_no_helm_AMCU",\
+	"ACWP_Bullock_no_helm_MC",\
+	"3DAP",\
+	"ECPV1",\
+	"Crewcab"
+
 #define GREMADES_NORMAL\
 	"grenades_default",\
 	"grenades_more_flash",\
@@ -671,10 +700,12 @@ class CfgArsenalOptions{
 	class SOCOMD_Pilot{
 		class uniforms{
 			arid_uniforms[]={
-				MC_UNIFORMS
+				MC_UNIFORMS,
+				PILOT_UNIFORMS
 			};
 			temperate_uniforms[]={
-				AMCU_UNIFORMS
+				AMCU_UNIFORMS,
+				PILOT_UNIFORMS
 			};
 		};
 		weapons[]={
@@ -701,10 +732,12 @@ class CfgArsenalOptions{
 	class SOCOMD_Crewman{
 		class uniforms{
 			arid_uniforms[]={
-				MC_UNIFORMS
+				MC_UNIFORMS,
+				PILOT_UNIFORMS
 			};
 			temperate_uniforms[]={
-				AMCU_UNIFORMS
+				AMCU_UNIFORMS,
+				PILOT_UNIFORMS
 			};
 		};
 		weapons[]={
@@ -782,10 +815,10 @@ class CfgArsenalOptions{
 	class SOCOMD_Recon{
 		class uniforms{
 			arid_uniforms[]={
-				MC_UNIFORMS
+				RECON_UNIFORMS
 			};
 			temperate_uniforms[]={
-				AMCU_UNIFORMS
+				RECON_UNIFORMS
 			};
 		};
 		weapons[]={
@@ -811,7 +844,7 @@ class CfgArsenalOptions{
 				RECON_UNIFORMS
 			};
 			temperate_uniforms[]={
-				RECON_AMCU_UNIFORMS
+				RECON_UNIFORMS
 			};
 		};
 		weapons[]={

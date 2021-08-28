@@ -11,7 +11,7 @@ class TAGE_TroopLeader
 
 	class Uniform
 	{
-		type = "SOCOMD_Commando_BLK_SleevesDown";
+		type = "USP_G3C_BLK_SOCOMD";
 		class Inventory
 		{
 			LOADOUT_UNIFORM_ESSENTIALS
@@ -59,7 +59,7 @@ class TAGE_Medic
 
 	class Uniform
 	{
-		type = "SOCOMD_Commando_BLK_SleevesDown";
+		type = "USP_G3C_BLK_SOCOMD";
 		class Inventory
 		{
 			LOADOUT_UNIFORM_ESSENTIALS
@@ -111,7 +111,7 @@ class TAGE_Sapper
 
 	class Uniform
 	{
-		type = "SOCOMD_Commando_BLK_SleevesDown";
+		type = "USP_G3C_BLK_SOCOMD";
 		class Inventory
 		{
 			LOADOUT_UNIFORM_ESSENTIALS
@@ -159,7 +159,7 @@ class TAGE_Sniper
 
 	class Uniform
 	{
-		type = "SOCOMD_Commando_BLK_SleevesDown";
+		type = "USP_G3C_BLK_SOCOMD";
 
 		class Inventory
 		{

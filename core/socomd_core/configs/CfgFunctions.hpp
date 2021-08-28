@@ -36,7 +36,6 @@ class CfgFunctions {
 			file="\socomd_core\functions\peltors";
 			class Peltor_hasPeltor {};
 			class Peltor_setVolume {};
-			class Peltor_gunShotNear {};
 			class Peltor_togglePeltor {};
 		};
 		class Actions {
@@ -58,6 +57,7 @@ class CfgFunctions {
 			class Action_ReplaceNVG {};
 			class Action_gcamxecVM {};
 			class Action_toggleStashDivingGear{};
+			class Action_toggleGhillie{};
 		};
 
 		class ActionConditions {

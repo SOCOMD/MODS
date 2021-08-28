@@ -69,14 +69,17 @@ class CfgPatches  {
             "CFP_B_USRANGERS_WDL",
             "CFP_B_USSEALS_DES",
             "CFP_B_USSEALS_WDL",
-			 "CFP_B_KEARMY",
+			"CFP_B_KEARMY",
             "CFP_O_NKARMY",
+
+            "socomd_compat_usp"
 		};
 
 		units[] = {
 			"SOCOMD_SHIP_B",
 			"SOCOMD_QStore_TAG",
 			"SOCOMD_QStore_RUS",
+			"SOCOMD_QStore_LOWVIS",
 
 			"SOCOMD_SSO_soldier_Rifleman",
 			"SOCOMD_SSO_soldier_Machinegunner",

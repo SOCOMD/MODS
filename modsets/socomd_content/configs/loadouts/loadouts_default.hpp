@@ -101,45 +101,73 @@
 class Inventory_E {};
 
 class SOCOMD_Uniforms {
-	Snow = "SOCOMD_Uniform_Snow_HoodDown";
+	Snow = "USP_OVERWHITE_G3C_MC_SOCOMD";
 };
 
 class SOCOMD_Commander{
 	primary			= "ACWP_M4A5_145_7rail_GL";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	isCommander		= 1;
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 class SOCOMD_Leader{
 	primary			= "ACWP_M4A5_145_7rail_GL";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	isCommander		= 1;
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 class SOCOMD_2IC : SOCOMD_Leader {};
 class SOCOMD_Rifleman{
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 class SOCOMD_MachineGunner{
 	primary			= "CUP_lmg_minimi_railed";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 class SOCOMD_Medic{
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 
 class SOCOMD_Marksman{
 	primary			= "ACWP_sr25";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	binocular		= "ACE_Yardage450";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 };
 class SOCOMD_Recon {
-	primary		    = "bnae_trg42_camo2_virtual";
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	binocular		= "ACE_Vector";
 	gps			    = "ItemMicroDAGR";
+	isRecon			= 1;
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_RECON";
+	};
 	class Vest {
 		type = ITEM_VEST_RECON;
 		class Inventory	{
@@ -157,6 +185,11 @@ class SOCOMD_Recon {
 class SOCOMD_Recon_Assistant {
 	primary			= "ACWP_sr25";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	isRecon			= 1;
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_RECON";
+	};
 	class Backpack {
 		type = ITEM_BACKPACK_RECON;
 		class Inventory	{
@@ -168,6 +201,10 @@ class SOCOMD_AT {
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
 	secondary		= "SOCOMD_Carl_Gustav";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 	class Backpack {
 		type = ITEM_BACKPACK_AT;
 		class Inventory	{
@@ -181,6 +218,10 @@ class SOCOMD_AT {
 class SOCOMD_Sapper {
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 	class Backpack {
 		class Inventory	{
 			LOADOUT_ITEM(ACE_VMH3, 1)
@@ -190,6 +231,10 @@ class SOCOMD_Sapper {
 class SOCOMD_Breacher {
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 	class Vest {
 		class Inventory	{
 			LOADOUT_ITEM(CUP_6Rnd_B_Beneli_74Pellets, 5)
@@ -203,6 +248,11 @@ class SOCOMD_Breacher {
 	};
 };
 class SOCOMD_Logistician {
+	
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";	
 };

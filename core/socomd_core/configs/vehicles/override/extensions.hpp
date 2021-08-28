@@ -58,6 +58,15 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	showDisabled = 0; \
 };
 
+#define QSTORE_ACTION_REPLACE_RECON(ID, DISPLAY_STR, UNIFORM_TARGET) \
+class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
+	displayName = DISPLAY_STR; \
+	condition = "(alive _player) and (isNumber (  configFile >> 'CfgWeapons' >> (uniform _player) >> 'Recon')) and ((getNumber(  configFile >> 'CfgWeapons' >> (uniform _player) >> 'Recon')) == 1)"; \
+	statement = "[_player, true, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_toggleGhillie;"; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	showDisabled = 0; \
+};
+
 #define QSTORE_ACTION_REPLACE_HEADGEAR(ID, DISPLAY_STR, HEADGEAR_SOURCE, HEADGEAR_TARGET) \
 class SOCOMD_ACTION_REPLACE_HEADGEAR_##ID { \
 	displayName = DISPLAY_STR; \
@@ -166,25 +175,28 @@ class CAManBase : Man {
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_lsh,"Lush",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_lsh)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_sard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_ard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Ghillie_jngl)
+				QSTORE_ACTION_REPLACE_RECON(RECON_Down_Ghillie_lsh,"Lush",SOCOMD_Ghillie_lsh)
+				QSTORE_ACTION_REPLACE_RECON(RECON_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Ghillie_sard)
+				QSTORE_ACTION_REPLACE_RECON(RECON_Down_Ghillie_ard,"Arid",SOCOMD_Ghillie_ard)
+				QSTORE_ACTION_REPLACE_RECON(RECON_Down_Ghillie_jngl,"Jungle",SOCOMD_Ghillie_jngl)
 
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_lsh)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_sard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_ard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_jngl)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_lsh)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_sard)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_ard)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_AMCU_Ghillie_jngl)
 
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_lsh)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_sard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_ard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Ghillie_jngl)
+				class SOCOMD_ACTION_REPLACE_UNIFORM_TO_RECON { 
+					displayName = "Put on uniform"; 
+					condition = "(alive _player) and (isNumber (  configFile >> 'CfgWeapons' >> (uniform _player) >> 'SOCOMD_Ghillie')) and ((getNumber(  configFile >> 'CfgWeapons' >> (uniform _player) >> 'SOCOMD_Ghillie')) == 1)"; 
+					statement = "[_player, false, ''] call SOCOMD_fnc_Action_toggleGhillie;"; 
+					exceptions[] = {"isNotInside", "isNotSitting"}; 
+					showDisabled = 0;
+				};
 
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_lsh)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_sard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_ard)
-				QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_jngl)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_lsh,"Lush",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_lsh)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_sard,"Semi-Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_sard)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_ard,"Arid",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_ard)
+				// QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up_Ghillie_jngl,"Jungle",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_AMCU_Ghillie_jngl)
 
 			};
 			class SOCOMD_Diving_interract {
@@ -213,20 +225,7 @@ class CAManBase : Man {
 				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit_AMCU,"Survival Fatigues",SOCOMD_Uniform_Wetsuit_AMCU,SOCOMD_Uniform_AMCU_Survival)
 				QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_AMCU_Survival,"Wetsuit",SOCOMD_Uniform_AMCU_Survival,SOCOMD_Uniform_Wetsuit_AMCU)
 			};
-			//Recon
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Up,"Roll Down Sleeves",SOCOMD_Uniform_SleevesUp_Recon,SOCOMD_Uniform_SleevesDown_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Down,"Roll Up Sleeves",SOCOMD_Uniform_SleevesDown_Recon,SOCOMD_Uniform_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_lsh,"Uniform",SOCOMD_Ghillie_lsh,SOCOMD_Uniform_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_sard,"Uniform",SOCOMD_Ghillie_sard,SOCOMD_Uniform_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_ard,"Uniform",SOCOMD_Ghillie_ard,SOCOMD_Uniform_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_Ghillie_jngl,"Uniform",SOCOMD_Ghillie_jngl,SOCOMD_Uniform_SleevesUp_Recon)
-
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Up,"Roll Down Sleeves",SOCOMD_Uniform_AMCU_SleevesUp_Recon,SOCOMD_Uniform_AMCU_SleevesDown_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Down,"Roll Up Sleeves",SOCOMD_Uniform_AMCU_SleevesDown_Recon,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_lsh,"Uniform",SOCOMD_AMCU_Ghillie_lsh,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_sard,"Uniform",SOCOMD_AMCU_Ghillie_sard,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_ard,"Uniform",SOCOMD_AMCU_Ghillie_ard,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
-			QSTORE_ACTION_REPLACE_UNIFORM(RECON_AMCU_Ghillie_jngl,"Uniform",SOCOMD_AMCU_Ghillie_jngl,SOCOMD_Uniform_AMCU_SleevesUp_Recon)
+	
 		
 
 			//Roll Sleeves
