@@ -17,6 +17,18 @@
 	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
+	LOADOUT_ITEM(ItemAndroid, 1)\
+	LOADOUT_ITEM(ItemcTabHCam, 1) \
+	LOADOUT_ITEM(ACE_EarPlugs, 1) \
+	LOADOUT_ITEM(ACE_MapTools, 1) \
+	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
+	LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
+	LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
+	LOADOUT_ITEM(murshun_cigs_lighter, 1) \
+	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+
+#define LOADOUT_COMMANDER_ESSENTIALS \
+	LOADOUT_ITEM(ItemcTab, 1)\
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
 	LOADOUT_ITEM(ACE_MapTools, 1) \
@@ -27,6 +39,7 @@
 	LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
+	LOADOUT_ITEM(ItemAndroid, 1)\
 	LOADOUT_ITEM(ItemcTabHCam, 1) \
 	LOADOUT_ITEM(ACE_EarPlugs, 1) \
 	LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -131,7 +144,7 @@ class SOCOMD_Commander {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_TROOPLEADER;
 	binocular		= "Laserdesignator";
-	gps				= "ItemAndroid";
+	gps				= "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -179,12 +192,12 @@ class SOCOMD_Leader {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_PATROLLEADER;
 	binocular		= "Laserdesignator";
-	gps			    = "ItemAndroid";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
 		class Inventory	{
-			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_COMMANDER_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 		};
 	};
@@ -227,7 +240,7 @@ class SOCOMD_Rifleman {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RIFLEMAN;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -266,7 +279,7 @@ class SOCOMD_Breacher {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_BREACHER;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -306,7 +319,7 @@ class SOCOMD_Marksman {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "6x";
 	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4_mrt_tan"};
 
@@ -342,7 +355,7 @@ class SOCOMD_Sapper {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_SAPPER;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -389,7 +402,7 @@ class SOCOMD_MachineGunner {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -426,7 +439,7 @@ class SOCOMD_Medic {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MEDIC;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -490,7 +503,7 @@ class SOCOMD_AO{
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MEDIC;
 	binocular		= "";
-	gps			    = "ItemAndroid";
+	gps			    = "";
 	maxOptic		= "2x";
 
 	class Uniform {
@@ -555,7 +568,7 @@ class SOCOMD_AT {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_AT;
 	binocular		= "";
-	gps			    = "ItemMicroDAGR";
+	gps			    = "";
 	maxOptic		= "4x";
 
 	class Uniform {
@@ -597,7 +610,7 @@ class SOCOMD_Recon {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_RECON;
 	binocular		= "ACE_Vector";
-	gps			    = "ItemAndroid";
+	gps			    = "";
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
@@ -637,7 +650,7 @@ class SOCOMD_Recon_Assistant {
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= ITEM_HEADGEAR_MARKSMAN;
 	binocular		= "ACE_Vector";
-	gps			    = "ItemAndroid";
+	gps			    = "";
 	maxOptic		= "6x";
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 

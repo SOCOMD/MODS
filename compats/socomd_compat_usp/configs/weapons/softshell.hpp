@@ -15,7 +15,7 @@ class USP_SOFTSHELL_G3C_MC_SOCOMD: USP_SOFTSHELL_G3C{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -30,7 +30,7 @@ class USP_SOFTSHELL_G3C_MX_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -45,7 +45,7 @@ class USP_SOFTSHELL_G3C_MX2_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX2_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -60,7 +60,7 @@ class USP_SOFTSHELL_G3C_MX3_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX3_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -75,7 +75,7 @@ class USP_SOFTSHELL_G3C_MX4_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX4_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -90,7 +90,7 @@ class USP_SOFTSHELL_G3C_MX5_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX5_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -105,7 +105,7 @@ class USP_SOFTSHELL_G3C_MX6_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX6_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -120,7 +120,7 @@ class USP_SOFTSHELL_G3C_MX7_MC_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX7_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -135,7 +135,7 @@ class USP_SOFTSHELL_G3C_OR_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -150,7 +150,7 @@ class USP_SOFTSHELL_G3C_OR2_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR2_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -165,7 +165,7 @@ class USP_SOFTSHELL_G3C_OR3_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR3_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -180,7 +180,7 @@ class USP_SOFTSHELL_G3C_OR4_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR4_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -195,7 +195,7 @@ class USP_SOFTSHELL_G3C_OR5_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR5_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -210,7 +210,7 @@ class USP_SOFTSHELL_G3C_OR6_MC_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR6_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -225,7 +225,7 @@ class USP_SOFTSHELL_G3C_KP_MC_SOCOMD: USP_SOFTSHELL_G3C_KP{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -240,7 +240,7 @@ class USP_SOFTSHELL_G3C_KP_MX_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -255,7 +255,7 @@ class USP_SOFTSHELL_G3C_KP_MX2_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -270,7 +270,7 @@ class USP_SOFTSHELL_G3C_KP_MX3_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -285,7 +285,7 @@ class USP_SOFTSHELL_G3C_KP_MX4_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -300,7 +300,7 @@ class USP_SOFTSHELL_G3C_KP_MX5_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -315,7 +315,7 @@ class USP_SOFTSHELL_G3C_KP_MX6_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -330,7 +330,7 @@ class USP_SOFTSHELL_G3C_KP_MX7_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -345,7 +345,7 @@ class USP_SOFTSHELL_G3C_KP_OR_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -360,7 +360,7 @@ class USP_SOFTSHELL_G3C_KP_OR2_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -375,7 +375,7 @@ class USP_SOFTSHELL_G3C_KP_OR3_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -390,7 +390,7 @@ class USP_SOFTSHELL_G3C_KP_OR4_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -405,7 +405,7 @@ class USP_SOFTSHELL_G3C_KP_OR5_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -420,7 +420,7 @@ class USP_SOFTSHELL_G3C_KP_OR6_MC_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_MC_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -436,7 +436,7 @@ class USP_SOFTSHELL_G3C_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -451,7 +451,7 @@ class USP_SOFTSHELL_G3C_MX_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -466,7 +466,7 @@ class USP_SOFTSHELL_G3C_MX2_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX2_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -481,7 +481,7 @@ class USP_SOFTSHELL_G3C_MX3_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX3_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -496,7 +496,7 @@ class USP_SOFTSHELL_G3C_MX4_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX4_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -511,7 +511,7 @@ class USP_SOFTSHELL_G3C_MX5_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX5_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -526,7 +526,7 @@ class USP_SOFTSHELL_G3C_MX6_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX6_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -541,7 +541,7 @@ class USP_SOFTSHELL_G3C_MX7_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_MX7_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -556,7 +556,7 @@ class USP_SOFTSHELL_G3C_OR_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -571,7 +571,7 @@ class USP_SOFTSHELL_G3C_OR2_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR2_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -586,7 +586,7 @@ class USP_SOFTSHELL_G3C_OR3_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR3_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -601,7 +601,7 @@ class USP_SOFTSHELL_G3C_OR4_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR4_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -616,7 +616,7 @@ class USP_SOFTSHELL_G3C_OR5_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR5_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -631,7 +631,7 @@ class USP_SOFTSHELL_G3C_OR6_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_OR6_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -646,7 +646,7 @@ class USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -661,7 +661,7 @@ class USP_SOFTSHELL_G3C_KP_MX_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -676,7 +676,7 @@ class USP_SOFTSHELL_G3C_KP_MX2_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -691,7 +691,7 @@ class USP_SOFTSHELL_G3C_KP_MX3_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -706,7 +706,7 @@ class USP_SOFTSHELL_G3C_KP_MX4_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -721,7 +721,7 @@ class USP_SOFTSHELL_G3C_KP_MX5_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -736,7 +736,7 @@ class USP_SOFTSHELL_G3C_KP_MX6_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -751,7 +751,7 @@ class USP_SOFTSHELL_G3C_KP_MX7_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -766,7 +766,7 @@ class USP_SOFTSHELL_G3C_KP_OR_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -781,7 +781,7 @@ class USP_SOFTSHELL_G3C_KP_OR2_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -796,7 +796,7 @@ class USP_SOFTSHELL_G3C_KP_OR3_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -811,7 +811,7 @@ class USP_SOFTSHELL_G3C_KP_OR4_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -826,7 +826,7 @@ class USP_SOFTSHELL_G3C_KP_OR5_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
@@ -841,7 +841,7 @@ class USP_SOFTSHELL_G3C_KP_OR6_MC_GRN_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     {
         uniformModel = "-";
         uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_MC_GRN_SOCOMD";
-        containerClass = "Supply40";
+        containerClass = "Supply80";
         mass=40;
     };
 };
