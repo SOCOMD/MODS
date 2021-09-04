@@ -197,7 +197,7 @@ class SOCOMD_Leader {
 
 	class Uniform {
 		class Inventory	{
-			LOADOUT_COMMANDER_ESSENTIALS
+			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
 		};
 	};

@@ -269,3 +269,15 @@ class SOCOMD_Logistician {
 	primary			= "ACWP_M4A5_145_troy_base";
 	headgear		= "ADFU_H_Airframe_Cover_03_MC";	
 };
+class SOCOMD_Pilot {	
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
+};
+class SOCOMD_Crewman {	
+	class Uniform
+	{
+		type = "USP_G3C_KP_MC_SOCOMD";
+	};
+};

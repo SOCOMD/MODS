@@ -238,7 +238,8 @@ class ADFU_H_Airframe_Cover_03_MC: ADFU_H_Airframe_Cover_03 {
 		"ADFU_Units\data\h_fast_khk_co.paa"
 	};
 };
-class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_10 {
+class ADFU_H_Airframe_Cover_10_MC: ADFU_H_Airframe_Cover_05 {
+	HEARING_PROTECTION_PELTOR
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -374,7 +375,8 @@ class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
-class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_10 {
+class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
+	HEARING_PROTECTION_PELTOR
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -509,7 +511,8 @@ class ADFU_H_Airframe_03_OD: ADFU_H_Airframe_Cover_03 {
 	};
 };
 
-class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_10 {
+class ADFU_H_Airframe_10_OD: ADFU_H_Airframe_Cover_05 {
+	HEARING_PROTECTION_PELTOR
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
@@ -611,7 +614,8 @@ class ADFU_H_Airframe_11_AMCU: ADFU_H_Airframe_Cover_05 {
 	};
 };
 
-class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_10 {
+class ADFU_H_Airframe_10_AMCU: ADFU_H_Airframe_Cover_05 {
+	HEARING_PROTECTION_PELTOR
 	rgoc_canAcceptNVG = 1;
 	scope = public;
 	scopeArsenal = 2;
