@@ -1,4 +1,5 @@
 #include "\socomd_core\predefined.hpp"
+#include "\socomd_core\settings\inventories.hpp"
 
 class CfgPatches {
 

@@ -10,7 +10,6 @@ class CfgVehicles {
 	Land
 	*/
 
-	#include "vehicles\override_rhs\Trucks.hpp"
 
 	////////////////////////////////////////////////////////////////////////////////
 	//AIR VEHICLES
@@ -51,7 +50,5 @@ class CfgVehicles {
 	};
 
 	#include "vehicles\override_rhs\firefly.hpp"
-	#include "vehicles\override_rhs\warrior.hpp"
 	#include "vehicles\override_rhs\nomad.hpp"
-	#include "vehicles\override_rhs\hurricane.hpp"
 };
