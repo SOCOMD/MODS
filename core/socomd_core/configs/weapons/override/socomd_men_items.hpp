@@ -37,16 +37,16 @@ class SOCOMD_Item_Secondary_AT                     	: launch_MRAWS_green_rail_F 
 class SOCOMD_Item_Secondary_Pilot                   : ItemCore {scope = protected;};
 class SOCOMD_Item_Secondary_Crewman                 : ItemCore {scope = protected;};
 
-class SOCOMD_Item_Headgear_TroopLeader              : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_PatrolLeader             : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Rifleman                 : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Breacher                 : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Marksman                 : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Medic                    : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Sapper                   : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_MachineGunner            : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_Recon                    : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
-class SOCOMD_Item_Headgear_AT                       : ADFU_H_Airframe_Cover_03_MC {scope = protected;};
+class SOCOMD_Item_Headgear_TroopLeader              : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_PatrolLeader             : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Rifleman                 : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Breacher                 : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Marksman                 : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Medic                    : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Sapper                   : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_MachineGunner            : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_Recon                    : acwp_airframe_mc {scope = protected;};
+class SOCOMD_Item_Headgear_AT                       : acwp_airframe_mc {scope = protected;};
 class SOCOMD_Item_Headgear_Pilot                    : SOCOMD_Pilot_helmet {scope = protected;};
 class SOCOMD_Item_Headgear_Crewman                  : SOCOMD_Ground_Crew_helmet {scope = protected;};
 
