@@ -748,39 +748,51 @@ class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
 	class ItemInfo;
 	class acwp_airframe_mc_ct3_light_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_ct3_light:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_light_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_light:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_ct3_light_black_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_ct3_light_black:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_light_black_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_light_black:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_ct3_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_ct3:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_mc:ItemInfo{
 		HEARING_PROTECTION_PELTOR
+	rgoc_canAcceptNVG = 1;
 	};
 	class acwp_airframe_amcu_ct3_light_strap:acwp_airframe_mc_ct3_light_strap
 	{
