@@ -37,18 +37,6 @@ force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 0;
 force force ace_captives_requireSurrenderAi = false;
 
-// ACE Common
-force force ace_common_allowFadeMusic = true;
-force force ace_common_checkPBOsAction = 2;
-force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates']";
-ace_common_displayTextColor = [0,0,0,0.1];
-ace_common_displayTextFontColor = [1,1,1,1];
-ace_common_settingFeedbackIcons = 1;
-ace_common_settingProgressBarLocation = 1;
-force force ace_noradio_enabled = true;
-force force ace_parachute_hideAltimeter = false;
-
 // ACE Cook off
 force force ace_cookoff_ammoCookoffDuration = 1;
 force force ace_cookoff_enable = true;
@@ -153,14 +141,15 @@ ace_map_gestures_nameTextColor = [0,0,0,1];
 force force ace_maptools_drawStraightLines = true;
 force force ace_maptools_rotateModifierKey = 1;
 
-
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
 force force ace_medical_AIDamageThreshold = 0.86088;
-force ace_medical_bleedingCoefficient = 0.3;
+force force ace_medical_bleedingCoefficient = 0.3;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
+force ace_medical_deathChance = 1;
+force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_fatalDamageSource = 1;
 force force ace_medical_feedback_bloodVolumeEffectType = 0;
 ace_medical_feedback_painEffectType = 2;
@@ -172,18 +161,18 @@ ace_medical_gui_enableSelfActions = true;
 ace_medical_gui_interactionMenuShowTriage = 1;
 force force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
-force ace_medical_ivFlowRate = 2.20601;
+force force ace_medical_ivFlowRate = 2.20601;
 force force ace_medical_limping = 1;
-force ace_medical_painCoefficient = 1;
-force force ace_medical_painUnconsciousChance = 0.1;
-force force ace_medical_playerDamageThreshold = 1.1299;
-force force ace_medical_spontaneousWakeUpChance = 0.70;
+force force ace_medical_painCoefficient = 1;
+force force ace_medical_painUnconsciousChance = 0.0505772;
+force force ace_medical_playerDamageThreshold = 1.66795;
+force force ace_medical_spontaneousWakeUpChance = 0.701618;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 3;
-force ace_medical_statemachine_AIUnconsciousness = true;
-force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
-force ace_medical_statemachine_cardiacArrestTime = 134;
-force ace_medical_statemachine_fatalInjuriesAI = 0;
-force ace_medical_statemachine_fatalInjuriesPlayer = 1;
+force force ace_medical_statemachine_AIUnconsciousness = true;
+force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
+force force ace_medical_statemachine_cardiacArrestTime = 180;
+force force ace_medical_statemachine_fatalInjuriesAI = 0;
+force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force force ace_medical_treatment_advancedBandages = 2;
 force force ace_medical_treatment_advancedDiagnose = true;
 force force ace_medical_treatment_advancedMedication = true;
@@ -193,7 +182,7 @@ force force ace_medical_treatment_allowSelfIV = 1;
 force force ace_medical_treatment_allowSelfPAK = 0;
 force force ace_medical_treatment_allowSelfStitch = 1;
 force force ace_medical_treatment_allowSharedEquipment = 1;
-force force ace_medical_treatment_clearTraumaAfterBandage = false;
+force force ace_medical_treatment_clearTraumaAfterBandage = true;
 force force ace_medical_treatment_consumePAK = 1;
 force force ace_medical_treatment_consumeSurgicalKit = 1;
 force force ace_medical_treatment_convertItems = 0;
@@ -212,13 +201,14 @@ force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 0;
 force force ace_medical_treatment_timeCoefficientPAK = 5;
 force force ace_medical_treatment_treatmentTimeAutoinjector = 5;
-force force ace_medical_treatment_treatmentTimeBodyBag = 10.2199;
+force force ace_medical_treatment_treatmentTimeBodyBag = 10;
 force force ace_medical_treatment_treatmentTimeCPR = 30;
 force force ace_medical_treatment_treatmentTimeIV = 12;
 force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 0.3;
-force force ace_medical_treatment_woundReopenChance = 1;
+force force ace_medical_treatment_woundReopenChance = 0.656423;
 force force ace_medical_treatment_woundStitchTime = 5;
+
 
 // KAT - ADV Medical: Airway
 force force kat_airway_Accuvac_time = 8;
@@ -639,3 +629,34 @@ zen_editor_moveDisplayToEdge = true;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 2;
 zen_visibility_enabled = false;
+
+
+// ACE Common
+force force ace_common_allowFadeMusic = true;
+force force ace_common_checkPBOsAction = 2;
+force force ace_common_checkPBOsCheckAll = true;
+force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates']";
+ace_common_displayTextColor = [0,0,0,0.1];
+ace_common_displayTextFontColor = [1,1,1,1];
+ace_common_settingFeedbackIcons = 1;
+ace_common_settingProgressBarLocation = 1;
+force force ace_noradio_enabled = true;
+force force ace_parachute_hideAltimeter = false;
+
+// Simple Suppress
+force force simplesuppress_suppress_checkLOS = false;
+force force simplesuppress_suppress_overlayFadeoutTime = 10;
+force force simplesuppress_suppress_overlayOpacity = 0.96;
+force force simplesuppress_suppress_overlayTexture = 1;
+force force simplesuppress_suppress_projectileMaxDistance = 9;
+force force simplesuppress_suppress_shooterMinDistance = 0;
+
+// SOCOMD
+SOCOMD_peltors = false;
+SOCOMD_peltors_strength = 0.25;
+SOCOMD_peltors_timeout = 0.5;
+
+// SOCOMD Medical
+force force SOCOMD_medical_persistantRevive = true;
+force force SOCOMD_medical_persistantReviveTimer = 330;
+

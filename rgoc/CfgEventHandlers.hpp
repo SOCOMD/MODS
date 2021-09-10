@@ -1,16 +1,16 @@
 class Extended_PreInit_EventHandlers {
-    class ADDON {
+    class RGOC {
         init = "call compile preprocessFileLineNumbers '\rgoc\XEH_preInit.sqf'";
     };
 };
 class Extended_PostInit_EventHandlers {
-    class ADDON {
+    class RGOC {
         init = "call compile preprocessFileLineNumbers '\rgoc\XEH_postInit.sqf'";
     };
 };
 
 class Extended_DisplayLoad_EventHandlers {
     class RscDisplayInventory {
-        ADDON = "call rgoc_fnc_openInventory";
+        RGOC = "call rgoc_fnc_openInventory";
     };
 };

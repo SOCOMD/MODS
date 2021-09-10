@@ -72,8 +72,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		icon = "iconBackpack";
-		transportMaxWeapons = 1;
-		transportMaxMagazines = 20;
+		transportMaxWeapons = 2;
+		transportMaxMagazines = 30;
 		isbackpack = 1;
 		reversed = 1;
 		mapSize = 2;
@@ -89,34 +89,20 @@ class CfgVehicles
 		hiddenUnderwaterSelections[] = {"hide"};
 		shownUnderwaterSelections[] = {"unhide","unhide2"};
 		hiddenUnderwaterSelectionsTextures[] = {"cos_content\data\halo\diver_kit_co.paa","cos_content\data\halo\diver_kit_co.paa","A3\characters_f\data\visors_ca.paa"};
-		maximumLoad = 120;
+		
 		mass = 33;
 	};
-	class SOCOMD_drybag_blk: B_Bergen_Base
+	class SOCOMD_drybag_blk: SOCOMD_drybag_od
 	{
-		author = ".../modifiedbySakuraba";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		icon = "iconBackpack";
-		transportMaxWeapons = 1;
-		transportMaxMagazines = 20;
-		isbackpack = 1;
-		reversed = 1;
-		mapSize = 2;
-		vehicleClass = "Backpacks";
-		allowedSlots[] = {901};
-		_generalMacro = "drybag_blk";
 		displayName = ".drybag_blk";
 		picture = "cos_content\data\icon\ic_drybag_blk.ca.paa";
-		model = "cos_content\drybag";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"cos_content\data\drybag\DryBag_blk_co.paa"};
 		hiddenSelectionsMaterials[] = {"cos_content\data\drybag\drybag.rvmat"};
 		hiddenUnderwaterSelections[] = {"hide"};
 		shownUnderwaterSelections[] = {"unhide","unhide2"};
 		hiddenUnderwaterSelectionsTextures[] = {"cos_content\data\halo\diver_kit_co.paa","cos_content\data\halo\diver_kit_co.paa","A3\characters_f\data\visors_ca.paa"};
-		maximumLoad = 120;
+		
 		mass = 33;
 	};
 };

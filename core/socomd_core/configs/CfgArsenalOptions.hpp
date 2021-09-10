@@ -221,15 +221,30 @@
 	"VSM_Bowman_cap_Black",\
 	"VSM_Bowman_cap_Green",\
 	"CUP_H_PMC_Cap_PRR_Tan",\
-	"ADFU_H_Airframe_02_tan",\
-	"ADFU_H_Airframe_Cover_02_MC",\
-	"ADFU_H_Airframe_Cover_11_MC",\
-	"ADFU_H_Airframe_Cover_10_MC",\
-	"ADFU_H_Airframe_Cover_03_MC",\
-	"ADFU_H_Airframe_02_AMCU",\
-	"ADFU_H_Airframe_03_AMCU",\
-	"ADFU_H_Airframe_10_AMCU",\
-	"ADFU_H_Airframe_11_AMCU",\
+	"acwp_airframe_mc_ct3_light_strap",\
+	"acwp_airframe_mc_ct3_light",\
+	"acwp_airframe_mc_light_strap",\
+	"acwp_airframe_mc_light",\
+	"acwp_airframe_mc_ct3_light_black_strap",\
+	"acwp_airframe_mc_ct3_light_black",\
+	"acwp_airframe_mc_light_black_strap",\
+	"acwp_airframe_mc_light_black",\
+	"acwp_airframe_mc_ct3_strap",\
+	"acwp_airframe_mc_ct3",\
+	"acwp_airframe_mc_strap",\
+	"acwp_airframe_mc",\
+	"acwp_airframe_amcu_ct3_light_strap",\
+	"acwp_airframe_amcu_ct3_light",\
+	"acwp_airframe_amcu_light_strap",\
+	"acwp_airframe_amcu_light",\
+	"acwp_airframe_amcu_ct3_light_black_strap",\
+	"acwp_airframe_amcu_ct3_light_black",\
+	"acwp_airframe_amcu_light_black_strap",\
+	"acwp_airframe_amcu_light_black",\
+	"acwp_airframe_amcu_ct3_strap",\
+	"acwp_airframe_amcu_ct3",\
+	"acwp_airframe_amcu_strap",\
+	"acwp_airframe_amcu",\
 	"H_Watchcap_blk",\
 	"H_Watchcap_cbr",\
 	"CUP_H_RUS_Bandana_HS",\
@@ -342,17 +357,46 @@
 #define VESTS_COMMS \
     "lbt_comms_coy",\
     "lbt_comms_mc",\
-    "lbt_comms_amcu"
+    "lbt_comms_amcu",\
+	"acwp_pc_comms",\
+	"acwp_pc_comms_mag",\
+	"acwp_pc_comms_mag_L",\
+	"acwp_pc_comms_nod",\
+	"acwp_pc_comms_mag_nod",\
+	"acwp_pc_comms_mag_L_nod",\
+	"acwp_pc_comms762_nod",\
+	"acwp_pc_comms762"
 
 #define VESTS_WEAPONS \
     "lbt_weapons_coy",\
     "lbt_weapons_mc",\
-    "lbt_weapons_amcu"
+    "lbt_weapons_amcu",\
+	"acwp_pc_203",\
+	"acwp_pc_203_nod",\
+	"acwp_pc_203_nobfg",\
+	"acwp_pc_203_nod_nobfg"
 
 #define VESTS_MED \
     "lbt_medical_coy",\
     "lbt_medical_mc",\
-    "lbt_medical_amcu"
+    "lbt_medical_amcu",\
+
+#define VESTS_GUNNER \
+    "acwp_pc_mg",\
+	"acwp_pc_mg_nod"
+
+#define VESTS_COMMON \
+    "acwp_pc_operator",\
+    "acwp_pc_operator_strap",\
+    "acwp_pc_operator_radioback",\
+    "acwp_pc_operator_nod",\
+    "acwp_pc_operator_radioback_nod",\
+    "acwp_pc_operator_nobfg",\
+    "acwp_pc_operator_radioback_nobfg",\
+    "acwp_pc_operator_nod_nobfg",\
+    "acwp_pc_operator_radioback_nod_nobfg",\
+	"acwp_pc_comms762_nod",\
+	"acwp_pc_comms762"
 
 #define BACKPACK_COMMS \
     "SOG_BAG_recon_MC",\
@@ -380,9 +424,8 @@
     "SOG_BAG_med_tan",\
     "SOG_BAG_med_MC",\
     "SOG_BAG_med_od",\
-	"M9_Backpack",\
-	"WALK",\
-	"RATS"
+	"ACWP_Bullock_no_helm_med_AMCU",\
+	"ACWP_Bullock_no_helm_med_MC"
 
 #define BAGS \
 	"KIT_BAG_mc",\
@@ -464,6 +507,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 			VESTS_WEAPONS,
@@ -495,6 +539,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			VESTS_WEAPONS,
@@ -526,6 +571,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			VESTS_WEAPONS,
@@ -554,6 +600,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			
@@ -579,6 +626,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			
@@ -604,6 +652,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			
@@ -655,6 +704,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_MED,
 			
@@ -682,6 +732,7 @@ class CfgArsenalOptions{
 			LAUNCHERS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			
@@ -709,6 +760,7 @@ class CfgArsenalOptions{
 			SOLS_RIFLES
 		};
 		vests[]={
+    VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 		};
@@ -741,6 +793,7 @@ class CfgArsenalOptions{
 			SOLS_RIFLES
 		};
 		vests[]={
+    VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 			
@@ -771,6 +824,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_MED,
 			
@@ -797,6 +851,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
 			
@@ -822,6 +877,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 			
@@ -849,6 +905,7 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
+    VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 			
