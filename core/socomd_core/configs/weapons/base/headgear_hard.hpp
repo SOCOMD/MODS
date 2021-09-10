@@ -745,6 +745,7 @@ class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
 };
 
 // Monk's helmets
+	class ItemInfo;
 	class acwp_airframe_mc_ct3_light_strap:ItemInfo{
 		HEARING_PROTECTION_PELTOR
 	};
