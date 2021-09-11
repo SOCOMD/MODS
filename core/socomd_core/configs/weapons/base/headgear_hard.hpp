@@ -797,74 +797,74 @@ class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
 	class acwp_airframe_amcu_ct3_light_strap:acwp_airframe_mc_ct3_light_strap
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Black light) (A)";
+		displayName = "Crye Airframe AMCU (Tan light) (A)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu_ct3_light:acwp_airframe_mc_ct3_light
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Black light) (B)";
+		displayName = "Crye Airframe AMCU (Tan light) (B)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 		
 	};
 	class acwp_airframe_amcu_light_strap:acwp_airframe_mc_light_strap
 	{	
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Black light) (C)";
+		displayName = "Crye Airframe AMCU (Tan light) (C)";
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu_light:acwp_airframe_mc_light
 	{	
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (No light) (D)";
+		displayName = "Crye Airframe AMCU (Tan light) (D)";
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 	};
 	class acwp_airframe_amcu_ct3_light_black_strap:acwp_airframe_mc_ct3_light_black_strap
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (No light) (A)";
+		displayName = "Crye Airframe AMCU (Black light) (A)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu_ct3_light_black:acwp_airframe_mc_ct3_light_black
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (No light) (B)";
+		displayName = "Crye Airframe AMCU (Black light) (B)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 	};
 	class acwp_airframe_amcu_light_black_strap:acwp_airframe_mc_light_black_strap
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (No light) (C)";
+		displayName = "Crye Airframe AMCU (Black light) (C)";
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu_light_black:acwp_airframe_mc_light_black
 	{
 		HEARING_PROTECTION_PELTOR	
-		displayName = "Crye Airframe AMCU (No light) (D)";	
+		displayName = "Crye Airframe AMCU (Black light) (D)";	
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 	};
 	class acwp_airframe_amcu_ct3_strap:acwp_airframe_mc_ct3_strap
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Tan light) (A)";
+		displayName = "Crye Airframe AMCU (No light) (A)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu_ct3:acwp_airframe_mc_ct3
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Tan light) (B)";
+		displayName = "Crye Airframe AMCU (No light) (B)";
 		hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 	};
 	class acwp_airframe_amcu_strap:acwp_airframe_mc_strap
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Tan light) (C)";
+		displayName = "Crye Airframe AMCU (No light) (C)";
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 	};
 	class acwp_airframe_amcu:acwp_airframe_mc
 	{
 		HEARING_PROTECTION_PELTOR
-		displayName = "Crye Airframe AMCU (Tan light) (D)";
+		displayName = "Crye Airframe AMCU (No light) (D)";
 		hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
 	};
 

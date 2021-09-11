@@ -58,6 +58,7 @@ class CfgFunctions {
 			class Action_gcamxecVM {};
 			class Action_toggleStashDivingGear{};
 			class Action_toggleGhillie{};
+			class Action_placeCustomPatch{};
 		};
 
 		class ActionConditions {
@@ -78,6 +79,7 @@ class CfgFunctions {
 			class ActionCondition_HandleReserve {};
 			class ActionCondition_HaloActions {};
 			class ActionCondition_GcamLoaded {};
+			class ActionCondition_getPlayerCustomPatch{};
 		};
 
 		class ASORUtil {
