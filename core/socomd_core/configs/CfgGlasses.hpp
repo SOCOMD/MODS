@@ -28,6 +28,7 @@ class CfgGlasses {
 		ACE_Resistance = 2;
 		scope = 2;
 	};
+	class SP_GasMask_Black : Mask_M40 {};
 	class Mask_M40_OD {
 		ACE_Overlay = "socomd_data_core\CTgear\GasMask.paa";
 		ACE_OverlayCracked = "socomd_data_core\CTgear\GasMaskCracked.paa";

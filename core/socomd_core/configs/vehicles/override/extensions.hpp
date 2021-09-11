@@ -57,6 +57,14 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
+#define QSTORE_ACTION_REPLACE_VEST(ID, DISPLAY_STR, UNIFORM_SOURCE, UNIFORM_TARGET) \
+class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
+	displayName = DISPLAY_STR; \
+	condition = "(alive _player) and ((vest _player) isKindOf ["#UNIFORM_SOURCE", configFile >> 'CfgWeapons'])"; \
+	statement = "[_player, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_ReplaceVest;"; \
+	exceptions[] = {"isNotInside", "isNotSitting"}; \
+	showDisabled = 0; \
+};
 
 #define QSTORE_ACTION_REPLACE_RECON(ID, DISPLAY_STR, UNIFORM_TARGET) \
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
@@ -295,6 +303,11 @@ class CAManBase : Man {
 			//Opscore Blk
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_0,"Headset On",ADFU_H_OpsCore_02_BLK,ADFU_H_OpsCore_08_BLK)
 			QSTORE_ACTION_REPLACE_HEADGEAR(HEADGEAR_OPSCORE_BLK_1,"Headset Off",ADFU_H_OpsCore_08_BLK,ADFU_H_OpsCore_02_BLK)
+
+			QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antennaup_s7_open,"Antennas Down",acwp_pc_tacp_antennaup_s7_open,acwp_pc_tacp_antenna_s7_open)
+			QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antenna_s7_open,"Antennas Up",acwp_pc_tacp_antenna_s7_open,acwp_pc_tacp_antennaup_s7_open)
+			QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antennaup_s7_closed,"Antennas Down",acwp_pc_tacp_antennaup_s7_closed,acwp_pc_tacp_antenna_s7_closed)
+			QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antenna_s7_closed,"Antennas Up",acwp_pc_tacp_antenna_s7_closed,acwp_pc_tacp_antennaup_s7_closed)
 
 			class togglePeltorOn { 
 				displayName ="Turn on peltors";
