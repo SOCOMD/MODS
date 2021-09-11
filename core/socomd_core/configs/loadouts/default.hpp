@@ -142,7 +142,7 @@ class SOCOMD_Commander {
 	secondary		= ITEM_SECONDARY_TROOPLEADER;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_TROOPLEADER;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "Laserdesignator";
 	gps				= "";
 	maxOptic		= "4x";
@@ -190,7 +190,7 @@ class SOCOMD_Leader {
 	secondary		= ITEM_SECONDARY_PATROLLEADER;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_PATROLLEADER;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "Laserdesignator";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -238,7 +238,7 @@ class SOCOMD_Rifleman {
 	secondary		= ITEM_SECONDARY_RIFLEMAN;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_RIFLEMAN;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -277,7 +277,7 @@ class SOCOMD_Breacher {
 	secondary		= ITEM_SECONDARY_BREACHER;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_BREACHER;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -317,7 +317,7 @@ class SOCOMD_Marksman {
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_MARKSMAN;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "6x";
@@ -353,7 +353,7 @@ class SOCOMD_Sapper {
 	secondary		= ITEM_SECONDARY_SAPPER;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_SAPPER;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -400,7 +400,7 @@ class SOCOMD_MachineGunner {
 	secondary		= ITEM_SECONDARY_MACHINEGUNNER;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_MACHINEGUNNER;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -437,7 +437,7 @@ class SOCOMD_Medic {
 	secondary		= ITEM_SECONDARY_MEDIC;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_MEDIC;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -501,7 +501,7 @@ class SOCOMD_AO{
 	secondary		= ITEM_SECONDARY_MEDIC;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_MEDIC;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "2x";
@@ -566,7 +566,7 @@ class SOCOMD_AT {
 	secondary		= ITEM_SECONDARY_MAT;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_AT;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "4x";
@@ -608,7 +608,7 @@ class SOCOMD_Recon {
 	secondary		= ITEM_SECONDARY_RECON;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_RECON;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "ACE_Vector";
 	gps			    = "";
 	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
@@ -648,7 +648,7 @@ class SOCOMD_Recon_Assistant {
 	secondary		= ITEM_SECONDARY_MARKSMAN;
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
-	headgear		= ITEM_HEADGEAR_MARKSMAN;
+	headgear		= "acwp_airframe_mc";
 	binocular		= "ACE_Vector";
 	gps			    = "";
 	maxOptic		= "6x";

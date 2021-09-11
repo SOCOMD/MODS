@@ -341,6 +341,7 @@
     "vss_01_RG",\
     "vss_01_MC"
 
+
 #define TWO_COMMS_RIGS \
     "vss_06_MC",\
     "vss_06_RG",\
@@ -348,6 +349,10 @@
     "vss_05_MC",\
     "vss_02_RG",\
     "vss_02_MC"
+
+#define VESTS_COMMANDER \
+    "acwp_pc_tacp_antennaup_s7_closed",\
+    "acwp_pc_tacp_antenna_s7_closed"
 
 #define VESTS_TL \
     "lbt_tl_coy",\
@@ -511,11 +516,11 @@ class CfgArsenalOptions{
 			HANDGUNS
 		};
 		vests[]={
-    VESTS_COMMON,
+    		VESTS_COMMON,
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
 			VESTS_WEAPONS,
-			
+			VESTS_COMMANDER
 		};
 		bags[]={
 			BAGS,
@@ -525,8 +530,23 @@ class CfgArsenalOptions{
 			GREMADES_LEADER
 		};
 	};
-	class SOCOMD_2IC : SOCOMD_Commander{};
-	class SOCOMD_Leader : SOCOMD_Commander{};
+	class SOCOMD_2IC : SOCOMD_Commander{
+		
+		vests[]={
+    		VESTS_COMMON,
+			TWO_COMMS_RIGS,
+			VESTS_COMMS,
+			VESTS_WEAPONS
+		};
+	};
+	class SOCOMD_Leader : SOCOMD_Commander{
+		vests[]={
+    		VESTS_COMMON,
+			TWO_COMMS_RIGS,
+			VESTS_COMMS,
+			VESTS_WEAPONS
+		};
+	};
 
 	class SOCOMD_Rifleman{
 		class uniforms{
