@@ -179,4 +179,5 @@ class CfgAnimation {
 #include "configs\CfgExtendedEventHandlers.hpp"
 #include "configs\CfgWorldType.hpp"
 #include "configs\CfgArsenalOptions.hpp"
+#include "configs\CfgSocomdPlayerSettings.hpp"
 //#include "configs\CfgModels.hpp"
