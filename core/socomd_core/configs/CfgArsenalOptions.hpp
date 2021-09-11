@@ -395,8 +395,12 @@
     "acwp_pc_operator_radioback_nobfg",\
     "acwp_pc_operator_nod_nobfg",\
     "acwp_pc_operator_radioback_nod_nobfg",\
-	"acwp_pc_comms762_nod",\
-	"acwp_pc_comms762"
+	"acwp_pc_marksman",\
+	"acwp_pc_marksman_nod",\
+	"acwp_pc_marksman_nobfg",\
+	"acwp_pc_marksman_nod_nobfg"
+
+
 
 #define BACKPACK_COMMS \
     "SOG_BAG_recon_MC",\
@@ -680,7 +684,7 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_COMMS,
+			VESTS_GUNNER,
 			
 		};
 		bags[]={
