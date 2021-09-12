@@ -1,9 +1,6 @@
 enableSentences false;
 enableRadio false;
 
-//Using TFR
-//[] execVM "include\tfr_compat.sqf";
-
 //Using ACRE2
 [] execVM "include\acre2_compat.sqf";
 

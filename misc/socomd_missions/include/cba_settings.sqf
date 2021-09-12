@@ -259,6 +259,7 @@ force force kat_circulation_useLocation_AED = 0;
 
 // KAT - ADV Medical: Misc
 force force kat_misc_enable = true;
+
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
 force force ace_mk6mortar_allowCompass = true;
@@ -465,32 +466,6 @@ acex_volume_reduction = 5;
 acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
-// Achilles - Curator Vision Modes
-achilles_curator_vision_blackhot = false;
-achilles_curator_vision_blackhotgreencold = false;
-achilles_curator_vision_blackhotredcold = false;
-achilles_curator_vision_greenhotcold = false;
-achilles_curator_vision_nvg = true;
-achilles_curator_vision_redgreen = false;
-achilles_curator_vision_redhot = false;
-achilles_curator_vision_whitehot = true;
-achilles_curator_vision_whitehotredcold = false;
-
-// Achilles - Debug
-Achilles_Debug_Output_Enabled = false;
-
-// Achilles - Defaults
-Achilles_var_setRadioFrequenciesLR_Default = "50";
-Achilles_var_setRadioFrequenciesSR_Default = "150";
-
-// Achilles - Icon Selection
-Achilles_var_iconSelection = "Achilles_var_iconSelection_Ares";
-
-// Achilles - Modules Interface
-Achilles_var_moduleTreeCollapse = true;
-Achilles_var_moduleTreeDLC = true;
-Achilles_var_moduleTreeHelmet = false;
-
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
 force force acre_sys_core_fullDuplex = false;
@@ -585,33 +560,6 @@ Change the position recovery from left click to right click. = false;
 Enable automatic wall avoidance. = false;
 Lookahead for corner detection (in m) = "0.2";
 
-// VCOM SETTINGS
-force force VCM_ActivateAI = true;
-force force VCM_ADVANCEDMOVEMENT = true;
-force force VCM_AIDISTANCEVEHPATH = 100;
-force force VCM_AIMagLimit = 2;
-force force VCM_ARTYDELAY = 300;
-force force VCM_ARTYENABLE = true;
-force force VCM_ARTYSIDES = [WEST,EAST,GUER];
-force force VCM_CARGOCHNG = true;
-force force VCM_ClassSteal = false;
-force force VCM_Debug = false;
-force force VCM_DISEMBARKRANGE = 350;
-force force VCM_ForceSpeed = false;
-force force VCM_FRMCHANGE = true;
-force force VCM_HEARINGDISTANCE = 800;
-force force VCM_MINECHANCE = 0;
-force force VCM_RAGDOLL = false;
-force force VCM_RAGDOLLCHC = 50;
-force force VCM_SIDEENABLED = [WEST,EAST,GUER];
-force force VCM_SKILLCHANGE = true;
-force force VCM_STATICARMT = 300;
-force force VCM_StealVeh = false;
-force force VCM_TURRETUNLOAD = false;
-force force VCM_USECBASETTINGS = true;
-force force VCM_WARNDELAY = 30;
-force force VCM_WARNDIST = 1000;
-
 // VET_Unflipping
 force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 8;
@@ -659,4 +607,3 @@ SOCOMD_peltors_timeout = 0.5;
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
 force force SOCOMD_medical_persistantReviveTimer = 330;
-
