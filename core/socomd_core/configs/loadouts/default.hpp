@@ -321,7 +321,7 @@ class SOCOMD_Marksman {
 	binocular		= "";
 	gps			    = "";
 	maxOptic		= "6x";
-	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4_mrt_tan"};
+	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
 
 	class Uniform {
 		class Inventory	{
