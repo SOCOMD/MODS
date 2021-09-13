@@ -39,7 +39,7 @@ force force ace_captives_requireSurrenderAi = false;
 
 // ACE Cook off
 force force ace_cookoff_ammoCookoffDuration = 1;
-force force ace_cookoff_enable = true;
+force force ace_cookoff_enable = 1;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_probabilityCoef = 1;
@@ -109,7 +109,7 @@ force force ace_repair_engineerSetting_wheel = 0;
 force force ace_repair_fullRepairLocation = 1;
 force force ace_repair_repairDamageThreshold = 0.75;
 force force ace_repair_repairDamageThreshold_engineer = 0.75;
-force force ace_repair_wheelRepairRequiredItems = 0;
+force force ace_repair_wheelRepairRequiredItems = ["ToolKit"];
 
 // ACE Magazine Repack
 force force ace_magazinerepack_timePerAmmo = 1;
@@ -474,6 +474,7 @@ force force acre_sys_core_interference = false;
 force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
+force force acre_sys_zeus_zeusDefaultVoiceSource = true;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -577,13 +578,14 @@ zen_editor_moveDisplayToEdge = true;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 2;
 zen_visibility_enabled = false;
-
+force force zen_placement_enabled = true;
+force force zen_visibility_enabled = true;
 
 // ACE Common
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI','VCOM_AI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
