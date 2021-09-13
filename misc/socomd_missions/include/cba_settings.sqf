@@ -577,7 +577,6 @@ zen_editor_disableLiveSearch = false;
 zen_editor_moveDisplayToEdge = true;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 2;
-zen_visibility_enabled = false;
 force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 
