@@ -2,6 +2,7 @@ class CfgLoadoutVests {
 	class lbt_comms {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
+			"SOCOMD_TACP",
 			"SOCOMD_Leader",
 			"SOCOMD_MachineGunner",
 			"SOCOMD_2IC"

@@ -57,7 +57,7 @@ class grenades_default_sapper: grenades_default {
 		{SmokeShell, 5},
 		{ACE_M14,3}
 	};
-};;
+};
 class grenades_more_flash_sapper: grenades_default {
 	
 	displayName = "More flash, less smoke";
@@ -93,7 +93,7 @@ class grenades_default_breacher: grenades_default {
 		{SmokeShell, 5},
 		{ACE_CTS9, 3}
 	};
-};;
+};
 class grenades_more_flash_breacher: grenades_default {
 	
 	displayName = "More flash, less smoke";
@@ -129,7 +129,7 @@ class grenades_default_leader: grenades_default {
 		{SmokeShell, 5},
 		{ACE_M14,3}
 	};
-};;
+};
 class grenades_more_flash_leader: grenades_default {
 	
 	displayName = "More flash, less smoke";
@@ -163,6 +163,6 @@ class grenades_standard_ao : grenades_default {
 		{ACE_Chemlight_HiWhite, 8},
 		{ACE_IR_Strobe_Item, 1},
 		{ACE_HandFlare_White, 2},
-		{SmokeShellPurple, 3},
+		{SmokeShellPurple, 3}
 	};
 };

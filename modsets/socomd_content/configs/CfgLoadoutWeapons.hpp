@@ -213,7 +213,7 @@ class CfgLoadoutWeapons {
 	};
 	class SOCOMD_mag58 : MachineGun_762 {
 		magazines[] = {
-			{"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4},
+			{"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 4}
 		};
 	};
 	class Rifle_556_Marksman;
@@ -290,6 +290,12 @@ class CfgLoadoutWeapons {
 			{"5Rnd_APDS_338LM_Magazine", 2}
 		};
 	};
+    class bnae_scope_blk_virtual : Recon_338 {};
+	class bnae_scope_snd_virtual : Recon_338 {};
+	class bnae_scope_mtp_virtual : Recon_338 {};
+	class bnae_scope_v2_virtual : Recon_338 {};
+	class bnae_truglo_blk_virtual : Recon_338 {};
+	class bnae_truglo_snd_virtual : Recon_338 {};
 
 	class ACWP_pistol_base;
 	class ACWP_USP: ACWP_pistol_base{
@@ -463,6 +469,9 @@ class CfgLoadoutWeapons {
 			{"10Rnd_300WM_Magazine", 5}
 		};
 	};
+	class bnae_falkor_blk_virtual : Recon_300WM {};
+	class bnae_falkor_snd_virtual : Recon_300WM {};
+
 	class CUP_smg_MP5SD6;
 	class CUP_smg_MP5A5 : CUP_smg_MP5SD6{
 		magazines[] = {
@@ -494,7 +503,7 @@ class CfgLoadoutWeapons {
 	};
 	class Rifle_545 {
 		magazines[] = {
-			{"CUP_30Rnd_545x39_AK74M_M", 8},
+			{"CUP_30Rnd_545x39_AK74M_M", 8}
 		};
 	};
 	class SOCOMD_SSO_AK : Rifle_545 {};
@@ -510,7 +519,7 @@ class CfgLoadoutWeapons {
 
 	class Sniper_762x54R {
 		magazines[] = {
-			{"CUP_10Rnd_762x54_SVD_M", 14},
+			{"CUP_10Rnd_762x54_SVD_M", 14}
 		};
 	};
 	

@@ -118,7 +118,7 @@
 	"CUP_H_PMC_Cap_Back_PRR_Tan",\
 	"CFP_BaseballCap_Multicam_DEF",\
 	"CFP_BaseballCap_Multicam_DEF_Back",\
-	"CFP_BaseballCap_Multicam_Back",\
+	"CFP_BaseballCap_Multicam_Back"
 
 #define SSO_NVG_OPTIONS \
 	"SOCOMD_NVG",\
@@ -173,14 +173,14 @@
 
 #define SSO_VESTS_COMMS \
     "AGE_LV119_SL_MultiCam",\
-    "AGE_LV119_SL_Holster_MultiCam",
+    "AGE_LV119_SL_Holster_MultiCam"
 
 #define SSO_VESTS_WEAPONS \
     "AGE_LV119_AK_Holster_MultiCam",\
-    "AGE_LV119_AK_MultiCam",\
+    "AGE_LV119_AK_MultiCam"
 
 #define SSO_VESTS_MED \
-    "AGE_TV110_SL_Holster_MultiCam",\
+    "AGE_TV110_SL_Holster_MultiCam"
 
 #define SSO_VESTS_BREACHER \
     "AGE_WAS_AK_MultiCam",\
@@ -206,7 +206,7 @@
 	"SOG_BAG_od",\
 	"SOG_BAG_MC",\
 	"ACWP_Bullock_MC"
-	// "ACWP_Bullock_no_helm_AMCU",\
+	// "ACWP_Bullock_no_helm_AMCU"
 	// "ACWP_Bullock_no_helm_MC"
 
 #define SSO_BAGS_HEAVY \
@@ -263,8 +263,7 @@
 		vests[]={
 			SSO_TWO_COMMS_RIGS,
 			SSO_VESTS_COMMS,
-			SSO_VESTS_WEAPONS,
-			
+			SSO_VESTS_WEAPONS
 		};
 		bags[]={
 			SSO_BAGS,
@@ -298,8 +297,7 @@
 		vests[]={
 			SSO_ONE_COMM_RIGS,
 			SSO_VESTS_STANDARD,
-			SSO_VESTS_WEAPONS,
-			
+			SSO_VESTS_WEAPONS		
 		};
 		bags[]={
 			SSO_BAGS
@@ -364,8 +362,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_STANDARD,
-			
+			SSO_VESTS_STANDARD		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -394,8 +391,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_STANDARD,
-			
+			SSO_VESTS_STANDARD		
 		};
 		bags[]={
 			SSO_BAGS
@@ -423,8 +419,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_STANDARD,
-			
+			SSO_VESTS_STANDARD		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -483,8 +478,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_MED,
-			
+			SSO_VESTS_MED		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -514,8 +508,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_STANDARD,
-			
+			SSO_VESTS_STANDARD		
 		};
 		bags[]={
 			SSO_BAGS
@@ -539,7 +532,7 @@
 		};
 		vests[]={
 			SSO_TWO_COMMS_RIGS,
-			SSO_VESTS_COMMS,
+			SSO_VESTS_COMMS
 		};
 		bags[]={
 			SSO_BAGS,
@@ -561,8 +554,7 @@
 		};
 		vests[]={
 			SSO_TWO_COMMS_RIGS,
-			SSO_VESTS_COMMS,
-			
+			SSO_VESTS_COMMS		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -591,8 +583,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_MED,
-			
+			SSO_VESTS_MED		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -621,8 +612,7 @@
 		};
 		vests[]={
 			SSO_ONE_COMM_RIGS,
-			SSO_VESTS_STANDARD,
-			
+			SSO_VESTS_STANDARD		
 		};
 		bags[]={
 			SSO_BAGS
@@ -642,8 +632,7 @@
 		};
 		vests[]={
 			SSO_TWO_COMMS_RIGS,
-			SSO_VESTS_COMMS,
-			
+			SSO_VESTS_COMMS		
 		};
 		bags[]={
 			SSO_BAGS,
@@ -673,8 +662,7 @@
 		};
 		vests[]={
 			SSO_TWO_COMMS_RIGS,
-			SSO_VESTS_COMMS,
-			
+			SSO_VESTS_COMMS		
 		};
 		bags[]={
 			SSO_BAGS,

@@ -36,7 +36,8 @@ class CfgPatches {
 			"lbtt_Vest_config",
 			"milgp_headgear_cfg",
 			"socomd_data_core",
-			"SOCOMD_Medical"
+			"SOCOMD_Medical",
+			"NDS_6x6_ATV"
 		};
 
 		//SOCOMD Custom Units
@@ -49,6 +50,7 @@ class CfgPatches {
 			//LAND
 			"SOCOMD_APC_A",
 			"SOCOMD_APC_B",
+			"SOCOMD_LR_ATV",
 			// "SOCOMD_APC_C",
 			"SOCOMD_BUSHMASTER_TRANS",
 			"SOCOMD_BUSHMASTER_HMG",

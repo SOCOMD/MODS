@@ -188,6 +188,15 @@
     "Recon_Barret",\
     "Recon_338",\
     "Recon_300WM",\
+	"bnae_falkor_blk_virtual",\
+	"bnae_falkor_snd_virtual",\
+	"bnae_trg42_virtual",\
+	"bnae_trg42_camo1_virtual",\
+	"bnae_trg42_camo2_virtual",\
+	"bnae_trg42_f_virtual",\
+	"bnae_trg42_f_camo1_virtual",\
+	"bnae_trg42_f_mmrs_virtual",\
+	"bnae_trg42_f_mmrs_camo1_virtual",\
 	"5Rnd_338LM_Magazine",\
 	"5Rnd_APDS_338LM_Magazine",\
 	"SOCOMD_Item_Magazine_300_5Rnd",\
@@ -257,7 +266,6 @@
 	"ADFU_Booniehat_MC",\
 	"ADFU_Cap_MC",\
 	"H_Cap_oli",\
-	"CUP_H_PMC_Cap_Tan",\
 	"ADFU_H_OpsCore_02_MC",\
 	"ADFU_H_OpsCore_02_TAN",\
 	"SOCOMD_Aus_Boonie_AMC",\
@@ -269,7 +277,7 @@
 	"CUP_H_PMC_Cap_Back_PRR_Tan",\
 	"CFP_BaseballCap_Multicam_DEF",\
 	"CFP_BaseballCap_Multicam_DEF_Back",\
-	"CFP_BaseballCap_Multicam_Back",\
+	"CFP_BaseballCap_Multicam_Back"
 
 #define NVG_OPTIONS \
 	"SOCOMD_NVG",\
@@ -370,7 +378,10 @@
 	"acwp_pc_comms_mag_nod",\
 	"acwp_pc_comms_mag_L_nod",\
 	"acwp_pc_comms762_nod",\
-	"acwp_pc_comms762"
+	"acwp_pc_comms762",\
+	"acwp_pc_operator_s7_closed",\
+	"acwp_pc_operator_radioback_s7_closed",\
+	"acwp_pc_operator_top_s7_closed"
 
 #define VESTS_WEAPONS \
     "lbt_weapons_coy",\
@@ -384,7 +395,7 @@
 #define VESTS_MED \
     "lbt_medical_coy",\
     "lbt_medical_mc",\
-    "lbt_medical_amcu",\
+    "lbt_medical_amcu"
 
 #define VESTS_GUNNER \
     "acwp_pc_mg",\
@@ -530,6 +541,35 @@ class CfgArsenalOptions{
 			GREMADES_LEADER
 		};
 	};
+	class SOCOMD_TACP{
+		class uniforms{
+			arid_uniforms[]={
+				MC_UNIFORMS
+			};
+			temperate_uniforms[]={
+				AMCU_UNIFORMS
+			};
+		};
+		weapons[]={
+			GENERAL_RIFLE,
+			GL_RIFLE,
+			HANDGUNS
+		};
+		vests[]={
+    		VESTS_COMMON,
+			TWO_COMMS_RIGS,
+			VESTS_COMMS,
+			VESTS_WEAPONS,
+			VESTS_COMMANDER
+		};
+		bags[]={
+			BAGS,
+			BACKPACK_COMMS
+		};
+		grenades[]={
+			GREMADES_LEADER
+		};
+	};
 	class SOCOMD_2IC : SOCOMD_Commander{
 		
 		vests[]={
@@ -566,9 +606,8 @@ class CfgArsenalOptions{
     VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS,
-			
-		};
+			VESTS_WEAPONS
+		 };
 		bags[]={
 			BAGS
 		};
@@ -598,9 +637,8 @@ class CfgArsenalOptions{
     VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS,
-			
-		};
+			VESTS_WEAPONS
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_SAPPER
@@ -626,9 +664,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS
 		};
@@ -652,9 +689,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS
 		};
@@ -678,9 +714,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_SAPPER
@@ -704,9 +739,8 @@ class CfgArsenalOptions{
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_GUNNER,
-			
-		};
+			VESTS_GUNNER
+		 };
 		bags[]={
 			BAGS
 		};
@@ -730,9 +764,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_MED,
-			
-		};
+			VESTS_MED
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_MEDIC
@@ -758,9 +791,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS
 		};
@@ -786,7 +818,7 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
+			VESTS_COMMS		
 		};
 		bags[]={
 			BAGS,
@@ -795,7 +827,7 @@ class CfgArsenalOptions{
 		};
 		helmets[] = {
 			SOLS_HELMS,
-			NVG_OPTIONS
+			NVG_OPTIONS		
 		};
 		isLogi = 1;
 		grenades[]={
@@ -819,9 +851,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
-		};
+			VESTS_COMMS
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_COMMS
@@ -851,8 +882,8 @@ class CfgArsenalOptions{
     VESTS_COMMON,
 			ONE_COMM_RIGS,
 			VESTS_MED,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_MEDIC
@@ -877,9 +908,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
-		};
+			VESTS_TL
+		 };
 		bags[]={
 			BAGS
 		};
@@ -897,15 +927,16 @@ class CfgArsenalOptions{
 			};
 		};
 		weapons[]={
+			GENERAL_RIFLE,
+			MARKSMAN,
 			SNIPER,
 			HANDGUNS
 		};
 		vests[]={
     VESTS_COMMON,
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
-		};
+			VESTS_COMMS
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_COMMS
@@ -931,9 +962,8 @@ class CfgArsenalOptions{
 		vests[]={
     VESTS_COMMON,
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
-		};
+			VESTS_COMMS
+		 };
 		bags[]={
 			BAGS,
 			BACKPACK_COMMS

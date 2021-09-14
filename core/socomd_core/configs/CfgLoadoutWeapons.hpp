@@ -3,6 +3,7 @@ class CfgLoadoutWeapons {
 		loadoutWhitelist[] = {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Breacher",
+			"SOCOMD_TACP",
 			"SOCOMD_Sapper",
 			"SOCOMD_Medic",
 			"SOCOMD_AT",
@@ -20,6 +21,7 @@ class CfgLoadoutWeapons {
 			"SOCOMD_Rifleman",
 			"SOCOMD_Breacher",
 			"SOCOMD_Commander",
+			"SOCOMD_TACP",
 			"SOCOMD_Leader",
 			"SOCOMD_2IC"
 		};
@@ -67,6 +69,7 @@ class CfgLoadoutWeapons {
 	class Rifle_762 {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
+			"SOCOMD_TACP",
 			"SOCOMD_Leader",
 			"SOCOMD_2IC",
 			"SOCOMD_Rifleman",

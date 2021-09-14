@@ -1,4 +1,4 @@
-#include "\socomd_core\predefined.hpp"
+#include "predefined.hpp"
 #include "settings\inventories.hpp"
 
 class SensorTemplateLaser;
