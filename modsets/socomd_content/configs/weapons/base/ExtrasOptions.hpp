@@ -81,13 +81,13 @@ class extras_sso_at_assistant_heat: extras_none{
 	displayName = "3x HEAT 1x HE Frag";
 	bag[] = {
 		{CUP_PG7VM_M,3},
-		{CUP_OG7_M,1},
+		{CUP_OG7_M,1}
 	};
 };
 class extras_sso_at_assistant_mixed: extras_none{
 	displayName = "2x HEAT 2x HE Frag";
 	bag[] = {
 		{CUP_PG7VM_M,2},
-		{CUP_OG7_M,2},
+		{CUP_OG7_M,2}
 	};
 };

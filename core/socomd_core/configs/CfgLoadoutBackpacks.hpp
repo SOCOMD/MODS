@@ -2,6 +2,7 @@ class CfgLoadoutBackpacks {
 	class Backpack_Leader {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
+			"SOCOMD_TACP",
 			"SOCOMD_Leader",
 			"SOCOMD_2IC"
 		};
@@ -17,6 +18,7 @@ class CfgLoadoutBackpacks {
 	class Backpack_Operator {
 		loadoutWhitelist[] = {
 			"SOCOMD_Commander",
+			"SOCOMD_TACP",
 			"SOCOMD_Leader",
 			"SOCOMD_2IC",
 			"SOCOMD_Rifleman",

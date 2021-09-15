@@ -5,187 +5,177 @@
 // trucks at 24 fuel should be 2 hours of driving time
 class B_Truck_01_covered_F;
 
-#define TRUCK_TRANSPORT_BASE(ID) \
-class SOCOMD_TRUCK_TRANSPORT_##ID : B_Truck_01_covered_F { \
-	scope = public; \
-	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_Core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
-	side = WEST; \
-	author = AUTHOR_STR; \
-	faction = FACTION_STR; \
-	displayname = "Truck Transport (1/17)"; \
-	vehicleclass = "Car"; \
-	forceInGarage = 1; \
-	crew = UNIT_SOCOMD_CREWMAN; \
-	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
-	fuelCapacity = 24; \
-	ace_refuel_fuelCapacity = 120; \
-	class TransportWeapons { \
-		INVENTORY_VEHICLE_SMALL_WEAPONS \
-	}; \
-	class TransportMagazines { \
-		INVENTORY_VEHICLE_LARGE_MAGAZINES \
-	}; \
-	class TransportItems { \
-		INVENTORY_VEHICLE_LARGE_ITEMS \
-	}; \
-	class TransportBackpacks { \
-		INVENTORY_VEHICLE_LARGE_BACKPACKS \
-	}; \
-	class AcreRacks { \
-		class Rack_1 { \
-			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC110"; \
-			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC152"; \
-			shortName = "Dash"; \
-		}; \
-	}; \
+class SOCOMD_TRUCK_TRANSPORT_A : B_Truck_01_covered_F { 
+	scope = public; 
+	scopeCurator = public; 
+	editorCategory = SOCOMD_EdCat_Core; 
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; 
+	side = WEST; 
+	author = AUTHOR_STR; 
+	faction = FACTION_STR; 
+	displayname = "Truck Transport (1/17)"; 
+	vehicleclass = "Car"; 
+	forceInGarage = 1; 
+	crew = UNIT_SOCOMD_CREWMAN; 
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; 
+	fuelCapacity = 24; 
+	ace_refuel_fuelCapacity = 120; 
+	class TransportWeapons { 
+		INVENTORY_VEHICLE_SMALL_WEAPONS 
+	}; 
+	class TransportMagazines { 
+		INVENTORY_VEHICLE_LARGE_MAGAZINES 
+	}; 
+	class TransportItems { 
+		INVENTORY_VEHICLE_LARGE_ITEMS 
+	}; 
+	class TransportBackpacks { 
+		INVENTORY_VEHICLE_LARGE_BACKPACKS 
+	}; 
+	class AcreRacks { 
+		class Rack_1 { 
+			allowedPositions[] = {"driver"}; 
+			componentName = "ACRE_VRC110"; 
+			displayName = "Dash"; 
+			mountedRadio = "ACRE_PRC152"; 
+			shortName = "Dash"; 
+		}; 
+	}; 
 };
-
-TRUCK_TRANSPORT_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Trucks (Ammo)
 
 class B_Truck_01_ammo_F;
 
-#define TRUCK_AMMO_BASE(ID) \
-class SOCOMD_TRUCK_AMMO_##ID : B_Truck_01_ammo_F { \
-	scope = public; \
-	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_Core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
-	side = WEST; \
-	author = AUTHOR_STR; \
-	faction = FACTION_STR; \
-	displayname = "Truck Ammo (1/1)"; \
-	vehicleclass = "Car"; \
-	forceInGarage = 1; \
-	crew = UNIT_SOCOMD_CREWMAN; \
-	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
-	fuelCapacity = 24; \
-	ace_refuel_fuelCapacity = 120; \
-	class TransportWeapons { \
-		INVENTORY_VEHICLE_LARGE_WEAPONS \
-	}; \
-	class TransportMagazines { \
-		INVENTORY_VEHICLE_LARGE_MAGAZINES \
-	}; \
-	class TransportItems { \
-		INVENTORY_VEHICLE_LARGE_ITEMS \
-	}; \
-	class TransportBackpacks { \
-		INVENTORY_VEHICLE_LARGE_BACKPACKS \
-	}; \
-	class AcreRacks { \
-		class Rack_1 { \
-			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC110"; \
-			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC152"; \
-			shortName = "Dash"; \
-		}; \
-	}; \
-	ace_rearm_isSupplyVehicle = 1; \
+class SOCOMD_TRUCK_AMMO_A : B_Truck_01_ammo_F { 
+	scope = public; 
+	scopeCurator = public; 
+	editorCategory = SOCOMD_EdCat_Core; 
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; 
+	side = WEST; 
+	author = AUTHOR_STR; 
+	faction = FACTION_STR; 
+	displayname = "Truck Ammo (1/1)"; 
+	vehicleclass = "Car"; 
+	forceInGarage = 1; 
+	crew = UNIT_SOCOMD_CREWMAN; 
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; 
+	fuelCapacity = 24; 
+	ace_refuel_fuelCapacity = 120; 
+	class TransportWeapons { 
+		INVENTORY_VEHICLE_LARGE_WEAPONS 
+	}; 
+	class TransportMagazines { 
+		INVENTORY_VEHICLE_LARGE_MAGAZINES 
+	}; 
+	class TransportItems { 
+		INVENTORY_VEHICLE_LARGE_ITEMS 
+	}; 
+	class TransportBackpacks { 
+		INVENTORY_VEHICLE_LARGE_BACKPACKS 
+	}; 
+	class AcreRacks { 
+		class Rack_1 { 
+			allowedPositions[] = {"driver"}; 
+			componentName = "ACRE_VRC110"; 
+			displayName = "Dash"; 
+			mountedRadio = "ACRE_PRC152"; 
+			shortName = "Dash"; 
+		}; 
+	}; 
+	ace_rearm_isSupplyVehicle = 1; 
 };
-
-TRUCK_AMMO_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Trucks (Fuel)
 
 class B_Truck_01_fuel_F;
-
-#define TRUCK_FUEL_BASE(ID) \
-class SOCOMD_TRUCK_FUEL_##ID : B_Truck_01_fuel_F { \
-	scope = public; \
-	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_Core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
-	side = WEST; \
-	author = AUTHOR_STR; \
-	faction = FACTION_STR; \
-	displayname = "Truck Fuel (1/1)"; \
-	vehicleclass = "Car"; \
-	forceInGarage = 1; \
-	crew = UNIT_SOCOMD_CREWMAN; \
-	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
-	fuelCapacity = 24; \
-	ace_refuel_fuelCapacity = 120; \
-	class TransportWeapons { \
-		INVENTORY_VEHICLE_SMALL_WEAPONS \
-	}; \
-	class TransportMagazines { \
-		INVENTORY_VEHICLE_SMALL_MAGAZINES \
-	}; \
-	class TransportItems { \
-		INVENTORY_VEHICLE_SMALL_ITEMS \
-	}; \
-	class TransportBackpacks { \
-		INVENTORY_VEHICLE_SMALL_BACKPACKS \
-	}; \
-	class AcreRacks { \
-		class Rack_1 { \
-			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC110"; \
-			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC152"; \
-			shortName = "Dash"; \
-		}; \
-	}; \
+ 
+class SOCOMD_TRUCK_FUEL_A : B_Truck_01_fuel_F { 
+	scope = public; 
+	scopeCurator = public; 
+	editorCategory = SOCOMD_EdCat_Core; 
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; 
+	side = WEST; 
+	author = AUTHOR_STR; 
+	faction = FACTION_STR; 
+	displayname = "Truck Fuel (1/1)"; 
+	vehicleclass = "Car"; 
+	forceInGarage = 1; 
+	crew = UNIT_SOCOMD_CREWMAN; 
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; 
+	fuelCapacity = 24; 
+	ace_refuel_fuelCapacity = 120; 
+	class TransportWeapons { 
+		INVENTORY_VEHICLE_SMALL_WEAPONS 
+	}; 
+	class TransportMagazines { 
+		INVENTORY_VEHICLE_SMALL_MAGAZINES 
+	}; 
+	class TransportItems { 
+		INVENTORY_VEHICLE_SMALL_ITEMS 
+	}; 
+	class TransportBackpacks { 
+		INVENTORY_VEHICLE_SMALL_BACKPACKS 
+	}; 
+	class AcreRacks { 
+		class Rack_1 { 
+			allowedPositions[] = {"driver"}; 
+			componentName = "ACRE_VRC110"; 
+			displayName = "Dash"; 
+			mountedRadio = "ACRE_PRC152"; 
+			shortName = "Dash"; 
+		}; 
+	}; 
 };
 
-TRUCK_FUEL_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Trucks (Repair)
 
 class B_Truck_01_Repair_F;
 
-#define TRUCK_REPAIR_BASE(ID) \
-class SOCOMD_TRUCK_REPAIR_##ID : B_Truck_01_Repair_F { \
-	scope = public; \
-	scopeCurator = public; \
-	editorCategory = SOCOMD_EdCat_Core; \
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; \
-	side = WEST; \
-	author = AUTHOR_STR; \
-	faction = FACTION_STR; \
-	displayname = "Truck Repair (1/1)"; \
-	vehicleclass = "Car"; \
-	forceInGarage = 1; \
-	crew = UNIT_SOCOMD_CREWMAN; \
-	cost = 30000; \
-	threat[] = {0.7,0.7,0.7}; \
-	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; \
-	fuelCapacity = 24; \
-	ace_refuel_fuelCapacity = 120; \
-	class TransportWeapons { \
-		INVENTORY_VEHICLE_SMALL_WEAPONS \
-	}; \
-	class TransportMagazines { \
-		INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
-	}; \
-	class TransportItems { \
-		INVENTORY_VEHICLE_MEDIUM_ITEMS \
-	}; \
-	class TransportBackpacks { \
-		INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
-	}; \
-	class AcreRacks { \
-		class Rack_1 { \
-			allowedPositions[] = {"driver"}; \
-			componentName = "ACRE_VRC110"; \
-			displayName = "Dash"; \
-			mountedRadio = "ACRE_PRC152"; \
-			shortName = "Dash"; \
-		}; \
-	}; \
+class SOCOMD_TRUCK_REPAIR_A : B_Truck_01_Repair_F { 
+	scope = public; 
+	scopeCurator = public; 
+	editorCategory = SOCOMD_EdCat_Core; 
+	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land; 
+	side = WEST; 
+	author = AUTHOR_STR; 
+	faction = FACTION_STR; 
+	displayname = "Truck Repair (1/1)"; 
+	vehicleclass = "Car"; 
+	forceInGarage = 1; 
+	crew = UNIT_SOCOMD_CREWMAN; 
+	cost = 30000; 
+	threat[] = {0.7,0.7,0.7}; 
+	typicalCargo[] = {UNIT_SOCOMD_CREWMAN}; 
+	fuelCapacity = 24; 
+	ace_refuel_fuelCapacity = 120; 
+	class TransportWeapons { 
+		INVENTORY_VEHICLE_SMALL_WEAPONS 
+	}; 
+	class TransportMagazines { 
+		INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
+	}; 
+	class TransportItems { 
+		INVENTORY_VEHICLE_MEDIUM_ITEMS 
+	}; 
+	class TransportBackpacks { 
+		INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
+	}; 
+	class AcreRacks { 
+		class Rack_1 { 
+			allowedPositions[] = {"driver"}; 
+			componentName = "ACRE_VRC110"; 
+			displayName = "Dash"; 
+			mountedRadio = "ACRE_PRC152"; 
+			shortName = "Dash"; 
+		}; 
+	}; 
 };
 
-TRUCK_REPAIR_BASE(A)
 
 ////////////////////////////////////////////////////////////////////////////////
 // APC

@@ -1,4 +1,4 @@
-class NDS_6x6_ATV_MIL2_LR;
+/*class NDS_6x6_ATV_MIL2_LR;
 class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 {
 	scope = public;
@@ -95,7 +95,7 @@ class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR
 			shortName = "Dash";
 		};
 	};
-};
+};*/
 
 								//////////////// WIP Motorbike
 class V12_KTM;

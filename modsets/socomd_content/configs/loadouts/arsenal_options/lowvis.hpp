@@ -257,7 +257,7 @@
 	"CUP_H_PMC_Cap_Back_PRR_Tan",\
 	"CFP_BaseballCap_Multicam_DEF",\
 	"CFP_BaseballCap_Multicam_DEF_Back",\
-	"CFP_BaseballCap_Multicam_Back",\
+	"CFP_BaseballCap_Multicam_Back"
 
 #define NVG_OPTIONS \
 	"SOCOMD_NVG",\
@@ -314,7 +314,7 @@
     "vss_01_MC",\
     "vss_04_WG",\
     "vss_03_WG",\
-    "vss_01_WG",\
+    "vss_01_WG"
 
 #define TWO_COMMS_RIGS \
     "vss_06_MC",\
@@ -356,7 +356,7 @@
     "Kit_Bag_R_Tan",\
 	"ACWP_Bullock_radio_MC",\
 	"ACWP_Bullock_radio_AMCU"
-	// "ACWP_Bullock_radio_no_helm_MC",\
+	// "ACWP_Bullock_radio_no_helm_MC",
 	// "ACWP_Bullock_radio_no_helm_AMCU"
 
 #define BACKPACK_SAPPER \
@@ -376,7 +376,7 @@
 	"SOG_BAG_MC",\
 	"ACWP_Bullock_AMCU",\
 	"ACWP_Bullock_MC"
-	// "ACWP_Bullock_no_helm_AMCU",\
+	// "ACWP_Bullock_no_helm_AMCU",
 	// "ACWP_Bullock_no_helm_MC"
 #define GREMADES_NORMAL\
 	"grenades_default",\
@@ -476,8 +476,7 @@
 		vests[]={
 			TWO_COMMS_RIGS,
 			VESTS_COMMS,
-			VESTS_WEAPONS,
-			
+			VESTS_WEAPONS		
 		};
 		bags[]={
 			BAGS,
@@ -507,8 +506,7 @@
 		vests[]={
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS,
-			
+			VESTS_WEAPONS		
 		};
 		bags[]={
 			BAGS
@@ -538,8 +536,7 @@
 		vests[]={
 			ONE_COMM_RIGS,
 			VESTS_TL,
-			VESTS_WEAPONS,
-			
+			VESTS_WEAPONS		
 		};
 		bags[]={
 			BAGS,
@@ -565,8 +562,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
+			VESTS_TL		
 		};
 		bags[]={
 			BAGS
@@ -590,8 +586,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
+			VESTS_TL		
 		};
 		bags[]={
 			BAGS
@@ -615,8 +610,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
+			VESTS_TL		
 		};
 		bags[]={
 			BAGS,
@@ -641,8 +635,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_COMMS,
-			
+			VESTS_COMMS		
 		};
 		bags[]={
 			BAGS
@@ -666,8 +659,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_MED,
-			
+			VESTS_MED		
 		};
 		bags[]={
 			BAGS,
@@ -693,8 +685,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
+			VESTS_TL		
 		};
 		bags[]={
 			BAGS
@@ -718,7 +709,7 @@
 		};
 		vests[]={
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
+			VESTS_COMMS
 		};
 		bags[]={
 			BAGS,
@@ -748,8 +739,7 @@
 		};
 		vests[]={
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
+			VESTS_COMMS		
 		};
 		bags[]={
 			BAGS,
@@ -778,8 +768,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_MED,
-			
+			VESTS_MED		
 		};
 		bags[]={
 			BAGS,
@@ -804,8 +793,7 @@
 		};
 		vests[]={
 			ONE_COMM_RIGS,
-			VESTS_TL,
-			
+			VESTS_TL		
 		};
 		bags[]={
 			BAGS
@@ -829,8 +817,7 @@
 		};
 		vests[]={
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
+			VESTS_COMMS		
 		};
 		bags[]={
 			BAGS,
@@ -856,8 +843,7 @@
 		};
 		vests[]={
 			TWO_COMMS_RIGS,
-			VESTS_COMMS,
-			
+			VESTS_COMMS		
 		};
 		bags[]={
 			BAGS,

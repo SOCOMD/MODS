@@ -1,4 +1,4 @@
-class O_HMG_01_F : HMG_01_base_F {
+/*class O_HMG_01_F : HMG_01_base_F {
     class Turrets : Turrets {
         class MainTurret : MainTurret {
             magazines[] = {
@@ -64,4 +64,4 @@ class O_HMG_01_high_F : HMG_01_high_base_F {
             weapons[] = {"HMG_static"};
         };
     };
-};
+};*/

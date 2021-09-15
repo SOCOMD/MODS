@@ -143,7 +143,7 @@ class SOCOMD_Commander {
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= "acwp_airframe_mc";
-	binocular		= "Laserdesignator";
+	binocular		= "ACE_Vector";
 	gps				= "";
 	maxOptic		= "4x";
 
@@ -181,6 +181,47 @@ class SOCOMD_Commander {
 		};
 	};
 };
+class SOCOMD_TACP {
+	primary			= ITEM_PRIMARY_TROOPLEADER;
+	secondary		= ITEM_SECONDARY_TROOPLEADER;
+	handgun			= "ACWP_USP";
+	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
+	headgear		= "acwp_airframe_mc";
+	binocular		= "Laserdesignator";
+	gps				= "";
+	maxOptic		= "4x";
+
+	class Uniform {
+		class Inventory	{
+			LOADOUT_UNIFORM_ESSENTIALS
+			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_Kestrel4500, 1)
+		};
+	};
+
+	class Vest {
+		type = ITEM_VEST_TROOPLEADER;
+		class Inventory {
+			LOADOUT_VEST_ESSENTIALS
+			LOADOUT_ITEM(ACRE_PRC152, 2)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
+			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+		};
+	};
+
+	class Backpack {
+		type = ITEM_BACKPACK_TROOPLEADER;
+		class Inventory	{
+			LOADOUT_BACKPACK_ESSENTIALS			
+			LOADOUT_ITEM(itc_land_tablet_rover,1)
+			LOADOUT_ITEM(Laserbatteries, 2)
+			LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
+			LOADOUT_ITEM(ACRE_PRC117F, 1)
+			LOADOUT_ITEM(SmokeShellGreen, 2)
+			LOADOUT_ITEM(SmokeShellpurple, 2)
+		};
+	};
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Leader
@@ -191,7 +232,7 @@ class SOCOMD_Leader {
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= "acwp_airframe_mc";
-	binocular		= "Laserdesignator";
+	binocular		= "ACE_Vector";
 	gps			    = "";
 	maxOptic		= "4x";
 
@@ -318,7 +359,7 @@ class SOCOMD_Marksman {
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= "acwp_airframe_mc";
-	binocular		= "";
+	binocular		= "ACE_Vector";
 	gps			    = "";
 	maxOptic		= "6x";
 	optics[] 		= {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
@@ -327,6 +368,7 @@ class SOCOMD_Marksman {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(ACE_RangeCard, 1)
 		};
 	};
 
@@ -567,14 +609,16 @@ class SOCOMD_AT {
 	handgun			= "ACWP_USP";
 	handgunMagazine = "ACWP_18Rnd_9x21_Mag_USP";
 	headgear		= "acwp_airframe_mc";
-	binocular		= "";
+	binocular		= "ACE_Vector";
 	gps			    = "";
 	maxOptic		= "4x";
+	optics[] 		= {""};
 
 	class Uniform {
 		class Inventory	{
 			LOADOUT_UNIFORM_ESSENTIALS
 			LOADOUT_STANDARD_MEDICAL
+			LOADOUT_ITEM(tf47_optic_m3maaws, 1)
 		};
 	};
 
@@ -611,7 +655,7 @@ class SOCOMD_Recon {
 	headgear		= "acwp_airframe_mc";
 	binocular		= "ACE_Vector";
 	gps			    = "";
-	optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
+	//optics[] 		= {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
 	class Uniform {
 		type = ITEM_UNIFORM_RECON;
@@ -642,6 +686,7 @@ class SOCOMD_Recon {
 		};
 	};
 };
+
 
 class SOCOMD_Recon_Assistant {
 	primary		    = ITEM_PRIMARY_MARKSMAN;

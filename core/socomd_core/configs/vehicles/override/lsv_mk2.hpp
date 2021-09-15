@@ -1,4 +1,4 @@
-class LSV_02_armed_base_F : LSV_02_base_F {
+/*class LSV_02_armed_base_F : LSV_02_base_F {
     class Turrets : Turrets {
         class MainTurret : MainTurret {
             magazines[] = {
@@ -33,4 +33,4 @@ class O_T_LSV_02_armed_F : LSV_02_armed_base_F {
             weapons[] = {"LMG_Minigun_Transport"};
         };
     };
-};
+};*/
