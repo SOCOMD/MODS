@@ -60,7 +60,7 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 #define QSTORE_ACTION_REPLACE_VEST(ID, DISPLAY_STR, UNIFORM_SOURCE, UNIFORM_TARGET) \
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	displayName = DISPLAY_STR; \
-	condition = "(alive _player) and ((vest _player) isKindOf ["#UNIFORM_SOURCE", configFile >> 'CfgWeapons'])"; \
+	condition = "(alive _player) and ((vest _player) isEqualTo "#UNIFORM_SOURCE""; \
 	statement = "[_player, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_ReplaceVest;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \

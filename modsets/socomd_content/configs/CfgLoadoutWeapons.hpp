@@ -460,8 +460,7 @@ class CfgLoadoutWeapons {
 		};
 	};
 	
-	class bnae_falkor_camo1_virtual;
-	class Recon_300WM : bnae_falkor_camo1_virtual {
+	class bnae_falkor_camo1_virtual {
 		loadoutWhitelist[] = {
 			"SOCOMD_Recon"
 		};
@@ -469,6 +468,7 @@ class CfgLoadoutWeapons {
 			{"10Rnd_300WM_Magazine", 5}
 		};
 	};
+	class Recon_300WM : bnae_falkor_camo1_virtual {};
 	class bnae_falkor_blk_virtual : Recon_300WM {};
 	class bnae_falkor_snd_virtual : Recon_300WM {};
 
