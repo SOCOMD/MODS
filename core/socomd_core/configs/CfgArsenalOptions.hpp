@@ -378,10 +378,7 @@
 	"acwp_pc_comms_mag_nod",\
 	"acwp_pc_comms_mag_L_nod",\
 	"acwp_pc_comms762_nod",\
-	"acwp_pc_comms762",\
-	"acwp_pc_operator_s7_closed",\
-	"acwp_pc_operator_radioback_s7_closed",\
-	"acwp_pc_operator_top_s7_closed"
+	"acwp_pc_comms762"
 
 #define VESTS_WEAPONS \
     "lbt_weapons_coy",\
@@ -399,7 +396,10 @@
 
 #define VESTS_GUNNER \
     "acwp_pc_mg",\
-	"acwp_pc_mg_nod"
+	"acwp_pc_mg_nod",\
+	"acwp_pc_operator_s7_closed",\
+	"acwp_pc_operator_radioback_s7_closed",\
+	"acwp_pc_operator_top_s7_closed"
 
 #define VESTS_COMMON \
     "acwp_pc_operator",\
@@ -414,7 +414,10 @@
 	"acwp_pc_marksman",\
 	"acwp_pc_marksman_nod",\
 	"acwp_pc_marksman_nobfg",\
-	"acwp_pc_marksman_nod_nobfg"
+	"acwp_pc_marksman_nod_nobfg",\
+	"acwp_pc_operator_s7_closed",\
+	"acwp_pc_operator_radioback_s7_closed",\
+	"acwp_pc_operator_top_s7_closed"
 
 
 

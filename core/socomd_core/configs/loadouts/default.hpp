@@ -455,7 +455,7 @@ class SOCOMD_MachineGunner {
 	};
 
 	class Vest {
-		type = ITEM_VEST_MACHINEGUNNER;
+		type = "acwp_pc_mg_nod";
 		class Inventory	{
 			LOADOUT_VEST_ESSENTIALS
 			LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
