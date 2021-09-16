@@ -1,6 +1,7 @@
 // remove this file when https://github.com/CBATeam/CBA_A3/pull/1243
 // is ingame 
-
+ 
+/* 
 #define COMPONENT ai
 #include "\x\cba\addons\main\script_mod.hpp"
 
@@ -12,7 +13,8 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_AI
 #endif
 
-#include "\x\cba\addons\main\script_macros.hpp"
+#include "\x\cba\addons\main\script_macros.hpp" 
+*/
 /* ----------------------------------------------------------------------------
 Function: CBA_fnc_taskAttack
 Description:
@@ -33,6 +35,7 @@ Author:
     Rommel
 ---------------------------------------------------------------------------- */
 
+/* 
 params ["_group", "_position", ["_radius", 0], ["_override", false]];
 
 _group = _group call CBA_fnc_getGroup;
@@ -44,4 +47,5 @@ if (_override) then {
     { _x enableAI "PATH"; } foreach (units _group);
 };
 
-[_group, _position, _radius, "SAD", "COMBAT", "RED"] call CBA_fnc_addWaypoint;
+[_group, _position, _radius, "SAD", "COMBAT", "RED"] call CBA_fnc_addWaypoint; 
+*/

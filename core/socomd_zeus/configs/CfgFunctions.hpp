@@ -52,15 +52,15 @@ class CfgFunctions {
 		};
 	};
 	// Override other ModuleShowHitPoints
-	class CBA {
-		class Ai {
-			class taskAttack {
-				file = "\socomd_zeus\functions\override\cba\fnc_taskAttack.sqf";
-				headerType = -1;
-				recompile = 0;
-			};
-		};
-	};
+	// class CBA {
+	//	class Ai {
+	//		class taskAttack {
+	//			file = "\socomd_zeus\functions\override\cba\fnc_taskAttack.sqf";
+	//			headerType = -1;
+	//			recompile = 0;
+	//		};
+	//	};
+	// };
 };
 class Extended_InitPost_EventHandlers {
     class SOCOMD_Homestead {
