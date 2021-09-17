@@ -64,7 +64,7 @@ class CfgVehicles {
    //#include "vehicles\override\apc.hpp"
 
     // Player
-    #include "vehicles\override\firefly.hpp"
+    //#include "vehicles\override\firefly.hpp"
     #include "vehicles\override\hurricane.hpp"
     #include "vehicles\override\nomad.hpp"
     #include "vehicles\override\warrior.hpp"
