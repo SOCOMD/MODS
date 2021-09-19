@@ -162,7 +162,7 @@ class CfgVehicles
 		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_DisableAI";
-		displayName = "Disable AI";
+		displayName = "Disable AI Pathing";
 		function = "SOCOMD_fnc_ModuleDisableAI";
 	};
 	class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
@@ -172,7 +172,7 @@ class CfgVehicles
 		isTriggerActivated = 1;
 
 		_generalMacro = "SOCOMD_Module_EnableAI";
-		displayName = "Enable AI";
+		displayName = "Enable AI Pathing";
 		function = "SOCOMD_fnc_ModuleEnableAI";
 	};
 	class SOCOMD_Module_RevealPlayers : SOCOMD_Module_Base {

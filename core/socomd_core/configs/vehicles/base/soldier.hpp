@@ -15,7 +15,9 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
 	faction = FACTION_STR;
 	displayname = "Unarmed";
 	vehicleclass = "Man";
-	camouflage = 1.9; // default 1.4 ( higher values make you easier to spot)
+	skill = 1.0;
+	camouflage = 1.4; // default 1.4 ( higher values make you easier to spot)
+	// audible = 0.05; // commented for now but available for testing. This is default value, apparently. 
 
 	engineer = 1;
 	canDeactivateMines = 1;

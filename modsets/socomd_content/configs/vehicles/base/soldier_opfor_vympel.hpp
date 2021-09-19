@@ -22,7 +22,7 @@ class SOCOMD_Vympel_Soldier_Roll : CUP_CRYE_ATACSFG_Roll {
 	scope = public;
 	scopeCurator = public;
 	side = EAST;
-	SKILL=1.0;
+	skill=1.0;
 	
 	displayName = "Vympel Sleeves Up";
 	uniformClass="CUP_U_CRYE_ATACSFG_Roll";

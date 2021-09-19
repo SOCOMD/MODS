@@ -34,9 +34,11 @@ class CfgDifficultyPresets {
 	showCadetHints = 1;
 	showCadetWP = 1;
 
+// act as global coeficients - might need to leave on 1.0 so skillFinal results are more consistent on the other end. 
+// see CfgAiSkill.hpp
 	class CustomAILevel {
 		skillAI=1.0;
-		precisionAI=0.30000001;
+		precisionAI=1.0;
 	};
 
 	class Recruit {

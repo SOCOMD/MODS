@@ -51,19 +51,21 @@ Example:
 	spotDistance[] = {0, 0.2, 1, 0.4};
 	starting scalar 0, is 20% of maximum skill to spot,
 	finishing scalar 1, is 40% of maxium skill to spot,
-
+	
 */
 
+// Keeping interpolation reasonably consistent with global skill coef to 1.0 means consistent results from mission maker adjustments,
+// & more importantly content\configs\vehicles\override\aiunits.hpp (when it is ready). 
 class CfgAISkill {
-	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.9};
-	aimingShake[]		= {0.0, 0.0, 1.0, 0.75};
-	aimingSpeed[]		= {0.0, 0.2, 1.0, 0.7};
-	commanding[]		= {0.0, 0.5, 1.0, 1.0};
-	courage[]			= {0.0, 1.0, 1.0, 1.0};
-	general[]			= {0.0, 0.0, 1.0, 1.0};
-	reloadSpeed[]		= {0.0, 0.4, 1.0 ,1.0};
-	spotDistance[]		= {0.0, 0.3, 1.0, 1.0};
-	spotTime[]			= {0.0, 0.3, 1.0, 0.9};
+	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.8};  // Note that low value means AI lacks confidence to fire, thus less cinematic.
+	aimingShake[]		= {0.0, 0.2, 1.0, 0.8};
+	aimingSpeed[]		= {0.0, 0.2, 1.0, 0.8};
+	commanding[]		= {0.0, 0.4, 1.0, 1.0};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
+	courage[]			= {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
+	general[]			= {0.0, 0.4, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
+	reloadSpeed[]		= {0.0, 0.2, 1.0 ,1.0};
+	spotDistance[]		= {0.0, 0.2, 1.0, 0.8}; 
+	spotTime[]			= {0.0, 0.2, 1.0, 0.8};
 };
 
 /*
