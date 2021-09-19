@@ -292,7 +292,6 @@ class CfgLoadoutWeapons {
 	};
 	class bnae_trg42_virtual : Recon_338 {};
 	class bnae_trg42_camo1_virtual : Recon_338 {};
-	class bnae_trg42_camo2_virtual : Recon_338 {};
 	class bnae_trg42_f_virtual : Recon_338 {};
 	class bnae_trg42_f_camo1_virtual : Recon_338 {};
 	class bnae_trg42_f_mmrs_virtual : Recon_338 {};

@@ -88,11 +88,13 @@ class CfgPatches {
 			"SOCOMD_Supply_Medical",
 			"SOCOMD_Supply_Gustav",
 			"SOCOMD_Supply_Mortar",
+			"SOCOMD_Supply_Mortar_60mm",
 			"SOCOMD_Supply_HMG",
 			"SOCOMD_Supply_AGL",
 			"SOCOMD_Supply_Javelin",
 			"SOCOMD_Supply_Tools",
 			"SOCOMD_Supply_Vehicle_Ammo",
+			"SOCOMD_Supply_Vehicle_Ammo_Large",
 			"SOCOMD_Recon_Supply",
 
 			// MEN

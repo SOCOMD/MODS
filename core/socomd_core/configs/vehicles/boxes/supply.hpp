@@ -171,18 +171,18 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
 	displayName = "[SUPPLY] Ammo";
 
 	class TransportMagazines {
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 24)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 12)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 12)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 10)
-		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 16)
-		TRANSPORT_MAGAZINE(SmokeShell, 12)
-		TRANSPORT_MAGAZINE(HandGrenade, 6)
-		TRANSPORT_MAGAZINE(ACE_M84, 12)
-		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 4)
-		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 2)
-		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 2)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 48)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 24)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 20)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 20)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 20)
+		TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_45ACP_11Rnd, 32)
+		TRANSPORT_MAGAZINE(SmokeShell, 24)
+		TRANSPORT_MAGAZINE(HandGrenade, 12)
+		TRANSPORT_MAGAZINE(ACE_M84, 24)
+		TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 20)
+		TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 8)
+		TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 6)
 	};
 
 	class TransportItems {
@@ -277,7 +277,7 @@ class SOCOMD_Supply_Vehicle_Ammo : SOCOMD_Supply_Empty {
 class SOCOMD_Supply_Vehicle_Ammo_large : B_supplyCrate_F {
     scope = public;
     author = AUTHOR_STR;
-    displayName = "[SUPPLY] Vehicle Ammo";
+    displayName = "[SUPPLY] Vehicle Ammo Large";
 	class TransportMagazines {};
 	class TransportItems {};
 	class TransportWeapons {};
