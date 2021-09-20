@@ -159,7 +159,7 @@ CUP_AH6_DYNLOAD
 CUP_AH6_ARMED_BASE
 CUP_AH6_BASE
 Helicopter_Base_H
-*/
+
 
 class CUP_B_AH6M_USA;
 class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
@@ -187,7 +187,7 @@ class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	//Flight Controls
 	backRotorForceCoef = 0.4;
 };
-
+*/
 
 ////////////////////////////////////////////////////////////////////////////////
 // Melb Heli Overrides

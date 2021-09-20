@@ -14,6 +14,8 @@
 	LOADOUT_ITEM(SOCOMD_Apap, 3) \
 	LOADOUT_ITEM(ACE_packingBandage, 0) \
 	LOADOUT_ITEM(ACE_fieldDressing, 4)  \
+	LOADOUT_ITEM(KAT_ChestSeal, 1)	\
+	LOADOUT_ITEM(SOCOMD_NDC, 1)	\
 	LOADOUT_ITEM(KAT_guedel, 2)	
 
 #define LOADOUT_UNIFORM_ESSENTIALS \

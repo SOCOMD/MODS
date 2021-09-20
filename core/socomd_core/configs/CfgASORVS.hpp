@@ -52,6 +52,11 @@ class CfgASORVS {
 			"SOCOMD_Supply_Vehicle_Ammo",
 			"SOCOMD_Supply_Vehicle_Ammo_Large",
 			"SOCOMD_Recon_Supply",
+			"SOCOMD_Supply_NVG",
+			"SOCOMD_Supply_152",
+			"ACWP_case_m4_gl",
+			"ACWP_case_m4_don",
+			"ACWP_case_sniper",
 			"SOCOMD_UAV_Supply",
 			"ACE_Wheel"
 		};
