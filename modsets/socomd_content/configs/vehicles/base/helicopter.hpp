@@ -6,6 +6,8 @@ class Air : AllVehicles {
 class Helicopter_Base_H;
 class MELB_base : Helicopter_Base_H {
 	class Hitpoints;
+	class Components;
+    class Turrets;
 };
 
 class MELB_MH6M : MELB_base {
@@ -22,6 +24,27 @@ class MELB_MH6M : MELB_base {
 	};
  };
 class MELB_AH6M : MELB_base {
+	class Turrets : Turrets {
+        class CopilotTurret;
+    };
+    class Components : Components {
+		class TransportPylonsComponent {
+			class pylons {
+                class R_Rockets_12x;
+				class R_Rockets_4x;
+				class R_Rockets_3x;
+				
+				class R_HellfireRack_R_slot;
+				class R_HellfireRack_L_slot;
+                class L_HellfireRack_R_slot;
+				class L_HellfireRack_L_slot;	
+						
+				class L_Rockets_3x;
+				class L_Rockets_4x;
+				class L_Rockets_12x;
+            };
+        };
+    };
 	class HitPoints : HitPoints {
 		class HitHull;
 		class HitEngine;

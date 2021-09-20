@@ -2,7 +2,7 @@
 // MODIFICATIONS
 // - Airframe has increased armor
 // - Reduced rear rotor force to help with anti-torqe damage
-/*
+
 class CUP_AH6_BASE : Helicopter_Base_H {
 
 	//Armor Damage
@@ -112,7 +112,7 @@ class CUP_AH6_BASE : Helicopter_Base_H {
 		};
 	};
 };
-*/
+
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY
 
@@ -122,7 +122,7 @@ CUP_MH6_TRANSPORT
 CUP_AH6_BASE
 Helicopter_Base_H
 */
-/*
+
 class CUP_B_MH6J_USA;
 class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	scope = public;
@@ -149,7 +149,7 @@ class SOCOMD_FIREFLY_A : CUP_B_MH6J_USA {
 	//Flight Controls
 	backRotorForceCoef = 0.4;
 };
-*/
+
 ////////////////////////////////////////////////////////////////////////////////
 // DRAGONFLY
 
@@ -159,8 +159,8 @@ CUP_AH6_DYNLOAD
 CUP_AH6_ARMED_BASE
 CUP_AH6_BASE
 Helicopter_Base_H
-*/
-/*
+
+
 class CUP_B_AH6M_USA;
 class SOCOMD_DRAGONFLY_A : CUP_B_AH6M_USA {
 	scope = public;

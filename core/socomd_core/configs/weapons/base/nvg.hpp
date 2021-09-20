@@ -147,7 +147,7 @@ class SOCOMD_NVG_GPNVG_WP_black: CUP_NVG_GPNVG_black {
 	colorPreset[] = {
 		0.0, 
 		{0.0, 0.0, 0.0, 0.0}, 
-		{0.7, 0.3, 1.3, 0.9}, 
+		{0.5, 0.1, 1.5, 0.9}, 
 		{1, 1, 6, 0.0}
 	};
 	ace_nightvision_generation = 2;

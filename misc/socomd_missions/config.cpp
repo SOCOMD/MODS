@@ -89,9 +89,9 @@ class CfgMissions {
 	ADD(KOOKABURRAALTISFOB,SOCOMD Altis FOB (Kookaburra),fobs\FOB_Kookaburra.Altis)
 	ADD(KOOKABURRADUALAFOB,SOCOMD Duala FOB (Kookaburra),fobs\FOB_Kookaburra.isladuala3)
 	ADD(KOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Kookaburra),fobs\FOB_Kookaburra.WL_Rosche)
-	ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell_Malden.Malden)
-	ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (SOUL),fobs\FOB_Soul.Tanoa)
-	ADD(ZANZIBARTAKISTANTFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar_Takistan.takistan)
+	ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell.Malden)
+	ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (Soul),fobs\FOB_Soul.Tanoa)
+	ADD(ZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar.takistan)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //	Missions

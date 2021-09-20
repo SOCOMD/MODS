@@ -290,12 +290,13 @@ class CfgLoadoutWeapons {
 			{"5Rnd_APDS_338LM_Magazine", 2}
 		};
 	};
-    class bnae_scope_blk_virtual : Recon_338 {};
-	class bnae_scope_snd_virtual : Recon_338 {};
-	class bnae_scope_mtp_virtual : Recon_338 {};
-	class bnae_scope_v2_virtual : Recon_338 {};
-	class bnae_truglo_blk_virtual : Recon_338 {};
-	class bnae_truglo_snd_virtual : Recon_338 {};
+	class bnae_trg42_virtual : Recon_338 {};
+	class bnae_trg42_camo1_virtual : Recon_338 {};
+	class bnae_trg42_f_virtual : Recon_338 {};
+	class bnae_trg42_f_camo1_virtual : Recon_338 {};
+	class bnae_trg42_f_mmrs_virtual : Recon_338 {};
+	class bnae_trg42_f_mmrs_camo1_virtual : Recon_338 {};
+    
 
 	class ACWP_pistol_base;
 	class ACWP_USP: ACWP_pistol_base{
