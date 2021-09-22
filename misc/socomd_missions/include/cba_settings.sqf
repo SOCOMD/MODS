@@ -468,7 +468,7 @@ acex_volume_showNotification = true;
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = false;
+force force acre_sys_core_fullDuplex = true;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = false;
 force force acre_sys_core_revealToAI = 1;
