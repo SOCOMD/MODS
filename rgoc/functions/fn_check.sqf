@@ -1,19 +1,22 @@
 // Internal check to see if current headgear is compatible 
 
-params["_headgear"];
+params["_player"];
 _return = 0;
 
 if (!hasInterface) exitWith {};
 
-
+_headgear = headgear _player;
+systemChat format ["%1", _headgear];
+if(_headgear isEqualTo "" && rgoc_allowNoHelmet) exitWith {
+    // systemChat "firing here";
+    _return = 1;
+    _return
+};
 _isAllowed = getNumber (configFile >> "CfgWeapons" >> _headgear >> "rgoc_canAcceptNVG");
 switch (_isAllowed)do {
     case 1 : {_return = 1};
     case 0 : {_return = 0};
 	default { _return = 1};
-};
-if(_headgear == "" && rgoc_allowNoHelmet) then {
-    _return = 0;
 };
 _wl = rgoc_whitelist;
 _wl splitString ",";

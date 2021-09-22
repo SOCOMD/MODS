@@ -225,19 +225,19 @@ force force kat_airway_medLvl_Larynxtubus = 0;
 force force kat_airway_Overstretch_time = 3;
 force force kat_airway_probability_headturning = 50;
 force force kat_airway_probability_obstruction = 15;
-force force kat_airway_probability_occluded = 50;
+force force kat_airway_probability_occluded = 10;
 force force kat_airway_string_exit = "";
 force force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
-force force kat_breathing_death_timer_enable = true;
+force force kat_breathing_death_timer_enable = false;
 force force kat_breathing_enable = true;
-force force kat_breathing_hemopneumothoraxChance = 20;
-force force kat_breathing_medLvl_Chestseal = 0;
-force force kat_breathing_medLvl_hemopneumothoraxTreatment = 0;
+force force kat_breathing_hemopneumothoraxChance = 5;
+force force kat_breathing_medLvl_Chestseal = 1;
+force force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
 force force kat_breathing_medLvl_Pulseoximeter = 0;
-force force kat_breathing_pneumothorax = 50.254;
-force force kat_breathing_pneumothoraxDamageThreshold = 0.55;
+force force kat_breathing_pneumothorax = 5;
+force force kat_breathing_pneumothoraxDamageThreshold = 0.4;
 force force kat_breathing_spo2_big_value = 66;
 force force kat_breathing_spo2_small_value = 30;
 force force kat_breathing_Stable_spo2 = 85;
@@ -488,7 +488,22 @@ force force cba_optics_usePipOptics = true;
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = false;
 
-/ DUI - Squad Radar - Main
+// DUI - Squad Radar - Indicators
+diwako_dui_indicators_crew_range_enabled = false;
+diwako_dui_indicators_fov_scale = false;
+diwako_dui_indicators_icon_buddy = true;
+diwako_dui_indicators_icon_leader = true;
+diwako_dui_indicators_icon_medic = true;
+diwako_dui_indicators_range = 20;
+diwako_dui_indicators_range_crew = 300;
+diwako_dui_indicators_range_scale = false;
+force diwako_dui_indicators_show = false;
+diwako_dui_indicators_size = 1;
+diwako_dui_indicators_style = "standard";
+diwako_dui_indicators_useACENametagsRange = true;
+
+
+// DUI - Squad Radar - Main
 diwako_dui_ace_hide_interaction = true;
 diwako_dui_colors = "standard";
 diwako_dui_font = "RobotoCondensed";
@@ -556,10 +571,10 @@ force force STHud_Settings_SquadBar = true;
 STHud_Settings_TextShadow = 2;
 
 // Tactical Position Ready Options
-Animation for automatic wall avoidance = 0;
-Change the position recovery from left click to right click. = false;
-Enable automatic wall avoidance. = false;
-Lookahead for corner detection (in m) = "0.2";
+// Animation for automatic wall avoidance = 0;
+// Change the position recovery from left click to right click. = false;
+// Enable automatic wall avoidance. = false;
+// Lookahead for corner detection (in m) = "0.2";
 
 // VET_Unflipping
 force force vet_unflipping_time = 10;
@@ -567,7 +582,7 @@ force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
 // Zeus Enhanced
-zen_common_autoAddObjects = false;
+force force zen_common_autoAddObjects = true;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
