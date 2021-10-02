@@ -14,7 +14,7 @@ _maxSpeed = 1.15;
 // 27.5kg is normal speed (600 lb)
 _minLoad = 300;
 _maxLoad = 1000;
-_animspeed = _unit getVariable ["socomd_anim_speed_coef",1,true];
+_animspeed = _unit getVariable ["socomd_anim_speed_coef",1];
 
 _walking = _anim find "wlk";
 _lowered_rifle = _anim find "lowwrfldf";
