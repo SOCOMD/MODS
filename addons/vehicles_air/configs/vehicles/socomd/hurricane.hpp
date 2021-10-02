@@ -32,7 +32,7 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
         INVENTORY_VEHICLE_SMALL_ITEMS \
     }; \
     class TransportBackpacks { \
-        INVENTORY_VEHICLE_SMALL_BACKPACKS \
+        INVENTORY_VEHICLE_HELO_BAGS \
     }; \
     class AcreIntercoms { \
         class Intercom_1 { \
@@ -167,7 +167,7 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
         INVENTORY_VEHICLE_SMALL_ITEMS
     };
     class TransportBackpacks {
-        INVENTORY_VEHICLE_SMALL_BACKPACKS
+        INVENTORY_VEHICLE_HELO_BAGS
     };
     class AcreIntercoms {
         class Intercom_1 {

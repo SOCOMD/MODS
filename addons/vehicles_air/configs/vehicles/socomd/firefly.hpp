@@ -88,7 +88,7 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
         INVENTORY_VEHICLE_SMALL_ITEMS
     };
     class TransportBackpacks {
-        INVENTORY_VEHICLE_SMALL_BACKPACKS
+        INVENTORY_VEHICLE_HELO_BAGS
     };
     hiddenSelectionsTextures[] = {
         "\z\socomd\addons\data\ah6\ah6_hull_co.paa",
@@ -183,7 +183,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
         INVENTORY_VEHICLE_SMALL_ITEMS
     };
     class TransportBackpacks {
-        INVENTORY_VEHICLE_SMALL_BACKPACKS
+        INVENTORY_VEHICLE_HELO_BAGS
     };
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
