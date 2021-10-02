@@ -10,10 +10,10 @@ if (isNull objectParent _unit ) then {
 	if ( _reset != -1 ) then {
 		_animspeed = 1;
 	};
-	if ( _increase != -1 && _animspeed < 1.7 ) then {
+	if ( _increase != -1 && _animspeed < 1.5 ) then {
 		_animspeed = _animspeed + 0.1;
 	};
-	if ( _decrease != -1 && _animspeed > 0.3 ) then {
+	if ( _decrease != -1 && _animspeed > 0.5 ) then {
 		_animspeed = _animspeed - 0.1;
 	};
 	if ( _setMax != -1 ) then {
@@ -25,7 +25,7 @@ if (isNull objectParent _unit ) then {
 
 	_message = format ["Current speed: %1", _animspeed];
 	[_message, false, 5, 2] call ace_common_fnc_displayText;
-	_unit setVariable ["socomd_anim_speed_coef",_animspeed];
+	_unit setVariable ["socomd_anim_speed_coef",_animspeed,true];
 	_unit setUnitTrait ["audibleCoef",_animspeed];
 	_anim = animationState _unit;
 	[_unit, _anim] call SOCOMD_fnc_animSpeedSet;
