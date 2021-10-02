@@ -80,7 +80,7 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_LEADER
+            GRENADES_LEADER
         };
     };
     class SOCOMD_LOWVIS_2IC : SOCOMD_LOWVIS_Commander{};
@@ -109,7 +109,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
         arsenalExtras[] ={
             RIFLEMAN_EXTRAS
@@ -140,7 +140,7 @@
             BACKPACK_SAPPER
         };
         grenades[]={
-            GREMADES_BREACHER
+            GRENADES_BREACHER
         };    
     };
 
@@ -165,7 +165,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };                
     };
     class SOCOMD_LOWVIS_Marksman{
@@ -189,7 +189,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };            
     };
     class SOCOMD_LOWVIS_Sapper{
@@ -214,7 +214,7 @@
             BACKPACK_SAPPER
         };
         grenades[]={
-            GREMADES_SAPPER
+            GRENADES_SAPPER
         };    
     };
     class SOCOMD_LOWVIS_MachineGunner{
@@ -238,7 +238,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_LOWVIS_Medic{
@@ -263,7 +263,7 @@
             BACKPACK_MEDIC
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_LOWVIS_AT{
@@ -288,7 +288,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_LOWVIS_Pilot{
@@ -396,7 +396,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_LOWVIS_Recon{
@@ -421,7 +421,7 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_LOWVIS_Recon_Assistant{
@@ -447,6 +447,6 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };

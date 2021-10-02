@@ -211,12 +211,12 @@
 #define SSO_BAGS_HEAVY \
     "CFP_Kitbag_MCam_Grn"
 
-#define SSO_GREMADES_NORMAL\
+#define SSO_GRENADES_NORMAL\
     "grenades_default",\
     "grenades_more_flash",\
     "grenades_less_lethal"
     
-#define SSO_GREMADES_LEADER\
+#define SSO_GRENADES_LEADER\
     "grenades_default_leader",\
     "grenades_more_flash_leader",\
     "grenades_less_lethal_leader"
@@ -269,7 +269,7 @@
             SSO_BACKPACK_COMMS
         };
         grenades[]={
-            SSO_GREMADES_LEADER
+            SSO_GRENADES_LEADER
         };
     };
     class SOCOMD_SSO_2IC : SOCOMD_SSO_Commander{};
@@ -302,7 +302,7 @@
             SSO_BAGS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
         arsenalExtras[] ={
             SSO_RIFLEMAN_EXTRAS
@@ -338,7 +338,7 @@
             SSO_BACKPACK_SAPPER
         };
         grenades[]={
-            SSO_GREMADES_BREACHER
+            SSO_GRENADES_BREACHER
         };    
     };
 
@@ -368,7 +368,7 @@
             "SSO_Kitbag"
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };                
     };
     class SOCOMD_SSO_Marksman{
@@ -396,7 +396,7 @@
             SSO_BAGS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };            
     };
     class SOCOMD_SSO_Sapper{
@@ -425,7 +425,7 @@
             SSO_BACKPACK_SAPPER
         };
         grenades[]={
-            SSO_GREMADES_SAPPER
+            SSO_GRENADES_SAPPER
         };    
     };
     class SOCOMD_SSO_MachineGunner{
@@ -455,7 +455,7 @@
             "SSO_Kitbag"
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
     };
     class SOCOMD_SSO_Medic{
@@ -484,7 +484,7 @@
             SSO_BACKPACK_MEDIC
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
     };
     class SOCOMD_SSO_AT{
@@ -513,7 +513,7 @@
             SSO_BAGS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };
     };
     class SOCOMD_SSO_Pilot{
@@ -617,7 +617,7 @@
             SSO_BAGS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
     };
     class SOCOMD_SSO_Recon{
@@ -638,7 +638,7 @@
             SSO_BACKPACK_COMMS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
     };
     class SOCOMD_SSO_Recon_Assistant{
@@ -668,6 +668,6 @@
             SSO_BACKPACK_COMMS
         };
         grenades[]={
-            SSO_GREMADES_NORMAL
+            SSO_GRENADES_NORMAL
         };    
     };

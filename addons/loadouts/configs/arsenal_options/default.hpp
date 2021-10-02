@@ -138,9 +138,9 @@
     "SMA_HK417vfg"
 
 #define SOLS_RIFLES \
-    "SMA_Steyr_AUG_F",\
+   "SMA_Steyr_AUG_F",\
     "CUP_smg_MP5A5"
-
+    
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
     "SMA_MK18TAN_GL_SM",\
@@ -465,12 +465,12 @@
     "ECPV1",\
     "Crewcab"
 
-#define GREMADES_NORMAL\
+#define GRENADES_NORMAL\
     "grenades_default",\
     "grenades_more_flash",\
     "grenades_less_lethal"
     
-#define GREMADES_LEADER\
+#define GRENADES_LEADER\
     "grenades_default_leader",\
     "grenades_more_flash_leader",\
     "grenades_less_lethal_leader"
@@ -543,7 +543,7 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_LEADER
+            GRENADES_LEADER
         };
     };
     class SOCOMD_TACP{
@@ -575,7 +575,7 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_LEADER
+            GRENADES_LEADER
         };
     };
     class SOCOMD_2IC : SOCOMD_Commander{
@@ -623,7 +623,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
         arsenalExtras[] ={
             RIFLEMAN_EXTRAS
@@ -658,7 +658,7 @@
             BACKPACK_SAPPER
         };
         grenades[]={
-            GREMADES_BREACHER
+            GRENADES_BREACHER
         };    
     };
     class SOCOMD_Marksman{
@@ -686,7 +686,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };            
     };
     class SOCOMD_Sapper{
@@ -715,7 +715,7 @@
             BACKPACK_SAPPER
         };
         grenades[]={
-            GREMADES_SAPPER
+            GRENADES_SAPPER
         };    
     };
     class SOCOMD_MachineGunner{
@@ -739,7 +739,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_Medic{
@@ -768,7 +768,7 @@
             BACKPACK_MEDIC
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_AT{
@@ -797,7 +797,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_Pilot{
@@ -926,7 +926,7 @@
             BAGS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
     class SOCOMD_Recon{
@@ -957,6 +957,6 @@
             BACKPACK_COMMS
         };
         grenades[]={
-            GREMADES_NORMAL
+            GRENADES_NORMAL
         };    
     };
