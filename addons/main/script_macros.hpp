@@ -280,6 +280,9 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
     TRANSPORT_BACKPACK(SOCOMD_Medical_AO, 2)
 
+#define INVENTORY_VEHICLE_CAS_HELO_BAGS \
+    TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 1)
+
 #define SHIP_FAST_TURRETS \
 maxHorizontalRotSpeed = 8; \
 maxVerticalRotSpeed = 8;

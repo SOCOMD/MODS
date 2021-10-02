@@ -167,7 +167,7 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
         INVENTORY_VEHICLE_SMALL_ITEMS
     };
     class TransportBackpacks {
-        INVENTORY_VEHICLE_HELO_BAGS
+        INVENTORY_VEHICLE_CAS_HELO_BAGS
     };
     class AcreIntercoms {
         class Intercom_1 {
