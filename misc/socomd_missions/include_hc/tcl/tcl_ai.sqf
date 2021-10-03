@@ -47,7 +47,7 @@ TCL_AI set [1, 0.15];
 // 0 - 30, default is 3
 TCL_AI set [2, 3];
 
-/* Description:	
+/* Description:    
 This section ( Additional ) is used to choose how A.I. group(s) which was not requested as reinforcement(s) but spotted enemy(s) already known by other friendly A.I. group(s) should behave.
 */
 

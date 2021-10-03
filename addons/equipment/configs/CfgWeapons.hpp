@@ -1,16 +1,16 @@
 class CfgWeapons {
     
-	class Default;
-	class ItemCore: Default{};
-	class UniformItem: ItemCore
-	{
-		class ItemInfo;
-	};
-	class InventoryItem_Base_F;
-	class VestItem: ItemCore
-	{
-		class ItemInfo;
-	};
+    class Default;
+    class ItemCore: Default{};
+    class UniformItem: ItemCore
+    {
+        class ItemInfo;
+    };
+    class InventoryItem_Base_F;
+    class VestItem: ItemCore
+    {
+        class ItemInfo;
+    };
     #include "weapons\binocular.hpp"
     #include "weapons\headgear_hard.hpp"
     #include "weapons\headgear_soft.hpp"

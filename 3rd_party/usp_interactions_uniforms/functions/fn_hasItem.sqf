@@ -4,15 +4,15 @@ pass = false;
 if !(usp_uniforms_require_items) exitWith { true };
 
 if (_item in (uniformItems  player)) then {
-	pass = true;
+    pass = true;
 };
 
 if (_item in (vestItems player)) then {
-	pass = true;
+    pass = true;
 };
 
 if (_item in (backpackItems  player)) then {
-	pass = true;
+    pass = true;
 };
 
 

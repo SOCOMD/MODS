@@ -34,7 +34,7 @@ loadScreen = "\socomd_missions\images\missionpicture.paa";
 
 // Things for the future
 //class CfgSounds {
-//	sounds[] = {example1,example2};
-//	class example1 {name="example1";sound[]={example.ogg,db-11,1.0};titles[] = {};};
-//	class example2 {name="example2";sound[]={example.ogg,db-11,1.0};titles[] = {};};
+//    sounds[] = {example1,example2};
+//    class example1 {name="example1";sound[]={example.ogg,db-11,1.0};titles[] = {};};
+//    class example2 {name="example2";sound[]={example.ogg,db-11,1.0};titles[] = {};};
 //};

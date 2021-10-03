@@ -15,7 +15,7 @@ _isAllowed = getNumber (configFile >> "CfgWeapons" >> _headgear >> "rgoc_canAcce
 switch (_isAllowed)do {
     case 1 : {_return = 1};
     case 0 : {_return = 0};
-	default { _return = 1};
+    default { _return = 1};
 };
 _wl = rgoc_whitelist;
 _wl splitString ",";
