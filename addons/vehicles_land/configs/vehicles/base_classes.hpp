@@ -76,7 +76,7 @@ class Car_F : Car {
         };
     };
 };
-
+class CargoTurret;
 class Quadbike_01_base_F: Car_F{
     class Turrets
     {
@@ -101,7 +101,7 @@ class Quadbike_01_base_F: Car_F{
         };
     };
 };
-class C_Quadbike_01_F: Quadbike_01_base_F{};
+class B_Quadbike_01_F: Quadbike_01_base_F{};
     // shared taki HMG
 class StaticWeapon;
 class StaticMGWeapon : StaticWeapon {

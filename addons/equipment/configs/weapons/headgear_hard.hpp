@@ -110,7 +110,6 @@ class H_HelmetCrew_I :H_HelmetCrew_B {
     class ItemInfo;
     HEARING_PROTECTION_VICCREW
 };
-class ItemCore;
 class ADFU_H_OpsCore_02 : ItemCore {
     class ItemInfo;
 };

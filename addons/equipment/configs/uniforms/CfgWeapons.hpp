@@ -1,5 +1,4 @@
 
-    class UniformItem;
     class Uniform_Base;
 class U_B_CombatUniform_mcam : Uniform_Base
 {

@@ -1,4 +1,3 @@
-class InventoryItem_Base_F;
 class SOCOMD_itemcore: ItemCore {
     type=4096;
     detectRange=-1;
