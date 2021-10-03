@@ -17,7 +17,7 @@
     LOADOUT_ITEM(ACE_fieldDressing, 4)  \
     LOADOUT_ITEM(KAT_ChestSeal, 1)    \
     LOADOUT_ITEM(SOCOMD_NDC, 1)    \
-    LOADOUT_ITEM(KAT_guedel, 2)    
+    LOADOUT_ITEM(KAT_guedel, 2)
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1)\
@@ -29,7 +29,7 @@
     LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
     LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
-    
+
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1)\
     LOADOUT_ITEM(ItemcTabHCam, 1) \
@@ -102,7 +102,7 @@
     LOADOUT_ITEM(ACE_packingBandage, 0) \
     LOADOUT_ITEM(ACE_fieldDressing, 0) \
     LOADOUT_ITEM(SOCOMD_VPN, 1)
-    
+
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
 //Contents shared by individual loadouts common to every Qstore
@@ -171,7 +171,7 @@ class SOCOMD_Commander {
     class Backpack {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
-            LOADOUT_BACKPACK_ESSENTIALS            
+            LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
@@ -185,6 +185,9 @@ class SOCOMD_Commander {
         };
     };
 };
+
+////////////////////////////////////////////////////////////////////////////////
+// HAVOC / JTAC
 class SOCOMD_TACP {
     primary            = ITEM_PRIMARY_GL;
     secondary            = "";
@@ -217,13 +220,15 @@ class SOCOMD_TACP {
     class Backpack {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
-            LOADOUT_BACKPACK_ESSENTIALS            
+            LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(SmokeShellpurple, 2)
+            LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 5)
+
         };
     };
 };
@@ -535,7 +540,7 @@ class SOCOMD_Medic {
             LOADOUT_ITEM(SOCOMD_fentanyl, 8)                //Fentanyl Ampoule
             LOADOUT_ITEM(SOCOMD_ketamine, 8)                    //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                //Paracetamol
-            LOADOUT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol  
+            LOADOUT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 5)            //Blood
             LOADOUT_ITEM(SOCOMD_notes, 0)
             LOADOUT_ITEM(KAT_guedel, 9)                    //Nasopharangeal Airway
@@ -596,7 +601,7 @@ class SOCOMD_AO{
             LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
             LOADOUT_ITEM(SOCOMD_nargloves, 5)
-            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol  
+            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
             LOADOUT_ITEM(SOCOMD_shears, 1)
             LOADOUT_ITEM(KAT_guedel, 0)                    //Nasopharangeal Airway
