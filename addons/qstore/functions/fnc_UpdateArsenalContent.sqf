@@ -14,10 +14,14 @@ _blackList = ["cup_optic_an_pvs_4_m14","cup_optic_an_pvs_4_m16","cup_optic_cws_n
 // Common loudout options between classes
 _worldType = worldName call FUNC(GetWorldType);
 _uniforms = [];
+if( _worldType == 'Snow' ) then {
+    _uniforms append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "uniforms" >> "snow_uniforms");
+} else {  
 if( _worldType == 'Arid' ) then {
     _uniforms append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "uniforms" >> "arid_uniforms"); 
 } else {
     _uniforms append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "uniforms" >> "temperate_uniforms"); 
+};
 };
 _helmets = getArray (configFile >> "CfgArsenalOptions" >> "helmets" >> "helmets");
 // accesories and facewear blacklist check

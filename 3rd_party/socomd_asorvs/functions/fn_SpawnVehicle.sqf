@@ -34,5 +34,5 @@ objNull spawn {
 	
 	if (ASORVS_PosIsASL == "true") then {_veh setPosASL ASORVS_VehicleSpawnPosASL};
 	
-	[objNull, _veh] call SOCOMD_fnc_ZeusAddObject;
+	// [objNull, _veh] call SOCOMD_fnc_ZeusAddObject;
 };

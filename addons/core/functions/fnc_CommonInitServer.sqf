@@ -9,4 +9,4 @@ if(!isServer) exitWith {};
 ] call CBA_fnc_addClassEventHandler;
 
 //Call CommonInitLocal on all connected clients/JIP clients
-[[], "SOCOMD_fnc_CommonInitLocal", true, true, true] call BIS_fnc_MP;
+[[], "socomd_core_fnc_CommonInitLocal", true, true, true] call BIS_fnc_MP;

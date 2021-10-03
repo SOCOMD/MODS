@@ -21,4 +21,4 @@ if(_config == "") exitWith {};
 
 _secondaryLoadout set [0, _secondary];
 _loadout set [1, _secondaryLoadout];
-[_unit, _loadout] call SOCOMD_fnc_SetUnitLoadout;
+[_unit, _loadout] call EFUNC(qstore,SetUnitLoadout);

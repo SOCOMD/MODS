@@ -32,4 +32,4 @@ _explosion = "R_PG7_F" createVehicle (getPosASL player);
 _unitLoadout = getUnitLoadout player;
 _secondaryLoadout = ["", "", "", "", ["", 0], ["", 0], ""];
 _unitLoadout set [1, _secondaryLoadout];
-[player, _unitLoadout] call SOCOMD_fnc_SetUnitLoadout;
+[player, _unitLoadout] call EFUNC(qstore,SetUnitLoadout);
