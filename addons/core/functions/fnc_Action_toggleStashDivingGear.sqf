@@ -16,7 +16,7 @@ if (stance _player != "CROUCH" && stance _player != "PRONE") then {
             _uniformClass = (_currentGear select 3) select 0;
             _vestClass = (_currentGear select 4) select 0;
             _mass = [_uniformClass,_vestClass] call FUNC(getMass);
-            [_player, _originalGear] call FUNC(SetUnitLoadout);
+            [_player, _originalGear] call EFUNC(qstore,SetUnitLoadout);
             [_player, _switchBackpack] call FUNC(Action_ReplaceBackpack);
             _bagContainer = backpackContainer _player;
             [_player,_mass,_bagContainer] call FUNC(handleMass);
@@ -41,7 +41,7 @@ if (stance _player != "CROUCH" && stance _player != "PRONE") then {
             _backpackLoadout = _newGear select 5;
             _backpackLoadout set [0, _switchBackpack]; 
             _newGear set [5, _backpackLoadout];
-            [_player, _newGear] call FUNC(SetUnitLoadout);
+            [_player, _newGear] call EFUNC(qstore,SetUnitLoadout);
             _bagContainer = backpackContainer _player;
             [_player,_mass,_bagContainer] call FUNC(handleMass);
         };

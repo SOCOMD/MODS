@@ -8,4 +8,4 @@ _backpackLoadout = _unitLoadout select 5;
 _backpackLoadout set [0, _backpack]; 
 _unitLoadout set [5, _backpackLoadout];
 
-[_player, _unitLoadout] call FUNC(SetUnitLoadout);
+[_player, _unitLoadout] call EFUNC(qstore,SetUnitLoadout);
