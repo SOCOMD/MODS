@@ -288,8 +288,8 @@ class CfgVehicles {
             };
         };
     };
-    #include "vehicles/socomd/firefly.hpp"
-    #include "vehicles/socomd/hurricane.hpp"
-    #include "vehicles/socomd/nomad.hpp"
-    #include "vehicles/socomd/warrior.hpp"
+    #include "vehicles\socomd\firefly.hpp"
+    #include "vehicles\socomd\hurricane.hpp"
+    #include "vehicles\socomd\nomad.hpp"
+    #include "vehicles\socomd\warrior.hpp"
 };

@@ -1,3 +1,3 @@
 class CfgVehicles {
-    #include "vehicles/ship.hpp"
+    #include "vehicles\ship.hpp"
 };
