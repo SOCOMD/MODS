@@ -227,8 +227,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(SmokeShellpurple, 2)
-            LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 5)
-
+            LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
         };
     };
 };
