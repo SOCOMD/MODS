@@ -1,6 +1,7 @@
 ---
 name: Bug report
 about: Report an issue with ACE3
+labels: "bug, status:not started"
 ---
 
 **Description:**

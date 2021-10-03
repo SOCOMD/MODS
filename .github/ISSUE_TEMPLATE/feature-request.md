@@ -1,6 +1,7 @@
 ---
 name: Feature request
 about: Request a new feature or functionality
+labels: "enhancement, status:not started"
 ---
 
 **Description:**
