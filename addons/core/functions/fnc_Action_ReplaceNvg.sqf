@@ -8,4 +8,4 @@ _equipment = _unitLoadout select 9;
 _equipment set [5, _nvg];
 _unitLoadout set [9, _equipment];
 
-[_player, _unitLoadout] call FUNC(SetUnitLoadout);
+[_player, _unitLoadout] call EFUNC(qstore,SetUnitLoadout);

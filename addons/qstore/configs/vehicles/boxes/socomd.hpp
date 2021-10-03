@@ -78,8 +78,8 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     };
                     class SOCOMD_Uniforms_ToggleHalo {
                         displayName = "Toggle HALO Gear";
-                        condition = "[_player] call SOCOMD_fnc_CanToggleHalo";
-                        statement = "[_player] call SOCOMD_fnc_ToggleHalo";
+                        condition = "[_player] call socomd_qstore_fnc_CanToggleHalo";
+                        statement = "[_player] call socomd_qstore_fnc_ToggleHalo";
                         showDisabled = 0;
                         exceptions[] = {"isNotInside", "isNotSitting"};
                     };
