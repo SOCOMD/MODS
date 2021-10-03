@@ -117,8 +117,14 @@
 // Uniforms
 
 class SOCOMD_Uniforms {
-    Arid = "SOCOMD_Uniform_SleevesDown";
-    Woodland = "SOCOMD_Uniform_AMCU_SleevesDown";
+    Arid = ITEM_DEFAULT_UNIFORM;
+    Woodland = ITEM_DEFAULT_UNIFORM;
+    Snow = ITEM_SNOW_UNIFORM;
+};
+class SOCOMD_Recon_Uniforms {
+    Arid = ITEM_RECON_UNIFORM;
+    Woodland = ITEM_RECON_UNIFORM;
+    Snow = ITEM_RECON_SNOW_UNIFORM;
 };
 
 ////////////////////////////////////////////////////////////////////////////////

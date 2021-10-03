@@ -10,4 +10,4 @@ if (_direction) then {
     _newModifier = SOCOMD_peltors_strength;
     hasPeltorsOn = 0;
 };
-[_newModifier] call SOCOMD_fnc_Peltor_setVolume;
+[_newModifier] call FUNC(Peltor_setVolume);
