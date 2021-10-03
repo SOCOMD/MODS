@@ -6,7 +6,6 @@ _return = 0;
 if (!hasInterface) exitWith {};
 
 _headgear = headgear _player;
-systemChat format ["%1", _headgear];
 if(_headgear isEqualTo "" && rgoc_allowNoHelmet) exitWith {
     // systemChat "firing here";
     _return = 1;
