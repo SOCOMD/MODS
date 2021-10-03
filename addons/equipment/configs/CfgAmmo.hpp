@@ -1,3 +1,3 @@
 class CfgAmmo {
-    #include "ammo/ammo.hpp"
+    #include "ammo\ammo.hpp"
 };
