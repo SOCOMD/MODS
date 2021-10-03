@@ -21,25 +21,25 @@ switch(_type) do
 	case "AIR_ROTARY":
 	{
 		_setupTitle = "Rotary Requisition";
-		_setupClasses = ["Rotary"] call SOCOMD_fnc_ASORVS_GetClassnames;
+		_setupClasses = ["Rotary"] call socomd_core_fnc_ASORVS_GetClassnames;
 	};
 
 	case "LAND":
 	{
 		_setupTitle = "Vehicle Requisition";
-		_setupClasses = ["Land"] call SOCOMD_fnc_ASORVS_GetClassnames;
+		_setupClasses = ["Land"] call socomd_core_fnc_ASORVS_GetClassnames;
 	};
 
 	case "SEA":
 	{
 		_setupTitle = "Boat Requisition";
-		_setupClasses = ["Sea"] call SOCOMD_fnc_ASORVS_GetClassnames;
+		_setupClasses = ["Sea"] call socomd_core_fnc_ASORVS_GetClassnames;
 	};
 
 	case "SUPPLY":
 	{
 		_setupTitle = "Supply Requisition";
-		_setupClasses = ["Supply"] call SOCOMD_fnc_ASORVS_GetClassnames;
+		_setupClasses = ["Supply"] call socomd_core_fnc_ASORVS_GetClassnames;
 		_setupClearDistance = 1;
 	};
 
