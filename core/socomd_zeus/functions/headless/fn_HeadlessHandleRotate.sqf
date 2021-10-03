@@ -1,1 +1,0 @@
-_this remoteExec ["SOCOMD_fnc_HeadlessRotate", owner (_this select 0)];

@@ -1,1 +1,0 @@
-player remoteExec ["SOCOMD_fnc_ZeusRegisterAdminCurator", 2];

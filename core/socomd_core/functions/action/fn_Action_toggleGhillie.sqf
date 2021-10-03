@@ -1,9 +1,0 @@
-params ["_user","_toGhillie","_uniform"];
-
-if(_toGhillie) then {
-	_user setVariable ["SOCOMD_current_recon_uniform", (uniform _user)];
-	[_user, _uniform] call SOCOMD_fnc_Action_ReplaceUniform;
-} else {
-	_newUniform = _user getVariable ["SOCOMD_current_recon_uniform", "USP_G3C_MC_RECON"];
-	[_user, _newUniform] call SOCOMD_fnc_Action_ReplaceUniform;
-};
