@@ -494,12 +494,27 @@
     "extras_at_assistant_mixed",\
     "extras_at_assistant_heat"
 
-    class helmets{
-        helmets[] = {
-            HELMETS,
-            NVG_OPTIONS
-        };
+class helmets{
+    helmets[] = {
+        HELMETS,
+        NVG_OPTIONS
     };
+};
+class uniforms{
+    arid_uniforms[]={
+        MC_UNIFORMS
+    };
+    temperate_uniforms[]={
+        AMCU_UNIFORMS
+    };
+    recon_uniforms[]={
+        RECON_UNIFORMS
+    };
+    pilot_uniforms[]={
+        PILOT_UNIFORMS
+    };
+};
+class SOCOMD_Commander{
     class uniforms{
         arid_uniforms[]={
             MC_UNIFORMS
@@ -507,456 +522,441 @@
         temperate_uniforms[]={
             AMCU_UNIFORMS
         };
-        recon_uniforms[]={
-            RECON_UNIFORMS
+        snow_uniforms[]={
+            SNOW_UNIFORMS
         };
-        pilot_uniforms[]={
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        GL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS,
+        VESTS_WEAPONS,
+        VESTS_COMMANDER
+    };
+    bags[]={
+        BAGS,
+        BACKPACK_COMMS
+    };
+    grenades[]={
+        GRENADES_LEADER
+    };
+};
+class SOCOMD_TACP{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        GL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS,
+        VESTS_WEAPONS,
+        VESTS_COMMANDER
+    };
+    bags[]={
+        BAGS,
+        BACKPACK_COMMS
+    };
+    grenades[]={
+        GRENADES_LEADER
+    };
+};
+class SOCOMD_2IC : SOCOMD_Commander{
+    
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS,
+        VESTS_WEAPONS
+    };
+};
+class SOCOMD_Leader : SOCOMD_Commander{
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS,
+        VESTS_WEAPONS
+    };
+};
+
+class SOCOMD_Rifleman{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        GL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL,
+        VESTS_WEAPONS
+        };
+    bags[]={
+        BAGS
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+    arsenalExtras[] ={
+        RIFLEMAN_EXTRAS
+    };
+};
+
+class SOCOMD_Breacher{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        GL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL,
+        VESTS_WEAPONS
+        };
+    bags[]={
+        BAGS,
+        BACKPACK_SAPPER
+    };
+    grenades[]={
+        GRENADES_BREACHER
+    };    
+};
+class SOCOMD_Marksman{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        MARKSMAN,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL
+        };
+    bags[]={
+        BAGS
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };            
+};
+class SOCOMD_Sapper{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL
+        };
+    bags[]={
+        BAGS,
+        BACKPACK_SAPPER
+    };
+    grenades[]={
+        GRENADES_SAPPER
+    };    
+};
+class SOCOMD_MachineGunner{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+    };
+    weapons[]={
+        MACHINE_GUN,
+        HANDGUNS
+    };
+    vests[]={
+        ONE_COMM_RIGS,
+        VESTS_GUNNER
+        };
+    bags[]={
+        BAGS
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+};
+class SOCOMD_Medic{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_MED
+        };
+    bags[]={
+        BAGS,
+        BACKPACK_MEDIC
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+};
+class SOCOMD_AT{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
+        };
+    };
+    weapons[]={
+        GENERAL_RIFLE,
+        HANDGUNS,
+        LAUNCHERS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL
+        };
+    bags[]={
+        BAGS
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+};
+class SOCOMD_Pilot{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS,
             PILOT_UNIFORMS
         };
-    };
-    class SOCOMD_Commander{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS,
+            PILOT_UNIFORMS
         };
-        weapons[]={
-            GENERAL_RIFLE,
-            GL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS,
-            VESTS_WEAPONS,
-            VESTS_COMMANDER
-        };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS
-        };
-        grenades[]={
-            GRENADES_LEADER
+        snow_uniforms[]={
+            SNOW_UNIFORMS
         };
     };
-    class SOCOMD_TACP{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
+    weapons[]={
+        HANDGUNS,
+        SOLS_RIFLES
+    };
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS        
+    };
+    bags[]={
+        BAGS,
+        BACKPACK_COMMS,
+        SOLS_HELMS
+    };
+    helmets[] = {
+        SOLS_HELMS,
+        NVG_OPTIONS        
+    };
+    isLogi = 1;
+    grenades[]={
+    };    
+};
+class SOCOMD_Crewman{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS,
+            PILOT_UNIFORMS
         };
-        weapons[]={
-            GENERAL_RIFLE,
-            GL_RIFLE,
-            HANDGUNS
+        temperate_uniforms[]={
+            AMCU_UNIFORMS,
+            PILOT_UNIFORMS
         };
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS,
-            VESTS_WEAPONS,
-            VESTS_COMMANDER
-        };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS
-        };
-        grenades[]={
-            GRENADES_LEADER
+        snow_uniforms[]={
+            SNOW_UNIFORMS
         };
     };
-    class SOCOMD_2IC : SOCOMD_Commander{
-        
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS,
-            VESTS_WEAPONS
+    weapons[]={
+        HANDGUNS,
+        SOLS_RIFLES
+    };
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS
+        };
+    bags[]={
+        BAGS,
+        BACKPACK_COMMS
+    };
+    helmets[] = {
+        SOLS_HELMS,
+        NVG_OPTIONS
+    };
+    grenades[]={
+    };    
+    isLogi = 1;
+};
+class SOCOMD_AO{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
         };
     };
-    class SOCOMD_Leader : SOCOMD_Commander{
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS,
-            VESTS_WEAPONS
+    weapons[]={
+        GENERAL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_MED,
+        VESTS_TL
+        };
+    bags[]={
+        BAGS,
+        BACKPACK_MEDIC
+    };
+    isLogi = 1;
+    grenades[]={
+    };    
+};
+class SOCOMD_Logistician{
+    class uniforms{
+        arid_uniforms[]={
+            MC_UNIFORMS
+        };
+        temperate_uniforms[]={
+            AMCU_UNIFORMS
+        };
+        snow_uniforms[]={
+            SNOW_UNIFORMS
         };
     };
-
-    class SOCOMD_Rifleman{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
+    weapons[]={
+        GENERAL_RIFLE,
+        HANDGUNS
+    };
+    vests[]={
+        VESTS_COMMON,
+        ONE_COMM_RIGS,
+        VESTS_TL
         };
-        weapons[]={
-            GENERAL_RIFLE,
-            GL_RIFLE,
-            HANDGUNS
+    bags[]={
+        BAGS
+    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+};
+class SOCOMD_Recon{
+    class uniforms{
+        arid_uniforms[]={
+            RECON_UNIFORMS
         };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL,
-            VESTS_WEAPONS
-         };
-        bags[]={
-            BAGS
+        temperate_uniforms[]={
+            RECON_UNIFORMS
         };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-        arsenalExtras[] ={
-            RIFLEMAN_EXTRAS
+        snow_uniforms[]={
+            RECON_SNOW_UNIFORMS
         };
     };
-
-    class SOCOMD_Breacher{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            GL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL,
-            VESTS_WEAPONS
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_SAPPER
-        };
-        grenades[]={
-            GRENADES_BREACHER
-        };    
+    weapons[]={
+        GENERAL_RIFLE,
+        MARKSMAN,
+        SNIPER,
+        HANDGUNS
     };
-    class SOCOMD_Marksman{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
+    vests[]={
+        VESTS_COMMON,
+        TWO_COMMS_RIGS,
+        VESTS_COMMS
         };
-        weapons[]={
-            MARKSMAN,
-            HANDGUNS
-        };
-        vests[]={
-           VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL
-         };
-        bags[]={
-            BAGS
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };            
+    bags[]={
+        BAGS,
+        BACKPACK_COMMS
     };
-    class SOCOMD_Sapper{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-           VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_SAPPER
-        };
-        grenades[]={
-            GRENADES_SAPPER
-        };    
-    };
-    class SOCOMD_MachineGunner{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-        };
-        weapons[]={
-            MACHINE_GUN,
-            HANDGUNS
-        };
-        vests[]={
-            ONE_COMM_RIGS,
-            VESTS_GUNNER
-         };
-        bags[]={
-            BAGS
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-    };
-    class SOCOMD_Medic{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_MED
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_MEDIC
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-    };
-    class SOCOMD_AT{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            HANDGUNS,
-            LAUNCHERS
-        };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL
-         };
-        bags[]={
-            BAGS
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-    };
-    class SOCOMD_Pilot{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS,
-                PILOT_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS,
-                PILOT_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            HANDGUNS,
-            SOLS_RIFLES
-        };
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS        
-        };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS,
-            SOLS_HELMS
-        };
-        helmets[] = {
-            SOLS_HELMS,
-            NVG_OPTIONS        
-        };
-        isLogi = 1;
-        grenades[]={
-        };    
-    };
-    class SOCOMD_Crewman{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS,
-                PILOT_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS,
-                PILOT_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            HANDGUNS,
-            SOLS_RIFLES
-        };
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS
-        };
-        helmets[] = {
-            SOLS_HELMS,
-            NVG_OPTIONS
-        };
-        grenades[]={
-        };    
-        isLogi = 1;
-    };
-    class SOCOMD_AO{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_MED,
-            VESTS_TL
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_MEDIC
-        };
-        isLogi = 1;
-        grenades[]={
-        };    
-    };
-    class SOCOMD_Logistician{
-        class uniforms{
-            arid_uniforms[]={
-                MC_UNIFORMS
-            };
-            temperate_uniforms[]={
-                AMCU_UNIFORMS
-            };
-            snow_uniforms[]={
-                SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            ONE_COMM_RIGS,
-            VESTS_TL
-         };
-        bags[]={
-            BAGS
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-    };
-    class SOCOMD_Recon{
-        class uniforms{
-            arid_uniforms[]={
-                RECON_UNIFORMS
-            };
-            temperate_uniforms[]={
-                RECON_UNIFORMS
-            };
-            snow_uniforms[]={
-                RECON_SNOW_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            MARKSMAN,
-            SNIPER,
-            HANDGUNS
-        };
-        vests[]={
-            VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS
-        };
-        grenades[]={
-            GRENADES_NORMAL
-        };    
-    };
+    grenades[]={
+        GRENADES_NORMAL
+    };    
+};

@@ -6,14 +6,16 @@ _loadoutWeaponConfig = (missionConfigFile >> "CfgLoadoutWeapons" >> _weaponId);
 if(isNull _loadoutWeaponConfig) then {
     _loadoutWeaponConfig = (configFile >> "CfgLoadoutWeapons" >> _weaponId);
 };
-
+_isTACP = isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isTACP") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isTACP") == 1);
+_isCommander =  isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") == 1);
 //Return if no config is available
 if(isNull _loadoutWeaponConfig) exitWith {};
 
 // Primary
 //Give Magazines
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
-if(count _loadoutMagazines > 0) then  {
+
+if(!_isTACP && count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
         _magazineCount = _x select 1;
@@ -25,7 +27,7 @@ if(count _loadoutMagazines > 0) then  {
 };
 
 // commandGrenades
-if ( isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") == 1)) then {
+if (_isCommander) then {
     commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
     if(count commandGrenades > 0) then  {
         {
@@ -34,4 +36,9 @@ if ( isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isComman
             _player addMagazines[_magazine, _magazineCount];
         } forEach commandGrenades;
     };
+};
+
+
+if ( _isTACP) then {
+    _player addMagazines["1Rnd_SmokeRed_Grenade_shell", 6];
 };

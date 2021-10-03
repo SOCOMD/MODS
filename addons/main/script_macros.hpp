@@ -84,6 +84,7 @@ class _xx_##id { \
 #define ITEM_MAGAZINE_556_BELT                  CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch
 #define ITEM_MAGAZINE_762                       20Rnd_762x51_Mag
 #define ITEM_MAGAZINE_762_BELT                  CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
+#define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
 #define ITEM_MAGAZINE_BARRET                    Recon_Barret_mag
 #define ITEM_MAGAZINE_9MM                       CUP_30Rnd_9x19_MP5

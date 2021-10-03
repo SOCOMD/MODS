@@ -155,6 +155,7 @@ class SOCOMD_Commander {
     binocular        = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+    isCommander        = 1;
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -203,6 +204,8 @@ class SOCOMD_TACP {
     binocular        = "Laserdesignator";
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+    noGrenadeOptions          = 1;
+    isTACP        = 1;
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -250,6 +253,7 @@ class SOCOMD_Leader {
     binocular        = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+    isCommander        = 1;
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -266,6 +270,7 @@ class SOCOMD_Leader {
             LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
             LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
+            LOADOUT_ITEM(ACRE_PRC152, 2)
         };
     };
     class Backpack {
@@ -274,7 +279,6 @@ class SOCOMD_Leader {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
-            LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
             LOADOUT_ITEM(UGL_FlareRed_F, 2)
@@ -693,6 +697,7 @@ class SOCOMD_Recon {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(Laserdesignator, 1)
             LOADOUT_ITEM(ACE_ATragMX, 1)
+            LOADOUT_ITEM(ACRE_PRC152, 1)
         };
     };
 
@@ -702,7 +707,6 @@ class SOCOMD_Recon {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(ACE_Tripod, 1)
-            LOADOUT_ITEM(ACRE_PRC152, 1)
         };
     };
 };
@@ -721,6 +725,7 @@ class SOCOMD_Logistician {
     binocular        = "";
     gps             = "ItemcTab";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
+    noGrenadeOptions          = 1;
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -763,6 +768,7 @@ class SOCOMD_Pilot {
     binocular         = "";
     gps             = "ItemcTab";
     maxOptic        = PILOT_MAGNIFICATION_LIMIT;
+    noGrenadeOptions          = 1;
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -776,7 +782,7 @@ class SOCOMD_Pilot {
         type = ITEM_VEST_PILOT;
         class Inventory    {
             LOADOUT_ITEM(ACE_Chemlight_HiRed, 2)
-            LOADOUT_ITEM(ACE_M84, 2)
+            LOADOUT_ITEM(ACE_HandFlare_Red, 2)
             LOADOUT_ITEM(SmokeShell, 5)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
             LOADOUT_ITEM(ACRE_PRC152, 2)

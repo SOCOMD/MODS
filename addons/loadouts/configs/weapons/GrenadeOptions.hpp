@@ -20,7 +20,7 @@ class grenades_default: baseLodout {
     displayName = "Default";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
+        
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 2},
         {SmokeShell, 5}
@@ -31,7 +31,7 @@ class grenades_more_flash: grenades_default {
     displayName = "More flash, less smoke";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
+        
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 5},
         {SmokeShell, 2}
@@ -41,7 +41,6 @@ class grenades_less_lethal: grenades_default {
     displayName = "Less Lethal";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 1},
         {ACE_M84, 4},
         {SmokeShell, 4}
@@ -52,7 +51,6 @@ class grenades_default_sapper: grenades_default {
     displayName = "Default";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 2},
         {SmokeShell, 5},
@@ -64,7 +62,6 @@ class grenades_more_flash_sapper: grenades_default {
     displayName = "More flash, less smoke";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 5},
         {SmokeShell, 2},
@@ -75,7 +72,6 @@ class grenades_less_lethal_sapper : grenades_default {
     displayName = "Less Lethal";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 1},
         {ACE_M84, 4},
         {SmokeShell, 4},
@@ -88,7 +84,6 @@ class grenades_default_breacher: grenades_default {
     displayName = "Default";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 3},
         {SmokeShell, 5},
@@ -100,7 +95,6 @@ class grenades_more_flash_breacher: grenades_default {
     displayName = "More flash, less smoke";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 5},
         {SmokeShell, 2},
@@ -111,7 +105,6 @@ class grenades_less_lethal_breacher : grenades_default {
     displayName = "Less Lethal";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
         {CUP_HandGrenade_M67, 1},
         {ACE_M84, 4},
         {SmokeShell, 4},
@@ -124,7 +117,7 @@ class grenades_default_leader: grenades_default {
     displayName = "Default";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
+        
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 2},
         {SmokeShell, 5},
@@ -136,7 +129,7 @@ class grenades_more_flash_leader: grenades_default {
     displayName = "More flash, less smoke";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
+        
         {CUP_HandGrenade_M67, 2},
         {ACE_M84, 5},
         {SmokeShell, 2},
@@ -148,7 +141,7 @@ class grenades_less_lethal_leader : grenades_default {
     displayName = "Less Lethal";
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
-        {ACE_IR_Strobe_Item, 1},
+        
         {CUP_HandGrenade_M67, 1},
         {ACE_M84, 4},
         {SmokeShell, 4},
@@ -162,7 +155,7 @@ class grenades_standard_ao : grenades_default {
     displayName = "High Marker";
     vest[] = {
         {ACE_Chemlight_HiWhite, 8},
-        {ACE_IR_Strobe_Item, 1},
+        
         {ACE_HandFlare_White, 2},
         {SmokeShellPurple, 3}
     };

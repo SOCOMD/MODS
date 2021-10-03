@@ -1,3 +1,4 @@
+PREP(addGrenades);
 PREP(addHandgunAmmo);
 PREP(addPrimaryAmmo);
 PREP(addSecondaryAmmo);

@@ -6,6 +6,7 @@ params ["_player","_loadoutId"];
 [_player, true, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
 // reset nvg and extras variable for correct arsenal selection
 _player setVariable ["ace_socomd_arseal_nvg","SOCOMD_NVG"];
+_player setVariable  ["ace_socomd_arseal_grenade", "default"];
 _player setVariable ["ace_socomd_arseal_extras","extras_none"];
 
 
@@ -82,7 +83,7 @@ _loadOut append assignedItems _player;
 
 // Adds new arsenal items to player
 [_player, _accessories, false] call ace_socomd_arsenal_fnc_addVirtualItems;
-_player setVariable ["ace_socomd_arseal_grenade","grenades_default"];
+
 // Go through CfgArsenalOptions.hpp for the kit, add in all unique gear
 _sr_array = [];
 _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
@@ -117,9 +118,9 @@ if ( typeName _isPrevInit == "ARRAY") then {
 };
 
 _openedEh = ["ace_socomd_arsenal_displayOpened", {
-    player setVariable ["SOCOMD_prev_primary", primaryWeapon player]
+    ACE_Player setVariable ["SOCOMD_prev_primary", primaryWeapon ACE_Player]
     params ["_display"];
-    _loadoutIdEH = player getVariable ["SOCOMD_LOADOUTID","failed"];
+    _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
     
     _disabledButtons = [
         2022,   // IDC_buttonMap 
@@ -151,13 +152,13 @@ _openedEh = ["ace_socomd_arsenal_displayOpened", {
         _disabledButtons deleteAt 0; // add back in map tab, repurposed as extra ammo tab for rifleman
     };
     
-    if( isNumber(configFile >> "CfgArsenalOptions" >> _loadoutIdEH >> "isLogi") && (getNumber(configFile >> "CfgArsenalOptions" >> _loadoutIdEH >> "arsenalExtras") == 1)) then {
-        _disabledButtons append 2020; // logistic roles don't need grenade options
+    if( isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutIdEH >> "noGrenadeOptions")) then {
+        _disabledButtons pushBack 2020; // logistic roles don't need grenade options
     };
     {
         _ctrl = _display displayctrl _x;
         _ctrl ctrlEnable false;
-        _ctrl ctrlSetFade 0.6;
+        _ctrl ctrlSetFade 1;
         _ctrl ctrlCommit 0;
         
     } forEach _disabledButtons;
@@ -178,15 +179,21 @@ _removedRight = ["ace_socomd_arsenal_rightPanelFilled", {
     };
 }] call CBA_fnc_addEventHandler;
 _closedEh = ["ace_socomd_arsenal_displayClosed", {
-    _extraItems = player getVariable ["ace_socomd_arseal_extras","none"];
+    _extraItems = ACE_Player getVariable ["ace_socomd_arseal_extras","none"];
+    _grenadesOption = ACE_Player getVariable  ["ace_socomd_arseal_grenade", "default"];
     // for some reason using _player inside here doesnt work. Done in this order so launcher ammo isn't deleted
-    [player] call FUNC(removeAmmo);
-    [player, primaryWeapon player] call FUNC(addPrimaryAmmo);
-    [player, secondaryWeapon player] call FUNC(addSecondaryAmmo);
-    [player, handgunWeapon player] call FUNC(addHandgunAmmo);
+    [ACE_Player] call FUNC(removeAmmo);
+    [ACE_Player, primaryWeapon ACE_Player] call FUNC(addPrimaryAmmo);
+    [ACE_Player, secondaryWeapon ACE_Player] call FUNC(addSecondaryAmmo);
+    [ACE_Player, handgunWeapon ACE_Player] call FUNC(addHandgunAmmo);
+    if(_grenadesOption != "default") then {
+        [ACE_Player,_grenadesOption] call ace_socomd_arsenal_fnc_addSelection;
+    } else {
+        [ACE_Player] call FUNC(addGrenades);
+    };
     // [player] call SOCOMD_fnc_RefreshInsignia;
     if( _extraItems !=  "none" ) then  {
-        [player, _extraItems] call ace_socomd_arsenal_fnc_addSelection;
+        [ACE_Player, _extraItems] call ace_socomd_arsenal_fnc_addSelection;
     };
 }] call CBA_fnc_addEventHandler;
-player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];
+_player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];

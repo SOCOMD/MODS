@@ -17,4 +17,3 @@ class CfgPatches {
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgWeapons.hpp"
