@@ -58,14 +58,14 @@ Example:
 // Keeping interpolation reasonably consistent with global skill coef to 1.0 means consistent results from mission maker adjustments,
 // & more importantly content\configs\vehicles\override\aiunits.hpp (when it is ready). 
 class CfgAISkill {
-    aimingAccuracy[]    = {0.0, 0.2, 1.0, 0.8};  // Note that low value means AI lacks confidence to fire, thus less cinematic.
+    aimingAccuracy[]    = {0.0, 0.2, 1.0, 0.8};  // note that low value means AI lacks confidence to fire, thus less cinematic.
     aimingShake[]        = {0.0, 0.2, 1.0, 0.8};
     aimingSpeed[]        = {0.0, 0.2, 1.0, 0.8};
     commanding[]        = {0.0, 0.4, 1.0, 1.0};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
     courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
     general[]            = {0.0, 0.4, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
     reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
-    spotDistance[]        = {0.0, 0.2, 1.0, 0.8}; 
+    spotDistance[]        = {0.0, 0.2, 1.0, 1.0}; // keep at max 1.0 to avoid conflict with new LAMBS spot-distance functionality 
     spotTime[]            = {0.0, 0.2, 1.0, 0.8};
 };
 

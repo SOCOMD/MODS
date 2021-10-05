@@ -4,6 +4,7 @@ private _onoff = _this select 1;
 private _triggers = _this select 2;
 private _Generators = param [3, []];
 private _SourceGrid = param [4, false];
+//Note for future mod overhauls; this includes non vanilla (CUP) classes.
 private _types = ["Lamps_Base_F", "PowerLines_base_F","Land_PowerPoleWooden_F","Land_LampHarbour_F","Land_LampShabby_F","Land_PowerPoleWooden_L_F","Land_PowerPoleWooden_small_F","Land_LampDecor_F","Land_LampHalogen_F","Land_LampSolar_F","Land_LampStreet_small_F","Land_LampStreet_F","Land_LampAirport_F","Land_fs_roof_F"];
 
 _caller setVariable ["POWER",_onoff];

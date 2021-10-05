@@ -9,7 +9,7 @@ class SOG_BAG_recon_od;
 class B_AssaultPack_mcamo;
 class Kit_Bag_pince_TAN : B_AssaultPack_mcamo {
     maximumLoad = 450;
-};
+ };
 class SOG_BAG_BREACHER_tan : B_AssaultPack_mcamo {
     maximumLoad = 450;
  };
@@ -25,11 +25,38 @@ class Kit_Bag_pince_od : B_AssaultPack_mcamo {
 class SOG_BAG_BREACHER_od : B_AssaultPack_mcamo {
     maximumLoad = 450;
  };
-    
+
+class Kit_Bag_pince_blk : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+class SOG_BAG_BREACHER_blk : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+class SOG_BAG_med_od : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+class SOG_BAG_med_tan : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+class SOG_BAG_med_blk : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+class SOG_BAG_med_MC : B_AssaultPack_mcamo {
+    maximumLoad = 450;
+ };
+ 
+//class B_Bergen_Base;
+//class SOCOMD_drybag_od : B_Bergen_Base {
+//	maximumLoad = 450;
+//};
+//class SOCOMD_drybag_blk : B_Bergen_Base {
+//	maximumLoad = 450;
+//};
     
 class SOCOMD_BackpackPRC117F : Kit_Bag_R_MC {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
+	maximumLoad = 450;
 
     class TransportItems {
         TRANSPORT_ITEM(ACRE_PRC117F, 1)

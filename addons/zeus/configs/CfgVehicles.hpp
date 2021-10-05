@@ -67,7 +67,8 @@ class CfgVehicles
         displayName = "Toggle Translator";
         function = "socomd_zeus_fnc_ModuleToggleTranslator";
     };
-
+/*
+// Made redundant by ZEN & 3DEN Enhanced
     class SOCOMD_Module_CopyClipboardLoadout : SOCOMD_Module_Base
     {
         scopeCurator = 2;
@@ -78,6 +79,7 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModuleCopyClipboardLoadout";
     };
 
+// Made redundant by ZEN & 3DEN Enhanced
     class SOCOMD_Module_PasteClipboardLoadout : SOCOMD_Module_Base
     {
         scopeCurator = 2;
@@ -88,6 +90,7 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModulePasteClipboardLoadout";
     };
 
+// Made redundant by "Rotate Objects" module.
     class SOCOMD_Module_Flatten : SOCOMD_Module_Base
     {
         scopeCurator = 2;
@@ -98,6 +101,7 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModuleFlatten";
     };
 
+// Made redundant by ZEN's "Convoy Parameters" module.
     class SOCOMD_Module_ConvoyGroup : SOCOMD_Module_Base
     {
         scopeCurator = 2;
@@ -107,7 +111,7 @@ class CfgVehicles
         displayName = "Convoy Group";
         function = "socomd_zeus_fnc_ModuleConvoyGroup";
     };
-
+*/
     class SOCOMD_Module_ShowHitPoints : SOCOMD_Module_Base
     {
         scopeCurator = 2;

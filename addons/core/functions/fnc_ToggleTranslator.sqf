@@ -1,3 +1,4 @@
+// Move this to zeus\functions with its parent modules next commit
 #include "script_component.hpp"
 _args = _this;
 _target = _args select 0;

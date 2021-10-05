@@ -25,8 +25,8 @@ _counter = 0;
 
 {
     _switch = _x;
-    _switch addAction ["Power ON",{(_this select 3) execVM "\socomd_zeus\functions\power\fn_TogglePower.sqf";},[_logic,"AUTO", _triggers ,_Generators,true],1.5,true,false,"","true",3];
-    _switch addAction ["Power OFF",{(_this select 3) execVM "\socomd_zeus\functions\power\fn_TogglePower.sqf";},[_logic,"OFF", _triggers ,_Generators,true],1.5,true,false,"","true",3];
+    _switch addAction ["Power ON",{(_this select 3) execVM "\z\socomd\addons\zeus\functions\fnc_TogglePower.sqf";},[_logic,"AUTO", _triggers ,_Generators,true],1.5,true,false,"","true",3];
+    _switch addAction ["Power OFF",{(_this select 3) execVM "\z\socomd\addons\zeus\functions\fnc_TogglePower.sqf";},[_logic,"OFF", _triggers ,_Generators,true],1.5,true,false,"","true",3];
 } forEach _switches;
 
 _onoff = _logic getVariable "POWER";
