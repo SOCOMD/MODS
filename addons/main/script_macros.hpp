@@ -75,19 +75,21 @@ class _xx_##id { \
 #define ITEM_PRIMARY_GL                         "ACWP_M4A5_145_7rail_GL"
 #define ITEM_PRIMARY_M4                         "ACWP_M4A5_145_troy_base"
 #define ITEM_PRIMARY_MARKSMAN                   "ACWP_sr25"
-#define ITEM_PRIMARY_MACHINEGUN                 "CUP_lmg_L110A1_railed"
+#define ITEM_PRIMARY_MACHINEGUN                 "rhs_weap_minimi_para_railed"
+#define ITEM_PRIMARY_MACHINEGUN_762             "UK3CB_BAF_L110_762"
+#define ITEM_PRIMARY_GPMG                       "rhs_weap_fnmag"
 #define ITEM_PRIMARY_RECON                      "bnae_falkor_camo1_virtual"
-#define ITEM_PRIMARY_SMG                        "CUP_smg_MP5A5"
+#define ITEM_PRIMARY_SMG                        "UK3CB_MP5N"
 #define ITEM_PRIMARY_CREWMAN                    "SMA_Steyr_AUG_F"
 #define ITEM_MAGAZINE_556                       ACWP_30rnd_556x45_EPR_PMAG
 #define ITEM_MAGAZINE_556_TRACER                ACWP_30rnd_556x45_M_PMAG
 #define ITEM_MAGAZINE_556_BELT                  CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch
 #define ITEM_MAGAZINE_762                       20Rnd_762x51_Mag
-#define ITEM_MAGAZINE_762_BELT                  CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
-#define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
+#define ITEM_MAGAZINE_762_BELT                  SOCOMC_150_TE5_762x51_Belt
+#define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_250Rnd_TE5_762x51_Belt
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
 #define ITEM_MAGAZINE_BARRET                    Recon_Barret_mag
-#define ITEM_MAGAZINE_9MM                       CUP_30Rnd_9x19_MP5
+#define ITEM_MAGAZINE_9MM                       UK3CB_MP5_30Rnd_9x19_Magazine
 
 #define ITEM_DEFAULT_HANDGUN                    "ACWP_USP"
 #define ITEM_DEFAULT_HANDGUN_MAGAZINE           ACWP_18Rnd_9x21_Mag_USP

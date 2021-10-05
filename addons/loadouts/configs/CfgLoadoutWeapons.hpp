@@ -164,7 +164,7 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_ris_kag_NET            : Rifle_556 {};
 
     class MachineGun_556;
-    class CUP_lmg_L110A1_railed : MachineGun_556 {};
+    class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
     
 
     class CUP_lmg_minimi_railed    : MachineGun_556 {};

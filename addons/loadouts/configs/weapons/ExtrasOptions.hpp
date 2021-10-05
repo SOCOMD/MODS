@@ -42,7 +42,7 @@ class extras_medium_mg_support: extras_none{
 class extras_heavy_mg_support: extras_none{
     displayName = "MAG58 Assitant";
     bag[] = {
-        {SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M,2}
+        {ITEM_MAGAZINE_GPMG_BELT,2}
     };
 };
 class extras_at_assistant_mixed: extras_none{

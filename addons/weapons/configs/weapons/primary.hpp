@@ -227,6 +227,15 @@ class SPARTAN_EBR_snake_F : srifle_EBR_F {         //Camo
     magazineWell[] = {"CBA_762x51_HK417"};
 };
 
+class rhs_weap_saw_base;
+class ITEM_PRIMARY_MACHINEGUN : rhs_weap_saw_base {
+    displayName = "FN Minimi PARA";
+    magazineWell[] += {"CBA_556x45_MINIMI"};
+    ace_overheating_dispersion = 0.85; //Dispersion Factor (this will be scaled based on the barrel temp)
+    // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
+
+/*
 //Machine Gun 556
 class CUP_lmg_minimipara;
 class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
@@ -236,13 +245,6 @@ class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
     // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
 
-class CUP_lmg_L110A1;
-class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
-    displayName = "FN Minimi PARA";
-    magazineWell[] += {"CBA_556x45_MINIMI"};
-    ace_overheating_dispersion = 0.85; //Dispersion Factor (this will be scaled based on the barrel temp)
-    // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
-};
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
@@ -267,7 +269,7 @@ class SOCOMD_mag58: CUP_lmg_FNMAG_RIS {
         "M240_762x51"};
     magazines[]=
         {
-            "SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+            QUOTE(ITEM_MAGAZINE_GPMG_BELT)
         };
     ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
     ace_overheating_slowdownFactor = 1; //Slowdown Factor (this will be scaled based on the barrel temp)
@@ -293,7 +295,7 @@ class ej_m107 : ej_barrett_base {
     magazineWell[] = {"SOCOMD_Barret_MAG"};
     allowedSlots[]={901}; // 701 = vest, 801 = uniform, 901 = backpack
 };
-
+*/
 class bnae_trg42_camo2_virtual;
 
 class bnae_falkor_camo1_virtual;
@@ -350,6 +352,8 @@ class SOCOMD_falkor : bnae_falkor_camo1_virtual{
     };
 };*/
 //Russian Gun
+/*
+// CUP STUFF
 class CUP_arifle_AK104_railed;
 class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
     displayName="RU-AK-104 (Modified)";
@@ -398,15 +402,6 @@ class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
             "CUP_60Rnd_TE1_White_Tracer_545x39_AK74M_M",
             "CUP_60Rnd_TE1_Yellow_Tracer_545x39_AK74M_M"
         };
-    /*class Single {
-        dispersion=0.00015;
-    };
-    class Burst {
-        dispersion=0.00015;
-    };
-    class FullAuto {
-        dispersion=0.00015;
-    };*/
     aiDispersionCoefY=4;
     aiDispersionCoefX=4;
 };
@@ -678,3 +673,4 @@ class SOCOMD_ALFA_PP19_acc: CUP_smg_vityaz_vfg_front_rail{
         };
     };
 };
+*/

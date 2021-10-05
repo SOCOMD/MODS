@@ -12,12 +12,12 @@ class ACWP_30rnd_556x45_M_PMAG;
 class ACWP_18Rnd_9x21_Mag_USP;
 
 class CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M;
-class CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M {
+class ITEM_MAGAZINE_762_BELT: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M {
     count = 100;
     mass = 40;
 };
 
-class SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M{
+class ITEM_MAGAZINE_GPMG_BELT: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M{
     displayName="250rnd Mag 58 Box";
     count=250;
     ammo="CUP_B_762x51_Tracer_Red";

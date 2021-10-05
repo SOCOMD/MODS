@@ -139,7 +139,7 @@
 
 #define SOLS_RIFLES \
    "SMA_Steyr_AUG_F",\
-    "CUP_smg_MP5A5"
+    QUOTE(ITEM_PRIMARY_SMG)
     
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
@@ -162,15 +162,11 @@
     "ACE_HuntIR_M203"
 
 #define MACHINE_GUN \
-    "CUP_lmg_L110A1_railed",\
-    "CUP_lmg_minimi_railed",\
-    "CUP_lmg_Mk48_nohg",\
-    "CUP_lmg_Mk48_nohg_des",\
-    "CUP_lmg_Mk48_nohg_tan",\
-    "CUP_lmg_Mk48_nohg_wdl",\
+    QUOTE(ITEM_PRIMARY_MACHINEGUN),\
+    QUOTE(ITEM_PRIMARY_MACHINEGUN_762)\
     QUOTE(ITEM_MAGAZINE_556_BELT),\
     QUOTE(ITEM_MAGAZINE_762_BELT),\
-    "SOCOMD_mag58"
+    QUOTE(ITEM_MAGAZINE_GPMG_BELT)
 
 #define MARKSMAN \
     "SPARTAN_EBR_black_F",\

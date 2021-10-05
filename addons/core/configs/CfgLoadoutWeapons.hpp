@@ -31,12 +31,12 @@ class CfgLoadoutWeapons {
 
     class MachineGun_762 {
         magazines[] = {
-            {"CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 6}
+            {QUOTE(ITEM_MAGAZINE_762_BELT), 6}
         };
     };
     class MachineGun_762_heavy {
         magazines[] = {
-            {"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 6}
+            {QUOTE(ITEM_MAGAZINE_GPMG_BELT), 6}
         };
     };
 
