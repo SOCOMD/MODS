@@ -760,7 +760,7 @@ class SOCOMD_Logistician {
 // Pilot
 
 class SOCOMD_Pilot {
-    primary         = ITEM_PRIMARY_SMG;
+    primary         = ITEM_PRIMARY_PILOT;
     secondary         = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);

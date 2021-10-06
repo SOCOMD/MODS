@@ -77,8 +77,8 @@ class _xx_##id { \
 #define ITEM_PRIMARY_MARKSMAN                   "ACWP_sr25"
 #define ITEM_PRIMARY_MACHINEGUN                 "CUP_lmg_L110A1_railed"
 #define ITEM_PRIMARY_RECON                      "bnae_falkor_camo1_virtual"
-#define ITEM_PRIMARY_SMG                        "CUP_smg_MP5A5"
-#define ITEM_PRIMARY_CREWMAN                    "SMA_Steyr_AUG_F"
+#define ITEM_PRIMARY_PILOT                      "ACWP_M4A5_145_ris_base"
+#define ITEM_PRIMARY_CREWMAN                    "ACWP_M4A5_145_ris_base"
 #define ITEM_MAGAZINE_556                       ACWP_30rnd_556x45_EPR_PMAG
 #define ITEM_MAGAZINE_556_TRACER                ACWP_30rnd_556x45_M_PMAG
 #define ITEM_MAGAZINE_556_BELT                  CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch

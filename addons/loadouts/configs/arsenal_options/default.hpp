@@ -138,8 +138,26 @@
     "SMA_HK417vfg"
 
 #define SOLS_RIFLES \
-   "SMA_Steyr_AUG_F",\
-    "CUP_smg_MP5A5"
+    "ACWP_M4A5_145_ris_base",\
+    "ACWP_M4A5_145_ris_ROE",\
+    "ACWP_M4A5_145_ris_afg",\
+    "ACWP_M4A5_145_ris_tango",\
+    "ACWP_M4A5_145_ris_kag",\
+    "ACWP_M4A5_145_ris_base_DON",\
+    "ACWP_M4A5_145_ris_ROE_DON",\
+    "ACWP_M4A5_145_ris_afg_DON",\
+    "ACWP_M4A5_145_ris_tango_DON",\
+    "ACWP_M4A5_145_ris_kag_DON",\
+    "ACWP_M4A5_145_ris_base_tan",\
+    "ACWP_M4A5_145_ris_ROE_tan",\
+    "ACWP_M4A5_145_ris_afg_tan",\
+    "ACWP_M4A5_145_ris_tango_tan",\
+    "ACWP_M4A5_145_ris_kag_tan",\
+    "ACWP_M4A5_145_ris_base_NET",\
+    "ACWP_M4A5_145_ris_ROE_NET",\
+    "ACWP_M4A5_145_ris_afg_NET",\
+    "ACWP_M4A5_145_ris_tango_NET",\
+    "ACWP_M4A5_145_ris_kag_NET"
     
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
@@ -340,6 +358,7 @@
 
 #define PILOT_UNIFORMS \
     "SOLS_tshirt"
+
 
 #define ONE_COMM_RIGS \
     "vss_04_RG",\
@@ -875,12 +894,15 @@ class SOCOMD_AO{
     class uniforms{
         arid_uniforms[]={
             MC_UNIFORMS
+            PILOT_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
+            PILOT_UNIFORMS
         };
         snow_uniforms[]={
             SNOW_UNIFORMS
+            
         };
     };
     weapons[]={
