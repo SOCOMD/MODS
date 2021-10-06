@@ -9,8 +9,7 @@ class SOCOMD_Item_Primary_Sapper                    : ACWP_M4A5_145_troy_base {s
 class SOCOMD_Item_Primary_MachineGunner             : CUP_lmg_L110A1_railed {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Primary_Recon                     : hlc_rifle_awmagnum {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Primary_AT                        : ACWP_M4A5_145_troy_base {scope = SCOPE_PROTECTED;};
-class SOCOMD_Item_Primary_Pilot                       : ACWP_M4A5_145_ris_base {scope = SCOPE_PROTECTED;};
-class SOCOMD_Item_Primary_Crewman                     : ACWP_M4A5_145_ris_base {scope = SCOPE_PROTECTED;};
+class SOCOMD_Item_Primary_SOLS                      : ACWP_M4A5_145_ris_base {scope = SCOPE_PROTECTED;};
 
 class SOCOMD_Item_Secondary_AT                      : SOCOMD_LAW {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Secondary_MAT                        : SOCOMD_Carl_Gustav {scope = SCOPE_PROTECTED;};

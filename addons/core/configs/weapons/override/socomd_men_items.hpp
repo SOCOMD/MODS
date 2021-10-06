@@ -9,8 +9,7 @@ class SOCOMD_Item_Primary_Sapper                    : arifle_SPAR_01_blk_F {scop
 class SOCOMD_Item_Primary_MachineGunner             : LMG_03_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Primary_Recon                     : srifle_LRR_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Primary_AT                        : arifle_SPAR_01_blk_F {scope = SCOPE_PROTECTED;};
-class SOCOMD_Item_Primary_Pilot                     : SMG_05_F {scope = SCOPE_PROTECTED;};
-class SOCOMD_Item_Primary_Crewman                   : SMG_05_F {scope = SCOPE_PROTECTED;};
+class SOCOMD_Item_Primary_SOLS                     : SMG_05_F {scope = SCOPE_PROTECTED;};
 
 class SOCOMD_Item_Handgun_TroopLeader               : DSO_hgun_Pistol_heavy_01_blk_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Handgun_PatrolLeader              : DSO_hgun_Pistol_heavy_01_blk_F {scope = SCOPE_PROTECTED;};
