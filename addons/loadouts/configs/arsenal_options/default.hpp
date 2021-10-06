@@ -893,11 +893,11 @@ class SOCOMD_Crewman{
 class SOCOMD_AO{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            MC_UNIFORMS,
             PILOT_UNIFORMS
         };
         temperate_uniforms[]={
-            AMCU_UNIFORMS
+            AMCU_UNIFORMS,
             PILOT_UNIFORMS
         };
         snow_uniforms[]={
