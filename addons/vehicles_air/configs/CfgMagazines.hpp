@@ -23,8 +23,8 @@ class CfgMagazines {
     class CUP_PylonPod_7Rnd_Rocket_FFAR_M : CUP_14Rnd_FFAR_M {
         mass=100;
         hardpoints[] += {
-            "RightMount_MELB",
-            "LeftMount_MELB"
+            "RightMount_MELB_SOCOMD",
+            "LeftMount_MELB_SOCOMD"
         };
     };
     class CUP_19Rnd_CRV7_FAT_M;
@@ -51,8 +51,8 @@ class CfgMagazines {
             "CUP_NATO_HELO_SMALL",
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
-            "RightMount_MELB",
-            "LeftMount_MELB",
+            "RightMount_MELB_SOCOMD",
+            "LeftMount_MELB_SOCOMD",
             "SOCOMD_HURRICANE_PYLON"
         };
     };
@@ -66,8 +66,8 @@ class CfgMagazines {
             "CUP_NATO_HELO_SMALL",
             "CUP_NATO_HELO_LARGE",
             "RHS_HP_MELB",
-            "RightMount_MELB",
-            "LeftMount_MELB",
+            "RightMount_MELB_SOCOMD",
+            "LeftMount_MELB_SOCOMD",
             "SOCOMD_HURRICANE_PYLON"
         };
     };
@@ -134,8 +134,8 @@ class CfgMagazines {
             "CUP_NATO_HELO_WINGTIP",
             "CUP_1Rnd_AIM_9L",
             "SOCOMD_HURRICANE_PYLON",
-            "RightMount_MELB",
-            "LeftMount_MELB"
+            "RightMount_MELB_SOCOMD",
+            "LeftMount_MELB_SOCOMD"
         };
         mass = 50;
     };
@@ -169,12 +169,12 @@ class CfgMagazines {
         hardpoints[] = {""};
     };
     class 1300Rnd_127x99_mag_Tracer_Red_MELB;
-    // class Pylon_L_1300Rnd_GAU19_MELB : 1300Rnd_127x99_mag_Tracer_Red_MELB {
-    //     hardpoints[] = {""};
-    // };
-    // class Pylon_R_1300Rnd_GAU19_MELB : Pylon_L_1300Rnd_GAU19_MELB {
-    //     hardpoints[] = {""};
-    // };
+    class Pylon_L_1300Rnd_GAU19_MELB : 1300Rnd_127x99_mag_Tracer_Red_MELB {
+        hardpoints[] = {""};
+    };
+    class Pylon_R_1300Rnd_GAU19_MELB : Pylon_L_1300Rnd_GAU19_MELB {
+        hardpoints[] = {""};
+    };
 
     class M229_Magazine_MELB;
     class Pylon_HE_3x_M260_MELB : M229_Magazine_MELB {
@@ -252,7 +252,7 @@ class CfgMagazines {
     class DAGR_Magazine_MELB;
     class Pylon_DAGR_MELB : DAGR_Magazine_MELB {
         mass=200;
-        hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};
+        hardpoints[] = {"RightMount_MELB_SOCOMD","LeftMount_MELB_SOCOMD"};
         displayName = "4x DAGR [ACE]";
     };
 

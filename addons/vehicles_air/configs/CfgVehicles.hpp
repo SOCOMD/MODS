@@ -1,34 +1,6 @@
     
 //////////////////////////////////////////////////////////////////////////////////
 // Jet Misc
-class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
-class SensorTemplateActiveRadar;
-class SensorTemplateIR;
-class SensorTemplateVisual;
-class SensorTemplateMan;
-class SensorTemplateLaser;
-class SensorTemplateNV;
-class SensorTemplateDataLink;
-class DefaultVehicleSystemsDisplayManagerLeft
-{
-    class components;
-};
-class DefaultVehicleSystemsDisplayManagerRight
-{
-    class components;
-};
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
-{
-    class components;
-};
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
-{
-    class components;
-};
-class Eventhandlers;
-////////////////////
-class NoDust{};
 class CfgVehicles {
     class Helicopter;
 
@@ -229,7 +201,7 @@ class CfgVehicles {
                     maxAngleY=0;
                     initFov="(0.25 / 0.4)"; //1x
                     minFov="(0.25 / 0.4)";
-                    maxFov="(0.25 / 0.4";
+                    maxFov="(0.25 / 0.4)";
                     directionStabilized=1;
                     visionMode[]=
                     {

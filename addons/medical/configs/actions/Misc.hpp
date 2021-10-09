@@ -14,20 +14,20 @@ class BodyBag: BasicBandage {
 class SurgicalKit: FieldDressing {};
 class PersonalAidKit: BasicBandage {};
 class larynxtubus {
-    displayName = "$STR_socomd_medical_Larynx_Display";
-    displayNameProgress = "$STR_socomd_medical_Larynx_action";
+    displayName = "Insert Advanced Airway";
+    displayNameProgress = "Inserting i-Gel...";
 };
 class Guedeltubus:larynxtubus {
-    displayName = "$STR_socomd_medical_Guedel_Display";
-    displayNameProgress = "$STR_socomd_medical_Guedel_action";
+    displayName = "Insert Basic Airway";
+    displayNameProgress = "Inserting NPA...";
 };
 class Overstretch: larynxtubus {
-    displayName = "$STR_socomd_medical_overstretch";
-    displayNameProgress = "$STR_socomd_medicaloverstretching";
+    displayName = "Hyperextending Head";
+    displayNameProgress = "Tilting...";
 };
 class TurnAround: larynxtubus {
-    displayName = "$STR_socomd_medical_turnaround";
-    displayNameProgress = "$STR_socomd_medical_turnaround_action";
+    displayName = "Manually Remove Debris";
+    displayNameProgress = "Manually removing debris...";
 };
 
 class TensionpneumothoraxTreatment {

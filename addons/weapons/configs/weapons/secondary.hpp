@@ -9,8 +9,13 @@ class CUP_launch_Javelin; //HAT
 // class CUP_launch_RPG7V;
 class SOCOMD_RPG7 : CUP_launch_RPG7V {};
 // law
-class WeaponSlotsInfo;
-class CUP_launch_M72A6_Loaded;
+class Launcher;
+class Launcher_Base_F: Launcher {
+    class WeaponSlotsInfo;
+};
+class CUP_launch_M72A6_Loaded:Launcher_Base_F{
+    class WeaponSlotsInfo;
+};
 class SOCOMD_LAW_Loaded : CUP_launch_M72A6_Loaded {
     magazines[] = {"SOCOMD_M72_Rocket"};
     baseWeapon = "SOCOMD_LAW_Loaded";
@@ -42,11 +47,6 @@ class SOCOMD_LAW_Used: SOCOMD_LAW_Loaded
     };
 };
 
-class Launcher;
-    class Launcher_Base_F: Launcher
-    {
-        class WeaponsSlotsInfo;
-    };
     class twc_2inch_bag: Launcher_Base_F
     {
         author = "[TWC] Rik & [TWC] lockoncap";

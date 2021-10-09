@@ -17,6 +17,7 @@ class Car_F : Car {
     class textureSources;
     
     class Turrets {
+        class CargoTurret;
         class MainTurret : NewTurret {};
     };
     class Components : Components {
@@ -76,10 +77,10 @@ class Car_F : Car {
         };
     };
 };
-class CargoTurret;
 class Quadbike_01_base_F : Car_F{
     class Turrets
     {
+        class CargoTurret;
         class CargoTurret_01 : CargoTurret
         {
             gunnerGetInAction = "GetInLOW";

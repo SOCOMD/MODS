@@ -6,7 +6,6 @@ class HeadgearItem;
 
 
 // Monk's helmets
-class ItemInfo;
 class acwp_airframe_mc_ct3_light_strap;
 class acwp_airframe_mc_ct3_light;
 class acwp_airframe_mc_light_strap;
