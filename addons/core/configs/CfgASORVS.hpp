@@ -21,6 +21,10 @@ class CfgASORVS {
             "SOCOMD_TRUCK_TRANSPORT_A",
             "SOCOMD_TRUCK_AMMO_A",
             "SOCOMD_TRUCK_FUEL_A",
+            "SOCOMD_SOV_HMG_D",
+            "SOCOMD_SOV_HMG_W",
+            "SOCOMD_SOV_GMG_D",
+            "SOCOMD_SOV_GMG_W",
             "SOCOMD_TRUCK_REPAIR_A",
             "SOCOMD_BIKE",
             "SOCOMD_QUADBIKE"

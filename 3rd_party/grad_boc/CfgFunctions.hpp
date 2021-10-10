@@ -1,4 +1,4 @@
-#define REDIRECT_PATH "\grad_boc\functions\zade_boc\fn_redirectFunction.sqf"
+#define REDIRECT_PATH "\grad_boc\functions\zade_boc\fn_redirectFunction.sqf";
 
 class CfgFunctions
 {

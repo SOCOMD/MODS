@@ -71,24 +71,4 @@ class CfgAmmo {
     class CUP_B_145x115_AP_Green_Tracer : BulletBase {
         cost = 1; // was 22
     };
-///////////////// Counter Meassure Immunity /////////////////////////////////////////
-    class CUP_M_9K38_Igla_AA
-    {
-        cmImmunity = 0.60;
-    };
-
-    class CUP_M_Stinger_AA
-    {
-        cmImmunity = 0.75;
-    };
-    
-    class CUP_M_9M311_Tunguska_AA
-    {
-        cmImmunity = 0.85;
-    };
-
-    class CUP_M_9M311M_Tunguska_AA
-    {
-        cmImmunity = 0.85;
-    };
 };

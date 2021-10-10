@@ -15,7 +15,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"socomd_core","CUP_AirVehicles_LoadOrder"};
+        requiredAddons[] = {"socomd_core"};
         author = "";
         authors[] = {"SOCOMD J4"};
         authorUrl = "https://socomd.com";
