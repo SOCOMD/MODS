@@ -357,7 +357,7 @@
     "USP_PCU_G3C_KP_MC_GRY_RECON"
 
 #define PILOT_UNIFORMS \
-    "SOLS_tshirt" \
+    "SOLS_tshirt",\
     "USP_TSHIRT_G3C_MC_SOCOMD"
 
 
