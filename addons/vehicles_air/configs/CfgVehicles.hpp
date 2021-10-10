@@ -241,7 +241,7 @@ class CfgVehicles {
                     maxFov="(0.25  / 10.4)";
                     gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
                 };
-                class 2xSuperNarrow: Wide
+                class SuperNarrow2: Wide
                 {
                     opticsDisplayName="2xSNFOV";
                     initFov="(0.25  / 20.85)"; //50x
@@ -249,7 +249,7 @@ class CfgVehicles {
                     maxFov="(0.25  / 20.85)";
                     gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
                 };
-                class 3xSuperNarrow: Wide
+                class SuperNarrow3: Wide
                 {
                     opticsDisplayName="3xSNFOV";
                     initFov="(0.25  / 31.25)"; //75x

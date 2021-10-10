@@ -54,25 +54,41 @@ class CfgAmmo {
     class CUP_B_762x51_Tracer_Red;
     class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
         hit=2.5;
-        suppressionRadiusBulletClose = 2;
-        suppressionRadiusHit = 0.5;
+        dangerRadiusBulletClose = 25;
+        suppressionRadiusBulletClose = 7.5;
+        suppressionRadiusHit = 5;
     };
     
     class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
     {
         cost = 3;
-        hit = 30;
-        indirectHit = 7;
-        indirectHitRange = 1;
-        dangerRadiusBulletClose = 20;
-        explosive = 0.3;
-        explosionEffects = ExploAmmoExplosion;
-        suppressionRadiusBulletClose = 7;
-        suppressionRadiusHit = 4;
+        dangerRadiusBulletClose = 50;
+        suppressionRadiusBulletClose = 15;
+        suppressionRadiusHit = 10;
     };
     #include "ammo\CUP_Sh_PG15V.hpp"
     // BTR and BDRM primary
     class CUP_B_145x115_AP_Green_Tracer : BulletBase {
         cost = 1; // was 22
+    };
+///////////////// Counter Meassure Immunity /////////////////////////////////////////
+    class CUP_M_9K38_Igla_AA
+    {
+        cmImmunity = 0.60;
+    };
+
+    class CUP_M_Stinger_AA
+    {
+        cmImmunity = 0.75;
+    };
+    
+    class CUP_M_9M311_Tunguska_AA
+    {
+        cmImmunity = 0.85;
+    };
+
+    class CUP_M_9M311M_Tunguska_AA
+    {
+        cmImmunity = 0.85;
     };
 };

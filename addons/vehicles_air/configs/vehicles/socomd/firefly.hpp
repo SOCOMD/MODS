@@ -74,7 +74,7 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
         {-1.16, 0.78, -0.065},
         { 1.16, 0.78, -0.065}
     };
-    displayname = "Firefly (2/6)";
+    displayname = "MH-6M Little Bird (2/6)";
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
     typicalCargo[] = {SOCOMD_PILOT};
@@ -126,9 +126,9 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
             material = -1;
         };
         class HitGlass1 : HitGlass1 {
-            armor = 1.0;
-            passThrough = 1.0;
-            explosionShielding = 0.0;
+            armor = 1.75;
+            passThrough = 0.5;
+            explosionShielding = 0.5;
             minimalHit = 0.1;
             material = -1;
         };
@@ -171,7 +171,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     side = WEST;
     author = AUTHOR_STR;
     faction = FACTION_STR;
-    displayname = "Dragonfly (2/1)";
+    displayname = "AH-6M Little Bird (2/1)";
     typicalCargo[] = {SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
