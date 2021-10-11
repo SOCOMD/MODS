@@ -13,9 +13,6 @@ class CfgPatches {
         units[] = {
             "SOCOMD_Module_ToggleUndercover",
             "SOCOMD_Module_ToggleTranslator",
-
-
-
             "SOCOMD_Module_ShowHitPoints",
             "SOCOMD_Module_JamWeapon",
             "SOCOMD_Module_ModuleGenerateUnitConfig",
