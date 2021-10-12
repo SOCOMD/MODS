@@ -15,7 +15,7 @@ class CfgASORVS {
         SOCOMD_Core[] = {
             "SOCOMD_APC_A",
             "SOCOMD_APC_B",
-            // "SOCOMD_APC_C",
+            "SOCOMD_LR_ATV",
             "SOCOMD_BUSHMASTER_TRANS",
             "SOCOMD_BUSHMASTER_HMG",
             "SOCOMD_TRUCK_TRANSPORT_A",
