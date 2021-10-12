@@ -15,8 +15,8 @@ enableRadio false;
 //    };
 //};
 
-missionNamespace setVariable ["SOCOMD_InitComplete", 1];
-
 // Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
 sleep 0.2;
 enableEnvironment [false, true];
+
+missionNamespace setVariable ["SOCOMD_InitComplete", 1];
