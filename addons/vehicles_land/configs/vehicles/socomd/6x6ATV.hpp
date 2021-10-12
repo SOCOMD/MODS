@@ -17,7 +17,7 @@ class NDS_6x6_ATV_base: Car_F
             "D2",
             1.5,
             "D3",
-            1.1
+            1.1,
             "D4",
             0.75
             "D5",
