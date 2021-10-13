@@ -1,5 +1,6 @@
 PREP(addGrenades);
 PREP(addHandgunAmmo);
+PREP(addInventoryWeaponAmmo);
 PREP(addPrimaryAmmo);
 PREP(addSecondaryAmmo);
 PREP(CanToggleDiving);

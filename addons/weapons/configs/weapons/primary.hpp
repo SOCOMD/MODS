@@ -54,6 +54,7 @@ class CUP_sgun_M1014_base: Rifle_Base_F {
 };
 class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
     displayname = "SOCOMD Benelli M4 Entry";
+    magazineWell[] = {"SOCOMD_Breaching"};
 };
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {        /// WIP Retexturing
     hiddenSelections[]=

@@ -95,8 +95,8 @@ class B_338LM_APDS: B_338LM_Ball
         distance=1;
     };
 };
-class B_12Gauge_Pellets_Submunition;
-class CUP_B_12Gauge_Pellets: B_12Gauge_Pellets_Submunition
-{
-    cartridge = "FxCartridge_slug";
+class CUP_12Gauge_Slug;
+class SOCOMD_BreachingRound:CUP_12Gauge_Slug{
+    caliber = 0.2;
+    hit=3;
 };

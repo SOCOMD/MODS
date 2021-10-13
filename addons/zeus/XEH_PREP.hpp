@@ -1,12 +1,12 @@
-//PREP(ModuleConvoyGroup);
-//PREP(ModuleCopyClipboardLoadout);
+PREP(ModuleConvoyGroup);
+PREP(ModuleCopyClipboardLoadout);
 PREP(ModuleDisableAI);
 PREP(ModuleEnableAI);
-//PREP(ModuleFlatten);
+PREP(ModuleFlatten);
 PREP(ModuleForgetPlayers);
 PREP(ModuleGenerateUnitConfig);
 PREP(ModuleJamWeapon);
-//PREP(ModulePasteClipboardLoadout);
+PREP(ModulePasteClipboardLoadout);
 PREP(ModulePowerGenerator);
 PREP(ModulePowerGrid);
 PREP(ModuleRevealPlayers);

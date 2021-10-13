@@ -8,7 +8,9 @@ class CfgLoadoutWeapons {
 
     class RifleGL_556 { 
         magazines[] = {
-            {"ACWP_30rnd_556x45_EPR_PMAG", 8},
+            {"ACWP_30rnd_556x45_EPR_PMAG", 8}
+        };
+        grenades[] = {
             {"1Rnd_HE_Grenade_shell", 8}
         };
         commandGrenades[] = {
@@ -45,6 +47,13 @@ class CfgLoadoutWeapons {
             {"20Rnd_762x51_Mag", 8}
         };
     };
+
+    class Breacher_Shotgun{
+        magazines[]={
+            {"SOCOMD_Breaching_Slug",18}
+        };
+    };
+
     class Sniper_762x54R {
         magazines[] = {
             {"CUP_10Rnd_762x54_SVD_M", 14}

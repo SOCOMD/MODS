@@ -186,6 +186,7 @@ _closedEh = ["ace_socomd_arsenal_displayClosed", {
     [ACE_Player, primaryWeapon ACE_Player] call FUNC(addPrimaryAmmo);
     [ACE_Player, secondaryWeapon ACE_Player] call FUNC(addSecondaryAmmo);
     [ACE_Player, handgunWeapon ACE_Player] call FUNC(addHandgunAmmo);
+    [ACE_Player] call FUNC(addInventoryWeaponAmmo);
     if(_grenadesOption != "default") then {
         [ACE_Player,_grenadesOption] call ace_socomd_arsenal_fnc_addSelection;
     } else {

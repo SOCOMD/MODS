@@ -266,6 +266,8 @@ class CfgLoadoutWeapons {
             {"CUP_30Rnd_9x19_MP5", 8}
         };
     };
+    class Breacher_Shotgun;
+    class SOCOMD_Shotgun:Breacher_Shotgun{};
 
     // SSO WEAPONS 
     class Rifle_545;

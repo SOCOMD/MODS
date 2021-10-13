@@ -49,4 +49,9 @@ class CfgMagazineWells {
             "SOCOMD_Item_Magazine_45ACP_11Rnd"
         };
     };
+    class SOCOMD_Breaching{
+        SOCOMD_mags[] = {
+            "SOCOMD_Breaching_Slug"
+        };
+    };
 };

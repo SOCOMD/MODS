@@ -63,7 +63,6 @@ class CfgPatches {
 #include "configs\CfgMoves.hpp"
 
 #include "configs\CfgMagazines.hpp"
-#include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CfgAmmo.hpp"

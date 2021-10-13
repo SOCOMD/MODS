@@ -53,3 +53,8 @@ class SOCOMD_M72_Rocket : CA_LauncherMagazine {
     mass = 50;
     allowedslots[] = {701, 801, 901};
 };
+class CUP_1Rnd_12Gauge_Slug;
+class SOCOMD_Breaching_Slug: CUP_1Rnd_12Gauge_Slug{
+    ammo = SOCOMD_BreachingRound;
+    displayName = "Breaching Round";
+};
