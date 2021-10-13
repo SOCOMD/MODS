@@ -136,7 +136,6 @@ class _xx_##id { \
 #define ITEM_BACKPACK_PILOT                      "SOG_BAG_recon_od"
 #define ITEM_BACKPACK_CREWMAN                    "KIT_BAG_MC"
 
-#define PILOT_MAGNIFICATION_LIMIT                "1x"
 #define LOW_MAGNIFICATION_LIMIT                  "2x"
 #define STANDARD_MAGNIFICATION_LIMIT             "4x"
 #define MARKSMAN_MAGNIFICATION_LIMIT             "6x"

@@ -602,7 +602,7 @@ class SOCOMD_LOWVIS_Pilot {
     headgear         = "SOCOMD_Headgear_Pilot";
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
+    maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
         type = "CUP_I_B_PMC_Unit_42";

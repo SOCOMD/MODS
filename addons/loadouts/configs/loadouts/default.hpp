@@ -769,7 +769,7 @@ class SOCOMD_Pilot {
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
+    maxOptic        = LOW_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
     class Uniform {
