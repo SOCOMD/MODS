@@ -194,7 +194,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     armor = 30;
     armorStructural = 4;
     magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
-    weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
+    weapons[] = {"MARM_SAFE_MELB","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
   
     
     class AcreIntercoms { 
@@ -250,7 +250,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     attachment = "";
                     priority = 2;
                     maxweight = 200;
-                    UIposition[] = {99,99};
+                   UIposition[] = {99,99};
                 };
                 
                 class R_Rockets_3x: R_Rockets_12x {
@@ -258,7 +258,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     attachment = "";
                     priority = 1;
                     maxweight = 200;
-                    UIposition[] = {99,99};
+                   UIposition[] = {99,99};
                 };
                 
                 class R_HellfireRack_R_slot: R_Pylon {
@@ -266,10 +266,10 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     hardpoints[] = {"HellfireRail_MELB"};
                     attachment = "";
                     maxweight = 80;
-                    UIposition[] = {99,99};
+                    UIposition[] = {0.04,0.45};
                 };
                 class R_HellfireRack_L_slot: R_HellfireRack_R_slot {
-                    UIposition[] = {99,99};
+                    UIposition[] = {0.225,0.45};
                 };
             
                 // keep x2
@@ -286,14 +286,12 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     UIposition[] = {0.415,0.325};
                 };
 
-                
-
                 class L_HellfireRack_R_slot: R_HellfireRack_R_slot {
-                    UIposition[] = {99,99};
+                    UIposition[] = {0.405,0.45};
                     mirroredMissilePos = 6;
                 };
                 class L_HellfireRack_L_slot: R_HellfireRack_R_slot {
-                    UIposition[] = {99,99};
+                    UIposition[] = {0.58,0.45};
                     mirroredMissilePos = 5;
                 };    
                         
