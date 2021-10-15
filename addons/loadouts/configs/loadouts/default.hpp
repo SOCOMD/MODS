@@ -20,7 +20,7 @@
     LOADOUT_ITEM(KAT_guedel, 2)
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
-    LOADOUT_ITEM(ItemAndroid, 1)\
+    LOADOUT_ITEM(ItemAndroid, 1) \
     LOADOUT_ITEM(ItemcTabHCam, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
@@ -31,7 +31,7 @@
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTab, 1)\
+    LOADOUT_ITEM(ItemcTab, 1) \
     LOADOUT_ITEM(ItemcTabHCam, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
@@ -42,6 +42,7 @@
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
+    LOADOUT_ITEM(ItemAndroid, 1) \
     LOADOUT_ITEM(ItemcTabHCam, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \

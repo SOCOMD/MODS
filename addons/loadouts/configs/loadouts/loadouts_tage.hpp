@@ -1,3 +1,6 @@
+// Defunct atm. Needs updating. 
+// #include default.hpp
+
 ///Counter Terrorism
 class TAGE_TroopLeader
 {

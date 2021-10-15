@@ -1,3 +1,6 @@
+// Defunct atm. Needs updating. 
+// #include default.hpp
+
 ///Russian LOWVIS (DMOCOS)
     
 class SOCOMD_LOWVIS_Commander {

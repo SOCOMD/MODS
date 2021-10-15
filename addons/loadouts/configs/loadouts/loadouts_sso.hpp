@@ -1,3 +1,6 @@
+// Defunct atm. Needs updating. 
+// #include default.hpp
+
 ///Russian SSO (DMOCOS)
     
 class SOCOMD_SSO_Commander {
