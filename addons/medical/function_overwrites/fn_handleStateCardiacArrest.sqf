@@ -23,7 +23,7 @@ if (_timeDiff >= 1) then {
     _timeLeft = _timeLeft - _timeDiff; // negative values are fine
     _totalTimeLeft = _totalTimeLeft - _totalTimeDiff; // negative values are fine
     if(isPlayer _unit) then {
-        _message = format ["%1",_timeLeft];
+        _message = format ["%1",(ceil _timeLeft)];
         [_message, false, 5, 3] call ace_common_fnc_displayText;
     };
     _unit setVariable ["ace_medical_statemachine_cardiacArrestTimeLeft", _timeLeft];
