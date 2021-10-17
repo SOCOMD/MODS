@@ -138,6 +138,8 @@ class SOCOMD_Unarmed {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
         };
@@ -160,6 +162,8 @@ class SOCOMD_Commander {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -210,6 +214,8 @@ class SOCOMD_TACP {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -258,6 +264,8 @@ class SOCOMD_Leader {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -307,6 +315,8 @@ class SOCOMD_Rifleman {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -347,6 +357,8 @@ class SOCOMD_Breacher {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -391,6 +403,8 @@ class SOCOMD_Marksman {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -428,6 +442,8 @@ class SOCOMD_Sapper {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -476,6 +492,8 @@ class SOCOMD_MachineGunner {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -514,6 +532,8 @@ class SOCOMD_Medic {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
         };
@@ -579,6 +599,8 @@ class SOCOMD_AO{
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_AO_ESSENTIALS
         };
@@ -646,6 +668,8 @@ class SOCOMD_AT {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -686,6 +710,8 @@ class SOCOMD_Recon {
 
     class Uniform {
         type = ITEM_RECON_UNIFORM;
+        Arid = ITEM_RECON_UNIFORM;
+        Woodland = ITEM_RECON_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -732,6 +758,8 @@ class SOCOMD_Logistician {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -775,6 +803,8 @@ class SOCOMD_Pilot {
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
             LOADOUT_PILOT_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL

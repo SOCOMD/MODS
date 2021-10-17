@@ -52,7 +52,7 @@ if(not isNull _uniformConfig) then
 {
     _uniformType = call FUNC(GetWorldUniform);
     _loadoutUniformType = getText (_uniformConfig >> "type");
-    if(!(_loadoutUniformType == "")) then {
+    if(!(_loadoutUniformType == "") && (_uniformType == "")) then {
         _uniformType = _loadoutUniformType;
     };
     
