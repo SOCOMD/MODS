@@ -103,8 +103,10 @@ class _xx_##id { \
 
 // uniforms
 #define ITEM_DEFAULT_UNIFORM                    "USP_G3C_KP_MC_SOCOMD"
+#define ITEM_DEFAULT_UNIFORM_AMCU               "USP_G3C_KP_AMCU_SOCOMD"
 #define ITEM_SNOW_UNIFORM                       "USP_OVERWHITE_G3C_KP_MC_SOCOMD"
 #define ITEM_RECON_UNIFORM                      "USP_G3C_KP_MC_RECON"
+#define ITEM_RECON_UNIFORM_AMCU                 "USP_G3C_KP_AMCU_RECON"
 #define ITEM_RECON_SNOW_UNIFORM                 "USP_OVERWHITE_G3C_KP_MC_RECON"
 
 // vests

@@ -396,3 +396,397 @@ class USP_OVERWHITE_G3C_KP_OR6_MC_RECON: USP_OVERWHITE_G3C_KP_OR{
     picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
     hiddenSelectionsTextures[] = {"","\usp_gear_body\model\tx\usp_g3c_pants_mc_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
 };
+class USP_OVERWHITE_G3C_AMCU_SOCOMD: USP_OVERWHITE_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX2_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX2_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX3_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX3_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX4_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX4_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX5_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX5_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX6_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX6_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX7_AMCU_SOCOMD: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX7 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX7_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR2_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR2_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR3_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR3_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR4_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR4_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR5_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR5_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR6_AMCU_SOCOMD: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR6_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX2_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX2_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX3_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX3_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX4_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX4_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX5_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX5_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX6_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX6_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX7_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX7 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX7_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR2_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR2_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR3_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR3_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR4_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR4_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR5_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR5_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR6_AMCU_SOCOMD: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR6_AMCU_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+
+// RECON AMCU
+class USP_OVERWHITE_G3C_AMCU_RECON: USP_OVERWHITE_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX2_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX2_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX3_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX3_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX4_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX4_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX5_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX5_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX6_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX6_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_MX7_AMCU_RECON: USP_OVERWHITE_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/MX7 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_MX7_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR2_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR2_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR3_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR3_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR4_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR4_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR5_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR5_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_OR6_AMCU_RECON: USP_OVERWHITE_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/OR6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_OR6_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_AMCU_RECON: USP_OVERWHITE_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX2_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX2_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX3_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX3_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX4_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX4_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX5_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX5_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX6_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX6_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_MX7_AMCU_RECON: USP_OVERWHITE_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/MX7 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_MX7_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR2_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR2 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR2_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR3_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR3 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR3_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR4_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR4 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR4_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR5_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR5 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR5_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_OVERWHITE_G3C_KP_OR6_AMCU_RECON: USP_OVERWHITE_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye Overwhite/G3C OVERWHITE/KP/OR6 (AMCU-ADF)";
+    uniformClass = "USP_OVERWHITE_G3C_KP_OR6_AMCU_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
