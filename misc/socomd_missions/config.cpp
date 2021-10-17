@@ -23,29 +23,19 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs
-//    Count = 37
+//    Count = 26
 
-	ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\Altis_LHD_HMAS_Canberra.Altis)
+    ADD(ALRAYAKFOB,SOCOMD Al-Rayak FOB (Freedom),fobs\Al-Rayak_Freedom_FOB.pja310)
     ADD(BYSTFOB,SOCOMD Bystrica FOB (Lordsburg),fobs\Bystrica_Lordsburg_FOB.Woodland_ACR)
     ADD(CHERNFOB,SOCOMD Chernarus FOB (Joint Fourth),fobs\Cherno_Joint_Fourth_FOB.Chernarus)
-    ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\Cherno_LHD_HMAS_Canberra.Chernarus)
     ADD(KUNFOB,SOCOMD Kunduz FOB (Cannon),fobs\Kunduz_Cannon_FOB.Kunduz)
-    ADD(PORTOLHD,SOCOMD Porto LHD (HMAS Canberra),fobs\Porto_LHD_HMAS_Canberra.Porto)
-    ADD(RAHMLHD,SOCOMD Rahmadi LHD (HMAS Canberra),fobs\Rahmadi_LHD_HMAS_Canberra.Intro)
     ADD(SAHRFOB,SOCOMD Sahrani FOB (Lead Pole),fobs\Sahrani_Lead_Pole_FOB.Sara)
-    ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\Sahrani_LHD_HMAS_Canberra.Sara)
     ADD(SHAPURFOB,SOCOMD Shapur FOB (Mailfoot),fobs\Shapur_Mailfoot_FOB.Shapur_BAF)
-    ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\Stratis_LHD_HMAS_Canberra.Stratis)
     ADD(ZARGAFOB,SOCOMD Zargabad FOB (Fury),fobs\Zargabad_Fury_FOB.Zargabad)
     ADD(ZARGAFOBE,SOCOMD Zargabad FOB (Exfil),fobs\Zargabad_Exfil_FOB.Zargabad)
     ADD(FATAFOB,SOCOMD FATA FOB (Nightstalker),fobs\FATA_Nightstalker_FOB.fata)
-    ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\Bozcaada_LHD_HMAS_Canberra.Bozcaada)
-    ADD(ALRAYAKFOB,SOCOMD Al-Rayak FOB (Freedom),fobs\Al-Rayak_Freedom_FOB.pja310)
-    ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
-    ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
     ADD(RUHAFOB,SOCOMD Ruha FOB ,fobs\Ruha_FOB.ruha)
     ADD(DIYALAFOB,SOCOMD Diyala FOB ,fobs\Diyala_FOB.DYA)
-    ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberra),fobs\Pulau_LHD_HMAS_Canberra.pulau)
     ADD(ANIZAYFOB,SOCOMD Anizay FOB,fobs\Anizay_FOB.tem_anizay)
     ADD(KURJARIFOB,SOCOMD Kurjari FOB,fobs\Kurjari_FOB.tem_kujari)
     ADD(VINJESVINGENFOB,SOCOMD Vinjesvingen FOB,fobs\Vinjesvingen_FOB.tem_vinjesvingenc)
@@ -56,12 +46,27 @@ class CfgMissions {
     ADD(FAPAVOFOB,SOCOMD Fapavo FOB,fobs\Fapavo_Demise_FOB.fapovo)
     ADD(FAPAVOLHD,SOCOMD Fapavo LHD (HMAS Canberra),fobs\Fapavo_Demise_FOB.fapovo)
     ADD(NZWFOB,SOCOMD NZiwasogo FOB,fobs\NZiwasogo_Trigger_FOB.pja305)
-    ADD(LAGHISOLAFOB,SOCOMD Laghisola LHD (HMAS Canberra),fobs\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
     ADD(KOOKABURRAALTISFOB,SOCOMD Altis FOB (Kookaburra),fobs\FOB_Kookaburra.Altis)
     ADD(KOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Kookaburra),fobs\FOB_Kookaburra.WL_Rosche)
     ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell.Malden)
     ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (Soul),fobs\FOB_Soul.Tanoa)
     ADD(ZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar.takistan)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//    CARRIERs
+//    Count = 11
+
+    ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
+    ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\Altis_LHD_HMAS_Canberra.Altis)
+    ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\Cherno_LHD_HMAS_Canberra.Chernarus)
+    ADD(PORTOLHD,SOCOMD Porto LHD (HMAS Canberra),fobs\Porto_LHD_HMAS_Canberra.Porto)
+    ADD(RAHMLHD,SOCOMD Rahmadi LHD (HMAS Canberra),fobs\Rahmadi_LHD_HMAS_Canberra.Intro)
+    ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\Sahrani_LHD_HMAS_Canberra.Sara)
+    ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\Stratis_LHD_HMAS_Canberra.Stratis)
+    ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\Bozcaada_LHD_HMAS_Canberra.Bozcaada)
+    ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
+    ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberra),fobs\Pulau_LHD_HMAS_Canberra.pulau)
+    ADD(LAGHISOLAFOB,SOCOMD Laghisola LHD (HMAS Canberra),fobs\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs (Old)
