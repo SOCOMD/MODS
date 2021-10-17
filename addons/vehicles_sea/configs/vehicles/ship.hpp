@@ -164,6 +164,7 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     side = WEST;
     author = AUTHOR_STR;
     faction = FACTION_STR;
+    crew = SOCOMD_RIFLEMAN;
     displayname = "ADRHIB HMG (2/12)";
 
     armor = 10000;

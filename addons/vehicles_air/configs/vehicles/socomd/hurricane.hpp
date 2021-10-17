@@ -18,10 +18,10 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
     forceInGarage = 1; \
     fuelCapacity = 1420; \
     fuelConsumptionRate = 0.30; \
-    crew = SOCOMD_PILOT; \
+    crew = UNIT_SOCOMD_PILOT; \
     cost = 40000; \
     threat[] = {1.0,1.0,1.0}; \
-    typicalCargo[] = {SOCOMD_PILOT}; \
+    typicalCargo[] = {UNIT_SOCOMD_PILOT}; \
     class TransportWeapons { \
         INVENTORY_VEHICLE_SMALL_WEAPONS \
     }; \
@@ -153,10 +153,10 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
     faction = FACTION_STR;
     vehicleclass = "Air";
     forceInGarage = 1;
-    crew = SOCOMD_PILOT;
+    crew = UNIT_SOCOMD_PILOT;
     cost = 40000;
     threat[] = {1.0,1.0,1.0};
-    typicalCargo[] = {SOCOMD_PILOT};
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };

@@ -29,10 +29,10 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
     forceInGarage = 1;
     fuelCapacity = 3914;
     fuelConsumptionRate = 0.55;
-    crew = SOCOMD_PILOT;
+    crew = UNIT_SOCOMD_PILOT;
     cost = 40000;
     threat[] = {1.0,0.7,0.3};
-    typicalCargo[] = {SOCOMD_PILOT};
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_MEDIUM_WEAPONS
     };

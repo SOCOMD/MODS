@@ -74,10 +74,11 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
         {-1.16, 0.78, -0.065},
         { 1.16, 0.78, -0.065}
     };
+    crew= UNIT_SOCOMD_PILOT;
     displayname = "MH-6M Little Bird (2/6)";
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
-    typicalCargo[] = {SOCOMD_PILOT};
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
@@ -172,7 +173,8 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     author = AUTHOR_STR;
     faction = FACTION_STR;
     displayname = "AH-6M Little Bird (2/1)";
-    typicalCargo[] = {SOCOMD_PILOT};
+    crew= UNIT_SOCOMD_PILOT;
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
