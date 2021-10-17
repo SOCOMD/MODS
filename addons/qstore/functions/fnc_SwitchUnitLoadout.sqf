@@ -172,9 +172,10 @@ _binocular = [_binocularType, "", "", "", [], [], ""];
 _unitLoadout set [8, _binocular];
 
 //Equipment
+_gps = getText (_unitConfig >> "gps");
 _equipmentLoadout = _unitLoadout select 9;
 _equipmentLoadout set [0, "ItemMap"];
-_equipmentLoadout set [1, ""];
+_equipmentLoadout set [1, _gps];
 _equipmentLoadout set [2, "ItemRadioAcreFlagged"];
 _equipmentLoadout set [3, "ItemCompass"];
 _equipmentLoadout set [4, "ItemWatch"];
