@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report an issue with ACE3
+about: Report an issue with the SOCOMD Modset
 labels: "bug, status:not started"
 ---
 
