@@ -19,7 +19,11 @@ class CfgMagazineWells {
             "ACWP_30rnd_556x45_EPR_PMAG"
         };
     };
-
+    class SOCOMD_762_150Rnd {
+        SOCOMD_mags[] = {
+            "CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+        };
+    };
     class CBA_762x51_HK417 {
         SOCOMD_mags[] = {
             "SOCOMD_Item_Magazine_762x51_20Rnd"
