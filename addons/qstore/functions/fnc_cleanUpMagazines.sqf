@@ -15,7 +15,6 @@ private _currentSecondaryCfg = (configFile >> "CfgLoadoutWeapons" >> _currentSec
 private _currentHandgunCfg = (configFile >> "CfgLoadoutWeapons" >> _currentHandgun);
 
 // Remove Primary magazine from gun
-systemChat format ["%1",(getNumber(_currentPrimaryCfg >> "startLoaded") isEqualTo 1)];
 if !(getNumber(_currentPrimaryCfg >> "startLoaded") isEqualTo 1) then {
 	_currentPrimaryLoadout set [4, []];
 };
