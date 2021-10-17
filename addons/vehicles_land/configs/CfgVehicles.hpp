@@ -9,7 +9,7 @@ class CfgVehicles{
     #include "vehicles\socomd\bushmaster.hpp"
     #include "vehicles\socomd\coyote.hpp"
     #include "vehicles\socomd\quadbike.hpp"
-    #include "vehicles\socomd\trucks.hpp"
+    #include "vehicles\socomd\motorbike.hpp"
 
     // #include "vehicles\apc.hpp"
     //#include "vehicles\csat_hmg.hpp"

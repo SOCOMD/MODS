@@ -26,8 +26,8 @@ class CfgASORVS {
             "SOCOMD_SOV_GMG_D",
             "SOCOMD_SOV_GMG_W",
             "SOCOMD_TRUCK_REPAIR_A",
-            "SOCOMD_BIKE",
-            "SOCOMD_QUADBIKE"
+            "V12_KTM_SOCOMD",
+            "SOCOMD_QUADBIKE",
         };
     };
 
