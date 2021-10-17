@@ -5,6 +5,7 @@ PREP(addPrimaryAmmo);
 PREP(addSecondaryAmmo);
 PREP(CanToggleDiving);
 PREP(CheckScopeFOV);
+PREP(cleanUpMagazines);
 PREP(GetLoadoutMaxOptic);
 PREP(GetLoadoutScopeFOV);
 PREP(GetOpticsWhitelist);

@@ -104,16 +104,19 @@ class CfgLoadoutWeapons {
         };
     };
     class PISTOL_USP {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_18Rnd_9x21_Mag_USP",3}
         };        
     };
     class PISTOL_HP {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_13Rnd_9x21_Mag_HP",3}
         };        
     };
     class PISTOL_GLOCK {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_19Rnd_9x21_Mag_glock",3}
         };        

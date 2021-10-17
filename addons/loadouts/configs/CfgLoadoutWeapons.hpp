@@ -236,13 +236,14 @@ class CfgLoadoutWeapons {
     class acwp_glock19_black: PISTOL_GLOCK{};
     class acwp_glock19_hlmnd: PISTOL_GLOCK{};
     class acwp_glock19_sim{
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_19Rnd_9x21_Mag_glock_sim",3}
         };            
     };
 
-    class hgun_Pistol_heavy_01_F;
-    class DSO_hgun_Pistol_heavy_01_blk_F: hgun_Pistol_heavy_01_F{
+    class DSO_hgun_Pistol_heavy_01_blk_F{
+        startLoaded = 1;
         magazines[] = {
             {"11Rnd_45ACP_Mag",3}
         };

@@ -248,7 +248,7 @@ class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
     displayName = "Mk 48 Maximi";
-    magazineWell[] = {"SOCOMD_762_150Rnd"};
+    magazineWell[] += {"SOCOMD_762_150Rnd"};
     ace_overheating_mrbs = 2000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
     ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };

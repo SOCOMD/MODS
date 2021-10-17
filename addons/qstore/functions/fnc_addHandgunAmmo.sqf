@@ -12,6 +12,9 @@ if(isNull _loadoutWeaponConfig) exitWith {};
 //Set Handgun Weapon
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 //Give Magazines
+if(isNumber( _loadoutWeaponConfig >> "startLoaded") && (getNumber( _loadoutWeaponConfig >> "startLoaded") == 1)) then {
+    (_loadoutMagazines select 0) set [1,((_loadoutMagazines select 0) select 1) - 1]
+};
 if(count _loadoutMagazines > 0) then  {
     {
         _magazine = _x select 0;
