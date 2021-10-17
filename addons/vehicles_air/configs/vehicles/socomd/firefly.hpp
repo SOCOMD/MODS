@@ -37,6 +37,7 @@ class MELB_AH6M : MELB_base {
         class HitTransmission;
         class HitVRotor;
     };
+    class AnimationSources;
     class Components : Components {
         class TransportPylonsComponent {
             class pylons {
@@ -175,6 +176,28 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     displayname = "AH-6M Little Bird (2/1)";
     crew= UNIT_SOCOMD_PILOT;
     typicalCargo[] = {UNIT_SOCOMD_PILOT};
+    
+    class AnimationSources: AnimationSources
+    {
+        class Addcrosshair
+        {
+            source = "user";
+            animPeriod = 0;
+            initPhase = 0;
+        };
+        class Addgunrack
+        {
+            source = "user";
+            animPeriod = 1;
+            initPhase = 1;
+        };
+        class Addfueltank
+        {
+            source = "user";
+            animPeriod = 1;
+            initPhase = 1;
+        };
+    };
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
