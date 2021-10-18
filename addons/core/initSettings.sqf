@@ -10,6 +10,7 @@ call FUNC(windowBreaker)
 }, 
 {}, 
 [DIK, [false,false,false]]
+] call CBA_fnc_addSetting
 [
     "SOCOMD_peltors_strength",
     "SLIDER",
