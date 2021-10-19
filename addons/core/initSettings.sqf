@@ -10,7 +10,7 @@
     },
     {},
     [DIK, [false, false, false]]
-] call CBA_fnc_addsetting;
+] call CBA_fnc_addkeybind;
 [
     "SOCOMD_peltors_strength",
     "SLIDER",
