@@ -1,4 +1,3 @@
-if (!isServer) exitWith {};
 
 // Initialise ASORVS & HALO. Variables must be present in mission.
 [BOXSPAWNER1, BOXSPAWN_1, "SUPPLY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
@@ -6,13 +5,10 @@ if (!isServer) exitWith {};
 [LANDSPAWNER1, LANDSPAWN_1, "LAND", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 [AIRSPAWNER1, AIRSPAWN_1, "AIR_ROTARY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 
-call{
 HALOPOLE1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}]
-};
 
 // Ensure groupIDs are correct for cTab ORBAT.
 call{
-    {
         ZeroA setGroupIdGlobal ["0-A"];
         HAVOC setGroupIdGlobal ["HAVOC"];
         Homestead0 setGroupIdGlobal ["Homestead"];
@@ -31,5 +27,12 @@ call{
         VD2 setGroupIdGlobal ["VD-2"];
         WT1 setGroupIdGlobal ["WT-1"];
         WT2 setGroupIdGlobal ["WT-2"];
-    };
+};
+
+//Map Marker channel for SOLS to decrease clutter
+if (isServer) then
+{
+	private _SOLSChannel = "SOLS";
+	private _SOLSChannelID = radioChannelCreate [[128.0, 0.0, 128.0, 0.8], _SOLSChannel, ["ZeroA","SOLSA","HAVOC"], []];
+	[_SOLSChannelID, {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _SOLSChannel];
 };

@@ -23,7 +23,7 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs
-//    Count = 26
+//    Count = 27
 
     ADD(ALRAYAKFOB,SOCOMD Al-Rayak FOB (Freedom),fobs\Al-Rayak_Freedom_FOB.pja310)
     ADD(BYSTFOB,SOCOMD Bystrica FOB (Lordsburg),fobs\Bystrica_Lordsburg_FOB.Woodland_ACR)
@@ -51,6 +51,7 @@ class CfgMissions {
     ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell.Malden)
     ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (Soul),fobs\FOB_Soul.Tanoa)
     ADD(ZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar.takistan)
+    ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
