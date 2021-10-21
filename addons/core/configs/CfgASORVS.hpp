@@ -55,7 +55,7 @@ class CfgASORVS {
             "SOCOMD_Supply_Javelin",
             "SOCOMD_Supply_Tools",
             "SOCOMD_Supply_Vehicle_Ammo",
-            "SOCOMD_Supply_Vehicle_Ammo_Large",
+            "SOCOMD_Supply_Vehicle_Ammo_large",
             "SOCOMD_Recon_Supply",
             "SOCOMD_Supply_NVG",
             "SOCOMD_Supply_152",
