@@ -9,7 +9,7 @@ class Building : Static {
 class Slingload_01_Base_F;
 class B_Slingload_01_Ammo_F : Slingload_01_Base_F {
     ace_rearm_isSupplyVehicle = 1;
-    ace_rearm_defaultSupply = 1000000;
+    ace_rearm_defaultSupply = 500000; // Values of 1mil or more get exported as "large numbers", better to be precise
     ace_cargo_hasCargo = 0;
     ace_cargo_space = 0;
 };

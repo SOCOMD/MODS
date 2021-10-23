@@ -57,7 +57,8 @@ class CfgVehicles
         displayName = "Toggle Undercover";
         function = "socomd_zeus_fnc_ModuleToggleUndercover";
     };
-
+/*
+// Disabled for debugging
     class SOCOMD_Module_ToggleTranslator : SOCOMD_Module_Base
     {
         scopeCurator = 2;
@@ -67,6 +68,7 @@ class CfgVehicles
         displayName = "Toggle Translator";
         function = "socomd_zeus_fnc_ModuleToggleTranslator";
     };
+*/
 /*
 // Made redundant by ZEN & 3DEN Enhanced
     class SOCOMD_Module_CopyClipboardLoadout : SOCOMD_Module_Base
