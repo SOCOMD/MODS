@@ -2,7 +2,6 @@ class V12_KTM450_base;
 class V12_KTM_SOCOMD: V12_KTM450_base
 {
     author="V12";
-    model="\V12_KTM450\V12_KTM450";
     displayName="CDO Motorbike";
     transportSoldier=0;
     scope = public;
