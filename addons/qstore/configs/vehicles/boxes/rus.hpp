@@ -15,7 +15,7 @@ class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
             class SOCOMD_arsenal {
                 displayName = "Arsenal";
                 condition = 1;
-                statement = "[player, player, false] call ace_socomd_arsenal_fnc_openBox";
+                statement = "[player, player, false] call socomd_arsenal_fnc_openBox";
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};                
             };

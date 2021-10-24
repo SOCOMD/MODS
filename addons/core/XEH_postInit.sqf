@@ -31,11 +31,11 @@ hasPeltorsOn = 0;
 // overrides to get our functions 
  
  [{
-     _entry = ["cTab", "ifSecondary"] call CBA_fnc_getKeybind;
-     !isNil "_entry"
+    private _entry = ["cTab", "ifSecondary"] call CBA_fnc_getKeybind;
+    !isNil "_entry"
     },{
     ["cTab","ifSecondary",["Toggle Secondary Interface","Open cTab device in interactable mode"],{call cTab_fnc_onIfSecondaryPressed; call FUNC(Action_ToggleAndroid)},"",[cTab_key_if_secondary_scancode,cTab_key_if_secondary_modifiers],false] call cba_fnc_addKeybind;
- },[_entry]] call CBA_fnc_waitUntilAndExecute;
+ },[]] call CBA_fnc_waitUntilAndExecute;
 
  this addEventHandler ["CuratorWaypointPlaced", {
     params ["_curator", "_group", "_waypointID"];
