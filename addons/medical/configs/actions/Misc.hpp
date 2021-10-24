@@ -40,7 +40,3 @@ class HemopneumothoraxTreatment {
 class Accuvac: larynxtubus {
     displayNameProgress = "Clearing Airway...";
 };
-
-class Overstretch: larynxtubus {
-    displayNameProgress = "Adjusting head...";
-};
