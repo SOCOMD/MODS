@@ -71,7 +71,7 @@ private _sorts = if (_rightSort && {GVAR(currentLeftPanel) in [IDC_buttonUniform
                 IDC_buttonHeadgear,
                 IDC_buttonGoggles,
                 IDC_buttonNVG,
-                IDC_buttonBinoculars,
+                IDC_buttonGrenadeLoadout,
                 IDC_buttonMap,
                 IDC_buttonGPS,
                 IDC_buttonRadio,

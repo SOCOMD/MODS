@@ -41,14 +41,13 @@ private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in va
     private _className = configName _x;
     private _hasItemInfo = isClass (_configItemInfo);
     private _itemInfoType = if (_hasItemInfo) then {getNumber (_configItemInfo >> "type")} else {0};
-    private _isMiscItem = _className isKindOf ["CBA_MiscItem", (_configCfgWeapons)];
 
     switch true do {
         /* Weapon acc */
         case (
                 _hasItemInfo &&
                 {_itemInfoType in [TYPE_MUZZLE, TYPE_OPTICS, TYPE_FLASHLIGHT, TYPE_BIPOD]} &&
-                {!_isMiscItem}
+                {!(configName _x isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}
             ): {
 
             //Convert type to array index
@@ -73,7 +72,7 @@ private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in va
         /* Binos */
         case (_simulationType == "Binocular" ||
         ((_simulationType == 'Weapon') && {(getNumber (_x >> 'type') == TYPE_BINOCULAR_AND_NVG)})): {
-            (_cargo select 9) pushBackUnique _className;
+            // (_cargo select 9) pushBackUnique _className;
         };
         /* Map */
         case (_simulationType == "ItemMap"): {
@@ -118,14 +117,14 @@ private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in va
         case (
                 _hasItemInfo &&
                 (_itemInfoType in [TYPE_MUZZLE, TYPE_OPTICS, TYPE_FLASHLIGHT, TYPE_BIPOD] &&
-                {_isMiscItem}) ||
+                {(_className isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}) ||
                 {_itemInfoType in [TYPE_FIRST_AID_KIT, TYPE_MEDIKIT, TYPE_TOOLKIT]} ||
                 {(getText ( _x >> "simulation")) == "ItemMineDetector"}
             ): {
             (_cargo select 17) pushBackUnique _className;
         };
     };
-} foreach configProperties [_configCfgWeapons, "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'ace_arsenal_hide') != 1}", true];
+} foreach configProperties [_configCfgWeapons, "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'socomd_arsenal_hide') != 1}", true];
 
 private _grenadeList = [];
 {
@@ -141,6 +140,15 @@ private _putList = [];
     private _className = configName _x;
 
     switch true do {
+        // Rifle, handgun, secondary weapons mags
+        case (
+                ((getNumber (_x >> "type") in [TYPE_MAGAZINE_PRIMARY_AND_THROW,TYPE_MAGAZINE_SECONDARY_AND_PUT,1536,TYPE_MAGAZINE_HANDGUN_AND_GL,TYPE_MAGAZINE_MISSILE]) ||
+                {(getNumber (_x >> QGVAR(hide))) == -1}) &&
+                {!(_className in _grenadeList)} &&
+                {!(_className in _putList)}
+            ): {
+            (_cargo select 2) pushBackUnique _className;
+        };
         // Grenades
         case (_className in _grenadeList): {
             (_cargo select 15) pushBackUnique _className;
@@ -149,30 +157,22 @@ private _putList = [];
         case (_className in _putList): {
             (_cargo select 16) pushBackUnique _className;
         };
-        // Rifle, handgun, secondary weapons mags
-        case (
-                ((getNumber (_x >> "type") in [TYPE_MAGAZINE_PRIMARY_AND_THROW,TYPE_MAGAZINE_SECONDARY_AND_PUT,1536,TYPE_MAGAZINE_HANDGUN_AND_GL,TYPE_MAGAZINE_MISSILE]) ||
-                {(getNumber (_x >> QGVAR(hide))) == -1})
-            ): {
-            (_cargo select 2) pushBackUnique _className;
-        };
     };
-} foreach configProperties [(configFile >> "CfgMagazines"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'ace_arsenal_hide') != 1}", true];
+} foreach configProperties [(configFile >> "CfgMagazines"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'socomd_arsenal_hide') != 1}", true];
 
 {
     if (getNumber (_x >> "isBackpack") == 1) then {
         (_cargo select 6) pushBackUnique (configName _x);
     };
-} foreach configProperties [(configFile >> "CfgVehicles"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'ace_arsenal_hide') != 1}", true];
+} foreach configProperties [(configFile >> "CfgVehicles"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'socomd_arsenal_hide') != 1}", true];
 
 {
     (_cargo select 7) pushBackUnique (configName _x);
-} foreach configProperties [(configFile >> "CfgGlasses"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'ace_arsenal_hide') != 1}", true];
+} foreach configProperties [(configFile >> "CfgGlasses"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'socomd_arsenal_hide') != 1}", true];
 
-private _magazineGroups = createHashMap;
+private _magazineGroups = [[],[]] call CBA_fnc_hashCreate;
 
 private _cfgMagazines = configFile >> "CfgMagazines";
-
 {
     private _magList = [];
     {
@@ -181,9 +181,14 @@ private _cfgMagazines = configFile >> "CfgMagazines";
         _magList append _magazines;
     } foreach configProperties [_x, "isArray _x", true];
 
-    _magazineGroups set [toLower configName _x, _magList arrayIntersect _magList];
+    [_magazineGroups, toLower configName _x, _magList arrayIntersect _magList] call CBA_fnc_hashSet;
 } foreach configProperties [(configFile >> "CfgMagazineWells"), "isClass _x", true];
 
+
+private _cfgGrendeOptions = configFile >> "CfgWeapons";
+{
+    (_cargo select 9) pushBackUnique (configName _x);
+} foreach configProperties [(configFile >> "CfgWeapons"), "isClass _x && {(if (isNumber (_x >> 'scopeArsenal')) then {getNumber (_x >> 'scopeArsenal')} else {getNumber (_x >> 'scope')}) == 2} && {getNumber (_x >> 'socomd_arsenal_hide') != 1}", true];
+
 uiNamespace setVariable [QGVAR(configItems), _cargo];
-uiNamespace setVariable [QGVAR(configItemsFlat), flatten _cargo];
 uiNamespace setVariable [QGVAR(magazineGroups), _magazineGroups];

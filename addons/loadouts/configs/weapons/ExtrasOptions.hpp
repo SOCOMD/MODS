@@ -1,11 +1,11 @@
     
 class ItemMap: Default{
-    ace_socomd_arsenal_hide = 1;
+    socomd_arsenal_hide = 1;
 };
 
 class ExtrasBase: ItemMap {
     scope = 0;
-    ace_socomd_arsenal_hide = 0;
+    socomd_arsenal_hide = 0;
     uniform[] = {
     };
     vest[] = {

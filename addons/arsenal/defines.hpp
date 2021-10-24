@@ -8,7 +8,7 @@
 #define WIDTH_SINGLE ((WIDTH_TOTAL - 6 * WIDTH_GAP) / 5)
 
 // IDCs
-#define IDD_ace_arsenal 1127001
+#define IDD_socomd_arsenal 1127011
 #define IDC_mouseArea 0
 #define IDC_arrowMinus 101
 #define IDC_arrowPlus 102
@@ -63,7 +63,7 @@
 #define IDC_iconBackgroundNVG 2017
 #define IDC_buttonNVG 2018
 #define IDC_iconBackgroundBinoculars 2019
-#define IDC_buttonBinoculars 2020
+#define IDC_buttonGrenadeLoadout 2020
 #define IDC_iconBackgroundMap 2021
 #define IDC_buttonMap 2022
 #define IDC_iconBackgroundGPS 2023

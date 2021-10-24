@@ -9,23 +9,22 @@ GVAR(lastSearchTextRight) = "";
 GVAR(lastSearchTextLoadouts) = "";
 GVAR(lastSortLeft) = "";
 GVAR(lastSortRight) = "";
+[QUOTE(GVAR(initBox)), {_this call FUNC(initBox)}] call CBA_fnc_addEventHandler;
+[QUOTE(GVAR(removeBox)), {_this call FUNC(removeBox)}] call CBA_fnc_addEventHandler;
 
-[QGVAR(initBox), {_this call FUNC(initBox)}] call CBA_fnc_addEventHandler;
-[QGVAR(removeBox), {_this call FUNC(removeBox)}] call CBA_fnc_addEventHandler;
-
-[QGVAR(broadcastFace), {
+[QUOTE(GVAR(broadcastFace)), {
     params ["_unit", "_face"];
 
     _unit setFace _face;
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(broadcastVoice), {
+[QUOTE(GVAR(broadcastVoice)), {
     params ["_unit", "_voice"];
 
     _unit setSpeaker _voice;
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(loadoutUnshared), {
+[QUOTE(GVAR(loadoutUnshared)), {
     params ["_contentPanelCtrl" , "_playerName", "_loadoutName"];
 
     if (!isNil QGVAR(currentLoadoutsTab) && {GVAR(currentLoadoutsTab) == IDC_buttonSharedLoadouts}) then {
@@ -52,7 +51,7 @@ GVAR(lastSortRight) = "";
     };
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(loadoutShared), {
+[QUOTE(GVAR(loadoutShared)), {
     params ["_contentPanelCtrl" ,"_loadoutArgs"];
     _loadoutArgs params ["_playerName", "_loadoutName", "_loadoutData"];
 

@@ -6,19 +6,19 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_common"};
-        author = ECSTRING(common,ACETeam);
-        authors[] = {"alganthe", "mharis001", "Brett Mayson"};
-        url = ECSTRING(main,URL);
+        requiredAddons[] = {"socomd_main"};
+        author = "";
+        authors[] = {"SOCOMD J4"};
+        authorUrl = "https://socomd.com";
         VERSION_CONFIG;
     };
 };
 
 #include "ui\RscAttributes.hpp"
-#include "ui\RscCustomArsenalButton.hpp"
+// #include "ui\RscCustomArsenalButton.hpp"
 #include "Display3DEN.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgEventHandlers.hpp"
-#include "RscDisplayMain.hpp"
+// #include "RscDisplayMain.hpp"
 #include "ACE_Arsenal_Sorts.hpp"
 #include "ACE_Arsenal_Stats.hpp"

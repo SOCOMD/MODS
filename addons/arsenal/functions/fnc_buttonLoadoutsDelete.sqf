@@ -18,6 +18,7 @@ params ["_display", "_control"];
 
 if !(ctrlEnabled _control) exitWith {};
 
+_loadoutId = player getVariable ["SOCOMD_LOADOUTID", ""];
 private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;
 private _contentPanelCursSel = lnbCurSelRow _contentPanelCtrl;
 private _loadoutName = _contentPanelCtrl lnbText [_contentPanelCursSel, 1];
@@ -28,7 +29,7 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
             GVAR(defaultLoadoutsList) deleteAt (GVAR(defaultLoadoutsList) find ((GVAR(defaultLoadoutsList) select {_x select 0 == _loadoutName}) select 0));
             set3DENMissionAttributes [[QGVAR(DummyCategory), QGVAR(DefaultLoadoutsListAttribute), GVAR(defaultLoadoutsList)]];
     } else {
-            private _data = profileNamespace getVariable [QGVAR(saved_loadouts), []];
+            private _data = profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], []];
             _data deleteAt (_data find ((_data select {_x select 0 == _loadoutName}) select 0));
     };
 
@@ -36,8 +37,7 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
     _contentPanelCtrl lnbDeleteRow _contentPanelCursSel;
     _contentPanelCtrl lnbSetCurSelRow (_contentPanelCursSel);
 
-    [(findDisplay IDD_ace_arsenal), [localize LSTRING(loadoutDeleted), _loadoutName] joinString " "] call FUNC(message);
-    [QGVAR(onLoadoutDelete), [_loadoutName]] call CBA_fnc_localEvent;
+    [(findDisplay IDD_socomd_arsenal), [localize LSTRING(loadoutDeleted), _loadoutName] joinString " "] call FUNC(message);
 } else {
 
     private _profileName = profileName; // GVAR(center) could be a remote unit
@@ -52,5 +52,5 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
 
     [QGVAR(loadoutUnshared), [_contentPanelCtrl, profileName, _loadoutName]] call CBA_fnc_remoteEvent;
 
-    [(findDisplay IDD_ace_arsenal), [localize LSTRING(loadoutUnshared), _loadoutName] joinString " "] call FUNC(message);
+    [(findDisplay IDD_socomd_arsenal), [localize LSTRING(loadoutUnshared), _loadoutName] joinString " "] call FUNC(message);
 };

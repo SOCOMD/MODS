@@ -22,10 +22,10 @@ private _editBoxCtrl = _display displayCtrl IDC_textEditBox;
 private _editBoxContent = ctrlText _editBoxCtrl;
 
 if (_editBoxContent == "") exitWith {
-    [(findDisplay IDD_ace_arsenal), localize LSTRING(saveEmptyNameBox)] call FUNC(message);
+    [(findDisplay IDD_socomd_arsenal), localize LSTRING(saveEmptyNameBox)] call FUNC(message);
 };
-
-private _data = [+(profileNamespace getVariable [QGVAR(saved_loadouts),[]]), +(GVAR(defaultLoadoutsList))] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
+_loadoutId = GVAR(center) getVariable ["SOCOMD_LOADOUTID", ""];
+private _data = [+(profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId],[]]), +(GVAR(defaultLoadoutsList))] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
 private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;
 private _cursSelRow = lnbCurSelRow _contentPanelCtrl;
 
@@ -39,11 +39,11 @@ private _sharedLoadoutsVars = GVAR(sharedLoadoutsNamespace) getVariable QGVAR(sh
 // Make sure the loadout isn't yours (public tab) or being shared (my loadouts tab)
 private _similarSharedLoadout = (profileName + _editBoxContent) in _sharedLoadoutsVars;
 if ((_contentPanelCtrl lnbText [_cursSelRow, 0]) == profileName) exitWith {
-    [(findDisplay IDD_ace_arsenal), localize LSTRING(saveAuthorError)] call FUNC(message);
+    [(findDisplay IDD_socomd_arsenal), localize LSTRING(saveAuthorError)] call FUNC(message);
 };
 
 if (_similarSharedLoadout) exitWith {
-    [(findDisplay IDD_ace_arsenal), localize LSTRING(saveSharedError)] call FUNC(message);
+    [(findDisplay IDD_socomd_arsenal), localize LSTRING(saveSharedError)] call FUNC(message);
 };
 
 switch (GVAR(currentLoadoutsTab)) do {
@@ -158,7 +158,7 @@ switch (GVAR(currentLoadoutsTab)) do {
             if ((_contentPanelCtrl lnbText [_i, 1]) == _editBoxContent) exitwith {_contentPanelCtrl lnbSetCurSelRow _i};
         };
 
-        profileNamespace setVariable [QGVAR(saved_loadouts), _data];
+        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
     };
 
     case IDC_buttonDefaultLoadouts:{
@@ -275,7 +275,7 @@ switch (GVAR(currentLoadoutsTab)) do {
                 _contentPanelCtrl setVariable [_editBoxContent + str IDC_buttonMyLoadouts, [_curSelLoadout] call FUNC(verifyLoadout)];
             };
 
-            profileNamespace setVariable [QGVAR(saved_loadouts), _data];
+            profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
         };
     };
 
@@ -290,9 +290,9 @@ switch (GVAR(currentLoadoutsTab)) do {
             _contentPanelCtrl setVariable [_editBoxContent + str IDC_buttonMyLoadouts, [_loadout] call FUNC(verifyLoadout)];
         };
 
-        profileNamespace setVariable [QGVAR(saved_loadouts), _data];
+        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
     };
 };
-[(findDisplay IDD_ace_arsenal), [localize LSTRING(loadoutSaved), _editBoxContent] joinString " "] call FUNC(message);
+[(findDisplay IDD_socomd_arsenal), [localize LSTRING(loadoutSaved), _editBoxContent] joinString " "] call FUNC(message);
 private _savedLoadout = (_data select {_x select 0 == _editBoxContent}) select 0;
 [QGVAR(onLoadoutSave), [_data find _savedLoadout, _savedLoadout]] call CBA_fnc_localEvent;

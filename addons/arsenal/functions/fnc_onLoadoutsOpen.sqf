@@ -18,7 +18,7 @@
 params ["", "_args"];
 _args params ["_display"];
 
-private _arsenalDisplay = findDisplay IDD_ace_arsenal;
+private _arsenalDisplay = findDisplay IDD_socomd_arsenal;
 private _mouseBlockCtrl = _arsenalDisplay displayCtrl IDC_mouseBlock;
 
 _mouseBlockCtrl ctrlEnable true;

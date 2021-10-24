@@ -37,43 +37,47 @@ _ctrlPanel ctrlCommit FADE_DELAY;
 
 _ctrlPanel lbSetCurSel -1;
 
+// Fill sort options
+private _sortLeftCtrl = _display displayCtrl IDC_sortLeftTab;
+[_display, _control, _sortLeftCtrl] call FUNC(fillSort);
+
 // Handle icons and filling
 switch true do {
     case (_ctrlIDC in [IDC_buttonPrimaryWeapon, IDC_buttonHandgun, IDC_buttonSecondaryWeapon]) : {
         // Purge old data
         lbClear _ctrlPanel;
-        private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
-        _ctrlPanel lbsetvalue [_addEmpty, -1];
+        // private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
+        // _ctrlPanel lbsetvalue [_addEmpty, -1];
 
         {
             ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
-        } foreach ((GVAR(virtualItems) select IDX_VIRT_WEAPONS) select ([IDC_buttonPrimaryWeapon, IDC_buttonSecondaryWeapon, IDC_buttonHandgun] find _ctrlIDC));
+        } foreach ((GVAR(virtualItems) select 0) select ([IDC_buttonPrimaryWeapon, IDC_buttonSecondaryWeapon, IDC_buttonHandgun] find _ctrlIDC));
     };
 
     case (_ctrlIDC in [IDC_buttonUniform, IDC_buttonVest, IDC_buttonBackpack]) : {
 
         lbClear _ctrlPanel;
-        private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
-        _ctrlPanel lbsetvalue [_addEmpty, -1];
+        // private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
+        // _ctrlPanel lbsetvalue [_addEmpty, -1];
 
         // Filling
         switch (_ctrlIDC) do {
             case IDC_buttonUniform : {
                 {
                     ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
-                } foreach (GVAR(virtualItems) select IDX_VIRT_UNIFORM);
+                } foreach (GVAR(virtualItems) select 4);
             };
 
             case IDC_buttonVest : {
                 {
                     ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
-                } foreach (GVAR(virtualItems) select IDX_VIRT_VEST);
+                } foreach (GVAR(virtualItems) select 5);
             };
 
             case IDC_buttonBackpack : {
                 {
                     ["CfgVehicles", _x, _ctrlPanel] call FUNC(addListBoxItem);
-                } foreach (GVAR(virtualItems) select IDX_VIRT_BACKPACK);
+                } foreach (GVAR(virtualItems) select 6);
             };
         };
     };
@@ -83,7 +87,7 @@ switch true do {
 
         lbClear _ctrlPanel;
 
-        if !(_ctrlIDC in [IDC_buttonFace, IDC_buttonVoice]) then {
+        if (_ctrlIDC in [IDC_buttonHeadgear]) then {
             private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
             _ctrlPanel lbsetvalue [_addEmpty, -1];
         };
@@ -92,26 +96,32 @@ switch true do {
             case IDC_buttonHeadgear: {
                 {
                     ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
-                } foreach (GVAR(virtualItems) select IDX_VIRT_HEADGEAR);
+                } foreach (GVAR(virtualItems) select 3);
             };
             case IDC_buttonGoggles : {
+            private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
+            _ctrlPanel lbsetvalue [_addEmpty, -1];
                 {
                     ["CfgGlasses", _x, _ctrlPanel] call FUNC(addListBoxItem);
-                } foreach (GVAR(virtualItems) select IDX_VIRT_GOGGLES);
+                } foreach (GVAR(virtualItems) select 7);
             };
             case IDC_buttonNVG : {
                 {
                     ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
                 } foreach (GVAR(virtualItems) select 8);
             };
-            case IDC_buttonBinoculars : {
-                {
-                    ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
+            case IDC_buttonGrenadeLoadout : {
+                {   
+                    if(getNumber (configFile >> "CfgWeapons" >>  _x >> 'socomd_arsenal_hide') != 1) then {
+                        ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
+                    };
                 } foreach (GVAR(virtualItems) select 9);
             };
             case IDC_buttonMap : {
                 {
-                    ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
+                    if(getNumber (configFile >> "CfgWeapons" >>  _x >> 'socomd_arsenal_hide') != 1) then {
+                        ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);
+                    };
                 } foreach (GVAR(virtualItems) select 10);
             };
             case IDC_buttonCompass : {
@@ -149,8 +159,8 @@ switch true do {
                             _ctrlPanel lbSetTooltip [_lbAdd,format ["%1\n%2",_displayName, _configName]];
                             _x call ADDMODICON;
                         };
-                    } foreach ("true" configClasses _x);
-                } foreach ("true" configClasses (configfile >> "cfgfaces"));
+                    } foreach ("isClass _x" configClasses _x);
+                } foreach ("isClass _x" configClasses (configfile >> "cfgfaces"));
             };
             case IDC_buttonVoice : {
                 private _voices = (configProperties [(configFile >> "CfgVoice"), "isClass _x && {getNumber (_x >> 'scope') == 2}", true]) - [(configfile >> "CfgVoice" >> "NoVoice")];
@@ -159,6 +169,8 @@ switch true do {
                 } foreach _voices;
             };
             case IDC_buttonInsignia : {
+                private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
+                _ctrlPanel lbsetvalue [_addEmpty, -1];
                 {
                     ["CfgUnitInsignia", configName _x, _ctrlPanel, "texture"] call FUNC(addListBoxItem);
                 } foreach ("true" configClasses (configFile >> "CfgUnitInsignia"));
@@ -187,16 +199,18 @@ GVAR(currentLeftPanel) = _ctrlIDC;
 [QGVAR(leftPanelFilled), [_display, _ctrlIDC, GVAR(currentRightPanel)]] call CBA_fnc_localEvent;
 
 // Sort
-private _sortLeftCtrl = _display displayCtrl IDC_sortLeftTab;
-[_display, _control, _sortLeftCtrl] call FUNC(fillSort);
+[_sortLeftCtrl] call FUNC(sortPanel);
 
 //Select current item
-private _itemsToCheck = ((GVAR(currentItems) select [0,15]) + [GVAR(currentFace), GVAR(currentVoice), GVAR(currentInsignia)]) apply {tolower _x};
+_grenade = GVAR(center) getVariable  ["socomd_arsenal_grenade", ""];
+_extra = GVAR(center) getVariable  ["socomd_arsenal_extras", ""];
+_nvg = GVAR(center) getVariable  ["socomd_arsenal_nvg", ""];
+private _itemsToCheck = ((GVAR(currentItems) select [0,15]) + [GVAR(currentFace), GVAR(currentVoice), GVAR(currentInsignia),_grenade,_extra,_nvg]) apply {tolower _x};
 
 for "_lbIndex" from 0 to (lbSize _ctrlPanel - 1) do {
     private _currentData = _ctrlPanel lbData _lbIndex;
-
-    if ((_currentData isNotEqualTo "") && {tolower _currentData in _itemsToCheck}) exitWith {
+    
+    if (!(_currentData isEqualTo "") && {tolower _currentData in _itemsToCheck}) exitWith {
         _ctrlPanel lbSetCurSel _lbIndex;
     };
 };

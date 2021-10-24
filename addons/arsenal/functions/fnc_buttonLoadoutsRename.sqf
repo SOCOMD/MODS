@@ -25,12 +25,12 @@ private _loadoutName = _contentPanelCtrl lnbText [_curSelRow, 1];
 
 private _editBoxCtrl = _display displayCtrl IDC_textEditBox;
 private _editBoxContent = ctrlText _editBoxCtrl;
-
-private _data = [profileNamespace getVariable [QGVAR(saved_loadouts), []], GVAR(defaultLoadoutsList)] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
+_loadoutId = player getVariable ["SOCOMD_LOADOUTID", ""];
+private _data = [profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], []], GVAR(defaultLoadoutsList)] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
 private _similarLoadouts = _data select {_x select 0 == _editBoxContent};
 
 if (count _similarLoadouts > 0) exitWith {
-    [(findDisplay IDD_ace_arsenal), localize LSTRING(renameExistError)] call FUNC(message);
+    [(findDisplay IDD_socomd_arsenal), localize LSTRING(renameExistError)] call FUNC(message);
 };
 
 // Update loadout info in profile / 3DEN and list namespaces
@@ -67,4 +67,4 @@ if (is3DEN && {GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts}) then {
     set3DENMissionAttributes [[QGVAR(DummyCategory), QGVAR(DefaultLoadoutsListAttribute), GVAR(defaultLoadoutsList)]];
 };
 
-[(findDisplay IDD_ace_arsenal), [_loadoutName, localize LSTRING(loadoutRenamed) ,_editBoxContent] joinString " "] call FUNC(message);
+[(findDisplay IDD_socomd_arsenal), [_loadoutName, localize LSTRING(loadoutRenamed) ,_editBoxContent] joinString " "] call FUNC(message);

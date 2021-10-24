@@ -182,7 +182,7 @@ if (!isNil "_itemCfg") then {
                 IDC_buttonHeadgear,
                 IDC_buttonGoggles,
                 IDC_buttonNVG,
-                IDC_buttonBinoculars,
+                IDC_buttonGrenadeLoadout,
                 IDC_buttonMap,
                 IDC_buttonGPS,
                 IDC_buttonRadio,

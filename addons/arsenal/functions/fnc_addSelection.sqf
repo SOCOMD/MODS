@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 params ["_unit","_grenades"];
 _vest = getArray (configFile >> "CfgWeapons" >> _grenades >> "vest");
  { 

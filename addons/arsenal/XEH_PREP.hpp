@@ -1,6 +1,7 @@
 PREP(addDefaultLoadout);
 PREP(addListBoxItem);
 PREP(addRightPanelButton);
+PREP(addSelection);
 PREP(addSort);
 PREP(addStat);
 PREP(addVirtualItems);
@@ -58,6 +59,7 @@ PREP(open3DEN);
 PREP(openBox);
 PREP(portVALoadouts);
 PREP(removeBox);
+PREP(removeGrenades);
 PREP(removeStat);
 PREP(removeVirtualItems);
 PREP(scanConfig);
