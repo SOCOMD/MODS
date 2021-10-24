@@ -36,3 +36,11 @@ class TensionpneumothoraxTreatment {
 class HemopneumothoraxTreatment {
     items[] = {"SOCOMD_NDC"};
 };
+
+class Accuvac: larynxtubus {
+    displayNameProgress = "Clearing Airway...";
+};
+
+class Overstretch: larynxtubus {
+    displayNameProgress = "Adjusting head...";
+};
