@@ -1,0 +1,1 @@
+#include "\z\socomd\addons\arsenal\script_component.hpp"
