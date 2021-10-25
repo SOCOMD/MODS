@@ -30,8 +30,8 @@ _contentPanelCtrl ctrlCommit FADE_DELAY;
 
 _contentPanelCtrl lnbSetCurSelRow -1;
 lnbClear _contentPanelCtrl;
-
-private _data = +(profileNamespace getvariable [QGVAR(saved_loadouts),[]]);
+_loadoutId = player getVariable ["SOCOMD_LOADOUTID", ""];
+private _data = +(profileNamespace getvariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId],[]]);
 
 if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
 

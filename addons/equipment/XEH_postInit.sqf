@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-
 ["loadout", {
     if(GVAR(randomUniformWear) > 0) then {
         params ["_player", "_new"];
