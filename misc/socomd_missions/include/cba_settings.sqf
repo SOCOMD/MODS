@@ -22,6 +22,9 @@ force force ace_advanced_throwing_enablePickUpAttached = true;
 force force ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
+// ACE Advanced Vehicle Damage
+force force ace_vehicle_damage_enabled = false;
+
 // ACE Arsenal
 force force socomd_arsenal_allowDefaultLoadouts = true;
 force force socomd_arsenal_allowSharedLoadouts = true;
@@ -42,12 +45,15 @@ force force ace_cookoff_ammoCookoffDuration = 0.5;
 force force ace_cookoff_enable = 1;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 0.6;
+force force ace_cookoff_probabilityCoef = 0.75;
 
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = false;
 force force ace_explosives_punishNonSpecialists = false;
 force force ace_explosives_requireSpecialist = false;
+
+// ACE Fire
+force force ace_fire_enable = false; // Will need a lot of testing...
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
@@ -72,11 +78,13 @@ force force ace_hearing_unconsciousnessVolume = 0.2;
 force force ace_interaction_disableNegativeRating = true;
 force force ace_interaction_enableMagazinePassing = true;
 force force ace_interaction_enableTeamManagement = true;
+force force ace_interaction_enableGroupRenaming = true; // Added (also removed the clientside mod from the whitelist)
+force force ace_interaction_interactWithTerrainObjects = false; // Sometimes buggy with collisions, would need too much testing on all the maps
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
 ace_interact_menu_actionOnKeyRelease = true;
-ace_interact_menu_addBuildingActions = true;
+ace_interact_menu_addBuildingActions = true; // Note; performance heavy in CQB
 ace_interact_menu_alwaysUseCursorInteraction = true;
 ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 ace_interact_menu_colorShadowMax = [0,0,0,1];
@@ -90,6 +98,14 @@ ace_interact_menu_selectorColor = [1,0,0];
 ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 1;
 ace_interact_menu_useListMenu = true;
+
+// ACE Interaction Menu (Self) - More
+// Allows us to declutter players interaction menus by moving less used stuff to a "more" category
+force force ace_interact_menu_more__ace_zeus_create = true;
+force force ace_interact_menu_more__ace_zeus_delete = true;
+
+// ACE Interaction Menu (Self) - Move to Root
+// Does the exact opposite of the above
 
 // ACE Logistics
 force force ace_cargo_enable = true;
@@ -118,7 +134,7 @@ force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 force force ace_map_BFT_Enabled = false;
-force force ace_map_BFT_HideAiGroups = false;
+force force ace_map_BFT_HideAiGroups = true; // Was false
 force force ace_map_BFT_Interval = 1;
 force force ace_map_BFT_ShowPlayerNames = false;
 force force ace_map_DefaultChannel = 1;
@@ -134,6 +150,7 @@ ace_map_gestures_defaultColor = [1,0.720811,0,0.503564];
 ace_map_gestures_defaultLeadColor = [1,0.70967,0,1];
 force force ace_map_gestures_enabled = true;
 force force ace_map_gestures_interval = 0.03;
+force force ace_map_gestures_allowSpectator = true;
 force force ace_map_gestures_maxRange = 10;
 ace_map_gestures_nameTextColor = [0,0,0,1];
 
@@ -294,6 +311,7 @@ force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = false;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_unJamOnreload = false;
+force force ace_overheating_cookoffCoef = 0 // Bad feature
 
 // ACE Pointing
 force force ace_finger_enabled = false;
@@ -318,7 +336,7 @@ force force ace_quickmount_speed = 18;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = false;
-force force ace_respawn_savePreDeathGear = true;
+force force ace_respawn_savePreDeathGear = false; // Was true
 
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
@@ -475,6 +493,10 @@ force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
+acre_sys_zeus_zeusCommunicateViaCamera = true;
+
+// CBA Network
+cba_network_loadoutValidation = 0;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -501,7 +523,6 @@ force diwako_dui_indicators_show = false;
 diwako_dui_indicators_size = 1;
 diwako_dui_indicators_style = "standard";
 diwako_dui_indicators_useACENametagsRange = true;
-
 
 // DUI - Squad Radar - Main
 diwako_dui_ace_hide_interaction = true;
@@ -595,11 +616,46 @@ zen_editor_unitRadioMessages = 2;
 force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 
+// LAMBS Danger
+// Syncing default settings
+force force lambs_danger_cqbRange = 75;
+force force lambs_danger_panicChance = 0.0;
+force lambs_danger_disableAIAutonomousManoeuvres = false;
+force lambs_danger_disableAIDeployStaticWeapons = false;
+force lambs_danger_disableAIFindStaticWeapons = false;
+force lambs_danger_disableAIHideFromTanksAndAircraft = false;
+force lambs_danger_disableAIPlayerGroup = false;
+force lambs_danger_disableAIPlayerGroupReaction = false;
+force lambs_danger_disableAutonomousFlares = false;
+
+// LAMBS Danger EventHandlers
+force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
+force lambs_eventhandlers_ExplosionReactionTime = 20.0;
+force force lambs_wp_autoAddArtillery = false;
+
+// LAMBS Main
+force force lambs_main_combatShareRange = 200;
+force force lambs_main_disableAICallouts = false;
+force force lambs_main_disableAIDodge = false;
+force force lambs_main_disableAIFleeing = false;
+force force lambs_main_disableAIGestures = false;
+force force lambs_main_indoorMove = 0.25;
+force force lambs_main_maxRevealValue = 1;
+force force lambs_main_minFriendlySuppressionDistance = 5;
+force force lambs_main_minObstacleProximity = 2;
+force force lambs_main_minSuppressionRange = 25.0;
+force force lambs_main_radioBackpack = 2000;
+force force lambs_main_radioDisabled = false;
+force force lambs_main_radioEast = 1000;
+force force lambs_main_radioGuer = 1000;
+force force lambs_main_radioShout = 100;
+force force lambs_main_radioWest = 1000;
+
 // ACE Common
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','fare_ACE_Group_Naming','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates','ZeusKeybinds_main']";
+force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates','ZeusKeybinds_main']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;

@@ -14,7 +14,7 @@ class V12_KTM_SOCOMD: V12_KTM450_base
 
 
     class TransportWeapons {
-    INVENTORY_VEHICLE_DEFAULT_WEAPONS
+        INVENTORY_VEHICLE_DEFAULT_WEAPONS
     };
 
     class TransportMagazines {
