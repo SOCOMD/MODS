@@ -7,14 +7,14 @@ _modcpp = loadFile(_mod + "\mod.cpp");
 _split = [_modcpp, ";"] call ASORGS_fnc_Split;
 picture = "";
 {
-	_line = [_x] call ASORGS_fnc_TrimLeft;
-	if( [_line, "picture"] call ASORGS_fnc_StartsWith ) then { 	call compile (_line + ";");  };
+    _line = [_x] call ASORGS_fnc_TrimLeft;
+    if( [_line, "picture"] call ASORGS_fnc_StartsWith ) then {     call compile (_line + ";");  };
 } foreach _split;
 
 _pic = if(isNil 'picture') then { "" } else { picture };
 picture = nil;
 if(((_pic find "\") == -1) && (_pic != "")) then //full folder structure
 {
-	_pic = _mod + "\" + _pic;
+    _pic = _mod + "\" + _pic;
 };
 _pic

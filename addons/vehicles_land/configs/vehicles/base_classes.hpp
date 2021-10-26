@@ -178,7 +178,7 @@ class CUP_2S6_Base : Tank_F {
     class Turrets : Turrets {
         class MainTurret;
     };
-	/*
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -215,7 +215,7 @@ class CUP_2S6_Base : Tank_F {
             };
         };
     };
-	*/
+    */
 };
 class CUP_2S6M_Base : CUP_2S6_Base {};
 class CUP_ZSU23_Base : Tank_F {
@@ -236,7 +236,7 @@ class CUP_ZSU23_Base : Tank_F {
             weapons[] = {"CUP_Vacannon_AZP23_veh"};
         };
     };
-	/*
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -273,7 +273,7 @@ class CUP_ZSU23_Base : Tank_F {
             };
         };
     }; 
-	*/
+    */
 };
 class CUP_ZSU23_Base_OCimport_01 : CUP_ZSU23_Base {};
 class CUP_ZSU23_Base_OCimport_02 : CUP_ZSU23_Base_OCimport_01 {};
@@ -293,7 +293,7 @@ class CUP_Ural_ZU23_Base : CUP_Ural_BaseTurret {
     class Turrets : Turrets {
         class MainTurret;
     };
-	/*
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -330,7 +330,7 @@ class CUP_Ural_ZU23_Base : CUP_Ural_BaseTurret {
             };
         };
     }; 
-	*/
+    */
 };
 // default mags used CUP_40Rnd_23mm_AZP23_M * 16
 // default ammo CUP_B_23mm_AA
@@ -361,7 +361,7 @@ class CUP_ZU23_base : StaticCannon {
     class Turrets : Turrets {
         class MainTurret;
     };
-	/*
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -398,7 +398,7 @@ class CUP_ZU23_base : StaticCannon {
             };
         };
     };
-	*/
+    */
 };
 class CUP_ZU23_base_OCimport_01 : CUP_ZU23_base { };
 class CUP_ZU23_base_OCimport_02 : CUP_ZU23_base_OCimport_01 { };

@@ -1,18 +1,18 @@
 #include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-	class ATM_airdrop
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Ui_F"};
-		author[] = {};
-		authorUrl = "";
-		version = 0.0.1;
-		versionStr = "0.0.1";
-		versionAr[] = { 0,0,1 };
-	};
+    class ATM_airdrop
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 1.0;
+        requiredAddons[] = {"A3_Ui_F"};
+        author[] = {};
+        authorUrl = "";
+        version = 0.0.1;
+        versionStr = "0.0.1";
+        versionAr[] = { 0,0,1 };
+    };
 };
 
 #include "\ATM_airdrop\CfgFunctions.hpp"

@@ -7,11 +7,11 @@ _height = [_this, 3, (1/25), [1.0]] call BIS_fnc_Param;
 
 
 for "_i" from 0 to (_controlcount-1) do {
-	_control = ASORGS_getControl(ASORGS_Main_Display,_firstIDC + _i);
-	_currentpos = ctrlPosition _control;
-	_currentpos set [1, _ypos];
-	_control ctrlSetPosition _currentpos;
-//	_control ctrlEnable false;
-	_control ctrlShow false;
-	//_control ctrlCommit .1;
+    _control = ASORGS_getControl(ASORGS_Main_Display,_firstIDC + _i);
+    _currentpos = ctrlPosition _control;
+    _currentpos set [1, _ypos];
+    _control ctrlSetPosition _currentpos;
+//    _control ctrlEnable false;
+    _control ctrlShow false;
+    //_control ctrlCommit .1;
 };

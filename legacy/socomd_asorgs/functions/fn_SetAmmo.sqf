@@ -5,21 +5,21 @@ private ["_weaponCombo", "_scopeCombo", "_railCombo", "_ammoCombo", "_ammoType",
 //this checks if the ammo type has already been added so it'll work properly with the 'extra ammo' slots.
 _alreadyAdded = [];
 _addMags = {
-	_ammoComboIDC = _this select 0;
-	_weapon = _this select 1;
-	_weaponAdded = false;
-	_ammos = [];
-	for[{_i = 0},{_i < 5},{_i = _i + 1}] do {
-		_ammoCombo = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC);
-		_ammoType = _ammoCombo lbData ( lbCurSel _ammoCombo);
-		_count = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC + 2);
-		_ammoCount = parseNumber ctrlText _count;
-		if(_ammoCount > 0 && !(_ammoType in _alreadyAdded)  && (_ammoType != "")) then {
-			//just add 1 of each ammo type to start with. This way the weapon will be loaded as well as the 40mm grenade.
-			[_ammoType, _ammoCount] call ASORGS_fnc_AddInventoryItems;
-		};
-		_ammoComboIDC = _ammoComboIDC + 10;
-	};	
+    _ammoComboIDC = _this select 0;
+    _weapon = _this select 1;
+    _weaponAdded = false;
+    _ammos = [];
+    for[{_i = 0},{_i < 5},{_i = _i + 1}] do {
+        _ammoCombo = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC);
+        _ammoType = _ammoCombo lbData ( lbCurSel _ammoCombo);
+        _count = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC + 2);
+        _ammoCount = parseNumber ctrlText _count;
+        if(_ammoCount > 0 && !(_ammoType in _alreadyAdded)  && (_ammoType != "")) then {
+            //just add 1 of each ammo type to start with. This way the weapon will be loaded as well as the 40mm grenade.
+            [_ammoType, _ammoCount] call ASORGS_fnc_AddInventoryItems;
+        };
+        _ammoComboIDC = _ammoComboIDC + 10;
+    };    
 };
 
 //launcher first so they're more likely to get a rocket in the clip.

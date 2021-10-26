@@ -7,14 +7,14 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Weapon <ARRAY> [<CLASSNAME>, <SILENCER>, <POINTER>, <OPTIC>, <PRIMARY MAG>, <SECONDARY MAG>, <BIPOD>]
- * 		0: Weapon classname <STRING>
- * 		1: Silencer classname <STRING>
- * 		2: Pointer classname <STRING>
- * 		3: Optic classname <STRING>
- * 		4: Primary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
- * 		5: Secondary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
- * 		6: Bipod classname <STRING>
- * 		0: Weapon classname <STRING>
+ *         0: Weapon classname <STRING>
+ *         1: Silencer classname <STRING>
+ *         2: Pointer classname <STRING>
+ *         3: Optic classname <STRING>
+ *         4: Primary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
+ *         5: Secondary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
+ *         6: Bipod classname <STRING>
+ *         0: Weapon classname <STRING>
  * 2: Amount <NUMBER> (optional | default: 1)
  *
  * Return Value:
@@ -32,31 +32,31 @@ if (isNull _unit || count _weapon isEqualTo 0 || _amount < 1) exitWith {};
 if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
 _weapon params [ 
-	["_class", "", [""]],
-	["_silencer", "", [""]],
-	["_pointer", "", [""]],
-	["_optic", "", [""]],
-	["_primary", [], [[]], [0,2]],
-	["_secondary", [], [[]], [0,2]],
-	["_bipod", "", [""]]
+    ["_class", "", [""]],
+    ["_silencer", "", [""]],
+    ["_pointer", "", [""]],
+    ["_optic", "", [""]],
+    ["_primary", [], [[]], [0,2]],
+    ["_secondary", [], [[]], [0,2]],
+    ["_bipod", "", [""]]
 ];
 
 if (_class isEqualTo "") exitWith {};
 
 // validate primary mag
 if (count _primary > 0) then {
-	_primary params [["_mag","",[""]], ["_ammo",0,[0]]];
-	if (_mag isEqualTo "") then {
-		_primary = [];
-	};
+    _primary params [["_mag","",[""]], ["_ammo",0,[0]]];
+    if (_mag isEqualTo "") then {
+        _primary = [];
+    };
 };
 
 // validate secondary mag
 if (count _secondary > 0) then {
-	_secondary params [["_mag","",[""]], ["_ammo",0,[0]]];
-	if (_mag isEqualTo "") then {
-		_secondary = [];
-	};
+    _secondary params [["_mag","",[""]], ["_ammo",0,[0]]];
+    if (_mag isEqualTo "") then {
+        _secondary = [];
+    };
 };
 
 // exit if there is not enough space left

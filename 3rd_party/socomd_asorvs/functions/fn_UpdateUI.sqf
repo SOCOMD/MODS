@@ -29,18 +29,18 @@ disableSerialization;
 #define SHOW_SINGLEITEM_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOW_ITEM(FIRSTIDC, 2)} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOW_SINGLEITEMCAT_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOW_ITEM(FIRSTIDC, 2) END_CATEGORY} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIHide; }; \
-	_currentIDC = FIRSTIDC + 1; \
-	_previousIDC = _currentIDC; \
-	for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do 	{ \
-		if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
-			HIDE_ITEM(_currentIDC, ASORVS_MultiComboControls) } else { \
-			SHOW_ITEM(_currentIDC, ASORVS_MultiComboControls) }; \
-		_previousIDC = _currentIDC; \
-		_currentIDC = _currentIDC + 10; }; 
+    if(SHOWCONDITION) then { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIHide; }; \
+    _currentIDC = FIRSTIDC + 1; \
+    _previousIDC = _currentIDC; \
+    for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do     { \
+        if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
+            HIDE_ITEM(_currentIDC, ASORVS_MultiComboControls) } else { \
+            SHOW_ITEM(_currentIDC, ASORVS_MultiComboControls) }; \
+        _previousIDC = _currentIDC; \
+        _currentIDC = _currentIDC + 10; }; 
 #define SHOW_MULTICOMBOCAT_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { END_CATEGORY };
+    SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
+    if(SHOWCONDITION) then { END_CATEGORY };
 
 #define ENDSHRUNK_ITEM _y = _y + _itemHeight + ASORVS_ControlSpacing;
 #define ENDSHRUNK_CATEGORY _y = _y + ASORVS_CategorySpacing;
@@ -48,18 +48,18 @@ disableSerialization;
 #define SHOWSHRUNK_SINGLEITEM_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOWSHRUNK_ITEM(FIRSTIDC, 2)} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOWSHRUNK_SINGLEITEMCAT_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOWSHRUNK_ITEM(FIRSTIDC, 2) ENDSHRUNK_CATEGORY} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { [FIRSTIDC, 1, _y, _itemHeight] call ASORVS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIHide; }; \
-	_currentIDC = FIRSTIDC + 1; \
-	_previousIDC = _currentIDC; \
-	for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do 	{ \
-		if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
-			HIDE_ITEM(_currentIDC, ASORVS_MultiComboControls) } else { \
-			SHOWSHRUNK_ITEM(_currentIDC, ASORVS_MultiComboControls) }; \
-		_previousIDC = _currentIDC; \
-		_currentIDC = _currentIDC + 10; }; 
+    if(SHOWCONDITION) then { [FIRSTIDC, 1, _y, _itemHeight] call ASORVS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORVS_fnc_updateUIHide; }; \
+    _currentIDC = FIRSTIDC + 1; \
+    _previousIDC = _currentIDC; \
+    for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do     { \
+        if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
+            HIDE_ITEM(_currentIDC, ASORVS_MultiComboControls) } else { \
+            SHOWSHRUNK_ITEM(_currentIDC, ASORVS_MultiComboControls) }; \
+        _previousIDC = _currentIDC; \
+        _currentIDC = _currentIDC + 10; }; 
 #define SHOWSHRUNK_MULTICOMBOCAT_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { ENDSHRUNK_CATEGORY };
+    SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
+    if(SHOWCONDITION) then { ENDSHRUNK_CATEGORY };
 
 private ["_y", "_showPrimaryWeapon", "_showPrimaryAddons", "_showLauncher", "_showLauncherAddons", "_showHandgun", "_showHandgunAddons", "_showExtraAttachments", "_showExtraAmmo", "_showGrenades"];
 
@@ -80,8 +80,8 @@ SHOW_ITEM(ASORVS_primary_label, 2, ITEM_HEIGHT*3)
 
 //lines with 2 controls
 {
-	_control = ASORVS_getControl(ASORVS_Main_Display,_x);
-	_control ctrlCommit 0.1;
-	_control = ASORVS_getControl(ASORVS_Main_Display,_x+1);
-	_control ctrlCommit 0.1;
+    _control = ASORVS_getControl(ASORVS_Main_Display,_x);
+    _control ctrlCommit 0.1;
+    _control = ASORVS_getControl(ASORVS_Main_Display,_x+1);
+    _control ctrlCommit 0.1;
 } forEach [ASORVS_primary_label];

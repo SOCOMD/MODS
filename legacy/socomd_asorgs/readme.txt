@@ -5,7 +5,7 @@ Include the following in your description.ext file:
 #include "ASORGS\menu.hpp"
 class CfgFunctions
 {
-	#include "ASORGS\cfgfunctions.hpp"
+    #include "ASORGS\cfgfunctions.hpp"
 };
 
 Add an action to any thing that you want the Gear Select option to appear on with the following in it's init:
@@ -128,8 +128,8 @@ ASOR for helping to iron out most of the bugs and problems.
 
 Legal disclaimer:
 You are free to:
-Share — to copy, distribute and transmit the work.
-Modify — to adapt the work.
+Share ï¿½ to copy, distribute and transmit the work.
+Modify ï¿½ to adapt the work.
 
 Under the following conditions:
 Notification - If you improve this work, you must give Lecks a copy of the improvements and the option of including it in a new version of this work if he sees fit.

@@ -6,13 +6,13 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Weapon <ARRAY> [<CLASSNAME>, <SILENCER>, <POINTER>, <OPTIC>, <PRIMARY MAG>, <SECONDARY MAG>, <BIPOD>]
- * 		0: Weapon classname <STRING>
- * 		1: Silencer classname <STRING>
- * 		2: Pointer classname <STRING>
- * 		3: Optic classname <STRING>
- * 		4: Primary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
- * 		5: Secondary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
- * 		6: Bipod classname <STRING>
+ *         0: Weapon classname <STRING>
+ *         1: Silencer classname <STRING>
+ *         2: Pointer classname <STRING>
+ *         3: Optic classname <STRING>
+ *         4: Primary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
+ *         5: Secondary magazine [Classname <STRING>, Ammo count <NUMBER>] or []
+ *         6: Bipod classname <STRING>
  * 2: Ammo count <NUMBER>
  *
  * Return Value:

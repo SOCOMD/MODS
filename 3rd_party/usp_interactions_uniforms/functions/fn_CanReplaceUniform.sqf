@@ -5,7 +5,7 @@ _return = true;
 
 
 if((alive _player) and ((uniform _player) isKindOf [_source, configFile >> 'CfgWeapons'])) then {
-	_return = true
+    _return = true
 };
 
 _return

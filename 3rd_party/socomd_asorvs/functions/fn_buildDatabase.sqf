@@ -5,32 +5,32 @@ if(isNil 'ASORVS_Blacklist') then {ASORVS_Blacklist = [];};
 #include "macro.sqf"
 
 _endsWith = {
-	//infinite loop without this! 
-	private["_name", "_length", "_nameend", "_start", "_i", "_result"];
-	_name = toArray format["%1", _this select 0];
-	_length = count toArray (_this select 1);
-	_nameend = [];
-	if((count _name) >= _length) then {;
-		_start = (count _name) - _length;
-		for[{_i = 0}, {_i < _length}, {_i = _i + 1}] do {
-			_nameend = _nameend + [(_name select (_start +_i)) ];
-		};
-	};
-	_result = (toString _nameend) == (_this select 1);
-	_result
+    //infinite loop without this! 
+    private["_name", "_length", "_nameend", "_start", "_i", "_result"];
+    _name = toArray format["%1", _this select 0];
+    _length = count toArray (_this select 1);
+    _nameend = [];
+    if((count _name) >= _length) then {;
+        _start = (count _name) - _length;
+        for[{_i = 0}, {_i < _length}, {_i = _i + 1}] do {
+            _nameend = _nameend + [(_name select (_start +_i)) ];
+        };
+    };
+    _result = (toString _nameend) == (_this select 1);
+    _result
 };
 _indexof = {
-	private["_array", "_value", "_keycolumn", "_result", "_i"];
-	_array = _this select 0;
-	_value = _this select 1;
-	_keycolumn = [_this, 2, 1, [0]] call BIS_fnc_Param;
-	_result = -1;
-	for[{_i = 0}, {(_i < (count _array)) && (_result == -1)}, {_i = _i + 1}] do {
-		if((_array select _i select _keycolumn) == _value) then{
-			_result = _i;
-		};
-	};
-	_result
+    private["_array", "_value", "_keycolumn", "_result", "_i"];
+    _array = _this select 0;
+    _value = _this select 1;
+    _keycolumn = [_this, 2, 1, [0]] call BIS_fnc_Param;
+    _result = -1;
+    for[{_i = 0}, {(_i < (count _array)) && (_result == -1)}, {_i = _i + 1}] do {
+        if((_array select _i select _keycolumn) == _value) then{
+            _result = _i;
+        };
+    };
+    _result
 };
 
 _cfgthrowable = ASORVS_throwable;
@@ -52,50 +52,50 @@ _othervehicles = [];
 _thingx = [];
 _allVehicleClasses = (configFile >> "CfgVehicles") call BIS_fnc_getCfgSubClasses;
 {
-	_classname = _x;
-	if([_classname, true] call ASORVS_fnc_IsAllowed) then {
-		_cfg = configfile >> "CfgVehicles" >> _classname;
-		_displayName = getText(_cfg >> "displayName");
-		_picture = getText(_cfg >> "picture");
-		_desc = getText(_cfg >> "descriptionshort");
-		_scope = getNumber(_cfg >> "scope");
-		_type = getNumber(_cfg >> "type");
-		_side = getNumber(_cfg >> "side");
-		
-		_isbackpack = getNumber(_cfg >> "isbackpack");
-		if((_scope >= 2) && (_picture != "") && (_displayName != "")) then {
-			switch(true) do {
-				case (_isbackpack==1):  {
-					_capacity = getNumber (_cfg >> "maximumLoad");
-					_backpacks set [count _backpacks, [DB_Backpacks, _classname, _displayName, _picture, _capacity, count _backpacks]];
-				};
-				case (_classname isKindOf "Helicopter") : {
-					_helicopters pushBack [DB_Helicopters, _classname, _displayname, _picture, nil, count _helicopters, _side];
-				};
-				case(_classname isKindOf "Plane") : {
-					_planes pushBack [DB_Planes, _classname, _displayname, _picture, nil, count _planes, _side];
-				};
-				case((_classname isKindOf "Tank") || (_classname isKindOf "Wheeled_APC_F")) : {
-					_tanks pushBack [DB_Tanks, _classname, _displayname, _picture, nil, count _tanks, _side];
-				};
-				case(_classname isKindOf "Autonomous") : {
-					_autonomous pushBack [DB_Autonomous, _classname, _displayname, _picture, nil, count _autonomous, _side];
-				};
-				case(((_classname isKindOf "Car") || (_classname isKindOf "Bicycle") || (_classname isKindOf "Motorcycle")) && !(_classname isKindOf "Wheeled_APC_F")) : {
-					_cars pushBack [DB_Cars, _classname, _displayname, _picture, nil, count _cars, _side];
-				};
-				case(_classname isKindOf "Ship") : {
-					_ships pushBack [DB_Ships, _classname, _displayname, _picture, nil, count _ships, _side];
-				};
-				case(_classname isKindOf "ThingX") : {
-					_thingx pushBack [DB_ThingX, _classname, _displayName, _picture, nul, count _thingx, _side];
-				};
-				default {
-					_othervehicles pushBack [count _autonomous, _classname, _displayname, _picture, getText(_cfg >> "vehicleClass"), count _othervehicles, _side];
-				};
-			};
-		};
-	};
+    _classname = _x;
+    if([_classname, true] call ASORVS_fnc_IsAllowed) then {
+        _cfg = configfile >> "CfgVehicles" >> _classname;
+        _displayName = getText(_cfg >> "displayName");
+        _picture = getText(_cfg >> "picture");
+        _desc = getText(_cfg >> "descriptionshort");
+        _scope = getNumber(_cfg >> "scope");
+        _type = getNumber(_cfg >> "type");
+        _side = getNumber(_cfg >> "side");
+        
+        _isbackpack = getNumber(_cfg >> "isbackpack");
+        if((_scope >= 2) && (_picture != "") && (_displayName != "")) then {
+            switch(true) do {
+                case (_isbackpack==1):  {
+                    _capacity = getNumber (_cfg >> "maximumLoad");
+                    _backpacks set [count _backpacks, [DB_Backpacks, _classname, _displayName, _picture, _capacity, count _backpacks]];
+                };
+                case (_classname isKindOf "Helicopter") : {
+                    _helicopters pushBack [DB_Helicopters, _classname, _displayname, _picture, nil, count _helicopters, _side];
+                };
+                case(_classname isKindOf "Plane") : {
+                    _planes pushBack [DB_Planes, _classname, _displayname, _picture, nil, count _planes, _side];
+                };
+                case((_classname isKindOf "Tank") || (_classname isKindOf "Wheeled_APC_F")) : {
+                    _tanks pushBack [DB_Tanks, _classname, _displayname, _picture, nil, count _tanks, _side];
+                };
+                case(_classname isKindOf "Autonomous") : {
+                    _autonomous pushBack [DB_Autonomous, _classname, _displayname, _picture, nil, count _autonomous, _side];
+                };
+                case(((_classname isKindOf "Car") || (_classname isKindOf "Bicycle") || (_classname isKindOf "Motorcycle")) && !(_classname isKindOf "Wheeled_APC_F")) : {
+                    _cars pushBack [DB_Cars, _classname, _displayname, _picture, nil, count _cars, _side];
+                };
+                case(_classname isKindOf "Ship") : {
+                    _ships pushBack [DB_Ships, _classname, _displayname, _picture, nil, count _ships, _side];
+                };
+                case(_classname isKindOf "ThingX") : {
+                    _thingx pushBack [DB_ThingX, _classname, _displayName, _picture, nul, count _thingx, _side];
+                };
+                default {
+                    _othervehicles pushBack [count _autonomous, _classname, _displayname, _picture, getText(_cfg >> "vehicleClass"), count _othervehicles, _side];
+                };
+            };
+        };
+    };
 } forEach (_allVehicleClasses);
 
 #define DB_Cars 0

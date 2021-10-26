@@ -38,24 +38,24 @@ waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
 
 call {
 
-	["e", "English"] call acre_api_fnc_babelAddLanguageType;
+    ["e", "English"] call acre_api_fnc_babelAddLanguageType;
 
-	_languagesPlayerSpeaks = ["e"];
+    _languagesPlayerSpeaks = ["e"];
 
-	_languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
+    _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
 };
 
-	// Disabled for debugging
-	/*
-	["f", "Foreign"] call acre_api_fnc_babelAddLanguageType;
-	["z", "Zeus"] call acre_api_fnc_babelAddLanguageType;
+    // Disabled for debugging
+    /*
+    ["f", "Foreign"] call acre_api_fnc_babelAddLanguageType;
+    ["z", "Zeus"] call acre_api_fnc_babelAddLanguageType;
 
-	_whitelist = [
-		"SOCOMD_Homestead"
-	];
+    _whitelist = [
+        "SOCOMD_Homestead"
+    ];
 
-	_type = typeOf player;
-	if(_type in _whitelist) then {
-		_languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
-	};
-	*/
+    _type = typeOf player;
+    if(_type in _whitelist) then {
+        _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
+    };
+    */

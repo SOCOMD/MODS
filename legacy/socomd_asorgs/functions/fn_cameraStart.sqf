@@ -19,7 +19,7 @@ ASORGS_Platform setPosATL [ASORGS_Position select 0, (ASORGS_Position select 1),
 _logo = ASORGS_BackgroundLogo;
 _playerinsignia = (ASORGS_Player call BIS_fnc_getUnitInsignia);
 if(ASORGS_UnitInsigniaAsBackground && (_playerinsignia != "")) then {
-	_logo = getText (configFile >> "CfgUnitInsignia" >> _playerinsignia >> "texture");
+    _logo = getText (configFile >> "CfgUnitInsignia" >> _playerinsignia >> "texture");
 };
 
 ASORGS_Background = "UserTexture10m_F" createVehicleLocal [0,0,0];
@@ -34,24 +34,24 @@ _bgLeft = -(_bgCountX * 0.5) * 10;
 _bgTop = -(_bgCountY * 0.5) * 10;
 ASORGS_Backgrounds = [];
 for[{_bgX = 0}, {_bgX < _bgCountX}, {_bgX = _bgX + 1}] do {
-	for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
-		_bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
-		_bg setPosATL [(ASORGS_Position select 0) + _bgLeft + (_bgX * 10), (ASORGS_Position select 1) -19, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
-		_bg setDir 180;
-		_bg setObjectTexture [0,_bgTexture];
-		_bg enableSimulation false;
-		ASORGS_Backgrounds set [count ASORGS_Backgrounds, _bg];
-	};
+    for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
+        _bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
+        _bg setPosATL [(ASORGS_Position select 0) + _bgLeft + (_bgX * 10), (ASORGS_Position select 1) -19, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
+        _bg setDir 180;
+        _bg setObjectTexture [0,_bgTexture];
+        _bg enableSimulation false;
+        ASORGS_Backgrounds set [count ASORGS_Backgrounds, _bg];
+    };
 };
 for[{_bgX = 0}, {_bgX < _bgCountX}, {_bgX = _bgX + 1}] do {
-	for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
-		_bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
-		_bg setPosATL [(ASORGS_Position select 0) + _bgLeft + (_bgX * 10), (ASORGS_Position select 1) -18.95, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
-		_bg setDir 180;
-		_bg setObjectTexture [0,ASORGS_BackgroundTile];
-		_bg enableSimulation false;
-		ASORGS_Backgrounds set [count ASORGS_Backgrounds, _bg];
-	};
+    for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
+        _bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
+        _bg setPosATL [(ASORGS_Position select 0) + _bgLeft + (_bgX * 10), (ASORGS_Position select 1) -18.95, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
+        _bg setDir 180;
+        _bg setObjectTexture [0,ASORGS_BackgroundTile];
+        _bg enableSimulation false;
+        ASORGS_Backgrounds set [count ASORGS_Backgrounds, _bg];
+    };
 };
 
 ASORGS_Group = createGroup side ASORGS_Player;
@@ -101,8 +101,8 @@ ASORGS_Light = "#lightpoint" createVehicleLocal _cameraPos;
 ASORGS_Light setPosATL _cameraPos;
 _brightness = 1;
 if(worldName in ASORGS_brightMaps) then {
-	_brightness = 0.3; };
-	
+    _brightness = 0.3; };
+    
 ASORGS_Light setLightBrightness _brightness;
 ASORGS_Light setLightAmbient[1,1,1];
 ASORGS_Light setLightColor[1,1,1];
@@ -111,8 +111,8 @@ BIS_DEBUG_CAM = objNull;
 ASORGS_RotateDirection = 0;
 /*
 while {ASORGS_Open} do {
-	if(ASORGS_RotateDirection != 0) then {
-		ASORGS_Clone setDir (getDir ASORGS_Clone + ASORGS_RotateDirection); 
-	};
-	sleep 0.05;
+    if(ASORGS_RotateDirection != 0) then {
+        ASORGS_Clone setDir (getDir ASORGS_Clone + ASORGS_RotateDirection); 
+    };
+    sleep 0.05;
 };*/

@@ -32,9 +32,9 @@ if (_ltcolor =="NVG_TargetC") then {
         _caller removeaction blueon;_caller removeaction yellowon;_caller removeaction redon;_caller removeaction greenon;
         };
 
-		while {(getPos _caller select 2) > 2} do {
+        while {(getPos _caller select 2) > 2} do {
 
-	if(getPos _caller select 2 < 3) then{
+    if(getPos _caller select 2 < 3) then{
 if (_ltcolor =="Chemlight_Red") then {
         _caller removeaction RedOff;
         };
@@ -50,5 +50,5 @@ if (_ltcolor =="Chemlight_Green") then {
 if (_ltcolor =="NVG_TargetC") then {
         _caller removeaction Iron;
         };
-	};
-	};
+    };
+    };

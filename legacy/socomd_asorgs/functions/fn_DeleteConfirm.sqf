@@ -7,7 +7,7 @@ _slot = _listbox lbValue (lbCurSel _listbox);
 _textbox = ASORGS_getControl(ASORGS_deleteconfirm_dialog, ASORGS_deleteconfirm_text);
 
 if(_slot < 0) then {
-	(findDisplay ASORGS_deleteconfirm_dialog) closeDisplay 0;
+    (findDisplay ASORGS_deleteconfirm_dialog) closeDisplay 0;
 } else {
-	_textbox ctrlSetText format["Are you sure you want to delete '%1'?", _name];
+    _textbox ctrlSetText format["Are you sure you want to delete '%1'?", _name];
 };

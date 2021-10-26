@@ -10,13 +10,13 @@ _separator = if((typename (_this select 1)) == "STRING") then {_this select 1} e
 _finished = false;
 _split = [];
 while{!_finished} do {
-	_splitpos = _string find _separator;
-	if(_splitpos == -1) then {
-		_split pushBack _string;
-		_finished = true;
-	} else {
-		_split pushBack (_string select [0, _splitpos]);
-		_string = _string select [_splitpos+1, count _string - _splitpos - 1];
-	};
+    _splitpos = _string find _separator;
+    if(_splitpos == -1) then {
+        _split pushBack _string;
+        _finished = true;
+    } else {
+        _split pushBack (_string select [0, _splitpos]);
+        _string = _string select [_splitpos+1, count _string - _splitpos - 1];
+    };
 };
 _split

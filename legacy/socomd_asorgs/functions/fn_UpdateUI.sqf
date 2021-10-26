@@ -29,18 +29,18 @@ disableSerialization;
 #define SHOW_SINGLEITEM_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOW_ITEM(FIRSTIDC, 2)} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOW_SINGLEITEMCAT_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOW_ITEM(FIRSTIDC, 2) END_CATEGORY} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIHide; }; \
-	_currentIDC = FIRSTIDC + 1; \
-	_previousIDC = _currentIDC; \
-	for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do 	{ \
-		if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
-			HIDE_ITEM(_currentIDC, ASORGS_MultiComboControls) } else { \
-			SHOW_ITEM(_currentIDC, ASORGS_MultiComboControls) }; \
-		_previousIDC = _currentIDC; \
-		_currentIDC = _currentIDC + 10; }; 
+    if(SHOWCONDITION) then { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIHide; }; \
+    _currentIDC = FIRSTIDC + 1; \
+    _previousIDC = _currentIDC; \
+    for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do     { \
+        if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
+            HIDE_ITEM(_currentIDC, ASORGS_MultiComboControls) } else { \
+            SHOW_ITEM(_currentIDC, ASORGS_MultiComboControls) }; \
+        _previousIDC = _currentIDC; \
+        _currentIDC = _currentIDC + 10; }; 
 #define SHOW_MULTICOMBOCAT_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { END_CATEGORY };
+    SHOW_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
+    if(SHOWCONDITION) then { END_CATEGORY };
 
 #define ENDSHRUNK_ITEM _y = _y + _itemHeight + ASORGS_ControlSpacing;
 #define ENDSHRUNK_CATEGORY _y = _y + ASORGS_CategorySpacing;
@@ -48,18 +48,18 @@ disableSerialization;
 #define SHOWSHRUNK_SINGLEITEM_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOWSHRUNK_ITEM(FIRSTIDC, 2)} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOWSHRUNK_SINGLEITEMCAT_IF(FIRSTIDC, SHOWCONDITION)  if(SHOWCONDITION) then {SHOWSHRUNK_ITEM(FIRSTIDC, 2) ENDSHRUNK_CATEGORY} else {HIDE_ITEM(FIRSTIDC, 2)};
 #define SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { [FIRSTIDC, 1, _y, _itemHeight] call ASORGS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIHide; }; \
-	_currentIDC = FIRSTIDC + 1; \
-	_previousIDC = _currentIDC; \
-	for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do 	{ \
-		if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
-			HIDE_ITEM(_currentIDC, ASORGS_MultiComboControls) } else { \
-			SHOWSHRUNK_ITEM(_currentIDC, ASORGS_MultiComboControls) }; \
-		_previousIDC = _currentIDC; \
-		_currentIDC = _currentIDC + 10; }; 
+    if(SHOWCONDITION) then { [FIRSTIDC, 1, _y, _itemHeight] call ASORGS_fnc_updateUIShow; } else { [FIRSTIDC, 1, _y] call ASORGS_fnc_updateUIHide; }; \
+    _currentIDC = FIRSTIDC + 1; \
+    _previousIDC = _currentIDC; \
+    for[{_t = 0}, {_t < COMBOCOUNT}, {_t = _t + 1}] do     { \
+        if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !SHOWCONDITION) then { \
+            HIDE_ITEM(_currentIDC, ASORGS_MultiComboControls) } else { \
+            SHOWSHRUNK_ITEM(_currentIDC, ASORGS_MultiComboControls) }; \
+        _previousIDC = _currentIDC; \
+        _currentIDC = _currentIDC + 10; }; 
 #define SHOWSHRUNK_MULTICOMBOCAT_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
-	if(SHOWCONDITION) then { ENDSHRUNK_CATEGORY };
+    SHOWSHRUNK_MULTICOMBO_IF(FIRSTIDC, SHOWCONDITION, COMBOCOUNT) \
+    if(SHOWCONDITION) then { ENDSHRUNK_CATEGORY };
 
 private ["_y", "_showPrimaryWeapon", "_showPrimaryAddons", "_showLauncher", "_showLauncherAddons", "_showHandgun", "_showHandgunAddons", "_showExtraAttachments", "_showExtraAmmo", "_showGrenades"];
 _showPrimaryWeapon = ASORGS_ShowPrimaryWeapon&& ((lbSize ASORGS_primary_combo) > 1);
@@ -116,14 +116,14 @@ _presetborderControl ctrlSetPosition _presetpos;
 _weapontop = _presetbottom;// - (ASORGS_CategorySpacing );//_y - (ASORGS_CategorySpacing * 0.5);
 
 if(_showPrimaryWeapon) then {
-	SHOW_ITEM(ASORGS_primary_label, 2)
+    SHOW_ITEM(ASORGS_primary_label, 2)
 } else {
-	if(_showPrimaryAddons) then {
-		[ASORGS_primary_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
-		END_ITEM
-	} else {
-		HIDE_ITEM(ASORGS_primary_label, 2)
-	};
+    if(_showPrimaryAddons) then {
+        [ASORGS_primary_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
+        END_ITEM
+    } else {
+        HIDE_ITEM(ASORGS_primary_label, 2)
+    };
 };
 
 //SHOW_MULTICOMBO_IF(ASORGS_primaryAmmo_label, _showPrimaryAddons, 5)
@@ -133,33 +133,33 @@ SHOW_SINGLEITEM_IF(ASORGS_primarySuppressor_label, _showPrimarySuppressor)
 SHOW_SINGLEITEM_IF(ASORGS_primaryBipod_label, _showPrimaryBipod)
 
 if(_showAnyPrimary) then {
-	END_CATEGORY
+    END_CATEGORY
 };
 if(_showLauncher) then {
-	SHOW_ITEM(ASORGS_launcher_label, 2)
+    SHOW_ITEM(ASORGS_launcher_label, 2)
 } else {
-	if(_showLauncherAddons) then {
-		[ASORGS_launcher_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
-		END_ITEM
-	} else {
-		HIDE_ITEM(ASORGS_launcher_label, 2)
-	};
+    if(_showLauncherAddons) then {
+        [ASORGS_launcher_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
+        END_ITEM
+    } else {
+        HIDE_ITEM(ASORGS_launcher_label, 2)
+    };
 };
 //SHOW_MULTICOMBO_IF(ASORGS_launcherAmmo_label, _showLauncherAddons, 5)
 SHOW_SINGLEITEM_IF(ASORGS_launcherScope_label, _showLauncherScope)
 
 if(_showAnyLauncher) then {
-	END_CATEGORY
+    END_CATEGORY
 };
 if(_showHandgun) then {
-	SHOW_ITEM(ASORGS_handgun_label, 2)
+    SHOW_ITEM(ASORGS_handgun_label, 2)
 } else {
-	if(_showHandgunAddons) then {
-		[ASORGS_handgun_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
-		END_ITEM
-	} else {
-		HIDE_ITEM(ASORGS_handgun_label, 2)
-	};
+    if(_showHandgunAddons) then {
+        [ASORGS_handgun_label, 2, _y] call ASORGS_fnc_updateUIShowDisabled;
+        END_ITEM
+    } else {
+        HIDE_ITEM(ASORGS_handgun_label, 2)
+    };
 };
 //SHOW_MULTICOMBO_IF(ASORGS_handgunAmmo_label, _showHandgunAddons, 5)
 SHOW_SINGLEITEM_IF(ASORGS_handgunScope_label, _showHandgunScope)
@@ -167,33 +167,33 @@ SHOW_SINGLEITEM_IF(ASORGS_handgunSuppressor_label, _showHandgunSuppressor)
 SHOW_SINGLEITEM_IF(ASORGS_handgunBipod_label, _showHandgunBipod)
 
 if(_showAnyHandgun) then {
-	END_CATEGORY
+    END_CATEGORY
 };
 SHOW_MULTICOMBOCAT_IF(ASORGS_grenade_label, _showGrenades, 5)
 SHOW_MULTICOMBOCAT_IF(ASORGS_explosives_label, _showExplosives, 5)
 SHOW_MULTICOMBOCAT_IF(ASORGS_extraammo_label, _showExtraAmmo, 5)
 
 if(_showExtraAttachments) then {
-	[ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIShow;
+    [ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIShow;
 } else {
-	[ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIHide;
+    [ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIHide;
 };
-_comboCount = 5;	
+_comboCount = 5;    
 _currentIDC = ASORGS_extraattach_label + 1;
 _previousIDC = ASORGS_extraattach_label + 1;
 for[{_t = 0}, {_t < _comboCount}, {_t = _t + 1}] do 
 {
-	if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !_showExtraAttachments) then {
-		HIDE_ITEM(_currentIDC, 1)
-	
-	} else {
-		SHOW_ITEM(_currentIDC, 1)
-	};
-	_previousIDC = _currentIDC;
-	_currentIDC = _currentIDC + 10;
+    if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !_showExtraAttachments) then {
+        HIDE_ITEM(_currentIDC, 1)
+    
+    } else {
+        SHOW_ITEM(_currentIDC, 1)
+    };
+    _previousIDC = _currentIDC;
+    _currentIDC = _currentIDC + 10;
 };
 if(_showExtraAttachments) then {
-	END_CATEGORY
+    END_CATEGORY
 };
 
 _weaponbottom = _y - (ASORGS_CategorySpacing * 0.5);
@@ -204,9 +204,9 @@ _wpnpos set [3, _weaponbottom - _presetbottom];
 _weaponborderControl ctrlSetPosition _wpnpos;
 
 if(_showAnyWeapons) then {
-	_weaponborderControl ctrlShow true;
+    _weaponborderControl ctrlShow true;
 } else {
-	_weaponborderControl ctrlShow false;
+    _weaponborderControl ctrlShow false;
 };
 SHOW_SINGLEITEM_IF(ASORGS_uniform_label, _showUniform)
 SHOW_SINGLEITEM_IF(ASORGS_headgear_label, _showHeadgear)
@@ -214,7 +214,7 @@ SHOW_SINGLEITEM_IF(ASORGS_vest_label, _showVest)
 SHOW_SINGLEITEM_IF(ASORGS_backpack_label, _showBackpack)
 SHOW_SINGLEITEM_IF(ASORGS_goggles_label, _showGoggles)
 if(_showAnyUniform) then {
-	END_CATEGORY
+    END_CATEGORY
 };
 SHOW_SINGLEITEMCAT_IF(ASORGS_nightvision_label, _showNightvision)
 SHOW_SINGLEITEMCAT_IF(ASORGS_binoculars_label, _showBinoculars)
@@ -227,9 +227,9 @@ _unipos set [1, _weaponbottom];
 _unipos set [3, _uniformbottom - _weaponbottom];
 _uniformborderControl ctrlSetPosition _unipos;
 if(_showAnyUniformOrOthers) then {
-	_uniformborderControl ctrlShow true;
+    _uniformborderControl ctrlShow true;
 } else {
-	_uniformborderControl ctrlShow false;
+    _uniformborderControl ctrlShow false;
 };
 SHOW_MULTICOMBOCAT_IF(ASORGS_medical_label, _showMedical, 20)
 SHOW_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 10)
@@ -240,15 +240,15 @@ _miscpos set [1, _uniformbottom];
 _miscpos set [3, _miscbottom - _uniformbottom];
 _miscborderControl ctrlSetPosition _miscpos;
 if(_showAnyMisc) then {
-	_miscborderControl ctrlShow true;
+    _miscborderControl ctrlShow true;
 } else {
-	_miscborderControl ctrlShow false;
+    _miscborderControl ctrlShow false;
 };
 for "_i" from ASORGS_equipped_label to ASORGS_watch_combo do {
-	_control = ASORGS_getControl(ASORGS_Main_Display, _i);
-	_controlPos = ctrlPosition _control;
-	_controlpos set [1, _y];
-	_control ctrlSetPosition _controlpos;
+    _control = ASORGS_getControl(ASORGS_Main_Display, _i);
+    _controlPos = ctrlPosition _control;
+    _controlpos set [1, _y];
+    _control ctrlSetPosition _controlpos;
 };
 _equippedBorderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_equippedBorder);
 _equippedPos = ctrlPosition _equippedBorderControl;
@@ -258,176 +258,176 @@ _equippedBorderControl ctrlSetPosition _equippedPos;
 
  //================================================================================Shrink - doesn't fit on screen
 if(_y > (safezoneY + safezoneH - (1/25))) then {
-	_totalSpace = safezoneH - (1/25) - BOX_COMBO_HEIGHT;
-	_categorySize = _categoryCount * ASORGS_CategorySpacing;
-	_spacingSize = (_lineCount) * ASORGS_ControlSpacing;
-	_itemHeight = (_totalSpace - _categorySize - _spacingSize) / _lineCount;
-	
-	_y = safezoneY + ASORGS_TopMargin;// + ASORGS_ControlHeight + ASORGS_ControlSpacing;
+    _totalSpace = safezoneH - (1/25) - BOX_COMBO_HEIGHT;
+    _categorySize = _categoryCount * ASORGS_CategorySpacing;
+    _spacingSize = (_lineCount) * ASORGS_ControlSpacing;
+    _itemHeight = (_totalSpace - _categorySize - _spacingSize) / _lineCount;
+    
+    _y = safezoneY + ASORGS_TopMargin;// + ASORGS_ControlHeight + ASORGS_ControlSpacing;
 
-	SHOWSHRUNK_ITEM(ASORGS_preset_label, 3);
-	ENDSHRUNK_CATEGORY
+    SHOWSHRUNK_ITEM(ASORGS_preset_label, 3);
+    ENDSHRUNK_CATEGORY
 
-	_presetbottom = _y - (ASORGS_CategorySpacing * 0.5);
-	_presetborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_presetBorder);
-	_presetpos = ctrlPosition _presetborderControl;
-	_presetpos set [1, safezoneY];
-	_presetpos set [3, _presetbottom - safezoneY];
-	_presetborderControl ctrlSetPosition _presetpos;
+    _presetbottom = _y - (ASORGS_CategorySpacing * 0.5);
+    _presetborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_presetBorder);
+    _presetpos = ctrlPosition _presetborderControl;
+    _presetpos set [1, safezoneY];
+    _presetpos set [3, _presetbottom - safezoneY];
+    _presetborderControl ctrlSetPosition _presetpos;
 
-	_weapontop = _presetbottom;// - (ASORGS_CategorySpacing );//_y - (ASORGS_CategorySpacing * 0.5);
+    _weapontop = _presetbottom;// - (ASORGS_CategorySpacing );//_y - (ASORGS_CategorySpacing * 0.5);
 
-	//primary weapon is never hidden
-	if(_showPrimaryWeapon) then {
-		SHOWSHRUNK_ITEM(ASORGS_primary_label, 2)
-	} else {
-		if(_showPrimaryAddons) then {
-			[ASORGS_primary_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
-			ENDSHRUNK_ITEM
-		} else {
-			HIDE_ITEM(ASORGS_primary_label, 2)
-		};
-	};
+    //primary weapon is never hidden
+    if(_showPrimaryWeapon) then {
+        SHOWSHRUNK_ITEM(ASORGS_primary_label, 2)
+    } else {
+        if(_showPrimaryAddons) then {
+            [ASORGS_primary_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
+            ENDSHRUNK_ITEM
+        } else {
+            HIDE_ITEM(ASORGS_primary_label, 2)
+        };
+    };
 
-	SHOWSHRUNK_MULTICOMBO_IF(ASORGS_primaryAmmo_label, _showPrimaryAddons, 5)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryScope_label, _showPrimaryScope)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryRail_label, _showPrimaryRail)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primarySuppressor_label, _showPrimarySuppressor)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryBipod_label, _showPrimaryBipod)
-	
-	if(_showAnyPrimary) then {
-		ENDSHRUNK_CATEGORY
-	};
-	//launcher is never hidden
-	if(_showLauncher) then {
-		SHOWSHRUNK_ITEM(ASORGS_launcher_label, 2)
-	} else {
-		if(_showLauncherAddons) then {
-			[ASORGS_launcher_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
-			ENDSHRUNK_ITEM
-		} else {
-			HIDE_ITEM(ASORGS_launcher_label, 2)
-		};
-	};
-	SHOWSHRUNK_MULTICOMBO_IF(ASORGS_launcherAmmo_label, _showLauncherAddons, 5)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_launcherScope_label, _showLauncherScope)
+    SHOWSHRUNK_MULTICOMBO_IF(ASORGS_primaryAmmo_label, _showPrimaryAddons, 5)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryScope_label, _showPrimaryScope)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryRail_label, _showPrimaryRail)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primarySuppressor_label, _showPrimarySuppressor)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryBipod_label, _showPrimaryBipod)
+    
+    if(_showAnyPrimary) then {
+        ENDSHRUNK_CATEGORY
+    };
+    //launcher is never hidden
+    if(_showLauncher) then {
+        SHOWSHRUNK_ITEM(ASORGS_launcher_label, 2)
+    } else {
+        if(_showLauncherAddons) then {
+            [ASORGS_launcher_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
+            ENDSHRUNK_ITEM
+        } else {
+            HIDE_ITEM(ASORGS_launcher_label, 2)
+        };
+    };
+    SHOWSHRUNK_MULTICOMBO_IF(ASORGS_launcherAmmo_label, _showLauncherAddons, 5)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_launcherScope_label, _showLauncherScope)
 
-	if(_showAnyLauncher) then {
-		ENDSHRUNK_CATEGORY
-	};
-	//handgun is never hidden
-	if(_showHandgun) then {
-		SHOWSHRUNK_ITEM(ASORGS_handgun_label, 2)
-	} else {
-		if(_showHandgunAddons) then {
-			[ASORGS_handgun_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
-			ENDSHRUNK_ITEM
-		} else {
-			HIDE_ITEM(ASORGS_handgun_label, 2)
-		};
-	};
-	//if no handgun weapon is selected then hide ammo
-	//move label
-	SHOWSHRUNK_MULTICOMBO_IF(ASORGS_handgunAmmo_label, _showHandgunAddons, 5)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunScope_label, _showHandgunScope)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunSuppressor_label, _showHandgunSuppressor)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunBipod_label, _showHandgunBipod)
-	
-	if(_showAnyHandgun) then {
-		ENDSHRUNK_CATEGORY
-	};
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_grenade_label, _showGrenades, 5)
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_explosives_label, _showExplosives, 5)
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_extraammo_label, _showExtraAmmo, 5)
+    if(_showAnyLauncher) then {
+        ENDSHRUNK_CATEGORY
+    };
+    //handgun is never hidden
+    if(_showHandgun) then {
+        SHOWSHRUNK_ITEM(ASORGS_handgun_label, 2)
+    } else {
+        if(_showHandgunAddons) then {
+            [ASORGS_handgun_label, 2, _y, _itemHeight] call ASORGS_fnc_updateUIShowDisabled;
+            ENDSHRUNK_ITEM
+        } else {
+            HIDE_ITEM(ASORGS_handgun_label, 2)
+        };
+    };
+    //if no handgun weapon is selected then hide ammo
+    //move label
+    SHOWSHRUNK_MULTICOMBO_IF(ASORGS_handgunAmmo_label, _showHandgunAddons, 5)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunScope_label, _showHandgunScope)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunSuppressor_label, _showHandgunSuppressor)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunBipod_label, _showHandgunBipod)
+    
+    if(_showAnyHandgun) then {
+        ENDSHRUNK_CATEGORY
+    };
+    SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_grenade_label, _showGrenades, 5)
+    SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_explosives_label, _showExplosives, 5)
+    SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_extraammo_label, _showExtraAmmo, 5)
 
-	if(_showExtraAttachments) then {
-	//move label
-		[ASORGS_extraattach_label, 1, _y, _itemHeight] call ASORGS_fnc_updateUIShow;
-	} else {
-		[ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIHide;
-	};
-	_comboCount = 5;	
-	_currentIDC = ASORGS_extraattach_label + 1;
-	_previousIDC = ASORGS_extraattach_label + 1;
-	for[{_t = 0}, {_t < _comboCount}, {_t = _t + 1}] do 
-	{
-		if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !_showExtraAttachments) then {
-			HIDE_ITEM(_currentIDC, 1)
-		
-		} else {
-			SHOWSHRUNK_ITEM(_currentIDC, 1)
-		};
-		_previousIDC = _currentIDC;
-		_currentIDC = _currentIDC + 10;
-	};
-	if(_showExtraAttachments) then {
-		ENDSHRUNK_CATEGORY
-	};
+    if(_showExtraAttachments) then {
+    //move label
+        [ASORGS_extraattach_label, 1, _y, _itemHeight] call ASORGS_fnc_updateUIShow;
+    } else {
+        [ASORGS_extraattach_label, 1, _y] call ASORGS_fnc_updateUIHide;
+    };
+    _comboCount = 5;    
+    _currentIDC = ASORGS_extraattach_label + 1;
+    _previousIDC = ASORGS_extraattach_label + 1;
+    for[{_t = 0}, {_t < _comboCount}, {_t = _t + 1}] do 
+    {
+        if(((_t > 0) && ((lbCurSel _previousIDC) == 0)) || !_showExtraAttachments) then {
+            HIDE_ITEM(_currentIDC, 1)
+        
+        } else {
+            SHOWSHRUNK_ITEM(_currentIDC, 1)
+        };
+        _previousIDC = _currentIDC;
+        _currentIDC = _currentIDC + 10;
+    };
+    if(_showExtraAttachments) then {
+        ENDSHRUNK_CATEGORY
+    };
 
-	_weaponbottom = _y - (ASORGS_CategorySpacing * 0.5);
-	_weaponborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_weaponsBorder);
-	_wpnpos = ctrlPosition _weaponborderControl;
-	_wpnpos set [1, _presetbottom];
-	_wpnpos set [3, _weaponbottom - _presetbottom];
-	_weaponborderControl ctrlSetPosition _wpnpos;
+    _weaponbottom = _y - (ASORGS_CategorySpacing * 0.5);
+    _weaponborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_weaponsBorder);
+    _wpnpos = ctrlPosition _weaponborderControl;
+    _wpnpos set [1, _presetbottom];
+    _wpnpos set [3, _weaponbottom - _presetbottom];
+    _weaponborderControl ctrlSetPosition _wpnpos;
 
-	if(_showAnyWeapons) then {
-		_weaponborderControl ctrlShow true;
-	} else {
-		_weaponborderControl ctrlShow false;
-	};
-	//no uniform controls are ever hidden
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_uniform_label, _showUniform)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_headgear_label, _showHeadgear)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_vest_label, _showVest)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_backpack_label, _showBackpack)
-	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_goggles_label, _showGoggles)
+    if(_showAnyWeapons) then {
+        _weaponborderControl ctrlShow true;
+    } else {
+        _weaponborderControl ctrlShow false;
+    };
+    //no uniform controls are ever hidden
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_uniform_label, _showUniform)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_headgear_label, _showHeadgear)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_vest_label, _showVest)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_backpack_label, _showBackpack)
+    SHOWSHRUNK_SINGLEITEM_IF(ASORGS_goggles_label, _showGoggles)
 
 
-	if(_showAnyUniform) then {
-		ENDSHRUNK_CATEGORY
-	};
-	SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_nightvision_label, _showNightvision)
-	SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_binoculars_label, _showBinoculars)
-	SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_insignia_label, _showInsignia)
+    if(_showAnyUniform) then {
+        ENDSHRUNK_CATEGORY
+    };
+    SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_nightvision_label, _showNightvision)
+    SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_binoculars_label, _showBinoculars)
+    SHOWSHRUNK_SINGLEITEMCAT_IF(ASORGS_insignia_label, _showInsignia)
 
-	_uniformbottom = _y - (ASORGS_CategorySpacing * 0.5);
-	_uniformborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_uniformBorder);
-	_unipos = ctrlPosition _weaponborderControl;
-	_unipos set [1, _weaponbottom];
-	_unipos set [3, _uniformbottom - _weaponbottom];
-	_uniformborderControl ctrlSetPosition _unipos;
-	if(_showAnyUniformOrOthers) then {
-		_uniformborderControl ctrlShow true;
-	} else {
-		_uniformborderControl ctrlShow false;
-	};
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_medical_label, _showMedical, 20)
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 10)
+    _uniformbottom = _y - (ASORGS_CategorySpacing * 0.5);
+    _uniformborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_uniformBorder);
+    _unipos = ctrlPosition _weaponborderControl;
+    _unipos set [1, _weaponbottom];
+    _unipos set [3, _uniformbottom - _weaponbottom];
+    _uniformborderControl ctrlSetPosition _unipos;
+    if(_showAnyUniformOrOthers) then {
+        _uniformborderControl ctrlShow true;
+    } else {
+        _uniformborderControl ctrlShow false;
+    };
+    SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_medical_label, _showMedical, 20)
+    SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 10)
 
-	_miscbottom = _y - (ASORGS_CategorySpacing * 0.5);
-	_miscborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_miscBorder);
-	_miscpos = ctrlPosition _miscborderControl;
-	_miscpos set [1, _uniformbottom];
-	_miscpos set [3, _miscbottom - _uniformbottom];
-	_miscborderControl ctrlSetPosition _miscpos;
-	if(_showAnyMisc) then {
-		_miscborderControl ctrlShow true;
-	} else {
-		_miscborderControl ctrlShow false;
-	};
+    _miscbottom = _y - (ASORGS_CategorySpacing * 0.5);
+    _miscborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_miscBorder);
+    _miscpos = ctrlPosition _miscborderControl;
+    _miscpos set [1, _uniformbottom];
+    _miscpos set [3, _miscbottom - _uniformbottom];
+    _miscborderControl ctrlSetPosition _miscpos;
+    if(_showAnyMisc) then {
+        _miscborderControl ctrlShow true;
+    } else {
+        _miscborderControl ctrlShow false;
+    };
 
-	for "_i" from ASORGS_equipped_label to ASORGS_watch_combo do {
-		_control = ASORGS_getControl(ASORGS_Main_Display, _i);
-		_controlPos = ctrlPosition _control;
-		_controlpos set [1, _y];
-		_control ctrlSetPosition _controlpos;
-	};
-	_equippedBorderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_equippedBorder);
-	_equippedPos = ctrlPosition _equippedBorderControl;
-	_equippedPos set [1, _y - ASORGS_CategorySpacing * 0.5];
-	_equippedBorderControl ctrlSetPosition _equippedPos;
-	 _y = _y + BOX_COMBO_HEIGHT + ASORGS_ControlSpacing;
+    for "_i" from ASORGS_equipped_label to ASORGS_watch_combo do {
+        _control = ASORGS_getControl(ASORGS_Main_Display, _i);
+        _controlPos = ctrlPosition _control;
+        _controlpos set [1, _y];
+        _control ctrlSetPosition _controlpos;
+    };
+    _equippedBorderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_equippedBorder);
+    _equippedPos = ctrlPosition _equippedBorderControl;
+    _equippedPos set [1, _y - ASORGS_CategorySpacing * 0.5];
+    _equippedBorderControl ctrlSetPosition _equippedPos;
+     _y = _y + BOX_COMBO_HEIGHT + ASORGS_ControlSpacing;
 
 };
 //now commit everything
@@ -439,48 +439,48 @@ _control = ASORGS_getControl(ASORGS_Main_Display,ASORGS_preset_label+2);
 _control ctrlCommit 0.1;
 //lines with 2 controls
 {
-	_control = ASORGS_getControl(ASORGS_Main_Display,_x);
-	_control ctrlCommit 0.1;
-	_control = ASORGS_getControl(ASORGS_Main_Display,_x+1);
-	_control ctrlCommit 0.1;
+    _control = ASORGS_getControl(ASORGS_Main_Display,_x);
+    _control ctrlCommit 0.1;
+    _control = ASORGS_getControl(ASORGS_Main_Display,_x+1);
+    _control ctrlCommit 0.1;
 } forEach [ASORGS_primary_label, ASORGS_primaryScope_label, ASORGS_primaryRail_label, ASORGS_primarySuppressor_label, ASORGS_primaryBipod_label, 
-			ASORGS_launcher_label, ASORGS_launcherScope_label, 
-			ASORGS_handgun_label, ASORGS_handgunScope_label, ASORGS_handgunSuppressor_label, ASORGS_handgunBipod_label, 
-			ASORGS_uniform_label, ASORGS_headgear_label, ASORGS_vest_label,ASORGS_backpack_label, 
-			ASORGS_binoculars_label, ASORGS_nightvision_label, ASORGS_goggles_label, ASORGS_extraattach_label, ASORGS_insignia_label];
+            ASORGS_launcher_label, ASORGS_launcherScope_label, 
+            ASORGS_handgun_label, ASORGS_handgunScope_label, ASORGS_handgunSuppressor_label, ASORGS_handgunBipod_label, 
+            ASORGS_uniform_label, ASORGS_headgear_label, ASORGS_vest_label,ASORGS_backpack_label, 
+            ASORGS_binoculars_label, ASORGS_nightvision_label, ASORGS_goggles_label, ASORGS_extraattach_label, ASORGS_insignia_label];
 
 //individual controls
 {
-	_control = ASORGS_getControl(ASORGS_Main_Display,_x);
-	_control ctrlCommit 0.1;
+    _control = ASORGS_getControl(ASORGS_Main_Display,_x);
+    _control ctrlCommit 0.1;
 } forEach [ASORGS_extraattach2_combo,ASORGS_extraattach3_combo,ASORGS_extraattach4_combo,ASORGS_extraattach5_combo];
 //multicombos
 {
-	private["_i", "_t", "_control", "_currentIDC"];
-	_control = ASORGS_getControl(ASORGS_Main_Display,_x);
-	_control ctrlCommit 0.1;
-	_comboCount = 5;	
-	if(_x == ASORGS_medical_label) then {
-		_comboCount = 20;
-	};
-	if(_x == ASORGS_misc_label) then {
-		_comboCount = 10;
-	};
+    private["_i", "_t", "_control", "_currentIDC"];
+    _control = ASORGS_getControl(ASORGS_Main_Display,_x);
+    _control ctrlCommit 0.1;
+    _comboCount = 5;    
+    if(_x == ASORGS_medical_label) then {
+        _comboCount = 20;
+    };
+    if(_x == ASORGS_misc_label) then {
+        _comboCount = 10;
+    };
 
-	_currentIDC = _x + 1;
-	for[{_t = 0}, {_t < _comboCount}, {_t = _t + 1}] do 
-	{
-		for[{_i = 0}, {_i < ASORGS_MultiComboControls}, {_i = _i + 1}] do {
-			_control = ASORGS_getControl(ASORGS_Main_Display,_currentIDC + _i);
-			_control ctrlCommit 0.1;
-		};
-		_currentIDC = _currentIDC + 10;
-	};
+    _currentIDC = _x + 1;
+    for[{_t = 0}, {_t < _comboCount}, {_t = _t + 1}] do 
+    {
+        for[{_i = 0}, {_i < ASORGS_MultiComboControls}, {_i = _i + 1}] do {
+            _control = ASORGS_getControl(ASORGS_Main_Display,_currentIDC + _i);
+            _control ctrlCommit 0.1;
+        };
+        _currentIDC = _currentIDC + 10;
+    };
 } forEach [ASORGS_grenade_label, ASORGS_explosives_label, ASORGS_medical_label, ASORGS_misc_label, ASORGS_extraammo_label, ASORGS_handgunAmmo_label, ASORGS_launcherAmmo_label, ASORGS_primaryAmmo_label];
 
 for "_i" from ASORGS_equipped_label to ASORGS_watch_combo do {
-	_control = ASORGS_getControl(ASORGS_Main_Display, _i);
-	_control ctrlCommit 0.1;
+    _control = ASORGS_getControl(ASORGS_Main_Display, _i);
+    _control ctrlCommit 0.1;
 };
 _weaponborderControl ctrlCommit 0.1;
 _uniformborderControl ctrlCommit 0.1;

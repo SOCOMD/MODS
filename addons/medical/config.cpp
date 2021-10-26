@@ -58,14 +58,14 @@ class CfgPatches {
 
 class CfgFunctions
 {
-	class ace_medical_statemachine
-	{
+    class ace_medical_statemachine
+    {
         tag = "ace_medical_statemachine";
-		class Functions
-		{
-			class handleStateCardiacArrest{
+        class Functions
+        {
+            class handleStateCardiacArrest{
                 
-			file="z\socomd\addons\medical\function_overwrites\fn_handleStateCardiacArrest.sqf";
+            file="z\socomd\addons\medical\function_overwrites\fn_handleStateCardiacArrest.sqf";
             };
         };
     };

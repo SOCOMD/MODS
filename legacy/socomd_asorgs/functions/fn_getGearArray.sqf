@@ -21,31 +21,31 @@ if(goggles ASORGS_Player != "") then { _items set[count _items, goggles ASORGS_P
 if(headgear ASORGS_Player != "") then { _items set[count _items, headgear ASORGS_Player]; };
 if(count (primaryWeaponMagazine ASORGS_Player) > 0) then
 {
-	{
-		_magazines set[count _magazines,_x];
-	} foreach (primaryWeaponMagazine ASORGS_Player);
+    {
+        _magazines set[count _magazines,_x];
+    } foreach (primaryWeaponMagazine ASORGS_Player);
 };
 
 if(count (secondaryWeaponMagazine ASORGS_Player) > 0) then
 {
-	{
-		_magazines set[count _magazines,_x];
-	} foreach (secondaryWeaponMagazine ASORGS_Player);
+    {
+        _magazines set[count _magazines,_x];
+    } foreach (secondaryWeaponMagazine ASORGS_Player);
 };
 
 if(count (handgunMagazine ASORGS_Player) > 0) then
 {
-	{
-		_magazines set[count _magazines,_x];
-	} foreach (handgunMagazine ASORGS_Player);
+    {
+        _magazines set[count _magazines,_x];
+    } foreach (handgunMagazine ASORGS_Player);
 };
 
 //vas does this for designator batteries
 _curWep = currentWeapon ASORGS_Player;
 if("Laserdesignator" in assignedItems ASORGS_Player) then
 {
-	ASORGS_Player selectWeapon "Laserdesignator";
-	if(currentMagazine ASORGS_Player != "") then {_magazines set[count _magazines,(currentMagazine ASORGS_Player)];};
+    ASORGS_Player selectWeapon "Laserdesignator";
+    if(currentMagazine ASORGS_Player != "") then {_magazines set[count _magazines,(currentMagazine ASORGS_Player)];};
 };
 
 ASORGS_Player selectWeapon _curWep;

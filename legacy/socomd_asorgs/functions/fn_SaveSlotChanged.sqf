@@ -7,7 +7,7 @@ _slot = _listbox lbValue (lbCurSel _listbox);
 _textbox = ASORGS_getControl(ASORGS_save_dialog, ASORGS_save_textbox);
 
 if(_slot < 0) then {
-	_name = "New Preset";
+    _name = "New Preset";
 };
 
 

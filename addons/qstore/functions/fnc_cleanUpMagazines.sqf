@@ -16,22 +16,22 @@ private _currentHandgunCfg = (configFile >> "CfgLoadoutWeapons" >> _currentHandg
 
 // Remove Primary magazine from gun
 if !(getNumber(_currentPrimaryCfg >> "startLoaded") isEqualTo 1) then {
-	_currentPrimaryLoadout set [4, []];
+    _currentPrimaryLoadout set [4, []];
 };
 
 // Remove Secondary magazine from gun
 if !(getNumber(_currentSecondaryCfg >> "startLoaded") isEqualTo 1) then {
-	_currentSecondaryLoadout set [4, []];
+    _currentSecondaryLoadout set [4, []];
 };
 
 
 // Remove Handgun magazine from gun
 if !(getNumber(_currentHandgunCfg >> "startLoaded") isEqualTo 1) then {
-	_currentHandgunLoadout set [4, []];
+    _currentHandgunLoadout set [4, []];
 } else {
-	_magazine = ((getArray(_currentHandgunCfg >> "magazines") select 0 ) select 0);
-	_magazineCount = getNumber(configFile >>"CfgMagazines" >> _magazine >> "count");
-	_currentHandgunLoadout set [4, [_magazine,_magazineCount]];
+    _magazine = ((getArray(_currentHandgunCfg >> "magazines") select 0 ) select 0);
+    _magazineCount = getNumber(configFile >>"CfgMagazines" >> _magazine >> "count");
+    _currentHandgunLoadout set [4, [_magazine,_magazineCount]];
 };
 
 _currentLoadout set [0,_currentPrimaryLoadout];

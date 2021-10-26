@@ -14,6 +14,6 @@
 #define FACTION_STR "SOCOMD"
 
 //Scope
-#define private	0
+#define private    0
 #define protected 1
 #define public 2

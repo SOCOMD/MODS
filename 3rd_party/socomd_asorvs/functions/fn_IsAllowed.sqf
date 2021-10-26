@@ -9,12 +9,12 @@ _result = true;
 
 //check full lists
 if(_useFullLists) then {
-	if(_class in ASORVS_Blacklist) then {
-		_result = false;
-	};
-	if((count ASORVS_Whitelist > 0) && (!(_class in ASORVS_Whitelist))) then {
-		_result = false;
-	};
+    if(_class in ASORVS_Blacklist) then {
+        _result = false;
+    };
+    if((count ASORVS_Whitelist > 0) && (!(_class in ASORVS_Whitelist))) then {
+        _result = false;
+    };
 };
 
 //check runtime lists

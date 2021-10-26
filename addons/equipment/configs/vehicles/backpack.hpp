@@ -46,16 +46,16 @@ class SOG_BAG_med_MC : B_AssaultPack_mcamo {
  
 //class B_Bergen_Base;
 //class SOCOMD_drybag_od : B_Bergen_Base {
-//	maximumLoad = 450;
+//    maximumLoad = 450;
 //};
 //class SOCOMD_drybag_blk : B_Bergen_Base {
-//	maximumLoad = 450;
+//    maximumLoad = 450;
 //};
     
 class SOCOMD_BackpackPRC117F : Kit_Bag_R_MC {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
-	maximumLoad = 450;
+    maximumLoad = 450;
 
     class TransportItems {
         TRANSPORT_ITEM(ACRE_PRC117F, 1)

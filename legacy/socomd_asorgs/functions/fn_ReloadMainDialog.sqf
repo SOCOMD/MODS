@@ -14,10 +14,10 @@ disableSerialization;
 _playerSide = -1;
 
 switch (side ASORGS_Player) do {
-	case EAST: {_playerSide = SIDE_EAST;};
-	case WEST: {_playerSide = SIDE_WEST;};
-	case INDEPENDENT: {_playerSide = SIDE_INDEPENDENT;};
-	case CIVILIAN: {_playerSide = SIDE_CIV;};
+    case EAST: {_playerSide = SIDE_EAST;};
+    case WEST: {_playerSide = SIDE_WEST;};
+    case INDEPENDENT: {_playerSide = SIDE_INDEPENDENT;};
+    case CIVILIAN: {_playerSide = SIDE_CIV;};
 };
 ASORGS_PlayerSideID = _playerSide;
 
@@ -123,7 +123,7 @@ sleep 0.1;
 //nothing needs updating as loading just finished
 ASORGS_NeedsUpdating = [];
 if(isNil {ASORGS_UpdateLoop}) then {
-	ASORGS_UpdateLoop = [] spawn ASORGS_fnc_UpdateLoop;
+    ASORGS_UpdateLoop = [] spawn ASORGS_fnc_UpdateLoop;
 };
 ASORGS_Loading = false;
 ASORGS_FirstLoad = false;

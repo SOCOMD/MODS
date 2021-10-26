@@ -1,16 +1,16 @@
 disableSerialization;
 if(!isNil 'ASORGS_loading_preset' ) exitWith {hint "Still applying gear. Please wait before reopening Gear Selector.";};
 if(isNil '_this') then {
-	ASORGS_Player = player;
+    ASORGS_Player = player;
  } else {
-	ASORGS_Player = [_this, 0, player, [objNull]] call BIS_fnc_Param;
-	_isclass = isClass (configFile >> "cfgVehicles" >> (typeOf ASORGS_Player));
-	if (_isClass) then {
-		_type = getText(configFile >> "cfgVehicles" >> (typeOf ASORGS_Player) >> "vehicleClass");
-		if(_type != "Men") then {ASORGS_Player = player; };
-	} else {
-		ASORGS_Player = player;
-	};
+    ASORGS_Player = [_this, 0, player, [objNull]] call BIS_fnc_Param;
+    _isclass = isClass (configFile >> "cfgVehicles" >> (typeOf ASORGS_Player));
+    if (_isClass) then {
+        _type = getText(configFile >> "cfgVehicles" >> (typeOf ASORGS_Player) >> "vehicleClass");
+        if(_type != "Men") then {ASORGS_Player = player; };
+    } else {
+        ASORGS_Player = player;
+    };
 };
 
 ASORGS_FirstLoad = true;

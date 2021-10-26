@@ -13,10 +13,10 @@ _comboctrl = ASORGS_getControl(ASORGS_Main_Display, _comboidc);
 _item = _comboctrl lbData (lbCurSel _comboctrl);
 _added = [_item] call ASORGS_fnc_AddInventoryItem;
 if(_added) then {
-	_countctrl = ASORGS_getControl(ASORGS_Main_Display, _countidc);
-	_countctrl ctrlSetText format["%1", (parseNumber ctrlText _countctrl) + 1];
+    _countctrl = ASORGS_getControl(ASORGS_Main_Display, _countidc);
+    _countctrl ctrlSetText format["%1", (parseNumber ctrlText _countctrl) + 1];
 
-	[] call ASORGS_fnc_UpdateCapacity;
+    [] call ASORGS_fnc_UpdateCapacity;
 
 };
 

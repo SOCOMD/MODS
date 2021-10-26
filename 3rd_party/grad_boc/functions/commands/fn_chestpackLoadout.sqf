@@ -6,8 +6,8 @@
  * Items: [<CLASSNAME>, <AMOUNT>] i.e.: ["NVGoggles",1],
  * Magazines: [<CLASSNAME>, <AMOUNT>, <AMMO COUNT>] i.e.: ["30Rnd_65x39_caseless_mag",6,30]
  * Weapons: [[<CLASSNAME>, <SILENCER>, <POINTER>, <OPTIC>, <PRIMARY MAG>, <SECONDARY MAG>, <BIPOD>], <AMOUNT>]
- * 		where PRIMARY/SECONDARY MAG is [<CLASSNAME>, <AMMO COUNT>]
- *		i.e.: [["arifle_MX_GL_F","","acc_pointer_IR","optic_Aco",["30Rnd_65x39_caseless_mag",30],["1Rnd_SmokeOrange_Grenade_shell",1],""],1]
+ *         where PRIMARY/SECONDARY MAG is [<CLASSNAME>, <AMMO COUNT>]
+ *        i.e.: [["arifle_MX_GL_F","","acc_pointer_IR","optic_Aco",["30Rnd_65x39_caseless_mag",30],["1Rnd_SmokeOrange_Grenade_shell",1],""],1]
  *
  * The easiest way to get such a loadout is just "getUnitLoadout player select 5 select 1", which will return the loadout 
  * of the players backpack.

@@ -15,14 +15,14 @@ class CfgPatches {
 
 class CfgFunctions
 {
-	class ace_medical_statemachine
-	{
+    class ace_medical_statemachine
+    {
         tag = "ctab";
-		class Functions
-		{
-			class drawBftMarkers{
+        class Functions
+        {
+            class drawBftMarkers{
                 
-			file="z\socomd\addons\ctab_fix\function_overwrites\fn_drawBftMarkers.sqf";
+            file="z\socomd\addons\ctab_fix\function_overwrites\fn_drawBftMarkers.sqf";
             };
         };
     };

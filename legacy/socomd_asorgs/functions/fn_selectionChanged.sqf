@@ -10,11 +10,11 @@ _index = _this select 1;
 
 _idc = ctrlIDC _control;
 switch (_idc) do
-{	
+{    
 
-	default {
-		ASORGS_NeedsUpdating = ASORGS_NeedsUpdating - [_idc];
-		ASORGS_NeedsUpdating = ASORGS_NeedsUpdating + [_idc];
-	};
+    default {
+        ASORGS_NeedsUpdating = ASORGS_NeedsUpdating - [_idc];
+        ASORGS_NeedsUpdating = ASORGS_NeedsUpdating + [_idc];
+    };
 };
 ASORGS_HandlingEvent = nil;
