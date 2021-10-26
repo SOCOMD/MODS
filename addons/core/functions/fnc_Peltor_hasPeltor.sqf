@@ -1,5 +1,4 @@
 #include "script_component.hpp"
-#include "\z\ace\addons\main\script_macros.hpp"
 
 params ["_user", "_new", "_old"];
 _newHeadgear = _new select 6;

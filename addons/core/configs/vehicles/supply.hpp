@@ -268,7 +268,8 @@ class SOCOMD_Supply_NVG : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] NVG";
     model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
     hiddenSelections[] = {"Camo","Camo2"};
-    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", "\z\socomd\addons\data\CTGear\SNIPER_LOGO.paa"};
+    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", 
+    "\z\socomd\addons\data\CTGear\SNIPER_LOGO.paa"};
 
     class TransportItems {
         TRANSPORT_ITEM(SOCOMD_NVG, 8)
@@ -282,7 +283,8 @@ class SOCOMD_Supply_152 : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] AN/PRC 152 Radio (Spare)";
     model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
     hiddenSelections[] = {"Camo","Camo2"};
-    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", "\z\socomd\addons\data\CTGear\radio_LOGO.paa"};
+    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", 
+    "\z\socomd\addons\data\CTGear\radio_LOGO.paa"};
 
     class TransportItems {
         TRANSPORT_ITEM(ACRE_PRC152, 8)
