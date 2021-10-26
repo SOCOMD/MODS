@@ -55,7 +55,7 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
-//    Count = 11
+//    Count = 12
 
     ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
     ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\Altis_LHD_HMAS_Canberra.Altis)
@@ -68,6 +68,7 @@ class CfgMissions {
     ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
     ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberra),fobs\Pulau_LHD_HMAS_Canberra.pulau)
     ADD(LAGHISOLAFOB,SOCOMD Laghisola LHD (HMAS Canberra),fobs\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
+    ADD(UTESLHD,SOCOMD Utes LHD (HMAS Canberra),fobs\Utes_LHD_HMAS_Canberra.utes)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs (Old)
