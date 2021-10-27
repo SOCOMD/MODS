@@ -45,7 +45,7 @@ force force ace_cookoff_ammoCookoffDuration = 0.5;
 force force ace_cookoff_enable = 1;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 0.75;
+force force ace_cookoff_probabilityCoef = 0.7;
 
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = false;
@@ -53,7 +53,7 @@ force force ace_explosives_punishNonSpecialists = false;
 force force ace_explosives_requireSpecialist = false;
 
 // ACE Fire
-force force ace_fire_enable = false; // Will need a lot of testing...
+force force ace_fire_enabled = false;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
@@ -78,13 +78,13 @@ force force ace_hearing_unconsciousnessVolume = 0.2;
 force force ace_interaction_disableNegativeRating = true;
 force force ace_interaction_enableMagazinePassing = true;
 force force ace_interaction_enableTeamManagement = true;
-force force ace_interaction_enableGroupRenaming = true; // Added (also removed the clientside mod from the whitelist)
-force force ace_interaction_interactWithTerrainObjects = false; // Sometimes buggy with collisions, would need too much testing on all the maps
+force force ace_interaction_enableGroupRenaming = true;
+force force ace_interaction_interactWithTerrainObjects = false;
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
 ace_interact_menu_actionOnKeyRelease = true;
-ace_interact_menu_addBuildingActions = true; // Note; performance heavy in CQB
+ace_interact_menu_addBuildingActions = true;
 ace_interact_menu_alwaysUseCursorInteraction = true;
 ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 ace_interact_menu_colorShadowMax = [0,0,0,1];
@@ -100,12 +100,10 @@ ace_interact_menu_textSize = 1;
 ace_interact_menu_useListMenu = true;
 
 // ACE Interaction Menu (Self) - More
-// Allows us to declutter players interaction menus by moving less used stuff to a "more" category
 force force ace_interact_menu_more__ace_zeus_create = true;
 force force ace_interact_menu_more__ace_zeus_delete = true;
 
 // ACE Interaction Menu (Self) - Move to Root
-// Does the exact opposite of the above
 
 // ACE Logistics
 force force ace_cargo_enable = true;
@@ -134,7 +132,7 @@ force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 force force ace_map_BFT_Enabled = false;
-force force ace_map_BFT_HideAiGroups = true; // Was false
+force force ace_map_BFT_HideAiGroups = true;
 force force ace_map_BFT_Interval = 1;
 force force ace_map_BFT_ShowPlayerNames = false;
 force force ace_map_DefaultChannel = 1;
@@ -191,7 +189,7 @@ force force ace_medical_statemachine_cardiacArrestTime = 180;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
 force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force force ace_medical_treatment_advancedBandages = 2;
-force force ace_medical_treatment_advancedDiagnose = true;
+force force ace_medical_treatment_advancedDiagnose = 1;
 force force ace_medical_treatment_advancedMedication = true;
 force force ace_medical_treatment_allowBodyBagUnconscious = false;
 force ace_medical_treatment_allowLitterCreation = true;
@@ -199,13 +197,14 @@ force force ace_medical_treatment_allowSelfIV = 1;
 force force ace_medical_treatment_allowSelfPAK = 0;
 force force ace_medical_treatment_allowSelfStitch = 1;
 force force ace_medical_treatment_allowSharedEquipment = 1;
-force force ace_medical_treatment_clearTraumaAfterBandage = true;
+force force ace_medical_treatment_clearTrauma = 2;
 force force ace_medical_treatment_consumePAK = 1;
 force force ace_medical_treatment_consumeSurgicalKit = 1;
 force force ace_medical_treatment_convertItems = 0;
-force force ace_medical_treatment_cprSuccessChance = 0.0451959;
+force force ace_medical_treatment_cprSuccessChanceMin = 0.05;
+force force ace_medical_treatment_cprSuccessChanceMax = 0.05;															  
 force force ace_medical_treatment_holsterRequired = 0;
-force ace_medical_treatment_litterCleanupDelay = 600;
+force ace_medical_treatment_litterCleanupDelay = 300;
 force force ace_medical_treatment_locationEpinephrine = 0;
 force force ace_medical_treatment_locationIV = 0;
 force force ace_medical_treatment_locationPAK = 4;
@@ -232,7 +231,7 @@ force force kat_airway_Accuvac_time = 8;
 force force kat_airway_CheckAirway_time = 2;
 force force kat_airway_checkbox_puking_sound = true;
 force force kat_airway_Colored_logs = true;
-force force kat_airway_deathTimer = 150;
+
 force force kat_airway_enable = true;
 force force kat_airway_Guedeltubus_time = 6;
 force force kat_airway_Larynxtubus_time = 3;
@@ -247,7 +246,7 @@ force force kat_airway_string_exit = "";
 force force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
-force force kat_breathing_death_timer_enable = false;
+
 force force kat_breathing_enable = true;
 force force kat_breathing_hemopneumothoraxChance = 5;
 force force kat_breathing_medLvl_Chestseal = 1;
@@ -309,9 +308,11 @@ force force ace_overheating_enabled = true;
 force force ace_overheating_overheatingDispersion = true;
 force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = false;
+force ace_overheating_jamChanceCoef = 1.0;
 force force ace_overheating_unJamFailChance = 0.1;
+force force ace_overheating_particleEffectsAndDispersionDistance = 1000.0;
 force force ace_overheating_unJamOnreload = false;
-force force ace_overheating_cookoffCoef = 0 // Bad feature
+force force ace_overheating_cookoffCoef = 0
 
 // ACE Pointing
 force force ace_finger_enabled = false;
@@ -336,7 +337,7 @@ force force ace_quickmount_speed = 18;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = false;
-force force ace_respawn_savePreDeathGear = false; // Was true
+force force ace_respawn_savePreDeathGear = false;
 
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
@@ -376,6 +377,7 @@ force force ace_laser_dispersionCount = 5;
 force force ace_microdagr_mapDataAvailable = 2;
 ace_optionsmenu_showNewsOnMainMenu = false;
 force force ace_overpressure_distanceCoefficient = 1;
+force force ace_parachute_failureChance = 0;
 
 // ACE User Interface
 force force ace_ui_allowSelectiveUI = true;
@@ -440,7 +442,7 @@ force force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
 force force ace_winddeflection_enabled = true;
-force force ace_winddeflection_simulationInterval = 0.05;
+force force ace_winddeflection_simulationInterval = 0.10;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
@@ -543,14 +545,14 @@ diwako_dui_compass_icon_scale = 1;
 diwako_dui_compass_opacity = 1;
 force force diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
 force force diwako_dui_compassRange = 35;
-diwako_dui_compassRefreshrate = 0;
-diwako_dui_dir_showMildot = false;
-diwako_dui_dir_size = 1.25;
-diwako_dui_distanceWarning = 3;
 force force diwako_dui_enable_compass = true;
 force force diwako_dui_enable_compass_dir = 1;
 force force diwako_dui_enable_occlusion = true;
 force force diwako_dui_enable_occlusion_cone = 178.977;
+diwako_dui_compassRefreshrate = 0;
+diwako_dui_dir_showMildot = false;
+diwako_dui_dir_size = 1.25;
+diwako_dui_distanceWarning = 3;
 diwako_dui_hudScaling = 1.33333;
 diwako_dui_namelist = false;
 diwako_dui_namelist_bg = 0;
@@ -582,21 +584,6 @@ diwako_dui_use_layout_editor = false;
 // NIArms
 force force niarms_magSwitch = true;
 
-// STUI Settings
-STHud_Settings_ColourBlindMode = "Normal";
-STHud_Settings_Font = "RobotoCondensed";
-STHud_Settings_HUDMode = 1;
-force force STHud_Settings_Occlusion = true;
-force force STHud_Settings_RemoveDeadViaProximity = true;
-force force STHud_Settings_SquadBar = true;
-STHud_Settings_TextShadow = 2;
-
-// Tactical Position Ready Options
-// Animation for automatic wall avoidance = 0;
-// Change the position recovery from left click to right click. = false;
-// Enable automatic wall avoidance. = false;
-// Lookahead for corner detection (in m) = "0.2";
-
 // VET_Unflipping
 force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 8;
@@ -609,7 +596,7 @@ zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
 force force zen_context_menu_enabled = 2;
 zen_editor_declutterEmptyTree = true;
-zen_editor_disableLiveSearch = false;
+zen_editor_disableLiveSearch = true;
 zen_editor_moveDisplayToEdge = true;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 2;
@@ -617,7 +604,6 @@ force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 
 // LAMBS Danger
-// Syncing default settings
 force force lambs_danger_cqbRange = 75;
 force force lambs_danger_panicChance = 0.0;
 force lambs_danger_disableAIAutonomousManoeuvres = false;
@@ -672,9 +658,7 @@ force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // SOCOMD
-SOCOMD_peltors = false;
 SOCOMD_peltors_strength = 0.25;
-SOCOMD_peltors_timeout = 0.5;
 
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
