@@ -246,7 +246,6 @@ force force kat_airway_string_exit = "";
 force force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
-
 force force kat_breathing_enable = true;
 force force kat_breathing_hemopneumothoraxChance = 5;
 force force kat_breathing_medLvl_Chestseal = 1;
@@ -312,7 +311,7 @@ force ace_overheating_jamChanceCoef = 1.0;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_particleEffectsAndDispersionDistance = 1000.0;
 force force ace_overheating_unJamOnreload = false;
-force force ace_overheating_cookoffCoef = 0
+force force ace_overheating_cookoffCoef = 0;
 
 // ACE Pointing
 force force ace_finger_enabled = false;
