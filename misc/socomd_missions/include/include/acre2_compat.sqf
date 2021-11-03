@@ -34,19 +34,12 @@ PROGRAM_CHANNEL("ACRE_PRC117F", 10, "AIR 4", 85.9, 85.9)
 PROGRAM_CHANNEL("ACRE_PRC117F", 11, "AIR 5", 86.6, 86.6)
 ["ACRE_PRC117F", _presetId] call acre_api_fnc_setPreset;
 
-waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
-
-call {
-
-    ["e", "English"] call acre_api_fnc_babelAddLanguageType;
-
-    _languagesPlayerSpeaks = ["e"];
-
-    _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
-};
+// waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
 
     // Disabled for debugging
     /*
+call {
+    ["e", "English"] call acre_api_fnc_babelAddLanguageType;
     ["f", "Foreign"] call acre_api_fnc_babelAddLanguageType;
     ["z", "Zeus"] call acre_api_fnc_babelAddLanguageType;
 
@@ -54,8 +47,12 @@ call {
         "SOCOMD_Homestead"
     ];
 
+    _languagesPlayerSpeaks = ["e"];
+
     _type = typeOf player;
     if(_type in _whitelist) then {
         _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
     };
+    _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
+};
     */

@@ -225,13 +225,11 @@ force force ace_medical_treatment_treatmentTimeTourniquet = 0.3;
 force force ace_medical_treatment_woundReopenChance = 0.656423;
 force force ace_medical_treatment_woundStitchTime = 5;
 
-
 // KAT - ADV Medical: Airway
 force force kat_airway_Accuvac_time = 8;
 force force kat_airway_CheckAirway_time = 2;
 force force kat_airway_checkbox_puking_sound = true;
 force force kat_airway_Colored_logs = true;
-
 force force kat_airway_enable = true;
 force force kat_airway_Guedeltubus_time = 6;
 force force kat_airway_Larynxtubus_time = 3;
@@ -640,7 +638,7 @@ force force lambs_main_radioWest = 1000;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['gcam','ReducedHazeMod','A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_cfg_cup_weapons', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_cup_vehicles', 'jsrs_soundmod_cup_weapons', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_sma_hk416_fix', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys','cine_uavkeybinds_main','cine_uavkeybinds_uav','HeadRangePlus','CrowsZA','ZEI','compositions_a3','ZECCUP','PZC','Darth_Potatos_Building_Templates','ZeusKeybinds_main']";
+force force ace_common_checkPBOsWhitelist = "["gcam", "ReducedHazeMod", "A3TI", "jsrs_soundmod_boats", "jsrs_soundmod_bullethits", "jsrs_soundmod_cfg_cup_weapons", "jsrs_soundmod_complete_edition", "jsrs_soundmod_complete_edition_soundfiles", "jsrs_soundmod_cup_vehicles", "jsrs_soundmod_cup_weapons", "jsrs_soundmod_environment", "jsrs_soundmod_explosions", "jsrs_soundmod_framework", "jsrs_soundmod_helicopters", "jsrs_soundmod_landvehicles", "jsrs_soundmod_movement", "jsrs_soundmod_sonic_cracks", "jsrs_soundmod_specialist_military_arms_weapons", "jsrs_soundmod_weapons", "jsrs_sma_hk416_fix", "monk_jsrs_soundmod_patch", "L_ES_ES_main", "L_ES_ES_sounds", "L_ES_ES_sys", "cine_uavkeybinds_main", "cine_uavkeybinds_uav", "HeadRangePlus", "CrowsZA", "ZEI", "ZeusKeybinds_main", "compositions_a3", "ZECCUP", "PZC", "Darth_Potatos_Building_Templates"]";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;

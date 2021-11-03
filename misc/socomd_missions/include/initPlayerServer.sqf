@@ -1,16 +1,4 @@
 
-/*
-// Initialise ASORVS & HALO. Variables must be present in mission.
-[BOXSPAWNER_1, BOXSPAWNAREA_1, "SUPPLY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
-[LANDSPAWNER_1, LANDSPAWNAREA_1, "SUPPLY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
-[LANDSPAWNER_1, LANDSPAWNAREA_1, "LAND", "LAND"] call SOCOMD_fnc_ASORVSSetup;
-[AIRSPAWNER_1, AIRSPAWNAREA_1, "AIR_ROTARY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
-[AIRSPAWNER_2, AIRSPAWNAREA_2, "AIR_ROTARY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
-*/
-
-/*
-HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];
-*/
 // Ensure groupIDs are correct for cTab ORBAT.
 /*
 call{
