@@ -6,5 +6,3 @@
 [AIRSPAWNER_1, AIRSPAWNAREA_1, "AIR_ROTARY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 [AIRSPAWNER_2, AIRSPAWNAREA_2, "AIR_ROTARY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 [SEASPAWNER_1, SEASPAWNAREA_1, "SEA", "SEA"] call SOCOMD_fnc_ASORVSSetup;
-
-HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];

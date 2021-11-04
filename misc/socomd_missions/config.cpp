@@ -43,19 +43,18 @@ class CfgMissions {
     ADD(VIROLAHTIFOB,SOCOMD Virolahti FOB,fobs\Virolahti_FOB.vt7)
     ADD(MOZARTFOB,SOCOMD Lythium FOB (MozartDeath),fobs\lythium_FOB_Mozart.lythium)
     ADD(TRIAFOB,SOCOMD Tria FOB,fobs\Tria_FOB.jns_tria)
-    ADD(FAPAVOFOB,SOCOMD Fapavo FOB,fobs\Fapavo_Demise_FOB.fapovo)
-    ADD(FAPAVOLHD,SOCOMD Fapavo LHD (HMAS Canberra),fobs\Fapavo_Demise_FOB.fapovo)
     ADD(NZWFOB,SOCOMD NZiwasogo FOB,fobs\NZiwasogo_Trigger_FOB.pja305)
     ADD(KOOKABURRAALTISFOB,SOCOMD Altis FOB (Kookaburra),fobs\FOB_Kookaburra.Altis)
     ADD(KOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Kookaburra),fobs\FOB_Kookaburra.WL_Rosche)
     ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell.Malden)
     ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (Soul),fobs\FOB_Soul.Tanoa)
     ADD(ZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar.takistan)
+    ADD(RAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Ragnarok),fobs\FOB_Ragnarok.lythium)
     ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
-//    Count = 12
+//    Count = 13
 
     ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
     ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\Altis_LHD_HMAS_Canberra.Altis)
@@ -66,6 +65,7 @@ class CfgMissions {
     ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\Stratis_LHD_HMAS_Canberra.Stratis)
     ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\Bozcaada_LHD_HMAS_Canberra.Bozcaada)
     ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
+    ADD(FAPAVOLHD,SOCOMD Fapavo LHD (HMAS Canberra),fobs\Fapavo_Demise_FOB.fapovo)
     ADD(PULAUFOB,SOCOMD Pulau LHD (HMAS Canberra),fobs\Pulau_LHD_HMAS_Canberra.pulau)
     ADD(LAGHISOLAFOB,SOCOMD Laghisola LHD (HMAS Canberra),fobs\Laghisola_LHD_HMAS_Canberara.egl_laghisola)
     ADD(UTESLHD,SOCOMD Utes LHD (HMAS Canberra),fobs\Utes_LHD_HMAS_Canberra.utes)

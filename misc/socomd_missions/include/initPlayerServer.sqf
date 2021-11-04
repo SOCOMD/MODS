@@ -1,3 +1,4 @@
+HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];
 
 // Ensure groupIDs are correct for cTab ORBAT.
 /*
