@@ -206,6 +206,7 @@
     "Recon_Barret",\
     "Recon_338",\
     "Recon_300WM",\
+    "bnae_falkor_camo1_virtual",\
     "bnae_falkor_blk_virtual",\
     "bnae_falkor_snd_virtual",\
     "bnae_trg42_virtual",\
@@ -529,6 +530,9 @@ class uniforms{
     };
     recon_uniforms[]={
         RECON_UNIFORMS
+    };
+    recon_temperate_uniforms[]={
+        RECON_AMCU_UNIFORMS
     };
     pilot_uniforms[]={
         PILOT_UNIFORMS
@@ -977,7 +981,9 @@ class SOCOMD_Recon{
         };
     bags[]={
         BAGS,
-        BACKPACK_COMMS
+        BACKPACK_COMMS,
+        "AGE_F2Bergen_Multicam",
+        "AGE_Camelback_Coyote"
     };
     grenades[]={
         GRENADES_NORMAL

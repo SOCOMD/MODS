@@ -35,7 +35,7 @@ class SOCOMD_LAW: SOCOMD_LAW_Loaded
     magazines[] = {"CBA_FakeLauncherMagazine"};
     class WeaponSlotsInfo: WeaponSlotsInfo
     {
-        mass = 17.3;
+        mass = 18.3;
     };
 };
 class SOCOMD_LAW_Used: SOCOMD_LAW_Loaded

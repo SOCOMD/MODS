@@ -206,6 +206,8 @@ class CfgLoadoutWeapons {
         };
         
     };
+    class SOCOMD_LAW_Loaded : SOCOMD_LAW{};
+
     class SOCOMD_Carl_Gustav : Launcher {
         magazines[] = {
             {"tf47_m3maaws_HEAT", 1},

@@ -3,7 +3,7 @@ class KIT_BAG_MC;
 class SOG_BAG_recon_MC;
 class SOG_BAG_MC;
 class SOG_BAG_recon_od;
-
+class Bag_Base;
 
 class B_AssaultPack_mcamo;
 class Kit_Bag_pince_TAN : B_AssaultPack_mcamo {
@@ -120,4 +120,10 @@ class SOCOMD_Medical_AO: B_TacticalPack_blk {
         TRANSPORT_ITEM(SmokeShellPurple, 10) 
         TRANSPORT_ITEM(ACE_HandFlare_White, 10) 
     };    
+};
+class AGE_F2Bergen_Multicam : Bag_Base {
+    maximumLoad = 750;
+};
+class AGE_Camelback_Coyote : Bag_Base {
+    maximumLoad = 750;
 };

@@ -3,6 +3,20 @@ class SMG_05_base_F;
 class SMG_05_F : SMG_05_base_F {
     magazineWell[] = {"CBA_9x19_MP5"};
 };
+class Rifle_Base_F;
+class Rifle_Long_Base_F : Rifle_Base_F{
+    class WeaponSlotsInfo;
+};
+class bnae_falkor_base : Rifle_Long_Base_F{
+    class WeaponSlotsInfo:WeaponSlotsInfo{
+        allowedSlots[] = {901};
+    }
+};
+class bnae_trg42_base : Rifle_Long_Base_F{
+    class WeaponSlotsInfo:WeaponSlotsInfo{
+        allowedSlots[] = {901};
+    }
+};
 class bnae_trg42_f_camo1_virtual;
 class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
          _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
@@ -23,7 +37,6 @@ class SMA_762_RIFLEBASE: SMA_AssaultBase {
     magazineWell[] = {"CBA_762x51_HK417"};
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
-class Rifle_Base_F;
 class SMA_M4afgSTOCK;
 class ACWP_M4A5_base;
 class ACWP_M4A5_145_troy_base;

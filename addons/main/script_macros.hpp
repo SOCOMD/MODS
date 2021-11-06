@@ -131,7 +131,7 @@ class _xx_##id { \
 #define ITEM_BACKPACK_BREACHER                   "Kit_Bag_pince_MC"
 #define ITEM_BACKPACK_MARKSMAN                   "SOG_BAG_MC"
 #define ITEM_BACKPACK_SAPPER                     "SOG_BAG_med_MC"
-#define ITEM_BACKPACK_MACHINEGUNNER              "Kit_Bag_pince_MC"
+#define ITEM_BACKPACK_MACHINEGUNNER              "SOG_BAG_MC"
 #define ITEM_BACKPACK_MEDIC                      "SOG_BAG_MC"
 #define ITEM_BACKPACK_RECON                      "Kit_Bag_R_MC"
 #define ITEM_BACKPACK_AT                         "SOG_BAG_MC"

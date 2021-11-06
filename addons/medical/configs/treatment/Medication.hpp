@@ -85,7 +85,8 @@ class Ketamine_6mg {
     hrIncreaseNormal[]={15,35};
     hrIncreaseHigh[]={15,45};
     timeInSystem=1800;
-    maxDose=12;
+    maxDose=5;
+    // onOverDose = "[_target, true, 30] call ace_medical_fnc_setUnconscious";
     inCompatableMedication[]={};
     viscosityChange=5;
     unconsciousTime=30;
@@ -98,8 +99,10 @@ class Ketamine_200mg : Ketamine_6mg {
     hrIncreaseNormal[]={15,35};
     hrIncreaseHigh[]={15,45};
     timeInSystem=1800;
-    maxDose=12;
+    maxDose=0;
     inCompatableMedication[]={};
+    forcedUnconcious = 1;
+    // onOverDose = "systemChat str _target";
     viscosityChange=5;
     unconsciousTime=300;
     effectTime = 30;

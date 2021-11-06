@@ -50,7 +50,7 @@ class SOCOMD_M72_Rocket : CA_LauncherMagazine {
     descriptionShort = "LAW M72 Rocket";
     ammo = SOCOMD_M72_AD;
     type = 2*        256;
-    mass = 50;
+    mass = 10;
     allowedslots[] = {701, 801, 901};
 };
 class CUP_1Rnd_12Gauge_Slug;
