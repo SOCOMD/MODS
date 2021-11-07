@@ -168,6 +168,7 @@ class CfgLoadoutWeapons {
     
 
     class CUP_lmg_minimi_railed    : MachineGun_556 {};
+    class LMG_03_F    : MachineGun_556 {};
 
     
     class Rifle_65;

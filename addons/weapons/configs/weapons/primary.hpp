@@ -249,6 +249,13 @@ class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
     ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
     // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
+class LMG_03_base_F;
+class LMG_03_F :LMG_03_base_F {
+    displayName = "Renduhh's Gun";
+    magazineWell[] += {"CBA_556x45_MINIMI"};
+    ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
+    // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
 
 class CUP_lmg_L110A1;
 class CUP_lmg_L110A1_railed : CUP_lmg_L110A1 {

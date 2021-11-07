@@ -182,6 +182,8 @@
 #define MACHINE_GUN \
     "CUP_lmg_L110A1_railed",\
     "CUP_lmg_minimi_railed",\
+    "CUP_lmg_L110A1_railed",\
+    "LMG_03_F",\
     "CUP_lmg_Mk48_nohg",\
     "CUP_lmg_Mk48_nohg_des",\
     "CUP_lmg_Mk48_nohg_tan",\
