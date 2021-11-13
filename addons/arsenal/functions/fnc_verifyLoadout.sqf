@@ -98,7 +98,7 @@ for "_dataIndex" from 0 to 9 do {
                     if !(CHECK_CONTAINER) then {
 
                         _unavailableItemsList pushBackUnique _item;
-                        _loadout set [_dataIndex, []];
+                        // _loadout set [_dataIndex, []];
                         _unavailableItemsAmount = _unavailableItemsAmount + 1;
                     } else {
 
@@ -117,13 +117,13 @@ for "_dataIndex" from 0 to 9 do {
                                                 if !(CHECK_CONTAINER_ITEMS) then {
 
                                                     _unavailableItemsList pushBackUnique _item;
-                                                    ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
+                                                    // ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
                                                     _unavailableItemsAmount = _unavailableItemsAmount + 1;
                                                 };
                                             } else {
 
                                                 _nullItemsList pushBackUnique _item;
-                                                ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
+                                                // ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
                                                 _nullItemsAmount = _nullItemsAmount + 1;
                                             };
                                         } else {
@@ -143,13 +143,13 @@ for "_dataIndex" from 0 to 9 do {
                                                 ) then {
 
                                                 _unavailableItemsList pushBackUnique _item;
-                                                ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
+                                                // ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
                                                 _unavailableItemsAmount = _unavailableItemsAmount + 1;
                                             };
                                         } else {
 
                                             _nullItemsList pushBackUnique _item;
-                                            ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
+                                            // ((_loadout select _dataIndex) select 1) set [_currentIndex, []];
                                             _nullItemsAmount = _nullItemsAmount + 1;
                                         };
                                     };

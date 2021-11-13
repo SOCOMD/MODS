@@ -66,15 +66,15 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
 
         ADD_LOADOUTS_LIST_PICTURES
 
-        if (_nullItemsAmount > 0) then {
+        // if (_nullItemsAmount > 0) then {
 
-            _contentPanelCtrl lnbSetColor [[_newRow, 1], [1, 0, 0, 0.8]];
-        } else {
+        //     _contentPanelCtrl lnbSetColor [[_newRow, 1], [1, 0, 0, 0.8]];
+        // } else {
 
-            if (_unavailableItemsAmount > 0) then {
-                _contentPanelCtrl lnbSetColor [[_newRow, 1], [1, 1, 1, 0.25]];
-            };
-        };
+        //     if (_unavailableItemsAmount > 0) then {
+        //         _contentPanelCtrl lnbSetColor [[_newRow, 1], [1, 1, 1, 0.25]];
+        //     };
+        // };
 
         _contentPanelCtrl setVariable [_loadoutName + str GVAR(currentLoadoutsTab), [_loadout, _nullItemsAmount, _unavailableItemsAmount, _nullItemsList, _unavailableItemsList]];
 

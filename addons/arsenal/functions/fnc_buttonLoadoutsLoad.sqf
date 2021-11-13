@@ -37,11 +37,37 @@ private _loadout = switch GVAR(currentLoadoutsTab) do {
 _uniformLoadout = _loadout select 3;
 _accessories = _loadout select 9;
 _item = _uniformLoadout select 0;
-_selectedUniform = (_uniformLoadout select 0) splitString "_"; 
-if(!(CHECK_CONTAINER) && ((_selectedUniform select 0) != "USP")) then { 
+_selectedUniform = _item splitString "_"; 
+if(!(CHECK_CONTAINER) && ((_selectedUniform select 0) != "USP")) then { // make sure old saved loadouts use new uniforms
     _uniformLoadout set [0, uniform GVAR(center)]; 
-    _loadout set [3, _uniformLoadout];
 };
+if ((_selectedUniform select 0) == "USP") then {
+    _worldType = worldName call EFUNC(qstore,getWorldType);
+    _desiredCamo = "AMCU"; // default and fallback
+    switch (_worldType) do {
+        case "Woodland";
+        case "Snow" : {_desiredCamo = "AMCU";};
+        case "Arid" : {_desiredCamo = "MC";};
+    };
+    _camos = ["AOR1","AOR2","BLK","KHK","M81","MC","MB","MCD","MCT","RGR","GRY","AMCU","GRN"];
+    _camoPos = (count _selectedUniform) - 2;
+    _diffPants = false;
+    if((_selectedUniform select (_camoPos - 1)) in _camos ) then { 
+        _camoPos = _camoPos - 1; 
+        _diffPants = true;
+    };
+    if(_desiredCamo == "AMCU" && !_diffPants && ((_selectedUniform select 1) != "G3C" && (_selectedUniform select 1) != "TSHIRT" && (_selectedUniform select 2) == "G3C")) then {
+        [_selectedUniform, _camoPos, [_desiredCamo]] call CBA_fnc_insert;
+    } else {
+         if(_desiredCamo == "MC" && _diffPants && ((_selectedUniform select 1) != "G3C" && (_selectedUniform select 1) != "TSHIRT" && (_selectedUniform select 2) == "G3C")) then {
+             _selectedUniform deleteAt _camoPos;
+         };
+        _selectedUniform set [_camoPos, _desiredCamo]; 
+    };
+    _finalUniform = _selectedUniform joinString "_";
+    _uniformLoadout set [0,_finalUniform]; 
+};
+    _loadout set [3, _uniformLoadout];
 // update ctab items with inventory if they're not already
 _ctabItems = ["ItemAndroid","ItemcTab","ItemMicroDAGR"];
 _gps = _accessories select 1;
