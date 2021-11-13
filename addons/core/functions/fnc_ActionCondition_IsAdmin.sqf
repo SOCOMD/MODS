@@ -13,7 +13,7 @@ _whitelist = [
     "76561198006262884", //Token
     "76561198124025469", //Lincon
     "76561198009993601", //Slatery
-    "76561198059207851 " //Renduhh 
+    "76561198059207851" //Renduhh 
 ];
 
 if(_guid in _whitelist) then {
