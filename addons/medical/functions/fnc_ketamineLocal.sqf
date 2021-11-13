@@ -29,13 +29,13 @@ if(isPlayer _patient) then {
                 _ketCount = _ketCount + 10;  
             };         
             if(_medication == "Ketamine_6mg" ) then {
-                _ketCount = _ketCount + 0.5;
+                _ketCount = _ketCount + 1;
             };         
         } forEach _adjustments;  
     };
     // //Set unconscious state for an amount of time
     _unconsciousTime = _unconsciousTime * _ketCount;
-    _isRandom = ((random 10) < _ketCount);
+    _isRandom = ((random 3) < _ketCount);
     if(_forcedUnconcious == 1 || _isRandom) then {
         [_patient, true, _unconsciousTime] call ace_medical_fnc_setUnconscious;
     };
