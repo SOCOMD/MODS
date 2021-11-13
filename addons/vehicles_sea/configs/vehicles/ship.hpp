@@ -131,16 +131,12 @@ class SOCOMD_SHIP_##ID : ##BASE { \
     crew = SOCOMD_RIFLEMAN; \
     typicalCargo[] = {SOCOMD_RIFLEMAN}; \
     class TransportWeapons { \
-        INVENTORY_VEHICLE_SMALL_WEAPONS \
     }; \
     class TransportMagazines { \
-        INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
     }; \
     class TransportItems { \
-        INVENTORY_VEHICLE_MEDIUM_ITEMS \
     }; \
     class TransportBackpacks { \
-        INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
     }; \
 };
 
@@ -196,4 +192,16 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
             SHIP_FAST_TURRETS
         };
     };
+    class TransportWeapons { 
+        INVENTORY_VEHICLE_SMALL_WEAPONS 
+    }; 
+    class TransportMagazines { 
+        INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
+    }; 
+    class TransportItems { 
+        INVENTORY_VEHICLE_MEDIUM_ITEMS 
+    }; 
+    class TransportBackpacks { 
+        INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
+    }; 
 };
