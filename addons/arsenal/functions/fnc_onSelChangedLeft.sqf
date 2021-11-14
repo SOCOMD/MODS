@@ -287,7 +287,6 @@ switch (GVAR(currentLeftPanel)) do {
 
     
     case IDC_buttonNVG : {
-        systemChat format ["%1",_item];
         ACE_Player setVariable  ["socomd_arsenal_nvg", _item];
         _nvgArray = ["SOCOMD_NVG","SOCOMD_NVG_GR","SOCOMD_NVG_GPNVG_WP_black","SOCOMD_NVG_GPNVG_GR_black" , "SOCOMD_NVG_AM", "SOCOMD_NVG_B", "SOCOMD_NVG_GR_B", "SOCOMD_NVG_AM_B", "SOCOMD_NVG_C", "SOCOMD_NVG_GR_C", "SOCOMD_NVG_AM_C", "SOCOMD_NVG_GPNVG_WP_black", "SOCOMD_NVG_GPNVG_GR_black"];
         _unitLoadout = getUnitLoadout GVAR(center);
@@ -357,7 +356,6 @@ switch (GVAR(currentLeftPanel)) do {
     };
 
     case IDC_buttonMap : {
-        systemChat format ["%1",_item];
         ACE_Player setVariable  ["socomd_arsenal_extras", _item];
         TOGGLE_RIGHT_PANEL_HIDE
         [_display, _control, _curSel, (configFile >> "CfgWeapons" >> _item)] call FUNC(itemInfo);
