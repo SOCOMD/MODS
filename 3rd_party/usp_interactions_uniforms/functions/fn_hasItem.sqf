@@ -1,5 +1,5 @@
 params ["_item"];
-diag_log format ["%1",_item];
+// diag_log format ["%1",_item];
 pass = false;
 if !(usp_uniforms_require_items) exitWith { true };
 

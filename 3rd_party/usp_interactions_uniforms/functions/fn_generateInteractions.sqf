@@ -28,7 +28,7 @@ if ( _uniformPlayer != "") then {
     _kneepad = [["KP",""]];  
     _gloves = [["MX","USP_MECHANIX"],["MX2","USP_MECHANIX_GRN"],["MX3","USP_MECHANIX_CBR"],["MX4","USP_MECHANIX_CBR2"],["MX5","USP_MECHANIX_MC"],["MX6","USP_MECHANIX_BLK2"],["MX7","USP_MECHANIX_GRY"],["OR","USP_OVERLORD"],["OR2","USP_OVERLORD_CBR"],["OR3","USP_OVERLORD_GRN"],["OR4","USP_OVERLORD_MC"],["OR5","USP_OVERLORD_MIX"],["OR6","USP_OVERLORD_TAN"]];  
     _shoes = [["VQ",""], ["IST",""]];
-    _camos = ["AOR1","AOR2","BLK","KHK","M81","MC","MB","MCD","MCT","RGR"];
+    _camos = ["AOR1","AOR2","BLK","KHK","M81","MC","MB","MCD","MCT","RGR","GRN"];
     _currentRolled = '';
     _currentKneepad = '';
     _currentCollar = '';
@@ -37,7 +37,6 @@ if ( _uniformPlayer != "") then {
     _currentShoes = '';
     _camoPos = 2;
     
-    _player setVariable ["usp_show_kneepad",_actionsNames];
 
     // state; the index of the string from the above arrays
     ["_rolledState"];

@@ -11,11 +11,11 @@
     {},
     [DIK, [false, false, false]]
 ] call CBA_fnc_addkeybind;
-[
-    "SOCOMD_peltors_strength",
-    "SLIDER",
-    ["Hearing protection strength", "How much sound the earmuffs lower (lower value cancel more)"],
-    ["SOCOMD", "Hearing Protection"],
-    [0.15, 0.5, 0.25],
-    nil
-] call CBA_fnc_addsetting;
+// [
+//     "SOCOMD_peltors_strength",
+//     "SLIDER",
+//     ["Hearing protection strength", "How much sound the earmuffs lower (lower value cancel more)"],
+//     ["SOCOMD", "Hearing Protection"],
+//     [0.15, 0.5, 0.25],
+//     nil
+// ] call CBA_fnc_addsetting;
