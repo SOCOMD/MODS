@@ -251,8 +251,6 @@ force force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
 force force kat_breathing_medLvl_Pulseoximeter = 0;
 force force kat_breathing_pneumothorax = 5;
 force force kat_breathing_pneumothoraxDamageThreshold = 0.4;
-force force kat_breathing_spo2_big_value = 66;
-force force kat_breathing_spo2_small_value = 30;
 force force kat_breathing_Stable_spo2 = 85;
 
 // KAT - ADV Medical: Circulation
@@ -655,7 +653,7 @@ force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // SOCOMD
-SOCOMD_peltors_strength = 0.25;
+// SOCOMD_peltors_strength = 0.25;
 
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
