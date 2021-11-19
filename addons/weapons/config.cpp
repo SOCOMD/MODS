@@ -22,3 +22,4 @@ class CfgPatches {
 #include "configs\CfgMagazineWells.hpp"
 #include "configs\CfgWeapons.hpp"
 #include "configs\CBA_DisposableLaunchers.hpp"
+#include "configs\CfgJointRails.hpp"
