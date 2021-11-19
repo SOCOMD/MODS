@@ -790,3 +790,789 @@ class USP_PCU_G3C_KP_OR6_MC_GRY_RECON: USP_PCU_G3C_KP_OR{
     picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
     hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\usp_gear_body\model\tx\usp_g3c_pants_mc_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
 };
+class USP_PCU_G3C_AMCU_MC_SOCOMD: USP_PCU_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX2_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX2_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX3_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX3_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX4_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX4_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX5_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX5_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX6_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX6_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX7_AMCU_MC_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX7 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX7_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR2_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR2_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR3_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR3_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR4_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR4_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR5_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR5_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR6_AMCU_MC_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR6_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_AMCU_MC_SOCOMD: USP_PCU_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX2_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX2_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX3_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX3_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX4_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX4_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX5_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX5_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX6_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX6_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX7_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX7 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX7_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR2_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR2_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR3_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR3_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR4_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR4_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR5_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR5_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR6_AMCU_MC_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR6_AMCU_MC_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_AMCU_GRY_SOCOMD: USP_PCU_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX2_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX2_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX3_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX3_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX4_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX4_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX5_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX5_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX6_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX6_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX7_AMCU_GRY_SOCOMD: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX7 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX7_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR2_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR2_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR3_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR3_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR4_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR4_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR5_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR5_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR6_AMCU_GRY_SOCOMD: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR6_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX2_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX2_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX3_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX3_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX4_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX4_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX5_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX5_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX6_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX6_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX7_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX7 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX7_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR2_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR2_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR3_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR3_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR4_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR4_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR5_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR5_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR6_AMCU_GRY_SOCOMD: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR6_AMCU_GRY_SOCOMD";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+
+// RECON AMCU
+class USP_PCU_G3C_AMCU_MC_RECON: USP_PCU_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX2_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX2_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX3_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX3_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX4_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX4_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX5_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX5_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX6_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX6_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX7_AMCU_MC_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX7 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_MX7_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR2_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR2_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR3_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR3_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR4_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR4_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR5_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR5_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR6_AMCU_MC_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_OR6_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_AMCU_MC_RECON: USP_PCU_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX2_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX2_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX3_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX3_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX4_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX4_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX5_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX5_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX6_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX6_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX7_AMCU_MC_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX7 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX7_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR2_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR2 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR2_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR3_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR3 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR3_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR4_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR4 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR4_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR5_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR5 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR5_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR6_AMCU_MC_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR6 (AMCU/MC-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR6_AMCU_MC_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_mc_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_AMCU_GRY_RECON: USP_PCU_G3C{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX2_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX2_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX3_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX3_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX4_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX4_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX5_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX5_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX6_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX6_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_MX7_AMCU_GRY_RECON: USP_PCU_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/MX7 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_MX7_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR2_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR2_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR3_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR3_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR4_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR4_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR5_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR5_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_OR6_AMCU_GRY_RECON: USP_PCU_G3C_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/OR6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_OR6_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_AMCU_GRY_RECON: USP_PCU_G3C_KP{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX2_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX2_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk2_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX3_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX3_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX4_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX4_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_wdl_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX5_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX5_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX6_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX6_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_mcb_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_MX7_AMCU_GRY_RECON: USP_PCU_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/MX7 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_MX7_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_mechanix_gry_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR2_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR2 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR2_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_cbr_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR3_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR3 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR3_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_grn_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR4_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR4 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR4_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mc_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR5_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR5 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR5_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_mix_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};
+class USP_PCU_G3C_KP_OR6_AMCU_GRY_RECON: USP_PCU_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    displayName = "[SOCOMD] Crye PCU/G3C PCU/KP/OR6 (AMCU/GRY-ADF)";
+    uniformClass = "USP_PCU_G3C_KP_OR6_AMCU_GRY_RECON";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\usp_gear_body\model\tx\usp_pcu_gry_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa"};
+};

@@ -14,13 +14,13 @@ _comboctrl = ASORGS_getControl(ASORGS_Main_Display, _comboidc);
 _item = _comboctrl lbData (lbCurSel _comboctrl);
 _removed = [_item] call ASORGS_fnc_RemoveInventoryItem;
 if(_removed) then {
-	_countctrl = ASORGS_getControl(ASORGS_Main_Display, _countidc);
-	_newcount = (parseNumber ctrlText _countctrl) - 1;
-	_countctrl ctrlSetText format["%1", _newcount];
-	[] call ASORGS_fnc_UpdateCapacity;
-	if(_newcount == 0) then {
-		_comboctrl lbSetCurSel 0;
-	};
+    _countctrl = ASORGS_getControl(ASORGS_Main_Display, _countidc);
+    _newcount = (parseNumber ctrlText _countctrl) - 1;
+    _countctrl ctrlSetText format["%1", _newcount];
+    [] call ASORGS_fnc_UpdateCapacity;
+    if(_newcount == 0) then {
+        _comboctrl lbSetCurSel 0;
+    };
 
 };
 

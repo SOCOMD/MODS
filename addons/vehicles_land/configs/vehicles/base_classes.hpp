@@ -17,6 +17,7 @@ class Car_F : Car {
     class textureSources;
     
     class Turrets {
+        class CargoTurret;
         class MainTurret : NewTurret {};
     };
     class Components : Components {
@@ -55,7 +56,7 @@ class Car_F : Car {
             //differenceAngleCoef = 1.0;
 
             // for how long we allow the vehicle to be not moving, before it replans
-            stuckMaxTime = 5.0;
+            // stuckMaxTime = 5.0;
 
             // overtaking is part of collision avoidance
             allowOvertaking = true;
@@ -76,10 +77,10 @@ class Car_F : Car {
         };
     };
 };
-class CargoTurret;
 class Quadbike_01_base_F : Car_F{
     class Turrets
     {
+        class CargoTurret;
         class CargoTurret_01 : CargoTurret
         {
             gunnerGetInAction = "GetInLOW";
@@ -115,8 +116,8 @@ class CUP_DSHKM_base : StaticMGWeapon {
     };
 };
 
-class CUP_DSHKM_MiniTripod_base : CUP_DSHKM_base { };
-class CUP_DSHKM_base_OCimport_01 : CUP_DSHKM_base { };
+class CUP_DSHKM_MiniTripod_base : CUP_DSHKM_base {};
+class CUP_DSHKM_base_OCimport_01 : CUP_DSHKM_base {};
 class CUP_DSHKM_base_OCimport_02 : CUP_DSHKM_base_OCimport_01 {};
 class CUP_DSHKM_MiniTripod_base_OCimport_01 : CUP_DSHKM_MiniTripod_base {};
 class CUP_DSHKM_MiniTripod_base_OCimport_02 : CUP_DSHKM_MiniTripod_base_OCimport_01 {};
@@ -177,6 +178,7 @@ class CUP_2S6_Base : Tank_F {
     class Turrets : Turrets {
         class MainTurret;
     };
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -212,12 +214,13 @@ class CUP_2S6_Base : Tank_F {
                 };
             };
         };
-    }; 
+    };
+    */
 };
 class CUP_2S6M_Base : CUP_2S6_Base {};
 class CUP_ZSU23_Base : Tank_F {
-    receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
-    gunnerCanSee = 31; // can see radar eyes, optics.
+    // receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
+    // gunnerCanSee = 31; // can see radar eyes, optics.
     class Turrets : Turrets {
         class MainTurret : MainTurret {
             magazines[] = {
@@ -233,6 +236,7 @@ class CUP_ZSU23_Base : Tank_F {
             weapons[] = {"CUP_Vacannon_AZP23_veh"};
         };
     };
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -269,6 +273,7 @@ class CUP_ZSU23_Base : Tank_F {
             };
         };
     }; 
+    */
 };
 class CUP_ZSU23_Base_OCimport_01 : CUP_ZSU23_Base {};
 class CUP_ZSU23_Base_OCimport_02 : CUP_ZSU23_Base_OCimport_01 {};
@@ -283,11 +288,12 @@ class CUP_Ural_BaseTurret : Truck_F {
     class Turrets;
 };
 class CUP_Ural_ZU23_Base : CUP_Ural_BaseTurret {
-    receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
-    gunnerCanSee = 31; // can see radar eyes, optics.
+    // receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
+    // gunnerCanSee = 31; // can see radar eyes, optics.
     class Turrets : Turrets {
         class MainTurret;
     };
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -324,6 +330,7 @@ class CUP_Ural_ZU23_Base : CUP_Ural_BaseTurret {
             };
         };
     }; 
+    */
 };
 // default mags used CUP_40Rnd_23mm_AZP23_M * 16
 // default ammo CUP_B_23mm_AA
@@ -349,11 +356,12 @@ class StaticCannon : StaticWeapon {
     class Components;
 };
 class CUP_ZU23_base : StaticCannon {
-    receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
-    gunnerCanSee = 31; // can see radar eyes, optics.
+    // receiveRemoteTargets = 1; // let the zu23 become aware of radar targets that the side has seen.
+    // gunnerCanSee = 31; // can see radar eyes, optics.
     class Turrets : Turrets {
         class MainTurret;
     };
+    /*
     class Components : Components {
         class SensorsManagerComponent {
             class Components {
@@ -389,7 +397,8 @@ class CUP_ZU23_base : StaticCannon {
                 };
             };
         };
-    }; 
+    };
+    */
 };
 class CUP_ZU23_base_OCimport_01 : CUP_ZU23_base { };
 class CUP_ZU23_base_OCimport_02 : CUP_ZU23_base_OCimport_01 { };

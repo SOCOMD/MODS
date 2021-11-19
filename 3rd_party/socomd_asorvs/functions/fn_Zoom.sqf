@@ -4,7 +4,7 @@ ASORVS_CurrentZoom = 1 min ASORVS_CurrentZoom;
 
 ASORVS_CurrentY = (0.5 - ASORVS_CurrentZoom*0.5) max ASORVS_CurrentY;
 ASORVS_CurrentY = (0.5 + ASORVS_CurrentZoom*0.5) min ASORVS_CurrentY;
-	
+    
 _cameraPos = [ASORVS_CameraPosMinZoom, ASORVS_CameraPosMaxZoom, ASORVS_CurrentZoom] call ASORVS_fnc_vectorLerp;
 
 _y = ASORVS_CameraMinY + ((ASORVS_CameraMaxY - ASORVS_CameraMinY) * ASORVS_CurrentY);

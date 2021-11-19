@@ -15,7 +15,7 @@ if(isNull _loadoutWeaponConfig) exitWith {};
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 
 if(isNumber( _loadoutWeaponConfig >> "startLoaded") && (getNumber( _loadoutWeaponConfig >> "startLoaded") == 1)) then {
-    _loadoutMagazines = _loadoutMagazines - 1;
+    (_loadoutMagazines select 0) set [1,((_loadoutMagazines select 0) select 1) - 1]
 };
 if(count _loadoutMagazines > 0) then  {
     {

@@ -13,12 +13,12 @@ _result = true;
 if([_class] call ASORGS_fnc_IsRadio) then {_class = [_class, true] call ASORGS_fnc_GetRadioClass; };
 //check full lists
 if(_useFullLists) then {
-	if(_class in ASORGS_Blacklist) then {
-		_result = false;
-	};
-	if((count ASORGS_Whitelist > 0) && (!(_class in ASORGS_Whitelist))) then {
-		_result = false;
-	};
+    if(_class in ASORGS_Blacklist) then {
+        _result = false;
+    };
+    if((count ASORGS_Whitelist > 0) && (!(_class in ASORGS_Whitelist))) then {
+        _result = false;
+    };
 };
 
 //check runtime lists

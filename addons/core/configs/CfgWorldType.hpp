@@ -10,18 +10,16 @@ class CfgWorldType {
         class takistan;
         class Mountains_ACR; //Takistan Mountains
         class zargabad;
-        class praa_av; //Afghan Village
         class pja310; //Al-Rayak
         class MCN_Aliabad;
         class tem_anizay;
-        class clafghan;
         class DYA; //Diyala
-        class fallujah;
         class fata;
         class MCN_HazarKot;
         class IslaDuala3;
         class Kunduz;
         class kujari;
+        class lythium;
     };
 
     class Woodland {
@@ -39,16 +37,10 @@ class CfgWorldType {
         class sara_dbe1; //United Sahrani
         class utes;
         class Bozcaada;
-        class celle2;
-        class eden; //Everon
-        class ihantala;
-        class cain; //Kolgujev
-        class noe; //Nogova
         class Panthera3;
         class pulau;
         class WL_Rosche;
         class ruha;
-        class saru; //Sarugao
         class tem_suursaariv;
         class Thirsk;
         class tem_vinjesvingenc;
@@ -57,6 +49,7 @@ class CfgWorldType {
         class fapavo;
         class pja312; // Song Bin Tanh
         class jns_tria;
+        class vt7; // Virolahti
     };
 
     class Snow {

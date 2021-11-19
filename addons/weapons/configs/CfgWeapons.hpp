@@ -6,4 +6,5 @@ class CfgWeapons{
     #include "weapons\optic.hpp"
     #include "weapons\primary.hpp"
     #include "weapons\secondary.hpp"
+    #include "weapons\pointers.hpp"
 };

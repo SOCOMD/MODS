@@ -7,13 +7,13 @@ _title = ctrlText _textbox;
 _slot = _listbox lbValue (lbCurSel _listbox);
 //if nothing selected
 if((lbCurSel _listbox) == -1) then {
-	_slot = -1;
+    _slot = -1;
 };
 for[{_i = 0}, {(_i <= ASORGS_SaveSlots) && (_slot == -1)}, {_i = _i + 1}] do {
-	_loadout = profileNamespace getVariable format["%1_gear_new_%2",ASORGS_VAS_Prefix, _i];
-	if(isNil {_loadout}) then {
-		_slot = _i;
-	};
+    _loadout = profileNamespace getVariable format["%1_gear_new_%2",ASORGS_VAS_Prefix, _i];
+    if(isNil {_loadout}) then {
+        _slot = _i;
+    };
 };
 
 if( _slot == -1) exitWith {};

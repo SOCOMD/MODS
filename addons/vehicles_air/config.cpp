@@ -23,8 +23,36 @@ class CfgPatches {
     };
 };
 
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+    class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+    class components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+    class components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+    class components;
+};
+class Eventhandlers;
+////////////////////
+class NoDust{};
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"
-#include "configs\CfgVehicles.hpp"
 #include "configs\CfgAmmo.hpp"
 #include "configs\CfgMagazines.hpp"
+#include "configs\CfgVehicles.hpp"

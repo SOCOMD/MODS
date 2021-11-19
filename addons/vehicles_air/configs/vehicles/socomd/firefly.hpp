@@ -37,6 +37,7 @@ class MELB_AH6M : MELB_base {
         class HitTransmission;
         class HitVRotor;
     };
+    class AnimationSources;
     class Components : Components {
         class TransportPylonsComponent {
             class pylons {
@@ -74,10 +75,11 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
         {-1.16, 0.78, -0.065},
         { 1.16, 0.78, -0.065}
     };
-    displayname = "Firefly (2/6)";
+    crew= UNIT_SOCOMD_PILOT;
+    displayname = "MH-6M Little Bird (2/6)";
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
-    typicalCargo[] = {SOCOMD_PILOT};
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
@@ -126,9 +128,9 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
             material = -1;
         };
         class HitGlass1 : HitGlass1 {
-            armor = 1.0;
-            passThrough = 1.0;
-            explosionShielding = 0.0;
+            armor = 1.75;
+            passThrough = 0.5;
+            explosionShielding = 0.5;
             minimalHit = 0.1;
             material = -1;
         };
@@ -171,8 +173,31 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     side = WEST;
     author = AUTHOR_STR;
     faction = FACTION_STR;
-    displayname = "Dragonfly (2/1)";
-    typicalCargo[] = {SOCOMD_PILOT};
+    displayname = "AH-6M Little Bird (2/1)";
+    crew= UNIT_SOCOMD_PILOT;
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
+    
+    class AnimationSources: AnimationSources
+    {
+        class Addcrosshair
+        {
+            source = "user";
+            animPeriod = 0;
+            initPhase = 0;
+        };
+        class Addgunrack
+        {
+            source = "user";
+            animPeriod = 1;
+            initPhase = 1;
+        };
+        class Addfueltank
+        {
+            source = "user";
+            animPeriod = 1;
+            initPhase = 1;
+        };
+    };
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
@@ -194,7 +219,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     armor = 30;
     armorStructural = 4;
     magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
-    weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
+    weapons[] = {"MARM_SAFE_MELB","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
   
     
     class AcreIntercoms { 
@@ -231,7 +256,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
             class pylons {
                 // Keep
                 class R_Pylon {
-                    hardpoints[] = {"RightMount_MELB"};
+                    hardpoints[] = {"RightMount_MELB_SOCOMD"};
                     attachment = "";
                     maxweight = 800;
                     UIposition[] = {0.125,0.4};
@@ -243,14 +268,14 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     attachment = "";
                     priority = 3;
                     maxweight = 300;
-                    UIposition[] = {0.04,0.2};
+                    UIposition[] = {99,99};
                 };
                 class R_Rockets_4x: R_Rockets_12x {
                     hardpoints[] = {"4x_Rockets_MELB"};
                     attachment = "";
                     priority = 2;
                     maxweight = 200;
-                    UIposition[] = {0.04,0.25};
+                   UIposition[] = {99,99};
                 };
                 
                 class R_Rockets_3x: R_Rockets_12x {
@@ -258,7 +283,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     attachment = "";
                     priority = 1;
                     maxweight = 200;
-                    UIposition[] = {0.04,0.3};
+                   UIposition[] = {99,99};
                 };
                 
                 class R_HellfireRack_R_slot: R_Pylon {
@@ -286,8 +311,6 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                     UIposition[] = {0.415,0.325};
                 };
 
-                
-
                 class L_HellfireRack_R_slot: R_HellfireRack_R_slot {
                     UIposition[] = {0.405,0.45};
                     mirroredMissilePos = 6;
@@ -299,27 +322,27 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                         
                 class L_Rockets_3x: R_Rockets_3x {
                     hardpoints[] = {"3x_Rockets_MELB"};
-                    UIposition[] = {0.58,0.3};
+                    UIposition[] = {99,99};
                     priority = 1;
                     mirroredMissilePos = 4;
                 };
                 
                 class L_Rockets_4x: R_Rockets_4x {
                     hardpoints[] = {"4x_Rockets_MELB"};
-                    UIposition[] = {0.58,0.25};
+                    UIposition[] = {99,99};
                     priority = 2;
                     mirroredMissilePos = 3;
                 };
                 class L_Rockets_12x: R_Rockets_12x {
                     hardpoints[] = {"12x_Rockets_MELB"};
-                    UIposition[] = {0.58,0.2};
+                    UIposition[] = {99,99};
                     priority = 3;
                     mirroredMissilePos = 2;
                 };
 
                 // keep
                 class L_Pylon: R_Pylon {
-                    hardpoints[] = {"LeftMount_MELB"};
+                    hardpoints[] = {"LeftMount_MELB_SOCOMD"};
                     UIposition[] = {0.4925,0.4};
                     mirroredMissilePos = 1;
                 };

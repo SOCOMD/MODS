@@ -16,10 +16,10 @@ disableSerialization;
 _playerSide = -1;
 
 switch (side player) do {
-	case EAST: {_playerSide = SIDE_EAST;};
-	case WEST: {_playerSide = SIDE_WEST;};
-	case INDEPENDENT: {_playerSide = SIDE_INDEPENDENT;};
-	case CIVILIAN: {_playerSide = SIDE_CIV;};
+    case EAST: {_playerSide = SIDE_EAST;};
+    case WEST: {_playerSide = SIDE_WEST;};
+    case INDEPENDENT: {_playerSide = SIDE_INDEPENDENT;};
+    case CIVILIAN: {_playerSide = SIDE_CIV;};
 };
 ASORVS_PlayerSideID = _playerSide;
 
@@ -58,7 +58,7 @@ ASORVS_CurrentVehicle = "";
 ASORVS_NeedsUpdating = [ASORVS_vehicle_combo];
 waitUntil {!isNil 'ASORVS_RenderTarget'};
 if(isNil {ASORVS_UpdateLoop}) then {
-	ASORVS_UpdateLoop = [] spawn ASORVS_fnc_UpdateLoop;
+    ASORVS_UpdateLoop = [] spawn ASORVS_fnc_UpdateLoop;
 };
 ASORVS_Loading = false;
 ASORVS_FirstLoad = false;

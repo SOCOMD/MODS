@@ -138,8 +138,27 @@
     "SMA_HK417vfg"
 
 #define SOLS_RIFLES \
-   "SMA_Steyr_AUG_F",\
-    QUOTE(ITEM_PRIMARY_SMG)
+    QUOTE(ITEM_PRIMARY_SMG)\
+    "ACWP_M4A5_145_ris_base",\
+    "ACWP_M4A5_145_ris_ROE",\
+    "ACWP_M4A5_145_ris_afg",\
+    "ACWP_M4A5_145_ris_tango",\
+    "ACWP_M4A5_145_ris_kag",\
+    "ACWP_M4A5_145_ris_base_DON",\
+    "ACWP_M4A5_145_ris_ROE_DON",\
+    "ACWP_M4A5_145_ris_afg_DON",\
+    "ACWP_M4A5_145_ris_tango_DON",\
+    "ACWP_M4A5_145_ris_kag_DON",\
+    "ACWP_M4A5_145_ris_base_tan",\
+    "ACWP_M4A5_145_ris_ROE_tan",\
+    "ACWP_M4A5_145_ris_afg_tan",\
+    "ACWP_M4A5_145_ris_tango_tan",\
+    "ACWP_M4A5_145_ris_kag_tan",\
+    "ACWP_M4A5_145_ris_base_NET",\
+    "ACWP_M4A5_145_ris_ROE_NET",\
+    "ACWP_M4A5_145_ris_afg_NET",\
+    "ACWP_M4A5_145_ris_tango_NET",\
+    "ACWP_M4A5_145_ris_kag_NET"
     
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
@@ -184,6 +203,7 @@
     "Recon_Barret",\
     "Recon_338",\
     "Recon_300WM",\
+    "bnae_falkor_camo1_virtual",\
     "bnae_falkor_blk_virtual",\
     "bnae_falkor_snd_virtual",\
     "bnae_trg42_virtual",\
@@ -309,10 +329,10 @@
     "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD"
 
 #define AMCU_UNIFORMS \
-    "USP_G3C_KP_MC_SOCOMD",\
-    "USP_PCU_G3C_KP_MC_SOCOMD",\
-    "USP_SOFTSHELL_G3C_KP_MC_SOCOMD",\
-    "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD"
+    "USP_G3C_KP_AMCU_SOCOMD",\
+    "USP_PCU_G3C_KP_AMCU_MC_SOCOMD",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_MC_SOCOMD",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_GRN_SOCOMD"
 
 #define SNOW_UNIFORMS \
     "USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
@@ -325,17 +345,19 @@
     "USP_SOFTSHELL_G3C_KP_MC_GRN_RECON"
 
 #define RECON_AMCU_UNIFORMS \
-    "USP_G3C_KP_MC_RECON",\
-    "USP_PCU_G3C_KP_MC_RECON",\
-    "USP_SOFTSHELL_G3C_KP_MC_RECON",\
-    "USP_SOFTSHELL_G3C_KP_MC_GRN_RECON"
+    "USP_G3C_KP_AMCU_RECON",\
+    "USP_PCU_G3C_KP_AMCU_MC_RECON",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_MC_RECON",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_GRN_RECON"
 
 #define RECON_SNOW_UNIFORMS \
     "USP_OVERWHITE_G3C_KP_MC_RECON",\
     "USP_PCU_G3C_KP_MC_GRY_RECON"
 
 #define PILOT_UNIFORMS \
-    "SOLS_tshirt"
+    "SOLS_tshirt",\
+    "USP_TSHIRT_G3C_MC_SOCOMD"
+
 
 #define ONE_COMM_RIGS \
     "vss_04_RG",\
@@ -505,6 +527,9 @@ class uniforms{
     };
     recon_uniforms[]={
         RECON_UNIFORMS
+    };
+    recon_temperate_uniforms[]={
+        RECON_AMCU_UNIFORMS
     };
     pilot_uniforms[]={
         PILOT_UNIFORMS
@@ -870,13 +895,16 @@ class SOCOMD_Crewman{
 class SOCOMD_AO{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            MC_UNIFORMS,
+            PILOT_UNIFORMS
         };
         temperate_uniforms[]={
-            AMCU_UNIFORMS
+            AMCU_UNIFORMS,
+            PILOT_UNIFORMS
         };
         snow_uniforms[]={
             SNOW_UNIFORMS
+            
         };
     };
     weapons[]={
@@ -950,7 +978,9 @@ class SOCOMD_Recon{
         };
     bags[]={
         BAGS,
-        BACKPACK_COMMS
+        BACKPACK_COMMS,
+        "AGE_F2Bergen_Multicam",
+        "AGE_Camelback_Coyote"
     };
     grenades[]={
         GRENADES_NORMAL

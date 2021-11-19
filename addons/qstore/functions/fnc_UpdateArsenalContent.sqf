@@ -3,11 +3,11 @@
 params ["_player","_loadoutId"];
 
 // clears player's existing arsenal
-[_player, true, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
+[_player, true, false] call socomd_arsenal_fnc_removeVirtualItems;
 // reset nvg and extras variable for correct arsenal selection
-_player setVariable ["ace_socomd_arseal_nvg","SOCOMD_NVG"];
-_player setVariable  ["ace_socomd_arseal_grenade", "default"];
-_player setVariable ["ace_socomd_arseal_extras","extras_none"];
+_player setVariable ["socomd_arsenal_nvg","SOCOMD_NVG"];
+_player setVariable  ["socomd_arsenal_grenade", "default"];
+_player setVariable ["socomd_arsenal_extras","extras_none"];
 
 
 _blackList = ["cup_optic_an_pvs_4_m14","cup_optic_an_pvs_4_m16","cup_optic_cws_nv","cup_optic_cws_nv_rds","acwp_rc1_sim_blk", "acwp_rc1_sim_tan","SP_GasMask_Black","rathead1","NWTS_goggle_deer_bloody","NWTS_goggle_deer_mossy","NWTS_goggle_deer_glow","NWTS_goggle_human_bloody","NWTS_goggle_human_simple","NWTS_goggle_human_simple_glow","Deerface1","Deerface2","Deerface3","Deerface4","Deerface5","Deerface6","NWTS_goggle_human_bloody_glow","NWTS_goggle_deer","IS_Balaclava_logo2","IS_Balaclava_logo1","SP_Balaclava_Venom","cup_optic_ac11704_tan","cup_optic_ac11704_od","cup_optic_ac11704_jungle","cup_optic_ac11704_coyote","cup_optic_ac11704_black","cup_optic_vortexrazor_uh1_khaki","cup_optic_goshawk_ris","cup_acc_glock17_flashlight","acc_flashlight_pistol","hlc_acc_dbalpl_fl","hlc_acc_tlr1","rhsusf_acc_SFMB556", "rhsusf_acc_SF3P556", "rhsusf_acc_anpeq15_light", "acc_flashlight", "FHQ_optic_TWS3050", "optic_tws_mg", "optic_tws", "optic_nvs", "optic_Nightstalker", "UK3CB_BAF_SFFH", "UK3CB_BAF_BFA_L110", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "Balaclava_Black", "Kio_Balaclava_hex", "Kio_Balaclava_wcam", "R3F_OB50", "R3F_FELIN_DES", "R3F_FELIN", "Kio_Balaclava_blk", "Kio_Balaclava_blkSkull", "Kio_Balaclava_des", "Kio_Balaclava_grn", "Kio_Balaclava_multicam", "Kio_Balaclava_urbcam", "G_Goggles_VR", "G_Respirator_blue_F", "G_Respirator_white_F", "G_Respirator_yellow_F", "G_EyeProtectors_F", "G_EyeProtectors_Earpiece_F", "G_WirelessEarpiece_F", "VSM_FaceMask_black", "VSM_FaceMask_Ghost", "VSM_FaceMask_Ghost_olive", "VSM_FaceMask_Ghost_tan", "VSM_FaceMask_olive", "VSM_FaceMask_tan", "VSM_FaceMask_black_glasses", "VSM_FaceMask_OD_glasses", "VSM_FaceMask_tan_glasses", "VSM_FaceMask_black_goggles", "VSM_FaceMask_OD_goggles", "VSM_FaceMask_tan_goggles", "VSM_Shemagh_OD", "VSM_Shemagh_tan", "EWK_Cig1", "EWK_Cig2", "EWK_Cig3", "EWK_Cig4", "EWK_Glasses_Cig1", "EWK_Glasses_Cig2", "EWK_Glasses_Cig3", "EWK_Glasses_Cig4", "EWK_Cigar1", "EWK_Cigar2", "EWK_CigPack_Helmet", "EWK_CigPack_Helmet_OCP", "EWK_CigPack_Helmet2", "EWK_CigPack_Helmet2_OCP", "EWK_Glasses_Shemag_GRE_Cig6", "EWK_Glasses_Shemag_NB_Cig6", "EWK_Glasses_Shemag_tan_Cig6", "EWK_Shemag_tan_Cig6", "EWK_Shemag_NB_Cig6", "EWK_Shemag_GRE_Cig6", "EWK_Shemag_LULZ", "EWK_Shemag_GRE", "EWK_Shemag_tan", "EWK_Shemag_NB", "CUP_SSO_Balaclava_blk", "CUP_SSO_Balaclava_grn", "VSM_Shemagh_Facemask_OD", "VSM_Shemagh_Facemask_tan", "VSM_Shemagh_Facemask_OD_Glasses", "VSM_Shemagh_Facemask_tan_Glasses", "VSM_Shemagh_Facemask_OD_Goggles", "VSM_Shemagh_Facemask_tan_Goggles", "VSM_Shemagh_Facemask_OD_Peltor", "VSM_Shemagh_Facemask_tan_Peltor", "VSM_Shemagh_Facemask_OD_Peltor_Glasses", "VSM_Shemagh_Facemask_tan_Peltor_Glasses", "VSM_Shemagh_Facemask_OD_Peltor_Goggles", "VSM_Shemagh_Facemask_tan_Peltor_Goggles", "VSM_Shemagh_Glasses_OD", "VSM_Shemagh_Glasses_tan", "VSM_Shemagh_Goggles_OD", "VSM_Shemagh_Goggles_tan", "VSM_SkiMask_Black", "G_Lady_Blue", "50Suppressor_ej", "CUP_PMC_Facewrap_Black", "CUP_G_PMC_Facewrap_Black_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Black_Glasses_Dark", "CUP_G_PMC_Facewrap_Black_Glasses_Ember", "CUP_PMC_Facewrap_Red", "CUP_PMC_Facewrap_Ranger", "CUP_PMC_Facewrap_Skull", "CUP_PMC_Facewrap_Smilie", "CUP_PMC_Facewrap_Tan", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark", "CUP_G_PMC_Facewrap_Tan_Glasses_Ember", "CUP_PMC_Facewrap_Tropical", "CUP_G_PMC_Facewrap_Tropical_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Tropical_Glasses_Dark", "CUP_G_PMC_Facewrap_Tropical_Glasses_Ember", "CUP_PMC_Facewrap_Winter", "CUP_G_PMC_Facewrap_Winter_Glasses_Dark_Headset", "CUP_G_PMC_Facewrap_Winter_Glasses_Dark", "CUP_G_PMC_Facewrap_Winter_Glasses_Ember", "CUP_PMC_G_thug", "CUP_FR_NeckScarf4", "CUP_optic_AN_PAS_13c1", "CUP_optic_AN_PAS_13c2", "CUP_optic_AN_PVS_10", "CUP_optic_AN_PVS_4", "CUP_optic_CWS", "CUP_optic_goshawk_ris", "RH_anpvs4", "RH_pas13ch", "RH_pas13cm", "RH_pas13cmg", "RH_pas13cl", "CUP_acc_ANPEQ_15", "CUP_acc_ANPEQ_15_Black", "CUP_acc_ANPEQ_15_OD", "CUP_acc_ANPEQ_2", "CUP_acc_Flashlight", "CUP_acc_Flashlight_wdl", "CUP_acc_Flashlight_desert", "CUP_acc_XM8_light_module", "CUP_acc_ANPEQ_2_camo", "CUP_acc_ANPEQ_2_desert", "CUP_acc_ANPEQ_2_grey", "CUP_acc_CZ_M3X", "CUP_acc_MLPLS_Laser", "CUP_acc_LLM", "CUP_muzzle_mfsup_Flashhider_West_Base", "CUP_muzzle_mfsup_Flashhider_556x45_Black", "CUP_muzzle_mfsup_Flashhider_556x45_OD", "CUP_muzzle_mfsup_Flashhider_556x45_Tan", "CUP_muzzle_mfsup_Flashhider_762x51_Black", "CUP_muzzle_mfsup_Flashhider_762x51_OD", "CUP_muzzle_mfsup_Flashhider_762x51_Tan", "acc_pointer_IR", "acc_flashlight", "RH_peq15", "RH_peq15_top", "RH_peq15b", "RH_peq15b_top", "ACE_acc_pointer_green"];
@@ -77,12 +77,12 @@ _loadOut append uniformItems _player;
 _loadOut append vestItems _player;
 _loadOut append backpackItems _player;
 _loadOut append assignedItems _player;
-[_player, _loadOut, false] call ace_socomd_arsenal_fnc_addVirtualItems;
+[_player, _loadOut, false] call socomd_arsenal_fnc_addVirtualItems;
 
 // defining arsenal tabs to always be disabled, will never need them
 
 // Adds new arsenal items to player
-[_player, _accessories, false] call ace_socomd_arsenal_fnc_addVirtualItems;
+[_player, _accessories, false] call socomd_arsenal_fnc_addVirtualItems;
 
 // Go through CfgArsenalOptions.hpp for the kit, add in all unique gear
 _sr_array = [];
@@ -98,11 +98,11 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "arsenalExtras"))
 };
 
 if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then {
-    [_player, _helmets, false] call ace_socomd_arsenal_fnc_removeVirtualItems;
+    [_player, _helmets, false] call socomd_arsenal_fnc_removeVirtualItems;
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets");
 };
 
-[_player, _sr_array, false] call ace_socomd_arsenal_fnc_addVirtualItems;
+[_player, _sr_array, false] call socomd_arsenal_fnc_addVirtualItems;
 
 // Arsenal Event Handlers
 // 0. hides unwanted tabs on open
@@ -112,12 +112,12 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then 
 _isPrevInit = player getVariable ["SOCOMD_eh_ids","failed"];
 
 if ( typeName _isPrevInit == "ARRAY") then {
-    ["ace_socomd_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
-    ["ace_socomd_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
-    ["ace_socomd_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
 };
 
-_openedEh = ["ace_socomd_arsenal_displayOpened", {
+_openedEh = ["socomd_arsenal_displayOpened", {
     ACE_Player setVariable ["SOCOMD_prev_primary", primaryWeapon ACE_Player]
     params ["_display"];
     _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
@@ -164,8 +164,8 @@ _openedEh = ["ace_socomd_arsenal_displayOpened", {
     } forEach _disabledButtons;
     
 }] call CBA_fnc_addEventHandler;
-_removedRight = ["ace_socomd_arsenal_rightPanelFilled", { 
-    _currentTab = currentNamespace getVariable "ace_socomd_arsenal_currentLeftPanel";
+_removedRight = ["socomd_arsenal_rightPanelFilled", { 
+    _currentTab = currentNamespace getVariable "socomd_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ // uniform panel
            TOGGLE_RIGHT_PANEL_HIDE
@@ -178,22 +178,24 @@ _removedRight = ["ace_socomd_arsenal_rightPanelFilled", {
         };
     };
 }] call CBA_fnc_addEventHandler;
-_closedEh = ["ace_socomd_arsenal_displayClosed", {
-    _extraItems = ACE_Player getVariable ["ace_socomd_arseal_extras","none"];
-    _grenadesOption = ACE_Player getVariable  ["ace_socomd_arseal_grenade", "default"];
+_closedEh = ["socomd_arsenal_displayClosed", {
+    _extraItems = ACE_Player getVariable ["socomd_arsenal_extras","none"];
+    _grenadesOption = ACE_Player getVariable  ["socomd_arsenal_grenade", "default"];
     // for some reason using _player inside here doesnt work. Done in this order so launcher ammo isn't deleted
     [ACE_Player] call FUNC(removeAmmo);
     [ACE_Player, primaryWeapon ACE_Player] call FUNC(addPrimaryAmmo);
     [ACE_Player, secondaryWeapon ACE_Player] call FUNC(addSecondaryAmmo);
     [ACE_Player, handgunWeapon ACE_Player] call FUNC(addHandgunAmmo);
+    [ACE_Player] call FUNC(cleanUpMagazines);
+    [ACE_Player] call FUNC(addInventoryWeaponAmmo);
     if(_grenadesOption != "default") then {
-        [ACE_Player,_grenadesOption] call ace_socomd_arsenal_fnc_addSelection;
+        [ACE_Player,_grenadesOption] call socomd_arsenal_fnc_addSelection;
     } else {
         [ACE_Player] call FUNC(addGrenades);
     };
     // [player] call SOCOMD_fnc_RefreshInsignia;
     if( _extraItems !=  "none" ) then  {
-        [ACE_Player, _extraItems] call ace_socomd_arsenal_fnc_addSelection;
+        [ACE_Player, _extraItems] call socomd_arsenal_fnc_addSelection;
     };
 }] call CBA_fnc_addEventHandler;
 _player setVariable ["SOCOMD_eh_ids", [_openedEh, _removedRight, _closedEh]];

@@ -6,14 +6,14 @@ _ammoTypeCounts = [];
 
 _ammoComboIDC = ASORGS_grenade_label + 1;
 for[{_i = 0},{_i < 5},{_i = _i + 1}] do {
-	_ammoCombo = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC);
-	_ammoType = _ammoCombo lbData ( lbCurSel _ammoCombo);
-	_count = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC + 2);
-	_ammoCount = parseNumber ctrlText _count;
-	if(_ammoType != "") then {
-		[_ammoType, _ammoCount] call ASORGS_fnc_AddInventoryItems;
-	};;
-	_ammoComboIDC = _ammoComboIDC + 10;
+    _ammoCombo = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC);
+    _ammoType = _ammoCombo lbData ( lbCurSel _ammoCombo);
+    _count = ASORGS_getControl(ASORGS_Main_Display,_ammoComboIDC + 2);
+    _ammoCount = parseNumber ctrlText _count;
+    if(_ammoType != "") then {
+        [_ammoType, _ammoCount] call ASORGS_fnc_AddInventoryItems;
+    };;
+    _ammoComboIDC = _ammoComboIDC + 10;
 };
 
 

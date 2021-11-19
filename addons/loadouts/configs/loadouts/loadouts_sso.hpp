@@ -1,3 +1,6 @@
+// Defunct atm. Needs updating. 
+// #include default.hpp
+
 ///Russian SSO (DMOCOS)
     
 class SOCOMD_SSO_Commander {
@@ -603,7 +606,7 @@ class SOCOMD_SSO_Pilot {
     headgear         = "SOCOMD_Headgear_Pilot";
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
+    maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
         type = "SOCOMD_SSO_SleevesDown";

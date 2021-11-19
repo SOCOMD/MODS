@@ -85,27 +85,30 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 20)
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556_TRACER, 15)
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556_BELT, 10)
-        TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 10)
+        TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 15)
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_762_BELT, 15)
-        TRANSPORT_MAGAZINE(ITEM_DEFAULT_HANDGUN_MAGAZINE, 15)
         TRANSPORT_MAGAZINE(SmokeShell, 24)
         TRANSPORT_MAGAZINE(HandGrenade, 12)
         TRANSPORT_MAGAZINE(ACE_M84, 24)
-        TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 10)
+        TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 15)
         TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 8)
         TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 6)
+
+        TRANSPORT_MAGAZINE(ACWP_18Rnd_9x21_Mag_USP, 15)
+        TRANSPORT_MAGAZINE(ACWP_13Rnd_9x21_Mag_HP, 15)
+        TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 15)
+        TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 15)
+        TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 10)
+        TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_300_5Rnd, 10)
+        TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 10)
+        TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 10)
+
+
     };
 
     class TransportItems {
         TRANSPORT_ITEM(ACE_CableTie, 12)
-        //TRANSPORT_ITEM(ACE_fieldDressing, 48)
-        //TRANSPORT_ITEM(ACE_quikclot, 48)
-        //TRANSPORT_ITEM(ACE_elasticBandage, 48)
-        //TRANSPORT_ITEM(ACE_packingBandage, 48)
-        //TRANSPORT_ITEM(ACE_morphine, 24)
-        //TRANSPORT_ITEM(ACE_epinephrine, 24)
-        //TRANSPORT_ITEM(ACE_salineIV_500, 12)
-        //TRANSPORT_ITEM(ACE_surgicalKit, 12)
+        TRANSPORT_ITEM(ACE_Clacker, 2)
         TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
@@ -177,19 +180,48 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556_BELT, 30)
         TRANSPORT_MAGAZINE(20Rnd_762x51_Mag, 30)
         TRANSPORT_MAGAZINE(ITEM_MAGAZINE_762_BELT, 30)
-        TRANSPORT_MAGAZINE(ITEM_DEFAULT_HANDGUN_MAGAZINE, 30)
         TRANSPORT_MAGAZINE(SmokeShell, 24)
         TRANSPORT_MAGAZINE(HandGrenade, 20)
         TRANSPORT_MAGAZINE(ACE_M84, 24)
         TRANSPORT_MAGAZINE(1Rnd_HE_Grenade_shell, 30)
         TRANSPORT_MAGAZINE(1Rnd_SmokeRed_Grenade_shell, 8)
         TRANSPORT_MAGAZINE(ACE_HuntIR_M203, 6)
+        TRANSPORT_MAGAZINE(ACWP_18Rnd_9x21_Mag_USP, 30)
+        TRANSPORT_MAGAZINE(ACWP_13Rnd_9x21_Mag_HP, 30)
+        TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 30)
+        TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 30)
+        TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 20)
+        TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_300_5Rnd, 20)
+        TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 20)
+        TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 20)
     };
 
     class TransportItems {
         TRANSPORT_ITEM(ACE_CableTie, 12)
-        TRANSPORT_ITEM(DemoCharge_Remote_Mag, 5)
-        TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 3)
+        TRANSPORT_ITEM(DemoCharge_Remote_Mag, 10)
+        TRANSPORT_ITEM(ACE_Clacker, 2)
+        TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 10)
+        TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 8)
+    };
+};
+
+class SOCOMD_Supply_Explosives : SOCOMD_Supply_Empty {
+    scope = SCOPE_PUBLIC;
+    author = AUTHOR_STR;
+    displayName = "[SUPPLY] Explosives";
+    model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+
+    class TransportMagazines {
+    };
+
+    class TransportItems {
+        TRANSPORT_ITEM(DemoCharge_Remote_Mag, 20)
+        TRANSPORT_ITEM(ACE_Clacker, 10)
+        TRANSPORT_ITEM(ACE_M26_Clacker, 10)
+        TRANSPORT_ITEM(ACE_DefusalKit, 10)
+        TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 20)
+        TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 20)
+        TRANSPORT_ITEM(ACE_M14, 30)
     };
 };
 
@@ -200,14 +232,6 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 
     class TransportItems {
         TRANSPORT_ITEM(ACE_CableTie, 12)
-        //TRANSPORT_ITEM(ACE_fieldDressing, 48)
-        //TRANSPORT_ITEM(ACE_quikclot, 48)
-        //TRANSPORT_ITEM(ACE_elasticBandage, 48)
-        //TRANSPORT_ITEM(ACE_packingBandage, 48)
-        //TRANSPORT_ITEM(ACE_morphine, 24)
-        //TRANSPORT_ITEM(ACE_epinephrine, 24)
-        //TRANSPORT_ITEM(ACE_salineIV_500, 12)
-        //TRANSPORT_ITEM(ACE_surgicalKit, 12)
         TRANSPORT_ITEM(ACE_fieldDressing, 50)          //Israeli Bandage
         TRANSPORT_ITEM(ACE_elasticBandage, 50)        //Elastic Bandage
         TRANSPORT_ITEM(ACE_quikclot, 50)                //Quikclot
@@ -233,7 +257,7 @@ class SOCOMD_Supply_Gustav : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] Gustav";
-
+    model = "\A3\weapons_F\AmmoBoxes\WpnsBox_long_F";
     class TransportMagazines {
         TRANSPORT_MAGAZINE(tf47_m3maaws_HEAT, 5)
         TRANSPORT_MAGAZINE(tf47_m3maaws_HE, 5)
@@ -268,7 +292,8 @@ class SOCOMD_Supply_NVG : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] NVG";
     model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
     hiddenSelections[] = {"Camo","Camo2"};
-    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", "\z\socomd\addons\data\CTGear\SNIPER_LOGO.paa"};
+    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", 
+    "\z\socomd\addons\data\CTGear\SNIPER_LOGO.paa"};
 
     class TransportItems {
         TRANSPORT_ITEM(SOCOMD_NVG, 8)
@@ -282,7 +307,8 @@ class SOCOMD_Supply_152 : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] AN/PRC 152 Radio (Spare)";
     model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
     hiddenSelections[] = {"Camo","Camo2"};
-    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", "\z\socomd\addons\data\CTGear\radio_LOGO.paa"};
+    hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa", 
+    "\z\socomd\addons\data\CTGear\radio_LOGO.paa"};
 
     class TransportItems {
         TRANSPORT_ITEM(ACRE_PRC152, 8)
@@ -330,6 +356,7 @@ class SOCOMD_Supply_Mortar : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] Mortar";
+    model = "\A3\weapons_F\AmmoBoxes\WpnsBox_large_F";
 
     class TransportMagazines {
         TRANSPORT_MAGAZINE(ACE_1Rnd_82mm_Mo_HE, 25)
@@ -381,6 +408,7 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] HMG";
+    model = "\A3\weapons_F\AmmoBoxes\WpnsBox_large_F";
 
     class TransportMagazines {
         TRANSPORT_MAGAZINE(ace_csw_100Rnd_127x99_mag, 8)
@@ -404,6 +432,7 @@ class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] AGL";
+    model = "\A3\weapons_F\AmmoBoxes\WpnsBox_large_F";
     class TransportMagazines {
         TRANSPORT_MAGAZINE(ace_csw_20Rnd_20mm_G_belt, 8)
     };
@@ -425,6 +454,7 @@ class SOCOMD_Supply_Javelin : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] Javelin";
+    model = "\A3\weapons_F\AmmoBoxes\WpnsBox_long_F";
 
     class TransportMagazines {
         TRANSPORT_MAGAZINE(CUP_Javelin_M, 4)

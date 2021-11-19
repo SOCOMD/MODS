@@ -2,25 +2,25 @@
 Function: CBA_fnc_leftTrim
 
 Description:
-	Trims white-space (space, tab, newline) from the left end of a string.
+    Trims white-space (space, tab, newline) from the left end of a string.
 
-	See <CBA_fnc_rightTrim> and <CBA_fnc_trim>.
+    See <CBA_fnc_rightTrim> and <CBA_fnc_trim>.
 
 Parameters:
-	_string - String to trim [String]
+    _string - String to trim [String]
 
 Returns:
-	Trimmed string [String]
+    Trimmed string [String]
 
 Example:
-	(begin example)
-		_result = [" frogs are fishy   "] call CBA_fnc_leftTrim;
-		// _result => "frogs are fishy   "
-	(end)
+    (begin example)
+        _result = [" frogs are fishy   "] call CBA_fnc_leftTrim;
+        // _result => "frogs are fishy   "
+    (end)
 
 Author:
-	Spooner.
-	Modified by Lecks.
+    Spooner.
+    Modified by Lecks.
 ---------------------------------------------------------------------------- */
 // --- General ASCII codes.
 #define ASCII_COLON 58
@@ -50,7 +50,7 @@ private "_numWhiteSpaces";
 _numWhiteSpaces = 0;
 
 for "_i" from 0 to ((count _chars) - 1) do {
-	if !((_chars select _i) in _whiteSpace) exitWith { _numWhiteSpaces = _i };
+    if !((_chars select _i) in _whiteSpace) exitWith { _numWhiteSpaces = _i };
 };
 _string = _string select [_numWhiteSpaces, (count _string)-_numWhitespaces];
 

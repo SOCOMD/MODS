@@ -4,13 +4,8 @@ enableRadio false;
 //Using ACRE2
 [] execVM "include\acre2_compat.sqf";
 
-// Infinate Loop, Fix Zeus group bug (will remove deleted groups so more can be added)
-[] spawn {
-    while {true} do {{
-        deleteGroup _x
-    }forEach allGroups;
-    sleep 61;
-    };
-};
+// Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
+finishMissionInit;
+enableEnvironment [false, true];
 
 missionNamespace setVariable ["SOCOMD_InitComplete", 1];

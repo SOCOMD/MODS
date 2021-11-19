@@ -54,21 +54,17 @@ class CfgAmmo {
     class CUP_B_762x51_Tracer_Red;
     class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
         hit=2.5;
-        suppressionRadiusBulletClose = 2;
-        suppressionRadiusHit = 0.5;
+        dangerRadiusBulletClose = 25;
+        suppressionRadiusBulletClose = 7.5;
+        suppressionRadiusHit = 5;
     };
     
     class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
     {
         cost = 3;
-        hit = 30;
-        indirectHit = 7;
-        indirectHitRange = 1;
-        dangerRadiusBulletClose = 20;
-        explosive = 0.3;
-        explosionEffects = ExploAmmoExplosion;
-        suppressionRadiusBulletClose = 7;
-        suppressionRadiusHit = 4;
+        dangerRadiusBulletClose = 50;
+        suppressionRadiusBulletClose = 15;
+        suppressionRadiusHit = 10;
     };
     #include "ammo\CUP_Sh_PG15V.hpp"
     // BTR and BDRM primary

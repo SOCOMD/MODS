@@ -15,15 +15,19 @@ class CfgASORVS {
         SOCOMD_Core[] = {
             "SOCOMD_APC_A",
             "SOCOMD_APC_B",
-            // "SOCOMD_APC_C",
+            "SOCOMD_LR_ATV",
             "SOCOMD_BUSHMASTER_TRANS",
             "SOCOMD_BUSHMASTER_HMG",
             "SOCOMD_TRUCK_TRANSPORT_A",
             "SOCOMD_TRUCK_AMMO_A",
             "SOCOMD_TRUCK_FUEL_A",
+            "SOCOMD_SOV_HMG_D",
+            "SOCOMD_SOV_HMG_W",
+            "SOCOMD_SOV_GMG_D",
+            "SOCOMD_SOV_GMG_W",
             "SOCOMD_TRUCK_REPAIR_A",
-            "SOCOMD_BIKE",
-            "SOCOMD_QUADBIKE"
+            "V12_KTM_SOCOMD",
+            "SOCOMD_QUADBIKE",
         };
     };
 
@@ -51,7 +55,7 @@ class CfgASORVS {
             "SOCOMD_Supply_Javelin",
             "SOCOMD_Supply_Tools",
             "SOCOMD_Supply_Vehicle_Ammo",
-            "SOCOMD_Supply_Vehicle_Ammo_Large",
+            "SOCOMD_Supply_Vehicle_Ammo_large",
             "SOCOMD_Recon_Supply",
             "SOCOMD_Supply_NVG",
             "SOCOMD_Supply_152",

@@ -3,5 +3,5 @@ params ["_display"];
 
 _validHeadger = [player] call rgoc_fnc_check;
 if(_validHeadger isEqualTo 0 ) then {
-	[_display] call rgoc_fnc_removeSlot;
+    [_display] call rgoc_fnc_removeSlot;
 };

@@ -1,7 +1,9 @@
 class CfgWeapons {
     
     class Default;
-    class ItemCore: Default{};
+    class ItemCore: Default{
+        class ItemInfo;
+    };
     class UniformItem: ItemCore
     {
         class ItemInfo;
@@ -16,6 +18,7 @@ class CfgWeapons {
     #include "weapons\headgear_soft.hpp"
     #include "weapons\gps.hpp"
     #include "weapons\items.hpp"
+    // #include "weapons\lasers.hpp"
     #include "weapons\nvg.hpp"
     #include "weapons\vests.hpp"
     #include "uniforms\CfgWeapons.hpp"

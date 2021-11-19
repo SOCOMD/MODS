@@ -10,8 +10,7 @@ _vestInventoryConfig = (_vestConfig >> "Inventory");
 _backpackConfig = (_unitConfig >> "Backpack");  
 _backpackInventoryConfig = (_backpackConfig >> "Inventory");  
  
-private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in variable for perf improvement 
-_grenades = [];  
+private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in variable for perf improvement  
 for "_i" from 0 to (count _uniformInventoryConfig) - 1 do   
 {   
     _loadoutItem = _uniformInventoryConfig select _i;  
@@ -19,20 +18,19 @@ for "_i" from 0 to (count _uniformInventoryConfig) - 1 do
     _count = getNumber (_loadoutItem >> "count");
  
   
-	if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
-		{ 
-			if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-				(uniformContainer _player) addMagazineCargo [_type,_count]
-			};
-		} forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
-	}; 
+    if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
+                (uniformContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
+                (uniformContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
+    }; 
 };
-{ 
-	_player addItemToUniform _x; 
-} forEach _grenades;
-
-
-_grenades = [];  
 for "_i" from 0 to (count _vestInventoryConfig) - 1 do   
 {   
     _loadoutItem = _vestInventoryConfig select _i;  
@@ -40,20 +38,19 @@ for "_i" from 0 to (count _vestInventoryConfig) - 1 do
     _count = getNumber (_loadoutItem >> "count");
  
   
-	if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
-		{ 
-			if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-				(vestContainer _player) addMagazineCargo [_type,_count]
-			};
-		} forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
-	}; 
+    if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
+                (vestContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
+                (vestContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
+    }; 
 };
-{ 
-	_player addItemToVest _x; 
-} forEach _grenades;
-
-
-_grenades = [];  
 for "_i" from 0 to (count _backpackInventoryConfig) - 1 do   
 {   
     _loadoutItem = _backpackInventoryConfig select _i;  
@@ -61,15 +58,16 @@ for "_i" from 0 to (count _backpackInventoryConfig) - 1 do
     _count = getNumber (_loadoutItem >> "count");
  
   
-	if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
-		{ 
-			if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-				(backpackContainer _player) addMagazineCargo [_type,_count]
-			};
-		} forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
-	}; 
+    if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
+                (backpackContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
+        { 
+            if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
+                (backpackContainer _player) addMagazineCargo [_type,_count]
+            };
+        } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
+    }; 
 };
-{ 
-	_player addItemToBackPack _x; 
-} forEach _grenades;
-  

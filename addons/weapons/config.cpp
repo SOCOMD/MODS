@@ -17,5 +17,9 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"
 
-#include "configs\CfgWeapons.hpp"
+#include "configs\CfgAmmo.hpp"
 #include "configs\CfgMagazines.hpp"
+#include "configs\CfgMagazineWells.hpp"
+#include "configs\CfgWeapons.hpp"
+#include "configs\CBA_DisposableLaunchers.hpp"
+#include "configs\CfgJointRails.hpp"

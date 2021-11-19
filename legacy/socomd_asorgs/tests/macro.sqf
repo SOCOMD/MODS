@@ -2,12 +2,12 @@
 /*#define hash #
 
 #define MULTICOMBO(VARNAME,FIRSTIDC) \
-	hash##define ASORGS_##VARNAME##_combo (FIRSTIDC+1) 
-	hash##define ASORGS_##VARNAME##_minus (FIRSTIDC+2) \
-	hash##define ASORGS_##VARNAME##_count (FIRSTIDC+3) \
-	hash##define ASORGS_##VARNAME##_plus (FIRSTIDC+4) ;
-	
-	MULTICOMBO(launcherAmmo,420060);
+    hash##define ASORGS_##VARNAME##_combo (FIRSTIDC+1) 
+    hash##define ASORGS_##VARNAME##_minus (FIRSTIDC+2) \
+    hash##define ASORGS_##VARNAME##_count (FIRSTIDC+3) \
+    hash##define ASORGS_##VARNAME##_plus (FIRSTIDC+4) ;
+    
+    MULTICOMBO(launcherAmmo,420060);
 */
 
 #define ASORGS_Main_Display 418000

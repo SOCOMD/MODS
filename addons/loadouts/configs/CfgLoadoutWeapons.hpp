@@ -168,6 +168,7 @@ class CfgLoadoutWeapons {
     
 
     class CUP_lmg_minimi_railed    : MachineGun_556 {};
+    class LMG_03_F    : MachineGun_556 {};
 
     
     class Rifle_65;
@@ -206,6 +207,8 @@ class CfgLoadoutWeapons {
         };
         
     };
+    class SOCOMD_LAW_Loaded : SOCOMD_LAW{};
+
     class SOCOMD_Carl_Gustav : Launcher {
         magazines[] = {
             {"tf47_m3maaws_HEAT", 1},
@@ -236,13 +239,14 @@ class CfgLoadoutWeapons {
     class acwp_glock19_black: PISTOL_GLOCK{};
     class acwp_glock19_hlmnd: PISTOL_GLOCK{};
     class acwp_glock19_sim{
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_19Rnd_9x21_Mag_glock_sim",3}
         };            
     };
 
-    class hgun_Pistol_heavy_01_F;
-    class DSO_hgun_Pistol_heavy_01_blk_F: hgun_Pistol_heavy_01_F{
+    class DSO_hgun_Pistol_heavy_01_blk_F{
+        startLoaded = 1;
         magazines[] = {
             {"11Rnd_45ACP_Mag",3}
         };
@@ -266,6 +270,8 @@ class CfgLoadoutWeapons {
             {"CUP_30Rnd_9x19_MP5", 8}
         };
     };
+    class Breacher_Shotgun;
+    class SOCOMD_Shotgun:Breacher_Shotgun{};
 
     // SSO WEAPONS 
     class Rifle_545;

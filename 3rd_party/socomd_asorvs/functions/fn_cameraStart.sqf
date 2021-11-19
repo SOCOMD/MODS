@@ -20,7 +20,7 @@ ASORVS_Platform setPosATL [ASORVS_Position select 0, (ASORVS_Position select 1),
 _logo = ASORVS_BackgroundLogo;
 _playerinsignia = (player call BIS_fnc_getUnitInsignia);
 if(ASORVS_UnitInsigniaAsBackground && (_playerinsignia != "")) then {
-	_logo = getText (configFile >> "CfgUnitInsignia" >> _playerinsignia >> "texture");
+    _logo = getText (configFile >> "CfgUnitInsignia" >> _playerinsignia >> "texture");
 };
 
 ASORVS_Background = "UserTexture10m_F" createVehicleLocal [0,0,0];
@@ -37,24 +37,24 @@ _bgLeft = -(_bgCountX * 0.5) * 10;
 _bgTop = -(_bgCountY * 0.5) * 10;
 ASORVS_Backgrounds = [];
 for[{_bgX = 0}, {_bgX < _bgCountX}, {_bgX = _bgX + 1}] do {
-	for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
-		_bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
-		_bg setPosATL [(ASORVS_Position select 0) + _bgLeft + (_bgX * 10), (ASORVS_Position select 1) -9, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
-		_bg setDir 180;
-		_bg setObjectTexture [0,_bgTexture];
-		_bg enableSimulation false;
-		ASORVS_Backgrounds set [count ASORVS_Backgrounds, _bg];
-	};
+    for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
+        _bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
+        _bg setPosATL [(ASORVS_Position select 0) + _bgLeft + (_bgX * 10), (ASORVS_Position select 1) -9, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
+        _bg setDir 180;
+        _bg setObjectTexture [0,_bgTexture];
+        _bg enableSimulation false;
+        ASORVS_Backgrounds set [count ASORVS_Backgrounds, _bg];
+    };
 };
 for[{_bgX = 0}, {_bgX < _bgCountX}, {_bgX = _bgX + 1}] do {
-	for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
-		_bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
-		_bg setPosATL [(ASORVS_Position select 0) + _bgLeft + (_bgX * 10), (ASORVS_Position select 1) -8.95, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
-		_bg setDir 180;
-		_bg setObjectTexture [0,ASORVS_BackgroundTile];
-		_bg enableSimulation false;
-		ASORVS_Backgrounds set [count ASORVS_Backgrounds, _bg];
-	};
+    for[{_bgY = 0}, {_bgY < _bgCountY}, {_bgY = _bgY + 1}] do {
+        _bg = "UserTexture10m_F" createVehicleLocal [0,0,0];
+        _bg setPosATL [(ASORVS_Position select 0) + _bgLeft + (_bgX * 10), (ASORVS_Position select 1) -8.95, _seaHeight + _heightInAir  + _bgTop + (_bgY * 10)];
+        _bg setDir 180;
+        _bg setObjectTexture [0,ASORVS_BackgroundTile];
+        _bg enableSimulation false;
+        ASORVS_Backgrounds set [count ASORVS_Backgrounds, _bg];
+    };
 };
 ASORVS_ClonePos = [ASORVS_Position select 0, ASORVS_Position select 1, _seaHeight+5 + _heightInAir];
 [] spawn ASORVS_fnc_ResetClone;
@@ -99,8 +99,8 @@ ASORVS_Light = "#lightpoint" createVehicleLocal _cameraPos;
 ASORVS_Light setPosATL _cameraPos;
 _brightness = 1;
 if(worldName in ASORVS_brightMaps) then {
-	_brightness = 0.3; };
-	
+    _brightness = 0.3; };
+    
 ASORVS_Light setLightBrightness _brightness;
 ASORVS_Light setLightAmbient[1,1,1];
 ASORVS_Light setLightColor[1,1,1];
@@ -125,8 +125,8 @@ _pipcontrol ctrlSetText  "#(argb,256,256,1)r2t(rt12,1.0)";
 
 /*
 while {ASORVS_Open} do {
-	if(ASORVS_RotateDirection != 0) then {
-		ASORVS_Clone setDir (getDir ASORVS_Clone + ASORVS_RotateDirection); 
-	};
-	sleep 0.05;
+    if(ASORVS_RotateDirection != 0) then {
+        ASORVS_Clone setDir (getDir ASORVS_Clone + ASORVS_RotateDirection); 
+    };
+    sleep 0.05;
 };*/

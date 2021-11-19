@@ -3,27 +3,40 @@ class SMG_05_base_F;
 class SMG_05_F : SMG_05_base_F {
     magazineWell[] = {"CBA_9x19_MP5"};
 };
+class Rifle_Base_F;
+class Rifle_Long_Base_F : Rifle_Base_F{
+    class WeaponSlotsInfo;
+};
+class bnae_falkor_base : Rifle_Long_Base_F{
+    class WeaponSlotsInfo:WeaponSlotsInfo{
+        allowedSlots[] = {901};
+    }
+};
+class bnae_trg42_base : Rifle_Long_Base_F{
+    class WeaponSlotsInfo:WeaponSlotsInfo{
+        allowedSlots[] = {901};
+    }
+};
 class bnae_trg42_f_camo1_virtual;
-// class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
-//          _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
-//         class LinkedItems {
-//             class LinkedItemsOptic {
-//                 slot = "CowsSlot";
-//                 item = "bnae_scope_snd_virtual";
-//             };
-//             class LinkedItemsUnder {
-//                 slot = "UnderBarrelSlot";
-//                 item = "bnae_bipod_v2_virtual";
-//             };
-//         };
-//     };
+class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
+         _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
+        class LinkedItems {
+            class LinkedItemsOptic {
+                slot = "CowsSlot";
+                item = "bnae_scope_snd_virtual";
+            };
+            class LinkedItemsUnder {
+                slot = "UnderBarrelSlot";
+                item = "bnae_bipod_v2_virtual";
+            };
+        };
+    };
 
 class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {
     magazineWell[] = {"CBA_762x51_HK417"};
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
-class Rifle_Base_F;
 class SMA_M4afgSTOCK;
 class ACWP_M4A5_base;
 class ACWP_M4A5_145_troy_base;
@@ -54,6 +67,7 @@ class CUP_sgun_M1014_base: Rifle_Base_F {
 };
 class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
     displayname = "SOCOMD Benelli M4 Entry";
+    magazineWell[] = {"SOCOMD_Breaching"};
 };
 class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {        /// WIP Retexturing
     hiddenSelections[]=
@@ -244,12 +258,19 @@ class CUP_lmg_minimi_railed : CUP_lmg_minimipara {
     ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
     // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
+class LMG_03_base_F;
+class LMG_03_F :LMG_03_base_F {
+    displayName = "Renduhh's Gun";
+    magazineWell[] += {"CBA_556x45_MINIMI"};
+    ace_overheating_dispersion = 0.95; //Dispersion Factor (this will be scaled based on the barrel temp)  
+    // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+};
 
 //Machine Gun 762
 class CUP_lmg_Mk48;
 class CUP_lmg_Mk48_nohg : CUP_lmg_Mk48 {
     displayName = "Mk 48 Maximi";
-    magazineWell[] = {"SOCOMD_762_150Rnd"};
+    magazineWell[] += {"SOCOMD_762_150Rnd"};
     ace_overheating_mrbs = 2000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
     ace_overheating_dispersion = 0.8; //Dispersion Factor (this will be scaled based on the barrel temp)  
 };

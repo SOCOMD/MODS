@@ -18,10 +18,10 @@ class SOCOMD_HURRICANE_##ID : B_Heli_Attack_01_dynamicLoadout_F { \
     forceInGarage = 1; \
     fuelCapacity = 1420; \
     fuelConsumptionRate = 0.30; \
-    crew = SOCOMD_PILOT; \
+    crew = UNIT_SOCOMD_PILOT; \
     cost = 40000; \
     threat[] = {1.0,1.0,1.0}; \
-    typicalCargo[] = {SOCOMD_PILOT}; \
+    typicalCargo[] = {UNIT_SOCOMD_PILOT}; \
     class TransportWeapons { \
         INVENTORY_VEHICLE_SMALL_WEAPONS \
     }; \
@@ -153,10 +153,10 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
     faction = FACTION_STR;
     vehicleclass = "Air";
     forceInGarage = 1;
-    crew = SOCOMD_PILOT;
+    crew = UNIT_SOCOMD_PILOT;
     cost = 40000;
     threat[] = {1.0,1.0,1.0};
-    typicalCargo[] = {SOCOMD_PILOT};
+    typicalCargo[] = {UNIT_SOCOMD_PILOT};
     class TransportWeapons {
         INVENTORY_VEHICLE_SMALL_WEAPONS
     };
@@ -168,6 +168,26 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
     };
     class TransportBackpacks {
         INVENTORY_VEHICLE_CAS_HELO_BAGS
+    };
+    class HitPoints : HitPoints {
+        class HitGlass1 : HitGlass1 {
+            armor = 3.0;
+        };
+        class HitGlass2 : HitGlass2 {
+            armor = 3.0;
+        };
+        class HitGlass3 : HitGlass3 {
+            armor = 3.0;
+        };
+        class HitGlass4 : HitGlass4 {
+            armor = 3.0;
+        };
+        class HitGlass5 : HitGlass5 {
+            armor = 3.0;
+        };
+        class HitGlass6 : HitGlass6 {
+            armor = 3.0;
+        };
     };
     class AcreIntercoms {
         class Intercom_1 {
@@ -189,7 +209,7 @@ class SOCOMD_HURRICANE_A : CUP_B_AH64D_DL_USA {
             shortName = "Dash";
         };
     };
-    displayname = "Hurricane (2/0)";
+    displayname = "AH-64D Apache (2/0)";
     fuelCapacity = 1420;
     fuelConsumptionRate = 0.30;
     mass=8000; // Higher values improve handling default: 8000

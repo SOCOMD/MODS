@@ -33,8 +33,5 @@ PREP(CommonInitLocal);
 PREP(CommonInitServer);
 PREP(getMass);
 PREP(handleMass);
-PREP(Peltor_hasPeltor);
-PREP(Peltor_setVolume);
-PREP(Peltor_togglePeltor);
 PREP(ToggleTranslator);
 PREP(windowBreaker);

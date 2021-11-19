@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 params ["_player"];
 private _hasDivingGear = _player getVariable ["SOCOMD_hasDivingGear", false];
-private _originalGear = _player getVariable ["SOCOMD_originalGear",  getUnitLoadout _player];
 _switchUniform = "";
 _switchVest = "";
 _switchBackpack = "";
@@ -11,7 +10,7 @@ if !(_hasDivingGear) then {
     _uniformClass = (_originalGear select 3) select 0;
     _vestClass = (_originalGear select 4) select 0;
     _mass = [_uniformClass,_vestClass] call EFUNC(core,getMass);
-    _newGear = _originalGear;
+    _newGear = getUnitLoadout _player;
     _switchGoggles = "G_Diving";
     _switchUniform = "SOCOMD_Uniform_Wetsuit";
     _switchVest = "V_RebreatherB";
@@ -32,6 +31,7 @@ if !(_hasDivingGear) then {
     // [_player, _bagContainer, 15] call ace_movement_fnc_addLoadToUnitContainer;
     _player setVariable ["SOCOMD_hasDivingGear", true];
 } else {
+    private _originalGear = _player getVariable ["SOCOMD_originalGear",  getUnitLoadout _player];
     [_player, _originalGear] call FUNC(SetUnitLoadout);
     _bagContainer = backpackContainer _player;
     [_player,0,_bagContainer,true,true] call EFUNC(core,handleMass);

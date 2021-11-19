@@ -3,7 +3,7 @@ class KIT_BAG_MC;
 class SOG_BAG_recon_MC;
 class SOG_BAG_MC;
 class SOG_BAG_recon_od;
-
+class Bag_Base;
 
 class B_AssaultPack_mcamo;
 class Kit_Bag_pince_TAN : B_AssaultPack_mcamo {
@@ -46,16 +46,16 @@ class SOG_BAG_med_MC : B_AssaultPack_mcamo {
  
 //class B_Bergen_Base;
 //class SOCOMD_drybag_od : B_Bergen_Base {
-//	maximumLoad = 450;
+//    maximumLoad = 450;
 //};
 //class SOCOMD_drybag_blk : B_Bergen_Base {
-//	maximumLoad = 450;
+//    maximumLoad = 450;
 //};
     
 class SOCOMD_BackpackPRC117F : Kit_Bag_R_MC {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
-	maximumLoad = 450;
+    maximumLoad = 450;
 
     class TransportItems {
         TRANSPORT_ITEM(ACRE_PRC117F, 1)
@@ -120,4 +120,10 @@ class SOCOMD_Medical_AO: B_TacticalPack_blk {
         TRANSPORT_ITEM(SmokeShellPurple, 10) 
         TRANSPORT_ITEM(ACE_HandFlare_White, 10) 
     };    
+};
+class AGE_F2Bergen_Multicam : Bag_Base {
+    maximumLoad = 750;
+};
+class AGE_Camelback_Coyote : Bag_Base {
+    maximumLoad = 750;
 };

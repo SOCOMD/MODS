@@ -5,7 +5,7 @@ Include the following in your description.ext file:
 #include "ASORVS\menu.hpp"
 class CfgFunctions
 {
-	#include "ASORVS\cfgfunctions.hpp"
+    #include "ASORVS\cfgfunctions.hpp"
 };
 
 
@@ -45,8 +45,8 @@ ASOR for helping to iron out most of the bugs and problems.
 
 Legal disclaimer:
 You are free to:
-Share — to copy, distribute and transmit the work.
-Modify — to adapt the work.
+Share ï¿½ to copy, distribute and transmit the work.
+Modify ï¿½ to adapt the work.
 
 Under the following conditions:
 Notification - If you improve this work, you must give Lecks a copy of the improvements and the option of including it in a new version of this work if he sees fit.

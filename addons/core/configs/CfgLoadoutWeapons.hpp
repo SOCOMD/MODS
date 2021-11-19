@@ -8,7 +8,9 @@ class CfgLoadoutWeapons {
 
     class RifleGL_556 { 
         magazines[] = {
-            {"ACWP_30rnd_556x45_EPR_PMAG", 8},
+            {"ACWP_30rnd_556x45_EPR_PMAG", 8}
+        };
+        grenades[] = {
             {"1Rnd_HE_Grenade_shell", 8}
         };
         commandGrenades[] = {
@@ -45,6 +47,13 @@ class CfgLoadoutWeapons {
             {"20Rnd_762x51_Mag", 8}
         };
     };
+
+    class Breacher_Shotgun{
+        magazines[]={
+            {"SOCOMD_Breaching_Slug",18}
+        };
+    };
+
     class Sniper_762x54R {
         magazines[] = {
             {"CUP_10Rnd_762x54_SVD_M", 14}
@@ -95,16 +104,19 @@ class CfgLoadoutWeapons {
         };
     };
     class PISTOL_USP {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_18Rnd_9x21_Mag_USP",3}
         };        
     };
     class PISTOL_HP {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_13Rnd_9x21_Mag_HP",3}
         };        
     };
     class PISTOL_GLOCK {
+        startLoaded = 1;
         magazines[] ={
             {"ACWP_19Rnd_9x21_Mag_glock",3}
         };        

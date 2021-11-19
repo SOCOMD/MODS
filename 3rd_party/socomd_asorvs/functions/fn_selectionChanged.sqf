@@ -10,11 +10,11 @@ _index = _this select 1;
 
 _idc = ctrlIDC _control;
 switch (_idc) do
-{	
+{    
 
-	default {
-		ASORVS_NeedsUpdating = ASORVS_NeedsUpdating - [_idc];
-		ASORVS_NeedsUpdating = ASORVS_NeedsUpdating + [_idc];
-	};
+    default {
+        ASORVS_NeedsUpdating = ASORVS_NeedsUpdating - [_idc];
+        ASORVS_NeedsUpdating = ASORVS_NeedsUpdating + [_idc];
+    };
 };
 ASORVS_HandlingEvent = nil;

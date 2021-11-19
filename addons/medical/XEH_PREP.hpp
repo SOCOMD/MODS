@@ -1,5 +1,4 @@
 PREP(checkResponse);
-PREP(handleStateCardiacArrest);
 PREP(ketamineLocal);
 PREP(ketamineSuccess);
 PREP(naloxoneLocal);

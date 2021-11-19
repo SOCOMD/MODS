@@ -15,6 +15,7 @@ class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
     cost = 20000;
     threat[] = {0.8,0.8,0.5};   
 
+    crew= UNIT_SOCOMD_CREWMAN;
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
     };
@@ -61,6 +62,7 @@ class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
     threat[] = {0.8,0.8,0.5};    
+    crew= UNIT_SOCOMD_CREWMAN;
 
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
@@ -108,6 +110,7 @@ class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
     threat[] = {0.8,0.8,0.5};
+    crew= UNIT_SOCOMD_CREWMAN;
 
 
     class TransportWeapons {

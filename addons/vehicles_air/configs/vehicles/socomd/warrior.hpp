@@ -88,7 +88,7 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.28; 
     driverCanSee = CanSeeAll; 
-    crew = SOCOMD_PILOT; 
+    crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
     hiddenSelectionsTextures[]=
@@ -168,7 +168,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.28; 
     driverCanSee = CanSeeAll; 
-    crew = SOCOMD_PILOT; 
+    crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
     hiddenSelectionsTextures[]=

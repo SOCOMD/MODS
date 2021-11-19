@@ -17,9 +17,29 @@ if(isPlayer _patient) then {
     //Display message stating who has given the drug
     // hint _message;
 
-    _unconsciousTime = getNumber(configFile >> "ace_medical_treatment" >> "Medication" >> _classname >> "unconsciousTime");
-    //Set unconscious state for an amount of time
-    [_patient, true, _unconsciousTime] call ace_medical_fnc_setUnconscious;
+    private _unconsciousTime = getNumber(configFile >> "ace_medical_treatment" >> "Medication" >> _classname >> "unconsciousTime");
+    private _forcedUnconcious = getNumber(configFile >> "ace_medical_treatment" >> "Medication" >> _classname >> "forcedUnconcious");
+    private _ketCount = 0;
+    private _adjustments = _patient getVariable ["ACE_medical_medications",[]]; 
+    if (_adjustments isNotEqualTo []) then { 
+        private _deleted = false; 
+        {  
+            _x params ["_medication"];  
+            if(_medication == "Ketamine_200mg" ) then {
+                _ketCount = _ketCount + 10;  
+            };         
+            if(_medication == "Ketamine_6mg" ) then {
+                _ketCount = _ketCount + 1;
+            };         
+        } forEach _adjustments;  
+    };
+    // //Set unconscious state for an amount of time
+    _unconsciousTime = _unconsciousTime * _ketCount;
+    _isRandom = ((random 3) < _ketCount);
+    if(_forcedUnconcious == 1 || _isRandom) then {
+        [_patient, true, _unconsciousTime] call ace_medical_fnc_setUnconscious;
+    };
+    
 
 
     //Play special effect 
