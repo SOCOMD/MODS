@@ -39,12 +39,13 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
         _x params ["_loadoutName", "_loadoutData"];
 
         private _loadoutCachedInfo = _contentPanelCtrl getVariable (_loadoutName + str GVAR(currentLoadoutsTab)); 
-
+        private _info;
         if (isNil "_loadoutCachedInfo") then {
-            [_loadoutData] call FUNC(verifyLoadout)
+            _info = [_loadoutData] call FUNC(verifyLoadout);
         } else {
-            _loadoutCachedInfo
-        } params ["_loadout", "_nullItemsAmount", "_unavailableItemsAmount", "_nullItemsList", "_unavailableItemsList"];
+            _info = _loadoutCachedInfo;
+        };
+        _info params ["_loadout", "_nullItemsAmount", "_unavailableItemsAmount", "_nullItemsList", "_unavailableItemsList"];
 
         // Log missing / nil items to RPT
         if (GVAR(EnableRPTLog) && {isNil "_loadoutCachedInfo"} && {(_nullItemsAmount > 0) || {_unavailableItemsAmount > 0}}) then {

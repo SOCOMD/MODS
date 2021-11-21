@@ -2,37 +2,36 @@
 class CfgMagazineWells {
     class CBA_556x45_MINIMI {
         SOCOMD_mags[] = {
-            "SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",
-            "SOCOMD_Item_Magazine_556x45_30Rnd",
-            "SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
-            "SOCOMD_Item_Magazine_556x45_30Rnd",
-            "SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
-            "ACWP_30rnd_556x45_EPR_PMAG",
-            "ACWP_30rnd_556x45_M_PMAG"
+            QUOTE(ITEM_MAGAZINE_556),
+            QUOTE(ITEM_MAGAZINE_556_TRACER)
         };
     };
 
     class CBA_556x45_STANAG {
         SOCOMD_mags[] = {
-            "SOCOMD_Item_Magazine_556x45_30Rnd",
-            "SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
-            "ACWP_30rnd_556x45_EPR_PMAG"
+            QUOTE(ITEM_MAGAZINE_556),
+            QUOTE(ITEM_MAGAZINE_556_TRACER)
+        };
+    };
+    class SOCOMD_GPMG_Belt {
+        SOCOMD_mags[]={
+            QUOTE(ITEM_MAGAZINE_GPMG_BELT)
         };
     };
     class SOCOMD_762_150Rnd {
         SOCOMD_mags[] = {
-            "CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+            QUOTE(ITEM_MAGAZINE_762_BELT)
         };
     };
     class CBA_762x51_HK417 {
         SOCOMD_mags[] = {
-            "SOCOMD_Item_Magazine_762x51_20Rnd"
+            QUOTE(ITEM_MAGAZINE_762)
         };
     };
 
     class CBA_9x19_MP5 {
         SOCOMD_mags[] = {
-            "SOCOMD_Item_Magazine_9x21_60Rnd"
+            // "SOCOMD_Item_Magazine_9x21_60Rnd"
         };
     };
 
@@ -55,7 +54,8 @@ class CfgMagazineWells {
     };
     class SOCOMD_Breaching{
         SOCOMD_mags[] = {
-            "SOCOMD_Breaching_Slug"
+            "SOCOMD_Breaching_Slug",
+            "SOCOMD_Breaching_Slug_5rnd",
         };
     };
 };

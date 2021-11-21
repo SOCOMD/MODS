@@ -44,184 +44,31 @@ class S_145_MOD_MAG_Camo;
 class S_145_MOD_MAG_AWM;
 class S_145_MOD_MAG_donaldson;
 class S_145_MOD_MAG_leafbrown;
-class CUP_sgun_M1014_Entry_vfg;
-class CUP_sgun_M1014_base: Rifle_Base_F {
-        modes[] = {"Single","Single_close","Single_far"};
-        class single: mode_semiauto
-        {
-            sounds[]=
-            {
-                "standardsound",
-                "silencedsound"
-            };
-            class basesoundmodetype;
-            class standardsound: basesoundmodetype
-            {
-                soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
-            };
-            class silencedsound: basesoundmodetype
-            {
-                soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
-            };
-        };
-};
-class SOCOMD_Shotgun: CUP_sgun_M1014_Entry_vfg {
-    displayname = "SOCOMD Benelli M4 Entry";
-    magazineWell[] = {"SOCOMD_Breaching"};
-};
-class SOCOMD_SMA_M4afgSTOCK : SMA_M4afgSTOCK {        /// WIP Retexturing
-    hiddenSelections[]=
-        {
-            "camo1",
-            "camo2",
-            "camo3",
-            "camo4"
-        };
-        hiddenSelectionsTextures[]=
-        {
-            "\SMA_M4\data\plastic_diffuse_co.paa",
-            "\SMA_M4\data\grip_blk_co.paa",
-            "\SMA_M4\data\magnoalpha_black_co.paa",
-            "\SMA_M4\data\metal_diffuse_red_co.paa"
-        };
-}; 
-/*
-class hlc_HK416_base : Rifle_Base_F {};
-class hlc_rifle_416D145 : hlc_HK416_base {};
-class ACWP_M4A5_base : hlc_rifle_416D145 {
-    class WeaponSlotsInfo
-    {
-        class MuzzleSlot
-        {
-            compatibleItems[]=
-            {
-                "sma_gemtech_one_blk",
-                "sma_gemtech_one_des",
-                "sma_gemtech_one_wdl",
-                "SMA_Silencer_556",
-                "SMA_Silencer_556_Bronze",
-                "SMA_Silencer_556_Silver",
-                "SMA_FLASHHIDER1",
-                "SMA_FLASHHIDER2",
-                "SMA_supp2btan_556",
-                "SMA_supp1tan_556",
-                "SMA_supp1b_556",
-                "SMA_supp2b_556",
-                "SMA_supp1BB_556",
-                "SMA_supp1BOD_556",
-                "SMA_supp1BT_556",
-                "SMA_supp1Bwht_556",
-                "SMA_supp1TB_556",
-                "SMA_supp1TOD_556",
-                "SMA_supp1TT_556",
-                "SMA_supp1TW_556",
-                "SMA_supp2BOD_556",
-                "SMA_supp2BT_556",
-                "SMA_supp2BW_556",
-                "SMA_supp2T_556",
-                "SMA_supp2TB_556",
-                "SMA_supp2TOD_556",
-                "SMA_supp2TWH_556",
-                "SMA_supp2smaB_556",
-                "SMA_supp2smaT_556",
-                "SMA_rotex_blk",
-                "SMA_rotex_tan",
-                "SMA_rotex_gry"
-            };
-        };
-    };
-};*/
-
-//Default
-class SMA_MK18MOEBLK_SM;
-class SMA_AUG_A3_F;
-class hlc_rifle_416D10;
-
-//RifleGL 556 - SMA_30Rnd_556x45_M855A1
-class SMA_M4_GL_SM; //Default
-class SMA_MK18BLK_GL_SM;
-class SMA_AUG_EGLM;
-class hlc_rifle_416D10_gl;
-
-//Tan
-class SMA_MK18MOETAN_SM;
-class SMA_AUG_A3_KRYPT_F;
-class hlc_rifle_416D10_tan;
-class SMA_MK18TAN_GL_SM;
-class SMA_AUG_EGLM_tan;
-// defining retextures for Toadie's 416GL variants
-class hlc_rifle_416D10_tan_gl:hlc_rifle_416D10_gl{
-    displayName = "H&K HK416 D10 (Tan/GL)";
-    baseWeapon = "hlc_rifle_416D10_tan_gl";
-    rhs_grip1_change = "hlc_rifle_416D10_tan_gl";
-    rhs_grip2_change = "hlc_rifle_416D10_tan_gl";
-    rhs_grip3_change = "hlc_rifle_416D10_tan_gl";
-    class nia_magSwitch {
-        default = "hlc_rifle_416D10_tan_gl";
-        hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_tan_gl";
-        hlc_50rnd_556x45_M = "hlc_rifle_416D10_tan_gl";
-        hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_tan_gl";
-        hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_tan_gl";
-        hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_tan_gl";
-    };
-    hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
-    HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
-    hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo1_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo1_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
-};
-
-//OD
-class SMA_MK18MOEOD_SM;
-class SMA_AUG_A3_MCAM_F;
-class hlc_rifle_416D10_wdl;
-class SMA_MK18OD_GL_SM;
-class SMA_AUG_EGLM_Olive;
-// defining retextures for Toadie's 416GL variants
-class hlc_rifle_416D10_wdl_gl:hlc_rifle_416D10_gl{
-    displayName = "H&K HK416 D10 (Woodland/GL)";
-    baseWeapon = "hlc_rifle_416D10_wdl_gl";
-    rhs_grip1_change = "hlc_rifle_416D10_wdl_gl";
-    rhs_grip2_change = "hlc_rifle_416D10_wdl_gl";
-    rhs_grip3_change = "hlc_rifle_416D10_wdl_gl";
-    class nia_magSwitch {
-        default = "hlc_rifle_416D10_wdl_gl";
-        hlc_50rnd_556x45_EPR = "hlc_rifle_416D10_wdl_gl";
-        hlc_50rnd_556x45_M = "hlc_rifle_416D10_wdl_gl";
-        hlc_50rnd_556x45_MDim = "hlc_rifle_416D10_wdl_gl";
-        hlc_50rnd_556x45_SOST = "hlc_rifle_416D10_wdl_gl";
-        hlc_50rnd_556x45_SPR = "hlc_rifle_416D10_wdl_gl";
-    };
-    hiddenSelections[] = {"416_upper","416_lower","416_SBRBarrel","416_mainparts","416_light Stock","AG-C_Firecntrol"};
-    HiddenSelectionsMaterials[] = {"nia_wp_hk416\mat\416_upper_camo.rvmat","nia_wp_hk416\mat\416_lower_camo.rvmat","nia_wp_hk416\mat\416_barrel_camo.rvmat","nia_wp_hk416\mat\416_common_camo.rvmat","nia_wp_hk416\mat\416_stocks_camo.rvmat","hlc_core\mat\hk_agc.rvmat"};
-    hiddenSelectionsTextures[] = {"nia_wp_hk416\tex\toadie_416\416_upper_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_lower_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_barrel_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_common_camo2_co.paa","nia_wp_hk416\tex\toadie_416\416_stocks_camo2_co.paa","hlc_core\tex\toadie_ag-c\416_agc_co.paa"};
-};
-// class ACWP_HK416_base;
-// class ACWP_HK416D_105_base:ACWP_HK416_base{
-    
-//     class WeaponSlotsInfo  {
-//         mass = 71.6;
-//         class CowsSlot : asdg_OpticRail1913{};
-//         class PointerSlot : asdg_FrontSideRail{};
-//         class MuzzleSlot : asdg_MuzzleSlot_556{};
-//         class UnderBarrelSlot : ACWP_troy_underslot{
-//             compatibleItems[] = {
+// class CUP_sgun_M1014_Entry_vfg;
+// class CUP_sgun_M1014_base: Rifle_Base_F {
+//         modes[] = {"Single","Single_close","Single_far"};
+//         class single: mode_semiauto
+//         {
+//             sounds[]=
+//             {
+//                 "standardsound",
+//                 "silencedsound"
+//             };
+//             class basesoundmodetype;
+//             class standardsound: basesoundmodetype
+//             {
+//                 soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
+//             };
+//             class silencedsound: basesoundmodetype
+//             {
+//                 soundSetShot[] = {"HunterShotgun_01_Shot_SoundSet","HunterShotgun_01_Tail_SoundSet"};
 //             };
 //         };
-//     };
 // };
-// class ACWP_HK416D_105_AFG: ACWP_HK416D_105_base{};
-// class ACWP_HK416D_105_don: ACWP_HK416D_105_base{};
-// class ACWP_HK416D_105_AFG_don: ACWP_HK416D_105_base{};
-// class ACWP_HK416D_105_tan: ACWP_HK416D_105_base{};
-// class ACWP_HK416D_105_AFG_tan: ACWP_HK416D_105_base{};
-
-class CUP_arifle_M16A4_GL;
-
-//Rifle 762 - 20Rnd_762x51_Mag
-class SMA_HK417_16in;
-class SMA_HK417vfg;
-class CUP_srifle_M110 : Rifle_Base_F {
-    magazineWell[] = {"CBA_762x51_HK417"};
-    displayName = "SR-25";
+class rhs_weap_M590_5RD;
+class SOCOMD_Shotgun: rhs_weap_M590_5RD {
+    displayname = "SOCOMD Entry Shotgun";
+    magazineWell[] = {"SOCOMD_Breaching"};
 };
 class srifle_DMR_06_camo_F;
 class ACWP_sr25: srifle_DMR_06_camo_F {
@@ -241,14 +88,37 @@ class SPARTAN_EBR_snake_F : srifle_EBR_F {         //Camo
     magazineWell[] = {"CBA_762x51_HK417"};
 };
 
-class rhs_weap_saw_base;
-class ITEM_PRIMARY_MACHINEGUN : rhs_weap_saw_base {
+class rhs_weap_minimi_para_railed;
+class ITEM_PRIMARY_MACHINEGUN : rhs_weap_minimi_para_railed {
     displayName = "FN Minimi PARA";
     magazineWell[] += {"CBA_556x45_MINIMI"};
     ace_overheating_dispersion = 0.85; //Dispersion Factor (this will be scaled based on the barrel temp)
     // ace_overheating_mrbs = 1200; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
 };
-
+class rhs_weap_fnmag;
+class ITEM_PRIMARY_MACHINEGUN_GPMG : rhs_weap_fnmag {
+    inertia = 3;
+    displayName = "MAG 58";
+    magazineWell[] = {
+        "SOCOMD_GPMG_Belt",
+        "CBA_762x51_LINKS",
+        "M240_762x51",
+        "SOCOMD_762_150Rnd"
+        };
+    magazines[]=
+        {
+            QUOTE(ITEM_MAGAZINE_GPMG_BELT)
+        };
+    ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+    ace_overheating_slowdownFactor = 1; //Slowdown Factor (this will be scaled based on the barrel temp)
+    ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
+    ace_overheating_dispersion = 0.9; //Dispersion Factor (this will be scaled based on the barrel temp)  
+};
+class UK3CB_BAF_L110_762_Base;
+class UK3CB_BAF_L110_762 : UK3CB_BAF_L110_762_Base {
+    displayName = "Mk 48 Maximi";
+    magazineWell[] += {"SOCOMD_762_150Rnd"};
+};
 /*
 //Machine Gun 556
 class CUP_lmg_minimipara;

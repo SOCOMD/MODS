@@ -147,12 +147,8 @@ class Ship_F;
 class CUP_RHIB_Base : Ship_F {
     class Turrets;
 };
-class CUP_B_RHIB_USMC : CUP_RHIB_Base {
-    class Turrets : Turrets {
-        class MainTurret;
-    };
-};
-class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
+class UK3CB_MDF_B_RHIB;
+class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
@@ -170,7 +166,7 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     idleRpm = 100;
     redRpm = 1000;
     thrustDelay = 0.5;
-    enginePower = 200;
+    enginePower = 350;
     engineShiftY = 0;
     waterSpeedFactor = 1;
     waterResistanceCoef = 0.005;
@@ -185,13 +181,9 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     overSpeedBrakeCoef = 0.8;
 
     minSpeed = -0.5;
-    maxSpeed = 60;
+    maxSpeed = 70;
 
-    class Turrets : Turrets {
-        class MainTurret : MainTurret {
-            SHIP_FAST_TURRETS
-        };
-    };
+    
     class TransportWeapons { 
         INVENTORY_VEHICLE_SMALL_WEAPONS 
     }; 

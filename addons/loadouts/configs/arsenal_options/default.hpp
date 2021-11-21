@@ -5,9 +5,6 @@
 // arsenalExtras used for those who need extra arsenal equipment like rifleman. options defined in role class eg arsenalExtras[] = {"myExtra","myExtra2"};
 
 #define GENERAL_RIFLE \
-    "SMA_MK18MOEBLK_SM",\
-    "SMA_MK18MOETAN_SM",\
-    "SMA_MK18MOEOD_SM",\
     "ACWP_HK416D_105_base",\
     "ACWP_HK416D_105_tan",\
     "ACWP_HK416D_105_don",\
@@ -134,11 +131,10 @@
     "ACWP_M4A5_145_ris_ROE_NET",\
     "ACWP_M4A5_145_ris_afg_NET",\
     "ACWP_M4A5_145_ris_tango_NET",\
-    "ACWP_M4A5_145_ris_kag_NET",\
-    "SMA_HK417vfg"
+    "ACWP_M4A5_145_ris_kag_NET"
 
 #define SOLS_RIFLES \
-    QUOTE(ITEM_PRIMARY_SMG)\
+    QUOTE(ITEM_PRIMARY_SMG),\
     "ACWP_M4A5_145_ris_base",\
     "ACWP_M4A5_145_ris_ROE",\
     "ACWP_M4A5_145_ris_afg",\
@@ -172,9 +168,6 @@
     "ACWP_M4A5_145_7rail_GL_GRIP_TAN",\
     "ACWP_M4A5_145_7rail_GL_DON",\
     "ACWP_M4A5_145_7rail_GL_GRIP_DON",\
-    "hlc_rifle_416D10_gl",\
-    "hlc_rifle_416D10_tan_gl",\
-    "hlc_rifle_416D10_wdl_gl",\
     "1Rnd_HE_Grenade_shell",\
     "UGL_FlareRed_F",\
     "1Rnd_SmokeRed_Grenade_shell",\
@@ -182,7 +175,8 @@
 
 #define MACHINE_GUN \
     QUOTE(ITEM_PRIMARY_MACHINEGUN),\
-    QUOTE(ITEM_PRIMARY_MACHINEGUN_762)\
+    QUOTE(ITEM_PRIMARY_MACHINEGUN_762),\
+    QUOTE(ITEM_PRIMARY_MACHINEGUN_GPMG),\
     QUOTE(ITEM_MAGAZINE_556_BELT),\
     QUOTE(ITEM_MAGAZINE_762_BELT),\
     QUOTE(ITEM_MAGAZINE_GPMG_BELT)
@@ -197,10 +191,10 @@
     "ACWP_sr25_ec_camo",\
     "ACWP_sr25_VFG",\
     "ACWP_sr25_VFG_camo",\
-    QUOTE(20Rnd_762x51_Mag)
+    QUOTE(ITEM_MAGAZINE_762)
 
 #define SNIPER \
-    "Recon_Barret",\
+    "rhs_weap_m82a1",\
     "Recon_338",\
     "Recon_300WM",\
     "bnae_falkor_camo1_virtual",\
@@ -216,14 +210,13 @@
     "5Rnd_338LM_Magazine",\
     "5Rnd_APDS_338LM_Magazine",\
     "SOCOMD_Item_Magazine_300_5Rnd",\
-    "10Rnd_300WM_Magazine",\
-    "SOCOMD_Item_Magazine_Barret"
+    "10Rnd_300WM_Magazine"
 
 #define LAUNCHERS \
-    "SOCOMD_LAW",\
-    "SOCOMD_Carl_Gustav",\
-    "tf47_m3maaws_HEAT",\
-    "tf47_m3maaws_HE"
+    "rhs_weap_m72a7",\
+    QUOTE(ITEM_DEFAULT_LAUNCHER),\
+    "rhs_mag_maaws_HEAT",\
+    "rhs_mag_maaws_HE"
 
 #define HANDGUNS  \
     "DSO_hgun_Pistol_heavy_01_blk_F",\
@@ -242,10 +235,6 @@
     "11Rnd_45ACP_Mag"
 
 #define HELMETS \
-    "VSM_Bowman",\
-    "VSM_Bowman_cap_Black",\
-    "VSM_Bowman_cap_Green",\
-    "CUP_H_PMC_Cap_PRR_Tan",\
     "acwp_airframe_mc_ct3_light_strap",\
     "acwp_airframe_mc_ct3_light",\
     "acwp_airframe_mc_light_strap",\
@@ -272,7 +261,6 @@
     "acwp_airframe_amcu",\
     "H_Watchcap_blk",\
     "H_Watchcap_cbr",\
-    "CUP_H_RUS_Bandana_HS",\
     "H_Bandanna_sgg",\
     "H_Bandanna_sand",\
     "AU_03_780000_v1",\
@@ -285,15 +273,7 @@
     "ADFU_H_OpsCore_02_MC",\
     "ADFU_H_OpsCore_02_TAN",\
     "SOCOMD_Aus_Boonie_AMC",\
-    "SOCOMD_Aus_Boonie",\
-    "CUP_H_PMC_Cap_Tan",\
-    "CUP_H_PMC_Cap_EP_Tan",\
-    "CUP_H_PMC_Cap_Back_Tan",\
-    "CUP_H_PMC_Cap_Back_EP_Tan",\
-    "CUP_H_PMC_Cap_Back_PRR_Tan",\
-    "CFP_BaseballCap_Multicam_DEF",\
-    "CFP_BaseballCap_Multicam_DEF_Back",\
-    "CFP_BaseballCap_Multicam_Back"
+    "SOCOMD_Aus_Boonie"
 
 #define NVG_OPTIONS \
     "SOCOMD_NVG",\
@@ -436,8 +416,6 @@
     "acwp_pc_operator_s7_closed",\
     "acwp_pc_operator_radioback_s7_closed",\
     "acwp_pc_operator_top_s7_closed"
-
-
 
 #define BACKPACK_COMMS \
     "SOG_BAG_recon_MC",\
@@ -969,7 +947,8 @@ class SOCOMD_Recon{
         GENERAL_RIFLE,
         MARKSMAN,
         SNIPER,
-        HANDGUNS
+        HANDGUNS,
+        "UK3CB_BAF_M6"
     };
     vests[]={
         VESTS_COMMON,

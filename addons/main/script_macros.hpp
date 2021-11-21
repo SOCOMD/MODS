@@ -72,29 +72,31 @@ class _xx_##id { \
 // Rifles
 #define ITEM_VEHICLE_M4                         ACWP_M4A5_145_troy_AFG_kit
 
-#define ITEM_PRIMARY_GL                         "ACWP_M4A5_145_7rail_GL"
-#define ITEM_PRIMARY_M4                         "ACWP_M4A5_145_troy_base"
-#define ITEM_PRIMARY_MARKSMAN                   "ACWP_sr25"
-#define ITEM_PRIMARY_MACHINEGUN                 "CUP_lmg_L110A1_railed"
-#define ITEM_PRIMARY_RECON                      "bnae_falkor_camo1_virtual"
-#define ITEM_PRIMARY_SOLS                       "ACWP_M4A5_145_ris_base"
+#define ITEM_PRIMARY_GL                         ACWP_M4A5_145_7rail_GL
+#define ITEM_PRIMARY_M4                         ACWP_M4A5_145_troy_base
+#define ITEM_PRIMARY_MARKSMAN                   ACWP_sr25
+#define ITEM_PRIMARY_RECON                      bnae_falkor_camo1_virtual
+#define ITEM_PRIMARY_MACHINEGUN                 SOCOMD_Minimi
+#define ITEM_PRIMARY_MACHINEGUN_762             UK3CB_BAF_L110_762
+#define ITEM_PRIMARY_MACHINEGUN_GPMG            SOCOMD_mag58
+#define ITEM_PRIMARY_SOLS                       ACWP_M4A5_145_ris_base
 #define ITEM_MAGAZINE_556                       ACWP_30rnd_556x45_EPR_PMAG
 #define ITEM_MAGAZINE_556_TRACER                ACWP_30rnd_556x45_M_PMAG
-#define ITEM_MAGAZINE_556_BELT                  CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch
+#define ITEM_MAGAZINE_556_BELT                  rhsusf_200Rnd_556x45_mixed_soft_pouch
 #define ITEM_MAGAZINE_762                       20Rnd_762x51_Mag
-#define ITEM_MAGAZINE_762_BELT                  CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
+#define ITEM_MAGAZINE_762_BELT                  SOCOMD_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
-#define ITEM_MAGAZINE_BARRET                    Recon_Barret_mag
+#define ITEM_MAGAZINE_BARRET                    rhsusf_mag_10Rnd_STD_50BMG_M33
 #define ITEM_MAGAZINE_9MM                       CUP_30Rnd_9x19_MP5
 
-#define ITEM_DEFAULT_HANDGUN                    "ACWP_USP"
+#define ITEM_DEFAULT_HANDGUN                    ACWP_USP
 #define ITEM_DEFAULT_HANDGUN_MAGAZINE           ACWP_18Rnd_9x21_Mag_USP
 
 #define LEADER_BINOCS                           "ACE_Vector"
 
 // Secondary i.e launchers
-#define ITEM_DEFAULT_LAUNCHER                   "SOCOMD_Carl_Gustav"
+#define ITEM_DEFAULT_LAUNCHER                   SOCOMD_Carl_Gustav
 
 // headgear
 #define ITEM_DEFAULT_HEADGEAR                   "acwp_airframe_mc"
@@ -226,7 +228,7 @@ class ItemInfo : ItemInfo { \
 // Medium
 #define INVENTORY_VEHICLE_MEDIUM_WEAPONS \
     TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 1) \
-    TRANSPORT_WEAPON(SOCOMD_LAW, 1) 
+    TRANSPORT_WEAPON(rhs_weap_m72a7, 1) 
 
 #define INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 8) \
@@ -248,7 +250,7 @@ class ItemInfo : ItemInfo { \
 // large
 #define INVENTORY_VEHICLE_LARGE_WEAPONS \
     TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 2) \
-    TRANSPORT_WEAPON(SOCOMD_LAW, 2) 
+    TRANSPORT_WEAPON(rhs_weap_m72a7, 2) 
 
 #define INVENTORY_VEHICLE_LARGE_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 12) \
@@ -270,6 +272,15 @@ class ItemInfo : ItemInfo { \
 
 // ======================================================
 //  vehicle specific loadouts
+
+// SOV
+#define SOV_CREW_GUNS \
+    TRANSPORT_MAGAZINE(UK3CB_BAF_762_200Rnd, 4) \
+    TRANSPORT_MAGAZINE(UK3CB_BAF_127_100Rnd, 8)
+#define SOV_CREW_GUNS_GMG \
+    TRANSPORT_MAGAZINE(UK3CB_BAF_762_200Rnd, 6) \
+    TRANSPORT_MAGAZINE(UK3CB_BAF_32Rnd_40mm_G_Box, 6)
+
 
 // 6x6 ATV
 

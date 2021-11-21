@@ -93,56 +93,56 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
         };
 
         class HitLFWheel : HitLFWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitLF2Wheel : HitLF2Wheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitLMWheel : HitLMWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitLBWheel : HitLBWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitRFWheel : HitRFWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitRF2Wheel : HitRF2Wheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitRMWheel : HitRMWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;
         };
 
         class HitRBWheel : HitRBWheel {
-            armor = 0.01;
+            armor = 0.1;
             passThrough = 0.5;
             explosionShielding = 4.0;
             material = -1;

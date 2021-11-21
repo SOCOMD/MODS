@@ -48,14 +48,14 @@ class extras_heavy_mg_support: extras_none{
 class extras_at_assistant_mixed: extras_none{
     displayName = "AT Assistant (mixed)";
     bag[] = {
-        {tf47_m3maaws_HEAT,1},
-        {tf47_m3maaws_HE,1}
+        {rhs_mag_maaws_HEAT,1},
+        {rhs_mag_maaws_HE,1}
     };
 };
 class extras_at_assistant_heat: extras_none{
     displayName = "AT Assistant (2x HEAT)";
     bag[] = {
-        {tf47_m3maaws_HEAT,2}
+        {rhs_mag_maaws_HEAT,2}
     };
 };
 class extras_sso_spare_squad_ammo: extras_none{

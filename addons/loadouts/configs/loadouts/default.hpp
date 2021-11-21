@@ -150,9 +150,9 @@ class SOCOMD_Unarmed {
 // Commander
 
 class SOCOMD_Commander {
-    primary            = ITEM_PRIMARY_GL;
+    primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -201,9 +201,9 @@ class SOCOMD_Commander {
 ////////////////////////////////////////////////////////////////////////////////
 // HAVOC / JTAC
 class SOCOMD_TACP {
-    primary            = ITEM_PRIMARY_GL;
+    primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "Laserdesignator";
@@ -252,9 +252,9 @@ class SOCOMD_TACP {
 // Leader
 
 class SOCOMD_Leader {
-    primary            = ITEM_PRIMARY_GL;
+    primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -304,9 +304,9 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 // Rifleman
 
 class SOCOMD_Rifleman {
-    primary            = ITEM_PRIMARY_M4;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -346,9 +346,9 @@ class SOCOMD_Rifleman {
 ////////////////////////////////////////////////////////////////////////////////
 // Breacher
 class SOCOMD_Breacher {
-    primary            = ITEM_PRIMARY_M4;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -391,9 +391,9 @@ class SOCOMD_Breacher {
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 class SOCOMD_Marksman {
-    primary            = ITEM_PRIMARY_MARKSMAN;
+    primary            = QUOTE(ITEM_PRIMARY_MARKSMAN);
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -431,9 +431,9 @@ class SOCOMD_Marksman {
 // Sapper
 
 class SOCOMD_Sapper {
-    primary            = ITEM_PRIMARY_M4;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -483,7 +483,7 @@ class SOCOMD_Sapper {
 class SOCOMD_MachineGunner {
     primary            = ITEM_PRIMARY_MACHINEGUN;
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -521,9 +521,9 @@ class SOCOMD_MachineGunner {
 // Medic
 
 class SOCOMD_Medic {
-    primary            = ITEM_PRIMARY_M4;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -588,9 +588,9 @@ class SOCOMD_Medic {
 };
 
 class SOCOMD_AO{
-    primary            = ITEM_PRIMARY_M4;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -656,15 +656,15 @@ class SOCOMD_AO{
 // LAT
 
 class SOCOMD_AT {
-    primary            = ITEM_PRIMARY_M4;
-    secondary          = ITEM_DEFAULT_LAUNCHER;
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    primary            = QUOTE(ITEM_PRIMARY_M4);
+    secondary          = QUOTE(ITEM_DEFAULT_LAUNCHER);
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine    = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear           = ITEM_DEFAULT_HEADGEAR;
     binocular          = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
-    optics[]         = {"tf47_optic_m3maaws"};
+    optics[]         = {"rhs_optic_maaws"};
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -689,8 +689,8 @@ class SOCOMD_AT {
         type = ITEM_BACKPACK_AT;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
-            LOADOUT_ITEM(tf47_m3maaws_HE, 1)
+            LOADOUT_ITEM(rhs_mag_maaws_HEAT, 1)
+            LOADOUT_ITEM(rhs_mag_maaws_HE, 1)
         };
     };
 };
@@ -699,9 +699,9 @@ class SOCOMD_AT {
 // Recon
 
 class SOCOMD_Recon {
-    primary            = ITEM_PRIMARY_RECON;
+    primary            = QUOTE(ITEM_PRIMARY_RECON);
     secondary        = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -746,9 +746,9 @@ class SOCOMD_Recon {
 // LOGISTICIAN
 
 class SOCOMD_Logistician {
-    primary         = ITEM_PRIMARY_M4;
+    primary         = QUOTE(ITEM_PRIMARY_M4);
     secondary         = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -791,9 +791,9 @@ class SOCOMD_Logistician {
 // Pilot
 
 class SOCOMD_Pilot {
-    primary         = ITEM_PRIMARY_SOLS;
+    primary         = QUOTE(ITEM_PRIMARY_SOLS);
     secondary         = "";
-    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";

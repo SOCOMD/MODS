@@ -31,6 +31,7 @@ class SOCOMD_NVG : USP_L3_pvs31_A2    {
         {0.5, 0.1, 1.5, 0.9}, 
         {1, 1, 6, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_GR : SOCOMD_NVG    {
@@ -44,6 +45,7 @@ class SOCOMD_NVG_GR : SOCOMD_NVG    {
         {0.9,0.5,0.23,1},
         {-6,-1,-1,0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_AM : SOCOMD_NVG    {
@@ -56,6 +58,7 @@ class SOCOMD_NVG_AM : SOCOMD_NVG    {
         {2, 0.9, 0.2, 0.9}, 
         {2, 2, 9, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 
@@ -71,6 +74,7 @@ class SOCOMD_NVG_B : USP_L3_pvs31_B    {
         {0.5, 0.1, 1.5, 0.9}, 
         {1, 1, 6, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_GR_B : SOCOMD_NVG_B    {
@@ -84,6 +88,7 @@ class SOCOMD_NVG_GR_B : SOCOMD_NVG_B    {
         {0.9,0.5,0.23,1},
         {-6,-1,-1,0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_AM_B : SOCOMD_NVG_B    {
@@ -96,6 +101,7 @@ class SOCOMD_NVG_AM_B : SOCOMD_NVG_B    {
         {2, 0.9, 0.2, 0.9}, 
         {2, 2, 9, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class USP_L3_pvs31_C;
@@ -110,6 +116,7 @@ class SOCOMD_NVG_C : USP_L3_pvs31_C    {
         {0.5, 0.1, 1.5, 0.9}, 
         {1, 1, 6, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_GR_C : SOCOMD_NVG_C    {
@@ -123,6 +130,7 @@ class SOCOMD_NVG_GR_C : SOCOMD_NVG_C    {
         {0.9,0.5,0.23,1},
         {-6,-1,-1,0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 class SOCOMD_NVG_AM_C : SOCOMD_NVG_C    {
@@ -135,6 +143,7 @@ class SOCOMD_NVG_AM_C : SOCOMD_NVG_C    {
         {2, 0.9, 0.2, 0.9}, 
         {2, 2, 9, 0.0}
     };
+    ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
 
@@ -150,6 +159,7 @@ class SOCOMD_NVG_GPNVG_WP_black: CUP_NVG_GPNVG_black {
         {0.5, 0.1, 1.5, 0.9}, 
         {1, 1, 6, 0.0}
     };
+    ace_nightvision_autoGated = 0;
     ace_nightvision_generation = 2;
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
 };
@@ -163,6 +173,7 @@ class SOCOMD_NVG_GPNVG_GR_black: CUP_NVG_GPNVG_black {
         {0.9,0.5,0.23,1},
         {-6,-1,-1,0}
     };
+    ace_nightvision_autoGated = 0;
     ace_nightvision_generation = 2;
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
 };

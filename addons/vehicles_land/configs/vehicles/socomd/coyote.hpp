@@ -1,161 +1,32 @@
-#define COYOTE_FAST_TURRETS \
-maxHorizontalRotSpeed = 8; \
-maxVerticalRotSpeed = 8;
-
-// fuelCapcity = 35; == 106m driving time @ 100km/hr
-
-/////////////////////////////////////////////////////////////////////////////////
-// SOV Base
-class CUP_BAF_Coyote_BASE_D : Car_F {
-    armor = 750;
-    explosionShielding = 0.000000001;
-    fuelCapacity = 35;
-    ace_refuel_fuelCapacity = 50;
-
-    class HitPoints {
-        class HitBody {
-            armor = 2.5;
-            explosionShielding = 50;
-            material = -1;
-            name = "karoserie";
-            passThrough = 0;
-            visual = "zbytek";
-        };
-        class HitEngine {
-            armor = 0.5;
-            explosionShielding = 10;
-            material = -1;
-            name = "motor";
-            passThrough = 0;
-        };
-        class HitFuel {
-            armor = 0.5;
-            explosionShielding = 10;
-            material = -1;
-            name = "palivo";
-            passThrough = 0;
-        };
-        class HitHull {
-            armor = 750;
-            explosionShielding = 1;
-            material = -1;
-            minimalHit = 0.1;
-            name = "palivo";
-            passThrough = 0;
-            visual = "";
-        };
-        class HitLF2Wheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_1_2_steering";
-            visual = "-";
-        };
-        class HitLFWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_1_1_steering";
-            visual = "-";
-        };
-        class HitLBWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_1_4_steering";
-            visual = "-";
-        };
-        class HitLMWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_1_3_steering";
-            visual = "-";
-        };
-        class HitRF2Wheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_2_2_steering";
-            visual = "-";
-        };
-        class HitRFWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_2_1_steering";
-            visual = "-";
-        };
-        class HitRBWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_2_4_steering";
-            visual = "-"; 
-        };
-        class HitRMWheel {
-            armor = 2.5;
-            passThrough = 0;
-            explosionShielding = 40;
-            material = -1;
-            name = "wheel_2_3_steering";
-            visual = "-"; 
-        };
-    };
-
-    class AcreIntercoms {
-        class Intercom_1 {
-            displayName = "Crew Intercom";
-            shortName = "Crew";
-            allowedPositions[] = {"driver", "commander", "gunner"};
-            limitedPositions[] = {};
-            numLimitedPositions = 0;
-            masterPositions[] = {"driver"};
-            connectedByDefault = 1;
-        };
-    };
-
-    class AcreRacks {
-        class Rack_1 {
-            allowedPositions[] = {"driver", "commander", "gunner"};
-            componentName = "ACRE_VRC110";
-            displayName = "Dash";
-            mountedRadio = "ACRE_PRC152";
-            shortName = "Dash";
-        };
-    };
-
-    class Turrets : Turrets {
-        class M240_Turret;
-    };
+#define COYOTE_FLAG_ACTION \
+class UserActions : UserActions{\
+    class Flag1_Show {\
+        condition = "(getForcedFlagTexture this == """") AND (driver this == player) AND (alive this)";\
+        displayName = "Raise Flag";\
+        onlyForPlayer = 1;\
+        position = "";\
+        priority = 2.9;\
+        radius = 5;\
+        shortcut = "";\
+        showWindow = 0;\
+        statement = "this forceFlagTexture ""\z\socomd\addons\data\data\adfu_flag_co.paa"";";\
+        textToolTip = "";\
+    };\
 };
-
 ////////////////////////////////////////////////////////////////////////////////
 // SOV-CD
-class CUP_B_BAF_Coyote_L2A1_D : CUP_BAF_Coyote_BASE_D {
-    class Turrets : Turrets {
-        class M240_Turret : M240_Turret{};
-        class M2_Turret;
-        class CargoTurret_01;
-        class CargoTurret_02;
-        class CargoTurret_03;
-        class CargoTurret_04;
-        class CargoTurret_05;
-        class CargoTurret_06;
-        class CargoTurret_07;
-        class CargoTurret_08;
-        class CargoTurret_09;
-    };
+class UK3CB_BAF_Jackal_Base;
+class UK3CB_BAF_Coyote_L111A1_Base : UK3CB_BAF_Jackal_Base{
+    class UserActions;
 };
-
-class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
+class UK3CB_BAF_Coyote_L134A1_Base : UK3CB_BAF_Jackal_Base{
+    class UserActions;
+};
+class UK3CB_BAF_Coyote_Passenger_L111A1_D : UK3CB_BAF_Coyote_L111A1_Base {};
+class UK3CB_BAF_Coyote_Passenger_L111A1_W : UK3CB_BAF_Coyote_Passenger_L111A1_D {};
+class UK3CB_BAF_Coyote_Passenger_L134A1_D : UK3CB_BAF_Coyote_L134A1_Base {};
+class UK3CB_BAF_Coyote_Passenger_L134A1_W : UK3CB_BAF_Coyote_Passenger_L134A1_D {};
+class SOCOMD_SOV_HMG_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {
 
     //armor = 3000;
     //armorStructural = 20;
@@ -180,16 +51,26 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
     transportMaxWeapons = "60";
     transportMaxMagazines = "600";
 
-    hiddenSelections[] = {
-        "camo1",
-        "camo2",
-        "camo3"
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
     };
 
-    hiddenSelectionsTextures[] = {
-        "\z\socomd\addons\data\SOV\jackal_base_co.paa",
-        "\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
-        "\z\socomd\addons\data\SOV\jackal_adds_co.paa"
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
     };
 
     class TransportWeapons {
@@ -198,6 +79,7 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
 
     class TransportMagazines {
         INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS
     };
 
     class TransportItems {
@@ -207,31 +89,10 @@ class SOCOMD_SOV_HMG_D : CUP_B_BAF_Coyote_L2A1_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
-
-    class Turrets : Turrets {
-        class M240_Turret : M240_Turret{
-            COYOTE_FAST_TURRETS
-        };
-
-        class M2_Turret : M2_Turret {
-            COYOTE_FAST_TURRETS
-        };
-        
-        class CargoTurret_01 : CargoTurret_01{};
-        class CargoTurret_02 : CargoTurret_02{};
-        class CargoTurret_03 : CargoTurret_03{};
-        class CargoTurret_04 : CargoTurret_04{};
-        class CargoTurret_05 : CargoTurret_05{};
-        class CargoTurret_06 : CargoTurret_06{};
-        class CargoTurret_07 : CargoTurret_07{};
-        class CargoTurret_08 : CargoTurret_08{};
-        class CargoTurret_09 : CargoTurret_09{};
-    };
+    COYOTE_FLAG_ACTION
 };
 
-class CUP_B_BAF_Coyote_L2A1_W : CUP_B_BAF_Coyote_L2A1_D {};
-
-class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
+class SOCOMD_SOV_HMG_W : UK3CB_BAF_Coyote_Passenger_L111A1_W {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
@@ -247,12 +108,34 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
     crew = UNIT_SOCOMD_CREWMAN;
     typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
 
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
     };
 
     class TransportMagazines {
         INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS
     };
 
     class TransportItems {
@@ -262,25 +145,10 @@ class SOCOMD_SOV_HMG_W : CUP_B_BAF_Coyote_L2A1_W {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    COYOTE_FLAG_ACTION
 };
 
-class CUP_B_BAF_Coyote_GMG_D : CUP_BAF_Coyote_BASE_D {
-    class Turrets : Turrets {
-        class M240_Turret : M240_Turret{};
-        class GMG_Turret;
-        class CargoTurret_01;
-        class CargoTurret_02;
-        class CargoTurret_03;
-        class CargoTurret_04;
-        class CargoTurret_05;
-        class CargoTurret_06;
-        class CargoTurret_07;
-        class CargoTurret_08;
-        class CargoTurret_09;
-    };
-};
-
-class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
+class SOCOMD_SOV_GMG_D : UK3CB_BAF_Coyote_Passenger_L134A1_D {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
@@ -300,16 +168,26 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
     transportMaxWeapons = "60";
     transportMaxMagazines = "600";
 
-    hiddenSelections[] = {
-        "camo1",
-        "camo2",
-        "camo3"
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
     };
 
-    hiddenSelectionsTextures[] = {
-        "\z\socomd\addons\data\SOV\jackal_base_co.paa",
-        "\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa",
-        "\z\socomd\addons\data\SOV\jackal_adds_co.paa"
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
     };
 
     class TransportWeapons {
@@ -318,6 +196,7 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
 
     class TransportMagazines {
         INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS_GMG
     };
 
     class TransportItems {
@@ -327,30 +206,10 @@ class SOCOMD_SOV_GMG_D : CUP_B_BAF_Coyote_GMG_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
-
-    class Turrets : Turrets {
-        class M240_Turret : M240_Turret{
-            COYOTE_FAST_TURRETS
-        };
-
-        class GMG_Turret : GMG_Turret {
-            COYOTE_FAST_TURRETS
-        };
-        
-        class CargoTurret_01 : CargoTurret_01{};
-        class CargoTurret_02 : CargoTurret_02{};
-        class CargoTurret_03 : CargoTurret_03{};
-        class CargoTurret_04 : CargoTurret_04{};
-        class CargoTurret_05 : CargoTurret_05{};
-        class CargoTurret_06 : CargoTurret_06{};
-        class CargoTurret_07 : CargoTurret_07{};
-        class CargoTurret_08 : CargoTurret_08{};
-        class CargoTurret_09 : CargoTurret_09{};
-    };
+    COYOTE_FLAG_ACTION
 };
 
-class CUP_B_BAF_Coyote_GMG_W : CUP_B_BAF_Coyote_GMG_D {};
-class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
+class SOCOMD_SOV_GMG_W : UK3CB_BAF_Coyote_Passenger_L134A1_W {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
@@ -366,12 +225,35 @@ class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
     crew = UNIT_SOCOMD_CREWMAN;
     typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
 
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
+
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
     };
 
     class TransportMagazines {
         INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS_GMG
     };
 
     class TransportItems {
@@ -381,4 +263,282 @@ class SOCOMD_SOV_GMG_W : CUP_B_BAF_Coyote_GMG_W {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    COYOTE_FLAG_ACTION
+};
+
+// Logistic Variants
+
+class UK3CB_BAF_Coyote_Logistics_L111A1_D : UK3CB_BAF_Coyote_L111A1_Base {};
+class UK3CB_BAF_Coyote_Logistics_L111A1_W : UK3CB_BAF_Coyote_Logistics_L111A1_D {};
+class UK3CB_BAF_Coyote_Logistics_L134A1_D : UK3CB_BAF_Coyote_L134A1_Base {};
+class UK3CB_BAF_Coyote_Logistics_L134A1_W : UK3CB_BAF_Coyote_Logistics_L134A1_D {};
+class SOCOMD_SOV_logistics_HMG_D : UK3CB_BAF_Coyote_Logistics_L111A1_D {
+
+    //armor = 3000;
+    //armorStructural = 20;
+    //explosionShielding = 0.0005;
+    //damageResistance = 0.03099;
+    fuelCapacity = 35;
+    ace_refuel_fuelCapacity = 50;
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
+    editorCategory = SOCOMD_EdCat_Core;
+    editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+    forceInGarage = 1;
+    author = AUTHOR_STR;
+    displayname = "SOV-CDO Logistics (M2) (3/9)";
+    faction = FACTION_STR;
+    vehicleclass = "Car";
+
+    crew = UNIT_SOCOMD_CREWMAN;
+    typicalCargo[] = {UNIT_SOCOMD_CREWMAN, UNIT_SOCOMD_CREWMAN};
+
+    transportMaxBackpacks = "30";
+    transportMaxWeapons = "60";
+    transportMaxMagazines = "600";
+
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 3;
+            };
+        }; 
+    }
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    COYOTE_FLAG_ACTION
+};
+
+class SOCOMD_SOV_logistics_HMG_W : UK3CB_BAF_Coyote_Logistics_L111A1_W {
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
+    editorCategory = SOCOMD_EdCat_Core;
+    editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+    forceInGarage = 1;
+    author = AUTHOR_STR;
+    displayname = "SOV-CDO Logistics (M2) (3/9)";
+    faction = FACTION_STR;
+    vehicleclass = "Car";
+    fuelCapacity = 35;
+    ace_refuel_fuelCapacity = 50;
+
+    crew = UNIT_SOCOMD_CREWMAN;
+    typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
+
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 3;
+            };
+        }; 
+    }
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    COYOTE_FLAG_ACTION
+};
+
+class SOCOMD_SOV_logistics_GMG_D : UK3CB_BAF_Coyote_Logistics_L134A1_D {
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
+    editorCategory = SOCOMD_EdCat_Core;
+    editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+    forceInGarage = 1;
+    author = AUTHOR_STR;
+    displayname = "SOV-CDO Logistics (GMG) (3/9) ";
+    faction = FACTION_STR;
+    vehicleclass = "Car";
+    fuelCapacity = 35;
+    ace_refuel_fuelCapacity = 50;
+
+    crew = UNIT_SOCOMD_CREWMAN;
+    typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
+
+    transportMaxBackpacks = "30";
+    transportMaxWeapons = "60";
+    transportMaxMagazines = "600";
+
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 3;
+            };
+        }; 
+    }
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS_GMG
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    COYOTE_FLAG_ACTION
+};
+
+class SOCOMD_SOV_logistics_GMG_W : UK3CB_BAF_Coyote_Logistics_L134A1_W {
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
+    editorCategory = SOCOMD_EdCat_Core;
+    editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+    forceInGarage = 1;
+    author = AUTHOR_STR;
+    displayname = "SOV-CDO Logistics (GMG) (3/9) ";
+    faction = FACTION_STR;
+    vehicleclass = "Car";
+    fuelCapacity = 35;
+    ace_refuel_fuelCapacity = 50;
+
+    crew = UNIT_SOCOMD_CREWMAN;
+    typicalCargo[] = {UNIT_SOCOMD_CREWMAN};
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 3;
+            };
+        }; 
+    }
+    class AcreIntercoms {
+        class Intercom_1 {
+            displayName = "Crew Intercom";
+            shortName = "Crew";
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            limitedPositions[] = {};
+            numLimitedPositions = 0;
+            masterPositions[] = {"driver"};
+            connectedByDefault = 1;
+        };
+    };
+
+    class AcreRacks {
+        class Rack_1 {
+            allowedPositions[] = {"driver", "commander", "gunner"};
+            componentName = "ACRE_VRC110";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC152";
+            shortName = "Dash";
+        };
+    };
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+        SOV_CREW_GUNS_GMG
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    COYOTE_FLAG_ACTION
 };
