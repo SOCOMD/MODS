@@ -1,5 +1,5 @@
 
-// Initialise ASORVS & HALO. Variables must be present in mission.
+// Initialise ASORVS. Variables must be present in mission.
 [BOXSPAWNER_1, BOXSPAWNAREA_1, "SUPPLY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 [LANDSPAWNER_1, LANDSPAWNAREA_1, "SUPPLY", "LAND"] call SOCOMD_fnc_ASORVSSetup;
 [LANDSPAWNER_1, LANDSPAWNAREA_1, "LAND", "LAND"] call SOCOMD_fnc_ASORVSSetup;
