@@ -99,7 +99,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 15)
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 15)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 10)
-        TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_300_5Rnd, 10)
+        TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10)
         TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 10)
         TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 10)
 
@@ -191,7 +191,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 30)
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 30)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 20)
-        TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_300_5Rnd, 20)
+        TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 20)
         TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 20)
         TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 20)
     };
@@ -259,8 +259,8 @@ class SOCOMD_Supply_Gustav : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] Gustav";
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_long_F";
     class TransportMagazines {
-        TRANSPORT_MAGAZINE(tf47_m3maaws_HEAT, 5)
-        TRANSPORT_MAGAZINE(tf47_m3maaws_HE, 5)
+        TRANSPORT_MAGAZINE(rhs_mag_maaws_HEAT, 5)
+        TRANSPORT_MAGAZINE(rhs_mag_maaws_HE, 5)
     };
 
     class TransportWeapons {
@@ -385,9 +385,9 @@ class SOCOMD_Supply_Mortar_60mm : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] Light Mortar";
 
     class TransportMagazines {
-        TRANSPORT_MAGAZINE(twc_2inch_he_1rnd, 30)
-        TRANSPORT_MAGAZINE(twc_2inch_smoke_1rnd, 5)
-        TRANSPORT_MAGAZINE(twc_2inch_illum_1rnd, 5)
+        TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 30)
+        TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 5)
+        TRANSPORT_MAGAZINE(UK3CB_BAF_1Rnd_60mm_Mo_Flare_White, 5)
     };
 
     class TransportItems {
@@ -400,7 +400,7 @@ class SOCOMD_Supply_Mortar_60mm : SOCOMD_Supply_Empty {
     //     TRANSPORT_BACKPACK(B_Mortar_01_support_F, 1)
     // };
     class TransportWeapons {
-        TRANSPORT_WEAPON(twc_2inch_bag, 2)
+        TRANSPORT_WEAPON(UK3CB_BAF_M6, 2)
     };
 };
 
@@ -411,10 +411,10 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_large_F";
 
     class TransportMagazines {
-        TRANSPORT_MAGAZINE(ace_csw_100Rnd_127x99_mag, 8)
+        TRANSPORT_MAGAZINE(UK3CB_BAF_127_100Rnd, 8)
     };
     class TransportWeapons {
-        TRANSPORT_WEAPON(ace_csw_staticHMGCarry, 2)
+        TRANSPORT_WEAPON(UK3CB_BAF_L111A1, 2)
         TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
         TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
     };
@@ -457,11 +457,14 @@ class SOCOMD_Supply_Javelin : SOCOMD_Supply_Empty {
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_long_F";
 
     class TransportMagazines {
-        TRANSPORT_MAGAZINE(CUP_Javelin_M, 4)
+        // TRANSPORT_MAGAZINE(CUP_Javelin_M, 4)
     };
 
+    class TransportItems {
+        TRANSPORT_ITEM(UK3CB_BAF_Javelin_CLU, 2)
+    };
     class TransportWeapons {
-        TRANSPORT_WEAPON(CUP_launch_Javelin, 1)
+        TRANSPORT_WEAPON(UK3CB_BAF_Javelin_Slung_Tube, 4)
     };
 };
 

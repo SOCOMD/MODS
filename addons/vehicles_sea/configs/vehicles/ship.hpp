@@ -29,7 +29,7 @@ class SOCOMD_BOAT : B_Boat_Transport_01_F {
     enginePower = 60;
     engineShiftY = -0.15;
     waterSpeedFactor = 1;
-    waterResistanceCoef = 0.015;
+    waterResistanceCoef = 0.0025;
     waterAngularDampingCoef = 1.0;
     waterLinearDampingCoefX = 4.0;
     waterLinearDampingCoefY = 1.0;
@@ -147,12 +147,8 @@ class Ship_F;
 class CUP_RHIB_Base : Ship_F {
     class Turrets;
 };
-class CUP_B_RHIB_USMC : CUP_RHIB_Base {
-    class Turrets : Turrets {
-        class MainTurret;
-    };
-};
-class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
+class UK3CB_MDF_B_RHIB;
+class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
@@ -178,7 +174,7 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     waterLinearDampingCoefX = 15.0;
     waterLinearDampingCoefY = 1.2;
     rudderForceCoef = 0.5;
-    rudderForceCoefAtMaxSpeed = 0.0045;
+    rudderForceCoefAtMaxSpeed = 0.0070;
     waterLeakiness = 5;
     waterEffectSpeed = 15;
     waterFastEffectSpeed = 40;
@@ -187,11 +183,7 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     minSpeed = -0.5;
     maxSpeed = 60;
 
-    class Turrets : Turrets {
-        class MainTurret : MainTurret {
-            SHIP_FAST_TURRETS
-        };
-    };
+    
     class TransportWeapons { 
         INVENTORY_VEHICLE_SMALL_WEAPONS 
     }; 
@@ -205,3 +197,14 @@ class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
         INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
     }; 
 };
+    class SOCOMD_SHIP_B_PLUS_ULTRA: SOCOMD_SHIP_B{
+        
+    waterResistanceCoef = 0;
+    redRpm = 10000;
+    thrustDelay = 0;
+    enginePower = 20000;
+    maxSpeed = 600;
+    rudderForceCoef = 0.5;
+    waterEffectSpeed = 1;
+    rudderForceCoefAtMaxSpeed = 0.5;
+    };

@@ -39,5 +39,5 @@ if (_an == "") exitWith {};
 _target setVariable [_lockedVariable, 0];
 _getDoorAnimations params ["_animations"];
 _rand = random 1;
-_animationState = linearConversion [0,1,_rand, (0.2 max _target animationPhase (_animations select 0)),1];
+_animationState = linearConversion [0,1,_rand, (0.2 max( _target animationPhase (_animations select 0))),1];
 _target animate [_an, _animationState, true];

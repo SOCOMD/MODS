@@ -264,7 +264,7 @@ class SOCOMD_LOWVIS_Sapper {
 // Machine Gunner
 
 class SOCOMD_LOWVIS_MachineGunner {
-    primary            = "CUP_lmg_L110A1_railed";
+    primary            = QUOTE(ITEM_PRIMARY_MACHINEGUN);
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";

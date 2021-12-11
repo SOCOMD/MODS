@@ -5,19 +5,6 @@ class SOCOMD_BERET : AU_03_780000_v1 {
     scope = SCOPE_PUBLIC;
     displayName = "SOCOMD Beret";
 };
-class CFP_BaseballCap_Multicam_DEF_Back : ItemCore {
-    HEARING_PROTECTION_PELTOR
-};
-class CFP_BaseballCap_Multicam_DEF : ItemCore {
-    HEARING_PROTECTION_PELTOR
-};
-class CUP_H_PMC_Cap_EP_Tan : ItemCore {
-    HEARING_PROTECTION_PELTOR
-};
-class CUP_H_PMC_Cap_Back_EP_Tan : ItemCore {
-    HEARING_PROTECTION_PELTOR
-};
-
 // Boonie hat remove armour values
 class H_HelmetB:ItemCore{
     class ItemInfo;

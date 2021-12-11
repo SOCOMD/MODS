@@ -164,10 +164,14 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_ris_kag_NET            : Rifle_556 {};
 
     class MachineGun_556;
-    class CUP_lmg_L110A1_railed : MachineGun_556 {};
-    
-
-    class CUP_lmg_minimi_railed    : MachineGun_556 {};
+    class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg1 : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg2 : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg3 : MachineGun_556 {};
+    class SOCOMD_Minimi_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg1_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg2_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg3_folded : MachineGun_556 {};
     class LMG_03_F    : MachineGun_556 {};
 
     
@@ -175,12 +179,9 @@ class CfgLoadoutWeapons {
     class arifle_MX_Black_F : Rifle_65 {};
 
     class MachineGun_762;
-    class CUP_lmg_Mk48_nohg : MachineGun_762 {};
-    class CUP_lmg_Mk48_nohg_des : MachineGun_762 {};
-    class CUP_lmg_Mk48_nohg_tan : MachineGun_762 {};
-    class CUP_lmg_Mk48_nohg_wdl : MachineGun_762 {};
+    class ITEM_PRIMARY_MACHINEGUN_762  : MachineGun_762 {};
     class MachineGun_762_heavy;
-    class SOCOMD_mag58 :MachineGun_762_heavy {};
+    class ITEM_PRIMARY_MACHINEGUN_GPMG :MachineGun_762_heavy {};
     
 
     class Rifle_762;
@@ -200,19 +201,18 @@ class CfgLoadoutWeapons {
     
 
     class Launcher;
-    class SOCOMD_LAW : Launcher {
+    class rhs_weap_m72a7 : Launcher {
         startLoaded = 1;
         magazines[] = {
-            {"SOCOMD_M72_Rocket", 1}
+            {"rhs_m72a7_mag", 1}
         };
         
     };
-    class SOCOMD_LAW_Loaded : SOCOMD_LAW{};
 
     class SOCOMD_Carl_Gustav : Launcher {
         magazines[] = {
-            {"tf47_m3maaws_HEAT", 1},
-            {"tf47_m3maaws_HE", 1}
+            {"rhs_mag_maaws_HEAT", 1},
+            {"rhs_mag_maaws_HE", 1}
         };
     };
     class Recon_338;

@@ -3,20 +3,9 @@
 // NOMAD
 
 
-class CUP_CH47F_base : Helicopter_Base_H {
-    
-};
+class RHS_CH_47F;
 
-class CUP_B_CH47F_GB : CUP_CH47F_base {
-    class Turrets : Turrets {
-        class MainTurret;
-        class RightDoorGun;
-        class BackDoorGun;
-        class CopilotTurret;
-    };
-};
-
-class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
+class SOCOMD_NOMAD_A : RHS_CH_47F {
     
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
@@ -72,7 +61,6 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
         "\z\socomd\addons\data\chinook\ch47_ext_1_co.paa",
         "\z\socomd\addons\data\chinook\ch47_ext_2_co.paa",
         "\z\socomd\addons\data\chinook\ch47f_nalepky_ca.paa",
-        "\CUP\airvehicles\cup_airvehicles_ch47\data\ch47_ext_mlod_co.paa"
-    };
-    
+        "rhsusf\addons\rhsusf_a2port_air\ch47\data\ch47_ext_mlod_co.paa"
+    };    
 };

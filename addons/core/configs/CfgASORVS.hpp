@@ -20,14 +20,25 @@ class CfgASORVS {
             "SOCOMD_BUSHMASTER_HMG",
             "SOCOMD_TRUCK_TRANSPORT_A",
             "SOCOMD_TRUCK_AMMO_A",
+            "SOCOMD_TRUCK_CARGO_A",
+            "SOCOMD_TRUCK_CARGO_D_B",
+            "SOCOMD_TRUCK_CARGO_WD_B",
+            "SOCOMD_TRUCK_LOGI_D",
+            "SOCOMD_TRUCK_LOGI_WD",
             "SOCOMD_TRUCK_FUEL_A",
+            "SOCOMD_TRUCK_REPAIR_A",
             "SOCOMD_SOV_HMG_D",
             "SOCOMD_SOV_HMG_W",
             "SOCOMD_SOV_GMG_D",
             "SOCOMD_SOV_GMG_W",
-            "SOCOMD_TRUCK_REPAIR_A",
-            "V12_KTM_SOCOMD",
+            "SOCOMD_SOV_logistics_HMG_D",
+            "SOCOMD_SOV_logistics_HMG_W",
+            "SOCOMD_SOV_logistics_GMG_D",
+            "SOCOMD_SOV_logistics_GMG_W",
+            "SOCOMD_BIKE",
+            "SOCOMD_RTV_D",
             "SOCOMD_QUADBIKE",
+            "V12_KTM_SOCOMD"
         };
     };
 

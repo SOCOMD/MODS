@@ -95,8 +95,8 @@ class B_338LM_APDS: B_338LM_Ball
         distance=1;
     };
 };
-class CUP_12Gauge_Slug;
-class SOCOMD_BreachingRound:CUP_12Gauge_Slug{
+class rhs_ammo_12g_slug;
+class SOCOMD_BreachingRound:rhs_ammo_12g_slug{
     caliber = 0.2;
     hit=3;
 };

@@ -453,23 +453,243 @@ class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
 
 //////////////////////////////////////////////////////////////////////
 // SOLS Overrides
-
-class SOCOMD_Pilot_helmet : H_PilotHelmetHeli_O {
+class Item_Base_F;
+class ItemInfo;
+class rhsusf_opscore_01;
+class rhsusf_hgu56p : rhsusf_opscore_01 {
     rgoc_canAcceptNVG = 1;
-    author = AUTHOR_STR;
-    scope = SCOPE_PUBLIC;
-    displayName = "Heli-Pilot Helmet";
-
     HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+class rhsusf_hgu56p_black : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
 };
 
-class SOCOMD_Crew_helmet : H_CrewHelmetHeli_O {
+class rhsusf_hgu56p_mask_black : rhsusf_hgu56p_black {
     rgoc_canAcceptNVG = 1;
-    author = AUTHOR_STR;
-    scope = SCOPE_PUBLIC;
-    displayName = "Heli-Crew Helmet";
-
     HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_black : rhsusf_hgu56p_black {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_black : Item_Base_F {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_black_skull : rhsusf_hgu56p_visor_mask_black {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_Empire_black : rhsusf_hgu56p_black {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_black_skull : rhsusf_hgu56p_mask_black_skull {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_green : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_green : rhsusf_hgu56p_green {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_green : rhsusf_hgu56p_green {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_green : rhsusf_hgu56p_green {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+
+class rhsusf_hgu56p_mask_green_mo : rhsusf_hgu56p_mask_green {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+class rhsusf_hgu56p_visor_mask_green_mo : rhsusf_hgu56p_visor_mask_green {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_mo : rhsusf_hgu56p_mask {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_skull : rhsusf_hgu56p_mask {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_mo : rhsusf_hgu56p_visor_mask {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_skull : rhsusf_hgu56p_visor_mask {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_pink : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_pink : rhsusf_hgu56p_pink {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_pink : rhsusf_hgu56p_pink {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_pink : rhsusf_hgu56p_pink {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_saf : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_saf : rhsusf_hgu56p_saf {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_saf : rhsusf_hgu56p_saf {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_saf : rhsusf_hgu56p_saf {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_smiley : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_smiley : rhsusf_hgu56p_mask_smiley {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_tan : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_tan : rhsusf_hgu56p_tan {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_tan : rhsusf_hgu56p_tan {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_mask_tan : rhsusf_hgu56p_tan {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_usa : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_visor_usa : rhsusf_hgu56p_usa {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+class rhsusf_hgu56p_white : rhsusf_hgu56p {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+class rhsusf_hgu56p_visor_white : rhsusf_hgu56p_white {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+class rhsusf_ihadss : rhsusf_opscore_01 {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
 };
 
 class SOCOMD_Ground_Crew_helmet : H_HelmetCrew_I {
@@ -478,5 +698,6 @@ class SOCOMD_Ground_Crew_helmet : H_HelmetCrew_I {
     scope = SCOPE_PUBLIC;
     displayName = "Armour Crew Helmet";
     HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
 };
 
