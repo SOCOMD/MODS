@@ -77,32 +77,6 @@ class Car_F : Car {
         };
     };
 };
-class Quadbike_01_base_F : Car_F{
-    class Turrets
-    {
-        class CargoTurret;
-        class CargoTurret_01 : CargoTurret
-        {
-            gunnerGetInAction = "GetInLOW";
-            gunnerGetOutAction = "GetOutLOW";
-            gunnerAction = "passenger_inside_1";
-            gunnerCompartments = "Compartment2";
-            memoryPointsGetInGunner = "pos cargo";
-            memoryPointsGetInGunnerDir = "pos cargo dir";
-            gunnerName = "Gunner (Passenger)";
-            proxyIndex = 1;
-            initElev = 0;
-            maxElev = 15;
-            minElev = -5;
-            initTurn = 0;
-            maxTurn = 180;
-            minTurn = 0;
-            isPersonTurret = 1;
-            ejectDeadGunner = 1;
-        };
-    };
-};
-class B_Quadbike_01_F : Quadbike_01_base_F{};
     // shared taki HMG
 class StaticWeapon;
 class StaticMGWeapon : StaticWeapon {

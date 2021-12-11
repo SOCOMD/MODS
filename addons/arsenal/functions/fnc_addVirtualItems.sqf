@@ -73,93 +73,94 @@ if (_items isEqualType true) then {
 } else {
     {
         if (_x isEqualType "") then {
-            private _configItemInfo = _configCfgWeapons >> _x >> "ItemInfo";
-            private _simulationType = getText (_configCfgWeapons >> _x >> "simulation");
+            private _className = toLower _x;
+            private _configItemInfo = _configCfgWeapons >> _className >> "ItemInfo";
+            private _simulationType = getText (_configCfgWeapons >> _className >> "simulation");
             switch true do {
-                case (isClass (_configCfgWeapons >> _x)): {
+                case (isClass (_configCfgWeapons >> _className)): {
                     switch true do {
                         /* Weapon acc */
                         case (
                                 isClass (_configItemInfo) &&
                                 {(getNumber (_configItemInfo >> "type")) in [TYPE_MUZZLE, TYPE_OPTICS, TYPE_FLASHLIGHT, TYPE_BIPOD]} &&
-                                {!(_x isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}
+                                {!(_className isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}
                             ): {
                             switch (getNumber (_configItemInfo >> "type")) do {
                                 case TYPE_OPTICS: {
-                                    (_cargo select 1) select 0 pushBackUnique _x;
+                                    (_cargo select 1) select 0 pushBackUnique _className;
                                 };
                                 case TYPE_FLASHLIGHT: {
-                                    (_cargo select 1) select 1 pushBackUnique _x;
+                                    (_cargo select 1) select 1 pushBackUnique _className;
                                 };
                                 case TYPE_MUZZLE: {
-                                    (_cargo select 1) select 2 pushBackUnique _x;
+                                    (_cargo select 1) select 2 pushBackUnique _className;
                                 };
                                 case TYPE_BIPOD: {
-                                    (_cargo select 1) select 3 pushBackUnique _x;
+                                    (_cargo select 1) select 3 pushBackUnique _className;
                                 };
                             };
                         };
                         /* Headgear */
                         case (isClass (_configItemInfo) &&
                             {getNumber (_configItemInfo >> "type") == TYPE_HEADGEAR}): {
-                            (_cargo select 3) pushBackUnique _x;
+                            (_cargo select 3) pushBackUnique _className;
                         };
                         /* Uniform */
                         case (isClass (_configItemInfo) &&
                             {getNumber (_configItemInfo >> "type") == TYPE_UNIFORM}): {
-                            (_cargo select 4) pushBackUnique _x;
+                            (_cargo select 4) pushBackUnique _className;
                         };
                         /* Vest */
                         case (isClass (_configItemInfo) &&
                             {getNumber (_configItemInfo >> "type") == TYPE_VEST}): {
-                            (_cargo select 5) pushBackUnique _x;
+                            (_cargo select 5) pushBackUnique _className;
                         };
                         /* NVgs */
                         case (_simulationType == "NVGoggles"): {
-                            (_cargo select 8) pushBackUnique _x;
+                            (_cargo select 8) pushBackUnique _className;
                         };
                         /* Binos */
                         case (_simulationType == "Binocular" ||
-                            {(_simulationType == 'Weapon') && {(getNumber (_configCfgWeapons >> _x >> 'type') == TYPE_BINOCULAR_AND_NVG)}}): {
-                            (_cargo select 9) pushBackUnique _x;
+                            {(_simulationType == 'Weapon') && {(getNumber (_configCfgWeapons >> _className >> 'type') == TYPE_BINOCULAR_AND_NVG)}}): {
+                            (_cargo select 9) pushBackUnique _className;
                         };
                         /* Map */
                         case (_simulationType == "ItemMap"): {
-                            (_cargo select 10) pushBackUnique _x;
+                            (_cargo select 10) pushBackUnique _className;
                         };
                         /* Compass */
                         case (_simulationType == "ItemCompass"): {
-                            (_cargo select 11) pushBackUnique _x;
+                            (_cargo select 11) pushBackUnique _className;
                         };
                         /* Radio */
                         case (_simulationType == "ItemRadio"): {
-                            (_cargo select 12) pushBackUnique _x;
+                            (_cargo select 12) pushBackUnique _className;
                         };
                         /* Watch */
                         case (_simulationType == "ItemWatch"): {
-                            (_cargo select 13) pushBackUnique _x;
+                            (_cargo select 13) pushBackUnique _className;
                         };
                         /* GPS */
                         case (_simulationType == "ItemGPS"): {
-                            (_cargo select 14) pushBackUnique _x;
+                            (_cargo select 14) pushBackUnique _className;
                         };
                         /* UAV terminals */
                         case (isClass (_configItemInfo) &&
                             {getNumber (_configItemInfo >> "type") == TYPE_UAV_TERMINAL}): {
-                            (_cargo select 14) pushBackUnique _x;
+                            (_cargo select 14) pushBackUnique _className;
                         };
                         /* Weapon, at the bottom to avoid adding binos */
-                        case (isClass (_configCfgWeapons >> _x >> "WeaponSlotsInfo") &&
-                            {getNumber (_configCfgWeapons >> _x >> 'type') != TYPE_BINOCULAR_AND_NVG}): {
-                            switch (getNumber (_configCfgWeapons >> _x >> "type")) do {
+                        case (isClass (_configCfgWeapons >> _className >> "WeaponSlotsInfo") &&
+                            {getNumber (_configCfgWeapons >> _className >> 'type') != TYPE_BINOCULAR_AND_NVG}): {
+                            switch (getNumber (_configCfgWeapons >> _className >> "type")) do {
                                 case TYPE_WEAPON_PRIMARY: {
-                                    (_cargo select 0) select 0 pushBackUnique  ([_x] call bis_fnc_baseWeapon);
+                                    (_cargo select 0) select 0 pushBackUnique  ([_className] call bis_fnc_baseWeapon);
                                 };
                                 case TYPE_WEAPON_HANDGUN: {
-                                    (_cargo select 0) select 2 pushBackUnique ([_x] call bis_fnc_baseWeapon);
+                                    (_cargo select 0) select 2 pushBackUnique ([_className] call bis_fnc_baseWeapon);
                                 };
                                 case TYPE_WEAPON_SECONDARY: {
-                                    (_cargo select 0) select 1 pushBackUnique ([_x] call bis_fnc_baseWeapon);
+                                    (_cargo select 0) select 1 pushBackUnique ([_className] call bis_fnc_baseWeapon);
                                 };
                             };
                         };
@@ -167,25 +168,25 @@ if (_items isEqualType true) then {
                         case (
                                 isClass (_configItemInfo) &&
                                 ((getNumber (_configItemInfo >> "type")) in [TYPE_MUZZLE, TYPE_OPTICS, TYPE_FLASHLIGHT, TYPE_BIPOD] &&
-                                {(_x isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}) ||
+                                {(_className isKindOf ["CBA_MiscItem", (_configCfgWeapons)])}) ||
                                 {(getNumber (_configItemInfo >> "type")) in [TYPE_FIRST_AID_KIT, TYPE_MEDIKIT, TYPE_TOOLKIT]} ||
-                                {(getText (_configCfgWeapons >> _x >> "simulation")) == "ItemMineDetector"}
+                                {(getText (_configCfgWeapons >> _className >> "simulation")) == "ItemMineDetector"}
                             ): {
-                            (_cargo select 17) pushBackUnique _x;
+                            (_cargo select 17) pushBackUnique _className;
                         };
                     };
                 };
-                case (isClass (configFile >> "CfgMagazines" >> _x)): {
+                case (isClass (configFile >> "CfgMagazines" >> _className)): {
                     // Lists to check against
                     private _grenadeList = [];
                     {
-                        _grenadeList append getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines");
+                        _grenadeList append getArray (_configCfgWeapons >> "Throw" >> _className >> "magazines");
                         false
                     } count getArray (_configCfgWeapons >> "Throw" >> "muzzles");
 
                     private _putList = [];
                     {
-                        _putList append getArray (_configCfgWeapons >> "Put" >> _x >> "magazines");
+                        _putList append getArray (_configCfgWeapons >> "Put" >> _className >> "magazines");
                         false
                     } count getArray (_configCfgWeapons >> "Put" >> "muzzles");
 
@@ -193,30 +194,30 @@ if (_items isEqualType true) then {
                     switch true do {
                         // Rifle, handgun, secondary weapons mags
                         case (
-                                ((getNumber (configFile >> "CfgMagazines" >> _x >> "type") in [TYPE_MAGAZINE_PRIMARY_AND_THROW,TYPE_MAGAZINE_SECONDARY_AND_PUT,1536,TYPE_MAGAZINE_HANDGUN_AND_GL]) ||
-                                {(getNumber (configFile >> "CfgMagazines" >> _x >> QGVAR(hide))) == -1}) &&
-                                {!(_x in _grenadeList)} &&
-                                {!(_x in _putList)}
+                                ((getNumber (configFile >> "CfgMagazines" >> _className >> "type") in [TYPE_MAGAZINE_PRIMARY_AND_THROW,TYPE_MAGAZINE_SECONDARY_AND_PUT,1536,TYPE_MAGAZINE_HANDGUN_AND_GL]) ||
+                                {(getNumber (configFile >> "CfgMagazines" >> _className >> QGVAR(hide))) == -1}) &&
+                                {!(_className in _grenadeList)} &&
+                                {!(_className in _putList)}
                             ): {
-                            (_cargo select 2) pushBackUnique _x;
+                            (_cargo select 2) pushBackUnique _className;
                         };
                         // Grenades
-                        case (_x in _grenadeList): {
-                            (_cargo select 15) pushBackUnique _x;
+                        case (_className in _grenadeList): {
+                            (_cargo select 15) pushBackUnique _className;
                         };
                         // Put
-                        case (_x in _putList): {
-                            (_cargo select 16) pushBackUnique _x;
+                        case (_className in _putList): {
+                            (_cargo select 16) pushBackUnique _className;
                         };
                     };
                 };
-                case (isClass (configFile >> "CfgVehicles" >> _x)): {
-                    if (getNumber (configFile >> "CfgVehicles" >> _x >> "isBackpack") == 1) then {
-                        (_cargo select 6) pushBackUnique _x;
+                case (isClass (configFile >> "CfgVehicles" >> _className)): {
+                    if (getNumber (configFile >> "CfgVehicles" >> _className >> "isBackpack") == 1) then {
+                        (_cargo select 6) pushBackUnique _className;
                     };
                 };
-                case (isClass (configFile >> "CfgGlasses" >> _x)): {
-                    (_cargo select 7) pushBackUnique _x;
+                case (isClass (configFile >> "CfgGlasses" >> _className)): {
+                    (_cargo select 7) pushBackUnique _className;
                 };
             };
         };

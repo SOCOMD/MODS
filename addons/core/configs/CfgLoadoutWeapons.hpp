@@ -2,13 +2,13 @@
 class CfgLoadoutWeapons {
     class Rifle_556 {
         magazines[] = {
-            {"ACWP_30rnd_556x45_EPR_PMAG", 8}
+            {QUOTE(ITEM_MAGAZINE_556), 8}
         };
     };
 
     class RifleGL_556 { 
         magazines[] = {
-            {"ACWP_30rnd_556x45_EPR_PMAG", 8}
+            {QUOTE(ITEM_MAGAZINE_556), 8}
         };
         grenades[] = {
             {"1Rnd_HE_Grenade_shell", 8}
@@ -27,18 +27,18 @@ class CfgLoadoutWeapons {
 
     class MachineGun_556 {
         magazines[] = {
-            {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch", 5}
+            {QUOTE(ITEM_MAGAZINE_556_BELT), 5}
         };
     };
 
     class MachineGun_762 {
         magazines[] = {
-            {"CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 6}
+            {QUOTE(ITEM_MAGAZINE_762_BELT), 6}
         };
     };
     class MachineGun_762_heavy {
         magazines[] = {
-            {"SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 6}
+            {QUOTE(ITEM_MAGAZINE_GPMG_BELT), 6}
         };
     };
 
@@ -92,9 +92,9 @@ class CfgLoadoutWeapons {
             {"ACE_HuntIR_M203", 3}
         };
     };
-    class Recon_Barret  {
+    class rhs_weap_m82a1  {
         magazines[] = {
-            {"Recon_Barret_mag", 6}
+            {"rhsusf_mag_10Rnd_STD_50BMG_M33", 6}
         };
     };
     class Recon_338 {

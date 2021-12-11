@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"AGE_Equipment","ace_main","CUP_Weapons_Ammunition","CUP_AirVehicles_LoadOrder","CUP_WheeledVehicles_Core","CUP_Weapons_Compatibility","CUP_Weapons_M72A6"};
+        requiredAddons[] = {"AGE_Equipment","ace_main","rhsusf_main_loadorder","rhsusf_c_weapons","rhssaf_main_loadorder","rhsgref_main_loadorder","rhs_main_loadorder"};
         author = "";
         authors[] = {"SOCOMD J4"};
         authorUrl = "https://socomd.com";

@@ -1,301 +1,82 @@
 #define OPTIC_FOV(FOVMAX,FOVMIN,FOVINIT,ZOOM_MIN,ZOOM_MAX)\
-opticsZoomMin = FOVMIN;\
 opticsZoomMax = FOVMAX;\
+opticsZoomMin = FOVMIN;\
 opticsZoomInit = FOVINIT; \
 distanceZoomMin = ZOOM_MIN; \
 distanceZoomMax = ZOOM_MAX;
 
 #define OPTIC_Holo OPTIC_FOV(1.25,0.4,0.75,100,100)
-#define OPTIC_HoloM OPTIC_FOV(0.75,0.25,0.5,100,100)
+#define OPTIC_HoloM OPTIC_FOV(0.175,0.175,0.175,200,200)
 #define OPTIC_T1 OPTIC_FOV(1.25,0.25,0.75,100,100)
-#define OPTIC_SMA_ELCAN OPTIC_FOV(0.75,0.25,0.4,100,100)
+#define OPTIC_147_ELCAN OPTIC_FOV(0.15,0.15,0.15,100,100)
 #define OPTIC_4X_OPTIC OPTIC_FOV(0.125,0.125,0.125,100,100)
 
 class InventoryOpticsItem_Base_F;
 class ItemCore;
-class RH_t1 : ItemCore {
+class rhsusf_acc_sniper_base;
+
+class rhsusf_acc_su230_base: rhsusf_acc_sniper_base{
     class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class T1 {
-                OPTIC_T1
+        class OpticsModes{
+			class Elcan_x1{
+                OPTIC_Holo
             };
-        };
-    };
-};
-
-class RH_t1_tan : RH_t1 {};
-
-class SMA_eotech: ItemCore {};
-
-// EXPS magnification changes
-
-class SMA_eotechG33_3XDOWN: SMA_eotech {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class AIM {
+			class Elcan_x4{
+                OPTIC_4X_OPTIC
+            };
+			class Elcan_iron{
                 OPTIC_Holo
             };
         };
     };
 };
+class rhsusf_acc_ELCAN: rhsusf_acc_sniper_base{
+    class ItemInfo : InventoryOpticsItem_Base_F {
+        class OpticsModes{
+			class elcan_scope{
+                OPTIC_147_ELCAN
+            };
+        };
+    };
+};
+class rhsusf_acc_g33_xps3 :ItemCore {
+    MRT_SwitchItemNextClass = "rhsusf_acc_g33_xps3_flip";
+    MRT_SwitchItemPrevClass = "rhsusf_acc_g33_xps3_flip";
+    MRT_switchItemHintText = "Up";
+    rhs_accessory_next = "";
 
-class SMA_eotechG33_3XUP: SMA_eotechG33_3XDOWN {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class Magnified {
+    class ItemInfo : InventoryOpticsItem_Base_F {
+        class OpticsModes{
+			class MAG{
                 OPTIC_HoloM
             };
         };
     };
 };
-
-class SMA_eotechG33_grn_3XDOWN: SMA_eotech {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class AIM {
-                OPTIC_Holo
-            };
-        };
-    };
+class optic_Holosight;
+class rhsusf_acc_g33_xps3_flip : optic_Holosight{
+    MRT_SwitchItemNextClass = "rhsusf_acc_g33_xps3";
+    MRT_SwitchItemPrevClass = "rhsusf_acc_g33_xps3";
+    MRT_switchItemHintText = "Down";
+    rhs_accessory_next = "";
 };
 
-class SMA_eotechG33_grn_3XUP: SMA_eotechG33_3XDOWN {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class Magnified {
-                OPTIC_HoloM
-            };
-        };
-    };
+class rhsusf_acc_g33_xps3_tan : rhsusf_acc_g33_xps3
+{
+    MRT_SwitchItemNextClass = "rhsusf_acc_g33_xps3_tan_flip";
+    MRT_SwitchItemPrevClass = "rhsusf_acc_g33_xps3_tan_flip";
+    MRT_switchItemHintText = "Up";
+    rhs_accessory_next = "";
+};
+//Unmagnified
+class rhsusf_acc_g33_xps3_tan_flip : rhsusf_acc_g33_xps3_flip
+{
+    MRT_SwitchItemNextClass = "rhsusf_acc_g33_xps3_tan";
+    MRT_SwitchItemPrevClass = "rhsusf_acc_g33_xps3_tan";
+    MRT_switchItemHintText = "Down";
+    rhs_accessory_next = "";
 };
 
-class SMA_eotechG33_tan_3XDOWN: SMA_eotech {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class AIM {
-                OPTIC_Holo
-            };
-        };
-    };
-};
-
-class SMA_eotechG33_tan_3XUP: SMA_eotechG33_3XDOWN {
-    class ItemInfo: InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class Magnified {
-                OPTIC_HoloM
-            };
-        };
-    };
-};
-
-
-class CUP_optic_ACOG_3D : ItemCore {
-    class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class ACOG {
-                OPTIC_4X_OPTIC
-                memoryPointCamera = "opticView";
-            };
-        };
-    };
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_Reflex_Desert_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_Reflex_Wood_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG2_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA31_KF_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA31_KF_Desert_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA31_KF_Wood_3D:  CUP_optic_ACOG_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-
-class CUP_optic_ACOG_TA01NSN_Black_3D: ItemCore{
-    scope=SCOPE_PUBLIC;
-    class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class ACOG {
-                OPTIC_4X_OPTIC
-                memoryPointCamera = "opticView";
-            };
-        };
-    };
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01NSN_Coyote_3D: CUP_optic_ACOG_TA01NSN_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01NSN_Tan_3D: CUP_optic_ACOG_TA01NSN_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01NSN_OD_3D: CUP_optic_ACOG_TA01NSN_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01NSN_Tropic_3D: CUP_optic_ACOG_TA01NSN_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-
-class CUP_optic_ACOG_TA01NSN_RMR_Black_3D: ItemCore{
-    class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class ACOG {
-                OPTIC_4X_OPTIC
-                memoryPointCamera = "opticView";
-            };
-        };
-    };
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;    
-};
-class CUP_optic_ACOG_TA01NSN_RMR_Coyote_3D: CUP_optic_ACOG_TA01NSN_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;    
-};
-class CUP_optic_ACOG_TA01NSN_RMR_Tan_3D: CUP_optic_ACOG_TA01NSN_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;    
-};
-class CUP_optic_ACOG_TA01NSN_RMR_OD_3D: CUP_optic_ACOG_TA01NSN_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;    
-};
-class CUP_optic_ACOG_TA01NSN_RMR_Tropic_3D: CUP_optic_ACOG_TA01NSN_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;    
-};
-
-class CUP_optic_ACOG_TA01B_Black_3D:ItemCore{
-    class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class ACOG {
-                OPTIC_4X_OPTIC
-                memoryPointCamera = "opticView";
-            };
-        };
-    };
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_Coyote_3D: CUP_optic_ACOG_TA01B_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_Tan_3D: CUP_optic_ACOG_TA01B_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_OD_3D: CUP_optic_ACOG_TA01B_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_Tropic_3D: CUP_optic_ACOG_TA01B_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-
-class CUP_optic_ACOG_TA01B_RMR_Black_3D:ItemCore{
-    class ItemInfo : InventoryOpticsItem_Base_F {
-        class OpticsModes {
-            class ACOG {
-                OPTIC_4X_OPTIC
-                memoryPointCamera = "opticView";
-            };
-        };
-    };
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_RMR_Coyote_3D: CUP_optic_ACOG_TA01B_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_RMR_Tan_3D: CUP_optic_ACOG_TA01B_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_RMR_OD_3D: CUP_optic_ACOG_TA01B_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
-class CUP_optic_ACOG_TA01B_RMR_Tropic_3D: CUP_optic_ACOG_TA01B_RMR_Black_3D{
-    scope=SCOPE_PUBLIC;
-    delete MRT_switchItemHintText;
-    delete MRT_SwitchItemNextClass;
-    delete MRT_SwitchItemPrevClass;
-};
 class acwp_t2;
 class acwp_t2_g33: acwp_t2 {
     MRT_SwitchItemNextClass = "acwp_t2_g33_down";
@@ -319,7 +100,7 @@ class acwp_t2_g33: acwp_t2 {
                 discretedistance[] = {200};
                 discreteDistanceInitIndex = 1;
                 visionMode[] = {};
-                OPTIC_4X_OPTIC
+                OPTIC_HoloM
             };
         };
      };
@@ -347,7 +128,7 @@ class acwp_eotech_g33: acwp_eotech {
                 discretedistance[] = {200};
                 discreteDistanceInitIndex = 1;
                 visionMode[] = {};
-                OPTIC_4X_OPTIC
+                OPTIC_HoloM
             };
         };
      };

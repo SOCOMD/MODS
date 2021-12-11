@@ -2,6 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // QUADBIKE
 
+class B_Quadbike_01_F;
 class SOCOMD_QUADBIKE : B_Quadbike_01_F {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;

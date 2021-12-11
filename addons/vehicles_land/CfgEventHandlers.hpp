@@ -16,8 +16,8 @@ class Extended_PostInit_EventHandlers {
     };
 };
 class Extended_Init_EventHandlers {
-    class CUP_BAF_Coyote_BASE_D {
-        class Coyote_Damage_eh {
+    class UK3CB_BAF_Coyote_L111A1_Base {
+        class SOCOMD_Coyote_Damage_eh {
             init = QUOTE([_this select 0] call FUNC(JackelHitEH));
         };    
     };

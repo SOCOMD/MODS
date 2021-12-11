@@ -52,7 +52,7 @@ if (_items isEqualType true) then {
 } else {
 
     // Make sure all items are in string form
-    _items = _items select {_x isEqualType "" && {_x != ""}};
+    _items = (_items select {_x isEqualType "" && {_x != ""}}) apply {toLower _x};
 
     {
         if (_forEachIndex isEqualTo 0) then {
