@@ -3,7 +3,7 @@
 params ["_player","_loadoutId"];
 
 // clears player's existing arsenal
-[_player, true, false] call socomd_arsenal_fnc_removeVirtualItems;
+[_player, true, false] call EFUNC(arsenal,removeVirtualItems);
 // reset nvg and extras variable for correct arsenal selection
 _player setVariable ["socomd_arsenal_nvg","SOCOMD_NVG"];
 _player setVariable  ["socomd_arsenal_grenade", "default"];
@@ -12,7 +12,10 @@ _player setVariable ["socomd_arsenal_extras","extras_none"];
 
 private _blackList = [];
 _blackList append getArray (configFile >> "CfgQstoreBlackList" >> "blacklist");
-_blackList append getArray (configFile >> "CfgQstoreBlackList" >> "socomd");
+_blackListClass = getText (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "blacklist");
+if(_blackListClass != "" ) then {
+    _blackList append getArray (configFile >> "CfgQstoreBlackList" >> _blackListClass);
+};
 // Common loudout options between classes
 private _worldType = worldName call FUNC(GetWorldType);
 private _uniforms = [];
@@ -47,44 +50,36 @@ private _configOptics = "getNumber (_x >> 'ItemInfo' >> 'type') in [201] and get
 // filters optics, skips if recon class
 {
     _scopeFOVBlacklisted =  [configName _x, []] call FUNC(CheckScopeFOV);
-    if( _scopeFOVBlacklisted == 0  && !(configName _x in _blackList )) then {
+    if( _scopeFOVBlacklisted == 0) then {
         _accessories pushBack (configName _x);
     };
 } forEach _configOptics;
 // filters lasers and muzzle devices
 {
-    if !(configName _x in _blackList) then
-    {
         _accessories pushBack (configName _x);
-    };
 } forEach _configAcc;
 // filters bipods
 {
-    if !(configName _x in _blackList) then
-    {
-        _accessories pushBack (configName _x);
-    };
+    _accessories pushBack (configName _x);
 } forEach _configBipods;
 
+_accessories append getArray (configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "optics");
 
 // ensuring that all inventory items are added to the white list so kits can be saved
 private _loadOut = [];
 _loadOut append _helmets;
 _loadOut append _facewear;
 _loadOut append _uniforms;
-_loadOut append _bags;
-_loadOut append _secondaries;
 _loadOut append uniformItems _player;
 _loadOut append vestItems _player;
 _loadOut append backpackItems _player;
 _loadOut append assignedItems _player;
-[_player, _loadOut, false] call socomd_arsenal_fnc_addVirtualItems;
+[_player, _loadOut, false] call EFUNC(arsenal,addVirtualItems);
 
 // defining arsenal tabs to always be disabled, will never need them
 
 // Adds new arsenal items to player
-[_player, _accessories, false] call socomd_arsenal_fnc_addVirtualItems;
-
+[_player, _accessories, false] call EFUNC(arsenal,addVirtualItems);
 // Go through CfgArsenalOptions.hpp for the kit, add in all unique gear
 private _sr_array = [];
 _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "weapons");
@@ -99,11 +94,13 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "arsenalExtras"))
 };
 
 if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then {
-    [_player, _helmets, false] call socomd_arsenal_fnc_removeVirtualItems;
+    [_player, _helmets, false] call EFUNC(arsenal,removeVirtualItems);
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets");
 };
 
-[_player, _sr_array, false] call socomd_arsenal_fnc_addVirtualItems;
+[_player, _sr_array, false] call EFUNC(arsenal,addVirtualItems);
+
+[_player, _blackList ] call EFUNC(arsenal,removeVirtualItems); // ensuring that the blacklisted gear is removed
 
 // Arsenal Event Handlers
 // 0. hides unwanted tabs on open
@@ -113,12 +110,12 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then 
 private _isPrevInit = _player getVariable ["SOCOMD_eh_ids","failed"];
 
 if ( typeName _isPrevInit == "ARRAY") then {
-    ["socomd_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
-    ["socomd_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
-    ["socomd_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
+    ["ace_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
+    ["ace_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
+    ["ace_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
 };
 
-private _openedEh = ["socomd_arsenal_displayOpened", {
+private _openedEh = ["ace_arsenal_displayOpened", {
     ACE_Player setVariable ["SOCOMD_prev_primary", primaryWeapon ACE_Player]
     params ["_display"];
     _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
@@ -165,8 +162,8 @@ private _openedEh = ["socomd_arsenal_displayOpened", {
     } forEach _disabledButtons;
     
 }] call CBA_fnc_addEventHandler;
-private _removedRight = ["socomd_arsenal_rightPanelFilled", { 
-    _currentTab = currentNamespace getVariable "socomd_arsenal_currentLeftPanel";
+private _removedRight = ["ace_arsenal_rightPanelFilled", { 
+    _currentTab = currentNamespace getVariable "ace_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ // uniform panel
            TOGGLE_RIGHT_PANEL_HIDE

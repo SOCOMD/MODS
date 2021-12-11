@@ -4,7 +4,6 @@ class lbt_pouchless_coy: Vest_Camo_Base{
     class ItemInfo: VestItem
     {
         containerClass="Supply150";
-        mass=10;
         class HitpointsProtectionInfo
         {
             class Chest
@@ -37,7 +36,6 @@ class lbt_tl_mc: Vest_Camo_Base{
     class ItemInfo: VestItem
     {
         containerClass="Supply150";
-        mass=10;
         class HitpointsProtectionInfo
         {
             class Chest

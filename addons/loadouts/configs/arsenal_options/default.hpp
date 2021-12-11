@@ -209,7 +209,7 @@
     "bnae_trg42_f_mmrs_camo1_virtual",\
     "5Rnd_338LM_Magazine",\
     "5Rnd_APDS_338LM_Magazine",\
-    "SOCOMD_Item_Magazine_300_5Rnd",\
+    "hlc_5rnd_300WM_FMJ_AWM",\
     "10Rnd_300WM_Magazine"
 
 #define LAUNCHERS \
@@ -299,8 +299,23 @@
     "SOCOMD_NVG_AM_C",\
     "SOCOMD_NVG_GPNVG_WP_black",\
     "SOCOMD_NVG_GPNVG_GR_black",\
-    "SOCOMD_Crew_helmet",\
-    "SOCOMD_Pilot_helmet"
+    "rhsusf_ihadss",\
+    "rhsusf_hgu56p_visor_mask_tan",\
+    "rhsusf_hgu56p_visor_tan",\
+    "rhsusf_hgu56p_mask_tan",\
+    "rhsusf_hgu56p_tan",\
+    "rhsusf_hgu56p_visor_mask_green",\
+    "rhsusf_hgu56p_visor_green",\
+    "rhsusf_hgu56p_mask_green",\
+    "rhsusf_hgu56p_green",\
+    "rhsusf_hgu56p_visor_mask",\
+    "rhsusf_hgu56p_visor",\
+    "rhsusf_hgu56p_mask",\
+    "rhsusf_hgu56p",\
+    "rhsusf_hgu56p_visor_mask_black",\
+    "rhsusf_hgu56p_visor_black",\
+    "rhsusf_hgu56p_mask_black",\
+    "rhsusf_hgu56p_black"
 
 #define MC_UNIFORMS \
     "USP_G3C_KP_MC_SOCOMD",\
@@ -335,7 +350,6 @@
     "USP_PCU_G3C_KP_MC_GRY_RECON"
 
 #define PILOT_UNIFORMS \
-    "SOLS_tshirt",\
     "USP_TSHIRT_G3C_MC_SOCOMD"
 
 

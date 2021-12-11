@@ -27,7 +27,6 @@ class UK3CB_BAF_Coyote_Passenger_L111A1_W : UK3CB_BAF_Coyote_Passenger_L111A1_D 
 class UK3CB_BAF_Coyote_Passenger_L134A1_D : UK3CB_BAF_Coyote_L134A1_Base {};
 class UK3CB_BAF_Coyote_Passenger_L134A1_W : UK3CB_BAF_Coyote_Passenger_L134A1_D {};
 class SOCOMD_SOV_HMG_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {
-
     //armor = 3000;
     //armorStructural = 20;
     //explosionShielding = 0.0005;
@@ -40,7 +39,7 @@ class SOCOMD_SOV_HMG_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO (M2) (3/9)";
+    displayname = "SOV-CDO (M2) (3/8)";
     faction = FACTION_STR;
     vehicleclass = "Car";
 
@@ -89,6 +88,13 @@ class SOCOMD_SOV_HMG_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_des_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -99,7 +105,7 @@ class SOCOMD_SOV_HMG_W : UK3CB_BAF_Coyote_Passenger_L111A1_W {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO (M2) (3/9)";
+    displayname = "SOV-CDO (M2) (3/8)";
     faction = FACTION_STR;
     vehicleclass = "Car";
     fuelCapacity = 35;
@@ -145,6 +151,13 @@ class SOCOMD_SOV_HMG_W : UK3CB_BAF_Coyote_Passenger_L111A1_W {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_cam_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -155,7 +168,7 @@ class SOCOMD_SOV_GMG_D : UK3CB_BAF_Coyote_Passenger_L134A1_D {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO (GMG) (3/9) ";
+    displayname = "SOV-CDO (GMG) (3/8) ";
     faction = FACTION_STR;
     vehicleclass = "Car";
     fuelCapacity = 35;
@@ -206,6 +219,13 @@ class SOCOMD_SOV_GMG_D : UK3CB_BAF_Coyote_Passenger_L134A1_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_des_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -216,7 +236,7 @@ class SOCOMD_SOV_GMG_W : UK3CB_BAF_Coyote_Passenger_L134A1_W {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO (GMG) (3/9) ";
+    displayname = "SOV-CDO (GMG) (3/8) ";
     faction = FACTION_STR;
     vehicleclass = "Car";
     fuelCapacity = 35;
@@ -262,6 +282,13 @@ class SOCOMD_SOV_GMG_W : UK3CB_BAF_Coyote_Passenger_L134A1_W {
 
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_cam_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
     };
     COYOTE_FLAG_ACTION
 };
@@ -286,9 +313,10 @@ class SOCOMD_SOV_logistics_HMG_D : UK3CB_BAF_Coyote_Logistics_L111A1_D {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO Logistics (M2) (3/9)";
+    displayname = "SOV-CDO Logistics (M2) (3/3)";
     faction = FACTION_STR;
     vehicleclass = "Car";
+    TRANSPORT_SUPPLIES
 
     crew = UNIT_SOCOMD_CREWMAN;
     typicalCargo[] = {UNIT_SOCOMD_CREWMAN, UNIT_SOCOMD_CREWMAN};
@@ -343,6 +371,13 @@ class SOCOMD_SOV_logistics_HMG_D : UK3CB_BAF_Coyote_Logistics_L111A1_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_des_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -353,9 +388,10 @@ class SOCOMD_SOV_logistics_HMG_W : UK3CB_BAF_Coyote_Logistics_L111A1_W {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO Logistics (M2) (3/9)";
+    displayname = "SOV-CDO Logistics (M2) (3/3)";
     faction = FACTION_STR;
     vehicleclass = "Car";
+    TRANSPORT_SUPPLIES
     fuelCapacity = 35;
     ace_refuel_fuelCapacity = 50;
 
@@ -407,6 +443,13 @@ class SOCOMD_SOV_logistics_HMG_W : UK3CB_BAF_Coyote_Logistics_L111A1_W {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_cam_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -417,9 +460,10 @@ class SOCOMD_SOV_logistics_GMG_D : UK3CB_BAF_Coyote_Logistics_L134A1_D {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO Logistics (GMG) (3/9) ";
+    displayname = "SOV-CDO Logistics (GMG) (3/3) ";
     faction = FACTION_STR;
     vehicleclass = "Car";
+    TRANSPORT_SUPPLIES
     fuelCapacity = 35;
     ace_refuel_fuelCapacity = 50;
 
@@ -476,6 +520,13 @@ class SOCOMD_SOV_logistics_GMG_D : UK3CB_BAF_Coyote_Logistics_L134A1_D {
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
     };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_des_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
+    };
     COYOTE_FLAG_ACTION
 };
 
@@ -486,9 +537,10 @@ class SOCOMD_SOV_logistics_GMG_W : UK3CB_BAF_Coyote_Logistics_L134A1_W {
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
     forceInGarage = 1;
     author = AUTHOR_STR;
-    displayname = "SOV-CDO Logistics (GMG) (3/9) ";
+    displayname = "SOV-CDO Logistics (GMG) (3/3) ";
     faction = FACTION_STR;
     vehicleclass = "Car";
+    TRANSPORT_SUPPLIES
     fuelCapacity = 35;
     ace_refuel_fuelCapacity = 50;
 
@@ -539,6 +591,13 @@ class SOCOMD_SOV_logistics_GMG_W : UK3CB_BAF_Coyote_Logistics_L134A1_W {
 
     class TransportBackpacks {
         INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
+    hiddenSelectionsTextures[] = {
+        "\z\socomd\addons\data\sov\jackal_base_aus_cam_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_mount_aus_co.paa",
+        "\z\socomd\addons\data\sov\Jackal_adds_aus_co.paa",
+        "\z\socomd\addons\data\sov\jackal_bar_aus_co.paa",
+        "","",""
     };
     COYOTE_FLAG_ACTION
 };

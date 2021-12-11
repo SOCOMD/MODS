@@ -1,5 +1,5 @@
 class CfgQstoreBlackList {
-    class blacklist[]={
+    blacklist[]={
         "UK3CB_G_KL_Oli",
         "UK3CB_G_KLR_Oli",
         "UK3CB_G_Neck_Shemag_KLR_blk",
@@ -9,6 +9,7 @@ class CfgQstoreBlackList {
         "UK3CB_G_Neck_Shemag_KR_blk",
         "UK3CB_G_Neck_Shemag_KR_tan",
         "UK3CB_G_KR_Oli",
+        "rhsusf_acc_m2a1",
         "rhssaf_veil_Green",
         "hlc_panel_side_ladder_l_black",
         "hlc_panel_side_ladder_l_desert",
@@ -63,7 +64,7 @@ class CfgQstoreBlackList {
         "hlc_panel_side_fn5cm_rg",
         "hlc_panel_side_fn5cm_od"
     };
-    class socomd[] ={
+    SOCOMD[]={
         "rhs_acc_ekp8_18",
         "rhs_acc_okp7_picatinny",
         "rhsgref_acc_rx01_nofilter_camo",
@@ -72,7 +73,6 @@ class CfgQstoreBlackList {
         "rhs_acc_perst1ik_ris",
         "rhs_acc_perst3",
         "rhs_acc_perst3_illum",
-        "rhs_acc_rakurspm",
         "rhs_acc_1p87",
         "hlc_optic_docterr",
         "hlc_optic_hensoldtzo_lo",
@@ -85,13 +85,13 @@ class CfgQstoreBlackList {
         "hlc_optic_hensoldtzo_hi_docter_2d",
         "rhsusf_acc_anpas13gv1",
         "rhsusf_acc_anpvs27",
-        "rhsusf_acc_m2a1",
         "rhsusf_acc_mrds",
         "rhsusf_acc_mrds_c",
         "rhsusf_acc_rm05",
         "rhsusf_acc_rx01_nofilter",
         "rhsusf_acc_rx01",
         "rhsusf_acc_rx01_nofilter_tan",
-        "rhsusf_acc_rx01_tan"
+        "rhsusf_acc_rx01_tan",
+        "rhs_acc_rakurspm"
     };
 };

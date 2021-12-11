@@ -243,7 +243,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
         class RADAR_HIDE {
             source="user";
             animPeriod=1;
-            initPhase=0;
+            initPhase=1;
         };
     };
     // ace_fastroping_enabled = 1;

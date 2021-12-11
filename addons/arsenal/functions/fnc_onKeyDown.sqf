@@ -88,22 +88,20 @@ if (_loadoutsDisplay isNotEqualTo displayNull) then {
             // Export button / export classname
             case (_keyPressed == DIK_C && {_ctrlState}): {
                 if (GVAR(leftTabFocus) || {GVAR(rightTabFocus)} || {GVAR(rightTabLnBFocus)}) then {
-                    private _data;
                     switch true do {
                         case (GVAR(leftTabFocus)): {
                             private _control = (_display displayCtrl IDC_leftTabContent);
-                            _data = _control lbData (lbCurSel _control);
+                            _control lbData (lbCurSel _control)
                         };
                         case (GVAR(rightTabFocus)): {
                             private _control = (_display displayCtrl IDC_rightTabContent);
-                            _data = _control lbData (lbCurSel _control);
+                            _control lbData (lbCurSel _control)
                         };
                         case (GVAR(rightTabLnBFocus)): {
                             private _control = (_display displayCtrl IDC_rightTabContentListnBox);
-                            _data = _control lnbData [(lnbCurSelRow _control), 0];
+                            _control lnbData [(lnbCurSelRow _control), 0]
                         };
-                    };
-                    _data params ["_className"];
+                    } params ["_className"];
 
                     "ace_clipboard" callExtension (_className + ";");
                     "ace_clipboard" callExtension "--COMPLETE--";

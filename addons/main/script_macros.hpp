@@ -100,7 +100,7 @@ class _xx_##id { \
 
 // headgear
 #define ITEM_DEFAULT_HEADGEAR                   "acwp_airframe_mc"
-#define ITEM_PILOT_HEADGEAR                     "SOCOMD_Pilot_helmet"
+#define ITEM_PILOT_HEADGEAR                     "rhsusf_hgu56p_visor"
 #define ITEM_CREW_HEADGEAR                      "SOCOMD_Ground_Crew_helmet"
 
 // uniforms
@@ -161,16 +161,16 @@ class ItemInfo : ItemInfo { \
 #define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
 #define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
 #define HELMET_BOONIE_ARMOR HELMET_ARMOR(0,1)
-#define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0.5;ace_hearing_protection = 1;advanced_peltors_protection = 1;
+#define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0.75;ace_hearing_protection = 1;advanced_peltors_protection = 1;
 
 
-#define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;ace_hearing_protection = 0.5;
+#define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;ace_hearing_protection = 0.7;
 
 
-#define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;ace_hearing_protection = 0.5;advanced_peltors_protection = 1;
+#define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.1;ace_hearing_protection = 0.6;advanced_peltors_protection = 1;
 
 #define INVENTORY_VEHICLE_DEFAULT_WEAPONS \
-    TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1)
+    TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 1)
 
 #define INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 12) \
@@ -300,3 +300,8 @@ class ItemInfo : ItemInfo { \
 #define SHIP_FAST_TURRETS \
 maxHorizontalRotSpeed = 8; \
 maxVerticalRotSpeed = 8;
+
+#define TRANSPORT_SUPPLIES \
+transportRepair = 0;\
+transportAmmo  = 0;\
+transportFuel  = 0;

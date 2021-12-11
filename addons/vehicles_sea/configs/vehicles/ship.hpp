@@ -29,7 +29,7 @@ class SOCOMD_BOAT : B_Boat_Transport_01_F {
     enginePower = 60;
     engineShiftY = -0.15;
     waterSpeedFactor = 1;
-    waterResistanceCoef = 0.015;
+    waterResistanceCoef = 0.0025;
     waterAngularDampingCoef = 1.0;
     waterLinearDampingCoefX = 4.0;
     waterLinearDampingCoefY = 1.0;
@@ -166,7 +166,7 @@ class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     idleRpm = 100;
     redRpm = 1000;
     thrustDelay = 0.5;
-    enginePower = 350;
+    enginePower = 200;
     engineShiftY = 0;
     waterSpeedFactor = 1;
     waterResistanceCoef = 0.005;
@@ -174,14 +174,14 @@ class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     waterLinearDampingCoefX = 15.0;
     waterLinearDampingCoefY = 1.2;
     rudderForceCoef = 0.5;
-    rudderForceCoefAtMaxSpeed = 0.0045;
+    rudderForceCoefAtMaxSpeed = 0.0070;
     waterLeakiness = 5;
     waterEffectSpeed = 15;
     waterFastEffectSpeed = 40;
     overSpeedBrakeCoef = 0.8;
 
     minSpeed = -0.5;
-    maxSpeed = 70;
+    maxSpeed = 60;
 
     
     class TransportWeapons { 
@@ -197,3 +197,14 @@ class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
         INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
     }; 
 };
+    class SOCOMD_SHIP_B_PLUS_ULTRA: SOCOMD_SHIP_B{
+        
+    waterResistanceCoef = 0;
+    redRpm = 10000;
+    thrustDelay = 0;
+    enginePower = 20000;
+    maxSpeed = 600;
+    rudderForceCoef = 0.5;
+    waterEffectSpeed = 1;
+    rudderForceCoefAtMaxSpeed = 0.5;
+    };

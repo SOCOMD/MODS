@@ -164,10 +164,14 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_ris_kag_NET            : Rifle_556 {};
 
     class MachineGun_556;
-    class rhs_weap_minimi_para_railed : MachineGun_556 {};
-    
-
-    class CUP_lmg_minimi_railed    : MachineGun_556 {};
+    class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg1 : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg2 : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg3 : MachineGun_556 {};
+    class SOCOMD_Minimi_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg1_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg2_folded : MachineGun_556 {};
+    class SOCOMD_Minimi_vfg3_folded : MachineGun_556 {};
     class LMG_03_F    : MachineGun_556 {};
 
     

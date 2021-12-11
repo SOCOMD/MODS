@@ -37,7 +37,7 @@ class CfgASORVS {
             "SOCOMD_SOV_logistics_GMG_W",
             "SOCOMD_BIKE",
             "SOCOMD_RTV_D",
-            "SOCOMD_QUADBIKE,"
+            "SOCOMD_QUADBIKE",
             "V12_KTM_SOCOMD"
         };
     };

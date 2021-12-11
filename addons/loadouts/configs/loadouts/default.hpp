@@ -150,6 +150,7 @@ class SOCOMD_Unarmed {
 // Commander
 
 class SOCOMD_Commander {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -184,7 +185,6 @@ class SOCOMD_Commander {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
@@ -201,6 +201,7 @@ class SOCOMD_Commander {
 ////////////////////////////////////////////////////////////////////////////////
 // HAVOC / JTAC
 class SOCOMD_TACP {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -237,7 +238,6 @@ class SOCOMD_TACP {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
@@ -252,6 +252,7 @@ class SOCOMD_TACP {
 // Leader
 
 class SOCOMD_Leader {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_GL);
     secondary            = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -276,7 +277,6 @@ class SOCOMD_Leader {
         type = ITEM_VEST_PATROLLEADER;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
             LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
             LOADOUT_ITEM(ACRE_PRC152, 2)
@@ -304,6 +304,7 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 // Rifleman
 
 class SOCOMD_Rifleman {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary            = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -346,6 +347,7 @@ class SOCOMD_Rifleman {
 ////////////////////////////////////////////////////////////////////////////////
 // Breacher
 class SOCOMD_Breacher {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary            = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -391,6 +393,7 @@ class SOCOMD_Breacher {
 ////////////////////////////////////////////////////////////////////////////////
 // Marksman
 class SOCOMD_Marksman {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_MARKSMAN);
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -399,7 +402,7 @@ class SOCOMD_Marksman {
     binocular        = LEADER_BINOCS;
     gps                = "";
     maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
-    optics[]         = {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
+    optics[]         = {"rhsusf_acc_m8541","rhsusf_acc_m8541_d","rhsusf_acc_m8541_low","rhsusf_acc_m8541_low_d","rhsusf_acc_m8541_low_wd","rhsusf_acc_m8541_mrds","rhsusf_acc_m8541_wd","rhsusf_acc_premier_low","rhsusf_acc_premier","rhsusf_acc_premier_mrds","rhsusf_acc_leupoldmk4","rhsusf_acc_leupoldmk4_d","rhsusf_acc_leupoldmk4_wd","rhsusf_acc_leupoldmk4_2","rhsusf_acc_nxs_3515x50_md","rhsusf_acc_nxs_3515x50f1_h58","rhsusf_acc_nxs_3515x50f1_md","rhsusf_acc_nxs_3515x50f1_h58_sun","rhsusf_acc_nxs_3515x50f1_md_sun","rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -431,6 +434,7 @@ class SOCOMD_Marksman {
 // Sapper
 
 class SOCOMD_Sapper {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -481,6 +485,7 @@ class SOCOMD_Sapper {
 // Machine Gunner
 
 class SOCOMD_MachineGunner {
+    blacklist = "SOCOMD";
     primary            = ITEM_PRIMARY_MACHINEGUN;
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -512,7 +517,7 @@ class SOCOMD_MachineGunner {
         type = ITEM_BACKPACK_MACHINEGUNNER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 3)
         };
     };
 };
@@ -521,6 +526,7 @@ class SOCOMD_MachineGunner {
 // Medic
 
 class SOCOMD_Medic {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -588,6 +594,7 @@ class SOCOMD_Medic {
 };
 
 class SOCOMD_AO{
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -656,6 +663,7 @@ class SOCOMD_AO{
 // LAT
 
 class SOCOMD_AT {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_M4);
     secondary          = QUOTE(ITEM_DEFAULT_LAUNCHER);
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -699,6 +707,7 @@ class SOCOMD_AT {
 // Recon
 
 class SOCOMD_Recon {
+    blacklist = "SOCOMD";
     primary            = QUOTE(ITEM_PRIMARY_RECON);
     secondary        = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -734,7 +743,6 @@ class SOCOMD_Recon {
         type = ITEM_BACKPACK_RECON;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(ACE_Tripod, 1)
         };
     };
@@ -746,6 +754,7 @@ class SOCOMD_Recon {
 // LOGISTICIAN
 
 class SOCOMD_Logistician {
+    blacklist = "SOCOMD";
     primary         = QUOTE(ITEM_PRIMARY_M4);
     secondary         = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
@@ -791,6 +800,7 @@ class SOCOMD_Logistician {
 // Pilot
 
 class SOCOMD_Pilot {
+    blacklist = "SOCOMD";
     primary         = QUOTE(ITEM_PRIMARY_SOLS);
     secondary         = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);

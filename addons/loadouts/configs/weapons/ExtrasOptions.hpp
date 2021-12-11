@@ -16,14 +16,14 @@ class ExtrasBase: ItemMap {
 class extras_none : ExtrasBase{
     displayName = "No Spare Ammo";
     scope=2;
-    scopeArsenal = 2;
+    scopeArsenal = 1;
     picture = "";
 };
 class extras_spare_squad_ammo: extras_none{
     displayName = "Squad Ammo";
     bag[] = {
         {ITEM_MAGAZINE_556, 4},
-        {SOCOMD_Item_Magazine_762x51_20Rnd, 2},
+        {ITEM_MAGAZINE_762, 2},
         {ITEM_MAGAZINE_556_BELT,1}
     };
 };

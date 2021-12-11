@@ -149,8 +149,8 @@ class SOCOMD_NVG_AM_C : SOCOMD_NVG_C    {
 
 
 
-class CUP_NVG_GPNVG_black;
-class SOCOMD_NVG_GPNVG_WP_black: CUP_NVG_GPNVG_black {
+class A3_GPNVG18_BLK_F;
+class SOCOMD_NVG_GPNVG_WP_black: A3_GPNVG18_BLK_F {
     displayName = "L-3/Harris GPNVG (White Phosphor)";
     descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />White Phosphor tube<br />Issued to members of Special Operations Command - Australia";
     colorPreset[] = {
@@ -163,8 +163,7 @@ class SOCOMD_NVG_GPNVG_WP_black: CUP_NVG_GPNVG_black {
     ace_nightvision_generation = 2;
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
 };
-
-class SOCOMD_NVG_GPNVG_GR_black: CUP_NVG_GPNVG_black {
+class SOCOMD_NVG_GPNVG_GR_black: A3_GPNVG18_BLK_F {
     displayName = "L-3/Harris GPNVG (Green Phosphor)";
     descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />Green Phosphor tube<br />Issued to members of Special Operations Command - Australia";
     colorPreset[] = {

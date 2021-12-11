@@ -14,7 +14,7 @@ class CfgPatches {
             "SOCOMD_TRUCK_AMMO_A",
             "SOCOMD_TRUCK_CARGO_A",
             "SOCOMD_TRUCK_CARGO_D_B",
-            "SOCOMD_TRUCK_CARGO_WD_B",
+            "SOCOMD_TRUCK_LOGI_D",
             "SOCOMD_TRUCK_LOGI_D",
             "SOCOMD_TRUCK_LOGI_WD",
             "SOCOMD_TRUCK_FUEL_A",

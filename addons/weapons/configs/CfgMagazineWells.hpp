@@ -15,12 +15,14 @@ class CfgMagazineWells {
     };
     class SOCOMD_GPMG_Belt {
         SOCOMD_mags[]={
-            QUOTE(ITEM_MAGAZINE_GPMG_BELT)
+            QUOTE(ITEM_MAGAZINE_GPMG_BELT),
+            "UK3CB_BAF_762_200Rnd"
         };
     };
     class SOCOMD_762_150Rnd {
         SOCOMD_mags[] = {
-            QUOTE(ITEM_MAGAZINE_762_BELT)
+            QUOTE(ITEM_MAGAZINE_762_BELT),
+            "UK3CB_BAF_762_200Rnd"
         };
     };
     class CBA_762x51_HK417 {
@@ -49,7 +51,7 @@ class CfgMagazineWells {
 
     class PistolHeavy_01_45ACP {
         SOCOMD_mags[] = {
-            "SOCOMD_Item_Magazine_45ACP_11Rnd"
+            // "SOCOMD_Item_Magazine_45ACP_11Rnd"
         };
     };
     class SOCOMD_Breaching{
