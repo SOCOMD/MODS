@@ -1,3 +1,4 @@
+// Initialise HALO. Variables must be present in mission.
 HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];
 
 /*

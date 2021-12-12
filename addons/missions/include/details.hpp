@@ -18,7 +18,7 @@ maxPlayers = 88;
 };
 
 // Include a picture to be used on mission select screen. To link to a picture in the mission pbo just include the filename and path relative to the mission folder, ie if "mypic.paa" is in the root mission folder (where the mission.sqm is) you would use "mypic.paa" if it was in a folder named "img" use "img\mypic.paa", etc...
-overviewPicture = "\socomd_missions\images\missionpicture.paa";
+//overviewPicture = "";
 
 // Include a short description and units required to play the mission if nessisary
 overviewText = "SOCOMD Mission<br />2CDO: 1st Platoon with HQ element and attachments<br /><br />SOLS: Pilots and co-pilots<br /><br />";
@@ -30,4 +30,4 @@ OnLoadName = "SOCOMD Mission";
 OnLoadMission = "Dynamic Missions - Every deployment is unique.";
 
 // You can use another picture here while it is loading, see "overviewPicture" above on how to include it
-loadScreen = "\socomd_missions\images\missionpicture.paa";
+//loadScreen = "";
