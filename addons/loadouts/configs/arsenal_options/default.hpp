@@ -184,7 +184,6 @@
 #define MARKSMAN \
     "SPARTAN_EBR_black_F",\
     "SPARTAN_EBR_snake_F",\
-    "SMA_HK417_16in",\
     "ACWP_sr25",\
     "ACWP_sr25_camo",\
     "ACWP_sr25_ec",\
@@ -591,15 +590,16 @@ class SOCOMD_TACP{
         GRENADES_LEADER
     };
 };
-class SOCOMD_2IC : SOCOMD_Commander{
-    
-    vests[]={
-        VESTS_COMMON,
-        TWO_COMMS_RIGS,
-        VESTS_COMMS,
-        VESTS_WEAPONS
-    };
-};
+// 2IC redundant selection
+//class SOCOMD_2IC : SOCOMD_Commander{
+//
+//    vests[]={
+//        VESTS_COMMON,
+//        TWO_COMMS_RIGS,
+//        VESTS_COMMS,
+//        VESTS_WEAPONS
+//    };
+//};
 class SOCOMD_Leader : SOCOMD_Commander{
     vests[]={
         VESTS_COMMON,

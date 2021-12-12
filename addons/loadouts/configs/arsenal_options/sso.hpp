@@ -1,3 +1,4 @@
+/*
 #define SSO_GENERAL_RIFLE \
     "SOCOMD_SSO_AK",\
     "AGE_AK105",\
@@ -671,3 +672,5 @@
             SSO_GRENADES_NORMAL
         };    
     };
+	
+/*

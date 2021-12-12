@@ -60,7 +60,7 @@
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_VEST_ESSENTIALS \
-    LOADOUT_ITEM(CUP_HandGrenade_M67, 2) \
+    LOADOUT_ITEM(HandGrenade, 2) \
     LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
     LOADOUT_ITEM(ACE_M84, 2) \
     LOADOUT_ITEM(SmokeShell, 5) \
@@ -243,6 +243,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(SmokeShellpurple, 2)
+			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
         };
     };
@@ -297,8 +298,8 @@ class SOCOMD_Leader {
         };
     };
 };
-
-class SOCOMD_2IC : SOCOMD_Leader {};
+//2IC redundant selection
+//class SOCOMD_2IC : SOCOMD_Leader {};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Rifleman
@@ -402,7 +403,7 @@ class SOCOMD_Marksman {
     binocular        = LEADER_BINOCS;
     gps                = "";
     maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
-    optics[]         = {"rhsusf_acc_m8541","rhsusf_acc_m8541_d","rhsusf_acc_m8541_low","rhsusf_acc_m8541_low_d","rhsusf_acc_m8541_low_wd","rhsusf_acc_m8541_mrds","rhsusf_acc_m8541_wd","rhsusf_acc_premier_low","rhsusf_acc_premier","rhsusf_acc_premier_mrds","rhsusf_acc_leupoldmk4","rhsusf_acc_leupoldmk4_d","rhsusf_acc_leupoldmk4_wd","rhsusf_acc_leupoldmk4_2","rhsusf_acc_nxs_3515x50_md","rhsusf_acc_nxs_3515x50f1_h58","rhsusf_acc_nxs_3515x50f1_md","rhsusf_acc_nxs_3515x50f1_h58_sun","rhsusf_acc_nxs_3515x50f1_md_sun","rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
+    optics[]         = {"rhsusf_acc_m8541","rhsusf_acc_m8541_d","rhsusf_acc_m8541_low","rhsusf_acc_m8541_low_d","rhsusf_acc_m8541_low_wd","rhsusf_acc_m8541_mrds","rhsusf_acc_m8541_wd","rhsusf_acc_premier_low","rhsusf_acc_premier","rhsusf_acc_premier_mrds","rhsusf_acc_leupoldmk4","rhsusf_acc_leupoldmk4_d","rhsusf_acc_leupoldmk4_wd","rhsusf_acc_leupoldmk4_2","rhsusf_acc_nxs_3515x50_md","rhsusf_acc_nxs_3515x50f1_h58","rhsusf_acc_nxs_3515x50f1_md","rhsusf_acc_nxs_3515x50f1_h58_sun","rhsusf_acc_nxs_3515x50f1_md_sun","rh_leu_mk4","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;

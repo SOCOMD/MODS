@@ -47,7 +47,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (2CDO)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_Commander)
                     QSTORE_ACTION_LOADOUT("Leader",SOCOMD_Leader)
-                    QSTORE_ACTION_LOADOUT("2IC",SOCOMD_2IC)
+                    //QSTORE_ACTION_LOADOUT("2IC",SOCOMD_2IC)
                     QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_Rifleman)
                     QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
                     QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)

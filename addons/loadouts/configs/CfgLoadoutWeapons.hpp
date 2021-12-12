@@ -1,40 +1,22 @@
 class CfgLoadoutWeapons {
     class Rifle_556;
-    class SMA_M4afgSTOCK : Rifle_556 {};
-    class SMA_MK18MOEBLK_SM : Rifle_556 {};
-    class SMA_AUG_A3_F : Rifle_556 {};
     class ACWP_HK416D_105_base : Rifle_556 {};
     class ACWP_HK416D_105_AFG : Rifle_556 {};
     class ACWP_HK416D_105_CTR_base : Rifle_556 {};
     class ACWP_HK416D_105_CTR_AFG : Rifle_556 {};
     //TAN
-    class SMA_MK18MOETAN_SM : Rifle_556 {};
-    class SMA_AUG_A3_KRYPT_F : Rifle_556 {};
     class ACWP_HK416D_105_tan : Rifle_556 {};
     class ACWP_HK416D_105_AFG_tan : Rifle_556 {};
     class ACWP_HK416D_105_CTR_tan : Rifle_556 {};
     class ACWP_HK416D_105_CTR_AFG_tan : Rifle_556 {};
     //OD
-    class SMA_MK18MOEOD_SM : Rifle_556 {};
-    class SMA_AUG_A3_MCAM_F : Rifle_556 {};
     class ACWP_HK416D_105_don : Rifle_556 {};
     class ACWP_HK416D_105_AFG_don : Rifle_556 {};
     class ACWP_HK416D_105_CTR_don : Rifle_556 {};
     class ACWP_HK416D_105_CTR_AFG_don : Rifle_556 {};
-    class SMA_Steyr_AUG_F : Rifle_556 {};
     class RifleGL_556;
-    class SMA_M4_GL_SM : RifleGL_556 {};
-    class SMA_MK18BLK_GL_SM : RifleGL_556 {};
-    class SMA_AUG_EGLM : RifleGL_556 {};
-    class hlc_rifle_416D10_gl : RifleGL_556 {};
     //TAN
-    class SMA_MK18TAN_GL_SM : RifleGL_556 {};
-    class SMA_AUG_EGLM_tan : RifleGL_556 {};
-    class hlc_rifle_416D10_tan_gl : RifleGL_556 {};
     //OD
-    class SMA_MK18OD_GL_SM : RifleGL_556 {};
-    class SMA_AUG_EGLM_Olive : RifleGL_556 {};
-    class hlc_rifle_416D10_wdl_gl : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_GRIP : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_NET : RifleGL_556 {};
@@ -43,8 +25,6 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_7rail_GL_GRIP_TAN : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_DON : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_GRIP_DON : RifleGL_556 {};
-
-    class CUP_arifle_M16A4_GL : RifleGL_556 {};
 
     // M4A5
     class ACWP_M4A5_105_troy_base             : Rifle_556 {};
@@ -185,10 +165,8 @@ class CfgLoadoutWeapons {
     
 
     class Rifle_762;
-    class SMA_HK417vfg : Rifle_762 {};
 
     class Long_Rifle_762;
-    class SMA_HK417_16in         : Rifle_762 {};
     class SPARTAN_EBR_black_F     : Rifle_762 {};
     class SPARTAN_EBR_snake_F     : Rifle_762 {};
 
@@ -264,12 +242,6 @@ class CfgLoadoutWeapons {
     class bnae_falkor_blk_virtual : Recon_300WM {};
     class bnae_falkor_snd_virtual : Recon_300WM {};
 
-    class CUP_smg_MP5SD6;
-    class CUP_smg_MP5A5 : CUP_smg_MP5SD6{
-        magazines[] = {
-            {"CUP_30Rnd_9x19_MP5", 8}
-        };
-    };
     class Breacher_Shotgun;
     class SOCOMD_Shotgun:Breacher_Shotgun{};
 
@@ -283,12 +255,8 @@ class CfgLoadoutWeapons {
     class AGE_AK105_V_Camo : Rifle_545 {};
     class AGE_AK74M_C_Q : Rifle_545 {};
     class AGE_AK74M_V_Q : Rifle_545 {};
-    class CUP_arifle_AKS74U_top_rail : Rifle_545 {};
 
     class Sniper_762x54R;
-    class CUP_srifle_SVD_des_top_rail : Sniper_762x54R {};
-    class CUP_srifle_SVD_wdl_top_rail : Sniper_762x54R {};
-    class CUP_srifle_SVD_top_rail : Sniper_762x54R {};
 
     class SSO_Rifle_338;
     class AGE_OrsisT5000 : SSO_Rifle_338 {};

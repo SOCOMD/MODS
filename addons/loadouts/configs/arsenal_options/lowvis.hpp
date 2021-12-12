@@ -3,6 +3,7 @@
 // isLogi is used for pilots and crewmen who don't need grenade options. eg: isLogi = 1;
 // extraUniforms used for classes that need specialist uniforms like recon. Uniforms all defined in own class. eg: extraUniforms = "LOWVIS_UNIFORMS";
 // arsenalExtras used for those who need extra arsenal equipment like rifleman. options defined in role class eg arsenalExtras[] = {"myExtra","myExtra2"};
+/*
 
 #define LOWVIS_UNIFORMS \
     "CUP_I_B_PMC_Unit_20",\
@@ -450,3 +451,5 @@
             GRENADES_NORMAL
         };    
     };
+	
+*/

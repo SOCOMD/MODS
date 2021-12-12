@@ -58,6 +58,7 @@ class extras_at_assistant_heat: extras_none{
         {rhs_mag_maaws_HEAT,2}
     };
 };
+/*
 class extras_sso_spare_squad_ammo: extras_none{
     displayName = "Squad Ammo";
     bag[] = {
@@ -92,3 +93,4 @@ class extras_sso_at_assistant_mixed: extras_none{
         {CUP_OG7_M,2}
     };
 };
+*/
