@@ -38,25 +38,6 @@ class RHS_MELB_AH6M : RHS_MELB_base {
         class HitVRotor;
     };
     class AnimationSources;
-    class Components : Components {
-        class TransportPylonsComponent {
-            class pylons {
-                class R_Rockets_12x;
-                class R_Rockets_4x;
-                class R_Rockets_3x;
-                
-                class R_HellfireRack_R_slot;
-                class R_HellfireRack_L_slot;
-                class L_HellfireRack_R_slot;
-                class L_HellfireRack_L_slot;    
-                        
-                class L_Rockets_3x;
-                class L_Rockets_4x;
-                class L_Rockets_12x;
-            };
-        };
-    };
-}; 
 
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY / DRAGONFLY COMMON
