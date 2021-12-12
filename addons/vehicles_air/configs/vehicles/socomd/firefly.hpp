@@ -38,6 +38,7 @@ class RHS_MELB_AH6M : RHS_MELB_base {
         class HitVRotor;
     };
     class AnimationSources;
+}; 
 
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFLY / DRAGONFLY COMMON
