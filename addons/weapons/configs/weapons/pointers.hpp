@@ -388,7 +388,6 @@ PEQ_LIGHT_MACRO("M600v Scout Light + AN/PEQ-15 (Paint Don)",M600_B_PEQ_T,camo_do
 PEQ_LIGHT_MACRO("M600v Scout Light + AN/PEQ-15 (Paint Don)",M600_L_PEQ_T,camo_don,"M4A5_Troy_Acc\mesh\LLM\camo_don\M600_L_PEQ_T.p3d")
 PEQ_LIGHT_MACRO("M600v Scout Light + AN/PEQ-15 (Paint Don)",M600_R_PEQ_T,camo_don,"M4A5_Troy_Acc\mesh\LLM\camo_don\M600_R_PEQ_T.p3d")
 PEQ_LIGHT_MACRO("M600v Scout Light + AN/PEQ-15 (Paint Don)",SBR_M600_R_PEQ_T,camo_don,"M4A5_Troy_Acc\mesh\LLM\camo_don\SBR_M600_R_PEQ_T.p3d")
-
 // M620v
 // Tan
 IR_LIGHT_MACRO("M620v Scout Light (Tan)",M620_L,tan,"M4A5_Troy_Acc\mesh\LLM\tan\M620_L.p3d")

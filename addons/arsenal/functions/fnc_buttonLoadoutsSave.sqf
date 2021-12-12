@@ -25,7 +25,7 @@ if (_editBoxContent == "") exitWith {
     [(findDisplay IDD_socomd_arsenal), localize LSTRING(saveEmptyNameBox)] call FUNC(message);
 };
 _loadoutId = GVAR(center) getVariable ["SOCOMD_LOADOUTID", ""];
-private _data = [+(profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId],[]]), +(GVAR(defaultLoadoutsList))] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
+private _data = [+(profileNamespace getVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION],[]]), +(GVAR(defaultLoadoutsList))] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
 private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;
 private _cursSelRow = lnbCurSelRow _contentPanelCtrl;
 
@@ -158,7 +158,7 @@ switch (GVAR(currentLoadoutsTab)) do {
             if ((_contentPanelCtrl lnbText [_i, 1]) == _editBoxContent) exitwith {_contentPanelCtrl lnbSetCurSelRow _i};
         };
 
-        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
+        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION], _data];
     };
 
     case IDC_buttonDefaultLoadouts:{
@@ -275,7 +275,7 @@ switch (GVAR(currentLoadoutsTab)) do {
                 _contentPanelCtrl setVariable [_editBoxContent + str IDC_buttonMyLoadouts, [_curSelLoadout] call FUNC(verifyLoadout)];
             };
 
-            profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
+            profileNamespace setVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION], _data];
         };
     };
 
@@ -290,7 +290,7 @@ switch (GVAR(currentLoadoutsTab)) do {
             _contentPanelCtrl setVariable [_editBoxContent + str IDC_buttonMyLoadouts, [_loadout] call FUNC(verifyLoadout)];
         };
 
-        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], _data];
+        profileNamespace setVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION], _data];
     };
 };
 [(findDisplay IDD_socomd_arsenal), [localize LSTRING(loadoutSaved), _editBoxContent] joinString " "] call FUNC(message);

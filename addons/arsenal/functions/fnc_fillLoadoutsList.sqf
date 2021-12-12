@@ -31,7 +31,7 @@ _contentPanelCtrl ctrlCommit FADE_DELAY;
 _contentPanelCtrl lnbSetCurSelRow -1;
 lnbClear _contentPanelCtrl;
 _loadoutId = player getVariable ["SOCOMD_LOADOUTID", ""];
-private _data = +(profileNamespace getvariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId],[]]);
+private _data = +(profileNamespace getvariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION],[]]);
 
 if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
 

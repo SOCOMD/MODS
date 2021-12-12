@@ -1,3 +1,5 @@
+// Kit Version, bump this number after a serious kit update
+#define ARSENAL_VERSION 1
 // Pixel grid
 #define pixelScale  0.25
 #define GRID_W (pixelW * pixelGridNoUIScale * pixelScale)

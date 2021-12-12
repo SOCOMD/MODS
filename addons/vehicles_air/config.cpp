@@ -50,9 +50,8 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 };
 class Eventhandlers;
 ////////////////////
-class NoDust{};
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"
 #include "configs\CfgAmmo.hpp"
-#include "configs\CfgMagazines.hpp"
+// #include "configs\CfgMagazines.hpp"
 #include "configs\CfgVehicles.hpp"

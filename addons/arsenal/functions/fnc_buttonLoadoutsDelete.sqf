@@ -29,7 +29,7 @@ if (GVAR(currentLoadoutsTab) != IDC_buttonSharedLoadouts) then {
             GVAR(defaultLoadoutsList) deleteAt (GVAR(defaultLoadoutsList) find ((GVAR(defaultLoadoutsList) select {_x select 0 == _loadoutName}) select 0));
             set3DENMissionAttributes [[QGVAR(DummyCategory), QGVAR(DefaultLoadoutsListAttribute), GVAR(defaultLoadoutsList)]];
     } else {
-            private _data = profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], []];
+            private _data = profileNamespace getVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION], []];
             _data deleteAt (_data find ((_data select {_x select 0 == _loadoutName}) select 0));
     };
 

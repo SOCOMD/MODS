@@ -26,7 +26,7 @@ private _loadoutName = _contentPanelCtrl lnbText [_curSelRow, 1];
 private _editBoxCtrl = _display displayCtrl IDC_textEditBox;
 private _editBoxContent = ctrlText _editBoxCtrl;
 _loadoutId = player getVariable ["SOCOMD_LOADOUTID", ""];
-private _data = [profileNamespace getVariable [format ["ace_socomd_arsenal_%1_saved_loudout",_loadoutId], []], GVAR(defaultLoadoutsList)] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
+private _data = [profileNamespace getVariable [format ["ace_socomd_arsenal_%1_%2_saved_loudout",_loadoutId, ARSENAL_VERSION], []], GVAR(defaultLoadoutsList)] select (GVAR(currentLoadoutsTab) == IDC_buttonDefaultLoadouts && {is3DEN});
 private _similarLoadouts = _data select {_x select 0 == _editBoxContent};
 
 if (count _similarLoadouts > 0) exitWith {

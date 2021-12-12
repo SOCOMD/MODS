@@ -1,5 +1,13 @@
 class CfgQstoreBlackList {
     blacklist[]={
+        "nwts_goggle_human_simple_glow",
+        "nwts_goggle_human_bloody_glow",
+        "nwts_goggle_human_bloody",
+        "nwts_goggle_human_simple",
+        "acwp_rc1_sim_blk",
+        "acwp_rc1_sim_tan",
+        "age_inforce_white",
+        "age_inforce_white_pistol",// these two inforce lights are just too low a quality
         "UK3CB_G_KL_Oli",
         "UK3CB_G_KLR_Oli",
         "UK3CB_G_Neck_Shemag_KLR_blk",
