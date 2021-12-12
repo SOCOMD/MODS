@@ -1,5 +1,6 @@
 enableSentences false;
 enableRadio false;
+enableSaving [false, false];
 
 //Using ACRE2
 [] execVM "include\acre2_compat.sqf";

@@ -26,13 +26,13 @@ ace_advanced_throwing_showThrowArc = true;
 force force ace_vehicle_damage_enabled = false;
 
 // ACE Arsenal
-force force socomd_arsenal_allowDefaultLoadouts = true;
-force force socomd_arsenal_allowSharedLoadouts = true;
-socomd_arsenal_camInverted = false;
-force force socomd_arsenal_enableIdentityTabs = true;
-socomd_arsenal_enableModIcons = true;
-socomd_arsenal_EnableRPTLog = false;
-socomd_arsenal_fontHeight = 4.5;
+force force socomd_Arsenal_allowDefaultLoadouts = true;
+force force socomd_Arsenal_allowSharedLoadouts = true;
+socomd_Arsenal_camInverted = false;
+force force socomd_Arsenal_enableIdentityTabs = true;
+socomd_Arsenal_enableModIcons = true;
+socomd_Arsenal_EnableRPTLog = false;
+socomd_Arsenal_fontHeight = 4.5;
 
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
@@ -65,11 +65,12 @@ force force ace_frag_spallEnabled = true;
 // ACE Goggles
 ace_goggles_effects = 2;
 ace_goggles_showInThirdPerson = false;
+ace_goggles_showClearGlasses = true;
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
 force force ace_hearing_disableEarRinging = true;
-force force ace_hearing_earplugsVolume = 1.0;
+force force ace_hearing_earplugsVolume = 1;
 force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
 force force ace_hearing_unconsciousnessVolume = 0.2;
@@ -102,8 +103,6 @@ ace_interact_menu_useListMenu = true;
 // ACE Interaction Menu (Self) - More
 force force ace_interact_menu_more__ace_zeus_create = true;
 force force ace_interact_menu_more__ace_zeus_delete = true;
-
-// ACE Interaction Menu (Self) - Move to Root
 
 // ACE Logistics
 force force ace_cargo_enable = true;
@@ -201,8 +200,8 @@ force force ace_medical_treatment_clearTrauma = 2;
 force force ace_medical_treatment_consumePAK = 1;
 force force ace_medical_treatment_consumeSurgicalKit = 1;
 force force ace_medical_treatment_convertItems = 0;
+force force ace_medical_treatment_cprSuccessChanceMax = 0.05;														 
 force force ace_medical_treatment_cprSuccessChanceMin = 0.05;
-force force ace_medical_treatment_cprSuccessChanceMax = 0.05;                                                              
 force force ace_medical_treatment_holsterRequired = 0;
 force ace_medical_treatment_litterCleanupDelay = 300;
 force force ace_medical_treatment_locationEpinephrine = 0;
@@ -210,7 +209,7 @@ force force ace_medical_treatment_locationIV = 0;
 force force ace_medical_treatment_locationPAK = 4;
 force force ace_medical_treatment_locationsBoostTraining = true;
 force force ace_medical_treatment_locationSurgicalKit = 0;
-force ace_medical_treatment_maxLitterObjects = 500;
+force ace_medical_treatment_maxLitterObjects = 250;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 0;
 force force ace_medical_treatment_medicPAK = 2;
@@ -437,7 +436,7 @@ force force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
 force force ace_winddeflection_enabled = true;
-force force ace_winddeflection_simulationInterval = 0.10;
+force force ace_winddeflection_simulationInterval = 0.1;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
@@ -490,7 +489,6 @@ force force acre_sys_core_revealToAI = 1;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
-acre_sys_zeus_zeusCommunicateViaCamera = true;
 
 // CBA Network
 cba_network_loadoutValidation = 0;
@@ -591,7 +589,7 @@ zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
 force force zen_context_menu_enabled = 2;
 zen_editor_declutterEmptyTree = true;
-zen_editor_disableLiveSearch = true;
+force force zen_editor_disableLiveSearch = true;
 zen_editor_moveDisplayToEdge = true;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 2;
@@ -624,7 +622,7 @@ force force lambs_main_indoorMove = 0.25;
 force force lambs_main_maxRevealValue = 1;
 force force lambs_main_minFriendlySuppressionDistance = 5;
 force force lambs_main_minObstacleProximity = 2;
-force force lambs_main_minSuppressionRange = 25.0;
+force force lambs_main_minSuppressionRange = 25;
 force force lambs_main_radioBackpack = 2000;
 force force lambs_main_radioDisabled = false;
 force force lambs_main_radioEast = 1000;
