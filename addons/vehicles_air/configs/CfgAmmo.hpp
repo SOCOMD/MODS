@@ -30,7 +30,7 @@ class CfgAmmo {
             seekerMaxRange = 1600;  // Maximum from the missile which the seeker can visually search
 
             defaultAttackProfile = "DIR";  // Default attack profile
-            attackProfiles[] = {"DIR"};  // Attack profiles available
+            attackProfiles[] = {"LIN", "DIR", "MID", "HI"};  // Attack profiles available
         };
         class Components {
             class SensorManagementComponent {
@@ -49,7 +49,7 @@ class CfgAmmo {
             };
         };
     };
-
+/*
     // littlebird ammo
     class CUP_B_762x51_Tracer_Red;
     class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
@@ -58,17 +58,12 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 7.5;
         suppressionRadiusHit = 5;
     };
-    
+*/    
     class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
     {
         cost = 3;
         dangerRadiusBulletClose = 50;
         suppressionRadiusBulletClose = 15;
         suppressionRadiusHit = 10;
-    };
-    #include "ammo\CUP_Sh_PG15V.hpp"
-    // BTR and BDRM primary
-    class CUP_B_145x115_AP_Green_Tracer : BulletBase {
-        cost = 1; // was 22
     };
 };

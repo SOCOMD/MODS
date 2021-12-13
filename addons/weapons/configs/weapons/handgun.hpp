@@ -1,4 +1,4 @@
-class RH_mak;
+//class RH_mak;
 class ACWP_USP;
 
 class acwp_glock_base;

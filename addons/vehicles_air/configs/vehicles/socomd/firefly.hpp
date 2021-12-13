@@ -243,8 +243,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 maxweight = 800;
     //                 UIposition[] = {0.125,0.4};
     //             };
-
-                
     //             class R_Rockets_12x {
     //                 hardpoints[] = {"12x_Rockets_MELB"};
     //                 attachment = "";
@@ -259,7 +257,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 maxweight = 200;
     //                UIposition[] = {99,99};
     //             };
-                
     //             class R_Rockets_3x: R_Rockets_12x {
     //                 hardpoints[] = {"3x_Rockets_MELB"};
     //                 attachment = "";
@@ -267,7 +264,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 maxweight = 200;
     //                UIposition[] = {99,99};
     //             };
-                
     //             class R_HellfireRack_R_slot: R_Pylon {
     //                 turret[] = {"CopilotTurret"};
     //                 hardpoints[] = {"HellfireRail_MELB"};
@@ -278,7 +274,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //             class R_HellfireRack_L_slot: R_HellfireRack_R_slot {
     //                 UIposition[] = {0.225,0.45};
     //             };
-            
     //             // keep x2
     //             class R_Minigun: R_Pylon {
     //                 hardpoints[] = {"Right_MinigunMount_MELB"};
@@ -292,7 +287,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 attachment = "Pylon_L_GUN_RHS_MELB_SOCOMD";
     //                 UIposition[] = {0.415,0.325};
     //             };
-
     //             class L_HellfireRack_R_slot: R_HellfireRack_R_slot {
     //                 UIposition[] = {0.405,0.45};
     //                 mirroredMissilePos = 6;
@@ -301,14 +295,12 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 UIposition[] = {0.58,0.45};
     //                 mirroredMissilePos = 5;
     //             };    
-                        
     //             class L_Rockets_3x: R_Rockets_3x {
     //                 hardpoints[] = {"3x_Rockets_MELB"};
     //                 UIposition[] = {99,99};
     //                 priority = 1;
     //                 mirroredMissilePos = 4;
     //             };
-                
     //             class L_Rockets_4x: R_Rockets_4x {
     //                 hardpoints[] = {"4x_Rockets_MELB"};
     //                 UIposition[] = {99,99};
@@ -321,7 +313,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //                 priority = 3;
     //                 mirroredMissilePos = 2;
     //             };
-
     //             // keep
     //             class L_Pylon: R_Pylon {
     //                 hardpoints[] = {"LeftMount_RHS_MELB_SOCOMD"};
@@ -335,14 +326,12 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     //             delete R_Rockets_3x;
     //             delete R_Rockets_4x;
     //             delete R_Rockets_12x;
-
     //             delete L_HellfireRack_R_slot;
     //             delete L_HellfireRack_L_slot;
     //             delete L_Rockets_3x;
     //             delete L_Rockets_4x;
     //             delete L_Rockets_12x;
     //             */
-
     //         };
     //         class presets {
     //             class empty {

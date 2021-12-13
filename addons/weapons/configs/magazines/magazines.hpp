@@ -3,8 +3,9 @@ class 20Rnd_762x51_Mag;
 class 11Rnd_45ACP_Mag;
 
 //SMA
-class SMA_30Rnd_556x45_M855A1;
-class SMA_30Rnd_556x45_M855A1_Tracer;
+//class SMA_30Rnd_556x45_M855A1;
+//class SMA_30Rnd_556x45_M855A1_Tracer;
+
 //ACW
 class ACWP_30rnd_556x45_EPR_PMAG;
 class ACWP_30rnd_556x45_M_PMAG;

@@ -99,7 +99,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 15)
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 15)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 10)
-        TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10)
+        //TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10) // needs replacement?
         TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 10)
         TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 10)
 
@@ -191,7 +191,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 30)
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 30)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 20)
-        TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 20)
+        //TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 20) // needs replacement?
         TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 20)
         TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 20)
     };

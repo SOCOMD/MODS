@@ -32,12 +32,12 @@ class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
         };
     };
 
-class SMA_AssaultBase;
-class SMA_762_RIFLEBASE: SMA_AssaultBase {
-    magazineWell[] = {"CBA_762x51_HK417"};
-};
+//class SMA_AssaultBase;
+//class SMA_762_RIFLEBASE: SMA_AssaultBase {
+//    magazineWell[] = {"CBA_762x51_HK417"};
+//};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
-class SMA_M4afgSTOCK;
+//class SMA_M4afgSTOCK;
 class ACWP_M4A5_base;
 class ACWP_M4A5_145_troy_base;
 class S_145_MOD_MAG_Camo;

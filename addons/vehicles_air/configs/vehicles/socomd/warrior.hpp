@@ -93,26 +93,9 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     threat[] = {1.0,0.9,0.9}; 
     hiddenSelectionsTextures[]=
         {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
-            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa",
-            ""
+            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa"
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 
@@ -173,26 +156,9 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     threat[] = {1.0,0.9,0.9}; 
     hiddenSelectionsTextures[]=
         {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
-            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa",
-            ""
+            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa"
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 

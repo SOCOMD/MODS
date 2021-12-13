@@ -2,12 +2,7 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 
 _blacklist = [
-    "broken_launch_RPG7_F",
-    "broken_CUP_launch_RPG7V",
-    "broken_CUP_launch_RPG7V_NSPU",
-    "broken_CUP_launch_RPG7V_PGO7V",
-    "broken_CUP_launch_RPG7V_PGO7V2",
-    "broken_CUP_launch_RPG7V_PGO7V3"
+    "broken_launch_RPG7_F"
 ];
 
 if(_unit != player) exitWith {};
@@ -33,3 +28,10 @@ _unitLoadout = getUnitLoadout player;
 _secondaryLoadout = ["", "", "", "", ["", 0], ["", 0], ""];
 _unitLoadout set [1, _secondaryLoadout];
 [player, _unitLoadout] call EFUNC(qstore,SetUnitLoadout);
+
+
+//"broken_CUP_launch_RPG7V",
+//"broken_CUP_launch_RPG7V_NSPU",
+//"broken_CUP_launch_RPG7V_PGO7V",
+//"broken_CUP_launch_RPG7V_PGO7V2",
+//"broken_CUP_launch_RPG7V_PGO7V3"
