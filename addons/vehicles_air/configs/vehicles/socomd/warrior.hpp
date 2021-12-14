@@ -59,12 +59,13 @@
 
 // WARRIOR_BASE(A,SCOPE_PUBLIC)
 // WARRIOR_BASE(B,SCOPE_PRIVATE)
-class vtx_uh60M;
+
 // delete SOCOMD_WARRIOR_B;
 // delete SOCOMD_WARRIOR_A;
 class Heli_Transport_01_base_F; // Helicopter_Base_H
 class vtx_H60_base: Heli_Transport_01_base_F {
     class AnimationSources;
+    class Wheels;
 }; // Heli_Transport_01_base_F
 class vtx_MH60M: vtx_H60_base{
     class Components;
@@ -76,7 +77,18 @@ class vtx_MH60M: vtx_H60_base{
         class RADAR_HIDE;
         class Cockpitdoors_Hide;
     };
-    
+    class Wheels:Wheels{
+        class Wheel_1;
+        class Wheel_2;
+        class Wheel_3;
+    };
+};
+class vtx_uh60M : vtx_H60_base {
+    class Wheels:Wheels{
+        class Wheel_1;
+        class Wheel_2;
+        class Wheel_3;
+    };
 };
 class SOCOMD_WARRIOR_A:vtx_uh60M {
     scope = SCOPE_PUBLIC; 
@@ -118,7 +130,7 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 
-        INVENTORY_VEHICLE_DEFAULT_WEAPONS 
+        INVENTORY_VEHICLE_SMALL_WEAPONS 
     }; 
     class TransportMagazines { 
         INVENTORY_VEHICLE_MEDIUM_MAGAZINES 
@@ -156,8 +168,24 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     displayName="S-70A-9 Blackhawk (4/11)";
     icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
     picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
+    class Wheels : Wheels {
+        class Wheel_1:Wheel_1 {
+            maxBrakeTorque = 2800;
+        };
+        class Wheel_3:Wheel_3 {
+            maxBrakeTorque = 1400;
+        };
+    };
 };
 class SOCOMD_WARRIOR_B:vtx_MH60M{
+    class Wheels : Wheels {
+        class Wheel_1:Wheel_1 {
+            maxBrakeTorque = 2800;
+        };
+        class Wheel_3:Wheel_3 {
+            maxBrakeTorque = 1400;
+        };
+    };
     memoryPointDriverOptics = "slingcam";
     delete vtx_templateFLIR;
     
@@ -258,7 +286,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 
-        INVENTORY_VEHICLE_DEFAULT_WEAPONS 
+        INVENTORY_VEHICLE_SMALL_WEAPONS 
     }; 
     class TransportMagazines { 
         INVENTORY_VEHICLE_MEDIUM_MAGAZINES 

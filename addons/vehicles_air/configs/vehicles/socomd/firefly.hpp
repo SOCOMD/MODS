@@ -38,6 +38,60 @@ class RHS_MELB_AH6M : RHS_MELB_base {
         class HitVRotor;
     };
     class AnimationSources;
+   
+    class Components : Components {
+        class SensorsManagerComponent {
+            class Components {
+                class VisualSensorComponent : SensorTemplateVisual {
+					class AirTarget {
+                        minRange=1;
+                          maxRange=4000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=4000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					maxTrackableSpeed		= 70;
+					animDirection			= "";
+					angleRangeHorizontal	= 90;
+					angleRangeVertical		= 90;
+                    groundNoiseDistanceCoef	= -1;
+					maxGroundNoiseDistance	= -1;
+				};
+                class IRSensorComponent : SensorTemplateIR {
+					class AirTarget {
+                        minRange=1;
+                          maxRange=7000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=7000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					animDirection			= "";
+		    		angleRangeHorizontal	= 90;
+					angleRangeVertical		= 90;
+					typeRecognitionDistance	= -1;
+					groundNoiseDistanceCoef	= -1;
+		    		maxGroundNoiseDistance	= -1;
+					minSpeedThreshold		= 0;
+					maxSpeedThreshold		= 0;
+					maxFogSeeThrough		= 0.95;
+					minTrackableSpeed		= 0;
+					maxTrackableSpeed		= 695;
+                };
+            };
+        };
+    };
 }; 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -227,8 +281,8 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     }; 
     class Turrets : Turrets {
         class CopilotTurret : CopilotTurret {
-            weapons[] = {"CUP_Laserdesignator_mounted"};
-            magazines[] = {"Laserbatteries"};
+            weapons[] = {"rhs_weap_laserDesignator_AI","rhs_weap_fcs_ah64"};
+            magazines[] = {"rhs_laserfcsmag","rhs_LaserMag_ai"};
         };
     };
     
