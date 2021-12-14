@@ -67,13 +67,16 @@ class vtx_H60_base: Heli_Transport_01_base_F {
     class AnimationSources;
 }; // Heli_Transport_01_base_F
 class vtx_MH60M: vtx_H60_base{
+    class Components;
     class AnimationSources:AnimationSources{
         class Fuelprobe_Show;
         
         class FLIR_HIDE;
         
         class RADAR_HIDE;
+        class Cockpitdoors_Hide;
     };
+    
 };
 class SOCOMD_WARRIOR_A:vtx_uh60M {
     scope = SCOPE_PUBLIC; 
@@ -92,7 +95,23 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
     hiddenSelectionsTextures[]=
-        {
+        {   
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa"
@@ -139,6 +158,53 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
 };
 class SOCOMD_WARRIOR_B:vtx_MH60M{
+    memoryPointDriverOptics = "slingcam";
+    delete vtx_templateFLIR;
+    
+    class PilotCamera
+    {
+        class OpticsIn
+        {
+            class Wide
+            {
+                opticsDisplayName="W";
+                initAngleX=0;
+                minAngleX=0;
+                maxAngleX=0;
+                initAngleY=0;
+                minAngleY=0;
+                maxAngleY=0;
+                initFov=0.5;
+                minFov=0.5;
+                maxFov=0.5;
+                directionStabilized=1;
+                visionMode[]=
+                {
+                    "Normal",
+                    "NVG"
+                };
+                thermalMode[]={0,1};
+                gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+            };
+            showMiniMapInOptics=0;
+            showUAVViewpInOptics=0;
+            showSlingLoadManagerInOptics=1;
+        };
+        minTurn=0;
+        maxTurn=0;
+        initTurn=0;
+        minElev=80;
+        maxElev=80;
+        initElev=80;
+        maxXRotSpeed=0.5;
+        maxYRotSpeed=0.5;
+        pilotOpticsShowCursor=1;
+        controllable=0;
+    };
+    delete VTX_H60_HDTS_Pilot;
+    delete VTX_H60_HDTS_Copilot;
+    weapons[] = {"CMFlareLauncher"};
+    magazines[] = {"60Rnd_CMFlareMagazine"};
     scope = SCOPE_PUBLIC; 
     scopeCurator = SCOPE_PUBLIC; 
     editorCategory = SOCOMD_EdCat_Core; 
@@ -154,11 +220,41 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
+    driverWeaponsInfoType = "";
+    class Components {
+       class SensorsManagerComponent {
+            class Components {
+                class LaserSensorComponent: SensorTemplateLaser {};
+                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
+                    angleRangeHorizontal 	= 360;
+                    angleRangeVertical 		= 360;
+                };
+                class DatalinkSensorComponent: SensorTemplateDataLink {};
+            }; // Components
+        }; // SensorsManagerComponent
+    };
     hiddenSelectionsTextures[]=
         {
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
-            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa"
+            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa",
+            ""
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 
@@ -194,6 +290,11 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
         }; 
     }; 
     class AnimationSources:AnimationSources{
+        class Cockpitdoors_Hide {
+            source="user";
+            animPeriod=1;
+            initPhase=0;
+        };
         class Fuelprobe_Show:Fuelprobe_Show{
             source="user";
             animPeriod=1;
