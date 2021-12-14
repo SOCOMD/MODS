@@ -21,4 +21,3 @@ class APC_Tracked_02_base_F;
 class Truck_F;
 
 class StaticCannon;
-class StaticWeapon;
