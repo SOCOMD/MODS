@@ -110,12 +110,12 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then 
 private _isPrevInit = _player getVariable ["SOCOMD_eh_ids","failed"];
 
 if ( typeName _isPrevInit == "ARRAY") then {
-    ["ace_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
-    ["ace_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
-    ["ace_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_displayOpened", _isPrevInit select 0] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_rightPanelFilled", _isPrevInit select 1] call CBA_fnc_removeEventHandler;
+    ["socomd_arsenal_displayClosed", _isPrevInit select 2] call CBA_fnc_removeEventHandler;
 };
 
-private _openedEh = ["ace_arsenal_displayOpened", {
+private _openedEh = ["socomd_arsenal_displayOpened", {
     ACE_Player setVariable ["SOCOMD_prev_primary", primaryWeapon ACE_Player]
     params ["_display"];
     _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
@@ -162,8 +162,8 @@ private _openedEh = ["ace_arsenal_displayOpened", {
     } forEach _disabledButtons;
     
 }] call CBA_fnc_addEventHandler;
-private _removedRight = ["ace_arsenal_rightPanelFilled", { 
-    _currentTab = currentNamespace getVariable "ace_arsenal_currentLeftPanel";
+private _removedRight = ["socomd_arsenal_rightPanelFilled", { 
+    _currentTab = currentNamespace getVariable "socomd_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ // uniform panel
            TOGGLE_RIGHT_PANEL_HIDE
