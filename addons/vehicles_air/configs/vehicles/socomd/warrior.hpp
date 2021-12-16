@@ -1,68 +1,8 @@
-    
-////////////////////////////////////////////////////////////////////////////////
-// WARRIOR
 
-// class B_Heli_Transport_01_F;
-
-// #define WARRIOR_BASE(ID, SCOPE) \
-// class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
-//     scope = SCOPE; \
-//     scopeCurator = SCOPE; \
-//     editorCategory = SOCOMD_EdCat_Core; \
-//     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Air; \
-//     side = WEST; \
-//     author = AUTHOR_STR; \
-//     faction = FACTION_STR; \
-//     displayname = "S-70A-9 Blackhawk (4/8)"; \
-//     vehicleclass = "Air"; \
-//     forceInGarage = 1; \
-//     fuelCapacity = 1360; \
-//     fuelConsumptionRate = 0.28; \
-//     driverCanSee = CanSeeAll; \
-//     crew = SOCOMD_PILOT; \
-//     cost = 40000; \
-//     threat[] = {1.0,0.9,0.9}; \
-//     typicalCargo[] = {SOCOMD_PILOT}; \
-//     class TransportWeapons { \
-//         INVENTORY_VEHICLE_DEFAULT_WEAPONS \
-//     }; \
-//     class TransportMagazines { \
-//         INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
-//     }; \
-//     class TransportItems { \
-//         INVENTORY_VEHICLE_MEDIUM_ITEMS \
-//     }; \
-//     class TransportBackpacks { \
-//         INVENTORY_VEHICLE_HELO_BAGS \
-//     }; \
-//     class AcreIntercoms { \
-//         class Intercom_1 { \
-//             displayName = "Crew Intercom"; \
-//             shortName = "Crew"; \
-//             allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
-//             limitedPositions[] = {}; \
-//             numLimitedPositions = 0; \
-//             masterPositions[] = {"driver"}; \
-//             connectedByDefault = 1; \
-//         }; \
-//     }; \
-//     class AcreRacks { \
-//         class Rack_1 { \
-//             allowedPositions[] = {"driver", "commander", {"turret", "all"}}; \
-//             componentName = "ACRE_VRC110"; \
-//             displayName = "Dash"; \
-//             mountedRadio = "ACRE_PRC152"; \
-//             shortName = "Dash"; \
-//         }; \
-//     }; \
-// };
-
-// WARRIOR_BASE(A,SCOPE_PUBLIC)
-// WARRIOR_BASE(B,SCOPE_PRIVATE)
-
-// delete SOCOMD_WARRIOR_B;
-// delete SOCOMD_WARRIOR_A;
 class Heli_Transport_01_base_F; // Helicopter_Base_H
+class SensorTemplatePassiveRadar;
+class VehicleSystemsTemplateLeftPilot;
+class 
 class vtx_H60_base: Heli_Transport_01_base_F {
     class AnimationSources;
     class Wheels;
@@ -249,18 +189,24 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
     driverWeaponsInfoType = "";
-    class Components {
-       class SensorsManagerComponent {
-            class Components {
-                class LaserSensorComponent: SensorTemplateLaser {};
-                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
-                    angleRangeHorizontal 	= 360;
-                    angleRangeVertical 		= 360;
-                };
-                class DatalinkSensorComponent: SensorTemplateDataLink {};
-            }; // Components
-        }; // SensorsManagerComponent
-    };
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftPilot
+			{
+			};
+			class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightPilot
+			{
+			};
+		};
     hiddenSelectionsTextures[]=
         {
             "",

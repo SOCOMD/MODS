@@ -18,10 +18,62 @@ class RHS_MELB_MH6M : RHS_MELB_base {
         class HitTransmission;
         class HitVRotor;
     };
+    class Components : Components {
+        class SensorsManagerComponent {
+            class Components {
+                class VisualSensorComponent : SensorTemplateVisual {
+					class AirTarget {
+                        minRange=1;
+                          maxRange=4000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=4000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					maxTrackableSpeed		= 70;
+					animDirection			= "";
+					angleRangeHorizontal	= 90;
+					angleRangeVertical		= 90;
+                    groundNoiseDistanceCoef	= -1;
+					maxGroundNoiseDistance	= -1;
+				};
+                class IRSensorComponent : SensorTemplateIR {
+					class AirTarget {
+                        minRange=1;
+                          maxRange=7000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=7000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					animDirection			= "";
+		    		angleRangeHorizontal	= 90;
+					angleRangeVertical		= 90;
+					typeRecognitionDistance	= -1;
+					groundNoiseDistanceCoef	= -1;
+		    		maxGroundNoiseDistance	= -1;
+					minSpeedThreshold		= 0;
+					maxSpeedThreshold		= 0;
+					maxFogSeeThrough		= 0.95;
+					minTrackableSpeed		= 0;
+					maxTrackableSpeed		= 695;
+                };
+            };
+        };
+    };
  };
 class RHS_MELB_AH6M : RHS_MELB_base {
-    //weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
-    //magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
+    
     class Turrets : Turrets {
         class CopilotTurret;
     };
@@ -254,9 +306,7 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     };
     armor = 30;
     armorStructural = 4;
-    // magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
-    // weapons[] = {"MARM_SAFE_MELB","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
-  
+   
     
     class AcreIntercoms { 
         class Intercom_1 { 
@@ -279,126 +329,6 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
             shortName = "Dash"; 
         }; 
     }; 
-    class Turrets : Turrets {
-        class CopilotTurret : CopilotTurret {
-            weapons[] = {"rhs_weap_laserDesignator_AI","rhs_weap_fcs_ah64"};
-            magazines[] = {"rhs_laserfcsmag","rhs_LaserMag_ai"};
-        };
-    };
-    
-    // class Components : Components {
-    //     class TransportPylonsComponent {
-    //         UIPicture = "melb\data\ui\melb_eden_ca.paa";
-    //         class pylons {
-    //             // Keep
-    //             class R_Pylon {
-    //                 hardpoints[] = {"RightMount_RHS_MELB_SOCOMD"};
-    //                 attachment = "";
-    //                 maxweight = 800;
-    //                 UIposition[] = {0.125,0.4};
-    //             };
-    //             class R_Rockets_12x {
-    //                 hardpoints[] = {"12x_Rockets_MELB"};
-    //                 attachment = "";
-    //                 priority = 3;
-    //                 maxweight = 300;
-    //                 UIposition[] = {99,99};
-    //             };
-    //             class R_Rockets_4x: R_Rockets_12x {
-    //                 hardpoints[] = {"4x_Rockets_MELB"};
-    //                 attachment = "";
-    //                 priority = 2;
-    //                 maxweight = 200;
-    //                UIposition[] = {99,99};
-    //             };
-    //             class R_Rockets_3x: R_Rockets_12x {
-    //                 hardpoints[] = {"3x_Rockets_MELB"};
-    //                 attachment = "";
-    //                 priority = 1;
-    //                 maxweight = 200;
-    //                UIposition[] = {99,99};
-    //             };
-    //             class R_HellfireRack_R_slot: R_Pylon {
-    //                 turret[] = {"CopilotTurret"};
-    //                 hardpoints[] = {"HellfireRail_MELB"};
-    //                 attachment = "";
-    //                 maxweight = 80;
-    //                 UIposition[] = {0.04,0.45};
-    //             };
-    //             class R_HellfireRack_L_slot: R_HellfireRack_R_slot {
-    //                 UIposition[] = {0.225,0.45};
-    //             };
-    //             // keep x2
-    //             class R_Minigun: R_Pylon {
-    //                 hardpoints[] = {"Right_MinigunMount_MELB"};
-    //                 attachment = "Pylon_R_GUN_RHS_MELB_SOCOMD";
-    //                 priority = 5;
-    //                 maxweight = 100;
-    //                 UIposition[] = {0.225,0.325};
-    //             };
-    //             class L_Minigun: R_Minigun {
-    //                 hardpoints[] = {"Left_MinigunMount_MELB"};
-    //                 attachment = "Pylon_L_GUN_RHS_MELB_SOCOMD";
-    //                 UIposition[] = {0.415,0.325};
-    //             };
-    //             class L_HellfireRack_R_slot: R_HellfireRack_R_slot {
-    //                 UIposition[] = {0.405,0.45};
-    //                 mirroredMissilePos = 6;
-    //             };
-    //             class L_HellfireRack_L_slot: R_HellfireRack_R_slot {
-    //                 UIposition[] = {0.58,0.45};
-    //                 mirroredMissilePos = 5;
-    //             };    
-    //             class L_Rockets_3x: R_Rockets_3x {
-    //                 hardpoints[] = {"3x_Rockets_MELB"};
-    //                 UIposition[] = {99,99};
-    //                 priority = 1;
-    //                 mirroredMissilePos = 4;
-    //             };
-    //             class L_Rockets_4x: R_Rockets_4x {
-    //                 hardpoints[] = {"4x_Rockets_MELB"};
-    //                 UIposition[] = {99,99};
-    //                 priority = 2;
-    //                 mirroredMissilePos = 3;
-    //             };
-    //             class L_Rockets_12x: R_Rockets_12x {
-    //                 hardpoints[] = {"12x_Rockets_MELB"};
-    //                 UIposition[] = {99,99};
-    //                 priority = 3;
-    //                 mirroredMissilePos = 2;
-    //             };
-    //             // keep
-    //             class L_Pylon: R_Pylon {
-    //                 hardpoints[] = {"LeftMount_RHS_MELB_SOCOMD"};
-    //                 UIposition[] = {0.4925,0.4};
-    //                 mirroredMissilePos = 1;
-    //             };
-    //             /*
-    //             // this does remove the boxes if you comment out the above classes being deleted but it all goes wacky
-    //             delete R_HellfireRack_R_slot;
-    //             delete R_HellfireRack_L_slot;
-    //             delete R_Rockets_3x;
-    //             delete R_Rockets_4x;
-    //             delete R_Rockets_12x;
-    //             delete L_HellfireRack_R_slot;
-    //             delete L_HellfireRack_L_slot;
-    //             delete L_Rockets_3x;
-    //             delete L_Rockets_4x;
-    //             delete L_Rockets_12x;
-    //             */
-    //         };
-    //         class presets {
-    //             class empty {
-    //                 displayName = "empty";
-    //                 attachment[] = {};
-    //             };
-    //             delete M260HE_M134;
-    //             delete M260HE_M134_GAU;
-    //             delete GAU_M134_DAGR;
-    //             delete Hellfires;
-    //         };
-    //     };
-    // };
 
     class HitPoints : HitPoints {
         class HitHull : HitHull {
