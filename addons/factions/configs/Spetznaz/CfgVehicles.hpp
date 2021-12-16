@@ -19,6 +19,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Operator";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_ak74m_zenitco01_b33_grip1_rhs_acc_dtk1rhs_acc_2dpZenit_risacwp_eotechrhs_acc_grip_rk6","Put","Throw"};
@@ -38,6 +39,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Point Man";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_ak105_zenitco01_b33_grip1_rhs_acc_dtk3rhs_acc_2dpZenit_risacwp_eotechrhs_acc_grip_ffg2","Put","Throw"};
@@ -57,6 +59,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Team Leader";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_ak74mr_gp25_rhs_acc_dtk1rhs_acc_2dpZenit_risacwp_eotech","socomd_spetznaz_rhs_weap_pya","Put","Throw"};
@@ -76,6 +79,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Sniper";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_t5000_rhs_acc_dh520x56rhs_acc_harris_swivel","socomd_spetznaz_AGE_Glock17_SDBasic_acc_flashlight_pistol","Put","Throw"};
@@ -95,6 +99,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Machine Gunner";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_pkp_rhs_acc_1p78","Put","Throw"};
@@ -114,6 +119,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Light AT";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_ak74m_zenitco01_b33_grip1_rhs_acc_dtk1rhs_acc_2dpZenit_risacwp_eotechrhs_acc_grip_rk6","socomd_spetznaz_rhs_weap_rpg26","Put","Throw"};
@@ -134,6 +140,7 @@ class cfgVehicles
     editorSubcategory = EdSubcat_Personnel;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Vehicle Crew";
     uniformClass="USP_G3C_MX_MC_RUS";
     weapons[]={"socomd_spetznaz_rhs_weap_ak105_zenitco01_b33_grip1_rhs_acc_dtk1rhs_acc_2dpZenit_risacwp_eotechrhs_acc_grip_rk6","Put","Throw"};
@@ -153,6 +160,7 @@ class cfgVehicles
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Base;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="BTR-80A";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_01_des_co.paa","rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_02_des_co.paa","rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_03_des_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\1_ca.paa","","","","","","","","","","",""};
     crew="rhs_msv_emr_combatcrew";
@@ -165,6 +173,7 @@ class cfgVehicles
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Base;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Tigr Armed";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co_camo.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa","rhsafrf\addons\rhs_tigr\sts_proxies\data\tigr_ext_ads_co.paa","rhsafrf\addons\rhs_tigr\m_proxies\data\tigr_m_adds_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\6_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="socomd_spetznaz_Vehicle_Crew";
@@ -177,6 +186,7 @@ class cfgVehicles
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Base;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Tigr";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co_camo.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\7_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="socomd_spetznaz_Vehicle_Crew";
@@ -189,6 +199,7 @@ class cfgVehicles
     editorSubcategory = SOCOMD_EdSubcat_Vehicle_Base;
     faction="socomd_spetznaz_faction";
     side=0;
+    skill=1.0;
     displayName="Tigr Open";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co_camo.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa","rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa","rhsafrf\addons\rhs_tigr\sts_proxies\data\tigr_ext_ads_co.paa","rhsafrf\addons\rhs_tigr\m_proxies\data\tigr_m_adds_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\2_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\6_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="socomd_spetznaz_Vehicle_Crew";
