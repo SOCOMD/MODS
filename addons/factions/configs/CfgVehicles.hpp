@@ -1,0 +1,1 @@
+#include "Spetznaz\CfgVehicles.hpp"

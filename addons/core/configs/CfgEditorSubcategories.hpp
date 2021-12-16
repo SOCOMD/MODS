@@ -12,6 +12,10 @@ class CfgEditorSubcategories {
         displayName = "Men (Night)";
     };
 
+    class SOCOMD_EdSubcat_Vehicle_Base {
+        displayName = "Vehicles";
+    };
+    
     class SOCOMD_EdSubcat_Vehicle_Land {
         displayName = "Land";
     };

@@ -1,0 +1,1 @@
+#include "Spetznaz\CfgWeapons.hpp"
