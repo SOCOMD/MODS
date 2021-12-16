@@ -5,8 +5,9 @@ class CfgGlasses {
         identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
         scope = 1;
     };
+    class None;
     //Add Overlay to Gasmasks
-    class Mask_M40 {
+    class Mask_M40:None {
         ACE_Overlay = "\z\socomd\addons\data\CTgear\GasMask.paa";
         ACE_OverlayCracked = "\z\socomd\addons\data\CTgear\GasMaskCracked.paa";
         ACE_Protection = 1;
@@ -16,7 +17,7 @@ class CfgGlasses {
     class SP_GasMask_Black : Mask_M40 {
         model = "";
     };
-    class Mask_M40_OD {
+    class Mask_M40_OD:Mask_M40 {
         ACE_Overlay = "\z\socomd\addons\data\CTgear\GasMask.paa";
         ACE_OverlayCracked = "\z\socomd\addons\data\CTgear\GasMaskCracked.paa";
         ACE_Protection = 1;
@@ -24,7 +25,7 @@ class CfgGlasses {
         identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
         scope = 2;
     };
-    class Mask_M50 {
+    class Mask_M50:None {
         ACE_Overlay = "\z\socomd\addons\data\CTgear\GasMask.paa";
         ACE_OverlayCracked = "\z\socomd\addons\data\CTgear\GasMaskCracked.paa";
         ACE_Protection = 1;

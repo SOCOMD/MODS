@@ -4,6 +4,7 @@ class SOCOMD_itemcore: ItemCore {
     simulation="ItemMineDetector";
     scope=0;
     author="SOCOMD";
+    class ItemInfo;
 };
  
 class SOCOMD_tent_item: SOCOMD_itemcore {
@@ -15,7 +16,7 @@ class SOCOMD_tent_item: SOCOMD_itemcore {
     icon="iconObject_circle";
     descriptionShort="Deployable Camo net";
     
-    class ItemInfo: InventoryItem_Base_F {
+    class ItemInfo: ItemInfo {
         mass=15;
     };
 };
@@ -29,7 +30,7 @@ class SOCOMD_tent_item_des: SOCOMD_itemcore {
     icon="iconObject_circle";
     descriptionShort="Deployable Camo net";
 
-    class ItemInfo: InventoryItem_Base_F {
+    class ItemInfo: ItemInfo {
         mass=15;
     };
 };
@@ -43,7 +44,7 @@ class SOCOMD_tent_item_sno: SOCOMD_itemcore {
     icon="iconObject_circle";
     descriptionShort="Deployable Camo net";
 
-    class ItemInfo: InventoryItem_Base_F {
+    class ItemInfo: ItemInfo {
         mass=15;
     };
 };

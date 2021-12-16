@@ -4740,3 +4740,13 @@ class USP_G3C_RS2_CU_KP_OR6_AMCU_RECON: USP_G3C_RS2_CU_KP_OR{
     picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
     hiddenSelectionsTextures[] = {"\z\socomd\addons\data\uniform\clothes\usp_g3c_shirt_amcu_co.paa","\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa","\usp_gear_body\model\tx\usp_overlord_tan_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa","","","","","\USP_Gear_Core\data\id\flag\aus_ir_mc_co.paa","","","",""};
 };
+
+// Russia Single 
+
+class USP_G3C_MX_MC_RUS: USP_G3C_MX{
+    author = "UnderSiege Productions";
+    displayName = "[SPETZNAZ] Crye G3C MX (MC-RUS)";
+    uniformClass = "USP_G3C_MX_MC_RUS";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = {"\z\socomd\addons\data\uniform\clothes\usp_g3c_shirt_mc_co.paa","\usp_gear_body\model\tx\usp_g3c_pants_mc_co.paa","\usp_gear_body\model\tx\usp_mechanix_blk_co.paa","\usp_gear_body\model\tx\usp_salomon_co.paa","","","","","\USP_Gear_Core\data\id\flag\rus_ref_co.paa","","","",""};
+};

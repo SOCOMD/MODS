@@ -32,7 +32,8 @@ class lbt_pouchless_coy: Vest_Camo_Base{
         };
     };
 };
-class lbt_tl_mc: Vest_Camo_Base{
+class lbt_comms_coy;
+class lbt_tl_mc: lbt_comms_coy{
     class ItemInfo: VestItem
     {
         containerClass="Supply150";

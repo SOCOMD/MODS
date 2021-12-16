@@ -479,13 +479,7 @@ class rhsusf_hgu56p_visor_black : rhsusf_hgu56p_black {
     HEARING_PROTECTION_VICCREW
 };
 
-class rhsusf_hgu56p_visor_mask_black : Item_Base_F {
-    rgoc_canAcceptNVG = 1;
-    HELMET_SOLS_ARMOR
-    HEARING_PROTECTION_VICCREW
-};
-
-class rhsusf_hgu56p_mask_black_skull : rhsusf_hgu56p_visor_mask_black {
+class rhsusf_hgu56p_visor_mask_black : rhsusf_hgu56p_black {
     rgoc_canAcceptNVG = 1;
     HELMET_SOLS_ARMOR
     HEARING_PROTECTION_VICCREW
@@ -497,7 +491,13 @@ class rhsusf_hgu56p_visor_mask_Empire_black : rhsusf_hgu56p_black {
     HEARING_PROTECTION_VICCREW
 };
 
-class rhsusf_hgu56p_visor_mask_black_skull : rhsusf_hgu56p_mask_black_skull {
+class rhsusf_hgu56p_visor_mask_black_skull : rhsusf_hgu56p_visor_mask_black {
+    rgoc_canAcceptNVG = 1;
+    HELMET_SOLS_ARMOR
+    HEARING_PROTECTION_VICCREW
+};
+
+class rhsusf_hgu56p_mask_black_skull : rhsusf_hgu56p_visor_mask_black_skull {
     rgoc_canAcceptNVG = 1;
     HELMET_SOLS_ARMOR
     HEARING_PROTECTION_VICCREW
@@ -623,7 +623,7 @@ class rhsusf_hgu56p_visor_saf : rhsusf_hgu56p_saf {
     HEARING_PROTECTION_VICCREW
 };
 
-class rhsusf_hgu56p_visor_mask_saf : rhsusf_hgu56p_saf {
+class rhsusf_hgu56p_visor_mask_saf : rhsusf_hgu56p_visor_saf {
     rgoc_canAcceptNVG = 1;
     HELMET_SOLS_ARMOR
     HEARING_PROTECTION_VICCREW

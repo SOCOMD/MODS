@@ -295,9 +295,9 @@ class SOCOMD_SOV_GMG_W : UK3CB_BAF_Coyote_Passenger_L134A1_W {
 
 // Logistic Variants
 
-class UK3CB_BAF_Coyote_Logistics_L111A1_D : UK3CB_BAF_Coyote_L111A1_Base {};
+class UK3CB_BAF_Coyote_Logistics_L111A1_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {};
 class UK3CB_BAF_Coyote_Logistics_L111A1_W : UK3CB_BAF_Coyote_Logistics_L111A1_D {};
-class UK3CB_BAF_Coyote_Logistics_L134A1_D : UK3CB_BAF_Coyote_L134A1_Base {};
+class UK3CB_BAF_Coyote_Logistics_L134A1_D : UK3CB_BAF_Coyote_Passenger_L134A1_D {};
 class UK3CB_BAF_Coyote_Logistics_L134A1_W : UK3CB_BAF_Coyote_Logistics_L134A1_D {};
 class SOCOMD_SOV_logistics_HMG_D : UK3CB_BAF_Coyote_Logistics_L111A1_D {
 

@@ -35,8 +35,8 @@ class NDS_6x6_ATV_base: Car_F
         reverseString="R";
     };
 };
-
-class NDS_6x6_ATV_MIL2_LR: NDS_6x6_ATV_base {};
+class NDS_6x6_ATV_MIL2: NDS_6x6_ATV_base {};
+class NDS_6x6_ATV_MIL2_LR;
 
 class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR {
     scope = SCOPE_PUBLIC;

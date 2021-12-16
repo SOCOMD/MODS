@@ -55,7 +55,7 @@ class ACWP_sr25: srifle_DMR_06_camo_F {
 };
 class ACWP_sr25_camo: ACWP_sr25 {};
 class ACWP_sr25_ec: ACWP_sr25 {};
-class ACWP_sr25_ec_camo: ACWP_sr25 {};
+class ACWP_sr25_ec_camo: ACWP_sr25_ec {};
 class ACWP_sr25_VFG: ACWP_sr25 {};
 class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {};
 

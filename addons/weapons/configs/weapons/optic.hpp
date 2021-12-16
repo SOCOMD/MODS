@@ -15,7 +15,7 @@ class InventoryOpticsItem_Base_F;
 class ItemCore;
 class rhsusf_acc_sniper_base;
 
-class rhsusf_acc_su230_base: rhsusf_acc_sniper_base{
+class rhsusf_acc_su230_base: ItemCore{
     class ItemInfo : InventoryOpticsItem_Base_F {
         class OpticsModes{
 			class Elcan_x1{
@@ -77,8 +77,8 @@ class rhsusf_acc_g33_xps3_tan_flip : rhsusf_acc_g33_xps3_flip
     rhs_accessory_next = "";
 };
 
-class acwp_t2;
-class acwp_t2_g33: acwp_t2 {
+class acwp_t2_g33_down;
+class acwp_t2_g33: acwp_t2_g33_down {
     MRT_SwitchItemNextClass = "acwp_t2_g33_down";
     MRT_SwitchItemPrevClass = "acwp_t2_g33_down";
     MRT_switchItemHintText = "Up";
@@ -105,8 +105,7 @@ class acwp_t2_g33: acwp_t2 {
         };
      };
 };
-class acwp_eotech;
-class acwp_eotech_g33: acwp_eotech {
+class acwp_eotech_g33: acwp_t2_g33 {
     MRT_SwitchItemNextClass = "acwp_eotech_g33_down";
     MRT_SwitchItemPrevClass = "acwp_eotech_g33_down";
     MRT_switchItemHintText = "Up";

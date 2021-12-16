@@ -10453,3 +10453,21 @@ class USP_G3C_RS2_CU_KP_OR6_AMCU_RECON: USP_G3C_RS2_CU_KP_OR{
         mass = 40;
     };
 };
+
+// RUS Flag Single
+
+class USP_G3C_MX_MC_RUS: USP_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    displayName = "[SPETZNAZ] Crye G3C MX (MC-RUS)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_g3c_shirt_mc_co.paa", "\usp_gear_body\model\tx\usp_g3c_pants_mc_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_G3C_MX_MC_RUS";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};

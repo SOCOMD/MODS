@@ -4,11 +4,11 @@ class CfgWeapons {
     class ItemCore: Default{
         class ItemInfo;
     };
-    class UniformItem: ItemCore
+    class InventoryItem_Base_F;
+    class UniformItem: InventoryItem_Base_F
     {
         class ItemInfo;
-    };
-    class InventoryItem_Base_F;
+    }
     class VestItem: ItemCore
     {
         class ItemInfo;
