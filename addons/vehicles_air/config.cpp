@@ -11,6 +11,7 @@ class CfgPatches {
             "SOCOMD_WARRIOR_A",
             "SOCOMD_WARRIOR_B",
             "SOCOMD_NOMAD_A",
+            "SOCOMD_NOMAD_B",
             "SOCOMD_HURRICANE_A",
         };
         weapons[] = {};

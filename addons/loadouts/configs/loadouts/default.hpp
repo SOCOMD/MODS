@@ -230,7 +230,6 @@ class SOCOMD_TACP {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
-            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -241,9 +240,10 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
-            LOADOUT_ITEM(SmokeShellGreen, 2)
-            LOADOUT_ITEM(SmokeShellpurple, 2)
-			LOADOUT_ITEM(ACE_HuntIR_M203, 3)
+            LOADOUT_ITEM(SmokeShellGreen, 4)
+            LOADOUT_ITEM(SmokeShellpurple, 4)
+            LOADOUT_ITEM(ACE_HuntIR_M203, 3)
+            LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
         };
     };

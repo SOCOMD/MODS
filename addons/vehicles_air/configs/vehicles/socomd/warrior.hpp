@@ -84,6 +84,7 @@ class vtx_MH60M: vtx_H60_base{
     };
 };
 class vtx_uh60M : vtx_H60_base {
+    class Components;
     class Wheels:Wheels{
         class Wheel_1;
         class Wheel_2;
@@ -176,8 +177,32 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
             maxBrakeTorque = 1400;
         };
     };
+    
+    class Components: Components
+    {
+        class SensorsManagerComponent
+        {
+            class Components
+            {
+                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
+                class DatalinkSensorComponent: SensorTemplateDataLink{};
+            };
+        };
+    };
 };
 class SOCOMD_WARRIOR_B:vtx_MH60M{
+    
+    class Components: Components
+    {
+        class SensorsManagerComponent
+        {
+            class Components
+            {
+                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
+                class DatalinkSensorComponent: SensorTemplateDataLink{};
+            };
+        };
+    };
     class Wheels : Wheels {
         class Wheel_1:Wheel_1 {
             maxBrakeTorque = 2800;
@@ -249,18 +274,6 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
     driverWeaponsInfoType = "";
-    class Components {
-       class SensorsManagerComponent {
-            class Components {
-                class LaserSensorComponent: SensorTemplateLaser {};
-                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
-                    angleRangeHorizontal 	= 360;
-                    angleRangeVertical 		= 360;
-                };
-                class DatalinkSensorComponent: SensorTemplateDataLink {};
-            }; // Components
-        }; // SensorsManagerComponent
-    };
     hiddenSelectionsTextures[]=
         {
             "",
@@ -318,11 +331,6 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
         }; 
     }; 
     class AnimationSources:AnimationSources{
-        class Cockpitdoors_Hide {
-            source="user";
-            animPeriod=1;
-            initPhase=0;
-        };
         class Fuelprobe_Show:Fuelprobe_Show{
             source="user";
             animPeriod=1;

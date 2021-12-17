@@ -14,7 +14,7 @@ class SOCOMD_Crate_Empty : CargoNet_01_box_F {
     editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 
     ace_cargo_hasCargo = 1;
-    ace_cargo_size = 8;
+    ace_cargo_size = 7;
     ace_cargo_space = 6;
     ace_cargo_canLoad = 0;
     ace_dragging_canDrag = 1;
@@ -76,7 +76,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
     transportMaxMagazines = 20000;
     transportMaxBackpacks = 100;
 
-    ace_cargo_size = 8;
+    ace_cargo_size = 7;
     ace_dragging_canDrag = 1;
     ace_dragging_canCarry = 0;
     ace_dragging_dragPosition[] = {0,1.5,0};

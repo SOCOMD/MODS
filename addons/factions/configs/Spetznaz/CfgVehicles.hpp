@@ -17,6 +17,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -37,6 +38,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -57,6 +59,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -77,6 +80,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -97,6 +101,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -117,6 +122,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;
@@ -138,6 +144,7 @@ class cfgVehicles
   {
     editorCategory = SOCOMD_EdCat_Spetznaz;
     editorSubcategory = EdSubcat_Personnel;
+    headgearList[] = {"AGE_LSHZ_Black_C_H",50,"AGE_LSHZ_Black_C_H_A_L",50,"AGE_LSHZ_Black_C_H_L",50,"AGE_Fast_Black_C",30,"AGE_Fast_Black_C_H",30,"AGE_Fast_Black_C_H_A_L",30,"AGE_Fast_Tan_C_H",30,"AGE_Fast_Tan_C_A_L",30,"AGE_Fast_Tan_C_H_A_L",30,"AGE_Fast_Tan_C",30,"AGE_LSHZ_Painted_H_A",1};
     faction="socomd_spetznaz_faction";
     side=0;
     skill=1.0;

@@ -10,7 +10,7 @@ _vestInventoryConfig = (_vestConfig >> "Inventory");
 _backpackConfig = (_unitConfig >> "Backpack");  
 _backpackInventoryConfig = (_backpackConfig >> "Inventory");  
  
-private _configCfgWeapons = configFile >> "CfgWeapons"; //Save this lookup in variable for perf improvement  
+private _configCfgWeapons = configFile >> "CfgWeapons";
 for "_i" from 0 to (count _uniformInventoryConfig) - 1 do   
 {   
     _loadoutItem = _uniformInventoryConfig select _i;  
