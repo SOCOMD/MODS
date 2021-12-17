@@ -1,5 +1,3 @@
-["InitializePlayer",[player,true]] call BIS_fnc_dynamicGroups;
-
 //FOB Marker Fading
 params[ "_player", "_didJIP" ];
 

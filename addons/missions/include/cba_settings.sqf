@@ -100,10 +100,6 @@ ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 1;
 ace_interact_menu_useListMenu = true;
 
-// ACE Interaction Menu (Self) - More
-force force ace_interact_menu_more__ace_zeus_create = true;
-force force ace_interact_menu_more__ace_zeus_delete = true;
-
 // ACE Logistics
 force force ace_cargo_enable = true;
 force force ace_cargo_loadTimeCoefficient = 2.5;
@@ -122,7 +118,7 @@ force force ace_repair_engineerSetting_wheel = 0;
 force force ace_repair_fullRepairLocation = 1;
 force force ace_repair_repairDamageThreshold = 0.75;
 force force ace_repair_repairDamageThreshold_engineer = 0.75;
-force force ace_repair_wheelRepairRequiredItems = ["ToolKit"];
+force force ace_repair_wheelRepairRequiredItems = ["ace_repair_anyToolKit"];
 
 // ACE Magazine Repack
 force force ace_magazinerepack_timePerAmmo = 1;
@@ -209,7 +205,7 @@ force force ace_medical_treatment_locationIV = 0;
 force force ace_medical_treatment_locationPAK = 4;
 force force ace_medical_treatment_locationsBoostTraining = true;
 force force ace_medical_treatment_locationSurgicalKit = 0;
-force ace_medical_treatment_maxLitterObjects = 250;
+force ace_medical_treatment_maxLitterObjects = 200;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 0;
 force force ace_medical_treatment_medicPAK = 2;
@@ -461,6 +457,9 @@ force force acex_field_rations_timeWithoutWater = 2;
 
 // ACEX Fortify
 force force acex_fortify_settingHint = 0;
+force force ace_fortify_timeCostCoefficient = 1.0;
+force force ace_fortify_timeMin = 1.5;
+
 
 // ACEX Headless
 force force acex_headless_delay = 15;
@@ -501,9 +500,6 @@ force force cba_disposable_dropUsedLauncher = 2;
 force force cba_disposable_replaceDisposableLauncher = true;
 force force cba_events_repetitionMode = 1;
 force force cba_optics_usePipOptics = true;
-
-// CUP
-force force CUP_Vehicles_PreventBarrelClip = false;
 
 // DUI - Squad Radar - Indicators
 diwako_dui_indicators_crew_range_enabled = false;
@@ -649,9 +645,6 @@ force force simplesuppress_suppress_overlayOpacity = 0.96;
 force force simplesuppress_suppress_overlayTexture = 1;
 force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
-
-// SOCOMD
-// SOCOMD_peltors_strength = 0.25;
 
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
