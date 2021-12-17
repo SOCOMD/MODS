@@ -33,9 +33,7 @@ class NoDust{};
 class CfgVehicles  {
     //MAN
     class Land;
-    class Man : Land {
-        skill=0.5;
-    };
+    class Man;
     class Civilian;
     class O_helipilot_F;
     class B_Soldier_02_f;

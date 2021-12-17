@@ -52,7 +52,7 @@ class CfgGesturesMale {
     class default;
     class States {
         class ph_high_ready: default {
-            file="\A3\cargoposes_F_heli\anim\passenger_inside_5aim_obstructed.rtm";
+            file="z\socomd\addons\ph_tacready\anim\PH_HighReady.rtm";
             looped=1;
             speed=9.9999997e-006;
             mask="handsWeapon";
