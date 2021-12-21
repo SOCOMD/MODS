@@ -11,11 +11,11 @@ class CfgWorldType {
         class Mountains_ACR; //Takistan Mountains
         class zargabad;
         class pja310; //Al-Rayak
-        class MCN_Aliabad;
+        //class MCN_Aliabad;
         class tem_anizay;
         class DYA; //Diyala
         class fata;
-        class MCN_HazarKot;
+        //class MCN_HazarKot;
         class IslaDuala3;
         class Kunduz;
         class kujari;
@@ -32,28 +32,28 @@ class CfgWorldType {
         class Bootcamp_ACR; //Bukovina
         class Woodland_ACR; //Bystrica
         class chernarus; //Chernarus (Autumn)
-        class chernarus_summer;
+        class chernarus_Summer;
         class sara; //Sahrani
         class sara_dbe1; //United Sahrani
         class utes;
         class Bozcaada;
-        class Panthera3;
+        //class Panthera3;
         class pulau;
         class WL_Rosche;
         class ruha;
         class tem_suursaariv;
-        class Thirsk;
+        //class Thirsk;
         class tem_vinjesvingenc;
         class pja305; //N'Ziwasogo
         class egl_laghisola;
         class fapavo;
-        class pja312; // Song Bin Tanh
+        //class pja312; // Song Bin Tanh
         class jns_tria;
         class vt7; // Virolahti
     };
 
     class Snow {
-        class Chernarus_Winter;
-        class ThirskW; //Thirsk Winter
+        class Chernarus_winter;
+        //class ThirskW; //Thirsk Winter
     };
 };
