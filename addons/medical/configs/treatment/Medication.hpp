@@ -24,6 +24,28 @@ class Morphine {
     viscosityChange=-3;
 };
 
+class SOCOMD_Epinephrine {
+    painReduce=0;
+    hrIncreaseLow[]={20,25};
+    hrIncreaseNormal[]={20,25};
+    hrIncreaseHigh[]={30,30};
+    timeInSystem=300;
+    maxDose=6;
+    inCompatableMedication[]={};
+    viscosityChange=15;
+};
+
+class SOCOMD_Morphine {
+    painReduce=2;
+    hrIncreaseLow[]={-15,-25};
+    hrIncreaseNormal[]={-15,-25};
+    hrIncreaseHigh[]={-15,-30};
+    timeInSystem=9800;
+    maxDose=4;
+    inCompatableMedication[]={};
+    viscosityChange=-3;
+};
+
 class Atropine {
     painReduce=0;
     hrIncreaseLow[]={7,10};

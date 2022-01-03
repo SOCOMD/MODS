@@ -2,130 +2,123 @@
 class PackingBandage: FieldDressing {
     class Abrasion {
         effectiveness=4;
-        reopeningChance=0.5;
-        reopeningMinDelay=800;
-        reopeningMaxDelay=1500;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class AbrasionMinor: Abrasion {
         effectiveness=4;
     };
     class AbrasionMedium: Abrasion {
-        effectiveness=3;
-        reopeningChance=0.6;
+        effectiveness=4;
     };
     class AbrasionLarge: Abrasion {
-        effectiveness=2;
-        reopeningChance=0.69999999;
+        effectiveness=4;
     };
     class Avulsion: Abrasion {
         effectiveness=4;
-        reopeningChance=0.5;
-        reopeningMinDelay=1000;
-        reopeningMaxDelay=1600;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class AvulsionMinor: Avulsion {
         effectiveness=4;
     };
     class AvulsionMedium: Avulsion {
-        effectiveness=3;
+        effectiveness=4;
     };
     class AvulsionLarge: Avulsion {
-        effectiveness=2;
+        effectiveness=4;
     };
     class Contusion: Abrasion {
         effectiveness=4;
-        reopeningChance=0;
-        reopeningMinDelay=0;
-        reopeningMaxDelay=0;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class ContusionMinor: Contusion {
+        effectiveness=4;
     };
     class ContusionMedium: Contusion {
+        effectiveness=4;
     };
     class ContusionLarge: Contusion {
+        effectiveness=4;
     };
     class Crush: Abrasion {
         effectiveness=4;
-        reopeningChance=0.4;
-        reopeningMinDelay=600;
-        reopeningMaxDelay=1000;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class CrushMinor: Crush {
         effectiveness=4;
-        reopeningChance=0.4;
+        reopeningChance=0.3;
     };
     class CrushMedium: Crush {
-        effectiveness=3;
-        reopeningChance=0.5;
+        effectiveness=4;
     };
     class CrushLarge: Crush {
-        effectiveness=2;
-        reopeningChance=0.6;
+        effectiveness=4;
     };
     class Cut: Abrasion {
         effectiveness=4;
-        reopeningChance=0.4;
-        reopeningMinDelay=700;
-        reopeningMaxDelay=1000;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class CutMinor: Cut {
         effectiveness=4;
-        reopeningChance=0.4;
     };
     class CutMedium: Cut {
-        effectiveness=3;
-        reopeningChance=0.5;
+        effectiveness=4;
     };
     class CutLarge: Cut {
-        effectiveness=2;
-        reopeningChance=0.6;
+        effectiveness=4;
     };
     class Laceration: Abrasion {
         effectiveness=4;
-        reopeningChance=0.6;
-        reopeningMinDelay=500;
-        reopeningMaxDelay=2000;
+        reopeningChance=0.3;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class LacerationMinor: Laceration {
         effectiveness=4;
-        reopeningChance=0.7;
     };
     class LacerationMedium: Laceration {
-        effectiveness=3;
-        reopeningChance=0.8;
+        effectiveness=4;
     };
     class LacerationLarge: Laceration {
-        effectiveness=2;
-        reopeningChance=0.9;
+        effectiveness=4;
     };
     class velocityWound: Abrasion {
-        effectiveness=10;
+        effectiveness=4;
         reopeningChance=0.3;
-        reopeningMinDelay=1000;
-        reopeningMaxDelay=2000;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class velocityWoundMinor: velocityWound {
-        effectiveness=10;
+        effectiveness=4;
     };
     class velocityWoundMedium: velocityWound {
-        effectiveness=9;
+        effectiveness=4;
     };
     class velocityWoundLarge: velocityWound {
-        effectiveness=8;
+        effectiveness=4;
     };
     class punctureWound: Abrasion {
-        effectiveness=10;
+        effectiveness=4;
         reopeningChance=0.3;
-        reopeningMinDelay=1000;
-        reopeningMaxDelay=3000;
+        reopeningMinDelay=100;
+        reopeningMaxDelay=300;
     };
     class punctureWoundMinor: punctureWound {
-        effectiveness=10;
+        effectiveness=4;
     };
     class punctureWoundMedium: punctureWound {
-        effectiveness=9;
+        effectiveness=4;
     };
     class punctureWoundLarge: punctureWound {
-        effectiveness=8;
+        effectiveness=4;
     };
 };

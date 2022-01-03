@@ -30,12 +30,6 @@ class TurnAround: larynxtubus {
     displayNameProgress = "Manually removing debris...";
 };
 
-class TensionpneumothoraxTreatment {
-    items[] = {"SOCOMD_NDC"};
-};
-class HemopneumothoraxTreatment {
-    items[] = {"SOCOMD_NDC"};
-};
 
 class Accuvac: larynxtubus {
     displayNameProgress = "Clearing Airway...";
