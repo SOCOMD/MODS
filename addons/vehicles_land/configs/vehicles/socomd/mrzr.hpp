@@ -1,6 +1,6 @@
 class rhsusf_mrzr4_d;
 class SOCOMD_RTV_D : rhsusf_mrzr4_d{
-    vtx_ace_viv_lockSeats[] = {{},{{5},{4}}};
+    vtx_ace_viv_lockSeats[] = {{},{{3},{4}}};
 	scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
     editorCategory = SOCOMD_EdCat_Core;
