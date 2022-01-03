@@ -66,6 +66,7 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = ""
+thirdParty_root = "3rd_party"
 key_name = "socomd"
 key = ""
 dssignfile = ""
@@ -466,6 +467,107 @@ def cleanup_optionals(mod):
         raise
 
 
+def copy_thirdParty_for_building(mod,pbos):
+    src_directories = next(os.walk(thirdParty_root))[1]
+    current_dir = os.getcwd()
+
+    print_blue("\nChecking thirdParty folder...")
+    try:
+        #special server.pbo processing
+        files = glob.glob(os.path.join(release_dir, project, "thirdParty", "*.pbo"))
+        for file in files:
+            file_name = os.path.basename(file)
+            #print ("Adding the following file: {}".format(file_name))
+            pbos.append(file_name)
+            pbo_path = os.path.join(release_dir, project, "thirdParty", file_name)
+            sigFile_name = file_name +"."+ key_name + ".bisign"
+            sig_path = os.path.join(release_dir, project, "thirdParty", sigFile_name)
+            if (os.path.isfile(pbo_path)):
+                print("Moving {} for processing.".format(pbo_path))
+                shutil.move(pbo_path, os.path.join(release_dir, project, "addons", file_name))
+
+            if (os.path.isfile(sig_path)):
+                #print("Moving {} for processing.".format(sig_path))
+                shutil.move(sig_path, os.path.join(release_dir, project, "addons", sigFile_name))
+
+    except:
+        print_error("Error in moving")
+        raise
+    finally:
+        os.chdir(current_dir)
+
+    try:
+        for dir_name in src_directories:
+            mod.append(dir_name)
+            #userconfig requires special handling since it is not a PBO source folder.
+            #CfgConvert fails to build server.pbo if userconfig is not found in P:\
+            if (dir_name == "userconfig"):
+                if (os.path.exists(os.path.join(release_dir, project, "thirdParty", dir_name))):
+                    shutil.rmtree(os.path.join(release_dir, project, "thirdParty", dir_name), True)
+                shutil.copytree(os.path.join(thirdParty_root,dir_name), os.path.join(release_dir, project, "thirdParty", dir_name))
+                destination = os.path.join(work_drive,dir_name)
+            else:
+                destination = os.path.join(module_root,dir_name)
+
+            print("Temporarily copying {} => {} for building.".format(os.path.join(thirdParty_root,dir_name),destination))
+            if (os.path.exists(destination)):
+                shutil.rmtree(destination, True)
+            shutil.copytree(os.path.join(thirdParty_root,dir_name), destination)
+    except:
+        print_error("Copy thirdParty Failed")
+        raise
+    finally:
+        os.chdir(current_dir)
+
+
+def cleanup_thirdParty(mod):
+    print("")
+    try:
+        for dir_name in mod:
+            #userconfig requires special handling since it is not a PBO source folder.
+            if (dir_name == "userconfig"):
+                destination = os.path.join(work_drive,dir_name)
+            else:
+                destination = os.path.join(module_root,dir_name)
+
+            print("Cleaning {}".format(destination))
+
+            try:
+                file_name = "{}{}.pbo".format(pbo_name_prefix,dir_name)
+                folder= "@{}{}".format(pbo_name_prefix,dir_name)
+                src_file_path = os.path.join(release_dir, project, "addons", file_name)
+                dst_file_path = os.path.join(release_dir, project, "thirdParty",folder,"addons",file_name)
+
+                sigFile_name = "{}.{}.bisign".format(file_name,key_name)
+                src_sig_path = os.path.join(release_dir, project, "addons", sigFile_name)
+                dst_sig_path = os.path.join(release_dir, project, "thirdParty",folder,"addons", sigFile_name)
+
+
+                if (os.path.isfile(src_file_path)):
+                    if (os.path.isfile(dst_file_path)):
+                        # print("Cleanuping up old file {}".format(dst_file_path))
+                        os.remove(dst_file_path);
+                    #print("Preserving {}".format(file_name))
+                    os.renames(src_file_path,dst_file_path)
+                if (os.path.isfile(src_sig_path)):
+                    if (os.path.isfile(dst_sig_path)):
+                        # print("Cleanuping up old file {}".format(dst_sig_path))
+                        os.remove(dst_sig_path);
+                    #print("Preserving {}".format(sigFile_name))
+                    os.renames(src_sig_path,dst_sig_path)
+            except FileExistsError:
+                print_error("{} already exists".format(file_name))
+                continue
+            shutil.rmtree(destination)
+
+    except FileNotFoundError:
+        print_yellow("{} file not found".format(file_name))
+
+    except:
+        print_error("Cleaning thirdParty Failed")
+        raise
+
+
 def purge(dir, pattern, friendlyPattern="files"):
     print_green("Deleting {} files from directory: {}".format(friendlyPattern,dir))
     if os.path.exists(dir):
@@ -813,6 +915,7 @@ def main(argv):
     global release_dir
     global module_root_parent
     global optionals_root
+    global thirdParty_root
     global key_name
     global key
     global dssignfile
@@ -994,6 +1097,7 @@ See the make.cfg file for additional build options.
         module_root_parent = os.path.abspath(os.path.join(os.path.join(work_drive, prefix), os.pardir))
         module_root = cfg.get(make_target, "module_root", fallback=os.path.join(make_root_parent, "addons"))
         optionals_root = os.path.join(module_root_parent, "optionals")
+        thirdParty_root = os.path.join(module_root_parent, "thirdParty")
         extensions_root = os.path.join(module_root_parent, "extensions")
 
         if (os.path.isdir(module_root)):
@@ -1011,6 +1115,11 @@ See the make.cfg file for additional build options.
             print_green ("optionals_root: {}".format(optionals_root))
         else:
             print("optionals_root does not exist: {}".format(optionals_root))
+
+        if (os.path.isdir(thirdParty_root)):
+            print_green ("thirdParty_root: {}".format(thirdParty_root))
+        else:
+            print("thirdParty_root does not exist: {}".format(thirdParty_root))
 
         print_green ("release_dir: {}".format(release_dir))
 
@@ -1106,6 +1215,12 @@ See the make.cfg file for additional build options.
             optional_files = []
             copy_optionals_for_building(optionals_modules,optional_files)
 
+        # Temporarily copy thirdParty_root for building. They will be removed later.
+        if (os.path.isdir(thirdParty_root)):
+            thirdParty_modules = []
+            thirdParty_files = []
+            copy_thirdParty_for_building(thirdParty_modules,thirdParty_files)
+
         # Get list of subdirs in make root.
         dirs = next(os.walk(module_root))[1]
 
@@ -1135,6 +1250,7 @@ See the make.cfg file for additional build options.
                     print("Removing any old signature keys...")
                     purge(os.path.join(module_root, release_dir, project, "addons"), "^.*\.bisign$","*.bisign")
                     purge(os.path.join(module_root, release_dir, project, "optionals"), "^.*\.bisign$","*.bisign")
+                    purge(os.path.join(module_root, release_dir, project, "thirdParty"), "^.*\.bisign$","*.bisign")
                     purge(os.path.join(module_root, release_dir, project, "keys"), "^.*\.bikey$","*.bikey")
                 else:
                     print_error("Failed to create key!")
@@ -1417,6 +1533,8 @@ See the make.cfg file for additional build options.
         copy_important_files(module_root_parent,os.path.join(release_dir, project))
         if (os.path.isdir(optionals_root)):
             cleanup_optionals(optionals_modules)
+        if (os.path.isdir(thirdParty_root)):
+            cleanup_thirdParty(thirdParty_modules)
         if not version_update:
             restore_version_files()
 

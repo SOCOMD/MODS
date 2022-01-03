@@ -353,7 +353,7 @@ class SOCOMD_SOV_logistics_HMG_D : UK3CB_BAF_Coyote_Logistics_L111A1_D {
                 amount = 3;
             };
         }; 
-    }
+    };
 
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
@@ -426,7 +426,7 @@ class SOCOMD_SOV_logistics_HMG_W : UK3CB_BAF_Coyote_Logistics_L111A1_W {
                 amount = 3;
             };
         }; 
-    }
+    };
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
     };
@@ -502,7 +502,7 @@ class SOCOMD_SOV_logistics_GMG_D : UK3CB_BAF_Coyote_Logistics_L134A1_D {
                 amount = 3;
             };
         }; 
-    }
+    };
 
     class TransportWeapons {
         INVENTORY_VEHICLE_LARGE_WEAPONS
@@ -553,7 +553,7 @@ class SOCOMD_SOV_logistics_GMG_W : UK3CB_BAF_Coyote_Logistics_L134A1_W {
                 amount = 3;
             };
         }; 
-    }
+    };
     class AcreIntercoms {
         class Intercom_1 {
             displayName = "Crew Intercom";

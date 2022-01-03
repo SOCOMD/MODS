@@ -8,7 +8,7 @@ class CfgWeapons {
     class UniformItem: InventoryItem_Base_F
     {
         class ItemInfo;
-    }
+    };
     class VestItem: ItemCore
     {
         class ItemInfo;

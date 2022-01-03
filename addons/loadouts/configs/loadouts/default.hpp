@@ -708,14 +708,14 @@ class SOCOMD_AT {
 // Recon
 
 class SOCOMD_Recon {
-    blacklist = "SOCOMD";
-    primary            = QUOTE(ITEM_PRIMARY_RECON);
-    secondary        = "";
-    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
-    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
-    headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = LEADER_BINOCS;
-    gps                = "";
+    blacklist           = "SOCOMD";
+    primary             = QUOTE(ITEM_PRIMARY_RECON);
+    secondary           = "";
+    handgun             = QUOTE(ITEM_DEFAULT_HANDGUN);
+    handgunMagazine     = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
+    headgear            = ITEM_DEFAULT_HEADGEAR;
+    binocular           = LEADER_BINOCS;
+    gps                 = "";
     //optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
     class Uniform {

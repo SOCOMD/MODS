@@ -10,12 +10,12 @@ class Rifle_Long_Base_F : Rifle_Base_F{
 class bnae_falkor_base : Rifle_Long_Base_F{
     class WeaponSlotsInfo:WeaponSlotsInfo{
         allowedSlots[] = {901};
-    }
+    };
 };
 class bnae_trg42_base : Rifle_Long_Base_F{
     class WeaponSlotsInfo:WeaponSlotsInfo{
         allowedSlots[] = {901};
-    }
+    };
 };
 class bnae_trg42_f_camo1_virtual;
 class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
