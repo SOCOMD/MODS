@@ -953,8 +953,7 @@ class SOCOMD_Recon{
         GENERAL_RIFLE,
         MARKSMAN,
         SNIPER,
-        HANDGUNS,
-        "UK3CB_BAF_M6"
+        HANDGUNS
     };
     vests[]={
         VESTS_COMMON,
