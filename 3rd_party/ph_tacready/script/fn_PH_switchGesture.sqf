@@ -20,7 +20,13 @@ if (L_pReady_reloadDone) then {
     private _pWpnHandgun     = handgunWeapon player;
 
     if ((vehicle player == player) && !(_pWpnCur == "") && !(stance player == "PRONE") && !(stance player == "UNDEFINED")) then {
-        if ( _pWpnCur == _pWpnPrimary ) then {
+        if ( _pWpnCur == _pWpnPrimary || _pWpnCur == _pWpnHandgun ) then {
+            if(_pWpnCur == _pWpnHandgun) then {
+                switch (_gesture) do{
+                    case "ph_high_ready" : {_gesture = "ph_pistol_high_ready";};
+                    case "ph_low_ready"  : {_gesture = "ph_pistol_low_ready";};
+                };
+            };
             if ( !(player getVariable("ph_bCheck1"))) then {
                 [[ player,_gesture],"playActionNow"] call BIS_fnc_MP;
                 player setVariable["ph_bCheck1", true];
@@ -43,7 +49,7 @@ if (L_pReady_reloadDone) then {
 
     while { true } do {
         if ( (stance player == "UNDEFINED") || (stance player == "PRONE") ||
-             (currentWeapon player != primaryWeapon player)) exitWith
+             (_pWpnCur != _pWpnPrimary && _pWpnCur != _pWpnHandgun)) exitWith
         {
             [[ player,"ph_empty_ready"],"playActionNow"] call BIS_fnc_MP;
             player setVariable["ph_bCheck1", false];
