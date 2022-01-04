@@ -18,7 +18,8 @@ class SOCOMD_Morphine {
     callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
     callbackFailure = "";
     items[] = {
-        "SOCOMD_morphine"
+        "SOCOMD_morphine",
+        "SOCOMD_VPN"
     };
     
     animationMedic = "AinvPknlMstpSnonWnonDnon_medic1";
@@ -37,7 +38,8 @@ class SOCOMD_Epinephrine: SOCOMD_Morphine {
     callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
     requiresAll=true;
     items[] = {
-        "SOCOMD_epinephrine"
+        "SOCOMD_epinephrine",
+        "SOCOMD_VPN"
     };
     litter[] = {{}};
 };
@@ -53,7 +55,8 @@ class Naloxone : SOCOMD_Morphine {
     callbackSuccess = "SOCOMD_Medical_fnc_naloxoneSuccess";
     requiresAll=true;
     items[] = {
-        "SOCOMD_naloxone"
+        "SOCOMD_naloxone",
+        "SOCOMD_VPN"
     };
     litter[] = {{}};
 };
@@ -66,7 +69,8 @@ class Fentanyl: SOCOMD_Morphine{
     callbackSuccess = "SOCOMD_Medical_fnc_vpnMedicationSuccess";
     requiresAll=true;
     items[]={
-        "SOCOMD_fentanyl"
+        "SOCOMD_fentanyl",
+        "SOCOMD_VPN"
     };
     litter[] = {{}};
 };
@@ -77,7 +81,8 @@ class Ketamine_6mg : SOCOMD_Morphine {
     icon = "\z\socomd\addons\data\icon\VPN.paa";
     requiresAll=true;
     items[] = {
-        "SOCOMD_ketamine"
+        "SOCOMD_ketamine",
+        "SOCOMD_VPN"
     };
     callbackStart = "";
     callbackProgress = "";
@@ -91,7 +96,8 @@ class Ketamine_200mg : SOCOMD_Morphine {
     icon = "\z\socomd\addons\data\icon\VPN.paa";
     requiresAll=true;
     items[] = {
-        "SOCOMD_ketamine"
+        "SOCOMD_ketamine",
+        "SOCOMD_VPN"
     };
     callbackStart = "";
     callbackProgress = "";
@@ -118,13 +124,11 @@ class Tetra : NonVPNMedication {
     };
 };
 
-class Apap : NonVPNMedication {
+class SOCOMD_Apap : NonVPNMedication {
     displayName="Paracetemol 1g";
     displayNameProgress="Giving Paracetemol 1g";
     icon="\z\socomd\addons\data\icon\apap.paa";
-    condition = "";
-    callbackStart = "";
-
+    callbackSuccess = "SOCOMD_Medical_fnc_apapSuccess";
     items[] = {
         "SOCOMD_Apap"
     };

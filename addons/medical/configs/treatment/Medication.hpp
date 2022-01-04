@@ -14,7 +14,7 @@ class Epinephrine {
 };
 
 class Morphine {
-    painReduce=2;
+    painReduce = 0.8;
     hrIncreaseLow[]={-15,-25};
     hrIncreaseNormal[]={-15,-25};
     hrIncreaseHigh[]={-15,-30};
@@ -36,7 +36,7 @@ class SOCOMD_Epinephrine {
 };
 
 class SOCOMD_Morphine {
-    painReduce=2;
+    painReduce = 0.8;
     hrIncreaseLow[]={-15,-25};
     hrIncreaseNormal[]={-15,-25};
     hrIncreaseHigh[]={-15,-30};
@@ -91,7 +91,7 @@ class Naloxone {
 };
 
 class Fentanyl {
-    painReduce=5;
+    painReduce=3;
     hrIncreaseLow[]={-10,-15};
     hrIncreaseNormal[]={-10,-15};
     hrIncreaseHigh[]={-10,-20};
@@ -139,18 +139,18 @@ class Tetra : PainKillers {
     viscosityChange=0;
 };
 
-class paracetamol : PainKillers {
-    painReduce=2;
-    timeInSystem=1200;
+class SOCOMD_Apap : PainKillers {
+    painReduce=0.2;
+    timeInSystem=700;
     maxDose=15;
     inCompatableMedication[]={};
 };
-class paracetamol_half : paracetamol {
-    painReduce=1;
+class SOCOMD_Apap_half : SOCOMD_Apap {
+    painReduce=0.1;
 };
-class paracetamol_quarter : paracetamol {
-    painReduce=0.5;
+class SOCOMD_Apap_quarter : SOCOMD_Apap {
+    painReduce=0.05;
 };
-class paracetamol_nil : paracetamol {
+class SOCOMD_Apap_nil : SOCOMD_Apap {
     painReduce=0;
 };
