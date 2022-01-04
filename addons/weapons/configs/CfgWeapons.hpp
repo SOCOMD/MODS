@@ -1,4 +1,7 @@
-class mode_semiauto;
+
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
 class CfgWeapons{
         
     #include "weapons\handgun.hpp"
@@ -7,4 +10,5 @@ class CfgWeapons{
     #include "weapons\primary.hpp"
     #include "weapons\secondary.hpp"
     #include "weapons\pointers.hpp"
+    #include "weapons\aircraftWeapons.hpp"
 };

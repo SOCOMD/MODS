@@ -38,12 +38,57 @@ class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
 //};
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
 //class SMA_M4afgSTOCK;
-class ACWP_M4A5_base;
-class ACWP_M4A5_145_troy_base;
-class S_145_MOD_MAG_Camo;
-class S_145_MOD_MAG_AWM;
-class S_145_MOD_MAG_donaldson;
-class S_145_MOD_MAG_leafbrown;
+class ACWP_rifle_base: Rifle_Base_F { 
+    bullet1[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_01.wss", 0.1, 1, 15};
+	bullet2[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_02.wss", 0.1, 1, 15};
+	bullet3[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_03.wss", 0.177828, 1, 15};
+	bullet4[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_04.wss", 0.177828, 1, 15};
+	bullet5[] =     {"A3\sounds_f\weapons\shells\5_56\asphlat_556_01.wss", 0.1, 1, 15};
+	bullet6[] =     {"A3\sounds_f\weapons\shells\5_56\asphlat_556_02.wss", 0.1, 1, 15};
+	bullet7[] =     {"A3\sounds_f\weapons\shells\5_56\asphlat_556_03.wss", 0.1, 1, 15};
+	bullet8[] =     {"A3\sounds_f\weapons\shells\5_56\asphlat_556_04.wss", 0.1, 1, 15};
+	bullet9[] =     {"A3\sounds_f\weapons\shells\5_56\grass_556_01.wss", 0.01, 1, 15};
+	bullet10[] =    {"A3\sounds_f\weapons\shells\5_56\grass_556_02.wss", 0.01, 1, 15};
+	bullet11[] =    {"A3\sounds_f\weapons\shells\5_56\grass_556_03.wss", 0.01, 1, 15};
+	bullet12[] =    {"A3\sounds_f\weapons\shells\5_56\grass_556_04.wss", 0.01, 1, 15};
+	soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
+    class Single : Mode_SemiAuto{
+        sounds[] = {"StandardSound", "SilencedSound"};
+
+        class BaseSoundModeType
+        {
+            weaponSoundEffect = "DefaultRifle";
+        };
+
+        class StandardSound : BaseSoundModeType
+        {
+            soundSetShot[] = {"RHSUSF_m4_Shot_SoundSet","RHSUSF_rifle_small_Tail_SoundSet","RHSUSF_m4_stereoLayer_SoundSet"};
+        };
+
+        class SilencedSound : BaseSoundModeType
+        {
+            soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet","RHSUSF_sd_M4_stereoLayer_SoundSet"};
+        };
+    };
+    class FullAuto : Mode_FullAuto{
+        sounds[] = {"StandardSound", "SilencedSound"};
+
+        class BaseSoundModeType
+        {
+            weaponSoundEffect = "DefaultRifle";
+        };
+
+        class StandardSound : BaseSoundModeType
+        {
+            soundSetShot[] = {"RHSUSF_m4_Shot_SoundSet","RHSUSF_rifle_small_Tail_SoundSet","RHSUSF_m4_stereoLayer_SoundSet"};
+        };
+
+        class SilencedSound : BaseSoundModeType
+        {
+            soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet","RHSUSF_sd_M4_stereoLayer_SoundSet"};
+        };
+    };
+};
 class rhs_weap_M590_5RD;
 class SOCOMD_Shotgun: rhs_weap_M590_5RD {
     displayname = "SOCOMD Entry Shotgun";
