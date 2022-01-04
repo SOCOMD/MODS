@@ -141,7 +141,7 @@ class Tetra : PainKillers {
 
 class SOCOMD_Apap : PainKillers {
     painReduce=0.2;
-    timeInSystem=700;
+    timeInSystem=450;
     maxDose=15;
     inCompatableMedication[]={};
 };
