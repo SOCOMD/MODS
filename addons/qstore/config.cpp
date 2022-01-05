@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"SOCOMD_QStore_LOWVIS","SOCOMD_QStore_RUS","SOCOMD_QStore_Base"};
+        units[] = {"SOCOMD_QStore_AFP","SOCOMD_QStore_LOWVIS","SOCOMD_QStore_RUS","SOCOMD_QStore_Base"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"socomd_core"};
