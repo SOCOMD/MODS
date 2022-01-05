@@ -68,6 +68,20 @@ class RHS_MELB_MH6M : RHS_MELB_base {
 					minTrackableSpeed		= 0;
 					maxTrackableSpeed		= 695;
                 };
+                class LaserSensorComponent : SensorTemplateLaser{
+				
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=7000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					angleRangeHorizontal	= 180;
+					angleRangeVertical		= 180;
+                    groundNoiseDistanceCoef	= -1;
+					maxGroundNoiseDistance	= -1;
+                };
             };
         };
     };
@@ -140,6 +154,20 @@ class RHS_MELB_AH6M : RHS_MELB_base {
 					maxFogSeeThrough		= 0.95;
 					minTrackableSpeed		= 0;
 					maxTrackableSpeed		= 695;
+                };
+                class LaserSensorComponent : SensorTemplateLaser{
+				
+                    class GroundTarget{
+                        minRange=1;
+                        maxRange=7000;
+                        objectDistanceLimitCoef=1;
+                        viewDistanceLimitCoef=1;
+                    };
+                    allowsMarking           = 1;
+					angleRangeHorizontal	= 180;
+					angleRangeVertical		= 180;
+                    groundNoiseDistanceCoef	= -1;
+					maxGroundNoiseDistance	= -1;
                 };
             };
         };
