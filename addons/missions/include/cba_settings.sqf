@@ -247,6 +247,8 @@ force force kat_breathing_medLvl_Pulseoximeter = 0;
 force force kat_breathing_pneumothorax = 5;
 force force kat_breathing_pneumothoraxDamageThreshold = 0.4;
 force force kat_breathing_Stable_spo2 = 85;
+force force kat_breathing_SpO2_dieValue = 65;
+force force kat_breathing_SpO2_dieActive = true;
 
 // KAT - ADV Medical: Circulation
 force force kat_circulation_bloodgroup = "AB";

@@ -106,6 +106,8 @@ class RHS_MELB_AH6M : RHS_MELB_base {
     class AnimationSources;
    
     class Components : Components {
+        class TransportPylonsComponent;
+        class pylons;
         class SensorsManagerComponent {
             class Components {
                 class VisualSensorComponent : SensorTemplateVisual {
@@ -293,6 +295,44 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     crew= UNIT_SOCOMD_PILOT;
     typicalCargo[] = {UNIT_SOCOMD_PILOT};
     
+    class Components : Components {
+        class TransportPylonsComponent:TransportPylonsComponent{
+            class pylons:pylons{
+                class pylon1{
+                    hardpoints[] = {"RHS_HP_MELB","RHS_HP_MELB_L"};
+                    priority = 2;
+                    attachment = "rhs_mag_M229_7";
+                    maxweight = 1200;
+                    UIposition[] = {0.625,0.2};
+                    bay = -1;
+                    turret[] = {};
+                    hitpoint = "HitPylon1";
+                };
+                class pylon2: pylon1{
+                    hardpoints[] = {"RHS_HP_MELB_M134"};
+                    UIposition[] = {0.562,0.3};
+                    priority = 1;
+                    attachment = "rhs_mag_m134_pylon_3000";
+                    turret[] = {};
+                    hitpoint = "HitPylon2";
+                };
+                class pylon3: pylon2{
+                    UIposition[] = {0.103,0.3};
+                    mirroredMissilePos = 2;
+                    attachment = "rhs_mag_m134_pylon_3000";
+                    turret[] = {};
+                    hitpoint = "HitPylon3";
+                };
+                class pylon4: pylon1{
+                    hardpoints[] = {"RHS_HP_MELB","RHS_HP_MELB_R"};
+                    UIposition[] = {0.04,0.2};
+                    mirroredMissilePos = 1;
+                    turret[] = {};
+                    hitpoint = "HitPylon4";
+                };
+            };
+        };
+    };
     class AnimationSources: AnimationSources
     {
         class Addcrosshair

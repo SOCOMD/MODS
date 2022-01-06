@@ -1,3 +1,5 @@
+class Turrets;
+class NewTurret;
 class CfgVehicles{
     
     

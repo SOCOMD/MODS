@@ -251,7 +251,11 @@ class SOCOMD_TRUCK_CARGO_A : rhsusf_M977A4_usarmy_d {
     };
 };
 
-class rhsusf_M1084A1R_SOV_M2_D_fmtv_socom;
+class rhsusf_M1084A1P2_B_M2_fmtv_usarmy;
+class rhsusf_M1084A1R_SOV_M2_D_fmtv_socom:rhsusf_M1084A1P2_B_M2_fmtv_usarmy{
+    class Turrets;
+    class M2_Turret;
+};
 class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
@@ -260,7 +264,7 @@ class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
     side = WEST;
     author = AUTHOR_STR;
     faction = FACTION_STR;
-    displayname = "Cargo SOV + HMG Des(2/1)";
+    displayname = "SOV-CARGO (2/1)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
@@ -313,6 +317,11 @@ class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
         "\z\socomd\addons\data\fmtv\fmtv_sovrear_co.paa",
         "\z\socomd\addons\data\fmtv\FMTV_SOVKit_CO.paa",
         "rhsusf\addons\rhsusf_rg33l\Data\rhsusf_camonet_des_co.paa"
+        };
+        class Turrets: Turrets{
+            class M2_Turret: M2_Turret{
+                magazines[] = {"rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red"};
+            };
         };
 };
 // class rhsusf_M1084A1R_SOV_M2_WD_fmtv_socom;
@@ -384,7 +393,11 @@ class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
 
 // Logistics
 
-class rhsusf_M1078A1R_SOV_M2_D_fmtv_socom;
+class rhsusf_M1078A1P2_B_M2_fmtv_usarmy;
+class rhsusf_M1078A1R_SOV_M2_D_fmtv_socom:rhsusf_M1078A1P2_B_M2_fmtv_usarmy{
+    class Turrets;
+    class M2_Turret;
+};
 class SOCOMD_TRUCK_LOGI_D : rhsusf_M1078A1R_SOV_M2_D_fmtv_socom {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
@@ -393,7 +406,7 @@ class SOCOMD_TRUCK_LOGI_D : rhsusf_M1078A1R_SOV_M2_D_fmtv_socom {
     side = WEST;
     author = AUTHOR_STR;
     faction = FACTION_STR;
-    displayname = "Logistics Resupply Des(2/1)";
+    displayname = "SOV-LOGI (2/3)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
@@ -447,6 +460,11 @@ class SOCOMD_TRUCK_LOGI_D : rhsusf_M1078A1R_SOV_M2_D_fmtv_socom {
         "\z\socomd\addons\data\fmtv\fmtv_sovrear_co.paa",
         "\z\socomd\addons\data\fmtv\FMTV_SOVKit_CO.paa",
         "rhsusf\addons\rhsusf_rg33l\Data\rhsusf_camonet_des_co.paa"
+        };
+        class Turrets: Turrets{
+            class M2_Turret: M2_Turret{
+                magazines[] = {"rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red","rhs_mag_200rnd_127x99_mag_Tracer_Red"};
+            };
         };
 };
 
