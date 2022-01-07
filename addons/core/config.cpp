@@ -56,7 +56,6 @@ class CfgPatches {
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
 #include "configs\CfgAISkill.hpp"
-#include "configs\CfgAnimations.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
 #include "configs\CfgMarkers.hpp"
