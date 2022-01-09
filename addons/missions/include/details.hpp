@@ -2,32 +2,23 @@
 // Edit these lines as needed
 
 // Author
-author = "SOCOMD HQ J4";
+author = "SOCOMD Zeus Team";
 
 class Header {
 
-// Game type, see (https://community.bistudio.com/wiki/Multiplayer_Game_Types) for valid options
-gameType = Coop;
-
-// Minimum Players, shouldn't need to change this
-minPlayers = 1;
-
-// Maximum Players, shouldn't need to change this
-maxPlayers = 88;
+    // Shouldn't change anything here. 
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 110;
 
 };
 
-// Include a picture to be used on mission select screen. To link to a picture in the mission pbo just include the filename and path relative to the mission folder, ie if "mypic.paa" is in the root mission folder (where the mission.sqm is) you would use "mypic.paa" if it was in a folder named "img" use "img\mypic.paa", etc...
-//overviewPicture = "";
+// Information when selecting mission. Example picture: https://i.imgur.com/gug6ywM.jpg
+briefingName = "FOB Base Camp";    //Edit this to your unique mission name
+overviewPicture = "images\SOCOMD_Logo_transparent.png";    //Take a picture of your FOB > save as JPG, PNG, or PAA > Put this image in the "images" folder of your mission > change name here to reflect.
+overviewText = "SOCOMD Mission<br /> 2CDO: Alpha Company, Phantom and Raider Platoons with Support Detachment.<br /><br /> 6 Avn: 171st Avn Sqn, Support Sqn and 4SQN Attachment.<br /><br />";
 
-// Include a short description and units required to play the mission if nessisary
-overviewText = "SOCOMD Mission<br />2CDO: 1st Platoon with HQ element and attachments<br /><br />SOLS: Pilots and co-pilots<br /><br />";
-
-// This header text will be displayed as people are loading the mission
+// Information when loading into mission
 OnLoadName = "SOCOMD Mission";
-
-// This description text will be displayed as people are loading the mission, keep it relatively short
 OnLoadMission = "Dynamic Missions - Every deployment is unique.";
-
-// You can use another picture here while it is loading, see "overviewPicture" above on how to include it
-//loadScreen = "";
+loadScreen = "images\SOCOMD_Logo_transparent.png";    //Repeat earlier steps.
