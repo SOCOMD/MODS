@@ -27,7 +27,7 @@ class CfgPatches {
             "SOCOMD_SOV_logistics_HMG_W",
             "SOCOMD_SOV_logistics_GMG_D",
             "SOCOMD_SOV_logistics_GMG_W",
-            "SOCOMD_BIKE",
+            //"SOCOMD_BIKE",
             "SOCOMD_RTV_D",
             "SOCOMD_QUADBIKE"
         };
