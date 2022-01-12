@@ -234,7 +234,7 @@ force force kat_airway_medLvl_Larynxtubus = 0;
 force force kat_airway_Overstretch_time = 3;
 force force kat_airway_probability_headturning = 50;
 force force kat_airway_probability_obstruction = 15;
-force force kat_airway_probability_occluded = 10;
+force force kat_airway_probability_collapsed = 10;
 force force kat_airway_string_exit = "";
 force force kat_airway_TurnAround_time = 2;
 
