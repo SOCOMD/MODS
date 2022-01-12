@@ -1,5 +1,21 @@
 class Turrets;
+//class CargoTurret;
 class NewTurret;
+
+class Components;
+//class AISteeringComponent;
+
+class StaticWeapon;
+//class StaticCannon : StaticWeapon {
+//    class Turrets;
+//    class Components;
+//};
+//class StaticMGWeapon;
+
+class Truck_F;
+
+//class Tank;
+
 class CfgVehicles{
     
     
