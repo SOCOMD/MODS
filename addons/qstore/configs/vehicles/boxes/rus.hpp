@@ -36,7 +36,7 @@ class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
 
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (SUPPORT)")
                     QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_SSO_Logistician)
-                    QSTORE_ACTION_LOADOUT("Aeromedical Operator",SOCOMD_SSO_AO)
+                    // QSTORE_ACTION_LOADOUT("Aeromedical Operator",SOCOMD_SSO_AO)
                     QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_SSO_Pilot)
                     QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_SSO_Crewman)
                     QSTORE_ACTION_LOADOUT("Recon",SOCOMD_SSO_Recon)

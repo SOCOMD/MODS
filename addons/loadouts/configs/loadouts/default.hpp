@@ -763,7 +763,7 @@ class SOCOMD_Logistician {
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps             = "ItemcTab";
-    maxOptic        = LOW_MAGNIFICATION_LIMIT;
+    maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
     class Uniform {
@@ -783,7 +783,7 @@ class SOCOMD_Logistician {
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
             LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
             LOADOUT_ITEM(SmokeShell, 3)
-            LOADOUT_ITEM(ACRE_PRC152, 2)
+            LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
         };

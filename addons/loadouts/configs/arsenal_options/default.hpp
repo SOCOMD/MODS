@@ -263,7 +263,7 @@
     "H_Bandanna_sgg",\
     "H_Bandanna_sand",\
     "AU_03_780000_v1",\
-    "H_Booniehat_mgrn",\
+    "H_Booniehat_oli",\
     "H_Booniehat_tan",\
     "H_Booniehat_khk",\
     "ADFU_Booniehat_MC",\
@@ -272,7 +272,18 @@
     "ADFU_H_OpsCore_02_MC",\
     "ADFU_H_OpsCore_02_TAN",\
     "SOCOMD_Aus_Boonie_AMC",\
-    "SOCOMD_Aus_Boonie"
+    "SOCOMD_Aus_Boonie",\
+    "H_Cap_grn",\
+    "H_Cap_red",\
+    "H_Cap_blk",\
+    "H_Cap_blk_CMMG",\
+    "H_Cap_tan",\
+    "rhsusf_bowman_cap",\
+    "rhs_beanie_green",\
+    "UK3CB_H_Beanie_02_GRY",\
+    "UK3CB_H_Beanie_01",\
+    "UK3CB_H_Beanie_02_BLK",\
+    "UK3CB_H_Beanie_02_BRN"
 
 #define NVG_OPTIONS \
     "SOCOMD_NVG",\
@@ -931,6 +942,7 @@ class SOCOMD_Logistician{
         VESTS_TL
         };
     bags[]={
+        BACKPACK_COMMS,
         BAGS
     };
     grenades[]={
