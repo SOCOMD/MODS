@@ -7,28 +7,19 @@ class LandVehicle : Land {
 
 class Car : LandVehicle {
     class NewTurret;
-    class Components : Components {
-        class AICarSteeringComponent;
-    };
+    class Components;
 };
 
 class Car_F : Car {
+    class Turrets;
     class HitPoints;
     class textureSources;
-    
-    class Turrets {
-        class CargoTurret;
-        class MainTurret : NewTurret {};
-    };
-    class Components : Components {
-       
-    };
+ 
+    class Components;
 };
     // shared taki HMG
 class StaticWeapon;
-class StaticMGWeapon : StaticWeapon {
-    class Turrets;
-};
+class StaticMGWeapon;
 
 class Wheeled_APC_F : Car_F {};
 
@@ -37,9 +28,7 @@ class Tank : LandVehicle {
 };
 
 class Tank_F : Tank {
-    class Turrets : Turrets {
-        class MainTurret;
-    };
+    class Turrets;
     class Components;
 };
 
