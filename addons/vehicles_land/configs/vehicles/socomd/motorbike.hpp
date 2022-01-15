@@ -1,3 +1,4 @@
+/*
 class V12_KTM450_base;
 class V12_KTM_SOCOMD: V12_KTM450_base
 {
@@ -29,3 +30,4 @@ class V12_KTM_SOCOMD: V12_KTM450_base
         INVENTORY_VEHICLE_DEFAULT_BACKPACKS
     };
 };
+*/

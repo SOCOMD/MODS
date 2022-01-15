@@ -144,9 +144,9 @@ SHIP_BASE(A,SCOPE_PUBLIC,SOCOMD_BOAT)
 
 SHIP_BASE(C,SCOPE_PUBLIC,SOCOMD_BOAT_SUB)
 class Ship_F;
-class CUP_RHIB_Base : Ship_F {
-    class Turrets;
-};
+//class CUP_RHIB_Base : Ship_F {
+//    class Turrets;
+//};
 class UK3CB_MDF_B_RHIB;
 class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     scope = SCOPE_PUBLIC;
