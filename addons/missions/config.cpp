@@ -43,33 +43,31 @@ class CfgMissions {
     // ADD(VIROLAHTIFOB,SOCOMD Virolahti FOB,fobs\Virolahti_FOB.vt7)
     // ADD(TRIAFOB,SOCOMD Tria FOB,fobs\Tria_FOB.jns_tria)
     // ADD(NZWFOB,SOCOMD NZiwasogo FOB,fobs\NZiwasogo_Trigger_FOB.pja305)
-    // ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
+    ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
     
-    //ADD(KOOKABURRAALTISFOB,SOCOMD Altis FOB (Kookaburra),fobs\FOB_Kookaburra.Altis)
-    //ADD(KOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Kookaburra),fobs\FOB_Kookaburra.WL_Rosche)
-    //ADD(RUSSELMALDENFOB,SOCOMD Malden FOB (Russel),fobs\FOB_Russell.Malden)
-    //ADD(SOULTANOAFOB,SOCOMD Tanoa FOB (Soul),fobs\FOB_Soul.Tanoa)
-    //ADD(ZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Zanzibar),fobs\FOB_Zanzibar.takistan)
-    //ADD(RAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Ragnarok),fobs\FOB_Ragnarok.lythium)
+    //ADD(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.Altis)
+    //ADD(NOVUSKOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.WL_Rosche)
+    //ADD(NOVUSRUSSELMALDENFOB,SOCOMD Malden FOB (Novus-Russel),fobs\FOB_Novus-Russell.Malden)
+    //ADD(NOVUSSOULTANOAFOB,SOCOMD Tanoa FOB (Novus-Soul),fobs\FOB_Soul.Tanoa)
+    //ADD(NOVUSZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Novus-Zanzibar),fobs\FOB_Novus-Zanzibar.takistan)
+    //ADD(NOVUSRAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Novus-Ragnarok),fobs\FOB_Novus-Ragnarok.lythium)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
 //    Count = 14
 
-    // ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\Al-Rayak_LHD_HMAS_Canberra.pja310)
-    // ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\Altis_LHD_HMAS_Canberra.Altis)
-    // ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\Cherno_LHD_HMAS_Canberra.Chernarus)
-    // ADD(PORTOLHD,SOCOMD Porto LHD (HMAS Canberra),fobs\Porto_LHD_HMAS_Canberra.Porto)
-    // ADD(RAHMLHD,SOCOMD Rahmadi LHD (HMAS Canberra),fobs\Rahmadi_LHD_HMAS_Canberra.Intro)
-    // ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\Sahrani_LHD_HMAS_Canberra.Sara)
-    // ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\Stratis_LHD_HMAS_Canberra.Stratis)
-    // ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\Bozcaada_LHD_HMAS_Canberra.Bozcaada)
-    // ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\Malden2035_LHD_HMAS_Canberra.Malden)
-    // ADD(FAPOVOLHD,SOCOMD Fapovo LHD (HMAS Canberra),fobs\Fapovo_LHD_HMAS_Canberra.fapovo)
-    // ADD(PULAULHD,SOCOMD Pulau LHD (HMAS Canberra),fobs\Pulau_LHD_HMAS_Canberra.pulau)
-    // ADD(LAGHISOLALHD,SOCOMD Laghisola LHD (HMAS Canberra),fobs\Laghisola_LHD_HMAS_Canberra.egl_laghisola)
-    // ADD(VIROLAHTILHD,SOCOMD Virolahti LHD (HMAS Canberra),fobs\Virolahti_LHD_HMAS_Canberra.vt7)
-    // ADD(NZWLHD,SOCOMD NZiwasogo LHD (HMAS Canberra),fobs\NZiwasogo_LHD_HMAS_Canberra.pja305)
+    // ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pja310)
+    ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Altis)
+    // ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Chernarus)
+    // ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Sara)
+    // ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Stratis)
+    // ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Bozcaada)
+    // ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Malden)
+    // ADD(FAPOVOLHD,SOCOMD Fapovo LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.fapovo)
+    // ADD(PULAULHD,SOCOMD Pulau LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pulau)
+    // ADD(LAGHISOLALHD,SOCOMD Laghisola LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.egl_laghisola)
+    // ADD(VIROLAHTILHD,SOCOMD Virolahti LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.vt7)
+    // ADD(NZWLHD,SOCOMD NZiwasogo LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pja305)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    Missions
