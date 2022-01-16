@@ -1,5 +1,5 @@
 // Initialise HALO. Variables must be present in mission.
-HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];
+//HALOPOLE_1 addAction ["<t color='#ff9900'>HALO jump</t>", {call SSL_main_fnc_handleMapOpen;}];
 
 /*
 //Unique Map Marker channels for 6 Avn. & Support to decrease map clutter
