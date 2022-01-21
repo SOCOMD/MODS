@@ -55,23 +55,17 @@ class CfgPatches {
 
 #include "configs\CfgEditorCategories.hpp"
 #include "configs\CfgEditorSubcategories.hpp"
-#include "configs\CfgAISkill.hpp"
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
 #include "configs\CfgMarkers.hpp"
-#include "configs\CfgGlasses.hpp"
 #include "configs\CfgMoves.hpp"
 
 #include "configs\CfgMagazines.hpp"
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgWeapons.hpp"
-#include "configs\CfgAmmo.hpp"
 
-#include "configs\CfgClasses.hpp"
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgUnitInsignia.hpp"
 #include "configs\CfgASORVS.hpp"
 #include "configs\Rsc.hpp"
 #include "configs\CfgWorldType.hpp"
-#include "configs\CfgSocomdPlayerSettings.hpp"

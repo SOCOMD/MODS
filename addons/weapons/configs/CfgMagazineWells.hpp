@@ -15,14 +15,12 @@ class CfgMagazineWells {
     };
     class SOCOMD_GPMG_Belt {
         SOCOMD_mags[]={
-            QUOTE(ITEM_MAGAZINE_GPMG_BELT),
-            "UK3CB_BAF_762_200Rnd"
+            QUOTE(ITEM_MAGAZINE_GPMG_BELT)
         };
     };
     class SOCOMD_762_150Rnd {
         SOCOMD_mags[] = {
-            QUOTE(ITEM_MAGAZINE_762_BELT),
-            "UK3CB_BAF_762_200Rnd"
+            QUOTE(ITEM_MAGAZINE_762_BELT)
         };
     };
     class CBA_762x51_HK417 {

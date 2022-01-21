@@ -12,7 +12,7 @@
     staminaBar          = 1; /*Manages visibility of stamina indicator. true = fades in when stamina changes.*/ \
     weaponCrosshair     = 0; /*Shows weapon crosshair both in 1st and 3rd person view.*/ \
     visionAid           = 0; /*Helps to detect units in visual range and identify friend from foe.*/ \
-    thirdPersonView     = 0; /*Enables camera switching to 3rd person view.*/ \
+    thirdPersonView     = 1; /*Enables camera switching to 3rd person view.*/ \
     cameraShake         = 1; /*Shakes camera if player is near explosion, passing vehicle or if player's vehicle is under G-load.*/ \
     scoreTable          = 0; /*Displays table with kills, deaths and overall score in multiplayer.*/ \
     deathMessages       = 0; /*Shows in chat window who killed the player.*/ \

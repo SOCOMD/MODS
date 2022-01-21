@@ -1,43 +1,4 @@
-class SMG_05_base_F;
-//Using CBA_9x19_MP5
-class SMG_05_F : SMG_05_base_F {
-    magazineWell[] = {"CBA_9x19_MP5"};
-};
 class Rifle_Base_F;
-class Rifle_Long_Base_F : Rifle_Base_F{
-    class WeaponSlotsInfo;
-};
-class bnae_falkor_base : Rifle_Long_Base_F{
-    class WeaponSlotsInfo:WeaponSlotsInfo{
-        allowedSlots[] = {901};
-    };
-};
-class bnae_trg42_base : Rifle_Long_Base_F{
-    class WeaponSlotsInfo:WeaponSlotsInfo{
-        allowedSlots[] = {901};
-    };
-};
-class bnae_trg42_f_camo1_virtual;
-class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
-         _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "bnae_scope_snd_virtual";
-            };
-            class LinkedItemsUnder {
-                slot = "UnderBarrelSlot";
-                item = "bnae_bipod_v2_virtual";
-            };
-        };
-    };
-
-//class SMA_AssaultBase;
-//class SMA_762_RIFLEBASE: SMA_AssaultBase {
-//    magazineWell[] = {"CBA_762x51_HK417"};
-//};
-//Rifle 556 - SMA_30Rnd_556x45_M855A1
-//class SMA_M4afgSTOCK;
 class ACWP_rifle_base: Rifle_Base_F { 
     bullet1[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_01.wss", 0.1, 1, 15};
 	bullet2[] =     {"A3\sounds_f\weapons\shells\5_56\metal_556_02.wss", 0.1, 1, 15};
@@ -104,13 +65,6 @@ class ACWP_sr25_ec_camo: ACWP_sr25_ec {};
 class ACWP_sr25_VFG: ACWP_sr25 {};
 class ACWP_sr25_VFG_camo: ACWP_sr25_VFG {};
 
-class srifle_EBR_F;
-class SPARTAN_EBR_black_F : srifle_EBR_F {
-    magazineWell[] = {"CBA_762x51_HK417"};
-};
-class SPARTAN_EBR_snake_F : srifle_EBR_F {         //Camo
-    magazineWell[] = {"CBA_762x51_HK417"};
-};
 #define SOCOMD_MINIMI_SETTINGS \
     displayName = "FN Minimi PARA";\
     magazineWell[] += {"CBA_556x45_MINIMI"};\
@@ -199,10 +153,4 @@ class SOCOMD_mag58 : rhs_weap_fnmag {
     rhs_grip2_change = "SOCOMD_mag58";
     rhs_grip3_change = "SOCOMD_mag58";
     rhs_fold = "SOCOMD_mag58";
-};
-class UK3CB_BAF_L110_762_Base;
-class UK3CB_BAF_L110_762 : UK3CB_BAF_L110_762_Base {
-    displayName = "Mk 48 Maximi";
-    ace_overheating_mrbs = 2000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
-    magazineWell[] += {"SOCOMD_762_150Rnd"};
 };

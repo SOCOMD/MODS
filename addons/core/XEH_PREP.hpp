@@ -13,7 +13,6 @@ PREP(ActionCondition_IsRadarOff);
 PREP(ActionCondition_IsRadarOn);
 PREP(Action_ConnectSignal);
 PREP(Action_EnterSpectator);
-PREP(Action_gcamxecVM);
 PREP(Action_placeCustomPatch);
 PREP(Action_placePlaceables);
 PREP(Action_putBlindfoldOn);

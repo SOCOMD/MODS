@@ -158,8 +158,8 @@ class CfgLoadoutWeapons {
     class Rifle_65;
     class arifle_MX_Black_F : Rifle_65 {};
 
-    class MachineGun_762;
-    class ITEM_PRIMARY_MACHINEGUN_762  : MachineGun_762 {};
+    // class MachineGun_762;
+    // class ITEM_PRIMARY_MACHINEGUN_762  : MachineGun_762 {};
     class MachineGun_762_heavy;
     class ITEM_PRIMARY_MACHINEGUN_GPMG :MachineGun_762_heavy {};
     

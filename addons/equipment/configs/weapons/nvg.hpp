@@ -19,8 +19,8 @@ class NVGoggles;
 //         mass = 4;
 //     };
 // };
-class USP_L3_pvs31_A2;
-class SOCOMD_NVG : USP_L3_pvs31_A2    {
+class USP_PVS31;
+class SOCOMD_NVG : USP_PVS31    {
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_binos_4096_125.paa";
     displayName = "L-3 AN/PVS-31a BNVD (White Phosphor) (A)";
     descriptionShort = "L-3/Harris AN/PVS-31a Binocular Night Vision Device 2376+ FOM<br />High Performance Unfilmed White Phosphor tube<br />Autogating/Adjustable Gain<br />1x Internal AA battery + 4x AA External battery pack (50hrs continuous use)<br />Issued to members of Special Operations Command - Australia";
@@ -62,8 +62,8 @@ class SOCOMD_NVG_AM : SOCOMD_NVG    {
     ace_nightvision_generation = 3;
 };
 
-class USP_L3_pvs31_B;
-class SOCOMD_NVG_B : USP_L3_pvs31_B    {
+class USP_PVS31_COMPACT;
+class SOCOMD_NVG_B : USP_PVS31_COMPACT    {
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_binos_4096_125.paa";
     displayName = "L-3 AN/PVS-31a BNVD (White Phosphor) (B)";
     descriptionShort = "L-3/Harris AN/PVS-31a Binocular Night Vision Device 2376+ FOM<br />High Performance Unfilmed White Phosphor tube<br />Autogating/Adjustable Gain<br />1x Internal AA battery + 4x AA External battery pack (50hrs continuous use)<br />Issued to members of Special Operations Command - Australia";
@@ -104,8 +104,8 @@ class SOCOMD_NVG_AM_B : SOCOMD_NVG_B    {
     ace_nightvision_autoGated = 1;
     ace_nightvision_generation = 3;
 };
-class USP_L3_pvs31_C;
-class SOCOMD_NVG_C : USP_L3_pvs31_C    {
+class USP_PVS31_LOW;
+class SOCOMD_NVG_C : USP_PVS31_LOW    {
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_binos_4096_125.paa";
     displayName = "L-3 AN/PVS-31a BNVD (White Phosphor) (C)";
     descriptionShort = "L-3/Harris AN/PVS-31a Binocular Night Vision Device 2376+ FOM<br />High Performance Unfilmed White Phosphor tube<br />Autogating/Adjustable Gain<br />1x Internal AA battery + 4x AA External battery pack (50hrs continuous use)<br />Issued to members of Special Operations Command - Australia";
@@ -149,8 +149,8 @@ class SOCOMD_NVG_AM_C : SOCOMD_NVG_C    {
 
 
 
-class A3_GPNVG18_BLK_F;
-class SOCOMD_NVG_GPNVG_WP_black: A3_GPNVG18_BLK_F {
+class USP_GPNVG18;
+class SOCOMD_NVG_GPNVG_WP_black: USP_GPNVG18 {
     displayName = "L-3/Harris GPNVG (White Phosphor)";
     descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />White Phosphor tube<br />Issued to members of Special Operations Command - Australia";
     colorPreset[] = {
@@ -163,7 +163,7 @@ class SOCOMD_NVG_GPNVG_WP_black: A3_GPNVG18_BLK_F {
     ace_nightvision_generation = 2;
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
 };
-class SOCOMD_NVG_GPNVG_GR_black: A3_GPNVG18_BLK_F {
+class SOCOMD_NVG_GPNVG_GR_black: USP_GPNVG18 {
     displayName = "L-3/Harris GPNVG (Green Phosphor)";
     descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />Green Phosphor tube<br />Issued to members of Special Operations Command - Australia";
     colorPreset[] = {
@@ -177,3 +177,30 @@ class SOCOMD_NVG_GPNVG_GR_black: A3_GPNVG18_BLK_F {
     ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
 };
 
+class USP_GPNVG18_TAN;
+class SOCOMD_NVG_GPNVG_WP_tan: USP_GPNVG18_TAN {
+    displayName = "L-3/Harris GPNVG Tan (White Phosphor)";
+    descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />White Phosphor tube<br />Issued to members of Special Operations Command - Australia";
+    colorPreset[] = {
+        0.0, 
+        {0.0, 0.0, 0.0, 0.0}, 
+        {0.5, 0.1, 1.5, 0.9}, 
+        {1, 1, 6, 0.0}
+    };
+    ace_nightvision_autoGated = 0;
+    ace_nightvision_generation = 2;
+    ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
+};
+class SOCOMD_NVG_GPNVG_GR_tan: USP_GPNVG18_TAN {
+    displayName = "L-3/Harris GPNVG Tan (Green Phosphor)";
+    descriptionShort = "L-3/Harris Ground Panoramic Night Vision Goggle<br />Green Phosphor tube<br />Issued to members of Special Operations Command - Australia";
+    colorPreset[] = {
+        0.01,
+        {0,0,0,0.2},
+        {0.9,0.5,0.23,1},
+        {-6,-1,-1,0}
+    };
+    ace_nightvision_autoGated = 0;
+    ace_nightvision_generation = 2;
+    ace_nightvision_border = "\z\socomd\addons\data\nvgoverlay\nvg_mask_quad_4096_125.paa";
+};

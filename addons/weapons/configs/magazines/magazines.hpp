@@ -13,11 +13,11 @@ class ACWP_30rnd_556x45_M_PMAG;
 class ACWP_18Rnd_9x21_Mag_USP;
 
 class rhsusf_100Rnd_762x51_m80a1epr;
-class ITEM_MAGAZINE_762_BELT : rhsusf_100Rnd_762x51_m80a1epr {
-    displayName="150rnd Maximi Box";
-    descriptionShort="150rnd 7.62x54mm box<br />For use in FN Maximi";
-    count = 150;
-};
+// class ITEM_MAGAZINE_762_BELT : rhsusf_100Rnd_762x51_m80a1epr {
+//     displayName="150rnd Maximi Box";
+//     descriptionShort="150rnd 7.62x54mm box<br />For use in FN Maximi";
+//     count = 150;
+// };
 
 class ITEM_MAGAZINE_GPMG_BELT : rhsusf_100Rnd_762x51_m80a1epr{
     displayName="250rnd Mag 58 Box";

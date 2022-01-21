@@ -234,30 +234,23 @@
     "11Rnd_45ACP_Mag"
 
 #define HELMETS \
-    "acwp_airframe_mc_ct3_light_strap",\
-    "acwp_airframe_mc_ct3_light",\
-    "acwp_airframe_mc_light_strap",\
-    "acwp_airframe_mc_light",\
-    "acwp_airframe_mc_ct3_light_black_strap",\
-    "acwp_airframe_mc_ct3_light_black",\
-    "acwp_airframe_mc_light_black_strap",\
-    "acwp_airframe_mc_light_black",\
-    "acwp_airframe_mc_ct3_strap",\
-    "acwp_airframe_mc_ct3",\
-    "acwp_airframe_mc_strap",\
-    "acwp_airframe_mc",\
-    "acwp_airframe_amcu_ct3_light_strap",\
-    "acwp_airframe_amcu_ct3_light",\
-    "acwp_airframe_amcu_light_strap",\
+    "rhsusf_opscore_mc_cover",\
+    "rhsusf_opscore_mc_cover_pelt",\
+    "rhsusf_opscore_mc_cover_pelt_nsw",\
+    "rhsusf_opscore_mc_cover_pelt_cam",\
+    "rhsusf_opscore_mc",\
+    "rhsusf_opscore_mc_pelt",\
+    "rhsusf_opscore_mc_pelt_nsw",\
+    "rhsusf_opscore_paint",\
+    "rhsusf_opscore_paint_pelt",\
+    "rhsusf_opscore_paint_pelt_nsw",\
+    "rhsusf_opscore_paint_pelt_nsw_cam",\
+    "rhsusf_opscore_ut",\
+    "rhsusf_opscore_ut_pelt",\
+    "rhsusf_opscore_ut_pelt_cam",\
+    "rhsusf_opscore_ut_pelt_nsw",\
     "acwp_airframe_amcu_light",\
-    "acwp_airframe_amcu_ct3_light_black_strap",\
-    "acwp_airframe_amcu_ct3_light_black",\
-    "acwp_airframe_amcu_light_black_strap",\
-    "acwp_airframe_amcu_light_black",\
-    "acwp_airframe_amcu_ct3_strap",\
-    "acwp_airframe_amcu_ct3",\
-    "acwp_airframe_amcu_strap",\
-    "acwp_airframe_amcu",\
+    "rhsusf_opscore_ut_pelt_nsw_cam",\
     "H_Watchcap_blk",\
     "H_Watchcap_cbr",\
     "H_Bandanna_sgg",\
@@ -296,7 +289,9 @@
     "SOCOMD_NVG_GR_C",\
     "SOCOMD_NVG_AM_C",\
     "SOCOMD_NVG_GPNVG_WP_black",\
-    "SOCOMD_NVG_GPNVG_GR_black"
+    "SOCOMD_NVG_GPNVG_GR_black",\
+    "SOCOMD_NVG_GPNVG_WP_tan",\
+    "SOCOMD_NVG_GPNVG_GR_tan"
 
 #define SOLS_HELMS \
     "SOCOMD_NVG",\
@@ -376,10 +371,16 @@
     "acwp_pc_tacp_antennaup_s7_closed",\
     "acwp_pc_tacp_antenna_s7_closed"
 
+#define VESTS_MARKSMAN \
+    "socomd_tfa_v_jpc_marksman_mc",\
+    "socomd_tfa_v_jpc_marksman_belt_mc"
+
 #define VESTS_TL \
     "lbt_tl_coy",\
     "lbt_tl_mc",\
-    "lbt_tl_amcu"
+    "lbt_tl_amcu",\
+    "socomd_tfa_v_jpc_teamleader_mc",\
+    "socomd_tfa_v_jpc_teamleader_belt_mc"
 
 #define VESTS_COMMS \
     "lbt_comms_coy",\
@@ -398,19 +399,20 @@
     "lbt_weapons_coy",\
     "lbt_weapons_mc",\
     "lbt_weapons_amcu",\
-    "acwp_pc_203",\
-    "acwp_pc_203_nod",\
-    "acwp_pc_203_nobfg",\
-    "acwp_pc_203_nod_nobfg"
+    "socomd_tfa_v_jpc_grenadier_belt_mc",\
+    "socomd_tfa_v_jpc_grenadier_mc",\
+    "socomd_tfa_v_jpc_assaulter_belt_mc",\
+    "socomd_tfa_v_jpc_assaulter_mc"
 
 #define VESTS_MED \
     "lbt_medical_coy",\
     "lbt_medical_mc",\
-    "lbt_medical_amcu"
+    "socomd_tfa_v_jpc_medic_belt_mc",\
+    "socomd_tfa_v_jpc_medic_mc"
 
 #define VESTS_GUNNER \
-    "acwp_pc_mg",\
-    "acwp_pc_mg_nod",\
+    "socomd_tfa_v_jpc_hgunner_belt_mc",\
+    "socomd_tfa_v_jpc_hgunner_mc",\
     "acwp_pc_operator_s7_closed",\
     "acwp_pc_operator_radioback_s7_closed",\
     "acwp_pc_operator_top_s7_closed"
@@ -458,9 +460,7 @@
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
     "SOG_BAG_med_MC",\
-    "SOG_BAG_med_od",\
-    "ACWP_Bullock_no_helm_med_AMCU",\
-    "ACWP_Bullock_no_helm_med_MC"
+    "SOG_BAG_med_od"
 
 #define BAGS \
     "KIT_BAG_mc",\
@@ -696,7 +696,8 @@ class SOCOMD_Marksman{
     vests[]={
         VESTS_COMMON,
         ONE_COMM_RIGS,
-        VESTS_TL
+        VESTS_TL,
+        VESTS_MARKSMAN
         };
     bags[]={
         BAGS
@@ -970,7 +971,8 @@ class SOCOMD_Recon{
     vests[]={
         VESTS_COMMON,
         TWO_COMMS_RIGS,
-        VESTS_COMMS
+        VESTS_COMMS,
+        VESTS_MARKSMAN
         };
     bags[]={
         BAGS,

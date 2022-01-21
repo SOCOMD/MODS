@@ -77,14 +77,14 @@ class _xx_##id { \
 #define ITEM_PRIMARY_MARKSMAN                   ACWP_sr25
 #define ITEM_PRIMARY_RECON                      bnae_falkor_camo1_virtual
 #define ITEM_PRIMARY_MACHINEGUN                 SOCOMD_Minimi
-#define ITEM_PRIMARY_MACHINEGUN_762             UK3CB_BAF_L110_762
+#define ITEM_PRIMARY_MACHINEGUN_762             SOCOMD_mag58
 #define ITEM_PRIMARY_MACHINEGUN_GPMG            SOCOMD_mag58
 #define ITEM_PRIMARY_SOLS                       ACWP_M4A5_145_ris_base
 #define ITEM_MAGAZINE_556                       ACWP_30rnd_556x45_EPR_PMAG
 #define ITEM_MAGAZINE_556_TRACER                ACWP_30rnd_556x45_M_PMAG
 #define ITEM_MAGAZINE_556_BELT                  rhsusf_200Rnd_556x45_mixed_soft_pouch
 #define ITEM_MAGAZINE_762                       20Rnd_762x51_Mag
-#define ITEM_MAGAZINE_762_BELT                  SOCOMD_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
+#define ITEM_MAGAZINE_762_BELT                  SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
 #define ITEM_MAGAZINE_BARRET                    rhsusf_mag_10Rnd_STD_50BMG_M33
@@ -99,7 +99,7 @@ class _xx_##id { \
 #define ITEM_DEFAULT_LAUNCHER                   SOCOMD_Carl_Gustav
 
 // headgear
-#define ITEM_DEFAULT_HEADGEAR                   "acwp_airframe_mc"
+#define ITEM_DEFAULT_HEADGEAR                   "socomd_tfa_airframe_1"
 #define ITEM_PILOT_HEADGEAR                     "rhsusf_hgu56p_visor"
 #define ITEM_CREW_HEADGEAR                      "SOCOMD_Ground_Crew_helmet"
 
@@ -127,18 +127,18 @@ class _xx_##id { \
 #define ITEM_VEST_HOMESTEAD                     "lbt_pouchless_mc"
 
 // bags
-#define ITEM_BACKPACK_TROOPLEADER                "Kit_Bag_R_MC"
-#define ITEM_BACKPACK_PATROLLEADER               "Kit_Bag_R_MC"
-#define ITEM_BACKPACK_RIFLEMAN                   "SOG_BAG_MC"
-#define ITEM_BACKPACK_BREACHER                   "Kit_Bag_pince_MC"
-#define ITEM_BACKPACK_MARKSMAN                   "SOG_BAG_MC"
-#define ITEM_BACKPACK_SAPPER                     "SOG_BAG_med_MC"
-#define ITEM_BACKPACK_MACHINEGUNNER              "SOG_BAG_MC"
-#define ITEM_BACKPACK_MEDIC                      "SOG_BAG_MC"
-#define ITEM_BACKPACK_RECON                      "Kit_Bag_R_MC"
-#define ITEM_BACKPACK_AT                         "SOG_BAG_MC"
-#define ITEM_BACKPACK_PILOT                      "SOG_BAG_recon_od"
-#define ITEM_BACKPACK_CREWMAN                    "KIT_BAG_MC"
+#define ITEM_BACKPACK_TROOPLEADER                "acwp_bullock_mc"
+#define ITEM_BACKPACK_PATROLLEADER               "acwp_bullock_mc"
+#define ITEM_BACKPACK_RIFLEMAN                   "acwp_bullock_mc"
+#define ITEM_BACKPACK_BREACHER                   "acwp_bullock_mc"
+#define ITEM_BACKPACK_MARKSMAN                   "acwp_bullock_mc"
+#define ITEM_BACKPACK_SAPPER                     "acwp_bullock_mc"
+#define ITEM_BACKPACK_MACHINEGUNNER              "acwp_bullock_mc"
+#define ITEM_BACKPACK_MEDIC                      "acwp_bullock_mc"
+#define ITEM_BACKPACK_RECON                      "acwp_bullock_mc"
+#define ITEM_BACKPACK_AT                         "acwp_bullock_mc"
+#define ITEM_BACKPACK_PILOT                      "acwp_bullock_mc"
+#define ITEM_BACKPACK_CREWMAN                    "acwp_bullock_mc"
 
 #define LOW_MAGNIFICATION_LIMIT                  "2x"
 #define STANDARD_MAGNIFICATION_LIMIT             "4x"
