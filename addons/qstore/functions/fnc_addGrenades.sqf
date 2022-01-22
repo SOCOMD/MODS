@@ -36,7 +36,6 @@ for "_i" from 0 to (count _vestInventoryConfig) - 1 do
     _loadoutItem = _vestInventoryConfig select _i;  
     _type = getText (_loadoutItem >> "type");  
     _count = getNumber (_loadoutItem >> "count");
-    systemChat _type;
   
     if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
         { 
