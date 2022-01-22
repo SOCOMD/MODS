@@ -793,6 +793,7 @@ class SOCOMD_Logistician {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_ITEM(ToolKit, 1)
+            LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
 };
