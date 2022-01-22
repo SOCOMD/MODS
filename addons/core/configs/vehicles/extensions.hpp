@@ -310,18 +310,18 @@ class CAManBase : Man {
             QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antennaup_s7_closed,"Antennas Down",acwp_pc_tacp_antennaup_s7_closed,acwp_pc_tacp_antenna_s7_closed)
             QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antenna_s7_closed,"Antennas Up",acwp_pc_tacp_antenna_s7_closed,acwp_pc_tacp_antennaup_s7_closed)
 
-            // class togglePeltorOn { 
-            //     displayName ="Turn on peltors";
-            //     condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 0)";
-            //     statement = "[true] call socomd_core_fnc_Peltor_togglePeltor";
-            //     exceptions[] = {"isNotInside", "isNotSitting"};
-            // };
-            // class togglePeltorOff { 
-            //     displayName ="Turn off peltors";
-            //     condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 1)";
-            //     statement = "[false] call socomd_core_fnc_Peltor_togglePeltor";
-            //     exceptions[] = {"isNotInside", "isNotSitting"};
-            // };
+            class togglePeltorOn { 
+                displayName ="Turn on peltors";
+                condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 0)";
+                statement = "[true] call socomd_core_fnc_Peltor_togglePeltor";
+                exceptions[] = {"isNotInside", "isNotSitting"};
+            };
+            class togglePeltorOff { 
+                displayName ="Turn off peltors";
+                condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 1)";
+                statement = "[false] call socomd_core_fnc_Peltor_togglePeltor";
+                exceptions[] = {"isNotInside", "isNotSitting"};
+            };
         };
 
         // HALO Specific Actions

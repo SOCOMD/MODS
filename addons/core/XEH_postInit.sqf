@@ -1,41 +1,9 @@
 #include "script_component.hpp"
 
 if (!hasinterface) exitwith {
-    call FUNC(CommonInitServer)
+    call FUNC(CommonInitServer);
 };
-
-// hasPeltors = 0;
-// hasPeltorsOn = 0;
-// // Update protection on possible helmet change
-// ["loadout", {
-//     params ["_player", "", ""];
-//     _response = [_player] call FUNC(Peltor_hasPeltor);
-//     _hasPeltors = _response select 0;
-//     _peltorsChanged = _response select 1;
-//     if (_hasPeltors == 0) then {
-//         [1] call FUNC(Peltor_setVolume);
-//         hasPeltorsOn = 0;
-//     } else {
-//         if (_peltorsChanged == 1) then {
-//             hasPeltorsOn = 1;
-//         };
-//     };
-// }, false] call CBA_fnc_addplayerEventHandler;
-
-// ["loadout", {
-//     params ["_player", "_new"];
-//     [_player, _new] call FUNC(Action_placeCustomPatch);
-// }, false] call CBA_fnc_addplayerEventHandler;
-
-
-// overrides to get our functions 
- 
- [{
-    private _entry = ["cTab", "ifSecondary"] call CBA_fnc_getKeybind;
-    !isNil "_entry"
-    },{
-    ["cTab","ifSecondary",["Toggle Secondary Interface","Open cTab device in interactable mode"],{call cTab_fnc_onIfSecondaryPressed; call FUNC(Action_ToggleAndroid)},"",[cTab_key_if_secondary_scancode,cTab_key_if_secondary_modifiers],false] call cba_fnc_addKeybind;
- },[]] call CBA_fnc_waitUntilAndExecute;
+call FUNC(CommonInitLocal);
 
 //  this addEventHandler ["CuratorWaypointPlaced", {
 //     params ["_curator", "_group", "_waypointID"];
@@ -53,3 +21,7 @@ if (!hasinterface) exitwith {
 //     params ["_object", "_set"];
 //     _object setAnimSpeedCoef _set;
 // }] call CBA_fnc_addEventHandler;
+
+
+// set all vehicles post init to allow the crew to remain in the vehicle and man the weapons / driver seat.
+// this script could be enhanced to only look for main turret seats to apply this too so the driver ejects, but good enough for now  
