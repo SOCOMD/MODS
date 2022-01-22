@@ -52,10 +52,7 @@ if (_isCommander) then {
 
 
 if ( _isTACP) then {
-    _compMagazines = _weaponId call BIS_fnc_compatibleMagazines;
-    if("1Rnd_SmokeRed_Grenade_shell" in _compMagazines) then {
         _player addMagazines["1Rnd_SmokeRed_Grenade_shell", 6];
         _player addMagazines["ACE_HuntIR_M203", 3];
-    };
     _player addMagazines["Laserbatteries", 1];
 };
