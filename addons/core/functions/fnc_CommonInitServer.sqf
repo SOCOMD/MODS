@@ -7,6 +7,3 @@ if(!isServer) exitWith {};
     if (isClass (configfile >> "CfgVehicles" >> (typeOf (_this select 0)) >> "Turrets" >> "MainTurret")) then { (_this select 0) allowCrewInImmobile true };
     }, true, [], true
 ] call CBA_fnc_addClassEventHandler;
-
-//Call CommonInitLocal on all connected clients/JIP clients
-[[], "socomd_core_fnc_CommonInitLocal", true, true, true] call BIS_fnc_MP;
