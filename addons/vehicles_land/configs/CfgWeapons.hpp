@@ -1,3 +1,4 @@
+
 class CfgWeapons{
     class MGun;
     class LMG_RCWS;

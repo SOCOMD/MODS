@@ -1,6 +1,7 @@
 class Turrets;
-//class CargoTurret;
+class CargoTurret;
 class NewTurret;
+class M2_Turret;
 
 class Components;
 //class AISteeringComponent;
