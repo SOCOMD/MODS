@@ -21,12 +21,12 @@ for "_i" from 0 to (count _uniformInventoryConfig) - 1 do
     if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
         { 
             if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-                (uniformContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
         { 
             if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
-                (uniformContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
     }; 
@@ -36,17 +36,17 @@ for "_i" from 0 to (count _vestInventoryConfig) - 1 do
     _loadoutItem = _vestInventoryConfig select _i;  
     _type = getText (_loadoutItem >> "type");  
     _count = getNumber (_loadoutItem >> "count");
- 
+    systemChat _type;
   
     if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
         { 
             if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-                (vestContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
         { 
             if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
-                (vestContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
     }; 
@@ -56,17 +56,17 @@ for "_i" from 0 to (count _backpackInventoryConfig) - 1 do
     _loadoutItem = _backpackInventoryConfig select _i;  
     _type = getText (_loadoutItem >> "type");  
     _count = getNumber (_loadoutItem >> "count");
- 
+    
   
     if(isClass (configFile >> "CfgMagazines" >> _type))  then { 
         { 
             if(_type in getArray (_configCfgWeapons >> "Throw" >> _x >> "magazines"))  exitWith {
-                (backpackContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Throw" >> "muzzles"); 
         { 
             if(_type in getArray (_configCfgWeapons >> "Put" >> _x >> "magazines"))  exitWith {
-                (backpackContainer _player) addMagazineCargo [_type,_count]
+                _player addMagazines [_type,_count];
             };
         } forEach getArray (_configCfgWeapons >> "Put" >> "muzzles"); 
     }; 

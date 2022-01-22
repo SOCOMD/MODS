@@ -5,6 +5,7 @@ _loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];
 _isTACP = isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isTACP") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isTACP") == 1);
 _isCommander =  isNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") && (getNumber(configFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId >> "isCommander") == 1);
 
+_weaponConfig = (configFile >> "CfgWeapons" >> _weaponId);
 _loadoutWeaponConfig = (missionConfigFile >> "CfgLoadoutWeapons" >> _weaponId);
 if(isNull _loadoutWeaponConfig) then {
     _loadoutWeaponConfig = (configFile >> "CfgLoadoutWeapons" >> _weaponId);
@@ -51,5 +52,10 @@ if (_isCommander) then {
 
 
 if ( _isTACP) then {
-    _player addMagazines["1Rnd_SmokeRed_Grenade_shell", 6];
+    _compMagazines = _weaponId call BIS_fnc_compatibleMagazines;
+    if("1Rnd_SmokeRed_Grenade_shell" in _compMagazines) then {
+        _player addMagazines["1Rnd_SmokeRed_Grenade_shell", 6];
+        _player addMagazines["ACE_HuntIR_M203", 3];
+    };
+    _player addMagazines["Laserbatteries", 1];
 };
