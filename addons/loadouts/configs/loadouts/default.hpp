@@ -12,12 +12,8 @@
     LOADOUT_ITEM(ACE_epinephrine, 0) \
     LOADOUT_ITEM(ACE_morphine, 2) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
-    LOADOUT_ITEM(SOCOMD_Apap, 3) \
-    LOADOUT_ITEM(ACE_packingBandage, 0) \
-    LOADOUT_ITEM(ACE_fieldDressing, 4)  \
-    LOADOUT_ITEM(KAT_ChestSeal, 1)    \
-    LOADOUT_ITEM(SOCOMD_NDC, 1)    \
-    LOADOUT_ITEM(KAT_guedel, 2)
+    LOADOUT_ITEM(ACE_packingBandage, 8) \
+    LOADOUT_ITEM(ACE_fieldDressing, 8)
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
@@ -26,8 +22,6 @@
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
@@ -37,8 +31,6 @@
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
@@ -55,8 +47,6 @@
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_microDAGR, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_VEST_ESSENTIALS \
@@ -86,7 +76,6 @@
     LOADOUT_ITEM(ItemcTabHCam, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-    LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1) \
     LOADOUT_ITEM(SOCOMD_NVG, 1) \
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1) \
     LOADOUT_ITEM(ACRE_PRC343, 1) \
@@ -97,12 +86,10 @@
     LOADOUT_ITEM(ACE_elasticBandage, 8) \
     LOADOUT_ITEM(ACE_quikclot, 8) \
     LOADOUT_ITEM(ACE_epinephrine, 0) \
-    LOADOUT_ITEM(ACE_morphine, 1) \
+    LOADOUT_ITEM(ACE_morphine, 2) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
-    LOADOUT_ITEM(SOCOMD_Apap, 4) \
-    LOADOUT_ITEM(ACE_packingBandage, 0) \
-    LOADOUT_ITEM(ACE_fieldDressing, 0) \
-    LOADOUT_ITEM(SOCOMD_VPN, 1)
+    LOADOUT_ITEM(ACE_packingBandage, 8) \
+    LOADOUT_ITEM(ACE_fieldDressing, 8)
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -559,37 +546,16 @@ class SOCOMD_Medic {
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
-            LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
-            LOADOUT_ITEM(ACE_fieldDressing, 20)          //Israeli Bandage
-            LOADOUT_ITEM(SOCOMD_triangleban, 3)          //Israeli Bandage
-            LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
-            LOADOUT_ITEM(ACE_morphine, 0)                  //Remove
-            LOADOUT_ITEM(ACE_personalAidKit, 0)            //Remove
-            LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(ACE_elasticBandage, 20)        //Elastic Bandage
-            LOADOUT_ITEM(ACE_quikclot, 25)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 6)                //Hyfin Chest Seal
-            LOADOUT_ITEM(SOCOMD_nargloves, 10)
-            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
-            LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
-            LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
-            LOADOUT_ITEM(SOCOMD_fentanyl, 8)                //Fentanyl Ampoule
-            LOADOUT_ITEM(SOCOMD_ketamine, 8)                    //Ketamine Ampoule
-            LOADOUT_ITEM(SOCOMD_Apap, 10)                //Paracetamol
-            LOADOUT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol
-            LOADOUT_ITEM(ACE_bloodIV_500, 5)            //Blood
-            LOADOUT_ITEM(SOCOMD_notes, 0)
-            LOADOUT_ITEM(KAT_guedel, 9)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 4)            //Pulseoximeter
-            LOADOUT_ITEM(SOCOMD_NDC, 6)                    //14 Gauge needle
-            LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
-            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(kat_AED, 1)        //Defibrillator
+            LOADOUT_ITEM(ACE_packingBandage, 25)          //Remove
+            LOADOUT_ITEM(ACE_fieldDressing, 25)          //Israeli Bandage
+            LOADOUT_ITEM(ACE_epinephrine, 10)              //Remove
+            LOADOUT_ITEM(ACE_morphine, 15)                  //Remove
+            LOADOUT_ITEM(ACE_salineIV_500, 8)             //Remove
+            LOADOUT_ITEM(ACE_elasticBandage, 25)        //Elastic Bandage
+            LOADOUT_ITEM(ACE_quikclot, 30)                //Quikclot1
+            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet1
+            LOADOUT_ITEM(ACE_bloodIV_500, 0)            //Blood1
+            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit1
         };
     };
 };
@@ -626,35 +592,16 @@ class SOCOMD_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
-            LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
-            LOADOUT_ITEM(ACE_fieldDressing, 15)          //Israeli Bandage
-            LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
-            LOADOUT_ITEM(ACE_morphine, 0)                  //Remove
-            LOADOUT_ITEM(ACE_personalAidKit, 0)            //Remove
-            LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
-            LOADOUT_ITEM(ACE_elasticBandage, 5)            //Elastic Bandage
-            LOADOUT_ITEM(ACE_quikclot, 20)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 8)                //Hyfin Chest Seal
-            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
-            LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
-            LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
-            LOADOUT_ITEM(SOCOMD_fentanyl, 4)                //Fentanyl Ampoule
-            LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
-            LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
-            LOADOUT_ITEM(SOCOMD_nargloves, 5)
-            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
-            LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
-            LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(KAT_guedel, 0)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 3)            //Pulseoximeter
-            LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
-            LOADOUT_ITEM(SOCOMD_NDC, 8)                    //14 Gauge needle
-            LOADOUT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
-            LOADOUT_ITEM(kat_aed, 1)                    //Defibrillator
+            LOADOUT_ITEM(ACE_packingBandage, 25)          //Remove
+            LOADOUT_ITEM(ACE_fieldDressing, 25)          //Israeli Bandage
+            LOADOUT_ITEM(ACE_epinephrine, 10)              //Remove
+            LOADOUT_ITEM(ACE_morphine, 15)                  //Remove
+            LOADOUT_ITEM(ACE_salineIV_500, 8)             //Remove
+            LOADOUT_ITEM(ACE_elasticBandage, 25)        //Elastic Bandage
+            LOADOUT_ITEM(ACE_quikclot, 30)                //Quikclot1
+            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet1
+            LOADOUT_ITEM(ACE_bloodIV_500, 0)            //Blood1
+            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit1
             LOADOUT_ITEM(ACE_bodyBag, 2)                //Defibrillator
         };
     };
