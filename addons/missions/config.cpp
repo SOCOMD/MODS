@@ -74,6 +74,7 @@ class CfgMissions {
 
 //    Training
     // ADD(STRATISTRAIN,SOCOMD Training Stratis (Airfield),missions\SOCOMD_Training.Stratis)
+    ADD(STRATISTRAIN,SOCOMD Training Altis,missions\SOCOMD_Training.Altis)
 
     };
 };
