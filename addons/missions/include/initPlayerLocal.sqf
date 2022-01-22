@@ -1,3 +1,4 @@
+/*
 //FOB Marker Fading
 params[ "_player", "_didJIP" ];
 
@@ -43,4 +44,4 @@ if !( _didJIP ) then {
 waitUntil { time > 0 && { ctrlIDD ( uiNamespace getVariable "RscDiary" ) isEqualTo 12 } };
 
 [] call _fnc_applyMarkerFades;
-
+*/
