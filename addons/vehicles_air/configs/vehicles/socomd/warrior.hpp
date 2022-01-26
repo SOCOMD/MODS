@@ -169,14 +169,6 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     displayName="S-70A-9 Blackhawk (4/11)";
     icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
     picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
-    class Wheels : Wheels {
-        class Wheel_1:Wheel_1 {
-            maxBrakeTorque = 2800;
-        };
-        class Wheel_3:Wheel_3 {
-            maxBrakeTorque = 1400;
-        };
-    };
     
     class Components: Components
     {
@@ -201,14 +193,6 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
                 class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
                 class DatalinkSensorComponent: SensorTemplateDataLink{};
             };
-        };
-    };
-    class Wheels : Wheels {
-        class Wheel_1:Wheel_1 {
-            maxBrakeTorque = 2800;
-        };
-        class Wheel_3:Wheel_3 {
-            maxBrakeTorque = 1400;
         };
     };
     memoryPointDriverOptics = "slingcam";
