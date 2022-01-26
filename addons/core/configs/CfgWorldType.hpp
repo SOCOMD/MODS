@@ -50,7 +50,7 @@ class CfgWorldType {
         //class pja312; // Song Bin Tanh
         class jns_tria;
         class vt7; // Virolahti
-        clas UMB_Colombia;
+        class UMB_Colombia;
     };
 
     class Snow {
