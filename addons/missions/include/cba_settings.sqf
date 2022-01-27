@@ -144,6 +144,7 @@ ace_map_gestures_defaultLeadColor = [1,0.70967,0,1];
 force force ace_map_gestures_enabled = true;
 force force ace_map_gestures_interval = 0.03;
 force force ace_map_gestures_allowSpectator = true;
+force ace_map_gestures_allowCurator = true;
 force force ace_map_gestures_maxRange = 10;
 ace_map_gestures_nameTextColor = [0,0,0,1];
 

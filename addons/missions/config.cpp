@@ -23,7 +23,7 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs
-//    Count = 26
+//    Count = 3
 
     // ADD(ALRAYAKFOB,SOCOMD Al-Rayak FOB (Freedom),fobs\Al-Rayak_Freedom_FOB.pja310)
     // ADD(BYSTFOB,SOCOMD Bystrica FOB (Lordsburg),fobs\Bystrica_Lordsburg_FOB.Woodland_ACR)
@@ -44,30 +44,34 @@ class CfgMissions {
     // ADD(TRIAFOB,SOCOMD Tria FOB,fobs\Tria_FOB.jns_tria)
     // ADD(NZWFOB,SOCOMD NZiwasogo FOB,fobs\NZiwasogo_Trigger_FOB.pja305)
     ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
-    
-    //ADD(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.Altis)
+    ADD(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.Altis)
     //ADD(NOVUSKOOKABURRAROSCHEFOB,SOCOMD Rosche FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.WL_Rosche)
     //ADD(NOVUSRUSSELMALDENFOB,SOCOMD Malden FOB (Novus-Russel),fobs\FOB_Novus-Russell.Malden)
     //ADD(NOVUSSOULTANOAFOB,SOCOMD Tanoa FOB (Novus-Soul),fobs\FOB_Soul.Tanoa)
     //ADD(NOVUSZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Novus-Zanzibar),fobs\FOB_Novus-Zanzibar.takistan)
-    //ADD(NOVUSRAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Novus-Ragnarok),fobs\FOB_Novus-Ragnarok.lythium)
+    ADD(NOVUSRAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Novus-Ragnarok),fobs\FOB_Novus-Ragnarok.lythium)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
-//    Count = 14
+//    Count = 13
 
-    // ADD(ALRAYAKLHD,SOCOMD Al-Rayak LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pja310)
     ADD(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Altis)
-    // ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Chernarus)
-    // ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Sara)
+    ADD(CHERNWINTERLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Chernarus_Winter)
+    ADD(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.cup_chernarus_A3)
+    ADD(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.sara)
+    ADD(SAHRUNITEDLHD,SOCOMD United Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.sara_dbe1)
     // ADD(STRATLHD,SOCOMD Stratis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Stratis)
-    // ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Bozcaada)
-    // ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Malden)
+    ADD(BOZLHD,SOCOMD Bozcaada LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Bozcaada)
+    ADD(MALDEN2035LHD,SOCOMD Malden 2035 LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Malden)
     // ADD(FAPOVOLHD,SOCOMD Fapovo LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.fapovo)
-    // ADD(PULAULHD,SOCOMD Pulau LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pulau)
+    ADD(PULAULHD,SOCOMD Pulau LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pulau)
     // ADD(LAGHISOLALHD,SOCOMD Laghisola LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.egl_laghisola)
-    // ADD(VIROLAHTILHD,SOCOMD Virolahti LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.vt7)
+    ADD(VIROLAHTILHD,SOCOMD Virolahti LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.vt7)
     // ADD(NZWLHD,SOCOMD NZiwasogo LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pja305)
+    ADD(SUURSAARIVLHD,SOCOMD Suursaariv LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.tem_suursaariv)
+    ADD(COLOMBIALHD,SOCOMD Colombia LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.UMB_Colombia)
+    ADD(ALRAYAKLHD,SOCOMD Al Rayak LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.pja310)
+    ADD(SCOTLANDLHD,SOCOMD Kintyre LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.rof_mok)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    Missions
