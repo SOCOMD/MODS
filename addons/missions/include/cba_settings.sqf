@@ -288,12 +288,12 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-ace_nightvision_aimDownSightsBlur = 0.3;
+force force ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
-ace_nightvision_effectScaling = 0.4;
-ace_nightvision_fogScaling = 0.1;
-ace_nightvision_noiseScaling = 0.1;
-ace_nightvision_shutterEffects = true;
+force force ace_nightvision_effectScaling = 0.4;
+force force ace_nightvision_fogScaling = 0.1;
+force force ace_nightvision_noiseScaling = 0.05;
+force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
 force force ace_overheating_displayTextOnJam = false;
@@ -633,7 +633,7 @@ force force lambs_main_radioWest = 1000;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['UAV_Turret_Markers', 'gcam', 'ReducedHazeMod', 'A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'compositions_a3', 'ZECCUP', 'PZC', 'Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['L_Immerse_Immerse_main','L_Immerse_Immerse_sys','mrb_a3_vehiclevisibility','mrb_a3_airvisibility','mrb_a3_seavesselvisibility','UAV_Turret_Markers', 'gcam', 'ReducedHazeMod', 'A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'compositions_a3', 'ZECCUP', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;

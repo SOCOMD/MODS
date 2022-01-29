@@ -47,45 +47,38 @@ hasPeltorsOn = 0;
 
 _presetId = "SOCOMD_PRESET";
 
-["ACRE_PRC152", "default", _presetId] call acre_api_fnc_copyPreset;
-PROGRAM_CHANNEL("ACRE_PRC152", 1,  "PHANTOM-NET", 55.5, 55.5)
-PROGRAM_CHANNEL("ACRE_PRC152", 2,  "RAIDER-NET", 60.9, 60.9)
-PROGRAM_CHANNEL("ACRE_PRC152", 3,  "FIRES-NET", 75.3, 75.3)
-PROGRAM_CHANNEL("ACRE_PRC152", 4,  "6AVN-NET", 81.4, 81.4)
-PROGRAM_CHANNEL("ACRE_PRC152", 5,  "AIR-NET-1", 83.1, 83.1)
-PROGRAM_CHANNEL("ACRE_PRC152", 6,  "AIR-NET-2", 83.8, 83.8)
-PROGRAM_CHANNEL("ACRE_PRC152", 7,  "TASKING-NET-1", 84.5, 84.5)
-PROGRAM_CHANNEL("ACRE_PRC152", 8,  "TASKING-NET-2", 85.2, 85.2)
-PROGRAM_CHANNEL("ACRE_PRC152", 9,  "TASKING-NET-3", 85.9, 85.9)
-PROGRAM_CHANNEL("ACRE_PRC152", 10, "TASKING-NET-4", 86.6, 86.6)
-["ACRE_PRC152", _presetId] call acre_api_fnc_setPreset;
 
-["ACRE_PRC117F", "default", _presetId] call acre_api_fnc_copyPreset;
-PROGRAM_CHANNEL("ACRE_PRC117F", 1,  "HQ-NET", 31.9, 31.9)
-PROGRAM_CHANNEL("ACRE_PRC117F", 2,  "PHANTOM-NET", 55.5, 55.5)
-PROGRAM_CHANNEL("ACRE_PRC117F", 3,  "RAIDER-NET", 60.9, 60.9)
-PROGRAM_CHANNEL("ACRE_PRC117F", 4,  "FIRES-NET", 75.3, 75.3)
-PROGRAM_CHANNEL("ACRE_PRC117F", 5,  "6AVN-NET", 81.4, 81.4)
-PROGRAM_CHANNEL("ACRE_PRC117F", 6,  "AIR-NET-1", 83.1, 83.1)
-PROGRAM_CHANNEL("ACRE_PRC117F", 7,  "AIR-NET-2", 83.8, 83.8)
-PROGRAM_CHANNEL("ACRE_PRC117F", 8,  "TASKING-NET-1", 84.5, 84.5)
-PROGRAM_CHANNEL("ACRE_PRC117F", 9,  "TASKING-NET-2", 85.2, 85.2)
-PROGRAM_CHANNEL("ACRE_PRC117F", 10, "TASKING-NET-3", 85.9, 85.9)
-PROGRAM_CHANNEL("ACRE_PRC117F", 11, "TASKING-NET-4", 86.6, 86.6)
-["ACRE_PRC117F", _presetId] call acre_api_fnc_setPreset;
+[{
+    // Sets ACRE2 channel names
+    {
+        [_x, "default", "SOCOMD_PRESET"] call acre_api_fnc_copyPreset;
+        [_x, "SOCOMD_PRESET", 1, "label", "PHANTOM-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 2, "label", "RAIDER-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 3, "label", "FIRES-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 4, "label", "6AVN-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 5, "label", "AIR-NET-1"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 6, "label", "AIR-NET-2"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 7, "label", "TASKING-NET-1"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 8, "label", "TASKING-NET-2"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 9, "label", "TASKING-NET-3"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 10, "label", "TASKING-NET-4"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 11, "label", "HQ-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET"] call acre_api_fnc_setPreset;
+    } forEach ["ACRE_PRC152", "ACRE_PRC117F"];
 
-["e", "English"] call acre_api_fnc_babelAddLanguageType;
-["f", "Foreign"] call acre_api_fnc_babelAddLanguageType;
-["z", "Zeus"] call acre_api_fnc_babelAddLanguageType;
+    ["e", "English"] call acre_api_fnc_babelAddLanguageType;
+    ["f", "Foreign"] call acre_api_fnc_babelAddLanguageType;
+    ["z", "Zeus"] call acre_api_fnc_babelAddLanguageType;
 
-_whitelist = [
-    "SOCOMD_Homestead"
-];
+    _whitelist = [
+        "SOCOMD_Homestead"
+    ];
 
-_languagesPlayerSpeaks = ["e"];
+    _languagesPlayerSpeaks = ["e"];
 
-_type = typeOf player;
-if(_type in _whitelist) then {
-    _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
-};
-_languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
+    _type = typeOf player;
+    if(_type in _whitelist) then {
+        _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
+    };
+    _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
+}] remoteExec ["call",0];
