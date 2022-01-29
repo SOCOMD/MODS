@@ -3,7 +3,7 @@ enableRadio false;
 enableSaving [false, false];
 
 //Using ACRE2
-[] execVM "include\acre2_compat.sqf";
+//[] execVM "include\acre2_compat.sqf";
 
 missionNamespace setVariable ["SOCOMD_InitComplete", 1];
 
