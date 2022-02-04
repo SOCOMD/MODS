@@ -457,14 +457,13 @@ class CAManBase : Man {
                 exceptions[] = {"isNotInside", "isNotSitting"};
             };
         };
-        class SOCOMD_Gcam {
-            displayName = "Enter Gcam";
-            condition = "([_player] call socomd_core_fnc_ActionCondition_GcamLoaded) and (alive _player)";
-            showDisabled = 0;
-            exceptions[] = {"isNotInside", "isNotSitting"};
-            statement = "[_player] call socomd_core_fnc_Action_gcamxecVM;";
-
-        };
+        //class SOCOMD_Gcam {
+        //    displayName = "Enter Gcam";
+        //    condition = "([_player] call socomd_core_fnc_ActionCondition_GcamLoaded) and (alive _player)";
+        //    showDisabled = 0;
+        //    exceptions[] = {"isNotInside", "isNotSitting"};
+        //    statement = "[_player] call socomd_core_fnc_Action_gcamxecVM;";
+        //};
     };
     class ACE_Actions{
         class ACE_Head{

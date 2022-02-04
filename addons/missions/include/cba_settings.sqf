@@ -482,16 +482,6 @@ acex_volume_reduction = 5;
 acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
-// ACRE2
-force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = true;
-force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = false;
-force force acre_sys_core_revealToAI = 1;
-force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_signal_signalModel = 0;
-force force acre_sys_zeus_zeusDefaultVoiceSource = true;
-
 // CBA Network
 cba_network_loadoutValidation = 0;
 
@@ -633,7 +623,7 @@ force force lambs_main_radioWest = 1000;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['L_Immerse_Immerse_main','L_Immerse_Immerse_sys','mrb_a3_vehiclevisibility','mrb_a3_airvisibility','mrb_a3_seavesselvisibility','UAV_Turret_Markers', 'gcam', 'ReducedHazeMod', 'A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'compositions_a3', 'ZECCUP', 'PZC', 'Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['L_Immerse_Immerse_main','L_Immerse_Immerse_sys','mrb_a3_vehiclevisibility','mrb_a3_airvisibility','mrb_a3_seavesselvisibility','UAV_Turret_Markers','ReducedHazeMod', 'A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'compositions_a3', 'ZECCUP', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -648,10 +638,6 @@ force force simplesuppress_suppress_overlayOpacity = 0.96;
 force force simplesuppress_suppress_overlayTexture = 1;
 force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
-
-// SOCOMD Medical
-force force SOCOMD_medical_persistantRevive = true;
-force force SOCOMD_medical_persistantReviveTimer = 330;
 
 // GRAD Civs
 force grad_civs_activities_panicCooldown = "[15, 120, 240]";
@@ -692,3 +678,20 @@ force grad_civs_transit_vehicles = "[]";
 force force grad_civs_voyage_maxCivsInVehicles = 4;
 force grad_civs_voyage_maxTravelRadius = 3000;
 force force grad_civs_voyage_spawnDistancesInVehicles = "[1500, 3000]";
+
+// !! KEEP BELOW AT BOTTOM OF FILE !!
+
+// ACRE2
+force force acre_sys_core_automaticAntennaDirection = true;
+force force acre_sys_core_fullDuplex = true;
+force force acre_sys_core_ignoreAntennaDirection = true;
+force force acre_sys_core_interference = false;
+force force acre_sys_core_revealToAI = 1;
+force force acre_sys_core_terrainLoss = 0;
+force force acre_sys_signal_signalModel = 0;
+force force acre_sys_zeus_zeusDefaultVoiceSource = true;
+
+// SOCOMD Medical
+force force SOCOMD_medical_persistantRevive = true;
+force force SOCOMD_medical_persistantReviveTimer = 330;
+ 

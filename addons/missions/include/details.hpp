@@ -9,7 +9,7 @@ class Header {
     // Shouldn't change anything here. 
     gameType = "Coop";
     minPlayers = 1;
-    maxPlayers = 110;
+    maxPlayers = 100;
 
 };
 
