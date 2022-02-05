@@ -756,7 +756,7 @@ class SOCOMD_Logistician {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps             = "ItemcTab";
+    gps             = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
@@ -780,6 +780,7 @@ class SOCOMD_Logistician {
             LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+            LOADOUT_ITEM(ItemcTab,1)
         };
     };
 
@@ -803,7 +804,7 @@ class SOCOMD_Pilot {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";
-    gps             = "ItemcTab";
+    gps             = "";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
@@ -832,6 +833,7 @@ class SOCOMD_Pilot {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC117F, 1)
+            LOADOUT_ITEM(ItemcTab,1)
         };
     };
 };
