@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=174;
+		nextID=182;
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=17;
 	};
 	class Camera
 	{
-		pos[]={6839.6255,181.90839,6131.7983};
-		dir[]={-0.68348074,-0.38429487,0.62062281};
-		up[]={-0.28450525,0.92321092,0.25834003};
-		aside[]={0.67224497,-7.7998266e-009,0.74033082};
+		pos[]={6901.3521,227.25687,6059.1958};
+		dir[]={0.041290119,-0.54174364,0.83953089};
+		up[]={0.026611924,0.84054261,0.54109043};
+		aside[]={0.9987939,4.2957254e-008,-0.049123157};
 	};
 };
 binarizationWanted=0;
@@ -53,13 +53,16 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"socomd_vehicles_land",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_Enoch_Military_Camps"
+	"A3_Structures_F_Enoch_Military_Camps",
+	"ace_spectator",
+	"A3_Characters_F",
+	"UK3CB_Factions_Common_Editor"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=24;
 		class Item0
 		{
 			className="Desert";
@@ -194,6 +197,27 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item21
+		{
+			className="ace_spectator";
+			name="ACE3 - Spectator";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item22
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="UK3CB_Factions_Common";
+			name="3CB Factions - Common";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
 	};
 };
 dlcs[]=
@@ -201,7 +225,8 @@ dlcs[]=
 	"USP_GearUniforms",
 	"Heli",
 	"RHS_USAF",
-	"Orange"
+	"Orange",
+	"UK3CB_Factions"
 };
 randomSeed=12707719;
 class ScenarioData
@@ -298,7 +323,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			dataType="Comment";
@@ -5227,7 +5252,6 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{HALOPOLE_1 addAction [""<t color='#ff9900'>HALO jump</t>"", {call SSL_main_fnc_handleMapOpen;}];};";
 								name="HALOPOLE_1";
 							};
 							id=129;
@@ -6874,6 +6898,283 @@ class Mission
 			};
 			id=173;
 			type="Land_MedicalTent_01_NATO_generic_open_F";
+		};
+		class Item13
+		{
+			dataType="Layer";
+			name="COMPONENTS TO INCLUDE IN A FOB";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="FOB_ESSENTIALS";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6929.8218,140.27902,6172.9619};
+								angles[]={0,0.4893446,0};
+							};
+							init="call{_condition = { " \n "    true; " \n "}; " \n "_statement = { " \n "    [true] call pabst_fnc_radioFinder_action; " \n "}; " \n "_action = [""Open RDF"",""Radio Direction Finder"",""pabst\RDF.jpg"",_statement,_condition] call ace_interact_menu_fnc_createAction; " \n "[(typeOf this), 1, [""ACE_SelfActions""], _action] call ace_interact_menu_fnc_addActionToClass;}";
+							isPlayable=1;
+							id=176;
+							type="ace_spectator_virtual";
+							atlOffset=0.47799683;
+						};
+						class Item1
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6928.8813,139.93111,6171.1963};
+								angles[]={0,0.4893446,0};
+							};
+							init="call{_condition = { " \n "    true; " \n "}; " \n "_statement = { " \n "    [true] call pabst_fnc_radioFinder_action; " \n "}; " \n "_action = [""Open RDF"",""Radio Direction Finder"",""pabst\RDF.jpg"",_statement,_condition] call ace_interact_menu_fnc_createAction; " \n "[(typeOf this), 1, [""ACE_SelfActions""], _action] call ace_interact_menu_fnc_addActionToClass;}";
+							isPlayable=1;
+							id=177;
+							type="ace_spectator_virtual";
+							atlOffset=-0.022003174;
+						};
+						class Item2
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6929.3516,140.12706,6172.0791};
+								angles[]={0,0.4893446,0};
+							};
+							init="call{_condition = { " \n "    true; " \n "}; " \n "_statement = { " \n "    [true] call pabst_fnc_radioFinder_action; " \n "}; " \n "_action = [""Open RDF"",""Radio Direction Finder"",""pabst\RDF.jpg"",_statement,_condition] call ace_interact_menu_fnc_createAction; " \n "[(typeOf this), 1, [""ACE_SelfActions""], _action] call ace_interact_menu_fnc_addActionToClass;}";
+							isPlayable=1;
+							id=178;
+							type="ace_spectator_virtual";
+							atlOffset=0.22799683;
+						};
+						class Item3
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6928.939,140.46153,6173.4316};
+								angles[]={0,0.4893446,0};
+							};
+							name="HC1";
+							isPlayable=1;
+							id=179;
+							type="HeadlessClient_F";
+							atlOffset=0.47799683;
+						};
+						class Item4
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6928.4688,140.34334,6172.5488};
+								angles[]={0,0.4893446,0};
+							};
+							name="HC2";
+							isPlayable=1;
+							id=180;
+							type="HeadlessClient_F";
+							atlOffset=0.22799683;
+						};
+					};
+					id=175;
+					atlOffset=0.27857971;
+				};
+			};
+			id=174;
+			atlOffset=0.27857971;
+		};
+		class Item14
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6923.0698,141.44234,6175.7075};
+				angles[]={0,0.4893446,0};
+			};
+			id=181;
+			type="UK3CB_Factions_Loadout";
+			atlOffset=0.22799683;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_reducedMedicalSupplies";
+					expression="_this setVariable ['UK3CB_Factions_reducedMedicalSupplies',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_loadout_quantity";
+					expression="_this setVariable ['UK3CB_Factions_loadout_quantity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=100;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_addcTab";
+					expression="_this setVariable ['UK3CB_Factions_addcTab',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_remove_night_equipment";
+					expression="_this setVariable ['UK3CB_Factions_remove_night_equipment',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_enable_loadouts";
+					expression="_this setVariable ['UK3CB_Factions_enable_loadouts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_enable_on_spawn";
+					expression="_this setVariable ['UK3CB_Factions_enable_on_spawn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_removeNVG";
+					expression="_this setVariable ['UK3CB_Factions_removeNVG',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_enable_vehicle_randomisation";
+					expression="_this setVariable ['UK3CB_Factions_enable_vehicle_randomisation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_removeGPS";
+					expression="_this setVariable ['UK3CB_Factions_removeGPS',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_removeFrags";
+					expression="_this setVariable ['UK3CB_Factions_removeFrags',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_enable_on_respawn";
+					expression="_this setVariable ['UK3CB_Factions_enable_on_respawn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_enable_randomisation";
+					expression="_this setVariable ['UK3CB_Factions_enable_randomisation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="UK3CB_Factions_Loadout_UK3CB_Factions_replaceScopes";
+					expression="_this setVariable ['UK3CB_Factions_replaceScopes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=13;
+			};
 		};
 	};
 };

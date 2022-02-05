@@ -23,7 +23,7 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    FOBs
-//    Count = 3
+//    Count = 17
 
     // ADD(BYSTFOB,SOCOMD Bystrica FOB (Lordsburg),fobs\Bystrica_Lordsburg_FOB.Woodland_ACR)
     // ADD(CHERNFOB,SOCOMD Chernarus FOB (Joint Fourth),fobs\Cherno_Joint_Fourth_FOB.Chernarus)
@@ -39,8 +39,9 @@ class CfgMissions {
     //ADD(NOVUSRUSSELMALDENFOB,SOCOMD Malden FOB (Novus-Russel),fobs\FOB_Novus-Russell.Malden)
     //ADD(NOVUSSOULTANOAFOB,SOCOMD Tanoa FOB (Novus-Soul),fobs\FOB_Soul.Tanoa)
     //ADD(NOVUSZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Novus-Zanzibar),fobs\FOB_Novus-Zanzibar.takistan)
-    ADD(NOVUSRAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Novus-Ragnarok),fobs\FOB_Novus-Ragnarok.lythium)
-    ADD(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus-Kookaburra),fobs\FOB_Novus-Kookaburra.Altis)
+    ADD(NOVUSRAGNAROKLYTHIUMFOB,SOCOMD Lythium FOB (Novus Ragnarok),fobs\FOB_Novus_Ragnarok.lythium)
+    ADD(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus Kookaburra),fobs\FOB_Novus_Kookaburra.Altis)
+    ADD(NOVUSCHERNOFOB,SOCOMD Chernarus FOB (Novus Cherno),fobs\FOB_Novus_Cherno.cup_chernarus_A3)
     ADD(BASECAMPFOB,SOCOMD Fapovo FOB (Base Camp),fobs\FOB_BaseCamp.fapovo)
     ADD(BRAUTIFOB,SOCOMD Vinjesvingen FOB (Brauti),fobs\FOB_Brauti.tem_vinjesvingenc)
     ADD(HEADFOB,SOCOMD Bozcaada FOB (Head),fobs\FOB_Head.bozcaada)
@@ -54,7 +55,7 @@ class CfgMissions {
     ADD(RIVERFOB,SOCOMD Bozoum FOB (River),fobs\FOB_River.bozoum)
     ADD(RUNWAYFOB,SOCOMD Al Rayak FOB (Runway),fobs\FOB_Runway.pja310)
     ADD(VALLEYFOB,SOCOMD Zargabad FOB (Valley),fobs\FOB_Valley.zargabad)
-    ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\FOB_SOCOMD_Essentials.VR)
+    ADD(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\05_02_2022_FOB_SOCOMD_Essentials.VR)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
