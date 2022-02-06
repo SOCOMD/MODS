@@ -212,7 +212,7 @@ class SOCOMD_FIREFLY_A : RHS_MELB_MH6M {
     };
     hiddenSelectionsTextures[] = {
         "\z\socomd\addons\data\ah6\ah6_hull_co.paa",
-        "melb\data\decals\sn\blank_ca.paa"
+        "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
     };
     magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
     weapons[] = {"CMFlareLauncher"};
@@ -370,7 +370,7 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
     hiddenSelections[] = {"camo1","d_sn"};
     hiddenSelectionsTextures[] = {
         "\z\socomd\addons\data\ah6\ah6_hull_co.paa",
-        "melb\data\decals\sn\blank_ca.paa"
+        "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
     };
     armor = 30;
     armorStructural = 4;
