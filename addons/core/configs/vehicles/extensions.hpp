@@ -88,12 +88,6 @@ class CAManBase : Man {
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
                 
-                //Wetsuit
-                QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit,"Survival Fatigues",SOCOMD_Uniform_Wetsuit,SOCOMD_Uniform_Survival)
-                QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Survival,"Wetsuit",SOCOMD_Uniform_Survival,SOCOMD_Uniform_Wetsuit)
-
-                QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_Wetsuit_AMCU,"Survival Fatigues",SOCOMD_Uniform_Wetsuit_AMCU,SOCOMD_Uniform_AMCU_Survival)
-                QSTORE_ACTION_REPLACE_UNIFORM(SOCOMD_Uniform_AMCU_Survival,"Wetsuit",SOCOMD_Uniform_AMCU_Survival,SOCOMD_Uniform_Wetsuit_AMCU)
             };
     
         
