@@ -1,9 +1,6 @@
 
     class Uniform_Base;
-class U_B_CombatUniform_mcam : Uniform_Base
-{
-    class ItemInfo;
-};
+class U_B_CombatUniform_mcam;
 
 class ADFU_G3_MC;
 class SOCOMD_Uniform_SleevesDown : ADFU_G3_MC {
