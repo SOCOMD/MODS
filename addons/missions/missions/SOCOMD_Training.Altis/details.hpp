@@ -17,9 +17,8 @@ maxPlayers = 88;
 
 };
 
-/*
-    ----- Mission Selection Screen -----
-*/
+
+//    ----- Mission Selection Screen -----
 
 // Mission name displayed in the mission selection menu.
 briefingName = "SOCOMD Altis Training Map";
@@ -32,9 +31,7 @@ overviewPicture = "images\intro.paa";
 overviewText = "SOCOMD's official training map. Contains areas specific for CBTC, Medical, Support and Air based training.";
 
 
-/*
-    ----- Mission Loading Screen -----
-*/
+//    ----- Mission Loading Screen -----
 
 // String (usually mission name) shown during mission loading.
 // The string is shown in a slightly larger font above the loadScreen.
