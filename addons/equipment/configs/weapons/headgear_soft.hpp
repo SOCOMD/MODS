@@ -6,9 +6,7 @@ class SOCOMD_BERET : AU_03_780000_v1 {
     displayName = "SOCOMD Beret";
 };
 // Boonie hat remove armour values
-class H_HelmetB:ItemCore{
-    class ItemInfo;
-};
+class H_HelmetB;
 
 class H_Booniehat_khk:H_HelmetB{
     rgoc_canAcceptNVG = 0;

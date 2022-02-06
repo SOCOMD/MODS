@@ -1,7 +1,5 @@
 
-    class Default;
-    class ItemCore;
-    class ItemInfo;
+
 
 class CfgWeapons {
     
