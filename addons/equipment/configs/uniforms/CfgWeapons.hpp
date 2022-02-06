@@ -4,3 +4,4 @@
 #include "weapons\softshell.hpp"
 #include "weapons\overwhite.hpp"
 #include "weapons\pcu.hpp"
+#include "weapons\wetsuits.hpp"
