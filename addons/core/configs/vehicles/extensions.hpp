@@ -77,13 +77,13 @@ class CAManBase : Man {
 
                 class doff_Diving_Gear { 
                     displayName ="Change out of diving gear";
-                    condition = "!(_player getVariable ['SOCOMD_stashedGear', false])";
+                    condition = "!(_player getVariable ['SOCOMD_hasStashedGear', false])";
                     statement = "[_player,'Stashing diving gear', true] call socomd_core_fnc_Action_toggleStashDivingGear";
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
                 class don_Diving_Gear { 
                     displayName ="Put On Diving Gear";
-                    condition = "(_player getVariable ['SOCOMD_stashedGear', false]) and ((backpack _player) == 'SOCOMD_drybag_blk')";
+                    condition = "(_player getVariable ['SOCOMD_hasStashedGear', false]) and ((backpack _player) == 'SOCOMD_drybag_blk')";
                     statement = "[_player,'Putting on diving gear', false] call socomd_core_fnc_Action_toggleStashDivingGear";
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };

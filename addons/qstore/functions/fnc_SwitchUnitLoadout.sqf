@@ -184,6 +184,7 @@ _unitLoadout set [9, _equipmentLoadout];
 
 _player setVariable ["SOCOMD_stashedGear", false];
 _player setVariable ["SOCOMD_hasDivingGear", false];
+_player setVariable ["SOCOMD_hasStashedGear",  false];
 [_player, _unitLoadout] call FUNC(SetUnitLoadout);
 [_player, _loadoutId,_unitConfig] call FUNC(UpdateArsenalContent);
 
