@@ -95,52 +95,39 @@ class acwp_airframe_amcu:acwp_airframe_mc
 
 class H_PilotHelmetHeli_B;
 class H_PilotHelmetHeli_O : H_PilotHelmetHeli_B {
-    class ItemInfo;
     HEARING_PROTECTION_VICCREW
 };
 
 class H_CrewHelmetHeli_B;
 class H_CrewHelmetHeli_O : H_CrewHelmetHeli_B {
-    class ItemInfo;
     HEARING_PROTECTION_VICCREW
 };
 
 class H_HelmetCrew_B;
 class H_HelmetCrew_I :H_HelmetCrew_B {
-    class ItemInfo;
     HEARING_PROTECTION_VICCREW
 };
-class ADFU_H_OpsCore_02 : ItemCore {
-    class ItemInfo;
-};
+class ADFU_H_OpsCore_02;
 
 class ADFU_H_OpsCore_03 : ItemCore {
-    class ItemInfo;
     HEARING_PROTECTION_PELTOR
 };
 class ADFU_H_OpsCore_08 : ItemCore {
-    class ItemInfo;
     HEARING_PROTECTION_PELTOR
 };
 
 class ADFU_H_Airframe_Cover_03 : ItemCore {
-    class ItemInfo;
     HEARING_PROTECTION_PELTOR
 };
 
 class ADFU_H_Airframe_Cover_10 : ItemCore {
-    class ItemInfo;
     HEARING_PROTECTION_PELTOR
 };
 
 
-class ADFU_H_Airframe_Cover_05 : ItemCore {
-    class ItemInfo;
-};
+class ADFU_H_Airframe_Cover_05;
 
-class ADFU_H_Airframe_Cover_02 : ItemCore {
-    class ItemInfo;
-};
+class ADFU_H_Airframe_Cover_02;
 
 ////////////////////////////////////////////////////////////////////////////////
 //ADFU Helmets
@@ -453,8 +440,6 @@ class ADFU_H_OpsCore_08_MC: ADFU_H_OpsCore_08{
 
 //////////////////////////////////////////////////////////////////////
 // SOLS Overrides
-class Item_Base_F;
-class ItemInfo;
 class rhsusf_opscore_01;
 class rhsusf_hgu56p : rhsusf_opscore_01 {
     rgoc_canAcceptNVG = 1;

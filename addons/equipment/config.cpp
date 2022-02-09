@@ -13,6 +13,10 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+class Default;
+class ItemCore;
+class ItemInfo;
+class Item_Base_F;
 
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"

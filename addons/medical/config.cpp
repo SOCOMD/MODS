@@ -41,7 +41,10 @@ class CfgPatches {
         authorUrl = "https://socomd.com";
         VERSION_CONFIG;
     };
-};
+};  
+class ItemCore;
+class ACE_ItemCore;
+class CBA_MiscItem_ItemInfo;
 
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"

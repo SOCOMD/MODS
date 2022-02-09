@@ -96,14 +96,14 @@ class S_ILL_base: acc_flashlight {
             flareMaxDistance = 20;
             scale[] = {0};
             coneFadeCoef = 5;
-            intensity = 500;
+            intensity = 1500;
             irLight = 1;
 
             class Attenuation {
-                constant = 0.5;
-                linear = 0.1;
-                quadratic = 0.2;
-                start = 0;
+                start=0.5;
+                constant=0;
+                linear=0;
+                quadratic=1;
                 hardLimitStart = 27;
                 hardLimitEnd = 2500;
             };
@@ -139,13 +139,13 @@ class S_IR_ILL_base: acc_flashlight {
             flareMaxDistance = 20;
             scale[] = {0};
             coneFadeCoef = 8;
-            intensity = 500;
+            intensity = 1500;
             irLight = 1;
             class Attenuation {
-                constant = 0.5;
-                linear = 0.1;
-                quadratic = 0.2;
-                start = 0;
+                start=0.5;
+                constant=0;
+                linear=0;
+                quadratic=1;
                 hardLimitStart = 27;
                 hardLimitEnd = 1500;
             };
