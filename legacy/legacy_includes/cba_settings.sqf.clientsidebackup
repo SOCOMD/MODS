@@ -135,7 +135,7 @@ force force ace_map_mapGlow = true;
 force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
 force force ace_map_mapShake = true;
-force force ace_map_mapShowCursorCoordinates = false;
+ace_map_mapShowCursorCoordinates = false;
 force force ace_markers_moveRestriction = 0;
 
 // ACE Map Gestures
@@ -288,9 +288,9 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.3;
+ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.4;
+ace_nightvision_effectScaling = 0.4;
 force force ace_nightvision_fogScaling = 0.1;
 force force ace_nightvision_noiseScaling = 0.05;
 force force ace_nightvision_shutterEffects = true;
@@ -413,6 +413,14 @@ ace_ui_zeroing = false;
 force force ace_vehiclelock_defaultLockpickStrength = 10;
 force force ace_vehiclelock_lockVehicleInventory = false;
 force force ace_vehiclelock_vehicleStartingLockState = -1;
+
+// ACE View Distance Limiter
+//force force ace_viewdistance_enabled = true;
+//force force ace_viewdistance_limitViewDistance = 5000;
+//ace_viewdistance_objectViewDistanceCoeff = 6;
+//ace_viewdistance_viewDistanceAirVehicle = 8;
+//ace_viewdistance_viewDistanceLandVehicle = 8;
+//ace_viewdistance_viewDistanceOnFoot = 4;
 
 // ACE Weapons
 force force ace_common_persistentLaserEnabled = true;
@@ -615,7 +623,7 @@ force force lambs_main_radioWest = 1000;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP']";
+force force ace_common_checkPBOsWhitelist = "['L_Immerse_Immerse_main','L_Immerse_Immerse_sys','mrb_a3_vehiclevisibility','mrb_a3_airvisibility','mrb_a3_seavesselvisibility','UAV_Turret_Markers','ReducedHazeMod', 'A3TI', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_ES_ES_main', 'L_ES_ES_sounds', 'L_ES_ES_sys', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'compositions_a3', 'ZECCUP', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -645,9 +653,9 @@ force grad_civs_diagnostics_showPinkArrows = false;
 force grad_civs_gta_enabled = false;
 force grad_civs_lifecycle_civClasses = "C_Man_casual_4_F, C_Man_casual_6_F, C_Man_casual_5_v2_F, C_Man_casual_9_F, C_man_polo_2_F, C_man_polo_1_F, C_Man_ConstructionWorker_01_Black_F, C_man_hunter_1_F, C_Man_Messenger_01_F, C_man_w_worker_F, C_man_1, C_Man_smart_casual_1_F, C_man_sport_1_F_tanoan, C_man_sport_2_F_tanoan, C_Man_casual_5_F_tanoan, C_Man_casual_3_F_tanoan";
 force grad_civs_lifecycle_cleanupCorpses = false;
-force force grad_civs_lifecycle_minCivOwnerFps = 35;
+force force grad_civs_lifecycle_minCivOwnerFps = 30;
 force force grad_civs_lifecycle_minCivUpdateTime = 4;
-force force grad_civs_lifecycle_minServerFps = 35;
+force force grad_civs_lifecycle_minServerFps = 30;
 force grad_civs_lifecycle_smMultiplicator = 1;
 force force grad_civs_lifecycle_spawnOnlyWithPlayers = true;
 force grad_civs_loadout_backpackProbability = 0.5;
@@ -658,14 +666,14 @@ force grad_civs_loadout_goggles = "[]";
 force grad_civs_loadout_headgear = "[]";
 force force grad_civs_main_enabled = true;
 force force grad_civs_mimikry_enabled = false;
-force force grad_civs_patrol_initialGroupSize = 2;
-force force grad_civs_patrol_maxCivsOnFoot = 8;
+force force grad_civs_patrol_initialGroupSize = 3;
+force force grad_civs_patrol_maxCivsOnFoot = 10;
 force force grad_civs_patrol_spawnDistancesOnFoot = "[1000, 3000]";
 force grad_civs_residents_chatTime = 20;
 force force grad_civs_residents_maxCivsResidents = 15;
 force grad_civs_residents_meetNeighborCooldown = 150;
 force force grad_civs_residents_spawnDistancesResidents = "[500,  1500]";
-force force grad_civs_transit_maxVehiclesInTransit = 4;
+force force grad_civs_transit_maxVehiclesInTransit = 5;
 force grad_civs_transit_vehicles = "[]";
 force force grad_civs_voyage_maxCivsInVehicles = 4;
 force grad_civs_voyage_maxTravelRadius = 3000;
