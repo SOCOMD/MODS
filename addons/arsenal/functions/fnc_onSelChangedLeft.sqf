@@ -290,7 +290,7 @@ switch (GVAR(currentLeftPanel)) do {
         ACE_Player setVariable  ["socomd_arsenal_nvg", _item];
         _nvgArray = ["SOCOMD_NVG","SOCOMD_NVG_GR","SOCOMD_NVG_GPNVG_WP_black","SOCOMD_NVG_GPNVG_GR_black" , "SOCOMD_NVG_AM", "SOCOMD_NVG_B", "SOCOMD_NVG_GR_B", "SOCOMD_NVG_AM_B", "SOCOMD_NVG_C", "SOCOMD_NVG_GR_C", "SOCOMD_NVG_AM_C", "SOCOMD_NVG_GPNVG_WP_black", "SOCOMD_NVG_GPNVG_GR_black"];
         _unitLoadout = getUnitLoadout GVAR(center);
-        if ((GVAR(currentItems) select 8) != _item) then {
+        if ((GVAR(currentItems) select 8) != "") then {
             // If item is attached, just changed the attached item
             if ((GVAR(currentItems) select 8) in _nvgArray) then {
                 ACE_Player linkItem _item;
