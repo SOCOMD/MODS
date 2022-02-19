@@ -116,11 +116,16 @@ if ( typeName _isPrevInit == "ARRAY") then {
 };
 
 private _openedEh = ["socomd_arsenal_displayOpened", {
-    ACE_Player setVariable ["SOCOMD_prev_primary", primaryWeapon ACE_Player]
     params ["_display"];
-    _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
+    private _loadoutIdEH = ACE_Player getVariable ["SOCOMD_LOADOUTID","failed"];
+    private _primaryWeapon = primaryWeapon ACE_Player;
+    private _secondaryWeapon = secondaryWeapon ACE_Player;
+    private _handgunWeapon = handgunWeapon ACE_Player;
+    ACE_Player setVariable  ["socomd_prev_arsenal_extras", (ACE_Player getVariable  ["socomd_arsenal_extras", "extras_none"])];
     
-    _disabledButtons = [
+    ACE_Player setVariable  ["socomd_prev_weapons",[_primaryWeapon,_secondaryWeapon,_handgunWeapon]];
+    
+    private _disabledButtons = [
         2022,   // IDC_buttonMap 
         2024,   // IDC_buttonGPS 
         2026,   // IDC_buttonRadio 
@@ -163,7 +168,7 @@ private _openedEh = ["socomd_arsenal_displayOpened", {
     
 }] call CBA_fnc_addEventHandler;
 private _removedRight = ["socomd_arsenal_rightPanelFilled", { 
-    _currentTab = currentNamespace getVariable "socomd_arsenal_currentLeftPanel";
+    private _currentTab = currentNamespace getVariable "socomd_arsenal_currentLeftPanel";
     switch(_currentTab) do {
         case 2010 :{ // uniform panel
            TOGGLE_RIGHT_PANEL_HIDE
@@ -177,20 +182,18 @@ private _removedRight = ["socomd_arsenal_rightPanelFilled", {
     };
 }] call CBA_fnc_addEventHandler;
 private _closedEh = ["socomd_arsenal_displayClosed", {
-    _extraItems = ACE_Player getVariable ["socomd_arsenal_extras","none"];
-    _grenadesOption = ACE_Player getVariable  ["socomd_arsenal_grenade", "default"];
+    private _extraItems = ACE_Player getVariable ["socomd_arsenal_extras","none"];
+    private _grenadesOption = ACE_Player getVariable  ["socomd_arsenal_grenade", "default"];
     // for some reason using _player inside here doesnt work. Done in this order so launcher ammo isn't deleted
+    private _primaryWeapon = primaryWeapon ACE_Player;
+    private _secondaryWeapon = secondaryWeapon ACE_Player;
+    private _handgunWeapon = handgunWeapon ACE_Player;
     [ACE_Player] call FUNC(removeAmmo);
-    [ACE_Player, primaryWeapon ACE_Player] call FUNC(addPrimaryAmmo);
-    [ACE_Player, secondaryWeapon ACE_Player] call FUNC(addSecondaryAmmo);
-    [ACE_Player, handgunWeapon ACE_Player] call FUNC(addHandgunAmmo);
+    [ACE_Player, _primaryWeapon] call FUNC(addPrimaryAmmo);
+    [ACE_Player, _secondaryWeapon] call FUNC(addSecondaryAmmo);
+    [ACE_Player, _handgunWeapon] call FUNC(addHandgunAmmo);
     [ACE_Player] call FUNC(cleanUpMagazines);
     [ACE_Player] call FUNC(addInventoryWeaponAmmo);
-    if(_grenadesOption != "default") then {
-        [ACE_Player,_grenadesOption] call socomd_arsenal_fnc_addSelection;
-    } else {
-        [ACE_Player] call FUNC(addGrenades);
-    };
     // [player] call SOCOMD_fnc_RefreshInsignia;
     if( _extraItems !=  "none" ) then  {
         [ACE_Player, _extraItems] call socomd_arsenal_fnc_addSelection;

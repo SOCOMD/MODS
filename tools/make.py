@@ -74,7 +74,7 @@ dssignfile = ""
 prefix = "socomd"
 pbo_name_prefix = "socomd_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE"]
+importantFiles = ["mod.cpp","logo_socomd_ca.paa", "README.md", "AUTHORS.txt", "LICENSE"]
 versionFiles = ["mod.cpp", "README.md"]
 
 ciBuild = False # Used for CI builds
