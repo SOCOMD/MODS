@@ -6,9 +6,7 @@ private _configFile = configFile >> "CfgLoadoutWeapons";
     if (isClass(_configFile >> _x)) then {
         private _ammo = getArray(_configFile >> _x >> "magazines");
         {
-            { 
-                for [{ _i = 0 }, { _i < (_x select 1) }, { _i = _i + 1 }] do { _player removeMagazine (_x select 0) }
-            } forEach _x;
+            for [{ _i = 0 }, { _i < (_x select 1) }, { _i = _i + 1 }] do { _player removeMagazine (_x select 0) }   
         } forEach _ammo;
     };
 } forEach [_primaryWeapon,_secondaryWeapon,_handgunWeapon];
