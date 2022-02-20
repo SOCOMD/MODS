@@ -102,7 +102,7 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     vehicleclass = "Air"; 
     forceInGarage = 1; 
     fuelCapacity = 1360; 
-    fuelConsumptionRate = 0.28; 
+    fuelConsumptionRate = 0.14; 
     driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
@@ -252,7 +252,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     vehicleclass = "Air"; 
     forceInGarage = 1; 
     fuelCapacity = 1360; 
-    fuelConsumptionRate = 0.28; 
+    fuelConsumptionRate = 0.14; 
     driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
