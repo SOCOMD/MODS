@@ -74,7 +74,7 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
         TRANSPORT_ITEM(ACE_fieldDressing, 8)          //Israeli Bandage
         TRANSPORT_ITEM(ACE_elasticBandage, 8)            //Elastic Bandage
         TRANSPORT_ITEM(ACE_quikclot, 8)                //Quikclot
-        TRANSPORT_ITEM(KAT_ChestSeal, 1)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(ACE_chestSeal, 1)                //Hyfin Chest Seal
         TRANSPORT_ITEM(ACE_tourniquet, 2)                //Tourniquet
         TRANSPORT_ITEM(SOCOMD_Epinephrine, 3)        //Epinephrine Ampoule
         TRANSPORT_ITEM(SOCOMD_naloxone, 1)                //Naloxone Ampoule
@@ -83,13 +83,13 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
         TRANSPORT_ITEM(SOCOMD_Apap, 2)                    //Paracetamol
         TRANSPORT_ITEM(SOCOMD_tetra, 2)                //Paracetamol  
         TRANSPORT_ITEM(ACE_bloodIV_500, 4)            //Blood
-        TRANSPORT_ITEM(KAT_guedel, 2)                    //Nasopharangeal Airway
-        TRANSPORT_ITEM(KAT_larynx, 2)                    //Laryngeal Mask Airway
-        TRANSPORT_ITEM(KAT_Pulseoximeter, 2)            //Pulseoximeter
+        TRANSPORT_ITEM(ACE_basicAirway, 2)                    //Nasopharangeal Airway
+        TRANSPORT_ITEM(ACE_advancedAirway, 2)                    //Laryngeal Mask Airway
+        TRANSPORT_ITEM(ACE_Pulseoximeter, 2)            //Pulseoximeter
         TRANSPORT_ITEM(SOCOMD_VPN, 8)                    //3mL drug Syringe
         TRANSPORT_ITEM(SOCOMD_NDC, 1)                    //14 Gauge needle
         TRANSPORT_ITEM(ACE_surgicalKit, 3)            //Surgical Kit
-        TRANSPORT_ITEM(KAT_accuvac, 1)                //Medical Suction
+        TRANSPORT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
     };    
 };
 class B_TacticalPack_blk;
@@ -102,15 +102,15 @@ class SOCOMD_Medical_AO: B_TacticalPack_blk {
         TRANSPORT_ITEM(ACE_fieldDressing, 30)          //Israeli Bandage
         TRANSPORT_ITEM(ACE_elasticBandage, 30)            //Elastic Bandage
         TRANSPORT_ITEM(ACE_quikclot, 30)                //Quikclot
-        TRANSPORT_ITEM(KAT_ChestSeal, 8)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
         TRANSPORT_ITEM(ACE_tourniquet, 10)                //Tourniquet
         TRANSPORT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
         TRANSPORT_ITEM(SOCOMD_naloxone, 10)                //Naloxone Ampoule
         TRANSPORT_ITEM(SOCOMD_fentanyl, 10)                //Fentanyl Ampoule
         TRANSPORT_ITEM(SOCOMD_ketamine, 10)                    //Ketamine Ampoule
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
-        TRANSPORT_ITEM(KAT_larynx, 4)                    //Laryngeal Mask Airway
-        TRANSPORT_ITEM(KAT_Pulseoximeter, 4)            //Pulseoximeter
+        TRANSPORT_ITEM(ACE_advancedAirway, 4)                    //Laryngeal Mask Airway
+        TRANSPORT_ITEM(ACE_Pulseoximeter, 4)            //Pulseoximeter
         TRANSPORT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
         TRANSPORT_ITEM(ACE_bodyBag, 6)                //Defibrillator
         TRANSPORT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol

@@ -342,7 +342,7 @@ class SOCOMD_SSO_Medic {
             LOADOUT_ITEM(SOCOMD_cascard, 2)
             LOADOUT_ITEM(ACE_elasticBandage, 20)        //Elastic Bandage
             LOADOUT_ITEM(ACE_quikclot, 25)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 6)                //Hyfin Chest Seal
+            LOADOUT_ITEM(ACE_chestSeal, 6)                //Hyfin Chest Seal
             LOADOUT_ITEM(SOCOMD_nargloves, 10)
             LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
             LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
@@ -353,10 +353,10 @@ class SOCOMD_SSO_Medic {
             LOADOUT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol  
             LOADOUT_ITEM(ACE_bloodIV_500, 5)            //Blood
             LOADOUT_ITEM(SOCOMD_notes, 0)
-            LOADOUT_ITEM(KAT_guedel, 9)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 4)            //Pulseoximeter
+            LOADOUT_ITEM(ACE_basicAirway, 9)                    //Nasopharangeal Airway
+            LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
+            LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
+            LOADOUT_ITEM(ACE_Pulseoximeter, 4)            //Pulseoximeter
             LOADOUT_ITEM(SOCOMD_NDC, 6)                    //14 Gauge needle
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
@@ -403,7 +403,7 @@ class SOCOMD_SSO_AO{
             LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
             LOADOUT_ITEM(ACE_elasticBandage, 5)            //Elastic Bandage
             LOADOUT_ITEM(ACE_quikclot, 20)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 8)                //Hyfin Chest Seal
+            LOADOUT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
             LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
             LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
             LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
@@ -414,11 +414,11 @@ class SOCOMD_SSO_AO{
             LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol  
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
             LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(KAT_guedel, 0)                    //Nasopharangeal Airway
+            LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
             LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 3)            //Pulseoximeter
+            LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
+            LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
+            LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(SOCOMD_NDC, 8)                    //14 Gauge needle
             LOADOUT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
