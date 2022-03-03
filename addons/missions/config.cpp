@@ -64,8 +64,9 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
-//    Count = 13
+//    Count = 14
 
+    MISSION_MACRO(ALTISCARRIER,SOCOMD Altis Light Carrier (HMAS Melbourne),fobs\AC_HMAS_Melbourne.Altis)
     MISSION_MACRO(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Altis)
     MISSION_MACRO(CHERNWINTERLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Chernarus_Winter)
     MISSION_MACRO(CHERNLHD,SOCOMD Chernarus LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.cup_chernarus_A3)
