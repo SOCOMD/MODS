@@ -288,57 +288,56 @@ switch (GVAR(currentLeftPanel)) do {
     
     case IDC_buttonNVG : {
         ACE_Player setVariable  ["socomd_arsenal_nvg", _item];
-        _nvgArray = ["SOCOMD_NVG","SOCOMD_NVG_GR","SOCOMD_NVG_GPNVG_WP_black","SOCOMD_NVG_GPNVG_GR_black" , "SOCOMD_NVG_AM", "SOCOMD_NVG_B", "SOCOMD_NVG_GR_B", "SOCOMD_NVG_AM_B", "SOCOMD_NVG_C", "SOCOMD_NVG_GR_C", "SOCOMD_NVG_AM_C", "SOCOMD_NVG_GPNVG_WP_black", "SOCOMD_NVG_GPNVG_GR_black"];
-        _unitLoadout = getUnitLoadout GVAR(center);
+       
         if ((GVAR(currentItems) select 8) != "") then {
-            // If item is attached, just changed the attached item
-            if ((GVAR(currentItems) select 8) in _nvgArray) then {
-                ACE_Player linkItem _item;
-                GVAR(currentItems) set [8, _item];
-            // else update all socomd NVG items in inventory
-            } else {               
-                _uniform = _unitLoadout select 3;
-                _uniformLoadout = _bag select 1;
-                _count = 0;
-                {
-                    _itemSelection = _x select 0;
-                    if(_itemSelection in _nvgARray) then {   
-                        _count = _count + 1;
-                        _x set [0, _item];
-                    };
-                } forEach _uniformLoadout;
-                _uniform set [1, _uniformLoadout];
-
-
-                _vest = _unitLoadout select 4;
-                _vestLoadout = _bag select 1;
-                {
-                    _itemSelection = _x select 0;
-                    if(_itemSelection in _nvgARray) then {        
-                        _count = _count + 1;                    
-                        _x set [0, _item];
-                    };
-                } forEach _vestLoadout;
-                _vest set [1, _vestLoadout];
-                
-                _bag = _unitLoadout select 5;
-                _bagLoadout = _bag select 1;
-                {
-                    _itemSelection = _x select 0;
-                    if(_itemSelection in _nvgARray) then {  
-                        _count = _count + 1;                          
-                        _x set [0, _item];
-                    };
-                } forEach _bagLoadout;
-                if(_count == 0) then {
-                    _bagLoadout pushBack [_item, 1]
+        // If item is attached, just changed the attached item
+            ACE_Player linkItem _item;
+            GVAR(currentItems) set [8, _item];
+        } else {               
+        // else update all socomd NVG items in inventory
+            _nvgArray = ["SOCOMD_NVG","SOCOMD_NVG_GR","SOCOMD_NVG_GPNVG_WP_black","SOCOMD_NVG_GPNVG_GR_black" , "SOCOMD_NVG_AM", "SOCOMD_NVG_B", "SOCOMD_NVG_GR_B", "SOCOMD_NVG_AM_B", "SOCOMD_NVG_C", "SOCOMD_NVG_GR_C", "SOCOMD_NVG_AM_C", "SOCOMD_NVG_GPNVG_WP_black", "SOCOMD_NVG_GPNVG_GR_black"];
+            _unitLoadout = getUnitLoadout ACE_Player;
+            _uniform = _unitLoadout select 3;
+            _uniformLoadout = _bag select 1;
+            _count = 0;
+            {
+                _itemSelection = _x select 0;
+                if(_itemSelection in _nvgARray) then {   
+                    _count = _count + 1;
+                    _x set [0, _item];
                 };
-                _bag set [1, _bagLoadout];
-                _unitLoadout set [3,_uniform];
-                _unitLoadout set [4,_vest];
-                _unitLoadout set [5,_bag];
-                ACE_Player setUnitLoadout _unitLoadout;
+            } forEach _uniformLoadout;
+            _uniform set [1, _uniformLoadout];
+
+
+            _vest = _unitLoadout select 4;
+            _vestLoadout = _bag select 1;
+            {
+                _itemSelection = _x select 0;
+                if(_itemSelection in _nvgARray) then {        
+                    _count = _count + 1;                    
+                    _x set [0, _item];
+                };
+            } forEach _vestLoadout;
+            _vest set [1, _vestLoadout];
+            
+            _bag = _unitLoadout select 5;
+            _bagLoadout = _bag select 1;
+            {
+                _itemSelection = _x select 0;
+                if(_itemSelection in _nvgARray) then {  
+                    _count = _count + 1;                          
+                    _x set [0, _item];
+                };
+            } forEach _bagLoadout;
+            if(_count == 0) then {
+                _bagLoadout pushBack [_item, 1]
             };
+            _bag set [1, _bagLoadout];
+            _unitLoadout set [3,_uniform];
+            _unitLoadout set [4,_vest];
+            _unitLoadout set [5,_bag];
+            ACE_Player setUnitLoadout _unitLoadout;
         };
         call FUNC(showItem);
         TOGGLE_RIGHT_PANEL_HIDE
