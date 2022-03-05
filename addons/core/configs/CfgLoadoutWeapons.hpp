@@ -18,6 +18,10 @@ class CfgLoadoutWeapons {
             {"1Rnd_SmokeRed_Grenade_shell", 2},
             {"ACE_HuntIR_M203", 3}
         };
+        tacpGrenades[] = {
+            {"1Rnd_SmokeRed_Grenade_shell", 6},
+            {"ACE_HuntIR_M203", 3}
+        };
     };
     class Rifle_545 {
         magazines[] = {

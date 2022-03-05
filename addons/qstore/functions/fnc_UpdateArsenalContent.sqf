@@ -8,7 +8,7 @@ params ["_player","_loadoutId"];
 _player setVariable ["socomd_arsenal_nvg","SOCOMD_NVG"];
 _player setVariable  ["socomd_arsenal_grenade", "default"];
 _player setVariable ["socomd_arsenal_extras","extras_none"];
-
+_player setVariable  ["socomd_prev_weapons",[(primaryWeapon _player),(secondaryWeapon _player),(handgunWeapon _player)]];
 
 private _blackList = [];
 _blackList append getArray (configFile >> "CfgQstoreBlackList" >> "blacklist");

@@ -30,29 +30,34 @@ if(count _loadoutMagazines > 0) then  {
 
 // Grenades
 if !(_isTACP) then {
-    commandGrenades = getArray (_loadoutWeaponConfig >> "grenades");
-    if(count commandGrenades > 0) then  {
+    _grenades = getArray (_loadoutWeaponConfig >> "grenades");
+    if(count _grenades > 0) then  {
         {
             _magazine = _x select 0;
             _magazineCount = _x select 1;
             _player addMagazines[_magazine, _magazineCount];
-        } forEach commandGrenades;
+        } forEach _grenades;
     };
 };
 if (_isCommander) then {
-    commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
-    if(count commandGrenades > 0) then  {
+    _commandGrenades = getArray (_loadoutWeaponConfig >> "commandGrenades");
+    if(count _commandGrenades > 0) then  {
         {
             _magazine = _x select 0;
             _magazineCount = _x select 1;
             _player addMagazines[_magazine, _magazineCount];
-        } forEach commandGrenades;
+        } forEach _commandGrenades;
     };
 };
 
 
 if ( _isTACP) then {
-        _player addMagazines["1Rnd_SmokeRed_Grenade_shell", 6];
-        _player addMagazines["ACE_HuntIR_M203", 3];
-    _player addMagazines["Laserbatteries", 1];
+    _tacpGrenades = getArray (_loadoutWeaponConfig >> "tacpGrenades");
+    if(count _tacpGrenades > 0) then  {
+        {
+            _magazine = _x select 0;
+            _magazineCount = _x select 1;
+            _player addMagazines[_magazine, _magazineCount];
+        } forEach _tacpGrenades;
+    };
 };
