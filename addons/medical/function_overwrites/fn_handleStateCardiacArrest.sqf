@@ -6,8 +6,12 @@ if (!alive _unit) exitWith {};
 if (!local _unit) exitWith {};
 
 [_unit] call ace_medical_vitals_fnc_handleUnitVitals;
-_unit call ace_medical_status_fnc_airwayDegrading;
 private _timeDiff = CBA_missionTime - (_unit getVariable ["ace_medical_statemachine_cardiacArrestTimeLastUpdate", 0]);
+
+if (_timeDiff >= 10) then {
+    [_unit] call ace_medical_status_fnc_airwayDegrading;
+};
+
 if (_timeDiff >= 1) then {
     _timeDiff = _timeDiff min 10;
     _totalTimeDiff = _timeDiff min 10;
