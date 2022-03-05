@@ -83,7 +83,7 @@ class CAManBase : Man {
                 };
                 class don_Diving_Gear { 
                     displayName ="Put On Diving Gear";
-                    condition = "(_player getVariable ['SOCOMD_stashedGear', false]) and ((backpack _player) == 'SOCOMD_drybag_blk')";
+                    condition = "(_player getVariable ['SOCOMD_stashedGear', false])";
                     statement = "[_player,'Putting on diving gear', false] call socomd_core_fnc_Action_toggleStashDivingGear";
                     exceptions[] = {"isNotInside", "isNotSitting"};
                 };
