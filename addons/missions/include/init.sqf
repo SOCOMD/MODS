@@ -12,3 +12,5 @@ call{
 // Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
 finishMissionInit;
 enableEnvironment [false, true];
+
+[true,30,false,true,30,3,true,[]] execVM "WerthlesHeadless.sqf";
