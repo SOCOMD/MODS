@@ -51,3 +51,8 @@ class SOCOMD_NDC: SOCOMD_booboo {
     descriptionUse="Made by North American Rescue. 14 gauge needle for performing emergency chest decompression and drainage";
     picture="\z\socomd\addons\data\icon\NDC.paa";
 };
+class ACE_bodyBag: ACE_ItemCore {
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };

@@ -206,6 +206,13 @@
     "bnae_trg42_f_camo1_virtual",\
     "bnae_trg42_f_mmrs_virtual",\
     "bnae_trg42_f_mmrs_camo1_virtual",\
+    "ACWP_blaser_r93",\
+    "ACWP_blaser_r93_don",\
+    "ACWP_blaser_r93_tan",\
+    "ACWP_blaser_r93_net",\
+    "ACWP_blaser_r93_wst",\
+    "ACWP_5rnd_338LM_base",\
+    "ACWP_5rnd_338LM_APDS",\
     "5Rnd_338LM_Magazine",\
     "5Rnd_APDS_338LM_Magazine",\
     "hlc_5rnd_300WM_FMJ_AWM",\

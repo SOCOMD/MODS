@@ -581,6 +581,7 @@ class SOCOMD_Medic {
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
             LOADOUT_ITEM(kat_AED, 1)        //Defibrillator
+            LOADOUT_ITEM(ACE_bodyBag, 1) 
         };
     };
 };
@@ -726,6 +727,8 @@ class SOCOMD_Recon {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(Laserdesignator, 1)
+            LOADOUT_ITEM(ACWP_5rnd_338LM_base, 7)
+            LOADOUT_ITEM(ACWP_5rnd_338LM_APDS, 2)
             LOADOUT_ITEM(ACE_ATragMX, 1)
             LOADOUT_ITEM(ACRE_PRC152, 1)
         };
@@ -736,6 +739,13 @@ class SOCOMD_Recon {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACE_Tripod, 1)
+            LOADOUT_ITEM(ACE_DefusalKit, 1)
+            LOADOUT_ITEM(ACE_M26_Clacker, 1)
+            LOADOUT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
+            LOADOUT_ITEM(ACE_FlareTripMine_Mag, 4)
+            LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+            LOADOUT_ITEM(SOCOMD_tent_item, 3)
+            LOADOUT_ITEM(SOCOMD_tent_item_des, 3)
         };
     };
 };
