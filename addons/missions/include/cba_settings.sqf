@@ -303,10 +303,10 @@ force force ace_pylons_searchDistance = 40;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
-force force ace_quickmount_distance = 3;
-force force ace_quickmount_enabled = false;
-ace_quickmount_priority = 0;
-force force ace_quickmount_speed = 18;
+ace_quickmount_distance = 3;
+ace_quickmount_enabled = true;
+ace_quickmount_priority = 3;
+ace_quickmount_speed = 4;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = false;
@@ -522,6 +522,27 @@ force diwako_dui_radar_vehicleCompassEnabled = false;
 diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
+// Enhanced Movement Rework
+force force emr_main_allowMidairClimbing = true;
+force force emr_main_animSpeedCoef = 1.0;
+force force emr_main_animSpeedStaminaCoef = 0.50;
+force force emr_main_climbingEnabled = true;
+force force emr_main_climbOnDuty = 2.5;
+force force emr_main_climbOverDuty = 2.5;
+force force emr_main_dropDuty = 0.8;
+emr_main_dropViewElevation = -0.7;
+emr_main_enableWalkableSurface = true;
+force force emr_main_enableWeightCheck = false;
+emr_main_hintType = 2;
+force force emr_main_jumpDuty = 1;
+force force emr_main_jumpingEnabled = true;
+force force emr_main_jumpingLoadCoefficient = 1;
+force force emr_main_jumpVelocity = 2;
+force force emr_main_maxClimbHeight = 2.6;
+force force emr_main_maxDropHeight = 4.5;
+emr_main_preventHighVaulting = false;
+force force emr_main_staminaCoefficient = 1;
+
 // GRAD Civs
 force grad_civs_activities_panicCooldown = "[15, 120, 240]";
 force grad_civs_cars_animalTransportChance = 0.4;
@@ -616,32 +637,35 @@ force force lambs_danger_panicChance = 0.0;
 force force lambs_danger_disableAIAutonomousManoeuvres = false;
 force force lambs_danger_disableAIDeployStaticWeapons = false;
 force force lambs_danger_disableAIFindStaticWeapons = false;
-force force lambs_danger_disableAIHideFromTanksAndAircraft = false;
-force force lambs_danger_disableAIPlayerGroup = false;
-force force lambs_danger_disableAIPlayerGroupReaction = false;
+force force lambs_danger_disableAIHideFromTanksAndAircraft = true;
+force force lambs_danger_disableAIPlayerGroup = true;
+force force lambs_danger_disableAIPlayerGroupReaction = true;
 force force lambs_danger_disableAutonomousFlares = false;
 
 // LAMBS Danger EventHandlers
 force force lambs_eventhandlers_ExplosionEventHandlerEnabled = false;
-force force lambs_eventhandlers_ExplosionReactionTime = 20.0;
-force force lambs_wp_autoAddArtillery = false;
+force force lambs_eventhandlers_ExplosionReactionTime = 10.0;
+
+// LAMBS Danger WP
+force force lambs_wp_autoAddArtillery = true;
 
 // LAMBS Main
-force force lambs_main_combatShareRange = 400;
+force force lambs_main_combatShareRange = 250;
 force force lambs_main_disableAICallouts = false;
 force force lambs_main_disableAIDodge = false;
 force force lambs_main_disableAIFleeing = false;
 force force lambs_main_disableAIGestures = false;
-force force lambs_main_indoorMove = 0.40;
-force force lambs_main_maxRevealValue = 1;
-force force lambs_main_minFriendlySuppressionDistance = 5;
-force force lambs_main_minObstacleProximity = 2;
+force force lambs_main_disablePlayerGroupSuppression = true;
+force force lambs_main_indoorMove = 0.30;
+force force lambs_main_maxRevealValue = 0.7;
+force force lambs_main_minFriendlySuppressionDistance = 0;
+force force lambs_main_minObstacleProximity = 1;
 force force lambs_main_minSuppressionRange = 25;
-force force lambs_main_radioBackpack = 1500;
+force force lambs_main_radioBackpack = 2000;
 force force lambs_main_radioDisabled = false;
 force force lambs_main_radioEast = 1500;
 force force lambs_main_radioGuer = 1500;
-force force lambs_main_radioShout = 100;
+force force lambs_main_radioShout = 80;
 force force lambs_main_radioWest = 1500;
 
 // NIArms
