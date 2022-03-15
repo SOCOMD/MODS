@@ -60,7 +60,7 @@ class CfgMissions {
     MISSION_MACRO(RIVERFOB,SOCOMD Bozoum FOB (River),fobs\FOB_River.bozoum)
     MISSION_MACRO(RUNWAYFOB,SOCOMD Al Rayak FOB (Runway),fobs\FOB_Runway.pja310)
     MISSION_MACRO(VALLEYFOB,SOCOMD Zargabad FOB (Valley),fobs\FOB_Valley.zargabad)
-    MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\03_03_2022_FOB_SOCOMD_Essentials.VR)
+    MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\15_03_2022_FOB_SOCOMD_Essentials.VR)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
