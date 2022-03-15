@@ -62,6 +62,15 @@ class SOCOMD_SOV_HMG_D : UK3CB_BAF_Coyote_Passenger_L111A1_D {
         };
     };
 
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
+    };
+
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver", "commander", "gunner"};
@@ -124,6 +133,15 @@ class SOCOMD_SOV_HMG_W : UK3CB_BAF_Coyote_Passenger_L111A1_W {
             masterPositions[] = {"driver"};
             connectedByDefault = 1;
         };
+    };
+
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
     };
 
     class AcreRacks {
@@ -193,6 +211,15 @@ class SOCOMD_SOV_GMG_D : UK3CB_BAF_Coyote_Passenger_L134A1_D {
         };
     };
 
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
+    };
+
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver", "commander", "gunner"};
@@ -255,6 +282,15 @@ class SOCOMD_SOV_GMG_W : UK3CB_BAF_Coyote_Passenger_L134A1_W {
             masterPositions[] = {"driver"};
             connectedByDefault = 1;
         };
+    };
+
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
     };
 
     class AcreRacks {

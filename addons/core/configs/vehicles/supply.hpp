@@ -100,8 +100,8 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 15)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 10)
         //TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10) // needs replacement?
-        TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 10)
-        TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 10)
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_base, 20)
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_APDS, 10)
 
 
     };
@@ -112,6 +112,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 5)
         TRANSPORT_ITEM(ACE_fieldDressing, 20)          //Israeli Bandage
         TRANSPORT_ITEM(ACE_elasticBandage, 20)        //Elastic Bandage
         TRANSPORT_ITEM(ACE_quikclot, 20)                //Quikclot
@@ -130,6 +131,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(SOCOMD_NDC, 10)                    //14 Gauge needle
         TRANSPORT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
         TRANSPORT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
+        TRANSPORT_ITEM(ACE_bodyBag, 2)
     };
 
     class TransportWeapons {};
@@ -147,8 +149,8 @@ class SOCOMD_Supply_Empty : Box_NATO_Wps_F {
 
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
     hiddenSelectionsTextures[] = {
-        "A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa",
-        "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"
+        "",
+        "addons\data\CTGear\AmmoBox_SOCOMD_CO.paa"
     };
 
     accuracy = 1000;
@@ -192,8 +194,8 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 30)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 20)
         //TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 20) // needs replacement?
-        TRANSPORT_MAGAZINE(5Rnd_APDS_338LM_Magazine, 20)
-        TRANSPORT_MAGAZINE(5Rnd_338LM_Magazine, 20)
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_base, 30)
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_APDS, 10)
     };
 
     class TransportItems {
@@ -202,6 +204,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_Clacker, 2)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 10)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 8)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 10)
     };
 };
 
@@ -250,6 +253,7 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(SOCOMD_NDC, 15)                    //14 Gauge needle
         TRANSPORT_ITEM(SOCOMD_VPN, 50)                //3mL drug Syringe
         TRANSPORT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
+        TRANSPORT_ITEM(ACE_bodyBag, 4)
     };
 };
 
@@ -275,14 +279,12 @@ class SOCOMD_Supply_Tools : SOCOMD_Supply_Empty {
 
     class TransportItems {
         TRANSPORT_ITEM(ToolKit, 2)
-        TRANSPORT_ITEM(ACE_wirecutter, 2)
-        TRANSPORT_ITEM(MineDetector, 3)
-        TRANSPORT_ITEM(ACE_EntrenchingTool, 3)
-        TRANSPORT_ITEM(ACE_DefusalKit, 3)
-        TRANSPORT_ITEM(ACE_M26_Clacker, 3)
-        TRANSPORT_ITEM(ACE_bodyBag, 6)
-        TRANSPORT_ITEM(ACRE_PRC152, 2)
-        TRANSPORT_ITEM(ACRE_PRC117F,2)
+        TRANSPORT_ITEM(ACE_wirecutter, 5)
+        TRANSPORT_ITEM(MineDetector, 2)
+        TRANSPORT_ITEM(ACE_EntrenchingTool, 5)
+        TRANSPORT_ITEM(ACE_DefusalKit, 2)
+        TRANSPORT_ITEM(ACE_M26_Clacker, 2)
+        TRANSPORT_ITEM(ACE_bodyBag, 10)
     };
 };
 
@@ -472,6 +474,10 @@ class SOCOMD_Recon_Supply : SOCOMD_Supply_Empty {
     scope = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "[SUPPLY] Recon";
+    class TransportMagazines {
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_base, 20)
+        TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_APDS, 10)
+    };
 
     class TransportItems {
         TRANSPORT_ITEM(ACE_wirecutter, 4)
@@ -521,9 +527,9 @@ class ACWP_case_sniper: ACWP_case
     displayName = "[SUPPLY] Sniper Case";
     class TransportWeapons
     {
-        class _xx_bnae_trg42_f_camo1_virtual_kit
+        class _xx_ACWP_blaser_r93_wst_kit
         {
-            weapon = "bnae_trg42_f_camo1_virtual_kit";
+            weapon = "ACWP_blaser_r93_wst_kit";
             count = 1;
         };
     };
@@ -531,12 +537,12 @@ class ACWP_case_sniper: ACWP_case
     {
         class _xx_5Rnd_APDS_338LM_Magazine
         {
-            magazine = "5Rnd_APDS_338LM_Magazine";
+            magazine = "ACWP_5rnd_338LM_APDS";
             count = 15;
         };
         class _xx_5Rnd_338LM_Magazine
         {
-            magazine = "5Rnd_338LM_Magazine";
+            magazine = "ACWP_5rnd_338LM_base";
             count = 15;
         };
     };
