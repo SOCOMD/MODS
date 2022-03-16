@@ -23,4 +23,4 @@ enableEnvironment [false, true];
 // -Sync delay, 
 // -Setup status report, 
 // -Units to ignore (in array format)
-[true,30,false,false,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+[true,30,false,false,30,3,true,["rhsusf_airforce_pilot"]] execVM "WerthlesHeadless.sqf";

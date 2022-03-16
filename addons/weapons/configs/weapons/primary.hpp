@@ -22,6 +22,7 @@ class bnae_trg42_base : Rifle_Long_Base_F{
 class ACWP_sniper_base : Rifle_Long_Base_F{
     class WeaponSlotsInfo:WeaponSlotsInfo{
         allowedSlots[] = {901};
+        mass = 65;
     };
 };
 class ACWP_M82 : ACWP_sniper_base {

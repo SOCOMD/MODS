@@ -150,7 +150,7 @@ class SOCOMD_Supply_Empty : Box_NATO_Wps_F {
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
     hiddenSelectionsTextures[] = {
         "",
-        "addons\data\CTGear\AmmoBox_SOCOMD_CO.paa"
+        "\z\socomd\addons\data\CTGear\AmmoBox_SOCOMD_CO.paa"
     };
 
     accuracy = 1000;
