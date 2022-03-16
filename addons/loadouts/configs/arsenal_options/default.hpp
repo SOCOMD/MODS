@@ -219,10 +219,12 @@
     "10Rnd_300WM_Magazine"
 
 #define LAUNCHERS \
-    "rhs_weap_m72a7",\
     QUOTE(ITEM_DEFAULT_LAUNCHER),\
     "rhs_mag_maaws_HEAT",\
     "rhs_mag_maaws_HE"
+
+#define LIGHT_LAUNCHERS \
+    "rhs_weap_m72a7"
 
 #define HANDGUNS  \
     "DSO_hgun_Pistol_heavy_01_blk_F",\
@@ -551,7 +553,8 @@ class SOCOMD_Commander{
     weapons[]={
         GENERAL_RIFLE,
         GL_RIFLE,
-        HANDGUNS
+        HANDGUNS,
+        LIGHT_LAUNCHERS
     };
     vests[]={
         VESTS_COMMON,
@@ -634,7 +637,8 @@ class SOCOMD_Rifleman{
     weapons[]={
         GENERAL_RIFLE,
         GL_RIFLE,
-        HANDGUNS
+        HANDGUNS,
+        LIGHT_LAUNCHERS
     };
     vests[]={
         VESTS_COMMON,
