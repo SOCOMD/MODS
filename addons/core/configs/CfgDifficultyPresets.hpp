@@ -39,7 +39,7 @@ class CfgDifficultyPresets {
 // see CfgAiSkill.hpp
     class CustomAILevel {
         skillAI=1.0;
-        precisionAI=1.0;
+        precisionAI=0.8;
     };
 
     class Recruit {

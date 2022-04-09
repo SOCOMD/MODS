@@ -9,11 +9,7 @@ call{
 
 //missionNamespace setVariable ["SOCOMD_InitComplete", 1];
 
-// Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
-finishMissionInit;
-enableEnvironment [false, true];
-
-// Werthles HC Parameters
+// Werthles HC Parameters - Uncomment array when needed. 
 
 // -Repeat on/off, 
 // -Repeat delay, 
@@ -23,4 +19,9 @@ enableEnvironment [false, true];
 // -Sync delay, 
 // -Setup status report, 
 // -Units to ignore (in array format)
-[true,30,false,false,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+
+//[true,30,false,false,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+
+// Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
+finishMissionInit;
+enableEnvironment [false, true];
