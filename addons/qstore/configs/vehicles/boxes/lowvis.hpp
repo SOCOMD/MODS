@@ -1,4 +1,4 @@
-    
+
 class SOCOMD_QStore_LOWVIS : SOCOMD_QStore_Base {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
@@ -11,13 +11,13 @@ class SOCOMD_QStore_LOWVIS : SOCOMD_QStore_Base {
             selection = "";
             distance = 5;
             condition = 1;
-            
+
             class SOCOMD_arsenal {
-                displayName = "Arsenal";
+                displayName = "Personalise";
                 condition = 1;
                 statement = "[player, player, false] call socomd_arsenal_fnc_openBox";
                 showDisabled = 0;
-                exceptions[] = {"isNotInside", "isNotSitting"};                
+                exceptions[] = {"isNotInside", "isNotSitting"};
             };
             // Select Loadouts
             QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")

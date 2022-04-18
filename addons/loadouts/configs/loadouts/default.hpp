@@ -28,7 +28,7 @@
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
     LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
     LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-    LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+//    LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1) \
@@ -171,7 +171,7 @@ class SOCOMD_Commander {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
 
@@ -273,7 +273,7 @@ class SOCOMD_Leader {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
             LOADOUT_ITEM(ACRE_PRC152, 2)
         };
     };
@@ -324,7 +324,7 @@ class SOCOMD_Rifleman {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
     class Backpack {
@@ -364,7 +364,7 @@ class SOCOMD_Breacher {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
     class Backpack {
@@ -451,7 +451,7 @@ class SOCOMD_Sapper {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
 
@@ -542,7 +542,7 @@ class SOCOMD_Medic {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
 
@@ -682,7 +682,7 @@ class SOCOMD_AT {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
 
@@ -776,7 +776,7 @@ class SOCOMD_Logistician {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
             LOADOUT_ITEM(SmokeShell, 3)
             LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)
