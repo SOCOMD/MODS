@@ -11,6 +11,8 @@ class ACWP_30rnd_556x45_EPR_PMAG;
 class ACWP_30rnd_556x45_M_PMAG;
 
 class ACWP_18Rnd_9x21_Mag_USP;
+class ACWP_5rnd_338LM_base;
+class ACWP_5rnd_338LM_APDS;
 
 class rhsusf_100Rnd_762x51_m80a1epr;
 class ITEM_MAGAZINE_762_BELT : rhsusf_100Rnd_762x51_m80a1epr {

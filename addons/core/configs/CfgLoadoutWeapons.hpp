@@ -103,8 +103,8 @@ class CfgLoadoutWeapons {
     };
     class Recon_338 {
         magazines[] = {
-            {"5Rnd_338LM_Magazine", 7},
-            {"5Rnd_APDS_338LM_Magazine", 2}
+            {"ACWP_5rnd_338LM_base", 7},
+            {"ACWP_5rnd_338LM_APDS", 2}
         };
     };
     class PISTOL_USP {

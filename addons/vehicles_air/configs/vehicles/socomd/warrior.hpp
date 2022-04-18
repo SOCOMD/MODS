@@ -65,7 +65,6 @@
 class Heli_Transport_01_base_F; // Helicopter_Base_H
 class vtx_H60_base: Heli_Transport_01_base_F {
     class AnimationSources;
-    class Wheels;
 }; // Heli_Transport_01_base_F
 class vtx_MH60M: vtx_H60_base{
     class Components;
@@ -77,19 +76,9 @@ class vtx_MH60M: vtx_H60_base{
         class RADAR_HIDE;
         class Cockpitdoors_Hide;
     };
-    class Wheels:Wheels{
-        class Wheel_1;
-        class Wheel_2;
-        class Wheel_3;
-    };
 };
 class vtx_uh60M : vtx_H60_base {
     class Components;
-    class Wheels:Wheels{
-        class Wheel_1;
-        class Wheel_2;
-        class Wheel_3;
-    };
 };
 class SOCOMD_WARRIOR_A:vtx_uh60M {
     scope = SCOPE_PUBLIC; 

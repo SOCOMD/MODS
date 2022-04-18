@@ -242,6 +242,15 @@ class SOCOMD_BUSHMASTER_TRANS : bma3_bushmaster_unarmed_F {
         "bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
     };
 
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
+    };
+
     class textureSources : textureSources {
         class adf_001 : adf_001 {
             textures[] = {
@@ -331,6 +340,15 @@ class SOCOMD_BUSHMASTER_HMG : bma3_bushmaster_pws127mm_F {
         "\z\socomd\addons\data\bma3\camo2_co.paa",
         "bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
         "bma3\bma3_bushmaster_data\labels\labels_army_01.paa"
+    };
+
+    class ace_cargo {       
+        class Cargo {
+            class ACE_Wheel {
+                type = "ACE_Wheel";
+                amount = 2;
+            };
+        }; 
     };
 
     class textureSources : textureSources {

@@ -75,7 +75,7 @@ class _xx_##id { \
 #define ITEM_PRIMARY_GL                         ACWP_M4A5_145_7rail_GL
 #define ITEM_PRIMARY_M4                         ACWP_M4A5_145_troy_base
 #define ITEM_PRIMARY_MARKSMAN                   ACWP_sr25
-#define ITEM_PRIMARY_RECON                      bnae_falkor_camo1_virtual
+#define ITEM_PRIMARY_RECON                      ACWP_blaser_r93
 #define ITEM_PRIMARY_MACHINEGUN                 SOCOMD_Minimi
 #define ITEM_PRIMARY_MACHINEGUN_762             UK3CB_BAF_L110_762
 #define ITEM_PRIMARY_MACHINEGUN_GPMG            SOCOMD_mag58
@@ -228,8 +228,8 @@ class ItemInfo : ItemInfo { \
 
 // Medium
 #define INVENTORY_VEHICLE_MEDIUM_WEAPONS \
-    TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 1) \
-    TRANSPORT_WEAPON(rhs_weap_m72a7, 1) 
+    TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 2) \
+    TRANSPORT_WEAPON(rhs_weap_m72a7, 2) 
 
 #define INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 8) \
@@ -242,7 +242,7 @@ class ItemInfo : ItemInfo { \
 #define INVENTORY_VEHICLE_MEDIUM_ITEMS \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC152, 1) \
-    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_bodyBag, 4) \
     TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
@@ -264,7 +264,7 @@ class ItemInfo : ItemInfo { \
 #define INVENTORY_VEHICLE_LARGE_ITEMS \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC152, 1) \
-    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_bodyBag, 4) \
     TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_LARGE_BACKPACKS \
