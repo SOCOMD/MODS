@@ -69,9 +69,9 @@ class CfgLoadoutWeapons {
 
     class MachineGun_762x54 {
         magazines[] = {
-            {"rhs_100Rnd_762x54mmR", 4}
+            {"rhs_100Rnd_762x54mmR", 6}
         };
-    }
+    };
 
     class Rifle_762 {
         magazines[] = {
@@ -83,7 +83,7 @@ class CfgLoadoutWeapons {
         magazines[] = {
             {"rhs_30Rnd_762x39mm_polymer", 8}
         };
-    }
+    };
 
     class RifleGL_762x39 {
         magazines[] = {
@@ -179,13 +179,13 @@ class CfgLoadoutWeapons {
         magazines[] = {
             {"rhs_18rnd_9x21mm_7N29", 3}
         };
-    }
+    };
     class PISTOL_9x19 {
         startLoaded = 1;
         magazines[] = {
             {"rhs_mag_9x19_17", 3}
         };
-    }
+    };
     class Launcher {
         magazines[] = {};
     };
