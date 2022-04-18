@@ -1,8 +1,8 @@
 class ACE_Medical_Treatment_Actions {
    
-    class BasicBandage;
+    class CPR;
 	
-	class SOCOMD_Defibrillator: BasicBandage {
+	class SOCOMD_Defibrillator: CPR {
 		displayName = CSTRING(Defib_Action_Use);
 		displayNameProgress = "preparing to shock...";
         treatmentTime = 10;
@@ -19,10 +19,6 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"socomd_defib_AED"};
         consumeItem = 0;
         condition = "ace_medical_treatment_fnc_canCPR";
-        animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
-        animationMedicProne = "AinvPknlMstpSnonWnonDr_medic0";
-        animationMedicSelf = "";
-        animationMedicSelfProne = "";
         litter[] = {};
 	};
 };
