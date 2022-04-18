@@ -135,7 +135,7 @@ class _xx_##id { \
 #define ITEM_BACKPACK_MARKSMAN                   "SOG_BAG_MC"
 #define ITEM_BACKPACK_SAPPER                     "Kit_Bag_pince_MC"
 #define ITEM_BACKPACK_MACHINEGUNNER              "SOG_BAG_MC"
-#define ITEM_BACKPACK_MEDIC                      "SOG_BAG_MC"
+#define ITEM_BACKPACK_MEDIC                      "sog_bag_med_mc"
 #define ITEM_BACKPACK_RECON                      "Kit_Bag_R_MC"
 #define ITEM_BACKPACK_AT                         "SOG_BAG_MC"
 #define ITEM_BACKPACK_PILOT                      "SOG_BAG_recon_od"
@@ -147,7 +147,7 @@ class _xx_##id { \
 
 
 // headgear macros
-    
+
 #define HELMET_ARMOR(ARMOR,PASS) \
 class ItemInfo : ItemInfo { \
     class HitpointsProtectionInfo { \
@@ -207,7 +207,7 @@ class ItemInfo : ItemInfo { \
 
 // small
 #define INVENTORY_VEHICLE_SMALL_WEAPONS \
-    TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 1) 
+    TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 1)
 
 #define INVENTORY_VEHICLE_SMALL_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 4) \
@@ -221,7 +221,7 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC152, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 2) \
-    TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ACE_CableTie, 6)
 
 #define INVENTORY_VEHICLE_SMALL_BACKPACKS \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 1)
@@ -229,7 +229,7 @@ class ItemInfo : ItemInfo { \
 // Medium
 #define INVENTORY_VEHICLE_MEDIUM_WEAPONS \
     TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 2) \
-    TRANSPORT_WEAPON(rhs_weap_m72a7, 2) 
+    TRANSPORT_WEAPON(rhs_weap_m72a7, 2)
 
 #define INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 8) \
@@ -243,7 +243,7 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC152, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 4) \
-    TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ACE_CableTie, 6)
 
 #define INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)
@@ -251,7 +251,7 @@ class ItemInfo : ItemInfo { \
 // large
 #define INVENTORY_VEHICLE_LARGE_WEAPONS \
     TRANSPORT_WEAPON(ITEM_VEHICLE_M4, 2) \
-    TRANSPORT_WEAPON(rhs_weap_m72a7, 2) 
+    TRANSPORT_WEAPON(rhs_weap_m72a7, 2)
 
 #define INVENTORY_VEHICLE_LARGE_MAGAZINES \
     TRANSPORT_MAGAZINE(ITEM_MAGAZINE_556, 12) \
@@ -265,7 +265,7 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC152, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 4) \
-    TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ACE_CableTie, 6)
 
 #define INVENTORY_VEHICLE_LARGE_BACKPACKS \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
@@ -289,7 +289,7 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ToolKit, 1) \
     TRANSPORT_ITEM(ACRE_PRC117F, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 2) \
-    TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ACE_CableTie, 6)
 
 #define INVENTORY_VEHICLE_HELO_BAGS \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
