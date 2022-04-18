@@ -13,7 +13,7 @@ class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
             condition = 1;
 
             class SOCOMD_arsenal {
-                displayName = "Arsenal";
+                displayName = "Personalise";
                 condition = 1;
                 statement = "[player, player, false] call socomd_arsenal_fnc_openBox";
                 showDisabled = 0;
