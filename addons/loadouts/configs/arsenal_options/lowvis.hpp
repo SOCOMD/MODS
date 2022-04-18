@@ -3,7 +3,6 @@
 // isLogi is used for pilots and crewmen who don't need grenade options. eg: isLogi = 1;
 // extraUniforms used for classes that need specialist uniforms like recon. Uniforms all defined in own class. eg: extraUniforms = "LOWVIS_UNIFORMS";
 // arsenalExtras used for those who need extra arsenal equipment like rifleman. options defined in role class eg arsenalExtras[] = {"myExtra","myExtra2"};
-/*
 
 #define LOWVIS_UNIFORMS \
     "CUP_I_B_PMC_Unit_20",\
@@ -74,7 +73,7 @@
         vests[]={
             TWO_COMMS_RIGS,
             VESTS_COMMS,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
             BAGS,
@@ -104,14 +103,14 @@
         vests[]={
             ONE_COMM_RIGS,
             VESTS_TL,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
         arsenalExtras[] ={
             RIFLEMAN_EXTRAS
         };
@@ -134,7 +133,7 @@
         vests[]={
             ONE_COMM_RIGS,
             VESTS_TL,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
             BAGS,
@@ -142,7 +141,7 @@
         };
         grenades[]={
             GRENADES_BREACHER
-        };    
+        };
     };
 
     class SOCOMD_LOWVIS_AT_Assistant{
@@ -160,14 +159,14 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };                
+        };
     };
     class SOCOMD_LOWVIS_Marksman{
         class uniforms{
@@ -184,14 +183,14 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };            
+        };
     };
     class SOCOMD_LOWVIS_Sapper{
         class uniforms{
@@ -208,7 +207,7 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS,
@@ -216,7 +215,7 @@
         };
         grenades[]={
             GRENADES_SAPPER
-        };    
+        };
     };
     class SOCOMD_LOWVIS_MachineGunner{
         class uniforms{
@@ -233,14 +232,14 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Medic{
         class uniforms{
@@ -257,7 +256,7 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_MED        
+            VESTS_MED
         };
         bags[]={
             BAGS,
@@ -265,7 +264,7 @@
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_AT{
         class uniforms{
@@ -283,14 +282,14 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Pilot{
         class uniforms{
@@ -320,7 +319,7 @@
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Crewman{
         class uniforms{
@@ -337,7 +336,7 @@
         };
         vests[]={
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
@@ -348,7 +347,7 @@
             NVG_OPTIONS
         };
         grenades[]={
-        };    
+        };
         isLogi = 1;
     };
     class SOCOMD_LOWVIS_AO{
@@ -366,7 +365,7 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_MED        
+            VESTS_MED
         };
         bags[]={
             BAGS,
@@ -374,7 +373,7 @@
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Logistician{
         class uniforms{
@@ -391,14 +390,14 @@
         };
         vests[]={
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Recon{
         class uniforms{
@@ -415,7 +414,7 @@
         };
         vests[]={
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
@@ -423,7 +422,7 @@
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Recon_Assistant{
         class uniforms{
@@ -441,7 +440,7 @@
         };
         vests[]={
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
@@ -449,7 +448,6 @@
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
-	
-*/
+
