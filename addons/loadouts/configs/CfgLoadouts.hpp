@@ -5,7 +5,7 @@ class CfgLoadouts {
         #include "loadouts\default.hpp"
         #include "loadouts\afp.hpp"
         // #include "loadouts\loadouts_tage.hpp"
-        // #include "loadouts\loadouts_sso.hpp"
-        // #include "loadouts\loadouts_lowvis.hpp"
+        #include "loadouts\loadouts_sso.hpp"
+        #include "loadouts\loadouts_lowvis.hpp"
     };
 };

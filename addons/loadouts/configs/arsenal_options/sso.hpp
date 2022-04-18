@@ -1,4 +1,4 @@
-/*
+
 #define SSO_GENERAL_RIFLE \
     "SOCOMD_SSO_AK",\
     "AGE_AK105",\
@@ -142,12 +142,12 @@
 
 #define SSO_AMCU_UNIFORMS \
     "SOCOMD_SSO_SleevesDown"
-    
+
 #define SSO_RECON_UNIFORMS \
     "SOCOMD_Uniform_AMCU_SleevesDown_Recon",\
     "SOCOMD_Uniform_SleevesDown_Recon"
 
-#define SSO_PILOT_UNIFORMS 
+#define SSO_PILOT_UNIFORMS
 
 #define SSO_ONE_COMM_RIGS \
     "vss_04_RG",\
@@ -216,7 +216,7 @@
     "grenades_default",\
     "grenades_more_flash",\
     "grenades_less_lethal"
-    
+
 #define SSO_GRENADES_LEADER\
     "grenades_default_leader",\
     "grenades_more_flash_leader",\
@@ -226,7 +226,7 @@
     "grenades_default_breacher",\
     "grenades_more_flash_breacher",\
     "grenades_less_lethal_breacher"
-    
+
 #define SSO_GRENADES_SAPPER \
     "grenades_default_sapper",\
     "grenades_more_flash_sapper",\
@@ -241,7 +241,7 @@
     "extras_sso_at_assistant_mixed",\
     "extras_sso_at_assistant_heat"
 
-    
+
     class SOCOMD_SSO_Commander{
         class uniforms{
             arid_uniforms[]={
@@ -297,14 +297,14 @@
         vests[]={
             SSO_ONE_COMM_RIGS,
             SSO_VESTS_STANDARD,
-            SSO_VESTS_WEAPONS        
+            SSO_VESTS_WEAPONS
         };
         bags[]={
             SSO_BAGS
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
         arsenalExtras[] ={
             SSO_RIFLEMAN_EXTRAS
         };
@@ -332,7 +332,7 @@
             SSO_ONE_COMM_RIGS,
             SSO_VESTS_STANDARD,
             SSO_VESTS_BREACHER
-            
+
         };
         bags[]={
             SSO_BAGS,
@@ -340,7 +340,7 @@
         };
         grenades[]={
             SSO_GRENADES_BREACHER
-        };    
+        };
     };
 
     class SOCOMD_SSO_AT_Assistant{
@@ -362,7 +362,7 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_STANDARD        
+            SSO_VESTS_STANDARD
         };
         bags[]={
             SSO_BAGS,
@@ -370,7 +370,7 @@
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };                
+        };
     };
     class SOCOMD_SSO_Marksman{
         helmets[] = {
@@ -391,14 +391,14 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_STANDARD        
+            SSO_VESTS_STANDARD
         };
         bags[]={
             SSO_BAGS
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };            
+        };
     };
     class SOCOMD_SSO_Sapper{
         helmets[] = {
@@ -419,7 +419,7 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_STANDARD        
+            SSO_VESTS_STANDARD
         };
         bags[]={
             SSO_BAGS,
@@ -427,7 +427,7 @@
         };
         grenades[]={
             SSO_GRENADES_SAPPER
-        };    
+        };
     };
     class SOCOMD_SSO_MachineGunner{
         helmets[] = {
@@ -457,7 +457,7 @@
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_SSO_Medic{
         helmets[] = {
@@ -478,7 +478,7 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_MED        
+            SSO_VESTS_MED
         };
         bags[]={
             SSO_BAGS,
@@ -486,7 +486,7 @@
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_SSO_AT{
         helmets[] = {
@@ -508,7 +508,7 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_STANDARD        
+            SSO_VESTS_STANDARD
         };
         bags[]={
             SSO_BAGS
@@ -545,7 +545,7 @@
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_SSO_Crewman{
         weapons[]={
@@ -554,7 +554,7 @@
         };
         vests[]={
             SSO_TWO_COMMS_RIGS,
-            SSO_VESTS_COMMS        
+            SSO_VESTS_COMMS
         };
         bags[]={
             SSO_BAGS,
@@ -565,7 +565,7 @@
             SSO_NVG_OPTIONS
         };
         grenades[]={
-        };    
+        };
         isLogi = 1;
     };
     class SOCOMD_SSO_AO{
@@ -583,7 +583,7 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_MED        
+            SSO_VESTS_MED
         };
         bags[]={
             SSO_BAGS,
@@ -591,7 +591,7 @@
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_SSO_Logistician{
         helmets[] = {
@@ -612,14 +612,14 @@
         };
         vests[]={
             SSO_ONE_COMM_RIGS,
-            SSO_VESTS_STANDARD        
+            SSO_VESTS_STANDARD
         };
         bags[]={
             SSO_BAGS
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_SSO_Recon{
         helmets[] = {
@@ -632,7 +632,7 @@
         };
         vests[]={
             SSO_TWO_COMMS_RIGS,
-            SSO_VESTS_COMMS        
+            SSO_VESTS_COMMS
         };
         bags[]={
             SSO_BAGS,
@@ -640,7 +640,7 @@
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_SSO_Recon_Assistant{
         helmets[] = {
@@ -662,7 +662,7 @@
         };
         vests[]={
             SSO_TWO_COMMS_RIGS,
-            SSO_VESTS_COMMS        
+            SSO_VESTS_COMMS
         };
         bags[]={
             SSO_BAGS,
@@ -670,7 +670,6 @@
         };
         grenades[]={
             SSO_GRENADES_NORMAL
-        };    
+        };
     };
-	
-/*
+
