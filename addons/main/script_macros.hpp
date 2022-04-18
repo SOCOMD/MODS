@@ -104,12 +104,13 @@ class _xx_##id { \
 #define ITEM_CREW_HEADGEAR                      "SOCOMD_Ground_Crew_helmet"
 
 // uniforms
-#define ITEM_DEFAULT_UNIFORM                    "USP_G3C_KP_MC_SOCOMD"
-#define ITEM_DEFAULT_UNIFORM_AMCU               "USP_G3C_KP_AMCU_SOCOMD"
-#define ITEM_SNOW_UNIFORM                       "USP_OVERWHITE_G3C_KP_MC_SOCOMD"
-#define ITEM_RECON_UNIFORM                      "USP_G3C_KP_MC_RECON"
-#define ITEM_RECON_UNIFORM_AMCU                 "USP_G3C_KP_AMCU_RECON"
-#define ITEM_RECON_SNOW_UNIFORM                 "USP_OVERWHITE_G3C_KP_MC_RECON"
+#define ITEM_DEFAULT_UNIFORM                    "USP_G3C_KP_MX_MC_SOCOMD"
+#define ITEM_DEFAULT_UNIFORM_AMCU               "USP_G3C_KP_MX_AMCU_SOCOMD"
+#define ITEM_DEFAULT_UNIFORM_MCB                "USP_G3C_KP_MX_MCB_AFP"
+#define ITEM_SNOW_UNIFORM                       "USP_OVERWHITE_G3C_KP_MX_MC_SOCOMD"
+#define ITEM_RECON_UNIFORM                      "USP_G3C_KP_MX_MC_RECON"
+#define ITEM_RECON_UNIFORM_AMCU                 "USP_G3C_KP_MX_AMCU_RECON"
+#define ITEM_RECON_SNOW_UNIFORM                 "USP_OVERWHITE_G3C_KP_MX_MC_RECON"
 
 // vests
 #define ITEM_VEST_TROOPLEADER                   "lbt_comms_mc"
