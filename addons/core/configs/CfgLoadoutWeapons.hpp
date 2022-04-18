@@ -29,6 +29,27 @@ class CfgLoadoutWeapons {
         };
     };
 
+    class RifleGL_545 {
+        magazines[] = {
+            {"rhs_30Rnd_545x39_7N10_AK", 8}
+        };
+        grenades[] = {
+            {"hlc_VOG25_AK", 8}
+        };
+        commandGrenades[] = {
+            {"rhs_VG40OP_red", 2},
+            {"hlc_GRD_Red", 2},
+        };
+        tacpGrenades[] = {
+            {"hlc_GRD_Red", 6},
+        };
+    };
+    class MachineGun_545 {
+        magazines[] = {
+            {"rhs_30Rnd_545x39_7N10_AK", 8}
+        };
+    };
+
     class MachineGun_556 {
         magazines[] = {
             {QUOTE(ITEM_MAGAZINE_556_BELT), 5}
@@ -46,9 +67,37 @@ class CfgLoadoutWeapons {
         };
     };
 
+    class MachineGun_762x54 {
+        magazines[] = {
+            {"rhs_100Rnd_762x54mmR", 4}
+        };
+    }
+
     class Rifle_762 {
         magazines[] = {
             {"20Rnd_762x51_Mag", 8}
+        };
+    };
+
+    class Rifle_762x39 {
+        magazines[] = {
+            {"rhs_30Rnd_762x39mm_polymer", 8}
+        };
+    }
+
+    class RifleGL_762x39 {
+        magazines[] = {
+            {"rhs_30Rnd_762x39mm_polymer", 8}
+        };
+        grenades[] = {
+            {"hlc_VOG25_AK", 8}
+        };
+        commandGrenades[] = {
+            {"rhs_VG40OP_red", 2},
+            {"hlc_GRD_Red", 2},
+        };
+        tacpGrenades[] = {
+            {"hlc_GRD_Red", 6},
         };
     };
 
@@ -60,7 +109,7 @@ class CfgLoadoutWeapons {
 
     class Sniper_762x54R {
         magazines[] = {
-            {"CUP_10Rnd_762x54_SVD_M", 14}
+            {"rhs_10Rnd_762x54mmR_7N1", 14}
         };
     };
 
@@ -71,28 +120,28 @@ class CfgLoadoutWeapons {
     };
     class SSO_Rifle_338 {
         magazines[] ={
-            {"AGE_10Rnd_338_Mag",8}
+            {"rhs_5Rnd_338lapua_t5000",12}
         };
     };
 
     class SOCOMD_SSO_RPK {
         magazines[]={
-            {"CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M",7}
+            {"hlc_45Rnd_545x39_EP_rpkm",7}
         };
     };
     class SOCOMD_pkp_acc {
         magazines[]={
-            {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",5}
+            {"rhs_100Rnd_762x54mmR",5}
         };
     };
     class SOCOMD_SSO_AK_GL {
         magazines[] = {
-            {"CUP_30Rnd_545x39_AK74M_camo_M", 8},
-            {"CUP_1Rnd_HE_GP25_M", 8}
+            {"AGE_30Rnd_545x39mm_Mag", 8},
+            {"hlc_VOG25_AK", 8}
         };
         commandGrenades[] = {
-            {"CUP_FlareRed_GP25_M", 2},
-            {"CUP_1Rnd_SmokeRed_GP25_M", 2},
+            {"rhs_VG40OP_red", 2},
+            {"hlc_GRD_Red", 2},
             {"ACE_HuntIR_M203", 3}
         };
     };
@@ -125,14 +174,25 @@ class CfgLoadoutWeapons {
             {"ACWP_19Rnd_9x21_Mag_glock",3}
         };
     };
+    class PISTOL_9x21 {
+        startLoaded = 1;
+        magazines[] = {
+            {"rhs_18rnd_9x21mm_7N29", 3}
+        };
+    }
+    class PISTOL_9x19 {
+        startLoaded = 1;
+        magazines[] = {
+            {"rhs_mag_9x19_17", 3}
+        };
+    }
     class Launcher {
         magazines[] = {};
     };
     class SOCOMD_RPG7{
 
         magazines[] ={
-            {"CUP_PG7VM_M",1},
-            {"CUP_OG7_M",2}
+            {"rhs_rpg7_PG7VL_mag",3},
         };
     };
 };

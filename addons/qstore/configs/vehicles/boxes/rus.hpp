@@ -1,4 +1,4 @@
-    
+
 class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
     scope = SCOPE_PUBLIC;
     scopeCurator = SCOPE_PUBLIC;
@@ -11,20 +11,20 @@ class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
             selection = "";
             distance = 5;
             condition = 1;
-            
+
             class SOCOMD_arsenal {
                 displayName = "Arsenal";
                 condition = 1;
                 statement = "[player, player, false] call socomd_arsenal_fnc_openBox";
                 showDisabled = 0;
-                exceptions[] = {"isNotInside", "isNotSitting"};                
+                exceptions[] = {"isNotInside", "isNotSitting"};
             };
-            
+
             QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (SSO)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_SSO_Commander)
                     QSTORE_ACTION_LOADOUT("Leader",SOCOMD_SSO_Leader)
-                    QSTORE_ACTION_LOADOUT("2IC",SOCOMD_SSO_2IC)
+                    // QSTORE_ACTION_LOADOUT("2IC",SOCOMD_SSO_2IC)
                     QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_SSO_Rifleman)
                     QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_SSO_Marksman)
                     QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_SSO_Sapper)
@@ -40,7 +40,7 @@ class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_SSO_Pilot)
                     QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_SSO_Crewman)
                     QSTORE_ACTION_LOADOUT("Recon",SOCOMD_SSO_Recon)
-                    QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_SSO_Recon_Assistant)
+                    // QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_SSO_Recon_Assistant)
                 QSTORE_ACTION_GRP_END
 
             QSTORE_ACTION_GRP_END

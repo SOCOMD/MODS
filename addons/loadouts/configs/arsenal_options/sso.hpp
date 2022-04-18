@@ -1,18 +1,46 @@
 
 #define SSO_GENERAL_RIFLE \
-    "SOCOMD_SSO_AK",\
-    "AGE_AK105",\
+    "rhs_weap_ak103",\
+    "AGE_AK103",\
+    "rhs_weap_ak103_1",\
+    "rhs_weap_ak103_2",\
+    "rhs_weap_ak103_gp25",\
+    "rhs_weap_ak103_zenitco01",\
+    "AGE_103_V_Camo",\
+    "rhs_weap_ak104_npz",\
+    "rhs_weap_ak104_zenitco01_b33",\
+    "AGE_AK104_V_Camo",\
+    "rhs_weap_ak105",\
     "AGE_AK105_Camo",\
-    "AGE_AK105_V_R",\
+    "AGE_AK105_C",\
     "AGE_AK105_V",\
-    "AGE_AK105_V_Camo",\
-    "AGE_AK74M_C_Q",\
+    "AGE_AK105_V_R",\
+    "AGE_AK74M_Camo",\
+    "rhs_weap_ak74_2",\
+    "AGE_AK74M",\
+    "rhs_weap_ak74m",\
+    "rhs_weap_ak74m_npz",\
+    "rhs_weap_ak74m_camo",\
+    "rhs_weap_ak74m_camo_npz",\
+    "rhs_weap_ak74m_desert",\
+    "rhs_weap_ak74m_gp25",\
+    "rhs_weap_ak74m_fullplum_gp25",\
+    "rhs_weap_ak74m_fullplum",\
+    "rhs_weap_ak74m_fullplum_npz",\
+    "rhs_weap_ak74m_zenitco01_b33",\
+    "AGE_AK74M_C_Camo",\
+    "AGE_AK74M_V",\
     "AGE_AK74M_V_Q",\
-    "CUP_30Rnd_545x39_AK74M_M"
+    "rhs_weap_aks74",\
+    "rhs_weap_aks74_gp25",\
+    "rhs_weap_aks74n",\
+    "rhs_weap_aks74n_gp25_npz",\
+    "rhs_weap_aks74n_2"
+
 
 #define SSO_SOLS_RIFLES \
-    "CUP_arifle_AKS74U_top_rail",\
-    "CUP_30Rnd_545x39_AK74M_M"
+    "rhs_weap_aks74un",\
+    "rhs_weap_aks74n_2"
 
 #define SSO_BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
@@ -20,40 +48,63 @@
     "SOG_BAG_med_od"
 
 #define SSO_GL_RIFLE \
-    "SOCOMD_SSO_AK_GL",\
+    "rhs_weap_ak74n_gp25_npz",\
+    "rhs_weap_ak74_gp25",\
+    "rhs_weap_ak74n_gp25",\
+    "rhs_weap_aks74_gp25",\
+    "rhs_weap_aks74n_gp25",\
+    "rhs_weap_aks74n_gp25_npz",\
     "1Rnd_HE_Grenade_shell",\
     "UGL_FlareRed_F",\
     "1Rnd_SmokeRed_Grenade_shell",\
     "ACE_HuntIR_M203"
 
 #define SSO_MACHINE_GUN \
-    "SOCOMD_pkp_acc",\
-    "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",\
-    "SOCOMD_SSO_RPK",\
-    "CUP_60Rnd_TE1_Green_Tracer_545x39_AK74M_M"
+    "rhs_weap_pkp",\
+    "rhs_100Rnd_762x54mmR_green",\
+    "UK3CB_RPK",\
+    "UK3CB_RPK_74",\
+    "UK3CB_RPK_74_BLK",\
+    "UK3CB_RPK_74_PLUM",\
+    "rhs_weap_rpk74m",\
+    "rhs_weap_rpk74m_npz",\
+    "UK3CB_RPK_74N",\
+    "UK3CB_RPK_74N_BLK",\
+    "UK3CB_RPK_74N_PLUM",\
+    "UK3CB_RPK_75rnd_762x39_G",\
+    "UK3CB_AK47_30Rnd_Magazine",\
+    "hlc_45Rnd_762x39_AP_rpk"
 
 #define SSO_MARKSMAN \
-    "CUP_srifle_SVD_des_top_rail",\
-    "CUP_srifle_SVD_wdl_top_rail",\
-    "CUP_srifle_SVD_top_rail",\
-    "CUP_10Rnd_762x54_SVD_M"
+    "rhs_weap_svdp",\
+    "rhs_weap_svdp_wd",\
+    "rhs_weap_svdp_wd_npz",\
+    "rhs_weap_svdp_npz",\
+    "rhs_weap_svds_npz",\
+    "rhs_10Rnd_762x54mmR_7N1",\
+    "rhs_weap_vss",\
+    "rhs_weap_vss_grip",\
+    "rhs_weap_vss_grip_npz",\
+    "rhs_10rnd_9x39mm_SP5"
 
 #define SSO_SNIPER \
     "AGE_OrsisT5000",\
     "AGE_OrsisT5000_Camo",\
     "AGE_OrsisT5000_Snow",\
-    "AGE_10Rnd_338_Mag"
+    "rhs_weap_t5000",\
+    "rhs_5Rnd_338lapua_t5000"
 
 #define SSO_LAUNCHERS \
-    "CUP_launch_RPG18",\
-    "CUP_RPG18_M",\
-    "SOCOMD_RPG7",\
-    "CUP_PG7VM_M",\
-    "CUP_OG7_M"
+    "rhs_weap_rpg7",\
+    "rhs_weap_rpg26",\
+    "rhs_rpg7_PG7VL_mag",\
+
 
 #define SSO_HANDGUNS  \
     "acwp_glock17_black",\
-    "ACWP_19Rnd_9x21_Mag_glock"
+    "ACWP_19Rnd_9x21_Mag_glock",\
+    "rhs_weap_pya",\
+    "rhs_weap_6p53",\
 
 #define SSO_HELMETS \
     "AGE_Fast_Black_C",\
@@ -103,7 +154,6 @@
     "AGE_LSHZ_PaintedMCam_H_A",\
     "H_Watchcap_blk",\
     "H_Watchcap_cbr",\
-    "CUP_H_RUS_Bandana_HS",\
     "H_Bandanna_sgg",\
     "H_Bandanna_sand",\
     "H_Booniehat_mgrn",\
@@ -112,13 +162,6 @@
     "ADFU_Booniehat_MC",\
     "ADFU_Cap_MC",\
     "H_Cap_oli",\
-    "CUP_H_PMC_Cap_Tan",\
-    "CUP_H_PMC_Cap_Back_Tan",\
-    "CUP_H_PMC_Cap_Back_EP_Tan",\
-    "CUP_H_PMC_Cap_Back_PRR_Tan",\
-    "CFP_BaseballCap_Multicam_DEF",\
-    "CFP_BaseballCap_Multicam_DEF_Back",\
-    "CFP_BaseballCap_Multicam_Back"
 
 #define SSO_NVG_OPTIONS \
     "SOCOMD_NVG",\
@@ -138,16 +181,16 @@
     "SOCOMD_Pilot_helmet"
 
 #define SSO_MC_UNIFORMS \
-    "SOCOMD_SSO_SleevesDown"
+    "USP_G3C_MX_MC_RUS"
 
 #define SSO_AMCU_UNIFORMS \
-    "SOCOMD_SSO_SleevesDown"
+    "USP_G3C_MX_MC_RUS"
 
 #define SSO_RECON_UNIFORMS \
-    "SOCOMD_Uniform_AMCU_SleevesDown_Recon",\
-    "SOCOMD_Uniform_SleevesDown_Recon"
+    "USP_G3C_MX_MC_RUS"
 
-#define SSO_PILOT_UNIFORMS
+#define SSO_PILOT_UNIFORMS \
+    "USP_G3C_MX_MC_RUS"
 
 #define SSO_ONE_COMM_RIGS \
     "vss_04_RG",\
@@ -449,6 +492,7 @@
         vests[]={
             SSO_ONE_COMM_RIGS,
             SSO_VESTS_STANDARD,
+            SSO_VESTS_BREACHER,
             "AGE_LV119_Pouches_MultiCam"
         };
         bags[]={

@@ -7,7 +7,7 @@ class SOCOMD_AFP_Leader {
         temperate_uniforms[]={
             MCB_UNIFORMS
         };
-        MCB_UNIFORMS[]={
+        snow_uniforms[]={
             MCB_UNIFORMS
         };
     };
@@ -40,7 +40,7 @@ class SOCOMD_AFP_Rifleman{
         temperate_uniforms[]={
             MCB_UNIFORMS
         };
-        MCB_UNIFORMS[]={
+        snow_uniforms[]={
             MCB_UNIFORMS
         };
     };
@@ -60,7 +60,7 @@ class SOCOMD_AFP_Rifleman{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
     arsenalExtras[] ={
         RIFLEMAN_EXTRAS
     };
@@ -74,7 +74,7 @@ class SOCOMD_AFP_Breacher{
         temperate_uniforms[]={
             MCB_UNIFORMS
         };
-        MCB_UNIFORMS[]={
+        snow_uniforms[]={
             MCB_UNIFORMS
         };
     };
@@ -95,7 +95,7 @@ class SOCOMD_AFP_Breacher{
     };
     grenades[]={
         GRENADES_BREACHER
-    };    
+    };
 };
 class SOCOMD_AFP_Marksman{
     class uniforms{
@@ -105,7 +105,7 @@ class SOCOMD_AFP_Marksman{
         temperate_uniforms[]={
             MCB_UNIFORMS
         };
-        MCB_UNIFORMS[]={
+        snow_uniforms[]={
             MCB_UNIFORMS
         };
     };
@@ -123,7 +123,7 @@ class SOCOMD_AFP_Marksman{
     };
     grenades[]={
         GRENADES_NORMAL
-    };            
+    };
 };
 class SOCOMD_AFP_Medic{
     class uniforms{
@@ -133,7 +133,7 @@ class SOCOMD_AFP_Medic{
         temperate_uniforms[]={
             MCB_UNIFORMS
         };
-        MCB_UNIFORMS[]={
+        snow_uniforms[]={
             MCB_UNIFORMS
         };
     };
@@ -152,5 +152,5 @@ class SOCOMD_AFP_Medic{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };
