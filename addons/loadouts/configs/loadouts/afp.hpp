@@ -29,7 +29,7 @@ class SOCOMD_AFP_Leader {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
             LOADOUT_ITEM(ACRE_PRC152, 2)
         };
     };
@@ -78,7 +78,7 @@ class SOCOMD_AFP_Rifleman {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
     class Backpack {
@@ -118,7 +118,7 @@ class SOCOMD_AFP_Breacher {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
     class Backpack {
@@ -206,7 +206,7 @@ class SOCOMD_AFP_Medic {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-            
+
         };
     };
 
@@ -244,7 +244,7 @@ class SOCOMD_AFP_Medic {
             LOADOUT_ITEM(SOCOMD_NDC, 6)                    //14 Gauge needle
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(kat_AED, 1)        //Defibrillator
+            LOADOUT_ITEM(socomd_defib_AED, 1)        //Defibrillator
         };
     };
 };

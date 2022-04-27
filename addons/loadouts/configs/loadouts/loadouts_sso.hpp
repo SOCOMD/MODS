@@ -332,7 +332,7 @@ class SOCOMD_SSO_Medic {
             LOADOUT_ITEM(SOCOMD_NDC, 6)                    //14 Gauge needle
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(kat_AED, 1)        //Defibrillator
+            LOADOUT_ITEM(socomd_defib_AED, 1)        //Defibrillator
         };
     };
 };
@@ -392,7 +392,7 @@ class SOCOMD_SSO_AO{
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(SOCOMD_NDC, 8)                    //14 Gauge needle
             LOADOUT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
-            LOADOUT_ITEM(kat_aed, 1)                    //Defibrillator
+            LOADOUT_ITEM(socomd_defib_AED, 1)        //Defibrillator
             LOADOUT_ITEM(ACE_bodyBag, 2)                //Defibrillator
         };
     };
