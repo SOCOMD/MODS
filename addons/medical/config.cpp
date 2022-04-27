@@ -31,10 +31,7 @@ class CfgPatches {
             "ace_medical_status",
             "ace_medical_treatment",
             "ace_medical_vitals",
-            // "kat_main",
-            // "kat_airway",
-            // "kat_breathing",
-            // "kat_circulation"
+            "socomd_defib"
         };
         author = "";
         authors[] = {"SOCOMD J4"};

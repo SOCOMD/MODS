@@ -97,10 +97,12 @@ if (isArray(configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets")) then 
     [_player, _helmets, false] call EFUNC(arsenal,removeVirtualItems);
     _sr_array append getArray (configFile >> "CfgArsenalOptions" >> _loadoutId >> "helmets");
 };
-
 [_player, _sr_array, false] call EFUNC(arsenal,addVirtualItems);
 
 [_player, _blackList ] call EFUNC(arsenal,removeVirtualItems); // ensuring that the blacklisted gear is removed
+
+// adding old medical items
+[_player,["kat_AED","kat_chestSeal","kat_larynx","kat_guedel"], false] call EFUNC(arsenal,addVirtualItems);
 
 // Arsenal Event Handlers
 // 0. hides unwanted tabs on open
