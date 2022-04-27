@@ -6,7 +6,7 @@ class ACE_basicAirway;
 
 class kat_AED: socomd_defib_AED {
 	scope = 1;
-}
+};
 class kat_chestSeal: ACE_chestSeal {
 	scope = 1;
 };
