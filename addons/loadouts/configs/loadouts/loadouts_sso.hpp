@@ -364,36 +364,7 @@ class SOCOMD_SSO_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
-            LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
-            LOADOUT_ITEM(ACE_fieldDressing, 15)          //Israeli Bandage
-            LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
-            LOADOUT_ITEM(ACE_morphine, 0)                  //Remove
-            LOADOUT_ITEM(ACE_personalAidKit, 0)            //Remove
-            LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
-            LOADOUT_ITEM(ACE_elasticBandage, 5)            //Elastic Bandage
-            LOADOUT_ITEM(ACE_quikclot, 20)                //Quikclot
-            LOADOUT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
-            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
-            LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
-            LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
-            LOADOUT_ITEM(SOCOMD_fentanyl, 4)                //Fentanyl Ampoule
-            LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
-            LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
-            LOADOUT_ITEM(SOCOMD_nargloves, 5)
-            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
-            LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
-            LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
-            LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter
-            LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
-            LOADOUT_ITEM(SOCOMD_NDC, 8)                    //14 Gauge needle
-            LOADOUT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
-            LOADOUT_ITEM(socomd_defib_AED, 1)        //Defibrillator
-            LOADOUT_ITEM(ACE_bodyBag, 2)                //Defibrillator
+            LOADOUT_BACKPACK_MEDIC
         };
     };
 };
