@@ -87,7 +87,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_LEADER
@@ -117,7 +119,8 @@
             VESTS_WEAPONS
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -149,7 +152,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_SAPPER
+            BAGS_BLK,
+            BACKPACK_SAPPER,
+            BACKPACK_SAPPER_BLK
         };
         grenades[]={
             GRENADES_BREACHER
@@ -175,7 +180,8 @@
             VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -200,7 +206,8 @@
             VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -226,7 +233,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_SAPPER
+            BAGS_BLK,
+            BACKPACK_SAPPER,
+            BACKPACK_SAPPER_BLK
         };
         grenades[]={
             GRENADES_SAPPER
@@ -251,7 +260,8 @@
             VESTS_COMMS
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -277,7 +287,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_MEDIC
+            BAGS_BLK,
+            BACKPACK_MEDIC,
+            BACKPACK_MEDIC_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -303,7 +315,8 @@
             VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -329,7 +342,9 @@
         };
         bags[]={
             BAGS,
+            BAGS_BLK,
             BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK,
             SOLS_HELMS
         };
         helmets[] = {
@@ -360,7 +375,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         helmets[] = {
             SOLS_HELMS,
@@ -390,7 +407,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_MEDIC
+            BAGS_BLK,
+            BACKPACK_MEDIC,
+            BACKPACK_MEDIC_BLK
         };
         isLogi = 1;
         grenades[]={
@@ -415,7 +434,8 @@
             VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -441,7 +461,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
@@ -468,7 +490,9 @@
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
