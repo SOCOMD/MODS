@@ -181,7 +181,6 @@ class SOCOMD_SSO_Marksman {
         type = "age_tv110_ak_holster_multicam";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
         };
     };
     class Backpack {
