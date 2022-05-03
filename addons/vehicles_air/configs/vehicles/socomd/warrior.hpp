@@ -116,7 +116,13 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
             "",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
-            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa"
+            "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa",
+            "a3\ui_f\data\IGUI\Cfg\Targeting\Empty_ca.paa",
+            "", // "left_num_1",
+            "", // "left_num_2",
+            "", // "right_num_1",
+            "", // "right_num_2",
+            ""
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
     class TransportWeapons { 
@@ -268,6 +274,11 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Main_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Misc_Aussie.paa",
             "\z\socomd\addons\data\S-70A-9 Australia\Hull Tail_Aussie.paa",
+            "a3\ui_f\data\IGUI\Cfg\Targeting\Empty_ca.paa",
+            "", // "left_num_1",
+            "", // "left_num_2",
+            "", // "right_num_1",
+            "", // "right_num_2",
             ""
     };
     typicalCargo[] = {SOCOMD_PILOT}; 
