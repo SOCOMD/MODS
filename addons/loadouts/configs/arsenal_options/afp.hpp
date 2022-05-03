@@ -1,4 +1,17 @@
-#define MCB_UNIFORMS "USP_G3C_KP_MCB_AFP"
+#define MCB_UNIFORMS \
+    "USP_G3C_KP_MCB_AFP",\
+    // "USP_G3C_KP_RGR_AFP" //pending classes in
+
+#define AFP_HELMS \
+    "AGE_Fast_Black",\
+    "AGE_Fast_Black_A_L",\
+    "AGE_Fast_Black_H",\
+    "AGE_Fast_Black_H_A_L",\
+    "ADFU_H_OpsCore_08_BLK",\
+    "ADFU_H_OpsCore_02_BLK"
+
+
+
 class SOCOMD_AFP_Leader {
     class uniforms{
         arid_uniforms[]={
@@ -10,6 +23,11 @@ class SOCOMD_AFP_Leader {
         snow_uniforms[]={
             MCB_UNIFORMS
         };
+    };
+    helmets[] = {
+        HELMETS,
+        AFP_HELMS,
+        NVG_OPTIONS
     };
     weapons[]={
         GENERAL_RIFLE,
@@ -25,7 +43,9 @@ class SOCOMD_AFP_Leader {
     };
     bags[]={
         BAGS,
-        BACKPACK_COMMS
+        BAGS_BLK,
+        BACKPACK_COMMS,
+        BACKPACK_COMMS_BLK
     };
     grenades[]={
         GRENADES_LEADER
@@ -49,6 +69,11 @@ class SOCOMD_AFP_Rifleman{
         GL_RIFLE,
         HANDGUNS
     };
+    helmets[] = {
+        HELMETS,
+        AFP_HELMS,
+        NVG_OPTIONS
+    };
     vests[]={
         VESTS_COMMON,
         ONE_COMM_RIGS,
@@ -56,7 +81,8 @@ class SOCOMD_AFP_Rifleman{
         VESTS_WEAPONS
         };
     bags[]={
-        BAGS
+        BAGS,
+        BAGS_BLK
     };
     grenades[]={
         GRENADES_NORMAL
@@ -83,6 +109,11 @@ class SOCOMD_AFP_Breacher{
         GL_RIFLE,
         HANDGUNS
     };
+    helmets[] = {
+        HELMETS,
+        AFP_HELMS,
+        NVG_OPTIONS
+    };
     vests[]={
         VESTS_COMMON,
         ONE_COMM_RIGS,
@@ -91,7 +122,9 @@ class SOCOMD_AFP_Breacher{
         };
     bags[]={
         BAGS,
-        BACKPACK_SAPPER
+        BAGS_BLK,
+        BACKPACK_SAPPER,
+        BACKPACK_SAPPER_BLK
     };
     grenades[]={
         GRENADES_BREACHER
@@ -113,13 +146,19 @@ class SOCOMD_AFP_Marksman{
         MARKSMAN,
         HANDGUNS
     };
+    helmets[] = {
+        HELMETS,
+        AFP_HELMS,
+        NVG_OPTIONS
+    };
     vests[]={
         VESTS_COMMON,
         ONE_COMM_RIGS,
         VESTS_TL
         };
     bags[]={
-        BAGS
+        BAGS,
+        BAGS_BLK
     };
     grenades[]={
         GRENADES_NORMAL
@@ -137,6 +176,11 @@ class SOCOMD_AFP_Medic{
             MCB_UNIFORMS
         };
     };
+    helmets[] = {
+        HELMETS,
+        AFP_HELMS,
+        NVG_OPTIONS
+    };
     weapons[]={
         GENERAL_RIFLE,
         HANDGUNS
@@ -148,7 +192,9 @@ class SOCOMD_AFP_Medic{
         };
     bags[]={
         BAGS,
-        BACKPACK_MEDIC
+        BAGS_BLK,
+        BACKPACK_MEDIC,
+        BACKPACK_MEDIC_BLK
     };
     grenades[]={
         GRENADES_NORMAL
