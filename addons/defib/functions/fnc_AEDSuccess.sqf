@@ -33,7 +33,7 @@ _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 if (alive _patient && {_patient getVariable ["ace_medical_inCardiacArrest", false]}) then {
 	_message = "You don't find a pulse";
 	if ((random 1) <= (GVAR(Defib_Chance) * 0.01)) then {
-		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+		[QGVAR(Succeeded), [_patient], _patient] call CBA_fnc_targetEvent;
 		_message = "A pulse was successfully found";
 	};
 	[_message, false, 5, 3] call ace_common_fnc_displayText;
