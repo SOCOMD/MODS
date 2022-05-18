@@ -73,7 +73,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
         };
         class AmovPercMtacSrasWpstDl: AmovPercMtacSrasWpstDf
         {
-            speed = 1.75;
+            speed = 1.0;
             aimPrecision = 1;
         };
         class AmovPercMtacSrasWpstDb: AmovPercMtacSrasWpstDf
@@ -83,7 +83,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
         };
         class AmovPercMtacSrasWpstDr: AmovPercMtacSrasWpstDf
         {
-            speed = 1.75;
+            speed = 1.0;
             aimPrecision = 1;
         };
         class TransAnimBase;

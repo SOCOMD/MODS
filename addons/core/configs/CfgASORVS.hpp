@@ -75,7 +75,25 @@ class CfgASORVS {
             "ACWP_case_m4_don",
             "ACWP_case_sniper",
             "SOCOMD_UAV_Supply",
-            "ACE_Wheel"
+            "ACE_Wheel",
+            "UK3CB_BAF_Box_WpsBasic", 
+            "UK3CB_BAF_Box_WpsSpecial", 
+            "UK3CB_BAF_Box_WpsLaunch", 
+            "UK3CB_BAF_Box_WpsStatic",
+            "UK3CB_BAF_Box_L1A1", 
+            "UK3CB_BAF_Box_L7A2", 
+            "UK3CB_BAF_Box_L111A1", 
+            "UK3CB_BAF_Box_L134A1", 
+            "UK3CB_BAF_Box_L16", 
+            "UK3CB_BAF_Box_M6",
+            "UK3CB_BAF_Box_L7A2_Ammo", 
+            "UK3CB_BAF_Box_L111A1_Ammo", 
+            "UK3CB_BAF_Box_L134A1_Ammo", 
+            "UK3CB_BAF_Box_L16_Ammo", 
+            "UK3CB_BAF_Box_M6_Ammo",
+            "UK3CB_BAF_SupplyCrate_Ammo", 
+            "UK3CB_BAF_SupplyCrate_L16_Ammo"
+
         };
     };
 };

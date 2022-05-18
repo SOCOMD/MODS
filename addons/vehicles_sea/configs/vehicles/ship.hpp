@@ -199,6 +199,7 @@ class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
 };
     class SOCOMD_SHIP_B_PLUS_ULTRA: SOCOMD_SHIP_B{
         
+    displayname = "ULTRA ALPHA MEGA COMBO SUPER TURBO ADRHIB HMG (2/12)";
     waterResistanceCoef = 0;
     redRpm = 10000;
     thrustDelay = 0;
