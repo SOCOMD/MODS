@@ -417,8 +417,7 @@ class SOCOMD_Supply_HMG : SOCOMD_Supply_Empty {
     };
     class TransportWeapons {
         TRANSPORT_WEAPON(UK3CB_BAF_L111A1, 2)
-        TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
-        TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
+        TRANSPORT_WEAPON(UK3CB_BAF_Tripod, 2)
     };
 
     // legacy ace
@@ -436,12 +435,11 @@ class SOCOMD_Supply_AGL : SOCOMD_Supply_Empty {
     displayName = "[SUPPLY] AGL";
     model = "\A3\weapons_F\AmmoBoxes\WpnsBox_large_F";
     class TransportMagazines {
-        TRANSPORT_MAGAZINE(ace_csw_20Rnd_20mm_G_belt, 8)
+        TRANSPORT_MAGAZINE(UK3CB_BAF_32Rnd_40mm_G_Box, 8)
     };
     class TransportWeapons {
-        TRANSPORT_WEAPON(ace_csw_staticGMGCarry, 2)
-        TRANSPORT_WEAPON(ace_csw_m3CarryTripodLow, 1)
-        TRANSPORT_WEAPON(ace_csw_m3CarryTripod, 1)
+        TRANSPORT_WEAPON(UK3CB_BAF_L134A1, 2)
+        TRANSPORT_WEAPON(UK3CB_BAF_Tripod, 2)
     };
     // legacy ace
     // class TransportBackpacks {
