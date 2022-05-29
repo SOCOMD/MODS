@@ -1,20 +1,19 @@
-// Defunct atm. Needs updating. 
+// Defunct atm. Needs updating.
 // #include default.hpp
 
 ///Russian LOWVIS (DMOCOS)
-    
+
 class SOCOMD_LOWVIS_Commander {
     primary            = "ACWP_M4A5_145_7rail_GL";
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "Laserdesignator";
-    gps                = "ItemAndroid";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_42";
+        type = "Project_BJC_Cargo12";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -22,18 +21,17 @@ class SOCOMD_LOWVIS_Commander {
     };
 
     class Vest {
-        type = "lbt_comms_mc";
+        type = "acwp_pc_comms762_nod";
         class Inventory {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC152, 2)
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
 
     class Backpack {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
-            LOADOUT_BACKPACK_ESSENTIALS            
+            LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
             LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
@@ -56,14 +54,13 @@ class SOCOMD_LOWVIS_Leader {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "Laserdesignator";
-    gps                = "ItemAndroid";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_43";
+        type = "Project_BJC_Cargo";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -71,11 +68,10 @@ class SOCOMD_LOWVIS_Leader {
     };
 
     class Vest {
-        type = "lbt_comms_mc";
+        type = "acwp_pc_comms_nod";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
     class Backpack {
@@ -105,13 +101,12 @@ class SOCOMD_LOWVIS_Rifleman {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_15";
+        type = "Project_BJC_Cargo4";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -122,7 +117,6 @@ class SOCOMD_LOWVIS_Rifleman {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
     class Backpack {
@@ -144,13 +138,12 @@ class SOCOMD_LOWVIS_Breacher {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_1";
+        type = "Project_BJC_Cargo14";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -161,7 +154,6 @@ class SOCOMD_LOWVIS_Breacher {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
     class Backpack {
@@ -184,14 +176,13 @@ class SOCOMD_LOWVIS_Marksman {
     secondary        = ITEM_SECONDARY_MARKSMAN;
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
-    optics[]         = {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4_mrt_tan"};
+    optics[]         = {"rh_leu_mk4","hlc_optic_zf95base","rh_anpvs10","rh_accupoint"};
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_3";
+        type = "Project_BJC_Shirt_Cut_Cargo9";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -221,13 +212,12 @@ class SOCOMD_LOWVIS_Sapper {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_20";
+        type = "Project_BJC_Shirt_Cut_Cargo5";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -238,7 +228,6 @@ class SOCOMD_LOWVIS_Sapper {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
 
@@ -268,13 +257,12 @@ class SOCOMD_LOWVIS_MachineGunner {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_11";
+        type = "Project_BJC_1";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -305,13 +293,12 @@ class SOCOMD_LOWVIS_Medic {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_38";
+        type = "Project_BJC_Shirt_Jean_blk1";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
         };
@@ -321,7 +308,6 @@ class SOCOMD_LOWVIS_Medic {
         type = ITEM_VEST_MEDIC;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
 
@@ -329,37 +315,7 @@ class SOCOMD_LOWVIS_Medic {
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
-            LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
-            LOADOUT_ITEM(ACE_fieldDressing, 20)          //Israeli Bandage
-            LOADOUT_ITEM(SOCOMD_triangleban, 3)          //Israeli Bandage
-            LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
-            LOADOUT_ITEM(ACE_morphine, 0)                  //Remove
-            LOADOUT_ITEM(ACE_personalAidKit, 0)            //Remove
-            LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(ACE_elasticBandage, 20)        //Elastic Bandage
-            LOADOUT_ITEM(ACE_quikclot, 25)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 6)                //Hyfin Chest Seal
-            LOADOUT_ITEM(SOCOMD_nargloves, 10)
-            LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
-            LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
-            LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
-            LOADOUT_ITEM(SOCOMD_fentanyl, 8)                //Fentanyl Ampoule
-            LOADOUT_ITEM(SOCOMD_ketamine, 8)                    //Ketamine Ampoule
-            LOADOUT_ITEM(SOCOMD_Apap, 10)                //Paracetamol
-            LOADOUT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol  
-            LOADOUT_ITEM(ACE_bloodIV_500, 5)            //Blood
-            LOADOUT_ITEM(SOCOMD_notes, 0)
-            LOADOUT_ITEM(KAT_guedel, 9)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 4)            //Pulseoximeter
-            LOADOUT_ITEM(SOCOMD_NDC, 6)                    //14 Gauge needle
-            LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
-            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(kat_AED, 1)        //Defibrillator
+            LOADOUT_BACKPACK_MEDIC
         };
     };
 };
@@ -369,13 +325,12 @@ class SOCOMD_LOWVIS_AO{
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemAndroid";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_40";
+        type = "Project_BJC_Shirt_Jean_blk2";
         class Inventory    {
             LOADOUT_UNIFORM_AO_ESSENTIALS
         };
@@ -385,7 +340,6 @@ class SOCOMD_LOWVIS_AO{
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_AO_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 4)
         };
     };
 
@@ -402,7 +356,7 @@ class SOCOMD_LOWVIS_AO{
             LOADOUT_ITEM(ACE_salineIV_500, 0)             //Remove
             LOADOUT_ITEM(ACE_elasticBandage, 5)            //Elastic Bandage
             LOADOUT_ITEM(ACE_quikclot, 20)                //Quikclot
-            LOADOUT_ITEM(KAT_ChestSeal, 8)                //Hyfin Chest Seal
+            LOADOUT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
             LOADOUT_ITEM(ACE_tourniquet, 6)                //Tourniquet
             LOADOUT_ITEM(SOCOMD_Epinephrine, 10)        //Epinephrine Ampoule
             LOADOUT_ITEM(SOCOMD_naloxone, 2)                //Naloxone Ampoule
@@ -410,18 +364,18 @@ class SOCOMD_LOWVIS_AO{
             LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
             LOADOUT_ITEM(SOCOMD_nargloves, 5)
-            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol  
+            LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
             LOADOUT_ITEM(SOCOMD_shears, 1)
-            LOADOUT_ITEM(KAT_guedel, 0)                    //Nasopharangeal Airway
+            LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
             LOADOUT_ITEM(SOCOMD_cascard, 2)
-            LOADOUT_ITEM(KAT_larynx, 6)                    //Laryngeal Mask Airway
-            LOADOUT_ITEM(KAT_accuvac, 1)                //Medical Suction
-            LOADOUT_ITEM(KAT_Pulseoximeter, 3)            //Pulseoximeter
+            LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
+            LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
+            LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter
             LOADOUT_ITEM(SOCOMD_VPN, 30)                //3mL drug Syringe
             LOADOUT_ITEM(SOCOMD_NDC, 8)                    //14 Gauge needle
             LOADOUT_ITEM(ACE_surgicalKit, 4)            //Surgical Kit
-            LOADOUT_ITEM(kat_aed, 1)                    //Defibrillator
+            LOADOUT_ITEM(socomd_defib_AED, 1)        //Defibrillator
             LOADOUT_ITEM(ACE_bodyBag, 2)                //Defibrillator
         };
     };
@@ -432,16 +386,15 @@ class SOCOMD_LOWVIS_AO{
 
 class SOCOMD_LOWVIS_AT {
     primary            = "ACWP_M4A5_145_troy_base";
-    secondary        = "CUP_launch_RPG18";
+    secondary        = "rhs_weap_rpg7";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_cap_mc";
     binocular        = "";
-    gps                = "ItemMicroDAGR";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_2";
+        type = "Project_BJC_blk_2";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -452,7 +405,6 @@ class SOCOMD_LOWVIS_AT {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
         };
     };
 
@@ -477,13 +429,12 @@ class SOCOMD_LOWVIS_Recon {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear        = "ADFU_H_Airframe_Cover_05_MC";
+    headgear        = "adfu_booniehat_mc";
     binocular        = LEADER_BINOCS;
-    gps                = "ItemAndroid";
     optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_41";
+        type = "Project_BJC_blk";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -517,14 +468,13 @@ class SOCOMD_LOWVIS_Recon_Assistant {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear         = "ADFU_H_Airframe_Cover_05_MC";
+    headgear         = "adfu_booniehat_mc";
     binocular        = LEADER_BINOCS;
-    gps                = "ItemAndroid";
     maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
     optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_39";
+        type = "Project_BJC_blk";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -561,13 +511,12 @@ class SOCOMD_LOWVIS_Logistician {
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear         = "ADFU_H_Airframe_Cover_05_MC";
+    headgear         = "adfu_cap_mc";
     binocular        = "";
-    gps             = "ItemcTab";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_38";
+        type = "Project_BJC_blk_1";
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -578,7 +527,6 @@ class SOCOMD_LOWVIS_Logistician {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 8)
             LOADOUT_ITEM(SmokeShell, 3)
             LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(ACRE_PRC343, 1)
@@ -598,17 +546,16 @@ class SOCOMD_LOWVIS_Logistician {
 // Pilot
 
 class SOCOMD_LOWVIS_Pilot {
-    primary         = "CUP_smg_MP5A5";
+    primary         = "UK3CB_MP5A4";
     secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
-    headgear         = "SOCOMD_Headgear_Pilot";
+    headgear         = "rhsusf_hgu56p_visor";
     binocular         = "";
-    gps             = "ItemcTab";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
-        type = "CUP_I_B_PMC_Unit_42";
+        type = "Project_BJC_PCU_Jean_blk3";
         class Inventory    {
             LOADOUT_PILOT_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -623,7 +570,7 @@ class SOCOMD_LOWVIS_Pilot {
             LOADOUT_ITEM(SmokeShell, 5)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
             LOADOUT_ITEM(ACRE_PRC152, 2)
-            LOADOUT_ITEM(CUP_30Rnd_545x39_AK74M_M, 4)
+            LOADOUT_ITEM(UK3CB_MP5_30Rnd_9x19_Magazine, 4)
         };
     };
     class Backpack {
@@ -639,5 +586,5 @@ class SOCOMD_LOWVIS_Pilot {
 // Crewman
 
 class SOCOMD_LOWVIS_Crewman : SOCOMD_LOWVIS_Pilot {
-    headgear = "SOCOMD_Headgear_Crew";
+    headgear = "SOCOMD_Ground_Crew_helmet";
 };

@@ -3,59 +3,67 @@
 // isLogi is used for pilots and crewmen who don't need grenade options. eg: isLogi = 1;
 // extraUniforms used for classes that need specialist uniforms like recon. Uniforms all defined in own class. eg: extraUniforms = "LOWVIS_UNIFORMS";
 // arsenalExtras used for those who need extra arsenal equipment like rifleman. options defined in role class eg arsenalExtras[] = {"myExtra","myExtra2"};
-/*
 
 #define LOWVIS_UNIFORMS \
-    "CUP_I_B_PMC_Unit_20",\
-    "CUP_I_B_PMC_Unit_21",\
-    "CUP_I_B_PMC_Unit_19",\
-    "CUP_I_B_PMC_Unit_17",\
-    "CUP_I_B_PMC_Unit_17",\
-    "CUP_I_B_PMC_Unit_14",\
-    "CUP_I_B_PMC_Unit_15",\
-    "CUP_I_B_PMC_Unit_3",\
-    "CUP_I_B_PMC_Unit_2",\
-    "CUP_I_B_PMC_Unit_1",\
-    "CUP_I_B_PMC_Unit_4",\
-    "CUP_I_B_PMC_Unit_7",\
-    "CUP_I_B_PMC_Unit_6",\
-    "CUP_I_B_PMC_Unit_5",\
-    "CUP_I_B_PMC_Unit_8",\
-    "CUP_I_B_PMC_Unit_11",\
-    "CUP_I_B_PMC_Unit_10",\
-    "CUP_I_B_PMC_Unit_9",\
-    "CUP_I_B_PMC_Unit_12",\
-    "CUP_I_B_PMC_Unit_42",\
-    "CUP_I_B_PMC_Unit_41",\
-    "CUP_I_B_PMC_Unit_43",\
-    "CUP_I_B_PMC_Unit_40",\
-    "CUP_I_B_PMC_Unit_39",\
-    "CUP_I_B_PMC_Unit_36",\
-    "CUP_I_B_PMC_Unit_38",\
-    "CUP_I_B_PMC_Unit_37",\
-    "CUP_I_B_PMC_Unit_24",\
-    "CUP_I_B_PMC_Unit_23",\
-    "CUP_I_B_PMC_Unit_31",\
-    "CUP_I_B_PMC_Unit_32",\
-    "CFP_GUER_TanTee",\
-    "CFP_GUER_GreenTan",\
-    "CFP_FieldUniform_tanblack_SS",\
-    "U_C_Man_casual_5_F",\
-    "U_C_Man_casual_4_F",\
-    "U_C_Man_casual_6_F",\
-    "U_C_Poor_1",\
-    "U_BG_Guerilla2_3",\
-    "U_BG_Guerilla2_1",\
-    "U_BG_Guerilla2_2",\
-    "U_C_Poloshirt_tricolour",\
-    "CUP_O_TKI_Khet_Jeans_04",\
-    "CUP_O_TKI_Khet_Jeans_01",\
-    "CUP_O_TKI_Khet_Jeans_02",\
-    "CUP_O_TKI_Khet_Jeans_03",\
-    "CPC_Afrique_Clothes_Pirate_1",\
-    "CPC_Afrique_Clothes_Pirate_2",\
-    "CPC_Afrique_Clothes_Pirate_3"
-
+    "Project_BJC_PCU_Cargo25",\
+    "Project_BJC_PCU_Cargo21",\
+    "Project_BJC_PCU_Cargo24",\
+    "Project_BJC_PCU_Cargo28",\
+    "Project_BJC_PCU_Cargo10",\
+    "Project_BJC_PCU_Cargo18",\
+    "Project_BJC_PCU_Cargo26",\
+    "Project_BJC_PCU_Cargo12",\
+    "Project_BJC_PCU_Cargo4",\
+    "Project_BJC_PCU_Cargo3",\
+    "Project_BJC_PCU_Cargo15",\
+    "Project_BJC_PCU_Cargo27",\
+    "Project_BJC_PCU_Cargo13",\
+    "Project_BJC_PCU_Cargo5",\
+    "Project_BJC_Shirt_Cargo18",\
+    "Project_BJC_Shirt_Cargo2",\
+    "Project_BJC_Shirt_Cargo10",\
+    "Project_BJC_Shirt_Cargo4",\
+    "Project_BJC_Shirt_Cargo12",\
+    "Project_BJC_Shirt_Cargo11",\
+    "Project_BJC_Shirt_Cargo1",\
+    "Project_BJC_Shirt_Cargo9",\
+    "Project_BJC_Shirt_Cut_Cargo16",\
+    "Project_BJC_Shirt_Cut_Cargo18",\
+    "Project_BJC_Shirt_Cut_Cargo2",\
+    "Project_BJC_Shirt_Cut_Cargo14",\
+    "Project_BJC_Shirt_Cut_Cargo4",\
+    "Project_BJC_Shirt_Cut_Cargo12",\
+    "Project_BJC_Shirt_Cut_Cargo7",\
+    "Project_BJC_Shirt_Cut_Cargo1",\
+    "Project_BJC_Shirt_Cut_Cargo13",\
+    "Project_BJC_Cargo16",\
+    "Project_BJC_Cargo19",\
+    "Project_BJC_Cargo6",\
+    "Project_BJC_Cargo10",\
+    "Project_BJC_Cargo4",\
+    "Project_BJC_Cargo8",\
+    "Project_BJC_Cargo7",\
+    "Project_BJC_Cargo11",\
+    "Project_BJC_Cargo5",\
+    "Project_BJC_Cargo9",\
+    "Project_BJC_PCU_Jean",\
+    "Project_BJC_PCU_Jean3",\
+    "Project_BJC_PCU_Jean1",\
+    "Project_BJC_Shirt_Jean1",\
+    "Project_BJC_Shirt_Jean3",\
+    "Project_BJC_Shirt_Cut_Jean1",\
+    "Project_BJC_Shirt_Cut_Jean3",\
+    "Project_BJC_2",\
+    "Project_BJC_1",\
+    "Project_BJC_PCU_Jean_blk",\
+    "Project_BJC_PCU_Jean_blk3",\
+    "Project_BJC_PCU_Jean_blk1",\
+    "Project_BJC_Shirt_Jean_blk1",\
+    "Project_BJC_Shirt_Jean_blk3",\
+    "Project_BJC_Shirt_Cut_Jean_blk1",\
+    "Project_BJC_Shirt_Cut_Jean_blk3",\
+    "Project_BJC_blk_2",\
+    "Project_BJC_blk_1"
 
     class SOCOMD_LOWVIS_Commander{
         class uniforms{
@@ -72,19 +80,22 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
             VESTS_COMMS,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_LEADER
         };
     };
-    class SOCOMD_LOWVIS_2IC : SOCOMD_LOWVIS_Commander{};
+   // class SOCOMD_LOWVIS_2IC : SOCOMD_LOWVIS_Commander{};
     class SOCOMD_LOWVIS_Leader : SOCOMD_LOWVIS_Commander{};
 
     class SOCOMD_LOWVIS_Rifleman{
@@ -102,16 +113,18 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
         arsenalExtras[] ={
             RIFLEMAN_EXTRAS
         };
@@ -132,17 +145,20 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL,
-            VESTS_WEAPONS        
+            VESTS_WEAPONS
         };
         bags[]={
             BAGS,
-            BACKPACK_SAPPER
+            BAGS_BLK,
+            BACKPACK_SAPPER,
+            BACKPACK_SAPPER_BLK
         };
         grenades[]={
             GRENADES_BREACHER
-        };    
+        };
     };
 
     class SOCOMD_LOWVIS_AT_Assistant{
@@ -159,15 +175,17 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };                
+        };
     };
     class SOCOMD_LOWVIS_Marksman{
         class uniforms{
@@ -183,15 +201,17 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };            
+        };
     };
     class SOCOMD_LOWVIS_Sapper{
         class uniforms{
@@ -207,16 +227,19 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
             BAGS,
-            BACKPACK_SAPPER
+            BAGS_BLK,
+            BACKPACK_SAPPER,
+            BACKPACK_SAPPER_BLK
         };
         grenades[]={
             GRENADES_SAPPER
-        };    
+        };
     };
     class SOCOMD_LOWVIS_MachineGunner{
         class uniforms{
@@ -232,15 +255,17 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Medic{
         class uniforms{
@@ -256,16 +281,19 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_MED        
+            VESTS_MED
         };
         bags[]={
             BAGS,
-            BACKPACK_MEDIC
+            BAGS_BLK,
+            BACKPACK_MEDIC,
+            BACKPACK_MEDIC_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_AT{
         class uniforms{
@@ -282,15 +310,17 @@
             LAUNCHERS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Pilot{
         class uniforms{
@@ -306,12 +336,15 @@
             SOLS_RIFLES
         };
         vests[]={
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
             VESTS_COMMS
         };
         bags[]={
             BAGS,
+            BAGS_BLK,
             BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK,
             SOLS_HELMS
         };
         helmets[] = {
@@ -320,7 +353,7 @@
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Crewman{
         class uniforms{
@@ -336,19 +369,22 @@
             SOLS_RIFLES
         };
         vests[]={
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         helmets[] = {
             SOLS_HELMS,
             NVG_OPTIONS
         };
         grenades[]={
-        };    
+        };
         isLogi = 1;
     };
     class SOCOMD_LOWVIS_AO{
@@ -365,16 +401,19 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_MED        
+            VESTS_MED
         };
         bags[]={
             BAGS,
-            BACKPACK_MEDIC
+            BAGS_BLK,
+            BACKPACK_MEDIC,
+            BACKPACK_MEDIC_BLK
         };
         isLogi = 1;
         grenades[]={
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Logistician{
         class uniforms{
@@ -390,15 +429,17 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             ONE_COMM_RIGS,
-            VESTS_TL        
+            VESTS_TL
         };
         bags[]={
-            BAGS
+            BAGS,
+            BAGS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Recon{
         class uniforms{
@@ -414,16 +455,19 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
     class SOCOMD_LOWVIS_Recon_Assistant{
         class uniforms{
@@ -440,16 +484,18 @@
             HANDGUNS
         };
         vests[]={
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
-            VESTS_COMMS        
+            VESTS_COMMS
         };
         bags[]={
             BAGS,
-            BACKPACK_COMMS
+            BAGS_BLK,
+            BACKPACK_COMMS,
+            BACKPACK_COMMS_BLK
         };
         grenades[]={
             GRENADES_NORMAL
-        };    
+        };
     };
-	
-*/
+

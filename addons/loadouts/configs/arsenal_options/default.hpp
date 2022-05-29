@@ -155,7 +155,7 @@
     "ACWP_M4A5_145_ris_afg_NET",\
     "ACWP_M4A5_145_ris_tango_NET",\
     "ACWP_M4A5_145_ris_kag_NET"
-    
+
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
     "SMA_MK18TAN_GL_SM",\
@@ -206,16 +206,25 @@
     "bnae_trg42_f_camo1_virtual",\
     "bnae_trg42_f_mmrs_virtual",\
     "bnae_trg42_f_mmrs_camo1_virtual",\
+    "ACWP_blaser_r93",\
+    "ACWP_blaser_r93_don",\
+    "ACWP_blaser_r93_tan",\
+    "ACWP_blaser_r93_net",\
+    "ACWP_blaser_r93_wst",\
+    "ACWP_5rnd_338LM_base",\
+    "ACWP_5rnd_338LM_APDS",\
     "5Rnd_338LM_Magazine",\
     "5Rnd_APDS_338LM_Magazine",\
     "hlc_5rnd_300WM_FMJ_AWM",\
     "10Rnd_300WM_Magazine"
 
 #define LAUNCHERS \
-    "rhs_weap_m72a7",\
     QUOTE(ITEM_DEFAULT_LAUNCHER),\
     "rhs_mag_maaws_HEAT",\
     "rhs_mag_maaws_HE"
+
+#define LIGHT_LAUNCHERS \
+    "rhs_weap_m72a7"
 
 #define HANDGUNS  \
     "DSO_hgun_Pistol_heavy_01_blk_F",\
@@ -318,7 +327,7 @@
     "rhsusf_hgu56p_visor",\
     "rhsusf_hgu56p_mask",\
     "rhsusf_hgu56p"
-    
+
 #define MC_UNIFORMS \
     "USP_G3C_KP_MC_SOCOMD",\
     "USP_PCU_G3C_KP_MC_SOCOMD",\
@@ -334,7 +343,7 @@
 #define SNOW_UNIFORMS \
     "USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
     "USP_OVERWHITE_G3C_KP_MC_SOCOMD"
-    
+
 #define RECON_UNIFORMS \
     "USP_G3C_KP_MC_RECON",\
     "USP_PCU_G3C_KP_MC_RECON",\
@@ -447,6 +456,10 @@
     "COMM4",\
     "ECPV2"
 
+#define BACKPACK_COMMS_BLK \
+    "KIT_BAG_R_blk",\
+    "SOG_BAG_recon_blk",\
+
 #define BACKPACK_SAPPER \
     "Kit_Bag_pince_TAN",\
     "SOG_BAG_BREACHER_tan",\
@@ -455,12 +468,20 @@
     "Kit_Bag_pince_od",\
     "SOG_BAG_BREACHER_od"
 
+#define BACKPACK_SAPPER_BLK \
+    "KIT_BAG_pince_blk",\
+    "SOG_BAG_BREACHER_blk",\
+    "SOG_BAG_ALPIN_blk",\
+
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
     "SOG_BAG_med_MC",\
     "SOG_BAG_med_od",\
     "ACWP_Bullock_no_helm_med_AMCU",\
     "ACWP_Bullock_no_helm_med_MC"
+
+#define BACKPACK_MEDIC_BLK \
+    "SOG_BAG_med_blk"
 
 #define BAGS \
     "KIT_BAG_mc",\
@@ -477,11 +498,16 @@
     "ECPV1",\
     "Crewcab"
 
+// Black for more flavour in lowvis/afp
+#define BAGS_BLK \
+    "KIT_BAG_blk",\
+    "SOG_BAG_blk",\
+
 #define GRENADES_NORMAL\
     "grenades_default",\
     "grenades_more_flash",\
     "grenades_less_lethal"
-    
+
 #define GRENADES_LEADER\
     "grenades_default_leader",\
     "grenades_more_flash_leader",\
@@ -491,7 +517,7 @@
     "grenades_default_breacher",\
     "grenades_more_flash_breacher",\
     "grenades_less_lethal_breacher"
-    
+
 #define GRENADES_SAPPER \
     "grenades_default_sapper",\
     "grenades_more_flash_sapper",\
@@ -544,7 +570,8 @@ class SOCOMD_Commander{
     weapons[]={
         GENERAL_RIFLE,
         GL_RIFLE,
-        HANDGUNS
+        HANDGUNS,
+        LIGHT_LAUNCHERS
     };
     vests[]={
         VESTS_COMMON,
@@ -627,7 +654,8 @@ class SOCOMD_Rifleman{
     weapons[]={
         GENERAL_RIFLE,
         GL_RIFLE,
-        HANDGUNS
+        HANDGUNS,
+        LIGHT_LAUNCHERS
     };
     vests[]={
         VESTS_COMMON,
@@ -640,7 +668,7 @@ class SOCOMD_Rifleman{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
     arsenalExtras[] ={
         RIFLEMAN_EXTRAS
     };
@@ -675,7 +703,7 @@ class SOCOMD_Breacher{
     };
     grenades[]={
         GRENADES_BREACHER
-    };    
+    };
 };
 class SOCOMD_Marksman{
     class uniforms{
@@ -703,7 +731,7 @@ class SOCOMD_Marksman{
     };
     grenades[]={
         GRENADES_NORMAL
-    };            
+    };
 };
 class SOCOMD_Sapper{
     class uniforms{
@@ -732,7 +760,7 @@ class SOCOMD_Sapper{
     };
     grenades[]={
         GRENADES_SAPPER
-    };    
+    };
 };
 class SOCOMD_MachineGunner{
     class uniforms{
@@ -756,7 +784,7 @@ class SOCOMD_MachineGunner{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };
 class SOCOMD_Medic{
     class uniforms{
@@ -785,7 +813,7 @@ class SOCOMD_Medic{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };
 class SOCOMD_AT{
     class uniforms{
@@ -814,7 +842,7 @@ class SOCOMD_AT{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };
 class SOCOMD_Pilot{
     class uniforms{
@@ -837,7 +865,7 @@ class SOCOMD_Pilot{
     vests[]={
         VESTS_COMMON,
         TWO_COMMS_RIGS,
-        VESTS_COMMS        
+        VESTS_COMMS
     };
     bags[]={
         BAGS,
@@ -846,11 +874,11 @@ class SOCOMD_Pilot{
     };
     helmets[] = {
         SOLS_HELMS,
-        NVG_OPTIONS        
+        NVG_OPTIONS
     };
     isLogi = 1;
     grenades[]={
-    };    
+    };
 };
 class SOCOMD_Crewman{
     class uniforms{
@@ -884,7 +912,7 @@ class SOCOMD_Crewman{
         NVG_OPTIONS
     };
     grenades[]={
-    };    
+    };
     isLogi = 1;
 };
 class SOCOMD_AO{
@@ -899,7 +927,7 @@ class SOCOMD_AO{
         };
         snow_uniforms[]={
             SNOW_UNIFORMS
-            
+
         };
     };
     weapons[]={
@@ -918,7 +946,7 @@ class SOCOMD_AO{
     };
     isLogi = 1;
     grenades[]={
-    };    
+    };
 };
 class SOCOMD_Logistician{
     class uniforms{
@@ -947,7 +975,7 @@ class SOCOMD_Logistician{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };
 class SOCOMD_Recon{
     class uniforms{
@@ -980,5 +1008,5 @@ class SOCOMD_Recon{
     };
     grenades[]={
         GRENADES_NORMAL
-    };    
+    };
 };

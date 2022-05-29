@@ -46,8 +46,8 @@ switch true do {
     case (_ctrlIDC in [IDC_buttonPrimaryWeapon, IDC_buttonHandgun, IDC_buttonSecondaryWeapon]) : {
         // Purge old data
         lbClear _ctrlPanel;
-        // private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
-        // _ctrlPanel lbsetvalue [_addEmpty, -1];
+        private _addEmpty = _ctrlPanel lbadd format [" <%1>",localize "str_empty"];
+        _ctrlPanel lbsetvalue [_addEmpty, -1];
 
         {
             ["CfgWeapons", _x, _ctrlPanel] call FUNC(addListBoxItem);

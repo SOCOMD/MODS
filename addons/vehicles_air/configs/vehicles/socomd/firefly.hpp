@@ -372,6 +372,8 @@ class SOCOMD_DRAGONFLY_A : RHS_MELB_AH6M {
         "\z\socomd\addons\data\ah6\ah6_hull_co.paa",
         "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
     };
+    magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+    weapons[] = {"CMFlareLauncher"};
     armor = 30;
     armorStructural = 4;
    
