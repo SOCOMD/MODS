@@ -61,9 +61,9 @@ class CfgAISkill {
     aimingAccuracy[]    = {0.0, 0.4, 1.0, 0.8};  // note that low value means AI lacks confidence to fire, and will not fire long distances, thus less cinematic.
     aimingShake[]        = {0.0, 0.2, 1.0, 0.6}; // this sets AI firing dispersion, so lower value here with high value in aimingAccuracy means most cinematic fire-fights
     aimingSpeed[]        = {0.0, 0.2, 1.0, 0.8};
-    commanding[]        = {0.0, 0.2, 1.0, 0.8};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
-    courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
-    general[]            = {0.0, 0.2, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
+    commanding[]        = {0.0, 0.2, 1.0, 0.8};  // this only affects target sharing, not actual "command intelligence".
+    courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage for Zeusing. 
+    general[]            = {0.0, 0.2, 1.0, 1.0};  // high general = tactical group leaders. 
     reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
     spotDistance[]        = {0.0, 0.2, 1.0, 1.0}; // keep at max 1.0 to avoid conflict with new LAMBS spot-distance functionality 
     spotTime[]            = {0.0, 0.2, 1.0, 1.0};
