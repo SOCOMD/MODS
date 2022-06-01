@@ -641,7 +641,7 @@ force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
 // Zeus Enhanced
-force force zen_common_autoAddObjects = true;
+force force zen_common_autoAddObjects = false;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
 force force zen_common_preferredArsenal = 1;
