@@ -52,8 +52,8 @@ _presetId = "SOCOMD_PRESET";
     // Sets ACRE2 channel names
     {
         [_x, "default", "SOCOMD_PRESET"] call acre_api_fnc_copyPreset;
-        [_x, "SOCOMD_PRESET", 1, "label", "PHANTOM-NET"] call acre_api_fnc_setPresetChannelField;
-        [_x, "SOCOMD_PRESET", 2, "label", "RAIDER-NET"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 1, "label", "PLT-NET-1"] call acre_api_fnc_setPresetChannelField;
+        [_x, "SOCOMD_PRESET", 2, "label", "PLT-NET-2"] call acre_api_fnc_setPresetChannelField;
         [_x, "SOCOMD_PRESET", 3, "label", "FIRES-NET"] call acre_api_fnc_setPresetChannelField;
         [_x, "SOCOMD_PRESET", 4, "label", "6AVN-NET"] call acre_api_fnc_setPresetChannelField;
         [_x, "SOCOMD_PRESET", 5, "label", "AIR-NET-1"] call acre_api_fnc_setPresetChannelField;

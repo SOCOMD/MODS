@@ -1,8 +1,8 @@
 // ACE Advanced Ballistics
+force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -40,11 +40,15 @@ force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 0;
 force force ace_captives_requireSurrenderAi = false;
 
+// ACE Casings
+ace_casings_enabled = true;
+ace_casings_maxCasings = 100;
+
 // ACE Common
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['A3_Sonus_sfxMod_Loadorder','A3_Sonus_sfxMod','A3_Sonus_sfxMod_Data','A3_Sonus_sfxMod_Language','A3_Sonus_sfxMod_Sounds','Vile_HUD','UAV_Turret_Markers','jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -181,7 +185,7 @@ force force ace_maptools_drawStraightLines = true;
 force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force force ace_medical_ai_enabledFor = 2;
+force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 0.86088;
 force force ace_medical_bleedingCoefficient = 0.3;
 force ace_medical_blood_bloodLifetime = 900;
@@ -207,7 +211,7 @@ force force ace_medical_painUnconsciousChance = 0.0505772;
 force force ace_medical_playerDamageThreshold = 1.66795;
 force force ace_medical_spontaneousWakeUpChance = 1;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
-force force ace_medical_statemachine_AIUnconsciousness = true;
+force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
 force force ace_medical_statemachine_cardiacArrestTime = 180;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
@@ -442,7 +446,7 @@ force force acex_field_rations_timeWithoutWater = 2;
 force force acex_sitting_enable = true;
 
 // CBA Network
-cba_network_loadoutValidation = 0;
+force force cba_network_loadoutValidation = 2;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -527,8 +531,8 @@ force force emr_main_allowMidairClimbing = true;
 force force emr_main_animSpeedCoef = 1.0;
 force force emr_main_animSpeedStaminaCoef = 0.50;
 force force emr_main_climbingEnabled = true;
-force force emr_main_climbOnDuty = 2.5;
-force force emr_main_climbOverDuty = 2.5;
+force force emr_main_climbOnDuty = 1.5;
+force force emr_main_climbOverDuty = 1.5;
 force force emr_main_dropDuty = 0.8;
 emr_main_dropViewElevation = -0.7;
 emr_main_enableWalkableSurface = true;
@@ -536,7 +540,7 @@ force force emr_main_enableWeightCheck = false;
 emr_main_hintType = 2;
 force force emr_main_jumpDuty = 1;
 force force emr_main_jumpingEnabled = true;
-force force emr_main_jumpingLoadCoefficient = 1;
+force force emr_main_jumpingLoadCoefficient = 0.5;
 force force emr_main_jumpVelocity = 2;
 force force emr_main_maxClimbHeight = 2.6;
 force force emr_main_maxDropHeight = 4.5;
@@ -544,92 +548,44 @@ emr_main_preventHighVaulting = false;
 force force emr_main_staminaCoefficient = 1;
 
 // GRAD Civs
-force grad_civs_activities_panicCooldown = "[15, 120, 240]";
-force grad_civs_cars_animalTransportChance = 0.4;
-force grad_civs_cars_animalTransportVehicles = "";
-force grad_civs_cars_automaticVehicleGroupSize = true;
-force grad_civs_cars_vehicles = "C_Offroad_01_F, C_Offroad_02_unarmed_F, C_Van_01_fuel_F, C_Hatchback_01_F, C_SUV_01_F, C_Van_01_box_F, C_Van_02_service_F, C_Quadbike_01_F";
-force grad_civs_diagnostics_showFps = false;
-force grad_civs_diagnostics_showInfoLine = false;
-force grad_civs_diagnostics_showMisc = false;
-force grad_civs_diagnostics_showOnMap = false;
-force grad_civs_diagnostics_showPinkArrows = false;
-force grad_civs_gta_enabled = false;
+force force grad_civs_main_enabled = true;
+force force grad_civs_activities_panicCooldown = "[15, 120, 240]";
+force force grad_civs_cars_animalTransportChance = 0;
+force force grad_civs_cars_animalTransportVehicles = "";
+force force grad_civs_cars_automaticVehicleGroupSize = false;
+force grad_civs_cars_vehicles = "C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open";
+force force grad_civs_diagnostics_showFps = false;
+force force grad_civs_diagnostics_showInfoLine = false;
+force force grad_civs_diagnostics_showMisc = false;
+force force grad_civs_diagnostics_showOnMap = false;
+force force grad_civs_diagnostics_showPinkArrows = false;
+force force grad_civs_gta_enabled = false;
 force grad_civs_lifecycle_civClasses = "C_Man_casual_4_F, C_Man_casual_6_F, C_Man_casual_5_v2_F, C_Man_casual_9_F, C_man_polo_2_F, C_man_polo_1_F, C_Man_ConstructionWorker_01_Black_F, C_man_hunter_1_F, C_Man_Messenger_01_F, C_man_w_worker_F, C_man_1, C_Man_smart_casual_1_F, C_man_sport_1_F_tanoan, C_man_sport_2_F_tanoan, C_Man_casual_5_F_tanoan, C_Man_casual_3_F_tanoan";
-force grad_civs_lifecycle_cleanupCorpses = false;
-force force grad_civs_lifecycle_minCivOwnerFps = 35;
-force force grad_civs_lifecycle_minCivUpdateTime = 4;
-force force grad_civs_lifecycle_minServerFps = 35;
-force grad_civs_lifecycle_smMultiplicator = 1;
+force force grad_civs_lifecycle_cleanupCorpses = true;
+force force grad_civs_lifecycle_minCivOwnerFps = 40;
+force force grad_civs_lifecycle_minCivUpdateTime = 3;
+force force grad_civs_lifecycle_minServerFps = 40;
+force force grad_civs_lifecycle_smMultiplicator = 1;
 force force grad_civs_lifecycle_spawnOnlyWithPlayers = true;
-force grad_civs_loadout_backpackProbability = 0.5;
+force grad_civs_loadout_backpackProbability = 0;
 force grad_civs_loadout_backpacks = "[]";
 force grad_civs_loadout_clothes = "[]";
 force grad_civs_loadout_faces = "[]";
 force grad_civs_loadout_goggles = "[]";
 force grad_civs_loadout_headgear = "[]";
-force force grad_civs_main_enabled = true;
 force force grad_civs_mimikry_enabled = false;
 force force grad_civs_patrol_initialGroupSize = 2;
-force force grad_civs_patrol_maxCivsOnFoot = 8;
-force force grad_civs_patrol_spawnDistancesOnFoot = "[1000, 3000]";
+force force grad_civs_patrol_maxCivsOnFoot = 20;
+force force grad_civs_patrol_spawnDistancesOnFoot = "[250, 500]";
 force grad_civs_residents_chatTime = 20;
-force force grad_civs_residents_maxCivsResidents = 15;
-force grad_civs_residents_meetNeighborCooldown = 150;
-force force grad_civs_residents_spawnDistancesResidents = "[500,  1500]";
-force force grad_civs_transit_maxVehiclesInTransit = 4;
-force grad_civs_transit_vehicles = "[]";
-force force grad_civs_voyage_maxCivsInVehicles = 4;
-force grad_civs_voyage_maxTravelRadius = 3000;
+force force grad_civs_residents_maxCivsResidents = 12;
+force force grad_civs_residents_meetNeighborCooldown = 250;
+force force grad_civs_residents_spawnDistancesResidents = "[250, 500]";
+force grad_civs_transit_maxVehiclesInTransit = 4;
+force grad_civs_transit_vehicles = "[C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open]";
+force force grad_civs_voyage_maxCivsInVehicles = 3;
+force grad_civs_voyage_maxTravelRadius = 2500;
 force force grad_civs_voyage_spawnDistancesInVehicles = "[1500, 3000]";
-
-// KAT - ADV Medical: Airway
-force force kat_airway_Accuvac_time = 8;
-force force kat_airway_CheckAirway_time = 2;
-force force kat_airway_checkbox_puking_sound = true;
-force force kat_airway_Colored_logs = true;
-force force kat_airway_enable = true;
-force force kat_airway_Guedeltubus_time = 6;
-force force kat_airway_Larynxtubus_time = 3;
-force force kat_airway_medLvl_Accuvac = 0;
-force force kat_airway_medLvl_Guedeltubus = 0;
-force force kat_airway_medLvl_Larynxtubus = 0;
-force force kat_airway_Overstretch_time = 3;
-force force kat_airway_probability_headturning = 50;
-force force kat_airway_probability_obstruction = 15;
-force force kat_airway_probability_collapsed = 10;
-force force kat_airway_string_exit = "";
-force force kat_airway_TurnAround_time = 2;
-
-// KAT - ADV Medical: Breathing
-force force kat_breathing_enable = true;
-force force kat_breathing_hemopneumothoraxChance = 5;
-force force kat_breathing_medLvl_Chestseal = 1;
-force force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
-force force kat_breathing_medLvl_Pulseoximeter = 0;
-force force kat_breathing_pneumothorax = 5;
-force force kat_breathing_pneumothoraxDamageThreshold = 0.4;
-force force kat_breathing_Stable_spo2 = 85;
-force force kat_breathing_SpO2_dieValue = 65;
-force force kat_breathing_SpO2_dieActive = true;
-
-// KAT - ADV Medical: Circulation
-force force kat_circulation_bloodgroup = "AB";
-force force kat_circulation_CPR_Chance_Default = 5;
-force force kat_circulation_CPR_Chance_Doctor = 5;
-force force kat_circulation_CPR_Chance_RegularMedic = 5;
-force force kat_circulation_DeactMon_whileAED_X = true;
-force force kat_circulation_distanceLimit_AEDX = 30;
-force force kat_circulation_enable = true;
-force force kat_circulation_enable_CPR_Chances = true;
-force force kat_circulation_medLvl_AED_X = 1;
-force force kat_circulation_SuccesCh_AED = 80;
-force force kat_circulation_SuccesCh_AED_X = 85;
-force force kat_circulation_timeLimit_AEDX = 1800;
-force force kat_circulation_useLocation_AED = 0;
-
-// KAT - ADV Medical: Misc
-force force kat_misc_enable = true;
 
 // LAMBS Danger
 force force lambs_danger_cqbRange = 75;
@@ -638,8 +594,8 @@ force force lambs_danger_disableAIAutonomousManoeuvres = false;
 force force lambs_danger_disableAIDeployStaticWeapons = false;
 force force lambs_danger_disableAIFindStaticWeapons = false;
 force force lambs_danger_disableAIHideFromTanksAndAircraft = true;
-force force lambs_danger_disableAIPlayerGroup = true;
-force force lambs_danger_disableAIPlayerGroupReaction = true;
+force force lambs_danger_disableAIPlayerGroup = false;
+force force lambs_danger_disableAIPlayerGroupReaction = false;
 force force lambs_danger_disableAutonomousFlares = false;
 
 // LAMBS Danger EventHandlers
@@ -647,7 +603,7 @@ force force lambs_eventhandlers_ExplosionEventHandlerEnabled = false;
 force force lambs_eventhandlers_ExplosionReactionTime = 10.0;
 
 // LAMBS Danger WP
-force force lambs_wp_autoAddArtillery = true;
+force force lambs_wp_autoAddArtillery = false;
 
 // LAMBS Main
 force force lambs_main_combatShareRange = 250;
@@ -657,8 +613,8 @@ force force lambs_main_disableAIFleeing = false;
 force force lambs_main_disableAIGestures = false;
 force force lambs_main_disablePlayerGroupSuppression = true;
 force force lambs_main_indoorMove = 0.30;
-force force lambs_main_maxRevealValue = 0.7;
-force force lambs_main_minFriendlySuppressionDistance = 0;
+force force lambs_main_maxRevealValue = 0.85;
+force force lambs_main_minFriendlySuppressionDistance = 1;
 force force lambs_main_minObstacleProximity = 1;
 force force lambs_main_minSuppressionRange = 25;
 force force lambs_main_radioBackpack = 2000;
@@ -685,10 +641,10 @@ force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
 // Zeus Enhanced
-force force zen_common_autoAddObjects = true;
+force force zen_common_autoAddObjects = false;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
-zen_common_preferredArsenal = 1;
+force force zen_common_preferredArsenal = 1;
 zen_context_menu_enabled = 2;
 zen_editor_declutterEmptyTree = true;
 force force zen_editor_disableLiveSearch = true;
@@ -701,7 +657,7 @@ force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 force force zen_editor_parachuteSounds = false;
 
-// !! KEEP BELOW AT BOTTOM OF FILE !!
+// !! KEEP AT BOTTOM OF FILE !!
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = true;
@@ -716,4 +672,3 @@ force force acre_sys_zeus_zeusDefaultVoiceSource = true;
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
 force force SOCOMD_medical_persistantReviveTimer = 330;
- 

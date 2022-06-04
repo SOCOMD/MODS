@@ -58,41 +58,13 @@ Example:
 // Keeping interpolation reasonably consistent with global skill coef to 1.0 means consistent results from mission maker adjustments,
 // & more importantly content\configs\vehicles\override\aiunits.hpp (when it is ready). 
 class CfgAISkill {
-    aimingAccuracy[]    = {0.0, 0.4, 1.0, 1.0};  // note that low value means AI lacks confidence to fire, and will not fire long distances, thus less cinematic.
+    aimingAccuracy[]    = {0.0, 0.4, 1.0, 0.8};  // note that low value means AI lacks confidence to fire, and will not fire long distances, thus less cinematic.
     aimingShake[]        = {0.0, 0.2, 1.0, 0.6}; // this sets AI firing dispersion, so lower value here with high value in aimingAccuracy means most cinematic fire-fights
     aimingSpeed[]        = {0.0, 0.2, 1.0, 0.8};
-    commanding[]        = {0.0, 0.4, 1.0, 1.0};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
-    courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
-    general[]            = {0.0, 0.4, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
+    commanding[]        = {0.0, 0.2, 1.0, 0.8};  // this only affects target sharing, not actual "command intelligence".
+    courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage for Zeusing. 
+    general[]            = {0.0, 0.2, 1.0, 1.0};  // high general = tactical group leaders. 
     reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
     spotDistance[]        = {0.0, 0.2, 1.0, 1.0}; // keep at max 1.0 to avoid conflict with new LAMBS spot-distance functionality 
     spotTime[]            = {0.0, 0.2, 1.0, 1.0};
 };
-
-/*
-
-// Below is defaults
-class CfgAILevelPresets {
-    class AILevelHigh {
-        displayName = "Expert";
-        precisionAI = 0.7;
-        skillAI = 0.8;
-    };
-    class AILevelMedium {
-        displayName = "Normal";
-        precisionAI = 0.5;
-        skillAI = 0.7;
-    };
-    class AILevelLow {
-        displayName = "Novice";
-        precisionAI = 0.2;
-        skillAI = 0.5;
-    };
-    class Custom {
-        displayName = "Custom";
-        precisionAI = 0.5;
-        skillAI = 0.5;
-    };
-};
-
-*/
