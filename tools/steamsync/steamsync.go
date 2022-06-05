@@ -74,8 +74,9 @@ func main() {
 //DownloadContent - Download workshop item to output file
 func DownloadContent(workshopConfig Config) error {
     steamCMDScript := "@ShutdownOnFailedCommand 1\n@NoPromptForPassword 1\n"
-    steamCMDScript += fmt.Sprintf("login %s %s\n", steamUser, steamPass)
     steamCMDScript += fmt.Sprintf("force_install_dir %s\n", outputCache)
+    steamCMDScript += fmt.Sprintf("login %s %s\n", steamUser, steamPass)
+    
 
     for _, id := range workshopConfig.Content {
         steamCMDScript += fmt.Sprintf("workshop_download_item %s %s validate\n", arma3productid, id)
