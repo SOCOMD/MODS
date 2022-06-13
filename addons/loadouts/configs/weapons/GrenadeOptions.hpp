@@ -118,9 +118,12 @@ class grenades_default_leader: grenades_default {
     vest[] = {
         {ACE_Chemlight_HiRed, 2},
         
+        {SmokeShellGreen, 4},
+        {SmokeShellPurple, 4},
         {HandGrenade, 2},
         {ACE_M84, 2},
         {SmokeShell, 5},
+        {B_IR_Grenade, 4},
         {ACE_M14,3}
     };
 };
@@ -134,7 +137,9 @@ class grenades_more_flash_leader: grenades_default {
         {ACE_M84, 5},
         {SmokeShell, 2},
         {ACE_M14,3},
-        {SmokeShellGreen, 2}
+        {SmokeShellGreen, 4},
+        {SmokeShellPurple, 4},
+        {B_IR_Grenade, 4}
     };
 };
 class grenades_less_lethal_leader : grenades_default {
@@ -146,7 +151,9 @@ class grenades_less_lethal_leader : grenades_default {
         {ACE_M84, 4},
         {SmokeShell, 4},
         {ACE_M14,3},
-        {SmokeShellGreen, 2}
+        {SmokeShellGreen, 4},
+        {SmokeShellPurple, 4},
+        {B_IR_Grenade, 4}
     };
 };
 

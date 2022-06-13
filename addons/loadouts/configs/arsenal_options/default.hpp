@@ -338,6 +338,7 @@
     "USP_G3C_KP_AMCU_SOCOMD",\
     "USP_PCU_G3C_KP_AMCU_MC_SOCOMD",\
     "USP_SOFTSHELL_G3C_KP_AMCU_MC_SOCOMD",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_SOCOMD",\
     "USP_SOFTSHELL_G3C_KP_AMCU_GRN_SOCOMD"
 
 #define SNOW_UNIFORMS \
@@ -354,6 +355,7 @@
     "USP_G3C_KP_AMCU_RECON",\
     "USP_PCU_G3C_KP_AMCU_MC_RECON",\
     "USP_SOFTSHELL_G3C_KP_AMCU_MC_RECON",\
+    "USP_SOFTSHELL_G3C_KP_AMCU_RECON",\
     "USP_SOFTSHELL_G3C_KP_AMCU_GRN_RECON"
 
 #define RECON_SNOW_UNIFORMS \
@@ -532,6 +534,11 @@
     "extras_at_assistant_mixed",\
     "extras_at_assistant_heat"
 
+#define AT_AMMO \
+    "extras_at_mixed",\
+    "extras_at_heat",\
+    "extras_at_he"
+
 class helmets{
     helmets[] = {
         HELMETS,
@@ -540,7 +547,7 @@ class helmets{
 };
 class uniforms{
     arid_uniforms[]={
-        MC_UNIFORMS
+        AMCU_UNIFORMS
     };
     temperate_uniforms[]={
         AMCU_UNIFORMS
@@ -558,7 +565,7 @@ class uniforms{
 class SOCOMD_Commander{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -591,7 +598,7 @@ class SOCOMD_Commander{
 class SOCOMD_TACP{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -642,7 +649,7 @@ class SOCOMD_Leader : SOCOMD_Commander{
 class SOCOMD_Rifleman{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -677,7 +684,7 @@ class SOCOMD_Rifleman{
 class SOCOMD_Breacher{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -708,7 +715,7 @@ class SOCOMD_Breacher{
 class SOCOMD_Marksman{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -736,7 +743,7 @@ class SOCOMD_Marksman{
 class SOCOMD_Sapper{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -765,7 +772,7 @@ class SOCOMD_Sapper{
 class SOCOMD_MachineGunner{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -789,7 +796,7 @@ class SOCOMD_MachineGunner{
 class SOCOMD_Medic{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -818,7 +825,7 @@ class SOCOMD_Medic{
 class SOCOMD_AT{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS
@@ -843,11 +850,14 @@ class SOCOMD_AT{
     grenades[]={
         GRENADES_NORMAL
     };
+    arsenalExtras[] ={
+        AT_AMMO
+    };
 };
 class SOCOMD_Pilot{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS,
+            AMCU_UNIFORMS,
             PILOT_UNIFORMS
         };
         temperate_uniforms[]={
@@ -883,7 +893,7 @@ class SOCOMD_Pilot{
 class SOCOMD_Crewman{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS,
+            AMCU_UNIFORMS,
             PILOT_UNIFORMS
         };
         temperate_uniforms[]={
@@ -918,7 +928,7 @@ class SOCOMD_Crewman{
 class SOCOMD_AO{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS,
+            AMCU_UNIFORMS,
             PILOT_UNIFORMS
         };
         temperate_uniforms[]={
@@ -951,7 +961,7 @@ class SOCOMD_AO{
 class SOCOMD_Logistician{
     class uniforms{
         arid_uniforms[]={
-            MC_UNIFORMS
+            AMCU_UNIFORMS
         };
         temperate_uniforms[]={
             AMCU_UNIFORMS

@@ -1,6 +1,7 @@
     
 class CfgWorldType {
-    class Arid {
+    
+    class Woodland {
         class Desert_E; //Desert
         class porto;
         class ProvingGrounds_PMC; //Proving Grounds
@@ -19,11 +20,7 @@ class CfgWorldType {
         class IslaDuala3;
         class Kunduz;
         class kujari;
-        class lythium;
-    };
-
-    class Woodland {
-        
+        class lythium;        
         class Tanoa;
         class Enoch; //Livonia
         class Altis;
