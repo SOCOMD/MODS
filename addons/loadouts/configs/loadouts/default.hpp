@@ -410,9 +410,6 @@ class SOCOMD_Breacher {
             LOADOUT_ITEM(ACE_Clacker, 1)
             LOADOUT_ITEM(ACE_M84, 3)
             LOADOUT_ITEM(ACE_CTS9, 3)
-            LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-            LOADOUT_ITEM(SOCOMD_Shotgun, 1)
-            LOADOUT_ITEM(SOCOMD_Breaching_Slug, 18)
         };
     };
 };

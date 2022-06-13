@@ -5,6 +5,7 @@ class ItemMap: Default{
 
 class ExtrasBase: ItemMap {
     scope = 0;
+    launcherAmmo = 0;
     socomd_arsenal_hide = 0;
     uniform[] = {
     };
@@ -56,6 +57,26 @@ class extras_at_assistant_heat: extras_none{
     displayName = "AT Assistant (2x HEAT)";
     bag[] = {
         {rhs_mag_maaws_HEAT,2}
+    };
+};
+class extras_at_mixed: extras_none{
+    displayName = "Mixed Ammo (1x HE, 1x HEAT)";
+    launcherAmmo = 1;
+    bag[] = {
+        {rhs_mag_maaws_HEAT,1},
+        {rhs_mag_maaws_HE,1}
+    };
+};
+class extras_at_heat: extras_at_mixed{
+    displayName = "AT (2x HEAT)";
+    bag[] = {
+        {rhs_mag_maaws_HEAT,2}
+    };
+};
+class extras_at_he: extras_at_mixed{
+    displayName = "AP (2x HE)";
+    bag[] = {
+        {rhs_mag_maaws_HE,2}
     };
 };
 /*

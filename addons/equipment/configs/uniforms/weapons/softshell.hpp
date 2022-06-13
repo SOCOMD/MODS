@@ -3480,3 +3480,905 @@ class USP_SOFTSHELL_G3C_KP_OR6_AMCU_GRN_RECON: USP_SOFTSHELL_G3C_KP_OR{
         mass = 40;
     };
 };
+
+// full AMCU
+
+class USP_SOFTSHELL_G3C_AMCU: USP_SOFTSHELL_G3C{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX2_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX2_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX3_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX3_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX4_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX4_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX5_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX5_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX6_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX6_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX7_AMCU: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX7 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX7_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR2_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR2_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR3_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR3_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR4_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR4_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR5_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR5_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR6_AMCU: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR6_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_AMCU: USP_SOFTSHELL_G3C_KP{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX2_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX3_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX4_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX5_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX6_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX7_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX7 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR2_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR3_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR4_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR5_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR6_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_AMCU";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+
+// RECON Full AMCU
+
+class USP_SOFTSHELL_G3C_AMCU_RECON: USP_SOFTSHELL_G3C{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX2_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX2_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX3_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX3_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX4_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX4_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX5_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX5_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX6_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX6_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_MX7_AMCU_RECON: USP_SOFTSHELL_G3C_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/MX7 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_MX7_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR2_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR2_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR3_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR3_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR4_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR4_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR5_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR5_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_OR6_AMCU_RECON: USP_SOFTSHELL_G3C_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/OR6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_OR6_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_AMCU_RECON: USP_SOFTSHELL_G3C_KP{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX2_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX3_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX4_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX5_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX6_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_MX7_AMCU_RECON: USP_SOFTSHELL_G3C_KP_MX{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/MX7 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR2_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR2 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR3_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR3 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR4_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR4 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR5_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR5 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
+class USP_SOFTSHELL_G3C_KP_OR6_AMCU_RECON: USP_SOFTSHELL_G3C_KP_OR{
+    author = "UnderSiege Productions";
+    scope = 2;
+    scopeArsenal = 2;
+    Recon = 1;
+    displayName = "[SOCOMD] Crye Soft Shell/G3C SOFTSHELL/KP/OR6 (AMCU-ADF)";
+    picture = "\usp_gear_body\data\ui\usp_icon_g3c_mc_ca.paa";
+    hiddenSelectionsTextures[] = { "\z\socomd\addons\data\uniform\clothes\usp_softshell_amcuDarker_co.paa", "\z\socomd\addons\data\uniform\clothes\usp_g3c_pants_amcu_co.paa" };
+    class ItemInfo : UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_AMCU_RECON";
+        containerClass = "Supply80";
+        mass = 40;
+    };
+};
