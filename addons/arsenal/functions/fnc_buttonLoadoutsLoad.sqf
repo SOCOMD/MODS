@@ -47,7 +47,7 @@ if ((_selectedUniform select 0) == "USP") then {
     switch (_worldType) do {
         case "Woodland";
         case "Snow" : {_desiredCamo = "AMCU";};
-        case "Arid" : {_desiredCamo = "MC";};
+        case "Arid" : {_desiredCamo = "AMCU";};
     };
     _camos = ["AOR1","AOR2","BLK","KHK","M81","MC","MB","MCD","MCT","RGR","GRY","AMCU","GRN"];
     _camoPos = (count _selectedUniform) - 2;

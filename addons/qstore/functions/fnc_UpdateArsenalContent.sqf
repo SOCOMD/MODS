@@ -7,7 +7,10 @@ params ["_player","_loadoutId"];
 // reset nvg and extras variable for correct arsenal selection
 _player setVariable ["socomd_arsenal_nvg","SOCOMD_NVG"];
 _player setVariable  ["socomd_arsenal_grenade", "default"];
-_player setVariable ["socomd_arsenal_extras","extras_none"];
+switch (_loadoutId) do {
+    case "SOCOMD_AT" : {_player setVariable ["socomd_arsenal_extras","extras_at_mixed"]};
+    default { _player setVariable ["socomd_arsenal_extras","extras_none"]};
+};
 _player setVariable  ["socomd_prev_weapons",[(primaryWeapon _player),(secondaryWeapon _player),(handgunWeapon _player)]];
 
 private _blackList = [];

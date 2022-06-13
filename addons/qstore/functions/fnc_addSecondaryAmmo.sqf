@@ -10,9 +10,9 @@ if(isNull _loadoutWeaponConfig) then {
 //Return if no config is available
 if(isNull _loadoutWeaponConfig) exitWith {};
 
-
-
-_loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
+private _extras = _player getVariable ["socomd_arsenal_extras","extras_none"];
+if(getNumber( configFile >> "CfgWeapons" >> _extras >> "launcherAmmo") == 1) exitWith {};
+private _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 
 if(isNumber( _loadoutWeaponConfig >> "startLoaded") && (getNumber( _loadoutWeaponConfig >> "startLoaded") == 1)) then {
     (_loadoutMagazines select 0) set [1,((_loadoutMagazines select 0) select 1) - 1]

@@ -1,215 +1,215 @@
-#include "BIS_AddonInfo.hpp"
+
 class CfgPatches{
-    class sfx_socomd{
+    class SFX_socomd{
         requiredVersion=1.60;
         requiredAddons[]={"A3_Functions_F"};
-        units[]={"socomd_sfx_air_raid","socomd_sfx_alarm","socomd_sfx_alarm_facility","socomd_sfx_dist_airraid","socomd_sfx_amb_city","socomd_sfx_arab_market","socomd_sfx_distantwarzone","socomd_sfx_firefight","socomd_sfx_policesirens_distant","socomd_sfx_riot","socomd_sfx_warzone_close","socomd_sfx_warzone_distant","socomd_sfx_warzone_distant_withsiren","socomd_sfx_warzone_distant2","socomd_sfx_children_laughing1","socomd_sfx_children_ratr","socomd_sfx_demon_roar","socomd_sfx_girl_whispers_1","socomd_sfx_laugh_demonic","socomd_sfx_man_scream","zombiedoor","zombies","socomd_sfx_zombie_group_roaming","socomd_sfx_80s_mix_1","socomd_sfx_80s_mix_2","socomd_sfx_bandit_radio","socomd_sfx_iraq_music","socomd_sfx_lastpost","socomd_sfx_reveille","socomd_sfx_ME_prayermegaphone","socomd_sfx_radio_northkorea","socomd_sfx_soviet_mix_1","socomd_sfx_vietnam_mix_1","socomd_sfx_vietnam_mix_2","socomd_sfx_ambush","socomd_sfx_emergency","socomd_sfx_extract1","socomd_sfx_extract2","socomd_sfx_extract3","socomd_sfx_ME_radio_insurgent","socomd_sfx_support1","socomd_sfx_support2","socomd_sfx_support3","socomd_sfx_support4","socomd_sfx_support5","socomd_sfx_thunderclap","socomd_sfx_thunderclap","socomd_sfx_US_military_radiochatter"};
+        units[]={"sfx_air_raid","sfx_alarm","sfx_alarm_facility","sfx_dist_airraid","sfx_amb_city","sfx_arab_market","sfx_distantwarzone","sfx_firefight","sfx_policesirens_distant","sfx_riot","sfx_warzone_close","sfx_warzone_distant","sfx_warzone_distant_withsiren","sfx_warzone_distant2","sfx_children_laughing1","sfx_children_ratr","sfx_demon_roar","sfx_girl_whispers_1","sfx_laugh_demonic","sfx_man_scream","zombiedoor","zombies","sfx_zombie_group_roaming","sfx_80s_mix_1","sfx_80s_mix_2","sfx_bandit_radio","sfx_iraq_music","sfx_lastpost","sfx_reveille","sfx_ME_prayermegaphone","sfx_radio_northkorea","sfx_soviet_mix_1","sfx_vietnam_mix_1","sfx_vietnam_mix_2","sfx_ambush","sfx_emergency","sfx_extract1","sfx_extract2","sfx_extract3","sfx_ME_radio_insurgent","sfx_support1","sfx_support2","sfx_support3","sfx_support4","sfx_support5","sfx_thunderclap","sfx_thunderclap","sfx_US_military_radiochatter"};
         weapons[]={};
     };
 };
 
 
 class CfgSFX{
-    class socomd_sfx{
+    class sfx{
         empty[]={"",0,0,0,0,0,0,0};
-        sounds[]={"socomd_sfxsound"};
+        sounds[]={"sfxsound"};
     };
-    class socomd_sfx_air_raid: socomd_sfx{
-        name="socomd_sfx_air_raid";
-        socomd_sfxsound[]={"Socomd_SFX\bin\air_raid.ogg",8,1,2000,1,1,1,0};
+    class sfx_air_raid: sfx{
+        name="sfx_air_raid";
+        sfxsound[]={"socomd_sfx\bin\air_raid.ogg",7,1,1000,1,1,1,0};
     };
-    class socomd_sfx_alarm: socomd_sfx{
-        name="socomd_sfx_alarm";
-        socomd_sfxsound[]={"Socomd_SFX\bin\alarm.ogg",8,1,2000,1,1,1,0};
+    class sfx_alarm: sfx{
+        name="sfx_alarm";
+        sfxsound[]={"socomd_sfx\bin\alarm.ogg",6,1,1000,1,1,1,0};
     };
-	class socomd_sfx_alarm_facility: socomd_sfx{
-        name="socomd_sfx_alarm_facility";
-        socomd_sfxsound[]={"Socomd_SFX\bin\alarm_facility.ogg",7,1,2000,1,1,1,0};
+	class sfx_alarm_facility: sfx{
+        name="sfx_alarm_facility";
+        sfxsound[]={"socomd_sfx\bin\alarm_facility.ogg",7,1,1000,1,1,1,0};
     };
-	class socomd_sfx_dist_airraid: socomd_sfx{
-        name="socomd_sfx_dist_airraid";
-        socomd_sfxsound[]={"Socomd_SFX\bin\dist_airraid.ogg",7,1,5000,1,1,1,0};
+	class sfx_dist_airraid: sfx{
+        name="sfx_dist_airraid";
+        sfxsound[]={"socomd_sfx\bin\dist_airraid.ogg",6,1,2000,1,1,1,0};
     };
-	class socomd_sfx_amb_city: socomd_sfx{
-        name="socomd_sfx_amb_city";
-        socomd_sfxsound[]={"Socomd_SFX\bin\amb_city.ogg",5,1,1500,1,1,1,0};
+	class sfx_amb_city: sfx{
+        name="sfx_amb_city";
+        sfxsound[]={"socomd_sfx\bin\amb_city.ogg",5,1,1000,1,1,1,0};
     };
-	class socomd_sfx_arab_market: socomd_sfx{
-        name="socomd_sfx_arab_market";
-        socomd_sfxsound[]={"Socomd_SFX\bin\arab_market.ogg",5,1,1500,1,1,1,0};
+	class sfx_arab_market: sfx{
+        name="sfx_arab_market";
+        sfxsound[]={"socomd_sfx\bin\arab_market.ogg",5,1,1000,1,1,1,0};
     };
-	class socomd_sfx_distantwarzone: socomd_sfx{
-        name="socomd_sfx_distantwarzone";
-        socomd_sfxsound[]={"Socomd_SFX\bin\distantwarzone.ogg",6,1,5000,1,1,1,0};
+	class sfx_distantwarzone: sfx{
+        name="sfx_distantwarzone";
+        sfxsound[]={"socomd_sfx\bin\distantwarzone.ogg",6,1,5000,1,1,1,0};
     };
-	class socomd_sfx_firefight: socomd_sfx{
-        name="socomd_sfx_firefight";
-        socomd_sfxsound[]={"Socomd_SFX\bin\firefight.ogg",6,1,5000,1,1,1,0};
+	class sfx_firefight: sfx{
+        name="sfx_firefight";
+        sfxsound[]={"socomd_sfx\bin\firefight.ogg",6,1,3000,1,1,1,0};
     };
-	class socomd_sfx_policesirens_distant: socomd_sfx{
-        name="socomd_sfx_policesirens_distant";
-        socomd_sfxsound[]={"Socomd_SFX\bin\policesirens_distant.ogg",5,1,1000,1,1,1,0};
+	class sfx_policesirens_distant: sfx{
+        name="sfx_policesirens_distant";
+        sfxsound[]={"socomd_sfx\bin\policesirens_distant.ogg",5,1,800,1,1,1,0};
     };
-	class socomd_sfx_riot: socomd_sfx{
-        name="socomd_sfx_riot";
-        socomd_sfxsound[]={"Socomd_SFX\bin\riot.ogg",7,1,1000,1,1,1,0};
+	class sfx_riot: sfx{
+        name="sfx_riot";
+        sfxsound[]={"socomd_sfx\bin\riot.ogg",6,1,1000,1,1,1,0};
     };
-	class socomd_sfx_warzone_close: socomd_sfx{
-        name="socomd_sfx_warzone_close";
-        socomd_sfxsound[]={"Socomd_SFX\bin\warzone_close.ogg",6,1,2000,1,1,1,0};
+	class sfx_warzone_close: sfx{
+        name="sfx_warzone_close";
+        sfxsound[]={"socomd_sfx\bin\warzone_close.ogg",6,1,1000,1,1,1,0};
     };
-	class socomd_sfx_warzone_distant: socomd_sfx{
-        name="socomd_sfx_warzone_distant";
-        socomd_sfxsound[]={"Socomd_SFX\bin\warzone_distant.ogg",7,1,5000,1,1,1,0};
+	class sfx_warzone_distant: sfx{
+        name="sfx_warzone_distant";
+        sfxsound[]={"socomd_sfx\bin\warzone_distant.ogg",6,1,5000,1,1,1,0};
     };
-	class socomd_sfx_warzone_distant_withsiren: socomd_sfx{
-        name="socomd_sfx_warzone_distant_withsiren";
-        socomd_sfxsound[]={"Socomd_SFX\bin\warzone_distant_withsiren.ogg",7,1,5000,1,1,1,0};
+	class sfx_warzone_distant_withsiren: sfx{
+        name="sfx_warzone_distant_withsiren";
+        sfxsound[]={"socomd_sfx\bin\warzone_distant_withsiren.ogg",6,1,5000,1,1,1,0};
     };
-	class socomd_sfx_warzone_distant2: socomd_sfx{
-        name="socomd_sfx_warzone_distant2";
-        socomd_sfxsound[]={"Socomd_SFX\bin\warzone_distant2.ogg",6,1,5000,1,1,1,0};
+	class sfx_warzone_distant2: sfx{
+        name="sfx_warzone_distant2";
+        sfxsound[]={"socomd_sfx\bin\warzone_distant2.ogg",6,1,5000,1,1,1,0};
     };
-	class socomd_sfx_warzone_distant3: socomd_sfx{
-        name="socomd_sfx_warzone_distant3";
-        socomd_sfxsound[]={"Socomd_SFX\bin\warzone_distant3.ogg",7,1,5000,1,1,1,0};
+	class sfx_warzone_distant3: sfx{
+        name="sfx_warzone_distant3";
+        sfxsound[]={"socomd_sfx\bin\warzone_distant3.ogg",6,1,5000,1,1,1,0};
     };
-	class socomd_sfx_children_laughing1: socomd_sfx{
-        name="socomd_sfx_children_laughing1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\children_laughing1.ogg",7,1,50,1,1,1,0};
+	class sfx_children_laughing1: sfx{
+        name="sfx_children_laughing1";
+        sfxsound[]={"socomd_sfx\bin\children_laughing1.ogg",7,1,50,1,1,1,0};
     };
-	class socomd_sfx_children_ratr: socomd_sfx{
-        name="socomd_sfx_children_ratr";
-        socomd_sfxsound[]={"Socomd_SFX\bin\children_ratr.ogg",7,1,100,1,1,1,0};
+	class sfx_children_ratr: sfx{
+        name="sfx_children_ratr";
+        sfxsound[]={"socomd_sfx\bin\children_ratr.ogg",7,1,50,1,1,1,0};
     };
-	class socomd_sfx_demon_roar: socomd_sfx{
-        name="socomd_sfx_demon_roar";
-        socomd_sfxsound[]={"Socomd_SFX\bin\demon_roar.ogg",10,1,100,1,1,1,0};
+	class sfx_demon_roar: sfx{
+        name="sfx_demon_roar";
+        sfxsound[]={"socomd_sfx\bin\demon_roar.ogg",10,1,100,1,1,1,0};
     };
-	class socomd_sfx_girl_whispers_1: socomd_sfx{
-        name="socomd_sfx_girl_whispers_1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\girl_whispers_1.ogg",7,1,50,1,1,1,0};
+	class sfx_girl_whispers_1: sfx{
+        name="sfx_girl_whispers_1";
+        sfxsound[]={"socomd_sfx\bin\girl_whispers_1.ogg",7,1,50,1,1,1,0};
     };
-	class socomd_sfx_laugh_demonic: socomd_sfx{
-        name="socomd_sfx_laugh_demonic";
-        socomd_sfxsound[]={"Socomd_SFX\bin\laugh_demonic.ogg",10,1,100,1,1,1,0};
+	class sfx_laugh_demonic: sfx{
+        name="sfx_laugh_demonic";
+        sfxsound[]={"socomd_sfx\bin\laugh_demonic.ogg",10,1,100,1,1,1,0};
     };
-	class socomd_sfx_man_scream: socomd_sfx{
-        name="socomd_sfx_man_scream";
-        socomd_sfxsound[]={"Socomd_SFX\bin\man_scream.ogg",7,1,200,1,1,1,0};
+	class sfx_man_scream: sfx{
+        name="sfx_man_scream";
+        sfxsound[]={"socomd_sfx\bin\man_scream.ogg",7,1,50,1,1,1,0};
     };
-	class socomd_sfx_zombiedoor: socomd_sfx{
-        name="socomd_sfx_zombiedoor";
-        socomd_sfxsound[]={"Socomd_SFX\bin\zombiedoor.ogg",5,1,100,1,1,1,0};
+	class sfx_zombiedoor: sfx{
+        name="sfx_zombiedoor";
+        sfxsound[]={"socomd_sfx\bin\zombiedoor.ogg",5,1,50,1,1,1,0};
     };
-	class socomd_sfx_zombies: socomd_sfx{
-        name="socomd_sfx_zombies";
-        socomd_sfxsound[]={"Socomd_SFX\bin\zombies.ogg",5,1,1000,1,1,1,0};
+	class sfx_zombies: sfx{
+        name="sfx_zombies";
+        sfxsound[]={"socomd_sfx\bin\zombies.ogg",5,1,300,1,1,1,0};
     };
-	class socomd_sfx_zombie_group_roaming: socomd_sfx{
-        name="socomd_sfx_zombie_group_roaming";
-        socomd_sfxsound[]={"Socomd_SFX\bin\zombie_group_roaming.ogg",5,1,1000,1,1,1,0};
+	class sfx_zombie_group_roaming: sfx{
+        name="sfx_zombie_group_roaming";
+        sfxsound[]={"socomd_sfx\bin\zombie_group_roaming.ogg",3,1,1000,1,1,1,0};
     };
-	class socomd_sfx_80s_mix_1: socomd_sfx{
-        name="socomd_sfx_80s_mix_1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\80s_mix_1.ogg",10,1,500,1,1,1,0};
+	class sfx_80s_mix_1: sfx{
+        name="sfx_80s_mix_1";
+        sfxsound[]={"socomd_sfx\bin\80s_mix_1.ogg",10,1,50,1,1,1,0};
     };
-	class socomd_sfx_80s_mix_2: socomd_sfx{
-        name="socomd_sfx_80s_mix_2";
-        socomd_sfxsound[]={"Socomd_SFX\bin\80s_mix_2.ogg",10,1,500,1,1,1,0};
+	class sfx_80s_mix_2: sfx{
+        name="sfx_80s_mix_2";
+        sfxsound[]={"socomd_sfx\bin\80s_mix_2.ogg",10,1,50,1,1,1,0};
     };
-	class socomd_sfx_bandit_radio: socomd_sfx{
-        name="socomd_sfx_bandit_radio";
-        socomd_sfxsound[]={"Socomd_SFX\bin\bandit_radio.ogg",8,1,500,1,1,1,0};
+	class sfx_bandit_radio: sfx{
+        name="sfx_bandit_radio";
+        sfxsound[]={"socomd_sfx\bin\bandit_radio.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_iraq_music: socomd_sfx{
-        name="socomd_sfx_iraq_music";
-        socomd_sfxsound[]={"Socomd_SFX\bin\iraq_music.ogg",8,1,500,1,1,1,0};
+	class sfx_iraq_music: sfx{
+        name="sfx_iraq_music";
+        sfxsound[]={"socomd_sfx\bin\iraq_music.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_lastpost: socomd_sfx{
-        name="socomd_sfx_lastpost";
-        socomd_sfxsound[]={"Socomd_SFX\bin\lastpost.ogg",10,1,500,1,1,1,0};
+	class sfx_lastpost: sfx{
+        name="sfx_lastpost";
+        sfxsound[]={"socomd_sfx\bin\lastpost.ogg",10,1,100,1,1,1,0};
     };
-	class socomd_sfx_reveille: socomd_sfx{
-        name="socomd_sfx_reveille";
-        socomd_sfxsound[]={"Socomd_SFX\bin\reveille.ogg",10,1,500,1,1,1,0};
+	class sfx_reveille: sfx{
+        name="sfx_reveille";
+        sfxsound[]={"socomd_sfx\bin\reveille.ogg",10,1,100,1,1,1,0};
     };
-	class socomd_sfx_soviet_mix_1: socomd_sfx{
-        name="socomd_sfx_soviet_mix_1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\soviet_mix_1.ogg",8,1,500,1,1,1,0};
+	class sfx_soviet_mix_1: sfx{
+        name="sfx_soviet_mix_1";
+        sfxsound[]={"socomd_sfx\bin\soviet_mix_1.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_vietnam_mix_1: socomd_sfx{
-        name="socomd_sfx_vietnam_mix_1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\vietnam_mix_1.ogg",10,1,500,1,1,1,0};
+	class sfx_vietnam_mix_1: sfx{
+        name="sfx_vietnam_mix_1";
+        sfxsound[]={"socomd_sfx\bin\vietnam_mix_1.ogg",10,1,50,1,1,1,0};
     };
-	class socomd_sfx_vietnam_mix_2: socomd_sfx{
-        name="socomd_sfx_vietnam_mix_2";
-        socomd_sfxsound[]={"Socomd_SFX\bin\vietnam_mix_2.ogg",10,1,500,1,1,1,0};
+	class sfx_vietnam_mix_2: sfx{
+        name="sfx_vietnam_mix_2";
+        sfxsound[]={"socomd_sfx\bin\vietnam_mix_2.ogg",10,1,50,1,1,1,0};
     };
-	class socomd_sfx_ME_prayermegaphone: socomd_sfx{
-        name="socomd_sfx_ME_prayermegaphone";
-        socomd_sfxsound[]={"Socomd_SFX\bin\ME_prayermegaphone.ogg",7,1,700,1,1,1,0};
+	class sfx_ME_prayermegaphone: sfx{
+        name="sfx_ME_prayermegaphone";
+        sfxsound[]={"socomd_sfx\bin\ME_prayermegaphone.ogg",7,1,100,1,1,1,0};
     };
-	class socomd_sfx_radio_northkorea: socomd_sfx{
-        name="socomd_sfx_radio_northkorea";
-        socomd_sfxsound[]={"Socomd_SFX\bin\radio_northkorea.ogg",8,1,100,1,1,1,0};
+	class sfx_radio_northkorea: sfx{
+        name="sfx_radio_northkorea";
+        sfxsound[]={"socomd_sfx\bin\radio_northkorea.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_ambush: socomd_sfx{
-        name="socomd_sfx_ambush";
-        socomd_sfxsound[]={"Socomd_SFX\bin\ambush.ogg",8,1,100,1,1,1,0};
+	class sfx_ambush: sfx{
+        name="sfx_ambush";
+        sfxsound[]={"socomd_sfx\bin\ambush.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_emergency: socomd_sfx{
-        name="socomd_sfx_emergency";
-        socomd_sfxsound[]={"Socomd_SFX\bin\emergency.ogg",8,1,100,1,1,1,0};
+	class sfx_emergency: sfx{
+        name="sfx_emergency";
+        sfxsound[]={"socomd_sfx\bin\emergency.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_extract1: socomd_sfx{
-        name="socomd_sfx_extract1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\extract1.ogg",8,1,100,1,1,1,0};
+	class sfx_extract1: sfx{
+        name="sfx_extract1";
+        sfxsound[]={"socomd_sfx\bin\extract1.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_extract2: socomd_sfx{
-        name="socomd_sfx_extract2";
-        socomd_sfxsound[]={"Socomd_SFX\bin\extract2.ogg",8,1,100,1,1,1,0};
+	class sfx_extract2: sfx{
+        name="sfx_extract2";
+        sfxsound[]={"socomd_sfx\bin\extract2.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_extract3: socomd_sfx{
-        name="socomd_sfx_extract3";
-        socomd_sfxsound[]={"Socomd_SFX\bin\extract3.ogg",8,1,100,1,1,1,0};
+	class sfx_extract3: sfx{
+        name="sfx_extract3";
+        sfxsound[]={"socomd_sfx\bin\extract3.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_ME_radio_insurgent: socomd_sfx{
-        name="socomd_sfx_ME_radio_insurgent";
-        socomd_sfxsound[]={"Socomd_SFX\bin\ME_radio_insurgent.ogg",8,1,100,1,1,1,0};
+	class sfx_ME_radio_insurgent: sfx{
+        name="sfx_ME_radio_insurgent";
+        sfxsound[]={"socomd_sfx\bin\ME_radio_insurgent.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_support1: socomd_sfx{
-        name="socomd_sfx_support1";
-        socomd_sfxsound[]={"Socomd_SFX\bin\support1.ogg",8,1,100,1,1,1,0};
+	class sfx_support1: sfx{
+        name="sfx_support1";
+        sfxsound[]={"socomd_sfx\bin\support1.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_support2: socomd_sfx{
-        name="socomd_sfx_support2";
-        socomd_sfxsound[]={"Socomd_SFX\bin\support2.ogg",8,1,100,1,1,1,0};
+	class sfx_support2: sfx{
+        name="sfx_support2";
+        sfxsound[]={"socomd_sfx\bin\support2.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_support3: socomd_sfx{
-        name="socomd_sfx_support3";
-        socomd_sfxsound[]={"Socomd_SFX\bin\support3.ogg",8,1,100,1,1,1,0};
+	class sfx_support3: sfx{
+        name="sfx_support3";
+        sfxsound[]={"socomd_sfx\bin\support3.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_thunderclap: socomd_sfx{
-        name="socomd_sfx_thunderclap";
-        socomd_sfxsound[]={"Socomd_SFX\bin\thunderclap.ogg",8,1,100,1,1,1,0};
+	class sfx_thunderclap: sfx{
+        name="sfx_thunderclap";
+        sfxsound[]={"socomd_sfx\bin\thunderclap.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_support4: socomd_sfx{
-        name="socomd_sfx_support4";
-        socomd_sfxsound[]={"Socomd_SFX\bin\support4.ogg",8,1,100,1,1,1,0};
+	class sfx_support4: sfx{
+        name="sfx_support4";
+        sfxsound[]={"socomd_sfx\bin\support4.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_support5: socomd_sfx{
-        name="socomd_sfx_support5";
-        socomd_sfxsound[]={"Socomd_SFX\bin\support5.ogg",8,1,100,1,1,1,0};
+	class sfx_support5: sfx{
+        name="sfx_support5";
+        sfxsound[]={"socomd_sfx\bin\support5.ogg",8,1,50,1,1,1,0};
     };
-	class socomd_sfx_US_military_radiochatter: socomd_sfx{
-        name="socomd_sfx_US_military_radiochatter";
-        socomd_sfxsound[]={"Socomd_SFX\bin\US_military_radiochatter.ogg",8,1,100,1,1,1,0};
+	class sfx_US_military_radiochatter: sfx{
+        name="sfx_US_military_radiochatter";
+        sfxsound[]={"socomd_sfx\bin\US_military_radiochatter.ogg",8,1,50,1,1,1,0};
     };
 };
 
 class CfgVehicles{
-    class ALL;
+    class ALL {};
     class Sound: ALL{
         scope=0;
         author="";
@@ -220,244 +220,244 @@ class CfgVehicles{
         vehicleClass="Sounds";
         icon="iconSound";
     };
-    class socomd_sfx_air_raid: Sound{
-        sound = "socomd_sfx_air_raid";
+    class sfx_air_raid: Sound{
+        sound = "sfx_air_raid";
         scope=2;
-        displayName="(ALR) Air Raid Siren (2000m)";
+        displayName="(ALR) Air Raid Siren (1000m)";
     };
-	class socomd_sfx_alarm: Sound{
-        sound = "socomd_sfx_alarm";
+	class sfx_alarm: Sound{
+        sound = "sfx_alarm";
         scope=2;
-        displayName="(ALR) Alarm (2000m)";
+        displayName="(ALR) Alarm (1000m)";
     };
-	class socomd_sfx_alarm_facility: Sound{
-        sound = "socomd_sfx_alarm_facility";
+	class sfx_alarm_facility: Sound{
+        sound = "sfx_alarm_facility";
         scope=2;
-        displayName="(ALR) Alarm Facility (2000m)";
+        displayName="(ALR) Alarm Facility (1000m)";
     };
-	class socomd_sfx_dist_airraid: Sound{
-        sound = "socomd_sfx_dist_airraid";
+	class sfx_dist_airraid: Sound{
+        sound = "sfx_dist_airraid";
         scope=2;
-        displayName="(ALR) Distant Air Raid Siren (5000m)";
+        displayName="(ALR) Distant Air Raid Siren (2000m)";
     };
-	class socomd_sfx_amb_city: Sound{
-        sound = "socomd_sfx_amb_city";
+	class sfx_amb_city: Sound{
+        sound = "sfx_amb_city";
         scope=2;
-        displayName="(AMB) Ambiant City (1500m)";
+        displayName="(AMB) Ambiant City (1000m)";
     };
-	class socomd_sfx_arab_market: Sound{
-        sound = "socomd_sfx_arab_market";
+	class sfx_arab_market: Sound{
+        sound = "sfx_arab_market";
         scope=2;
-        displayName="(AMB) Arab Market (1500m)";
+        displayName="(AMB) Arab Market (1000m)";
     };
-	class socomd_sfx_distantwarzone: Sound{
-        sound = "socomd_sfx_distantwarzone";
+	class sfx_distantwarzone: Sound{
+        sound = "sfx_distantwarzone";
         scope=2;
         displayName="(AMB) Distant War Zone (5000m)";
     };
-	class socomd_sfx_firefight: Sound{
-        sound = "socomd_sfx_firefight";
+	class sfx_firefight: Sound{
+        sound = "sfx_firefight";
         scope=2;
-        displayName="(AMB) firefight (5000m)";
+        displayName="(AMB) firefight (3000m)";
     };
-	class socomd_sfx_policesirens_distant: Sound{
-        sound = "socomd_sfx_policesirens_distant";
+	class sfx_policesirens_distant: Sound{
+        sound = "sfx_policesirens_distant";
         scope=2;
         displayName="(AMB) Police Sirens Distant (1000m)";
     };
-	class socomd_sfx_riot: Sound{
-        sound = "socomd_sfx_riot";
+	class sfx_riot: Sound{
+        sound = "sfx_riot";
         scope=2;
         displayName="(AMB) Riot (1000m)";
     };
-	class socomd_sfx_warzone_close: Sound{
-        sound = "socomd_sfx_warzone_close";
+	class sfx_warzone_close: Sound{
+        sound = "sfx_warzone_close";
         scope=2;
         displayName="(AMB) Warzone Close (2000m)";
     };
-	class socomd_sfx_warzone_distant_withsiren: Sound{
-        sound = "socomd_sfx_warzone_distant_withsiren";
+	class sfx_warzone_distant_withsiren: Sound{
+        sound = "sfx_warzone_distant_withsiren";
         scope=2;
         displayName="(AMB) Warzone Distant With Siren (5000m)";
     };
-	class socomd_sfx_warzone_distant: Sound{
-        sound = "socomd_sfx_warzone_distant";
+	class sfx_warzone_distant: Sound{
+        sound = "sfx_warzone_distant";
         scope=2;
         displayName="(AMB) Warzone Distant (5000m)";
     };
-	class socomd_sfx_warzone_distant2: Sound{
-        sound = "socomd_sfx_warzone_distant2";
+	class sfx_warzone_distant2: Sound{
+        sound = "sfx_warzone_distant2";
         scope=2;
         displayName="(AMB) Warzone Distant 2 (5000m)";
     };
-	class socomd_sfx_warzone_distant3: Sound{
-        sound = "socomd_sfx_warzone_distant3";
+	class sfx_warzone_distant3: Sound{
+        sound = "sfx_warzone_distant3";
         scope=2;
         displayName="(AMB) Warzone Distant 3 (5000m)";
     };
-	class socomd_sfx_children_laughing1: Sound{
-        sound = "socomd_sfx_children_laughing1";
+	class sfx_children_laughing1: Sound{
+        sound = "sfx_children_laughing1";
         scope=2;
         displayName="(HOR) Children Laughing 1 (50m)";
     };
-	class socomd_sfx_children_ratr: Sound{
-        sound = "socomd_sfx_children_ratr";
+	class sfx_children_ratr: Sound{
+        sound = "sfx_children_ratr";
         scope=2;
-        displayName="(HOR) Children Singing (100m)";
+        displayName="(HOR) Children Singing (50m)";
     };
-	class socomd_sfx_demon_roar: Sound{
-        sound = "socomd_sfx_demon_roar";
+	class sfx_demon_roar: Sound{
+        sound = "sfx_demon_roar";
         scope=2;
-        displayName="(HOR) Demon Roar (100m)";
+        displayName="(HOR) Demon Roar (50m)";
     };
-	class socomd_sfx_girl_whispers_1: Sound{
-        sound = "socomd_sfx_girl_whispers_1";
+	class sfx_girl_whispers_1: Sound{
+        sound = "sfx_girl_whispers_1";
         scope=2;
         displayName="(HOR) Child Whispers (50m)";
     };
-	class socomd_sfx_laugh_demonic: Sound{
-        sound = "socomd_sfx_laugh_demonic";
+	class sfx_laugh_demonic: Sound{
+        sound = "sfx_laugh_demonic";
         scope=2;
-        displayName="(HOR) Laugh Demonic (100m)";
+        displayName="(HOR) Laugh Demonic (50m)";
     };
-	class socomd_sfx_man_scream: Sound{
-        sound = "socomd_sfx_man_scream";
+	class sfx_man_scream: Sound{
+        sound = "sfx_man_scream";
         scope=2;
-        displayName="(HOR) Man Scream (200m)";
+        displayName="(HOR) Man Scream (50m)";
     };
-	class socomd_sfx_zombiedoor: Sound{
-        sound = "socomd_sfx_zombiedoor";
+	class sfx_zombiedoor: Sound{
+        sound = "sfx_zombiedoor";
         scope=2;
-        displayName="(HOR) Zombie Scratching At Wall (1000m)";
+        displayName="(HOR) Zombie Scratching At Wall (100m)";
     };
-	class socomd_sfx_zombies: Sound{
-        sound = "socomd_sfx_zombies";
+	class sfx_zombies: Sound{
+        sound = "sfx_zombies";
         scope=2;
-        displayName="(HOR) zombies (5000m)";
+        displayName="(HOR) zombies (500m)";
     };
-	class socomd_sfx_zombie_group_roaming: Sound{
-        sound = "socomd_sfx_zombie_group_roaming";
+	class sfx_zombie_group_roaming: Sound{
+        sound = "sfx_zombie_group_roaming";
         scope=2;
         displayName="(HOR) Zombie Group Roaming (1000m)";
     };
-	class socomd_sfx_80s_mix_1: Sound{
-        sound = "socomd_sfx_80s_mix_1";
+	class sfx_80s_mix_1: Sound{
+        sound = "sfx_80s_mix_1";
         scope=2;
-        displayName="(MUS) 80s mix 1 (500m)";
+        displayName="(MUS) 80s mix 1 (50m)";
     };
-	class socomd_sfx_80s_mix_2: Sound{
-        sound = "socomd_sfx_80s_mix_2";
+	class sfx_80s_mix_2: Sound{
+        sound = "sfx_80s_mix_2";
         scope=2;
-        displayName="(MUS) 80s mix 2 (500m)";
+        displayName="(MUS) 80s mix 2 (50m)";
     };
-	class socomd_sfx_bandit_radio: Sound{
-        sound = "socomd_sfx_bandit_radio";
+	class sfx_bandit_radio: Sound{
+        sound = "sfx_bandit_radio";
         scope=2;
-        displayName="(MUS) Bandit Radio (500m)";
+        displayName="(MUS) Bandit Radio (50m)";
     };
-	class socomd_sfx_iraq_music: Sound{
-        sound = "socomd_sfx_iraq_music";
+	class sfx_iraq_music: Sound{
+        sound = "sfx_iraq_music";
         scope=2;
-        displayName="(MUS) Iraq Music (500m)";
+        displayName="(MUS) Iraq Music (50m)";
     };
-	class socomd_sfx_lastpost: Sound{
-        sound = "socomd_sfx_lastpost";
+	class sfx_lastpost: Sound{
+        sound = "sfx_lastpost";
         scope=2;
-        displayName="(MUS) Lastpost (500m)";
+        displayName="(MUS) Lastpost (50m)";
     };
-	class socomd_sfx_reveille: Sound{
-        sound = "socomd_sfx_reveille";
+	class sfx_reveille: Sound{
+        sound = "sfx_reveille";
         scope=2;
-        displayName="(MUS) reveille (500m)";
+        displayName="(MUS) reveille (50m)";
     };
-	class socomd_sfx_ME_prayermegaphone: Sound{
-        sound = "socomd_sfx_ME_prayermegaphone";
+	class sfx_ME_prayermegaphone: Sound{
+        sound = "sfx_ME_prayermegaphone";
         scope=2;
-        displayName="(MUS) Call To Prayer (500m)";
+        displayName="(MUS) Call To Prayer Megaphone (100m)";
     };
-	class socomd_sfx_soviet_mix_1: Sound{
-        sound = "socomd_sfx_soviet_mix_1";
+	class sfx_soviet_mix_1: Sound{
+        sound = "sfx_soviet_mix_1";
         scope=2;
-        displayName="(MUS) Soviet Mix 1 (500m)";
+        displayName="(MUS) Soviet Mix 1 (50m)";
     };
-	class socomd_sfx_vietnam_mix_1: Sound{
-        sound = "socomd_sfx_vietnam_mix_1";
+	class sfx_vietnam_mix_1: Sound{
+        sound = "sfx_vietnam_mix_1";
         scope=2;
-        displayName="(MUS) Vietnam Mix 1 (500m)";
+        displayName="(MUS) Vietnam Mix 1 (50m)";
     };
-	class socomd_sfx_vietnam_mix_2: Sound{
-        sound = "socomd_sfx_vietnam_mix_2";
+	class sfx_vietnam_mix_2: Sound{
+        sound = "sfx_vietnam_mix_2";
         scope=2;
-        displayName="(MUS) Vietnam Mix 2 (500m)";
+        displayName="(MUS) Vietnam Mix 2 (50m)";
     };
-	class socomd_sfx_ambush: Sound{
-        sound = "socomd_sfx_ambush";
+	class sfx_ambush: Sound{
+        sound = "sfx_ambush";
         scope=2;
-        displayName="(RAD) Ambush (100m)";
+        displayName="(RAD) Ambush (50m)";
     };
-	class socomd_sfx_emergency: Sound{
-        sound = "socomd_sfx_emergency";
+	class sfx_emergency: Sound{
+        sound = "sfx_emergency";
         scope=2;
-        displayName="(RAD) Emergency (100m)";
+        displayName="(RAD) Emergency (50m)";
     };
-	class socomd_sfx_extract1: Sound{
-        sound = "socomd_sfx_extract1";
+	class sfx_extract1: Sound{
+        sound = "sfx_extract1";
         scope=2;
-        displayName="(RAD) Extract 1 (100m)";
+        displayName="(RAD) Extract 1 (50m)";
     };
-	class socomd_sfx_extract2: Sound{
-        sound = "socomd_sfx_extract2";
+	class sfx_extract2: Sound{
+        sound = "sfx_extract2";
         scope=2;
-        displayName="(RAD) Extract 2 (100m)";
+        displayName="(RAD) Extract 2 (50m)";
     };
-	class socomd_sfx_extract3: Sound{
-        sound = "socomd_sfx_extract3";
+	class sfx_extract3: Sound{
+        sound = "sfx_extract3";
         scope=2;
-        displayName="(RAD) Extract 3 (100m)";
+        displayName="(RAD) Extract 3 (50m)";
     };
-	class socomd_sfx_ME_radio_insurgent: Sound{
-        sound = "socomd_sfx_ME_radio_insurgent";
+	class sfx_ME_radio_insurgent: Sound{
+        sound = "sfx_ME_radio_insurgent";
         scope=2;
-        displayName="(RAD) insurgent radio (100m)";
+        displayName="(RAD) insurgent radio (50m)";
     };
-	class socomd_sfx_support1: Sound{
-        sound = "socomd_sfx_support1";
+	class sfx_support1: Sound{
+        sound = "sfx_support1";
         scope=2;
-        displayName="(RAD) support 1 (100m)";
+        displayName="(RAD) support 1 (50m)";
     };
-	class socomd_sfx_support2: Sound{
-        sound = "socomd_sfx_support2";
+	class sfx_support2: Sound{
+        sound = "sfx_support2";
         scope=2;
-        displayName="(RAD) support 2 (100m)";
+        displayName="(RAD) support 2 (50m)";
     };
-	class socomd_sfx_support3: Sound{
-        sound = "socomd_sfx_support3";
+	class sfx_support3: Sound{
+        sound = "sfx_support3";
         scope=2;
-        displayName="(RAD) support 3 (100m)";
+        displayName="(RAD) support 3 (50m)";
     };
-	class socomd_sfx_support4: Sound{
-        sound = "socomd_sfx_support4";
+	class sfx_support4: Sound{
+        sound = "sfx_support4";
         scope=2;
-        displayName="(RAD) support 4 (100m)";
+        displayName="(RAD) support 4 (50m)";
     };
-	class socomd_sfx_support5: Sound{
-        sound = "socomd_sfx_support5";
+	class sfx_support5: Sound{
+        sound = "sfx_support5";
         scope=2;
-        displayName="(RAD) support 5 (100m)";
+        displayName="(RAD) support 5 (50m)";
     };
-	class socomd_sfx_thunderclap: Sound{
-        sound = "socomd_sfx_thunderclap";
+	class sfx_thunderclap: Sound{
+        sound = "sfx_thunderclap";
         scope=2;
-        displayName="(RAD) thunderclap (100m)";
+        displayName="(RAD) thunderclap (50m)";
     };
-	class socomd_sfx_US_military_radiochatter: Sound{
-        sound = "socomd_sfx_US_military_radiochatter";
+	class sfx_US_military_radiochatter: Sound{
+        sound = "sfx_US_military_radiochatter";
         scope=2;
-        displayName="(RAD) US Military Radio Chatter (100m)";
+        displayName="(RAD) US Military Radio Chatter (50m)";
     };
-	class socomd_sfx_radio_northkorea: Sound{
-        sound = "socomd_sfx_radio_northkorea";
+	class sfx_radio_northkorea: Sound{
+        sound = "sfx_radio_northkorea";
         scope=2;
-        displayName="(RAD) Radio_North Korea (500m)";
+        displayName="(RAD) Radio_North Korea (50m)";
     };
 }; 
