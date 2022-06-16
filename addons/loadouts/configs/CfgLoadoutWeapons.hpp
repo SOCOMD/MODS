@@ -142,6 +142,15 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_ris_afg_NET            : Rifle_556 {};
     class ACWP_M4A5_145_ris_tango_NET        : Rifle_556 {};
     class ACWP_M4A5_145_ris_kag_NET            : Rifle_556 {};
+    class rhs_weap_mk18 : Rifle_556 {};
+    class rhs_weap_mk18_bk : Rifle_556 {};
+    class rhs_weap_mk18_KAC_bk : Rifle_556 {};
+    class rhs_weap_mk18_d : Rifle_556 {};
+    class rhs_weap_mk18_KAC_d : Rifle_556 {};
+    class rhs_weap_mk18_KAC : Rifle_556 {};
+    class rhs_weap_mk18_wd : Rifle_556 {};
+    class rhs_weap_mk18_KAC_wd : Rifle_556 {};
+
 
     class MachineGun_556;
     class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
