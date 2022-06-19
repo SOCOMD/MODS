@@ -145,7 +145,9 @@ class TAGE_Sapper
             LOADOUT_ITEM(ACE_M26_Clacker, 1)
             LOADOUT_ITEM(ACE_wirecutter, 1)
             LOADOUT_ITEM(MineDetector, 1)
-            LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 3)
+            LOADOUT_ITEM(tsp_frameCharge_mag, 1)
+            LOADOUT_ITEM(tsp_stickCharge_mag, 1)
+            LOADOUT_ITEM(tsp_popperCharge_mag, 3)
         };
     };
 };

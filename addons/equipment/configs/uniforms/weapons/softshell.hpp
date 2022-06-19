@@ -3483,7 +3483,7 @@ class USP_SOFTSHELL_G3C_KP_OR6_AMCU_GRN_RECON: USP_SOFTSHELL_G3C_KP_OR{
 
 // full AMCU
 
-class USP_SOFTSHELL_G3C_AMCU: USP_SOFTSHELL_G3C{
+class USP_SOFTSHELL_G3C_AMCU_SOCOMD: USP_SOFTSHELL_G3C{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3494,12 +3494,12 @@ class USP_SOFTSHELL_G3C_AMCU: USP_SOFTSHELL_G3C{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3510,12 +3510,12 @@ class USP_SOFTSHELL_G3C_MX_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX2_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX2_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3526,12 +3526,12 @@ class USP_SOFTSHELL_G3C_MX2_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX2_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX2_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX3_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX3_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3542,12 +3542,12 @@ class USP_SOFTSHELL_G3C_MX3_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX3_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX3_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX4_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX4_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3558,12 +3558,12 @@ class USP_SOFTSHELL_G3C_MX4_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX4_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX4_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX5_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX5_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3574,12 +3574,12 @@ class USP_SOFTSHELL_G3C_MX5_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX5_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX5_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX6_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX6_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3590,12 +3590,12 @@ class USP_SOFTSHELL_G3C_MX6_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX6_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX6_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_MX7_AMCU: USP_SOFTSHELL_G3C_MX{
+class USP_SOFTSHELL_G3C_MX7_AMCU_SOCOMD: USP_SOFTSHELL_G3C_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3606,12 +3606,12 @@ class USP_SOFTSHELL_G3C_MX7_AMCU: USP_SOFTSHELL_G3C_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_MX7_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_MX7_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3622,12 +3622,12 @@ class USP_SOFTSHELL_G3C_OR_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR2_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR2_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3638,12 +3638,12 @@ class USP_SOFTSHELL_G3C_OR2_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR2_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR2_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR3_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR3_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3654,12 +3654,12 @@ class USP_SOFTSHELL_G3C_OR3_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR3_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR3_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR4_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR4_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3670,12 +3670,12 @@ class USP_SOFTSHELL_G3C_OR4_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR4_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR4_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR5_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR5_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3686,12 +3686,12 @@ class USP_SOFTSHELL_G3C_OR5_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR5_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR5_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_OR6_AMCU: USP_SOFTSHELL_G3C_OR{
+class USP_SOFTSHELL_G3C_OR6_AMCU_SOCOMD: USP_SOFTSHELL_G3C_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3702,12 +3702,12 @@ class USP_SOFTSHELL_G3C_OR6_AMCU: USP_SOFTSHELL_G3C_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_OR6_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_OR6_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_AMCU: USP_SOFTSHELL_G3C_KP{
+class USP_SOFTSHELL_G3C_KP_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3718,12 +3718,12 @@ class USP_SOFTSHELL_G3C_KP_AMCU: USP_SOFTSHELL_G3C_KP{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3734,12 +3734,12 @@ class USP_SOFTSHELL_G3C_KP_MX_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX2_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX2_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3750,12 +3750,12 @@ class USP_SOFTSHELL_G3C_KP_MX2_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX2_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX3_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX3_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3766,12 +3766,12 @@ class USP_SOFTSHELL_G3C_KP_MX3_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX3_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX4_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX4_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3782,12 +3782,12 @@ class USP_SOFTSHELL_G3C_KP_MX4_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX4_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX5_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX5_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3798,12 +3798,12 @@ class USP_SOFTSHELL_G3C_KP_MX5_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX5_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX6_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX6_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3814,12 +3814,12 @@ class USP_SOFTSHELL_G3C_KP_MX6_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX6_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_MX7_AMCU: USP_SOFTSHELL_G3C_KP_MX{
+class USP_SOFTSHELL_G3C_KP_MX7_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_MX{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3830,12 +3830,12 @@ class USP_SOFTSHELL_G3C_KP_MX7_AMCU: USP_SOFTSHELL_G3C_KP_MX{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_MX7_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3846,12 +3846,12 @@ class USP_SOFTSHELL_G3C_KP_OR_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR2_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR2_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3862,12 +3862,12 @@ class USP_SOFTSHELL_G3C_KP_OR2_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR2_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR3_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR3_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3878,12 +3878,12 @@ class USP_SOFTSHELL_G3C_KP_OR3_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR3_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR4_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR4_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3894,12 +3894,12 @@ class USP_SOFTSHELL_G3C_KP_OR4_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR4_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR5_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR5_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3910,12 +3910,12 @@ class USP_SOFTSHELL_G3C_KP_OR5_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR5_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };
 };
-class USP_SOFTSHELL_G3C_KP_OR6_AMCU: USP_SOFTSHELL_G3C_KP_OR{
+class USP_SOFTSHELL_G3C_KP_OR6_AMCU_SOCOMD: USP_SOFTSHELL_G3C_KP_OR{
     author = "UnderSiege Productions";
     scope = 2;
     scopeArsenal = 2;
@@ -3926,7 +3926,7 @@ class USP_SOFTSHELL_G3C_KP_OR6_AMCU: USP_SOFTSHELL_G3C_KP_OR{
     class ItemInfo : UniformItem
     {
         uniformModel = "-";
-        uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_AMCU";
+        uniformClass = "USP_SOFTSHELL_G3C_KP_OR6_AMCU_SOCOMD";
         containerClass = "Supply80";
         mass = 40;
     };

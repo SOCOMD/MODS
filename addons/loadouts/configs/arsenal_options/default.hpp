@@ -154,7 +154,11 @@
     "ACWP_M4A5_145_ris_ROE_NET",\
     "ACWP_M4A5_145_ris_afg_NET",\
     "ACWP_M4A5_145_ris_tango_NET",\
-    "ACWP_M4A5_145_ris_kag_NET"
+    "ACWP_M4A5_145_ris_kag_NET",\
+    "rhs_weap_mk18",\
+    "rhs_weap_mk18_bk",\
+    "rhs_weap_mk18_d",\
+    "rhs_weap_mk18_wd"
 
 #define GL_RIFLE \
     "SMA_MK18BLK_GL_SM",\
@@ -168,6 +172,7 @@
     "ACWP_M4A5_145_7rail_GL_GRIP_TAN",\
     "ACWP_M4A5_145_7rail_GL_DON",\
     "ACWP_M4A5_145_7rail_GL_GRIP_DON",\
+    "rhs_weap_mk18_m320",\
     "1Rnd_HE_Grenade_shell",\
     "UGL_FlareRed_F",\
     "1Rnd_SmokeRed_Grenade_shell",\
@@ -176,10 +181,8 @@
 #define MACHINE_GUN \
     QUOTE(ITEM_PRIMARY_MACHINEGUN),\
     QUOTE(ITEM_PRIMARY_MACHINEGUN_762),\
-    QUOTE(ITEM_PRIMARY_MACHINEGUN_GPMG),\
     QUOTE(ITEM_MAGAZINE_556_BELT),\
-    QUOTE(ITEM_MAGAZINE_762_BELT),\
-    QUOTE(ITEM_MAGAZINE_GPMG_BELT)
+    QUOTE(ITEM_MAGAZINE_762_BELT)
 
 #define MARKSMAN \
     "SPARTAN_EBR_black_F",\
@@ -553,7 +556,7 @@ class uniforms{
         AMCU_UNIFORMS
     };
     recon_uniforms[]={
-        RECON_UNIFORMS
+        RECON_AMCU_UNIFORMS
     };
     recon_temperate_uniforms[]={
         RECON_AMCU_UNIFORMS
@@ -990,10 +993,10 @@ class SOCOMD_Logistician{
 class SOCOMD_Recon{
     class uniforms{
         arid_uniforms[]={
-            RECON_UNIFORMS
+            RECON_AMCU_UNIFORMS
         };
         temperate_uniforms[]={
-            RECON_UNIFORMS
+            RECON_AMCU_UNIFORMS
         };
         snow_uniforms[]={
             RECON_SNOW_UNIFORMS
