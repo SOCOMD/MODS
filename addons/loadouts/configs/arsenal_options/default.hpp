@@ -131,7 +131,15 @@
     "ACWP_M4A5_145_ris_ROE_NET",\
     "ACWP_M4A5_145_ris_afg_NET",\
     "ACWP_M4A5_145_ris_tango_NET",\
-    "ACWP_M4A5_145_ris_kag_NET"
+    "ACWP_M4A5_145_ris_kag_NET",\
+    "rhs_weap_mk18",\
+    "rhs_weap_mk18_bk",\
+    "rhs_weap_mk18_KAC_bk",\
+    "rhs_weap_mk18_d",\
+    "rhs_weap_mk18_KAC_d",\
+    "rhs_weap_mk18_KAC",\
+    "rhs_weap_mk18_wd",\
+    "rhs_weap_mk18_KAC_wd",\
 
 #define SOLS_RIFLES \
     QUOTE(ITEM_PRIMARY_SMG),\
