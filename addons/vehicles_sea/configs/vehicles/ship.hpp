@@ -3,8 +3,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 // WARRIOR
 
-class B_Boat_Transport_01_F;
-class SOCOMD_BOAT : B_Boat_Transport_01_F {
+class TRU_CRRC;
+class SOCOMD_BOAT : TRU_CRRC {
     scope = SCOPE_PROTECTED;
     scopeCurator = SCOPE_PRIVATE;
     editorCategory = SOCOMD_EdCat_Core;

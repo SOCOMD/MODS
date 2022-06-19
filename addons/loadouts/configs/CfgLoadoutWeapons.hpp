@@ -154,12 +154,6 @@ class CfgLoadoutWeapons {
     class rhs_weap_mk18_KAC_wd : Rifle_556 {};
 
 
-    // RHS
-    class rhs_weap_mk18 : Rifle_556 {};
-    class rhs_weap_mk18_bk: Rifle_556 {};
-    class rhs_weap_mk18_d: Rifle_556 {};
-    class rhs_weap_mk18_wd: Rifle_556 {};
-
     class MachineGun_556;
     class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
     class SOCOMD_Minimi_vfg1 : MachineGun_556 {};
