@@ -112,7 +112,9 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
-        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 5)
+        TRANSPORT_ITEM(tsp_frameCharge_mag, 5)
+        TRANSPORT_ITEM(tsp_popperCharge_mag, 5)
+        TRANSPORT_ITEM(tsp_stickCharge_mag, 5)
         TRANSPORT_ITEM(ACE_fieldDressing, 20)          //Israeli Bandage
         TRANSPORT_ITEM(ACE_elasticBandage, 20)        //Elastic Bandage
         TRANSPORT_ITEM(ACE_quikclot, 20)                //Quikclot
@@ -204,7 +206,8 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_Clacker, 2)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 10)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 8)
-        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 10)
+        TRANSPORT_ITEM(tsp_frameCharge_mag, 5)
+        TRANSPORT_ITEM(tsp_popperCharge_mag, 10)
     };
 };
 
@@ -225,6 +228,9 @@ class SOCOMD_Supply_Explosives : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 20)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 20)
         TRANSPORT_ITEM(ACE_M14, 30)
+        TRANSPORT_ITEM(tsp_frameCharge_mag, 20)
+        TRANSPORT_ITEM(tsp_popperCharge_mag, 20)
+        TRANSPORT_ITEM(tsp_stickCharge_mag, 20)
     };
 };
 
@@ -285,6 +291,7 @@ class SOCOMD_Supply_Tools : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_DefusalKit, 2)
         TRANSPORT_ITEM(ACE_M26_Clacker, 2)
         TRANSPORT_ITEM(ACE_bodyBag, 10)
+        TRANSPORT_ITEM(tsp_lockpick, 10)
     };
 };
 

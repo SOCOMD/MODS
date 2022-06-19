@@ -25,6 +25,8 @@ class CfgLoadoutWeapons {
     class ACWP_M4A5_145_7rail_GL_GRIP_TAN : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_DON : RifleGL_556 {};
     class ACWP_M4A5_145_7rail_GL_GRIP_DON : RifleGL_556 {};
+    // RHS 
+    class rhs_weap_mk18_m320: RifleGL_556 {};
 
     // M4A5
     class ACWP_M4A5_105_troy_base             : Rifle_556 {};
@@ -151,6 +153,12 @@ class CfgLoadoutWeapons {
     class rhs_weap_mk18_wd : Rifle_556 {};
     class rhs_weap_mk18_KAC_wd : Rifle_556 {};
 
+
+    // RHS
+    class rhs_weap_mk18 : Rifle_556 {};
+    class rhs_weap_mk18_bk: Rifle_556 {};
+    class rhs_weap_mk18_d: Rifle_556 {};
+    class rhs_weap_mk18_wd: Rifle_556 {};
 
     class MachineGun_556;
     class ITEM_PRIMARY_MACHINEGUN : MachineGun_556 {};
