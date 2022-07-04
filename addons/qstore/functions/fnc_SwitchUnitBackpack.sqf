@@ -58,3 +58,13 @@ if(not isNull _backpackConfig) then
     _backpackLoadout set [1, _backpackInventoryLoadout];
 };
 _unitLoadout set [5, _backpackLoadout];
+
+_player setVariable ["SOCOMD_stashedGear", false];
+_player setVariable ["SOCOMD_hasDivingGear", false];
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
+
+ACE_Player setVariable  ["socomd_prev_weapons",[_primary,_secondary,_handgun]];
+[_player, _loadoutId,_unitConfig] call FUNC(UpdateArsenalContent);
+
+// Custom Arsenal code
+[_player, _player, false] call EFUNC(arsenal,openBox);

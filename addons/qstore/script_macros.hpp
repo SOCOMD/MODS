@@ -16,3 +16,12 @@ class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
     condition = 1; \
     showDisabled = 0; \
 };
+
+#define QSTORE_ACTION_BACKPACK(DISPLAY_STR, LOADOUT) \
+class SOCOMD_ACTION_LOADOUT_##LOADOUT { \
+    displayName = DISPLAY_STR; \
+    statement = "[_player,"#LOADOUT"] call socomd_qstore_fnc_SwitchUnitBackpack"; \
+    exceptions[] = {"isNotInside", "isNotSitting"}; \
+    condition = 1; \
+    showDisabled = 0; \
+};
