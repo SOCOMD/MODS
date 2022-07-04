@@ -64,6 +64,8 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
                     QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
                     QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
+                        QSTORE_ACTION_GRP_BEGIN(SELECT_BACKPACK_SUPPORT, "Change Backpack")
+                        QSTORE_ACTION_BACKPACK("Medic Back", SOCOMD_Medic)
                     //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
                 QSTORE_ACTION_GRP_END
 
