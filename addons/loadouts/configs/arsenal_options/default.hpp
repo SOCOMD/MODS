@@ -550,6 +550,9 @@
     "extras_at_heat",\
     "extras_at_he"
 
+#define RECON_BINOS \
+    "RECON_BINO_CHOICE"
+
 class helmets{
     helmets[] = {
         HELMETS,
@@ -1025,6 +1028,7 @@ class SOCOMD_Recon{
         BAGS,
         BACKPACK_COMMS,
         "AGE_F2Bergen_Multicam",
+        "SOCOMD_Medical_AO",
         "AGE_Camelback_Coyote"
     };
     grenades[]={
