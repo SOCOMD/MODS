@@ -48,7 +48,7 @@ ace_casings_maxCasings = 100;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['bettinv_main','bettinv_main_ace','A3_Sonus_sfxMod_Loadorder','A3_Sonus_sfxMod','A3_Sonus_sfxMod_Data','A3_Sonus_sfxMod_Language','A3_Sonus_sfxMod_Sounds','Vile_HUD','UAV_Turret_Markers','jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['bettinv_main', 'bettinv_main_ace', 'UAV_Turret_Markers', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -595,6 +595,14 @@ force force simplesuppress_suppress_overlayTexture = 1;
 force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
+force force tsp_cba_breach = false;
+force force tsp_cba_breach_ace = false;
+force force tsp_cba_breach_ace_locking = false;
+force force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot""]";
+force force tsp_cba_breach_ammoMultiplier = 1;
+force force tsp_cba_breach_lockDoor = 0.0;
+force force tsp_cba_breach_lockHouse = 0.0;
+
 // VET_Unflipping
 force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 8;
@@ -617,6 +625,34 @@ force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 force force zen_editor_parachuteSounds = false;
 
+// ZHC Caching
+force force zhc_dynsim_Enabled = false;
+force force zhc_dynsim_Override = true;
+
+// ZHC Settings
+force force zhc_offload_badNames = "'ignore'";
+force force zhc_offload_badTypes = "";
+force force zhc_offload_CheckDelay = 5;
+force force zhc_offload_CycleDelay = 22;
+force force zhc_offload_debugGuids = "'76561198009214454','76561198009993601'";
+force force zhc_offload_DebugMode = 2;
+force force zhc_offload_EmergencyOffloadDelay = 5;
+force force zhc_offload_Enabled = true;
+force force zhc_offload_EnableRebal = true;
+force force zhc_offload_EnableZeusHolding = true;
+force force zhc_offload_OffloadDelay = 10;
+force force zhc_offload_RebalanceDelay = 30;
+force force zhc_offload_StartDelay = 10;
+force force zhc_offload_StrtMsg = true;
+force force zhc_offload_TransferLoadout = 0;
+force force zhc_offload_Verbosity = 2;
+force force zhc_stat_DebugRPT = false;
+force force zhc_stat_DebugRPTForm = 0;
+force force zhc_stat_EnableFPSCounter = true;
+force force zhc_stat_MapFpsPos = 0;
+force force zhc_stat_RPTFreq = 15;
+
+
 // !! KEEP AT BOTTOM OF FILE !!
 
 // ACRE2
@@ -632,3 +668,4 @@ force force acre_sys_zeus_zeusDefaultVoiceSource = true;
 // SOCOMD Medical
 force force SOCOMD_medical_persistantRevive = true;
 force force SOCOMD_medical_persistantReviveTimer = 330;
+force force socomd_defib_Defib_Chance = 90;
