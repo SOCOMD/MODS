@@ -595,6 +595,7 @@ force force simplesuppress_suppress_overlayTexture = 1;
 force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
+// TSP Breach
 force force tsp_cba_breach = false;
 force force tsp_cba_breach_ace = false;
 force force tsp_cba_breach_ace_locking = false;
