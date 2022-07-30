@@ -68,9 +68,7 @@
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
 #define SUPPORT_LOADOUT_VEST_ESSENTIALS \
-    //LOADOUT_ITEM(HandGrenade, 2) \//
     LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
-    //LOADOUT_ITEM(ACE_M84, 2) \//
     LOADOUT_ITEM(SmokeShell, 5) \
     LOADOUT_ITEM(ACRE_PRC343, 1) \
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
@@ -561,7 +559,7 @@ class SOCOMD_MachineGunner {
 class SOCOMD_HeavyGunner {
     blacklist = "SOCOMD";
     primary            = ITEM_PRIMARY_MACHINEGUN_GPMG;
-    secondary        = "";
+    secondary        = UK3CB_BAF_Tripod;
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
