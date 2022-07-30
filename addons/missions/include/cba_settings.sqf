@@ -162,13 +162,13 @@ force force ace_map_BFT_Enabled = false;
 force force ace_map_BFT_HideAiGroups = true;
 force force ace_map_BFT_Interval = 1;
 force force ace_map_BFT_ShowPlayerNames = false;
-force force ace_map_DefaultChannel = 1;
-force force ace_map_mapGlow = true;
-force force ace_map_mapIllumination = true;
+ace_map_DefaultChannel = 1;
+ace_map_mapGlow = true;
+ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
-force force ace_map_mapShake = true;
-force force ace_map_mapShowCursorCoordinates = false;
-force force ace_markers_moveRestriction = 0;
+ace_map_mapShake = true;
+ace_map_mapShowCursorCoordinates = false;
+ace_markers_moveRestriction = 0;
 
 // ACE Map Gestures
 ace_map_gestures_defaultColor = [1,0.720811,0,0.503564];
@@ -272,11 +272,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.3;
+ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
 ace_nightvision_effectScaling = 0.4;
-force force ace_nightvision_fogScaling = 0.1;
-force force ace_nightvision_noiseScaling = 0.05;
+ace_nightvision_fogScaling = 0.1;
+ace_nightvision_noiseScaling = 0.05;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -285,7 +285,7 @@ force force ace_overheating_enabled = true;
 force force ace_overheating_overheatingDispersion = true;
 force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = false;
-force ace_overheating_jamChanceCoef = 1.0;
+force force ace_overheating_jamChanceCoef = 1.0;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_particleEffectsAndDispersionDistance = 1000.0;
 force force ace_overheating_unJamOnreload = false;
@@ -531,21 +531,21 @@ force force emr_main_allowMidairClimbing = true;
 force force emr_main_animSpeedCoef = 1.0;
 force force emr_main_animSpeedStaminaCoef = 0.50;
 force force emr_main_climbingEnabled = true;
-force force emr_main_climbOnDuty = 1.5;
-force force emr_main_climbOverDuty = 1.5;
-force force emr_main_dropDuty = 0.8;
+emr_main_climbOnDuty = 1.5;
+emr_main_climbOverDuty = 1.5;
+emr_main_dropDuty = 0.8;
 emr_main_dropViewElevation = -0.7;
 emr_main_enableWalkableSurface = true;
 force force emr_main_enableWeightCheck = false;
 emr_main_hintType = 2;
-force force emr_main_jumpDuty = 1;
+emr_main_jumpDuty = 1;
 force force emr_main_jumpingEnabled = true;
-force force emr_main_jumpingLoadCoefficient = 0.5;
-force force emr_main_jumpVelocity = 2;
+emr_main_jumpingLoadCoefficient = 0.5;
+emr_main_jumpVelocity = 2;
 force force emr_main_maxClimbHeight = 2.6;
 force force emr_main_maxDropHeight = 4.5;
 emr_main_preventHighVaulting = false;
-force force emr_main_staminaCoefficient = 1;
+emr_main_staminaCoefficient = 1;
 
 // LAMBS Danger
 force force lambs_danger_cqbRange = 75;
@@ -566,13 +566,13 @@ force force lambs_eventhandlers_ExplosionReactionTime = 10.0;
 force force lambs_wp_autoAddArtillery = false;
 
 // LAMBS Main
-force force lambs_main_combatShareRange = 250;
+force force lambs_main_combatShareRange = 400;
 force force lambs_main_disableAICallouts = false;
 force force lambs_main_disableAIDodge = false;
 force force lambs_main_disableAIFleeing = false;
 force force lambs_main_disableAIGestures = false;
 force force lambs_main_disablePlayerGroupSuppression = true;
-force force lambs_main_indoorMove = 0.30;
+force force lambs_main_indoorMove = 0.40;
 force force lambs_main_maxRevealValue = 0.85;
 force force lambs_main_minFriendlySuppressionDistance = 1;
 force force lambs_main_minObstacleProximity = 1;
@@ -581,7 +581,7 @@ force force lambs_main_radioBackpack = 2000;
 force force lambs_main_radioDisabled = false;
 force force lambs_main_radioEast = 1500;
 force force lambs_main_radioGuer = 1500;
-force force lambs_main_radioShout = 80;
+force force lambs_main_radioShout = 100;
 force force lambs_main_radioWest = 1500;
 
 // NIArms
