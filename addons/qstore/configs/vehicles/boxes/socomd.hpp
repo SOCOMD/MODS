@@ -64,6 +64,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
                     QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
                     QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
+                    QSTORE_ACTION_LOADOUT("Support Gunner",SOCOMD_HeavyGunner)
                     //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
                 QSTORE_ACTION_GRP_END
 

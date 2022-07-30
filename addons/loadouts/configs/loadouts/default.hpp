@@ -67,6 +67,14 @@
     LOADOUT_ITEM(ACRE_PRC343, 1) \
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
+#define SUPPORT_LOADOUT_VEST_ESSENTIALS \
+    //LOADOUT_ITEM(HandGrenade, 2) \//
+    LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
+    //LOADOUT_ITEM(ACE_M84, 2) \//
+    LOADOUT_ITEM(SmokeShell, 5) \
+    LOADOUT_ITEM(ACRE_PRC343, 1) \
+    LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+
 #define LOADOUT_VEST_AO_ESSENTIALS \
     LOADOUT_ITEM(ACE_Chemlight_HiWhite, 4) \
     LOADOUT_ITEM(SmokeShellPurple, 2) \
@@ -543,6 +551,47 @@ class SOCOMD_MachineGunner {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 3)
+        };
+    };
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Support Heavy Gunner
+
+class SOCOMD_HeavyGunner {
+    blacklist = "SOCOMD";
+    primary            = ITEM_PRIMARY_MACHINEGUN_GPMG;
+    secondary        = "";
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
+    headgear        = ITEM_DEFAULT_HEADGEAR;
+    binocular        = "";
+    gps                = "";
+    maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+
+    class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
+        class Inventory    {
+            LOADOUT_UNIFORM_ESSENTIALS
+            LOADOUT_STANDARD_MEDICAL
+        };
+    };
+
+    class Vest {
+        type = ITEM_VEST_MACHINEGUNNER;
+        class Inventory    {
+            SUPPORT_LOADOUT_VEST_ESSENTIALS
+            LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 2)
+        };
+    };
+
+    class Backpack {
+        type = ITEM_BACKPACK_MACHINEGUNNER;
+        class Inventory    {
+            LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 3)
         };
     };
 };
