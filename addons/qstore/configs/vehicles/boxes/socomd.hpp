@@ -44,13 +44,13 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
             };
             // Select Loadouts
             QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (Leaders)")
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_LEADERS,"Change Role (Leaders)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_Commander)
                     QSTORE_ACTION_LOADOUT("Section Leader",SOCOMD_Leader)
                     QSTORE_ACTION_LOADOUT("Support Leader",SOCOMD_Support_Leader)
                 QSTORE_ACTION_GRP_END
                 
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (Operators)")                                 
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_OPERATORS,"Change Role (Operators)")                                 
                     QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_Rifleman)
                     QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
                     QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)
@@ -67,7 +67,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Drone Operator",SOCOMD_Drone)  
                 QSTORE_ACTION_GRP_END
 
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (Aviation)")
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_AVIATION,"Change Role (Aviation)")
                     QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
                     QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)                    
                     QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_Logistician)
