@@ -86,6 +86,12 @@
     LOADOUT_ITEM(SOCOMD_NVG, 1) \
     LOADOUT_ITEM(ACE_CableTie, 4)
 
+#define LOADOUT_BACKPACK_CHARGES \
+     LOADOUT_ITEM(tsp_frameCharge_mag, 3) \
+     LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6) \
+     LOADOUT_ITEM(tsp_paperclip, 3) 
+
+
 // COMMON JAC LOADOUT ITEMS
 
 #define LOADOUT_SUPPORT_ESSENTIALS \
@@ -371,6 +377,7 @@ class SOCOMD_Rifleman {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_BACKPACK_CHARGES
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
