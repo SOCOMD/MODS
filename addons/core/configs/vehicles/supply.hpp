@@ -125,7 +125,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(SOCOMD_fentanyl, 5)                //Fentanyl Ampoule
         TRANSPORT_ITEM(SOCOMD_ketamine, 5)                    //Ketamine Ampoule
         TRANSPORT_ITEM(SOCOMD_Apap, 10)                //Paracetamol
-        TRANSPORT_ITEM(SOCOMD_Tetra, 5)                //Paracetamol  
+        TRANSPORT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol  
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
         TRANSPORT_ITEM(ACE_basicAirway, 10)                    //Nasopharangeal Airway
         TRANSPORT_ITEM(ACE_advancedAirway, 5)                    //Laryngeal Mask Airway
@@ -251,7 +251,7 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(SOCOMD_fentanyl, 15)                //Fentanyl Ampoule
         TRANSPORT_ITEM(SOCOMD_ketamine, 10)                    //Ketamine Ampoule
         TRANSPORT_ITEM(SOCOMD_Apap, 20)                //Paracetamol
-        TRANSPORT_ITEM(SOCOMD_Tetra, 10)                //Paracetamol  
+        TRANSPORT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol  
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
         TRANSPORT_ITEM(ACE_basicAirway, 10)                    //Nasopharangeal Airway
         TRANSPORT_ITEM(ACE_advancedAirway, 10)                    //Laryngeal Mask Airway
