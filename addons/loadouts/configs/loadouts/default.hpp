@@ -274,7 +274,6 @@ class SOCOMD_TACP {
         type = ITEM_VEST_TROOPLEADER;
         class Inventory {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
         };
     };
@@ -291,6 +290,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
+            LOADOUT_ITEM(ACRE_PRC152, 2)
         };
     };
 };
