@@ -81,9 +81,7 @@ class extras_at_he: extras_at_mixed{
 };
 class extras_rangefinder: extras_none{
     displayName = "Rangefinder";
-    binocular[] = {
-        {ACE_Vector, 1}
-    };
+    binocular = ACE_Vector;
 };
 class extras_laser_designator: extras_none{
     displayName = "Laser Designator Batteries";
