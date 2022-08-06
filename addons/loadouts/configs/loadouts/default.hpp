@@ -253,7 +253,7 @@ class SOCOMD_TACP {
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = "";
+    binocular        = Laserdesignator_01_khk_F;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
