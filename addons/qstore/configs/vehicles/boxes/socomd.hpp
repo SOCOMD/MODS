@@ -68,7 +68,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                 QSTORE_ACTION_GRP_END
 
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_AVIATION,"Change Role (Aviation)")
-                    QSTORE_ACTION_LOADOUT("CCT",SOCOMD_TACP)
+                    QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
                     QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)                    
                     QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_Logistician)
                 QSTORE_ACTION_GRP_END
