@@ -1,6 +1,6 @@
     
 class Binocular : Default{
-    socomd_arsenal_hide = 1;
+    socomd_arsenal_hide = 0;
 };
 class baseLodout : Binocular{
     scope = 0;

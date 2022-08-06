@@ -230,7 +230,6 @@ class SOCOMD_Commander {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
@@ -239,7 +238,6 @@ class SOCOMD_Commander {
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 2)
             LOADOUT_ITEM(ACE_HuntIR_M203, 3)
             LOADOUT_ITEM(ACE_M14, 3)
-            LOADOUT_ITEM(Laserdesignator_01_khk_F, 1)
         };
     };
 };
@@ -274,7 +272,8 @@ class SOCOMD_TACP {
         type = ITEM_VEST_TROOPLEADER;
         class Inventory {
             LOADOUT_VEST_ESSENTIALS
-            
+            LOADOUT_ITEM(ACRE_PRC152, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
         };
     };
 
@@ -282,7 +281,6 @@ class SOCOMD_TACP {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(Laserbatteries, 1)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 4)
@@ -290,8 +288,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
-            LOADOUT_ITEM(ACRE_PRC152, 2)
-            LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
+            
         };
     };
 };
