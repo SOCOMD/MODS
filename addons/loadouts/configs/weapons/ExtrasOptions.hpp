@@ -81,13 +81,13 @@ class extras_at_he: extras_at_mixed{
 };
 class extras_rangefinder: extras_none{
     displayName = "Rangefinder";
-    binocular[] = {
+    bag[] = {
         {ACE_Vector}
     };
 };
 class extras_laser_designator: extras_none{
     displayName = "Laser Designator";
-    binocular[] = {
+    bag[] = {
         {Laserdesignator_01_khk_F}
     };
 };
