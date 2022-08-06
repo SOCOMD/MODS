@@ -291,7 +291,6 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
-            LOADOUT_ITEM(Laserdesignator_01_khk_F, 1)
         };
     };
 };
@@ -876,7 +875,6 @@ class SOCOMD_Logistician {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
-
             LOADOUT_ITEM(SmokeShell, 3)
             LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)

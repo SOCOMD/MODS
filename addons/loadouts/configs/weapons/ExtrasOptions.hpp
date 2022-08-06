@@ -82,13 +82,13 @@ class extras_at_he: extras_at_mixed{
 class extras_rangefinder: extras_none{
     displayName = "Rangefinder";
     bag[] = {
-        {ACE_Vector}
+        {ACE_Vector, 1}
     };
 };
 class extras_laser_designator: extras_none{
     displayName = "Laser Designator";
     bag[] = {
-        {Laserdesignator_01_khk_F}
+        {Laserdesignator_01_khk_F, 1}
     };
 };
 /*
