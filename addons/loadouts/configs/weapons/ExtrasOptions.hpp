@@ -81,7 +81,7 @@ class extras_at_he: extras_at_mixed{
 };
 class extras_rangefinder: extras_none{
     displayName = "Rangefinder";
-    binocs[] = {
+    binocular[] = {
         {ACE_Vector, 1}
     };
 };
