@@ -609,7 +609,7 @@ class SOCOMD_Commander{
     grenades[]={
         GRENADES_LEADER
     };
-    arsenalExtras[] ={
+    arsenalExtras[]={
         OPTICS_EXTRAS
     };
 };
@@ -644,7 +644,7 @@ class SOCOMD_TACP{
     grenades[]={
         GRENADES_LEADER
     };
-    arsenalExtras[] ={
+    arsenalExtras[]={
         OPTICS_EXTRAS
     };
 };
