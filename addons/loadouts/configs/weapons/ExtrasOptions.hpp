@@ -86,9 +86,9 @@ class extras_rangefinder: extras_none{
     };
 };
 class extras_laser_designator: extras_none{
-    displayName = "Laser Designator";
+    displayName = "Laser Designator Batteries";
     bag[] = {
-        {Laserdesignator_01_khk_F, 1}
+        {Laserbatteries,2}
     };
 };
 /*
