@@ -2,7 +2,7 @@
 class CargoNet_01_box_F; //Cardboard box with net
 class B_supplyCrate_F; //Tall Green box with net
 class Box_NATO_Wps_F; //Flat long box
-class plp_cts_FuelCrateOlive; // Fuel Metal Box designed for transport
+class FlexibleTank_01_forest_F; // Fuel Tank designed for transport
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -46,11 +46,11 @@ class SOCOMD_Crate_Fuel : CargoNet_01_box_F {
     displayName = "[CRATE] Fuel";
     editorCategory = EdCat_Supplies;
     editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
-    model = "\plp_containers\plp_cts_FuelCrateOlive.p3d";
+    model = "\A3\Supplies_F_Heli\Fuel\FlexibleTank_01_F.p3d";
     icon = "iconObject_1x1";
 
     ace_dragging_canDrag = 1;
-    ace_dragging_canCarry = 0;
+    ace_dragging_canCarry = 1;
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.5,0};
     ace_refuel_flowRate = 1;
