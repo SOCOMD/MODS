@@ -292,6 +292,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
+            LOADOUT_ITEM(Laserbatteries, 2)
         };
     };
 };
