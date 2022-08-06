@@ -546,7 +546,6 @@
     "extras_at_assistant_heat"
 
 #define OPTICS_EXTRAS \
-    "extras_rangefinder",\
     "extras_laser_designator"
 
 #define AT_AMMO \

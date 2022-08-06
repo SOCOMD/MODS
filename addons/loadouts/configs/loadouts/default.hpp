@@ -201,7 +201,7 @@ class SOCOMD_Commander {
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = LEADER_BINOCS;
+    binocular        = Laserdesignator_01_khk_F;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
@@ -945,7 +945,7 @@ class SOCOMD_Crewman {
     secondary         = "";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
-    headgear         = ITEM_CREWMAN_HEADGEAR;
+    headgear         = ITEM_CREW_HEADGEAR;
     binocular         = "";
     gps             = "";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
@@ -978,6 +978,7 @@ class SOCOMD_Crewman {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ItemAndroid, 1)
             LOADOUT_ITEM(ItemcTab,1)
+            LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
 };

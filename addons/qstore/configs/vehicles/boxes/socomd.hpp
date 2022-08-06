@@ -47,7 +47,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_LEADERS,"Change Role (Leaders)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_Commander)
                     QSTORE_ACTION_LOADOUT("Section Leader",SOCOMD_Leader)
-                    QSTORE_ACTION_LOADOUT("Support Leader",SOCOMD_Support_Leader)
+                    //QSTORE_ACTION_LOADOUT("Support Leader",SOCOMD_Support_Leader)
                 QSTORE_ACTION_GRP_END
                 
                 QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_OPERATORS,"Change Role (Operators)")                                 

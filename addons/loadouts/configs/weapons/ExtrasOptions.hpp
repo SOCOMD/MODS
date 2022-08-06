@@ -79,10 +79,6 @@ class extras_at_he: extras_at_mixed{
         {rhs_mag_maaws_HE,2}
     };
 };
-class extras_rangefinder: extras_none{
-    displayName = "Rangefinder";
-    class Binocular = ACE_Vector;
-};
 class extras_laser_designator: extras_none{
     displayName = "Laser Designator Batteries";
     bag[] = {
