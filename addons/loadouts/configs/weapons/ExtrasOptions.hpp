@@ -79,6 +79,18 @@ class extras_at_he: extras_at_mixed{
         {rhs_mag_maaws_HE,2}
     };
 };
+class extras_rangefinder: extras_none{
+    displayName = "Rangefinder";
+    binocular[] = {
+        {ACE_Vector}
+    };
+};
+class extras_laser_designator: extras_none{
+    displayName = "Laser Designator";
+    binocular[] = {
+        {Laserdesignator_01_khk_F}
+    };
+};
 /*
 class extras_sso_spare_squad_ammo: extras_none{
     displayName = "Squad Ammo";
