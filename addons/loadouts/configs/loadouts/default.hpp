@@ -969,6 +969,7 @@ class SOCOMD_Crewman {
             LOADOUT_ITEM(SmokeShell, 5)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
             LOADOUT_ITEM(ACRE_PRC152, 1)
+            LOADOUT_ITEM(ACRE_PRC343, 1)
         };
     };
     
