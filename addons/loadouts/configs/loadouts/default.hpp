@@ -253,7 +253,7 @@ class SOCOMD_TACP {
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = "Laserdesignator";
+    binocular        = "";
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
@@ -291,7 +291,7 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
-            LOADOUT_ITEM(Laserbatteries, 2)
+            LOADOUT_ITEM(Laserdesignator_01_khk_F, 1)
         };
     };
 };
