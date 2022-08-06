@@ -240,7 +240,6 @@ class SOCOMD_Commander {
             LOADOUT_ITEM(ACE_HuntIR_M203, 3)
             LOADOUT_ITEM(ACE_M14, 3)
             LOADOUT_ITEM(Laserdesignator_01_khk_F, 1)
-            LOADOUT_ITEM(Laserbatteries, 2)
         };
     };
 };
