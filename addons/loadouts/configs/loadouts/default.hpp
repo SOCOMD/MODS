@@ -27,8 +27,7 @@
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
     LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-//    LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+    LOADOUT_ITEM(murshun_cigs_lighter, 1) 
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1) \
@@ -153,7 +152,7 @@
     LOADOUT_ITEM(SOCOMD_VPN, 30)          \
     LOADOUT_ITEM(ACE_surgicalKit, 8)      \
     LOADOUT_ITEM(socomd_defib_AED, 1)     \
-    LOADOUT_ITEM(ACE_bodyBag, 2)\
+    LOADOUT_ITEM(ACE_bodyBag, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -570,7 +569,7 @@ class SOCOMD_MachineGunner {
 class SOCOMD_HeavyGunner {
     blacklist = "SOCOMD";
     primary            = ITEM_PRIMARY_MACHINEGUN_GPMG;
-    secondary        = UK3CB_BAF_Tripod;
+    secondary        = "UK3CB_BAF_Tripod";
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
@@ -983,4 +982,3 @@ class SOCOMD_Crewman {
         };
     };
 };
-
