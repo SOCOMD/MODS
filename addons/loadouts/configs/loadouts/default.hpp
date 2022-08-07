@@ -121,27 +121,27 @@
     LOADOUT_ITEM(SOCOMD_VPN, 1)
 
 #define LOADOUT_BACKPACK_MEDIC \
-    LOADOUT_ITEM(SOCOMD_booboo, 1)\
-    LOADOUT_ITEM(SOCOMD_shears, 1)\
+    LOADOUT_ITEM(SOCOMD_booboo, 0)\
+    LOADOUT_ITEM(SOCOMD_shears, 0)\
     LOADOUT_ITEM(ACE_packingBandage, 0)\
     LOADOUT_ITEM(ACE_fieldDressing, 20)\
-    LOADOUT_ITEM(SOCOMD_triangleban, 3)\
+    LOADOUT_ITEM(SOCOMD_triangleban, 0)\
     LOADOUT_ITEM(ACE_epinephrine, 0)\
     LOADOUT_ITEM(ACE_morphine, 0)\
     LOADOUT_ITEM(ACE_personalAidKit, 0)\
     LOADOUT_ITEM(ACE_salineIV_500, 0)\
-    LOADOUT_ITEM(SOCOMD_cascard, 2)\
+    LOADOUT_ITEM(SOCOMD_cascard, 0)\
     LOADOUT_ITEM(ACE_elasticBandage, 20)  \
     LOADOUT_ITEM(ACE_quikclot, 25)        \
     LOADOUT_ITEM(ACE_chestSeal, 6)        \
-    LOADOUT_ITEM(SOCOMD_nargloves, 10)\
+    LOADOUT_ITEM(SOCOMD_nargloves, 0)\
     LOADOUT_ITEM(ACE_tourniquet, 6)       \
     LOADOUT_ITEM(SOCOMD_Epinephrine, 10)  \
     LOADOUT_ITEM(SOCOMD_naloxone, 2)      \
     LOADOUT_ITEM(SOCOMD_fentanyl, 8)      \
     LOADOUT_ITEM(SOCOMD_ketamine, 8)      \
     LOADOUT_ITEM(SOCOMD_Apap, 10)         \
-    LOADOUT_ITEM(SOCOMD_Tetra, 5)         \
+    LOADOUT_ITEM(SOCOMD_Tetra, 0)         \
     LOADOUT_ITEM(ACE_bloodIV_500, 5)      \
     LOADOUT_ITEM(SOCOMD_notes, 0)\
     LOADOUT_ITEM(ACE_basicAirway, 9)      \
@@ -677,7 +677,7 @@ class SOCOMD_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
+            LOADOUT_ITEM(SOCOMD_booboo, 0)
             LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
             LOADOUT_ITEM(ACE_fieldDressing, 15)          //Israeli Bandage
             LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
@@ -693,12 +693,12 @@ class SOCOMD_AO{
             LOADOUT_ITEM(SOCOMD_fentanyl, 4)                //Fentanyl Ampoule
             LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
-            LOADOUT_ITEM(SOCOMD_nargloves, 5)
+            LOADOUT_ITEM(SOCOMD_nargloves, 0)
             LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
-            LOADOUT_ITEM(SOCOMD_shears, 1)
+            LOADOUT_ITEM(SOCOMD_shears, 0)
             LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
+            LOADOUT_ITEM(SOCOMD_cascard, 0)
             LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
             LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
             LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter

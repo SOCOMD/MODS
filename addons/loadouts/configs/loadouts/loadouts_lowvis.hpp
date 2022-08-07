@@ -349,7 +349,7 @@ class SOCOMD_LOWVIS_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
+            LOADOUT_ITEM(SOCOMD_booboo, 0)
             LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
             LOADOUT_ITEM(ACE_fieldDressing, 15)          //Israeli Bandage
             LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
@@ -365,12 +365,12 @@ class SOCOMD_LOWVIS_AO{
             LOADOUT_ITEM(SOCOMD_fentanyl, 4)                //Fentanyl Ampoule
             LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
-            LOADOUT_ITEM(SOCOMD_nargloves, 5)
+            LOADOUT_ITEM(SOCOMD_nargloves, 0)
             LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
-            LOADOUT_ITEM(SOCOMD_shears, 1)
+            LOADOUT_ITEM(SOCOMD_shears, 0)
             LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
+            LOADOUT_ITEM(SOCOMD_cascard, 0)
             LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
             LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
             LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter

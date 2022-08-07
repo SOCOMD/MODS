@@ -81,7 +81,7 @@ class SOCOMD_Medical_Grabbag: backpack_OD {
         TRANSPORT_ITEM(SOCOMD_fentanyl, 1)                //Fentanyl Ampoule
         TRANSPORT_ITEM(SOCOMD_ketamine, 1)                    //Ketamine Ampoule
         TRANSPORT_ITEM(SOCOMD_Apap, 2)                    //Paracetamol
-        TRANSPORT_ITEM(SOCOMD_tetra, 2)                //Paracetamol  
+        TRANSPORT_ITEM(SOCOMD_tetra, 0)                //Paracetamol  
         TRANSPORT_ITEM(ACE_bloodIV_500, 4)            //Blood
         TRANSPORT_ITEM(ACE_basicAirway, 2)                    //Nasopharangeal Airway
         TRANSPORT_ITEM(ACE_advancedAirway, 2)                    //Laryngeal Mask Airway
