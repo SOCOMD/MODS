@@ -236,8 +236,6 @@
     "SOG_BAG_recon_Tan",\
     "SOG_BAG_recon_od",\
     "ACWP_Bullock_radio_MC"
-    // "ACWP_Bullock_radio_no_helm_MC",\
-    // "ACWP_Bullock_radio_no_helm_AMCU"
 
 #define SSO_BACKPACK_SAPPER \
     "SOG_BAG_BREACHER_tan",\
@@ -249,8 +247,6 @@
     "SOG_BAG_od",\
     "SOG_BAG_MC",\
     "ACWP_Bullock_MC"
-    // "ACWP_Bullock_no_helm_AMCU"
-    // "ACWP_Bullock_no_helm_MC"
 
 #define SSO_BAGS_HEAVY \
     "CFP_Kitbag_MCam_Grn"
