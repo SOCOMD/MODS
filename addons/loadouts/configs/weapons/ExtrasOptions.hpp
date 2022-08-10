@@ -79,6 +79,12 @@ class extras_at_he: extras_at_mixed{
         {rhs_mag_maaws_HE,2}
     };
 };
+class extras_laser_designator: extras_none{
+    displayName = "Laser Designator Batteries";
+    bag[] = {
+        {Laserbatteries,2}
+    };
+};
 /*
 class extras_sso_spare_squad_ammo: extras_none{
     displayName = "Squad Ammo";

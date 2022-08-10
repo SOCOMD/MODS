@@ -78,14 +78,14 @@ class _xx_##id { \
 #define ITEM_PRIMARY_RECON                      ACWP_blaser_r93
 #define ITEM_PRIMARY_MACHINEGUN                 SOCOMD_Minimi
 #define ITEM_PRIMARY_MACHINEGUN_762             UK3CB_BAF_L110_762
-#define ITEM_PRIMARY_MACHINEGUN_GPMG            SOCOMD_mag58
+#define ITEM_PRIMARY_MACHINEGUN_GPMG            UK3CB_BAF_L7A2
 #define ITEM_PRIMARY_SOLS                       ACWP_M4A5_145_ris_base
 #define ITEM_MAGAZINE_556                       ACWP_30rnd_556x45_EPR_PMAG
 #define ITEM_MAGAZINE_556_TRACER                ACWP_30rnd_556x45_M_PMAG
 #define ITEM_MAGAZINE_556_BELT                  rhsusf_200Rnd_556x45_mixed_soft_pouch
 #define ITEM_MAGAZINE_762                       20Rnd_762x51_Mag
 #define ITEM_MAGAZINE_762_BELT                  SOCOMD_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
-#define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
+#define ITEM_MAGAZINE_GPMG_BELT                 UK3CB_BAF_762_200Rnd_T
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
 #define ITEM_MAGAZINE_BARRET                    rhsusf_mag_10Rnd_STD_50BMG_M33
 
