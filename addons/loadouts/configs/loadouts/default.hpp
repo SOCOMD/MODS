@@ -66,17 +66,6 @@
     LOADOUT_ITEM(ACRE_PRC343, 1) \
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
 
-#define LOADOUT_VEST_MINIMUM \
-    LOADOUT_ITEM(ACRE_PRC343, 1) \
-    LOADOUT_ITEM(ACRE_PRC152, 1) \
-    LOADOUT_ITEM(SmokeShell, 3) 
-
-#define SUPPORT_LOADOUT_VEST_ESSENTIALS \
-    LOADOUT_ITEM(ACE_Chemlight_HiRed, 2) \
-    LOADOUT_ITEM(SmokeShell, 5) \
-    LOADOUT_ITEM(ACRE_PRC343, 1) \
-    LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
-
 #define LOADOUT_VEST_AO_ESSENTIALS \
     LOADOUT_ITEM(ACE_Chemlight_HiWhite, 4) \
     LOADOUT_ITEM(SmokeShellPurple, 2) \
@@ -89,12 +78,6 @@
 #define LOADOUT_BACKPACK_ESSENTIALS \
     LOADOUT_ITEM(SOCOMD_NVG, 1) \
     LOADOUT_ITEM(ACE_CableTie, 4)
-
-#define LOADOUT_BACKPACK_CHARGES \
-     LOADOUT_ITEM(tsp_frameCharge_mag, 3) \
-     LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6) \
-     LOADOUT_ITEM(tsp_paperclip, 3) 
-
 
 // COMMON JAC LOADOUT ITEMS
 
@@ -121,27 +104,27 @@
     LOADOUT_ITEM(SOCOMD_VPN, 1)
 
 #define LOADOUT_BACKPACK_MEDIC \
-    LOADOUT_ITEM(SOCOMD_booboo, 1)\
-    LOADOUT_ITEM(SOCOMD_shears, 1)\
+    LOADOUT_ITEM(SOCOMD_booboo, 0)\
+    LOADOUT_ITEM(SOCOMD_shears, 0)\
     LOADOUT_ITEM(ACE_packingBandage, 0)\
     LOADOUT_ITEM(ACE_fieldDressing, 20)\
-    LOADOUT_ITEM(SOCOMD_triangleban, 3)\
+    LOADOUT_ITEM(SOCOMD_triangleban, 0)\
     LOADOUT_ITEM(ACE_epinephrine, 0)\
     LOADOUT_ITEM(ACE_morphine, 0)\
     LOADOUT_ITEM(ACE_personalAidKit, 0)\
     LOADOUT_ITEM(ACE_salineIV_500, 0)\
-    LOADOUT_ITEM(SOCOMD_cascard, 2)\
+    LOADOUT_ITEM(SOCOMD_cascard, 0)\
     LOADOUT_ITEM(ACE_elasticBandage, 20)  \
     LOADOUT_ITEM(ACE_quikclot, 25)        \
     LOADOUT_ITEM(ACE_chestSeal, 6)        \
-    LOADOUT_ITEM(SOCOMD_nargloves, 10)\
+    LOADOUT_ITEM(SOCOMD_nargloves, 0)\
     LOADOUT_ITEM(ACE_tourniquet, 6)       \
     LOADOUT_ITEM(SOCOMD_Epinephrine, 10)  \
     LOADOUT_ITEM(SOCOMD_naloxone, 2)      \
     LOADOUT_ITEM(SOCOMD_fentanyl, 8)      \
     LOADOUT_ITEM(SOCOMD_ketamine, 8)      \
     LOADOUT_ITEM(SOCOMD_Apap, 10)         \
-    LOADOUT_ITEM(SOCOMD_Tetra, 5)         \
+    LOADOUT_ITEM(SOCOMD_Tetra, 0)         \
     LOADOUT_ITEM(ACE_bloodIV_500, 5)      \
     LOADOUT_ITEM(SOCOMD_notes, 0)\
     LOADOUT_ITEM(ACE_basicAirway, 9)      \
@@ -200,7 +183,7 @@ class SOCOMD_Commander {
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = Laserdesignator_01_khk_F;
+    binocular        = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
@@ -229,6 +212,7 @@ class SOCOMD_Commander {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
@@ -250,7 +234,7 @@ class SOCOMD_TACP {
     handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = Laserdesignator_01_khk_F;
+    binocular        = "Laserdesignator";
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
@@ -280,6 +264,7 @@ class SOCOMD_TACP {
         type = ITEM_BACKPACK_TROOPLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_ITEM(Laserbatteries, 1)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(ACRE_PRC117F, 1)
             LOADOUT_ITEM(SmokeShellGreen, 4)
@@ -287,7 +272,6 @@ class SOCOMD_TACP {
             LOADOUT_ITEM(SmokeShellPurple, 4)
             LOADOUT_ITEM(B_IR_Grenade,5)
             LOADOUT_ITEM(1Rnd_SmokeRed_Grenade_shell, 6)
-            
         };
     };
 };
@@ -380,7 +364,6 @@ class SOCOMD_Rifleman {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_BACKPACK_CHARGES
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
@@ -563,7 +546,6 @@ class SOCOMD_MachineGunner {
     };
 };
 
-////////////////////////////////////////////////////////////////////////////////
 // Support Heavy Gunner
 
 class SOCOMD_HeavyGunner {
@@ -604,7 +586,6 @@ class SOCOMD_HeavyGunner {
     };
 };
 
-////////////////////////////////////////////////////////////////////////////////
 // Medic
 
 class SOCOMD_Medic {
@@ -677,7 +658,7 @@ class SOCOMD_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_booboo, 1)
+            LOADOUT_ITEM(SOCOMD_booboo, 0)
             LOADOUT_ITEM(ACE_packingBandage, 0)          //Remove
             LOADOUT_ITEM(ACE_fieldDressing, 15)          //Israeli Bandage
             LOADOUT_ITEM(ACE_epinephrine, 0)              //Remove
@@ -693,12 +674,12 @@ class SOCOMD_AO{
             LOADOUT_ITEM(SOCOMD_fentanyl, 4)                //Fentanyl Ampoule
             LOADOUT_ITEM(SOCOMD_ketamine, 4)        //Ketamine Ampoule
             LOADOUT_ITEM(SOCOMD_Apap, 10)                    //Paracetamol
-            LOADOUT_ITEM(SOCOMD_nargloves, 5)
+            LOADOUT_ITEM(SOCOMD_nargloves, 0)
             LOADOUT_ITEM(SOCOMD_Tetra, 0)                //Paracetamol
             LOADOUT_ITEM(ACE_bloodIV_500, 14)            //Blood
-            LOADOUT_ITEM(SOCOMD_shears, 1)
+            LOADOUT_ITEM(SOCOMD_shears, 0)
             LOADOUT_ITEM(ACE_basicAirway, 0)                    //Nasopharangeal Airway
-            LOADOUT_ITEM(SOCOMD_cascard, 2)
+            LOADOUT_ITEM(SOCOMD_cascard, 0)
             LOADOUT_ITEM(ACE_advancedAirway, 6)                    //Laryngeal Mask Airway
             LOADOUT_ITEM(ACE_pocketBVM, 1)                //Medical Suction
             LOADOUT_ITEM(ACE_Pulseoximeter, 3)            //Pulseoximeter
@@ -803,44 +784,7 @@ class SOCOMD_Recon {
     };
 };
 
-////////////////////////////////////////////////////////////////////////////////
-// Drone Operator
 
-class SOCOMD_Drone_Operator {
-    blacklist = "SOCOMD";
-    primary            = QUOTE(ITEM_PRIMARY_M4);
-    secondary            = "";
-    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
-    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
-    headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = "";
-    gps                = "";
-    maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
-
-    class Uniform {
-        type = ITEM_DEFAULT_UNIFORM;
-        Arid = ITEM_DEFAULT_UNIFORM;
-        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
-        class Inventory    {
-            LOADOUT_UNIFORM_ESSENTIALS
-            LOADOUT_STANDARD_MEDICAL
-        };
-    };
-
-    class Vest {
-        type = ITEM_VEST_RIFLEMAN;
-        class Inventory    {
-            LOADOUT_VEST_MINIMUM
-            LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(ITEM_MAGAZINE_556, 5)
-            LOADOUT_ITEM(ACE_UAVBattery, 3)
-
-        };
-    };
-    class Backpack {
-        type = B_UAV_01_backpack_F;
-    };
-};
 
 ////////////////////////////////////////////////////////////////////////////////
 // LOGISTICIAN
@@ -872,6 +816,7 @@ class SOCOMD_Logistician {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
+
             LOADOUT_ITEM(SmokeShell, 3)
             LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)
@@ -924,7 +869,6 @@ class SOCOMD_Pilot {
             LOADOUT_ITEM(ACRE_PRC152, 2)
         };
     };
-    
     class Backpack {
         type = ITEM_BACKPACK_PILOT;
         class Inventory    {
@@ -938,47 +882,6 @@ class SOCOMD_Pilot {
 ////////////////////////////////////////////////////////////////////////////////
 // Crewman
 
-class SOCOMD_Crewman {
-    blacklist = "SOCOMD";
-    primary         = QUOTE(ITEM_PRIMARY_SOLS);
-    secondary         = "";
-    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
-    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
-    headgear         = ITEM_CREW_HEADGEAR;
-    binocular         = "";
-    gps             = "";
-    maxOptic        = LOW_MAGNIFICATION_LIMIT;
-    noGrenadeOptions          = 1;
-
-    class Uniform {
-        type = ITEM_DEFAULT_UNIFORM;
-        Arid = ITEM_DEFAULT_UNIFORM;
-        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
-        class Inventory    {
-            LOADOUT_PILOT_ESSENTIALS
-            LOADOUT_STANDARD_MEDICAL
-        };
-    };
-
-    class Vest {
-        type = ITEM_VEST_PILOT;
-        class Inventory    {
-            LOADOUT_ITEM(ACE_Chemlight_HiRed, 2)
-            LOADOUT_ITEM(ACE_HandFlare_Red, 2)
-            LOADOUT_ITEM(SmokeShell, 5)
-            LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
-            LOADOUT_ITEM(ACRE_PRC152, 1)
-            LOADOUT_ITEM(ACRE_PRC343, 1)
-        };
-    };
-    
-    class Backpack {
-        type = ITEM_BACKPACK_PILOT;
-        class Inventory    {
-            LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(ItemAndroid, 1)
-            LOADOUT_ITEM(ItemcTab,1)
-            LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-        };
-    };
+class SOCOMD_Crewman : SOCOMD_Pilot {
+    headgear = ITEM_CREW_HEADGEAR;
 };

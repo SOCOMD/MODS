@@ -545,9 +545,6 @@
     "extras_at_assistant_mixed",\
     "extras_at_assistant_heat"
 
-#define OPTICS_EXTRAS \
-    "extras_laser_designator"
-
 #define AT_AMMO \
     "extras_at_mixed",\
     "extras_at_heat",\
@@ -608,9 +605,6 @@ class SOCOMD_Commander{
     grenades[]={
         GRENADES_LEADER
     };
-    arsenalExtras[]={
-        OPTICS_EXTRAS
-    };
 };
 class SOCOMD_TACP{
     class uniforms{
@@ -642,9 +636,6 @@ class SOCOMD_TACP{
     };
     grenades[]={
         GRENADES_LEADER
-    };
-    arsenalExtras[]={
-        OPTICS_EXTRAS
     };
 };
 // 2IC redundant selection
