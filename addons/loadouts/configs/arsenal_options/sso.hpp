@@ -605,7 +605,6 @@
             SSO_BACKPACK_COMMS
         };
         helmets[] = {
-            "CUP_H_RUS_TSH_4_Brown",
             SSO_NVG_OPTIONS
         };
         grenades[]={

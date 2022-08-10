@@ -139,7 +139,7 @@
     "rhs_weap_mk18_KAC_d",\
     "rhs_weap_mk18_KAC",\
     "rhs_weap_mk18_wd",\
-    "rhs_weap_mk18_KAC_wd"
+    "rhs_weap_mk18_KAC_wd",\
 
 #define SOLS_RIFLES \
     QUOTE(ITEM_PRIMARY_SMG),\
@@ -471,7 +471,7 @@
 
 #define BACKPACK_COMMS_BLK \
     "KIT_BAG_R_blk",\
-    "SOG_BAG_recon_blk"
+    "SOG_BAG_recon_blk",\
 
 #define BACKPACK_SAPPER \
     "Kit_Bag_pince_TAN",\
@@ -484,7 +484,7 @@
 #define BACKPACK_SAPPER_BLK \
     "KIT_BAG_pince_blk",\
     "SOG_BAG_BREACHER_blk",\
-    "SOG_BAG_ALPIN_blk"
+    "SOG_BAG_ALPIN_blk",\
 
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
@@ -514,7 +514,7 @@
 // Black for more flavour in lowvis/afp
 #define BAGS_BLK \
     "KIT_BAG_blk",\
-    "SOG_BAG_blk"
+    "SOG_BAG_blk",\
 
 #define GRENADES_NORMAL\
     "grenades_default",\
@@ -544,6 +544,9 @@
     "extras_heavy_mg_support",\
     "extras_at_assistant_mixed",\
     "extras_at_assistant_heat"
+
+#define OPTICS_EXTRAS \
+    "extras_laser_designator"
 
 #define AT_AMMO \
     "extras_at_mixed",\
@@ -605,6 +608,9 @@ class SOCOMD_Commander{
     grenades[]={
         GRENADES_LEADER
     };
+    arsenalExtras[]={
+        OPTICS_EXTRAS
+    };
 };
 class SOCOMD_TACP{
     class uniforms{
@@ -636,6 +642,9 @@ class SOCOMD_TACP{
     };
     grenades[]={
         GRENADES_LEADER
+    };
+    arsenalExtras[]={
+        OPTICS_EXTRAS
     };
 };
 // 2IC redundant selection

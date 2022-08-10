@@ -44,10 +44,13 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
             };
             // Select Loadouts
             QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (2CDO)")
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_LEADERS,"Change Role (Leaders)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_Commander)
-                    QSTORE_ACTION_LOADOUT("Leader",SOCOMD_Leader)
-                    //QSTORE_ACTION_LOADOUT("2IC",SOCOMD_2IC)
+                    QSTORE_ACTION_LOADOUT("Section Leader",SOCOMD_Leader)
+                    //QSTORE_ACTION_LOADOUT("Support Leader",SOCOMD_Support_Leader)
+                QSTORE_ACTION_GRP_END
+                
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_OPERATORS,"Change Role (Operators)")                                 
                     QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_Rifleman)
                     QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
                     QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)
@@ -57,16 +60,22 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Anti-tank",SOCOMD_AT)
                 QSTORE_ACTION_GRP_END
 
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (SUPPORT)")
-                    QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_Logistician)
-                    //QSTORE_ACTION_LOADOUT("Aeromedical Operator",SOCOMD_AO)
-                    QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)
-                    QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUPPORT,"Change Role (Support)")
+                    QSTORE_ACTION_LOADOUT("Support Gunner",SOCOMD_HeavyGunner)
+                    QSTORE_ACTION_LOADOUT("Drone Operator",SOCOMD_Drone_Operator)
                     QSTORE_ACTION_LOADOUT("Recon",SOCOMD_Recon)
-                    QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
-                    //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
+                    QSTORE_ACTION_LOADOUT("Crewman",SOCOMD_Crewman)   
                 QSTORE_ACTION_GRP_END
 
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_AVIATION,"Change Role (Aviation)")
+                    QSTORE_ACTION_LOADOUT("HAVOC",SOCOMD_TACP)
+                    QSTORE_ACTION_LOADOUT("Pilot",SOCOMD_Pilot)                    
+                    QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_Logistician)
+                QSTORE_ACTION_GRP_END
+
+                    //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
+                    //QSTORE_ACTION_LOADOUT("Aeromedical Operator",SOCOMD_AO)
+                    //QSTORE_ACTION_LOADOUT("2IC",SOCOMD_2IC)
                 
                 QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Specialty Gear")
                     class SOCOMD_Uniforms_ToggleDiving {

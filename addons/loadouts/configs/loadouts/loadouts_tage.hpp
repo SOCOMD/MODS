@@ -157,7 +157,7 @@ class TAGE_Sniper
     primary = "hlc_rifle_awcovert_BL";
     handgun = "DSO_hgun_Pistol_heavy_01_blk_F";
     handgunMagazine = "SOCOMD_Item_Magazine_45ACP_11Rnd";
-    headgear = "CUP_H_PMC_Cap_Grey";
+    headgear = "";
     facewear = "milgp_f_face_shield_tactical_shemagh_BLK";
     binocular = "Rangefinder";
     gps = "ItemMicroDAGR";
