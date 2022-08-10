@@ -50,7 +50,7 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     //QSTORE_ACTION_LOADOUT("Support Leader",SOCOMD_Support_Leader)
                 QSTORE_ACTION_GRP_END
                 
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_OPERATORS,"Change Role (Operators)")                                 
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_OPERATORS,"Change Role (Operators)")
                     QSTORE_ACTION_LOADOUT("Rifleman",SOCOMD_Rifleman)
                     QSTORE_ACTION_LOADOUT("Marksman",SOCOMD_Marksman)
                     QSTORE_ACTION_LOADOUT("Sapper",SOCOMD_Sapper)
@@ -73,10 +73,6 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     QSTORE_ACTION_LOADOUT("Logisitican",SOCOMD_Logistician)
                 QSTORE_ACTION_GRP_END
 
-                    //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
-                    //QSTORE_ACTION_LOADOUT("Aeromedical Operator",SOCOMD_AO)
-                    //QSTORE_ACTION_LOADOUT("2IC",SOCOMD_2IC)
-                
                 QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Specialty Gear")
                     class SOCOMD_Uniforms_ToggleDiving {
                         displayName = "Toggle Diving Uniform";
