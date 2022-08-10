@@ -572,7 +572,7 @@ class SOCOMD_HeavyGunner {
     class Vest {
         type = ITEM_VEST_MACHINEGUNNER;
         class Inventory    {
-            SUPPORT_LOADOUT_VEST_ESSENTIALS
+            LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 2)
         };
     };
