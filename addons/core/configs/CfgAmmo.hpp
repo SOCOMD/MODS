@@ -28,8 +28,4 @@ class CfgAmmo {
         hit = 9001;
     };
 
-    //Parents: "MissileBase","MissileCore","Default"
-    class CUP_M_Javelin_AT : MissileBase {
-        hit = 9001;
-    };
 };

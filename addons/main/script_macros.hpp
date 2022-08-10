@@ -88,7 +88,6 @@ class _xx_##id { \
 #define ITEM_MAGAZINE_GPMG_BELT                 SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 #define ITEM_MAGAZINE_300WM                     hlc_5rnd_300WM_FMJ_AWM
 #define ITEM_MAGAZINE_BARRET                    rhsusf_mag_10Rnd_STD_50BMG_M33
-#define ITEM_MAGAZINE_9MM                       CUP_30Rnd_9x19_MP5
 
 #define ITEM_DEFAULT_HANDGUN                    ACWP_USP
 #define ITEM_DEFAULT_HANDGUN_MAGAZINE           ACWP_18Rnd_9x21_Mag_USP
