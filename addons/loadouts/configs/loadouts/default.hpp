@@ -27,8 +27,7 @@
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
     LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
-//    LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
+    LOADOUT_ITEM(murshun_cigs_lighter, 1) 
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1) \
@@ -136,7 +135,7 @@
     LOADOUT_ITEM(SOCOMD_VPN, 30)          \
     LOADOUT_ITEM(ACE_surgicalKit, 8)      \
     LOADOUT_ITEM(socomd_defib_AED, 1)     \
-    LOADOUT_ITEM(ACE_bodyBag, 2)\
+    LOADOUT_ITEM(ACE_bodyBag, 2)
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -547,7 +546,46 @@ class SOCOMD_MachineGunner {
     };
 };
 
-////////////////////////////////////////////////////////////////////////////////
+// Support Heavy Gunner
+
+class SOCOMD_HeavyGunner {
+    blacklist = "SOCOMD";
+    primary            = ITEM_PRIMARY_MACHINEGUN_GPMG;
+    secondary        = "UK3CB_BAF_Tripod";
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
+    headgear        = ITEM_DEFAULT_HEADGEAR;
+    binocular        = "";
+    gps                = "";
+    maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+
+    class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
+        class Inventory    {
+            LOADOUT_UNIFORM_ESSENTIALS
+            LOADOUT_STANDARD_MEDICAL
+        };
+    };
+
+    class Vest {
+        type = ITEM_VEST_MACHINEGUNNER;
+        class Inventory    {
+            SUPPORT_LOADOUT_VEST_ESSENTIALS
+            LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 2)
+        };
+    };
+
+    class Backpack {
+        type = ITEM_BACKPACK_MACHINEGUNNER;
+        class Inventory    {
+            LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 3)
+        };
+    };
+};
+
 // Medic
 
 class SOCOMD_Medic {
