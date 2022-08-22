@@ -322,7 +322,6 @@ class SOCOMD_Leader {
         type = ITEM_BACKPACK_PATROLLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
