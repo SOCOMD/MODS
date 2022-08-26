@@ -87,7 +87,9 @@
 #define LOADOUT_BACKPACK_CHARGES \
      LOADOUT_ITEM(tsp_frameCharge_mag, 3) \
      LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6) \
-     LOADOUT_ITEM(tsp_paperclip, 3) 
+     LOADOUT_ITEM(tsp_paperclip, 3) \
+     LOADOUT_ITEM(ACE_Clacker) \
+     LOADOUT_ITEM(ACE_M26_Clacker)
 
 // COMMON JAC LOADOUT ITEMS
 
