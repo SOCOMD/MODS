@@ -471,7 +471,7 @@
 
 #define BACKPACK_COMMS_BLK \
     "KIT_BAG_R_blk",\
-    "SOG_BAG_recon_blk",\
+    "SOG_BAG_recon_blk"
 
 #define BACKPACK_SAPPER \
     "Kit_Bag_pince_TAN",\
@@ -484,7 +484,7 @@
 #define BACKPACK_SAPPER_BLK \
     "KIT_BAG_pince_blk",\
     "SOG_BAG_BREACHER_blk",\
-    "SOG_BAG_ALPIN_blk",\
+    "SOG_BAG_ALPIN_blk"
 
 #define BACKPACK_MEDIC \
     "SOG_BAG_med_tan",\
