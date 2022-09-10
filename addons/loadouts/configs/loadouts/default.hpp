@@ -87,7 +87,9 @@
 #define LOADOUT_BACKPACK_CHARGES \
      LOADOUT_ITEM(tsp_frameCharge_mag, 3) \
      LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6) \
-     LOADOUT_ITEM(tsp_paperclip, 3) 
+     LOADOUT_ITEM(tsp_paperclip, 3) \
+     LOADOUT_ITEM(ACE_Clacker) \
+     LOADOUT_ITEM(ACE_M26_Clacker)
 
 // COMMON JAC LOADOUT ITEMS
 
@@ -322,7 +324,6 @@ class SOCOMD_Leader {
         type = ITEM_BACKPACK_PATROLLEADER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(Laserbatteries, 2)
             LOADOUT_ITEM(ACE_HuntIR_monitor, 1)
             LOADOUT_ITEM(SmokeShellGreen, 2)
             LOADOUT_ITEM(1Rnd_HE_Grenade_shell, 8)
@@ -581,7 +582,7 @@ class SOCOMD_HeavyGunner {
     class Vest {
         type = ITEM_VEST_MACHINEGUNNER;
         class Inventory    {
-            SUPPORT_LOADOUT_VEST_ESSENTIALS
+            LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ITEM_MAGAZINE_GPMG_BELT, 2)
         };
     };
