@@ -139,7 +139,7 @@
     "rhs_weap_mk18_KAC_d",\
     "rhs_weap_mk18_KAC",\
     "rhs_weap_mk18_wd",\
-    "rhs_weap_mk18_KAC_wd",\
+    "rhs_weap_mk18_KAC_wd"
 
 #define SOLS_RIFLES \
     QUOTE(ITEM_PRIMARY_SMG),\
@@ -514,7 +514,7 @@
 // Black for more flavour in lowvis/afp
 #define BAGS_BLK \
     "KIT_BAG_blk",\
-    "SOG_BAG_blk",\
+    "SOG_BAG_blk"
 
 #define GRENADES_NORMAL\
     "grenades_default",\
