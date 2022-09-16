@@ -41,7 +41,7 @@ force force ace_captives_requireSurrender = 0;
 force force ace_captives_requireSurrenderAi = false;
 
 // ACE Casings
-ace_casings_enabled = true;
+ace_casings_enabled = false;
 ace_casings_maxCasings = 100;
 
 // ACE Common
@@ -57,8 +57,8 @@ force force ace_noradio_enabled = true;
 force force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
-force force ace_cookoff_ammoCookoffDuration = 0.4;
-force force ace_cookoff_enable = 1;
+force force ace_cookoff_ammoCookoffDuration = 0.2;
+force force ace_cookoff_enable = 0;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_probabilityCoef = 0.5;
@@ -66,6 +66,9 @@ force force ace_cookoff_probabilityCoef = 0.5;
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 1;
 ace_csw_dragAfterDeploy = true;
+
+// ACE Dragging
+force force ace_dragging_drafAndFire = true;
 
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = false;
@@ -81,11 +84,11 @@ force force ace_fortify_timeMin = 0.25;
 force force acex_fortify_settingHint = 0;
 
 // ACE Fragmentation Simulation
-force force ace_frag_enabled = true;
-force force ace_frag_maxTrack = 10;
-force force ace_frag_maxTrackPerFrame = 10;
+force force ace_frag_enabled = false;
+force force ace_frag_maxTrack = 5;
+force force ace_frag_maxTrackPerFrame = 5;
 force force ace_frag_reflectionsEnabled = false;
-force force ace_frag_spallEnabled = true;
+force force ace_frag_spallEnabled = false;
 
 // ACE Goggles
 ace_goggles_effects = 2;
@@ -104,7 +107,7 @@ force force ace_hearing_autoAddEarplugsToUnits = true;
 force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 1;
 force force ace_hearing_enableCombatDeafness = true;
-ace_hearing_enabledForZeusUnits = true;
+ace_hearing_enabledForZeusUnits = false;
 force force ace_hearing_unconsciousnessVolume = 0.2;
 
 // ACE Interaction
@@ -220,7 +223,7 @@ force force ace_medical_treatment_advancedBandages = 2;
 force force ace_medical_treatment_advancedDiagnose = 1;
 force force ace_medical_treatment_advancedMedication = true;
 force force ace_medical_treatment_allowBodyBagUnconscious = false;
-force ace_medical_treatment_allowLitterCreation = true;
+force force ace_medical_treatment_allowLitterCreation = false;
 force force ace_medical_treatment_allowSelfIV = 1;
 force force ace_medical_treatment_allowSelfPAK = 0;
 force force ace_medical_treatment_allowSelfStitch = 1;
@@ -232,13 +235,13 @@ force force ace_medical_treatment_convertItems = 0;
 force force ace_medical_treatment_cprSuccessChanceMax = 0.05;														 
 force force ace_medical_treatment_cprSuccessChanceMin = 0.05;
 force force ace_medical_treatment_holsterRequired = 0;
-force ace_medical_treatment_litterCleanupDelay = 300;
+force force ace_medical_treatment_litterCleanupDelay = 300;
 force force ace_medical_treatment_locationEpinephrine = 0;
 force force ace_medical_treatment_locationIV = 0;
 force force ace_medical_treatment_locationPAK = 4;
 force force ace_medical_treatment_locationsBoostTraining = true;
 force force ace_medical_treatment_locationSurgicalKit = 0;
-force ace_medical_treatment_maxLitterObjects = 200;
+force force ace_medical_treatment_maxLitterObjects = 200;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 0;
 force force ace_medical_treatment_medicPAK = 2;
@@ -285,7 +288,7 @@ force force ace_overheating_enabled = true;
 force force ace_overheating_overheatingDispersion = true;
 force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = false;
-force force ace_overheating_jamChanceCoef = 1.0;
+force force ace_overheating_jamChanceCoef = 0.75;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_particleEffectsAndDispersionDistance = 1000.0;
 force force ace_overheating_unJamOnreload = false;
@@ -313,7 +316,7 @@ ace_quickmount_priority = 3;
 ace_quickmount_speed = 4;
 
 // ACE Respawn
-force force ace_respawn_removeDeadBodiesDisconnected = false;
+force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = false;
 
 // ACE Scopes
@@ -391,15 +394,18 @@ ace_ui_vehicleSpeed = true;
 ace_ui_weaponLowerInfoBackground = true;
 ace_ui_weaponName = true;
 ace_ui_weaponNameBackground = true;
-ace_ui_zeroing = false;
+ace_ui_zeroing = true;
 
 // ACE Vehicle Lock
 force force ace_vehiclelock_defaultLockpickStrength = 10;
 force force ace_vehiclelock_lockVehicleInventory = false;
 force force ace_vehiclelock_vehicleStartingLockState = -1;
 
+// ACE Vehicles
+force force ace_vehicles_keepEngineRunning = true;
+
 // ACE Volume
-acex_volume_enabled = false;
+acex_volume_enabled = true;
 acex_volume_fadeDelay = 1;
 acex_volume_lowerInVehicles = false;
 acex_volume_reduction = 5;
@@ -413,7 +419,7 @@ force force ace_reload_displayText = false;
 force force ace_weaponselect_displayText = false;
 
 // ACE Weather
-force force ace_weather_enabled = true;
+force force ace_weather_enabled = false;
 force force ace_weather_updateInterval = 60;
 force force ace_weather_windSimulation = false;
 
@@ -423,8 +429,8 @@ force force ace_winddeflection_simulationInterval = 0.1;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
-force force ace_zeus_autoAddObjects = true;
-force force ace_zeus_canCreateZeus = -1;
+force force ace_zeus_autoAddObjects = false;
+force force ace_zeus_canCreateZeus = 0;
 force force ace_zeus_radioOrdnance = false;
 force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
@@ -446,7 +452,7 @@ force force acex_field_rations_timeWithoutWater = 2;
 force force acex_sitting_enable = true;
 
 // CBA Network
-force force cba_network_loadoutValidation = 2;
+force force cba_network_loadoutValidation = 0;
 
 // CBA UI
 cba_ui_StorePasswords = 1;
@@ -554,8 +560,9 @@ force force lambs_danger_disableAIAutonomousManoeuvres = false;
 force force lambs_danger_disableAIDeployStaticWeapons = false;
 force force lambs_danger_disableAIFindStaticWeapons = false;
 force force lambs_danger_disableAIHideFromTanksAndAircraft = true;
-force force lambs_danger_disableAIPlayerGroup = false;
-force force lambs_danger_disableAIPlayerGroupReaction = false;
+force force lambs_danger_disableAIPlayerGroup = true;
+force force lambs_danger_disableAIPlayerGroupReaction = true;
+force force lambs_danger_disableAutonomousSmokeGrenades = false;
 force force lambs_danger_disableAutonomousFlares = false;
 
 // LAMBS Danger EventHandlers
@@ -573,10 +580,10 @@ force force lambs_main_disableAIFleeing = false;
 force force lambs_main_disableAIGestures = false;
 force force lambs_main_disablePlayerGroupSuppression = true;
 force force lambs_main_indoorMove = 0.40;
-force force lambs_main_maxRevealValue = 0.85;
-force force lambs_main_minFriendlySuppressionDistance = 1;
-force force lambs_main_minObstacleProximity = 1;
-force force lambs_main_minSuppressionRange = 25;
+force force lambs_main_maxRevealValue = 0.75;
+force force lambs_main_minFriendlySuppressionDistance = 5;
+force force lambs_main_minObstacleProximity = 5;
+force force lambs_main_minSuppressionRange = 35;
 force force lambs_main_radioBackpack = 2000;
 force force lambs_main_radioDisabled = false;
 force force lambs_main_radioEast = 1500;
@@ -596,13 +603,14 @@ force force simplesuppress_suppress_projectileMaxDistance = 9;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // TSP Breach
-force force tsp_cba_breach = false;
-force force tsp_cba_breach_ace = false;
+force force tsp_cba_breach = true;
+force force tsp_cba_breach_ace = true;
 force force tsp_cba_breach_ace_locking = false;
-force force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot""]";
+force force tsp_cba_breach_ammo = "[]";
 force force tsp_cba_breach_ammoMultiplier = 1;
 force force tsp_cba_breach_lockDoor = 0.0;
 force force tsp_cba_breach_lockHouse = 0.0;
+force force tsp_cba_breach_wall_physics = false;
 
 // VET_Unflipping
 force force vet_unflipping_time = 10;
@@ -611,6 +619,7 @@ force force vet_unflipping_unit_mass_limit = 1200;
 
 // Zeus Enhanced
 force force zen_common_autoAddObjects = false;
+force force zen_compat_ace_hideModules = false;
 zen_common_darkMode = true;
 zen_common_disableGearAnim = true;
 force force zen_common_preferredArsenal = 1;
@@ -634,18 +643,18 @@ force force zhc_dynsim_Override = true;
 force force zhc_offload_badNames = "'ignore'";
 force force zhc_offload_badTypes = "";
 force force zhc_offload_CheckDelay = 5;
-force force zhc_offload_CycleDelay = 22;
+force force zhc_offload_CycleDelay = 10;
 force force zhc_offload_debugGuids = "'76561198009214454','76561198009993601'";
 force force zhc_offload_DebugMode = 2;
 force force zhc_offload_EmergencyOffloadDelay = 5;
 force force zhc_offload_Enabled = true;
-force force zhc_offload_EnableRebal = true;
+force zhc_offload_EnableRebal = true;
 force force zhc_offload_EnableZeusHolding = true;
 force force zhc_offload_OffloadDelay = 10;
-force force zhc_offload_RebalanceDelay = 30;
-force force zhc_offload_StartDelay = 10;
-force force zhc_offload_StrtMsg = true;
-force force zhc_offload_TransferLoadout = 0;
+force force zhc_offload_RebalanceDelay = 3600;
+force force zhc_offload_StartDelay = 30;
+force zhc_offload_StrtMsg = true;
+force force zhc_offload_TransferLoadout = 1;
 force force zhc_offload_Verbosity = 2;
 force force zhc_stat_DebugRPT = false;
 force force zhc_stat_DebugRPTForm = 0;
@@ -661,7 +670,7 @@ force force acre_sys_core_automaticAntennaDirection = true;
 force force acre_sys_core_fullDuplex = true;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = false;
-force force acre_sys_core_revealToAI = 1;
+force force acre_sys_core_revealToAI = 0.8;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;

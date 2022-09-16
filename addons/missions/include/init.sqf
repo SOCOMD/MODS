@@ -5,13 +5,13 @@ enableSaving [false, false];
 RHS_ENGINE_STARTUP_OFF = true;
 
 // Infinate Loop, Fix Zeus group bug (will remove deleted groups so more can be added)
-[] spawn {
-    while {true} do {{
-        deleteGroup _x
-    }forEach allGroups;
-    sleep 61;
-    };
-};
+//[] spawn {
+//    while {true} do {{
+//        deleteGroup _x
+//    }forEach allGroups;
+//    sleep 360;
+//    };
+//};
 
 // HALO Enable
 //call{
@@ -21,5 +21,5 @@ RHS_ENGINE_STARTUP_OFF = true;
 //missionNamespace setVariable ["SOCOMD_InitComplete", 1];
 
 // Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
-// finishMissionInit;
+finishMissionInit;
 enableEnvironment [false, true];
