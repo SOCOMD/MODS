@@ -84,10 +84,6 @@
     LOADOUT_ITEM(SOCOMD_NVG, 1) \
     LOADOUT_ITEM(ACE_CableTie, 4)
 
-#define LOADOUT_BACKPACK_CHARGES \
-     LOADOUT_ITEM(ACE_Clacker) \
-     LOADOUT_ITEM(ACE_M26_Clacker)
-
 // COMMON JAC LOADOUT ITEMS
 
 #define LOADOUT_SUPPORT_ESSENTIALS \
@@ -370,7 +366,8 @@ class SOCOMD_Rifleman {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_BACKPACK_CHARGES
+            LOADOUT_ITEM(ACE_Clacker, 1) 
+            LOADOUT_ITEM(ACE_M26_Clacker, 1)
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
