@@ -21,7 +21,7 @@
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -31,7 +31,7 @@
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -42,13 +42,13 @@
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 2)
 
 #define LOADOUT_PILOT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -85,16 +85,13 @@
     LOADOUT_ITEM(ACE_CableTie, 4)
 
 #define LOADOUT_BACKPACK_CHARGES \
-     LOADOUT_ITEM(tsp_frameCharge_mag, 3) \
-     LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6) \
-     LOADOUT_ITEM(tsp_paperclip, 3) \
      LOADOUT_ITEM(ACE_Clacker) \
      LOADOUT_ITEM(ACE_M26_Clacker)
 
 // COMMON JAC LOADOUT ITEMS
 
 #define LOADOUT_SUPPORT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1) \
@@ -129,7 +126,7 @@
     LOADOUT_ITEM(ACE_elasticBandage, 20)  \
     LOADOUT_ITEM(ACE_quikclot, 25)        \
     LOADOUT_ITEM(ACE_chestSeal, 6)        \
-    LOADOUT_ITEM(SOCOMD_nargloves, 0)\
+    LOADOUT_ITEM(SOCOMD_nargloves, 0)     \
     LOADOUT_ITEM(ACE_tourniquet, 6)       \
     LOADOUT_ITEM(SOCOMD_Epinephrine, 10)  \
     LOADOUT_ITEM(SOCOMD_naloxone, 2)      \
@@ -138,7 +135,7 @@
     LOADOUT_ITEM(SOCOMD_Apap, 10)         \
     LOADOUT_ITEM(SOCOMD_Tetra, 0)         \
     LOADOUT_ITEM(ACE_bloodIV_500, 5)      \
-    LOADOUT_ITEM(SOCOMD_notes, 0)\
+    LOADOUT_ITEM(SOCOMD_notes, 0)         \
     LOADOUT_ITEM(ACE_basicAirway, 9)      \
     LOADOUT_ITEM(ACE_advancedAirway, 6)   \
     LOADOUT_ITEM(ACE_pocketBVM, 1)        \

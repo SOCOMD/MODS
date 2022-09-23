@@ -18,8 +18,8 @@
     deathMessages       = 0; /*Shows in chat window who killed the player.*/ \
     vonID               = 0; /*Indicates who is speaking through VON communication.*/ \
     mapContent          = 0; /*Shows friendly units, enemy units and detected mines on the map.*/ \
-    autoReport            = 0; /*Enables/disables automatic reporting of spotted enemies by players only.*/ \
-    multipleSaves        = 0; /*Allows player to create multiple saves in a mission.*/
+    autoReport          = 0; /*Enables/disables automatic reporting of spotted enemies by players only.*/ \
+    multipleSaves       = 0; /*Allows player to create multiple saves in a mission.*/
 
 class CfgDifficultyPresets {
     defaultPreset = "Custom";

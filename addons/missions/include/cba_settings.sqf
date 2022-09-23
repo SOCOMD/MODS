@@ -68,7 +68,7 @@ force force ace_csw_ammoHandling = 1;
 ace_csw_dragAfterDeploy = true;
 
 // ACE Dragging
-force force ace_dragging_drafAndFire = true;
+force force ace_dragging_dragAndFire = true;
 
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = false;

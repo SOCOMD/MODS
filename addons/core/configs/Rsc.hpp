@@ -1,4 +1,4 @@
-    
+/*    
 class RscDisplayEmpty {
     class controls;
 };
@@ -13,6 +13,7 @@ class RscDisplayMission : RscDisplayEmpty {
         };
     };
 };
+*/
 
 //Fix CTAB missing config property
 class cTab_RscMapControl {
