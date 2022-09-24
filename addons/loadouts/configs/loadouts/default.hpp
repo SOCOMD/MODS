@@ -18,7 +18,7 @@
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -28,7 +28,7 @@
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
     LOADOUT_ITEM(ItemcTab, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -39,13 +39,13 @@
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 2)
 
 #define LOADOUT_PILOT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
@@ -84,7 +84,7 @@
 // COMMON JAC LOADOUT ITEMS
 
 #define LOADOUT_SUPPORT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 1) \
+    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1) \
@@ -346,7 +346,8 @@ class SOCOMD_Rifleman {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_BACKPACK_CHARGES
+            LOADOUT_ITEM(ACE_Clacker, 1) 
+            LOADOUT_ITEM(ACE_M26_Clacker, 1)
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };
