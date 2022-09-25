@@ -676,6 +676,6 @@ force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
 
 // SOCOMD Medical
-force force SOCOMD_medical_persistantRevive = true;
-force force SOCOMD_medical_persistantReviveTimer = 330;
-force force socomd_defib_Defib_Chance = 90;
+// force force SOCOMD_medical_persistantRevive = true;
+// force force SOCOMD_medical_persistantReviveTimer = 330;
+// force force socomd_defib_Defib_Chance = 90;

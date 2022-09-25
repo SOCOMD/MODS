@@ -108,7 +108,7 @@ class SOCOMD_Medical_AO: B_TacticalPack_blk {
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
         TRANSPORT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
         TRANSPORT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-        TRANSPORT_ITEM(ACE_bodyBag, 6)                //Defibrillator
+        TRANSPORT_ITEM(ACE_bodyBag, 6)
         TRANSPORT_ITEM(ACE_Chemlight_HiWhite, 10) 
         TRANSPORT_ITEM(SmokeShellPurple, 10) 
         TRANSPORT_ITEM(ACE_HandFlare_White, 10) 

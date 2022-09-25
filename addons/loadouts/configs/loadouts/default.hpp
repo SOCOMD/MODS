@@ -655,7 +655,7 @@ class SOCOMD_AO{
             LOADOUT_ITEM(ACE_bloodIV_500, 8)            //Blood
             LOADOUT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
             LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(ACE_bodyBag, 2)                //Defibrillator
+            LOADOUT_ITEM(ACE_bodyBag, 2)
         };
     };
 };
