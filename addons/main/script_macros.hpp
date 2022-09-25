@@ -186,16 +186,7 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ACE_wirecutter, 1) \
     TRANSPORT_ITEM(ACE_DefusalKit, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 6) \
-    TRANSPORT_ITEM(ACE_CableTie, 6) \
-    TRANSPORT_ITEM(ACE_tourniquet, 0)    \
-    TRANSPORT_ITEM(ACE_fieldDressing, 0) \
-    TRANSPORT_ITEM(ACE_quikclot, 0) \
-    TRANSPORT_ITEM(ACE_elasticBandage, 0) \
-    TRANSPORT_ITEM(ACE_packingBandage, 0) \
-    TRANSPORT_ITEM(ACE_morphine, 0) \
-    TRANSPORT_ITEM(ACE_epinephrine, 0) \
-    TRANSPORT_ITEM(ACE_surgicalKit, 0)\
-    TRANSPORT_ITEM(ACE_bloodIV_500, 0)
+    TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
     TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
