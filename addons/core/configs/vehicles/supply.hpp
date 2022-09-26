@@ -250,7 +250,6 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
         TRANSPORT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
         TRANSPORT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-        TRANSPORT_ITEM(ACE_surgicalKit, 8)
         TRANSPORT_ITEM(ACE_bodyBag, 4)
     };
 };
