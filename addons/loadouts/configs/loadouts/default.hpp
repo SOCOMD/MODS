@@ -13,7 +13,7 @@
     LOADOUT_ITEM(ACE_morphine, 2) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
     LOADOUT_ITEM(ACE_packingBandage, 8) \
-    LOADOUT_ITEM(ACE_chestSeal, 1)    \
+    LOADOUT_ITEM(ACE_chestSeal, 1) \
     LOADOUT_ITEM(kat_guedel, 2)
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
@@ -101,24 +101,24 @@
     LOADOUT_ITEM(ACE_morphine, 1) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
     LOADOUT_ITEM(ACE_packingBandage, 8) \
-    LOADOUT_ITEM(ACE_fieldDressing, 0) \
+    LOADOUT_ITEM(ACE_fieldDressing, 0)
 
 #define LOADOUT_BACKPACK_MEDIC \
-    LOADOUT_ITEM(ACE_packingBandage, 20)\
-    LOADOUT_ITEM(ACE_epinephrine, 10)\
-    LOADOUT_ITEM(ACE_morphine, 10)\
-    LOADOUT_ITEM(ACE_elasticBandage, 20)  \
-    LOADOUT_ITEM(ACE_quikclot, 20)        \
-    LOADOUT_ITEM(kat_chestSeal, 6)        \
-    LOADOUT_ITEM(ACE_tourniquet, 6)       \
-    LOADOUT_ITEM(kat_naloxone, 2)      \
-    LOADOUT_ITEM(ACE_bloodIV_500, 5)      \
-    LOADOUT_ITEM(kat_guedel, 9)      \
-    LOADOUT_ITEM(kat_larynx, 6)   \
-    LOADOUT_ITEM(kat_pulseOximeter, 4)    \
-    LOADOUT_ITEM(ACE_surgicalKit, 8)      \
-    LOADOUT_ITEM(kat_AED, 1)     \
-    LOADOUT_ITEM(ACE_bodyBag, 2)\
+    LOADOUT_ITEM(ACE_packingBandage, 20) \
+    LOADOUT_ITEM(ACE_epinephrine, 10) \
+    LOADOUT_ITEM(ACE_morphine, 10) \
+    LOADOUT_ITEM(ACE_elasticBandage, 20) \
+    LOADOUT_ITEM(ACE_quikclot, 20) \
+    LOADOUT_ITEM(kat_chestSeal, 6) \
+    LOADOUT_ITEM(ACE_tourniquet, 6) \
+    LOADOUT_ITEM(kat_naloxone, 2)  \
+    LOADOUT_ITEM(ACE_bloodIV_500, 5) \
+    LOADOUT_ITEM(kat_guedel, 9) \
+    LOADOUT_ITEM(kat_larynx, 6) \
+    LOADOUT_ITEM(kat_pulseOximeter, 4) \
+    LOADOUT_ITEM(ACE_surgicalKit, 8) \
+    LOADOUT_ITEM(kat_AED, 1) \
+    LOADOUT_ITEM(ACE_bodyBag, 2) \
     LOADOUT_ITEM(kat_accuvac, 1)
 
 
