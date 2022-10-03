@@ -349,20 +349,7 @@ class SOCOMD_LOWVIS_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(kat_guedel, 8)
-            LOADOUT_ITEM(kat_larynx, 8)
-            LOADOUT_ITEM(kat_naloxone, 8)
-            LOADOUT_ITEM(ACE_packingBandage, 15)
-            LOADOUT_ITEM(ACE_elasticBandage, 15)
-            LOADOUT_ITEM(ACE_quikclot, 15)                //Quikclot
-            LOADOUT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
-            LOADOUT_ITEM(ACE_tourniquet, 8)                //Tourniquet
-            LOADOUT_ITEM(ACE_epinephrine, 8)        //Epinephrine Ampoule
-            LOADOUT_ITEM(ACE_morphine, 8)        //Morphine Ampoule
-            LOADOUT_ITEM(ACE_bloodIV_500, 8)            //Blood
-            LOADOUT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
-            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
-            LOADOUT_ITEM(ACE_bodyBag, 2)
+            LOADOUT_BACKPACK_MEDIC
         };
     };
 };

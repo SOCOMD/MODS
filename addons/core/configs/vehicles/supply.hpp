@@ -115,13 +115,15 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(tsp_frameCharge_mag, 5)
         TRANSPORT_ITEM(tsp_popperCharge_mag, 5)
         TRANSPORT_ITEM(tsp_stickCharge_mag, 5)
-        TRANSPORT_ITEM(kat_guedel, 8)
-        TRANSPORT_ITEM(kat_larynx, 8)
+        TRANSPORT_ITEM(kat_guedel, 10)                //Airways
+        TRANSPORT_ITEM(kat_larynx, 10)                //Adv Airways
         TRANSPORT_ITEM(kat_naloxone, 8)
-        TRANSPORT_ITEM(ACE_packingBandage, 15)
-        TRANSPORT_ITEM(ACE_elasticBandage, 15)
-        TRANSPORT_ITEM(ACE_quikclot, 15)                //Quikclot
-        TRANSPORT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(kat_chestSeal, 10)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(kat_Carbonate, 2)                //Ammonium Carbonate BOX
+        TRANSPORT_ITEM(kat_Painkiller, 5)                //Paracetamol BOX
+        TRANSPORT_ITEM(ACE_packingBandage, 30)                //Heavy Duty Bandage
+        TRANSPORT_ITEM(ACE_elasticBandage, 30)                //Cuts & Bruises Bandage
+        TRANSPORT_ITEM(ACE_quikclot, 30)                //Quikclot
         TRANSPORT_ITEM(ACE_tourniquet, 8)                //Tourniquet
         TRANSPORT_ITEM(ACE_epinephrine, 8)        //Epinephrine Ampoule
         TRANSPORT_ITEM(ACE_morphine, 8)        //Morphine Ampoule
@@ -235,20 +237,22 @@ class SOCOMD_Supply_Medical : SOCOMD_Supply_Empty {
 
     class TransportItems {
         TRANSPORT_ITEM(ACE_CableTie, 12)
-        TRANSPORT_ITEM(kat_guedel, 10)
-        TRANSPORT_ITEM(kat_larynx, 10)
+        TRANSPORT_ITEM(kat_guedel, 10)                //Airways
+        TRANSPORT_ITEM(kat_larynx, 10)                //Adv Airways
+        TRANSPORT_ITEM(kat_accuvac, 1)                //Airways sucky sucky
         TRANSPORT_ITEM(kat_naloxone, 12)
-        TRANSPORT_ITEM(kat_AED, 1)
-        TRANSPORT_ITEM(kat_accuvac, 1)
+        TRANSPORT_ITEM(kat_AED, 1)                //Defib
+        TRANSPORT_ITEM(kat_chestSeal, 10)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(kat_Carbonate, 4)                //Ammonium Carbonate BOX
+        TRANSPORT_ITEM(kat_Painkiller, 10)                //Paracetamol BOX
         TRANSPORT_ITEM(ACE_packingBandage, 30)
         TRANSPORT_ITEM(ACE_elasticBandage, 30)
-        TRANSPORT_ITEM(ACE_quikclot, 20)                //Quikclot
-        TRANSPORT_ITEM(ACE_chestSeal, 12)                //Hyfin Chest Seal
+        TRANSPORT_ITEM(ACE_quikclot, 30)                //Quikclot
         TRANSPORT_ITEM(ACE_tourniquet, 10)                //Tourniquet
         TRANSPORT_ITEM(ACE_epinephrine, 12)        //Epinephrine Ampoule
         TRANSPORT_ITEM(ACE_morphine, 12)        //Morphine Ampoule
         TRANSPORT_ITEM(ACE_bloodIV_500, 10)            //Blood
-        TRANSPORT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
+        TRANSPORT_ITEM(ACE_pulseOximeter, 2)            //Pulseoximeter
         TRANSPORT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
         TRANSPORT_ITEM(ACE_bodyBag, 4)
     };

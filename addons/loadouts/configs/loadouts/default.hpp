@@ -7,14 +7,14 @@
 
 
 #define LOADOUT_STANDARD_MEDICAL \
-    LOADOUT_ITEM(ACE_elasticBandage, 8) \
-    LOADOUT_ITEM(ACE_quikclot, 8) \
-    LOADOUT_ITEM(ACE_epinephrine, 0) \
+    LOADOUT_ITEM(ACE_elasticBandage, 15) \
+    LOADOUT_ITEM(ACE_packingBandage, 15) \
+    LOADOUT_ITEM(ACE_quikclot, 15) \
+    LOADOUT_ITEM(ACE_epinephrine, 2) \
     LOADOUT_ITEM(ACE_morphine, 2) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
-    LOADOUT_ITEM(ACE_packingBandage, 8) \
-    LOADOUT_ITEM(ACE_chestSeal, 1)    \
-    LOADOUT_ITEM(kat_guedel, 2)
+    LOADOUT_ITEM(kat_Painkiller, 1) \
+    LOADOUT_ITEM(kat_chestSeal, 2) 
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
     LOADOUT_ITEM(ItemAndroid, 1) \
@@ -95,31 +95,37 @@
     LOADOUT_ITEM(ACE_MapTools, 1)
 
 #define LOADOUT_SUPPORT_STANDARD_MEDICAL \
-    LOADOUT_ITEM(ACE_elasticBandage, 8) \
-    LOADOUT_ITEM(ACE_quikclot, 8) \
-    LOADOUT_ITEM(ACE_epinephrine, 0) \
-    LOADOUT_ITEM(ACE_morphine, 1) \
+    LOADOUT_ITEM(ACE_elasticBandage, 15) \
+    LOADOUT_ITEM(ACE_quikclot, 15) \
+    LOADOUT_ITEM(ACE_epinephrine, 2) \
+    LOADOUT_ITEM(ACE_morphine, 2) \
     LOADOUT_ITEM(ACE_tourniquet, 2) \
-    LOADOUT_ITEM(ACE_packingBandage, 8) \
-    LOADOUT_ITEM(ACE_fieldDressing, 0) 
+    LOADOUT_ITEM(kat_Painkiller, 1) \
+    LOADOUT_ITEM(kat_chestSeal, 2) \
+    LOADOUT_ITEM(kat_guedel, 2) \
+    LOADOUT_ITEM(ACE_packingBandage, 15) 
 
 #define LOADOUT_BACKPACK_MEDIC \
-    LOADOUT_ITEM(ACE_packingBandage, 20)\
+    LOADOUT_ITEM(ACE_packingBandage, 30)\
     LOADOUT_ITEM(ACE_epinephrine, 10)\
     LOADOUT_ITEM(ACE_morphine, 10)\
-    LOADOUT_ITEM(ACE_elasticBandage, 20)  \
-    LOADOUT_ITEM(ACE_quikclot, 20)        \
-    LOADOUT_ITEM(kat_chestSeal, 6)        \
+    LOADOUT_ITEM(kat_Painkiller, 3) \
+    LOADOUT_ITEM(kat_Carbonate, 1) \
+    LOADOUT_ITEM(ACE_elasticBandage, 30)  \
+    LOADOUT_ITEM(ACE_quikclot, 30)        \
+    LOADOUT_ITEM(kat_chestSeal, 10)        \
     LOADOUT_ITEM(ACE_tourniquet, 6)       \
-    LOADOUT_ITEM(kat_naloxone, 2)      \
+    LOADOUT_ITEM(kat_naloxone, 5)      \
     LOADOUT_ITEM(ACE_bloodIV_500, 5)      \
-    LOADOUT_ITEM(kat_guedel, 9)      \
-    LOADOUT_ITEM(kat_larynx, 6)   \
+    LOADOUT_ITEM(kat_guedel, 8)      \
+    LOADOUT_ITEM(kat_larynx, 8)   \
     LOADOUT_ITEM(kat_pulseOximeter, 4)    \
-    LOADOUT_ITEM(ACE_surgicalKit, 8)      \
+    LOADOUT_ITEM(ACE_surgicalKit, 5)      \
     LOADOUT_ITEM(kat_AED, 1)     \
-    LOADOUT_ITEM(ACE_bodyBag, 2)\
-    LOADOUT_ITEM(kat_accuvac, 1)
+    LOADOUT_ITEM(kat_accuvac, 1) \
+    LOADOUT_ITEM(kat_Empty_bloodIV_250, 3) \
+    LOADOUT_ITEM(kat_Empty_bloodIV_500, 2) \
+    LOADOUT_ITEM(ACE_bodyBag, 2)
 
 
 //////////////////////////////////////////////////////////////////////
@@ -642,19 +648,7 @@ class SOCOMD_AO{
         type = ITEM_BACKPACK_MEDIC;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(kat_guedel, 8)
-            LOADOUT_ITEM(kat_larynx, 8)
-            LOADOUT_ITEM(kat_naloxone, 8)
-            LOADOUT_ITEM(ACE_packingBandage, 15)
-            LOADOUT_ITEM(ACE_elasticBandage, 15)
-            LOADOUT_ITEM(ACE_quikclot, 15)                //Quikclot
-            LOADOUT_ITEM(ACE_chestSeal, 8)                //Hyfin Chest Seal
-            LOADOUT_ITEM(ACE_tourniquet, 8)                //Tourniquet
-            LOADOUT_ITEM(ACE_epinephrine, 8)        //Epinephrine Ampoule
-            LOADOUT_ITEM(ACE_morphine, 8)        //Morphine Ampoule
-            LOADOUT_ITEM(ACE_bloodIV_500, 8)            //Blood
-            LOADOUT_ITEM(ACE_pulseOximeter, 4)            //Pulseoximeter
-            LOADOUT_ITEM(ACE_surgicalKit, 8)            //Surgical Kit
+            LOADOUT_BACKPACK_MEDIC
             LOADOUT_ITEM(ACE_bodyBag, 2)
         };
     };
