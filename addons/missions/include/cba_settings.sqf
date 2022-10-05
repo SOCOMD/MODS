@@ -190,7 +190,7 @@ force force ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 0.86088;
-force force ace_medical_bleedingCoefficient = 0.3;
+force force ace_medical_bleedingCoefficient = 0.28;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
@@ -232,8 +232,8 @@ force force ace_medical_treatment_clearTrauma = 2;
 force force ace_medical_treatment_consumePAK = 1;
 force force ace_medical_treatment_consumeSurgicalKit = 1;
 force force ace_medical_treatment_convertItems = 0;
-force force ace_medical_treatment_cprSuccessChanceMax = 0.05;														 
-force force ace_medical_treatment_cprSuccessChanceMin = 0.05;
+force force ace_medical_treatment_cprSuccessChanceMax = 0.30;														 
+force force ace_medical_treatment_cprSuccessChanceMin = 0.30;
 force force ace_medical_treatment_holsterRequired = 0;
 force force ace_medical_treatment_litterCleanupDelay = 300;
 force force ace_medical_treatment_locationEpinephrine = 0;
@@ -250,11 +250,11 @@ force force ace_medical_treatment_timeCoefficientPAK = 5;
 force force ace_medical_treatment_treatmentTimeAutoinjector = 5;
 force force ace_medical_treatment_treatmentTimeBodyBag = 10;
 force force ace_medical_treatment_treatmentTimeCPR = 30;
-force force ace_medical_treatment_treatmentTimeIV = 12;
+force force ace_medical_treatment_treatmentTimeIV = 10;
 force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 0.3;
-force force ace_medical_treatment_woundReopenChance = 0.656423;
-force force ace_medical_treatment_woundStitchTime = 5;
+force force ace_medical_treatment_woundReopenChance = 0.24;
+force force ace_medical_treatment_woundStitchTime = 4;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
@@ -553,6 +553,93 @@ force force emr_main_maxDropHeight = 4.5;
 emr_main_preventHighVaulting = false;
 emr_main_staminaCoefficient = 1;
 
+// KAT - ADV Medical: Airway
+force kat_airway_Accuvac_time = 8;
+force kat_airway_CancelRecoveryPosition_Time = 6;
+force kat_airway_CheckAirway_time = 2;
+force kat_airway_checkbox_puking_sound = true;
+force kat_airway_Colored_logs = true;
+force kat_airway_enable = true;
+force kat_airway_Guedeltubus_time = 3;
+force kat_airway_Larynxtubus_time = 5;
+force kat_airway_medLvl_Accuvac = 0;
+force kat_airway_medLvl_Guedeltubus = 0;
+force kat_airway_medLvl_Larynxtubus = 0;
+force kat_airway_Overstretch_time = 3;
+force kat_airway_probability_headturning = 50;
+force kat_airway_probability_obstruction = 5;
+force kat_airway_probability_occluded = 5;
+force kat_airway_RecoveryPosition_Time = 6;
+force kat_airway_string_exit = "";
+force kat_airway_TurnAround_time = 2;
+
+// KAT - ADV Medical: Breathing
+force kat_breathing_enable = true;
+force kat_breathing_enable_selfChestseal = 1;
+force kat_breathing_enableCyanosis = false;
+force kat_breathing_hemopneumothoraxChance = 0;
+force kat_breathing_medLvl_Chestseal = 0;
+force kat_breathing_medLvl_Cyanosis = 0;
+force kat_breathing_medLvl_hemopneumothoraxTreatment = 0;
+force kat_breathing_medLvl_Pulseoximeter = 0;
+force kat_breathing_mildValue = 75;
+force kat_breathing_pneumothorax = 5;
+force kat_breathing_pneumothorax_hardcore = false;
+force kat_breathing_pneumothoraxDamageThreshold = 0.228134;
+force kat_breathing_severeValue = 66;
+force kat_breathing_showPneumothorax_dupe = false;
+force kat_breathing_slightValue = 90;
+force kat_breathing_SpO2_dieActive = false;
+force kat_breathing_SpO2_dieValue = 5;
+force kat_breathing_SpO2_MultiplyNegative = 1;
+force kat_breathing_SpO2_MultiplyPositive = 1.95851;
+force kat_breathing_SpO2_perfusion = false;
+force kat_breathing_SpO2_unconscious = 64.7813;
+force kat_breathing_Stable_spo2 = 85;
+force kat_breathing_tensionhemothorax_hardcore = false;
+
+// KAT - ADV Medical: Circulation
+force kat_circulation_AdvRhythm = false;
+force kat_circulation_AED_BeepsAndCharge = true;
+force kat_circulation_blood_draw_limit = 4;
+force kat_circulation_blood_drawTime_250ml = 15;
+force kat_circulation_blood_drawTime_500ml = 30;
+kat_circulation_bloodgroup = "A-";
+force kat_circulation_bloodGroups = false;
+force kat_circulation_CPR_Chance_Default =40;
+force kat_circulation_CPR_Chance_Doctor = 40;
+force kat_circulation_CPR_Chance_RegularMedic = 40;
+force kat_circulation_DeactMon_whileAED_X = true;
+force kat_circulation_distanceLimit_AEDX = 30;
+force kat_circulation_enable = false;
+force kat_circulation_enable_CPR_Chances = false;
+force kat_circulation_enable_selfBloodDraw = 1;
+force kat_circulation_medLvl_AED = 0;
+force kat_circulation_medLvl_AED_X = 0;
+force kat_circulation_SuccesCh_AED = 80;
+force kat_circulation_SuccesCh_AED_X = 90;
+force kat_circulation_timeLimit_AEDX = 1800;
+force kat_circulation_useLocation_AED = 0;
+
+// KAT - ADV Medical: Misc
+force kat_misc_enable = true;
+
+// KAT - ADV Medical: Pharmacy
+force kat_pharma_carbonateActive = false;
+force kat_pharma_IOestablish = 3;
+force kat_pharma_IVdrop = 600;
+force kat_pharma_IVdropEnable = true;
+force kat_pharma_IVestablish = 3;
+force kat_pharma_IVmedic = 2;
+force kat_pharma_IVreuse = false;
+force kat_pharma_medLvl_Reorientation = 0;
+force kat_pharma_naloxoneActive = true;
+force kat_pharma_PushTime = 7;
+force kat_pharma_Reorientation_Enable = true;
+force kat_pharma_Reorientation_Slap = true;
+force kat_pharma_RequireInsIV = false;
+force kat_pharma_txaActive = true;
+
 // LAMBS Danger
 force force lambs_danger_cqbRange = 75;
 force force lambs_danger_panicChance = 0.0;
@@ -676,6 +763,6 @@ force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
 
 // SOCOMD Medical
-force force SOCOMD_medical_persistantRevive = true;
-force force SOCOMD_medical_persistantReviveTimer = 330;
-force force socomd_defib_Defib_Chance = 90;
+// force force SOCOMD_medical_persistantRevive = true;
+// force force SOCOMD_medical_persistantReviveTimer = 330;
+// force force socomd_defib_Defib_Chance = 90;

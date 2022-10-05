@@ -118,33 +118,33 @@ class CfgLoadoutWeapons {
             {"hlc_5rnd_300WM_FMJ_AWM", 12}
         };
     };
-    class SSO_Rifle_338 {
-        magazines[] ={
-            {"rhs_5Rnd_338lapua_t5000",12}
-        };
-    };
+    // class SSO_Rifle_338 {
+    //     magazines[] ={
+    //         {"rhs_5Rnd_338lapua_t5000",12}
+    //     };
+    // };
 
-    class SOCOMD_SSO_RPK {
-        magazines[]={
-            {"hlc_45Rnd_545x39_EP_rpkm",7}
-        };
-    };
-    class SOCOMD_pkp_acc {
-        magazines[]={
-            {"rhs_100Rnd_762x54mmR",5}
-        };
-    };
-    class SOCOMD_SSO_AK_GL {
-        magazines[] = {
-            {"AGE_30Rnd_545x39mm_Mag", 8},
-            {"hlc_VOG25_AK", 8}
-        };
-        commandGrenades[] = {
-            {"rhs_VG40OP_red", 2},
-            {"hlc_GRD_Red", 2},
-            {"ACE_HuntIR_M203", 3}
-        };
-    };
+    // class SOCOMD_SSO_RPK {
+    //     magazines[]={
+    //         {"hlc_45Rnd_545x39_EP_rpkm",7}
+    //     };
+    // };
+    // class SOCOMD_pkp_acc {
+    //     magazines[]={
+    //         {"rhs_100Rnd_762x54mmR",5}
+    //     };
+    // };
+    // class SOCOMD_SSO_AK_GL {
+    //     magazines[] = {
+    //         {"AGE_30Rnd_545x39mm_Mag", 8},
+    //         {"hlc_VOG25_AK", 8}
+    //     };
+    //     commandGrenades[] = {
+    //         {"rhs_VG40OP_red", 2},
+    //         {"hlc_GRD_Red", 2},
+    //         {"ACE_HuntIR_M203", 3}
+    //     };
+    // };
     class rhs_weap_m82a1  {
         magazines[] = {
             {"rhsusf_mag_10Rnd_STD_50BMG_M33", 6}
