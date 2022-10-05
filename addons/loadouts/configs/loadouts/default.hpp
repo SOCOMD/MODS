@@ -124,9 +124,7 @@
     LOADOUT_ITEM(kat_AED, 1)     \
     LOADOUT_ITEM(kat_accuvac, 1) \
     LOADOUT_ITEM(kat_Empty_bloodIV_250, 3) \
-    LOADOUT_ITEM(kat_Empty_bloodIV_500, 2) \
-    LOADOUT_ITEM(ACE_bodyBag, 2)
-
+    LOADOUT_ITEM(kat_Empty_bloodIV_500, 2) 
 
 //////////////////////////////////////////////////////////////////////
 //Individual loadout items
@@ -615,6 +613,7 @@ class SOCOMD_Medic {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_BACKPACK_MEDIC
+            LOADOUT_ITEM(ACE_bodyBag, 2)
         };
     };
 };
