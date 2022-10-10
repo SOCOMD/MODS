@@ -315,6 +315,64 @@ class SOCOMD_Leader {
 //class SOCOMD_2IC : SOCOMD_Leader {};
 
 ////////////////////////////////////////////////////////////////////////////////
+// Specialist
+
+class SOCOMD_Specialist {
+    blacklist = "SOCOMD";
+    primary            = QUOTE(ITEM_PRIMARY_M4);
+    secondary            = "";
+    handgun            = QUOTE(ITEM_DEFAULT_HANDGUN);
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
+    headgear        = ITEM_DEFAULT_HEADGEAR;
+    binocular        = "";
+    gps                = "";
+    maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
+
+    class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
+        Arid = ITEM_DEFAULT_UNIFORM;
+        Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
+        class Inventory    {
+            LOADOUT_ITEM(ItemAndroid, 1) 
+            LOADOUT_ITEM(ItemcTabHCam, 0) 
+            LOADOUT_ITEM(ACE_EarPlugs, 1) 
+            LOADOUT_ITEM(ACE_MapTools, 1) 
+            LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) 
+            LOADOUT_ITEM(murshun_cigs_cigpack, 1) 
+            LOADOUT_ITEM(murshun_cigs_lighter, 1) 
+            LOADOUT_ITEM(ACE_elasticBandage, 15) 
+            LOADOUT_ITEM(ACE_packingBandage, 15) 
+            LOADOUT_ITEM(ACE_quikclot, 15) 
+            LOADOUT_ITEM(ACE_epinephrine, 2) 
+            LOADOUT_ITEM(ACE_morphine, 2) 
+            LOADOUT_ITEM(ACE_tourniquet, 2) 
+            LOADOUT_ITEM(kat_Painkiller, 1) 
+            LOADOUT_ITEM(kat_chestSeal, 2) 
+            //LOADOUT_ITEM(ACE_EntrenchingTool, 1)
+        };
+    };
+
+    class Vest {
+        type = ITEM_VEST_RIFLEMAN;
+        class Inventory    {
+            LOADOUT_ITEM(SmokeShell, 5) \
+            LOADOUT_ITEM(ACRE_PRC343, 1) \
+            LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
+            LOADOUT_ITEM(SOCOMD_NVG, 1) 
+            LOADOUT_ITEM(ACE_CableTie, 4)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
+            LOADOUT_ITEM(ACRE_PRC152, 1)
+        };
+    };
+    class Backpack {
+        type = ITEM_BACKPACK_RIFLEMAN;
+        class Inventory    {
+            
+        };
+    };
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // Rifleman
 
 class SOCOMD_Rifleman {
