@@ -1,4 +1,4 @@
-class ShellBase;
+//class ShellBase;
 // Magazine: "CUP_PG15V"
 // Veh: BMP1 Main cannon
 //  aiAmmoUsageFlags = "64 + 128 + 256";

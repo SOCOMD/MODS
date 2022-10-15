@@ -1,15 +1,16 @@
     
 //////////////////////////////////////////////////////////////////////////////////
 // Jet Misc
-class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
-class SensorTemplateActiveRadar;
-class SensorTemplateIR;
-class SensorTemplateVisual;
-class SensorTemplateMan;
-class SensorTemplateLaser;
-class SensorTemplateNV;
-class SensorTemplateDataLink;
+//class SensorTemplatePassiveRadar;
+//class SensorTemplateAntiRadiation;
+//class SensorTemplateActiveRadar;
+//class SensorTemplateIR;
+//class SensorTemplateVisual;
+//class SensorTemplateMan;
+//class SensorTemplateLaser;
+//class SensorTemplateNV;
+//class SensorTemplateDataLink;
+/*
 class DefaultVehicleSystemsDisplayManagerLeft
 {
     class components;
@@ -26,9 +27,10 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 {
     class components;
 };
-class Eventhandlers;
+*/
+class eventHandlers;
 ////////////////////
-class NoDust{};
+//class NoDust{};
 
 class CfgVehicles  {
     //MAN
@@ -48,7 +50,7 @@ class CfgVehicles  {
     ////////////////////////////////////////////////////////////////////////////////
     // Helicopters
     
-    class Helicopter;
+    //class Helicopter;
     ////////////////////////////////////////////////////////////////////////////////
     // Other
 

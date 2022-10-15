@@ -76,10 +76,10 @@ class CfgVehicles
               icon = "\FgS_prv13\Textures\Icon\icon2.paa";
               mapsize = 23;
               ladders[] = {{"start1","end1"},{"start2","end2"}};
-              class EventHandlers
-              {
-                     //init = "(_this select 0) execVM '\FgS_prv13\Engines13_sound.sqf'";
-              };
+              // class EventHandlers
+              // {
+              //        //init = "(_this select 0) execVM '\FgS_prv13\Engines13_sound.sqf'";
+              // };
        };
        class FgS_prv13ver3: Radar_System_02_base_F
        {
@@ -100,10 +100,10 @@ class CfgVehicles
               typicalCargo[] = {"O_UAV_AI"};
               //ladders[] = {{""}};
               ladders[] = {{"start1","end1"},{"start2","end2"}};
-              class EventHandlers
-              {
-                     //init = "(_this select 0) execVM '\FgS_prv13\Engines13_3_sound.sqf'";
-              };
+              // class EventHandlers
+              // {
+              //        //init = "(_this select 0) execVM '\FgS_prv13\Engines13_3_sound.sqf'";
+              // };
               class Components {
                      class SensorsManagerComponent {
                             class Components {
@@ -220,10 +220,10 @@ class CfgVehicles
               mapsize = 23;
               //ladders[] = {{""}};
               ladders[] = {{"start1","end1"},{"start2","end2"}};
-              class EventHandlers
-              {
-                     //init = "(_this select 0) execVM '\FgS_prv13\Engines13_4_sound.sqf'";
-              };
+              // class EventHandlers
+              // {
+              //        //init = "(_this select 0) execVM '\FgS_prv13\Engines13_4_sound.sqf'";
+              // };
               class Components {
                      class SensorsManagerComponent {
                             class Components {
