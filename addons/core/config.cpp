@@ -74,4 +74,4 @@ class CfgPatches {
 #include "configs\CfgASORVS.hpp"
 #include "configs\Rsc.hpp"
 #include "configs\CfgWorldType.hpp"
-#include "configs\CfgSocomdPlayerSettings.hpp"
+//#include "configs\CfgSocomdPlayerSettings.hpp"

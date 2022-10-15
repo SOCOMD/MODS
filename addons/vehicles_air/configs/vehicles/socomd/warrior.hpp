@@ -62,25 +62,27 @@
 
 // delete SOCOMD_WARRIOR_B;
 // delete SOCOMD_WARRIOR_A;
-class Heli_Transport_01_base_F; // Helicopter_Base_H
-class vtx_H60_base: Heli_Transport_01_base_F {
-    class AnimationSources;
-}; // Heli_Transport_01_base_F
-class vtx_MH60M: vtx_H60_base{
-    class Components;
-    class AnimationSources:AnimationSources{
-        class Fuelprobe_Show;
+//class Heli_Transport_01_base_F; // Helicopter_Base_H
+//class vtx_H60_base: Heli_Transport_01_base_F {
+//    class AnimationSources;
+//}; 
+// Heli_Transport_01_base_F
+// class vtx_MH60M: vtx_H60_base{
+//     class Components;
+//     class AnimationSources:AnimationSources{
+//         class Fuelprobe_Show;
         
-        class FLIR_HIDE;
-		class FLIR_BACK;
+//         class FLIR_HIDE;
+// 		class FLIR_BACK;
         
-        class RADAR_HIDE;
-        class Cockpitdoors_Hide;
-    };
-};
-class vtx_uh60M : vtx_H60_base {
-    class Components;
-};
+//         class RADAR_HIDE;
+//         class Cockpitdoors_Hide;
+//     };
+// };
+// class vtx_uh60M : vtx_H60_base {
+//     class Components;
+// };
+class vtx_uh60M;
 class SOCOMD_WARRIOR_A:vtx_uh60M {
     scope = SCOPE_PUBLIC; 
     scopeCurator = SCOPE_PUBLIC; 
@@ -93,7 +95,7 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     forceInGarage = 1; 
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.14; 
-    driverCanSee = CanSeeAll; 
+    //driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
@@ -166,31 +168,32 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
     picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
     
-    class Components: Components
-    {
-        class SensorsManagerComponent
-        {
-            class Components
-            {
-                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
-                class DatalinkSensorComponent: SensorTemplateDataLink{};
-            };
-        };
-    };
+    // class Components: Components
+    // {
+    //     class SensorsManagerComponent
+    //     {
+    //         class Components
+    //         {
+    //             class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
+    //             class DatalinkSensorComponent: SensorTemplateDataLink{};
+    //         };
+    //     };
+    // };
 };
+class vtx_MH60M;
 class SOCOMD_WARRIOR_B:vtx_MH60M{
     
-    class Components: Components
-    {
-        class SensorsManagerComponent
-        {
-            class Components
-            {
-                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
-                class DatalinkSensorComponent: SensorTemplateDataLink{};
-            };
-        };
-    };
+    // class Components: Components
+    // {
+    //     class SensorsManagerComponent
+    //     {
+    //         class Components
+    //         {
+    //             class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
+    //             class DatalinkSensorComponent: SensorTemplateDataLink{};
+    //         };
+    //     };
+    // };
     weapons[] = {"CMFlareLauncher"};
     magazines[] = {"60Rnd_CMFlareMagazine"};
     scope = SCOPE_PUBLIC; 
@@ -204,7 +207,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     forceInGarage = 1; 
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.14; 
-    driverCanSee = CanSeeAll; 
+    //driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
@@ -270,6 +273,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
             shortName = "Dash"; 
         }; 
     }; 
+    /*
     class AnimationSources:AnimationSources{
         class Fuelprobe_Show:Fuelprobe_Show{
             source="user";
@@ -295,6 +299,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
             initPhase=1;
         };
     };
+    */
     // ace_fastroping_enabled = 1;
     // ace_fastroping_ropeOrigins[] = {
     //     {1.405, 2.031, 0.05}

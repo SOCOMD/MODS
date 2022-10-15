@@ -76,10 +76,10 @@ class CfgVehicles
                 "lad1_end"
             }
         };
-        class EventHandlers
-        {
-            //init="(_this select 0) execVM '\FgS_rsp6\Engines_sound.sqf'";
-        };
+        //class EventHandlers
+        //{
+        //    //init="(_this select 0) execVM '\FgS_rsp6\Engines_sound.sqf'";
+        //};
         class Components {
             class SensorsManagerComponent {
                 class Components {
@@ -194,10 +194,10 @@ class CfgVehicles
                 "lad1_end"
             }
         };
-        class EventHandlers
-        {
-            //init="(_this select 0) execVM '\FgS_rsp6\generator_sound.sqf'";
-        };
+        //class EventHandlers
+        //{
+        //    //init="(_this select 0) execVM '\FgS_rsp6\generator_sound.sqf'";
+        //};
     };
 };
 class cfgMods

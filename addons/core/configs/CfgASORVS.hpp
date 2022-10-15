@@ -38,8 +38,7 @@ class CfgASORVS {
             //"SOCOMD_SOV_logistics_GMG_W",
             //"SOCOMD_BIKE",
             "SOCOMD_RTV_D",
-            "SOCOMD_QUADBIKE",
-            //"V12_KTM_SOCOMD"
+            "SOCOMD_QUADBIKE"
         };
     };
 
@@ -93,7 +92,6 @@ class CfgASORVS {
             "UK3CB_BAF_Box_M6_Ammo",
             "UK3CB_BAF_SupplyCrate_Ammo", 
             "UK3CB_BAF_SupplyCrate_L16_Ammo"
-
         };
     };
 };

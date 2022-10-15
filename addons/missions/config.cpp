@@ -49,7 +49,7 @@ class CfgMissions {
     //MISSION_MACRO(NOVUSSOULTANOAFOB,SOCOMD Tanoa FOB (Novus-Soul),fobs\FOB_Soul.Tanoa)
     //MISSION_MACRO(NOVUSZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Novus-Zanzibar),fobs\FOB_Novus-Zanzibar.takistan)
 
-    MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\29_03_2022_FOB_SOCOMD_Essentials.VR)
+    MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\30_09_2022_FOB_SOCOMD_Essentials.VR)
     MISSION_MACRO(HOLDOFFFOB,SOCOMD Anizay FOB (Hold Off),fobs\FOB_HoldOff.tem_anizay)
     MISSION_MACRO(NOVUSCHERNOFOB,SOCOMD Chernarus FOB (Novus Cherno),fobs\FOB_Novus_Cherno.cup_chernarus_A3)
     MISSION_MACRO(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus Kookaburra),fobs\FOB_Novus_Kookaburra.Altis)
