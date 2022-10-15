@@ -355,8 +355,8 @@ class SOCOMD_Specialist {
     class Vest {
         type = ITEM_VEST_RIFLEMAN;
         class Inventory    {
-            LOADOUT_ITEM(SmokeShell, 5) \
-            LOADOUT_ITEM(ACRE_PRC343, 1) \
+            LOADOUT_ITEM(SmokeShell, 5)
+            LOADOUT_ITEM(ACRE_PRC343, 1)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
             LOADOUT_ITEM(SOCOMD_NVG, 1) 
             LOADOUT_ITEM(ACE_CableTie, 4)
