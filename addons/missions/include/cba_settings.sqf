@@ -533,25 +533,25 @@ diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
 // Enhanced Movement Rework
-force force emr_main_allowMidairClimbing = true;
-force force emr_main_animSpeedCoef = 1.0;
-force force emr_main_animSpeedStaminaCoef = 0.50;
-force force emr_main_climbingEnabled = true;
-emr_main_climbOnDuty = 1.5;
-emr_main_climbOverDuty = 1.5;
-emr_main_dropDuty = 0.8;
-emr_main_dropViewElevation = -0.7;
-emr_main_enableWalkableSurface = true;
-force force emr_main_enableWeightCheck = false;
-emr_main_hintType = 2;
-emr_main_jumpDuty = 1;
-force force emr_main_jumpingEnabled = true;
-emr_main_jumpingLoadCoefficient = 0.5;
-emr_main_jumpVelocity = 2;
-force force emr_main_maxClimbHeight = 2.6;
-force force emr_main_maxDropHeight = 4.5;
-emr_main_preventHighVaulting = false;
-emr_main_staminaCoefficient = 1;
+// force force emr_main_allowMidairClimbing = true;
+// force force emr_main_animSpeedCoef = 1.0;
+// force force emr_main_animSpeedStaminaCoef = 0.50;
+// force force emr_main_climbingEnabled = true;
+// emr_main_climbOnDuty = 1.5;
+// emr_main_climbOverDuty = 1.5;
+// emr_main_dropDuty = 0.8;
+// emr_main_dropViewElevation = -0.7;
+// emr_main_enableWalkableSurface = true;
+// force force emr_main_enableWeightCheck = false;
+// emr_main_hintType = 2;
+// emr_main_jumpDuty = 1;
+// force force emr_main_jumpingEnabled = true;
+// emr_main_jumpingLoadCoefficient = 0.5;
+// emr_main_jumpVelocity = 2;
+// force force emr_main_maxClimbHeight = 2.6;
+// force force emr_main_maxDropHeight = 4.5;
+// emr_main_preventHighVaulting = false;
+// emr_main_staminaCoefficient = 1;
 
 // KAT - ADV Medical: Airway
 force kat_airway_Accuvac_time = 8;
