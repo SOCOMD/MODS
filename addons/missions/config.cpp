@@ -48,8 +48,8 @@ class CfgMissions {
     //MISSION_MACRO(NOVUSRUSSELMALDENFOB,SOCOMD Malden FOB (Novus-Russel),fobs\FOB_Novus-Russell.Malden)
     //MISSION_MACRO(NOVUSSOULTANOAFOB,SOCOMD Tanoa FOB (Novus-Soul),fobs\FOB_Soul.Tanoa)
     //MISSION_MACRO(NOVUSZANZIBARTAKISTANFOB,SOCOMD Takistan FOB (Novus-Zanzibar),fobs\FOB_Novus-Zanzibar.takistan)
+    //MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\30_09_2022_FOB_SOCOMD_Essentials.VR)
 
-    MISSION_MACRO(ESSENTIALSFOB,SOCOMD Essentials FOB (VR),fobs\30_09_2022_FOB_SOCOMD_Essentials.VR)
     MISSION_MACRO(HOLDOFFFOB,SOCOMD Anizay FOB (Hold Off),fobs\FOB_HoldOff.tem_anizay)
     MISSION_MACRO(NOVUSCHERNOFOB,SOCOMD Chernarus FOB (Novus Cherno),fobs\FOB_Novus_Cherno.cup_chernarus_A3)
     MISSION_MACRO(NOVUSKOOKABURRAALTISFOB,SOCOMD Altis FOB (Novus Kookaburra),fobs\FOB_Novus_Kookaburra.Altis)
@@ -81,7 +81,7 @@ class CfgMissions {
 
 //    Training
     //MISSION_MACRO(STRATISTRAIN,SOCOMD Training Stratis (Airfield),missions\SOCOMD_Training.Stratis)
-    MISSION_MACRO(ALTISTRAIN,SOCOMD Training Altis Refurbished,missions\SOCOMD_Training.Altis)
+    //MISSION_MACRO(ALTISTRAIN,SOCOMD Training Altis Refurbished,missions\SOCOMD_Training.Altis)
 
     };
 };

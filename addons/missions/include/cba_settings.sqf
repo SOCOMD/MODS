@@ -48,7 +48,7 @@ ace_casings_maxCasings = 100;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['KS_AVD','UAV_Turret_Markers', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
+force force ace_common_checkPBOsWhitelist = "['viewDistance_TAW', 'Perceptive', 'DTVD', 'simplesuppress_main', 'simplesuppress_suppress', 'MIRA_Vehicle_Medical', 'aceAresenalCatagory', 'dwyl_main', 'bettinv_main', 'bettinv_main_ace', 'UAV_Turret_Markers', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'mrb_a3_vehiclevisibility', 'mrb_a3_airvisibility', 'mrb_a3_seavesselvisibility', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'jac_zeus_target_position', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
 ace_common_displayTextColor = [0,0,0,0.1];
 ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_settingFeedbackIcons = 1;
@@ -682,12 +682,12 @@ force force lambs_main_radioWest = 1500;
 force force niarms_magSwitch = true;
 
 // Simple Suppress
-force force simplesuppress_suppress_checkLOS = false;
-force force simplesuppress_suppress_overlayFadeoutTime = 10;
-force force simplesuppress_suppress_overlayOpacity = 0.96;
-force force simplesuppress_suppress_overlayTexture = 1;
-force force simplesuppress_suppress_projectileMaxDistance = 9;
-force force simplesuppress_suppress_shooterMinDistance = 0;
+// force force simplesuppress_suppress_checkLOS = false;
+// force force simplesuppress_suppress_overlayFadeoutTime = 10;
+// force force simplesuppress_suppress_overlayOpacity = 0.96;
+// force force simplesuppress_suppress_overlayTexture = 1;
+// force force simplesuppress_suppress_projectileMaxDistance = 9;
+// force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // TSP Breach
 force force tsp_cba_breach = true;
@@ -761,8 +761,3 @@ force force acre_sys_core_revealToAI = 0.8;
 force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_signal_signalModel = 0;
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
-
-// SOCOMD Medical
-// force force SOCOMD_medical_persistantRevive = true;
-// force force SOCOMD_medical_persistantReviveTimer = 330;
-// force force socomd_defib_Defib_Chance = 90;
