@@ -12,7 +12,7 @@
     LOADOUT_ITEM(ACE_quikclot, 15) \
     LOADOUT_ITEM(ACE_epinephrine, 2) \
     LOADOUT_ITEM(ACE_morphine, 2) \
-    LOADOUT_ITEM(ACE_tourniquet, 2) \
+    LOADOUT_ITEM(ACE_tourniquet, 4) \
     LOADOUT_ITEM(kat_Painkiller, 1) \
     LOADOUT_ITEM(kat_chestSeal, 2) 
 
@@ -99,7 +99,7 @@
     LOADOUT_ITEM(ACE_quikclot, 15) \
     LOADOUT_ITEM(ACE_epinephrine, 2) \
     LOADOUT_ITEM(ACE_morphine, 2) \
-    LOADOUT_ITEM(ACE_tourniquet, 2) \
+    LOADOUT_ITEM(ACE_tourniquet, 4) \
     LOADOUT_ITEM(kat_Painkiller, 1) \
     LOADOUT_ITEM(kat_chestSeal, 2) \
     LOADOUT_ITEM(kat_guedel, 2) \
@@ -345,7 +345,7 @@ class SOCOMD_Specialist {
             LOADOUT_ITEM(ACE_quikclot, 15) 
             LOADOUT_ITEM(ACE_epinephrine, 2) 
             LOADOUT_ITEM(ACE_morphine, 2) 
-            LOADOUT_ITEM(ACE_tourniquet, 2) 
+            LOADOUT_ITEM(ACE_tourniquet, 4) 
             LOADOUT_ITEM(kat_Painkiller, 1) 
             LOADOUT_ITEM(kat_chestSeal, 2) 
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)

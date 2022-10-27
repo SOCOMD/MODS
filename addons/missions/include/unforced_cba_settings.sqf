@@ -106,7 +106,7 @@ acex_headless_transferLoadout = 1;
 ace_hearing_autoAddEarplugsToUnits = true;
 ace_hearing_disableEarRinging = true;
 ace_hearing_earplugsVolume = 1;
-ace_hearing_enableCombatDeafness = false;
+ace_hearing_enableCombatDeafness = true;
 ace_hearing_enabledForZeusUnits = false;
 ace_hearing_unconsciousnessVolume = 0.2;
 
@@ -191,9 +191,9 @@ ace_maptools_rotateModifierKey = 1;
 ace_medical_ai_enabledFor = 0;
 ace_medical_AIDamageThreshold = 0.86088;
 ace_medical_bleedingCoefficient = 0.28;
-ace_medical_blood_bloodLifetime = 900;
+ace_medical_blood_bloodLifetime = 500;
 ace_medical_blood_enabledFor = 2;
-ace_medical_blood_maxBloodObjects = 500;
+ace_medical_blood_maxBloodObjects = 200;
 ace_medical_deathChance = 1;
 ace_medical_enableVehicleCrashes = true;
 ace_medical_fatalDamageSource = 1;
@@ -238,13 +238,13 @@ ace_medical_treatment_holsterRequired = 0;
 ace_medical_treatment_litterCleanupDelay = 300;
 ace_medical_treatment_locationEpinephrine = 0;
 ace_medical_treatment_locationIV = 0;
-ace_medical_treatment_locationPAK = 4;
+ace_medical_treatment_locationPAK = 0;
 ace_medical_treatment_locationsBoostTraining = true;
 ace_medical_treatment_locationSurgicalKit = 0;
 ace_medical_treatment_maxLitterObjects = 200;
 ace_medical_treatment_medicEpinephrine = 0;
 ace_medical_treatment_medicIV = 0;
-ace_medical_treatment_medicPAK = 2;
+ace_medical_treatment_medicPAK = 0;
 ace_medical_treatment_medicSurgicalKit = 0;
 ace_medical_treatment_timeCoefficientPAK = 5;
 ace_medical_treatment_treatmentTimeAutoinjector = 5;
@@ -451,6 +451,17 @@ acex_field_rations_timeWithoutWater = 2;
 // ACEX Sitting
 acex_sitting_enable = true;
 
+// Advanced Vault System
+AVS_Jump_MAINWEAP_X = "2.5";
+AVS_Jump_MAINWEAP_Z = "1.7";
+AVS_Jump_PIST_X = "2.5";
+AVS_Jump_PIST_Z = "1.7";
+AVS_Jump_UNARMED_X = "3";
+AVS_Jump_UNARMED_Z = "2";
+AVS_Jumping = true;
+AVS_Rolling = false;
+AVS_Sliding = true;
+
 // CBA Network
 cba_network_loadoutValidation = 0;
 
@@ -553,6 +564,50 @@ diwako_dui_use_layout_editor = false;
 // emr_main_preventHighVaulting = false;
 // emr_main_staminaCoefficient = 1;
 
+// GRAD CaptiveWalkingAnimation
+grad_captiveWalking_functions_allowFreeing = true;
+grad_captiveWalking_functions_allowRunning = false;
+grad_captiveWalking_functions_allowWalkingWhileCaptiv = true;
+grad_captiveWalking_functions_disableEscorting = false;
+grad_captiveWalking_functions_freeingTime = 144;
+
+// GRAD Trenches
+grad_trenches_functions_allowBigEnvelope = true;
+grad_trenches_functions_allowCamouflage = true;
+grad_trenches_functions_allowDigging = true;
+grad_trenches_functions_allowEffects = true;
+grad_trenches_functions_allowGiantEnvelope = true;
+grad_trenches_functions_allowHitDecay = true;
+grad_trenches_functions_allowLongEnvelope = true;
+grad_trenches_functions_allowShortEnvelope = true;
+grad_trenches_functions_allowSmallEnvelope = true;
+grad_trenches_functions_allowTrenchDecay = false;
+grad_trenches_functions_allowVehicleEnvelope = true;
+grad_trenches_functions_bigEnvelopeDamageMultiplier = 2;
+grad_trenches_functions_bigEnvelopeDigTime = 40;
+grad_trenches_functions_bigEnvelopeRemovalTime = 19.6956;
+grad_trenches_functions_buildFatigueFactor = 0.279786;
+grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
+grad_trenches_functions_createTrenchMarker = false;
+grad_trenches_functions_decayTime = 1800;
+grad_trenches_functions_giantEnvelopeDamageMultiplier = 1;
+grad_trenches_functions_giantEnvelopeDigTime = 90;
+grad_trenches_functions_giantEnvelopeRemovalTime = 23.5621;
+grad_trenches_functions_hitDecayMultiplier = 0.725001;
+grad_trenches_functions_LongEnvelopeDigTime = 100;
+grad_trenches_functions_LongEnvelopeRemovalTime = 24;
+grad_trenches_functions_shortEnvelopeDamageMultiplier = 2;
+grad_trenches_functions_shortEnvelopeDigTime = 15;
+grad_trenches_functions_shortEnvelopeRemovalTime = 7.20556;
+grad_trenches_functions_smallEnvelopeDamageMultiplier = 3;
+grad_trenches_functions_smallEnvelopeDigTime = 30;
+grad_trenches_functions_smallEnvelopeRemovalTime = 14.5303;
+grad_trenches_functions_stopBuildingAtFatigueMax = true;
+grad_trenches_functions_timeoutToDecay = 7200;
+grad_trenches_functions_vehicleEnvelopeDamageMultiplier = 1;
+grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+grad_trenches_functions_vehicleEnvelopeRemovalTime = 24;
+
 // KAT - ADV Medical: Airway
 kat_airway_Accuvac_time = 8;
 kat_airway_CancelRecoveryPosition_Time = 6;
@@ -604,7 +659,7 @@ kat_circulation_AED_BeepsAndCharge = true;
 kat_circulation_blood_draw_limit = 4;
 kat_circulation_blood_drawTime_250ml = 15;
 kat_circulation_blood_drawTime_500ml = 30;
-kat_circulation_bloodgroup = "A-";
+kat_circulation_bloodgroup = "A+";
 kat_circulation_bloodGroups = false;
 kat_circulation_CPR_Chance_Default =40;
 kat_circulation_CPR_Chance_Doctor = 40;
@@ -630,7 +685,7 @@ kat_pharma_IOestablish = 3;
 kat_pharma_IVdrop = 600;
 kat_pharma_IVdropEnable = true;
 kat_pharma_IVestablish = 3;
-kat_pharma_IVmedic = 2;
+kat_pharma_IVmedic = 0;
 kat_pharma_IVreuse = false;
 kat_pharma_medLvl_Reorientation = 0;
 kat_pharma_naloxoneActive = true;

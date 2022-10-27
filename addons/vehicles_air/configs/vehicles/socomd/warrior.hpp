@@ -82,8 +82,8 @@
 // class vtx_uh60M : vtx_H60_base {
 //     class Components;
 // };
-class vtx_uh60M;
-class SOCOMD_WARRIOR_A:vtx_uh60M {
+class vtx_UH60M;
+class SOCOMD_WARRIOR_A:vtx_UH60M {
     scope = SCOPE_PUBLIC; 
     scopeCurator = SCOPE_PUBLIC; 
     editorCategory = SOCOMD_EdCat_Core; 
@@ -95,7 +95,7 @@ class SOCOMD_WARRIOR_A:vtx_uh60M {
     forceInGarage = 1; 
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.14; 
-    //driverCanSee = CanSeeAll; 
+    driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 
@@ -207,7 +207,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
     forceInGarage = 1; 
     fuelCapacity = 1360; 
     fuelConsumptionRate = 0.14; 
-    //driverCanSee = CanSeeAll; 
+    driverCanSee = CanSeeAll; 
     crew = UNIT_SOCOMD_PILOT; 
     cost = 40000; 
     threat[] = {1.0,0.9,0.9}; 

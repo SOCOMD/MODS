@@ -52,6 +52,7 @@ class CfgWorldType {
 
     class Snow {
         class Chernarus_winter;
+        class bala_murghab_winter;
         //class ThirskW; //Thirsk Winter
     };
 };
