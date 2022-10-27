@@ -14,12 +14,12 @@ class CfgWorldType {
         class pja310; //Al-Rayak
         //class MCN_Aliabad;
         class tem_anizay;
-        class DYA; //Diyala
+        //class DYA; //Diyala
         class fata;
         //class MCN_HazarKot;
-        class IslaDuala3;
+        //class IslaDuala3;
         class Kunduz;
-        class kujari;
+        //class kujari;
         class lythium;        
         class Tanoa;
         class Enoch; //Livonia
@@ -35,15 +35,15 @@ class CfgWorldType {
         class utes;
         class Bozcaada;
         //class Panthera3;
-        class pulau;
+        //class pulau;
         class WL_Rosche;
         class ruha;
-        class tem_suursaariv;
+        //class tem_suursaariv;
         //class Thirsk;
-        class tem_vinjesvingenc;
-        class pja305; //N'Ziwasogo
-        class egl_laghisola;
-        class fapavo;
+        //class tem_vinjesvingenc;
+        //class pja305; //N'Ziwasogo
+        //class egl_laghisola;
+        //class fapavo;
         //class pja312; // Song Bin Tanh
         class jns_tria;
         class vt7; // Virolahti
