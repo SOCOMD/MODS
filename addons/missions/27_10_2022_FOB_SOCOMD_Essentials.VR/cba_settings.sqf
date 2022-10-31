@@ -79,7 +79,6 @@ force force ace_explosives_requireSpecialist = false;
 force force ace_fire_enabled = false;
 
 // ACE Fortify
-force ace_fortify_markObjectsOnMap = 0;
 force force ace_fortify_timeCostCoefficient = 0.1;
 force force ace_fortify_timeMin = 0.25;
 force force acex_fortify_settingHint = 0;
@@ -544,59 +543,33 @@ force diwako_dui_radar_vehicleCompassEnabled = false;
 diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
+// Enhanced Movement Rework
+// force force emr_main_allowMidairClimbing = true;
+// force force emr_main_animSpeedCoef = 1.0;
+// force force emr_main_animSpeedStaminaCoef = 0.50;
+// force force emr_main_climbingEnabled = true;
+// emr_main_climbOnDuty = 1.5;
+// emr_main_climbOverDuty = 1.5;
+// emr_main_dropDuty = 0.8;
+// emr_main_dropViewElevation = -0.7;
+// emr_main_enableWalkableSurface = true;
+// force force emr_main_enableWeightCheck = false;
+// emr_main_hintType = 2;
+// emr_main_jumpDuty = 1;
+// force force emr_main_jumpingEnabled = true;
+// emr_main_jumpingLoadCoefficient = 0.5;
+// emr_main_jumpVelocity = 2;
+// force force emr_main_maxClimbHeight = 2.6;
+// force force emr_main_maxDropHeight = 4.5;
+// emr_main_preventHighVaulting = false;
+// emr_main_staminaCoefficient = 1;
+
 // GRAD CaptiveWalkingAnimation
 force force grad_captiveWalking_functions_allowFreeing = true;
 force force grad_captiveWalking_functions_allowRunning = false;
 force force grad_captiveWalking_functions_allowWalkingWhileCaptiv = true;
 force force grad_captiveWalking_functions_disableEscorting = false;
 force force grad_captiveWalking_functions_freeingTime = 144;
-
-// GRAD Civilians
-grad_civs_activities_panicCooldown = "[15, 120, 240]";
-grad_civs_cars_animalTransportChance = 0.4;
-grad_civs_cars_animalTransportVehicles = "";
-grad_civs_cars_automaticVehicleGroupSize = true;
-grad_civs_cars_globalSpeedLimit = 50;
-grad_civs_cars_townSpeedLimit = 30;
-grad_civs_cars_vehicles = "C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open";
-grad_civs_diagnostics_showFps = false;
-grad_civs_diagnostics_showInfoLine = false;
-grad_civs_diagnostics_showMisc = false;
-grad_civs_diagnostics_showOnMap = false;
-grad_civs_diagnostics_showPinkArrows = false;
-grad_civs_diagnostics_showSpawnAttempts = false;
-grad_civs_diagnostics_showSpeedLimitsOnMap = false;
-grad_civs_gta_enabled = false;
-grad_civs_lifecycle_civClasses = "C_Man_ConstructionWorker_01_Black_F, C_man_hunter_1_F, C_Man_Messenger_01_F, C_Man_casual_5_F_tanoan, C_Man_casual_3_F_tanoan, UK3CB_ADC_C_CIV_ISL, UK3CB_ADC_C_CIV_CHR, UK3CB_ADC_C_LABOURER_ISL, UK3CB_ADC_C_WORKER, UK3CB_ADC_C_WOOD, UK3CB_ADC_C_CIV_ISL_01, UK3CB_TKC_C_CIV, UK3CB_TKC_C_WORKER, UK3CB_ADC_C_SPOT_CHR, UK3CB_ADC_C_SPOT_ISL";
-grad_civs_lifecycle_cleanupCorpses = true;
-grad_civs_lifecycle_minCivOwnerFps = 40;
-grad_civs_lifecycle_minCivUpdateTime = 3;
-grad_civs_lifecycle_minServerFps = 50;
-grad_civs_lifecycle_smMultiplicator = 1;
-grad_civs_lifecycle_spawnCandidateHeightLimit = 200;
-grad_civs_lifecycle_spawnCandidateLimitEnabled = true;
-grad_civs_lifecycle_spawnCandidateSpeedLimit = 75;
-grad_civs_lifecycle_spawnOnlyWithPlayers = true;
-grad_civs_loadout_backpackProbability = 0.2;
-grad_civs_loadout_backpacks = "[]";
-grad_civs_loadout_clothes = "[]";
-grad_civs_loadout_faces = "[]";
-grad_civs_loadout_goggles = "[]";
-grad_civs_loadout_headgear = "[]";
-grad_civs_main_enabled = true;
-grad_civs_mimikry_enabled = false;
-grad_civs_patrol_initialGroupSize = 2;
-grad_civs_patrol_maxCivsOnFoot = 20;
-grad_civs_patrol_spawnDistancesOnFoot = "[200, 550]";
-grad_civs_residents_chatTime = 20;
-grad_civs_residents_maxCivsResidents = 12;
-grad_civs_residents_meetNeighborCooldown = 250;
-grad_civs_residents_spawnDistancesResidents = "[200, 550]";
-grad_civs_transit_maxVehiclesInTransit = 4;
-grad_civs_transit_vehicles = "[C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open]";
-grad_civs_voyage_maxCivsInVehicles = 3;
-grad_civs_voyage_maxTravelRadius = 2500;
-grad_civs_voyage_spawnDistancesInVehicles = "[1500, 3000]";
 
 // GRAD Trenches
 force force grad_trenches_functions_allowBigEnvelope = true;
@@ -763,11 +736,13 @@ force force lambs_main_radioWest = 1500;
 // NIArms
 force force niarms_magSwitch = true;
 
-// Simple Craters
-force simplecraters_setting_allowGroundTextures = true;
-force simplecraters_setting_allowSmallExplosions = false;
-force simplecraters_setting_craterScale = 1;
-force simplecraters_setting_debugMode = false;
+// Simple Suppress
+// force force simplesuppress_suppress_checkLOS = false;
+// force force simplesuppress_suppress_overlayFadeoutTime = 10;
+// force force simplesuppress_suppress_overlayOpacity = 0.96;
+// force force simplesuppress_suppress_overlayTexture = 1;
+// force force simplesuppress_suppress_projectileMaxDistance = 9;
+// force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // TSP Breach
 force force tsp_cba_breach = true;
