@@ -23,3 +23,9 @@ class Item_Base_F;
 
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
+
+class ace_medical_treatment_actions {
+	class BasicBandage {
+		treatmentTime = "0.5 * (call ace_medical_treatment_fnc_getBandageTime)";
+	};
+};
