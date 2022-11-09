@@ -113,11 +113,11 @@ class CfgLoadoutWeapons {
         };
     };
 
-    class Rifle_300 {
-        magazines[] = {
-            {"hlc_5rnd_300WM_FMJ_AWM", 12}
-        };
-    };
+    // class Rifle_300 {
+    //     magazines[] = {
+    //         {"hlc_5rnd_300WM_FMJ_AWM", 12}
+    //     };
+    // };
     // class SSO_Rifle_338 {
     //     magazines[] ={
     //         {"rhs_5Rnd_338lapua_t5000",12}

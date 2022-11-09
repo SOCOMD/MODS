@@ -226,7 +226,6 @@
     "ACWP_5rnd_338LM_APDS",\
     "5Rnd_338LM_Magazine",\
     "5Rnd_APDS_338LM_Magazine",\
-    "hlc_5rnd_300WM_FMJ_AWM",\
     "10Rnd_300WM_Magazine"
 
 #define LAUNCHERS \

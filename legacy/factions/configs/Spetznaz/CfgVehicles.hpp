@@ -48,8 +48,8 @@ class cfgVehicles
     respawnWeapons[]={"socomd_spetznaz_rhs_weap_ak105_zenitco01_b33_grip1_rhs_acc_dtk3rhs_acc_2dpZenit_risacwp_eotechrhs_acc_grip_ffg2","Put","Throw"};
     items[]={"FirstAidKit"};
     respawnItems[]={"FirstAidKit"};
-    magazines[]={"rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_mag_rgn","ACE_M84","ACE_M84","ACE_M84","ACE_M84","tsp_popperCharge_mag","tsp_popperCharge_mag","ACE_CTS9","ACE_CTS9","ACE_CTS9","ACE_CTS9"};
-    respawnMagazines[]={"rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_mag_rgn","ACE_M84","ACE_M84","ACE_M84","ACE_M84","tsp_popperCharge_mag","tsp_popperCharge_mag","ACE_CTS9","ACE_CTS9","ACE_CTS9","ACE_CTS9"};
+    magazines[]={"rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_mag_rgn","ACE_M84","ACE_M84","ACE_M84","ACE_M84","AMP_Breaching_Charge_Mag","AMP_Breaching_Charge_Mag","ACE_CTS9","ACE_CTS9","ACE_CTS9","ACE_CTS9"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_30Rnd_545x39_7N10_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_mag_rgn","ACE_M84","ACE_M84","ACE_M84","ACE_M84","AMP_Breaching_Charge_Mag","AMP_Breaching_Charge_Mag","ACE_CTS9","ACE_CTS9","ACE_CTS9","ACE_CTS9"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_1PN138","AGE_Fast_Black_C_P","AGE_WAS_Heavy_AK_MultiCam","UK3CB_G_Balaclava2_DES","rhs_1PN138"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_1PN138","AGE_Fast_Black_C_P","AGE_WAS_Heavy_AK_MultiCam","UK3CB_G_Balaclava2_DES","rhs_1PN138"};
     backpack="socomd_spetznaz_Point_Man_pack";
@@ -228,7 +228,7 @@ class cfgVehicles
     scope=1;
     class TransportMagazines
     {
-     class _xx_tsp_popperCharge_mag {count=2;magazine="tsp_popperCharge_mag";};
+     class _xx_AMP_Breaching_Charge_Mag {count=2;magazine="AMP_Breaching_Charge_Mag";};
      class _xx_ACE_CTS9 {count=4;magazine="ACE_CTS9";};
     };
     class TransportItems{};

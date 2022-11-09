@@ -28,11 +28,7 @@ force force ace_vehicle_damage_enabled = false;
 // ACE Arsenal
 force force socomd_Arsenal_allowDefaultLoadouts = true;
 force force socomd_Arsenal_allowSharedLoadouts = true;
-socomd_Arsenal_camInverted = false;
 force force socomd_Arsenal_enableIdentityTabs = true;
-socomd_Arsenal_enableModIcons = true;
-socomd_Arsenal_EnableRPTLog = false;
-socomd_Arsenal_fontHeight = 4.5;
 
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
@@ -41,18 +37,18 @@ force force ace_captives_requireSurrender = 0;
 force force ace_captives_requireSurrenderAi = false;
 
 // ACE Casings
-ace_casings_enabled = false;
-ace_casings_maxCasings = 100;
+force force ace_casings_enabled = false;
+force force ace_casings_maxCasings = 100;
 
 // ACE Common
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 2;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "['viewDistance_TAW', 'Perceptive', 'DTVD', 'simplesuppress_main', 'simplesuppress_suppress', 'MIRA_Vehicle_Medical', 'aceAresenalCatagory', 'dwyl_main', 'bettinv_main', 'bettinv_main_ace', 'UAV_Turret_Markers', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'jac_zeus_target_position', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
-ace_common_displayTextColor = [0,0,0,0.1];
-ace_common_displayTextFontColor = [1,1,1,1];
-ace_common_settingFeedbackIcons = 1;
-ace_common_settingProgressBarLocation = 1;
+force force ace_common_checkPBOsWhitelist = "['DNI_ZeusFPSMonitor', 'viewDistance_TAW', 'Perceptive', 'DTVD', 'simplesuppress_main', 'simplesuppress_suppress', 'MIRA_Vehicle_Medical', 'aceAresenalCatagory', 'dwyl_main', 'bettinv_main', 'bettinv_main_ace', 'UAV_Turret_Markers', 'jsrs_soundmod_boats', 'jsrs_soundmod_bullethits', 'jsrs_soundmod_complete_edition', 'jsrs_soundmod_complete_edition_soundfiles', 'jsrs_soundmod_environment', 'jsrs_soundmod_explosions', 'jsrs_soundmod_framework', 'jsrs_soundmod_helicopters', 'jsrs_soundmod_landvehicles', 'jsrs_soundmod_movement', 'jsrs_soundmod_sonic_cracks', 'jsrs_soundmod_specialist_military_arms_weapons', 'jsrs_soundmod_weapons', 'jsrs_soundmod_rhs_saf_weapons', 'jsrs_soundmod_rhs_gref_weapons', 'jsrs_soundmod_cfg_rhs_usf_air_vehicles', 'jsrs_soundmod_cfg_rhs_usf_vehicles', 'jsrs_soundmod_rhs_usf_weapons', 'jsrs_soundmod_cfg_rhs_usf_weapons', 'jsrs_soundmod_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_weapons', 'jsrs_soundmod_cfg_rhs_afrf_vehicles', 'jsrs_soundmod_cfg_rhs_afrf_air_vehicles', 'monk_jsrs_soundmod_patch', 'L_Immerse_Immerse_main', 'L_Immerse_Immerse_sys', 'ReducedHazeMod', 'A3TI', 'cine_uavkeybinds_main', 'cine_uavkeybinds_uav', 'HeadRangePlus', 'CrowsZA', 'ZEI', 'zeus_keybinds_main', 'zeus_keybinds', 'jac_zeus_target_position', 'ZECCUP', 'compositions_a3', 'PZC', 'Darth_Potatos_Building_Templates']";
+// ace_common_displayTextColor = [0,0,0,0.1];
+// ace_common_displayTextFontColor = [1,1,1,1];
+// ace_common_settingFeedbackIcons = 1;
+// ace_common_settingProgressBarLocation = 1;
 force force ace_noradio_enabled = true;
 force force ace_parachute_hideAltimeter = false;
 
@@ -65,7 +61,7 @@ force force ace_cookoff_probabilityCoef = 0.5;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 1;
-ace_csw_dragAfterDeploy = true;
+force force ace_csw_dragAfterDeploy = true;
 
 // ACE Dragging
 force force ace_dragging_dragAndFire = true;
@@ -79,7 +75,7 @@ force force ace_explosives_requireSpecialist = false;
 force force ace_fire_enabled = false;
 
 // ACE Fortify
-force ace_fortify_markObjectsOnMap = 0;
+force force ace_fortify_markObjectsOnMap = 0;
 force force ace_fortify_timeCostCoefficient = 0.1;
 force force ace_fortify_timeMin = 0.25;
 force force acex_fortify_settingHint = 0;
@@ -92,9 +88,9 @@ force force ace_frag_reflectionsEnabled = false;
 force force ace_frag_spallEnabled = false;
 
 // ACE Goggles
-ace_goggles_effects = 2;
-ace_goggles_showInThirdPerson = false;
-ace_goggles_showClearGlasses = true;
+// ace_goggles_effects = 2;
+// ace_goggles_showInThirdPerson = false;
+// ace_goggles_showClearGlasses = true;
 
 // ACE Headless
 force force acex_headless_delay = 10;
@@ -108,7 +104,7 @@ force force ace_hearing_autoAddEarplugsToUnits = true;
 force force ace_hearing_disableEarRinging = true;
 force force ace_hearing_earplugsVolume = 1;
 force force ace_hearing_enableCombatDeafness = true;
-ace_hearing_enabledForZeusUnits = false;
+force force ace_hearing_enabledForZeusUnits = false;
 force force ace_hearing_unconsciousnessVolume = 0.2;
 
 // ACE Interaction
@@ -119,22 +115,22 @@ force force ace_interaction_enableGroupRenaming = true;
 force force ace_interaction_interactWithTerrainObjects = false;
 
 // ACE Interaction Menu
-ace_gestures_showOnInteractionMenu = 2;
-ace_interact_menu_actionOnKeyRelease = true;
-ace_interact_menu_addBuildingActions = true;
-ace_interact_menu_alwaysUseCursorInteraction = true;
-ace_interact_menu_alwaysUseCursorSelfInteraction = true;
-ace_interact_menu_colorShadowMax = [0,0,0,1];
-ace_interact_menu_colorShadowMin = [0,0,0,0.25];
-ace_interact_menu_colorTextMax = [1,1,1,1];
-ace_interact_menu_colorTextMin = [1,1,1,0.25];
-ace_interact_menu_cursorKeepCentered = false;
-ace_interact_menu_menuAnimationSpeed = 2;
-ace_interact_menu_menuBackground = 0;
-ace_interact_menu_selectorColor = [1,0,0];
-ace_interact_menu_shadowSetting = 2;
-ace_interact_menu_textSize = 1;
-ace_interact_menu_useListMenu = true;
+// ace_gestures_showOnInteractionMenu = 2;
+// ace_interact_menu_actionOnKeyRelease = true;
+// ace_interact_menu_addBuildingActions = true;
+// ace_interact_menu_alwaysUseCursorInteraction = true;
+// ace_interact_menu_alwaysUseCursorSelfInteraction = true;
+// ace_interact_menu_colorShadowMax = [0,0,0,1];
+// ace_interact_menu_colorShadowMin = [0,0,0,0.25];
+// ace_interact_menu_colorTextMax = [1,1,1,1];
+// ace_interact_menu_colorTextMin = [1,1,1,0.25];
+// ace_interact_menu_cursorKeepCentered = false;
+// ace_interact_menu_menuAnimationSpeed = 2;
+// ace_interact_menu_menuBackground = 0;
+// ace_interact_menu_selectorColor = [1,0,0];
+// ace_interact_menu_shadowSetting = 2;
+// ace_interact_menu_textSize = 1;
+// ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
@@ -166,23 +162,15 @@ force force ace_map_BFT_Enabled = false;
 force force ace_map_BFT_HideAiGroups = true;
 force force ace_map_BFT_Interval = 1;
 force force ace_map_BFT_ShowPlayerNames = false;
-ace_map_DefaultChannel = 1;
-ace_map_mapGlow = true;
-ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
-ace_map_mapShake = true;
-ace_map_mapShowCursorCoordinates = false;
-ace_markers_moveRestriction = 0;
+force force ace_markers_moveRestriction = 0;
 
 // ACE Map Gestures
-ace_map_gestures_defaultColor = [1,0.720811,0,0.503564];
-ace_map_gestures_defaultLeadColor = [1,0.70967,0,1];
 force force ace_map_gestures_enabled = true;
 force force ace_map_gestures_interval = 0.03;
 force force ace_map_gestures_allowSpectator = true;
-force ace_map_gestures_allowCurator = true;
+force force ace_map_gestures_allowCurator = true;
 force force ace_map_gestures_maxRange = 10;
-ace_map_gestures_nameTextColor = [0,0,0,1];
 
 // ACE Map Tools
 force force ace_maptools_drawStraightLines = true;
@@ -199,15 +187,15 @@ force force ace_medical_deathChance = 1;
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_fatalDamageSource = 1;
 force force ace_medical_feedback_bloodVolumeEffectType = 0;
-ace_medical_feedback_painEffectType = 2;
+force force ace_medical_feedback_painEffectType = 2;
 force force ace_medical_fractureChance = 0.8;
 force force ace_medical_fractures = 0;
-ace_medical_gui_enableActions = 0;
-ace_medical_gui_enableMedicalMenu = 1;
-ace_medical_gui_enableSelfActions = true;
-ace_medical_gui_interactionMenuShowTriage = 1;
+force force ace_medical_gui_enableActions = 0;
+force force ace_medical_gui_enableMedicalMenu = 1;
+force force ace_medical_gui_enableSelfActions = true;
+force force ace_medical_gui_interactionMenuShowTriage = 1;
 force force ace_medical_gui_maxDistance = 3;
-ace_medical_gui_openAfterTreatment = true;
+force force ace_medical_gui_openAfterTreatment = true;
 force force ace_medical_ivFlowRate = 2.20601;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
@@ -264,23 +252,23 @@ force force ace_mk6mortar_allowComputerRangefinder = false;
 force force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Name Tags
-ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
-ace_nametags_playerNamesMaxAlpha = 0.8;
-ace_nametags_playerNamesViewDistance = 5;
-ace_nametags_showCursorTagForVehicles = false;
-ace_nametags_showNamesForAI = false;
-ace_nametags_showPlayerNames = 3;
-ace_nametags_showPlayerRanks = true;
-ace_nametags_showSoundWaves = 0;
-ace_nametags_showVehicleCrewInfo = true;
-ace_nametags_tagSize = 2;
+// ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
+// ace_nametags_playerNamesMaxAlpha = 0.8;
+// ace_nametags_playerNamesViewDistance = 5;
+// ace_nametags_showCursorTagForVehicles = false;
+// ace_nametags_showNamesForAI = false;
+// ace_nametags_showPlayerNames = 3;
+// ace_nametags_showPlayerRanks = true;
+// ace_nametags_showSoundWaves = 0;
+// ace_nametags_showVehicleCrewInfo = true;
+// ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-ace_nightvision_aimDownSightsBlur = 0.3;
+// ace_nightvision_aimDownSightsBlur = 0.3;
 force force ace_nightvision_disableNVGsWithSights = false;
-ace_nightvision_effectScaling = 0.4;
-ace_nightvision_fogScaling = 0.1;
-ace_nightvision_noiseScaling = 0.05;
+// ace_nightvision_effectScaling = 0.4;
+// ace_nightvision_fogScaling = 0.1;
+// ace_nightvision_noiseScaling = 0.05;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -297,8 +285,6 @@ force force ace_overheating_cookoffCoef = 0;
 
 // ACE Pointing
 force force ace_finger_enabled = false;
-ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
-ace_finger_indicatorForSelf = false;
 force force ace_finger_maxRange = 4;
 
 // ACE Pylons
@@ -311,10 +297,10 @@ force force ace_pylons_searchDistance = 40;
 force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
-ace_quickmount_distance = 3;
-ace_quickmount_enabled = true;
-ace_quickmount_priority = 3;
-ace_quickmount_speed = 4;
+force force ace_quickmount_distance = 3;
+force force ace_quickmount_enabled = true;
+// ace_quickmount_priority = 3;
+force force ace_quickmount_speed = 4;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;
@@ -323,12 +309,9 @@ force force ace_respawn_savePreDeathGear = false;
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
 force force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
-ace_scopes_defaultZeroRange = 100;
 force force ace_scopes_enabled = true;
 force force ace_scopes_forceUseOfAdjustmentTurrets = true;
 force force ace_scopes_overwriteZeroRange = true;
-ace_scopes_simplifiedZeroing = false;
-ace_scopes_useLegacyUI = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
 force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
@@ -348,54 +331,53 @@ force force ace_switchunits_switchToIndependent = false;
 force force ace_switchunits_switchToWest = false;
 
 // ACE Tagging
-ace_tagging_quickTag = 1;
+force force ace_tagging_quickTag = 1;
 
 // ACE Uncategorized
 force force ace_gforces_enabledFor = 0;
 force force ace_hitreactions_minDamageToTrigger = 1;
-ace_inventory_inventoryDisplaySize = 0;
 force force ace_laser_dispersionCount = 5;
 force force ace_microdagr_mapDataAvailable = 2;
-ace_optionsmenu_showNewsOnMainMenu = false;
+force force ace_optionsmenu_showNewsOnMainMenu = false;
 force force ace_overpressure_distanceCoefficient = 1;
 force force ace_parachute_failureChance = 0;
 
 // ACE User Interface
 force force ace_ui_allowSelectiveUI = true;
-ace_ui_ammoCount = true;
-ace_ui_ammoType = true;
-ace_ui_commandMenu = true;
-ace_ui_firingMode = true;
-ace_ui_groupBar = false;
-ace_ui_gunnerAmmoCount = true;
-ace_ui_gunnerAmmoType = true;
-ace_ui_gunnerFiringMode = true;
-ace_ui_gunnerLaunchableCount = true;
-ace_ui_gunnerLaunchableName = true;
-ace_ui_gunnerMagCount = true;
-ace_ui_gunnerWeaponLowerInfoBackground = true;
-ace_ui_gunnerWeaponName = true;
-ace_ui_gunnerWeaponNameBackground = true;
-ace_ui_gunnerZeroing = true;
-ace_ui_magCount = true;
-ace_ui_soldierVehicleWeaponInfo = true;
-ace_ui_staminaBar = true;
-ace_ui_stance = true;
-ace_ui_throwableCount = true;
-ace_ui_throwableName = true;
-ace_ui_vehicleAltitude = true;
-ace_ui_vehicleCompass = true;
-ace_ui_vehicleDamage = true;
-ace_ui_vehicleFuelBar = true;
-ace_ui_vehicleInfoBackground = true;
-ace_ui_vehicleName = true;
-ace_ui_vehicleNameBackground = true;
-ace_ui_vehicleRadar = true;
-ace_ui_vehicleSpeed = true;
-ace_ui_weaponLowerInfoBackground = true;
-ace_ui_weaponName = true;
-ace_ui_weaponNameBackground = true;
-ace_ui_zeroing = true;
+// ace_ui_ammoCount = true;
+// ace_ui_ammoType = true;
+// ace_ui_commandMenu = true;
+// ace_ui_firingMode = true;
+// ace_ui_groupBar = false;
+// ace_ui_gunnerAmmoCount = true;
+// ace_ui_gunnerAmmoType = true;
+// ace_ui_gunnerFiringMode = true;
+// ace_ui_gunnerLaunchableCount = true;
+// ace_ui_gunnerLaunchableName = true;
+// ace_ui_gunnerMagCount = true;
+// ace_ui_gunnerWeaponLowerInfoBackground = true;
+// ace_ui_gunnerWeaponName = true;
+// ace_ui_gunnerWeaponNameBackground = true;
+// ace_ui_gunnerZeroing = true;
+// ace_ui_magCount = true;
+// ace_ui_soldierVehicleWeaponInfo = true;
+// ace_ui_staminaBar = true;
+// ace_ui_stance = true;
+// ace_ui_throwableCount = true;
+// ace_ui_throwableName = true;
+// ace_ui_vehicleAltitude = true;
+// ace_ui_vehicleCompass = true;
+// ace_ui_vehicleDamage = true;
+// ace_ui_vehicleFuelBar = true;
+// ace_ui_vehicleInfoBackground = true;
+// ace_ui_vehicleName = true;
+// ace_ui_vehicleNameBackground = true;
+// ace_ui_vehicleRadar = true;
+// ace_ui_vehicleSpeed = true;
+// ace_ui_weaponLowerInfoBackground = true;
+// ace_ui_weaponName = true;
+// ace_ui_weaponNameBackground = true;
+// ace_ui_zeroing = true;
 
 // ACE Vehicle Lock
 force force ace_vehiclelock_defaultLockpickStrength = 10;
@@ -406,12 +388,12 @@ force force ace_vehiclelock_vehicleStartingLockState = -1;
 force force ace_vehicles_keepEngineRunning = true;
 
 // ACE Volume
-acex_volume_enabled = true;
-acex_volume_fadeDelay = 1;
-acex_volume_lowerInVehicles = false;
-acex_volume_reduction = 5;
-acex_volume_remindIfLowered = false;
-acex_volume_showNotification = true;
+// acex_volume_enabled = true;
+// acex_volume_fadeDelay = 1;
+// acex_volume_lowerInVehicles = false;
+// acex_volume_reduction = 5;
+// acex_volume_remindIfLowered = false;
+// acex_volume_showNotification = true;
 
 // ACE Weapons
 force force ace_common_persistentLaserEnabled = true;
@@ -467,7 +449,7 @@ force force AVS_Sliding = true;
 force force cba_network_loadoutValidation = 0;
 
 // CBA UI
-cba_ui_StorePasswords = 1;
+force force cba_ui_StorePasswords = 1;
 
 // CBA Weapons
 force force cba_disposable_dropUsedLauncher = 2;
@@ -476,73 +458,73 @@ force force cba_events_repetitionMode = 1;
 force force cba_optics_usePipOptics = true;
 
 // DUI - Squad Radar - Indicators
-diwako_dui_indicators_crew_range_enabled = false;
-diwako_dui_indicators_fov_scale = false;
-diwako_dui_indicators_icon_buddy = true;
-diwako_dui_indicators_icon_leader = true;
-diwako_dui_indicators_icon_medic = true;
-diwako_dui_indicators_range = 20;
-diwako_dui_indicators_range_crew = 300;
-diwako_dui_indicators_range_scale = false;
-force force diwako_dui_indicators_show = false;
-diwako_dui_indicators_size = 1;
-diwako_dui_indicators_style = "standard";
-diwako_dui_indicators_useACENametagsRange = true;
+// diwako_dui_indicators_crew_range_enabled = false;
+// diwako_dui_indicators_fov_scale = false;
+// diwako_dui_indicators_icon_buddy = true;
+// diwako_dui_indicators_icon_leader = true;
+// diwako_dui_indicators_icon_medic = true;
+// diwako_dui_indicators_range = 20;
+// diwako_dui_indicators_range_crew = 300;
+// diwako_dui_indicators_range_scale = false;
+// force force diwako_dui_indicators_show = false;
+// diwako_dui_indicators_size = 1;
+// diwako_dui_indicators_style = "standard";
+// diwako_dui_indicators_useACENametagsRange = true;
 
 // DUI - Squad Radar - Main
-diwako_dui_ace_hide_interaction = true;
-diwako_dui_colors = "standard";
-diwako_dui_font = "RobotoCondensed";
-diwako_dui_icon_style = "standard";
-diwako_dui_main_hide_ui_by_default = false;
-diwako_dui_main_squadBlue = [0,0,1,1];
-diwako_dui_main_squadGreen = [0,1,0,1];
-diwako_dui_main_squadMain = [1,1,1,1];
-diwako_dui_main_squadRed = [1,0,0,1];
-diwako_dui_main_squadYellow = [1,1,0,1];
+// diwako_dui_ace_hide_interaction = true;
+// diwako_dui_colors = "standard";
+// diwako_dui_font = "RobotoCondensed";
+// diwako_dui_icon_style = "standard";
+// diwako_dui_main_hide_ui_by_default = false;
+// diwako_dui_main_squadBlue = [0,0,1,1];
+// diwako_dui_main_squadGreen = [0,1,0,1];
+// diwako_dui_main_squadMain = [1,1,1,1];
+// diwako_dui_main_squadRed = [1,0,0,1];
+// diwako_dui_main_squadYellow = [1,1,0,1];
 
 // DUI - Squad Radar - Radar
-diwako_dui_compass_hide_alone_group = false;
-diwako_dui_compass_hide_blip_alone_group = false;
-diwako_dui_compass_icon_scale = 1;
-diwako_dui_compass_opacity = 1;
-diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
-diwako_dui_compassRange = 35;
-diwako_dui_enable_compass = true;
-diwako_dui_enable_compass_dir = 1;
-diwako_dui_enable_occlusion = true;
-diwako_dui_enable_occlusion_cone = 178.977;
-diwako_dui_compassRefreshrate = 0;
-diwako_dui_dir_showMildot = false;
-diwako_dui_dir_size = 1.25;
-diwako_dui_distanceWarning = 3;
-diwako_dui_hudScaling = 1.33333;
-diwako_dui_namelist = false;
-diwako_dui_namelist_bg = 0;
-diwako_dui_namelist_only_buddy_icon = false;
-diwako_dui_namelist_size = 1;
-diwako_dui_namelist_text_shadow = 2;
-diwako_dui_namelist_width = 215;
-diwako_dui_radar_ace_finger = true;
-diwako_dui_radar_compassRangeCrew = 500;
-force force diwako_dui_radar_group_by_vehicle = true;
-diwako_dui_radar_icon_scale_crew = 6;
-force force diwako_dui_radar_leadingZeroes = true;
-diwako_dui_radar_namelist_hideWhenLeader = false;
-diwako_dui_radar_namelist_vertical_spacing = 0.75;
-diwako_dui_radar_occlusion_fade_time = 10;
-diwako_dui_radar_pointer_color = [1,0.5,0,1];
-diwako_dui_radar_pointer_style = "standard";
-diwako_dui_radar_show_cardinal_points = true;
-diwako_dui_radar_showSpeaking = true;
-diwako_dui_radar_showSpeaking_radioOnly = true;
-diwako_dui_radar_showSpeaking_replaceIcon = false;
-force force diwako_dui_radar_sortType = "fireteam";
-force force diwako_dui_radar_sqlFirst = true;
-diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
-force diwako_dui_radar_vehicleCompassEnabled = false;
-diwako_dui_reset_ui_pos = false;
-diwako_dui_use_layout_editor = false;
+// diwako_dui_compass_hide_alone_group = false;
+// diwako_dui_compass_hide_blip_alone_group = false;
+// diwako_dui_compass_icon_scale = 1;
+// diwako_dui_compass_opacity = 1;
+// diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+// diwako_dui_compassRange = 35;
+// diwako_dui_enable_compass = true;
+// diwako_dui_enable_compass_dir = 1;
+// diwako_dui_enable_occlusion = true;
+// diwako_dui_enable_occlusion_cone = 178.977;
+// diwako_dui_compassRefreshrate = 0;
+// diwako_dui_dir_showMildot = false;
+// diwako_dui_dir_size = 1.25;
+// diwako_dui_distanceWarning = 3;
+// diwako_dui_hudScaling = 1.33333;
+// diwako_dui_namelist = false;
+// diwako_dui_namelist_bg = 0;
+// diwako_dui_namelist_only_buddy_icon = false;
+// diwako_dui_namelist_size = 1;
+// diwako_dui_namelist_text_shadow = 2;
+// diwako_dui_namelist_width = 215;
+// diwako_dui_radar_ace_finger = true;
+// diwako_dui_radar_compassRangeCrew = 500;
+// force force diwako_dui_radar_group_by_vehicle = true;
+// diwako_dui_radar_icon_scale_crew = 6;
+// force force diwako_dui_radar_leadingZeroes = true;
+// diwako_dui_radar_namelist_hideWhenLeader = false;
+// diwako_dui_radar_namelist_vertical_spacing = 0.75;
+// diwako_dui_radar_occlusion_fade_time = 10;
+// diwako_dui_radar_pointer_color = [1,0.5,0,1];
+// diwako_dui_radar_pointer_style = "standard";
+// diwako_dui_radar_show_cardinal_points = true;
+// diwako_dui_radar_showSpeaking = true;
+// diwako_dui_radar_showSpeaking_radioOnly = true;
+// diwako_dui_radar_showSpeaking_replaceIcon = false;
+// force force diwako_dui_radar_sortType = "fireteam";
+// force force diwako_dui_radar_sqlFirst = true;
+// diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
+// force diwako_dui_radar_vehicleCompassEnabled = false;
+// diwako_dui_reset_ui_pos = false;
+// diwako_dui_use_layout_editor = false;
 
 // GRAD CaptiveWalkingAnimation
 force force grad_captiveWalking_functions_allowFreeing = true;
@@ -552,51 +534,51 @@ force force grad_captiveWalking_functions_disableEscorting = false;
 force force grad_captiveWalking_functions_freeingTime = 144;
 
 // GRAD Civilians
-grad_civs_activities_panicCooldown = "[15, 120, 240]";
-grad_civs_cars_animalTransportChance = 0.4;
-grad_civs_cars_animalTransportVehicles = "";
-grad_civs_cars_automaticVehicleGroupSize = true;
-grad_civs_cars_globalSpeedLimit = 50;
-grad_civs_cars_townSpeedLimit = 30;
-grad_civs_cars_vehicles = "C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open";
-grad_civs_diagnostics_showFps = false;
-grad_civs_diagnostics_showInfoLine = false;
-grad_civs_diagnostics_showMisc = false;
-grad_civs_diagnostics_showOnMap = false;
-grad_civs_diagnostics_showPinkArrows = false;
-grad_civs_diagnostics_showSpawnAttempts = false;
-grad_civs_diagnostics_showSpeedLimitsOnMap = false;
-grad_civs_gta_enabled = false;
-grad_civs_lifecycle_civClasses = "C_Man_ConstructionWorker_01_Black_F, C_man_hunter_1_F, C_Man_Messenger_01_F, C_Man_casual_5_F_tanoan, C_Man_casual_3_F_tanoan, UK3CB_ADC_C_CIV_ISL, UK3CB_ADC_C_CIV_CHR, UK3CB_ADC_C_LABOURER_ISL, UK3CB_ADC_C_WORKER, UK3CB_ADC_C_WOOD, UK3CB_ADC_C_CIV_ISL_01, UK3CB_TKC_C_CIV, UK3CB_TKC_C_WORKER, UK3CB_ADC_C_SPOT_CHR, UK3CB_ADC_C_SPOT_ISL";
-grad_civs_lifecycle_cleanupCorpses = true;
-grad_civs_lifecycle_minCivOwnerFps = 40;
-grad_civs_lifecycle_minCivUpdateTime = 3;
-grad_civs_lifecycle_minServerFps = 50;
-grad_civs_lifecycle_smMultiplicator = 1;
-grad_civs_lifecycle_spawnCandidateHeightLimit = 200;
-grad_civs_lifecycle_spawnCandidateLimitEnabled = true;
-grad_civs_lifecycle_spawnCandidateSpeedLimit = 75;
-grad_civs_lifecycle_spawnOnlyWithPlayers = true;
-grad_civs_loadout_backpackProbability = 0.2;
-grad_civs_loadout_backpacks = "[]";
-grad_civs_loadout_clothes = "[]";
-grad_civs_loadout_faces = "[]";
-grad_civs_loadout_goggles = "[]";
-grad_civs_loadout_headgear = "[]";
-grad_civs_main_enabled = true;
-grad_civs_mimikry_enabled = false;
-grad_civs_patrol_initialGroupSize = 2;
-grad_civs_patrol_maxCivsOnFoot = 20;
-grad_civs_patrol_spawnDistancesOnFoot = "[200, 550]";
-grad_civs_residents_chatTime = 20;
-grad_civs_residents_maxCivsResidents = 12;
-grad_civs_residents_meetNeighborCooldown = 250;
-grad_civs_residents_spawnDistancesResidents = "[200, 550]";
-grad_civs_transit_maxVehiclesInTransit = 4;
-grad_civs_transit_vehicles = "[C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open]";
-grad_civs_voyage_maxCivsInVehicles = 3;
-grad_civs_voyage_maxTravelRadius = 2500;
-grad_civs_voyage_spawnDistancesInVehicles = "[1500, 3000]";
+force force grad_civs_activities_panicCooldown = "[15, 60, 120]";
+force force grad_civs_cars_animalTransportChance = 0.4;
+force force grad_civs_cars_animalTransportVehicles = "";
+force force grad_civs_cars_automaticVehicleGroupSize = true;
+force force grad_civs_cars_globalSpeedLimit = 60;
+force force grad_civs_cars_townSpeedLimit = 40;
+force force grad_civs_cars_vehicles = "C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open";
+force force grad_civs_diagnostics_showFps = false;
+force force grad_civs_diagnostics_showInfoLine = false;
+force force grad_civs_diagnostics_showMisc = false;
+force force grad_civs_diagnostics_showOnMap = false;
+force force grad_civs_diagnostics_showPinkArrows = false;
+force force grad_civs_diagnostics_showSpawnAttempts = false;
+force force grad_civs_diagnostics_showSpeedLimitsOnMap = false;
+force force grad_civs_gta_enabled = false;
+force force grad_civs_lifecycle_civClasses = "C_Man_ConstructionWorker_01_Black_F, C_man_hunter_1_F, C_Man_Messenger_01_F, C_Man_casual_5_F_tanoan, C_Man_casual_3_F_tanoan, UK3CB_ADC_C_CIV_ISL, UK3CB_ADC_C_CIV_CHR, UK3CB_ADC_C_LABOURER_ISL, UK3CB_ADC_C_WORKER, UK3CB_ADC_C_WOOD, UK3CB_ADC_C_CIV_ISL_01, UK3CB_TKC_C_CIV, UK3CB_TKC_C_WORKER, UK3CB_ADC_C_SPOT_CHR, UK3CB_ADC_C_SPOT_ISL";
+force force grad_civs_lifecycle_cleanupCorpses = true;
+force force grad_civs_lifecycle_minCivOwnerFps = 40;
+force force grad_civs_lifecycle_minCivUpdateTime = 3;
+force force grad_civs_lifecycle_minServerFps = 50;
+force force grad_civs_lifecycle_smMultiplicator = 1;
+force force grad_civs_lifecycle_spawnCandidateHeightLimit = 200;
+force force grad_civs_lifecycle_spawnCandidateLimitEnabled = true;
+force force grad_civs_lifecycle_spawnCandidateSpeedLimit = 75;
+force force grad_civs_lifecycle_spawnOnlyWithPlayers = true;
+force force grad_civs_loadout_backpackProbability = 0.2;
+force force grad_civs_loadout_backpacks = "[]";
+force force grad_civs_loadout_clothes = "[]";
+force force grad_civs_loadout_faces = "[]";
+force force grad_civs_loadout_goggles = "[]";
+force force grad_civs_loadout_headgear = "[]";
+force force grad_civs_main_enabled = true;
+force force grad_civs_mimikry_enabled = false;
+force force grad_civs_patrol_initialGroupSize = 2;
+force force grad_civs_patrol_maxCivsOnFoot = 20;
+force force grad_civs_patrol_spawnDistancesOnFoot = "[75, 400]";
+force force grad_civs_residents_chatTime = 20;
+force force grad_civs_residents_maxCivsResidents = 26;
+force force grad_civs_residents_meetNeighborCooldown = 250;
+force force grad_civs_residents_spawnDistancesResidents = "[50, 400]";
+force force grad_civs_transit_maxVehiclesInTransit = 6;
+force force grad_civs_transit_vehicles = "[C_Van_01_fuel_F, C_Offroad_02_unarmed_F, C_Offroad_01_F, C_Offroad_01_comms_F, C_Offroad_01_repair_F, C_Offroad_01_covered_F, C_Quadbike_01_F, C_Van_01_transport_F, C_Van_01_box_F, UK3CB_C_LandRover_Open]";
+force force grad_civs_voyage_maxCivsInVehicles = 2;
+force force grad_civs_voyage_maxTravelRadius = 2500;
+force force grad_civs_voyage_spawnDistancesInVehicles = "[1000, 3000]";
 
 // GRAD Trenches
 force force grad_trenches_functions_allowBigEnvelope = true;
@@ -764,20 +746,24 @@ force force lambs_main_radioWest = 1500;
 force force niarms_magSwitch = true;
 
 // Simple Craters
-force simplecraters_setting_allowGroundTextures = true;
-force simplecraters_setting_allowSmallExplosions = false;
-force simplecraters_setting_craterScale = 1;
-force simplecraters_setting_debugMode = false;
+force force simplecraters_setting_allowGroundTextures = true;
+force force simplecraters_setting_allowSmallExplosions = false;
+force force simplecraters_setting_craterScale = 1;
+force force simplecraters_setting_debugMode = false;
 
 // TSP Breach
 force force tsp_cba_breach = true;
 force force tsp_cba_breach_ace = true;
-force force tsp_cba_breach_ace_locking = false;
+force force tsp_cba_breach_ace_locking = true;
+force force tsp_cba_breach_vanilla = false;
 force force tsp_cba_breach_ammo = "[]";
 force force tsp_cba_breach_ammoMultiplier = 1;
 force force tsp_cba_breach_lockDoor = 0.0;
 force force tsp_cba_breach_lockHouse = 0.0;
 force force tsp_cba_breach_wall_physics = false;
+
+//UH 60
+force force vtx_uh60_flir_setting_animateTurret = false;
 
 // VET_Unflipping
 force force vet_unflipping_time = 10;
@@ -785,19 +771,19 @@ force force vet_unflipping_unit_man_limit = 8;
 force force vet_unflipping_unit_mass_limit = 1200;
 
 // Zeus Enhanced
-zen_common_autoAddObjects = false;
-zen_compat_ace_hideModules = false;
-zen_common_darkMode = true;
-zen_common_disableGearAnim = true;
+// zen_common_autoAddObjects = false;
+// zen_compat_ace_hideModules = false;
+// zen_common_darkMode = true;
+// zen_common_disableGearAnim = true;
+// zen_context_menu_enabled = 2;
+// zen_editor_declutterEmptyTree = true;
+// zen_editor_unitRadioMessages = 2;
 force force zen_common_preferredArsenal = 1;
-zen_context_menu_enabled = 2;
-zen_editor_declutterEmptyTree = true;
 force force zen_editor_disableLiveSearch = true;
-zen_editor_moveDisplayToEdge = true;
-zen_editor_removeWatermark = true;
-zen_editor_unitRadioMessages = 2;
-zen_editor_previews_enabled = true;
-zen_editor_addGroupIcons = true;
+force force zen_editor_moveDisplayToEdge = true;
+force force zen_editor_removeWatermark = true;
+force force zen_editor_previews_enabled = true;
+force force zen_editor_addGroupIcons = true;
 force force zen_placement_enabled = true;
 force force zen_visibility_enabled = true;
 force force zen_editor_parachuteSounds = false;
@@ -815,12 +801,12 @@ force force zhc_offload_debugGuids = "'76561198009214454','76561198009993601'";
 force force zhc_offload_DebugMode = 2;
 force force zhc_offload_EmergencyOffloadDelay = 5;
 force force zhc_offload_Enabled = true;
-force zhc_offload_EnableRebal = true;
+force force zhc_offload_EnableRebal = true;
 force force zhc_offload_EnableZeusHolding = true;
 force force zhc_offload_OffloadDelay = 10;
 force force zhc_offload_RebalanceDelay = 3600;
 force force zhc_offload_StartDelay = 30;
-force zhc_offload_StrtMsg = true;
+force force zhc_offload_StrtMsg = true;
 force force zhc_offload_TransferLoadout = 1;
 force force zhc_offload_Verbosity = 2;
 force force zhc_stat_DebugRPT = false;

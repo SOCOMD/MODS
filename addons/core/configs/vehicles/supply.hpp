@@ -99,7 +99,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_MAGAZINE(ACWP_19Rnd_9x21_Mag_glock, 15)
         TRANSPORT_MAGAZINE(11Rnd_45ACP_Mag, 15)
         TRANSPORT_MAGAZINE(10Rnd_300WM_Magazine, 10)
-        TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10)
+        // TRANSPORT_MAGAZINE(hlc_5rnd_300WM_FMJ_AWM, 10)
         TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_base, 20)
         TRANSPORT_MAGAZINE(ACWP_5rnd_338LM_APDS, 10)
 
@@ -112,9 +112,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
         TRANSPORT_ITEM(DemoCharge_Remote_Mag, 6)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 4)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 2)
-        TRANSPORT_ITEM(tsp_frameCharge_mag, 5)
-        TRANSPORT_ITEM(tsp_popperCharge_mag, 5)
-        TRANSPORT_ITEM(tsp_stickCharge_mag, 5)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 10)
         TRANSPORT_ITEM(kat_guedel, 10)                //Airways
         TRANSPORT_ITEM(kat_larynx, 10)                //Adv Airways
         TRANSPORT_ITEM(kat_naloxone, 8)
@@ -202,8 +200,7 @@ class SOCOMD_Supply_Ammo : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_Clacker, 2)
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 10)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 8)
-        TRANSPORT_ITEM(tsp_frameCharge_mag, 5)
-        TRANSPORT_ITEM(tsp_popperCharge_mag, 10)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 15)
     };
 };
 
@@ -224,9 +221,7 @@ class SOCOMD_Supply_Explosives : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ClaymoreDirectionalMine_Remote_Mag, 20)
         TRANSPORT_ITEM(SatchelCharge_Remote_Mag, 20)
         TRANSPORT_ITEM(ACE_M14, 30)
-        TRANSPORT_ITEM(tsp_frameCharge_mag, 20)
-        TRANSPORT_ITEM(tsp_popperCharge_mag, 20)
-        TRANSPORT_ITEM(tsp_stickCharge_mag, 20)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 20)
     };
 };
 
@@ -286,7 +281,7 @@ class SOCOMD_Supply_Tools : SOCOMD_Supply_Empty {
         TRANSPORT_ITEM(ACE_DefusalKit, 2)
         TRANSPORT_ITEM(ACE_M26_Clacker, 2)
         TRANSPORT_ITEM(ACE_bodyBag, 10)
-        TRANSPORT_ITEM(tsp_lockpick, 10)
+        TRANSPORT_ITEM(AMP_Breaching_Charge_Mag, 5)
     };
 };
 

@@ -408,9 +408,7 @@ class SOCOMD_Rifleman {
         type = ITEM_BACKPACK_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(tsp_frameCharge_mag, 3)
-            LOADOUT_ITEM(tsp_popperCharge_auto_mag, 6)
-            LOADOUT_ITEM(tsp_paperclip, 3)
+            LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 6)
             LOADOUT_ITEM(ACE_Clacker, 1)
             LOADOUT_ITEM(ACE_M26_Clacker, 1)
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
@@ -453,9 +451,7 @@ class SOCOMD_Breacher {
         type = ITEM_BACKPACK_BREACHER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(tsp_frameCharge_mag, 1)
-            LOADOUT_ITEM(tsp_stickCharge_mag, 1)
-            LOADOUT_ITEM(tsp_popperCharge_mag, 3)
+            LOADOUT_ITEM(AMP_Breaching_Charge_Mag, 6)
             LOADOUT_ITEM(ACE_DefusalKit, 1)
             LOADOUT_ITEM(ACE_Clacker, 1)
             LOADOUT_ITEM(ACE_M84, 3)
