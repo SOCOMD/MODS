@@ -34,7 +34,7 @@ class ITEM_MAGAZINE_GPMG_BELT : rhsusf_100Rnd_762x51_m80a1epr{
 
 //CUP
 
-class CA_LauncherMagazine;    // External class reference
+//class CA_LauncherMagazine;    // External class reference
 
 // class SOCOMD_M72_Rocket : CA_LauncherMagazine {
 //     scope = 2;

@@ -186,9 +186,9 @@ class CfgLoadoutWeapons {
             {"rhs_mag_9x19_17", 3}
         };
     };
-    class Launcher {
-        magazines[] = {};
-    };
+    // class Launcher {
+    //     magazines[] = {};
+    // };
     class SOCOMD_RPG7{
 
         magazines[] ={

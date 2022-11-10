@@ -63,9 +63,9 @@ class CfgMissions {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //    CARRIERs
-//    Count = 1
+//    Count = 0
 
-    MISSION_MACRO(ALTISCARRIER,SOCOMD Altis Light Carrier (HMAS Melbourne),fobs\AC_HMAS_Melbourne.Altis)
+    //MISSION_MACRO(ALTISCARRIER,SOCOMD Altis Light Carrier (HMAS Melbourne),fobs\AC_HMAS_Melbourne.Altis)
     //MISSION_MACRO(ALTISLHD,SOCOMD Altis LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.Altis)
     //MISSION_MACRO(SAHRLHD,SOCOMD Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.sara)
     //MISSION_MACRO(SAHRUNITEDLHD,SOCOMD United Sahrani LHD (HMAS Canberra),fobs\LHD_HMAS_Canberra.sara_dbe1)
