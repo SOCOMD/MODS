@@ -1,16 +1,14 @@
 #define MCB_UNIFORMS \
-    "USP_G3C_KP_MCB_AFP",\
-    // "USP_G3C_KP_RGR_AFP" //pending classes in
+    "USP_G3C_KP_MCB_AFP"
 
 #define AFP_HELMS \
-    "AGE_Fast_Black",\
-    "AGE_Fast_Black_A_L",\
-    "AGE_Fast_Black_H",\
-    "AGE_Fast_Black_H_A_L",\
     "ADFU_H_OpsCore_08_BLK",\
     "ADFU_H_OpsCore_02_BLK"
 
-
+    // "AGE_Fast_Black",\
+    // "AGE_Fast_Black_A_L",\
+    // "AGE_Fast_Black_H",\
+    // "AGE_Fast_Black_H_A_L",\
 
 class SOCOMD_AFP_Leader {
     class uniforms{

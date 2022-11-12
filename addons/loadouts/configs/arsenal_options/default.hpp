@@ -1032,9 +1032,7 @@ class SOCOMD_Recon{
         };
     bags[]={
         BAGS,
-        BACKPACK_COMMS,
-        "AGE_F2Bergen_Multicam",
-        "AGE_Camelback_Coyote"
+        BACKPACK_COMMS 
     };
     grenades[]={
         GRENADES_NORMAL
