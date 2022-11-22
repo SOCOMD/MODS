@@ -47,7 +47,6 @@ hasPeltorsOn = 0;
 
 _presetId = "SOCOMD_PRESET";
 
-
 [{
     // Sets ACRE2 channel names
     {
@@ -77,8 +76,8 @@ _presetId = "SOCOMD_PRESET";
     _languagesPlayerSpeaks = ["e"];
 
     _type = typeOf player;
-    if(_type in _whitelist) then {
-        _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"];
+    if (_type in _whitelist) then {
+        _languagesPlayerSpeaks = _languagesPlayerSpeaks + ["f", "z"]; 
     };
     _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
 }] remoteExec ["call",0];

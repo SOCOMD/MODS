@@ -25,8 +25,8 @@ class Extended_Init_EventHandlers {
 };
 
 
-class Extended_AnimStateChanged_EventHandlers {
-    class CAManBase {
-          animStateChanged = "[_this select 0,_this select 1] call socomd_core_fnc_animSpeedSet";
-    };
-};
+// class Extended_AnimStateChanged_EventHandlers {
+//     class CAManBase {
+//           animStateChanged = "[_this select 0,_this select 1] call socomd_core_fnc_animSpeedSet";
+//     };
+// };
