@@ -11,6 +11,8 @@ RHS_ENGINE_STARTUP_OFF = true;
 
 missionNamespace setVariable ["SOCOMD_InitComplete", 1];
 
+// waitUntil { missionNamespace getVariable["SOCOMD_InitComplete", 0] == 1 };
+
 // Fixing warning spam from ambientLife. Also, if I hear "Look a bunny!" one more bloody time...
 finishMissionInit;
 enableEnvironment [false, true];

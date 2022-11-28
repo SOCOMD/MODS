@@ -1,6 +1,6 @@
 class AU_03_780000_v1;
 class SOCOMD_BERET : AU_03_780000_v1 {
-    //rgoc_canAcceptNVG = 0;
+    
     author = AUTHOR_STR;
     scope = SCOPE_PUBLIC;
     displayName = "SOCOMD Beret";
@@ -9,59 +9,59 @@ class SOCOMD_BERET : AU_03_780000_v1 {
 class H_HelmetB;
 
 class H_Booniehat_khk:H_HelmetB{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_khk_hs:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_dgtl:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_dirty:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_eaf:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_grn:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_indp:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_mcamo:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_mgrn:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_oli:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_taiga:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_tan:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_tna_F:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 class H_Booniehat_wdl:H_Booniehat_khk{
-    //rgoc_canAcceptNVG = 0;
+    
     HELMET_BOONIE_ARMOR
 };
 
