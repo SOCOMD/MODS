@@ -295,7 +295,7 @@ switch (GVAR(currentLeftPanel)) do {
             GVAR(currentItems) set [8, _item];
         } else {               
         // else update all socomd NVG items in inventory
-            _nvgArray = ["SOCOMD_NVG","SOCOMD_NVG_GR","SOCOMD_NVG_GPNVG_WP_black","SOCOMD_NVG_GPNVG_GR_black" , "SOCOMD_NVG_AM", "SOCOMD_NVG_B", "SOCOMD_NVG_GR_B", "SOCOMD_NVG_AM_B", "SOCOMD_NVG_C", "SOCOMD_NVG_GR_C", "SOCOMD_NVG_AM_C", "SOCOMD_NVG_GPNVG_WP_black", "SOCOMD_NVG_GPNVG_GR_black"];
+            _nvgArray = ["USP_L3_pvs31_A2", "USP_L3_pvs31_B", "USP_L3_pvs31_C", "A3_GPNVG18_BLK_F"];
             _unitLoadout = getUnitLoadout ACE_Player;
             _uniform = _unitLoadout select 3;
             _uniformLoadout = _bag select 1;

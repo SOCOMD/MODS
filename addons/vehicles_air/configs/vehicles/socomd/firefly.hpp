@@ -108,71 +108,71 @@ class RHS_MELB_AH6M : RHS_MELB_base {
     class Components : Components {
         class TransportPylonsComponent;
         class pylons;
-        class SensorsManagerComponent {
-            class Components {
-                class VisualSensorComponent : SensorTemplateVisual {
-					class AirTarget {
-                        minRange=1;
-                          maxRange=4000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=1;
-                    };
-                    class GroundTarget{
-                        minRange=1;
-                        maxRange=4000;
-                        objectDistanceLimitCoef=1;
-                        viewDistanceLimitCoef=1;
-                    };
-                    allowsMarking           = 1;
-					maxTrackableSpeed		= 70;
-					animDirection			= "";
-					angleRangeHorizontal	= 90;
-					angleRangeVertical		= 90;
-                    groundNoiseDistanceCoef	= -1;
-					maxGroundNoiseDistance	= -1;
-				};
-                class IRSensorComponent : SensorTemplateIR {
-					class AirTarget {
-                        minRange=1;
-                          maxRange=7000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=1;
-                    };
-                    class GroundTarget{
-                        minRange=1;
-                        maxRange=7000;
-                        objectDistanceLimitCoef=1;
-                        viewDistanceLimitCoef=1;
-                    };
-                    allowsMarking           = 1;
-					animDirection			= "";
-		    		angleRangeHorizontal	= 90;
-					angleRangeVertical		= 90;
-					typeRecognitionDistance	= -1;
-					groundNoiseDistanceCoef	= -1;
-		    		maxGroundNoiseDistance	= -1;
-					minSpeedThreshold		= 0;
-					maxSpeedThreshold		= 0;
-					maxFogSeeThrough		= 0.95;
-					minTrackableSpeed		= 0;
-					maxTrackableSpeed		= 695;
-                };
-                class LaserSensorComponent : SensorTemplateLaser{
+        // class SensorsManagerComponent {
+        //     class Components {
+        //         class VisualSensorComponent : SensorTemplateVisual {
+		// 			class AirTarget {
+        //                 minRange=1;
+        //                   maxRange=4000;
+        //                 objectDistanceLimitCoef=-1;
+        //                 viewDistanceLimitCoef=1;
+        //             };
+        //             class GroundTarget{
+        //                 minRange=1;
+        //                 maxRange=4000;
+        //                 objectDistanceLimitCoef=1;
+        //                 viewDistanceLimitCoef=1;
+        //             };
+        //             allowsMarking           = 1;
+		// 			maxTrackableSpeed		= 70;
+		// 			animDirection			= "";
+		// 			angleRangeHorizontal	= 90;
+		// 			angleRangeVertical		= 90;
+        //             groundNoiseDistanceCoef	= -1;
+		// 			maxGroundNoiseDistance	= -1;
+		// 		};
+        //         class IRSensorComponent : SensorTemplateIR {
+		// 			class AirTarget {
+        //                 minRange=1;
+        //                   maxRange=7000;
+        //                 objectDistanceLimitCoef=-1;
+        //                 viewDistanceLimitCoef=1;
+        //             };
+        //             class GroundTarget{
+        //                 minRange=1;
+        //                 maxRange=7000;
+        //                 objectDistanceLimitCoef=1;
+        //                 viewDistanceLimitCoef=1;
+        //             };
+        //             allowsMarking           = 1;
+		// 			animDirection			= "";
+		//     		angleRangeHorizontal	= 90;
+		// 			angleRangeVertical		= 90;
+		// 			typeRecognitionDistance	= -1;
+		// 			groundNoiseDistanceCoef	= -1;
+		//     		maxGroundNoiseDistance	= -1;
+		// 			minSpeedThreshold		= 0;
+		// 			maxSpeedThreshold		= 0;
+		// 			maxFogSeeThrough		= 0.95;
+		// 			minTrackableSpeed		= 0;
+		// 			maxTrackableSpeed		= 695;
+        //         };
+        //         class LaserSensorComponent : SensorTemplateLaser{
 				
-                    class GroundTarget{
-                        minRange=1;
-                        maxRange=7000;
-                        objectDistanceLimitCoef=1;
-                        viewDistanceLimitCoef=1;
-                    };
-                    allowsMarking           = 1;
-					angleRangeHorizontal	= 180;
-					angleRangeVertical		= 180;
-                    groundNoiseDistanceCoef	= -1;
-					maxGroundNoiseDistance	= -1;
-                };
-            };
-        };
+        //             class GroundTarget{
+        //                 minRange=1;
+        //                 maxRange=7000;
+        //                 objectDistanceLimitCoef=1;
+        //                 viewDistanceLimitCoef=1;
+        //             };
+        //             allowsMarking           = 1;
+		// 			angleRangeHorizontal	= 180;
+		// 			angleRangeVertical		= 180;
+        //             groundNoiseDistanceCoef	= -1;
+		// 			maxGroundNoiseDistance	= -1;
+        //         };
+        //     };
+        // };
     };
 }; 
 

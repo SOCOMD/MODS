@@ -1,25 +1,24 @@
-    
 #define SOCOMD_DIFFICULTY_PRESET \
-    reducedDamage       = 0; /*Decreases damage dealt to the player and members of his group.*/ \
-    groupIndicators     = 0; /*Shows indication icons on units in player's group.*/ \
-    friendlyTags        = 0; /*Friendly unit identification. Works only when the player aims at a unit.*/ \
-    enemyTags           = 0; /*Enemy unit identification. Works only when the player aims at a unit.*/ \
-    detectedMines       = 0; /*Shows icons indicating exact positions of mines. show = display the indicators on mines at 200m and closer.*/ \
-    commands            = 0; /*Displays command icons like target markers, get in command and others.*/ \
-    waypoints           = 0; /*Manages visibility of waypoint markers.*/ \
-    weaponInfo          = 1; /*Shows Weapon Info box (contains round and magazine count, firing mode, etc.).*/ \
-    stanceIndicator     = 1; /*Displays stance indication (contains actual stance, weapon resting and deployment).*/ \
-    staminaBar          = 1; /*Manages visibility of stamina indicator. true = fades in when stamina changes.*/ \
-    weaponCrosshair     = 0; /*Shows weapon crosshair both in 1st and 3rd person view.*/ \
-    visionAid           = 0; /*Helps to detect units in visual range and identify friend from foe.*/ \
-    thirdPersonView     = 0; /*Enables camera switching to 3rd person view.*/ \
-    cameraShake         = 1; /*Shakes camera if player is near explosion, passing vehicle or if player's vehicle is under G-load.*/ \
-    scoreTable          = 0; /*Displays table with kills, deaths and overall score in multiplayer.*/ \
-    deathMessages       = 0; /*Shows in chat window who killed the player.*/ \
-    vonID               = 0; /*Indicates who is speaking through VON communication.*/ \
-    mapContent          = 0; /*Shows friendly units, enemy units and detected mines on the map.*/ \
-    autoReport          = 0; /*Enables/disables automatic reporting of spotted enemies by players only.*/ \
-    multipleSaves       = 0; /*Allows player to create multiple saves in a mission.*/
+    reducedDamage       = 0; \
+    groupIndicators     = 0; \
+    friendlyTags        = 0; \
+    enemyTags           = 0; \
+    detectedMines       = 0; \
+    commands            = 0; \
+    waypoints           = 0; \
+    weaponInfo          = 1; \
+    stanceIndicator     = 1; \
+    staminaBar          = 1; \
+    weaponCrosshair     = 0; \
+    visionAid           = 0; \
+    thirdPersonView     = 0; \
+    cameraShake         = 1; \
+    scoreTable          = 0; \
+    deathMessages       = 0; \
+    vonID               = 0; \
+    mapContent          = 0; \
+    autoReport          = 0; \
+    multipleSaves       = 0;
 
 class CfgDifficultyPresets {
     defaultPreset = "Custom";

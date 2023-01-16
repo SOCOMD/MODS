@@ -2,6 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // APC
 
+//class Wheeled_APC_F : Car_F {};
 class APC_Wheeled_03_base_F;
 
 class I_APC_Wheeled_03_base_F : APC_Wheeled_03_base_F {
@@ -33,7 +34,7 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
     vehicleclass = "Armored";
     forceInGarage = 1;
     cost = 40000;
-    threat[] = {0.8,1.0,0.7};
+    threat[] = {1.0,0.8,0.7};
     camouflage = 10;
 
     crew = "SOCOMD_Crewman";
@@ -143,7 +144,7 @@ class SOCOMD_APC_B : SOCOMD_APC_A {
     displayname = "APC Slated (3/8)";
     vehicleclass = "Armored";
     cost = 40000;
-    threat[] = {0.8,1.0,0.7};
+    threat[] = {1.0,0.8,0.7};
     forceInGarage = 1;
     camouflage = 10;
 

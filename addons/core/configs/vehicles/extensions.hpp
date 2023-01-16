@@ -165,44 +165,44 @@ class CAManBase : Man {
             QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antennaup_s7_closed,"Antennas Down",acwp_pc_tacp_antennaup_s7_closed,acwp_pc_tacp_antenna_s7_closed)
             QSTORE_ACTION_REPLACE_VEST(VEST_acwp_pc_tacp_antenna_s7_closed,"Antennas Up",acwp_pc_tacp_antenna_s7_closed,acwp_pc_tacp_antennaup_s7_closed)
 
-            class togglePeltorOn { 
-                displayName ="Turn on peltors";
-                condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 0)";
-                statement = "[true] call socomd_core_fnc_Peltor_togglePeltor";
-                exceptions[] = {"isNotInside", "isNotSitting"};
-            };
-            class togglePeltorOff { 
-                displayName ="Turn off peltors";
-                condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 1)";
-                statement = "[false] call socomd_core_fnc_Peltor_togglePeltor";
-                exceptions[] = {"isNotInside", "isNotSitting"};
-            };
+            // class togglePeltorOn { 
+            //     displayName ="Turn on peltors";
+            //     condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 0)";
+            //     statement = "[true] call socomd_core_fnc_Peltor_togglePeltor";
+            //     exceptions[] = {"isNotInside", "isNotSitting"};
+            // };
+            // class togglePeltorOff { 
+            //     displayName ="Turn off peltors";
+            //     condition = "(hasPeltors == 1) and ((_player getVariable ['hasPeltorsOn', 0]) == 1)";
+            //     statement = "[false] call socomd_core_fnc_Peltor_togglePeltor";
+            //     exceptions[] = {"isNotInside", "isNotSitting"};
+            // };
         };
-        class SOCOMD_Admin {
-            displayName = "Admin";
-            condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
-            showDisabled = 0;
-            exceptions[] = {"isNotInside", "isNotSitting"};
+        // class SOCOMD_Admin {
+        //     displayName = "Admin";
+        //     condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
+        //     showDisabled = 0;
+        //     exceptions[] = {"isNotInside", "isNotSitting"};
 
-            class SOCOMD_EnterSpectator {
-                displayName = "Spectate";
-                condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
-                statement = "[_player] call socomd_core_fnc_Action_EnterSpectator;";
-                showDisabled = 0;
-                exceptions[] = {"isNotInside", "isNotSitting"};
-            };
-        };
+        //     class SOCOMD_EnterSpectator {
+        //         displayName = "Spectate";
+        //         condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
+        //         statement = "[_player] call socomd_core_fnc_Action_EnterSpectator;";
+        //         showDisabled = 0;
+        //         exceptions[] = {"isNotInside", "isNotSitting"};
+        //     };
+        // };
     };
-    class ACE_Actions{
-        class ACE_Head{
-            class Blindfold{
-                displayName="Blindfold";
-                condition="[_player,_target] call socomd_core_fnc_ActionCondition_canInteract";
-                statement="[_player,_target] call socomd_core_fnc_Action_putBlindfoldOn";
-                showDisabled=0;
-                priority=1;
-                distance=2;
-            };
-        };
-    };
+    // class ACE_Actions{
+    //     class ACE_Head{
+    //         class Blindfold{
+    //             displayName="Blindfold";
+    //             condition="[_player,_target] call socomd_core_fnc_ActionCondition_canInteract";
+    //             statement="[_player,_target] call socomd_core_fnc_Action_putBlindfoldOn";
+    //             showDisabled=0;
+    //             priority=1;
+    //             distance=2;
+    //         };
+    //     };
+    // };
 };

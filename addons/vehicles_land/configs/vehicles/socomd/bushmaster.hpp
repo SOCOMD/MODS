@@ -56,6 +56,7 @@ class bma3_bushmaster_unarmed_F : bma3_bushmaster_base_F {
     explosionShielding = 0.001;
     damageResistance = 0.03099;
     threat[] = {1, 0.7, 0.3};
+    camouflage = 5;
     acre_hasInfantryPhone = 0;
 
     class HitPoints : HitPoints {

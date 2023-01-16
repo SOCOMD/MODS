@@ -305,29 +305,20 @@
     "UK3CB_H_Beanie_02_BRN"
 
 #define NVG_OPTIONS \
-    "SOCOMD_NVG",\
-    "SOCOMD_NVG_GR",\
-    "SOCOMD_NVG_AM",\
-    "SOCOMD_NVG_B",\
-    "SOCOMD_NVG_GR_B",\
-    "SOCOMD_NVG_AM_B",\
-    "SOCOMD_NVG_C",\
-    "SOCOMD_NVG_GR_C",\
-    "SOCOMD_NVG_AM_C",\
-    "SOCOMD_NVG_GPNVG_WP_black",\
-    "SOCOMD_NVG_GPNVG_GR_black"
+    "USP_L3_pvs31_A2",\
+    "USP_L3_pvs31_B",\
+    "USP_L3_pvs31_C",\
+    "A3_GPNVG18_BLK_F",
+
+    // "SOCOMD_NVG_GR_B",\
+    // "SOCOMD_NVG_AM_B",\
+    // "SOCOMD_NVG_C",\
+    // "SOCOMD_NVG_GR_C",\
+    // "SOCOMD_NVG_AM_C",\
+    // "SOCOMD_NVG_GPNVG_WP_black",\
+    // "SOCOMD_NVG_GPNVG_GR_black"
 
 #define SOLS_HELMS \
-    "SOCOMD_NVG",\
-    "SOCOMD_NVG_GR",\
-    "SOCOMD_NVG_B",\
-    "SOCOMD_NVG_GR_B",\
-    "SOCOMD_NVG_AM_B",\
-    "SOCOMD_NVG_C",\
-    "SOCOMD_NVG_GR_C",\
-    "SOCOMD_NVG_AM_C",\
-    "SOCOMD_NVG_GPNVG_WP_black",\
-    "SOCOMD_NVG_GPNVG_GR_black",\
     "rhsusf_ihadss",\
     "rhsusf_hgu56p_visor_mask_tan",\
     "rhsusf_hgu56p_visor_tan",\
@@ -337,6 +328,17 @@
     "rhsusf_hgu56p_visor",\
     "rhsusf_hgu56p_mask",\
     "rhsusf_hgu56p"
+
+    // "SOCOMD_NVG",\
+    // "SOCOMD_NVG_GR",\
+    // "SOCOMD_NVG_B",\
+    // "SOCOMD_NVG_GR_B",\
+    // "SOCOMD_NVG_AM_B",\
+    // "SOCOMD_NVG_C",\
+    // "SOCOMD_NVG_GR_C",\
+    // "SOCOMD_NVG_AM_C",\
+    // "SOCOMD_NVG_GPNVG_WP_black",\
+    // "SOCOMD_NVG_GPNVG_GR_black"\
 
 #define MC_UNIFORMS \
     "USP_G3C_KP_MC_SOCOMD",\

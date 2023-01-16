@@ -51,7 +51,7 @@
 // 	{
 // 		class StandardSound
 // 		{
-			
+
 // 			begin1[]={
 //                 "z\vtx\addons\UH60\Sounds\vtx_minigun",
 //                 20,
@@ -70,7 +70,7 @@
 // 	{
 // 		class StandardSound
 // 		{
-			
+
 // 			begin1[]={
 //                 "z\vtx\addons\UH60\Sounds\vtx_minigun",
 //                 20,
@@ -89,7 +89,7 @@
 // 	{
 // 		class StandardSound
 // 		{
-			
+
 // 			begin1[]={
 //                 "z\vtx\addons\UH60\Sounds\vtx_minigun",
 //                 20,
@@ -108,7 +108,7 @@
 // 	{
 // 		class StandardSound
 // 		{
-			
+
 // 			begin1[]={
 //                 "z\vtx\addons\UH60\Sounds\vtx_minigun",
 //                 20,

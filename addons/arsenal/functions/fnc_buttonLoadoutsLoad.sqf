@@ -69,21 +69,21 @@ if ((_selectedUniform select 0) == "USP") then {
 };
     _loadout set [3, _uniformLoadout];
 // update ctab items with inventory if they're not already
-_ctabItems = ["ItemAndroid","ItemcTab","ItemMicroDAGR"];
-_gps = _accessories select 1;
-if(_gps in _ctabItems) then {
-    _accessories set [1,""];
-    _items = _uniformLoadout select 1;
-    _items pushBack [_gps,1];
-    _uniformLoadout set [1,_items];
-};
-GVAR(center) setUnitLoadout [_loadout, true];
-{
-    _hasItem = [GVAR(center), _x] call CBA_fnc_removeItem;
-    if(_hasItem) then {
-        GVAR(center) addItemToUniform  _x;
-    };
-} forEach _ctabItems;
+// _ctabItems = ["ItemAndroid","ItemcTab"];
+// _gps = _accessories select 1;
+// if(_gps in _ctabItems) then {
+//     _accessories set [1,""];
+//     _items = _uniformLoadout select 1;
+//     _items pushBack [_gps,1];
+//     _uniformLoadout set [1,_items];
+// };
+// GVAR(center) setUnitLoadout [_loadout, true];
+// {
+//     _hasItem = [GVAR(center), _x] call CBA_fnc_removeItem;
+//     if(_hasItem) then {
+//         GVAR(center) addItemToUniform  _x;
+//     };
+// } forEach _ctabItems;
 
 GVAR(currentItems) = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", [], [], [], [], [], []];
 for "_index" from 0 to 15 do {

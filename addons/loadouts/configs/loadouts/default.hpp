@@ -17,42 +17,34 @@
     LOADOUT_ITEM(kat_chestSeal, 2) 
 
 #define LOADOUT_UNIFORM_ESSENTIALS \
-    LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 0) \
+    LOADOUT_ITEM(ACE_microDAGR, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-    LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) 
+    LOADOUT_ITEM(ACE_SpraypaintGreen, 1) 
+
+    // LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
+    // LOADOUT_ITEM(murshun_cigs_lighter, 1) 
 
 #define LOADOUT_COMMANDER_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTab, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_UNIFORM_AO_ESSENTIALS \
-    LOADOUT_ITEM(ItemAndroid, 1) \
-    LOADOUT_ITEM(ItemcTabHCam, 0) \
+    LOADOUT_ITEM(ACE_microDAGR, 1) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 2)
 
 #define LOADOUT_PILOT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_MapTools, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
     LOADOUT_ITEM(ACE_microDAGR, 1) \
     LOADOUT_ITEM(ACE_SpraypaintGreen, 1) \
-    LOADOUT_ITEM(murshun_cigs_cigpack, 1) \
-    LOADOUT_ITEM(murshun_cigs_lighter, 1) \
     LOADOUT_ITEM(ACWP_18Rnd_9x21_Mag_USP, 3)
 
 #define LOADOUT_VEST_ESSENTIALS \
@@ -78,17 +70,15 @@
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 2)
 
 #define LOADOUT_BACKPACK_ESSENTIALS \
-    LOADOUT_ITEM(SOCOMD_NVG, 1) \
+    LOADOUT_ITEM(A3_GPNVG18_BLK_F, 1) \
     LOADOUT_ITEM(ACE_CableTie, 4)
 
 // COMMON JAC LOADOUT ITEMS
 
 #define LOADOUT_SUPPORT_ESSENTIALS \
-    LOADOUT_ITEM(ItemcTabHCam, 0) \
     LOADOUT_ITEM(ACE_EarPlugs, 1) \
     LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) \
-    LOADOUT_ITEM(SOCOMD_GPNVG18b_BLK_F, 1) \
-    LOADOUT_ITEM(SOCOMD_NVG, 1) \
+    LOADOUT_ITEM(A3_GPNVG18_BLK_F, 1) \
     LOADOUT_ITEM(ACE_IR_Strobe_Item, 1) \
     LOADOUT_ITEM(ACRE_PRC343, 1) \
     LOADOUT_ITEM(ACE_DAGR, 1) \
@@ -173,7 +163,7 @@ class SOCOMD_Commander {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "Laserdesignator_01_khk_F";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
 
@@ -223,7 +213,7 @@ class SOCOMD_TACP {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "Laserdesignator_01_khk_F";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
     isTACP        = 1;
@@ -274,7 +264,7 @@ class SOCOMD_Leader {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     isCommander        = 1;
 
@@ -325,7 +315,7 @@ class SOCOMD_Specialist {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -333,13 +323,10 @@ class SOCOMD_Specialist {
         Arid = ITEM_DEFAULT_UNIFORM;
         Woodland = ITEM_DEFAULT_UNIFORM_AMCU;
         class Inventory    {
-            LOADOUT_ITEM(ItemAndroid, 1) 
-            LOADOUT_ITEM(ItemcTabHCam, 0) 
+            LOADOUT_ITEM(ACE_microDAGR, 1) 
             LOADOUT_ITEM(ACE_EarPlugs, 1) 
             LOADOUT_ITEM(ACE_MapTools, 1) 
             LOADOUT_ITEM(ACE_Flashlight_KSF1, 1) 
-            LOADOUT_ITEM(murshun_cigs_cigpack, 1) 
-            LOADOUT_ITEM(murshun_cigs_lighter, 1) 
             LOADOUT_ITEM(ACE_elasticBandage, 15) 
             LOADOUT_ITEM(ACE_packingBandage, 15) 
             LOADOUT_ITEM(ACE_quikclot, 15) 
@@ -358,7 +345,7 @@ class SOCOMD_Specialist {
             LOADOUT_ITEM(SmokeShell, 5)
             LOADOUT_ITEM(ACRE_PRC343, 1)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
-            LOADOUT_ITEM(SOCOMD_NVG, 1) 
+            LOADOUT_ITEM(A3_GPNVG18_BLK_F, 1) 
             LOADOUT_ITEM(ACE_CableTie, 4)
             LOADOUT_ITEM(ITEM_MAGAZINE_556, 8)
             LOADOUT_ITEM(ACRE_PRC152, 1)
@@ -383,7 +370,7 @@ class SOCOMD_Rifleman {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -426,7 +413,7 @@ class SOCOMD_Breacher {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -469,7 +456,7 @@ class SOCOMD_Marksman {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
     optics[]         = {"rhsusf_acc_m8541","rhsusf_acc_m8541_d","rhsusf_acc_m8541_low","rhsusf_acc_m8541_low_d","rhsusf_acc_m8541_low_wd","rhsusf_acc_m8541_mrds","rhsusf_acc_m8541_wd","rhsusf_acc_premier_low","rhsusf_acc_premier","rhsusf_acc_premier_mrds","rhsusf_acc_leupoldmk4","rhsusf_acc_leupoldmk4_d","rhsusf_acc_leupoldmk4_wd","rhsusf_acc_leupoldmk4_2","rhsusf_acc_nxs_3515x50_md","rhsusf_acc_nxs_3515x50f1_h58","rhsusf_acc_nxs_3515x50f1_md","rhsusf_acc_nxs_3515x50f1_h58_sun","rhsusf_acc_nxs_3515x50f1_md_sun","rh_leu_mk4","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
 
@@ -510,7 +497,7 @@ class SOCOMD_Sapper {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -561,7 +548,7 @@ class SOCOMD_MachineGunner {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -601,7 +588,7 @@ class SOCOMD_HeavyGunner {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -641,7 +628,7 @@ class SOCOMD_Medic {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -680,7 +667,7 @@ class SOCOMD_AO{
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -721,7 +708,7 @@ class SOCOMD_AT {
     handgunMagazine    = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear           = ITEM_DEFAULT_HEADGEAR;
     binocular          = LEADER_BINOCS;
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     optics[]         = {"rhs_optic_maaws"};
 
@@ -765,7 +752,7 @@ class SOCOMD_Recon {
     handgunMagazine     = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear            = ITEM_DEFAULT_HEADGEAR;
     binocular           = LEADER_BINOCS;
-    gps                 = "";
+    gps                 = "ItemGPS";
     //optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
     class Uniform {
@@ -812,7 +799,7 @@ class SOCOMD_Drone_Operator {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps                = "";
+    gps                = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
@@ -851,7 +838,7 @@ class SOCOMD_Logistician {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
-    gps             = "";
+    gps             = "ItemGPS";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
@@ -874,7 +861,6 @@ class SOCOMD_Logistician {
             LOADOUT_ITEM(ACRE_PRC152, 1)
             LOADOUT_ITEM(ACRE_PRC343, 1)
             LOADOUT_ITEM(ACE_IR_Strobe_Item, 1)
-            LOADOUT_ITEM(ItemcTab,1)
         };
     };
 
@@ -898,7 +884,7 @@ class SOCOMD_Pilot {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";
-    gps             = "";
+    gps             = "ItemGPS";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
@@ -927,7 +913,6 @@ class SOCOMD_Pilot {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC117F, 1)
-            LOADOUT_ITEM(ItemcTab,1)
         };
     };
 };
@@ -943,7 +928,7 @@ class SOCOMD_Crewman {
     handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_CREW_HEADGEAR;
     binocular         = "";
-    gps             = "";
+    gps             = "ItemGPS";
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
     noGrenadeOptions          = 1;
 
@@ -973,8 +958,6 @@ class SOCOMD_Crewman {
         type = ITEM_BACKPACK_PILOT;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(ItemAndroid, 1)
-            LOADOUT_ITEM(ItemcTab,1)
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
         };
     };

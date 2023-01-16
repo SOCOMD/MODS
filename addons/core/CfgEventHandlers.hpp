@@ -15,14 +15,14 @@ class Extended_PostInit_EventHandlers {
         init = QUOTE(call COMPILE_FILE(XEH_postInit));
     };
 };
-class Extended_Init_EventHandlers {
+// class Extended_Init_EventHandlers {
 
-    class Man {
-        class DefaultSkill_eh {
-            init="_cfg = (configfile >> 'CfgVehicles' >> (typeOf (_this select 0)) >> 'skill');if(isNumber _cfg) then { (_this select 0) setSkill (getNumber(_cfg));};";
-        };
-    };
-};
+//     class Man {
+//         class DefaultSkill_eh {
+//             init="_cfg = (configfile >> 'CfgVehicles' >> (typeOf (_this select 0)) >> 'skill');if(isNumber _cfg) then { (_this select 0) setSkill (getNumber(_cfg));};";
+//         };
+//     };
+// };
 
 
 // class Extended_AnimStateChanged_EventHandlers {

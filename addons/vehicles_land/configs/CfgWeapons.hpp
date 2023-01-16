@@ -9,7 +9,7 @@ class CfgWeapons{
         class medium;
         class far;
     };
-    #include "weapons\hmg_127.hpp"
-    #include "weapons\hmg_m2.hpp"
-    #include "weapons\lmg_minigun_transport.hpp"
+    // #include "weapons\hmg_127.hpp"
+    // #include "weapons\hmg_m2.hpp"
+    // #include "weapons\lmg_minigun_transport.hpp"
 };

@@ -1,9 +1,9 @@
     
-class static;
-class Building : Static {
+// class Static;
+// class Building : Static {
     // this appears to do nothing
     // damageResistance=4000; // default 0.004;
-};
+// };
 
 // FOB Ammo Structure
 class Slingload_01_Base_F;

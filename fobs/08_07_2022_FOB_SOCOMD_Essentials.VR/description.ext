@@ -1,39 +1,30 @@
 #include "details.hpp"
 
-// Respawn settings. ACE Spectator must be called in init.sqf
 respawn = 3;
-respawnTemplates[] = {"MenuPosition"};
-respawnOnStart = 0;
-respawnDelay = 1;
-respawnButton = 1;
-respawnDialog = 0;
+respawnDelay = 999999;
+respawnTemplates[] = {"ace_spectator"};
 
 disabledAI = 1;
-disableChannels[]={2,5};
+disableChannels[]={2,4,5};
 
 wreckManagerMode = 0;
-corpseManagerMode = 3;
+corpseManagerMode = 1;
 corpseLimit = 20;
-corpseRemovalMinTime = 180;
-corpseRemovalMaxTime = 300;
-minPlayerDistance = 100;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 900;
+minPlayerDistance = 0;
 
-// Administration & Debug
 saving = 0;
+
 enableDebugConsole = 1;
-enableDebugConsole[] = {"admin", "76561198009214454"};
-enableTargetDebug = 1;
 cba_settings_hasSettingsFile = 1;
-cba_settings_whitelist[] = {"admin", "76561198009214454"}; // In order: Logged In Admin, Spectre
-allowFunctionsRecompile = 1;
-allowFunctionsLog = 0;
+cba_settings_whitelist[] = {"admin", "76561198018544077", "76561198009993601", "76561198009214454"}; // In order: Token, Slatery, & Spectre
+//allowFunctionsRecompile = 1;
+//allowFunctionsLog = 1;
 
-zeusCompositionScriptLevel = 1; // 1 allows attributes to persist/save. 2 allows init= scripts (strongly not-recommended).
+// Prevent naughty compositions from executing unwanted code.
+zeusCompositionScriptLevel = 0;
 allowProfileGlasses = 0;
-enableItemsDropping = 0;
-
-// Disables randomization on certain objects, object types or object kinds in the mission. Add/Remove appropriate classes.
-// disableRandomization[] = { "All", "AllVehicles", "B_G_Offroad_01_F"};
 
 // https://community.bistudio.com/wiki/Description.ext#showHUD
 showHUD[] = {
@@ -50,7 +41,7 @@ showHUD[] = {
     0    // force show drawIcon3D icons
 };
 
-// To Enable: #ace-fortify blufor SOCOMD_WOODLAND 150
+// To Enable: #ace-fortify blufor SOCOMD 9999 
 // Or change "SOCOMD" to desired preset. SOCOMD_WOODLAND / SOCOMD_DESERT / SOCOMD_URBAN
 class ACEX_Fortify_Presets {
     class SOCOMD {
@@ -71,21 +62,32 @@ class ACEX_Fortify_Presets {
             {"Land_Razorwire_F", 1}
         };
     };
+	/* 
 	class SOCOMD_WOODLAND {
         displayName = "SOCOMD Woodland Supplies";
         objects[] = {
-            {"Land_ConcreteHedgehog_01_F", 5},
+            {"", 5},
+            {"Land_BagFence_Short_F", 5},
+            {"Land_BagFence_Long_F", 5},
+            {"Land_BagFence_Round_F", 5},
             {"Land_WoodenTable_large_F", 5},
             {"ShootingRange_ACR", 5},
             {"Land_ShootingPos_Roof_01_F", 5},
+            {"Land_WoodenShelter_01_F", 5},
+            {"Land_TinWall_02_l_8m_F", 5},
             {"Land_TinWall_02_l_4m_F", 5},
+            {"Land_TinWall_01_m_gate_v1_F", 5},
+            {"Land_Shoot_House_Tunnel_Prone_F", 5},
+            {"Land_Wall_Tin_4", 5},
+            {"Land_NetFence_02_m_gate_v2_F", 5},
             {"Land_SandbagBarricade_01_half_F", 5},
-            {"CUP_kmen_1_buk", 5},
+            {"Land_SandbagBarricade_01_hole_F", 5},
             {"Land_WoodenRamp", 5},
-            {"Land_Barricade_01_4m_F", 5},
-            {"Land_WoodPile_large_F", 5}
+            {"Land_CncBarrierMedium4_F", 5},
+            {"Land_Razorwire_F", 5}
         };
     };
+	*/
 	/*
     class SOCOMD_DESERT {
         displayName = "SOCOMD Desert Supplies";

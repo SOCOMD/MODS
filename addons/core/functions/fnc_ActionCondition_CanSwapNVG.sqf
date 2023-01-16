@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 _whitelist = [
-    "SOCOMD_NVG",
-    "SOCOMD_NVG_GR",
-    "SOCOMD_NVG_GPNVG_WP_black",
-    "SOCOMD_NVG_GPNVG_GR_black"
+    "USP_L3_pvs31_A2",
+    "USP_L3_pvs31_B",
+    "USP_L3_pvs31_C",
+    "A3_GPNVG18_BLK_F"
 ];
 
 _args = _this;

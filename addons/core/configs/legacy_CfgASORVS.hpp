@@ -14,8 +14,6 @@ class CfgASORVS {
 
     class Land {
         SOCOMD_Core[] = {
-            //"SOCOMD_APC_A",
-            //"SOCOMD_APC_B",
             "SOCOMD_LR_ATV",
             "SOCOMD_BUSHMASTER_TRANS",
             "SOCOMD_BUSHMASTER_HMG",
@@ -32,11 +30,6 @@ class CfgASORVS {
             "SOCOMD_SOV_HMG_W",
             "SOCOMD_SOV_GMG_D",
             "SOCOMD_SOV_GMG_W",
-            //"SOCOMD_SOV_logistics_HMG_D",
-            //"SOCOMD_SOV_logistics_HMG_W",
-            //"SOCOMD_SOV_logistics_GMG_D",
-            //"SOCOMD_SOV_logistics_GMG_W",
-            //"SOCOMD_BIKE",
             "SOCOMD_RTV_D",
             "SOCOMD_QUADBIKE"
         };

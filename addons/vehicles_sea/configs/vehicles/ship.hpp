@@ -144,9 +144,7 @@ SHIP_BASE(A,SCOPE_PUBLIC,SOCOMD_BOAT)
 
 SHIP_BASE(C,SCOPE_PUBLIC,SOCOMD_BOAT_SUB)
 class Ship_F;
-//class CUP_RHIB_Base : Ship_F {
-//    class Turrets;
-//};
+
 class UK3CB_MDF_B_RHIB;
 class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
     scope = SCOPE_PUBLIC;
@@ -197,15 +195,15 @@ class SOCOMD_SHIP_B : UK3CB_MDF_B_RHIB {
         INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
     }; 
 };
-    class SOCOMD_SHIP_B_PLUS_ULTRA: SOCOMD_SHIP_B{
+    // class SOCOMD_SHIP_B_PLUS_ULTRA: SOCOMD_SHIP_B{
         
-    displayname = "ULTRA ALPHA MEGA COMBO SUPER TURBO ADRHIB HMG (2/12)";
-    waterResistanceCoef = 0;
-    redRpm = 10000;
-    thrustDelay = 0;
-    enginePower = 20000;
-    maxSpeed = 600;
-    rudderForceCoef = 0.5;
-    waterEffectSpeed = 1;
-    rudderForceCoefAtMaxSpeed = 0.5;
-    };
+    // displayname = "ULTRA ALPHA MEGA COMBO SUPER TURBO ADRHIB HMG (2/12)";
+    // waterResistanceCoef = 0;
+    // redRpm = 10000;
+    // thrustDelay = 0;
+    // enginePower = 20000;
+    // maxSpeed = 600;
+    // rudderForceCoef = 0.5;
+    // waterEffectSpeed = 1;
+    // rudderForceCoefAtMaxSpeed = 0.5;
+    // };

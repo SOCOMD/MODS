@@ -12,9 +12,8 @@ class CfgPatches {
             "SOCOMD_BUSHMASTER_HMG",
             "SOCOMD_TRUCK_TRANSPORT_A",
             "SOCOMD_TRUCK_AMMO_A",
-            "SOCOMD_TRUCK_CARGO_A",
+            // "SOCOMD_TRUCK_CARGO_A",
             "SOCOMD_TRUCK_CARGO_D_B",
-            "SOCOMD_TRUCK_LOGI_D",
             "SOCOMD_TRUCK_LOGI_D",
             "SOCOMD_TRUCK_LOGI_WD",
             "SOCOMD_TRUCK_FUEL_A",
@@ -45,4 +44,4 @@ class CfgPatches {
 #include "CfgModuleCategories.hpp"
 
 #include "configs\CfgVehicles.hpp"
-#include "configs\CfgWeapons.hpp"
+// #include "configs\CfgWeapons.hpp"

@@ -295,7 +295,8 @@ class SOCOMD_Supply_NVG : SOCOMD_Supply_Empty {
     "\z\socomd\addons\data\CTGear\SNIPER_LOGO.paa"};
 
     class TransportItems {
-        TRANSPORT_ITEM(SOCOMD_NVG, 8)
+        // TRANSPORT_ITEM(SOCOMD_NVG, 8)
+        TRANSPORT_ITEM(USP_L3_pvs31_A2, 8)
         TRANSPORT_ITEM(acwp_airframe_mc_light_strap, 8)
     };
 };

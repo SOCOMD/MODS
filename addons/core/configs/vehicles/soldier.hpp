@@ -1,5 +1,3 @@
-    
-
 #define SOLDIER_BASE_LINKEDITEMS \
     ITEM01("ItemMap"), \
     ITEM01("ItemCompass"), \
@@ -38,7 +36,7 @@ class SOCOMD_Unarmed : B_Soldier_02_f {
     backpack                    = "";
 };
 
-#define SOLDER_HOMESTEAD_ITEMS \
+#define SOLDIER_HOMESTEAD_ITEMS \
     ITEM01("ACE_EarPlugs"), \
     ITEM01("ACRE_PRC343"), \
     ITEM01("ACRE_PRC152")
@@ -61,15 +59,15 @@ class SOCOMD_Homestead : SOCOMD_Unarmed {
 
     respawnLinkedItems[]        = {SOLDIER_HOMESTEAD_LINKEDITEMS};
     linkedItems[]               = {SOLDIER_HOMESTEAD_LINKEDITEMS};
-    Items[]                     = {SOLDER_HOMESTEAD_ITEMS};
-    RespawnItems[]              = {SOLDER_HOMESTEAD_ITEMS};
+    Items[]                     = {SOLDIER_HOMESTEAD_ITEMS};
+    RespawnItems[]              = {SOLDIER_HOMESTEAD_ITEMS};
     backpack                    = "SOCOMD_BackpackPRC117F";
 };
 
-#define SOLDER_RIFLEMAN_WEAPONS \
+#define SOLDIER_RIFLEMAN_WEAPONS \
     ITEM01(ITEM_PRIMARY_M4)
 
-#define SOLDER_RIFLEMAN_MAGAZINES \
+#define SOLDIER_RIFLEMAN_MAGAZINES \
     ITEM07(ITEM_MAGAZINE_556)
 
 #define SOLDIER_RIFLEMAN_LINKEDITEMS \
@@ -89,19 +87,19 @@ class SOCOMD_Rifleman : SOCOMD_Unarmed {
     displayname = "Rifleman";
     vehicleclass = "Man";
 
-    weapons[]                     = {SOLDER_RIFLEMAN_WEAPONS};
-    respawnWeapons[]             = {SOLDER_RIFLEMAN_WEAPONS};
-    magazines[]                 = {SOLDER_RIFLEMAN_MAGAZINES};
-    respawnMagazines[]             = {SOLDER_RIFLEMAN_MAGAZINES};
+    weapons[]                     = {SOLDIER_RIFLEMAN_WEAPONS};
+    respawnWeapons[]             = {SOLDIER_RIFLEMAN_WEAPONS};
+    magazines[]                 = {SOLDIER_RIFLEMAN_MAGAZINES};
+    respawnMagazines[]             = {SOLDIER_RIFLEMAN_MAGAZINES};
     respawnLinkedItems[]         = {SOLDIER_RIFLEMAN_LINKEDITEMS};
     linkedItems[]                 = {SOLDIER_RIFLEMAN_LINKEDITEMS};
     backpack                    = ITEM_BACKPACK_RIFLEMAN;
 };
 
-#define SOLDER_PILOT_WEAPONS \
+#define SOLDIER_PILOT_WEAPONS \
     ITEM01(ITEM_PRIMARY_SOLS)
 
-#define SOLDER_PILOT_MAGAZINES \
+#define SOLDIER_PILOT_MAGAZINES \
     ITEM07(ITEM_MAGAZINE_556)
 
 #define SOLDIER_PILOT_LINKEDITEMS \
@@ -120,19 +118,19 @@ class SOCOMD_Pilot : SOCOMD_Unarmed {
     displayname = "Pilot";
     vehicleclass = "Man";
 
-    weapons[]                     = {SOLDER_PILOT_WEAPONS};
-    respawnWeapons[]             = {SOLDER_PILOT_WEAPONS};
-    magazines[]                 = {SOLDER_PILOT_MAGAZINES};
-    respawnMagazines[]             = {SOLDER_PILOT_MAGAZINES};
+    weapons[]                     = {SOLDIER_PILOT_WEAPONS};
+    respawnWeapons[]             = {SOLDIER_PILOT_WEAPONS};
+    magazines[]                 = {SOLDIER_PILOT_MAGAZINES};
+    respawnMagazines[]             = {SOLDIER_PILOT_MAGAZINES};
     respawnLinkedItems[]         = {SOLDIER_PILOT_LINKEDITEMS};
     linkedItems[]                 = {SOLDIER_PILOT_LINKEDITEMS};
     backpack                    = ITEM_BACKPACK_PILOT;
 };
 
-#define SOLDER_CREWMAN_WEAPONS \
+#define SOLDIER_CREWMAN_WEAPONS \
     ITEM01(ITEM_PRIMARY_SOLS)
 
-#define SOLDER_CREWMAN_MAGAZINES \
+#define SOLDIER_CREWMAN_MAGAZINES \
     ITEM07(ITEM_MAGAZINE_556)
 
 #define SOLDIER_CREWMAN_LINKEDITEMS \
@@ -151,10 +149,10 @@ class SOCOMD_Crewman : SOCOMD_Unarmed {
     displayname = "Crewman";
     vehicleclass = "Man";
 
-    weapons[]                     = {SOLDER_CREWMAN_WEAPONS};
-    respawnWeapons[]             = {SOLDER_CREWMAN_WEAPONS};
-    magazines[]                 = {SOLDER_CREWMAN_MAGAZINES};
-    respawnMagazines[]             = {SOLDER_CREWMAN_MAGAZINES};
+    weapons[]                     = {SOLDIER_CREWMAN_WEAPONS};
+    respawnWeapons[]             = {SOLDIER_CREWMAN_WEAPONS};
+    magazines[]                 = {SOLDIER_CREWMAN_MAGAZINES};
+    respawnMagazines[]             = {SOLDIER_CREWMAN_MAGAZINES};
     respawnLinkedItems[]         = {SOLDIER_CREWMAN_LINKEDITEMS};
     linkedItems[]                 = {SOLDIER_CREWMAN_LINKEDITEMS};
     backpack                    = ITEM_BACKPACK_CREWMAN;

@@ -16,6 +16,6 @@ class RscDisplayMission : RscDisplayEmpty {
 */
 
 //Fix CTAB missing config property
-class cTab_RscMapControl {
-    widthRailWay = 4;
-};
+// class cTab_RscMapControl {
+//     widthRailWay = 4;
+// };

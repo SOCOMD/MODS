@@ -31,11 +31,11 @@ class CfgMagazineWells {
         };
     };
 
-    class CBA_9x19_MP5 {
-        SOCOMD_mags[] = {
-            // "SOCOMD_Item_Magazine_9x21_60Rnd"
-        };
-    };
+    // class CBA_9x19_MP5 {
+    //     SOCOMD_mags[] = {
+    //         // "SOCOMD_Item_Magazine_9x21_60Rnd"
+    //     };
+    // };
 
     class CBA_40mm_M203 {
         SOCOMD_mags[] = {

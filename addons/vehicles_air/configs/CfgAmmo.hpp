@@ -32,22 +32,22 @@ class CfgAmmo {
             defaultAttackProfile = "DIR";  // Default attack profile
             attackProfiles[] = {"LIN", "DIR", "MID", "HI"};  // Attack profiles available
         };
-        class Components {
-            class SensorManagementComponent {
-                class Components {
-                    class IRSensorComponent : SensorTemplateIR {
-                        angleRangeHorizontal = 45; // set
-                        angleRangeVertical = 35; // set
-                        maxTrackableSpeed = 55; // set
-                    };
-                    class LaserSensorComponent : SensorTemplateLaser {
-                        angleRangeHorizontal = 90;
-                        angleRangeVertical = 70;
-                        maxTrackableSpeed = 55;
-                    };
-                };
-            };
-        };
+        // class Components {
+        //     class SensorManagementComponent {
+        //         class Components {
+        //             class IRSensorComponent : SensorTemplateIR {
+        //                 angleRangeHorizontal = 45; // set
+        //                 angleRangeVertical = 35; // set
+        //                 maxTrackableSpeed = 55; // set
+        //             };
+        //             class LaserSensorComponent : SensorTemplateLaser {
+        //                 angleRangeHorizontal = 90;
+        //                 angleRangeVertical = 70;
+        //                 maxTrackableSpeed = 55;
+        //             };
+        //         };
+        //     };
+        // };
     };
 /*
     // littlebird ammo
@@ -59,11 +59,11 @@ class CfgAmmo {
         suppressionRadiusHit = 5;
     };
 */    
-    class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
-    {
-        cost = 3;
-        dangerRadiusBulletClose = 50;
-        suppressionRadiusBulletClose = 15;
-        suppressionRadiusHit = 10;
-    };
+    // class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
+    // {
+    //     cost = 3;
+    //     dangerRadiusBulletClose = 50;
+    //     suppressionRadiusBulletClose = 15;
+    //     suppressionRadiusHit = 10;
+    // };
 };

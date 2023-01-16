@@ -12,7 +12,7 @@ class CfgPatches {
             "SOCOMD_QStore_A",
             "SOCOMD_Personal_box",
             "SOCOMD_Training_box",
-            "SOCOMD_Void_Box",
+            //"SOCOMD_Void_Box",
             "SOCOMD_Crate_Empty",
             "SOCOMD_Crate_Fuel",
             "SOCOMD_Crate_Hasty",
@@ -31,8 +31,8 @@ class CfgPatches {
             "SOCOMD_Recon_Supply",
             "SOCOMD_Supply_NVG",
             "SOCOMD_Supply_152",
-            "ACWP_case_m4_gl",
-            "ACWP_case_m4_don",
+            //"ACWP_case_m4_gl",
+            //"ACWP_case_m4_don",
             "ACWP_case_sniper",
             // MEN
             "SOCOMD_Unarmed",
@@ -59,19 +59,20 @@ class CfgPatches {
 #include "configs\CfgDifficultyPresets.hpp"
 #include "configs\CfgMissions.hpp"
 #include "configs\CfgMarkers.hpp"
-#include "configs\CfgGlasses.hpp"
-#include "configs\CfgMoves.hpp"
 
 #include "configs\CfgMagazines.hpp"
 #include "configs\CfgVehicles.hpp"
 #include "configs\CfgWeapons.hpp"
-#include "configs\CfgAmmo.hpp"
 
 #include "configs\CfgClasses.hpp"
 #include "configs\CfgGroups.hpp"
 #include "configs\CfgLoadoutWeapons.hpp"
 #include "configs\CfgUnitInsignia.hpp"
-#include "configs\CfgASORVS.hpp"
-#include "configs\Rsc.hpp"
 #include "configs\CfgWorldType.hpp"
+
+//#include "configs\Rsc.hpp"
+//#include "configs\CfgMoves.hpp"
+//#include "configs\CfgGlasses.hpp"
+//#include "configs\CfgAmmo.hpp"
 //#include "configs\CfgSocomdPlayerSettings.hpp"
+//#include "configs\CfgASORVS.hpp"

@@ -71,7 +71,7 @@ class CfgVehicles  {
     #include "vehicles\soldier.hpp"
     #include "vehicles\structures.hpp"
     #include "vehicles\supply.hpp"
-    #include "vehicles\voidBox.hpp"
     #include "vehicles\extensions.hpp"
     #include "vehicles\flags.hpp"
+    // #include "vehicles\voidBox.hpp"
 };

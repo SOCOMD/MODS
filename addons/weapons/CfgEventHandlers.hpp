@@ -15,15 +15,15 @@ class Extended_PostInit_EventHandlers {
         init = QUOTE(call COMPILE_FILE(XEH_postInit));
     };
 };
-class Extended_FiredBIS_EventHandlers  {
-    class CAManBase  {
-        rpgMalfunction = "_this call socomd_weapons_fnc_Event_rpgMalfunction";
-        shotgunBreach = "_this call socomd_weapons_fnc_Event_shotgunBreach";
-    };
-};
+// class Extended_FiredBIS_EventHandlers  {
+//     class CAManBase  {
+//         rpgMalfunction = "_this call socomd_weapons_fnc_Event_rpgMalfunction";
+//         shotgunBreach = "_this call socomd_weapons_fnc_Event_shotgunBreach";
+//     };
+// };
 
-class Extended_Killed_EventHandlers {
-    class CAManBase {
-        weaponMalfunction = "_this call socomd_weapons_fnc_Event_weaponMalfunction";
-    };
-};
+// class Extended_Killed_EventHandlers {
+//     class CAManBase {
+//         weaponMalfunction = "_this call socomd_weapons_fnc_Event_weaponMalfunction";
+//     };
+// };

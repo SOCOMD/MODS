@@ -13,8 +13,8 @@ class SOCOMD_TRUCK_TRANSPORT_A : UK3CB_B_MTVR_Closed_WDL {
     displayname = "Truck Transport (1/12)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
-    threat[] = {0.8,0.8,0.5};   
+    // cost = 20000;
+    // threat[] = {0.4,0.1,0.05};
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver"};
@@ -63,8 +63,8 @@ class SOCOMD_TRUCK_AMMO_A : rhsusf_M977A4_AMMO_usarmy_d {
     displayname = "Truck Ammo (1/2)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
-    threat[] = {0.8,0.8,0.5};    
+    // cost = 10000;
+    // threat[] = {0.4,0.1,0.05};
     crew= UNIT_SOCOMD_CREWMAN;
     class AcreRacks {
         class Rack_1 {
@@ -112,8 +112,8 @@ class SOCOMD_TRUCK_FUEL_A : rhsusf_M978A4_usarmy_d {
     displayname = "Truck Fuel (1/2)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
-    threat[] = {0.8,0.8,0.5};
+    // cost = 20000;
+    // threat[] = {0.4,0.1,0.05};
     crew= UNIT_SOCOMD_CREWMAN;
 
     class AcreRacks {
@@ -163,9 +163,9 @@ class SOCOMD_TRUCK_REPAIR_A : rhsusf_M977A4_REPAIR_usarmy_d {
     displayname = "Truck Repair (1/2)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
+    // cost = 20000;
     ace_cargo_space = 20;
-    threat[] = {0.8,0.8,0.5}; 
+    // threat[] = {0.4,0.1,0.05};
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver"};
@@ -202,6 +202,7 @@ class SOCOMD_TRUCK_REPAIR_A : rhsusf_M977A4_REPAIR_usarmy_d {
 
 ////////////////////////////////////////////////////////////////////////////////
 // CARGO
+/*
 class rhsusf_M977A4_usarmy_d;
 class SOCOMD_TRUCK_CARGO_A : rhsusf_M977A4_usarmy_d {
     scope = SCOPE_PUBLIC;
@@ -214,9 +215,9 @@ class SOCOMD_TRUCK_CARGO_A : rhsusf_M977A4_usarmy_d {
     displayname = "Truck Cargo (1/2)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
+    // cost = 20000;
     ace_cargo_space = 20;
-    threat[] = {0.8,0.8,0.5};   
+    // threat[] = {0.4,0.1,0.05};
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver"};
@@ -250,6 +251,7 @@ class SOCOMD_TRUCK_CARGO_A : rhsusf_M977A4_usarmy_d {
         "\z\socomd\addons\data\hemtt\CHASSIS_amcu_CO.paa"
     };
 };
+*/
 
 class rhsusf_M1084A1R_SOV_M2_D_fmtv_socom;
 class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
@@ -263,8 +265,8 @@ class SOCOMD_TRUCK_CARGO_D_B : rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
     displayname = "SOV-CARGO (2/1)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
-    threat[] = {0.8,0.8,0.5};   
+    // cost = 20000;
+    // threat[] = {0.4,0.1,0.05};
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver"};
@@ -357,9 +359,9 @@ class SOCOMD_TRUCK_LOGI_D : rhsusf_M1078A1R_SOV_M2_D_fmtv_socom {
     displayname = "SOV-LOGI (2/3)";
     fuelCapacity = 60;
     ace_refuel_fuelCapacity = 120;
-    cost = 20000;
+    // cost = 10000;
     ace_cargo_space = 20;
-    threat[] = {0.8,0.8,0.5};   
+    // threat[] = {0.8,0.7,0.3};
     class AcreRacks {
         class Rack_1 {
             allowedPositions[] = {"driver"};

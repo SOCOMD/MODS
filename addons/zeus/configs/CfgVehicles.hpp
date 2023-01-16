@@ -114,18 +114,17 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModuleConvoyGroup";
     };
 */
-    class SOCOMD_Module_ShowHitPoints : SOCOMD_Module_Base
-    {
-        scopeCurator = 2;
-        isGlobal = 1;
+    // class SOCOMD_Module_ShowHitPoints : SOCOMD_Module_Base
+    // {
+    //     scopeCurator = 2;
+    //     isGlobal = 1;
 
-        _generalMacro = "SOCOMD_Module_ShowHitPoints";
-        displayName = "Show Hit Points";
-        function = "socomd_zeus_fnc_ModuleShowHitPoints";
-    };
+    //     _generalMacro = "SOCOMD_Module_ShowHitPoints";
+    //     displayName = "Show Hit Points";
+    //     function = "socomd_zeus_fnc_ModuleShowHitPoints";
+    // };
 
-    class SOCOMD_Module_JamWeapon : SOCOMD_Module_Base
-    {
+    class SOCOMD_Module_JamWeapon : SOCOMD_Module_Base {
         scopeCurator = 2;
         isGlobal = 1;
 
@@ -134,8 +133,7 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModuleJamWeapon";
     };
 
-    class SOCOMD_Module_ModuleGenerateUnitConfig : SOCOMD_Module_Base
-    {
+    class SOCOMD_Module_ModuleGenerateUnitConfig : SOCOMD_Module_Base {
         scopeCurator = 2;
         isGlobal = 1;
 
@@ -144,43 +142,42 @@ class CfgVehicles
         function = "socomd_zeus_fnc_ModuleGenerateUnitConfig";
     };
 
-    class SOCOMD_Module_PowerGrid : SOCOMD_Module_Base
-    {
-        scope = 2;
-        isGlobal = 1;
+    // class SOCOMD_Module_PowerGrid : SOCOMD_Module_Base {
+    //     scope = 2;
+    //     isGlobal = 1;
 
-        _generalMacro = "SOCOMD_Module_PowerGrid";
-        displayName = "Power Grid";
-        function = "socomd_zeus_fnc_ModulePowerGrid";
-    };
-    class SOCOMD_Module_PowerGenerator : SOCOMD_Module_Base {
-        scope = 2;
-        isGlobal = 1;
+    //     _generalMacro = "SOCOMD_Module_PowerGrid";
+    //     displayName = "Power Grid";
+    //     function = "socomd_zeus_fnc_ModulePowerGrid";
+    // };
+    // class SOCOMD_Module_PowerGenerator : SOCOMD_Module_Base {
+    //     scope = 2;
+    //     isGlobal = 1;
 
-        _generalMacro = "SOCOMD_Module_PowerGenerator";
-        displayName = "Power Generator";
-        function = "socomd_zeus_fnc_ModulePowerGenerator";
-    };
-    class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
-        scope = 2;
-        scopeCurator = 2;
-        isGlobal = 1;
-        isTriggerActivated = 1;
+    //     _generalMacro = "SOCOMD_Module_PowerGenerator";
+    //     displayName = "Power Generator";
+    //     function = "socomd_zeus_fnc_ModulePowerGenerator";
+    // };
+    // class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
+    //     scope = 2;
+    //     scopeCurator = 2;
+    //     isGlobal = 1;
+    //     isTriggerActivated = 1;
 
-        _generalMacro = "SOCOMD_Module_DisableAI";
-        displayName = "Disable AI Pathing";
-        function = "socomd_zeus_fnc_ModuleDisableAI";
-    };
-    class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
-        scope = 2;
-        scopeCurator = 2;
-        isGlobal = 1;
-        isTriggerActivated = 1;
+    //     _generalMacro = "SOCOMD_Module_DisableAI";
+    //     displayName = "Disable AI Pathing";
+    //     function = "socomd_zeus_fnc_ModuleDisableAI";
+    // };
+    // class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
+    //     scope = 2;
+    //     scopeCurator = 2;
+    //     isGlobal = 1;
+    //     isTriggerActivated = 1;
 
-        _generalMacro = "SOCOMD_Module_EnableAI";
-        displayName = "Enable AI Pathing";
-        function = "socomd_zeus_fnc_ModuleEnableAI";
-    };
+    //     _generalMacro = "SOCOMD_Module_EnableAI";
+    //     displayName = "Enable AI Pathing";
+    //     function = "socomd_zeus_fnc_ModuleEnableAI";
+    // };
     class SOCOMD_Module_RevealPlayers : SOCOMD_Module_Base {
         scope = 2;
         scopeCurator = 2;

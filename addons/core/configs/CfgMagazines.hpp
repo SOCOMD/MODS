@@ -12,13 +12,13 @@ class CfgMagazines {
             class MK16_Transmitter: Command {};
         };
     };
-    class murshun_cigs_cigpack : CA_Magazine {
-        mass=0;
-    };
-    class murshun_cigs_lighter : CA_Magazine {
-        mass=0;
-    };
-    class murshun_cigs_matches : CA_Magazine {
-        mass=0;
-    };
+    // class murshun_cigs_cigpack : CA_Magazine {
+    //     mass=0;
+    // };
+    // class murshun_cigs_lighter : CA_Magazine {
+    //     mass=0;
+    // };
+    // class murshun_cigs_matches : CA_Magazine {
+    //     mass=0;
+    // };
 };

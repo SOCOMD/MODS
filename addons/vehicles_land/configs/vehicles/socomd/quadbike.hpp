@@ -14,8 +14,8 @@ class SOCOMD_QUADBIKE : B_Quadbike_01_F {
     displayname = "ATV (1/1)";
     vehicleclass = "Car";
     forceInGarage = 1;
-    cost = 10000;
-    threat[] = {0.5,0.5,0.2};
+    // cost = 10000;
+    // threat[] = {0.4,0.05,0.01};
     fuelCapacity = 4; // 4 == 24m at max speed
     ace_refuel_fuelCapacity = 10;
 

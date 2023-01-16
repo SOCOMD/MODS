@@ -1,3 +1,24 @@
+// Turret classes
+class Turrets;
+class CargoTurret;
+//class NewTurret;
+class M2_Turret;
+
+// class StaticWeapon;
+// class StaticCannon : StaticWeapon {
+//    class Turrets;
+//    class Components;
+// };
+
+//class StaticMGWeapon;
+
+// Misc classes
+class Components;
+//class AISteeringComponent;
+
+// VIC classes
+class Truck_F;
+//class Tank;
 class Land;
 
 class LandVehicle : Land {
@@ -5,7 +26,7 @@ class LandVehicle : Land {
 };
 
 class Car : LandVehicle {
-    class NewTurret;
+    //class NewTurret;
     class Components;
 };
 
@@ -17,4 +38,3 @@ class Car_F : Car {
     class Components;
 };
 
-class Wheeled_APC_F : Car_F {};

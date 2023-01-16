@@ -13,7 +13,7 @@ class CfgWeapons {
     #include "weapons\gps.hpp"
     #include "weapons\items.hpp"
     // #include "weapons\lasers.hpp"
-    #include "weapons\nvg.hpp"
+    // #include "weapons\nvg.hpp"
     #include "weapons\vests.hpp"
     #include "uniforms\CfgWeapons.hpp"
 };

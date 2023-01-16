@@ -1,4 +1,4 @@
 //CTAB GPS
 class ItemMicroDAGR;
-class ItemAndroid;
-class ItemcTab;
+// class ItemAndroid;
+// class ItemcTab;

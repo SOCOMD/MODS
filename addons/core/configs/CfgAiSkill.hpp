@@ -64,7 +64,7 @@ class CfgAISkill {
     commanding[]        = {0.0, 0.2, 1.0, 0.8};  // this only affects target sharing, not actual "command intelligence".
     courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage for Zeusing. 
     general[]            = {0.0, 0.2, 1.0, 1.0};  // high general = tactical group leaders. 
-    reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
+    //reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
     spotDistance[]        = {0.0, 0.2, 1.0, 1.0}; // keep at max 1.0 to avoid conflict with new LAMBS spot-distance functionality 
     spotTime[]            = {0.0, 0.2, 1.0, 1.0};
 };

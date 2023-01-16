@@ -66,7 +66,7 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = "3rd_party"
-missions_root = "missions"
+# missions_root = "missions"
 thirdParty_root = "3rd_party"
 key_name = "socomd"
 key = ""
@@ -1301,8 +1301,8 @@ See the make.cfg file for additional build options.
                         print_error("\nFailed to delete {}".format(os.path.join(obsolete_check_path,file)))
                         pass
         # Putting includes in the missions
-        print_blue("\nAdding includes for missions...")
-        exec(open(os.path.join(make_root,'mi.py')).read())
+        # print_blue("\nAdding includes for missions...")
+        # exec(open(os.path.join(make_root,'mi.py')).read())
         # For each module, prep files and then build.
         print_blue("\nBuilding...")
         for module in modules:

@@ -7,8 +7,7 @@ class CfgPatches {
             // SEA
             "SOCOMD_SHIP_A",
             "SOCOMD_SHIP_B",
-            "SOCOMD_SHIP_C",
-            "SOCOMD_SHIP_B_PLUS_ULTRA"
+            "SOCOMD_SHIP_C"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
